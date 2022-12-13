@@ -17,7 +17,11 @@
 		qdel(query_get_whitelist)
 		return FALSE
 
-	return query_get_whitelist.NextRow()
+	var/allow = query_get_whitelist.NextRow()
+
+	qdel(query_get_whitelist)
+
+	return allow
 
 
 // usually, this would go into chat_commands.dm
