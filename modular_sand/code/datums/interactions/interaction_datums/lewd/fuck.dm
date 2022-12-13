@@ -1,5 +1,5 @@
 /datum/interaction/lewd/fuck
-	description = "Fuck their pussy."
+	description = "Проникнуть в вагину своего партнёра."
 	require_user_penis = REQUIRE_EXPOSED
 	require_target_vagina = REQUIRE_EXPOSED
 	write_log_user = "fucked"
@@ -30,7 +30,7 @@
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_PENIS, user)
 
 /datum/interaction/lewd/fuck/anal
-	description = "Fuck their ass."
+	description = "Трахнуть в задницу."
 	require_target_vagina = null
 	require_target_anus = REQUIRE_EXPOSED
 
@@ -62,7 +62,7 @@
 	partner.handle_post_sex(NORMAL_LUST, null, user)
 
 /datum/interaction/lewd/breastfuck
-	description = "Fuck their breasts."
+	description = "Совокупиться с сиськами партнёра."
 	interaction_sound = null
 	require_user_penis = REQUIRE_EXPOSED
 	require_target_breasts = REQUIRE_EXPOSED
@@ -91,7 +91,7 @@
 		user.handle_post_sex(NORMAL_LUST, CUM_TARGET_BREASTS, partner)
 
 /datum/interaction/lewd/footfuck
-	description = "Rub your %COCK% on their foot."
+	description = "Потереться своим членом о ножку партнёра."
 	interaction_sound = null
 	require_target_num_feet = 1
 	require_target_feet = REQUIRE_ANY
@@ -124,7 +124,7 @@
 		user.handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, partner)
 
 /datum/interaction/lewd/footfuck/double
-	description = "Rub your %COCK% between their feet."
+	description = "Потереться своим членом о ножки партнёра."
 	require_target_num_feet = 2
 
 /datum/interaction/lewd/footfuck/double/display_interaction(mob/living/user, mob/living/partner)
@@ -153,7 +153,7 @@
 		user.handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, partner)
 
 /datum/interaction/lewd/footfuck/vag
-	description = "Rub your vagina on their foot."
+	description = "Потереться своей вагиной о ножку партнёра."
 	interaction_sound = null
 	require_target_num_feet = 1
 	require_target_feet = REQUIRE_ANY

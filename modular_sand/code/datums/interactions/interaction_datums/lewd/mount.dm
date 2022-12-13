@@ -1,5 +1,5 @@
 /datum/interaction/lewd/mount
-	description = "Mount with your pussy."
+	description = "Поза наездницы | Женская доминация - Вагинальная."
 	interaction_sound = null
 	require_user_vagina = REQUIRE_EXPOSED
 	require_target_penis = REQUIRE_EXPOSED
@@ -25,7 +25,7 @@
 	user.handle_post_sex(NORMAL_LUST, CUM_TARGET_PENIS, partner)
 
 /datum/interaction/lewd/mountass
-	description = "Mount with your ass."
+	description = "Поза Наездинцы | Женская Доминация - Анальная."
 	interaction_sound = null
 	require_user_anus = REQUIRE_EXPOSED
 	require_target_penis = REQUIRE_EXPOSED
@@ -51,7 +51,7 @@
 	user.handle_post_sex(NORMAL_LUST, null, partner)
 
 /datum/interaction/lewd/mountface
-	description = "Ass to face."
+	description = "Потереться своей задницей о лицо партнёра."
 	interaction_sound = null
 	require_target_mouth = TRUE
 	require_user_anus = REQUIRE_EXPOSED
@@ -78,7 +78,7 @@
 	user.handle_post_sex(LOW_LUST, null, partner)
 
 /datum/interaction/lewd/thighs
-	description = "Smother them using your %COCK%."
+	description = "Придушить своего партнёра членом."
 	max_distance = 1
 	require_user_penis = REQUIRE_EXPOSED
 	require_target_mouth = TRUE
@@ -88,7 +88,7 @@
 	var/fucktarget = "penis"
 
 /datum/interaction/lewd/thighs/vagina
-	description = "Smother them using your vagina."
+	description = "Придушить своего партнёра киской."
 	require_user_penis = REQUIRE_NONE
 	require_user_vagina = REQUIRE_EXPOSED
 	write_log_user = "thigh-trapped (vagina)"
