@@ -1,5 +1,5 @@
 /datum/interaction/lewd/frotting
-	description = "Потереться своим членом о член партнёра."
+	description = "Rub your %COCK% against theirs"
 	require_user_penis = REQUIRE_EXPOSED
 	require_target_penis = REQUIRE_EXPOSED
 	max_distance = 1
@@ -21,7 +21,7 @@
 		partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_PENIS, user)
 
 /datum/interaction/lewd/tribadism
-	description = "Потереться своей киской о киску партнёра."
+	description = "Grind your pussy against theirs."
 	interaction_sound = null
 	require_target_vagina = REQUIRE_EXPOSED
 	require_user_vagina = REQUIRE_EXPOSED
