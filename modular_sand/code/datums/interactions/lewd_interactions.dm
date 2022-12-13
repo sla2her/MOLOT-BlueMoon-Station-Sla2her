@@ -1,8 +1,8 @@
 // If I could have gotten away with using a tilde in the type path, I would have.
 /datum/interaction/lewd
 	// Description can take in %COCK% as a wildcard to get replaced with a cock/strapon accordingly.
-	description = "Шлёпнуть по заднице."
-	simple_message = "USER с силой шлёпает задницу TARGET с громким звуком!"
+	description = "Slap their ass."
+	simple_message = "USER slaps TARGET right on the ass!"
 	simple_style = "danger"
 	interaction_sound = 'sound/weapons/slap.ogg'
 	needs_physical_contact = TRUE
@@ -79,12 +79,12 @@
 
 	if(require_user_bottomless && !user.is_bottomless())
 		if(!silent)
-			to_chat(user, "<span class='warning'>Твоя нижняя часть одежды мешает.</span>")
+			to_chat(user, "<span class='warning'>Your pants are in the way.</span>")
 		return FALSE
 
 	if(require_user_topless && !user.is_topless())
 		if(!silent)
-			to_chat(user, "<span class='warning'>Твоя верхняя часть одежды мешает.</span>")
+			to_chat(user, "<span class='warning'>Your top is in the way.</span>")
 		return FALSE
 
 	if(require_user_penis)
@@ -478,17 +478,17 @@
 			if(REQUIRE_EXPOSED)
 				if(!target.has_earsockets(REQUIRE_EXPOSED))
 					if(!silent)
-						to_chat(user, "<span class='warning'>Ушные раковины должны быть открыты.</span>")
+						to_chat(user, "<span class='warning'>Their earsockets need to be exposed.</span>")
 					return FALSE
 			if(REQUIRE_ANY)
 				if(!target.has_earsockets(REQUIRE_ANY))
 					if(!silent)
-						to_chat(user, "<span class='warning'>Глаза всё ещё на месте.</span>")
+						to_chat(user, "<span class='warning'>They still have eyes.</span>")
 					return FALSE
 			if(REQUIRE_UNEXPOSED)
 				if(!target.has_earsockets(REQUIRE_UNEXPOSED))
 					if(!silent)
-						to_chat(user, "<span class='warning'>Ушные впадины должны быть открыты.</span>")
+						to_chat(user, "<span class='warning'>Their earsockets need to be unexposed.</span>")
 					return FALSE
 
 	if(extreme)
@@ -496,7 +496,7 @@
 		if(cli)
 			if(target.client.prefs.extremepref == "No")
 				if(!silent)
-					to_chat(user, "<span class='warning'>По какой-то причине вы не хотите делать это с [target].</span>")
+					to_chat(user, "<span class='warning'>For some reason, you don't want to do this to [target].</span>")
 				return FALSE
 
 	if(require_ooc_consent)
@@ -518,16 +518,16 @@
 /mob/living/list_interaction_attributes(mob/living/LM)
 	var/dat = ..()
 	if(!COOLDOWN_FINISHED(LM, refractory_period))
-		dat += "...ощущается сексуальная истощённость."
+		dat += "...are sexually exhausted for the time being."
 	switch(a_intent)
 		if(INTENT_HELP)
-			dat += "...ведёт себя мягко."
+			dat += "...are acting gentle."
 		if(INTENT_DISARM)
-			dat += "...ведёт себя игриво."
+			dat += "...are acting playful."
 		if(INTENT_GRAB)
-			dat += "...ведёт себя грубо."
+			dat += "...are acting rough."
 		if(INTENT_HARM)
-			dat += "...готовность высокая! Сражается со всеми, кто приближается."
+			dat += "...are fighting anyone who comes near."
 	//Here comes the fucking weird shit.
 	if(client)
 		var/client/cli = client
@@ -536,45 +536,45 @@
 			if(!ucli || (ucli.prefs.extremepref != "No"))
 				if(!get_item_by_slot(ITEM_SLOT_EARS_LEFT) && !get_item_by_slot(ITEM_SLOT_EARS_RIGHT))
 					if(has_ears())
-						dat += "...уши открыты."
+						dat += "...have unprotected ears."
 					else
-						dat += "...ушная раковина открыта и в свободном доступе."
+						dat += "...have a hole where their ears should be."
 				else
-					dat += "...уши прикрыты."
+					dat += "...have covered ears."
 				if(!get_item_by_slot(ITEM_SLOT_EYES))
 					if(has_eyes())
-						dat += "...глаза открыты."
+						dat += "...have exposed eyes."
 					else
-						dat += "...имеются открытые глазные впадины."
+						dat += "...have exposed eyesockets."
 				else
-					dat += "...глаза прикрыты."
+					dat += "...have covered eyes."
 	//
 	// check those loops only once, thanks
 	var/is_topless = is_topless()
 	var/is_bottomless = is_bottomless()
 	if(is_topless && is_bottomless)
-		dat += "...одежда отсутствует."
+		dat += "...are naked."
 	else
 		if((is_topless && !is_bottomless) || (!is_topless && is_bottomless))
-			dat += "...обладает открытой одеждой."
+			dat += "...are partially clothed."
 		else
-			dat += "...обладает закрытой одеждой."
+			dat += "...are clothed."
 	if(has_breasts(REQUIRE_EXPOSED))
-		dat += "...обладает грудями."
+		dat += "...have breasts."
 	if(has_penis(REQUIRE_EXPOSED))
-		dat += "...обладает пенисом."
+		dat += "...have a penis."
 	if(has_strapon(REQUIRE_EXPOSED))
-		dat += "...держит готовый страпон."
+		dat += "...have a strapon."
 	if(has_balls(REQUIRE_EXPOSED))
-		dat += "...обладает семенниками."
+		dat += "...have a ballsack."
 	if(has_vagina(REQUIRE_EXPOSED))
-		dat += "...обладает вагиной."
+		dat += "...have a vagina."
 	if(has_anus(REQUIRE_EXPOSED))
-		dat += "...обладает анальным концом."
+		dat += "...have an anus."
 	if(has_feet(REQUIRE_EXPOSED))
 		switch(has_feet(REQUIRE_EXPOSED))
 			if(2)
-				dat += "...обладает двумя ногами."
+				dat += "...have a pair of feet."
 			if(1)
-				dat += "...обладает одной ногой."
+				dat += "...have a single foot."
 	return dat

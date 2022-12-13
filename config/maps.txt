@@ -44,11 +44,11 @@ map runtimestation
 endmap
 
 map spookystation
-	minplayers 15
+	minplayers 150
 endmap
 
 map festivestation
-	minplayers 15
+	minplayers 150
 endmap
 
 map multiz_debug
@@ -70,8 +70,7 @@ map cogstation
 endmap
 
 map syndicatestation
-	voteweight 2
 endmap
 
-#map boxedinstation
-	endmap
+map boxedinstation
+endmap
