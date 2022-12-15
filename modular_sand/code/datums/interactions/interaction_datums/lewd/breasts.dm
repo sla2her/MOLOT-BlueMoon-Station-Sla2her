@@ -45,7 +45,7 @@
 	target.reagents.add_reagent(milktype, rand(1,3 * modifier))
 
 /datum/interaction/lewd/titgrope
-	description = "Сжать груди партнёра."
+	description = "Сжать грудь партнёра."
 	require_user_hands = TRUE
 	require_target_breasts = REQUIRE_ANY
 	write_log_user = "groped"
