@@ -705,6 +705,7 @@
 	interaction_sound = null
 	write_log_target = "на его промежность напердел"
 	write_log_user = "перданул на лицо"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/do_facefart/display_interaction(mob/living/user, mob/living/target)
 	user.do_facefart(target)
@@ -716,6 +717,7 @@
 	interaction_sound = null
 	write_log_target = "на его промежность напердел"
 	write_log_user = "перданул на промежность"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/do_crotchfart/display_interaction(mob/living/user, mob/living/target)
 	user.do_crotchfart(target)
@@ -728,6 +730,7 @@
 	interaction_sound = null
 	write_log_target = "был(а) трахнут(а) в задницу с пердежом"
 	write_log_user = "трахнул(а) в задницу с пердежом"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/do_fartfuck/display_interaction(mob/living/user, mob/living/target)
 	user.do_fartfuck(target)
@@ -748,6 +751,7 @@
 	interaction_sound = null
 	write_log_target = "его газы высосал из задницы"
 	write_log_user = "высосал газы из задницы"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/suck_fart/display_interaction(mob/living/user, mob/living/target)
 	user.suck_fart(target)
@@ -757,8 +761,9 @@
 	require_user_anus = TRUE
 	max_distance = 1
 	interaction_sound = null
-	write_log_target = "его лицо было обосрато"
+	write_log_target = "его лицо было обосрано"
 	write_log_user = "насрал на лицо"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/do_faceshit/display_interaction(mob/living/user, mob/living/target)
 	user.do_faceshit(target)
@@ -768,8 +773,9 @@
 	require_user_anus = REQUIRE_EXPOSED
 	max_distance = 1
 	interaction_sound = null
-	write_log_target = "его промежность была обосрата"
+	write_log_target = "его промежность была обосрана"
 	write_log_user = "насрал на промежность"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/do_crotchshit/display_interaction(mob/living/user, mob/living/target)
 	user.do_crotchshit(target)
@@ -782,6 +788,7 @@
 	interaction_sound = null
 	write_log_target = "трахнут в задницу с говнецом"
 	write_log_user = "трахнул в задницу с говнецом"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/do_shitfuck/display_interaction(mob/living/user, mob/living/target)
 	user.do_shitfuck(target)
@@ -802,6 +809,7 @@
 	interaction_sound = null
 	write_log_target = "его говно высосал из задницы"
 	write_log_user = "высосал говно из задницы"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/suck_shit/display_interaction(mob/living/user, mob/living/target)
 	user.suck_shit(target)
@@ -813,6 +821,7 @@
 	interaction_sound = null
 	write_log_target = "получает золотой дождь от"
 	write_log_user = "нассал на"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/piss_over/display_interaction(mob/living/user, mob/living/target)
 	user.piss_over(target)
@@ -825,6 +834,7 @@
 	require_target_mouth = TRUE
 	write_log_user = "ссыт в чей-то рот"
 	write_log_target = "наполняет свой рот мочой"
+	extreme = TRUE
 
 /datum/interaction/lewd/unholy/piss_mouth/display_interaction(mob/living/carbon/user, mob/living/target)
 	if(!istype(user))
