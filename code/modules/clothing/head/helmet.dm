@@ -4,7 +4,6 @@
 	icon_state = "helmet"
 	item_state = "helmet"
 	armor = list(MELEE = 40, BULLET = 30, LASER = 30,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
-	flags_inv = HIDEEARS
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_TEMP_PROTECT
 	heat_protection = HEAD
@@ -12,7 +11,10 @@
 	strip_delay = 60
 	resistance_flags = NONE
 	flags_cover = HEADCOVERSEYES
-	flags_inv = HIDEHAIR
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 	dog_fashion = /datum/dog_fashion/head/helmet
 
@@ -77,11 +79,19 @@
 	armor = list(MELEE = 15, BULLET = 60, LASER = 10, ENERGY = 10, BOMB = 40, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
 	can_flashlight = 1
 	dog_fashion = null
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/old
 	name = "degrading helmet"
 	desc = "Standard issue security helmet. Due to degradation the helmet's visor obstructs the users ability to see long distances."
 	tint = 2
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/blueshirt
 	name = "blue helmet"
@@ -89,6 +99,10 @@
 	icon_state = "blueshift"
 	item_state = "blueshift"
 	custom_premium_price = PRICE_ABOVE_EXPENSIVE
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/riot
 	name = "riot helmet"
@@ -99,7 +113,8 @@
 	alt_toggle_message = "You push the visor up on"
 	can_toggle = 1
 	armor = list(MELEE = 45, BULLET = 15, LASER = 5,ENERGY = 5, BOMB = 5, BIO = 2, RAD = 0, FIRE = 50, ACID = 50)
-	flags_inv = HIDEEARS|HIDEFACE
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
 	strip_delay = 80
 	actions_types = list(/datum/action/item_action/toggle)
 	visor_flags_inv = HIDEFACE
@@ -141,6 +156,10 @@
 	toggle_cooldown = 20
 	active_sound = 'sound/items/weeoo1.ogg'
 	dog_fashion = null
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/justice/escape
 	name = "alarm helmet"
@@ -148,6 +167,10 @@
 	icon_state = "justice2"
 	toggle_message = "You turn off the light on"
 	alt_toggle_message = "You turn on the light on"
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/swat
 	name = "\improper SWAT helmet"
@@ -162,17 +185,28 @@
 	clothing_flags = STOPSPRESSUREDAMAGE
 	strip_delay = 80
 	dog_fashion = null
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/swat/nanotrasen
 	name = "\improper SWAT helmet"
 	desc = "An extremely robust, space-worthy helmet with the Nanotrasen logo emblazoned on the top."
 	icon_state = "swat"
 	item_state = "swat"
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome helmet"
 	desc = "<i>'Let the battle commence!'</i>"
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 	icon_state = "thunderdome"
 	item_state = "thunderdome"
 	armor = list(MELEE = 40, BULLET = 30, LASER = 25,ENERGY = 10, BOMB = 25, BIO = 10, RAD = 0, FIRE = 50, ACID = 50)
@@ -186,7 +220,10 @@
 /obj/item/clothing/head/helmet/roman
 	name = "\improper Roman helmet"
 	desc = "An ancient helmet made of bronze and leather."
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES
 	armor = list(MELEE = 25, BULLET = 0, LASER = 25, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
@@ -214,7 +251,10 @@
 	desc = "Ave, Imperator, morituri te salutant."
 	icon_state = "gladiator"
 	item_state = "gladiator"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES
 	dog_fashion = null
 
@@ -227,6 +267,10 @@
 	armor = list(MELEE = 15, BULLET = 10, LASER = 20,ENERGY = 10, BOMB = 20, BIO = 0, RAD = 0, FIRE = 0, ACID = 50)
 	// Offer about the same protection as a hardhat.
 	dog_fashion = null
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/bluetaghelm
 	name = "blue laser tag helmet"
@@ -237,6 +281,10 @@
 	armor = list(MELEE = 15, BULLET = 10, LASER = 20,ENERGY = 10, BOMB = 20, BIO = 0, RAD = 0, FIRE = 0, ACID = 50)
 	// Offer about the same protection as a hardhat.
 	dog_fashion = null
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/knight
 	name = "medieval helmet"
@@ -244,7 +292,10 @@
 	icon_state = "knight_green"
 	item_state = "knight_green"
 	armor = list(MELEE = 41, BULLET = 15, LASER = 5,ENERGY = 5, BOMB = 5, BIO = 2, RAD = 0, FIRE = 0, ACID = 50)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 80
 	dog_fashion = null
@@ -279,7 +330,8 @@
 /obj/item/clothing/head/helmet/skull
 	name = "skull helmet"
 	desc = "An intimidating tribal helmet, it doesn't look very comfortable."
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = 0
 	flags_cover = HEADCOVERSEYES
 	armor = list(MELEE = 25, BULLET = 25, LASER = 25, ENERGY = 10, BOMB = 10, BIO = 5, RAD = 20, FIRE = 40, ACID = 20)
 	icon_state = "skull"
@@ -295,7 +347,8 @@
 	armor = list(MELEE = 40, BULLET = 40, LASER = 30, ENERGY = 40, BOMB = 70, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	flash_protect = 2
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -403,6 +456,10 @@
 	desc = "It can hold a bottle of vodka."
 	icon_state = "rus_helmet"
 	item_state = "rus_helmet"
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
 	armor = list(MELEE = 30, BULLET = 25, LASER = 20,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 20, FIRE = 30, ACID = 50)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/rushelmet
 
@@ -414,6 +471,10 @@
 	clothing_flags = THICKMATERIAL
 	body_parts_covered = HEAD
 	cold_protection = HEAD
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	armor = list(MELEE = 10, BULLET = 5, LASER = 5,ENERGY = 5, BOMB = 5, BIO = 50, RAD = 20, FIRE = -10, ACID = 0)
 
