@@ -2,8 +2,8 @@
 	name = "Electrical Storm"
 	typepath = /datum/round_event/electrical_storm
 	earliest_start = 10 MINUTES
-	min_players = 5
-	weight = 40
+	min_players = 10
+	weight = 50
 	alert_observers = FALSE
 
 /datum/round_event/electrical_storm
