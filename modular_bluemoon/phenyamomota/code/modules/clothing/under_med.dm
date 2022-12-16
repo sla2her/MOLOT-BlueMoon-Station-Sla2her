@@ -102,5 +102,3 @@
 	icon = 'modular_bluemoon/phenyamomota/icon/obj/clothing/under.dmi'
 	mob_overlay_icon = 'modular_bluemoon/phenyamomota/icon/mob/clothing/under.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/phenyamomota/icon/mob/clothing/under_digi.dmi'
-
-
