@@ -7,11 +7,3 @@
 
 	on_store_message = "has been teleported to CentCom."
 	on_store_name = "Teleporter Oversight"
-
-//BLUE MOON CHANGES START
-/obj/machinery/cryopod/Initialize(mapload)
-	if(!(SSticker.current_state == GAME_STATE_PLAYING) && is_station_level(src.z))
-		new /obj/structure/frame/machine(src.loc)
-		return qdel(src)
-	..()
-//BLUE MOON CHANGES END
