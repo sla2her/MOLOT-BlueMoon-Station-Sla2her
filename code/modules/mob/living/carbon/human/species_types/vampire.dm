@@ -55,8 +55,8 @@
 		C.adjustOxyLoss(-4)
 		C.adjustCloneLoss(-4)
 		return
-	if(C.blood_volume > 0.25)
-		C.blood_volume -= 0.25 //Will take roughly 39 minutes to die from standard blood volume, roughly 166 minutes to die from max blood volume.
+	if(C.blood_volume > 0.5)
+		C.blood_volume -= 0.5 //Will take roughly 19.5 minutes to die from standard blood volume, roughly 83 minutes to die from max blood volume.
 	else
 		C.adjustBruteLoss(5, 0)	//Vampires will slowly die without blood, instead of dusting
 
