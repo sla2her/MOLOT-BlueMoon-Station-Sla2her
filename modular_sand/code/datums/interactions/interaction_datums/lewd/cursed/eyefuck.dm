@@ -38,7 +38,7 @@
 				if(prob(1) && istype(partner))
 					partner.adjustBruteLoss(rand(5,7))
 	else
-		message = "forcefully slides [u_His] [genital_name] inbetween \the <b>[partner]</b>'s [partner.has_eyes() ? "eyelid":"eyesocket"]."
+		message = "с силой загоняет свой орган глубоко в глаз \the <b>[partner]</b> и громко вздыхает."
 		user.set_is_fucking(partner, CUM_TARGET_EYES, user.getorganslot(ORGAN_SLOT_PENIS))
 
 	playlewdinteractionsound(get_turf(user), pick('modular_sand/sound/interactions/champ1.ogg',
