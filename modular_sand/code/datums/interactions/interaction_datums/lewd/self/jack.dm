@@ -15,13 +15,13 @@
 
 	if(user.is_fucking(user, CUM_TARGET_HAND))
 		message = "[pick("хватается за свой член и начинает его наяривать.",
-			"настойчиво устраивает 'одиночный пикет' на пороге 'карманного митинга'.",
+			"с усердием вздрачивает свой пенис.",
 			"дёргает своё мясо.",
-			"активно теребит свой орган не без помощи своих ладоней")]"
+			"активно теребит свой орган не без помощи своих ладоней.")]"
 	else
-		message = "[pick("wraps [t_His] hand around [t_His] [genital_name].",
-			"starts to stroke [t_His] [genital_name].",
-			"starts playing with [t_His] [genital_name].")]"
+		message = "[pick("хватается за свой член и начинает его наяривать.",
+			"активно теребит свой орган не без помощи своих ладоней.",
+			"с усердием вздрачивает свой пенис.")]"
 		user.set_is_fucking(user, CUM_TARGET_HAND, user.getorganslot(ORGAN_SLOT_PENIS))
 
 	playlewdinteractionsound(get_turf(user), pick('modular_sand/sound/interactions/bang1.ogg',
