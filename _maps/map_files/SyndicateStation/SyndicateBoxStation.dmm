@@ -4865,13 +4865,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
-"akE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/fore)
 "akF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/tile/red,
@@ -44177,10 +44170,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
-"ciV" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/command/meeting_room)
 "ciW" = (
 /obj/effect/landmark/blobstart,
 /turf/open/floor/plating,
@@ -49759,9 +49748,6 @@
 /obj/structure/sign/poster/contraband/random{
 	pixel_y = 32
 	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "cHf" = (
@@ -51272,11 +51258,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/commons/arcade)
-"dGi" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/maintenance/fore/secondary)
 "dIu" = (
 /obj/structure/chair/sofa{
 	dir = 8
@@ -51757,10 +51738,6 @@
 	},
 /turf/open/floor/plating,
 /area/commons/fitness/recreation)
-"erj" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/command/bridge)
 "esK" = (
 /obj/machinery/door/airlock/maintenance/abandoned{
 	name = "Chemical Storage";
@@ -53263,10 +53240,6 @@
 "gjl" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/cargo/warehouse)
-"gmj" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/service/bar)
 "gnf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -55783,10 +55756,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/mineral/plastitanium,
 /area/service/theater)
-"klv" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/science/robotics/lab)
 "klN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -56204,10 +56173,6 @@
 /turf/open/floor/mineral/plastitanium,
 /turf/open/floor/carpet/blackred,
 /area/hallway/primary/central)
-"kPU" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/maintenance/port/aft)
 "kQa" = (
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "MedbayFoyer";
@@ -58535,15 +58500,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison/upper)
-"ojb" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/fore)
 "oka" = (
 /obj/item/sealant,
 /turf/template_noop,
@@ -62019,10 +61975,6 @@
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison/upper)
-"tID" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/security/checkpoint/supply)
 "tIE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -63417,12 +63369,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
-"vIA" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/fore)
 "vJu" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -79307,8 +79253,8 @@ upj
 amC
 nBI
 gJN
-vIA
-ojb
+amC
+auT
 aBI
 aDf
 aEK
@@ -79564,7 +79510,7 @@ amC
 aKY
 mbF
 cGf
-akE
+aKY
 aAw
 aBl
 aCZ
@@ -89369,7 +89315,7 @@ bfm
 bwe
 bwe
 bwe
-tID
+bwe
 bwe
 bwe
 bAI
@@ -90378,7 +90324,7 @@ aJs
 pQN
 aYk
 aZM
-ciV
+aZM
 bbW
 bcX
 bcX
@@ -92428,7 +92374,7 @@ aLY
 aOF
 aTQ
 aTQ
-erj
+aTQ
 aTS
 aVf
 aWM
@@ -93498,7 +93444,7 @@ bKU
 cnB
 bNI
 bNI
-kPU
+bCq
 bCq
 bCq
 bCq
@@ -94464,7 +94410,7 @@ apl
 aqc
 aqc
 aqc
-dGi
+aqc
 aqc
 aqc
 awm
@@ -95769,7 +95715,7 @@ jux
 aOE
 aJn
 aaa
-erj
+aTQ
 aUe
 aVs
 aXa
@@ -101943,7 +101889,7 @@ aQc
 aXl
 fWi
 bai
-gmj
+aJC
 bbz
 dqB
 bet
@@ -109400,7 +109346,7 @@ bbD
 bbz
 aXq
 bbz
-klv
+bfV
 bhw
 cHM
 wWT

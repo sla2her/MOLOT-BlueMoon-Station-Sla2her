@@ -1,9 +1,9 @@
 /datum/round_event_control/brand_intelligence
 	name = "Brand Intelligence"
 	typepath = /datum/round_event/brand_intelligence
-	weight = 5
+	weight = 35
 
-	min_players = 30
+	min_players = 20
 	max_occurrences = 1
 
 /datum/round_event/brand_intelligence

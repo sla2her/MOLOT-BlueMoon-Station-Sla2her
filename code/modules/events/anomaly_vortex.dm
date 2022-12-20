@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/anomaly/anomaly_vortex
 
 	min_players = 30
-	max_occurrences = 1
+	max_occurrences = 2
 	weight = 5
 
 /datum/round_event/anomaly/anomaly_vortex
