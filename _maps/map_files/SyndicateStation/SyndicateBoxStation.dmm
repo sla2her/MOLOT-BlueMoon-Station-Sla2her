@@ -10056,6 +10056,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "ayj" = (
@@ -12385,12 +12388,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
-"aFq" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/space/nearstation)
 "aFr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -13020,15 +13017,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
-"aGX" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/space/nearstation)
 "aGY" = (
 /obj/machinery/airalarm{
 	pixel_y = 25
@@ -54487,9 +54475,6 @@
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/starboard)
-"ivD" = (
-/turf/open/floor/plating,
-/area/space)
 "ivJ" = (
 /obj/structure/curtain{
 	pixel_y = -32
@@ -79820,7 +79805,7 @@ aKY
 ava
 gKo
 nBI
-amC
+auT
 azF
 azF
 azF
@@ -80077,7 +80062,7 @@ enJ
 enJ
 qlV
 nBI
-amC
+auT
 azF
 aAP
 aAP
@@ -106552,9 +106537,9 @@ apC
 aAr
 aBF
 apC
-ivD
-aFq
-aGX
+anf
+aCG
+aGW
 aIp
 sHx
 aKU
