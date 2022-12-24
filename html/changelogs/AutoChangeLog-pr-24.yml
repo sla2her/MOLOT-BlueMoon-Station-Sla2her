@@ -1,0 +1,5 @@
+author: PhenyaMomota
+delete-after: true
+changes:
+  - bugfix: Фикс углов на Синди-станции
+  - server: Добавление каталога для карт Блюмуна
