@@ -10253,7 +10253,7 @@
 "aLk" = (
 /obj/structure/alien/weeds,
 /obj/structure/bed/nest,
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "aLo" = (
 /obj/structure/lattice,
@@ -46596,7 +46596,7 @@
 /obj/structure/alien/egg/burst,
 /obj/item/clothing/mask/facehugger/impregnated,
 /obj/structure/alien/weeds/node,
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "dkX" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
@@ -56996,11 +56996,11 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "iwd" = (
-/obj/structure/alien/weeds,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
-/turf/open/space/basic,
+/obj/structure/alien/weeds,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "iwg" = (
 /obj/structure/sign/warning/pods,
@@ -57833,7 +57833,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "iUm" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -61829,7 +61829,7 @@
 	dir = 1;
 	pixel_x = 5
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "kZR" = (
 /obj/item/storage/book/bible,
@@ -69124,7 +69124,7 @@
 /area/engineering/atmos)
 "paQ" = (
 /obj/structure/alien/weeds,
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "paS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -74273,7 +74273,7 @@
 	specialfunctions = 4;
 	pixel_y = 25
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "rJT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -80703,7 +80703,7 @@
 /obj/structure/window/reinforced/tinted{
 	dir = 8
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/commons/dorms)
 "vqN" = (
 /obj/machinery/gateway/centerstation{

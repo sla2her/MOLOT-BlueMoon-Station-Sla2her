@@ -46761,7 +46761,10 @@
 /turf/closed/wall/r_wall,
 /area/tcommsat/computer)
 "clF" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 8;
+	name = "8maintenance loot spawner"
+	},
 /turf/closed/mineral/random/low_chance,
 /area/asteroid/nearstation/bomb_site)
 "clG" = (
