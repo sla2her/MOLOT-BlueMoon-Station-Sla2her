@@ -96,14 +96,15 @@
 		"Clerk",
 		"Blacksmith",
 		"Waiter",
-		"All-purpose fleshlight",
-		"All-purpose dildo",
+		"All-purpose Fleshlight",
+		"All-purpose Dildo",
 		"Cumdump",
 		"Greytider",
 		"Bard",
 		"Snack",
 		"Stress Relief",
 		"Freeloader",
+		"Syndicate Specialist",
 		"Station Pet"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -115,6 +116,8 @@
 		"Sommelier",
 		"Bar Owner",
 		"Barmaid",
+		"The Semen Degustator",
+		"Crocin Terrorist",
 		"Expediter"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -143,7 +146,9 @@
 
 /datum/job/cook/New()
 	var/list/extra_titles = list(
-		"Chef de partie",
+		"Chef De Partie",
+		"Chef De Sexe",
+		"Boss Of This Gym",
 		"Prey Prepper",
 		"Poissonier",
 		"Baker"

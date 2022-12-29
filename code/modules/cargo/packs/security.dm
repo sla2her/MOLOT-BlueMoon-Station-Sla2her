@@ -69,6 +69,15 @@
 					/obj/item/clothing/head/helmet/sec)
 	crate_name = "helmet crate"
 
+/datum/supply_pack/security/plate_carriers
+	name = "Plate Carrier Crate"
+	desc = "Contains three standard-issue cool Plate Carriers. Requires Security access to open."
+	cost = 2000
+	contains = list(/obj/item/clothing/suit/armor/hos/platecarrier,
+					/obj/item/clothing/suit/armor/hos/platecarrier,
+					/obj/item/clothing/suit/armor/hos/platecarrier)
+	crate_name = "plate carrier crate"
+
 /datum/supply_pack/security/laser
 	name = "Lasers Crate"
 	desc = "Contains three lethal, high-energy laser guns. Requires Security access to open."

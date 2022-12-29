@@ -27,8 +27,8 @@
 	outfit = /datum/outfit/job/peacekeeper
 	plasma_outfit = /datum/outfit/plasmaman/peacekeeper
 
-	access = list(ACCESS_BRIG, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP)
-	minimal_access = list(ACCESS_BRIG, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP) // See /datum/job/officer/get_access()
+	access = list(ACCESS_SECURITY, ACCESS_BRIG, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP, ACCESS_WEAPONS)
+	minimal_access = list(ACCESS_SECURITY, ACCESS_BRIG, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP, ACCESS_WEAPONS) // See /datum/job/officer/get_access()
 	paycheck = PAYCHECK_MEDIUM
 	paycheck_department = ACCOUNT_CIV
 

@@ -14,7 +14,6 @@
 		/obj/item/clothing/suit/armor/vest/stripper = 5,
 		/obj/item/clothing/suit/armor/vest/stripper/bikini = 5,
 		/obj/item/clothing/neck/petcollar/locked/security = 5,
-		/obj/item/clothing/mask/gas/sechailer/slut = 5,
 		/obj/item/grenade/secbed = 3,
 		/obj/item/dildo/flared/gigantic = 1
 	)
@@ -26,6 +25,7 @@
 	var/list/extra_products = list(
 		/obj/item/clothing/head/beret/sec/peacekeeper/cap = 5,
 		/obj/item/clothing/head/beret/sec/peacekeeper = 5,
+		/obj/item/clothing/mask/balaclava/breath = 5,
 		/obj/item/clothing/under/rank/security/officer/peacekeeper =5,
 		/obj/item/clothing/under/rank/security/officer/metrocop = 2,
 		/obj/item/clothing/under/rank/security/skirt/slut = 5,

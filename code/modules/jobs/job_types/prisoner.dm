@@ -8,6 +8,13 @@
 	spawn_positions = 6
 	supervisors = "the security team"
 	random_spawns_possible = FALSE
+	alt_titles = list(
+		"Minimum Security Prisoner",
+		"Maximum Security Prisoner",
+		"SuperMax Security Prisoner",
+		"Protective Custody Prisoner",
+		"Security Slave"
+		)
 
 	outfit = /datum/outfit/job/prisoner
 	plasma_outfit = /datum/outfit/plasmaman/prisoner
