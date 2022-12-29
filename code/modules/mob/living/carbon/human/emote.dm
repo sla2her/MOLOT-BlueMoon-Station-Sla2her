@@ -75,12 +75,12 @@
 	message = "raises a hand."
 	restraint_check = TRUE
 
-/datum/emote/living/carbon/human/salute
+/datum/emote/sound/living/carbon/human/salute
 	key = "salute"
 	key_third_person = "salutes"
 	message = "salutes."
 	message_param = "salutes to %t."
-	var/sound = 'sound/voice/salute.ogg'
+	sound = 'sound/voice/salute.ogg'
 	restraint_check = TRUE
 
 /datum/emote/living/carbon/human/shrug

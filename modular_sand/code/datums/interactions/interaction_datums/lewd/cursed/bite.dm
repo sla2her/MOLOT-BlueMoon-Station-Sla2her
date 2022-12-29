@@ -30,9 +30,10 @@
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
 			if(cli.prefs.extremeharm != "No")
-				if(prob(1))
+				if(prob(75))
 					C.bleed(150)
 					C.add_splatter_floor(get_turf(BLOOD_COLOR_HUMAN), TRUE)
+					new/obj/effect/decal/cleanable/blood
 
 	if(prob(50 + partner.get_lust()))
 		partner.visible_message("<span class='lewd'><b>\The [partner]</b> [pick("дрожит от боли.",
