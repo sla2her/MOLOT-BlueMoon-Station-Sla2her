@@ -75,14 +75,6 @@
 	message = "raises a hand."
 	restraint_check = TRUE
 
-/datum/emote/sound/living/carbon/human/salute
-	key = "salute"
-	key_third_person = "salutes"
-	message = "salutes."
-	message_param = "salutes to %t."
-	sound = 'sound/voice/salute.ogg'
-	restraint_check = TRUE
-
 /datum/emote/living/carbon/human/shrug
 	key = "shrug"
 	key_third_person = "shrugs"
@@ -170,6 +162,14 @@
 /datum/emote/sound/human
 	mob_type_allowed_typecache = list(/mob/living/carbon/human)
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/sound/human/salute
+	key = "salute"
+	key_third_person = "salutes"
+	message = "salutes."
+	message_param = "salutes to %t."
+	sound = 'sound/voice/salute.ogg'
+	restraint_check = TRUE
 
 /datum/emote/sound/human/buzz
 	key = "buzz"

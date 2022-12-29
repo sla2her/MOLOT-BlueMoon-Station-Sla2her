@@ -7,6 +7,7 @@
 /datum/interaction/pat
 	description = "Похлопать по плечу."
 	simple_message = "USER похлопал по плечу TARGET's."
+	interaction_sound = 'sound/weapons/thudswoosh.ogg'
 	require_user_hands = TRUE
 	needs_physical_contact = TRUE
 
@@ -27,11 +28,13 @@
 	require_user_hands = TRUE
 	simple_message = "USER гладит TARGET по макушке головы!"
 	needs_physical_contact = TRUE
+	interaction_sound = 'sound/weapons/thudswoosh.ogg'
 
 /datum/interaction/salute
 	description = "Исполнить Воинское Приветствие!"
 	require_user_hands = TRUE
 	simple_message = "USER исполняет воинское приветствие при виде TARGET!"
+	interaction_sound = 'sound/voice/salute.ogg'
 	max_distance = 25
 
 /datum/interaction/fistbump
@@ -57,4 +60,4 @@
 	require_user_hands = TRUE
 	simple_message = "USER хватается за руку TARGET's."
 	needs_physical_contact = TRUE
-	max_distance = 25
+	max_distance = 1
