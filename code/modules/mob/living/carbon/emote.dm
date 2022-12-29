@@ -95,6 +95,10 @@
 	key_third_person = "signals"
 	message_param = "raises %t fingers."
 
+/datum/emote/living/carbon/tail
+	key = "tail"
+	message = "waves their tail."
+
 /datum/emote/living/carbon/wink
 	key = "wink"
 	key_third_person = "winks"
