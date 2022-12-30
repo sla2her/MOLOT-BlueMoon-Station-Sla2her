@@ -1,13 +1,13 @@
 /datum/quirk/tough
 	name = "Tough"
-	desc = "Your body is abnormally enduring and can take 10% more damage."
-	value = 4
+	desc = "Your body is abnormally enduring and can take 25% more damage."
+	value = 3
 	medical_record_text = "Patient has an abnormally high capacity for injury."
 	gain_text = "<span class='notice'>You feel very sturdy.</span>"
 	lose_text = "<span class='notice'>You feel less sturdy.</span>"
 
 /datum/quirk/tough/add()
-	quirk_holder.maxHealth *= 1.1
+	quirk_holder.maxHealth *= 1.25
 
 /datum/quirk/tough/remove()
 	if(!quirk_holder)

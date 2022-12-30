@@ -31,9 +31,9 @@
 	. = ..()
 	var/mob/living/carbon/C = user
 	if(user.gender == FEMALE)
-		playsound(C, pick('sound/voice/gasp1.ogg', 'sound/voice/gasp2.ogg', 'sound/voice/gasp3.ogg'), 50, 1)
+		playsound(C, pick('sound/voice/gasp_female1.ogg', 'sound/voice/gasp_female2.ogg', 'sound/voice/gasp_female3.ogg', 'sound/voice/gasp_female4.ogg', 'sound/voice/gasp_female5.ogg', 'sound/voice/gasp_female6.ogg', 'sound/voice/gasp_female7.ogg'), 50, 1)
 	else
-		playsound(C, pick('sound/voice/gasp1.ogg', 'sound/voice/gasp2.ogg', 'sound/voice/gasp3.ogg'), 50, 1)
+		playsound(C, pick('sound/voice/gasp_male1.ogg', 'sound/voice/gasp_male2.ogg', 'sound/voice/gasp_male3.ogg', 'sound/voice/gasp_male4.ogg', 'sound/voice/gasp_male5.ogg', 'sound/voice/gasp_male6.ogg', 'sound/voice/gasp_male7.ogg',), 50, 1)
 
 /datum/emote/living/cross
 	key = "cross"
@@ -105,19 +105,19 @@
 	stat_allowed = UNCONSCIOUS
 
 /datum/emote/living/deathgasp/run_emote(mob/user, params)
-	var/mob/living/simple_animal/S = user
-	if(istype(S) && S.deathmessage)
-		message_simple = S.deathmessage
-	. = ..()
-	message_simple = initial(message_simple)
-	if(. && user.deathsound)
-		if(isliving(user))
-			var/mob/living/L = user
-			if(!L.can_speak_vocal() || L.oxyloss >= 50)
-				return //stop the sound if oxyloss too high/cant speak
-		playsound(user, user.deathsound, 200, TRUE, TRUE)
-	if(. && isalienadult(user))
-		playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
+    var/mob/living/simple_animal/S = user
+    if(istype(S) && S.deathmessage)
+        message_simple = S.deathmessage
+    . = ..()
+    message_simple = initial(message_simple)
+    if(. && user.deathsound)
+        if(isliving(user))
+            var/mob/living/L = user
+            if(!L.can_speak_vocal() || L.oxyloss >= 50)
+                return //stop the sound if oxyloss too high/cant speak
+        playsound(user, pick(user.deathsound), 200, TRUE, TRUE)
+    if(. && isalienadult(user))
+        playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
 
 /datum/emote/living/drool
 	key = "drool"

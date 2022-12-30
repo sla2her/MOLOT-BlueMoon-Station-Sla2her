@@ -49,7 +49,7 @@
 		/datum/reagent/glitter/white,
 		/datum/reagent/growthserum,
 		/datum/reagent/consumable/cornoil,
-		/datum/reagent/uranium,
+		/*/datum/reagent/uranium, bluemoon removal*/
 		/datum/reagent/carpet,
 		/datum/reagent/firefighting_foam,
 		/datum/reagent/consumable/tearjuice,
