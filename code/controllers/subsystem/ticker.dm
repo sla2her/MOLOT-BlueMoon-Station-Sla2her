@@ -333,10 +333,12 @@ SUBSYSTEM_DEF(ticker)
 			GLOB.master_mode = gamemode
 			SSticker.save_mode(gamemode)
 			message_admins("The gamemode has been set to [gamemode].")
+			to_chat("The gamemode has been set to [gamemode].") //BlueMoon edit !!!
 		else
 			GLOB.master_mode = "extended"
 			SSticker.save_mode("extended")
 			message_admins("force_gamemode proc received an invalid gamemode, defaulting to extended.")
+			to_chat("The gamemode has been set to extended.") //BlueMoon edit !!!
 
 /datum/controller/subsystem/ticker/proc/PostSetup()
 	set waitfor = FALSE
