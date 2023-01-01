@@ -183,7 +183,7 @@
 			"трёт свою ногу об вагину <b>[partner]</b>.")]"
 	else
 		message = "[pick("[shoes ? "занимает своими [shoes] позицию на" :"занимает своими ножками позицию на"] вагине <b>[partner]</b>.",
-			"начинает играться с киской <b>[partner]</b> своими [shoes ? shoes : "ногами"].")]"
+			"начинает играться с киской <b>[partner]</b> своими '[shoes ? shoes : "ногами"]'.")]"
 		partner.set_is_fucking(user, CUM_TARGET_FEET, partner.getorganslot(ORGAN_SLOT_VAGINA))
 
 	playlewdinteractionsound(get_turf(user), pick('modular_sand/sound/interactions/foot_dry1.ogg',

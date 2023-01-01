@@ -80,28 +80,28 @@
 		var/good_x = "pet"
 		switch(sub.gender)
 			if(MALE)
-				good_x = "boy"
+				good_x = "мальчик"
 			if(FEMALE)
-				good_x = "girl"
+				good_x = "девочка"
 		switch(E?.key)
 			if("snap")
 				sub.dir = get_dir(sub, quirk_holder)
-				sub.emote(pick("blush", "pant"))
-				sub.visible_message(span_notice("\The <b>[sub]</b> turns shyly towards \the <b>[quirk_holder]</b>."),
-									span_lewd("You stare into \the [quirk_holder] submissively."))
+				sub.emote(pick("вздрагивает от стыда", "резко выдыхает"))
+				sub.visible_message(span_notice("\The <b>[sub]</b> застенчиво поворачивается и начинает покорное наблюдение за \the <b>[quirk_holder]</b>. Какая молодчинка!"),
+									span_lewd("Ты покорно смотришь на \the [quirk_holder] и с трудом отводишь свой взгляд!"))
 			if("snap2")
 				sub.dir = get_dir(sub, quirk_holder)
 				sub.KnockToFloor()
-				sub.emote(pick("blush", "pant"))
-				sub.visible_message(span_lewd("\The <b>[sub]</b> submissively throws [sub.p_them()]self on the floor."),
-									span_lewd("You throw yourself on the floor like a pathetic beast on <b>[quirk_holder]</b>'s command."))
+				sub.emote(pick("вздрагивает от стыда", "резко выдыхает"))
+				sub.visible_message(span_lewd("\The <b>[sub]</b> бросается на колени и преклоняет свою голову в однозначном желании выполнить поручение <b>[quirk_holder]</b>."),
+									span_lewd("Ты бросаешься на свои колени и преклоняешь голову перед <b>[quirk_holder]</b>, будто бы какое-то животное!"))
 			if("snap3")
 				sub.KnockToFloor()
 				step(sub, get_dir(sub, quirk_holder))
-				sub.emote(pick("blush", "pant"))
+				sub.emote(pick("вздрагивает от стыда", "резко выдыхает"))
 				sub.do_jitter_animation(30) //You're being moved anyways
-				sub.visible_message(span_lewd("\The <b>[sub]</b> crawls closer to \the <b>[quirk_holder]</b> on all fours, following [quirk_holder.p_their()] command."),
-									span_lewd("You get on your hands and knees and crawl towards \the <b>[quirk_holder]</b> like a good [good_x] would."))
+				sub.visible_message(span_lewd("\The <b>[sub]</b> бросается на четвереньки к \the <b>[quirk_holder]</b> и приближается на своих коленях в готовности выполнять любые команды."),
+									span_lewd("Ты бросаешься на четвереньки и приближаешься на своих коленях к \the <b>[quirk_holder]</b> в готовности выполнять любые приказы! [good_x] в своём репертуаре."))
 		. = TRUE
 
 	if(.)
