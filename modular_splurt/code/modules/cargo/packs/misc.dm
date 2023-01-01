@@ -2,7 +2,7 @@
 	name = "M1911s"
 	desc = "A pack of 3 M1911s with 9 mags of rubber."
 	access = ACCESS_QM
-	cost = 2800
+	cost = 28000
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
 					/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
 					/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
@@ -22,7 +22,7 @@
 	name = ".22 Pistols"
 	desc = "A pack of .22 Pistols with 6 spare magazines."
 	access = ACCESS_QM
-	cost = 1700
+	cost = 17000
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/m22pistol,
 					/obj/item/gun/ballistic/automatic/pistol/m22pistol,
 					/obj/item/gun/ballistic/automatic/pistol/m22pistol,
@@ -39,7 +39,7 @@
 	name = ".22 Revolvers"
 	desc = "A pack of .22 Pistols with 3 spare boxes of ammo."
 	access = ACCESS_QM
-	cost = 1700
+	cost = 17000
 	contains = list(/obj/item/gun/ballistic/revolver/r22lr,
 					/obj/item/gun/ballistic/revolver/r22lr,
 					/obj/item/gun/ballistic/revolver/r22lr,
@@ -53,7 +53,7 @@
 	name = "9mm Pistols"
 	desc = "A pack of 9mm Pistols with 6 spare magazines of rubber."
 	access = ACCESS_QM
-	cost = 2800
+	cost = 28000
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/m9mmpistol/nomag,
 					/obj/item/gun/ballistic/automatic/pistol/m9mmpistol/nomag,
 					/obj/item/gun/ballistic/automatic/pistol/m9mmpistol/nomag,
@@ -70,7 +70,7 @@
 	name = "9mm magazines"
 	desc = "A pack of 9 9mm magazines  of rubber for the 9mm Handgun."
 	access = ACCESS_QM
-	cost = 2500
+	cost = 25000
 	contains = list(/obj/item/ammo_box/magazine/m9/rubber,
 					/obj/item/ammo_box/magazine/m9/rubber,
 					/obj/item/ammo_box/magazine/m9/rubber,
@@ -87,7 +87,7 @@
 	name = ".22 ammo boxes"
 	desc = "A pack of 6 boxes of .22 ammo."
 	access = ACCESS_QM
-	cost = 900
+	cost = 9000
 	contains = list(/obj/item/ammo_box/c22lr,
 					/obj/item/ammo_box/c22lr,
 					/obj/item/ammo_box/c22lr,
@@ -101,7 +101,7 @@
 	name = "Varmint Rifles"
 	desc = "A pack of varmint rifles with 3 spare boxes of ammo."
 	access = ACCESS_QM
-	cost = 1700
+	cost = 17000
 	contains = list(/obj/item/gun/ballistic/shotgun/varmintrifle,
 					/obj/item/gun/ballistic/shotgun/varmintrifle,
 					/obj/item/gun/ballistic/shotgun/varmintrifle,
@@ -115,7 +115,7 @@
 	name = "Hunting Rifles"
 	desc = "A pack of hunting rifles with 9 stripper clips."
 	access = ACCESS_QM
-	cost = 2800
+	cost = 28000
 	contains = list(/obj/item/gun/ballistic/shotgun/huntingrifle,
 					/obj/item/gun/ballistic/shotgun/huntingrifle,
 					/obj/item/gun/ballistic/shotgun/huntingrifle,
@@ -135,7 +135,7 @@
 	name = ".308 stripper clips"
 	desc = "A pack of 6 stripper clips of .308 ammo."
 	access = ACCESS_QM
-	cost = 1500
+	cost = 15000
 	contains = list(/obj/item/ammo_box/a308,
 					/obj/item/ammo_box/a308,
 					/obj/item/ammo_box/a308,
@@ -152,7 +152,7 @@
 	name = "Civilian Energy Pistols"
 	desc = "A pack of civlian energy pistols."
 	access = ACCESS_QM
-	cost = 1700
+	cost = 17000
 	contains = list(/obj/item/gun/energy/civilian,
 					/obj/item/gun/energy/civilian,
 					/obj/item/gun/energy/civilian)
@@ -163,7 +163,7 @@
 	name = "Hunting shotguns"
 	desc = "A pack 3 hutning shotguns with slugs and buckshot"
 	access = ACCESS_QM
-	cost = 3500
+	cost = 35000
 	contains = list(/obj/item/gun/ballistic/shotgun/hunting,
 					/obj/item/gun/ballistic/shotgun/hunting,
 					/obj/item/gun/ballistic/shotgun/hunting,

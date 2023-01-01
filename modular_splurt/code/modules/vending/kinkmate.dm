@@ -28,6 +28,8 @@
 		/obj/item/restraints/bondage_rope = 5,
 		/obj/item/clothing/under/domina = 5,
 		/obj/item/clothing/under/performer = 3,
+		/obj/item/bdsm_whip = 3,
+		/obj/item/bdsm_whip/ridingcrop = 3,
 		/obj/item/clothing/shoes/invisiboots = 10 // Added here to go with the Gear Harness
 	)
 	var/list/extra_contraband = list(

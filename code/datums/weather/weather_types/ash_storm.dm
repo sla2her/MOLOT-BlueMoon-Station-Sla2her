@@ -99,7 +99,7 @@ GLOBAL_LIST_EMPTY(ash_storm_sounds)
 	name = "emberfall"
 	desc = "A passing ash storm blankets the area in harmless embers."
 
-	weather_message = "<span class='notice'>Нежный Пепел осыпаются вокруг вас, как гротескный снег. Шторм, кажется, прошел мимо...</span>"
+	weather_message = "<span class='notice'>Нежный Пепел осыпается вокруг вас, как гротескный снег. Шторм, кажется, прошел мимо...</span>"
 	weather_overlay = "light_ash"
 
 	end_message = "<span class='notice'>Падение Пепла замедляется и останавливается. Еще один слой затвердевшей сажи на базальте под вашими ногами.</span>"
