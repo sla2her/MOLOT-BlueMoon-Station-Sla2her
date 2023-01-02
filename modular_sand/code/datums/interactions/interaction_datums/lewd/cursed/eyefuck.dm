@@ -31,11 +31,13 @@
 		if(cli && istype(C))
 			if(cli.prefs.extremeharm != "No")
 				if(prob(15))
-					C.bleed(2)
+					C.bleed(50)
+					C.add_splatter_floor(get_turf(BLOOD_COLOR_HUMAN), TRUE)
+					new/obj/effect/decal/cleanable/blood
 				if(prob(25))
 					C.adjustOrganLoss(ORGAN_SLOT_EYES, rand(10,20))
 					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(7,15))
-					partner.adjustBruteLoss(rand(5,10))
+					partner.adjustBruteLoss(rand(6,12))
 	else
 		message = "с силой загоняет свой орган глубоко в глаз \the <b>[partner]</b> и громко вздыхает."
 		user.set_is_fucking(partner, CUM_TARGET_EYES, user.getorganslot(ORGAN_SLOT_PENIS))

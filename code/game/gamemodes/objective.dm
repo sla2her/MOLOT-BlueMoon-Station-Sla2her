@@ -206,7 +206,7 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 /datum/objective/assassinate/once/update_explanation_text()
 	..()
 	if(target && target.current)
-		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или накорми ядом."
+		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или вовсе убей один раз. В итоге цель должна остаться живой!"
 		START_PROCESSING(SSprocessing,src)
 	else
 		explanation_text = "Free Objective"
@@ -228,10 +228,10 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 /datum/objective/assassinate/internal
 	var/stolen = 0 		//Have we already eliminated this target?
 
-/datum/objective/assassinate/internal/update_explanation_text()
+/*/datum/objective/assassinate/internal/update_explanation_text()
 	..()
 	if(target && !target.current)
-		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или накорми ядом."
+		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или накорми ядом."*/
 
 /datum/objective/mutiny
 	name = "mutiny"
