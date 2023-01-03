@@ -1,10 +1,10 @@
 /datum/round_event_control/pirates
 	name = "Space Pirates"
 	typepath = /datum/round_event/pirates
-	weight = 40
+	weight = 20
 	max_occurrences = 1
-	min_players = 25
-	earliest_start = 60 MINUTES
+	min_players = 30
+	earliest_start = 45 MINUTES
 	dynamic_should_hijack = TRUE
 
 #define PIRATES_ROGUES "Rogues"
@@ -28,7 +28,7 @@
 	var/ship_template
 	var/ship_name = "Space Privateers Association"
 	var/initial_send_time = world.time
-	var/response_max_time = 2 MINUTES
+	var/response_max_time = 5 MINUTES
 	switch(pirate_type)
 		if(PIRATES_ROGUES)
 			ship_name = pick(strings(PIRATE_NAMES_FILE, "rogue_names"))
@@ -37,14 +37,14 @@
 		// if(PIRATES_DUTCHMAN)
 		// 	ship_name = "Flying Dutchman"
 
-	priority_announce("Incoming subspace communication. Secure channel opened at all communication consoles.", "Incoming Message", SSstation.announcer.get_rand_report_sound(), has_important_message = TRUE)
+	priority_announce("Incoming subspace communication. Secure channel opened at all communication consoles.", "Sector Protection Offer", SSstation.announcer.get_rand_report_sound(), has_important_message = TRUE)
 	var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
 	if(D)
 		payoff = max(payoff_min, FLOOR(D.account_balance * 0.80, 1000))
 	switch(pirate_type)
 		if(PIRATES_ROGUES)
 			ship_template = /datum/map_template/shuttle/pirate/default
-			threat_msg.title = "Sector protection offer"
+			threat_msg.title = "Sector Protection Offer"
 			threat_msg.content = "Hey, pal, this is the [ship_name]. Can't help but notice you're rocking a wild and crazy shuttle there with NO INSURANCE! Crazy. What if something happened to it, huh?! We've done a quick evaluation on your rates in this sector and we're offering [payoff] to cover for your shuttle in case of any disaster."
 			threat_msg.possible_answers = list("Purchase Insurance.","Reject Offer.")
 		// if(PIRATES_SILVERSCALES)

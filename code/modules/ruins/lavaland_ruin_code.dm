@@ -157,14 +157,14 @@
 	name = "Syndicate Comms Agent"
 	job_description = "Off-station Syndicate Comms Agent"
 	short_desc = "Вы Специалист Разведки Синдиката, работающий на Аванпосту Лаваленда и изучающий аномальное поле Системы Синих Лун."
-	flavour_text = "К сожалению это или к счастью, но сотрудники вашего партнёра, Nanotrasen, начали добычу полезных ископаемых в этом секторе. Следите за вражеской активностью как можно лучше и старайтесь не высовываться. Используйте коммуникационное оборудование для оказания поддержки любым полевым агентам и сотрудникам Космической Станции."
+	flavour_text = "К сожалению это или к счастью, но сотрудники вашего партнёра, Мега-Корпрации Nanotrasen, начали добычу полезных ископаемых в этом секторе. Следите за вражеской активностью как можно лучше и старайтесь не высовываться. Используйте коммуникационное оборудование для оказания поддержки любым полевым агентам и сотрудникам Космической Станции."
 	important_info = "Не покидайте свою Базу без особой на то причины."
 	outfit = /datum/outfit/lavaland_syndicate/comms
 	canloadappearance = TRUE
 
 /obj/effect/mob_spawn/human/lavaland_syndicate/comms/space/Initialize(mapload)
 	. = ..()
-	if(prob(90)) //only has a 10% chance of existing, otherwise it'll just be a NPC syndie.
+	if(prob(50)) //only has a 10% chance of existing, otherwise it'll just be a NPC syndie.
 		new /mob/living/simple_animal/hostile/syndicate/ranged(get_turf(src))
 		return INITIALIZE_HINT_QDEL
 
