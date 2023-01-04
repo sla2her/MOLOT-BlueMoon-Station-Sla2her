@@ -374,7 +374,7 @@
 					/obj/effect/spawner/lootdrop/healing_kits,
 					/obj/effect/spawner/lootdrop/breathing_tanks,
 					/obj/effect/spawner/lootdrop/breathing_masks,
-					/obj/item/circuitboard/machine/cryptominer,
+					//BlueMoon removal
 					/obj/item/stack/sheet/bluespace_crystal
 					)
 	crate_name = "surplus crate"
