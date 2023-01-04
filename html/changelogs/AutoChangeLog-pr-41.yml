@@ -1,0 +1,5 @@
+author: PhenyaMomota
+delete-after: true
+changes:
+  - server: Включение системы донатеров.
+  - server: Добавление директории для онных.
