@@ -10,7 +10,7 @@
 	circuit = /obj/item/circuitboard/machine/cryptominer
 	var/mining = FALSE
 	var/miningtime = 3000
-	var/miningpoints = 50
+	var/miningpoints = 5
 	var/mintemp = TCRYO // 225K equals approximately -55F or -48C
 	var/midtemp = T0C // 273K equals 32F or 0C
 	var/maxtemp = 500 // 500K equals approximately 440F or 226C
