@@ -5,12 +5,12 @@
 	icon_state = "off"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 20
-	active_power_usage = 200
+	idle_power_usage = 20000
+	active_power_usage = 60000
 	circuit = /obj/item/circuitboard/machine/cryptominer
 	var/mining = FALSE
 	var/miningtime = 3000
-	var/miningpoints = 5
+	var/miningpoints = 25
 	var/mintemp = TCRYO // 225K equals approximately -55F or -48C
 	var/midtemp = T0C // 273K equals 32F or 0C
 	var/maxtemp = 500 // 500K equals approximately 440F or 226C
