@@ -45,7 +45,8 @@
 		/obj/item/storage/box/aphrodisiac_pump/plus = 3
 	)
 	var/list/extra_premium = list(
-		/obj/item/clothing/mask/muzzle/ballgag = 3
+		/obj/item/clothing/mask/muzzle/ballgag = 3,
+		/obj/item/storage/box/medipens/lewd = 2
 	)
 	LAZYADD(products, extra_products)
 	LAZYADD(contraband, extra_contraband)
