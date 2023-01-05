@@ -759,10 +759,10 @@
 /mob/living/proc/do_facefart(mob/living/carbon/target)
 	var/message
 	//var/t_His = target.p_their()
-	var/u_His = p_their()
+	//var/u_His = p_their()
 	//var/u_He = p_they()
 
-	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
+	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
 	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
 	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
 	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
@@ -789,7 +789,7 @@
 
 /mob/living/proc/do_crotchfart(mob/living/carbon/target)
 	var/message
-	var/u_His = p_their()
+	//var/u_His = p_their()
 	var/genital_name = "crotch"
 	if(target.has_penis(REQUIRE_EXPOSED) || target.has_strapon(REQUIRE_EXPOSED))
 		genital_name = target.get_penetrating_genital_name()
@@ -797,7 +797,7 @@
 		var/obj/item/organ/genital/vagina/genital = target.getorganslot(ORGAN_SLOT_VAGINA)
 		genital_name = genital.name
 
-	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
+	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
 	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
 	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
 	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
@@ -828,12 +828,12 @@
 	var/message
 	var/list/hell
 	//var/t_He = target.p_they()
-	var/t_His = target.p_their()
+	//var/t_His = target.p_their()
 	//var/u_His = p_their()
 	//var/u_He = p_they()
 	//var/genital_name = get_penetrating_genital_name()
 
-	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
+	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
 	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
 	//var/jiggle = "[t_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
 	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
@@ -901,10 +901,10 @@
 
 /mob/living/proc/do_faceshit(mob/living/carbon/target)
 	var/message
-	var/u_His = p_their()
+	//var/u_His = p_their()
 	//var/t_His = target.p_their()
 
-	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
+	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
 	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
 	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
 	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
@@ -926,7 +926,7 @@
 /mob/living/proc/do_crotchshit(mob/living/carbon/target)
 	var/message
 	//var/t_His = target.p_their()
-	var/u_His = p_their()
+	//var/u_His = p_their()
 
 	var/genital_name = "crotch"
 	if(target.has_penis(REQUIRE_EXPOSED) || target.has_strapon(REQUIRE_EXPOSED))
@@ -935,7 +935,7 @@
 		var/obj/item/organ/genital/vagina/genital = target.getorganslot(ORGAN_SLOT_VAGINA)
 		genital_name = genital.name
 
-	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
+	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
 	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
 	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
 	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
@@ -960,13 +960,13 @@
 /mob/living/proc/do_shitfuck(mob/living/carbon/target)
 	var/message
 	//var/t_He = target.p_they()
-	var/t_His = target.p_their()
+	//var/t_His = target.p_their()
 	//var/u_His = p_their()
 	//var/u_He = p_they()
 	//var/genital_name = get_penetrating_genital_name()
 
 	var/list/hell
-	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
+	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
 	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
 	//var/jiggle = "[t_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
 	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
