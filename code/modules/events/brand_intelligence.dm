@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/brand_intelligence
 	weight = 5
 
-	min_players = 30
+	min_players = 50
 	max_occurrences = 1
 
 /datum/round_event/brand_intelligence
@@ -70,7 +70,7 @@
 				M.speak = rampant_speeches.Copy()
 				M.speak_chance = 7
 			else
-				explosion(upriser.loc, -1, 1, 2, 4, 0)
+				explosion(upriser.loc, -1, -1, 2, 4, 0)
 				qdel(upriser)
 
 		kill()

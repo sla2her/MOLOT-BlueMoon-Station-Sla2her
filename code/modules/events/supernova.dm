@@ -1,9 +1,9 @@
 /datum/round_event_control/supernova
 	name = "Supernova"
 	typepath = /datum/round_event/supernova
-	weight = 15
+	weight = 2
 	max_occurrences = 1
-	min_players = 2
+	min_players = 30
 
 /datum/round_event/supernova
 	announceWhen = 40
@@ -73,6 +73,6 @@
 	weather_duration_lower = 50
 	weather_duration_upper = 100
 	telegraph_duration = 200
-	radiation_intensity = 500
+	radiation_intensity = 50
 	weather_sound = null
 	telegraph_message = "<span class='userdanger'>The air begins to grow very warm!</span>"

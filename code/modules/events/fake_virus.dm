@@ -1,7 +1,7 @@
 /datum/round_event_control/fake_virus
 	name = "Fake Virus"
 	typepath = /datum/round_event/fake_virus
-	weight = 75
+	weight = 90
 
 /datum/round_event/fake_virus/start()
 	var/list/fake_virus_victims = list()

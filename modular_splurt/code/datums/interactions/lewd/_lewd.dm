@@ -286,7 +286,7 @@
 					if(user.has_penis() || user.has_strapon())
 						//var/genital_name = user.get_penetrating_genital_name()
 						message = pick(
-							"отсасываетсам себе!.",
+							"отсасывает сам себе!.",
 							"обводит языком свой член.",
 							"проводит языком вдоль своего члена.",
 							"водит языком вокруг головки своего члена.",
@@ -372,11 +372,11 @@
 
 	if(is_fucking(user, CUM_TARGET_BREASTS))
 		message = "[pick("fucks [t_His] breasts.",
-			"молотит свой член между своих сисек.",
+			"трёт свой член между своих сисек.",
 			"трахает собственные сиськи.",
-			"хватает свой член сиськами проталкивает его между ними.")]"
+			"хватает свой член сиськами, проталкивая его между ними.")]"
 	else
-		message = "хватает свой член сиськами проталкивает его между ними."
+		message = "хватает свой член сиськами, проталкивая его между ними."
 		set_is_fucking(user, CUM_TARGET_BREASTS, getorganslot(ORGAN_SLOT_PENIS) ? getorganslot(ORGAN_SLOT_PENIS) : null)
 
 	playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/bang1.ogg',
@@ -409,7 +409,7 @@
 	var/list/nuzzles = list(
 		"толкается своим лицом в живот [target]!",
 		"целует животик [target].",
-		"толкает своё лицо в живот [target] и нежно целуется!",
+		"толкается своим лицом в живот [target] и нежно целуется!",
 		"целует и лижет пупок [target]."
 		)
 
@@ -423,11 +423,11 @@
 	if(is_fucking(partner, CUM_TARGET_BELLY))
 		message = "[pick(
 			"с силой загоняет свои гениталии в живот <b>[partner]</b>.",
-			"трётся своим членом о живот <b>[partner]</b> с чавкающим скрипом.",
-			"смотрит в глаза в ухмылке <b>[partner]</b> и довольно водит своим органом вдоль живота партнёра.",
+			"трётся своим членом о живот <b>[partner]</b> с чавкающим звуком.",
+			"смотрит в глаза <b>[partner]</b> с ухмылкой и довольно водит своим органом вдоль живота партнёра.",
 			"держится за плечи <b>[partner]</b> и с усилием потирается пенисом о живот партнёра.")]"
 	else
-		message = "pulls his [genital_name] up and slides it into \the <b>[partner]</b>'s receiving navel."
+		message = "приподнимает свой [genital_name] и вводит его в ожидающий пупок \the <b>[partner]</b>."
 		set_is_fucking(partner, CUM_TARGET_BELLY, getorganslot(ORGAN_SLOT_PENIS))
 
 	playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/champ1.ogg',
@@ -442,8 +442,8 @@
 	//var/u_His = p_their()
 	var/list/lines = list(
 		"сдавливает лицо <b>[target]</b> между своих сисек",
-		"прижимает свои сиськи к лицу <b>[target]</b>",
-		"засовывает голову <b>[target]</b> в своё декольте"
+		"прижимает свою грудь к лицу <b>[target]</b>",
+		"прижимает голову <b>[target]</b> к своему декольте"
 		)
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(lines)]</span>"
@@ -456,9 +456,9 @@
 	var/message
 	var/t_His = target.p_their()
 	var/list/lines = list("licks \the <b>[target]</b>'s sweat off [t_His] body",
-							"slurps the salty sweat running through <b>[target]</b>'s skin",
-							"has a nice taste of \the <b>[target]</b>'s drenched body",
-							"takes a whiff of \the <b>[target]</b>'s musk and drinks [t_His] warm sweat")
+							"слизывает соленый пот, стекающий по коже <b>[target]</b>",
+							"наслаждается вкусом промокшего тела \the <b>[target]</b>",
+							"вдыхает запах мускуса и пьет теплый пот \the <b>[target]</b>")
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(lines)]</span>"
 	visible_message(message, ignored_mobs = get_unconsenting())
@@ -466,12 +466,12 @@
 
 /mob/living/proc/smother_armpit(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/list/musk = list("musky", "sweaty", "damp", "smelly")
+	//var/u_His = p_their()
+	//var/list/musk = list("musky", "sweaty", "damp", "smelly")
 	var/list/lines = list(
-		"shoves \the <b>[target]</b>'s face in [u_His] [pick(musk)] armpit",
-		"squeezes \the <b>[target]</b>'s nose under [u_His] [pick(musk)] pit",
-		"makes sure to squeeze \the <b>[target]</b>'s face well under [u_His] [pick(musk)] armpit and let them take a whiff"
+		"пихает лицо  \the <b>[target]</b> в потную и соленую подмышку.",
+		"стискивает нос  \the <b>[target]</b> в мускусной подмышке.",
+		"прослеживает, чтобы лицо \the <b>[target]</b> хорошо прижималось к потной подмышке и позволяет понюхать."
 		)
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(lines)]</span>"
@@ -483,12 +483,12 @@
 
 /mob/living/proc/lick_armpit(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/list/musk = list("musky ", "sweaty ", "damp ", "smelly ", "")
+	//var/u_His = p_their()
+	//var/list/musk = list("musky ", "sweaty ", "damp ", "smelly ", "")
 	var/list/lines = list(
-		"shoves [u_His] nose deep into \the <b>[target]</b>'s armpit, giving it a big [pick(list("whiff", "lick", "nuzzle"))].",
-		"presses [u_His] face under \the <b>[target]</b>'s [pick(musk)] pit, [pick(list("tasting and lapping it all over", "sniffing its scent"))]",
-		"goes face deep into \the <b>[target]</b> [pick(musk)] armpit, worshipping it with [u_His] tongue and nose"
+		"засовывает свой нос глубже в подмышку \the <b>[target]</b>, делая небольшой [pick(list("вдох носом", "лизь", "тычок"))].",
+		"прижимает свое личико под мышкой \the <b>[target]</b> [pick(list("пробуя на вкус и облизывая", "внюхиваясь в этот запах"))]",
+		"продвигает лицо глубже в подмышку \the <b>[target]</b>, обрабатывая там все языком и носом"
 	)
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(lines)]</span>"
@@ -500,26 +500,26 @@
 
 /mob/living/proc/fuck_armpit(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/genital_name = get_penetrating_genital_name()
-	var/t_His = target.p_their()
-	var/list/musk = list("musky ", "sweaty ", "damp ", "smelly ", "")
+	//var/u_His = p_their()
+	//var/genital_name = get_penetrating_genital_name()
+	//var/t_His = target.p_their()
+	//var/list/musk = list("musky ", "sweaty ", "damp ", "smelly ", "")
 	var/list/lines
 
 	if(is_fucking(target, CUM_TARGET_ARMPIT))
 		lines = list(
-			" slides [u_His] [genital_name] back and forth under \the <b>[target]</b>'s [pick(musk)] armpit",
-			"'s [genital_name] drools pre all over \the <b>[target]</b>'s [pick(musk)] armpit, thoroughly fucking its warm embrace",
-			" shoves [u_His] [genital_name] under \the <b>[target]</b>'s arm, using [t_His] [pick(musk)] pit like a fleshlight"
+			"проводит член вперёд и назад под мышкой <b>[target]</b>",
+			"капает предэякулятом на всю потную подмышку <b>[target]</b>, грубо сношая эти теплые объятия.",
+			"толкает свой орган под руку <b>[target]</b>, используя подмышку как мастурбатор."
 		)
 	else
 		if(target.is_topless())
 			lines = list(
-				" presents [u_His] [genital_name] to \the <b>[target]</b>'s [pick(musk)] armpit, beginning to thrust its whole length right under [t_His] arm!"
+				" подставляет детородный орган к влажной подмышке \the <b>[target]</b>, начиная двигаться всей длиной прямо под рукой!"
 			)
 		else // https://cdn.discordapp.com/attachments/802990353883070474/962478553117622322/NoName-480p.mp4
 			lines = list(
-				" rips a hole through \the <b>[target]</b>'s clothes so [t_His] armpit is exposed. \The <b>[target]</b> can suddenly feel the warmth of \the <b>[src]</b>' throbbing [genital_name] sliding all the way into [t_His] [pick(musk)] pit!"
+				" делает дыру, разрывая одежду \the <b>[target]</b> так, чтобы подмышка была видна. \The <b>[target]</b> может внезапно почувствовать тепло пульсирующего члена, скользящеко по влажной и потной подмышке!"
 			)
 		set_is_fucking(target, CUM_TARGET_ARMPIT, getorganslot(ORGAN_SLOT_PENIS))
 
@@ -533,26 +533,26 @@
 
 /mob/living/proc/do_pitjob(mob/living/target)
 	var/message
-	var/list/musk = list("musky ", "sweaty ", "damp ", "smelly ", "")
-	var/u_His = p_their()
-	var/genital_name = target.get_penetrating_genital_name()
-	var/t_His = target.p_their()
+	//var/list/musk = list("musky ", "sweaty ", "damp ", "smelly ", "")
+	//var/u_His = p_their()
+	//var/genital_name = target.get_penetrating_genital_name()
+	//var/t_His = target.p_their()
 	var/list/lines
 
 	if(is_fucking(target, CUM_TARGET_ARMPIT))
 		lines = list(
-			"squeezes [u_His] armpit right into \the <b>[target]</b>'s throbbing [genital_name], massaging its length using [u_His] [pick(musk)]armpit!",
-			"presses [u_His] arm down all over \the <b>[target]</b>'s leaking [genital_name], milking it with [u_His] [pick(musk)] pit!",
-			"rubs and grinds [u_His] [pick(musk)] arpit back and forth through \the <b>[target]</b>'s [genital_name], deeply squeezing it to the base!"
+			"сжимает пульсирующий член <b>[target]</b>, массажируя всю длинну своей подмышкой!",
+			"прижимает свою руку к протекающему члену <b>[target]</b>, будто выдаивая его своей потной подмышкой!",
+			"потирает и всячески гладит свою подмышку по стержню <b>[target]</b>, глубоко сжимая прямо до основания!"
 		)
 	else
 		if(target.is_topless())
 			lines = list(
-				"presents [u_His] [pick(musk)] armpit to \the <b>[target]</b>, lifting [u_His] arm up before clamping it down into [t_His] [genital_name] with a deep squeeze!",
+				"подставляет свою подмышку к органу <b>[target]</b>, поднимая руку перед тем как сжать его!",
 			)
 		else // https://cdn.discordapp.com/attachments/802990353883070474/962478553117622322/NoName-480p.mp4
 			lines = list(
-				"softly tears a hole in the cloth on the back of [u_His] armpit, suffing \the <b>[target]</b>'s whole rod right into it with a [pick(musk)] embrace!"
+				"мягко проделывает дырку в ткани на задне стороне подмышки, погружая в объятия весь стержень!"
 			)
 		target.set_is_fucking(src, CUM_TARGET_ARMPIT, target.getorganslot(ORGAN_SLOT_PENIS))
 
@@ -566,21 +566,21 @@
 
 /mob/living/proc/do_boobjob(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/genital_name = target.get_penetrating_genital_name()
+	//var/u_His = p_their()
+	//var/genital_name = target.get_penetrating_genital_name()
 	var/list/lines
 
 	if(target.is_fucking(src, CUM_TARGET_BREASTS))
 		lines = list(
-			"slides [u_His] [pick(GLOB.breast_nouns)], up and down through \the <b>[target]</b>'s throbbing [genital_name]",
-			"squeezes [u_His] [pick(GLOB.breast_nouns)] through all of \the <b>[target]</b>'s lenght",
-			"jerks \the <b>[target]</b> off lustfully with [u_His] supple [pick(GLOB.breast_nouns)]"
+			"водит своей мягкой грудью вверх и вниз по члену <b>[target]</b>",
+			"сжимает свои сиськи вокруг длины стержня <b>[target]</b>",
+			"похотливо мастурбирует орган <b>[target]</b> с помощью своих упругих сисек"
 		)
 	else
 		lines = list(
-			"clamps [u_His] [pick(GLOB.breast_nouns)] around \the <b>[target]</b>'s throbbing [genital_name], wrapping it in their sheer warmth",
-			"envelops \the <b>[target]</b>'s hard member with [u_His] soft [pick(GLOB.breast_nouns)], giving it a tight and sloshing squeeze",
-			"lets [u_His] [pick(GLOB.breast_nouns)] fall into \the <b>[target]</b>'s fat [genital_name], smothering it in [u_His] cleavage"
+			"зажимает грудь вокруг пульсирующщего члена <b>[target]</b>, окутывая теплотой и заботой всю длину",
+			"обволакивает твердый стержень <b>[target]</b> своими сиськами, плотно и с хлюпаньем сжимая его",
+			"ползволяет своим дыням упасть прямо на жирный член <b>[target]</b>, удерживая его в декольте"
 		)
 		target.set_is_fucking(src, CUM_TARGET_BREASTS, getorganslot(ORGAN_SLOT_PENIS))
 
@@ -594,23 +594,23 @@
 
 /mob/living/proc/lick_nuts(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/t_His = target.p_their()
+	//var/u_His = p_their()
+	//var/t_His = target.p_their()
 	var/lust_increase = 1
-	var/list/balls = list("balls", "nuts", "[pick(list("cum", "spunk", "nut", "jizz", "seed"))] [pick(list("orbs", "spheres", "tanks", "holders", "churners"))]")
+	//var/list/balls = list("balls", "nuts", "[pick(list("cum", "spunk", "nut", "jizz", "seed"))] [pick(list("orbs", "spheres", "tanks", "holders", "churners"))]")
 	var/list/lines
 
 	if(target.is_fucking(src, NUTS_TO_FACE))
 		lines = list(
-			"worships \the <b>[target]</b>'s [pick(balls)] with [u_His] tongue",
-			"takes a huff of \the <b>[target]</b>'s heavy ball musk and proceeds to lap the sweat off [t_His] [pick(balls)]",
-			"plants smooches all over \the <b>[target]</b>'s heavy [pick(balls)], tasting [t_His] nutsack and massaging it with [u_His] lips"
+			"обрабатывает яички <b>[target]</b>своим языком.",
+			"нюхаует тяжелый мускусный запах семянников <b>[target]</b> и начинает слизывать с них пот.",
+			"оставляет поцелуйчики по всем шарикам <b>[target]</b>, пробуя их на вкус и массажируя губами."
 		)
 	else
 		lines = list(
-			"opens [u_His] maw and proceeds to bring \the <b>[target]</b>'s [pick(balls)] right in",
-			"uses [u_His] tongue to fit \the <b>[target]</b>'s balls in [u_His] mouth, deeply huffing their scent",
-			"willingly lets \the <b>[target]</b>'s [pick(balls)] fall into and fill [u_His] mouth, lustfully sucking into them"
+			"откровает свою пасть и позволяет семянникам <b>[target]</b> проскользнуть внутрь.",
+			"испрользует свой язык, чтобы поместить яйца <b>[target]</b> внутрь рта, внюхиваясь в этот запах.",
+			"охотно дозволяет шарам <b>[target]</b> упасть в ротовую полость, похотливо обсасывая эти сферы."
 		)
 		target.set_is_fucking(src, NUTS_TO_FACE, getorganslot(ORGAN_SLOT_PENIS))
 
@@ -620,10 +620,10 @@
 
 /mob/living/proc/do_cockfuck(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/t_His = target.p_their()
-	var/u_genital_name = get_penetrating_genital_name()
-	var/t_genital_name = target.get_penetrating_genital_name()
+	//var/u_His = p_their()
+	//var/t_His = target.p_their()
+	//var/u_genital_name = get_penetrating_genital_name()
+	//var/t_genital_name = target.get_penetrating_genital_name()
 	var/list/lines
 	var/list/noises = list(
 		'modular_sand/sound/interactions/bang1.ogg',
@@ -636,15 +636,15 @@
 
 	if(is_fucking(target, CUM_TARGET_URETHRA))
 		lines = list(
-			"humps right into \the <b>[target]</b>'s [t_genital_name], stretiching it as their balls slam together",
-			"slides [u_His] [u_genital_name] all the way down \the <b>[target]</b>'s own throbbing [t_genital_name], [t_His] urethra is so tight!",
-			"rams [u_His] [u_genital_name] back and forth through \the <b>[target]</b>'s urethra, giving it a very nice fucking"
+			"трахает член <b>[target]</b>, растягивая его, своими яичками встречаясь с чужими с негромкими шлепками.",
+			"проскальзывает своим членом внутрь конца <b>[target]</b>, ощущая всю узкость уретры!",
+			"вонзает свой член и двигается взад-вперед в уретре <b>[target]</b>, невообразимо сношая эту маленькую дырочку."
 		)
 	else
 		lines = list(
-			"'s tip gently smooches \the <b>[target]</b>'s, right before forcing its way right down [t_His] dickhole",
-			"grinds [u_His] tip against \the <b>[target]</b>'s [t_genital_name], only to slide [u_His] whole [ui_ai_alerts] all the way down to [t_His] base",
-			"makes \the <b>[target]</b>'s fat [t_genital_name] stretch and throb as the size of [u_His] [u_genital_name] makes its way right in"
+			"кончиком целует конец <b>[target]</b>, прямо перед тем как вдавить свою длину прямо в уретру.",
+			"проводит своим концом члена по органу <b>[target]</b>, только для того, чтобы ввести свой орган прямо до упора внутрь.",
+			"завставляет жирный член <b>[target]</b> растянуться и пульсировать, как только прибор находит свой путь глубже."
 		)
 		set_is_fucking(target, CUM_TARGET_URETHRA, getorganslot(ORGAN_SLOT_PENIS))
 
@@ -661,23 +661,23 @@
 	var/list/lines
 	var/u_His = p_their()
 	var/genital_name = get_penetrating_genital_name()
-	var/t_His = target.p_their()
+	//var/t_His = target.p_their()
 	if(is_fucking(target, CUM_TARGET_NIPPLE) && target.has_breasts(REQUIRE_EXPOSED))
 		lines = list(
-			"slides [u_His] [genital_name] back and forth into \the <b>[target]</b>'s nipple",
-			"thrusts in and out of \the <b>[target]</b>'s leaky and puffy nip, making [t_His] [pick(GLOB.breast_nouns)] slosh and leak",
-			"'s balls slap loudly against \the <b>[target]</b>'s jostling [pick(GLOB.breast_nouns)] as [t_His] nipple swallows [u_His] [genital_name] whole"
+			"вводит его член внутрь соска <b>[target]</b> и двигается в обратном направлении.",
+			"двигается внутри текущего и пухлого сосочка <b>[target]</b>, вынуждая его хлюпать и протекать.",
+			"шлепает своими семянниками по груди <b>[target]</b>, как в то же время сосок прогладывает всю длинну члена."
 		)
 	else if(target.has_breasts(REQUIRE_EXPOSED))
 		lines = list(
-			"presses [u_His] throbbing tip against \the <b>[target]</b>'s puffy nipple, forcing the whole lenght all the way in with a wet smack",
+			"прижимает свой пульсирующий конец к пухлому соску <b>[target]</b>, вдавливая всю длину до упора с влажным шлепком",
 			"stretches \the <b>[target]</b>'s nipple with his fingers, before forcing it open with the whole girth of [u_His] twitching [genital_name]"
 		)
 	else
 		lines = list(
-			"rubs [u_His] tip gently against \the <b>[target]</b>'s [pick("nipple", "chest")]",
-			"slaps [u_His] snaky [genital_name] into \the <b>[target]</b>'s chest",
-			"smooches \the <b>[target]</b>'s nipple with [u_His] dickhole"
+			"нежно потирает свой кончик о сосок <b>[target]</b>.",
+			"шлепает своей змеей по груди <b>[target]</b>.",
+			"целует сосок <b>[target]</b> своей уретрой."
 		)
 
 	if(!is_fucking(target, CUM_TARGET_NIPPLE))
@@ -695,21 +695,21 @@
 /mob/living/proc/do_thighfuck(mob/living/target)
 	var/message
 	var/list/lines
-	var/u_His = p_their()
-	var/genital_name = get_penetrating_genital_name()
-	var/t_His = target.p_their()
+	//var/u_His = p_their()
+	//var/genital_name = get_penetrating_genital_name()
+	//var/t_His = target.p_their()
 
 	if(is_fucking(target, CUM_TARGET_THIGHS))
 		lines = list(
-			"thrusts in and out of \the <b>[target]</b>'s [pick("pudgy ", "soft ", "")]thighs, making them jiggle",
-			"lustfully rolls [u_His] [genital_name] back and forth between \the <b>[target]</b>'s thighs",
-			"vigorously fucks \the <b>[target]</b>'s legs, making [u_His] tip pop in and out of [t_His] supple thighs"
+			"входит внутрь ляжек <b>[target]</b> и выходит наружу, заставляя бёдра трястись как желе.",
+			"похотливо скользит своим членом туда-сюда между бёдер <b>[target]</b>",
+			"решительно трахает ноги \the <b>[target]</b>, заставляя свой кончик проталкиваться взад-вперед между этих упругих ляжек."
 		)
 	else
 		lines = list(
-			"presses [u_His] tip against \the <b>[target]</b>'s [pick("pudgy ", "soft ", "")] thighs, soon shoving [u_His] whole lenght right in between them",
-			"presents [u_His] [genital_name] to \the <b>[target]</b>'s legs, ramming its full size right into [t_His] thigh lock",
-			"smooches \the <b>[target]</b>'s crotch with [u_His] throbbing tip, right before piercing between [t_His] thighs with [u_His] full [genital_name]"
+			"прижимает свой кончик к мягким ляжкам <b>[target]</b>, вскоре проталкивая всю длинну прямо между ними. ",
+			"подставляет свой член к ногам <b>[target]</b>, вонзая во весь его размер в объятия бёдер.",
+			"целует междуножье <b>[target]</b> своим кончиком, прямо перед тем как протиснуться между бёдер всем членом."
 		)
 		set_is_fucking(target, CUM_TARGET_THIGHS, getorganslot(ORGAN_SLOT_PENIS))
 
@@ -725,22 +725,22 @@
 /mob/living/proc/do_thighjob(mob/living/target)
 	var/message
 	var/list/lines
-	var/u_His = p_their()
-	var/genital_name = target.get_penetrating_genital_name()
-	var/t_He = target.p_they()
-	var/t_His = target.p_their()
+	//var/u_His = p_their()
+	//var/genital_name = target.get_penetrating_genital_name()
+	//var/t_He = target.p_they()
+	//var/t_His = target.p_their()
 
 	if(target.is_fucking(src, CUM_TARGET_THIGHS))
 		lines = list(
-			"grinds and presses [u_His] thighs [pick("deeply ", "")] against \the <b>[target]</b>'s [genital_name], massaging it all over with [u_His] thighs",
-			"squeezes \the <b>[target]</b>'s [genital_name] between [u_His] supple thighs, smothering it deep under [u_His] crotch",
-			"rides \the <b>[target]</b>'s [genital_name] with [u_His] [pick("pudgy ", "soft ", "")]thighs, [t_He] can feel [u_His] flesh smothering it down"
+			"потирает и прижимает бедра к члену <b>[target]</b>, массажируя всю длинну с помощью ляжек.",
+			"сдавливает член  <b>[target]</b> между своими упругими бедрами, придушивая его прямо под своей промежностью.",
+			"скачет на члене <b>[target]</b> своими мягкими ляжками, позволяя ощутить эту душащую плоть."
 		)
 	else
 		lines = list(
-			"presents [u_His] [pick("pudgy ", "soft ", "")] thighs to \the <b>[target]</b>'s [genital_name], slamming them right into it[pick(" with a [pick("wet ", "")]smack", "")]",
-			"grinds \the <b>[target]</b>'s tip against [u_His] supple thighs, before slamming them right down into [t_His] [genital_name]",
-			"forces \the <b>[target]</b>'s [genital_name] right into the tight hold of [u_His] thighs, giving it a deep and lewd squeeze"
+			"представляет свои мягкие ляжки <b>[target]</b>, вдалбливая член прямо между ними с смачным шлепком.",
+			"проводит кончиком члена <b>[target]</b> по упругим бедрам, перед тем как позволить стержню вломиться меж ними.",
+			"загоняет член <b>[target]</b> прямо в крепкий захват своих ляжек, глубоко и непристойно сжимая его."
 		)
 		target.set_is_fucking(src, CUM_TARGET_THIGHS, target.getorganslot(ORGAN_SLOT_PENIS))
 
@@ -758,26 +758,26 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 /mob/living/proc/do_facefart(mob/living/carbon/target)
 	var/message
-	var/t_His = target.p_their()
+	//var/t_His = target.p_their()
 	var/u_His = p_their()
-	var/u_He = p_they()
+	//var/u_He = p_they()
 
 	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/braps = list(
-		"rips a [pick(list("massive", "fat", "engulfing", "breathtaking"))][pick(list(", [pick(stank)]", ""))] one",
-		"[pick(list("", "wetly", "loudly"))] [pick(list("braps", "farts", "rips ass"))]",
-		"lets out some of that [pick(stank)] [pick(list("gas", "flatulence", "anal hurricane"))]",
-		"lets [u_His] shitter drop a [pick(list("large", "fat", "greasy"))] gas bomb",
-		"allows [u_His] [pick(ass)] to rip an enormous, greasy gas cloud"
-	)
+	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
+	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	/*var/list/braps = list(
+		"выдает массивный, зловонный метеоризм.",
+		"громко разрывает задницу, выпуская клуб пахнущего газа.",
+		"выпусакет немного вонючего газа.",
+		"сбрасывает вонючую газовую бомбу.",
+		"позволяет заднице расслабиться, выпуская ненормальное количество зловонного облака газа."
+	)*/
 	var/list/hell = list(
-		"'s asshole squints as she shoves \the <b>[target]</b>'s face in between [u_His] sweaty [pick(asscheeks)], letting hell go loose!",
-		" pushes [u_His] [pick(ass)] into \the <b>[target]</b>'s face, [pick(list("[t_His] nose shoved deep in [src]'s musky butthole", "[u_His] asshole sqints"))] as [u_He] [pick(braps)][pick(list("", ", [jiggle]"))]",
-		" smothers \the [target]'s whole head in between [u_His][pick(list(" sweaty", "", " musky"))] [pick(asscheeks)], pushing out gallons of pure braps. [pick(list("", "[jiggle]"))]",
-		"'s [pick(ass)] claps against \the <b>[target]</b>'s nose, right before [u_He] [pick(braps)]"
+		"вжимается жопой в лицо <b>[target]</b>, сжимая анус и позволяет грому разреветься!",
+		" толкает свою задницу на лицо <b>[target]</b>, зарывая нос в вонючую дырочку, как оттуда сразу же вырывается поток газа.",
+		" душит smothers [target], зажимая целую голову между пахущих ягодиц, выталкивая оттуда дуновения зловония.",
+		" задницей шлепает о нос <b>[target]</b>, прямо перед тем как смачно позволить аду вырваться на свободу."
 	)
 
 	message = "<span class='lewd'>\The <b>[src]</b>[pick(hell)]</span>"
@@ -798,20 +798,20 @@
 		genital_name = genital.name
 
 	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/braps = list(
-		"rips a [pick(list("massive", "fat", "engulfing", "breathtaking"))][pick(list(", [pick(stank)]", ""))] one",
-		"[pick(list("", "wetly", "loudly"))] [pick(list("braps", "farts", "rips ass"))]",
-		"lets out some of that [pick(stank)] [pick(list("gas", "flatulence", "anal hurricane"))]",
-		"lets [u_His] shitter drop a [pick(list("large", "fat", "greasy"))] gas bomb",
-		"allows [u_His] [pick(ass)] to rip an enormous, greasy gas cloud."
-	)
+	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
+	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	/*var/list/braps = list(
+		"выдает массивный, зловонный метеоризм.",
+		"громко разрывает задницу, выпуская клуб пахнущего газа.",
+		"выпусакет немного вонючего газа.",
+		"сбрасывает вонючую газовую бомбу.",
+		"позволяет заднице расслабиться, выпуская ненормальное количество зловонного облака газа."
+	)*/
 	var/list/hell = list(
-		" pushes [u_His] [pick(ass)] into \the <b>[target]</b>'s crotch, [pick(list("ripping a fat[pick(list("", " and [pick(stank)]"))] one", " and subsequently [pick(braps)]"))][pick(list("", ". [jiggle]"))]",
-		" and \the <b>[target]</b> can smell the [prob(50) ? pick(stank) : "flatulent"] gas fill the room ass it seeps in between \the <b>[target]</b>'s thighs!",
-		" [pick(braps)] into \the <b>[target]</b>'s [genital_name]"
+		" толкает свою жопу прямо на промежность <b>[target]</b>, выдавая смачные и вонючие газы.",
+		" и <b>[target]</b> могут почувствовать запах зловония, заполняющего комнату, когда жопа просачивается между ляжек <b>[target]</b>!",
+		" пукает прямо на гениталии <b>[target]</b>"
 	)
 
 	message = "<span class='lewd'>\The <b>[src]</b>[pick(hell)]</span>"
@@ -827,35 +827,35 @@
 /mob/living/proc/do_fartfuck(mob/living/target)
 	var/message
 	var/list/hell
-	var/t_He = target.p_they()
+	//var/t_He = target.p_they()
 	var/t_His = target.p_their()
-	var/u_His = p_their()
-	var/u_He = p_they()
-	var/genital_name = get_penetrating_genital_name()
+	//var/u_His = p_their()
+	//var/u_He = p_they()
+	//var/genital_name = get_penetrating_genital_name()
 
 	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	var/jiggle = "[t_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "brapping", "noisy", "quaking", "musky")
-	var/list/braps = list(
-		"rips a [pick(list("massive", "fat", "engulfing", "breathtaking"))][pick(list(", [pick(stank)]", ""))] one",
-		"[pick(list("", "wetly", "loudly"))] [pick(list("braps", "farts", "rips ass"))]",
-		"lets out some of that [pick(stank)] [pick(list("gas", "flatulence", "anal hurricane"))]",
-		"lets [u_His] shitter drop a [pick(list("large", "fat", "greasy"))] gas bomb",
-		"allows [u_His] [pick(ass)] to rip an enormous, greasy gas cloud."
-	)
+	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
+	//var/jiggle = "[t_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	//var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "brapping", "noisy", "quaking", "musky")
+	/*var/list/braps = list(
+		"выдает массивный, зловонный метеоризм.",
+		"громко разрывает задницу, выпуская клуб пахнущего газа.",
+		"выпусакет немного вонючего газа.",
+		"сбрасывает вонючую газовую бомбу.",
+		"позволяет заднице расслабиться, выпуская ненормальное количество зловонного облака газа."
+	)*/
 	if(is_fucking(target, CUM_TARGET_ANUS))
 		hell = list(
-			"thrusts in and out of \the <b>[target]</b>'s [pick(stankhole)] pucker, making it [pick("fumigate <b>[src]</b>'s [genital_name] with farts", "push out an unholy amount of ass gas")].",
-			"pounds \the <b>[target]</b>'s ass. [t_He] [pick(braps)]",
-			"slams [u_His] hips up against \the <b>[target]</b>'s [pick(stankhole)] [pick(ass)] hard, causing a massive surge of [pick(list("farts", "butt methane", "brap", "ass gas", "shit winds", "thick flatulence"))] from [t_His] [pick(list("crack", "canyon"))][prob(50) ? ". [jiggle]" : ""]",
-			"goes balls deep into \the <b>[target]</b>'s [pick(ass)] over and over again. [t_He] can't stop pumping out [pick("", "[pick(stank)] ")] [pick(list("farts", "butt methane", "brap", "ass gas", "shit winds", "thick flatulence"))] from his wobbling [pick(asscheeks)]")
+			"двигается внутри задницы <b>[target]</b>, вынуждая нечестивые количества зловония вырываться наружу.",
+			"проникает в жопу <b>[target]</b>, заставляя метеоризм проявиться.",
+			"шлепается бедрами о задницу <b>[target]</b>, вызывая массовый всплеск газа из расщелины.",
+			"загоняет по самые яйца в жопу <b>[target]</b>' снова и снова, не останавливаясь выдавливать вонючие газы из раскачивающейся задницы.")
 	else
 		hell = list(
-			"can already smell the stench as [u_He] works [u_His] [genital_name] into \the <b>[target]</b>'s brap hole, being received by a long and warm backblast.",
-			"grabs the base of [u_His] twitching [genital_name] and presses the tip into \the <b>[target]</b>'s asshole, acting like a valve that unearths impossible amounts of pure, [pick(stank)] flatulence.",
-			"shoves their [genital_name] deep inside of \the <b>[target]</b>'s [pick(ass)], [t_He] [pick(braps)][pick("", ". [jiggle]")]")
+			"может почувствовать зловоние, когда проникает в маленькую дыру <b>[target]</b>, получая длинный и теплый заряд.",
+			"хватает основание члена и прижимает кончик прямо к аналу <b>[target]</b>, действуя как клапан, выпускающий невозможное количество чистого зловония.",
+			"проталкивет свой член глубоко в жопу \the <b>[target]</b>, заставляя вырваться наружу легкий поток газа.")
 		set_is_fucking(target, CUM_TARGET_ANUS, getorganslot(ORGAN_SLOT_PENIS))
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(hell)]</span>"
@@ -874,22 +874,22 @@
 /mob/living/proc/suck_fart(mob/living/target)
 	var/message
 	var/list/hell
-	var/t_His = target.p_their()
-	var/u_His = p_their()
+	//var/t_His = target.p_their()
+	//var/u_His = p_their()
 
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "brapping", "noisy", "quaking", "musky")
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	//var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "brapping", "noisy", "quaking", "musky")
 
 	if(is_fucking(target, GRINDING_FACE_WITH_ANUS))
 		hell = list(
-			"smooches and sucks \the <b>[target]</b>'s [pick(pick(stankhole) + " ", "")] pucker, gulping down a whole barrage of [pick(stank)] flatulence!",
-			"pierces \the <b>[target]</b>'s [pick(pick(stankhole) + " ", "")] butthole with [u_His] tongue, making a [pick(stank)] burst out!",
-			"sucks into \the <b>[target]</b>'s [pick(pick(stankhole) + " ", "")] asshole, gulping down [t_His] [pick(stank)] gas!"
+			"зацеловывает и сосет отходную дыру <b>[target]</b>, проглатывая целый шквал метеоризма!",
+			"проникает в анус <b>[target]</b> с помощью языка, заставляя вонь вырваться наружу!",
+			"засасывает жопу <b>[target]</b>, проглатывая вонючий газ!"
 		)
 	else
 		hell = list(
-			"presses [u_His] face right into \the <b>[target]</b>'s [pick(list("musky ", "sweaty ", ""))] backside, spreading [t_His] butthole open to begin harvesting [t_His] [pick(stank) + " "] farts!",
-			"uses [u_His] lips to spread \the <b>[target]</b>'s [pick(stankhole) + " "] butthole, starting to suck the flatulence out of it!"
+			"прижимает свое лицо прямо к заднему отверстию <b>[target]</b>, раздвигая его и начиная сбор вонючего газа!",
+			"использует губы, чтобы раздвинуть грязную дырочку <b>[target]</b>, начиная высасывать все потоки метеоризма оттуда!"
 		)
 		set_is_fucking(target, GRINDING_FACE_WITH_ANUS, null)
 
@@ -902,18 +902,18 @@
 /mob/living/proc/do_faceshit(mob/living/carbon/target)
 	var/message
 	var/u_His = p_their()
-	var/t_His = target.p_their()
+	//var/t_His = target.p_their()
 
 	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "shitting", "noisy", "quaking", "musky", "messy", "shitcaked", "nasty")
+	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
+	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	//var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "shitting", "noisy", "quaking", "musky", "messy", "shitcaked", "nasty")
 
 	var/list/hell = list(
-		"presses [u_His] [pick(stankhole)] [pick(ass)] into \the <b>[target]</b>'s face, coating it in a [pick(stank)] layer of brown",
-		"makes sure \the <b>[target]</b>'s mouth is wide open, letting out a greasy, [pick(stank)] log of manure right into it. [jiggle]",
-		"smothers \the <b>[target]</b>'s face in between [u_His] musky, dirty asscheeks, [pick(list("", "letting out a [pick(stank)] fart and"))] sliding a monster turd right into [t_His] mouth"
+		"прижимает свою жопу к лицу <b>[target]</b>', покрывая все слоем коричневого цвета.",
+		"убеждается в том, чтобы рот <b>[target]</b> был широко разинут, выпуская наружу жирный поток отходной жижи внутрь.",
+		"придушивает лицо <b>[target]</b> между мускусными, грязными ягодицами, вводя монструозную порцию фекалий прямо в рот."
 	)
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(hell)]</span>"
@@ -925,7 +925,7 @@
 
 /mob/living/proc/do_crotchshit(mob/living/carbon/target)
 	var/message
-	var/t_His = target.p_their()
+	//var/t_His = target.p_their()
 	var/u_His = p_their()
 
 	var/genital_name = "crotch"
@@ -936,15 +936,15 @@
 		genital_name = genital.name
 
 	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "shitting", "noisy", "quaking", "musky", "messy", "shitcaked", "nasty")
+	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
+	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	//var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "shitting", "noisy", "quaking", "musky", "messy", "shitcaked", "nasty")
 
 	var/list/hell = list(
-		"presses [u_His] [pick(stankhole)] [pick(asscheeks)] right against \the <b>[target]</b>'s crotch, unleashing pounds of warm crap all over [t_His] [genital_name] [prob(50) ? ". [jiggle]" : ""]",
-		"shoves [u_His][pick(list("", " [pick(stank)],"))] shitting [pick(ass)] into \the <b>[target]</b>'s thighs and coats everything in between them with [pick("", "gas and ")] slick slop",
-		"shits uncontrollably all over \the <b>[target]</b>'s [genital_name][prob(50) ? "" : ". [jiggle]"]"
+		"прижимает свои ягодицы к промежности <b>[target]</b>, покрывая все большим количеством теплого дерьма,",
+		"пихает испражняющуюся жопу прямо к ляжкам <b>[target]</b> и покрывает все между ними скользкой жижой.",
+		"некотролируемо испражняется прямо на гениталии <b>[target]</b>."
 	)
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(hell)]</span>"
@@ -959,30 +959,30 @@
 
 /mob/living/proc/do_shitfuck(mob/living/carbon/target)
 	var/message
-	var/t_He = target.p_they()
+	//var/t_He = target.p_they()
 	var/t_His = target.p_their()
-	var/u_His = p_their()
-	var/u_He = p_they()
-	var/genital_name = get_penetrating_genital_name()
+	//var/u_His = p_their()
+	//var/u_He = p_they()
+	//var/genital_name = get_penetrating_genital_name()
 
 	var/list/hell
 	var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	var/jiggle = "[t_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "shitting", "noisy", "quaking", "musky", "messy", "shitcaked", "nasty")
+	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
+	//var/jiggle = "[t_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	//var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "shitting", "noisy", "quaking", "musky", "messy", "shitcaked", "nasty")
 
 	if(is_fucking(target, CUM_TARGET_ANUS))
 		hell = list(
-			"thrusts in and out of \the <b>[target]</b>'s [pick(stank)] shit-lubed pucker, making it squeak and expulse heavy gases and waste.",
-			"pounds \the <b>[target]</b>'s ass. [t_He] just can't stop pumping out slop!",
-			"slams [u_His] hips up against \the <b>[target]</b>'s [pick(stankhole)] [pick(ass)] hard, causing a massive surge of manure from [t_His] [pick(list("crack", "canyon"))][prob(50) ? ". [jiggle]" : ""]",
-			"goes balls deep into \the <b>[target]</b>'s dirty [pick(ass)] over and over again. [u_His] [genital_name] comes completely coated brown from in between the bouncing [pick(asscheeks)]")
+			"толкает член внутрь и выводит наружу в смазанном дерьмом анусе <b>[target]</b>, заставляя его просвистеть и выпустить тяжелые газы и отходы.",
+			"сношает жопу <b>[target]</b>, не переставая выталкивать отходы!",
+			"жестко хлопается своими ляжками о ягодицы <b>[target]</b>,  вызывая большой выброс навоза из этой расщелины.",
+			"вгоняет по самые яйца глубого в грязную жопу <b>[target]</b> снова и снова, от чего член полностью покрывается в коричневый цвет между прыгающих ягодиц.")
 	else
 		hell = list(
-			"can already smell the stench as [u_He] works [u_His] [genital_name] into \the <b>[target]</b>'s dung hole, being received by warm, wet and nasty feeling all over it.",
-			"grabs the base of [u_His] twitching [genital_name] and presses the tip into \the <b>[target]</b>'s asshole, immediately shoving it right into a fat and moisty log",
-			"shoves [genital_name] deep inside of \the <b>[target]</b>'s [pick(ass)], [t_He] releases a massive amount of mush to greet the rod[pick("", ". [jiggle]")]")
+			"чувствует вонь, пока член отрабатывает свое в навозной дырке, наслаждаясь влажным и противным ощущением.",
+			"хватает основание дергающегося члена и прижимает кончик к анусу <b>[target]</b>, немедленно проталкивая его внутрь жирного и влажного входа.",
+			"вталкивает член глубоко внутрь жопы <b>[target]</b>, заставляя высвободиться огромное количество кашицы, приветствуя этот стержень.")
 		set_is_fucking(target, CUM_TARGET_ANUS, getorganslot(ORGAN_SLOT_PENIS))
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(hell)]</span>"
@@ -1010,12 +1010,12 @@
 	if(is_fucking(target, GRINDING_FACE_WITH_ANUS))
 		hell = list(
 			"целует и засасывает жопу <b>[target]</b>, проглатывая целую колбасу дерьма!",
-			"проникает в анус <b>[target]</b> своим языком, заставляя его насрать себе прямо в глотку!",
+			"проникает в анус <b>[target]</b> своим языком, заставляя его испражниться прямо себе в глотку!",
 		)
 	else
 		hell = list(
 			"прижимает своё лицо к потной заднице <b>[target]</b>, поедая его дерьмо!",
-			"использует свои губы чтобы открыть ансу <b>[target]</b> и высосать дерьмо из его задницы своим ртом!"
+			"использует свои губы чтобы открыть анус <b>[target]</b> и высосать дерьмо из его задницы своим ртом!"
 		)
 		set_is_fucking(target, GRINDING_FACE_WITH_ANUS, null)
 
@@ -1047,7 +1047,7 @@
 	var/list/hell = list(
 		"опустошает свой мочевой пузырь в рот <b>[target]</b> наполняя его тёплой мочёй",
 		"покрывает глотку <b>[target]</b> золотым дождём ",
-		"издаёт стоны наслаждения, наблюдая как золотой дождь проливается на губы <b>[target]</b>"
+		"издаёт стоны наслаждения, наблюдая как жёлтая жидкость проливается на губы <b>[target]</b>"
 	)
 
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(hell)]</span>"
