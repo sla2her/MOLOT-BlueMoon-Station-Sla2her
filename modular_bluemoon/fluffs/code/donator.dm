@@ -13,7 +13,7 @@
 	name = "Crown of Pure Tyranny"
 	slot = ITEM_SLOT_HEAD
 	path = /obj/item/clothing/head/donator/bm/pt_crown
-	ckeywhitelist = list("snacksman")
+	ckeywhitelist = list("snacks_man")
 
 /datum/gear/donator/bm/modern_watch
 	name = "modern watch"
