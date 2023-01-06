@@ -75,6 +75,7 @@
 	desc = "A close-fitting tactical mask that can be connected to an air supply."
 	icon_state = "syndicate"
 	strip_delay = 60
+	armor = list(MELEE = 10, BULLET = 5, LASER = 5,ENERGY = 5, BOMB = 0, BIO = 75, RAD = 25, FIRE = 25, ACID = 5)
 
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"

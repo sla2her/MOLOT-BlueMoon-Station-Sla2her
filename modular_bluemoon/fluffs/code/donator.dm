@@ -13,7 +13,7 @@
 	name = "Crown of Pure Tyranny"
 	slot = ITEM_SLOT_HEAD
 	path = /obj/item/clothing/head/donator/bm/pt_crown
-	ckeywhitelist = list("snacks man")
+	ckeywhitelist = list("snacksman")
 
 /datum/gear/donator/bm/modern_watch
 	name = "modern watch"
@@ -21,7 +21,7 @@
 	path = /obj/item/clothing/wrists/donator/bm/modern_watch
 	ckeywhitelist = list("zar_shef")
 
-/datum/gear/donator/bm/pt_crown
+/datum/gear/donator/bm/gaston
 	name = "Gaston"
 	slot = ITEM_SLOT_BACKPACK
 	path = /obj/item/toy/plush/chaotic_toaster/gaston
@@ -32,3 +32,9 @@
 	slot = ITEM_SLOT_HEAD
 	path = /obj/item/clothing/head/donator/bm/blueflame
 	ckeywhitelist = list("weirdbutton")
+
+/datum/gear/donator/bm/gorka
+	name = "Gorka"
+	slot = ITEM_SLOT_ICLOTHING
+	path = /obj/item/clothing/under/donator/bm/gorka
+	ckeywhitelist = list("leony24")
