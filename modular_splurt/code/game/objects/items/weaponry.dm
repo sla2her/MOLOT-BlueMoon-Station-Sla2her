@@ -25,13 +25,6 @@
 		user.visible_message("<span class='suicide'>[user] is getting just a little too kinky!</span>")
 		return (OXYLOSS)
 
-/obj/item/bdsm_whip/attack(mob/M, mob/user)
-	if(user.zone_selected == BODY_ZONE_PRECISE_GROIN)
-		playsound(loc, 'sound/weapons/whip.ogg', 30)
-		M.visible_message("<span class='userdanger'>[user] has [pick(attack_verb)] [M] on the ass!</span>")
-	else
-		return ..(M, user)
-
 /obj/item/khopesh
 	name = "khopesh"
 	desc = "An sickle-shaped sword that evolved from battle axes"
