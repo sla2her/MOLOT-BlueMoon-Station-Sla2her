@@ -65,7 +65,7 @@
 /obj/item/projectile/energy/electrode/c45
 	tase_duration = 40
 	knockdown = 10
-	stamina = 10
+	stamina = 15
 	knockdown_stamoverride = 5
 	knockdown_stam_max = 40
 	strong_tase = FALSE

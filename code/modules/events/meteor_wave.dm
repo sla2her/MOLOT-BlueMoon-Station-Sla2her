@@ -6,16 +6,16 @@
 /datum/round_event_control/meteor_wave
 	name = "Meteor Wave: Normal"
 	typepath = /datum/round_event/meteor_wave
-	weight = 2
-	min_players = 40
-	max_occurrences = 3
-	earliest_start = 90 MINUTES
+	weight = 1
+	min_players = 60
+	max_occurrences = 1
+	earliest_start = 120 MINUTES
 
 /datum/round_event/meteor_wave
 	startWhen		= 6
 	endWhen			= 66
 	announceWhen	= 1
-	threat = 15
+	threat = 50
 	var/list/wave_type
 	var/wave_name = "normal"
 	var/direction
@@ -35,8 +35,8 @@
 /datum/round_event/meteor_wave/proc/determine_wave_type()
 	if(!wave_name)
 		wave_name = pickweight(list(
-			"normal" = 80,
-			"threatening" = 15,
+			"normal" = 90,
+			"threatening" = 5,
 			"catastrophic" = 5))
 	if(!direction)
 		direction = pick(GLOB.cardinals)
@@ -83,27 +83,27 @@
 /datum/round_event_control/meteor_wave/threatening
 	name = "Meteor Wave: Threatening"
 	typepath = /datum/round_event/meteor_wave/threatening
-	weight = 4
-	min_players = 30
+	weight = 1
+	min_players = 60
 	max_occurrences = 1
-	earliest_start = 90 MINUTES
+	earliest_start = 120 MINUTES
 
 
 /datum/round_event/meteor_wave/threatening
 	wave_name = "threatening"
-	threat = 25
+	threat = 100
 
 /datum/round_event_control/meteor_wave/catastrophic
 	name = "Meteor Wave: Catastrophic"
 	typepath = /datum/round_event/meteor_wave/catastrophic
-	weight = 6
-	min_players = 30
+	weight = 1
+	min_players = 60
 	max_occurrences = 1
-	earliest_start = 90 MINUTES
+	earliest_start = 120 MINUTES
 
 /datum/round_event/meteor_wave/catastrophic
 	wave_name = "catastrophic"
-	threat = 35
+	threat = 150
 
 #undef SINGULO_BEACON_DISTURBANCE
 #undef SINGULO_BEACON_MAX_DISTURBANCE

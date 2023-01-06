@@ -1,7 +1,7 @@
 /datum/round_event_control/processor_overload
 	name = "Processor Overload"
 	typepath = /datum/round_event/processor_overload
-	weight = 10
+	weight = 5
 	max_occurrences = 1
 	min_players = 45
 

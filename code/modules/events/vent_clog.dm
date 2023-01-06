@@ -1,8 +1,8 @@
 /datum/round_event_control/vent_clog
 	name = "Clogged Vents: Normal"
 	typepath = /datum/round_event/vent_clog
-	weight = 15
-	max_occurrences = 3
+	weight = 10
+	max_occurrences = 2
 
 /datum/round_event/vent_clog
 	announceWhen	= 1
