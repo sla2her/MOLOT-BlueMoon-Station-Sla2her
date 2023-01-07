@@ -244,8 +244,20 @@
 	message = "offers warcrimes."
 	sound = 'sound/voice/syndicate.ogg'
 
+/datum/emote/sound/human/rawr
+	key = "rawr"
+	key_third_person = "rawrs"
+	message = "rawrs aggressively."
+	sound = 'sound/voice/rawr.ogg'
+
+/datum/emote/sound/human/growl
+	key = "growl"
+	key_third_person = "growls"
+	message = "growls aggressively."
+	sound = 'sound/voice/growl.ogg'
+
 /datum/emote/sound/human/emperorprotects
-	key = "emperorprotects"
-	key_third_person = "emperorprotectes"
+	key = "protect"
+	key_third_person = "protects"
 	message = "folds his arms across his chest, forming an aquila."
 	sound = 'sound/voice/emperorprotects.ogg'

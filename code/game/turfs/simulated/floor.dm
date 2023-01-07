@@ -274,7 +274,7 @@
 			else
 				return list("mode" = RCD_AIRLOCK, "delay" = 50, "cost" = 16)
 		if(RCD_DECONSTRUCT)
-			return list("mode" = RCD_DECONSTRUCT, "delay" = 50, "cost" = 33)
+			return list("mode" = RCD_DECONSTRUCT, "delay" = 50, "cost" = 26)
 		if(RCD_WINDOWGRILLE)
 			return list("mode" = RCD_WINDOWGRILLE, "delay" = 10, "cost" = 4)
 		if(RCD_MACHINE)
