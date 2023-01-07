@@ -454,8 +454,8 @@
 
 /mob/living/proc/lick_sweat(mob/living/target)
 	var/message
-	var/t_His = target.p_their()
-	var/list/lines = list("licks \the <b>[target]</b>'s sweat off [t_His] body",
+	//var/t_His = target.p_their()
+	var/list/lines = list("вылизывает тельце \the <b>[target]</b>",
 							"слизывает соленый пот, стекающий по коже <b>[target]</b>",
 							"наслаждается вкусом промокшего тела \the <b>[target]</b>",
 							"вдыхает запах мускуса и пьет теплый пот \the <b>[target]</b>")
