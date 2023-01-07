@@ -9,7 +9,8 @@
 	slot_flags = ITEM_SLOT_BELT
 	damtype = LUST_DAMAGE
 	throwforce = 0
-	force = 10
+	force = 15
+	jitter = 15
 	w_class = WEIGHT_CLASS_NORMAL
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	hitsound = 'sound/weapons/whip.ogg'
@@ -19,7 +20,8 @@
 	icon = 'modular_splurt/icons/obj/items_and_weapons.dmi'
 	desc = "For teaching a lesson in a more compact fashion."
 	icon_state = "ridingcrop"
-	force = 20
+	force = 30
+	jitter = 25
 
 /obj/item/bdsm_whip/suicide_act(mob/user)
 		user.visible_message("<span class='suicide'>[user] is getting just a little too kinky!</span>")

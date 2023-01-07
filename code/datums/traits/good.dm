@@ -65,6 +65,14 @@
 	mood_quirk = TRUE
 	medical_record_text = "Patient demonstrates low-inhibitions for physical contact and well-developed arms. Requesting another doctor take over this case."
 
+/datum/quirk/friendly/add()
+	. = ..()
+	quirk_holder.AddElement(/datum/element/wuv, null, null, /datum/mood_event/pet_animal)
+
+/datum/quirk/friendly/remove()
+	. = ..()
+	quirk_holder.RemoveElement(/datum/element/wuv)
+
 /datum/quirk/jolly
 	name = "Jolly"
 	desc = "You sometimes just feel happy, for no reason at all."
@@ -190,7 +198,7 @@
 	// Get targets
 	var/obj/item/organ/eyes/old_eyes = quirk_holder.getorganslot(ORGAN_SLOT_EYES)
 	var/obj/item/organ/eyes/robotic/glow/new_eyes = new
-	
+
 	// Replace eyes
 	qdel(old_eyes)
 	new_eyes.Insert(quirk_holder)

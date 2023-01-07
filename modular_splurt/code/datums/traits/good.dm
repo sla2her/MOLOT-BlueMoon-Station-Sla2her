@@ -7,7 +7,7 @@
 	lose_text = "<span class='notice'>You feel less sturdy.</span>"
 
 /datum/quirk/tough/add()
-	quirk_holder.maxHealth *= 1.25
+	quirk_holder.maxHealth *= 1.20
 
 /datum/quirk/tough/remove()
 	if(!quirk_holder)
@@ -59,9 +59,9 @@
 	if(!sub.has_quirk(/datum/quirk/well_trained) || (sub == quirk_holder))
 		return
 
-	examine_list += span_lewd("\nYou can't make eye contact with [quirk_holder.p_them()] before flustering away!")
+	examine_list += span_lewd("\nВы испытываете сильный стыд от взгляда на [quirk_holder.p_them()] и отводите свой взгляд!")
 	if(!TIMER_COOLDOWN_CHECK(user, COOLDOWN_DOMINANT_EXAMINE))
-		to_chat(quirk_holder, span_notice("\The [user] tries to look at you but immediately turns away with a red face..."))
+		to_chat(quirk_holder, span_notice("\The [user] пытается посмотреть на вас, но тут же отворачивается с красным лицом..."))
 		TIMER_COOLDOWN_START(user, COOLDOWN_DOMINANT_EXAMINE, 5 SECONDS)
 	sub.dir = turn(get_dir(sub, quirk_holder), pick(-90, 90))
 	sub.emote("blush")
