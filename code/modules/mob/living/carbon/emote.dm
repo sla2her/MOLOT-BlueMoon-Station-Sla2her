@@ -256,7 +256,7 @@
 	message = "growls aggressively."
 	sound = 'sound/voice/growl.ogg'
 
-/datum/emote/sound/human/emperorprotects
+/datum/emote/sound/human/protect
 	key = "protect"
 	key_third_person = "protects"
 	message = "folds his arms across his chest, forming an aquila."
