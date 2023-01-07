@@ -38,3 +38,9 @@
 	slot = ITEM_SLOT_ICLOTHING
 	path = /obj/item/clothing/under/donator/bm/gorka
 	ckeywhitelist = list("leony24")
+
+/datum/gear/donator/bm/lightning_holocloak
+	name = "lightning holo-cloak"
+	slot = ITEM_SLOT_OCLOTHING
+	path = /obj/item/clothing/suit/donator/bm/lightning_holocloak
+	ckeywhitelist = list("weirdbutton")
