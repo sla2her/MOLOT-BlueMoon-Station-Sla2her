@@ -122,10 +122,10 @@
 	if(partner.is_fucking(src, CUM_TARGET_FEET))
 		message = "[pick("дрочит [genital_name] <b>[partner]</b> своими [shoes ? shoes : pick("ножками", "ступнями")].",
 			"ласкает своими [shoes ? shoes : pick("ножками", "ногами", "ступнями")] промежность <b>[partner]</b>.",
-			"работает [shoes ? shoes : pick("ножками", "ступнями")], двигая оные вверх-вниз по [genital_name] <b>[partner]</b>.")]"
+			"работает [shoes ? shoes : pick("ножками", "ступнями")], двигая оные вверх-вниз по члену <b>[partner]</b>.")]"
 	else
-		message = "[pick("[shoes ? "занимает своими [shoes] позицию на" :"занимает своими ножками позицию на"] \the <b>[partner]</b>'s [genital_name].",
-			"начинает играться с <b>[partner]</b>'s [genital_name], своими [shoes ? shoes :"ногами"].")]"
+		message = "[pick("[shoes ? "занимает своими '[shoes]' позицию на" :"занимает своими ножками позицию на"] \the <b>[partner]</b>'s [genital_name].",
+			"начинает играться с пенисом <b>[partner]</b> своими [shoes ? shoes :"ногами"].")]"
 		partner.set_is_fucking(user, CUM_TARGET_FEET, partner.getorganslot(ORGAN_SLOT_PENIS))
 
 	playlewdinteractionsound(get_turf(user), pick('modular_sand/sound/interactions/foot_dry1.ogg',

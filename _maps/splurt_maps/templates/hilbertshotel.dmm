@@ -14,6 +14,9 @@
 /area/hilbertshotel)
 "bx" = (
 /obj/structure/mineral_door/wood,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
 /turf/open/indestructible/hotelwood,
 /area/hilbertshotel)
 "bP" = (
@@ -358,9 +361,6 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
 "JK" = (
-/obj/structure/fireplace{
-	pixel_y = -6
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 1
 	},

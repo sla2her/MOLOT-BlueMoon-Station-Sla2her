@@ -134,7 +134,7 @@
 	return has_penis()
 
 /mob/living/proc/get_penetrating_genital_name(long = FALSE)
-	return has_penis() ? (long ? pick(GLOB.dick_nouns) : pick("члену", "пенису")) : pick("страпону")
+	return has_penis() ? (long ? pick(GLOB.dick_nouns) : pick("член", "пенис")) : pick("страпону")
 
 /mob/living/proc/has_balls(visibility = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
