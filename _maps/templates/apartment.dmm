@@ -100,10 +100,12 @@
 /area/hilbertshotel)
 "iL" = (
 /obj/effect/turf_decal/siding/wood,
+/obj/machinery/light/small,
 /turf/open/floor/carpet/royalblack,
 /area/hilbertshotel)
 "jr" = (
 /obj/machinery/light_switch/directional/south,
+/obj/machinery/light/small,
 /turf/open/floor/carpet/purple,
 /area/hilbertshotel)
 "jx" = (
@@ -210,6 +212,10 @@
 /obj/machinery/door/morgue,
 /turf/open/floor/carpet/royalblack,
 /area/hilbertshotel)
+"wv" = (
+/obj/machinery/light/small,
+/turf/open/indestructible/hoteltile,
+/area/hilbertshotel)
 "wS" = (
 /obj/structure/closet/cabinet,
 /obj/effect/turf_decal/siding/wood{
@@ -220,6 +226,11 @@
 "xT" = (
 /turf/closed/indestructible/syndicate,
 /area/hilbertshotel)
+"yP" = (
+/obj/item/kirbyplants/random,
+/obj/machinery/light/small,
+/turf/open/floor/carpet/red,
+/area/hilbertshotel)
 "zA" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -229,9 +240,15 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/hilbertshotel)
+"zD" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/machinery/light/small,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
 "zY" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood,
+/obj/machinery/light/small,
 /turf/open/floor/carpet/royalblack,
 /area/hilbertshotel)
 "Ae" = (
@@ -264,6 +281,7 @@
 /obj/machinery/computer{
 	dir = 8
 	},
+/obj/machinery/light/small,
 /turf/open/floor/carpet/purple,
 /area/hilbertshotel)
 "Ea" = (
@@ -286,6 +304,10 @@
 /area/hilbertshotel)
 "Gv" = (
 /obj/structure/chair/sofa/corp/right,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"Hw" = (
+/obj/machinery/light/small,
 /turf/open/floor/carpet,
 /area/hilbertshotel)
 "HO" = (
@@ -406,6 +428,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
+/obj/machinery/light/small,
 /turf/open/indestructible/hoteltile,
 /area/hilbertshotel)
 "Ul" = (
@@ -451,6 +474,7 @@
 /area/hilbertshotel)
 "Zq" = (
 /obj/structure/closet/crate/bin,
+/obj/machinery/light/small,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/hilbertshotel)
 
@@ -501,7 +525,7 @@ xT
 jT
 EX
 SV
-jT
+yP
 xT
 FN
 "}
@@ -634,7 +658,7 @@ dT
 iL
 xT
 aS
-kh
+zD
 xT
 Ul
 xT
@@ -665,10 +689,10 @@ Gv
 Ib
 bz
 Ib
-Ib
+Hw
 xT
 aS
-kh
+zD
 xT
 fa
 HO
@@ -688,7 +712,7 @@ Ea
 pD
 xT
 RF
-ho
+wv
 xT
 FN
 "}
