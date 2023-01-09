@@ -48,6 +48,7 @@
 		"Security Commander",
 		"Head of Slutcurity",
 		"Division Leader",
+		"Cerberus Leader",
 		"Commissar"
 	)
 	if(SSevents.holidays && SSevents.holidays[HALLOWEEN])

@@ -45,13 +45,13 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 /obj/item/hilbertshotel/attack(mob/living/M, mob/living/user)
 	if(M.mind)
 		to_chat(user, "<span class='notice'>You invite [M] to the hotel.</span>")
-		promptAndCheckIn(M)
+		promptAndCheckIn(user, M)
 	else
 		to_chat(user, "<span class='warning'>[M] is not intelligent enough to understand how to use this device!</span>")
 
 /obj/item/hilbertshotel/attack_self(mob/user)
 	. = ..()
-	promptAndCheckIn(user)
+	promptAndCheckIn(user, user)
 
 /obj/item/hilbertshotel/proc/promptAndCheckIn(mob/user)
 	//SPLURT EDIT - max infinidorms rooms
@@ -98,7 +98,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 		return
 	if(tryStoredRoom(chosenRoomNumber, user, chosen_room))
 		return
-	sendToNewRoom(chosenRoomNumber, user)
+	sendToNewRoom(chosenRoomNumber, user, chosen_room)
 
 /obj/item/hilbertshotel/proc/tryActiveRoom(var/roomNumber, var/mob/user)
 	if(activeRooms["[roomNumber]"])
@@ -133,26 +133,23 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 		return FALSE
 
 /// This is a BLOCKING OPERATION. Note the room load call, and the block reservation calls.
-/obj/item/hilbertshotel/proc/sendToNewRoom(var/roomNumber, var/mob/user, chosen_room)
-	var/datum/turf_reservation/roomReservation = SSmapping.RequestBlockReservation(hotelRoomTemp.width, hotelRoomTemp.height)
-	if(ruinSpawned)
-		mysteryRoom = GLOB.hhmysteryRoomNumber
-		if(roomNumber == mysteryRoom)
-			hotelRoomTempLore.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
-		else
-		//BlueMoon Edit
-			switch(chosen_room)
-				if("Apartment")
-					ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
-
-			hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
-	else
-		hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
-		//BlueMoon Edit
-	activeRooms["[roomNumber]"] = roomReservation
-	linkTurfs(roomReservation, roomNumber)
-	do_sparks(3, FALSE, get_turf(user))
-	user.forceMove(locate(roomReservation.bottom_left_coords[1] + hotelRoomTemp.landingZoneRelativeX, roomReservation.bottom_left_coords[2] + hotelRoomTemp.landingZoneRelativeY, roomReservation.bottom_left_coords[3]))
+/obj/item/hilbertshotel/proc/sendToNewRoom(roomNumber, mob/user, chosen_room) //BLUEMOON EDIT ADDITION - GHOST HOTEL UPDATE. Was sendToNewRoom(chosenRoomNumber, target)
+    var/datum/turf_reservation/roomReservation = SSmapping.RequestBlockReservation(hotelRoomTemp.width, hotelRoomTemp.height)
+    mysteryRoom = GLOB.hhmysteryRoomNumber
+    if(ruinSpawned && roomNumber == mysteryRoom)
+        hotelRoomTempLore.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+    else
+    //BLUEMOON EDIT ADDITION - GHOST HOTEL UPDATE
+        switch(chosen_room)
+            if("Apartment")
+                ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+            else
+    //BLUEMOON EDIT END
+                hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+    activeRooms["[roomNumber]"] = roomReservation
+    linkTurfs(roomReservation, roomNumber)
+    do_sparks(3, FALSE, get_turf(user))
+    user.forceMove(locate(roomReservation.bottom_left_coords[1] + hotelRoomTemp.landingZoneRelativeX, roomReservation.bottom_left_coords[2] + hotelRoomTemp.landingZoneRelativeY, roomReservation.bottom_left_coords[3]))
 
 /obj/item/hilbertshotel/proc/linkTurfs(var/datum/turf_reservation/currentReservation, var/currentRoomnumber)
 	var/area/hilbertshotel/currentArea = get_area(locate(currentReservation.bottom_left_coords[1], currentReservation.bottom_left_coords[2], currentReservation.bottom_left_coords[3]))
@@ -213,10 +210,6 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	name = "Infinite Dormitories"
 	anchored = TRUE
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
-
-/obj/item/hilbertshotel/ghostdojo/interact(mob/user)
-	. = ..()
-	promptAndCheckIn(user)
 
 /obj/item/hilbertshotel/ghostdojo/linkTurfs(datum/turf_reservation/currentReservation, currentRoomnumber)
 	. = ..()
