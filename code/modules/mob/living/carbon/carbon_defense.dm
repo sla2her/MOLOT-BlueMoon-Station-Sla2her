@@ -360,10 +360,12 @@
 		if(friendly_check && HAS_TRAIT(M, TRAIT_FRIENDLY))
 			var/datum/component/mood/mood = M.GetComponent(/datum/component/mood)
 			if(mood)
+				src.AddElement(/datum/element/wuv/headpat, null, null, /datum/mood_event/pet_animal)
 				if (mood.sanity >= SANITY_GREAT)
 					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "friendly_hug", /datum/mood_event/besthug, M)
 				else if (mood.sanity >= SANITY_DISTURBED)
 					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "friendly_hug", /datum/mood_event/betterhug, M)
+					src.RemoveElement(/datum/element/wuv/headpat)
 
 		AdjustAllImmobility(-60, FALSE)
 		AdjustUnconscious(-60, FALSE)

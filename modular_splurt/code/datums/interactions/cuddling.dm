@@ -7,17 +7,17 @@
 
 /datum/interaction/cuddle/display_interaction(mob/living/user, mob/living/target)
 	var/static/list/possible_messages = list(
-		"USER обнимает TARGET.",
-		"USER страстно обнимает TARGET.",
-		"USER нежно обнимает TARGET.",
-		"USER бережно обнимает TARGET.",
-		"USER тыкается носом в TARGET.",
-		"USER нежно тыкается носиком в TARGET.",
-		"USER бережно тыкается носиком в TARGET.",
-		"USER тискает TARGET.",
-		"USER хватает TARGET в свои нежные объятия.",
-		"USER нежно тискается с TARGET.",
-		"USER бережно тискается с TARGET.",
+		"<b>USER</b> обнимает <b>TARGET</b>.",
+		"<b>USER</b> страстно обнимает <b>TARGET</b>.",
+		"<b>USER</b> нежно обнимает <b>TARGET</b>.",
+		"<b>USER</b> бережно обнимает <b>TARGET</b>.",
+		"<b>USER</b> тыкается носом в <b>TARGET</b>.",
+		"<b>USER</b> нежно тыкается носиком в <b>TARGET</b>.",
+		"<b>USER</b> бережно тыкается носиком в <b>TARGET</b>.",
+		"<b>USER</b> тискает <b>TARGET</b>.",
+		"<b>USER</b> хватает <b>TARGET</b> в свои нежные объятия.",
+		"<b>USER</b> нежно тискается с <b>TARGET</b>.",
+		"<b>USER</b> бережно тискается с <b>TARGET</b>.",
 	)
 	var/use_message = replacetext(pick(possible_messages), "USER", "\the [user]")
 	use_message = replacetext(use_message, "TARGET", "\the [target]")
