@@ -270,7 +270,7 @@
 	dir = 6
 	},
 /obj/machinery/jukebox{
-	req_access = null
+	req_one_access = null
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
