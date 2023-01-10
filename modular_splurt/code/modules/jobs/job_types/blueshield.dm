@@ -14,8 +14,8 @@
 	exp_type = EXP_TYPE_COMMAND
 	considered_combat_role = TRUE //Brigger then shit yes it is
 	exp_type_department = EXP_TYPE_COMMAND
-	alt_titles = list("Command Security", "Command Guard", "Command Bodyguard", "Blueguard", "Blueshit")
-	custom_spawn_text = "<font color='red' size='4'><b> YOU ARE NOT PART OF COMMAND. YOU WILL NEVER BE PART OF COMMAND. YOU ARE NOT PART OF CENTRAL COMMAND. IF YOU ACT LIKE YOU ARE, YOU WILL NEVER PLAY BLUESHIELD EVER AGAIN.</b></font>"
+	alt_titles = list("Command Security", "Command Guard", "Command Bodyguard", "Sweet Boy", "Sweet Girl", "Blueguard", "Blueshit")
+	custom_spawn_text = "<font color='red' size='4'><b>Синий Щит является представителем "Сторон" из Отдела по Защите Главенствующего Персонала и оказывает защиту Главам по соответственному приоритету - начиная от Секретаря Мостика, продолжая на обычных Главах и заканчивая на Капитане с ЦК. Синий Щит подчиняется ВРИО, Капитану и Центральному Командованию.</b></font>"
 
 	outfit = /datum/outfit/job/blueshield
 	plasma_outfit = /datum/outfit/plasmaman/blueshield
@@ -47,12 +47,12 @@
 	suit_store = /obj/item/kitchen/knife/combat
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
-	backpack_contents = list(/obj/item/storage/firstaid/regular, /obj/item/reagent_containers/spray/pepper, /obj/item/clothing/accessory/badge/holo)
+	backpack_contents = list(/obj/item/storage/firstaid/regular, /obj/item/reagent_containers/spray/pepper, /obj/item/clothing/accessory/badge/holo, /obj/item/gun/energy/e_gun, /obj/item/flashlight/seclite)
 
 	backpack = /obj/item/storage/backpack/blueshield
 	satchel = /obj/item/storage/backpack/satchel/blueshield
 	duffelbag = /obj/item/storage/backpack/duffelbag/blueshield
-	box = /obj/item/storage/box/survival
+	box = /obj/item/storage/box/survival/security/radio
 
 	implants = list(/obj/item/implant/mindshield)
 
