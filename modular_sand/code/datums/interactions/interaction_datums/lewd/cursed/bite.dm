@@ -30,7 +30,7 @@
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
 			if(cli.prefs.extremeharm != "No")
-				if(prob(75))
+				if(prob(30))
 					C.bleed(50)
 					C.add_splatter_floor(get_turf(BLOOD_COLOR_HUMAN), TRUE)
 					new/obj/effect/decal/cleanable/blood
