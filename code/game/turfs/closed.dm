@@ -94,6 +94,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 	var/width = size_check.Width()
 	pixel_x = (672 - width) * 0.5 //The title screen is mapped with the expectation that it's 672x480. Should probably turn the title screen size into a define some time!
 
+
 /turf/closed/indestructible/splashscreen/vv_edit_var(var_name, var_value)
 	. = ..()
 	if(.)
@@ -106,7 +107,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 	name = null
 	desc = null
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	
+
 /turf/closed/indestructible/riveted
 	icon = 'icons/turf/walls/riveted.dmi'
 	icon_state = "riveted"
