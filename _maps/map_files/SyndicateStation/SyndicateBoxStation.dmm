@@ -4198,6 +4198,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/fore)
 "ajr" = (
@@ -17373,6 +17374,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Escape Airlock"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/secondary/exit)
 "aTr" = (
@@ -19166,6 +19168,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Port Docking Bay 2"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "aXJ" = (
@@ -26990,6 +26993,7 @@
 	name = "Supply Dock Airlock";
 	req_access_txt = "31"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/cargo/storage)
 "brK" = (
@@ -34452,6 +34456,7 @@
 	req_access_txt = "48";
 	shuttledocked = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/cargo/miningdock)
 "bJc" = (
@@ -40877,6 +40882,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium,
 /area/tcommsat/computer)
 "can" = (
@@ -43773,6 +43779,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
 "chP" = (
@@ -46801,6 +46808,7 @@
 	name = "Solar Maintenance";
 	req_access_txt = "10; 13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "csi" = (
@@ -46923,6 +46931,7 @@
 	name = "MiniSat External Access";
 	req_access_txt = "65;13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat_interior)
 "ctb" = (
@@ -48607,6 +48616,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "cyd" = (
@@ -48638,6 +48648,7 @@
 	name = "Security Escape Airlock";
 	req_access_txt = "2"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium/red,
 /area/hallway/secondary/exit)
 "cyl" = (
@@ -48665,6 +48676,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Cargo Escape Airlock"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/secondary/exit)
 "cyu" = (
@@ -48674,6 +48686,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Port Docking Bay 3"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "cyC" = (
@@ -48712,6 +48725,7 @@
 	name = "External Access";
 	req_access_txt = "13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "cyK" = (
@@ -48765,6 +48779,7 @@
 /obj/machinery/door/airlock/external{
 	req_access_txt = "13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "czg" = (
@@ -48775,6 +48790,7 @@
 	name = "Escape Pod Four";
 	shuttledocked = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/engineering/main)
 "czk" = (
@@ -49483,6 +49499,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cBZ" = (
@@ -49730,6 +49747,7 @@
 	name = "External Access";
 	req_access_txt = "13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cDZ" = (
@@ -50367,6 +50385,7 @@
 /obj/machinery/door/airlock/external{
 	req_access_txt = "13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cPO" = (
@@ -51911,6 +51930,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/engineering/atmos)
 "eCR" = (
@@ -53813,6 +53833,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/security/processing)
 "hlV" = (
@@ -53840,6 +53861,18 @@
 	},
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
+"hnB" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "QMLoad2"
+	},
+/obj/machinery/door/poddoor{
+	id = "QMLoaddoor2";
+	name = "supply dock loading door"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/cargo/storage)
 "hnU" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -54091,6 +54124,14 @@
 	},
 /turf/open/floor/plating,
 /area/commons/locker)
+"hNz" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 1"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "hNU" = (
 /obj/structure/chair{
 	dir = 1
@@ -55052,6 +55093,16 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/service/kitchen)
+"jvb" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 1"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "jvO" = (
 /obj/structure/rack,
 /obj/item/flashlight{
@@ -55754,6 +55805,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "kkb" = (
@@ -56472,6 +56524,18 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"lnx" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "QMLoad"
+	},
+/obj/machinery/door/poddoor{
+	id = "QMLoaddoor";
+	name = "supply dock loading door"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/cargo/storage)
 "lpx" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/syndicate,
@@ -57381,6 +57445,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/security/office)
 "myh" = (
@@ -57422,6 +57487,7 @@
 	req_access_txt = "63"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/structure/fans/tiny,
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/security/office)
@@ -57627,6 +57693,7 @@
 	name = "Solar Maintenance";
 	req_access_txt = "10; 13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/aft)
 "mQS" = (
@@ -58244,6 +58311,14 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison/upper)
+"nMN" = (
+/obj/machinery/door/airlock/external{
+	name = "Solar Maintenance";
+	req_access_txt = "10; 13"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/maintenance/aft)
 "nNa" = (
 /turf/open/floor/mineral/plastitanium,
 /turf/open/floor/carpet/blackred,
@@ -61151,6 +61226,7 @@
 	req_access_txt = "13"
 	},
 /obj/structure/fans/tiny,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "suS" = (
@@ -61928,6 +62004,7 @@
 	name = "Solar Maintenance";
 	req_access_txt = "10; 13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
 "tEL" = (
@@ -63161,6 +63238,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/security/processing)
 "vyp" = (
@@ -63733,6 +63811,7 @@
 	name = "Engineering External Access";
 	req_access_txt = "10;13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/engineering/main)
 "wmG" = (
@@ -74668,7 +74747,7 @@ aFG
 ayl
 azy
 auP
-cIh
+jvb
 aaa
 aaa
 aaa
@@ -74676,7 +74755,7 @@ aaa
 aaa
 aaa
 aaa
-azy
+hNz
 auP
 cIh
 ayl
@@ -76467,7 +76546,7 @@ axh
 cbh
 azy
 auP
-cIh
+jvb
 aaa
 aaa
 aaa
@@ -76475,7 +76554,7 @@ aaa
 aaa
 aaa
 aaa
-azy
+hNz
 auP
 cIh
 ayl
@@ -82665,11 +82744,11 @@ aPz
 aaa
 aaa
 boI
-bqi
+hnB
 brJ
 boI
 brJ
-bvS
+lnx
 boI
 aaa
 aaa
@@ -92413,7 +92492,7 @@ aLY
 aOF
 aTQ
 aTQ
-erj
+aTQ
 aTS
 aVf
 aWM
@@ -106866,7 +106945,7 @@ czY
 kfS
 bAw
 bAw
-clp
+nMN
 aag
 gJi
 aaa
