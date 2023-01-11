@@ -175,7 +175,7 @@
 /datum/station_trait/deathrattle_department/service
 	name = "Deathrattled Service"
 	trait_flags = NONE
-	weight = 1
+	weight = 35
 	department_head = "Head of Personnel"
 	department_name = "Service"
 
@@ -225,7 +225,7 @@
 	name = "Deathrattled Station"
 	trait_type = STATION_TRAIT_POSITIVE
 	show_in_report = TRUE
-	weight = 1
+	weight = 20
 	report_message = "All members of the station have received an implant to notify each other if one of them dies. This should help improve job-safety!"
 	var/datum/deathrattle_group/deathrattle_group
 

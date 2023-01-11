@@ -101,17 +101,17 @@
 	var/datum/gas_mixture/env = T.return_air()
 	if(!env)
 		return
-	
+
 	// Get temp
 	var/env_temp = env.return_temperature()
-	
+
 	// Check for temperature effects
 	// Minimum (most likely)
 	if(env_temp <= mintemp)
 		produce_points(3)
 	// Mid
 	else if((env_temp <= midtemp) && (env_temp >= mintemp))
-		produce_points(1)	
+		produce_points(1)
 	// Maximum
 	else if((env_temp <= maxtemp) && (env_temp >= midtemp))
 		produce_points(0.20)
@@ -120,7 +120,7 @@
 		say("Critical overheating detected! Shutting off!")
 		playsound(loc, 'sound/machines/beep.ogg', 50, TRUE, -1)
 		set_mining(FALSE)
-	
+
 	// Increase heat by heatingPower
 	env.set_temperature(env_temp + heatingPower)
 
@@ -168,7 +168,7 @@
 	active_power_usage = 100
 	circuit = /obj/item/circuitboard/machine/cryptominer/syndie
 	miningtime = 6000
-	miningpoints = 100
+	miningpoints = 200
 
 /obj/machinery/cryptominer/syndie/update_icon()
 	. = ..()
@@ -188,7 +188,7 @@
 	idle_power_usage = 1
 	active_power_usage = 1
 	miningtime = 600000
-	miningpoints = 1000
+	miningpoints = 2000
 
 /obj/machinery/cryptominer/nanotrasen/update_icon()
 	. = ..()

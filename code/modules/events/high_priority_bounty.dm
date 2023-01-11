@@ -1,7 +1,7 @@
 /datum/round_event_control/high_priority_bounty
 	name = "High Priority Bounty"
 	typepath = /datum/round_event/high_priority_bounty
-	max_occurrences = 4
+	max_occurrences = 1
 	weight = 50
 	earliest_start = 10
 
