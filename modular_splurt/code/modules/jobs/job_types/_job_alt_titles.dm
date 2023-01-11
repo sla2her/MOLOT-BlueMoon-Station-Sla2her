@@ -311,7 +311,7 @@
 	var/list/extra_titles = list(
 		"Microbiologist",
 		"Biochemist",
-		"Bioweapon Scientist",
+		"Syndicate Bioweapon Scientist",
 		"Viro-Slut"
 	)
 	LAZYADD(alt_titles, extra_titles)
