@@ -2358,8 +2358,6 @@
 /obj/item/suit_voucher,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
-/obj/item/gun/energy/kinetic_accelerator,
-/obj/item/gun/energy/kinetic_accelerator,
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "rh" = (
@@ -2919,7 +2917,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "wy" = (
-/obj/structure/ore_box,
 /obj/structure/railing{
 	dir = 4
 	},
@@ -2932,6 +2929,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
 	level = 1
+	},
+/obj/structure/closet/secure_closet/miner{
+	req_access = null
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
