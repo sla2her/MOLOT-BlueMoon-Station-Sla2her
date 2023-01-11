@@ -1,0 +1,4 @@
+author: sheetofseaweed
+delete-after: true
+changes:
+  - bugfix: fixed lich phylactery respawn
