@@ -7,10 +7,26 @@
 	desc = "When equipped, a strange hologram is activated, and the fabric of the cloak itself disappears, and lightning starts projecting all over the body."
 	icon_state = "lightning_holo"
 	item_state = "lightning_holo_blue"
-	unique_reskin = list(
-	"Blue" = "lightning_holo_blue",
-	"Pink" = "lightning_holo_pink",
-	"Red" = "lightning_holo_red",
-	"Yellow" = "lightning_holo_yellow"
-	)
 	mutantrace_variation = STYLE_DIGITIGRADE | STYLE_NO_ANTHRO_ICON
+	unique_reskin = list(
+		"Blue" = list(
+			"icon_state" = "lightning_holo_blue",
+			"item_state" = "lightning_holo_blue",
+			"name" = "blue lightning holo-cloak"
+		),
+		"Pink" = list(
+			"icon_state" = "lightning_holo_pink",
+			"item_state" = "lightning_holo_pink",
+			"name" = "pink lightning holo-cloak"
+		),
+		"Red" = list(
+			"icon_state" = "lightning_holo_red",
+			"item_state" = "lightning_holo_red",
+			"name" = "red lightning holo-cloak"
+		),
+		"Yellow" = list(
+			"icon_state" = "lightning_holo_yellow",
+			"item_state" = "lightning_holo_yellow",
+			"name" = "yellow lightning holo-cloak"
+		)
+	)
