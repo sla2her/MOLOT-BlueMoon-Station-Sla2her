@@ -19,7 +19,7 @@
 	name = "modern watch"
 	slot = ITEM_SLOT_GLOVES
 	path = /obj/item/clothing/wrists/donator/bm/modern_watch
-	ckeywhitelist = list("zar_shef")
+	ckeywhitelist = list("zarshef")
 
 /datum/gear/donator/bm/gaston
 	name = "Gaston"
