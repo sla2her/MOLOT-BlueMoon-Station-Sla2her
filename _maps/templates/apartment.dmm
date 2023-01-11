@@ -153,7 +153,7 @@
 /area/hilbertshotel)
 "lK" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/indestructible/start_area,
+/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "lO" = (
 /obj/item/toy/plush/nukeplushie,
@@ -241,7 +241,7 @@
 /area/hilbertshotel)
 "wv" = (
 /obj/machinery/vending/boozeomat,
-/turf/closed/indestructible/start_area,
+/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "wS" = (
 /obj/structure/closet/cabinet,
@@ -254,7 +254,7 @@
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "xT" = (
-/turf/closed/indestructible/start_area,
+/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "yP" = (
 /obj/structure/chair{
@@ -513,7 +513,7 @@
 /area/hilbertshotel)
 "WN" = (
 /obj/structure/sign/painting/library,
-/turf/closed/indestructible/start_area,
+/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "WX" = (
 /obj/effect/turf_decal/siding/wood{

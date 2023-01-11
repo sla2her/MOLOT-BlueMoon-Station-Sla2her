@@ -312,6 +312,7 @@
 	suffix = "spacehermit.dmm"
 	name = "Space Hermit"
 	description = "A late awakening cryo pod in a crashed escape pod wakes up to find what befell of his fellow survivors. Contains all the necessary resources to actually make it out alive. Good luck."
+	always_place = TRUE
 
 /datum/map_template/ruin/space/clericden
 	id = "clericden"

@@ -158,6 +158,9 @@
 	desc = "It projects a high power laser used for medical application."
 	icon_state = "surgicaldrill_a"
 	hitsound = 'sound/items/welder.ogg'
+	w_class = WEIGHT_CLASS_TINY
+	force = 10
+	toolspeed = 0.7
 	heat = 3500
 
 /obj/item/surgicaldrill/advanced/Initialize(mapload)

@@ -14,6 +14,13 @@
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1 // can be accessed by all donators
 
+/datum/gear/donator/gasmask_syndicate
+	name = "The Syndicate Mask"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/clothing/mask/gas/syndicate
+	ckeywhitelist = list()
+	donator_group_id = DONATOR_GROUP_TIER_1
+
 /datum/gear/donator/carpet
 	name = "Carpet Beacon"
 	slot = ITEM_SLOT_BACKPACK

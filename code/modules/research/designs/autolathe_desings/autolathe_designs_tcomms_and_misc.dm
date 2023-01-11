@@ -49,6 +49,16 @@
 	build_path = /obj/item/camera
 	category = list("initial", "Misc")
 
+//BlueMoon Edit. Begin.
+/datum/design/poster
+	name = "Motivational Poster"
+	id = "random_official"
+	build_type = AUTOLATHE | NO_PUBLIC_LATHE
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000)
+	build_path = /obj/item/poster/random_official
+	category = list("Misc")
+//BlueMoon Edit. End.
+
 /datum/design/camera_film
 	name = "Camera Film Cartridge"
 	id = "camera_film"

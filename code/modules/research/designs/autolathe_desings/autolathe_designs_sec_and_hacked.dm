@@ -42,6 +42,16 @@
 	build_path = /obj/item/weldingtool/largetank
 	category = list("hacked", "Tools")
 
+//BlueMoon Edit. Begin.
+/datum/design/random_contraband
+	name = "Contraband Poster"
+	id = "random_contraband"
+	build_type = AUTOLATHE | NO_PUBLIC_LATHE
+	materials = list(/datum/material/iron = 2000, /datum/material/glass = 2000)
+	build_path = /obj/item/poster/random_contraband
+	category = list("hacked", "Misc")
+//BlueMoon Edit. End.
+
 /datum/design/flamethrower
 	name = "Flamethrower"
 	id = "flamethrower"

@@ -282,10 +282,10 @@
 	death = FALSE
 	random = TRUE
 	mob_species = /datum/species/human
-	short_desc = "You've been stranded in this godless prison of a planet for longer than you can remember."
-	flavour_text = "Each day you barely scrape by, and between the terrible conditions of your makeshift shelter, \
-	the hostile creatures, and the ash drakes swooping down from the cloudless skies, all you can wish for is the feel of soft grass between your toes and \
-	the fresh air of Earth. These thoughts are dispelled by yet another recollection of how you got here... "
+	short_desc = "Вы застряли на этой безбожной Аномальной Планете и не можете выбраться который год."
+	flavour_text = "Каждый день вы еле-еле сводите концы с концами, \
+	враждебными существами и Пепельными Дрейками, слетающими с безоблачного неба. Все, что вы можете пожелать, это почувствовать мягкую траву между пальцами ног и \
+	свежий воздух Земли. Эти мысли развеиваются очередным воспоминанием о том, как вы сюда попали..."
 	assignedrole = "Hermit"
 	canloadappearance = TRUE
 

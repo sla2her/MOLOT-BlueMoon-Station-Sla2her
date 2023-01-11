@@ -9291,7 +9291,7 @@
 "uO" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Shuttle Control Office";
-	req_access_txt = "109"
+	req_access_txt = "101"
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,

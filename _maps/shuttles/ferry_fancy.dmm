@@ -3,10 +3,11 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/closed/wall/mineral/titanium,
+/turf/closed/wall/mineral/plastitanium,
 /area/shuttle/transport)
 "c" = (
-/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/grille,
+/obj/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/transport)
 "d" = (
@@ -55,6 +56,10 @@
 /area/shuttle/transport)
 "l" = (
 /obj/machinery/door/airlock/titanium,
+/obj/machinery/door/airlock/hatch{
+	name = "Shuttle Bridge Access";
+	req_access_txt = "19"
+	},
 /turf/open/floor/pod/light,
 /area/shuttle/transport)
 "m" = (
@@ -76,6 +81,10 @@
 	width = 5
 	},
 /obj/structure/fans/tiny,
+/obj/machinery/door/airlock/hatch{
+	name = "Shuttle Bridge Access";
+	req_access_txt = "19"
+	},
 /turf/open/floor/pod/light,
 /area/shuttle/transport)
 "o" = (
@@ -102,6 +111,30 @@
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
 /turf/open/floor/pod/light,
+/area/shuttle/transport)
+"H" = (
+/obj/machinery/porta_turret/centcom_shuttle{
+	dir = 5
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle/transport)
+"K" = (
+/obj/machinery/porta_turret/centcom_shuttle{
+	dir = 10
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle/transport)
+"O" = (
+/obj/machinery/porta_turret/centcom_shuttle{
+	dir = 6
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle/transport)
+"U" = (
+/obj/machinery/porta_turret/centcom_shuttle{
+	dir = 9
+	},
+/turf/closed/wall/mineral/plastitanium,
 /area/shuttle/transport)
 
 (1,1,1) = {"
@@ -154,11 +187,11 @@ p
 b
 "}
 (8,1,1) = {"
-b
+U
 h
 i
 i
-b
+K
 "}
 (9,1,1) = {"
 d
@@ -168,11 +201,11 @@ i
 r
 "}
 (10,1,1) = {"
-b
+H
 i
 i
 q
-b
+O
 "}
 (11,1,1) = {"
 b

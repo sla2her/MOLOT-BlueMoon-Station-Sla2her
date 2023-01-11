@@ -4282,7 +4282,7 @@
 	input_tag = "syndie_lavaland_n2_in";
 	name = "Nitrogen Supply Control";
 	output_tag = "syndie_lavaland_n2_out";
-	sensors = list("syndie_lavaland_n2_sensor" = "Tank")
+	sensors = list("syndie_lavaland_n2_sensor"="Tank")
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/red,
@@ -4907,7 +4907,7 @@
 	input_tag = "syndie_lavaland_o2_in";
 	name = "Oxygen Supply Control";
 	output_tag = "syndie_lavaland_o2_out";
-	sensors = list("syndie_lavaland_o2_sensor" = "Tank")
+	sensors = list("syndie_lavaland_o2_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -5353,7 +5353,7 @@
 	input_tag = "syndie_lavaland_tox_in";
 	name = "Toxins Supply Control";
 	output_tag = "syndie_lavaland_tox_out";
-	sensors = list("syndie_lavaland_tox_sensor" = "Tank")
+	sensors = list("syndie_lavaland_tox_sensor"="Tank")
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
