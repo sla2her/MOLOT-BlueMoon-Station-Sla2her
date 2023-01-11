@@ -4806,13 +4806,6 @@
 	},
 /turf/open/floor/engine,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/testlab)
-"JB" = (
-/obj/machinery/syndicatebomb/self_destruct{
-	anchored = 1;
-	level = 1
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "JC" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Bar"
@@ -8985,7 +8978,7 @@ VP
 VP
 VP
 Xb
-JB
+hA
 Tx
 vm
 Tx
