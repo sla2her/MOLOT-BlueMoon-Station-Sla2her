@@ -4,6 +4,7 @@
 	icon = 'modular_bluemoon/fluffs/icons/obj/guns.dmi'
 	icon_state = "steyr_m1912"
 	can_suppress = FALSE
+	fire_sound = 'modular_bluemoon/fluffs/sound/weapon/steyr_shoot.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/steyr/update_icon_state()
 	if(current_skin)
