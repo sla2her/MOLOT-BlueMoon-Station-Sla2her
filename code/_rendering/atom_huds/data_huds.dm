@@ -234,7 +234,7 @@
 			radholder.icon_state = "hudradnuke"
 
 /***********************************************
-Security HUDs! Basic mode shows only the job.
+ Security HUDs! Basic mode shows only the job.
 ************************************************/
 
 //HOOKS

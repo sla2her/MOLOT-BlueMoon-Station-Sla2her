@@ -14,9 +14,6 @@
 	var/lastattacker = null
 	var/lastattackerckey = null
 
-	///If combat mode is on or not
-	var/combat_mode = FALSE
-
 	//Health and life related vars
 	var/maxHealth = 100 //Maximum health that should be possible.
 	var/health = 100 	//A mob's health

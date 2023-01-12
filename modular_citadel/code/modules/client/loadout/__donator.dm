@@ -21,13 +21,6 @@
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1
 
-/datum/gear/donator/agent_card
-	name = "Syndicate Operative"
-	slot = ITEM_SLOT_BACKPACK
-	path = /obj/item/card/id/syndicate
-	ckeywhitelist = list()
-	donator_group_id = DONATOR_GROUP_TIER_1
-
 /datum/gear/donator/carpet
 	name = "Carpet Beacon"
 	slot = ITEM_SLOT_BACKPACK

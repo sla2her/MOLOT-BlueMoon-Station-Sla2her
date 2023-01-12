@@ -54592,9 +54592,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/vr_sleeper{
-	dir = 4
-	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison/upper)
 "iGX" = (
@@ -57491,6 +57488,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/structure/fans/tiny,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/security/office)
 "mCm" = (
@@ -59638,10 +59636,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison/upper)
-"pPv" = (
-/obj/machinery/piratepad/civilian,
-/turf/open/floor/mineral/plastitanium,
-/area/cargo/office)
 "pPE" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -61232,6 +61226,7 @@
 	req_access_txt = "13"
 	},
 /obj/structure/fans/tiny,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "suS" = (
@@ -61549,8 +61544,11 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/maintenance/port/fore)
 "sWR" = (
-/obj/machinery/computer/piratepad_control/civilian{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/piratepad/civilian{
+	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/cargo/office)
@@ -64315,12 +64313,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
-"xdj" = (
-/obj/machinery/vr_sleeper{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/security/prison/upper)
 "xgk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -64665,7 +64657,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/vr_sleeper,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison/upper)
 "xBk" = (
@@ -87895,7 +87886,7 @@ bnG
 bnz
 bpA
 bbR
-bkM
+sWR
 jlm
 bud
 eyM
@@ -88410,7 +88401,7 @@ boR
 bqs
 bbR
 bkM
-sWR
+bbR
 bwd
 bxB
 bvL
@@ -88667,7 +88658,7 @@ boT
 bbR
 bbR
 buI
-pPv
+bbR
 bwd
 bxD
 byL
@@ -89364,7 +89355,7 @@ hFt
 adb
 gGL
 dSv
-xdj
+adb
 iFe
 oGU
 aay

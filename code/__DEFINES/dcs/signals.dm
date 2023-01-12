@@ -21,9 +21,6 @@
 #define COMSIG_GLOB_PLAY_CINEMATIC "!play_cinematic"
 	#define COMPONENT_GLOB_BLOCK_CINEMATIC 1
 
-///from base of [/atom/proc/update_integrity]: (old_value, new_value)
-#define COMSIG_ATOM_INTEGRITY_CHANGED "atom_integrity_changed"
-
 /// job subsystem has spawned and equipped a new mob
 #define COMSIG_GLOB_JOB_AFTER_SPAWN "!job_after_spawn"
 

@@ -2,7 +2,7 @@
 	hud_icons = list(ANTAGTARGET_HUD)
 
 /***********************************************
-Mob's target prefs
+ Mob's target prefs
 ************************************************/
 
 /mob/living/carbon/human/proc/set_antag_target_indicator()

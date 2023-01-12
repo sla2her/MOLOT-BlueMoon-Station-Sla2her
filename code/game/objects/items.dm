@@ -17,8 +17,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	attack_hand_is_action = FALSE
 	attack_hand_unwieldlyness = 0
 
-	///icon state for inhand overlays, if null the normal icon_state will be used.
-	var/inhand_icon_state = null
 	//Bluemoon change. Ну чтобы оружие ближнего боя дрожать заставляло.
 	var/jitter = 0
 	///icon state name for inhand overlays

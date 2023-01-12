@@ -441,7 +441,7 @@
 	registered_name = "Thirteen"
 
 /obj/item/card/id/gold
-	name = "Gold Identification Card"
+	name = "gold identification card"
 	desc = "A golden card which shows power and might."
 	icon_state = "gold"
 	item_state = "gold_id"
@@ -449,9 +449,7 @@
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
 /obj/item/card/id/syndicate
-	name = "Agent Card"
-	icon_state = "syndie"
-	assignment = "Syndicate Operative"
+	name = "agent card"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
 	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
@@ -542,10 +540,10 @@
 	anyone = TRUE
 
 /obj/item/card/id/syndicate/nuke_leader
-	name = "Lead Agent Card"
+	name = "lead agent card"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
-/obj/item/card/id/syndicate/syndicate_command
+/obj/item/card/id/syndicate_command
 	name = "syndicate ID card"
 	desc = "An ID straight from the Syndicate."
 	registered_name = "Syndicate"

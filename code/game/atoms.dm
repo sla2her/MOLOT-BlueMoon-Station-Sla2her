@@ -120,10 +120,6 @@
 	///Reference to atom being orbited
 	var/atom/orbit_target
 
-		///any atom that uses integrity and can be damaged must set this to true, otherwise the integrity procs will throw an error
-	var/uses_integrity = FALSE
-	VAR_PRIVATE/atom_integrity //defaults to max_integrity
-
 /**
  * Called when an atom is created in byond (built in engine proc)
  *

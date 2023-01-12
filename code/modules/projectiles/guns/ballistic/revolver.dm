@@ -89,7 +89,7 @@
 /obj/item/gun/ballistic/revolver/syndicate
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list(
-		"Default" = list("icon_state" = "revolver"), //Поменял стандартную иконку Револьвера Синдиката.
+		"Default" = list("icon_state" = "revolver"),
 		"Silver" = list("icon_state" = "russianrevolver"),
 		"Robust" = list("icon_state" = "revolvercit"),
 		"Bulky" = list("icon_state" = "revolverhakita"),
@@ -162,7 +162,7 @@
 /obj/item/gun/ballistic/revolver/mateba
 	name = "\improper Unica 6 auto-revolver"
 	desc = "A retro high-powered autorevolver typically used by officers of the New Russia military. Uses .357 ammo."
-	icon_state = "mateba" //Поменял стандартную иконку Револьвера Русских.
+	icon_state = "mateba"
 
 /obj/item/gun/ballistic/revolver/golden
 	name = "\improper Golden revolver"
