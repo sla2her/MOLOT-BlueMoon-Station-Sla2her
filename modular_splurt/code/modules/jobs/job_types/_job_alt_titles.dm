@@ -203,6 +203,7 @@
 		"Hydroponicist",
 		"Farmer",
 		"Beekeeper",
+		"Plants Breeder",
 		"Vintner",
 		"Soiler"
 	)
@@ -285,7 +286,8 @@
 		"Sex Educator",
 		"Rental Mommy",
 		"Rental Daddy",
-		"Psycholo-Slut"
+		"The Rapist",
+		"Psycho-Slut"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()

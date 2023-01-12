@@ -494,6 +494,9 @@
 /proc/sortNames(list/L, order=1)
 	return sortTim(L.Copy(), order >= 0 ? /proc/cmp_name_asc : /proc/cmp_name_dsc)
 
+///sort any value in a list
+/proc/sort_list(list/list_to_sort, cmp=/proc/cmp_text_asc)
+	return sortTim(list_to_sort.Copy(), cmp)
 
 //Converts a bitfield to a list of numbers (or words if a wordlist is provided)
 /proc/bitfield2list(bitfield = 0, list/wordlist)

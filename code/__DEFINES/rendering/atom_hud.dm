@@ -32,6 +32,7 @@
 //by default everything in the hud_list of an atom is an image
 //a value in hud_list with one of these will change that behavior
 #define HUD_LIST_LIST 1
+#define SECHUD_SCRAMBLED "hudscrambled"
 
 //data HUD (medhud, sechud) defines
 //Don't forget to update human/New() if you change these!
