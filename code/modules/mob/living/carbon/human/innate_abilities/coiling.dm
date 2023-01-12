@@ -58,10 +58,7 @@
 	var/mob/living/carbon/human/user = owner
 	user.dna.species.mutant_bodyparts["taur"] = "Naga (coiled)"
 	user.dna.features["taur"] = "Naga (coiled)"
-	user.dna.species.mutant_bodyparts["taur"] = "RadDog Naga (coiled)"
-	user.dna.features["taur"] = "RadDog Naga (coiled)"
 	user.update_mutant_bodyparts()
-
 
 /datum/action/innate/ability/coiling/proc/cancel_coil()
 	if (!currently_coiled)

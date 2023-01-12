@@ -55,7 +55,6 @@
 /turf/open/floor/pod/light,
 /area/shuttle/transport)
 "l" = (
-/obj/machinery/door/airlock/titanium,
 /obj/machinery/door/airlock/hatch{
 	name = "Shuttle Bridge Access";
 	req_access_txt = "19"
@@ -69,7 +68,6 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/transport)
 "n" = (
-/obj/machinery/door/airlock/titanium,
 /obj/docking_port/mobile{
 	dir = 8;
 	dwidth = 2;
@@ -124,6 +122,36 @@
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/transport)
+"M" = (
+/obj/structure/closet/crate/internals{
+	anchored = 1
+	},
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_x = 3
+	},
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/turf/open/floor/pod/light,
+/area/shuttle/transport)
 "O" = (
 /obj/machinery/porta_turret/centcom_shuttle{
 	dir = 6
@@ -154,7 +182,7 @@ a
 (3,1,1) = {"
 a
 f
-i
+M
 o
 a
 "}

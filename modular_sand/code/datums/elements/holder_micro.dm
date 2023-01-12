@@ -104,7 +104,7 @@
 		return
 	var/mob/living/L = loc
 	visible_message("<span class='warning'>[src] begins to squirm in [L]'s grasp!</span>")
-	if(!do_after(user, 12 SECONDS, target = src, required_mobility_flags = MOBILITY_RESIST))
+	if(!do_after(user, 4 SECONDS, target = src, required_mobility_flags = MOBILITY_RESIST))
 		if(!user || user.stat != CONSCIOUS || user.loc != src)
 			return
 		to_chat(loc, "<span class='warning'>[src] stops resisting.</span>")
