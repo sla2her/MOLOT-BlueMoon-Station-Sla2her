@@ -8673,6 +8673,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall/syndicate,
 /area/command/blueshielquarters)
+"aua" = (
+/obj/machinery/door/firedoor,
+/obj/structure/sign/flag/syndicate{
+	pixel_x = 32
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/hallway/primary/central)
 "auc" = (
 /obj/structure/table,
 /obj/item/storage/box/lights/mixed,
@@ -8951,6 +8958,13 @@
 "avb" = (
 /turf/open/floor/mineral/plastitanium/red,
 /area/maintenance/port/fore)
+"avc" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/sign/flag/syndicate{
+	pixel_x = -32
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/hallway/primary/central)
 "avg" = (
 /obj/machinery/door/airlock{
 	id_tag = "Dorm5";
@@ -13912,6 +13926,9 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/obj/structure/sign/flag/syndicate{
+	pixel_y = 33
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
 "aJp" = (
@@ -17583,6 +17600,9 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/structure/sign/flag/syndicate{
+	pixel_y = 33
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/command/bridge)
 "aTU" = (
@@ -17654,6 +17674,9 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
+	},
+/obj/structure/sign/flag/syndicate{
+	pixel_y = 33
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/command/bridge)
@@ -19946,6 +19969,9 @@
 "aZN" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/blue,
+/obj/structure/sign/flag/syndicate{
+	pixel_x = 32
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
 "aZO" = (
@@ -20009,6 +20035,9 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
+	},
+/obj/structure/sign/flag/syndicate{
+	pixel_x = -32
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
@@ -51765,9 +51794,11 @@
 /turf/open/floor/plating,
 /area/commons/fitness/recreation)
 "erj" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
-/area/command/bridge)
+/obj/structure/sign/flag/syndicate{
+	pixel_y = 30
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/hallway/primary/central)
 "esK" = (
 /obj/machinery/door/airlock/maintenance/abandoned{
 	name = "Chemical Storage";
@@ -57488,7 +57519,6 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/structure/fans/tiny,
-/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/security/office)
 "mCm" = (
@@ -58126,6 +58156,15 @@
 /obj/structure/reagent_dispensers/keg/aphro/strong,
 /turf/open/floor/mineral/plastitanium,
 /area/commons/dorms)
+"nyB" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/sign/flag/syndicate{
+	pixel_y = 30
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/hallway/primary/central)
 "nyJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -61225,7 +61264,6 @@
 	name = "External Access";
 	req_access_txt = "13"
 	},
-/obj/structure/fans/tiny,
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -90194,7 +90232,7 @@ bgG
 bid
 aYl
 bBi
-xmX
+aua
 bnN
 boY
 bqw
@@ -93030,7 +93068,7 @@ fxV
 fxV
 fxV
 fxV
-aXf
+nyB
 jux
 byU
 bCs
@@ -95086,7 +95124,7 @@ fxV
 oGv
 fxV
 fxV
-pQN
+erj
 jux
 bBt
 bCv
@@ -95833,7 +95871,7 @@ jux
 aOE
 aJn
 aaa
-erj
+aTQ
 aUe
 aVs
 aXa
@@ -97904,7 +97942,7 @@ aYG
 aYG
 aYG
 ble
-bmE
+avc
 hAJ
 bpn
 bqL

@@ -3224,6 +3224,9 @@
 	dir = 4;
 	light_color = "#c1caff"
 	},
+/obj/structure/sign/flag/syndicate{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "yy" = (
@@ -3964,12 +3967,6 @@
 /obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plating,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/engineering)
-"Dg" = (
-/obj/structure/sign/flag/syndicate{
-	pixel_x = -32
-	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "Dk" = (
 /obj/structure/chair/stool/bar,
 /turf/open/floor/plasteel/dark,
@@ -4450,11 +4447,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "GO" = (
-/obj/machinery/door/poddoor{
-	id = "interdynecargo"
-	},
-/turf/open/floor/plating,
-/area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
+)
 "GS" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 1
@@ -6324,6 +6317,10 @@
 /obj/item/storage/belt/utility,
 /obj/item/storage/belt/utility,
 /obj/item/storage/belt/utility,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large{
+	pixel_x = 3;
+	pixel_y = -3
+	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "Un" = (
@@ -6902,6 +6899,28 @@
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
 	},
+/obj/item/clothing/glasses/hud/security/sunglasses/aviators{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses/aviators{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses/aviators,
+/obj/item/clothing/glasses/hud/security/sunglasses{
+	pixel_y = 5;
+	pixel_x = -5
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses{
+	pixel_y = 5;
+	pixel_x = -5
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "Yf" = (
@@ -8559,6 +8578,7 @@ Zz
 hR
 hR
 hR
+hR
 ei
 Xc
 Pf
@@ -8591,9 +8611,9 @@ Vb
 ab
 ab
 ab
-ab
 ag
 ag
+GO
 "}
 (24,1,1) = {"
 aa
@@ -8624,7 +8644,7 @@ Pf
 An
 Tx
 HL
-Dg
+An
 FC
 Wl
 qj
@@ -9024,7 +9044,7 @@ rD
 Zz
 ED
 gj
-GO
+OC
 Zz
 ab
 ab
