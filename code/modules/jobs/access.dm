@@ -376,6 +376,10 @@
 	return SSjob.real_job_name[jobName] || "Unknown"
 
 /obj/item/proc/get_job_name() //Used in secHUD icon generation
+	if (istype(src, /obj/item/card/id/debug/bst))
+		return "scrambled"
+	if (istype(src, /obj/item/card/id/syndicate))
+		return "scrambled"
 	var/obj/item/card/id/I = GetID()
 	if(!I)
 		return
