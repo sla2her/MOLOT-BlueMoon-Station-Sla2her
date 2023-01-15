@@ -5760,6 +5760,7 @@
 	name = "chameleon kit"
 	},
 /obj/item/clothing/suit/space/hardsuit/syndi/elite,
+/obj/item/dualsaber,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "PV" = (
@@ -7005,7 +7006,7 @@
 "Yf" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/dualsaber,
+/obj/item/card/emag,
 /turf/open/floor/plating,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/testlab)
 "Yk" = (
