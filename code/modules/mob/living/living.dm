@@ -106,7 +106,7 @@
 
 		//Should stop you pushing a restrained person out of the way
 		if(L.pulledby && L.pulledby != src && L.restrained())
-			if(!(world.time % 5))
+			if(!(world.time % 3))
 				to_chat(src, span_warning("[L] is restrained, you cannot push past."))
 			return TRUE
 
@@ -114,7 +114,7 @@
 			if(ismob(L.pulling))
 				var/mob/P = L.pulling
 				if(P.restrained())
-					if(!(world.time % 5))
+					if(!(world.time % 3))
 						to_chat(src, span_warning("[L] is restraining [P], you cannot push past."))
 					return TRUE
 
