@@ -44457,6 +44457,7 @@
 	dir = 8;
 	network = list("ss13","prison")
 	},
+/obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel,
 /area/security/prison/upper)
 "dAy" = (
@@ -51183,6 +51184,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/machinery/vr_sleeper,
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -57715,6 +57717,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
+/obj/machinery/vr_sleeper,
 /turf/open/floor/plasteel,
 /area/security/prison/upper)
 "pqg" = (
@@ -59172,7 +59175,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "qGo" = (
-/obj/structure/closet/crate/bin,
+/obj/machinery/vr_sleeper,
 /turf/open/floor/plasteel,
 /area/security/prison/upper)
 "qGw" = (
@@ -65542,7 +65545,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "wgz" = (
-/obj/machinery/jukebox,
+/obj/machinery/vr_sleeper,
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},

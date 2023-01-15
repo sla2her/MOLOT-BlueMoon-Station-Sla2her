@@ -746,7 +746,7 @@
 	playsound(user, 'modular_splurt/sound/voice/weh3.ogg', 50, 1, -1)
 
 /datum/emote/living/weh4
-	key = "weh-s"
+	key = "weh4"
 	key_third_person = "wehs4"
 	message = "let out a surprised weh!"
 
@@ -793,10 +793,12 @@
 
 /datum/emote/living/pant/run_emote(mob/user, params, type_override, intentional)
 	var/list/pants = list(
-		"pants!",
-		"pants like a dog.",
-		"lets out soft pants.",
-		"pulls [user.p_their()] tongue out, panting."
+		"сопит.",
+		"резко вздыхает!",
+		"громко пыхтит!",
+		"активно дышит словно собака.",
+		"всхлипывает, после чего громко выдыхает.",
+		"показательно выставляет свой язык и начинает хватать воздух."
 	)
 	message = pick(pants)
 	. = ..()

@@ -235,8 +235,8 @@
 	sound = 'sound/voice/rawr.ogg'
 
 /datum/emote/sound/human/growl
-	key = "growl"
-	key_third_person = "growls"
+	key = "growl2"
+	key_third_person = "growls2"
 	message = "growls aggressively."
 	sound = 'sound/voice/growl.ogg'
 

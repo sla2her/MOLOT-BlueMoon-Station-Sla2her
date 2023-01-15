@@ -568,7 +568,7 @@
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "dy" = (
 /obj/machinery/door/window/survival_pod{
-	req_access = list("syndicate")
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
@@ -1572,6 +1572,7 @@
 	dir = 4
 	},
 /obj/machinery/light,
+/obj/item/clothing/neck/stethoscope,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "kY" = (
@@ -1968,10 +1969,11 @@
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/survival_pod{
-	dir = 1
+	dir = 1;
+	req_access_txt = "150"
 	},
 /obj/machinery/door/window/survival_pod{
-	req_access = list("syndicate")
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
@@ -2743,9 +2745,7 @@
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "uX" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 3
-	},
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel/white/side{
 	dir = 1
 	},
@@ -4370,7 +4370,7 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "150"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plating,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "FT" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -5013,7 +5013,8 @@
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/survival_pod{
-	dir = 1
+	dir = 1;
+	req_access_txt = "150"
 	},
 /obj/machinery/door/window/survival_pod{
 	req_access = list("syndicate")
@@ -6577,6 +6578,20 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
+"VA" = (
+/obj/machinery/turretid{
+	ailock = 1;
+	control_area = "/area/ruin/lavaland/unpowered/syndicate_lava_base/main";
+	dir = 1;
+	icon_state = "control_kill";
+	lethal = 1;
+	name = "Base turret controls";
+	pixel_y = 30;
+	req_access = null;
+	req_access_txt = "150"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "VI" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -8788,7 +8803,7 @@ xP
 Fi
 DW
 Tx
-An
+VA
 Od
 An
 ZO

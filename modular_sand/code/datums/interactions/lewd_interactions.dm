@@ -560,7 +560,7 @@
 		else
 			dat += "...обладает закрытой одеждой."
 	if(has_breasts(REQUIRE_EXPOSED))
-		dat += "...обладает грудями."
+		dat += "...обладает грудью."
 	if(has_penis(REQUIRE_EXPOSED))
 		dat += "...обладает пенисом."
 	if(has_strapon(REQUIRE_EXPOSED))

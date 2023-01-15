@@ -594,15 +594,15 @@
 	if(M && M.client?.prefs.arousable && !(M.client?.prefs.cit_toggles & NO_APHRO))
 		if(prob(5))
 			if(prob(current_cycle))
-				M.say(pick("Hnnnnngghh...", "Ohh...", "Mmnnn..."))
+				M.say(pick("Ох-мхх...", "Ахх-р...", "Амрфпф...", "Мрр-ах..."))
 			else
 				M.emote(pick("moan","blush"))
 		if(prob(5))
 			var/aroused_message
 			if(current_cycle>25)
-				aroused_message = pick("You need to fuck someone!", "You're bursting with sexual tension!", "You can't get sex off your mind!")
+				aroused_message = pick("Тебе нужно кого-нибудь трахнуть!", "В вас бурлит сильное сексуальное напряжение!", "Вы не можете выбросить секс из головы!")
 			else
-				aroused_message = pick("You feel a bit hot.", "You feel strong sexual urges.", "You feel in the mood.", "You're ready to go down on someone.")
+				aroused_message = pick("Вам немного жарко.", "Вы испытываете сильное сексуальное влечение.", "Вы чувствуете себя в хорошем настроении.", "Вы готовы напрыгнуть на кого-то.")
 			to_chat(M, "<span class='userlove'>[aroused_message]</span>")
 			REMOVE_TRAIT(M,TRAIT_NEVERBONER,APHRO_TRAIT)
 		if(ishuman(M))
@@ -631,7 +631,7 @@
 	if(M && M.client?.prefs.arousable && !(M.client?.prefs.cit_toggles & NO_APHRO) && prob(33))
 		if(prob(5) && ishuman(M) && M.has_dna() && (M.client?.prefs.cit_toggles & BIMBOFICATION))
 			if(!HAS_TRAIT(M,TRAIT_PERMABONER))
-				to_chat(M, "<span class='userlove'>Your libido is going haywire!</span>")
+				to_chat(M, "<span class='userlove'>Ваше либидо сходит с ума!</span>")
 				M.log_message("Made perma-horny by hexacrocin.",LOG_EMOTE)
 				ADD_TRAIT(M,TRAIT_PERMABONER,APHRO_TRAIT)
 	..()

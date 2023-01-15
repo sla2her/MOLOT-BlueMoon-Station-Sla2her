@@ -434,7 +434,14 @@
 	key_third_person = "sniffs"
 	message = "sniffs."
 	emote_type = EMOTE_AUDIBLE
-	var/sound = 'sound/voice/sniff.ogg'
+
+/datum/emote/living/sniff/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/sniff_f1.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/sniff_m1.ogg'), 50, 1)
 
 /datum/emote/living/snore
 	key = "snore"

@@ -668,12 +668,12 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 		"[pick_list_replacements(HAL_LINES_FILE, "aggressive")]",\
 		"[pick_list_replacements(HAL_LINES_FILE, "help")]!!",\
 		"[pick_list_replacements(HAL_LINES_FILE, "escape")]",\
-		"I'm infected, [pick_list_replacements(HAL_LINES_FILE, "infection_advice")]!")
+		"Я заражён, [pick_list_replacements(HAL_LINES_FILE, "infection_advice")]!")
 
 	var/radio_messages = list("[pick_list_replacements(HAL_LINES_FILE, "people")] is [pick_list_replacements(HAL_LINES_FILE, "accusations")]!",\
-		"Help!",\
+		"Помогите!",\
 		"[pick_list_replacements(HAL_LINES_FILE, "threat")] in [pick_list_replacements(HAL_LINES_FILE, "location")][prob(50)?"!":"!!"]",\
-		"[pick("Where's [target.first_name()]?", "Set [target.first_name()] to arrest!")]",\
+		"[pick("Где [target.first_name()]?", "Сейчас же поставьте на [target.first_name()] Арест!")]",\
 		"[pick("C","Ai, c","Someone c","Rec")]all the shuttle!",\
 		"AI [pick("rogue", "is dead")]!!")
 

@@ -1,59 +1,59 @@
 {
 	"suspicion": [
-		"@pick(add_name)i'm watching you...",
-		"@pick(add_name)i know what you're doing",
-		"@pick(add_name)what are you hiding?",
-		"I saw that"
+		"@pick(add_name), я слежу за тобой...",
+		"@pick(add_name), я знаю, что ты сделал!!",
+		"@pick(add_name), что ты скрываешь?",
+		"Я видел это!!"
 	],
-	
+
 	"conversation": [
-		"Yes",
-		"Yeah",
-		"Yup",
-		"No",
-		"Nah",
-		"I doubt it",
-		"Uh...",
-		"Why?",
-		"But...",
-		"Hold on",
-		"Hmm",
-		"Yeah, i know",
-		"Weird"
+		"Да.",
+		"А-ага...",
+		"Угу.",
+		"Нет.",
+		"Не.",
+		"Сомневаюсь.",
+		"Эээ...",
+		"Почему?",
+		"Но...",
+		"Подожди.",
+		"Хм.",
+		"Да, я знаю.",
+		"Странно..."
 	],
 
 	"greetings": [
-		"",
-		"Hey, ",
-		"Hi ",
-		"Hello ",
-		"Wait, ",
-		"It's "
+		"...",
+		"Эй, ",
+		"Привет, ",
+		"Приветы, ",
+		"Подожди, ",
+		"Это "
 	],
 
 	"getout": [
-		"@pick(add_name)get out",
-		"@pick(add_name)get out!",
-		"@pick(add_name)go away",
-		"@pick(add_name)fuck off",
-		"OUT!",
-		"@pick(add_name)out!"
+		"@pick(add_name), уходи!",
+		"@pick(add_name), проваливай!",
+		"@pick(add_name), отстань от меня!",
+		"@pick(add_name), пиздуй отсюда!",
+		"НА ВЫХОД!",
+		"@pick(add_name), убирайся отсюда!"
 	],
 
 	"weird": [
-		"Kchck-Chkck? Kchchck!",
-		"Kchckchk...",
-		"EEEeeeeEEEE",
-		"khhhhh",
-		"#@�*&�",
-		"H**p m*",
-		"H-hhhhh..."
+		"Кччк-кчк? Кчччк!",
+		"Кчкчк...",
+		"EEEeeeeeeEEEE!!",
+		"Кххххх!",
+		"#@�*&�!",
+		"Хрм-мрааа...",
+		"Хххххххххххххххххх..."
 	],
 
 	"didyouhearthat": [
-		"Did you hear that?",
-		"Did you see that?",
-		"What was that?"
+		"Вы это слышали?",
+		"Ты это видел?",
+		"Что это было?"
 	],
 
 	"add_name": [
@@ -63,49 +63,49 @@
 	],
 
 	"doubt": [
-		"Why?",
-		"What?",
-		"Wait, what?",
-		"@pick(add_name)wait",
-		"@pick(add_name)hold on",
-		"Uh..."
+		"Почему?",
+		"Что?",
+		"Погоди, что?",
+		"@pick(add_name), стой!",
+		"@pick(add_name), остановись!",
+		"Ох..."
 	],
 
 	"aggressive": [
-		"@pick(add_name)give me that!",
-		"@pick(add_name)stop it!",
-		"@pick(add_name)i'm going to kill you!",
-		"@pick(add_name)fuck you!"
+		"@pick(add_name), отдай мне это!",
+		"@pick(add_name), остановись сейчас же!",
+		"@pick(add_name), я собираюсь убить тебя!",
+		"@pick(add_name), иди нахуй!!"
 	],
 
 	"help": [
-		"HELP",
-		"HELP",
-		"HELP",
-		"HELP",
-		"HELP",
-		"HELP ME",
-		"HELP HIM",
-		"HELP HER",
-		"HELP THEM",
-		"HELP US",
-		"HELP YOURSELF"
+		"ПОМОГИ!",
+		"ПОМОГИТЕ!",
+		"СПАСИТЕ!",
+		"СПАСИ!",
+		"ВЫТАЩИ МЕНЯ!",
+		"ПОМОГИ МНЕ!",
+		"ПОМОГИ ЕМУ!",
+		"ПОМОГИ ЕЙ!",
+		"ПОМОГИ НАМ!",
+		"СПАСИ НАС!",
+		"СПАСАЙСЯ!!"
 	],
 
 	"escape": [
-		"@pick(add_name)RUN!!",
-		"They're behind me!",
-		"It's here!",
-		"@pick(add_name)follow me!",
-		"@pick(add_name)follow me"
+		"@pick(add_name)БЕГИ!!",
+		"Они идут за мной!",
+		"Оно здесь, берегись!",
+		"@pick(add_name)следуй за мной!",
+		"@pick(add_name)следуй за мной"
 	],
 
 	"infection_advice": [
-		"@pick(add_name)stay away",
-		"@pick(add_name)don't get close",
-		"@pick(add_name)be careful",
-		"@pick(add_name)help me",
-		"@pick(add_name)kill me"
+		"@pick(add_name)держись от меня подальше!",
+		"@pick(add_name)не подходите ближе!",
+		"@pick(add_name)будь осторожней!",
+		"@pick(add_name)помоги мне!",
+		"@pick(add_name)убей меня!!!"
 	],
 
 	"people": [
@@ -182,7 +182,7 @@
 		"the kitchen",
 		"the ai sat"
 	],
-	
+
 	"sublocation": [
 		"the bridge",
 		"the armory",

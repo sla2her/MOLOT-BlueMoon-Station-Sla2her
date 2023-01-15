@@ -90,7 +90,7 @@
 		message = replacetext(message, "%s", user.p_s())
 	return message
 
-/datum/emote/proc/select_message_type(mob/user)
+/datum/emote/proc/select_message_type(mob/user, params, type_override, intentional)
 	. = message
 	if(!muzzle_ignore && user.is_muzzled() && emote_type == EMOTE_AUDIBLE)
 		return "makes a [pick("strong ", "weak ", "")]noise."

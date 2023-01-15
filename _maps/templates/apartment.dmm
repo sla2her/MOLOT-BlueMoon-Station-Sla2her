@@ -32,9 +32,7 @@
 "bz" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /obj/structure/table/wood,
-/obj/item/pizzabox/margherita{
-	pixel_y = 11
-	},
+/obj/structure/showcase/machinery/tv,
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "bR" = (
@@ -156,7 +154,7 @@
 /turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "lO" = (
-/obj/item/toy/plush/nukeplushie,
+/obj/item/choice_beacon/box/plushie,
 /turf/open/floor/carpet,
 /area/hilbertshotel)
 "lU" = (
@@ -189,6 +187,14 @@
 	dir = 9
 	},
 /obj/item/reagent_containers/rag/towel/syndicate,
+/obj/item/reagent_containers/rag/towel/syndicate{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/rag/towel/syndicate{
+	pixel_x = 5;
+	pixel_y = 5
+	},
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "pD" = (
@@ -388,7 +394,7 @@
 /obj/structure/curtain,
 /obj/item/soap/deluxe,
 /obj/machinery/shower,
-/turf/open/indestructible/hoteltile,
+/turf/open/floor/plasteel/showroomfloor/shower,
 /area/hilbertshotel)
 "Mp" = (
 /obj/structure/bed/dogbed,
@@ -437,7 +443,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/turf/open/pool,
+/turf/open/floor/plasteel/showroomfloor/shower,
 /area/hilbertshotel)
 "RM" = (
 /obj/structure/window{
@@ -512,8 +518,11 @@
 /turf/open/floor/plasteel/kitchen_coldroom,
 /area/hilbertshotel)
 "WN" = (
-/obj/structure/sign/painting/library,
-/turf/closed/indestructible/wood,
+/obj/structure/table/wood,
+/obj/item/pizzabox/margherita{
+	pixel_y = 11
+	},
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "WX" = (
 /obj/effect/turf_decal/siding/wood{
@@ -557,7 +566,7 @@ FN
 FN
 xT
 xT
-WN
+xT
 xT
 xT
 SS
@@ -728,10 +737,10 @@ FN
 lK
 UQ
 dT
-dT
-Ib
-Ib
 WN
+Ib
+Ib
+xT
 aS
 kh
 xT
@@ -778,7 +787,7 @@ FN
 FN
 xT
 xT
-WN
+xT
 xT
 xT
 xT
