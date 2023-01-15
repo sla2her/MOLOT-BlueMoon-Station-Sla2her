@@ -53,7 +53,7 @@
 /datum/design/poster
 	name = "Motivational Poster"
 	id = "random_official"
-	build_type = AUTOLATHE | NO_PUBLIC_LATHE
+	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000)
 	build_path = /obj/item/poster/random_official
 	category = list("Misc")

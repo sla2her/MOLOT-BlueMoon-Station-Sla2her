@@ -2,8 +2,8 @@
 /datum/round_event_control/stray_cargo
 	name = "Stray Cargo Pod"
 	typepath = /datum/round_event/stray_cargo
-	weight = 40
-	max_occurrences = 4
+	weight = 50
+	max_occurrences = 3
 	earliest_start = 10 MINUTES
 
 ///Spawns a cargo pod containing a random cargo supply pack on a random area of the station
@@ -86,9 +86,9 @@
 /datum/round_event_control/stray_cargo/syndicate
 	name = "Stray Syndicate Cargo Pod"
 	typepath = /datum/round_event/stray_cargo/syndicate
-	weight = 30
-	max_occurrences = 3
-	earliest_start = 30 MINUTES
+	weight = 75
+	max_occurrences = 10
+	earliest_start = 10 MINUTES
 
 /datum/round_event/stray_cargo/syndicate
 	possible_pack_types = list(/datum/supply_pack/misc/syndicate)

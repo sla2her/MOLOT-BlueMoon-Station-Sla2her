@@ -120,10 +120,10 @@
 ///Syndicate Listening Post
 
 /obj/effect/mob_spawn/human/lavaland_syndicate
-	name = "Syndicate Bioweapon Scientist"
+	name = "Syndicate Bioweapon Specialist"
 	roundstart = FALSE
 	death = FALSE
-	job_description = "Off-station Syndicate Scientist"
+	job_description = "Off-station Syndicate Specialist"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	short_desc = "Вы Научный Специалист Синдиката, работающий на Аванпосту Лаваленда и изучающий аномальное поле Системы Синих Лун."

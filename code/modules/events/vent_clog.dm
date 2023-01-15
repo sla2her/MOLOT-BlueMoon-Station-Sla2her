@@ -2,7 +2,7 @@
 	name = "Clogged Vents: Normal"
 	typepath = /datum/round_event/vent_clog
 	weight = 10
-	max_occurrences = 2
+	max_occurrences = 1
 
 /datum/round_event/vent_clog
 	announceWhen	= 1
@@ -104,10 +104,10 @@
 /datum/round_event_control/vent_clog/threatening
 	name = "Clogged Vents: Threatening"
 	typepath = /datum/round_event/vent_clog/threatening
-	weight = 4
+	weight = 10
 	min_players = 15
 	max_occurrences = 1
-	earliest_start = 35 MINUTES
+	earliest_start = 30 MINUTES
 
 /datum/round_event/vent_clog/threatening
 	randomProbability = 10
@@ -116,20 +116,20 @@
 /datum/round_event_control/vent_clog/catastrophic
 	name = "Clogged Vents: Catastrophic"
 	typepath = /datum/round_event/vent_clog/catastrophic
-	weight = 2
+	weight = 5
 	min_players = 25
 	max_occurrences = 1
-	earliest_start = 45 MINUTES
+	earliest_start = 30 MINUTES
 
 /datum/round_event/vent_clog/catastrophic
 	randomProbability = 30
-	reagentsAmount = 250
+	reagentsAmount = 300
 
 /datum/round_event_control/vent_clog/beer
 	name = "Clogged Vents: Beer"
 	typepath = /datum/round_event/vent_clog/beer
-	weight = 30
-	max_occurrences = 4
+	weight = 25
+	max_occurrences = 1
 
 /datum/round_event/vent_clog/beer
 	reagentsAmount = 100

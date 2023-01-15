@@ -6,11 +6,6 @@
 	hide_legs = USE_SNEK_CLIP_MASK
 	matrixed_sections = MATRIX_ALL
 
-/datum/sprite_accessory/taur/chemnaga/coiled
-	name = "RadDog Naga (coiled)"
-	icon_state = "naga_coiled"
-	ignore = TRUE
-
 /datum/sprite_accessory/taur/chemlight
 	name = "RadDog Taur (Hyper)"
 	icon = 'modular_splurt/icons/mob/mam_taur.dmi'

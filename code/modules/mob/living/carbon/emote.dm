@@ -8,24 +8,8 @@
 	key_third_person = "blinks"
 	message = "blinks."
 
-/datum/emote/living/carbon/human/cry
-	key = "cry"
-	key_third_person = "cries"
-	message = "cries."
-	emote_type = EMOTE_AUDIBLE
-
-/datum/emote/living/carbon/human/cry/run_emote(mob/user, params)
-	. = ..()
-	var/mob/living/carbon/C = user
-	if(. && isrobotic(user))
-		do_fake_sparks(5,FALSE,user)
-	if(user.gender == FEMALE)
-		playsound(C, pick('sound/voice/female_cry1.ogg', 'sound/voice/female_cry2.ogg'), 50, 1)
-	else
-		playsound(C, pick('sound/voice/male_cry1.ogg', 'sound/voice/male_cry2.ogg'), 50, 1)
-
 /datum/emote/living/carbon/blink_r
-	key = "blink_r"
+	key = "blink3"
 	message = "blinks rapidly."
 
 /datum/emote/living/carbon/clap

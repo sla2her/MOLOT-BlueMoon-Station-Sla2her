@@ -469,6 +469,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/wizard
 	mutantrace_variation = STYLE_DIGITIGRADE
+	var/magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR|SPELL_WIZARD_HAT|SPELL_CULT_HELMET
 
 /obj/item/clothing/suit/space/hardsuit/wizard/ComponentInitialize()
 	. = ..()

@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/camera_failure
 	weight = 30
 	max_occurrences = 25
-	alert_observers = FALSE
+	alert_observers = TRUE
 
 /datum/round_event/camera_failure
 	fakeable = FALSE

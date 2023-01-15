@@ -118,7 +118,6 @@
 	icon_state = "magusblue"
 	item_state = "magusblue"
 	mutantrace_variation = STYLE_DIGITIGRADE
-	magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR
 
 /obj/item/clothing/suit/wizrobe/magusred
 	name = "\improper Magus robe"
@@ -126,7 +125,6 @@
 	icon_state = "magusred"
 	item_state = "magusred"
 	mutantrace_variation = STYLE_DIGITIGRADE
-	magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR
 
 /obj/item/clothing/suit/wizrobe/santa
 	name = "Santa's suit"
@@ -312,7 +310,7 @@
 	armor = list(MELEE = 30, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 20, BIO = 20, RAD = 20, FIRE = 100, ACID = 100)
 	slowdown = 0
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	var/magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR
+	var/magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR|SPELL_WIZARD_HAT|SPELL_CULT_HELMET
 
 
 /obj/item/clothing/suit/space/hardsuit/shielded/wizard/ComponentInitialize()
@@ -329,7 +327,7 @@
 	armor = list(MELEE = 30, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 20, BIO = 20, RAD = 20, FIRE = 100, ACID = 100)
 	actions_types = null //No inbuilt light
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	var/magic_flags = SPELL_WIZARD_HAT|SPELL_CULT_HELMET
+	var/magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR|SPELL_WIZARD_HAT|SPELL_CULT_HELMET
 
 /obj/item/clothing/head/helmet/space/hardsuit/shielded/wizard/ComponentInitialize()
 	. = ..()
