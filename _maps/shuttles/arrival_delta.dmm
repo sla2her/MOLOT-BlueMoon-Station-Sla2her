@@ -132,8 +132,11 @@
 /area/shuttle/arrival)
 "k" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency{
+	pixel_y = 10
+	},
 /obj/effect/turf_decal/bot,
+/obj/item/storage/toolbox/emergency,
 /turf/open/floor/plasteel,
 /area/shuttle/arrival)
 "l" = (
