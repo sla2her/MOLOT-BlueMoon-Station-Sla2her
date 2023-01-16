@@ -44508,7 +44508,7 @@
 	req_access_txt = "13"
 	},
 /obj/structure/fans/tiny,
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "dCt" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
@@ -56117,7 +56117,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "nRy" = (
 /obj/effect/turf_decal/tile/red,
