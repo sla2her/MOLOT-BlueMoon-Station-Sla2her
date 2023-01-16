@@ -736,9 +736,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-science"
-	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -803,9 +800,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-service"
-	},
 /turf/open/floor/plasteel/white/side{
 	dir = 6
 	},
@@ -1711,14 +1705,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "lY" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-medbay"
-	},
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical/glass{
 	name = "Medbay";
 	req_access_txt = "150"
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white/side{
 	dir = 6
 	},
@@ -2002,7 +1993,8 @@
 "oi" = (
 /obj/effect/turf_decal/siding/thinplating/dark/corner,
 /obj/machinery/door/airlock/public/glass{
-	name = "Dormitories"
+	name = "Dormitories";
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
@@ -2025,9 +2017,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-science"
-	},
 /turf/open/floor/plasteel/white/side{
 	dir = 10
 	},
@@ -2295,9 +2284,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-service"
-	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "qt" = (
@@ -2884,7 +2870,8 @@
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "wc" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Dormitories"
+	name = "Dormitories";
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
@@ -3057,9 +3044,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-science"
-	},
 /turf/open/floor/plasteel/white/side{
 	dir = 9
 	},
@@ -3841,9 +3825,6 @@
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "Ch" = (
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-medbay"
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -4148,9 +4129,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-service"
-	},
 /turf/open/floor/plasteel/white/side{
 	dir = 10
 	},
@@ -4373,16 +4351,16 @@
 /turf/open/floor/plating,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "FT" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Medical Wing";
-	req_access_txt = "150"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
 	level = 1
+	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay";
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
@@ -4500,8 +4478,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
-"GO" = (
-)
 "GS" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 1
@@ -4578,9 +4554,6 @@
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "HM" = (
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-medbay"
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -4661,9 +4634,6 @@
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Bay";
 	req_access_txt = "150"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-cargo"
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 9
@@ -4812,9 +4782,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-cargo"
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -4925,9 +4892,6 @@
 	name = "Cargo Bay";
 	req_access_txt = "150"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-cargo"
-	},
 /turf/open/floor/plasteel/white/side{
 	dir = 5
 	},
@@ -4986,9 +4950,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-science"
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -5109,12 +5070,12 @@
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "Ld" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Medical Wing";
-	req_access_txt = "150"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay";
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 5
@@ -5417,9 +5378,6 @@
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-medbay"
 	},
 /obj/machinery/door/airlock/maintenance/external{
 	req_access_txt = "150"
@@ -5854,12 +5812,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "Qx" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Medical Wing";
-	req_access_txt = "150"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay";
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 6
@@ -5873,17 +5831,14 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "QJ" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-medbay"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical/glass{
 	name = "Medbay";
 	req_access_txt = "150"
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white/side{
 	dir = 5
 	},
@@ -6212,9 +6167,6 @@
 	req_access_txt = "150"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "interdyne-cargo"
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -6346,12 +6298,13 @@
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "TY" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Pharmacy"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
 	level = 1
+	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay";
+	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
@@ -6563,9 +6516,6 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "Vw" = (
-/obj/machinery/door/airlock/medical{
-	name = "Medical Desk"
-	},
 /obj/effect/turf_decal/siding/thinplating/dark/corner{
 	dir = 8
 	},
@@ -8714,7 +8664,7 @@ ab
 ab
 ag
 ag
-GO
+aa
 "}
 (24,1,1) = {"
 aa
