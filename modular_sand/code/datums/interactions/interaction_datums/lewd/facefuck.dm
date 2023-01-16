@@ -125,7 +125,7 @@
 		if(rand(3))
 			partner.emote("chokes on \the [user]")
 			if(prob(1) && istype(partner)) //Handled on modular_splurt
-				partner.adjustOxyLoss(10)
+				partner.adjustOxyLoss(20)
 		if(partner.a_intent == INTENT_HARM)
 			partner.adjustBruteLoss(3)
 			retaliation_message = pick(

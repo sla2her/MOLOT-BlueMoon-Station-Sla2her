@@ -16,7 +16,7 @@
 	var/w_class_on = WEIGHT_CLASS_BULKY
 	hitsound = "swing_hit"
 	var/hitsound_on = 'sound/weapons/blade1.ogg'
-	armour_penetration = 35
+	armour_penetration = 100
 	var/saber_color = "green"
 	light_color = "#00ff00"//green
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
@@ -91,7 +91,7 @@
 
 /obj/item/dualsaber/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=3, force_wielded=34, \
+	AddComponent(/datum/component/two_handed, force_unwielded=3, force_wielded=45, \
 					wieldsound='sound/weapons/saberon.ogg', unwieldsound='sound/weapons/saberoff.ogg')
 
 /obj/item/dualsaber/Initialize(mapload)
@@ -279,7 +279,7 @@
 	force = 7
 	hitsound_on = 'sound/weapons/nebhit.ogg'
 	wound_bonus = -20
-	armour_penetration = 60
+	armour_penetration = 100
 	light_color = "#37FFF7"
 	rainbow_colors = list("#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#0000FF","#FF00FF", "#3399ff", "#ff9900", "#fb008b", "#9800ff", "#00ffa3", "#ccff00")
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "destroyed", "ripped", "devastated", "shredded")
@@ -289,7 +289,7 @@
 
 /obj/item/dualsaber/hypereutactic/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=7, force_wielded=40, \
+	AddComponent(/datum/component/two_handed, force_unwielded=7, force_wielded=45, \
 					wieldsound='sound/weapons/nebon.ogg', unwieldsound='sound/weapons/nebhit.ogg')
 	AddElement(/datum/element/update_icon_updates_onmob)
 
