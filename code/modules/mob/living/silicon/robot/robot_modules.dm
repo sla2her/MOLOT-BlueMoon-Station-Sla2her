@@ -783,6 +783,7 @@
 		"Blade" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "bladesec-b"), // SPLURT Addon
 		"EdgyBoy" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "badboi-b"), // SPLURT Addon (VIRGO Port)
 		"EdgyGirl" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "prettyboi-b"), // SPLURT Addon (VIRGO Port)
+		"Syndicate" = image(icon = 'modular_splurt/icons/mob/widerobot_synd.dmi', icon_state = "syndihounddark"), // BLUEMOON Addon
 		"Drake" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakesecbox")
 		)
 		var/list/L = list("K9" = "k9", "Vale" = "valesec", "K9 Dark" = "k9dark")
@@ -901,6 +902,10 @@
 		if("EdgyGirl") // SPLURT Addon (VIRGO Port)
 			cyborg_base_icon = "prettyboi"
 			cyborg_icon_override = 'modular_splurt/icons/mob/widerobot.dmi'
+			dogborg = TRUE
+		if("Syndicate") // BLUEMOON Addon (VIRGO Port)
+			cyborg_base_icon = "syndihounddark"
+			cyborg_icon_override = 'modular_splurt/icons/mob/widerobot_synd.dmi'
 			dogborg = TRUE
 		if("Drake") // Dergborg brought to you by Navier#1236 | Skyrat | Commissioned Artist: deviantart.com/mizartz
 			cyborg_base_icon = "drakesec"

@@ -237,8 +237,6 @@
 
 			if(user && lavaland_equipment_pressure_check(get_turf(user))) //CIT CHANGE - makes sure below only happens in low pressure environments
 				user.adjustStaminaLoss(-30)//CIT CHANGE - makes crushers heal stamina
-	SEND_SIGNAL(src, COMSIG_ITEM_AFTERATTACK, target, user, proximity_flag, clickparams)
-	SEND_SIGNAL(user, COMSIG_MOB_ITEM_AFTERATTACK, target, user, proximity_flag, clickparams)
 
 //king goat
 /obj/item/crusher_trophy/king_goat
@@ -328,7 +326,7 @@
 	sharpness = SHARP_EDGED
 	var/list/trophies = list()
 	var/charged = TRUE
-	var/charge_time = 12
+	var/charge_time = 15
 	var/detonation_damage = 65
 	var/backstab_bonus = 40
 	var/brightness = 7

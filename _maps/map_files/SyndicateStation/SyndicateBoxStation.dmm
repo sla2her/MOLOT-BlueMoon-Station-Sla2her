@@ -271,7 +271,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "aaQ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/warden)
 "aaR" = (
 /obj/effect/turf_decal/tile/green,
@@ -325,7 +327,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "aaY" = (
 /obj/machinery/vending/wardrobe/sec_wardrobe,
@@ -338,7 +342,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/office)
 "aaZ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/security/armory)
 "aba" = (
 /obj/structure/lattice,
@@ -355,19 +361,25 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "abc" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/execution/transfer)
 "abd" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/execution/transfer)
 "abe" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/execution/transfer)
 "abf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -440,7 +452,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "abn" = (
 /obj/structure/closet/secure_closet/security/sec,
@@ -466,10 +480,14 @@
 /turf/open/floor/plating,
 /area/security/office)
 "abp" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/office)
 "abq" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/hos)
 "abr" = (
 /obj/machinery/computer/security/hos,
@@ -723,7 +741,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/execution/transfer)
 "acd" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "ace" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -2004,7 +2024,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ai_monitored/security/armory)
 "aeX" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/chemistry)
 "aeY" = (
 /obj/vehicle/ridden/secway,
@@ -2439,7 +2461,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/security/armory)
 "afT" = (
 /obj/structure/closet/secure_closet{
@@ -2736,7 +2760,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/processing)
 "agw" = (
 /obj/structure/cable{
@@ -3160,7 +3186,9 @@
 /turf/open/floor/glass/reinforced,
 /area/commons/dorms)
 "ahn" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "ahq" = (
 /obj/effect/turf_decal/stripes/line{
@@ -3995,7 +4023,9 @@
 /turf/open/space,
 /area/space/nearstation)
 "aiT" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/processing)
 "aiU" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -4013,7 +4043,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
 "aiX" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/brig)
 "aiY" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -4169,7 +4201,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/courtroom)
 "ajo" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/courtroom)
 "ajp" = (
 /turf/open/floor/mineral/plastitanium,
@@ -4190,7 +4224,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/blueshielquarters)
 "ajs" = (
 /obj/structure/disposalpipe/segment,
@@ -4598,7 +4634,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/brig)
 "akg" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
@@ -5459,7 +5497,9 @@
 /area/maintenance/starboard/fore)
 "alP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "alQ" = (
 /obj/machinery/power/solar_control{
@@ -5472,7 +5512,9 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/port/fore)
 "alR" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/port/fore)
 "alS" = (
 /obj/structure/sign/warning/vacuum/external{
@@ -5541,7 +5583,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/warden)
 "amc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -5806,7 +5850,9 @@
 /area/security/brig)
 "amK" = (
 /obj/structure/sign/warning/docking,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/processing)
 "amL" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -6061,7 +6107,9 @@
 /area/security/brig)
 "anr" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/warden)
 "ans" = (
 /obj/structure/cable{
@@ -6170,7 +6218,9 @@
 /area/maintenance/fore/secondary)
 "anH" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/port/fore)
 "anI" = (
 /obj/machinery/door/airlock/engineering{
@@ -6344,16 +6394,22 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "aoe" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "aof" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/starboard/fore)
 "aog" = (
 /obj/structure/cable{
@@ -6412,7 +6468,9 @@
 /area/maintenance/port/fore)
 "aoo" = (
 /obj/structure/sign/poster/contraband/revolver,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/kitchen)
 "aop" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -6765,7 +6823,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/warden)
 "apd" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/detectives_office)
 "ape" = (
 /obj/machinery/door/firedoor,
@@ -6777,7 +6837,9 @@
 /area/command/blueshieldoffice)
 "apf" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/detectives_office)
 "apg" = (
 /obj/machinery/door/airlock/maintenance{
@@ -6787,7 +6849,9 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aph" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/lawoffice)
 "api" = (
 /obj/machinery/door/airlock{
@@ -6812,7 +6876,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "apm" = (
 /obj/machinery/door/firedoor,
@@ -6823,13 +6889,17 @@
 /area/hallway/primary/fore)
 "apn" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "apo" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "app" = (
 /obj/structure/disposalpipe/segment{
@@ -6989,7 +7059,9 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "apC" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/fore)
 "apD" = (
 /obj/structure/closet/wardrobe/mixed,
@@ -7044,7 +7116,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/central)
 "apJ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/construction/mining/aux_base)
 "apL" = (
 /obj/machinery/power/apc{
@@ -7061,7 +7135,9 @@
 /area/maintenance/port/fore)
 "apM" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "apN" = (
 /turf/open/floor/plating,
@@ -7070,7 +7146,9 @@
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "apP" = (
 /obj/structure/closet/crate,
@@ -7180,7 +7258,9 @@
 /area/service/lawoffice)
 "aqc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "aqd" = (
 /obj/machinery/airalarm{
@@ -7358,7 +7438,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/dorms)
 "aqt" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -7391,7 +7473,9 @@
 /area/maintenance/solars/starboard/fore)
 "aqx" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/starboard/fore)
 "aqy" = (
 /obj/structure/closet/emcloset,
@@ -7775,7 +7859,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "arB" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/secondary/entry)
 "arC" = (
 /obj/structure/disposalpipe/segment,
@@ -7826,7 +7912,9 @@
 /area/construction/mining/aux_base)
 "arH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "arI" = (
 /obj/structure/cable{
@@ -7879,7 +7967,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "arP" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore)
 "arR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -7927,7 +8017,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/lawoffice)
 "arX" = (
 /obj/structure/table/wood,
@@ -7996,7 +8088,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/dorms)
 "ase" = (
 /turf/open/floor/carpet/red,
@@ -8195,7 +8289,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "asB" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/department/electrical)
 "asC" = (
 /obj/structure/disposalpipe/segment,
@@ -8632,7 +8728,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "atP" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -8642,7 +8740,9 @@
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
 "atS" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/space/nearstation)
 "atU" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
@@ -8656,7 +8756,9 @@
 /area/maintenance/port/fore)
 "atY" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/blueshielquarters)
 "aua" = (
 /obj/machinery/door/firedoor,
@@ -8696,7 +8798,9 @@
 /area/maintenance/port/fore)
 "auf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/lawoffice)
 "aug" = (
 /obj/structure/table/wood,
@@ -8751,7 +8855,9 @@
 /area/commons/dorms)
 "aun" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/dorms)
 "auo" = (
 /obj/structure/cable{
@@ -8765,7 +8871,9 @@
 /area/maintenance/fore)
 "auq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/blueshielquarters)
 "aur" = (
 /obj/machinery/button/door{
@@ -8932,7 +9040,9 @@
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "ava" = (
 /obj/structure/table/glass,
@@ -9005,7 +9115,9 @@
 /area/commons/dorms)
 "avo" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/department/electrical)
 "avp" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -9157,7 +9269,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/department/electrical)
 "avI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -9175,7 +9289,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/department/electrical)
 "avL" = (
 /obj/machinery/power/apc{
@@ -9217,7 +9333,9 @@
 /area/maintenance/department/electrical)
 "avP" = (
 /obj/structure/sign/warning/pods,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/secondary/entry)
 "avR" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
@@ -9269,7 +9387,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore)
 "awa" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -9783,7 +9903,9 @@
 "axj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/sign/poster/contraband/have_a_puff,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics)
 "axk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -9861,11 +9983,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/storage/eva)
 "axz" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/storage/eva)
 "axB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -9891,7 +10017,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "axE" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -10329,7 +10457,9 @@
 /turf/open/floor/carpet/black,
 /area/commons/dorms)
 "ayW" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/storage/eva)
 "ayX" = (
 /obj/structure/table,
@@ -10422,7 +10552,9 @@
 /area/commons/dorms)
 "azq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics/garden)
 "azr" = (
 /obj/structure/grille/broken,
@@ -10527,7 +10659,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ai_monitored/command/storage/eva)
 "azF" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics/garden)
 "azK" = (
 /obj/structure/disposalpipe/segment{
@@ -10666,7 +10800,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "aAh" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/toilet)
 "aAi" = (
 /obj/structure/chair/comfy/brown{
@@ -10789,7 +10925,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/department/electrical)
 "aAB" = (
 /obj/machinery/power/smes,
@@ -10800,7 +10938,9 @@
 /area/maintenance/department/electrical)
 "aAC" = (
 /obj/structure/sign/warning/docking,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/secondary/entry)
 "aAD" = (
 /obj/structure/sign/warning/vacuum/external{
@@ -11035,7 +11175,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/storage/eva)
 "aBl" = (
 /obj/machinery/door/airlock/maintenance{
@@ -11163,7 +11305,9 @@
 /area/commons/dorms)
 "aBB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/fore)
 "aBC" = (
 /obj/machinery/door/airlock/maintenance{
@@ -11203,15 +11347,21 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/secondary/entry)
 "aBI" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/auxiliary)
 "aBJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/auxiliary)
 "aBK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/auxiliary)
 "aBL" = (
 /obj/machinery/door/airlock/maintenance{
@@ -11226,7 +11376,9 @@
 /area/maintenance/port/fore)
 "aBN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/primary)
 "aBO" = (
 /obj/machinery/requests_console{
@@ -11251,13 +11403,17 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ai_monitored/command/storage/eva)
 "aBQ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/primary)
 "aBR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/primary)
 "aBW" = (
 /obj/structure/cable{
@@ -11333,7 +11489,9 @@
 /area/commons/cryopod)
 "aCe" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/toilet)
 "aCg" = (
 /obj/structure/cable{
@@ -11460,7 +11618,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/fore)
 "aCC" = (
 /obj/machinery/door/poddoor/preopen{
@@ -11487,7 +11647,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/fore)
 "aCF" = (
 /obj/structure/girder,
@@ -11596,7 +11758,9 @@
 /turf/open/floor/grass,
 /area/service/chapel/main)
 "aCR" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/chapel/main)
 "aCT" = (
 /obj/structure/chair{
@@ -11606,7 +11770,9 @@
 /area/medical/psychology)
 "aCW" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/psychology)
 "aCY" = (
 /obj/machinery/computer/security,
@@ -11929,7 +12095,9 @@
 /area/command/heads_quarters/rd)
 "aDI" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/storage/eva)
 "aDK" = (
 /obj/machinery/door/airlock/public/glass{
@@ -11966,7 +12134,9 @@
 /turf/open/floor/plasteel/freezer,
 /area/commons/toilet)
 "aDM" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/engine_smes)
 "aDQ" = (
 /obj/machinery/door/airlock{
@@ -12345,7 +12515,9 @@
 /area/ai_monitored/command/storage/eva)
 "aFc" = (
 /obj/structure/sign/warning/securearea,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/storage/eva)
 "aFd" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -12414,7 +12586,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aFu" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/library)
 "aFv" = (
 /obj/structure/cable{
@@ -12429,7 +12603,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aFw" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/chapel/office)
 "aFx" = (
 /obj/structure/disposalpipe/segment,
@@ -12961,7 +13137,9 @@
 /area/maintenance/starboard/fore)
 "aGO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/chapel/office)
 "aGQ" = (
 /obj/structure/disposalpipe/segment{
@@ -13086,7 +13264,9 @@
 "aHh" = (
 /obj/structure/sign/warning/securearea,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/nuke_storage)
 "aHi" = (
 /obj/machinery/door/morgue{
@@ -13145,7 +13325,9 @@
 /area/service/chapel/office)
 "aHm" = (
 /obj/structure/lattice,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/chapel/main)
 "aHn" = (
 /obj/machinery/mass_driver{
@@ -13303,7 +13485,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "aHN" = (
 /obj/structure/table,
@@ -13431,7 +13615,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "aIf" = (
 /obj/structure/disposalpipe/segment,
@@ -13537,11 +13723,15 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aIp" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics)
 "aIq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics)
 "aIr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -13932,7 +14122,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "aJr" = (
 /obj/effect/turf_decal/tile/blue{
@@ -14036,7 +14228,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aJC" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "aJD" = (
 /obj/machinery/door/airlock/maintenance{
@@ -14079,7 +14273,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/service/bar)
 "aJI" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/kitchen)
 "aJJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -14139,7 +14335,9 @@
 /area/service/library)
 "aJR" = (
 /obj/structure/sign/poster/contraband/punch_shit,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/locker)
 "aJS" = (
 /obj/structure/disposalpipe/segment,
@@ -14361,7 +14559,9 @@
 /turf/open/floor/plating,
 /area/hallway/primary/port)
 "aKB" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/primary/port)
 "aKC" = (
 /obj/structure/disposalpipe/segment,
@@ -14619,7 +14819,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/chapel/office)
 "aLp" = (
 /obj/structure/cable{
@@ -15123,7 +15325,9 @@
 /turf/open/floor/carpet/blackred,
 /area/hallway/primary/port)
 "aMZ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/secondary/exit)
 "aNa" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -15339,7 +15543,9 @@
 /area/service/kitchen/coldroom)
 "aNL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics)
 "aNM" = (
 /obj/structure/kitchenspike,
@@ -15415,7 +15621,9 @@
 /area/service/library)
 "aNW" = (
 /obj/structure/sign/poster/contraband/missing_gloves,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/primary)
 "aNX" = (
 /obj/structure/closet/crate/coffin,
@@ -15981,10 +16189,14 @@
 /turf/open/floor/carpet/blackred,
 /area/hallway/secondary/entry)
 "aPz" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port)
 "aPA" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/locker)
 "aPB" = (
 /obj/machinery/door/airlock/maintenance{
@@ -16007,14 +16219,18 @@
 /area/commons/locker)
 "aPE" = (
 /obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/locker)
 "aPF" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/commons/storage/art)
 "aPG" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/art)
 "aPH" = (
 /obj/machinery/door/airlock/public/glass{
@@ -16034,10 +16250,14 @@
 /area/maintenance/port)
 "aPJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/art)
 "aPK" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/emergency/port)
 "aPL" = (
 /obj/structure/table,
@@ -16060,11 +16280,15 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/port)
 "aPQ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/tools)
 "aPR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "aPS" = (
 /obj/structure/cable{
@@ -16219,7 +16443,9 @@
 /area/service/bar)
 "aQj" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/kitchen)
 "aQk" = (
 /obj/machinery/door/airlock{
@@ -17188,7 +17414,9 @@
 /area/service/kitchen)
 "aSP" = (
 /obj/machinery/smartfridge,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/kitchen)
 "aSQ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -17388,11 +17616,15 @@
 /area/hallway/secondary/entry)
 "aTs" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/vacant_room/office)
 "aTt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/vacant_room/office)
 "aTu" = (
 /obj/structure/disposalpipe/segment{
@@ -17555,7 +17787,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/commons/storage/tools)
 "aTQ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/bridge)
 "aTR" = (
 /obj/machinery/computer/prisoner/management,
@@ -18546,7 +18780,9 @@
 /area/maintenance/port)
 "aWy" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/toilet/locker)
 "aWz" = (
 /obj/machinery/power/apc{
@@ -18586,7 +18822,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/warehouse)
 "aWD" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -19138,7 +19376,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/warehouse)
 "aXF" = (
 /obj/structure/sign/warning/fire{
@@ -19187,13 +19427,17 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/warehouse)
 "aXK" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/detectives_office)
 "aXL" = (
 /obj/machinery/light/small{
@@ -19227,7 +19471,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port)
 "aXQ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/toilet/locker)
 "aXR" = (
 /obj/structure/disposalpipe/segment,
@@ -19247,7 +19493,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics)
 "aXT" = (
 /obj/machinery/door/firedoor,
@@ -19457,7 +19705,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "aYu" = (
 /obj/machinery/firealarm{
@@ -19483,7 +19733,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "aYw" = (
 /obj/structure/cable{
@@ -19500,32 +19752,42 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "aYy" = (
 /obj/machinery/status_display/ai,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "aYz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "aYA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "aYB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "aYC" = (
 /obj/machinery/firealarm{
@@ -19901,11 +20163,15 @@
 /turf/open/floor/plating,
 /area/maintenance/port)
 "aZE" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/storage)
 "aZF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/warehouse)
 "aZG" = (
 /obj/machinery/light_switch{
@@ -19939,7 +20205,9 @@
 /turf/open/floor/carpet/black,
 /area/security/detectives_office)
 "aZK" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/sorting)
 "aZL" = (
 /obj/machinery/light_switch{
@@ -19949,7 +20217,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/detectives_office)
 "aZM" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/meeting_room)
 "aZN" = (
 /obj/machinery/door/firedoor,
@@ -19961,7 +20231,9 @@
 /area/hallway/primary/central)
 "aZO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/meeting_room)
 "aZQ" = (
 /obj/machinery/door/airlock/command{
@@ -20001,7 +20273,9 @@
 /area/hallway/secondary/exit)
 "aZW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/captain)
 "aZX" = (
 /obj/machinery/door/airlock/command{
@@ -20470,7 +20744,9 @@
 /area/ai_monitored/turret_protected/ai_upload)
 "bbk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "bbl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -20496,7 +20772,9 @@
 /area/command/heads_quarters/captain)
 "bbp" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "bbs" = (
 /obj/structure/window/reinforced{
@@ -20550,7 +20828,9 @@
 /area/service/bar)
 "bby" = (
 /obj/structure/sign/barsign,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "bbz" = (
 /turf/open/floor/mineral/plastitanium,
@@ -20582,7 +20862,9 @@
 /area/service/library)
 "bbE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/library)
 "bbG" = (
 /obj/machinery/firealarm{
@@ -20800,7 +21082,9 @@
 /area/hallway/primary/starboard)
 "bcl" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal)
 "bcm" = (
 /obj/structure/chair/comfy/brown{
@@ -20872,7 +21156,9 @@
 /area/hallway/primary/starboard)
 "bcw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/locker)
 "bcx" = (
 /obj/machinery/camera{
@@ -21354,13 +21640,17 @@
 /area/maintenance/aft)
 "bdP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/mechbay)
 "bdQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal)
 "bdR" = (
 /obj/structure/cable{
@@ -21770,7 +22060,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/secondary/entry)
 "beO" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal)
 "beP" = (
 /obj/machinery/conveyor{
@@ -21815,7 +22107,9 @@
 /area/maintenance/disposal)
 "beT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal)
 "beU" = (
 /obj/machinery/conveyor{
@@ -21828,7 +22122,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/sorting)
 "beW" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -21876,7 +22172,9 @@
 /obj/machinery/mineral/stacking_unit_console{
 	machinedir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal)
 "bfb" = (
 /obj/machinery/computer/pod/old{
@@ -21995,19 +22293,25 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "bfu" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "bfx" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "bfy" = (
 /obj/structure/table/wood,
@@ -22068,7 +22372,9 @@
 /area/medical/medbay/lobby)
 "bfH" = (
 /obj/structure/sign/departments/medbay/alt,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/medbay/lobby)
 "bfI" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -22081,10 +22387,14 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/central)
 "bfK" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/medical)
 "bfL" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/morgue)
 "bfM" = (
 /obj/structure/cable{
@@ -22133,10 +22443,14 @@
 /turf/open/floor/mineral/plastitanium,
 /area/cargo/sorting)
 "bfS" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/emergency/starboard)
 "bfT" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/mechbay)
 "bfU" = (
 /obj/effect/turf_decal/loading_area{
@@ -22145,7 +22459,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/starboard)
 "bfV" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/lab)
 "bfW" = (
 /obj/effect/turf_decal/tile/purple{
@@ -22211,7 +22527,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/starboard)
 "bgc" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/lab)
 "bgd" = (
 /obj/machinery/airalarm{
@@ -22340,7 +22658,9 @@
 /area/cargo/storage)
 "bgv" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/office)
 "bgw" = (
 /obj/structure/cable{
@@ -22356,7 +22676,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/warehouse)
 "bgz" = (
 /obj/machinery/disposal/bin,
@@ -22371,13 +22693,17 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/sorting)
 "bgC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/sorting)
 "bgD" = (
 /obj/machinery/conveyor_switch/oneway{
@@ -22459,14 +22785,18 @@
 "bgM" = (
 /obj/structure/sign/warning/securearea,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/nuke_storage)
 "bgN" = (
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/gravity_generator)
 "bgO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "bgQ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -22671,7 +23001,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/paramedic)
 "bhr" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/kitchen/coldroom)
 "bhs" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -22762,7 +23094,9 @@
 /turf/open/floor/plating,
 /area/science/robotics/lab)
 "bhA" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science)
 "bhB" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -22819,7 +23153,9 @@
 /area/science/research)
 "bhG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard)
 "bhH" = (
 /obj/machinery/door/airlock/maintenance{
@@ -22896,7 +23232,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/toilet/locker)
 "bhR" = (
 /obj/structure/grille,
@@ -22946,11 +23284,15 @@
 /obj/structure/disposalpipe/sorting/wrap{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/sorting)
 "bhY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/storage)
 "bhZ" = (
 /obj/machinery/door/window/eastleft{
@@ -23053,7 +23395,9 @@
 /area/engineering/gravity_generator)
 "bij" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "bik" = (
 /obj/item/radio/intercom{
@@ -23213,7 +23557,9 @@
 /area/medical/paramedic)
 "biC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/kitchen/coldroom)
 "biD" = (
 /obj/machinery/portable_atmospherics/canister/air,
@@ -23632,7 +23978,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/command/gateway)
 "bjz" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/central)
 "bjA" = (
 /obj/effect/spawner/lootdrop/maintenance,
@@ -23741,7 +24089,9 @@
 /area/science/robotics/mechbay)
 "bjQ" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/chemistry)
 "bjR" = (
 /obj/structure/table/glass,
@@ -24001,10 +24351,14 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/sorting)
 "bky" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard)
 "bkz" = (
 /obj/machinery/conveyor{
@@ -24045,7 +24399,9 @@
 /area/maintenance/port)
 "bkE" = (
 /obj/structure/sign/warning/docking,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port)
 "bkG" = (
 /obj/machinery/door/airlock/maintenance{
@@ -24258,7 +24614,9 @@
 /area/command/heads_quarters/captain)
 "blc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/captain)
 "bld" = (
 /obj/machinery/door/airlock/maintenance{
@@ -24504,7 +24862,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/lab)
 "blE" = (
 /obj/effect/turf_decal/stripes/line{
@@ -24791,7 +25151,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
 "bmo" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/hop)
 "bmp" = (
 /obj/structure/rack,
@@ -24800,7 +25162,9 @@
 /area/maintenance/central)
 "bmq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/hop)
 "bms" = (
 /obj/machinery/door/airlock/command{
@@ -24827,7 +25191,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/cargo/office)
 "bmx" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/captain)
 "bmy" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -25044,7 +25410,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/morgue)
 "bmX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -25054,13 +25422,17 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/morgue)
 "bmZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/genetics)
 "bna" = (
 /obj/structure/disposalpipe/segment,
@@ -25082,7 +25454,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/mechbay)
 "bnf" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -25184,7 +25558,9 @@
 /area/science/research)
 "bnm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science)
 "bnn" = (
 /obj/machinery/computer/rdconsole/core{
@@ -25204,7 +25580,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/research)
 "bnr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -25217,7 +25595,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard)
 "bnt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -25232,7 +25612,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard)
 "bnv" = (
 /obj/machinery/door/poddoor{
@@ -25743,11 +26125,15 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science/research)
 "boB" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/research)
 "boC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/lab)
 "boD" = (
 /obj/structure/table,
@@ -26093,7 +26479,9 @@
 /area/medical/medbay/central)
 "bpw" = (
 /obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/medbay/central)
 "bpx" = (
 /obj/structure/cable{
@@ -26289,7 +26677,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/lab)
 "bpW" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -26349,7 +26739,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science/robotics/lab)
 "bqe" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/explab)
 "bqf" = (
 /obj/machinery/door/firedoor/heavy,
@@ -26563,11 +26955,15 @@
 /area/command/gateway)
 "bqI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/teleporter)
 "bqJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/teleporter)
 "bqK" = (
 /obj/machinery/door/airlock/maintenance{
@@ -27149,7 +27545,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/command/gateway)
 "bsh" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/teleporter)
 "bsi" = (
 /obj/structure/table,
@@ -27375,7 +27773,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/explab)
 "bsI" = (
 /obj/machinery/power/apc{
@@ -27394,7 +27794,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard)
 "bsK" = (
 /obj/structure/table/glass,
@@ -27603,7 +28005,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science)
 "bto" = (
 /obj/structure/disposalpipe/segment{
@@ -27785,7 +28189,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/command/heads_quarters/hop)
 "btG" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "btH" = (
 /obj/structure/cable{
@@ -27936,7 +28342,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/central)
 "bua" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/genetics)
 "bub" = (
 /obj/machinery/light,
@@ -28418,7 +28826,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "bve" = (
 /obj/structure/disposalpipe/segment{
@@ -28454,7 +28864,9 @@
 /area/science)
 "bvi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "bvk" = (
 /obj/machinery/door/firedoor,
@@ -28593,7 +29005,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/genetics)
 "bvB" = (
 /obj/machinery/camera{
@@ -28817,7 +29231,9 @@
 /turf/open/floor/plating,
 /area/security/checkpoint/supply)
 "bwe" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/supply)
 "bwf" = (
 /obj/machinery/camera{
@@ -28983,7 +29399,9 @@
 /area/medical/medbay/central)
 "bwG" = (
 /obj/structure/sign/warning/nosmoking,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/medbay/central)
 "bwH" = (
 /obj/structure/table,
@@ -29325,7 +29743,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bxu" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/qm)
 "bxv" = (
 /obj/structure/chair/office/dark{
@@ -29349,11 +29769,15 @@
 /turf/open/floor/plating,
 /area/cargo/qm)
 "bxy" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/miningdock)
 "bxz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/miningdock)
 "bxA" = (
 /obj/structure/cable{
@@ -29633,10 +30057,14 @@
 /area/cargo/qm)
 "bye" = (
 /obj/structure/sign/warning/securearea,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/genetics)
 "byf" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/server)
 "byg" = (
 /obj/structure/table,
@@ -29678,7 +30106,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science/server)
 "byi" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/science)
 "byj" = (
 /obj/machinery/door/airlock/security/glass{
@@ -29783,7 +30213,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/command/heads_quarters/rd)
 "byt" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/rd)
 "byu" = (
 /obj/structure/displaycase/labcage,
@@ -30104,7 +30536,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "bzc" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -30234,7 +30668,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/genetics)
 "bzs" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "bzt" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -30391,7 +30827,9 @@
 /area/command/heads_quarters/rd)
 "bzK" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "bzL" = (
 /obj/effect/turf_decal/stripes/line,
@@ -30952,7 +31390,9 @@
 /area/cargo/miningdock)
 "bBb" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bBc" = (
 /obj/structure/curtain{
@@ -31265,7 +31705,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/miningdock)
 "bBI" = (
 /obj/machinery/airalarm{
@@ -31300,7 +31742,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/central)
 "bBN" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/cmo)
 "bBO" = (
 /obj/machinery/computer/med_data,
@@ -31595,7 +32039,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/aft)
 "bCq" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "bCr" = (
 /obj/machinery/door/airlock/maintenance{
@@ -31608,7 +32054,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bCs" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/storage/tech)
 "bCt" = (
 /obj/structure/disposalpipe/segment{
@@ -31636,7 +32084,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
 "bCv" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/janitor)
 "bCw" = (
 /obj/structure/disposalpipe/segment{
@@ -31649,7 +32099,9 @@
 /area/service/janitor)
 "bCy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/janitor)
 "bCz" = (
 /obj/machinery/door/airlock/maintenance{
@@ -31672,7 +32124,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "bCC" = (
 /obj/structure/disposalpipe/segment{
@@ -31865,10 +32319,14 @@
 /turf/open/floor/mineral/plastitanium,
 /area/command/heads_quarters/cmo)
 "bDb" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/xenobiology)
 "bDc" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/storage)
 "bDd" = (
 /obj/machinery/door/firedoor/heavy,
@@ -32005,7 +32463,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "bDv" = (
 /obj/structure/table,
@@ -32511,7 +32971,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science/mixing)
 "bEC" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "bED" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -32554,7 +33016,9 @@
 /area/maintenance/starboard)
 "bEH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "bEI" = (
 /obj/structure/cable{
@@ -32595,7 +33059,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "bEN" = (
 /obj/structure/cable{
@@ -32809,7 +33275,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/storage)
 "bFn" = (
 /obj/structure/disposalpipe/segment{
@@ -32891,7 +33359,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "bFv" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -33180,19 +33650,25 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "bGa" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard)
 "bGb" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "bGc" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -33206,7 +33682,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science/mixing)
 "bGe" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/test_area)
 "bGf" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -33309,7 +33787,9 @@
 /area/engineering/storage/tech)
 "bGu" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/storage/tech)
 "bGv" = (
 /obj/structure/table,
@@ -33504,7 +33984,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/storage)
 "bGR" = (
 /obj/structure/table,
@@ -33557,7 +34039,9 @@
 "bGW" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/storage)
 "bGX" = (
 /obj/machinery/light{
@@ -33584,7 +34068,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/cmo)
 "bHb" = (
 /obj/structure/disposalpipe/segment{
@@ -33688,7 +34174,9 @@
 /area/science/mixing)
 "bHn" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "bHo" = (
 /obj/structure/closet,
@@ -34236,7 +34724,9 @@
 /area/command/heads_quarters/cmo)
 "bIx" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/xenobiology)
 "bIy" = (
 /obj/structure/disposaloutlet{
@@ -34362,7 +34852,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/xenobiology)
 "bIO" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
@@ -34439,7 +34931,9 @@
 	desc = "A warning sign which reads 'BOMB RANGE";
 	name = "BOMB RANGE"
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/test_area)
 "bIY" = (
 /obj/structure/chair,
@@ -34517,7 +35011,9 @@
 /area/engineering/storage/tech)
 "bJi" = (
 /obj/structure/sign/warning/securearea,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/storage/tech)
 "bJj" = (
 /obj/structure/table,
@@ -34678,7 +35174,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/storage)
 "bJB" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers,
@@ -34688,10 +35186,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/medbay/central)
 "bJE" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/medbay/central)
 "bJF" = (
 /obj/machinery/pipedispenser/disposal/transit_tube,
@@ -34788,7 +35290,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/storage)
 "bJT" = (
 /obj/machinery/vending/cigarette,
@@ -34958,7 +35462,9 @@
 /area/cargo/miningdock)
 "bKm" = (
 /obj/structure/sign/warning/vacuum/external,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/miningdock)
 "bKn" = (
 /obj/structure/rack,
@@ -35045,7 +35551,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "bKz" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -35220,7 +35728,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/medbay/central)
 "bKS" = (
 /obj/machinery/power/apc{
@@ -35353,7 +35863,9 @@
 /area/medical/virology)
 "bLe" = (
 /obj/structure/sign/warning/biohazard,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/xenobiology)
 "bLf" = (
 /obj/structure/cable{
@@ -35376,7 +35888,9 @@
 /area/maintenance/port/aft)
 "bLh" = (
 /obj/structure/sign/warning/fire,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science)
 "bLi" = (
 /obj/structure/sign/warning/nosmoking{
@@ -35530,7 +36044,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/storage/tech)
 "bLE" = (
 /turf/open/floor/mineral/plastitanium/red,
@@ -35570,7 +36086,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/atmos)
 "bLK" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bLL" = (
 /obj/machinery/computer/station_alert,
@@ -35607,11 +36125,15 @@
 /area/maintenance/aft)
 "bLQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bLR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bLS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -35765,7 +36287,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "bMk" = (
 /obj/structure/cable{
@@ -35838,7 +36362,9 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "bMw" = (
 /obj/machinery/sparker/toxmix{
@@ -36043,10 +36569,14 @@
 /area/engineering/atmos)
 "bNc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bNd" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bNe" = (
 /obj/structure/window/reinforced{
@@ -36060,7 +36590,9 @@
 /area/science/misc_lab)
 "bNf" = (
 /obj/structure/sign/warning/biohazard,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bNg" = (
 /obj/structure/disposalpipe/segment{
@@ -36284,7 +36816,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/cargo/sorting)
 "bNI" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/construction)
 "bNJ" = (
 /turf/open/floor/plating,
@@ -36452,7 +36986,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bOk" = (
 /obj/machinery/disposal/bin,
@@ -36805,7 +37341,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bOZ" = (
 /obj/structure/cable{
@@ -37000,7 +37538,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bPx" = (
 /obj/machinery/disposal/bin,
@@ -37555,7 +38095,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science/circuit)
 "bQZ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/misc_lab)
 "bRa" = (
 /obj/structure/table/reinforced,
@@ -37633,7 +38175,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/construction)
 "bRo" = (
 /obj/machinery/computer/secure_data{
@@ -38354,11 +38898,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "bTC" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "bTD" = (
 /obj/structure/cable{
@@ -38516,19 +39064,25 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bTZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bUa" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bUb" = (
 /obj/machinery/airalarm{
@@ -38770,7 +39324,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/tcommsat/computer)
 "bUD" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -38803,7 +39359,9 @@
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bUH" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
@@ -39188,10 +39746,14 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bVI" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/tcommsat/server)
 "bVJ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/tcommsat/computer)
 "bVK" = (
 /obj/machinery/vending/snack/random,
@@ -39221,7 +39783,9 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bVP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
@@ -39253,7 +39817,9 @@
 	dir = 4
 	},
 /obj/structure/sign/warning/securearea,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bVT" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
@@ -39588,7 +40154,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bWP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
@@ -39602,7 +40170,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/atmos)
 "bWQ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/engineering)
 "bWR" = (
 /obj/item/radio/intercom{
@@ -39920,7 +40490,9 @@
 "bXK" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "bXN" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -40278,7 +40850,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/aft)
 "bYH" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/break_room)
 "bYI" = (
 /obj/machinery/firealarm{
@@ -40326,7 +40900,9 @@
 /area/engineering/break_room)
 "bYP" = (
 /obj/effect/landmark/event_spawn,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "bYQ" = (
 /obj/structure/cable{
@@ -40382,7 +40958,9 @@
 /area/medical/virology)
 "bYZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bZa" = (
 /obj/structure/sink{
@@ -40513,7 +41091,9 @@
 /area/tcommsat/computer)
 "bZr" = (
 /obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/tcommsat/computer)
 "bZs" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -40701,7 +41281,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/virology)
 "bZQ" = (
 /obj/machinery/atmospherics/components/binary/valve/on{
@@ -40959,7 +41541,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "cas" = (
 /obj/machinery/door/airlock/maintenance{
@@ -41059,7 +41643,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/engineering)
 "caJ" = (
 /obj/structure/lattice,
@@ -41319,7 +41905,9 @@
 	desc = "A warning sign which reads 'SERVER ROOM'.";
 	name = "SERVER ROOM"
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/tcommsat/computer)
 "cbo" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -41390,7 +41978,9 @@
 "cbs" = (
 /obj/structure/sign/warning/securearea,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "cbt" = (
 /obj/structure/disposalpipe/segment{
@@ -41992,7 +42582,9 @@
 /area/science/misc_lab)
 "ccU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "ccV" = (
 /obj/effect/decal/cleanable/dirt,
@@ -42541,7 +43133,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "cez" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
@@ -42599,15 +43193,21 @@
 "ceH" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "ceI" = (
 /obj/structure/sign/warning/biohazard,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "ceJ" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "ceK" = (
 /obj/structure/disposalpipe/segment,
@@ -42725,7 +43325,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/main)
 "cfb" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/heads_quarters/ce)
 "cfc" = (
 /obj/structure/cable{
@@ -42793,7 +43395,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "cfk" = (
 /obj/structure/cable{
@@ -42810,7 +43414,9 @@
 /area/maintenance/disposal/incinerator)
 "cfl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "cfm" = (
 /obj/structure/rack,
@@ -42880,10 +43486,14 @@
 /area/maintenance/starboard/aft)
 "cfu" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/misc_lab)
 "cfw" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/port/aft)
 "cfx" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -43308,7 +43918,9 @@
 /area/maintenance/port/aft)
 "cgE" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/port/aft)
 "cgF" = (
 /obj/effect/spawner/lootdrop/maintenance,
@@ -43565,7 +44177,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "chl" = (
 /obj/machinery/light{
@@ -43612,7 +44226,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "chq" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -43916,7 +44532,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/main)
 "cig" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "cij" = (
 /obj/machinery/modular_computer/console/preset/engineering,
@@ -43998,7 +44616,9 @@
 /area/engineering/main)
 "cit" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "ciu" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -44015,7 +44635,9 @@
 /area/engineering/atmos)
 "cix" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "ciy" = (
 /obj/structure/sign/warning/nosmoking{
@@ -44188,7 +44810,9 @@
 /area/maintenance/port/aft)
 "ciV" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/meeting_room)
 "ciW" = (
 /obj/effect/landmark/blobstart,
@@ -44347,7 +44971,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "cjl" = (
 /obj/machinery/camera{
@@ -44405,14 +45031,18 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "cjx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "cjy" = (
 /obj/structure/disposalpipe/segment,
@@ -44423,7 +45053,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "cjA" = (
 /obj/structure/disposalpipe/segment,
@@ -44448,7 +45080,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cjD" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/starboard/aft)
 "cjE" = (
 /obj/structure/rack,
@@ -44469,7 +45103,9 @@
 /area/maintenance/solars/starboard/aft)
 "cjG" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/solars/starboard/aft)
 "cjH" = (
 /obj/structure/cable{
@@ -44722,7 +45358,9 @@
 /area/maintenance/aft)
 "cko" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "ckp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -45301,11 +45939,15 @@
 /turf/open/floor/mineral/plastitanium,
 /area/maintenance/disposal/incinerator)
 "cmd" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "cme" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "cmf" = (
 /obj/structure/cable/yellow{
@@ -45365,7 +46007,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "cmt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -45378,7 +46022,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "cmv" = (
 /obj/structure/cable{
@@ -45461,7 +46107,9 @@
 /area/engineering/engine_smes)
 "cmC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "cmD" = (
 /obj/machinery/navbeacon{
@@ -45762,7 +46410,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/construction)
 "cnC" = (
 /obj/effect/mapping_helpers/airlock/locked,
@@ -45779,7 +46429,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/aft)
 "cnE" = (
 /obj/structure/disposalpipe/junction/flip{
@@ -45902,7 +46554,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/engine_smes)
 "cnS" = (
 /obj/machinery/door/firedoor,
@@ -46517,7 +47171,9 @@
 /area/hallway/secondary/entry)
 "cqs" = (
 /obj/structure/sign/warning/fire,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "cqt" = (
 /obj/machinery/door/poddoor/incinerator_atmos_main,
@@ -46660,7 +47316,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "cro" = (
 /obj/structure/cable{
@@ -46671,7 +47329,9 @@
 /area/engineering/main)
 "crp" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "crq" = (
 /obj/structure/cable{
@@ -46994,7 +47654,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat_interior)
 "cto" = (
 /obj/machinery/door/airlock/hatch{
@@ -47011,7 +47673,9 @@
 /turf/open/floor/plating/airless,
 /area/ai_monitored/turret_protected/aisat_interior)
 "ctq" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/dorms)
 "ctr" = (
 /obj/structure/table,
@@ -47248,7 +47912,9 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "ctR" = (
 /obj/structure/sign/warning/radiation/rad_area,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "ctS" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -47274,7 +47940,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat_interior)
 "ctV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -47316,13 +47984,19 @@
 "ctY" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat/atmos)
 "ctZ" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat/atmos)
 "cua" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat_interior)
 "cub" = (
 /obj/item/radio/intercom{
@@ -47375,7 +48049,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ai_monitored/turret_protected/aisat_interior)
 "cuf" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat/service)
 "cug" = (
 /obj/machinery/status_display/ai{
@@ -47408,7 +48084,9 @@
 /area/ai_monitored/turret_protected/aisat/atmos)
 "cuk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat_interior)
 "cul" = (
 /obj/structure/cable{
@@ -47610,7 +48288,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat_interior)
 "cuF" = (
 /obj/machinery/light/small{
@@ -47872,11 +48552,15 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ai_monitored/turret_protected/aisat/atmos)
 "cva" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai)
 "cvb" = (
 /obj/machinery/status_display/ai,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai)
 "cvc" = (
 /obj/structure/sign/warning/securearea{
@@ -47930,7 +48614,9 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "cvf" = (
 /obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai)
 "cvg" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -47965,7 +48651,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ai_monitored/turret_protected/aisat/service)
 "cvj" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat/hallway)
 "cvl" = (
 /turf/open/floor/mineral/plastitanium,
@@ -47980,7 +48668,9 @@
 /area/ai_monitored/turret_protected/aisat/hallway)
 "cvn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/aisat/hallway)
 "cvo" = (
 /obj/structure/cable{
@@ -48314,7 +49004,9 @@
 "cwe" = (
 /obj/structure/sign/warning/securearea,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai)
 "cwf" = (
 /obj/structure/cable{
@@ -48846,7 +49538,9 @@
 /turf/open/floor/plating/airless,
 /area/maintenance/disposal/incinerator)
 "czK" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/vacant_room/office)
 "czN" = (
 /obj/docking_port/stationary/random{
@@ -48869,7 +49563,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "czQ" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -48983,7 +49679,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "cAd" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -49217,7 +49915,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai)
 "cAZ" = (
 /obj/structure/cable{
@@ -49552,7 +50252,9 @@
 /area/construction)
 "cCi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/blueshieldoffice)
 "cCj" = (
 /obj/structure/disposalpipe/segment{
@@ -49561,13 +50263,17 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/detectives_office)
 "cCk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/detectives_office)
 "cCn" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -49686,7 +50392,9 @@
 /area/space/nearstation)
 "cCS" = (
 /obj/structure/lattice,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "cCT" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -49751,7 +50459,9 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "cDY" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -50117,7 +50827,9 @@
 /area/hallway/secondary/entry)
 "cIv" = (
 /obj/structure/sign/poster/official/cohiba_robusto_ad,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/lawoffice)
 "cJd" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -50207,7 +50919,9 @@
 /area/security/prison)
 "cNE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "cNG" = (
 /turf/open/floor/mineral/plastitanium,
@@ -50332,7 +51046,9 @@
 /area/maintenance/starboard/aft)
 "cNY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "cNZ" = (
 /obj/structure/cable{
@@ -50453,13 +51169,17 @@
 /area/security/execution/transfer)
 "cSp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "cSA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/courtroom)
 "cSE" = (
 /obj/structure/cable{
@@ -50827,7 +51547,9 @@
 /turf/open/floor/plating,
 /area/ai_monitored/command/nuke_storage)
 "cVb" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/secondary/service)
 "cVs" = (
 /obj/machinery/vending/coffee,
@@ -50951,7 +51673,9 @@
 /area/service/theater)
 "ddM" = (
 /obj/structure/sign/poster/contraband/kudzu,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/kitchen)
 "dev" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -50990,17 +51714,23 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science/circuit)
 "dfL" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/bar)
 "dgz" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/cryopod)
 "dgO" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "diq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -51125,7 +51855,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/circuit)
 "dxv" = (
 /obj/structure/window/reinforced/survival_pod{
@@ -51282,7 +52014,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/atmos)
 "dFX" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/fitness/recreation)
 "dGa" = (
 /obj/machinery/door/airlock/maintenance{
@@ -51296,7 +52030,9 @@
 "dGi" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore/secondary)
 "dIu" = (
 /obj/structure/chair/sofa{
@@ -51484,7 +52220,9 @@
 /area/service/library)
 "dZm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/art)
 "eaI" = (
 /obj/structure/table/reinforced,
@@ -51695,7 +52433,9 @@
 /area/security/office)
 "enB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/execution/transfer)
 "enJ" = (
 /obj/structure/girder,
@@ -51956,7 +52696,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "eDf" = (
 /obj/structure/window/reinforced/tinted{
@@ -52141,12 +52883,16 @@
 /area/security/execution/transfer)
 "eRX" = (
 /obj/structure/lattice,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "eSe" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/sign/poster/contraband/kss13,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/hydroponics)
 "eSJ" = (
 /obj/machinery/button/ignition{
@@ -52338,7 +53084,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "fcI" = (
 /obj/effect/turf_decal/stripes/line{
@@ -52372,7 +53120,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "feE" = (
 /obj/structure/cable{
@@ -52471,7 +53221,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "fjS" = (
 /obj/structure/closet/radiation,
@@ -52488,7 +53240,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "fkp" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -52586,7 +53340,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/processing)
 "fpl" = (
 /obj/machinery/door/airlock{
@@ -52691,7 +53447,9 @@
 /obj/structure/sign/warning/securearea{
 	pixel_y = -32
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/office)
 "fup" = (
 /obj/structure/disposalpipe/segment{
@@ -52701,7 +53459,9 @@
 /area/maintenance/starboard/aft)
 "fvk" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/storage)
 "fvU" = (
 /obj/effect/turf_decal/tile/blue{
@@ -52753,10 +53513,14 @@
 /area/service/bar)
 "fxx" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/brig)
 "fxV" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/primary/central)
 "fyS" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -53286,11 +54050,15 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/atmos)
 "gjl" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/warehouse)
 "gmj" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "gnf" = (
 /obj/structure/disposalpipe/segment{
@@ -53336,7 +54104,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "grP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -53382,7 +54152,9 @@
 "gxw" = (
 /obj/machinery/atmospherics/pipe/manifold/orange/visible,
 /obj/machinery/meter,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "gxK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -53460,7 +54232,9 @@
 /area/maintenance/bar)
 "gCC" = (
 /obj/structure/sign/poster/contraband/rebels_unite,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/storage/primary)
 "gDl" = (
 /obj/effect/landmark/carpspawn,
@@ -53600,7 +54374,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "gMD" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
@@ -53688,7 +54464,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "gWd" = (
 /obj/structure/cable{
@@ -53789,7 +54567,9 @@
 /area/solars/port/fore)
 "hgl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/office)
 "hgG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
@@ -53858,7 +54638,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/dorms)
 "hmu" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -54046,7 +54828,9 @@
 /area/hallway/primary/central)
 "hBw" = (
 /obj/structure/lattice,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/fore)
 "hBA" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -54176,7 +54960,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/cargo/warehouse)
 "hQX" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -54457,7 +55243,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/theater)
 "iou" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -54489,7 +55277,9 @@
 /area/engineering/atmos)
 "iss" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/gateway)
 "itD" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -54628,7 +55418,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "iII" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -54844,7 +55636,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/gateway)
 "jaF" = (
 /obj/machinery/light/small,
@@ -54855,7 +55649,9 @@
 /area/maintenance/starboard/fore)
 "jaG" = (
 /obj/structure/sign/poster/contraband/yes_erp,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/chemistry)
 "jaH" = (
 /obj/structure/door_assembly/door_assembly_mai,
@@ -54887,7 +55683,9 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "jbK" = (
 /obj/item/stack/sheet/glass{
@@ -54994,7 +55792,9 @@
 /area/service/bar)
 "jiK" = (
 /obj/structure/sign/warning/securearea,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/main)
 "jiT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -55010,7 +55810,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "jkH" = (
 /obj/structure/lattice/catwalk,
@@ -55033,7 +55835,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "jnV" = (
 /obj/structure/cable{
@@ -55202,7 +56006,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "jBQ" = (
 /obj/machinery/atmospherics/pipe/manifold4w/general/visible,
@@ -55248,7 +56054,9 @@
 /area/engineering/atmos)
 "jDZ" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "jEc" = (
 /obj/structure/kitchenspike,
@@ -55287,7 +56095,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "jGW" = (
 /obj/structure/cable{
@@ -55712,13 +56522,17 @@
 /turf/open/floor/plating,
 /area/engineering/storage/tech)
 "kfS" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "kfX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/engine_smes)
 "kgk" = (
 /turf/open/floor/plating{
@@ -55836,7 +56650,9 @@
 /area/service/theater)
 "klv" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/robotics/lab)
 "klN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -56073,7 +56889,9 @@
 /area/command/gateway)
 "kzT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/mixing)
 "kAk" = (
 /obj/effect/spawner/lootdrop/prison_contraband,
@@ -56257,7 +57075,9 @@
 /area/hallway/primary/central)
 "kPU" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/aft)
 "kQa" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -56268,7 +57088,9 @@
 /turf/open/floor/plating,
 /area/medical/paramedic)
 "kQk" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/department/medical/morgue)
 "kQz" = (
 /obj/structure/cable{
@@ -56391,7 +57213,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/gateway)
 "ldT" = (
 /obj/structure/chair/office{
@@ -56552,7 +57376,9 @@
 /area/cargo/storage)
 "lpx" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "lpQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -56731,7 +57557,9 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "lzt" = (
 /obj/machinery/portable_atmospherics/pump,
@@ -56744,7 +57572,9 @@
 /area/space/nearstation)
 "lAB" = (
 /obj/structure/sign/nanotrasen,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/circuit)
 "lAD" = (
 /obj/effect/decal/cleanable/dirt,
@@ -56882,7 +57712,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "lKl" = (
 /obj/structure/lattice,
@@ -56895,7 +57727,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "lLf" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/nuke_storage)
 "lLA" = (
 /obj/machinery/computer/slot_machine{
@@ -57120,7 +57954,9 @@
 /area/service/theater)
 "maT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "maU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -57414,7 +58250,9 @@
 /area/security/prison)
 "mtU" = (
 /obj/structure/sign/departments/holy,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/chapel/main)
 "muv" = (
 /obj/item/radio/intercom{
@@ -57483,7 +58321,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/theater)
 "mzv" = (
 /obj/machinery/door/morgue{
@@ -57635,7 +58475,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "mJE" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/blueshieldoffice)
 "mLS" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -57683,7 +58525,9 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "mPk" = (
 /obj/structure/bed,
@@ -57710,7 +58554,9 @@
 /area/maintenance/port/aft)
 "mPE" = (
 /obj/structure/sign/painting/library,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/library)
 "mQp" = (
 /obj/structure/cable{
@@ -58086,7 +58932,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
 "nsA" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/abandoned_gambling_den)
 "ntt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -58145,7 +58993,9 @@
 /turf/open/floor/plating,
 /area/construction)
 "nyi" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/paramedic)
 "nyn" = (
 /obj/structure/disposalpipe/segment{
@@ -58196,7 +59046,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "nzX" = (
 /obj/effect/spawner/lootdrop/maintenance{
@@ -58210,7 +59062,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "nDd" = (
 /obj/structure/cable{
@@ -58234,7 +59088,9 @@
 /turf/open/floor/plating,
 /area/security/processing)
 "nEu" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "nEY" = (
 /obj/machinery/door/firedoor,
@@ -58488,7 +59344,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/service/hydroponics)
 "nVz" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "nXg" = (
 /obj/structure/table/reinforced,
@@ -58625,7 +59483,9 @@
 /area/maintenance/fore/secondary)
 "ofj" = (
 /obj/machinery/smartfridge/organ/preloaded,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/surgery)
 "ofU" = (
 /obj/structure/chair/comfy/black{
@@ -58779,7 +59639,9 @@
 /area/maintenance/starboard/aft)
 "otC" = (
 /obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "ouf" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner{
@@ -58981,7 +59843,9 @@
 /area/security/prison)
 "oGv" = (
 /obj/structure/extinguisher_cabinet,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/primary/central)
 "oGU" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -59105,7 +59969,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/medbay/central)
 "oSJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -59160,7 +60026,9 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/atmos)
 "oXV" = (
 /obj/structure/window/reinforced/tinted{
@@ -59206,7 +60074,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/maintenance/starboard/aft)
 "pdK" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/blueshielquarters)
 "pem" = (
 /obj/machinery/button/door{
@@ -59245,7 +60115,9 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "piS" = (
 /obj/structure/lattice,
@@ -59696,7 +60568,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "pQp" = (
 /obj/structure/bed/badhaybed,
@@ -59751,7 +60625,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "pRl" = (
 /obj/effect/decal/cleanable/dirt,
@@ -59974,7 +60850,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "qlV" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "qlY" = (
 /turf/open/floor/mineral/plastitanium,
@@ -60194,7 +61072,9 @@
 /area/commons/dorms)
 "qMv" = (
 /obj/structure/sign/poster/contraband/syndicate_logo,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/bar)
 "qNU" = (
 /obj/machinery/door/poddoor/preopen{
@@ -60403,7 +61283,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/circuit)
 "rcI" = (
 /obj/structure/cable{
@@ -60481,7 +61363,9 @@
 /area/security/processing)
 "rig" = (
 /obj/structure/lattice,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/office)
 "rjq" = (
 /obj/effect/turf_decal/stripes/line{
@@ -60937,7 +61821,9 @@
 /area/science/mixing)
 "rNG" = (
 /obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/command/storage/eva)
 "rPA" = (
 /obj/item/soap/nanotrasen,
@@ -61096,7 +61982,9 @@
 /area/science/circuit)
 "saU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/engine_smes)
 "sew" = (
 /obj/effect/decal/cleanable/dirt,
@@ -61341,7 +62229,9 @@
 /area/security/brig)
 "sAm" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/prison)
 "sAH" = (
 /obj/structure/chair/sofa/corp/left{
@@ -61445,7 +62335,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/execution/transfer)
 "sKL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -61529,7 +62421,9 @@
 /area/engineering/gravity_generator)
 "sPY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/engine_smes)
 "sQe" = (
 /obj/structure/table/wood,
@@ -61605,7 +62499,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/cargo/office)
 "sXV" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/range)
 "sYm" = (
 /obj/effect/turf_decal/vg_decals/atmos/mix,
@@ -61638,7 +62534,9 @@
 /area/security/office)
 "tal" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/secondary/service)
 "tcU" = (
 /obj/machinery/door/airlock/maintenance{
@@ -61769,7 +62667,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
 "tpr" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/psychology)
 "tqg" = (
 /obj/machinery/cryopod{
@@ -61782,7 +62682,9 @@
 /area/commons/cryopod)
 "tqk" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/execution/transfer)
 "tqB" = (
 /obj/effect/turf_decal/stripes/line{
@@ -61850,7 +62752,9 @@
 /obj/structure/sign/poster/contraband/random{
 	pixel_y = 32
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/starboard/aft)
 "tur" = (
 /obj/machinery/deepfryer,
@@ -61974,7 +62878,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/hallway/secondary/exit)
 "tBV" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/medical/storage)
 "tCa" = (
 /obj/structure/table/wood,
@@ -62120,7 +63026,9 @@
 /area/security/prison)
 "tID" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/checkpoint/supply)
 "tIE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -62343,7 +63251,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "tYd" = (
 /obj/effect/turf_decal/tile/red{
@@ -62388,7 +63298,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "tZp" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/arcade)
 "tZu" = (
 /obj/machinery/light/small{
@@ -62481,7 +63393,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/port/fore)
 "ugu" = (
 /obj/effect/turf_decal/stripes/line,
@@ -62534,7 +63448,9 @@
 /area/security/brig)
 "ujv" = (
 /obj/structure/sign/departments/restroom,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/toilet)
 "ujF" = (
 /obj/machinery/cryopod{
@@ -62646,11 +63562,15 @@
 /area/security/prison)
 "uwN" = (
 /obj/structure/sign/poster/contraband/power,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/locker)
 "uwQ" = (
 /obj/structure/sign/warning/securearea,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/gateway)
 "uxY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -62791,7 +63711,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "uHf" = (
 /obj/machinery/door/airlock/maintenance{
@@ -62817,7 +63739,9 @@
 /area/engineering/atmos)
 "uHp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/office)
 "uIO" = (
 /obj/structure/cable{
@@ -62904,7 +63828,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/engineering/gravity_generator)
 "uRS" = (
 /obj/structure/disposalpipe/segment,
@@ -62981,7 +63907,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/ai_monitored/turret_protected/ai_upload)
 "vae" = (
 /obj/effect/turf_decal/stripes/line{
@@ -63280,7 +64208,9 @@
 /area/security/processing)
 "vyp" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/commons/dorms)
 "vyK" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -63619,7 +64549,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/blueshielquarters)
 "vYF" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -63805,7 +64737,9 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "wkN" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/science/circuit)
 "wkU" = (
 /obj/machinery/light{
@@ -63921,7 +64855,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "wql" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/command/gateway)
 "wqF" = (
 /obj/structure/cable{
@@ -64099,7 +65035,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/secondary/service)
 "wCQ" = (
 /obj/machinery/light/small{
@@ -64219,7 +65157,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/gravity_generator)
 "wUr" = (
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/service/theater)
 "wUY" = (
 /obj/structure/table,
@@ -64836,7 +65776,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/maintenance/disposal/incinerator)
 "xJW" = (
 /obj/machinery/door/airlock/maintenance{
@@ -65053,7 +65995,9 @@
 /area/security/prison)
 "xXf" = (
 /obj/machinery/vending/wallmed,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/brig)
 "xYf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -65137,13 +66081,17 @@
 /area/maintenance/fore/secondary)
 "yeA" = (
 /obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/hallway/primary/central)
 "yeZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/execution/transfer)
 "yfX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -65159,7 +66107,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/syndicate{
+	smooth = 2
+	},
 /area/security/warden)
 "yhz" = (
 /obj/machinery/vending/coffee,
