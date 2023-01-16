@@ -16,7 +16,7 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 50, BIO = 0, RAD = 0, FIRE = 80, ACID = 80)
 	attack_speed = CLICK_CD_MELEE
 
-	var/stamina_loss_amount = 35
+	var/stamina_loss_amount = 45
 	var/turned_on = FALSE
 	var/armor_pen = 100
 	var/knockdown = TRUE

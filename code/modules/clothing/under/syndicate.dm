@@ -99,13 +99,24 @@
 	mutantrace_variation = USE_TAUR_CLIP_MASK
 
 /obj/item/clothing/under/syndicate/rus_army
-	name = "advanced military tracksuit"
+	name = "Military Tracksuit"
 	desc = "Military grade tracksuits for frontline squatting."
 	icon_state = "rus_under"
 	can_adjust = FALSE
 	armor = list(MELEE = 5, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 5)
 	resistance_flags = NONE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+/obj/item/clothing/under/syndicate/rus_army_alt
+	name = "Advanced Military Tracksuit"
+	desc = "Advanced Military grade tracksuits for frontline squatting."
+	icon_state = "rus_under_alt"
+	item_state = "rus_under_alt"
+	can_adjust = FALSE
+	armor = list(MELEE = 5, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 5)
+	resistance_flags = NONE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
 
 /obj/item/clothing/under/syndicate/baseball
 	name = "major league, number unknown"

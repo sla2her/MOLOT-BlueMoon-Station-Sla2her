@@ -50,3 +50,15 @@
 	slot = ITEM_SLOT_BACKPACK
 	path = /obj/item/storage/box/donator/bm/case_ds
 	ckeywhitelist = list("phenyamomota")
+
+/datum/gear/donator/bm/Shigu_Kit
+	name = "Butcher Knife Kit"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/shigu_kit
+	ckeywhitelist = list("Lakomkin0911")
+
+/datum/gear/donator/bm/Advanced_Tracksuit
+	name = "Advanced Tracksuit"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/clothing/under/syndicate/rus_army_alt
+	ckeywhitelist = list("No_Terra-Vi-Ja")
