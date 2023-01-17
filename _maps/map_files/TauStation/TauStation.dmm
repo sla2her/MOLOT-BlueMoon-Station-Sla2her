@@ -45198,6 +45198,8 @@
 /obj/structure/closet/secure_closet/brigdoc{
 	pixel_y = -4
 	},
+/obj/item/clothing/suit/brigdoc/armor,
+/obj/item/clothing/head/helmet/brigdoc,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "pIu" = (

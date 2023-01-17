@@ -34467,6 +34467,10 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/turf_decal/stripes/line,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "bIJ" = (
 /obj/machinery/hydroponics/constructable,

@@ -3935,7 +3935,6 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
 "aiI" = (
-/obj/structure/bodycontainer/morgue,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -3946,10 +3945,12 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/bot,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -26
 	},
+/obj/structure/closet/secure_closet/brigdoc,
+/obj/item/clothing/suit/brigdoc/armor,
+/obj/item/clothing/head/helmet/brigdoc,
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
 "aiJ" = (
@@ -64053,6 +64054,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "vlm" = (

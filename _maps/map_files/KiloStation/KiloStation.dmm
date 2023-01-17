@@ -83912,6 +83912,8 @@
 	pixel_x = -23
 	},
 /obj/structure/closet/secure_closet/brigdoc,
+/obj/item/clothing/head/helmet/brigdoc,
+/obj/item/clothing/suit/brigdoc/armor,
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
 "glh" = (
@@ -85076,8 +85078,14 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/clothing/suit/brigdoc/armor,
-/obj/item/clothing/head/helmet/brigdoc,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "oTy" = (

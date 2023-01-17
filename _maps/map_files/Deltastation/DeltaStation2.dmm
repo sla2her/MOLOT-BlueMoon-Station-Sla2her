@@ -70930,6 +70930,8 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/brigdoc,
+/obj/item/clothing/head/helmet/brigdoc,
+/obj/item/clothing/suit/brigdoc/armor,
 /turf/open/floor/plasteel/white,
 /area/security/brig)
 "epE" = (
@@ -91027,9 +91029,9 @@
 	},
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/bot,
-/obj/structure/rack,
-/obj/item/clothing/suit/brigdoc/armor,
-/obj/item/clothing/head/helmet/brigdoc,
+/obj/structure/closet/secure_closet/contraband/armory,
+/obj/effect/spawner/lootdrop/armory_contraband,
+/obj/effect/spawner/lootdrop/armory_contraband,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "kYh" = (
@@ -105194,6 +105196,14 @@
 "pPI" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/rack,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "pPQ" = (

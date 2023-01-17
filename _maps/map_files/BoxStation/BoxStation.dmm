@@ -59143,6 +59143,8 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/brigdoc,
+/obj/item/clothing/suit/brigdoc/armor,
+/obj/item/clothing/head/helmet/brigdoc,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "qFm" = (
@@ -66006,8 +66008,14 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/rack,
-/obj/item/clothing/head/helmet/brigdoc,
-/obj/item/clothing/suit/brigdoc/armor,
+/obj/item/ammo_box/magazine/e45/laser,
+/obj/item/ammo_box/magazine/e45/laser,
+/obj/item/ammo_box/magazine/e45/laser,
+/obj/item/ammo_box/magazine/e45/laser,
+/obj/item/ammo_box/magazine/e45/laser,
+/obj/item/ammo_box/magazine/e45/laser,
+/obj/item/ammo_box/magazine/e45/laser,
+/obj/item/ammo_box/magazine/e45/laser,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "wCz" = (
