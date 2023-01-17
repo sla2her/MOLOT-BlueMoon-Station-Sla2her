@@ -1,7 +1,7 @@
 /datum/round_event_control/portal_storm_syndicate
 	name = "Portal Storm: Syndicate Shocktroops"
 	typepath = /datum/round_event/portal_storm/syndicate_shocktroop
-	weight = 5
+	weight = 10
 	min_players = 40
 	earliest_start = 120 MINUTES
 	max_occurrences = 1
@@ -14,7 +14,9 @@
 /datum/round_event_control/portal_storm_narsie
 	name = "Portal Storm: Constructs"
 	typepath = /datum/round_event/portal_storm/portal_storm_narsie
-	weight = 10
+	weight = 20
+	min_players = 40
+	earliest_start = 120 MINUTES
 	max_occurrences = 1
 
 /datum/round_event/portal_storm/portal_storm_narsie

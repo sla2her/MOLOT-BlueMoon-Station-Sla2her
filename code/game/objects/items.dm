@@ -18,7 +18,10 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	attack_hand_unwieldlyness = 0
 
 	//Bluemoon change. Ну чтобы оружие ближнего боя дрожать заставляло.
+	var/jitteriness = 0
 	var/jitter = 0
+	var/dizzy = 0
+	var/stuttering = 0
 	///icon state name for inhand overlays
 	var/item_state = null
 	///Icon file for left hand inhand overlays
@@ -178,7 +181,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	var/skill_gain = DEF_SKILL_GAIN //base skill value gain from using this item.
 
 	var/canMouseDown = FALSE
-
 
 /obj/item/Initialize(mapload)
 

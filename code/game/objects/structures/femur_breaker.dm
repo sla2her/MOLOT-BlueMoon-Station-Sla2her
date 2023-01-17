@@ -11,7 +11,7 @@
 	name = "femur breaker"
 	desc = "A large structure used to break the femurs of traitors and treasonists."
 	icon = 'icons/obj/femur_breaker.dmi'
-	icon_state = "breaker_raised"
+	icon_state = "breaker"
 	can_buckle = TRUE
 	anchored = TRUE
 	density = TRUE
@@ -51,7 +51,7 @@
 			if (LAZYLEN(buckled_mobs))
 				if (user.a_intent == INTENT_HARM)
 					user.visible_message("<span class='warning'>[user] begins to pull the lever!</span>",
-						                 "<span class='warning'>You begin to the pull the lever.</span>")
+										"<span class='warning'>You begin to the pull the lever.</span>")
 					current_action = BREAKER_ACTION_INUSE
 
 					if (do_after(user, BREAKER_ACTIVATE_DELAY, target = src) && slat_status == BREAKER_SLAT_RAISED)

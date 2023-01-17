@@ -482,7 +482,7 @@
 	item_flags = NONE
 	force = 5
 	cooldown = 20
-	stam_dmg = 45	//4 hit stamcrit
+	stam_dmg = 80
 	affect_silicon = TRUE
 	on_sound = 'sound/weapons/contractorbatonextend.ogg'
 	on_stun_sound = 'sound/effects/contractorbatonhit.ogg'
@@ -498,7 +498,8 @@
 	return "<span class='danger'>The baton is still charging!</span>"
 
 /obj/item/melee/classic_baton/telescopic/contractor_baton/additional_effects_carbon(mob/living/target, mob/living/user)
-	target.Jitter(20)
+	target.Jitter(50)
+	target.stuttering = 50
 	target.apply_effect(EFFECT_STUTTER, 20)
 	target.apply_status_effect(/datum/status_effect/electrostaff, 30)	//knockdown, disarm, and slowdown, the unholy triumvirate of stam combat
 
@@ -607,6 +608,8 @@
 	if(ishuman(target) && proximity_flag)
 		var/mob/living/carbon/human/H = target
 		H.drop_all_held_items()
+		H.Jitter(50)
+		H.stuttering = 50
 		H.visible_message("<span class='danger'>[user] disarms [H]!</span>", "<span class='userdanger'>[user] disarmed you!</span>")
 
 /obj/item/melee/roastingstick

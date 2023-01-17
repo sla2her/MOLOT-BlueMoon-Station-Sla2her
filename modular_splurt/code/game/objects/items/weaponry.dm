@@ -1,4 +1,3 @@
-//Hyper stuff
 /obj/item/bdsm_whip
 	name = "bdsm whip"
 	desc = "A less lethal version of the whip the librarian has. Still hurts, but just the way you like it."
@@ -10,7 +9,6 @@
 	damtype = LUST_DAMAGE
 	throwforce = 0
 	force = 15
-	jitter = 15
 	w_class = WEIGHT_CLASS_NORMAL
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	hitsound = 'sound/weapons/whip.ogg'
@@ -21,7 +19,12 @@
 	desc = "For teaching a lesson in a more compact fashion."
 	icon_state = "ridingcrop"
 	force = 30
-	jitter = 25
+
+/obj/item/bdsm_whip/attack(mob/M, mob/user)
+	if(user)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.visible_message("<span class='lewd'>[user] disarms [M]!</span>", "<span class='userdanger'>[user] disarmed you!</span>")
 
 /obj/item/bdsm_whip/suicide_act(mob/user)
 		user.visible_message("<span class='suicide'>[user] is getting just a little too kinky!</span>")
