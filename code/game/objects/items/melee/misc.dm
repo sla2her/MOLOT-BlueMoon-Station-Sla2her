@@ -498,8 +498,8 @@
 	return "<span class='danger'>The baton is still charging!</span>"
 
 /obj/item/melee/classic_baton/telescopic/contractor_baton/additional_effects_carbon(mob/living/target, mob/living/user)
-	target.Jitter(50)
-	target.stuttering = 50
+	target.Jitter(25)
+	target.stuttering = 25
 	target.apply_effect(EFFECT_STUTTER, 20)
 	target.apply_status_effect(/datum/status_effect/electrostaff, 30)	//knockdown, disarm, and slowdown, the unholy triumvirate of stam combat
 

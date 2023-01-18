@@ -228,8 +228,8 @@
 	L.apply_effect(EFFECT_STUTTER, stamina_loss_amount)
 	SEND_SIGNAL(L, COMSIG_LIVING_MINOR_SHOCK)
 	if(user)
-		L.Jitter(50)
-		L.Dizzy(50)
+		L.Jitter(25)
+		L.Dizzy(25)
 		L.set_last_attacker(user)
 		L.visible_message("<span class='danger'>[user] has [shoved ? "brutally stunned" : "stunned"] [L] with [src]!</span>", \
 								"<span class='userdanger'>[user] has [shoved ? "brutally stunnned" : "stunned"] you with [src]!</span>")

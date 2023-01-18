@@ -23,6 +23,7 @@
 	var/has_anus = TRUE
 	var/has_breasts = FALSE
 	var/has_butt = FALSE
+	var/anus_always_accessible = FALSE
 	var/anus_exposed = FALSE
 	var/last_partner
 	var/last_orifice
@@ -84,6 +85,9 @@
 /mob/living/proc/set_lust(num)
 	lust = num
 	lastlusttime = world.time
+
+/mob/living/proc/toggle_anus_always_accessible()
+	anus_always_accessible = !anus_always_accessible
 
 /mob/living/proc/has_genital(slot, visibility = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
@@ -161,6 +165,8 @@
 		if(REQUIRE_ANY)
 			return TRUE
 		if(REQUIRE_EXPOSED)
+			if (has_anus && anus_always_accessible)
+				return TRUE
 			switch(anus_exposed)
 				if(-1)
 					return FALSE
