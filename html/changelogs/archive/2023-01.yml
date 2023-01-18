@@ -17,35 +17,6 @@
   - rscadd: Improves Moth in Command to be an improved version of Commander and Chief
   SpookyTheFox:
   - tweak: moved blueshift themed sec gear out of premium pricing.
-2023-01-04:
-  FeenieRU:
-  - tgs: has something to do with tgs
-  Kush1Push1:
-  - rscdel: "\u0413\u0430\u0437 copium \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\
-      \u0435 \u043E\u0431\u0440\u0430\u0437\u0443\u0435\u0442\u0441\u044F \u043F\u0440\
-      \u0438 \u0440\u0430\u0441\u043F\u0430\u0434\u0435 \u0430\u0444\u0440\u043E\u0434\
-      \u0438\u0437\u0438\u0430\u043A\u0430 \u0432 \u0430\u0442\u043C\u043E\u0441\u0444\
-      \u0435\u0440\u0435."
-  PhenyaMomota:
-  - server: "\u0412\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u0441\u0438\u0441\
-      \u0442\u0435\u043C\u044B \u0434\u043E\u043D\u0430\u0442\u0435\u0440\u043E\u0432\
-      ."
-  - server: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0434\u0438\
-      \u0440\u0435\u043A\u0442\u043E\u0440\u0438\u0438 \u0434\u043B\u044F \u043E\u043D\
-      \u043D\u044B\u0445."
-  SishTis:
-  - balance: "\u0414\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0440\u0430\u0441\
-      \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u0438\u044F \u0437\
-      \u0432\u0443\u043A\u0430 \u0443\u0434\u0443\u0448\u044C\u044F \u0443\u043C\u0435\
-      \u043D\u044C\u0448\u0435\u043D\u0430 \u0434\u043E 3 \u0442\u0430\u0439\u043B\
-      \u043E\u0432 \u0432\u043E\u043A\u0440\u0443\u0433 \u043F\u0435\u0440\u0441\u043E\
-      \u043D\u0430\u0436\u0430."
-2023-01-05:
-  FeenieRU:
-  - tgs: has something to do with tgs
-2023-01-07:
-  FeenieRU:
-  - tgs: has something to do with tgs
 2023-01-08:
   LeDrascol:
   - bugfix: Fixed techweb sequence break for Advanced Toolset Implant
@@ -70,5 +41,52 @@
   - code_imp: LPD's clothing burst is now a mob proc
   - bugfix: Fixed the late-join panel showing job slots twice
 2023-01-11:
-  sheetofseaweed:
-  - bugfix: fixed lich phylactery respawn
+  BongaTheProto:
+  - bugfix: Fixes gun reskins broken by the new reskin system
+  Seris02:
+  - bugfix: fixed gargoyles having sprites that are odd, along with sanity checks
+      and making the transition between living and statue seamless
+2023-01-12:
+  LeDrascol:
+  - refactor: Moved quirk action datums to a new file
+  - rscadd: Added a Plushmium Crate to cargo
+2023-01-13:
+  Guatolipo:
+  - rscadd: Added CART_CHEMISTRY access to cart-cmo
+  LeDrascol:
+  - tweak: Replaced three dangerous holodeck modes with harmless alternatives
+2023-01-14:
+  LeDrascol:
+  - bugfix: Fixed spelling mistakes in the interaction system
+  - rscadd: Added the Love to Life spray bottle
+  - tweak: Updated Plushmium Crate contents
+  - rscadd: 'Added implant: Rapid Disrobe'
+  - tweak: Nudists now start with a Rapid Disrobe implant
+  - rscadd: Added the Wallet of Holding
+2023-01-15:
+  BongaTheProto:
+  - rscadd: Adds nobl donator plushie
+  - rscadd: Adds a *poyo emote
+  Casper:
+  - bugfix: fixes telekinetic users from teleporting to stripper poles
+  - bugfix: infinite metal exploit
+  SandPoot:
+  - spellcheck: fixed a few typos.
+  - refactor: refactored skirt peeking.
+  - tweak: examine someone twice to actually peek their panties.
+2023-01-16:
+  SandPoot:
+  - rscadd: You can now allow interacting with your genitals through clothes.
+  - tweak: Modified sandstorm's spans (`<span class='x'>"...`) with the defines (`span_x("...`)
+2023-01-17:
+  LeDrascol:
+  - code_imp: Added span defines for 'reallybig hypnophrase', 'big warning', 'header',
+      and 'umbra'
+  - refactor: All HTML spans are now defines-based
+  - tweak: Moved Autodoc techweb entry from Advanced Surgery to Advanced Surgery Tools
+  SishTis:
+  - rscadd: Addead keybinds to put/take items in/from suit storage and pockets slots.
+  zeroisthebiggay:
+  - spellcheck: You
+  BongaTheProto:
+  - code_imp: optimizes some genital related code
