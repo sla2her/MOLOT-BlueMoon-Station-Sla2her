@@ -21,10 +21,6 @@
 	display_order = JOB_DISPLAY_ORDER_CARGO_TECHNICIAN
 	bounty_types = CIV_JOB_RANDOM
 	threat = 0.2
-	
-	family_heirlooms = list(
-		/obj/item/clipboard
-	)
 
 /datum/outfit/job/cargo_tech
 	name = "Cargo Technician"

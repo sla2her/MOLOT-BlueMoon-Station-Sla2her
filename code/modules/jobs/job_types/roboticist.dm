@@ -24,10 +24,6 @@
 
 	display_order = JOB_DISPLAY_ORDER_ROBOTICIST
 	threat = 1
-	
-	family_heirlooms = list(
-		/obj/item/toy/figure/borg
-	)
 
 /datum/outfit/job/roboticist
 	name = "Roboticist"

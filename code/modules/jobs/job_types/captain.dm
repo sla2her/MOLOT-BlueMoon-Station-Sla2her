@@ -32,11 +32,6 @@
 
 	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/insanity)
 	threat = 5
-	
-	family_heirlooms = list(
-		/obj/item/reagent_containers/food/drinks/flask/gold,
-		/obj/item/toy/figure/captain
-	)
 
 /datum/job/captain/get_access()
 	return get_all_accesses()

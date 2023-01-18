@@ -22,11 +22,6 @@
 
 	display_order = JOB_DISPLAY_ORDER_LAWYER
 	threat = 0.3
-	
-	family_heirlooms = list(
-		/obj/item/gavelhammer,
-		/obj/item/book/manual/wiki/security_space_law
-	)
 
 /datum/outfit/job/lawyer
 	name = "Lawyer"
