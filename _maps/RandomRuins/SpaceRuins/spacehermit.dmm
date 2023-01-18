@@ -24,6 +24,10 @@
 	lootcount = 8;
 	name = "8maintenance loot spawner"
 	},
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 8;
+	name = "8maintenance loot spawner"
+	},
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered)
 "ah" = (
@@ -507,6 +511,7 @@
 	},
 /obj/structure/closet/crate/internals,
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/armory_contraband,
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered)
 "JZ" = (
@@ -1232,7 +1237,7 @@ aY
 ao
 ao
 ao
-ak
+aY
 af
 aZ
 bb

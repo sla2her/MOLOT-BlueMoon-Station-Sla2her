@@ -102,7 +102,9 @@
 /turf/open/indestructible,
 /area/awaymission/vr/murderdome)
 "m" = (
-/obj/effect/landmark/vr_spawn,
+/obj/effect/landmark/vr_spawn{
+	vr_outfit = /datum/outfit/vr/syndicate
+	},
 /turf/open/indestructible,
 /area/awaymission/vr/murderdome)
 "n" = (

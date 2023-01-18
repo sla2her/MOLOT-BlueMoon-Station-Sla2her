@@ -1219,10 +1219,10 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "adg" = (
-/obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/ai_monitored/security/armory)
 "adi" = (
@@ -3259,7 +3259,6 @@
 /turf/open/floor/plating,
 /area/security/brig)
 "ahx" = (
-/obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -3269,6 +3268,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/ai_monitored/security/armory)
 "ahy" = (
@@ -4010,13 +4010,13 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/lobby)
 "aiR" = (
-/obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/ai_monitored/security/armory)
 "aiS" = (
@@ -4053,10 +4053,10 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/courtroom)
 "aiZ" = (
-/obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/ai_monitored/security/armory)
 "aja" = (
@@ -36552,14 +36552,6 @@
 /obj/machinery/autolathe/hacked,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/mineral/plastitanium/red,
@@ -61127,8 +61119,6 @@
 /obj/machinery/autolathe/toy/hacked,
 /obj/item/stack/sheet/plastic/fifty,
 /obj/item/stack/sheet/plastic/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/mineral/plastitanium/red,
