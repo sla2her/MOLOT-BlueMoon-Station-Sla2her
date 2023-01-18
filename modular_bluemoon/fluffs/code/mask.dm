@@ -1,7 +1,3 @@
-/obj/item/clothing/mask/donator/bm
-	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/mask.dmi'
-	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/clothing/mask.dmi'
-
 /obj/item/clothing/mask/kitsunewhi/magic
 	name = "Magic Kitsune Mask"
 	desc = "A magic Kistune Mask. Wow!"
