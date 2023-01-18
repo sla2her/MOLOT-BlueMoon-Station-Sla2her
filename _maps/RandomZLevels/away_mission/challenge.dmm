@@ -124,8 +124,9 @@
 /turf/open/floor/plasteel/airless,
 /area/awaymission/challenge/main)
 "aI" = (
-/obj/machinery/power/emitter/ctf{
-	active = 0
+/obj/machinery/power/emitter/ctf,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -158,6 +159,12 @@
 /obj/machinery/power/emitter/ctf{
 	active = 0
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
 "aP" = (
@@ -177,6 +184,9 @@
 /obj/machinery/power/emitter/ctf{
 	active = 0;
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -200,8 +210,13 @@
 /area/awaymission/challenge/main)
 "aW" = (
 /obj/machinery/power/emitter/ctf{
-	active = 0;
 	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -366,6 +381,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/machinery/power/emitter/ctf{
+	active = 0
+	},
 /turf/open/floor/plating,
 /area/awaymission/challenge/main)
 "bs" = (
@@ -434,8 +452,10 @@
 	dir = 8
 	},
 /obj/machinery/power/emitter/ctf{
-	active = 0;
 	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -446,6 +466,12 @@
 /obj/machinery/power/emitter/ctf{
 	active = 0;
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -496,12 +522,18 @@
 	active = 0;
 	dir = 1
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
 "bM" = (
 /obj/machinery/power/emitter/ctf{
 	active = 0;
 	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -513,6 +545,9 @@
 	active = 0;
 	dir = 1
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
 "bO" = (
@@ -522,6 +557,9 @@
 /obj/machinery/power/emitter/ctf{
 	active = 0;
 	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -559,6 +597,10 @@
 	dir = 4
 	},
 /obj/machinery/light,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable/yellow,
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
 "bU" = (
@@ -570,6 +612,8 @@
 	dir = 8
 	},
 /obj/machinery/light,
+/obj/machinery/power/smes/magical,
+/obj/structure/cable/yellow,
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
 "bW" = (
@@ -986,6 +1030,374 @@
 /obj/structure/closet/l3closet,
 /turf/open/floor/circuit,
 /area/awaymission/challenge/end)
+"dL" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/closed/indestructible{
+	icon_state = "iron0"
+	},
+/area/awaymission/challenge/main)
+"fn" = (
+/obj/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"fw" = (
+/obj/structure/cable/yellow,
+/obj/machinery/power/smes/magical,
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"gF" = (
+/obj/machinery/power/emitter/ctf{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"hb" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"hB" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/end{
+	dir = 8
+	},
+/obj/machinery/porta_turret{
+	dir = 8;
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"hR" = (
+/obj/structure/window/reinforced,
+/obj/machinery/power/emitter/ctf{
+	active = 0
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"kb" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"kA" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"my" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"oe" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/closed/indestructible{
+	icon_state = "iron0"
+	},
+/area/awaymission/challenge/main)
+"oR" = (
+/obj/effect/decal/cleanable/oil,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"rb" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"rB" = (
+/obj/machinery/power/emitter/ctf{
+	active = 0;
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"sM" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"tB" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"uv" = (
+/obj/machinery/power/emitter/ctf{
+	active = 0;
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"vF" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"yZ" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Dn" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"DQ" = (
+/obj/effect/decal/cleanable/oil,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Eo" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"FV" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/closed/indestructible{
+	icon_state = "iron0"
+	},
+/area/awaymission/challenge/main)
+"Hn" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"IP" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"JT" = (
+/obj/machinery/power/emitter/ctf{
+	active = 0;
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Ku" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"KN" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Lm" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/end{
+	dir = 4
+	},
+/obj/machinery/porta_turret{
+	dir = 8;
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Lw" = (
+/obj/machinery/power/emitter/ctf{
+	active = 0;
+	dir = 1
+	},
+/obj/structure/cable/yellow,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Mx" = (
+/obj/machinery/power/emitter/ctf{
+	active = 0
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"MJ" = (
+/obj/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"OE" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/closed/indestructible{
+	icon_state = "iron0"
+	},
+/area/awaymission/challenge/main)
+"Pv" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Tx" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"UL" = (
+/obj/machinery/power/emitter/ctf{
+	active = 0;
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Wc" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Yw" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Zd" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Zg" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
+"Zt" = (
+/obj/machinery/power/emitter/ctf{
+	active = 0;
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/challenge/main)
 
 (1,1,1) = {"
 aa
@@ -26573,7 +26985,7 @@ aF
 aF
 aF
 aF
-aS
+uv
 aF
 aF
 aF
@@ -26807,32 +27219,32 @@ aa
 aa
 aa
 aA
-aS
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aS
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aS
-aF
-aF
-aF
-aF
-aF
-aN
+rB
+yZ
+yZ
+yZ
+yZ
+tB
+yZ
+yZ
+tB
+yZ
+JT
+tB
+yZ
+yZ
+tB
+yZ
+yZ
+yZ
+yZ
+JT
+yZ
+yZ
+yZ
+tB
+yZ
+DQ
 aF
 aF
 aA
@@ -27063,8 +27475,8 @@ aa
 aA
 aA
 aA
-aA
-aT
+FV
+Eo
 aT
 aT
 aT
@@ -27090,9 +27502,9 @@ aT
 aT
 aT
 bD
-aT
-aT
-aA
+Wc
+Wc
+oe
 aA
 aA
 bP
@@ -27319,7 +27731,7 @@ aa
 aa
 aA
 aF
-aF
+Zd
 aO
 aH
 aH
@@ -27349,7 +27761,7 @@ aH
 aJ
 aH
 aH
-bI
+kA
 aF
 aF
 bP
@@ -27576,7 +27988,7 @@ aa
 aa
 aA
 aF
-aF
+Zg
 aP
 aH
 aH
@@ -27588,7 +28000,7 @@ aH
 aH
 aH
 aR
-aY
+hB
 ba
 bt
 aH
@@ -27606,8 +28018,8 @@ aH
 aH
 bE
 aH
-bI
-bM
+KN
+UL
 aF
 bP
 bS
@@ -27864,7 +28276,7 @@ aH
 aH
 aH
 bI
-aF
+Zg
 aF
 bP
 bR
@@ -28096,7 +28508,7 @@ aH
 aH
 aH
 aR
-aY
+hB
 ba
 aH
 aH
@@ -28112,7 +28524,7 @@ aR
 aY
 ba
 aR
-aZ
+Lm
 ba
 aH
 aH
@@ -28121,7 +28533,7 @@ aY
 ba
 aH
 bI
-aF
+Zg
 bM
 bP
 bP
@@ -28366,7 +28778,7 @@ aH
 aH
 aH
 aR
-aZ
+Lm
 ba
 aH
 aH
@@ -28378,10 +28790,10 @@ aZ
 ba
 aH
 bI
-aF
-aF
-aF
-aF
+IP
+Ku
+Dn
+fw
 bP
 cm
 cm
@@ -28637,7 +29049,7 @@ bF
 bJ
 bN
 aT
-aT
+Yw
 bT
 bP
 cn
@@ -28888,7 +29300,7 @@ ba
 aH
 aH
 aR
-aY
+hB
 ba
 bG
 bG
@@ -29145,7 +29557,7 @@ ba
 aH
 aH
 aR
-aZ
+Lm
 ba
 bG
 bG
@@ -29408,7 +29820,7 @@ bH
 bK
 aV
 bO
-aV
+Tx
 bV
 bP
 cn
@@ -29638,7 +30050,7 @@ aU
 aH
 aH
 aR
-aY
+hB
 ba
 aH
 aH
@@ -29651,7 +30063,7 @@ aH
 aH
 aH
 aR
-aY
+hB
 ba
 aH
 aH
@@ -29664,9 +30076,9 @@ ba
 aH
 bI
 aN
-aF
-aF
-bM
+Zd
+vF
+Lw
 bP
 cp
 cp
@@ -29911,7 +30323,7 @@ aR
 aZ
 ba
 aR
-aY
+hB
 ba
 aH
 aH
@@ -29920,8 +30332,8 @@ aZ
 ba
 aH
 bI
-aF
-bM
+Zd
+Zt
 bP
 bP
 bP
@@ -30147,7 +30559,7 @@ ab
 aA
 aF
 aF
-aO
+hR
 aH
 aH
 aH
@@ -30177,7 +30589,7 @@ aH
 aH
 aH
 bI
-aF
+Zg
 aF
 bP
 bW
@@ -30404,7 +30816,7 @@ aa
 aA
 aF
 aF
-aP
+fn
 aH
 aH
 aH
@@ -30415,7 +30827,7 @@ aH
 aH
 aH
 aR
-aZ
+Lm
 ba
 aH
 aH
@@ -30434,7 +30846,7 @@ aH
 aH
 aH
 bL
-aF
+sM
 aF
 bP
 bX
@@ -30659,9 +31071,9 @@ aa
 aa
 aa
 aA
-aI
-aF
-aP
+Mx
+yZ
+MJ
 aH
 aH
 aH
@@ -30690,8 +31102,8 @@ aH
 aM
 aH
 aH
-bI
-aF
+rb
+my
 aF
 bP
 bY
@@ -30918,8 +31330,8 @@ aa
 aA
 aA
 aA
-aA
-aV
+dL
+hb
 aV
 aV
 aV
@@ -30946,8 +31358,8 @@ aV
 bC
 aV
 aV
-aV
-aA
+Pv
+OE
 aA
 aA
 bP
@@ -31176,34 +31588,34 @@ aa
 aa
 aa
 aA
-aF
-aF
-aF
-aF
-aN
-aF
-aF
-aF
+kb
+yZ
+Hn
+yZ
+oR
+yZ
+Hn
+yZ
 aW
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
-aF
+yZ
+yZ
+yZ
+Hn
+yZ
+yZ
+Hn
+yZ
+tB
+yZ
+yZ
+yZ
+yZ
+Hn
+yZ
+tB
+yZ
+yZ
+sM
 aA
 aa
 aa
@@ -31435,32 +31847,32 @@ aa
 aA
 aF
 aF
-aW
+gF
 aF
 aX
 aF
-aW
+gF
 aF
 aF
 aF
 aF
 aF
-aW
+gF
 aF
 aF
-aW
-aF
-aF
-aF
-aF
-aF
-aF
-aW
+gF
 aF
 aF
 aF
 aF
-aW
+aF
+aF
+gF
+aF
+aF
+aF
+aF
+gF
 aA
 aa
 aa

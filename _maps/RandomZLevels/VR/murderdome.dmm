@@ -107,6 +107,15 @@
 /area/awaymission/vr/murderdome)
 "n" = (
 /obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
 /turf/open/indestructible,
 /area/awaymission/vr/murderdome)
 "o" = (
@@ -2335,7 +2344,7 @@ b
 b
 f
 j
-j
+n
 q
 E
 b
