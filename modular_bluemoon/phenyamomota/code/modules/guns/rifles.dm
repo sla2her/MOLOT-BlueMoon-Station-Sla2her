@@ -2,7 +2,7 @@
 
 /obj/item/gun/ballistic/automatic/m16a4
 	name = "\improper M16A4 rifle"
-	desc = "An american automatic rifle chambered for the 5.56 round, designed for use by SWAT."
+	desc = "Aт american automatic rifle chambered for the 5.56 round, designed for use by SWAT."
 	icon = 'modular_bluemoon/phenyamomota/icon/obj/guns/rifles.dmi'
 	icon_state = "m16"
 	lefthand_file = 'modular_bluemoon/phenyamomota/icon/mob/inhand/guns_lefthand.dmi'
@@ -33,9 +33,24 @@
 	max_ammo = 30
 	multiple_sprites = 2
 
+/obj/item/ammo_box/magazine/m16/ap
+	name = "\improper M16A4 armor-piercing magazine"
+	desc = "A double-stack translucent polymer magazine for use with the M16A4 rifles. Holds 30 rounds of armor-piercing 5.56."
+	ammo_type = /obj/item/ammo_casing/a556/ap
+
+/obj/item/ammo_box/magazine/m16/hp
+	name = "\improper M16A4 hollow-point magazine"
+	desc = "A double-stack translucent polymer magazine for use with the M16A4 rifles. Holds 30 rounds of hollow-point 5.56."
+	ammo_type = /obj/item/ammo_casing/a556/hp
+
+/obj/item/ammo_box/magazine/m16/rubber
+	name = "\improper M16A4 rubber magazine"
+	desc = "A double-stack translucent polymer magazine for use with the M16A4 rifles. Holds 30 rounds of rubber 5.56."
+	ammo_type = /obj/item/ammo_casing/a556/rubber
+
 /obj/item/gun/ballistic/automatic/m16a4/tactical
 	name = "\improper tactical M16A4 rifle"
-	desc = "An american automatic rifle chambered for the 5.56 round, designed for use by Special Ops."
+	desc = "Aт american automatic rifle chambered for the 5.56 round, designed for use by Special Ops."
 	icon_state = "m16_tactical"
 	burst_size = 5
 	fire_delay = 10
@@ -48,7 +63,7 @@
 
 /obj/item/gun/ballistic/automatic/m16a4/stock
 	name = "\improper stock M16A4 rifle"
-	desc = "An american automatic rifle chambered for the 5.56 round, just bought from nearest gun-shop."
+	desc = "Aт american automatic rifle chambered for the 5.56 round, just bought from nearest gun-shop."
 	icon_state = "m16_stock"
 	burst_size = 3
 	fire_delay = 4
@@ -94,6 +109,21 @@
 	max_ammo = 30
 	multiple_sprites = 2
 
+/obj/item/ammo_box/magazine/ak47/ap
+	name = "\improper AK-47 armor-piercing magazine"
+	desc = "a banana-shaped double-stack magazine able to hold 30 rounds of armor-piercing 7.62 ammo."
+	ammo_type = /obj/item/ammo_casing/a762x39/ap
+
+/obj/item/ammo_box/magazine/ak47/hp
+	name = "\improper AK-47 hollow-point magazine"
+	desc = "a banana-shaped double-stack magazine able to hold 30 rounds of hollow-point 7.62 ammo."
+	ammo_type = /obj/item/ammo_casing/a762x39/hp
+
+/obj/item/ammo_box/magazine/ak47/rubber
+	name = "\improper AK-47 rubber magazine"
+	desc = "a banana-shaped double-stack magazine able to hold 30 rounds of rubber 7.62 ammo."
+	ammo_type = /obj/item/ammo_casing/a762x39/rubber
+
 /obj/item/gun/ballistic/automatic/ak47/akm
 	name = "\improper AKM rifle"
 	desc = "A timeless human design of a carbine chambered for the 7.62 ammo. Imported from far-far-away frontier spaces."
@@ -107,7 +137,7 @@
 
 /obj/item/gun/ballistic/automatic/ak47/homemade
 	name = "\improper HomeMade AK-47 rifle"
-	desc = "Totally created by some fun of guns for school-shooting by the 7.62 ammo."
+	desc = "Kalak-12 with zatvornaya zaderjka like M16. Karch not included."
 	icon_state = "ak47_hm"
 	burst_size = 3
 	fire_delay = 5
