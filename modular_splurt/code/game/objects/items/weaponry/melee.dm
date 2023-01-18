@@ -22,11 +22,7 @@
 							message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою попку.","запихивает '\the [src]' прямо в свою собственную попку.", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в попку '\the [src]'", "активно суёт '\the [src]' прямо в попку <b>[target]</b>.")
 							lust_amt = NORMAL_LUST
 		if(message)
-<<<<<<< HEAD
-			user.visible_message(span_lewd("<b>[user]</b> [message]"))
-=======
-			user.visible_message("<span class='lewd'>[user] [message].</span>")
->>>>>>> parent of 43c22d1a48 (Merge branch 'master' of https://github.com/SmiLeYre/BlueMoon-Station-13)
+			user.visible_message("<span class='lewd'><b>[user]</b> [message].</span>")
 			target.handle_post_sex(lust_amt, null, user)
 			playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
 								'modular_sand/sound/interactions/bang5.ogg',
