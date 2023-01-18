@@ -20,6 +20,10 @@
 	plasma_outfit = /datum/outfit/plasmaman/prisoner
 
 	display_order = JOB_DISPLAY_ORDER_PRISONER
+	
+	family_heirlooms = list(
+		/obj/item/pen/blue
+	)
 
 /datum/job/prisoner/get_roundstart_spawn_point()
 	return get_latejoin_spawn_point()
