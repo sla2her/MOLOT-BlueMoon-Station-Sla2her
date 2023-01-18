@@ -91,6 +91,23 @@
 	desc = "Base armor vest designed for ordinary expeditors. With cool speedy violet vertical line."
 	icon_state = "vest_exp"
 	item_state = "vest_exp"
+	unique_reskin = list(
+		"Standart" = list(
+			"icon_state" = "vest_exp",
+			"item_state" = "vest_exp",
+			"name" = "expeditionary armor vest"
+		),
+		"Forest" = list(
+			"icon_state" = "vest_exp_forest",
+			"item_state" = "vest_exp_forest",
+			"name" = "forest expeditionary armor vest"
+		),
+		"Desert" = list(
+			"icon_state" = "vest_exp_desert",
+			"item_state" = "vest_exp_desert",
+			"name" = "desert expeditionary armor vest"
+		)
+	)
 
 /obj/item/clothing/head/helmet/exp
 	icon = 'modular_bluemoon/phenyamomota/icon/obj/clothing/head.dmi'
@@ -99,3 +116,20 @@
 	desc = "Sturdy ballistic helmet with violet protective glass."
 	icon_state = "helmet_exp"
 	item_state = "helmet_exp"
+	unique_reskin = list(
+		"Standart" = list(
+			"icon_state" = "helmet_exp",
+			"item_state" = "helmet_exp",
+			"name" = "expeditionary helmet"
+		),
+		"Forest" = list(
+			"icon_state" = "helmet_exp_forest",
+			"item_state" = "helmet_exp_forest",
+			"name" = "forest expeditionary helmet"
+		),
+		"Desert" = list(
+			"icon_state" = "helmet_exp_desert",
+			"item_state" = "helmet_exp_desert",
+			"name" = "desert expeditionary helmet"
+		)
+	)
