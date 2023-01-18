@@ -16,7 +16,7 @@
 
 /datum/gear/donator/gasmask_syndicate
 	name = "The Syndicate Mask"
-	slot = ITEM_SLOT_BACKPACK
+	slot = ITEM_SLOT_MASK
 	path = /obj/item/clothing/mask/gas/syndicate
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1

@@ -25,6 +25,8 @@
 		"Project Manager",
 		"Power Plant Director",
 		"Aunt Syndi Pet",
+		"Mother Destroyer",
+		"Bordel Architect",
 		"Big Iron"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -86,6 +88,8 @@
 		"Medical Director",
 		"Medical Administrator",
 		"Specialist Of Interdyne",
+		"Healing Fleshlight Mistress",
+		"Healing Fleshlight Master",
 		"Chief Heal Slut"
 	) // Sandcode do not have alt titles for CMO at the moment.
 
@@ -95,6 +99,7 @@
 	var/list/extra_titles = list(
 		"Atmos Plumber",
 		"Syndicate Atmospherics Master",
+		"Buttplug",
 		"Disposals Technician"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -155,6 +160,7 @@
 /datum/job/janitor/New()
 	var/list/extra_titles = list(
 		"Slutty Maid",
+		"Cum Cleaner",
 		"Liquidator"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -167,13 +173,14 @@
 		"Monk",
 		"Nun",
 		"Tiger Cooperative Disciple",
+		"Keeper of Cum",
 		"Counselor"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
 
 /datum/job/clown // Sorry, but no TWO entertainer titles.
-	alt_titles = list("Jester", "Comedian", "Sexy Clown")
+	alt_titles = list("Jester", "Comedian", "Cumedian", "Sexy Clown")
 
 /datum/job/cook/New()
 	var/list/extra_titles = list(
@@ -193,6 +200,7 @@
 		"Archaeologist",
 		"Historian",
 		"Scholar",
+		"Hentai Artist",
 		"Artist"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -216,6 +224,7 @@
 	var/list/extra_titles = list(
 		"Syndicate Attorney",
 		"Law-Slut",
+		"Internal Affairs Agent",
 		"Attorney"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -224,6 +233,7 @@
 /datum/job/mime/New()
 	var/list/extra_titles = list(
 		"Pantomime",
+		"Cumtomime",
 		"Sexy Mime",
 		"Mimic"
 	)
@@ -248,6 +258,8 @@
 	var/list/extra_titles = list(
 		"Ripperdoc",
 		"Droid Mechanic",
+		"Borgs Slut",
+		"Borgs Raper",
 		"Robo-Slut"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -260,6 +272,8 @@
 		"Alchemist",
 		"Apothecarist",
 		"Chemical Plumber",
+		"Organomegaly Healer",
+		"Hexocrocin Therapist",
 		"Chemi-Slut"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -271,6 +285,8 @@
 		"Medical Intern",
 		"Medical Resident",
 		"Medtech",
+		"Oral Doctor",
+		"Healing Fleshlight",
 		"Medi-Slut"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -304,6 +320,10 @@
 	var/list/extra_titles = list(
 		"Trauma Team",
 		"Field Medic Of Interdyne",
+		"Emergency Horny Technical",
+		"Emergency Cum Receiver",
+		"Emergency Condom Team",
+		"Crocin Deliverer",
 		"Para-Slut"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -314,6 +334,8 @@
 		"Microbiologist",
 		"Biochemist",
 		"Syndicate Bioweapon Scientist",
+		"Plague Doctor",
+		"Monkey Destroyer",
 		"Viro-Slut"
 	)
 	LAZYADD(alt_titles, extra_titles)
