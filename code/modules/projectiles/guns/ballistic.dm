@@ -14,7 +14,7 @@
 /obj/item/gun/ballistic
 	var/hole = CUM_TARGET_VAGINA
 
-/obj/item/gun/ballistic/AltClick(mob/living/carbon/human/user as mob)
+/obj/item/gun/ballistic/CtrlShiftClick(mob/living/carbon/human/user as mob)
 	hole = hole == CUM_TARGET_VAGINA ? CUM_TARGET_ANUS : CUM_TARGET_VAGINA
 	to_chat(user, span_notice("Now targetting \the [hole]."))
 
