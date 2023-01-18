@@ -26,11 +26,11 @@
 /obj/machinery/autodoc/examine(mob/user)
 	. = ..()
 	if((obj_flags & EMAGGED) && panel_open)
-		. += span_warning("[src]'s surgery protocols have been corrupted!")
+		. += "<span class='warning'>[src]'s surgery protocols have been corrupted!</span>"
 	if(processing)
-		. += span_notice("[src] is currently inserting [storedorgan] into [occupant].")
+		. += "<span class='notice'>[src] is currently inserting [storedorgan] into [occupant].</span>"
 	else if(storedorgan)
-		. += span_notice("[src] is prepared to insert [storedorgan].")
+		. += "<span class='notice'>[src] is prepared to insert [storedorgan].</span>"
 
 /obj/machinery/autodoc/close_machine(mob/user)
 	..()
@@ -40,16 +40,16 @@
 			occupant.forceMove(drop_location())
 			occupant = null
 			return
-		to_chat(occupant, span_notice("You enter [src]."))
+		to_chat(occupant, "<span class='notice'>You enter [src].</span>")
 
 		dosurgery()
 
 /obj/machinery/autodoc/proc/dosurgery()
 	if(!storedorgan && !(obj_flags & EMAGGED))
-		to_chat(occupant, span_notice("[src] currently has no implant stored."))
+		to_chat(occupant, "<span class='notice'>[src] currently has no implant stored.</span>")
 		return
 
-	occupant.visible_message(span_notice("[occupant] presses a button on [src], and you hear a mechanical noise."), span_notice("You feel a sharp sting as [src] starts inserting the organ into your body."))
+	occupant.visible_message("<span class='notice'>[occupant] presses a button on [src], and you hear a mechanical noise.</span>", "<span class='notice'>You feel a sharp sting as [src] starts inserting the organ into your body.</span>")
 	playsound(get_turf(occupant), 'sound/weapons/circsawhit.ogg', 50, 1)
 	processing = TRUE
 	update_icon()
@@ -66,7 +66,7 @@
 			if(!processing)
 				return
 
-		occupant.visible_message(span_warning("[src] dismembers [occupant]!"), span_warning("[src] saws up your body!"))
+		occupant.visible_message("<span class='warning'>[src] dismembers [occupant]!", "<span class='warning'>[src] saws up your body!</span>")
 
 	else
 		sleep(surgerytime)
@@ -78,14 +78,14 @@
 			currentorgan.forceMove(get_turf(src))
 		storedorgan.Insert(occupant)//insert stored organ into the user
 		storedorgan = null
-		occupant.visible_message(span_notice("[src] completes the surgery procedure."), span_notice("[src] inserts the organ into your body."))
+		occupant.visible_message("<span class='notice'>[src] completes the surgery procedure.", "<span class='notice'>[src] inserts the organ into your body.</span>")
 	playsound(src, 'sound/machines/microwave/microwave-end.ogg', 100, 0)
 	processing = FALSE
 	open_machine()
 
 /obj/machinery/autodoc/open_machine(mob/user)
 	if(processing)
-		occupant.visible_message(span_notice("[user] cancels [src]'s procedure."), span_notice("[src] stops inserting the organ into your body."))
+		occupant.visible_message("<span class='notice'>[user] cancels [src]'s procedure.", "<span class='notice'>[src] stops inserting the organ into your body.</span>")
 		processing = FALSE
 	if(occupant)
 		occupant.forceMove(drop_location())
@@ -94,7 +94,7 @@
 
 /obj/machinery/autodoc/interact(mob/user)
 	if(panel_open)
-		to_chat(user, span_notice("Close the maintenance panel first."))
+		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
 		return
 
 	if(state_open)
@@ -106,13 +106,13 @@
 /obj/machinery/autodoc/attackby(obj/item/I, mob/user, params)
 	if(istype(I, organ_type))
 		if(storedorgan)
-			to_chat(user, span_notice("[src] already has an implant stored."))
+			to_chat(user, "<span class='notice'>[src] already has an implant stored.</span>")
 			return
 		if(!user.transferItemToLoc(I, src))
 			return
 		storedorgan = I
 		I.forceMove(src)
-		to_chat(user, span_notice("You insert the [I] into [src]."))
+		to_chat(user, "<span class='notice'>You insert the [I] into [src].</span>")
 	else
 		return ..()
 
@@ -121,10 +121,10 @@
 	if(..())
 		return
 	if(occupant)
-		to_chat(user, span_warning("[src] is currently occupied!"))
+		to_chat(user, "<span class='warning'>[src] is currently occupied!</span>")
 		return
 	if(state_open)
-		to_chat(user, span_warning("[src] must be closed to [panel_open ? "close" : "open"] its maintenance hatch!"))
+		to_chat(user, "<span class='warning'>[src] must be closed to [panel_open ? "close" : "open"] its maintenance hatch!</span>")
 		return
 	if(default_deconstruction_screwdriver(user, icon_state, icon_state, I))
 		if(storedorgan)
@@ -164,4 +164,4 @@
 	if(obj_flags & EMAGGED)
 		return
 	obj_flags |= EMAGGED
-	to_chat(user, span_warning("You reprogram [src]'s surgery procedures."))
+	to_chat(user, "<span class='warning'>You reprogram [src]'s surgery procedures.</span>")

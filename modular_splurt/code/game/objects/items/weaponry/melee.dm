@@ -3,7 +3,7 @@
 
 /obj/item/melee/baseball_bat/AltClick(mob/living/carbon/human/user as mob)
 	hole = hole == CUM_TARGET_VAGINA ? CUM_TARGET_ANUS : CUM_TARGET_VAGINA
-	to_chat(user, span_notice("Now targetting \the [hole]."))
+	to_chat(user, "<span class='notice'>Now targetting \the [hole].</span>")
 
 /obj/item/melee/baseball_bat/attack(mob/living/target, mob/living/user)
 	if (BODY_ZONE_PRECISE_GROIN && user.a_intent != INTENT_HARM) //ROUGH PRISON HUMILATION YAY
@@ -22,7 +22,11 @@
 							message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою попку.","запихивает '\the [src]' прямо в свою собственную попку.", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в попку '\the [src]'", "активно суёт '\the [src]' прямо в попку <b>[target]</b>.")
 							lust_amt = NORMAL_LUST
 		if(message)
+<<<<<<< HEAD
 			user.visible_message(span_lewd("<b>[user]</b> [message]"))
+=======
+			user.visible_message("<span class='lewd'>[user] [message].</span>")
+>>>>>>> parent of 43c22d1a48 (Merge branch 'master' of https://github.com/SmiLeYre/BlueMoon-Station-13)
 			target.handle_post_sex(lust_amt, null, user)
 			playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
 								'modular_sand/sound/interactions/bang5.ogg',
@@ -33,7 +37,7 @@
 			return
 		var/atom/throw_target = get_edge_target_turf(target, user.dir)
 		if(homerun_ready)
-			user.visible_message(span_userdanger("It's a home run!"))
+			user.visible_message("<span class='userdanger'>It's a home run!</span>")
 			target.throw_at(throw_target, rand(8,10), 14, user)
 			target.ex_act(EXPLODE_HEAVY)
 			playsound(get_turf(src), 'sound/weapons/homerun.ogg', 100, TRUE)

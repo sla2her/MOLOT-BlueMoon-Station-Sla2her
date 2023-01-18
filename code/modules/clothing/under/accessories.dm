@@ -622,4 +622,6 @@
 
 /obj/item/clothing/accessory/pride/reskin_obj(mob/M)
 	. = ..()
+	if(!.)
+		return
 	name = "[current_skin] pin"

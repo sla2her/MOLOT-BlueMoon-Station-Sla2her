@@ -48,7 +48,7 @@
 			if((faction_check_mob(M) && attack_same) || (!faction_check_mob(M)) || (!ismegafauna(M)))
 				enemies |= M
 				if(!retaliated)
-					src.visible_message(span_userdanger("[src] seems pretty pissed off at [M]!"))
+					src.visible_message("<span class='userdanger'>[src] seems pretty pissed off at [M]!</span>")
 					retaliated = TRUE
 					retaliatedcooldown = world.time + retaliatedcooldowntime
 		else if(ismecha(A))
@@ -61,7 +61,7 @@
 						continue
 					enemies |= living
 					if(!retaliated)
-						visible_message(span_userdanger("[src] seems pretty pissed off at [M]!"))
+						visible_message("<span class='userdanger'>[src] seems pretty pissed off at [M]!</span>")
 						retaliated = TRUE
 						retaliatedcooldown = world.time + retaliatedcooldowntime
 
@@ -129,9 +129,9 @@
 				if(KA && KA.bayonet)
 					message = pick(glorymessagespka | glorymessagespkabayonet)
 			if(message)
-				visible_message(span_danger("<b>[slayer] [message]</b>"))
+				visible_message("<span class='danger'><b>[slayer] [message]</b></span>")
 			else
-				visible_message(span_danger("<b>[slayer] does something generally considered brutal to [src]... Whatever that may be!</b>"))
+				visible_message("<span class='danger'><b>[slayer] does something generally considered brutal to [src]... Whatever that may be!</b></span>")
 			adjustHealth(maxHealth, TRUE, TRUE)
 			if(mob_biotypes & MOB_ORGANIC)
 				new /obj/effect/gibspawner/generic(src.loc)
@@ -139,14 +139,14 @@
 				new /obj/effect/gibspawner/robot(src.loc)
 			slayer.heal_overall_damage(gloryhealth,gloryhealth)
 		else
-			to_chat(slayer, span_danger("You fail to glory kill [src]!"))
+			to_chat(slayer, "<span class='danger'>You fail to glory kill [src]!</span>")
 
 /mob/living/simple_animal/hostile/megafauna/devour(mob/living/L)
 	if(!L)
 		return
 	visible_message(
-		span_danger("[src] devours [L]!"),
-		span_userdanger("You feast on [L], restoring your health!"))
+		"<span class='danger'>[src] devours [L]!</span>",
+		"<span class='userdanger'>You feast on [L], restoring your health!</span>")
 	if(!is_station_level(z) || client) //NPC monsters won't heal while on station
 		adjustBruteLoss(-L.maxHealth/2)
 	L.gib()

@@ -22,7 +22,7 @@
 				if(M.has_mouth() && !M.is_mouth_covered())
 					message = (user == M) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свой ротик.", "запихивает '\the [src]' прямо в свой собственный ротик.", "втыкает '\the [src]' прямо в свой ротик.") : pick("трахает [M] прямо в ротик при помощи '\the [src]'", "активно суёт '\the [src]' прямо в ротик [M].")
 	if(message)
-		user.visible_message(span_lewd("[user] [message]."))
+		user.visible_message("<span class='lewd'>[user] [message].</span>")
 		M.handle_post_sex(lust_amt, null, user)
 		playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
 							'modular_sand/sound/interactions/bang5.ogg',
@@ -32,7 +32,7 @@
 
 /obj/item/dildo/attack_self(mob/living/carbon/human/user as mob)
 	hole = hole == CUM_TARGET_VAGINA ? CUM_TARGET_ANUS : CUM_TARGET_VAGINA
-	to_chat(user, span_notice("Now targetting \the [hole]."))
+	to_chat(user, "<span class='notice'>Now targetting \the [hole].</span>")
 
 //begin redds code
 /obj/item/dildo/cyborg

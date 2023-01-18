@@ -93,7 +93,7 @@
 
 /obj/item/storage/box/aphrodisiac_pump/examine(mob/user)
 	. = ..()
-	. += span_notice("Click the implant case while with the implant inside to change the desired dosage amounts.")
+	. += "<span class='notice'>Click the implant case while with the implant inside to change the desired dosage amounts.</span>"
 
 /obj/item/storage/box/aphrodisiac_pump/ComponentInitialize()
 	. = ..()

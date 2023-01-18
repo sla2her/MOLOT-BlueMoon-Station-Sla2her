@@ -1,30 +1,23 @@
-GLOBAL_LIST_INIT(pairless_panties, list(
-	/obj/item/clothing/underwear/briefs/jockstrap = TRUE,
-	/obj/item/clothing/underwear/briefs/panties/thong = TRUE,
-	/obj/item/clothing/underwear/briefs/panties/thong/babydoll = TRUE,
-	/obj/item/clothing/underwear/briefs/mankini = TRUE
-))
+#define PAIRLESS_PANTIES list(\
+	/obj/item/clothing/underwear/briefs/jockstrap,\
+	/obj/item/clothing/underwear/briefs/panties/thong,\
+	/obj/item/clothing/underwear/briefs/panties/thong/babydoll,\
+	/obj/item/clothing/underwear/briefs/mankini\
+)
 
 /mob/living/carbon/human/examine(mob/user)
 	. = ..()
+	if(!isliving(user))
+		return
+
 	var/mob/living/living = user
-	var/obj/item/clothing/under/worn_uniform = get_item_by_slot(ITEM_SLOT_ICLOTHING)
-	if(worn_uniform && is_type_in_typecache(worn_uniform.type, GLOB.skirt_peekable) && (isobserver(user) || (isliving(user) && (user != src) && !(living.mobility_flags & MOBILITY_STAND) && (mobility_flags & MOBILITY_STAND) && (loc == living.loc) && (istype(worn_uniform)))))
-		. += span_purple("[p_theyre(TRUE)] wearing a [worn_uniform.name]! You can probably give it a little peek by <b>looking closer</b>.")
-
-/mob/living/carbon/human/Initialize(mapload)
-	. = ..()
-	RegisterSignal(src, COMSIG_PARENT_EXAMINE_MORE, .proc/peek_skirt)
-
-/mob/living/carbon/human/proc/peek_skirt(mob/examined, mob/examiner, list/examine_content)
-	var/mob/living/living = examiner
-	var/obj/item/clothing/under/worn_uniform = get_item_by_slot(ITEM_SLOT_ICLOTHING)
-	if(worn_uniform && is_type_in_typecache(worn_uniform.type, GLOB.skirt_peekable) && (isobserver(examiner) || (isliving(examiner) && (examiner != src) && !(living.mobility_flags & MOBILITY_STAND) && (mobility_flags & MOBILITY_STAND) && (loc == living.loc) && (istype(worn_uniform)))))
-		var/string = "Peeking under [src]'s [worn_uniform.name], you can see "
-		var/obj/item/clothing/underwear/worn_underwear = get_item_by_slot(ITEM_SLOT_UNDERWEAR)
+	var/obj/item/clothing/under/worn_uniform = w_uniform
+	if((user != src) && !(living.mobility_flags & MOBILITY_STAND) && (mobility_flags & MOBILITY_STAND) && (src.loc == living.loc) && (istype(worn_uniform))) //SPLURT edit
+		var/string = "Peeking under [src]'s [w_uniform], you can see "
+		var/obj/item/clothing/underwear/worn_underwear = src.w_underwear
 		if(worn_underwear)
 			string += "a "
-			if(!is_type_in_typecache(worn_underwear.type, GLOB.pairless_panties)) //a pair of thong
+			if(!(worn_underwear.type in PAIRLESS_PANTIES)) //a pair of thong
 				string += "pair of "
 			if(worn_underwear.color)
 				string += "<font color='[worn_underwear.color]'>[worn_underwear.name]</font>."
@@ -34,12 +27,12 @@ GLOBAL_LIST_INIT(pairless_panties, list(
 			var/obj/item/organ/genital/penis/penis = getorganslot(ORGAN_SLOT_PENIS)
 			var/obj/item/organ/genital/vagina/vagina = getorganslot(ORGAN_SLOT_VAGINA)
 			if(penis?.aroused_state)
-				string += span_love(" There's a visible bulge on [p_their()] front.")
+				string += span_love(" There's a visible bulge on it's front.")
 			else if(vagina?.aroused_state)
-				string += span_love(" [p_theyre(TRUE)] wet with arousal.")
+				string += span_love(" They're wet with arousal.")
 
 		else
-			string += "[p_theyre()] not wearing anything!\n[p_their(TRUE)]"
+			string += "[p_theyre()] not wearing anything! - [p_their()] "
 			var/list/genitals = list()
 			for(var/obj/item/organ/genital/genital in internal_organs)
 				if(genital.genital_flags & (GENITAL_INTERNAL|GENITAL_HIDDEN))
@@ -49,29 +42,29 @@ GLOBAL_LIST_INIT(pairless_panties, list(
 				switch(genital.type)
 					if(/obj/item/organ/genital/vagina)
 						if(genital.aroused_state)
-							appended += " wet"
+							appended += "wet "
 						if(lowertext(genital.shape) != "human")
-							appended += " [lowertext(genital.shape)]"
-						if(lowertext(genital.shape) != "cloaca") //their wet cloaca vagina
-							appended += " [lowertext(genital.name)]" // goodbye pussy
+							appended += lowertext(genital.shape)
+						if(lowertext(genital.shape) != "cloaca") //their wet cloaca pussy
+							appended += " pussy"
 
 					if(/obj/item/organ/genital/testicles)
-						var/obj/item/organ/genital/testicles/nuts = genital
-						appended += " [lowertext(nuts.size_name)] [lowertext(nuts.name)]"
+						appended += "nuts"
 					if(/obj/item/organ/genital/penis)
 						if(genital.aroused_state)
-							appended += " fully erect"
+							appended += "fully erect"
 						if(lowertext(genital.shape) != "human")
-							appended += " [lowertext(genital.shape)]"
-						appended += " [lowertext(genital.name)]" // Name it something funny, i dare you.
-					if(/obj/item/organ/genital/butt)
-						var/obj/item/organ/genital/butt/booty = genital
-						appended += " [booty.size_name] [lowertext(booty.name)]" // Maybe " average butt pair" isn't the best for now
+							appended += ", [lowertext(genital.shape)]"
+						if(appended)
+							appended += " " //double spaces
+						appended += "penis"
 					else
 						continue
 				genitals += appended
 
-			string += english_list(genitals, " featureless groin", " and", ",")
+			string += english_list(genitals, "featureless groin")
 			string += " on full display."
 
-		examine_content += span_purple(string)
+		. += span_purple(string)
+
+#undef PAIRLESS_PANTIES

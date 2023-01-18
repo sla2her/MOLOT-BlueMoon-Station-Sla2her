@@ -52,19 +52,19 @@
 		if(id_card)
 			var/obj/item/card/id/CARD = id_card
 			if(CARD.bank_support != ID_FREE_BANK_ACCOUNT)
-				to_chat(user, span_warning("This ID has no banking support whatsover, must be an older model..."))
+				to_chat(user, "<span class='warning'>This ID has no banking support whatsover, must be an older model...</span>")
 				return
 			if(!CARD.registered_account)
-				to_chat(user, span_warning("ERROR: No bank account found."))
+				to_chat(user, "<span class='warning'>ERROR: No bank account found.</span>")
 				return
-			to_chat(user, span_notice("You link \the [CARD] to \the [src]."))
+			to_chat(user, "<span class='notice'>You link \the [CARD] to \the [src].</span>")
 			pay_me = CARD.registered_account
-			say("Now using [pay_me.account_holder ? "[pay_me.account_holder]'s" : span_boldwarning("ERROR")] account.")
+			say("Now using [pay_me.account_holder ? "[pay_me.account_holder]'s" : "<span class='boldwarning'>ERROR</span>"] account.")
 			return
 
 /obj/machinery/cryptominer/AltClick(mob/user)
-	user.visible_message(span_warning("[user] begins resetting \the [src]."),
-					span_warning("You begin resetting \the [src]."))
+	user.visible_message("<span class='warning'>[user] begins resetting \the [src].</span>",
+					"<span class='warning'>You begin resetting \the [src].</span>")
 	balloon_alert(user, "resetting")
 	if(do_after(user, 5 SECONDS, target = src))
 		pay_me = SSeconomy.get_dep_account(ACCOUNT_CAR)
@@ -73,7 +73,7 @@
 /obj/machinery/cryptominer/examine(mob/user)
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
-		. += span_notice("A little screen on the machine reads: Currently the linked bank account is [pay_me.account_holder ? "[pay_me.account_holder]'s" : span_boldwarning("ERROR")].")
+		. += "<span class='notice'>A little screen on the machine reads: Currently the linked bank account is [pay_me.account_holder ? "[pay_me.account_holder]'s" : "<span class='boldwarning'>ERROR</span>"]."
 	. += "Modify the destination of the credits using your id on it while it is inactive and has it's panel open."
 	. += "Alt-Click to reset to the Cargo budget.</span>"
 
@@ -135,13 +135,13 @@
 /obj/machinery/cryptominer/attack_hand(mob/living/user)
 	. = ..()
 	if(!is_operational())
-		to_chat(user, span_warning("[src] has to be on to do this!"))
+		to_chat(user, "<span class='warning'>[src] has to be on to do this!</span>")
 		balloon_alert(user, "no power!")
 		return FALSE
 	if(mining)
 		set_mining(FALSE)
-		visible_message(span_warning("[src] slowly comes to a halt."),
-						span_warning("You turn off [src]."))
+		visible_message("<span class='warning'>[src] slowly comes to a halt.</span>",
+						"<span class='warning'>You turn off [src].</span>")
 		balloon_alert(user, "turned off")
 		return
 	balloon_alert(user, "turned on")

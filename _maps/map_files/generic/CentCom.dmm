@@ -91,13 +91,13 @@
 	},
 /area/holodeck/rec_center/lounge)
 "ap" = (
-/turf/open/floor/holofloor/basalt,
+/turf/open/floor/holofloor/plating,
 /area/holodeck/rec_center/wildlife)
 "aq" = (
 /turf/open/floor/holofloor/plating,
 /area/holodeck/rec_center/offline)
 "ar" = (
-/turf/open/indestructible/binary,
+/turf/open/floor/holofloor/plating/burnmix,
 /area/holodeck/rec_center/burn)
 "as" = (
 /obj/effect/turf_decal/tile/red{
@@ -178,12 +178,12 @@
 	},
 /area/holodeck/rec_center/lounge)
 "aB" = (
-/obj/effect/holodeck_effect/mobspawner/funclaw,
-/turf/open/floor/holofloor/basalt,
+/obj/effect/holodeck_effect/mobspawner,
+/turf/open/floor/holofloor/plating,
 /area/holodeck/rec_center/wildlife)
 "aC" = (
 /obj/effect/holodeck_effect/sparks,
-/turf/open/indestructible/binary,
+/turf/open/floor/holofloor/plating/burnmix,
 /area/holodeck/rec_center/burn)
 "aD" = (
 /obj/effect/turf_decal/tile/red{
@@ -413,7 +413,7 @@
 /turf/closed/indestructible/riveted,
 /area/space)
 "bk" = (
-/obj/effect/holodeck_effect/mobspawner/bumbles,
+/obj/effect/holodeck_effect/mobspawner/bee,
 /turf/open/floor/holofloor/asteroid,
 /area/holodeck/rec_center/anthophila)
 "bl" = (
@@ -752,7 +752,7 @@
 	},
 /area/holodeck/rec_center/medical)
 "ce" = (
-/obj/effect/holodeck_effect/mobspawner/bumbles,
+/obj/effect/holodeck_effect/mobspawner/bee,
 /obj/item/clothing/head/beekeeper_head,
 /turf/open/floor/holofloor/asteroid,
 /area/holodeck/rec_center/anthophila)
@@ -856,13 +856,13 @@
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/dodgeball)
 "cq" = (
-/obj/effect/holodeck_effect/mobspawner/bumbles,
+/obj/effect/holodeck_effect/mobspawner/bee,
 /obj/effect/decal/remains/human,
 /obj/item/clothing/suit/beekeeper_suit,
 /turf/open/floor/holofloor/asteroid,
 /area/holodeck/rec_center/anthophila)
 "cr" = (
-/obj/effect/holodeck_effect/mobspawner/bumbles,
+/obj/effect/holodeck_effect/mobspawner/bee,
 /obj/item/melee/flyswatter,
 /turf/open/floor/holofloor/asteroid,
 /area/holodeck/rec_center/anthophila)
@@ -20270,9 +20270,6 @@
 	},
 /turf/open/space,
 /area/space)
-"Vy" = (
-/turf/open/chasm/lavaland,
-/area/holodeck/rec_center/wildlife)
 "Vz" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
@@ -80914,16 +80911,16 @@ aa
 "}
 (232,1,1) = {"
 ac
-Vy
-Vy
-Vy
 ap
 ap
 ap
 ap
-Vy
-Vy
-Vy
+ap
+ap
+ap
+ap
+ap
+ap
 bj
 bt
 bI
@@ -81171,16 +81168,16 @@ aa
 "}
 (233,1,1) = {"
 ac
-Vy
-aB
-ap
-ap
-ap
-ap
-ap
 ap
 aB
-Vy
+ap
+ap
+ap
+ap
+ap
+ap
+aB
+ap
 bj
 Xg
 TF
@@ -81428,7 +81425,7 @@ aa
 "}
 (234,1,1) = {"
 ac
-Vy
+ap
 ap
 ap
 ap
@@ -81437,7 +81434,7 @@ aB
 ap
 ap
 ap
-Vy
+ap
 bj
 bu
 bJ
@@ -81685,16 +81682,16 @@ aa
 "}
 (235,1,1) = {"
 ac
-Vy
+ap
+aB
 ap
 ap
 ap
 ap
 ap
 ap
+aB
 ap
-ap
-Vy
 bj
 bv
 bK
@@ -81942,16 +81939,16 @@ aa
 "}
 (236,1,1) = {"
 ac
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
 bj
 RD
 Va
