@@ -27,6 +27,7 @@
 			playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
 								'modular_sand/sound/interactions/bang5.ogg',
 								'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
+
 	else //Standart code
 		. = ..()
 		if(HAS_TRAIT(user, TRAIT_PACIFISM))
