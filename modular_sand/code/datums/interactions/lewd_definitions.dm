@@ -98,7 +98,7 @@
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					return genital.is_exposed()
+					return genital.is_exposed() || genital.always_accessible
 				if(REQUIRE_UNEXPOSED)
 					return !genital.is_exposed()
 				else
