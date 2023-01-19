@@ -38,7 +38,7 @@
 	to_chat(user, span_notice("Now targetting \the [hole]."))
 
 /obj/item/melee/baton/attack(mob/living/target, mob/living/user)
-	if (BODY_ZONE_PRECISE_GROIN && user.a_intent != INTENT_HARM) //ROUGH PRISON HUMILATION YAY
+	if (BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP) //ROUGH PRISON HUMILATION YAY
 		//var/possessive_verb = user.p_their()
 		var/message = ""
 		var/lust_amt = 0
@@ -59,6 +59,7 @@
 			playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
 								'modular_sand/sound/interactions/bang5.ogg',
 								'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
+	return
 
 /obj/item/melee/baton/examine(mob/user)
 	. = ..()
