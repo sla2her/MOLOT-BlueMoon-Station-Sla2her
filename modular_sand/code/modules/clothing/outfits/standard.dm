@@ -4,10 +4,10 @@
 	icon_state = "cent_headset_alt"
 	item_state = "cent_headset_alt"
 	bowman = TRUE
-	
+
 /obj/item/gun/energy/taser/debug
 	ammo_type = list(/obj/item/ammo_casing/energy/electrode/debug)
-	
+
 /obj/item/ammo_casing/energy/electrode/debug
 	e_cost = 1
 
@@ -29,7 +29,7 @@
 /obj/item/clothing/shoes/combat/debug
 	clothing_flags = NOSLIP
 
-/obj/item/storage/belt/utility/chief/full/debug
+/obj/item/storage/belt/military/abductor/full/debug
 	name = "\improper Bluespace Tech's belt"
 
 /datum/outfit/debug/bst //Debug objs
@@ -40,7 +40,7 @@
 	ears = /obj/item/radio/headset/headset_cent/commander/alt/generic
 	mask = null
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	belt = /obj/item/storage/belt/utility/chief/full/debug
+	belt = /obj/item/storage/belt/military/abductor/full/debug
 	shoes = /obj/item/clothing/shoes/combat/debug
 	id = /obj/item/card/id/debug/bst
 	back = /obj/item/storage/backpack/holding
@@ -50,6 +50,9 @@
 		/obj/item/melee/transforming/energy/axe=1,\
 		/obj/item/storage/part_replacer/bluespace/tier4=1,\
 		/obj/item/debug/human_spawner=1,\
+		/obj/item/holosign_creator/combifan=1,\
+		/obj/item/analyzer/ranged=1,\
+		/obj/item/extinguisher/advanced,1\
 		/obj/item/gun/energy/taser/debug=1,\
 		/obj/item/clothing/glasses/debug,\
 		/obj/item/clothing/mask/gas/welding/up,\
@@ -64,7 +67,7 @@
 	ears = /obj/item/radio/headset/headset_cent/commander/alt/generic
 	mask = /obj/item/clothing/mask/gas/welding/up
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	belt = /obj/item/storage/belt/utility/chief/full/debug
+	belt = /obj/item/storage/belt/military/abductor/full/debug
 	shoes = /obj/item/clothing/shoes/combat/debug
 	id = /obj/item/card/id/debug/bst
 	back = /obj/item/storage/backpack/holding
@@ -74,6 +77,9 @@
 	backpack_contents = list(
 		/obj/item/melee/transforming/energy/axe=1,\
 		/obj/item/storage/part_replacer/bluespace/tier4=1,\
+		/obj/item/holosign_creator/combifan=1,\
+		/obj/item/analyzer/ranged=1,\
+		/obj/item/extinguisher/advanced,1\
 		/obj/item/debug/human_spawner=1,\
 		/obj/item/gun/energy/pulse=1,\
 		/obj/item/gun/energy/taser/debug,\
