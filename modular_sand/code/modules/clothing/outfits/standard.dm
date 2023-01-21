@@ -52,7 +52,9 @@
 		/obj/item/debug/human_spawner=1,\
 		/obj/item/holosign_creator/combifan=1,\
 		/obj/item/analyzer/ranged=1,\
-		/obj/item/extinguisher/advanced,1,\
+		/obj/item/extinguisher/advanced=1,\
+		/obj/item/pipe_dispenser/bluespace=1,\
+		/obj/item/lightreplacer/blue=1,\
 		/obj/item/gun/energy/taser/debug=1,\
 		/obj/item/clothing/glasses/debug,\
 		/obj/item/clothing/mask/gas/welding/up,\
@@ -80,6 +82,8 @@
 		/obj/item/holosign_creator/combifan=1,\
 		/obj/item/analyzer/ranged=1,\
 		/obj/item/extinguisher/advanced=1,\
+		/obj/item/pipe_dispenser/bluespace=1,\
+		/obj/item/lightreplacer/blue=1,\
 		/obj/item/debug/human_spawner=1,\
 		/obj/item/gun/energy/pulse=1,\
 		/obj/item/gun/energy/taser/debug,\
