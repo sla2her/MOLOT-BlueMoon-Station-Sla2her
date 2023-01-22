@@ -359,7 +359,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 // CIGARS //
 ////////////
 /obj/item/clothing/mask/cigarette/cigar
-	name = "premium cigar"
+	name = "Premium Cigar"
 	desc = "A brown roll of tobacco and... well, you're not quite sure. This thing's huge!"
 	icon_state = "cigaroff"
 	icon_on = "cigaron"
@@ -371,7 +371,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	chem_volume = 40
 
 /obj/item/clothing/mask/cigarette/cigar/cohiba
-	name = "\improper Cohiba Robusto cigar"
+	name = "\improper Cohiba Robusto Cigar"
 	desc = "There's little more you could want from a cigar."
 	icon_state = "cigar2off"
 	icon_on = "cigar2on"
@@ -381,7 +381,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 
 /obj/item/clothing/mask/cigarette/cigar/havana
-	name = "premium Havanian cigar"
+	name = "Premium Havanian Cigar"
 	desc = "A cigar fit for only the best of the best."
 	icon_state = "cigar2off"
 	icon_on = "cigar2on"
@@ -509,7 +509,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 //ZIPPO//
 /////////
 /obj/item/lighter
-	name = "\improper Zippo lighter"
+	name = "\improper Zippo Lighter"
 	desc = "The zippo."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "zippo"
@@ -520,6 +520,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	var/lit = 0
 	var/fancy = TRUE
 	var/overlay_state
+	var/apply_damage
 	var/overlay_list = list(
 		"plain",
 		"dame",
@@ -581,10 +582,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/attack_self(mob/living/user)
 	if(user.is_holding(src))
-		if(!lit)
+		if(do_after(user, rand(5,10), target = src) && !lit)
 			set_lit(TRUE)
 			if(fancy)
-				user.visible_message("Without even breaking stride, [user] flips open and lights [src] in one smooth movement.", "<span class='notice'>Without even breaking stride, you flip open and light [src] in one smooth movement.</span>")
+				user.visible_message("Одним плавным движением <b>[user]</b> открывает и тем самым образом зажигает '[src]'!", "<span class='notice'><b>Вы одним плавным движением открываете и таким-то образом зажигаете '[src]'!</b>.</span>")
+				playsound(src, 'sound/weapons/zippolight.ogg', 40, TRUE)
 			else
 				var/prot = FALSE
 				var/mob/living/carbon/human/H = user
@@ -596,20 +598,23 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 				else
 					prot = TRUE
 
-				if(prot || prob(75))
-					user.visible_message("After a few attempts, [user] manages to light [src].", "<span class='notice'>After a few attempts, you manage to light [src].</span>")
+				if(prob(75) && prot)
+					user.visible_message("Спустя несколько утруждающих попыток <b>[user]</b> наконец-то зажигает '[src]'.", "<span class='notice'><b>Спустя несколько попыток ты наконец-то зажигаешь '[src]'!</b></span>")
+					playsound(src, pick('sound/weapons/lighter1.ogg', 'sound/weapons/lighter2.ogg', 'sound/weapons/lighter3.ogg'), 75, 1)
 				else
 					var/hitzone = user.held_index_to_dir(user.active_hand_index) == "r" ? BODY_ZONE_PRECISE_R_HAND : BODY_ZONE_PRECISE_L_HAND
 					user.apply_damage(5, BURN, hitzone)
-					user.visible_message("<span class='warning'>After a few attempts, [user] manages to light [src] - however, [user.p_they()] burn [user.p_their()] finger in the process.</span>", "<span class='warning'>You burn yourself while lighting the lighter!</span>")
+					user.visible_message("<span class='warning'>После нескольких попыток <b>[user]</b> удается зажечь '[src]', ценой чего становятся обожжённые пальцы!</span>", "<span class='warning'><b>Вы обжигаетесь об зажигалку!</b></span>")
 					SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "burnt_thumb", /datum/mood_event/burnt_thumb)
+					playsound(src, pick('sound/weapons/lighter1.ogg', 'sound/weapons/lighter2.ogg', 'sound/weapons/lighter3.ogg'), 75, 1)
 
 		else
 			set_lit(FALSE)
 			if(fancy)
-				user.visible_message("You hear a quiet click, as [user] shuts off [src] without even looking at what [user.p_theyre()] doing. Wow.", "<span class='notice'>You quietly shut off [src] without even looking at what you're doing. Wow.</span>")
+				user.visible_message("Вы слышите тихий щелчок, когда <b>[user]</b> отключает '[src]', даже не глядя на то, что делает. Вау!", "<span class='notice'><b>Вы практически бесшумно отключили '[src]', даже не глядя на то, что вы делаете. Вау!</b></span>")
+				playsound(src, 'sound/weapons/zippoclose.ogg', 40, TRUE)
 			else
-				user.visible_message("[user] quietly shuts off [src].", "<span class='notice'>You quietly shut off [src].</span>")
+				user.visible_message("<b>[user]</b> тихо отключает '[src]' одним плавным движением.", "<span class='notice'><b>Вы тихо отключили '[src]' одним плавным движением.</b></span>")
 	else
 		. = ..()
 
@@ -639,7 +644,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 
 /obj/item/lighter/greyscale
-	name = "cheap lighter"
+	name = "Cheap Lighter"
 	desc = "A cheap-as-free lighter."
 	icon_state = "lighter"
 	fancy = FALSE
@@ -691,7 +696,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 
 /obj/item/lighter/slime
-	name = "slime zippo"
+	name = "Slime Zippo"
 	desc = "A specialty zippo made from slimes and industry. Has a much hotter flame than normal."
 	icon_state = "slighter"
 	heat = 3000 //Blue flame!
@@ -704,7 +709,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 //ROLLING//
 ///////////
 /obj/item/rollingpaper
-	name = "rolling paper"
+	name = "Rolling Paper"
 	desc = "A thin piece of paper used to make fine smokeables."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig_paper"
@@ -902,7 +907,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 ///////////////
 
 /obj/item/bong
-	name = "bong"
+	name = "Bong"
 	desc = "A water bong used for smoking dried plants."
 	icon = 'icons/obj/bongs.dmi'
 	icon_state = null
@@ -1094,7 +1099,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 
 /obj/item/bong/coconut
-	name = "coconut bong"
+	name = "Coconut Bong"
 	icon_off = "coconut_bong"
 	icon_on = "coconut_bong_lit"
 	desc = "A water bong used for smoking dried plants. This one's made out of a coconut and some bamboo."

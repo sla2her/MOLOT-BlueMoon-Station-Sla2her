@@ -382,8 +382,9 @@
 		ertemplate.polldesc = prefs["polldesc"]["value"]
 		ertemplate.enforce_human = prefs["enforce_human"]["value"] == "Yes" ? TRUE : FALSE
 		ertemplate.opendoors = prefs["open_armory"]["value"] == "Yes" ? TRUE : FALSE
+		priority_announce("Attention, [station_name()]. We are attempting to assemble an [ertemplate.polldesc]. Standby.", "ERT Protocol Activated", SSstation.announcer.get_rand_report_sound())
 
-		var/list/mob/candidates = pollGhostCandidates("Do you wish to be considered for [ertemplate.polldesc] ?", "deathsquad", null)
+		var/list/mob/candidates = pollGhostCandidates("Do you wish to be considered for [ertemplate.polldesc]?", "Deathsquad", null)
 		var/teamSpawned = FALSE
 
 		if(candidates.len > 0)
@@ -441,6 +442,7 @@
 
 			if (teamSpawned)
 				message_admins("[ertemplate.polldesc] has spawned with the mission: [ertemplate.mission]")
+				priority_announce("Attention, [station_name()]. We are sending a team of highly trained [ertemplate.polldesc]. Standby.", "ERT En-Route", SSstation.announcer.get_rand_report_sound())
 
 			//Open the Armory doors
 			if(ertemplate.opendoors)
@@ -449,6 +451,7 @@
 					CHECK_TICK
 			return TRUE
 		else
+			priority_announce("[station_name()], we are unfortunately unable to send you an [ertemplate.polldesc] at this time.", "ERT Unavailable", SSstation.announcer.get_rand_report_sound())
 			return FALSE
 
 	return

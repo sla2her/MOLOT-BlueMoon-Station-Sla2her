@@ -601,6 +601,13 @@
 
 	to_chat(user, message)
 
+/datum/emote/sound/AISyndiHack
+	key = "hack"
+	key_third_person = "hacks"
+	message = "hacked by Syndicate."
+	sound = 'sound/machines/AISyndiHack.ogg'
+	mob_type_allowed_typecache = list(/mob/living/brain, /mob/living/silicon, /mob/living/carbon/human, /mob/camera/aiEye)
+
 /datum/emote/sound/beep
 	key = "beep"
 	key_third_person = "beeps"

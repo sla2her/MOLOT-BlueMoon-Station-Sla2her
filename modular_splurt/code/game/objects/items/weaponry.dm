@@ -21,9 +21,9 @@
 	force = 30
 
 /obj/item/bdsm_whip/attack(mob/M, mob/user)
-	M.Jitter(50)
-	M.Dizzy(50)
-	M.visible_message("<span class='lewd'>[user] disarms [M]!</span>", "<span class='userdanger'>[user] disarmed you!</span>")
+	. = ..()
+	M.Jitter(10)
+	M.Dizzy(10)
 
 /obj/item/bdsm_whip/suicide_act(mob/user)
 		user.visible_message("<span class='suicide'>[user] is getting just a little too kinky!</span>")

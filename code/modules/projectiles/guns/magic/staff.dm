@@ -81,10 +81,10 @@
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	hitsound = 'sound/weapons/rapierhit.ogg'
 	force = 20
-	armour_penetration = 75
+	armour_penetration = 25
 	block_chance = 50
-	sharpness = SHARP_EDGED
-	max_charges = 4
+	sharpness = SHARP_NONE
+	max_charges = 2
 
 /obj/item/gun/magic/staff/spellblade/Initialize(mapload)
 	. = ..()

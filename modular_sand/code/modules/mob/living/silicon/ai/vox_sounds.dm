@@ -120,6 +120,7 @@ GLOBAL_LIST_INIT(vox_sounds_military, list("access" = 'modular_sand/sound/vox_mi
 "granted" = 'modular_sand/sound/vox_military/granted.ogg',
 "green" = 'modular_sand/sound/vox_military/green.ogg',
 "handling" = 'modular_sand/sound/vox_military/handling.ogg',
+"hacked" = 'sound/machines/AISyndiHack.ogg', // BlueMoon change. Крутой, особо пиздатый звук.
 "hanger" = 'modular_sand/sound/vox_military/hanger.ogg',
 "have" = 'modular_sand/sound/vox_military/have.ogg',
 "hazard" = 'modular_sand/sound/vox_military/hazard.ogg',
