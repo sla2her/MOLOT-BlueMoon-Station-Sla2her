@@ -26386,6 +26386,10 @@
 /obj/item/clothing/suit/armor/vest/capcarapace/syndicate,
 /obj/item/clothing/head/HoS/beret/syndicate,
 /obj/item/storage/belt/military/assault,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/under/syndicate/tacticool/skirt,
+/obj/item/clothing/shoes/combat,
 /turf/open/floor/carpet/black,
 /area/command/heads_quarters/captain)
 "bpm" = (
