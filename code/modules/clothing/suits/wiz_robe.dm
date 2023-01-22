@@ -73,7 +73,7 @@
 	item_state = "wizrobe"
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	body_parts_covered = CHEST|ARMS|LEGS
 	armor = list(MELEE = 30, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 20, BIO = 20, RAD = 20, FIRE = 100, ACID = 100, WOUND = 20)
 	allowed = list(/obj/item/teleportation_scroll)
 	flags_inv = HIDEJUMPSUIT

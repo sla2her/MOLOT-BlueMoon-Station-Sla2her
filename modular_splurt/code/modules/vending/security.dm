@@ -65,8 +65,11 @@
 	new /obj/item/radio/headset/headset_brigdoc(src)
 	new /obj/item/radio/headset/headset_brigdoc/alt(src)
 	new /obj/item/flashlight/seclite(src)
+	new /obj/item/clothing/gloves/color/latex/nitrile(src)
 	new /obj/item/clothing/head/brigdoc(src)
 	new /obj/item/defibrillator(src)
+	new /obj/item/storage/belt/medical(src)
+	new /obj/item/pinpointer/crew(src)
 	new /obj/item/clothing/suit/brigdoc(src)
 	new /obj/item/clothing/suit/brigdoc/labcoat(src)
 

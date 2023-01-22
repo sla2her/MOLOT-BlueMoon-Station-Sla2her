@@ -8,7 +8,7 @@
 	circuit = /obj/item/circuitboard/machine/bluespace_miner
 	layer = BELOW_OBJ_LAYER
 	init_process = TRUE
-	var/list/ore_rates = list(/datum/material/iron = 0.3, /datum/material/glass = 0.3, /datum/material/plasma = 0.1,  /datum/material/silver = 0.1, /datum/material/gold = 0.05, /datum/material/titanium = 0.05, /datum/material/uranium = 0.05, /datum/material/diamond = 0.02)
+	var/list/ore_rates = list(/datum/material/iron = 0.5, /datum/material/glass = 0.5, /datum/material/plasma = 0.25,  /datum/material/silver = 0.25, /datum/material/gold = 0.1, /datum/material/titanium = 0.1, /datum/material/uranium = 0.1, /datum/material/diamond = 0.05)
 	var/datum/component/remote_materials/materials
 	var/multiplier = 0 //Multiplier by tier, has been made fair and everything
 
@@ -39,7 +39,7 @@
 		stock_amt++
 	multiplier /= stock_amt
 	if(multiplier >= 5)
-		ore_rates[/datum/material/bluespace] = 0.01
+		ore_rates[/datum/material/bluespace] = 0.05
 	else
 		ore_rates -= /datum/material/bluespace
 

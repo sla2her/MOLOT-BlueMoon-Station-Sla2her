@@ -1,6 +1,5 @@
 /obj/structure/closet/secure_closet/captains/PopulateContents()
     . = ..()
-    new /obj/item/paper/fluff/letter/cap45(src)
 
 /obj/structure/closet/secure_closet/warden/PopulateContents()
 	. = ..()
