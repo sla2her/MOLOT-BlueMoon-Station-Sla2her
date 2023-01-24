@@ -15,33 +15,32 @@
 	to_chat(user, span_notice("Now targetting \the [hole]."))
 
 /obj/item/melee/attack(mob/living/target, mob/living/user)
-	user.DelayNextAction(CLICK_CD_MELEE)
+	user.DelayNextAction(CLICK_CD_RANGE)
 	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP)
 		do_eblya(target, user)
 	else if (isliving(target) && target.Adjacent(user))
 		. = ..()
 
 /obj/item/melee/proc/do_eblya(mob/living/target, mob/living/user)
-	if (do_mob(user, target, rand(5,10)))
-		var/message = ""
-		var/lust_amt = 0
-		if(ishuman(target) && (target?.client?.prefs?.toggles & VERB_CONSENT))
-			if(user.zone_selected == BODY_ZONE_PRECISE_GROIN)
-				switch(hole)
-					if(CUM_TARGET_VAGINA)
-						if(target.has_vagina(REQUIRE_EXPOSED))
-							message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою киску.", "запихивает '\the [src]' в свою киску", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в киску с помощью '\the [src]'.", "засовывает '\the [src]' прямо в киску <b>[target]</b>.")
-							lust_amt = NORMAL_LUST
-					if(CUM_TARGET_ANUS)
-						if(target.has_anus(REQUIRE_EXPOSED))
-							message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою попку.","запихивает '\the [src]' прямо в свою собственную попку.", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в попку '\the [src]'.", "активно суёт '\the [src]' прямо в попку <b>[target]</b>.")
-							lust_amt = NORMAL_LUST
-		if(message)
-			user.visible_message(span_lewd("<b>[user]</b> [message]"))
-			target.handle_post_sex(lust_amt, null, user)
-			playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
-								'modular_sand/sound/interactions/bang5.ogg',
-								'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
+	var/message = ""
+	var/lust_amt = 0
+	if(ishuman(target) && (target?.client?.prefs?.toggles & VERB_CONSENT))
+		if(user.zone_selected == BODY_ZONE_PRECISE_GROIN)
+			switch(hole)
+				if(CUM_TARGET_VAGINA)
+					if(target.has_vagina(REQUIRE_EXPOSED))
+						message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою киску.", "запихивает '\the [src]' в свою киску", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в киску с помощью '\the [src]'.", "засовывает '\the [src]' прямо в киску <b>[target]</b>.")
+						lust_amt = NORMAL_LUST
+				if(CUM_TARGET_ANUS)
+					if(target.has_anus(REQUIRE_EXPOSED))
+						message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою попку.","запихивает '\the [src]' прямо в свою собственную попку.", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в попку '\the [src]'.", "активно суёт '\the [src]' прямо в попку <b>[target]</b>.")
+						lust_amt = NORMAL_LUST
+	if(message)
+		user.visible_message(span_lewd("<b>[user]</b> [message]"))
+		target.handle_post_sex(lust_amt, null, user)
+		playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
+							'modular_sand/sound/interactions/bang5.ogg',
+							'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
 
 /obj/item/melee/chainofcommand
 	name = "Chain Of Command"

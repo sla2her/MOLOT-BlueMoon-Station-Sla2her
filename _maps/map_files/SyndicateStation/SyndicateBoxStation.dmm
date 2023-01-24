@@ -14315,6 +14315,7 @@
 /obj/item/flashlight/lamp{
 	pixel_y = 15
 	},
+/obj/item/book/granter/spell/smoke/lesser,
 /turf/open/floor/mineral/plastitanium,
 /area/service/chapel/office)
 "aJO" = (

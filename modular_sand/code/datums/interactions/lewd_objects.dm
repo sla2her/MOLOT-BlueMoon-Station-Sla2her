@@ -4,6 +4,7 @@
 
 /obj/item/dildo/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	//var/possessive_verb = user.p_their()
+	user.DelayNextAction(CLICK_CD_RANGE)
 	var/message = ""
 	var/lust_amt = 0
 	if(ishuman(M) && (M?.client?.prefs?.toggles & VERB_CONSENT))

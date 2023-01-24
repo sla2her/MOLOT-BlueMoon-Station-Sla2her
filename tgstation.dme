@@ -3866,6 +3866,7 @@
 #include "modular_bluemoon\phenyamomota\code\modules\jobs\job_types\expeditor.dm"
 #include "modular_bluemoon\phenyamomota\code\modules\jobs\job_types\research_director.dm"
 #include "modular_bluemoon\phenyamomota\code\modules\tools\tools.dm"
+#include "modular_bluemoon\SmiLeY\code\noose.dm"
 #include "modular_bluemoon\SmiLeY\aesthetics\flag\code\signs_flags.dm"
 #include "modular_bluemoon\SmiLeY\all_in\landmarks.dm"
 #include "modular_bluemoon\SmiLeY\code\hilbertshotel_ghost.dm"

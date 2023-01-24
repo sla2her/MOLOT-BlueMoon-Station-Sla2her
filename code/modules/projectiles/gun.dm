@@ -283,11 +283,9 @@
 
 /obj/item/gun/afterattack(atom/target, mob/living/user, flag, params)
 	. = ..()
-	if(!CheckAttackCooldown(user, target, TRUE))
-		return
+	user.DelayNextAction(CLICK_CD_RANGE)
 	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP && prob(90))
-		if(do_mob(user, target, rand(10,20)))
-			do_eblya(target, user)
+		do_eblya(target, user)
 	else process_afterattack(target, user, flag, params)
 
 /obj/item/gun/proc/do_eblya(mob/living/target, mob/living/user)
