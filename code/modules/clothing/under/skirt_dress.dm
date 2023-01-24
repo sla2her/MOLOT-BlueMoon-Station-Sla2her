@@ -176,7 +176,7 @@
 /obj/item/clothing/under/dress/nightie
 	name = "transparent nightie"
 	desc = "Famous girls nightwear. You can see right through it!"
-	icon_state = "longdress"
+	icon_state = "nightie"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/shortdress
