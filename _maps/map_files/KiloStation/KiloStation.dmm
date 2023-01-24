@@ -55094,7 +55094,7 @@
 /area/hallway/secondary/exit/departure_lounge)
 "bLH" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "bLI" = (
 /obj/structure/disposalpipe/segment,
@@ -55362,7 +55362,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 6
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "bMf" = (
 /obj/structure/grille/broken,
@@ -56064,7 +56064,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "bNj" = (
 /obj/machinery/computer/secure_data,
@@ -56327,7 +56327,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "bNI" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -57150,7 +57150,7 @@
 "bPa" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "bPb" = (
 /obj/effect/turf_decal/tile/red{
@@ -57219,7 +57219,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "bPh" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "bPi" = (
 /obj/machinery/conveyor{
@@ -59999,7 +59999,7 @@
 "bTu" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "bTv" = (
 /obj/effect/turf_decal/tile/blue{
@@ -64809,7 +64809,7 @@
 	pixel_x = -32;
 	pixel_y = -32
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "caY" = (
 /obj/effect/turf_decal/tile/brown,
@@ -66004,7 +66004,7 @@
 /area/maintenance/aft)
 "cdi" = (
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "cdj" = (
 /obj/item/beacon,
@@ -78440,6 +78440,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/landmark/start/prisoner,
+/obj/machinery/jukebox,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
 "czS" = (
@@ -80798,7 +80799,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "cGL" = (
 /obj/machinery/door/airlock/maintenance{
@@ -83483,7 +83484,7 @@
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_y = 5
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "cTp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -85901,7 +85902,7 @@
 "wUR" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/sugarcane,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "xbF" = (
 /obj/effect/turf_decal/tile/neutral{
