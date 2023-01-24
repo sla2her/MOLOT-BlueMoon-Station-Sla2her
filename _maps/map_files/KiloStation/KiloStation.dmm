@@ -4847,7 +4847,7 @@
 /obj/item/radio/intercom{
 	pixel_y = 22
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aik" = (
 /obj/effect/turf_decal/tile/blue{
@@ -15533,12 +15533,12 @@
 	dir = 10
 	},
 /mob/living/simple_animal/butterfly,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "azZ" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/potato,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aAa" = (
 /obj/machinery/vending/engivend,
@@ -15776,7 +15776,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aAw" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
@@ -15788,7 +15788,7 @@
 "aAx" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/beebox,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aAz" = (
 /obj/structure/cable{
@@ -16399,7 +16399,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 5
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aBz" = (
 /obj/machinery/hydroponics/soil,
@@ -16407,7 +16407,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 10
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aBA" = (
 /obj/structure/grille/broken,
@@ -16420,7 +16420,7 @@
 "aBB" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/beebox,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aBC" = (
 /obj/machinery/door/airlock/maintenance{
@@ -17127,7 +17127,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aCO" = (
 /obj/structure/cable{
@@ -17419,7 +17419,7 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aDi" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -27165,11 +27165,11 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "aTi" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "aTj" = (
 /obj/effect/turf_decal/tile/blue,
@@ -29123,7 +29123,7 @@
 /turf/open/floor/plating/airless{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
-/area/maintenance/port)
+/area/space/nearstation)
 "aVP" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
@@ -29299,10 +29299,11 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/docking_port/stationary/public_mining_dock,
 /turf/open/floor/plating/airless{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
-/area/maintenance/port)
+/area/space/nearstation)
 "aWb" = (
 /obj/structure/bodycontainer/morgue,
 /obj/effect/turf_decal/tile/neutral,
@@ -29335,7 +29336,7 @@
 /turf/open/floor/plating/airless{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
-/area/maintenance/port)
+/area/space/nearstation)
 "aWe" = (
 /obj/structure/bodycontainer/morgue,
 /obj/effect/turf_decal/tile/neutral{
@@ -35051,7 +35052,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bfk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -36056,7 +36057,7 @@
 	network = list("ss13","medical")
 	},
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bgM" = (
 /obj/machinery/chem_heater,
@@ -36107,7 +36108,7 @@
 /mob/living/carbon/monkey{
 	name = "mankey"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bgP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -36896,7 +36897,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bij" = (
 /obj/structure/flora/junglebush/b,
@@ -36905,7 +36906,7 @@
 	pixel_x = 24
 	},
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bik" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -37914,7 +37915,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bjH" = (
 /obj/machinery/door/airlock/grunge{
@@ -38358,7 +38359,7 @@
 /area/cargo/qm)
 "bky" = (
 /mob/living/simple_animal/butterfly,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bkz" = (
 /obj/structure/table/reinforced,
@@ -39656,7 +39657,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bmD" = (
 /obj/effect/turf_decal/tile/brown{
@@ -41228,7 +41229,7 @@
 /obj/structure/flora/ausbushes/fernybush,
 /obj/structure/disposalpipe/segment,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "bpb" = (
 /obj/machinery/deepfryer,
@@ -43994,7 +43995,7 @@
 /turf/closed/wall,
 /area/service/chapel/main)
 "btB" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "btC" = (
 /obj/structure/sign/warning/nosmoking,
@@ -45613,7 +45614,7 @@
 "bwr" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/wheat,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bws" = (
 /turf/closed/wall/rust,
@@ -45621,7 +45622,7 @@
 "bwt" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/poppy,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bwu" = (
 /turf/closed/wall/rust,
@@ -45820,12 +45821,12 @@
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_y = 5
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bwK" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bwL" = (
 /obj/structure/flora/grass/jungle,
@@ -45835,7 +45836,7 @@
 	pixel_x = 32;
 	pixel_y = 32
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bwM" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -45932,7 +45933,7 @@
 "bwT" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bwV" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -46053,7 +46054,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bxg" = (
 /obj/structure/table/wood,
@@ -46199,7 +46200,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bxu" = (
 /obj/structure/table/wood,
@@ -46305,7 +46306,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bxE" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -46423,7 +46424,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bxN" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -85331,7 +85332,7 @@
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/lavendergrass,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/virology)
 "rnD" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -90520,7 +90521,7 @@ aaa
 aaa
 aaa
 aaa
-bhA
+aaa
 aaa
 aaa
 aaa
@@ -99282,7 +99283,7 @@ aeu
 aDQ
 aDQ
 aTd
-bKl
+aDQ
 aDQ
 aDQ
 aeu
@@ -99538,7 +99539,7 @@ aeu
 aeu
 aeu
 aDQ
-bQb
+aDQ
 aDQ
 aDQ
 amA
@@ -99794,7 +99795,7 @@ aeu
 aeu
 aeu
 aeu
-aeu
+aDQ
 aDQ
 aDQ
 aVO
@@ -100051,8 +100052,8 @@ aeu
 aeu
 aeu
 aeu
-aeu
-aeu
+aDQ
+aDQ
 aDQ
 aWa
 cif
@@ -100308,9 +100309,9 @@ amA
 amR
 amA
 amA
-aeu
-aeu
-aeu
+aDQ
+aDQ
+aDQ
 aWd
 amR
 amA
@@ -100565,10 +100566,10 @@ cvj
 cwW
 cyF
 amR
-aeu
-aeu
-aeu
-aeu
+aDQ
+aDQ
+aDQ
+aDQ
 aeu
 aeu
 amA
