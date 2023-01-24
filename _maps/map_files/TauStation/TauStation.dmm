@@ -29746,6 +29746,9 @@
 /area/maintenance/port/aft)
 "ksQ" = (
 /obj/structure/chair/sofa/corp/left,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/carpet/black,
 /area/commons/dorms)
 "ksT" = (
@@ -54147,6 +54150,10 @@
 /obj/structure/bed,
 /obj/item/bedsheet/random,
 /turf/open/floor/carpet/purple,
+/area/commons/dorms)
+"sPB" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/freezer,
 /area/commons/dorms)
 "sPR" = (
 /obj/structure/cable{
@@ -123811,7 +123818,7 @@ akr
 nDw
 uoR
 hvd
-hvd
+sPB
 bLC
 fza
 kwf
