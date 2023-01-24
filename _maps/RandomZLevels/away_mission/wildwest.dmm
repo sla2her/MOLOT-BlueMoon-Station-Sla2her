@@ -63,10 +63,6 @@
 /obj/structure/destructible/cult/pylon,
 /turf/open/floor/circuit/green/off,
 /area/awaymission/wildwest/vault)
-"aw" = (
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	})
 "az" = (
 /turf/open/floor/plating/ironsand{
 	icon_state = "ironsand1"
@@ -687,7 +683,7 @@
 /area/awaymission/wildwest/mines)
 "cL" = (
 /obj/structure/table/wood,
-/obj/item/nullrod/claymore/saber/red,
+/obj/item/dualsaber,
 /turf/open/floor/wood,
 /area/awaymission/wildwest/gov)
 "cM" = (
@@ -33219,7 +33215,7 @@ aN
 aN
 az
 az
-aw
+az
 az
 az
 az
