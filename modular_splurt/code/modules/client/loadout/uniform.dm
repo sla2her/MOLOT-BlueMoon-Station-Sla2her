@@ -66,6 +66,10 @@
 	name = "Revealing office uniform"
 	path = /obj/item/clothing/under/officesexy
 
+/datum/gear/uniform/sexymaid
+	name = "Revealing maid uniform"
+	path = /obj/item/clothing/under/maidsexy
+
 /datum/gear/uniform/vaultsuit
 	name = "vault suit"
 	path = /obj/item/clothing/under/vaultsuit
