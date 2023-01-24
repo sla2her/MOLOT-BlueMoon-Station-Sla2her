@@ -6156,7 +6156,7 @@
 	dir = 1;
 	layer = 2.9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/research/interior/escapepods)
 "mL" = (
 /obj/structure/flora/ausbushes/fernybush,
@@ -6165,7 +6165,7 @@
 	dir = 1;
 	layer = 2.9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/research/interior/escapepods)
 "mM" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -6174,7 +6174,7 @@
 	dir = 1;
 	layer = 2.9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/research/interior/escapepods)
 "mN" = (
 /obj/item/kirbyplants{

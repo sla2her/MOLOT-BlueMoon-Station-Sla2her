@@ -20873,7 +20873,7 @@
 	name = "Animal Pen";
 	req_access_txt = "35"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "aMs" = (
 /obj/structure/window/reinforced{
@@ -20884,7 +20884,7 @@
 	c_tag = "Hydroponics South";
 	dir = 9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "aMt" = (
 /obj/item/kirbyplants{
@@ -21426,15 +21426,15 @@
 	dir = 8
 	},
 /mob/living/simple_animal/chicken,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "aNw" = (
 /mob/living/simple_animal/cow,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "aNx" = (
 /obj/structure/sink/puddle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "aNy" = (
 /obj/machinery/door/firedoor,
@@ -35118,7 +35118,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "ezP" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
@@ -36226,7 +36226,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "iJY" = (
 /obj/structure/cable{
@@ -37002,7 +37002,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "lvb" = (
 /obj/structure/sign/warning/vacuum/external{
@@ -37170,7 +37170,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "lUu" = (
 /obj/machinery/portable_atmospherics/canister/air,
@@ -38028,7 +38028,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "pHH" = (
 /obj/machinery/light,
@@ -38104,7 +38104,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "qcP" = (
 /obj/machinery/door/firedoor/heavy,
@@ -40887,7 +40887,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "sTH" = (
 /obj/machinery/hydroponics/soil,
@@ -42012,7 +42012,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/entry)
 "wWz" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{

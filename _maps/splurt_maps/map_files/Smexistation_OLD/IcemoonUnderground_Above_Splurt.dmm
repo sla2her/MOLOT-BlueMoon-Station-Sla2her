@@ -1434,7 +1434,7 @@
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main/monastery)
 "gH" = (
 /obj/machinery/power/apc{
@@ -1660,7 +1660,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main/monastery)
 "hQ" = (
 /obj/item/trash/can,
@@ -2416,7 +2416,7 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main/monastery)
 "mh" = (
 /obj/machinery/door/poddoor/preopen{
@@ -5797,7 +5797,7 @@
 	on = 1
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main/monastery)
 "Cw" = (
 /obj/machinery/chem_master,

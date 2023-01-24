@@ -67371,7 +67371,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "dYF" = (
 /obj/machinery/status_display/evac,
@@ -67383,7 +67383,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fernybush,
 /obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "dYH" = (
 /obj/machinery/status_display/ai,

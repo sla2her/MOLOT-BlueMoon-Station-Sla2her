@@ -26037,7 +26037,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit)
 "nLh" = (
 /obj/machinery/door/airlock{
@@ -39303,7 +39303,7 @@
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/flora/ausbushes/fernybush,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit)
 "uoC" = (
 /obj/structure/chair/wood/normal{
@@ -42573,7 +42573,7 @@
 "vRx" = (
 /obj/machinery/light,
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "vRE" = (
 /obj/structure/cable{

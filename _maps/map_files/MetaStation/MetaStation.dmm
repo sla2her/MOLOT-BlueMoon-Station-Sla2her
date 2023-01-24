@@ -42048,7 +42048,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/palebush,
 /obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "cNO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -42353,7 +42353,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "cOX" = (
 /obj/structure/chair{
@@ -53103,7 +53103,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "gpb" = (
 /obj/effect/turf_decal/delivery,
@@ -54142,7 +54142,7 @@
 	dir = 8;
 	name = "Animal Pen A"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "gUC" = (
 /obj/machinery/door/firedoor,
@@ -54398,7 +54398,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "hen" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -61738,7 +61738,7 @@
 	dir = 8;
 	name = "Animal Pen B"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "kYt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -62083,7 +62083,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/upper)
 "lhH" = (
 /obj/structure/table,
@@ -62766,7 +62766,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/aisat/exterior)
 "lBg" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "lBi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -65850,7 +65850,7 @@
 /obj/machinery/hydroponics/soil,
 /obj/item/cultivator,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/upper)
 "nnj" = (
 /obj/structure/table/wood,
@@ -66042,7 +66042,7 @@
 	name = "Betsy";
 	real_name = "Betsy"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "nuG" = (
 /obj/structure/rack,
@@ -66198,7 +66198,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "nzZ" = (
 /obj/machinery/conveyor{
@@ -66996,7 +66996,7 @@
 /obj/machinery/hydroponics/soil,
 /obj/item/shovel/spade,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/upper)
 "nWX" = (
 /obj/machinery/shower{
@@ -69269,7 +69269,7 @@
 "pdH" = (
 /obj/machinery/hydroponics/soil,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/upper)
 "pdZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -71797,7 +71797,7 @@
 	name = "Featherbottom";
 	real_name = "Featherbottom"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "qqg" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -76072,7 +76072,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/upper)
 "sGh" = (
 /obj/structure/cable{
@@ -76965,7 +76965,7 @@
 /area/service/chapel/main)
 "thc" = (
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "thi" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -84939,7 +84939,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/upper)
 "xAO" = (
 /turf/open/floor/plasteel,
@@ -85269,7 +85269,7 @@
 	name = "Kentucky";
 	real_name = "Kentucky"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "xHd" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{

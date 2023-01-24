@@ -4468,7 +4468,7 @@
 /obj/structure/sign/poster/contraband/scum{
 	pixel_y = 32
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/starboard/aft)
 "ajN" = (
 /obj/structure/cable{
@@ -9247,7 +9247,7 @@
 	specialfunctions = 4
 	},
 /obj/structure/closet/secure_closet/personal/cabinet,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "avE" = (
 /obj/machinery/door/poddoor/preopen{
@@ -11046,7 +11046,7 @@
 /area/maintenance/port/fore)
 "aAP" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "aAQ" = (
 /turf/open/floor/mineral/plastitanium,
@@ -11734,7 +11734,7 @@
 	dir = 4
 	},
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aCP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -11761,7 +11761,7 @@
 	dir = 4;
 	pixel_x = 3
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aCR" = (
 /turf/closed/wall/r_wall/syndicate{
@@ -52101,7 +52101,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/atmos)
 "dMp" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/starboard/aft)
 "dMZ" = (
 /obj/structure/sign/poster/official/random{
@@ -52288,7 +52288,7 @@
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "edl" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "edA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -55510,7 +55510,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "iRQ" = (
 /obj/machinery/hydroponics/soil,
@@ -57948,7 +57948,7 @@
 /area/commons/arcade)
 "meQ" = (
 /obj/effect/overlay/palmtree_r,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "mfI" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
@@ -58964,7 +58964,7 @@
 /area/hallway/primary/port)
 "nzs" = (
 /obj/structure/bed/badhaybed,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/starboard/aft)
 "nzB" = (
 /obj/machinery/hydroponics/soil{
@@ -59622,7 +59622,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/spawner/structure/window/plasma,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/bar)
 "oyl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -60497,7 +60497,7 @@
 /area/engineering/gravity_generator)
 "pQp" = (
 /obj/structure/bed/badhaybed,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "pQr" = (
 /obj/effect/turf_decal/tile/green,
@@ -60581,7 +60581,7 @@
 /area/commons/dorms)
 "pSW" = (
 /obj/structure/sink/well,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/starboard/aft)
 "pTB" = (
 /obj/structure/lattice/catwalk,
@@ -60942,7 +60942,7 @@
 /obj/structure/chair/comfy/plywood{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "qIw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -61317,7 +61317,7 @@
 /area/hallway/secondary/entry)
 "rmn" = (
 /obj/structure/chair/comfy/plywood,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "rmN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -62110,7 +62110,7 @@
 	pixel_y = 24
 	},
 /obj/effect/overlay/palmtree_l,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/dorms)
 "sxs" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,

@@ -5250,7 +5250,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/genericbush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/control)
 "mR" = (
 /obj/machinery/door/firedoor,
@@ -7328,7 +7328,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/genericbush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qz" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -7337,7 +7337,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qA" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -7349,12 +7349,12 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qB" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qC" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -7363,12 +7363,12 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qD" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qE" = (
 /turf/closed/indestructible/riveted/uranium,
@@ -7454,16 +7454,16 @@
 "qW" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qX" = (
 /obj/structure/fluff/arc,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qY" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "qZ" = (
 /turf/open/floor/engine/cult,
@@ -7826,7 +7826,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/control)
 "rK" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -7835,7 +7835,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/control)
 "rL" = (
 /obj/item/kirbyplants{
@@ -7969,19 +7969,19 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "rU" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "rV" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "rW" = (
 /obj/machinery/light{
@@ -9446,7 +9446,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/leafybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/ferry)
 "uZ" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -9454,7 +9454,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/ferry)
 "va" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -9462,7 +9462,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/genericbush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/ferry)
 "vb" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -9471,7 +9471,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/ferry)
 "vc" = (
 /obj/machinery/newscaster,
@@ -10989,20 +10989,20 @@
 /area/wizard_station)
 "yH" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "yI" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/decal/cleanable/blood/gibs/body,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "yJ" = (
 /obj/effect/decal/remains/xeno/larva,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "yK" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "yN" = (
 /obj/structure/table/reinforced,
@@ -11292,11 +11292,11 @@
 /turf/open/floor/engine/cult,
 /area/wizard_station)
 "zq" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "zr" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/corgi,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "zs" = (
 /obj/machinery/vending/tool,
@@ -11534,7 +11534,7 @@
 /mob/living/simple_animal/hostile/netherworld{
 	name = "Experiment 35b"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "zR" = (
 /obj/effect/turf_decal/stripes/line{
@@ -11826,15 +11826,15 @@
 "Az" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "AA" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/slime,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "AB" = (
 /obj/effect/decal/remains/xeno,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "AD" = (
 /obj/machinery/door/airlock/centcom{
@@ -12059,7 +12059,7 @@
 /area/wizard_station)
 "Bi" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/xeno,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/wizard_station)
 "Bj" = (
 /obj/machinery/light/floor,
@@ -12512,7 +12512,7 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/genericbush,
 /obj/machinery/light,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/evac)
 "Ce" = (
 /obj/structure/table/reinforced,
@@ -14795,7 +14795,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/tdome/tdomeobserve)
 "GL" = (
 /obj/structure/table/wood,
@@ -14837,7 +14837,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/genericbush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/tdome/tdomeobserve)
 "GQ" = (
 /obj/structure/table/wood,
@@ -16782,7 +16782,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/genericbush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/tdome/tdomeadmin)
 "KB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -16792,7 +16792,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/pointybush,
 /obj/machinery/light,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/tdome/tdomeadmin)
 "KC" = (
 /obj/machinery/status_display/evac,
@@ -16818,7 +16818,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/tdome/tdomeadmin)
 "KH" = (
 /turf/closed/wall/mineral/titanium,
@@ -17371,7 +17371,7 @@
 	},
 /area/slavers/export)
 "Mm" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/holding)
 "Mn" = (
 /obj/machinery/vr_sleeper/hugbox{
@@ -17513,7 +17513,7 @@
 	dir = 8;
 	name = "Animal Pen"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/holding)
 "MH" = (
 /obj/structure/ladder/unbreakable/binary/unlinked,
@@ -18929,7 +18929,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/holding)
 "Rl" = (
 /obj/structure/mirror{
@@ -20115,7 +20115,7 @@
 /area/centcom/supplypod/loading/three)
 "UY" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/slavers)
 "Va" = (
 /obj/effect/turf_decal/tile/red,
@@ -20710,7 +20710,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/holding)
 "Xl" = (
 /obj/structure/closet/syndicate/personal,
@@ -21144,7 +21144,7 @@
 	dir = 8
 	},
 /mob/living/simple_animal/chicken,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/holding)
 "YP" = (
 /obj/structure/sink/kitchen{
@@ -21504,7 +21504,7 @@
 /area/slavers)
 "ZT" = (
 /mob/living/simple_animal/cow,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/centcom/holding)
 "ZU" = (
 /obj/structure/window/reinforced,

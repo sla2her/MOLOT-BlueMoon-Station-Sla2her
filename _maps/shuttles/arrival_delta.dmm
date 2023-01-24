@@ -265,7 +265,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/window/shuttle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/shuttle/arrival)
 "y" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -273,7 +273,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fernybush,
 /obj/structure/window/shuttle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/shuttle/arrival)
 "z" = (
 /obj/structure/sign/nanotrasen,

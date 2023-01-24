@@ -112,13 +112,13 @@
 	},
 /obj/structure/sink/puddle,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aaj" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/ywflowers,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aak" = (
 /obj/machinery/light{
@@ -129,21 +129,21 @@
 	},
 /obj/structure/flora/ausbushes/grassybush,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aal" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/ywflowers,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aam" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aan" = (
 /obj/structure/window/reinforced{
@@ -156,7 +156,7 @@
 	req_access_txt = "9"
 	},
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aao" = (
 /turf/closed/mineral/random/snow,
@@ -2756,7 +2756,7 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/cryopod)
 "aDX" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -3772,7 +3772,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard/fore)
 "aQs" = (
 /obj/structure/disposalpipe/segment{
@@ -6187,7 +6187,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "bDR" = (
 /obj/structure/table/wood,
@@ -8619,7 +8619,7 @@
 "clf" = (
 /obj/item/toy/plush/mammal/dog/fcorgi,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/starboard/fore)
 "clq" = (
 /obj/structure/cable{
@@ -8921,7 +8921,7 @@
 "cqM" = (
 /obj/item/toy/plush/mammal/dog/borgi,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/starboard/fore)
 "crg" = (
 /obj/structure/window/reinforced{
@@ -8929,7 +8929,7 @@
 	},
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/commons/cryopod)
 "crr" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
@@ -11853,7 +11853,7 @@
 "dzF" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/carrot,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "dzS" = (
 /obj/effect/turf_decal/bot,
@@ -13914,7 +13914,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "eBq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -14819,7 +14819,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security)
 "eSP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
@@ -14988,7 +14988,7 @@
 "eXS" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/poppy,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "eXZ" = (
 /obj/effect/turf_decal/tile/red{
@@ -15162,7 +15162,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "fcj" = (
 /obj/structure/cable{
@@ -15595,7 +15595,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard/fore)
 "fmw" = (
 /obj/structure/disposalpipe/segment,
@@ -16518,7 +16518,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "fIS" = (
 /obj/structure/table,
@@ -16914,7 +16914,7 @@
 "fPO" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/watermelon/holy,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "fQe" = (
 /obj/machinery/door/airlock/public/glass{
@@ -17675,7 +17675,7 @@
 /turf/open/floor/plasteel/dark,
 /area/maintenance/department/bridge)
 "ggg" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "ggl" = (
 /obj/structure/cable{
@@ -20108,7 +20108,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "hpC" = (
 /obj/structure/cable{
@@ -21429,7 +21429,7 @@
 	dir = 1;
 	name = "north facing firelock"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security)
 "hSl" = (
 /obj/machinery/door/airlock/security/glass{
@@ -23978,7 +23978,7 @@
 "iUV" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/harebell,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "iVY" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
@@ -24887,7 +24887,7 @@
 /area/cargo/warehouse)
 "jpS" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "jpU" = (
 /obj/machinery/atmospherics/pipe/simple/multiz{
@@ -25631,7 +25631,7 @@
 	dir = 1
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "jIc" = (
 /obj/machinery/atmospherics/pipe/manifold4w/yellow/visible,
@@ -26170,7 +26170,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "jTc" = (
 /obj/structure/table/wood,
@@ -26452,7 +26452,7 @@
 /area/maintenance/solars/port/aft)
 "jYW" = (
 /obj/item/cultivator,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "jZb" = (
 /obj/machinery/atmospherics/pipe/simple/multiz,
@@ -27464,7 +27464,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "ktW" = (
 /obj/machinery/vending/wallmed{
@@ -31592,7 +31592,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "mqC" = (
 /obj/structure/rack,
@@ -31639,7 +31639,7 @@
 "mrW" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard/fore)
 "mse" = (
 /obj/machinery/light{
@@ -32441,7 +32441,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "mKD" = (
 /obj/structure/chair/sofa/right,
@@ -34408,7 +34408,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "nDa" = (
 /obj/structure/cable{
@@ -36992,7 +36992,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "oER" = (
 /obj/machinery/portable_atmospherics/scrubber,
@@ -37429,7 +37429,7 @@
 "oQS" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "oQY" = (
 /obj/machinery/conveyor{
@@ -40188,7 +40188,7 @@
 	dir = 4
 	},
 /obj/structure/flora/rock/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "pVM" = (
 /turf/closed/wall/r_wall,
@@ -40268,7 +40268,7 @@
 /area/hallway/primary/starboard/aft)
 "pWT" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "pXb" = (
 /obj/machinery/door/airlock/external,
@@ -40844,7 +40844,7 @@
 /area/medical/paramedic)
 "qjQ" = (
 /obj/item/hatchet,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "qjX" = (
 /obj/machinery/atmospherics/pipe/simple{
@@ -43767,7 +43767,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/rock/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "rwW" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -44770,7 +44770,7 @@
 /area/service/theater)
 "rVg" = (
 /obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "rVi" = (
 /obj/structure/railing{
@@ -46096,7 +46096,7 @@
 	dir = 4
 	},
 /obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "sBQ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -50080,7 +50080,7 @@
 "uon" = (
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "uot" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -51108,7 +51108,7 @@
 /area/medical/paramedic)
 "uPx" = (
 /obj/structure/sink/puddle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "uPJ" = (
 /obj/structure/table/wood,
@@ -53033,7 +53033,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "vEe" = (
 /obj/structure/disposalpipe/segment{
@@ -53503,7 +53503,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "vMB" = (
 /obj/structure/cable{
@@ -54160,7 +54160,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard/fore)
 "waP" = (
 /obj/structure/cable{
@@ -54289,7 +54289,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard/fore)
 "wdb" = (
 /turf/closed/wall/r_wall,
@@ -54942,7 +54942,7 @@
 /area/commons/vacant_room/office)
 "wsK" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "wsS" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -55650,7 +55650,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/item/statuebust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard/fore)
 "wHR" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -55695,7 +55695,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/aft)
 "wJf" = (
 /obj/machinery/light/small{
@@ -56088,7 +56088,7 @@
 	},
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/aft)
 "wRY" = (
 /turf/closed/wall/r_wall,

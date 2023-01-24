@@ -152,7 +152,7 @@
 	},
 /obj/structure/window/reinforced/survival_pod,
 /obj/structure/flora/junglebush/large,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "bh" = (
 /obj/machinery/door/firedoor,

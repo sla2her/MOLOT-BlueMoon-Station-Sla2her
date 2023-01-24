@@ -7622,7 +7622,7 @@
 	pixel_x = -12
 	},
 /obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "fyy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -8269,7 +8269,7 @@
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/central)
 "fXT" = (
 /obj/effect/turf_decal/tile/purple{
@@ -12426,7 +12426,7 @@
 	pixel_x = 28;
 	pixel_y = 28
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "iYO" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -15290,7 +15290,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/central)
 "laQ" = (
 /obj/structure/disposalpipe/junction/flip{
@@ -16857,7 +16857,7 @@
 "mjr" = (
 /obj/item/seeds/orange,
 /obj/item/seeds/orange,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "mjS" = (
 /turf/open/floor/plasteel/dark/telecomms,
@@ -18348,7 +18348,7 @@
 /area/science/xenobiology)
 "nle" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "nlJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -23617,7 +23617,7 @@
 /area/medical/virology)
 "rxl" = (
 /mob/living/simple_animal/mouse/brown/Tom,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "ryU" = (
 /obj/structure/disposalpipe/segment{
@@ -24188,7 +24188,7 @@
 "rZz" = (
 /obj/item/seeds/apple,
 /obj/item/seeds/apple,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "rZC" = (
 /obj/structure/lattice/catwalk,
@@ -24333,7 +24333,7 @@
 "seY" = (
 /obj/item/seeds/grape,
 /obj/item/seeds/grape,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "sfn" = (
 /obj/effect/turf_decal/tile/red{
@@ -25073,7 +25073,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "sGQ" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "sHx" = (
 /obj/effect/turf_decal/tile/brown{
@@ -28458,7 +28458,7 @@
 	pixel_x = -28;
 	pixel_y = 28
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "vaC" = (
 /obj/structure/table,
@@ -28821,7 +28821,7 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "vsK" = (
 /obj/item/cultivator,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "vtk" = (
 /obj/structure/disposalpipe/segment{
@@ -29113,7 +29113,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start/psychologist,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/central)
 "vDp" = (
 /turf/closed/wall,
@@ -32230,7 +32230,7 @@
 /area/security/brig)
 "xMM" = (
 /obj/item/plant_analyzer,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison)
 "xNj" = (
 /obj/structure/cable{

@@ -5843,7 +5843,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "ake" = (
 /obj/effect/turf_decal/tile/brown,
@@ -5877,7 +5877,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "akh" = (
 /obj/structure/sign/departments/security,
@@ -12344,7 +12344,7 @@
 	dir = 8
 	},
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "auS" = (
 /obj/effect/turf_decal/bot,
@@ -12464,7 +12464,7 @@
 "avf" = (
 /obj/structure/flora/junglebush/b,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "avg" = (
 /obj/effect/turf_decal/tile/blue{
@@ -13889,7 +13889,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "axB" = (
 /obj/structure/rack,
@@ -13920,7 +13920,7 @@
 	dir = 10
 	},
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "axD" = (
 /obj/effect/decal/cleanable/dirt,
@@ -14507,7 +14507,7 @@
 	dir = 4;
 	pixel_x = -23
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "ayI" = (
 /obj/item/reagent_containers/food/snacks/grown/banana,
@@ -14520,7 +14520,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "ayJ" = (
 /obj/effect/turf_decal/tile/blue{
@@ -15254,7 +15254,7 @@
 /mob/living/carbon/monkey{
 	name = "curious george"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "azG" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -15263,7 +15263,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "azH" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -17419,7 +17419,7 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/grass/grass0,
+/turf/open/floor/grass/grass0/grass0,
 /area/service/chapel/main)
 "aDi" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -23834,7 +23834,7 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/chemistry)
 "aOb" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aOc" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -23947,7 +23947,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aOn" = (
 /obj/effect/turf_decal/tile/purple,
@@ -23984,7 +23984,7 @@
 	dir = 4
 	},
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aOr" = (
 /obj/machinery/light/small{
@@ -24158,7 +24158,7 @@
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/lavendergrass,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aOD" = (
 /obj/structure/cable{
@@ -24177,7 +24177,7 @@
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_y = 5
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aOF" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -28848,7 +28848,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aVs" = (
 /obj/structure/bed/roller,
@@ -29550,7 +29550,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aWt" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -40122,7 +40122,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bnr" = (
 /obj/structure/closet/secure_closet/personal,
@@ -40312,7 +40312,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bnI" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -40433,7 +40433,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bnT" = (
 /obj/structure/flora/grass/jungle/b,
@@ -40446,7 +40446,7 @@
 	name = "Otis";
 	real_name = "Betsy"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bnU" = (
 /obj/effect/turf_decal/tile/green,
@@ -40535,7 +40535,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bob" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -40543,7 +40543,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bod" = (
 /obj/effect/turf_decal/tile/brown{
@@ -40636,7 +40636,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "boi" = (
 /obj/machinery/door/window/brigdoor/westright{
@@ -41302,7 +41302,7 @@
 /obj/item/radio/intercom{
 	pixel_y = -28
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bpj" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -43221,7 +43221,7 @@
 	name = "Popeye";
 	real_name = "Featherbottom"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "bsp" = (
 /obj/effect/turf_decal/tile/blue{
@@ -43537,7 +43537,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/command/heads_quarters/hop)
 "bsO" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -43545,7 +43545,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/command/heads_quarters/hop)
 "bsP" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -43556,7 +43556,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/command/heads_quarters/hop)
 "bsQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -44058,7 +44058,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/bar)
 "btI" = (
 /obj/structure/flora/grass/jungle,
@@ -44074,7 +44074,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/bar)
 "btJ" = (
 /obj/machinery/door/firedoor,
@@ -46075,7 +46075,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "bxi" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -59342,7 +59342,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "bSo" = (
 /obj/structure/lattice/catwalk,
@@ -80770,7 +80770,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "cGA" = (
 /obj/docking_port/stationary/random{
@@ -83379,7 +83379,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "cQP" = (
 /obj/machinery/door/airlock/security/glass{

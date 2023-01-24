@@ -281,7 +281,7 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "aG" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -592,7 +592,7 @@
 /area/hallway/primary/central)
 "bv" = (
 /obj/structure/railing,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "bw" = (
 /obj/structure/cable{
@@ -1189,7 +1189,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cT" = (
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
@@ -2286,7 +2286,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "gb" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -2624,7 +2624,7 @@
 /area/hallway/primary/central)
 "gZ" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "ha" = (
 /obj/effect/turf_decal/trimline/green/filled/corner{
@@ -3059,7 +3059,7 @@
 /area/hallway/primary/central)
 "ik" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "im" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -4448,7 +4448,7 @@
 "lD" = (
 /obj/item/shovel/spade,
 /obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "lE" = (
 /obj/machinery/cryopod{
@@ -4912,7 +4912,7 @@
 /area/commons/vacant_room/commissary)
 "mM" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "mN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -5557,7 +5557,7 @@
 	dir = 4;
 	light_color = "#e8eaff"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "on" = (
 /obj/structure/closet/crate,
@@ -5622,7 +5622,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "oA" = (
 /obj/structure/bodycontainer/morgue{
@@ -5655,7 +5655,7 @@
 /area/maintenance/central)
 "oF" = (
 /obj/machinery/light/floor,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "oG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -6368,7 +6368,7 @@
 /area/commons/fitness/recreation)
 "qn" = (
 /obj/machinery/camera/autoname,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "qo" = (
 /turf/closed/mineral{
@@ -6731,7 +6731,7 @@
 "ru" = (
 /obj/effect/landmark/event_spawn,
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "rx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -7169,7 +7169,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "sB" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -7666,7 +7666,7 @@
 	dir = 4
 	},
 /obj/structure/railing,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "tJ" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
@@ -8015,7 +8015,7 @@
 /area/commons/dorms)
 "uM" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "uN" = (
 /obj/structure/cable{
@@ -8788,7 +8788,7 @@
 "wO" = (
 /obj/machinery/airalarm/directional/south,
 /obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "wP" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line,
@@ -9577,7 +9577,7 @@
 	dir = 4;
 	light_color = "#e8eaff"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "yT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -11410,7 +11410,7 @@
 	dir = 4;
 	light_color = "#c1caff"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "DO" = (
 /obj/structure/sink/kitchen{
@@ -12065,7 +12065,7 @@
 	light_color = "#c1caff"
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Fk" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -13071,7 +13071,7 @@
 /area/command/gateway)
 "HV" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "HW" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -13358,7 +13358,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "Iz" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "IA" = (
 /obj/structure/cable{
@@ -13762,7 +13762,7 @@
 "Jn" = (
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/railing,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Jo" = (
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
@@ -14857,7 +14857,7 @@
 /area/service/chapel/office)
 "Mb" = (
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Mc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -14960,7 +14960,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Mz" = (
 /obj/structure/table,
@@ -15536,7 +15536,7 @@
 /obj/machinery/camera/autoname{
 	dir = 5
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "NW" = (
 /obj/machinery/cryopod/tele,
@@ -15751,7 +15751,7 @@
 "Ow" = (
 /obj/item/cultivator,
 /obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "Ox" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -15921,7 +15921,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "OT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -15968,7 +15968,7 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "OX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
@@ -15991,7 +15991,7 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Pb" = (
 /obj/structure/cable{
@@ -16201,7 +16201,7 @@
 	dir = 1;
 	light_color = "#cee5d2"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "PG" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
@@ -16903,7 +16903,7 @@
 /area/service/kitchen)
 "Rv" = (
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Rw" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -17151,7 +17151,7 @@
 /area/commons/dorms)
 "Sd" = (
 /obj/structure/flora/tree/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Sf" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -17478,7 +17478,7 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "SW" = (
 /obj/structure/chair/sofa/corp/right{
@@ -17539,7 +17539,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Tg" = (
 /obj/effect/spawner/structure/window,
@@ -17945,7 +17945,7 @@
 "Uf" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "Ug" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -18362,7 +18362,7 @@
 /area/service/kitchen)
 "Vd" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "Vf" = (
 /obj/structure/cable{
@@ -19057,7 +19057,7 @@
 /obj/structure/sign/poster/random{
 	pixel_x = -32
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "WI" = (
 /obj/machinery/light{
@@ -19595,7 +19595,7 @@
 	c_tag = "Garden";
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "Yh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -19619,7 +19619,7 @@
 /turf/open/floor/plasteel,
 /area/service/hydroponics/garden/monastery)
 "Yi" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "Yj" = (
 /obj/machinery/door/airlock/external{
@@ -19756,7 +19756,7 @@
 /area/service/cafeteria)
 "Yz" = (
 /obj/machinery/light,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "YA" = (
 /obj/effect/turf_decal/tile/bar{
