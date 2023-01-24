@@ -1,4 +1,4 @@
-/obj/structure/chair/noose
+/obj/structure/chair/noose //Повеселимся!
 	name = "Noose"
 	desc = "Выглядит очень интересно."
 	icon_state = "noose"
@@ -25,7 +25,7 @@
 
 /obj/structure/chair/noose/Initialize(mapload)
 	. = ..()
-	pixel_y += 16 //Noose looks like it's "hanging" in the air
+	pixel_y += 16
 	over = image(icon, "noose_overlay")
 	over.layer = FLY_LAYER
 	add_overlay(over)
@@ -87,7 +87,7 @@
 		return FALSE
 
 	if(M.loc != src.loc)
-		return FALSE //Can only noose someone if they're on the same tile as noose
+		return FALSE //Работает в одном тайтле.
 
 	add_fingerprint(user)
 
