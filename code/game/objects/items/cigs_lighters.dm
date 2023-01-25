@@ -581,8 +581,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	update_icon()
 
 /obj/item/lighter/attack_self(mob/living/user)
+	user.DelayNextAction(CLICK_CD_MELEE)
 	if(user.is_holding(src))
-		if(user.DelayNextAction(CLICK_CD_RAPID) && !lit)
+		if(!lit)
 			set_lit(TRUE)
 			if(fancy)
 				user.visible_message("Одним плавным движением <b>[user]</b> открывает и тем самым образом зажигает '[src]'!", "<span class='notice'><b>Вы одним плавным движением открываете и таким-то образом зажигаете '[src]'!</b>.</span>")

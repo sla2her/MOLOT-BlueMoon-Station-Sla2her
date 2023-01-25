@@ -283,15 +283,17 @@
 
 /obj/item/gun/afterattack(atom/target, mob/living/user, flag, params)
 	. = ..()
-	user.DelayNextAction(CLICK_CD_RANGE)
-	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP && prob(90))
+	if(!CheckAttackCooldown(user, target, TRUE))
+		return
+	process_afterattack(target, user, flag, params)
+	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP)
 		do_eblya(target, user)
-	else process_afterattack(target, user, flag, params)
 
 /obj/item/gun/proc/do_eblya(mob/living/target, mob/living/user)
 	var/message = ""
 	var/lust_amt = 0
 	var/mob/living/living_target = target
+	user.DelayNextAction(CLICK_CD_RANGE)
 	if(ishuman(living_target) && (living_target?.client?.prefs?.toggles & VERB_CONSENT))
 		if(user.zone_selected == BODY_ZONE_PRECISE_GROIN)
 			switch(hole)
