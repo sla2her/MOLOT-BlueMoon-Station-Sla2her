@@ -356,13 +356,6 @@
 	message = "pouts."
 	emote_type = EMOTE_AUDIBLE
 
-/datum/emote/living/scream
-	key = "scream"
-	key_third_person = "screams"
-	message = "screams."
-	message_mime = "acts out a scream!"
-	emote_type = EMOTE_AUDIBLE
-
 /datum/emote/living/scowl
 	key = "scowl"
 	key_third_person = "scowls"

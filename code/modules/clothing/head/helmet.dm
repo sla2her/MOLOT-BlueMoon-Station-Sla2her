@@ -431,6 +431,7 @@
 /obj/item/clothing/head/helmet/rus_helmet
 	name = "russian helmet"
 	desc = "It can hold a bottle of vodka."
+	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
 	icon_state = "rus_helmet"
 	item_state = "rus_helmet"
 	armor = list(MELEE = 30, BULLET = 25, LASER = 20,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 20, FIRE = 30, ACID = 50)
@@ -439,6 +440,7 @@
 /obj/item/clothing/head/helmet/rus_ushanka
 	name = "battle ushanka"
 	desc = "100% bear."
+	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
 	icon_state = "rus_ushanka"
 	item_state = "rus_ushanka"
 	clothing_flags = THICKMATERIAL

@@ -394,6 +394,7 @@
 /obj/item/clothing/shoes/russian
 	name = "russian boots"
 	desc = "Comfy shoes."
+	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
 	icon_state = "rus_shoes"
 	item_state = "rus_shoes"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes

@@ -104,6 +104,7 @@
 /obj/item/clothing/under/syndicate/rus_army
 	name = "Military Tracksuit"
 	desc = "Military grade tracksuits for frontline squatting."
+	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
 	icon_state = "rus_under"
 	can_adjust = FALSE
 	armor = list(MELEE = 5, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 5)
