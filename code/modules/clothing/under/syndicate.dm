@@ -99,7 +99,7 @@
 	desc = "With a suit lined with this many pockets, you are ready to operate."
 	icon_state = "syndicate_combat"
 	can_adjust = FALSE
-	mutantrace_variation = USE_TAUR_CLIP_MASK
+	mutantrace_variation = STYLE_DIGITIGRADE|USE_SNEK_CLIP_MASK|USE_QUADRUPED_CLIP_MASK
 
 /obj/item/clothing/under/syndicate/rus_army
 	name = "Military Tracksuit"

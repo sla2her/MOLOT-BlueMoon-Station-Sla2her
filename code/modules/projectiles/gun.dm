@@ -285,9 +285,9 @@
 	. = ..()
 	if(!CheckAttackCooldown(user, target, TRUE))
 		return
-	process_afterattack(target, user, flag, params)
 	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP)
 		do_eblya(target, user)
+	process_afterattack(target, user, flag, params)
 
 /obj/item/gun/proc/do_eblya(mob/living/target, mob/living/user)
 	var/message = ""
