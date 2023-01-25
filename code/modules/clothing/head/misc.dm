@@ -445,6 +445,16 @@
 	armor = list(MELEE = 40, BULLET = 30, LASER = 30,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
 	resistance_flags = FIRE_PROOF
 
+/obj/item/clothing/head/cowboyhat/polychromic
+	name = "polychromic cowboy hat"
+	desc = "A polychromic cowboy hat, perfect for your indecisive rancher"
+	icon_state = "cowboyhat_poly"
+	item_state= "cowboyhat_poly"
+
+/obj/item/clothing/head/cowboyhat/polychromic/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#5F5F5F", "#DDDDDD"), 2)
+
 /obj/item/clothing/head/squatter_hat
 	name = "slav squatter hat"
 	icon_state = "squatter_hat"
