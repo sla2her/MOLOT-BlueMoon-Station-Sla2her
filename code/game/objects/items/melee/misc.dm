@@ -15,11 +15,10 @@
 	to_chat(user, span_notice("Now targetting \the [hole]."))
 
 /obj/item/melee/attack(mob/living/target, mob/living/user)
-	user.DelayNextAction(CLICK_CD_RANGE)
+	user.DelayNextAction()
 	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP)
 		do_eblya(target, user)
-	else if (isliving(target) && target.Adjacent(user))
-		. = ..()
+	return ..()
 
 /obj/item/melee/proc/do_eblya(mob/living/target, mob/living/user)
 	var/message = ""
