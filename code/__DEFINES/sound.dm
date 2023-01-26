@@ -104,6 +104,8 @@
 	'sound/hallucinations/look_up1.ogg', 'sound/hallucinations/look_up2.ogg', 'sound/hallucinations/over_here1.ogg', 'sound/hallucinations/over_here2.ogg', 'sound/hallucinations/over_here3.ogg',\
 	'sound/hallucinations/turn_around1.ogg', 'sound/hallucinations/turn_around2.ogg', 'sound/hallucinations/veryfar_noise.ogg', 'sound/hallucinations/wail.ogg')
 
+#define RUSSIAN_SCREAMS list('sound/voice/human/cyka1.ogg', 'sound/voice/human/rus1.ogg', 'sound/voice/human/rus2.ogg', 'sound/voice/human/rus3.ogg',\
+	'sound/voice/human/rus4.ogg', 'sound/voice/human/rus5.ogg', 'sound/voice/human/rus6.ogg')
 
 #define INTERACTION_SOUND_RANGE_MODIFIER -3
 #define EQUIP_SOUND_VOLUME 30

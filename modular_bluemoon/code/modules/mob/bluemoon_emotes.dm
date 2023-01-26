@@ -236,3 +236,18 @@
 		user.nextsoundemote = world.time + 10 SECONDS
 	playsound(user, 'sound/voice/bulldozer2.ogg', 75, 1, -1)
 	. = ..()
+
+/datum/emote/living/cheekybreeky
+	key = "cheekybreeky"
+	key_third_person = "cheekybreekys"
+	message = "yells: <b>'Cheeky Breeky and v Damke!'</b>"
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/cheekybreeky/run_emote(mob/user, params, type_override, intentional)
+	if(ishuman(user))
+		if(user.nextsoundemote >= world.time)
+			to_chat(user, span_warning("Рано!"))
+			return
+		user.nextsoundemote = world.time + 10 SECONDS
+	playsound(user, 'sound/voice/human/cheekibreeki.ogg', 75, 1, -1)
+	. = ..()

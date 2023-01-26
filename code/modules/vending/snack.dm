@@ -23,6 +23,8 @@
 	premium = list(
 					/obj/item/reagent_containers/food/snacks/lollipop = 2,
 					/obj/item/reagent_containers/food/snacks/spiderlollipop = 2,
+					/obj/item/reagent_containers/food/snacks/bubblegum = 4,
+					/obj/item/reagent_containers/food/snacks/gumball = 4,
 					/obj/item/reagent_containers/food/snacks/chococoin = 1,
 					/obj/item/storage/box/marshmallow = 1,
 					/obj/item/storage/box/donkpockets = 2)

@@ -184,7 +184,7 @@
 /obj/item/clothing/head/bearpelt
 	name = "bear pelt hat"
 	desc = "Fuzzy."
-	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
+	alternate_screams = RUSSIAN_SCREAMS
 	icon_state = "bearpelt"
 	item_state = "bearpelt"
 

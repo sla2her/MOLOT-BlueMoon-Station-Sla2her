@@ -88,7 +88,7 @@
 	desc = "Perfect for winter in Siberia, da?"
 	icon_state = "ushankadown"
 	item_state = "ushankadown"
-	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
+	alternate_screams = RUSSIAN_SCREAMS
 	flags_inv = HIDEEARS|HIDEHAIR
 	var/earflaps = TRUE
 	cold_protection = HEAD

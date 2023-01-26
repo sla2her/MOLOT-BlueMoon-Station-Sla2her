@@ -11,7 +11,7 @@
 	selection_color = "#c02f2f"
 	minimal_player_age = 7
 	exp_requirements = 300
-	exp_type = EXP_TYPE_CREW
+	exp_type = EXP_TYPE_SECURITY
 	considered_combat_role = TRUE
 
 	outfit = /datum/outfit/job/warden

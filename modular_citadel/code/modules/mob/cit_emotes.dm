@@ -23,6 +23,9 @@
 		return
 	var/sound
 	var/miming = user.mind ? user.mind.miming : 0
+	if(iscarbon(user))
+		var/mob/living/carbon/c = user
+		c.reindex_screams()
 	if(!user.is_muzzled() && !miming)
 		user.nextsoundemote = world.time + 7
 		if(issilicon(user))
@@ -60,7 +63,7 @@
 		LAZYINITLIST(user.alternate_screams)
 		if(LAZYLEN(user.alternate_screams))
 			sound = pick(user.alternate_screams)
-		playsound(user.loc, sound, 50, 1, 4, 1.2)
+		playsound(user.loc, sound, 75, 1, 4, 1.2)
 		message = "screams!"
 	else if(miming)
 		message = "acts out a scream."

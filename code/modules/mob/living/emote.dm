@@ -92,6 +92,12 @@
 	message = "dances around happily."
 	restraint_check = TRUE
 
+/datum/emote/living/dance/run_emote(mob/user, params)
+	. = ..()
+	if(.)
+		user.SpinAnimation(7,1)
+		user.spin(20, 1)
+
 /datum/emote/living/deathgasp
 	key = "deathgasp"
 	key_third_person = "deathgasps"
@@ -115,7 +121,7 @@
             var/mob/living/L = user
             if(!L.can_speak_vocal() || L.oxyloss >= 50)
                 return //stop the sound if oxyloss too high/cant speak
-        playsound(user, pick(user.deathsound), 200, TRUE, TRUE)
+        playsound(user, pick(user.deathsound), 200, 0, 0)
     if(. && isalienadult(user))
         playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
 

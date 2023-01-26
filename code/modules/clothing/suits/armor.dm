@@ -330,7 +330,7 @@
 /obj/item/clothing/suit/armor/vest/russian
 	name = "russian vest"
 	desc = "A bulletproof vest with forest camo. Good thing there's plenty of forests to hide in around here, right?"
-	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
+	alternate_screams = RUSSIAN_SCREAMS
 	icon_state = "rus_armor"
 	item_state = "rus_armor"
 	armor = list(MELEE = 25, BULLET = 30, LASER = 0, ENERGY = 15, BOMB = 10, BIO = 0, RAD = 20, FIRE = 20, ACID = 50, WOUND = 10)
@@ -338,7 +338,7 @@
 /obj/item/clothing/suit/armor/vest/russian_coat
 	name = "russian battle coat"
 	desc = "Used in extremly cold fronts, made out of real bears."
-	alternate_screams = list('sound/voice/human/cyka1.ogg', 'sound/voice/human/cheekibreeki.ogg')
+	alternate_screams = RUSSIAN_SCREAMS
 	icon_state = "rus_coat"
 	item_state = "rus_coat"
 	clothing_flags = THICKMATERIAL

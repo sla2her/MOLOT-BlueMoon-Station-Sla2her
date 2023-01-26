@@ -43,19 +43,19 @@
 	icon = 'modular_splurt/icons/obj/objects.dmi'
 	product_ads = "Protect and Serve!;Feel good while keeping people alive!;"
 	vend_reply = "Thank you for using the BlueDrobe!"
-	products = list(/obj/item/clothing/under/rank/blueshield = 1,
-					/obj/item/clothing/under/rank/blueshield/formal = 1,
-					/obj/item/clothing/under/rank/blueshield/skirt = 1,
-					/obj/item/storage/backpack/blueshield = 1,
-					/obj/item/storage/backpack/satchel/blueshield = 1,
-					/obj/item/storage/backpack/duffelbag/blueshield = 1,
+	products = list(/obj/item/clothing/under/rank/blueshield = 2,
+					/obj/item/clothing/under/rank/blueshield/formal = 2,
+					/obj/item/clothing/under/rank/blueshield/skirt = 2,
+					/obj/item/storage/backpack/blueshield = 2,
+					/obj/item/storage/backpack/satchel/blueshield = 2,
+					/obj/item/storage/backpack/duffelbag/blueshield = 2,
 					/obj/item/clothing/shoes/jackboots = 2,
-					/obj/item/clothing/head/soft/blueshield  =1,
-					/obj/item/clothing/head/blueshield = 1,
-					/obj/item/clothing/head/blueshield/formal = 1,
-					/obj/item/clothing/head/blueshield/officercap = 1,
-					/obj/item/clothing/neck/tie/blue = 1,
-					/obj/item/clothing/under/rank/blueshield/formal/skirt = 1,
+					/obj/item/clothing/head/soft/blueshield = 2,
+					/obj/item/clothing/head/blueshield = 2,
+					/obj/item/clothing/head/blueshield/formal = 2,
+					/obj/item/clothing/head/blueshield/officercap = 2,
+					/obj/item/clothing/neck/tie/blue = 2,
+					/obj/item/clothing/under/rank/blueshield/formal/skirt = 2,
 					/obj/item/clothing/shoes/jackboots/tall = 2)
 	refill_canister = /obj/item/vending_refill/wardrobe/blueshield_wardrobe
 	payment_department = ACCOUNT_SEC
