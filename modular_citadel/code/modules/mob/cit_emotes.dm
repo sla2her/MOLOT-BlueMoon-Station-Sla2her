@@ -316,8 +316,8 @@
 	playsound(user, sound, 50, 1, -1)
 
 /datum/emote/living/pain
-	key = "scream"
-	key_third_person = "screams"
+	key = "pain"
+	key_third_person = "pains"
 	message = "cries out in pain!"
 	emote_type = EMOTE_AUDIBLE
 	muzzle_ignore = FALSE
@@ -335,7 +335,7 @@
 		sound = pick('modular_citadel/sound/voice/human_male_pain_1.ogg', 'modular_citadel/sound/voice/human_male_pain_2.ogg', 'modular_citadel/sound/voice/human_male_pain_3.ogg', 'modular_citadel/sound/voice/human_male_pain_rare.ogg', 'modular_citadel/sound/voice/human_male_scream_1.ogg', 'modular_citadel/sound/voice/human_male_scream_2.ogg', 'modular_citadel/sound/voice/human_male_scream_3.ogg', 'modular_citadel/sound/voice/human_male_scream_4.ogg')
 	else
 		sound = pick('modular_citadel/sound/voice/human_female_pain_1.ogg', 'modular_citadel/sound/voice/human_female_pain_2.ogg', 'modular_citadel/sound/voice/human_female_pain_3.ogg', 'modular_citadel/sound/voice/human_female_scream_2.ogg', 'modular_citadel/sound/voice/human_female_scream_3.ogg', 'modular_citadel/sound/voice/human_female_scream_4.ogg')
-	playsound(user, sound, 100, 0, 0)
+	playsound(user, sound, 75, 0, 0)
 
 /datum/emote/living/clap1
 	key = "clap1"
