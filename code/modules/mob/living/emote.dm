@@ -95,8 +95,8 @@
 /datum/emote/living/dance/run_emote(mob/user, params)
 	. = ..()
 	if(.)
-		user.SpinAnimation(7,1)
-		user.spin(20, 1)
+		user.SpinAnimation(8,4)
+		user.spin(30, 1)
 
 /datum/emote/living/deathgasp
 	key = "deathgasp"

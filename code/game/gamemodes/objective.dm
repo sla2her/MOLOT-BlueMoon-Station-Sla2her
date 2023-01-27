@@ -184,15 +184,15 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 	return target
 
 /datum/objective/assassinate/check_completion()
-	return !considered_alive(target) || considered_afk(target)
+	return FALSE || ..()
 
 /datum/objective/assassinate/check_midround_completion()
-	return FALSE //They need to be dead at the end of the round, silly!
+	return FALSE
 
 /datum/objective/assassinate/update_explanation_text()
 	..()
 	if(target && target.current)
-		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени и распространи кучу Гексокроцина в [target_amount] общественных местах."
+		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или вовсе убей один раз. В итоге цель должна остаться живой!"
 	else
 		explanation_text = "Free Objective"
 
@@ -228,10 +228,10 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 /datum/objective/assassinate/internal
 	var/stolen = 0 		//Have we already eliminated this target?
 
-/*/datum/objective/assassinate/internal/update_explanation_text()
+/datum/objective/assassinate/internal/update_explanation_text()
 	..()
 	if(target && !target.current)
-		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или накорми ядом."*/
+		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или вовсе убей один раз. В итоге цель должна остаться живой!"
 
 /datum/objective/mutiny
 	name = "mutiny"
@@ -245,10 +245,8 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 	return target
 
 /datum/objective/mutiny/check_completion()
-	if(!target || !considered_alive(target) || considered_afk(target))
-		return TRUE
 	var/turf/T = get_turf(target.current)
-	return !T || !is_station_level(T.z)
+	return FALSE || !T || !is_station_level(T.z) || ..()
 
 /datum/objective/mutiny/check_midround_completion()
 	return FALSE
@@ -256,7 +254,7 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 /datum/objective/mutiny/update_explanation_text()
 	..()
 	if(target && target.current)
-		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель пропадёт наказанной! Сломай колени, изнасилуй и/или выбрось в пространство Гейта с имплантом Изгнанника."
+		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Пусть эта Цель будет наказана! Изнасилуй, сломай колени или вовсе убей один раз. В итоге цель должна остаться живой!"
 	else
 		explanation_text = "Free Objective"
 
