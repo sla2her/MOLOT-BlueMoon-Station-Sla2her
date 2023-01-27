@@ -80,6 +80,7 @@
 	cold_protection = CHEST|GROIN|ARMS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	heat_protection = CHEST|GROIN|ARMS
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	armor = list("melee" = 60, "bullet" = 80, "laser" = 80, "energy" = 90, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/under/centcomdress/vk
@@ -95,6 +96,7 @@
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
 	item_state = "raccveralls"
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/under/officesexy
 	name = "Revealing office uniform"
@@ -124,6 +126,7 @@
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
 	item_state = "b_suit"
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	var/firstpickup = TRUE
 	var/pickupsound = TRUE
 

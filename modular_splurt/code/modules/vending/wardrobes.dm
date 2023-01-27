@@ -46,6 +46,7 @@
 	products = list(/obj/item/clothing/under/rank/blueshield = 2,
 					/obj/item/clothing/under/rank/blueshield/formal = 2,
 					/obj/item/clothing/under/rank/blueshield/skirt = 2,
+					/obj/item/clothing/under/custom/mw2_russian_para = 2,
 					/obj/item/storage/backpack/blueshield = 2,
 					/obj/item/storage/backpack/satchel/blueshield = 2,
 					/obj/item/storage/backpack/duffelbag/blueshield = 2,
