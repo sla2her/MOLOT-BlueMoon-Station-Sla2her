@@ -2,7 +2,7 @@
 	name = "Noose"
 	desc = "Выглядит очень интересно."
 	icon_state = "noose"
-	icon = 'modular_bluemoon/SmiLeY/icons/objects.dmi'
+	icon = 'modular_bluemoon/icons/obj/objects.dmi'
 	layer = FLY_LAYER
 	flags_1 = NODECONSTRUCT_1
 	var/image/over

@@ -41,7 +41,7 @@
 		/obj/item/stock_parts/manipulator = 5,
 		/obj/item/stock_parts/scanning_module = 5,
 		/obj/item/stack/ore/bluespace_crystal = 5,
-		/obj/item/raw_anomaly_core = 1)
+		ANOMALY_CORE_BLUESPACE)
 	needs_anchored = FALSE
 
 /obj/item/circuitboard/machine/telecomms/message_server

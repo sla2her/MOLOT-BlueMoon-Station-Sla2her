@@ -590,7 +590,7 @@ By design, d1 is the smallest direction and d2 is the highest
 
 	var/list/radial_menu = list(
 	"Cable Restraints" = restraints_icon,
-	"Noose" = image(icon = 'modular_bluemoon/SmiLeY/icons/objects.dmi', icon_state = "noose")
+	"Noose" = image(icon = 'modular_bluemoon/icons/obj/objects.dmi', icon_state = "noose")
 	)
 
 	var/cable_result = show_radial_menu(user, src, radial_menu, user, require_near = TRUE, tooltips = TRUE)
