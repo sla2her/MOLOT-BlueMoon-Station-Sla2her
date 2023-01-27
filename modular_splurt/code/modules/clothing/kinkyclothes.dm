@@ -104,7 +104,7 @@
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
 	item_state = "office_revealing"
 	can_adjust = FALSE
-	mutantrace_variation = NONE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/under/maidsexy
 	name = "Revealing maid uniform"
@@ -114,7 +114,7 @@
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
 	item_state = "maid_revealing"
 	can_adjust = FALSE
-	mutantrace_variation = NONE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/under/vaultsuit
 	name = "vault suit"
