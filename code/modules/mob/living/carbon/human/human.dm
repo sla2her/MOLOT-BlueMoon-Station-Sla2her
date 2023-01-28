@@ -941,7 +941,7 @@
 	return "<font color='#18d855'>"
 
 
-/mob/living/carbon/human/get_tooltip_data()
+/*/mob/living/carbon/human/get_tooltip_data()
 	var/t_He = p_they(TRUE)
 	var/t_is = p_are()
 	. = list()
@@ -950,7 +950,7 @@
 		. += "You can't make out what species they are."
 	else
 		. += "[t_He] [t_is] a [spec_trait_examine_font()][dna.custom_species ? dna.custom_species : dna.species.name]</font>"
-	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, usr, .)
+	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, usr, .)*/
 
 /mob/living/carbon/human/chestonly
 	bodyparts = list(/obj/item/bodypart/chest)
