@@ -93,6 +93,7 @@
 	item_state = "hardhat0_atmos"
 	hat_type = "atmos"
 	dog_fashion = null
+	dynamic_hair_suffix = ""
 	name = "atmospheric technician's firefighting helmet"
 	desc = "A firefighter's helmet, able to keep the user cool in any situation."
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL | BLOCK_GAS_SMOKE_EFFECT
