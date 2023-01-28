@@ -417,6 +417,36 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
 	slowdown = 0
 
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/winter
+	name = "Winter Elite Syndicate Hardsuit Helmet"
+	desc = "An winter elite version of the syndicate helmet, with improved armour and fireproofing. It is in EVA mode. Property of Gorlex Marauders."
+	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode. Property of Gorlex Marauders."
+	icon_state = "hardsuit0-syndi-winter"
+	hardsuit_type = "syndielite"
+
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/winter
+	name = "Winter Elite Syndicate Hardsuit"
+	desc = "An winter elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in travel mode."
+	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in combat mode."
+	icon_state = "hardsuit0-syndie-winter"
+	hardsuit_type = "syndielite"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/winter
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/wintertas
+	name = "Winter Elite Syndicate Hardsuit Helmet V2"
+	desc = "An winter elite version of the syndicate helmet, with improved armour and fireproofing. It is in EVA mode. Property of Gorlex Marauders."
+	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode. Property of Gorlex Marauders."
+	icon_state = "hardsuit0-syndi-wintertas"
+	hardsuit_type = "syndielite"
+
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/wintertas
+	name = "Winter Elite Syndicate Hardsuit V2"
+	desc = "An winter elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in travel mode."
+	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in combat mode."
+	icon_state = "hardsuit0-syndie-wintertas"
+	hardsuit_type = "syndielite"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/winter
+
 //The Owl Hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/owl
 	name = "owl hardsuit helmet"

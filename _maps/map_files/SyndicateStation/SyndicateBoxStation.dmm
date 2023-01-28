@@ -23409,7 +23409,9 @@
 	name = "Station Intercom (Command)";
 	pixel_x = -28
 	},
-/obj/machinery/suit_storage_unit/captain,
+/obj/machinery/suit_storage_unit/captain{
+	storage_type = S
+	},
 /obj/machinery/light{
 	light_color = "#c9d3e8"
 	},
@@ -53185,9 +53187,11 @@
 	dir = 4
 	},
 /obj/machinery/button/door{
-	id = "permacells4";
+	id = "Dorm4";
 	name = "Privacy Shutters";
-	pixel_y = 25
+	pixel_y = 25;
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
@@ -54031,9 +54035,11 @@
 	dir = 4
 	},
 /obj/machinery/button/door{
-	id = "permacells5";
+	id = "Dorm5";
 	name = "Privacy Shutters";
-	pixel_y = 25
+	pixel_y = 25;
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
@@ -54099,6 +54105,18 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/command/gateway)
+"gpU" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/atmospherics{
+	desc = s
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/engineering/atmos)
 "grr" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -58634,7 +58652,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
-	id = "Dorm1";
+	id = "Dorm3";
 	name = "Door Lock";
 	normaldoorcontrol = 1;
 	pixel_x = -26;
@@ -61794,6 +61812,32 @@
 	},
 /turf/open/floor/plating,
 /area/construction)
+"rLW" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/light/small{
+	brightness = 3;
+	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "Dorm2";
+	name = "Door Lock";
+	normaldoorcontrol = 1;
+	pixel_x = -26;
+	pixel_y = 7;
+	specialfunctions = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/security/prison)
 "rML" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -89333,7 +89377,7 @@ hWS
 jHJ
 lHK
 nRO
-vYF
+rLW
 txs
 acd
 ksa
@@ -97130,7 +97174,7 @@ bOW
 bQl
 bRu
 bSC
-bTN
+gpU
 bUI
 bVR
 bWQ

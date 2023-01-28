@@ -91,6 +91,7 @@
 /obj/structure/closet/secure_closet/atmospherics/PopulateContents()
 	..()
 	new /obj/item/radio/headset/headset_eng(src)
+	new /obj/item/clothing/mask/gas/atmos(src)
 	new /obj/item/pipe_dispenser(src)
 	new /obj/item/storage/toolbox/mechanical(src)
 	new /obj/item/tank/internals/emergency_oxygen/engi(src)
