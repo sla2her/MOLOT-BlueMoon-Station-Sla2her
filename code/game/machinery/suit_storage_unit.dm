@@ -55,22 +55,22 @@
 
 /obj/machinery/suit_storage_unit/captain
 	suit_type = /obj/item/clothing/suit/space/hardsuit/captain
-	mask_type = /obj/item/clothing/mask/gas/sechailer
-	storage_type = /obj/item/clothing/mask/gas/atmos/captain
+	mask_type = /obj/item/clothing/mask/gas/atmos/captain
+	storage_type = /obj/item/tank/jetpack/oxygen/captain
 
 /obj/machinery/suit_storage_unit/engine
 	suit_type = /obj/item/clothing/suit/space/hardsuit/engine
-	mask_type = /obj/item/clothing/mask/breath
+	mask_type = /obj/item/clothing/mask/gas/glass/alt
 	shoes_type = /obj/item/clothing/shoes/magboots
 
 /obj/machinery/suit_storage_unit/atmos
 	suit_type = /obj/item/clothing/suit/space/hardsuit/engine/atmos
-	mask_type = /obj/item/clothing/mask/breath
+	mask_type = /obj/item/clothing/mask/gas/atmos
 	storage_type = /obj/item/watertank/atmos
 
 /obj/machinery/suit_storage_unit/ce
 	suit_type = /obj/item/clothing/suit/space/hardsuit/engine/elite
-	mask_type = /obj/item/clothing/mask/breath
+	mask_type = /obj/item/clothing/mask/gas/glass/alt
 	shoes_type = /obj/item/clothing/shoes/magboots/advance
 
 /obj/machinery/suit_storage_unit/security
@@ -82,11 +82,6 @@
 	suit_type = /obj/item/clothing/suit/space/hardsuit/security/hos
 	mask_type = /obj/item/clothing/mask/gas/sechailer
 	storage_type = /obj/item/tank/internals/oxygen
-
-/obj/machinery/suit_storage_unit/atmos
-	suit_type = /obj/item/clothing/suit/space/hardsuit/engine/atmos
-	mask_type = /obj/item/clothing/mask/gas
-	storage_type = /obj/item/watertank/atmos
 
 /obj/machinery/suit_storage_unit/mining
 	suit_type = /obj/item/clothing/suit/hooded/explorer/standard
@@ -114,6 +109,11 @@
 	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi
 	mask_type = /obj/item/clothing/mask/gas/syndicate
 	storage_type = /obj/item/tank/jetpack/oxygen/harness
+
+/obj/machinery/suit_storage_unit/winter_syndicate
+	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi/elite/winter
+	mask_type = /obj/item/clothing/mask/gas/syndicate
+	storage_type = /obj/item/tank/internals/oxygen/red
 
 /obj/machinery/suit_storage_unit/ert/command
 	suit_type = /obj/item/clothing/suit/space/hardsuit/ert

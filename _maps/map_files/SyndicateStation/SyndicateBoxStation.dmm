@@ -23409,9 +23409,7 @@
 	name = "Station Intercom (Command)";
 	pixel_x = -28
 	},
-/obj/machinery/suit_storage_unit/captain{
-	storage_type = S
-	},
+/obj/machinery/suit_storage_unit/captain,
 /obj/machinery/light{
 	light_color = "#c9d3e8"
 	},
