@@ -437,6 +437,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	nightshift_public_area = NIGHTSHIFT_AREA_PUBLIC
 	sound_environment = SOUND_AREA_STANDARD_STATION
 	minimap_color = "#aaaaaa"
+	ambientsounds = GENERIC
 
 /area/hallway/primary
 	name = "Primary Hallway"
@@ -1254,6 +1255,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	sound_environment = SOUND_AREA_STANDARD_STATION
 	// min_ambience_cooldown = 90 SECONDS
 	// max_ambience_cooldown = 180 SECONDS
+	ambientsounds = MEDICAL
 
 /area/medical/clinic
 	name = "Clinic"
@@ -1781,6 +1783,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/router/eva
 	name = "EVA Router"
 	icon_state = "yellow"
+	ambientsounds = HIGHSEC
 
 /area/router/air
 	name = "Airbridge Router"
