@@ -69,10 +69,10 @@
 		var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
 		if(D)
 			if(D.adjust_money(-payoff))
-				priority_announce("Thanks for the credits, landlubbers.", 'modular_bluemoon/phenyamomota/sound/announcer/pirate_yespeacedecision.ogg', sender_override = ship_name, has_important_message = TRUE)
+				priority_announce("Thanks for the credits, landlubbers.", "Unidentified Armed Ship", 'modular_bluemoon/phenyamomota/sound/announcer/pirate_yespeacedecision.ogg', sender_override = ship_name, has_important_message = TRUE)
 				return
 			else
-				priority_announce("Trying to cheat us? You'll regret this!", 'modular_bluemoon/phenyamomota/sound/announcer/pirate_nopeacedecision.ogg', sender_override = ship_name, has_important_message = TRUE)
+				priority_announce("Trying to cheat us? You'll regret this!", "Unidentified Armed Ship", 'modular_bluemoon/phenyamomota/sound/announcer/pirate_nopeacedecision.ogg', sender_override = ship_name, has_important_message = TRUE)
 				spawn_pirates(threat_msg, ship_template, TRUE)
 
 /proc/spawn_pirates(datum/comm_message/threat_msg, ship_template, skip_answer_check)
@@ -103,7 +103,7 @@
 			else
 				notify_ghosts("The pirate ship has an object of interest: [spawner]!", source=spawner, action=NOTIFY_ORBIT, header="Something's Interesting!")
 
-	priority_announce("Unidentified armed ship detected near the station.", "Sector Protection Offer", 'modular_bluemoon/phenyamomota/sound/announcer/pirate_incoming.ogg')
+	priority_announce("Unidentified armed ship detected near the station.", "Central Command", 'modular_bluemoon/phenyamomota/sound/announcer/pirate_incoming.ogg')
 
 //Shuttle equipment
 
