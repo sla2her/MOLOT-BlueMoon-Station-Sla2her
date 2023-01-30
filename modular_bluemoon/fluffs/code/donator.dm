@@ -86,3 +86,9 @@
 	slot = ITEM_SLOT_MASK
 	path = /obj/item/clothing/mask/magickitsune
 	ckeywhitelist = list("friskis")
+
+/datum/gear/donator/bm/Rar_Suit
+	name = "HEV Suit"
+	slot = ITEM_SLOT_OCLOTHING
+	path = /obj/item/clothing/suit/space/hardsuit/rd/hev/cosmetic
+	ckeywhitelist = list("RarSlt")

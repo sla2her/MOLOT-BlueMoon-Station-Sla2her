@@ -6,18 +6,10 @@
 		mob_overlay_icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
 		anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/suit_digi.dmi'
 
-/obj/item/clothing/suit/space/hardsuit/engine
-	icon = 'modular_splurt/icons/obj/clothing/suits.dmi'
-	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
-	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/suit_digi.dmi'
-
 /obj/item/clothing/head/helmet/space/hardsuit/Initialize()
 	. = ..()
 	if(type == /obj/item/clothing/head/helmet/space/hardsuit)
 		mob_overlay_icon = 'modular_splurt/icons/mob/clothing/head.dmi'
-
-/obj/item/clothing/head/helmet/space/hardsuit/engine
-	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/head.dmi'
 
 //Own stuff
 /obj/item/clothing/head/helmet/space/hardsuit/rd/hev
@@ -72,6 +64,32 @@
 			SEND_SOUND(user, sound('modular_splurt/sound/halflife/hevsuit_firstpickup.ogg', volume = 50))
 			SEND_SOUND(user, sound('modular_splurt/sound/halflife/anomalous_materials.ogg', volume = 50))
 	return
+
+/obj/item/clothing/head/helmet/space/hardsuit/rd/hev/cosmetic
+	resistance_flags = null
+	max_heat_protection_temperature = null
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0)
+	actions_types = list()
+
+/obj/item/clothing/suit/space/hardsuit/rd/hev/cosmetic
+	resistance_flags = null
+	max_heat_protection_temperature = null
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/gun/energy/wormhole_projector,
+	/obj/item/hand_tele, /obj/item/aicard)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/rd/hev/cosmetic
+
+/obj/item/clothing/suit/space/hardsuit/rd/hev/cosmetic/Initialize()
+	. = ..()
+
+/obj/item/clothing/suit/space/hardsuit/rd/hev/cosmetic/equipped(mob/user, slot)
+	. = ..()
+	if(slot == ITEM_SLOT_OCLOTHING)
+		if(user.nextsoundemote >= world.time)
+			user.nextsoundemote = world.time + 30 SECONDS
+			to_chat(user, span_warning("Рано!"))
+			return
+	playsound(user, 'modular_splurt/sound/halflife/hevsuit_firstpickup.ogg', 50, 0, 0)
 
 /obj/item/clothing/suit/space/hardsuit/shielded/goldenpa
 	name = "Nanotrasen Power Armor"

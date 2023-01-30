@@ -96,8 +96,7 @@
 	desc = "This scroll contains the secrets of an ancient martial arts technique. You will gain special unarmed attacks for \
 			stealthy takedowns."
 	item = /obj/item/book/granter/martial/krav_maga
-	cost = 12
-	player_minimum = 25
+	cost = 4
 	surplus = 0
 
 /datum/uplink_item/stealthy_weapons/crossbow
