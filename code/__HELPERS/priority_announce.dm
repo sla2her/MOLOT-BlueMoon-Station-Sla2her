@@ -18,7 +18,7 @@
 
 	else
 		if(!sender_override)
-			announcement += "<h1 class='alert'>[command_name()] Update</h1>"
+			announcement += "<h1 class='alert'>[command_name()] Объявляет</h1>"
 		else
 			announcement += "<h1 class='alert'>[sender_override]</h1>"
 		if (title && length(title) > 0)
@@ -55,8 +55,8 @@
 /proc/call_emergency_meeting(mob/living/user, area/button_zone)
 	var/meeting_sound = sound('sound/misc/emergency_meeting.ogg')
 	var/announcement
-	announcement += "<h1 class='alert'>Captain Alert</h1>"
-	announcement += "<br>[span_alert("[user] has called an Emergency Meeting!")]<br><br>"
+	announcement += "<h1 class='alert'>Тревога!</h1>"
+	announcement += "<br>[span_alert("[user] устраивает экстренный сбор!")]<br><br>"
 
 	for(var/mob/mob_to_teleport in GLOB.player_list) //gotta make sure the whole crew's here!
 		if(isnewplayer(mob_to_teleport) || iscameramob(mob_to_teleport))
@@ -78,10 +78,10 @@
 
 /proc/print_command_report(text = "", title = null, announce=TRUE)
 	if(!title)
-		title = "Classified [command_name()] Update"
+		title = "Секретно: [command_name()]"
 
 	if(announce)
-		priority_announce("A report has been downloaded and printed out at all communications consoles.", "Incoming Classified Message", SSstation.announcer.get_rand_report_sound(), has_important_message = TRUE)
+		priority_announce("Отчет был загружен и распечатан на всех коммуникационных консолях.", "Входящее Секретное Сообщение", SSstation.announcer.get_rand_report_sound(), has_important_message = TRUE)
 
 	var/datum/comm_message/M  = new
 	M.title = title
@@ -89,7 +89,7 @@
 
 	SScommunications.send_message(M)
 
-/proc/minor_announce(message, title = "Attention:", alert, html_encode = TRUE)
+/proc/minor_announce(message, title = "Внимание!", alert, html_encode = TRUE)
 	if(!message)
 		return
 
