@@ -194,9 +194,9 @@
 							"<span class='danger'>[user] attempts to release you from the rack!</span>") //  For sound if not seen -->  "<span class='italics'>You hear a squishy wet noise.</span>")
 		if(!do_mob(user, M, 200))
 			return
+		unbuckle_mob(M)
 	// Did the time. Now try to do it.
 	..()
-	unbuckle_mob(M)
 
 /obj/structure/bloodsucker/vassalrack/unbuckle_mob(mob/living/buckled_mob, force = FALSE)
 	if(!..())

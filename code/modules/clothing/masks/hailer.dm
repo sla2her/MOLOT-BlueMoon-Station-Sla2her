@@ -12,8 +12,8 @@
 	w_class = WEIGHT_CLASS_SMALL
 	visor_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
 	visor_flags_inv = HIDEFACE
-	flags_cover = MASKCOVERSMOUTH
-	visor_flags_cover = MASKCOVERSMOUTH
+	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
+	visor_flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 	var/aggressiveness = 2
 	var/cooldown_special
 	var/recent_uses = 0
@@ -252,3 +252,6 @@
 	desc = "A close-fitting tactical mask created in cooperation with a certain megacorporation, comes with an especially aggressive Compli-o-nator 3000."
 	icon_state = "spacepol"
 	item_state = "spacepol"
+	mutantrace_variation = STYLE_NO_ANTHRO_ICON
+	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
+	visor_flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES

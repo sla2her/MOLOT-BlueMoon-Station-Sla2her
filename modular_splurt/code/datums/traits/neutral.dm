@@ -290,7 +290,7 @@
 /datum/quirk/storage_concealment
 	name = "Dorsualiphobic Augmentation"
 	desc = "You despise the idea of being seen wearing any type of back-mounted storage apparatus! A new technology shields you from the immense shame you may experience, by hiding your equipped backpack."
-	
+
 	// UNUSED: Enable by setting these values to TRUE
 	// The shame is unbearable
 	mood_quirk = FALSE
@@ -299,10 +299,10 @@
 
 /datum/quirk/storage_concealment/on_spawn()
 	. = ..()
-	
+
 	// Create a new augment item
 	var/obj/item/implant/hide_backpack/put_in = new
-	
+
 	// Apply the augment to the quirk holder
 	put_in.implant(quirk_holder, null, TRUE, TRUE)
 
@@ -382,8 +382,9 @@
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
 
 	// Add quirk traits
-	ADD_TRAIT(quirk_mob,TRAIT_NO_PROCESS_FOOD,ROUNDSTART_TRAIT)
-	ADD_TRAIT(quirk_mob,TRAIT_NOTHIRST,ROUNDSTART_TRAIT)
+	ADD_TRAIT(quirk_mob,TRAIT_NOBREATH, ROUNDSTART_TRAIT)
+	ADD_TRAIT(quirk_mob,TRAIT_NO_PROCESS_FOOD, ROUNDSTART_TRAIT)
+	ADD_TRAIT(quirk_mob,TRAIT_NOTHIRST, ROUNDSTART_TRAIT)
 
 	// Set skin tone, if possible
 	if(!quirk_mob.dna.skin_tone_override)
@@ -468,11 +469,12 @@
 
 /datum/quirk/bloodfledge/remove()
 	. = ..()
-	
+
 	// Define quirk mob
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
 
 	// Remove quirk traits
+	REMOVE_TRAIT(quirk_mob,TRAIT_NOBREATH, ROUNDSTART_TRAIT)
 	REMOVE_TRAIT(quirk_mob, TRAIT_NO_PROCESS_FOOD, ROUNDSTART_TRAIT)
 	REMOVE_TRAIT(quirk_mob, TRAIT_NOTHIRST, ROUNDSTART_TRAIT)
 

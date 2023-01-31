@@ -36,8 +36,8 @@
 		ANNOUNCER_NEWAI = 'sound/announcer/classic/newai.ogg',
 		ANNOUNCER_OUTBREAK5 = 'sound/announcer/intern/outbreak5.ogg',
 		ANNOUNCER_OUTBREAK7 = 'sound/announcer/intern/outbreak7.ogg',
-		ANNOUNCER_POWEROFF = 'sound/announcer/intern/poweroff.ogg',
-		ANNOUNCER_POWERON = 'sound/announcer/intern/poweron.ogg',
+		ANNOUNCER_POWEROFF = list('sound/announcer/intern/poweroff.ogg', 'sound/announcer/intern/poweroff_boomer.ogg'), //Найтл крутой.
+		ANNOUNCER_POWERON = list('sound/announcer/intern/poweron.ogg', 'sound/announcer/intern/poweron_boomer.ogg'), //Ваще.
 		ANNOUNCER_RADIATION = 'sound/announcer/intern/radiation.ogg',
 		ANNOUNCER_SHUTTLECALLED = 'sound/announcer/intern/shuttlecalled.ogg',
 		ANNOUNCER_SHUTTLEDOCK = 'sound/announcer/intern/shuttledock.ogg',

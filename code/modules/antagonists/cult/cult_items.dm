@@ -322,6 +322,7 @@
 	desc = "An armored hood worn by the followers of Nar'Sie."
 	icon_state = "cult_hoodalt"
 	item_state = "cult_hoodalt"
+	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/culthood/alt/ghost
 	item_flags = DROPDEL
