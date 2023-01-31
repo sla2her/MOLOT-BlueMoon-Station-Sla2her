@@ -54129,9 +54129,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/atmospherics{
-	desc = s
-	},
+/obj/structure/closet/secure_closet/atmospherics,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
