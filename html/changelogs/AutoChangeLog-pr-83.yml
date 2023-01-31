@@ -1,0 +1,4 @@
+author: FeenieRU
+delete-after: true
+changes:
+  - bugfix: анонсы пиратов теперь содержат наименование корабля, КАК ОНО И БЫЛО
