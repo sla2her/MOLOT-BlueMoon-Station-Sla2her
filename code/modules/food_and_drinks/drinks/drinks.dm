@@ -344,8 +344,19 @@
 	desc = "Beer. In space."
 	icon_state = "beer"
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
+	spillable = FALSE //BlueMoon Edit
+	reagent_flags = NONE //BlueMoon Edit
 	foodtype = GRAIN | ALCOHOL
 	custom_price = PRICE_PRETTY_CHEAP
+
+/obj/item/reagent_containers/food/drinks/beer/attack_self(mob/user) //BlueMoon Edit
+    if(!is_drainable())
+        to_chat(user, "Вы открываете '\the [src]' с тихим, особо приятным хлопком.") //Ahhhhhhhh
+        reagents.reagents_holder_flags |= OPENCONTAINER
+        playsound(src, "can_open", 100, 1)
+        spillable = TRUE
+        return
+    return ..() //BlueMoon Edit
 
 /obj/item/reagent_containers/food/drinks/beer/almost_empty
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 1)
