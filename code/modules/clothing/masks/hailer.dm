@@ -12,7 +12,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	visor_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
 	visor_flags_inv = HIDEFACE
-	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
+	flags_cover = MASKCOVERSMOUTH
 	visor_flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 	var/aggressiveness = 2
 	var/cooldown_special
@@ -28,6 +28,7 @@
 	item_state = "swat"
 	aggressiveness = 3
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 	visor_flags_inv = 0
 
 /obj/item/clothing/mask/gas/sechailer/cyborg
