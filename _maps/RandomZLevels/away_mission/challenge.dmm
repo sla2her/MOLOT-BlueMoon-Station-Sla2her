@@ -1218,6 +1218,10 @@
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
+"zn" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space/stormtrooper,
+/turf/open/floor/circuit,
+/area/awaymission/challenge/end)
 "zF" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1227,6 +1231,10 @@
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
+"Db" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/smg/space/stormtrooper,
+/turf/open/floor/wood,
+/area/awaymission/challenge/end)
 "Dn" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1260,6 +1268,13 @@
 	icon_state = "iron0"
 	},
 /area/awaymission/challenge/main)
+"Gu" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/middle,
+/obj/effect/spawner/structure/window/hollow/reinforced/middle{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/challenge/end)
 "Hn" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1361,7 +1376,7 @@
 	},
 /area/awaymission/challenge/main)
 "OT" = (
-/mob/living/simple_animal/hostile/syndicate/melee/space/stormtrooper,
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space/stormtrooper,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/challenge/end)
 "Pv" = (
@@ -27058,7 +27073,7 @@ bR
 cb
 cb
 cb
-bP
+Gu
 cn
 cn
 cE
@@ -27315,7 +27330,7 @@ bS
 cc
 cl
 cb
-bP
+Gu
 cC
 cd
 cd
@@ -28086,7 +28101,7 @@ bS
 cc
 Zw
 cb
-bP
+Gu
 cn
 cd
 cd
@@ -28343,7 +28358,7 @@ bR
 cb
 cb
 cb
-bP
+Gu
 cn
 cd
 cd
@@ -29639,7 +29654,7 @@ co
 cW
 co
 cd
-cd
+OT
 cd
 ce
 cn
@@ -30352,7 +30367,7 @@ aa
 aa
 aa
 ab
-au
+QE
 am
 au
 as
@@ -31683,7 +31698,7 @@ bP
 bZ
 cj
 cj
-cj
+Db
 bP
 cn
 cn
@@ -31943,7 +31958,7 @@ ct
 cw
 bP
 cn
-cn
+zn
 cG
 cn
 cL

@@ -2094,6 +2094,18 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
+"ow" = (
+/obj/structure/closet/crate,
+/obj/item/wrench,
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 30
+	},
+/obj/structure/cable{
+	icon_state = "1-4";
+	dir = 1
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "pD" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -2117,7 +2129,6 @@
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
 "vO" = (
-/obj/machinery/gateway/away,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -2130,6 +2141,13 @@
 /obj/structure/lattice,
 /turf/open/space,
 /area/space/nearstation)
+"BK" = (
+/obj/machinery/gateway/away,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "BX" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -2139,6 +2157,13 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
+"Ce" = (
+/obj/machinery/power/port_gen/pacman,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "Gh" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2146,6 +2171,12 @@
 	},
 /turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
+"JY" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "Kh" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2189,6 +2220,16 @@
 /obj/item/wrench,
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
+"Za" = (
+/obj/machinery/wish_granter,
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
+"Zh" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 
 (1,1,1) = {"
 aa
@@ -47508,8 +47549,8 @@ ao
 ao
 ao
 ao
-ao
-ao
+Ce
+ow
 ab
 ac
 ac
@@ -47759,14 +47800,14 @@ ab
 ab
 ab
 ao
-ao
-ao
-ao
-ao
-ao
-ao
-ao
-ao
+BK
+JY
+JY
+JY
+JY
+JY
+JY
+Zh
 ab
 ac
 ac
@@ -51097,7 +51138,7 @@ aa
 aa
 aa
 ab
-ao
+Za
 ao
 aq
 ab
