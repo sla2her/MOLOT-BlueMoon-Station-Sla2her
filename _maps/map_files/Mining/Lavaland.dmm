@@ -992,7 +992,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "fx" = (
 /obj/structure/stone_tile/surrounding_tile,
@@ -1577,7 +1577,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "hX" = (
 /obj/structure/stone_tile/slab,
@@ -1659,7 +1659,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "ir" = (
 /obj/structure/stone_tile/slab/cracked{
@@ -2275,7 +2275,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "le" = (
 /obj/structure/stone_tile,
@@ -3145,7 +3145,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "lavasci"
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "ot" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7116,7 +7116,7 @@
 /obj/machinery/door/airlock/research{
 	name = "tachyon-doppler array booth"
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "LO" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8043,7 +8043,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "Rp" = (
 /obj/structure/stone_tile/surrounding/cracked,
@@ -9162,7 +9162,7 @@
 	name = "Chemistry Lab";
 	req_access_txt = "47,54,29"
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "Xg" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -9525,7 +9525,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "YX" = (
 /obj/structure/sink{
@@ -9645,7 +9645,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "ZE" = (
 /obj/structure/table,
