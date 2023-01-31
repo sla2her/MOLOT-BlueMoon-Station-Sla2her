@@ -3158,6 +3158,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
+"xX" = (
+/obj/machinery/porta_turret/syndicate{
+	dir = 5
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "xY" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -4073,6 +4079,12 @@
 	level = 1
 	},
 /turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/unpowered/syndicate_lava_base/main)
+"DV" = (
+/obj/machinery/porta_turret/syndicate{
+	dir = 9
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "DW" = (
 /obj/machinery/light,
@@ -8453,7 +8465,7 @@ KK
 KK
 KK
 KK
-Tx
+DV
 hA
 zK
 oD
@@ -9043,7 +9055,7 @@ Wk
 Wk
 Wk
 Wk
-Tx
+xX
 hA
 Gk
 aZ

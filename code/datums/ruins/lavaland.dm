@@ -168,6 +168,7 @@
 	description = "Ratvar's final resting place."
 	suffix = "lavaland_surface_dead_ratvar.dmm"
 	allow_duplicates = FALSE
+	cost = 5
 
 /datum/map_template/ruin/lavaland/hierophant
 	name = "Hierophant's Arena"
