@@ -696,7 +696,7 @@
 	pixel_y = 12
 	},
 /turf/open/floor/plasteel/showroomfloor/shower,
-/area/mine/living_quarters)
+/area/mine/laborcamp)
 "dW" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 4
@@ -8508,7 +8508,7 @@
 	},
 /obj/structure/gulag_beacon,
 /obj/effect/turf_decal/stripes/line,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "TD" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
@@ -9343,14 +9343,7 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "Ye" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/door/airlock/security/glass{
-	name = "Labor Camp Shuttle Security Airlock";
-	req_access_txt = "2"
-	},
-/obj/structure/fans/tiny,
+/obj/structure/closet/firecloset/full,
 /turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "Yh" = (
@@ -35858,8 +35851,8 @@ fS
 fS
 fS
 ol
-tz
-tz
+ol
+ol
 TC
 FI
 bp
@@ -36371,9 +36364,9 @@ fS
 fS
 fS
 fS
+ol
 Ye
-eb
-zN
+ol
 iH
 Tg
 EF
