@@ -4,6 +4,8 @@
 	max_occurrences = 1
 	weight = 50
 	earliest_start = 10
+	category = EVENT_CATEGORY_BUREAUCRATIC
+	description = "Creates bounties that are three times original worth."
 
 /datum/round_event/high_priority_bounty/announce(fake)
 	priority_announce("Центральное командование выставило заявку с Наградой за Высокоприоритетный Груз. Подробности были отправлены на все Консоли Баунти.", "Программа Баунти Nanotrasen!")

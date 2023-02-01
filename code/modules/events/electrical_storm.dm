@@ -10,7 +10,7 @@
 /datum/round_event/electrical_storm
 	var/lightsoutAmount	= 1
 	var/lightsoutRange	= 25
-	announceWhen	= 1
+	announce_when	= 1
 
 /datum/round_event/electrical_storm/announce(fake)
 	if(prob(50))

@@ -125,8 +125,10 @@
 	icon_state = "vaultsuit"
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
 	item_state = "b_suit"
+	item_state = "b_suit"
 	can_adjust = FALSE
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/uniform_digi.dmi'
+	mutantrace_variation = STYLE_DIGITIGRADE | STYLE_ALL_TAURIC
 	var/firstpickup = TRUE
 	var/pickupsound = TRUE
 

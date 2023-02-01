@@ -6,6 +6,8 @@
 	min_players = 30
 	earliest_start = 45 MINUTES
 	dynamic_should_hijack = TRUE
+	category = EVENT_CATEGORY_INVASION
+	description = "The crew will either pay up, or face a pirate assault."
 
 #define PIRATES_ROGUES "Rogues"
 // #define PIRATES_SILVERSCALES "Silverscales"

@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/mice_migration
 	weight = 60
 	min_players = 10
-	max_occurrences = 3
+	max_occurrences = 2
 
 /datum/round_event/mice_migration
 	var/minimum_mice = 5

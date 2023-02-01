@@ -6,7 +6,7 @@
 	weight = 30
 
 /datum/round_event/disease_outbreak
-	announceWhen	= 15
+	announce_when	= 15
 
 	var/virus_type
 
@@ -24,7 +24,7 @@
 	priority_announce("Confirmed outbreak of level 7 viral biohazard aboard [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", "outbreak7")
 
 /datum/round_event/disease_outbreak/setup()
-	announceWhen = rand(15, 30)
+	announce_when = rand(15, 30)
 
 
 /datum/round_event/disease_outbreak/start()

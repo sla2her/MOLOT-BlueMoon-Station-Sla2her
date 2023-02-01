@@ -5,6 +5,8 @@
 	weight = 50
 	max_occurrences = 3
 	earliest_start = 10 MINUTES
+	category = EVENT_CATEGORY_BUREAUCRATIC
+	description = "A pod containing a random supply crate lands on the station."
 
 ///Spawns a cargo pod containing a random cargo supply pack on a random area of the station
 /datum/round_event/stray_cargo
@@ -20,7 +22,7 @@
 * Also randomizes the start timer
 */
 /datum/round_event/stray_cargo/setup()
-	startWhen = rand(20, 40)
+	start_when = rand(20, 40)
 	impact_area = find_event_area()
 	if(!impact_area)
 		CRASH("No valid areas for cargo pod found.")

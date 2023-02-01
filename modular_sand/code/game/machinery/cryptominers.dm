@@ -1,3 +1,22 @@
+// Configuration defines
+/*
+ * Some entries are currently unimplemented
+ *
+#define CRYPTO_POWER_USE		CONFIG_GET(number/crypto_power_use_process)
+#define CRYPTO_POWER_IDLE		CONFIG_GET(number/crypto_power_use_idle)
+#define CRYPTO_POWER_ACTIVE		CONFIG_GET(number/crypto_power_use_active)
+#define CRYPTO_MININGTIME		CONFIG_GET(number/crypto_mining_time)
+#define CRYPTO_MININGPOINTS		CONFIG_GET(number/crypto_payout_amount)
+*/
+#define CRYPTO_TEMP_MIN			CONFIG_GET(number/crypto_heat_threshold_min)
+#define CRYPTO_TEMP_MID			CONFIG_GET(number/crypto_heat_threshold_mid)
+#define CRYPTO_TEMP_MAX			CONFIG_GET(number/crypto_heat_threshold_max)
+#define CRYPTO_MULT_MIN			CONFIG_GET(number/crypto_multiplier_min)
+#define CRYPTO_MULT_MID			CONFIG_GET(number/crypto_multiplier_mid)
+#define CRYPTO_MULT_MAX			CONFIG_GET(number/crypto_multiplier_max)
+#define CRYPTO_HEATING_POWER	CONFIG_GET(number/crypto_heat_power)
+#define CRYPTO_IGNORE_ATMOS		CONFIG_GET(flag/crypto_ignore_atmos)
+
 /obj/machinery/cryptominer
 	name = "cryptocurrency miner"
 	desc = "This handy-dandy machine will produce credits for your enjoyment."
@@ -5,13 +24,13 @@
 	icon_state = "off"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 20
-	active_power_usage = 200
+	idle_power_usage = 40
+	active_power_usage = 400
 	circuit = /obj/item/circuitboard/machine/cryptominer
 	init_process = FALSE // Don't process upon creation
 	var/mining = FALSE
 	var/miningtime = 6000
-	var/miningpoints = 250
+	var/miningpoints = 150
 	var/mintemp = TCRYO // 225K equals approximately -55F or -48C
 	var/midtemp = T0C // 273K equals 32F or 0C
 	var/maxtemp = 500 // 500K equals approximately 440F or 226C
@@ -59,7 +78,7 @@
 				return
 			to_chat(user, span_notice("You link \the [CARD] to \the [src]."))
 			pay_me = CARD.registered_account
-			say("Now using [pay_me.account_holder ? "[pay_me.account_holder]'s" : span_boldwarning("ERROR")] account.")
+			say("Now using [pay_me.account_holder ? "[pay_me.account_holder]s" : span_boldwarning("ERROR")] account.")
 			return
 
 /obj/machinery/cryptominer/AltClick(mob/user)
@@ -68,13 +87,13 @@
 	balloon_alert(user, "resetting")
 	if(do_after(user, 5 SECONDS, target = src))
 		pay_me = SSeconomy.get_dep_account(ACCOUNT_CAR)
-		say("Now using [pay_me.account_holder]'s account.")
+		say("Now using [pay_me.account_holder]s account.")
 
 /obj/machinery/cryptominer/examine(mob/user)
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
-		. += span_notice("A little screen on the machine reads: Currently the linked bank account is [pay_me.account_holder ? "[pay_me.account_holder]'s" : span_boldwarning("ERROR")].")
-	. += "Modify the destination of the credits using your id on it while it is inactive and has it's panel open."
+		. += span_notice("A little screen on the machine reads: Currently the linked bank account is [pay_me.account_holder ? "[pay_me.account_holder]s" : span_boldwarning("ERROR")].")
+	. += "Modify the destination of the credits using your id on it while it is inactive and has its panel open."
 	. += "Alt-Click to reset to the Cargo budget.</span>"
 
 /obj/machinery/cryptominer/process()
@@ -85,16 +104,17 @@
 
 	// Check for tiles with no conductivity (space)
 	if(T.thermal_conductivity == 0)
+		// Cheat mode: Skip all atmos code and give points
+		// Placed first, as servers are more likely to use it
+		if(CRYPTO_IGNORE_ATMOS)
+			produce_points(CRYPTO_MULT_MAX)
+			return
+
 		// Normal mode: Warn the user and stop processing
-		if(require_conductivity)
+		else
 			say("Invalid atmospheric conditions detected! Shutting off!")
 			playsound(loc, 'sound/machines/beep.ogg', 50, TRUE, -1)
 			set_mining(FALSE)
-			return
-
-		// Cheat mode: Skip all atmos code and give points
-		else
-			produce_points(3)
 			return
 
 	// Get air
@@ -105,24 +125,29 @@
 	// Get temp
 	var/env_temp = env.return_temperature()
 
+	// Define temperature settings
+	var/temp_min = CRYPTO_TEMP_MIN // 225K equals approximately -55F or -48C
+	var/temp_mid = CRYPTO_TEMP_MID // 273K equals 32F or 0C
+	var/temp_max = CRYPTO_TEMP_MAX // 500K equals approximately 440F or 226C
+
 	// Check for temperature effects
 	// Minimum (most likely)
-	if(env_temp <= mintemp)
-		produce_points(3)
+	if(env_temp <= temp_min)
+		produce_points(CRYPTO_MULT_MAX)
 	// Mid
-	else if((env_temp <= midtemp) && (env_temp >= mintemp))
-		produce_points(1)
+	else if((env_temp <= temp_mid) && (env_temp >= temp_min))
+		produce_points(CRYPTO_MULT_MID)
 	// Maximum
-	else if((env_temp <= maxtemp) && (env_temp >= midtemp))
-		produce_points(0.20)
+	else if((env_temp <= temp_max) && (env_temp >= temp_mid))
+		produce_points(CRYPTO_MULT_MIN)
 	// Overheat
-	else if(env_temp >= maxtemp)
+	else if(env_temp >= temp_max)
 		say("Critical overheating detected! Shutting off!")
 		playsound(loc, 'sound/machines/beep.ogg', 50, TRUE, -1)
 		set_mining(FALSE)
 
-	// Increase heat by heatingPower
-	env.set_temperature(env_temp + heatingPower)
+	// Increase heat by heating_power
+	env.set_temperature(env_temp + CRYPTO_HEATING_POWER)
 
 	// Update air
 	air_update_turf()
@@ -148,15 +173,25 @@
 	set_mining(TRUE)
 
 /obj/machinery/cryptominer/proc/set_mining(new_value)
+	// Check if status changed
 	if(new_value == mining)
 		return //No changes
-	mining = new_value
-	if(mining)
-		START_PROCESSING(SSmachines, src)
-	else
-		STOP_PROCESSING(SSmachines, src)
-	update_icon()
 
+	// Set status new value
+	mining = new_value
+
+	// Check if mining should run
+	if(mining)
+		// Start processing
+		START_PROCESSING(SSmachines, src)
+
+	// Mining should not run
+	else
+		// Stop processing
+		STOP_PROCESSING(SSmachines, src)
+
+	// Update machine icon
+	update_icon()
 
 /obj/machinery/cryptominer/syndie
 	name = "syndicate cryptocurrency miner"
@@ -164,11 +199,11 @@
 	icon_state = "off_syndie"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 40
-	active_power_usage = 400
+	idle_power_usage = 80
+	active_power_usage = 800
 	circuit = /obj/item/circuitboard/machine/cryptominer/syndie
 	miningtime = 6000
-	miningpoints = 500
+	miningpoints = 300
 
 /obj/machinery/cryptominer/syndie/update_icon()
 	. = ..()
@@ -198,3 +233,21 @@
 		icon_state = "loop_nano"
 	else
 		icon_state = "on_nano"
+
+/*
+ * Some entries are currently unimplemented
+ *
+#undef CRYPTO_POWER_USE
+#undef CRYPTO_POWER_IDLE
+#undef CRYPTO_POWER_ACTIVE
+#undef CRYPTO_MININGTIME
+#undef CRYPTO_MININGPOINTS
+*/
+#undef CRYPTO_TEMP_MIN
+#undef CRYPTO_TEMP_MID
+#undef CRYPTO_TEMP_MAX
+#undef CRYPTO_MULT_MIN
+#undef CRYPTO_MULT_MID
+#undef CRYPTO_MULT_MAX
+#undef CRYPTO_HEATING_POWER
+#undef CRYPTO_IGNORE_ATMOS

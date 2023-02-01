@@ -1,12 +1,10 @@
 /datum/round_event_control/gremlin
 	name = "Spawn Gremlins"
 	typepath = /datum/round_event/gremlin
-	weight = 5
+	weight = 45
 	max_occurrences = 2
 	earliest_start = 60 MINUTES
 	min_players = 15
-
-
 
 /datum/round_event/gremlin
 	var/static/list/acceptable_spawns = list("xeno_spawn", "generic event spawn", "blobstart", "Assistant")

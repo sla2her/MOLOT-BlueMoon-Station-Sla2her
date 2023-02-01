@@ -7,8 +7,8 @@
 
 
 /datum/round_event/wormholes
-	announceWhen = 10
-	endWhen = 60
+	announce_when = 10
+	end_when = 60
 
 	var/list/pick_turfs = list()
 	var/list/wormholes = list()
@@ -16,8 +16,8 @@
 	var/number_of_wormholes = 400
 
 /datum/round_event/wormholes/setup()
-	announceWhen = rand(0, 20)
-	endWhen = rand(40, 80)
+	announce_when = rand(0, 20)
+	end_when = rand(40, 80)
 
 /datum/round_event/wormholes/start()
 	for(var/turf/open/floor/T in world)
