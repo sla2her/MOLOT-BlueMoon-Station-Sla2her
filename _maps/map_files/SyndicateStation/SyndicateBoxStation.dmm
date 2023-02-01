@@ -30820,7 +30820,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/storage/backpack/duffelbag/syndie/med,
+/obj/item/storage/backpack/duffelbag/syndie/surgery,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/surgery)
 "bzJ" = (
@@ -33573,6 +33573,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/storage/backpack/duffelbag/syndie/surgery_adv,
 /turf/open/floor/mineral/plastitanium,
 /area/command/heads_quarters/cmo)
 "bFO" = (
@@ -40273,7 +40274,7 @@
 /area/medical/virology)
 "bXc" = (
 /obj/structure/table,
-/obj/item/storage/backpack/duffelbag/syndie/med,
+/obj/item/storage/backpack/duffelbag/syndie/surgery,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/virology)
 "bXd" = (
@@ -54125,16 +54126,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/command/gateway)
-"gpU" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/atmospherics,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/engineering/atmos)
 "grr" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -55579,7 +55570,7 @@
 /area/security/prison)
 "iRV" = (
 /obj/structure/table,
-/obj/item/storage/backpack/duffelbag/syndie/med,
+/obj/item/storage/backpack/duffelbag/syndie/surgery,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/surgery)
 "iTU" = (
@@ -97300,7 +97291,7 @@ bOW
 bQl
 bRu
 bSC
-gpU
+bTN
 bUI
 bVR
 bWQ
