@@ -80,7 +80,6 @@
 "q" = (
 /obj/machinery/door/airlock/titanium,
 /obj/docking_port/mobile{
-	shuttle_id = "tarkon_driver";
 	name = "Tarkon Driver";
 	port_direction = 2;
 	preferred_direction = 8
