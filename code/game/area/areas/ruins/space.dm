@@ -522,6 +522,8 @@
 
 /area/ruin/space/has_grav/port_tarkon
 	name = "P-T Cryo-Storage"
+	always_unpowered = FALSE
+	ambientsounds = HIGHSEC
 
 /area/ruin/space/has_grav/port_tarkon/afthall
 	name = "P-T Aft Hallway"

@@ -898,6 +898,8 @@
 /obj/item/tank/internals/plasmaman/belt/full,
 /obj/item/tank/internals/plasmaman/belt/full,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/under/rank/cargo/util,
+/obj/item/clothing/under/rank/cargo/util,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "ft" = (
@@ -2274,6 +2276,8 @@
 /obj/item/storage/backpack/satchel/vir,
 /obj/item/storage/backpack/virology,
 /obj/item/storage/backpack/chemistry,
+/obj/item/clothing/under/rank/medical/doctor/util,
+/obj/item/clothing/under/rank/medical/doctor/util,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "lT" = (
@@ -3201,6 +3205,8 @@
 /obj/item/storage/backpack,
 /obj/item/storage/backpack/duffelbag,
 /obj/item/storage/backpack/satchel,
+/obj/item/clothing/under/rank/civilian/util,
+/obj/item/clothing/under/rank/civilian/util,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "ro" = (
@@ -6466,6 +6472,8 @@
 /obj/item/clothing/shoes/winterboots,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/storage/backpack/duffelbag/sec,
+/obj/item/clothing/under/rank/security/officer/util,
+/obj/item/clothing/under/rank/security/officer/util,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "Jm" = (
@@ -6925,6 +6933,8 @@
 /obj/item/clothing/shoes/workboots/mining,
 /obj/item/clothing/shoes/winterboots,
 /obj/item/storage/backpack/science,
+/obj/item/clothing/under/rank/rnd/scientist/util,
+/obj/item/clothing/under/rank/rnd/scientist/util,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "LD" = (
@@ -8312,6 +8322,8 @@
 /obj/item/storage/backpack/industrial,
 /obj/item/storage/backpack/duffelbag/engineering,
 /obj/item/storage/backpack/satchel/eng,
+/obj/item/clothing/under/rank/engineering/engineer/util,
+/obj/item/clothing/under/rank/engineering/engineer/util,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "Ts" = (
@@ -8629,6 +8641,8 @@
 /obj/item/storage/backpack/duffelbag/blueshield,
 /obj/item/storage/backpack/blueshield,
 /obj/item/storage/backpack/satchel/blueshield,
+/obj/item/clothing/under/rank/captain/util,
+/obj/item/clothing/under/rank/captain/util,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "Vl" = (
@@ -9312,6 +9326,19 @@
 "YT" = (
 /turf/closed/wall,
 /area/ruin/space/has_grav/port_tarkon/cargo)
+"YU" = (
+/obj/structure/closet,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/shoes/workboots/mining,
+/obj/item/clothing/shoes/winterboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/storage/backpack,
+/obj/item/storage/backpack/duffelbag,
+/obj/item/storage/backpack/satchel,
+/obj/item/clothing/under/rank/civilian/util/greyshirt,
+/obj/item/clothing/under/rank/civilian/util/greyshirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "YW" = (
 /obj/machinery/light/dim/directional/west,
 /obj/effect/turf_decal/tile/brown/half{
@@ -12440,7 +12467,7 @@ sn
 uv
 uv
 To
-rk
+YU
 uv
 Vj
 et

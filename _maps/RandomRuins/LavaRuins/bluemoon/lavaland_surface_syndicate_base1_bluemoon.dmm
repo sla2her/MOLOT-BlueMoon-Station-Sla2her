@@ -1259,19 +1259,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
-"if" = (
-/obj/machinery/turretid{
-	ailock = 1;
-	control_area = "/area/ruin/syndicate_lava_base/main";
-	dir = 1;
-	icon_state = "control_kill";
-	lethal = 1;
-	name = "Base turret controls";
-	pixel_y = 30;
-	req_access = list("syndicate")
-	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland/unpowered/syndicate_lava_base/main)
 "ik" = (
 /obj/structure/bookcase/random/fiction,
 /turf/open/floor/plasteel/dark,
@@ -1909,19 +1896,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/lavaland/surface/outdoors)
-"nm" = (
-/obj/machinery/turretid{
-	ailock = 1;
-	dir = 1;
-	icon_state = "control_kill";
-	lethal = 1;
-	name = "Base turret controls";
-	pixel_y = 30;
-	req_access = null;
-	req_access_txt = "150"
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "no" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -3079,17 +3053,6 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
-	},
-/obj/machinery/turretid{
-	ailock = 1;
-	control_area = null;
-	desc = "A specially designed set of turret controls. Looks to be covered in protective casing to prevent AI interfacing.";
-	icon_state = "control_kill";
-	lethal = 1;
-	name = "Shuttle turret control";
-	pixel_y = 34;
-	req_access = null;
-	req_access_txt = "150"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
@@ -9073,7 +9036,7 @@ yh
 vZ
 jS
 Zz
-nm
+Zz
 Wk
 Wk
 Wk
@@ -9205,7 +9168,7 @@ jn
 Jr
 Qh
 WM
-if
+An
 NO
 HR
 Tx
