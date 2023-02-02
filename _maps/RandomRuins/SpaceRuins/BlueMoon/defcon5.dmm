@@ -3459,15 +3459,6 @@
 	visible_pipes = 1;
 	level = 1
 	},
-/obj/docking_port/stationary{
-	dir = 2;
-	dwidth = 14;
-	height = 13;
-	id = "caravanpirate_ambush";
-	name = "Trade Route";
-	roundstart_template = /datum/map_template/shuttle/ruin/pirate_cutter;
-	width = 22
-	},
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/port_tarkon/dorms)
 "sD" = (
