@@ -625,7 +625,7 @@
 /// Red trimlines
 
 /obj/effect/turf_decal/trimline/red
-	color = "#486091" //SKYRAT EDIT CHANGE
+	color = "#DE3A3A"
 
 /obj/effect/turf_decal/trimline/red/line
 	icon_state = "trimline"
