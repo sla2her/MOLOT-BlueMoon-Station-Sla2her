@@ -38,7 +38,8 @@
 	..()
 
 /obj/machinery/atmospherics/pipe/hide(i)
-	if(level == 2 && level == 1 && isturf(loc))
+	level = 1
+	if(level == 1 && isturf(loc))
 		invisibility = i ? INVISIBILITY_MAXIMUM : 0
 		level = 1
 	update_icon()
