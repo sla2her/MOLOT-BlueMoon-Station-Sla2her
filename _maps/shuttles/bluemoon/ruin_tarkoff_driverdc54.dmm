@@ -82,7 +82,8 @@
 /obj/docking_port/mobile{
 	name = "Tarkon Driver";
 	port_direction = 2;
-	preferred_direction = 8
+	preferred_direction = 8;
+	id = "port_tarkoff"
 	},
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/mineral/titanium,
