@@ -65,16 +65,35 @@
 /obj/item/crowbar/red,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
+"m" = (
+/obj/structure/closet/crate/internals,
+/obj/item/clothing/head/helmet/space/eva,
+/obj/item/clothing/suit/space/eva,
+/obj/item/clothing/suit/space/eva,
+/obj/item/clothing/head/helmet/space/eva,
+/obj/item/clothing/mask/gas/glass/alt,
+/obj/item/clothing/mask/gas/glass/alt,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/tarkoff_driver)
 "n" = (
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
+/obj/structure/rack,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "o" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/armory_contraband,
 /obj/effect/spawner/lootdrop/armory_contraband,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/tarkoff_driver)
+"p" = (
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/structure/rack,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "q" = (
@@ -99,7 +118,8 @@
 "t" = (
 /obj/machinery/light/dim/directional/west,
 /obj/structure/table/reinforced,
-/obj/item/clothing/mask/gas,
+/obj/effect/spawner/lootdrop/cig_packs,
+/obj/effect/spawner/lootdrop/cig_packs,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "u" = (
@@ -121,7 +141,8 @@
 "x" = (
 /obj/structure/window/reinforced/tinted,
 /obj/structure/table/reinforced,
-/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "y" = (
@@ -131,15 +152,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "z" = (
-/obj/structure/closet/crate/internals,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/suit/space/eva,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/mask/breath,
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "A" = (
@@ -230,6 +243,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "T" = (
+/obj/effect/spawner/lootdrop/whiteship_cere_ripley,
 /turf/open/floor/iron/recharge_floor,
 /area/shuttle/tarkoff_driver)
 "U" = (
@@ -242,9 +256,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "X" = (
-/obj/item/tank/internals/emergency_oxygen,
-/obj/item/tank/internals/emergency_oxygen,
-/obj/item/tank/internals/emergency_oxygen,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "Y" = (
@@ -299,8 +311,8 @@ F
 F
 F
 r
-z
-z
+m
+m
 z
 h
 F
@@ -395,7 +407,7 @@ F
 F
 F
 F
-G
+F
 C
 r
 "}
@@ -425,7 +437,7 @@ F
 F
 F
 r
-F
+p
 n
 X
 J

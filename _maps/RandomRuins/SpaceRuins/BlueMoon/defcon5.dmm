@@ -130,6 +130,9 @@
 /obj/item/folder/red,
 /obj/effect/turf_decal/tile/red/half,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/card/id/away/tarkoff,
+/obj/item/card/id/away/tarkoff,
+/obj/item/card/id/away/tarkoff,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "aX" = (
@@ -2049,9 +2052,11 @@
 /area/ruin/space/has_grav/port_tarkon/comms)
 "kX" = (
 /obj/structure/safe/floor,
-/obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/bed/matress,
+/obj/item/clothing/suit/space/hardsuit/security/hos,
+/obj/item/storage/backpack/duffelbag/syndie/ammo/shotgun,
+/obj/item/gun/ballistic/automatic/shotgun/bulldog/unrestricted,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "ld" = (
@@ -2189,9 +2194,7 @@
 /obj/effect/turf_decal/stripes{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 8
-	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
@@ -2276,6 +2279,7 @@
 /obj/machinery/light/dim/directional/south,
 /obj/effect/turf_decal/tile/brown/anticorner,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "mi" = (
@@ -2331,6 +2335,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "mH" = (
@@ -6304,6 +6309,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/whiteship_cere_ripley,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "Jp" = (
@@ -6453,9 +6459,7 @@
 /area/ruin/space/has_grav/port_tarkon/comms)
 "JY" = (
 /obj/structure/window/reinforced/tinted,
-/obj/structure/closet/secure_closet/medical2{
-	req_access = list("medical")
-	},
+/obj/structure/closet/secure_closet/medical2,
 /obj/effect/turf_decal/tile/blue/half{
 	dir = 4
 	},
@@ -6576,6 +6580,7 @@
 	},
 /obj/item/defibrillator,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/neck/stethoscope,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/trauma)
 "KL" = (
@@ -6926,11 +6931,16 @@
 	width = 14;
 	id = "port_tarkoff"
 	},
-/turf/open/floor/plating/asteroid/airless,
-/area/ruin/space/has_grav)
+/turf/open/space/basic,
+/area/template_noop)
 "MO" = (
 /obj/structure/safe/floor,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/banner/engineering/mundane,
+/obj/item/storage/lockbox/medal/engineering,
+/obj/item/gun/ballistic/automatic/ak47/homemade,
+/obj/item/ammo_box/magazine/ak47,
+/obj/item/ammo_box/magazine/ak47,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "MS" = (
@@ -7073,6 +7083,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/whiteship_cere_ripley,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "NG" = (
@@ -8058,6 +8069,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/crowbar,
+/obj/structure/rack,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "Te" = (
@@ -8927,9 +8939,6 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/afthall)
-"XZ" = (
-/turf/closed/wall/r_wall/rust,
-/area/ruin/space/has_grav)
 "Yb" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	piping_layer = 1
@@ -13838,7 +13847,7 @@ sv
 sv
 Wa
 Wa
-XZ
+sv
 Wa
 bH
 Lp
@@ -13911,8 +13920,8 @@ sv
 Wa
 Wa
 Wa
-XZ
-Wa
+sv
+sv
 bH
 lZ
 kh
@@ -13985,7 +13994,7 @@ sv
 sv
 Wa
 Wa
-XZ
+sv
 bH
 KG
 bH
@@ -14057,18 +14066,18 @@ Wa
 Wa
 Wa
 zo
-zo
-zo
-zo
-zo
-zo
-zo
+WY
+WY
+WY
+WY
+WY
+WY
 MN
-zo
-zo
-zo
-zo
-zo
+WY
+WY
+WY
+WY
+WY
 zo
 zo
 Wa
@@ -14130,18 +14139,18 @@ sv
 Wa
 zo
 zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+WY
+WY
+WY
+WY
+WY
+WY
+WY
+WY
+WY
+WY
+WY
+WY
 zo
 zo
 zo

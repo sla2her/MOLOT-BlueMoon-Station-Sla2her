@@ -925,9 +925,9 @@
 	death = FALSE
 	random = TRUE
 	mob_species = /datum/species/human
-	short_desc = "You are an abandoned member of Port tarkoff, an attempt to create steady living vaults within large asteroids. You have no real idea who Interdyne is, And your last recollection of NT is the producer of some... Less than ethically obtained goods on the port."
-	flavour_text = "Something went wrong. Morality of experiments went awry, expansions were made before scans were fully done and now you have to deal with the aftermath of your past crews exodus. Bring P-T to the success it was ment to be, or die trying. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port tarkoff. The closet in the middle of the room above contains the 'accommodations' for those species.)"
-	important_info = "DO NOT abandon the port, PERIOD, but using the ship to buy more items or get help is good, if not ideal. Do not trade special equipment to the station. Unwelcomed and uninvited guests are not obligated to your kindness."
+	short_desc = "Вы - брошенный таинственными работодателями сотрудник Порта 'Тарков', пытающийся создать устойчивые жилые условия внутри крупных астероидов. По какой-то причине вы понятия не имеете, что такое Синдикат и ваше последнее воспоминание о Nanotrasen - это гадкая Корпорация, предавшая вас тем или иным образом."
+	flavour_text = "Что-то пошло не так. Эксперименты пошли наперекосяк, расширения были сделаны до того, как проверки были полностью завершены. Теперь вы должны разобраться с последствия исхода прошлого экипажа. Приведите порт 'Тарков' к успеху, который планировался, либо умрите - стараясь."
+	important_info = "Не конфликтуйте без особой на то причины, используйте свой корабль для покупки дополнительных предметов или получения помощи. Не обменивайте своё специальное, бесценное оборудование. Непрошеные и незваные гости могут оказаться сотрудником вашей станции."
 	outfit = /datum/outfit/tarkoff
 	assignedrole = "Ancient Crew"
 	job_description = "Oldstation Crew"
