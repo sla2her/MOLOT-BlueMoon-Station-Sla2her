@@ -477,14 +477,16 @@
 	item_state = "wiz_helm"
 	hardsuit_type = "wiz"
 	resistance_flags = FIRE_PROOF | ACID_PROOF //No longer shall our kind be foiled by lone chemists with spray bottles!
-	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 20, BOMB = 35, BIO = 100, RAD = 50, FIRE = 100, ACID = 100, WOUND = 30)
+	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 35, BIO = 100, RAD = 50, FIRE = 100, ACID = 100, WOUND = 30)
 	heat_protection = HEAD												//Uncomment to enable firesuit protection
+	slowndown = -2
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	var/magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR
+	var/magic_flags = SPELL_WIZARD_HAT|SPELL_CULT_HELMET
 
 /obj/item/clothing/head/helmet/space/hardsuit/wizard/ComponentInitialize()
 	. = ..()
-	AddElement(/datum/element/spellcasting, magic_flags, ITEM_SLOT_HEAD)
+	if(magic_flags)
+		AddElement(/datum/element/spellcasting, magic_flags, ITEM_SLOT_HEAD)
 
 /obj/item/clothing/suit/space/hardsuit/wizard
 	icon_state = "hardsuit-wiz"
@@ -493,18 +495,18 @@
 	item_state = "wiz_hardsuit"
 	w_class = WEIGHT_CLASS_NORMAL
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 20, BOMB = 35, BIO = 100, RAD = 50, FIRE = 100, ACID = 100, WOUND = 30)
+	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 35, BIO = 100, RAD = 50, FIRE = 100, ACID = 100, WOUND = 30)
 	allowed = list(/obj/item/teleportation_scroll, /obj/item/tank/internals)
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS					//Uncomment to enable firesuit protection
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/wizard
 	mutantrace_variation = STYLE_DIGITIGRADE
-	var/magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR|SPELL_WIZARD_HAT|SPELL_CULT_HELMET
+	var/magic_flags = SPELL_WIZARD_ROBE|SPELL_CULT_ARMOR
 
 /obj/item/clothing/suit/space/hardsuit/wizard/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/anti_magic, TRUE, FALSE, FALSE, ITEM_SLOT_OCLOTHING, INFINITY, FALSE)
-	AddElement(/datum/element/spellcasting, magic_flags, ITEM_SLOT_OCLOTHING)
+	if(magic_flags)
+		AddElement(/datum/element/spellcasting, magic_flags, ITEM_SLOT_OCLOTHING)
 
 	//Medical hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/medical

@@ -4,8 +4,8 @@
 	department_head = list("Head of Security", "Head of Personel")
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 3 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	spawn_positions = 3 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the head of security, warden, and security officers"
 	selection_color = "#c02f2f"
 	minimal_player_age = 3
