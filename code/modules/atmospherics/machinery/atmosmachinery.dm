@@ -273,7 +273,7 @@
 		pipe_color = obj_color
 	setPipingLayer(set_layer)
 	var/turf/T = get_turf(src)
-	level = T.intact ? 2 : 1
+	level = T.intact ? 1 : 2
 	atmosinit()
 	var/list/nodes = pipeline_expansion()
 	for(var/obj/machinery/atmospherics/A in nodes)

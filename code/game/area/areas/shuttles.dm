@@ -235,5 +235,5 @@
 /area/shuttle/snowtaxi
 	name = "Snow Taxi"
 
-/area/shuttle/tarkon_driver
+/area/shuttle/tarkoff_driver
 	name = "Tarkoff Driver"

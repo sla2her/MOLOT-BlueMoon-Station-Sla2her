@@ -3,13 +3,13 @@
 /obj/structure/table/reinforced,
 /obj/item/flashlight/lamp,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "b" = (
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "d" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
@@ -17,11 +17,11 @@
 	name = "Blast Shield Control"
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "e" = (
 /obj/machinery/computer/camera_advanced/shuttle_docker/tarkon_driver,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "g" = (
 /obj/structure/bed/pod{
 	dir = 1
@@ -30,7 +30,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "h" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -42,15 +42,15 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "i" = (
 /obj/machinery/computer/shuttle/tarkon_driver,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "j" = (
 /obj/machinery/door/airlock/titanium/glass,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "k" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -59,38 +59,40 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "l" = (
 /obj/structure/table/reinforced,
 /obj/item/crowbar/red,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "n" = (
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "o" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/armory_contraband,
 /obj/effect/spawner/lootdrop/armory_contraband,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "q" = (
 /obj/machinery/door/airlock/titanium,
+/obj/structure/fans/tiny/invisible,
 /obj/docking_port/mobile{
-	name = "Tarkon Driver";
+	name = "Tarkoff Driver";
 	port_direction = 2;
 	preferred_direction = 8;
-	id = "port_tarkoff"
+	id = "tarkoff_driver";
+	height = 16;
+	width = 12
 	},
-/obj/structure/fans/tiny/invisible,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "r" = (
 /turf/closed/wall/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "s" = (
 /turf/template_noop,
 /area/template_noop)
@@ -99,35 +101,35 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/gas,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "u" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "v" = (
 /obj/machinery/light/dim/directional/east,
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/mre,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "w" = (
 /obj/structure/shuttle/engine/heater,
 /turf/closed/wall/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "x" = (
 /obj/structure/window/reinforced/tinted,
 /obj/structure/table/reinforced,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "y" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 2
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "z" = (
 /obj/structure/closet/crate/internals,
 /obj/item/clothing/head/helmet/space/eva,
@@ -139,23 +141,23 @@
 /obj/item/clothing/head/helmet/space/eva,
 /obj/item/clothing/mask/breath,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "A" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 1
 	},
 /turf/closed/wall/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "B" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "C" = (
 /obj/structure/table/reinforced,
 /obj/item/pickaxe/drill,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "D" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -164,27 +166,27 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "F" = (
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "G" = (
 /obj/machinery/door/window/brigdoor/eastright,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "H" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "I" = (
 /obj/machinery/door/poddoor{
 	id = "driverwindows"
 	},
 /obj/effect/spawner/structure/window/shuttle,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "J" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -192,66 +194,66 @@
 /obj/structure/bed/pod,
 /obj/item/bedsheet,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "L" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "M" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "N" = (
 /obj/structure/window/reinforced/tinted,
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/mre,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "O" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/healing_kits,
 /obj/effect/spawner/lootdrop/healing_kits,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "Q" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "R" = (
 /obj/machinery/door/window/brigdoor/westleft,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "S" = (
 /obj/machinery/door/airlock/titanium,
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "T" = (
 /turf/open/floor/iron/recharge_floor,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "U" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "W" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/emergency,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "X" = (
 /obj/item/tank/internals/emergency_oxygen,
 /obj/item/tank/internals/emergency_oxygen,
 /obj/item/tank/internals/emergency_oxygen,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 "Y" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/cig_packs,
 /obj/effect/spawner/lootdrop/three_course_meal,
 /obj/effect/spawner/lootdrop/three_course_meal,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/tarkon_driver)
+/area/shuttle/tarkoff_driver)
 
 (1,1,1) = {"
 b
