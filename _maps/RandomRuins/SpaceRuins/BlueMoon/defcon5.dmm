@@ -348,6 +348,7 @@
 /obj/machinery/jukebox{
 	req_one_access = null
 	},
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "cq" = (
@@ -879,6 +880,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/under/rank/cargo/util,
 /obj/item/clothing/under/rank/cargo/util,
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "ft" = (
@@ -1054,6 +1056,7 @@
 	name = "Engineering External Access";
 	req_access_txt = "200"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "go" = (
@@ -2475,6 +2478,10 @@
 "nx" = (
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
+"ny" = (
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/floor/iron/freezer,
+/area/ruin/space/has_grav/port_tarkon/kitchen)
 "nz" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
 	level = 1
@@ -2912,7 +2919,7 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "pT" = (
 /obj/structure/chair/office,
@@ -3109,7 +3116,7 @@
 /obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/biogenerator,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "rh" = (
 /turf/closed/wall,
@@ -3272,6 +3279,11 @@
 	},
 /turf/open/floor/engine/o2,
 /area/ruin/space/has_grav/port_tarkon/atmos)
+"rQ" = (
+/obj/machinery/door/firedoor/solid,
+/obj/effect/spawner/structure/window/reinforced/no_firelock,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/port_tarkon/toolstorage)
 "rV" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/tile/yellow/half{
@@ -3587,6 +3599,12 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/ruin/space/has_grav/port_tarkon/dorms)
+"uc" = (
+/obj/structure/fluff/empty_sleeper,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "ud" = (
 /obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/tile/brown/half{
@@ -4096,7 +4114,7 @@
 /obj/effect/decal/cleanable/confetti,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "wY" = (
 /obj/effect/turf_decal/tile/blue{
@@ -4398,6 +4416,11 @@
 /obj/machinery/door/firedoor/solid,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/toolstorage)
+"yZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "zb" = (
 /obj/structure/fence/door/opened{
 	dir = 4
@@ -4778,11 +4801,15 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/afthall)
+"BA" = (
+/obj/effect/spawner/structure/window/reinforced/no_firelock,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/port_tarkon)
 "BC" = (
 /obj/machinery/hydroponics/soil,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/broken_bottle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "BF" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
@@ -5342,7 +5369,7 @@
 /obj/machinery/hydroponics/soil,
 /obj/item/broken_bottle,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "Eq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -5794,7 +5821,7 @@
 /obj/machinery/light_switch/directional/south,
 /obj/effect/decal/cleanable/confetti,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "GT" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
@@ -5894,7 +5921,7 @@
 /obj/machinery/hydroponics/soil,
 /obj/effect/decal/cleanable/confetti,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "Hn" = (
 /obj/effect/turf_decal/tile/neutral/half{
@@ -6226,6 +6253,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/has_grav/port_tarkon/kitchen)
+"IV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "IW" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4;
@@ -8344,7 +8376,7 @@
 /obj/machinery/hydroponics/soil,
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "Uw" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8433,6 +8465,7 @@
 /obj/item/storage/backpack/satchel/blueshield,
 /obj/item/clothing/under/rank/captain/util,
 /obj/item/clothing/under/rank/captain/util,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "Vl" = (
@@ -8928,7 +8961,7 @@
 "XT" = (
 /obj/machinery/hydroponics/soil,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "XV" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
@@ -9017,7 +9050,7 @@
 /obj/machinery/light/small/directional/east,
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "Yy" = (
 /obj/structure/table,
@@ -9109,6 +9142,7 @@
 /obj/item/storage/backpack/satchel,
 /obj/item/clothing/under/rank/civilian/util/greyshirt,
 /obj/item/clothing/under/rank/civilian/util/greyshirt,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "YW" = (
@@ -11570,11 +11604,11 @@ Xy
 TV
 yF
 yY
-yY
+rQ
 Zn
 oC
 yj
-uv
+BA
 uv
 uv
 uv
@@ -11646,8 +11680,8 @@ Rr
 VH
 jz
 PZ
-uv
-uv
+BA
+BA
 hm
 Vk
 uv
@@ -11719,7 +11753,7 @@ yY
 bV
 dX
 Qp
-uv
+BA
 lS
 oV
 Vj
@@ -11870,7 +11904,7 @@ lC
 ux
 pv
 uv
-RL
+uc
 Vj
 Vj
 oV
@@ -12016,7 +12050,7 @@ oV
 sm
 lT
 uv
-Vj
+IV
 Xc
 Vj
 WJ
@@ -12157,7 +12191,7 @@ Ki
 mH
 kb
 MB
-uv
+BA
 rk
 Vj
 Lg
@@ -12230,12 +12264,12 @@ Ki
 TH
 LG
 sn
-uv
-uv
+BA
+BA
 To
 YU
 uv
-Vj
+yZ
 et
 ly
 ly
@@ -12304,7 +12338,7 @@ Fb
 GW
 kc
 MB
-uv
+BA
 uv
 uv
 uv
@@ -12974,7 +13008,7 @@ wX
 XT
 Yv
 hj
-uR
+ny
 uR
 hV
 hj
