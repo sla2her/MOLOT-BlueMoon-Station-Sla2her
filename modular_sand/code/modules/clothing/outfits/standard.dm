@@ -26,6 +26,19 @@
 	desc = "A specialised hardsuit for Bluespace agents."
 	armor = list("melee" = 98, "bullet" = 98, "laser" = 98, "energy" = 98, "bomb" = 98, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100) // Skyrat edit
 
+/obj/item/storage/backpack/holding/duffel/debug
+	name = "Special Duffel Bag of Holding"
+	desc = "A special duffel bag that opens into a localized pocket of Blue Space."
+	icon_state = "holdingduffel"
+	item_state = "holdingduffel"
+
+/obj/item/storage/backpack/holding/duffel/debug/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_w_class = MAX_WEIGHT_CLASS_BAG_OF_HOLDING
+	STR.storage_flags = STORAGE_FLAGS_VOLUME_DEFAULT
+	STR.max_volume = STORAGE_VOLUME_BAG_OF_HOLDING_DEBUG
+
 /obj/item/clothing/shoes/combat/debug
 	clothing_flags = NOSLIP
 
@@ -43,7 +56,7 @@
 	belt = /obj/item/storage/belt/military/abductor/full/debug
 	shoes = /obj/item/clothing/shoes/combat/debug
 	id = /obj/item/card/id/debug/bst
-	back = /obj/item/storage/backpack/holding
+	back = /obj/item/storage/backpack/holding/duffel/debug
 	box = /obj/item/storage/box/debugtools
 	suit_store = /obj/item/gun/energy/pulse
 	backpack_contents = list(
@@ -72,7 +85,7 @@
 	belt = /obj/item/storage/belt/military/abductor/full/debug
 	shoes = /obj/item/clothing/shoes/combat/debug
 	id = /obj/item/card/id/debug/bst
-	back = /obj/item/storage/backpack/holding
+	back = /obj/item/storage/backpack/holding/duffel/debug
 	box = /obj/item/storage/box/debugtools
 	suit_store = /obj/item/tank/internals/oxygen
 	internals_slot = ITEM_SLOT_SUITSTORE

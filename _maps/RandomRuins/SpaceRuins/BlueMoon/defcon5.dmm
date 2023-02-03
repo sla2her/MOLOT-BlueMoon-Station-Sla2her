@@ -42,6 +42,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
+"aj" = (
+/obj/machinery/igniter{
+	id = "tarkoff_Incinerator"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/air_sensor/atmos/incinerator_tank{
+	pixel_x = -32;
+	pixel_y = -32
+	},
+/turf/open/floor/engine/vacuum,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "ak" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
@@ -209,21 +222,10 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "bn" = (
-/obj/effect/turf_decal/stripes{
-	dir = 1
-	},
-/obj/machinery/button/door/incinerator_vent_atmos_aux{
-	pixel_x = -8;
-	pixel_y = -24;
-	req_one_access = list("tarkon")
-	},
-/obj/machinery/button/door/incinerator_vent_atmos_main{
-	pixel_x = -8;
-	pixel_y = -36;
-	req_one_access = list("tarkon")
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark,
+/obj/effect/decal/cleanable/confetti,
+/obj/item/broken_bottle,
+/turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "bq" = (
 /obj/effect/decal/cleanable/vomit/old,
@@ -811,10 +813,13 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/mining)
 "eQ" = (
-/obj/effect/turf_decal/stripes{
-	dir = 4
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
-/turf/closed/wall/r_wall,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/confetti,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "eY" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -896,6 +901,12 @@
 /obj/structure/closet/crate/radiation,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon/atmos)
+"fz" = (
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	level = 2
+	},
+/turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "fB" = (
 /obj/effect/spawner/structure/window/reinforced/no_firelock,
@@ -1324,6 +1335,13 @@
 /obj/machinery/vending/wardrobe/medi_wardrobe,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/trauma)
+"hG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "hH" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
 	visible_pipes = 1;
@@ -1865,6 +1883,7 @@
 "kd" = (
 /obj/item/wrench,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "kf" = (
@@ -2197,9 +2216,11 @@
 /obj/effect/turf_decal/stripes{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "lK" = (
@@ -2452,6 +2473,11 @@
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "nm" = (
 /obj/machinery/atmospherics/miner/nitrogen,
+/obj/machinery/button/ignition{
+	id = "Incinerator";
+	pixel_x = -6;
+	pixel_y = -24
+	},
 /turf/open/floor/engine/n2,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "no" = (
@@ -3307,17 +3333,9 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "sc" = (
-/obj/machinery/igniter{
-	id = "Incinerator"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/air_sensor/atmos/incinerator_tank{
-	pixel_x = -32;
-	pixel_y = -32
-	},
-/turf/open/floor/engine/vacuum,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "sd" = (
 /obj/effect/turf_decal/tile/brown{
@@ -4023,16 +4041,9 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/trauma)
 "wh" = (
-/obj/effect/turf_decal/stripes{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/machinery/computer/turbine_computer{
-	dir = 1;
-	id = "incineratorturbine"
-	},
-/turf/open/floor/engine,
+/obj/effect/decal/cleanable/confetti,
+/turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "wm" = (
 /obj/machinery/light/dim/directional/east,
@@ -4649,6 +4660,9 @@
 	},
 /obj/effect/decal/cleanable/confetti,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "AC" = (
@@ -5411,21 +5425,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "Ex" = (
-/obj/machinery/power/compressor{
-	comp_id = "incineratorturbine";
-	dir = 1;
-	luminosity = 2
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/portable_atmospherics/canister/oxygen{
+	anchored = 1
 	},
-/obj/structure/cable/yellow,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/machinery/camera{
-	c_tag = "Turbine Chamber";
-	dir = 4;
-	network = list("turbine")
-	},
-/turf/open/floor/engine/vacuum,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Ez" = (
 /obj/structure/chair/wood{
@@ -5530,6 +5535,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Fk" = (
@@ -5587,8 +5595,15 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/mining)
 "Fr" = (
-/obj/machinery/atmospherics/pipe/layer_manifold,
-/turf/closed/wall/r_wall,
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/confetti,
+/turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Fs" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
@@ -7124,6 +7139,9 @@
 	},
 /obj/item/broken_bottle,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "NH" = (
@@ -7518,6 +7536,23 @@
 /obj/item/clothing/suit/armor/vest/alt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
+"PV" = (
+/obj/structure/cable/yellow,
+/obj/machinery/camera{
+	c_tag = "Turbine Chamber";
+	dir = 4;
+	network = list("turbine")
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/compressor{
+	comp_id = "incineratorturbine";
+	dir = 1;
+	luminosity = 2
+	},
+/turf/open/floor/engine/vacuum,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "PZ" = (
 /obj/effect/turf_decal/tile/neutral/half,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8390,6 +8425,26 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/starboardhall)
+"Uy" = (
+/obj/machinery/button/door/incinerator_vent_atmos_main{
+	pixel_x = -8;
+	pixel_y = -36;
+	req_one_access = null
+	},
+/obj/machinery/button/ignition{
+	id = "tarkoff_Incinerator";
+	pixel_y = -36;
+	pixel_x = 6
+	},
+/obj/machinery/button/door/incinerator_vent_atmos_aux{
+	pixel_x = -8;
+	pixel_y = -24;
+	req_one_access = null
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/confetti,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "Uz" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -8434,6 +8489,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/porthall)
+"Vb" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "Vc" = (
 /obj/machinery/door/airlock/research,
 /obj/machinery/door/firedoor/solid,
@@ -8495,6 +8557,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/mining)
+"Vq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/broken_bottle,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "Vu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1;
@@ -9128,6 +9195,19 @@
 /obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/storage)
+"YM" = (
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/machinery/computer/turbine_computer{
+	dir = 1;
+	id = "incineratorturbine"
+	},
+/obj/effect/decal/cleanable/confetti,
+/turf/open/floor/engine,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "YT" = (
 /turf/closed/wall,
 /area/ruin/space/has_grav/port_tarkon/cargo)
@@ -10168,13 +10248,13 @@ oI
 AF
 lH
 sv
+sv
+sv
 jO
 zo
 zo
 zo
 zo
-sv
-sv
 sv
 sv
 sv
@@ -10241,14 +10321,14 @@ Bj
 Bj
 lH
 xt
+xt
+xt
 GE
 xt
 xt
 xt
 Rm
 Rm
-sv
-Wa
 sv
 sv
 Wa
@@ -10313,7 +10393,9 @@ qk
 kr
 hM
 iw
-Fr
+Zq
+Zq
+fz
 Gp
 nc
 MU
@@ -10321,8 +10403,6 @@ xt
 xt
 cd
 Rm
-sv
-Wa
 sv
 sv
 Wa
@@ -10386,16 +10466,16 @@ zV
 VG
 aH
 AA
+Vb
+eQ
 gs
 wW
 Ld
-sc
-Ex
+aj
+PV
 xB
 eZ
 Rm
-Wa
-sv
 Wa
 sv
 Wa
@@ -10458,7 +10538,9 @@ VG
 VG
 SM
 VG
-bn
+Fh
+Zq
+Uy
 nc
 Fs
 nc
@@ -10467,8 +10549,6 @@ xt
 xt
 cd
 Rm
-sv
-Wa
 sv
 sv
 Wa
@@ -10532,6 +10612,8 @@ VG
 VG
 kd
 lI
+Zq
+Ex
 KM
 UI
 xt
@@ -10540,8 +10622,6 @@ xt
 FT
 Rm
 zo
-zo
-Wa
 sv
 Wa
 Wa
@@ -10604,8 +10684,10 @@ VG
 SM
 VG
 VG
-Fh
+Fr
 Zq
+Zq
+bn
 hP
 QW
 Rm
@@ -10613,8 +10695,6 @@ sv
 sv
 zo
 Wa
-Vi
-sv
 sv
 Wa
 zo
@@ -10678,16 +10758,16 @@ VG
 SM
 VG
 Fh
-Zq
 wh
+wh
+sc
+YM
 xt
 sv
 sv
 sv
 zo
 Vi
-zo
-nx
 Wa
 Wa
 zo
@@ -10751,16 +10831,16 @@ VG
 VG
 SM
 NG
+hG
+Vq
 zT
 Ti
-eQ
+xt
 sv
 sv
 sv
 zo
 Vi
-zo
-zo
 zo
 tt
 zo
@@ -10827,8 +10907,8 @@ jG
 aZ
 aZ
 xt
-sv
-sv
+xt
+xt
 sv
 zo
 sv
