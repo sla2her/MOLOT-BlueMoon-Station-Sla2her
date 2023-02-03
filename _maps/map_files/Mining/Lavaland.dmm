@@ -1087,6 +1087,7 @@
 "fZ" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/carpet/purple,
 /area/mine/living_quarters)
 "ga" = (
@@ -4305,6 +4306,7 @@
 "uY" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/carpet/red,
 /area/mine/living_quarters)
 "va" = (
@@ -7203,8 +7205,16 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "Md" = (
+/obj/item/storage/firstaid/toxin{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/fire{
+	pixel_x = -3;
+	pixel_y = -3
+	},
 /obj/structure/table,
-/obj/item/storage/firstaid/fire,
 /turf/open/floor/plasteel/white,
 /area/mine/laborcamp)
 "Mg" = (
@@ -7764,6 +7774,7 @@
 /area/mine/laborcamp)
 "Pw" = (
 /obj/structure/table,
+/obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/carpet/blue,
 /area/mine/living_quarters)
@@ -8560,6 +8571,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/lootdrop/glowstick,
 /turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "TN" = (
@@ -9452,7 +9465,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/plasteel/dark/telecomms{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/mine/living_quarters)
 "YF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
