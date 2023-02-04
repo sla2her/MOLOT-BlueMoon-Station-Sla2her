@@ -1,0 +1,6 @@
+author: FeenieRU
+delete-after: true
+changes:
+  - rscadd: Эквип HSC
+  - rscadd: Присутствие HSC в секторе
+  - imageadd: Всё необходимое для шмоток HSC
