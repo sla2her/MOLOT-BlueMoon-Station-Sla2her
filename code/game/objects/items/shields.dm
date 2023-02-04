@@ -33,7 +33,7 @@
 	block_start_delay = 1.5
 	block_damage_absorption = 5
 	block_resting_stamina_penalty_multiplier = 2
-	block_projectile_mitigation = 75
+	block_projectile_mitigation = 20
 	block_damage_absorption_override = list(
 		TEXT_ATTACK_TYPE_TACKLE = INFINITY,
 		TEXT_ATTACK_TYPE_THROWN = 10

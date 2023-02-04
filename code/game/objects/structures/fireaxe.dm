@@ -13,6 +13,18 @@
 	var/open = FALSE
 	var/obj/item/fireaxe/fireaxe
 
+/obj/machinery/airalarm/directional/north //Pixel offsets get overwritten on New()
+	pixel_y = 28
+
+/obj/machinery/airalarm/directional/south
+	pixel_y = -28
+
+/obj/machinery/airalarm/directional/east
+	pixel_x = 28
+
+/obj/machinery/airalarm/directional/west
+	pixel_x = -28
+
 /obj/structure/fireaxecabinet/Initialize(mapload)
 	. = ..()
 	fireaxe = new

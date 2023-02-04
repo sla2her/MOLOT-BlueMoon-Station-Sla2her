@@ -10,3 +10,9 @@
 	id = "tarkoff-base-5"
 	description = ""
 	suffix = "defcon5.dmm"
+
+/datum/map_template/ruin/space/tarkoff/defcon4
+	name = "Port Tarkoff"
+	id = "tarkoff-base-4"
+	description = ""
+	suffix = "defcon4.dmm"

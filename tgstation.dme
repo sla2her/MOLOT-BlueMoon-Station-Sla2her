@@ -3892,6 +3892,7 @@
 #include "modular_bluemoon\SmiLeY\code\game\objects\structures\signs\signs_flags.dm"
 #include "modular_bluemoon\SmiLeY\mapping\code\tarkon_atmos_control.dm"
 #include "modular_bluemoon\SmiLeY\mapping\code\items\papers.dm"
+#include "modular_bluemoon\SmiLeY\code\mob\carps.dm"
 #include "modular_bluemoon\vagabond\code\modules\mob\dead\new_player\sprite_accessories\tails.dm"
 #include "modular_citadel\code\datums\components\souldeath.dm"
 #include "modular_citadel\code\datums\status_effects\chems.dm"

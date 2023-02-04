@@ -300,10 +300,11 @@
 /obj/item/projectile/magic/spellblade
 	name = "blade energy"
 	icon_state = "lavastaff"
-	damage = 15
+	damage = 20
 	damage_type = BURN
 	flag = MAGIC
-	dismemberment = 50
+	dismemberment = 10
+	armour_penetration = 30
 	nodamage = 0
 
 /obj/item/projectile/magic/spellblade/on_hit(target)
@@ -318,10 +319,10 @@
 /obj/item/projectile/magic/arcane_barrage
 	name = "arcane bolt"
 	icon_state = "arcane_barrage"
-	damage = 20
+	damage = 30
 	damage_type = BURN
 	nodamage = 0
-	armour_penetration = 0
+	armour_penetration = 30
 	flag = MAGIC
 	hitsound = 'sound/weapons/barragespellhit.ogg'
 

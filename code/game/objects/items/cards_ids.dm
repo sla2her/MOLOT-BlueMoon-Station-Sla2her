@@ -767,26 +767,27 @@
 /obj/item/card/id/away/old/tarkoff
 	name = "Tarkof Visitor's Pass"
 	desc = "A dust-collected visitors pass, A small tagline reading \"Port Tarkof, The first step to Civilian Partnership in Space Homesteading\"."
-	access = list(ACCESS_AWAY_GENERAL)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_TARKOFF)
 
 /obj/item/card/id/away/old/tarkoff/cargo
 	assignment = "P-T Cargo Personell"
 	desc = "An access card designated for \"cargo's finest\". You're also a part time space miner, when cargonia is quiet."
-	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_TARKOFF)
 
 /obj/item/card/id/away/old/tarkoff/sec
 	assignment = "P-T Port Guard"
 	desc = "An access card designated for \"security members\". Everyone wants your guns, partner. Yee-haw."
-	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_SEC_DOORS, ACCESS_TARKOFF)
 
 /obj/item/card/id/away/old/tarkoff/med
 	assignment = "P-T Trauma Medic"
 	desc = "An access card designated for \"medical staff\". You provide the medic bags."
-	access = list(ACCESS_MEDICAL, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+	access = list(ACCESS_MEDICAL, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_SURGERY)
 
 /obj/item/card/id/away/old/tarkoff/eng
 	assignment = "P-T Maintenance Crew"
 	desc = "An access card designated for \"engineering staff\". You're going to be the one everyone points at to fix stuff, lets be honest."
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
 
 /obj/item/card/id/away/old/tarkoff/sci
 	assignment = "P-T Field Researcher"
@@ -796,7 +797,7 @@
 /obj/item/card/id/away/old/tarkoff/ensign
 	assignment = "Tarkof Ensign"
 	desc = "An access card designated for \"tarkoff ensign\". No one has to listen to you... But you're the closest there is for command around here."
-	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS)
+	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
 
 /obj/item/card/id/departmental_budget
 	name = "departmental card (FUCK)"
