@@ -96,7 +96,7 @@
 			SEND_SOUND(user, 'sound/machines/buzz-sigh.ogg')
 			return
 		user.nextsoundemote = world.time + 30 SECONDS
-	playsound(user, 'sound/voice/cloaker1.ogg', 50, 1, -1)
+	playsound(user, 'sound/voice/cloaker1.ogg', 25, 1, -1)
 	. = ..()
 
 /datum/emote/living/cloaker2

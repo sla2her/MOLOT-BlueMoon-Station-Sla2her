@@ -42,6 +42,18 @@
 	var/wire_override = FALSE
 	var/button_wire_cut = FALSE
 
+/obj/machinery/firealarm/directional/north //Pixel offsets get overwritten on New()
+	pixel_y = 28
+
+/obj/machinery/firealarm/directional/south
+	pixel_y = -28
+
+/obj/machinery/firealarm/directional/east
+	pixel_x = 28
+
+/obj/machinery/firealarm/directional/west
+	pixel_x = -28
+
 /obj/machinery/firealarm/Initialize(mapload, dir, building)
 	. = ..()
 	if(dir)
@@ -119,6 +131,10 @@
 		. += "fire_detected"
 		. += mutable_appearance(icon, "fire_detected")
 		. += emissive_appearance(icon, "fire_detected") //Pain
+
+/obj/machinery/firealarm/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>Текущий уровень угрозы: <b><u>[capitalize(get_security_level())]</u></b>.</span>"
 
 /obj/machinery/firealarm/emp_act(severity)
 	. = ..()

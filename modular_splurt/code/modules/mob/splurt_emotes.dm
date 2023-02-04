@@ -782,8 +782,10 @@
 	if(!.)
 		return
 	if(user.nextsoundemote >= world.time)
+		to_chat(user, span_warning("Рано! Очень рано!!"))
+		SEND_SOUND(user, 'sound/machines/buzz-sigh.ogg')
 		return
-	user.nextsoundemote = world.time + 10
+	user.nextsoundemote = world.time + 25
 	playsound(user, pick('modular_splurt/sound/voice/aauugghh1.ogg', 'modular_splurt/sound/voice/aauugghh2.ogg'), 40, 1, -1)
 
 /datum/emote/living/pant

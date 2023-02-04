@@ -50,7 +50,9 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 
 	flags_1 = CONDUCT_1
+	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BELT
+	item_flags = SURGICAL_TOOL
 	force = 8
 
 	var/max_uses = 20

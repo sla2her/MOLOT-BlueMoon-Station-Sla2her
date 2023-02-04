@@ -752,7 +752,7 @@
 	light_color = LIGHT_COLOR_RED
 	circuit = /obj/item/circuitboard/computer/tarkon_driver
 	shuttleId = "tarkoff_driver"
-	possible_destinations = "tarkoff_driver_custom;port_tarkoff;whiteship_home;whiteship_lavaland"
+	possible_destinations = "tarkoff_driver_custom;port_tarkoff;whiteship_home"
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/tarkon_driver
 	name = "Tarkoff Driver Navigation Computer"

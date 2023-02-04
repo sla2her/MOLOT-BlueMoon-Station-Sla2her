@@ -63,6 +63,16 @@
 	mask_type = /obj/item/clothing/mask/gas/glass/alt
 	shoes_type = /obj/item/clothing/shoes/magboots
 
+/obj/machinery/suit_storage_unit/engine/ancient
+	suit_type = /obj/item/clothing/suit/space/hardsuit/ancient
+	mask_type = /obj/item/clothing/mask/gas/glass/alt
+	shoes_type = /obj/item/clothing/shoes/magboots
+
+/obj/machinery/suit_storage_unit/engine/ancient/mason
+	suit_type = /obj/item/clothing/suit/space/hardsuit/ancient/mason
+	mask_type = /obj/item/clothing/mask/gas/glass/alt
+	shoes_type = /obj/item/clothing/shoes/magboots
+
 /obj/machinery/suit_storage_unit/atmos
 	suit_type = /obj/item/clothing/suit/space/hardsuit/engine/atmos
 	mask_type = /obj/item/clothing/mask/gas/atmos
