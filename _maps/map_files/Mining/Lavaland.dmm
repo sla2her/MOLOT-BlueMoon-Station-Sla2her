@@ -550,7 +550,6 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced/brass,
-/obj/item/clockwork/construct_chassis,
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
 "df" = (

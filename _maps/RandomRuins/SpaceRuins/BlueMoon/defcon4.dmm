@@ -342,6 +342,7 @@
 /obj/effect/turf_decal/tile/blue/half,
 /obj/item/folder,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper/fluff/ruins/tarkoff/vaulter,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/comms)
 "ct" = (
@@ -808,9 +809,6 @@
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/structure/closet/crate/radiation,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/stack/sheet/mineral/uranium{
-	amount = 20
-	},
 /obj/item/stack/sheet/mineral/uranium{
 	amount = 20
 	},
@@ -1546,18 +1544,13 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "ke" = (
-/obj/machinery/computer{
-	desc = "A computer long since rendered non-functional due to lack of maintenance. Spitting out error messages.";
-	dir = 1;
-	name = "Broken Computer"
+/obj/effect/turf_decal/tile/brown/half{
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/anticorner{
-	dir = 8
-	},
-/obj/item/paper/fluff/ruins/tarkoff/vaulter,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark,
-/area/ruin/space/has_grav/port_tarkon/comms)
+/obj/machinery/mineral/equipment_vendor,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon/mining)
 "kf" = (
 /turf/closed/wall,
 /area/ruin/space/has_grav/port_tarkon/forehall)
@@ -1822,6 +1815,12 @@
 "lA" = (
 /obj/structure/closet/crate/radiation,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/item/stack/sheet/mineral/uranium{
+	amount = 20
+	},
+/obj/item/stack/sheet/mineral/uranium{
+	amount = 20
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "lD" = (
@@ -1958,6 +1957,7 @@
 /obj/structure/closet/crate,
 /obj/item/transfer_valve,
 /obj/item/transfer_valve,
+/obj/item/flashlight/seclite,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "mu" = (
@@ -3283,6 +3283,7 @@
 	},
 /obj/machinery/cell_charger,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/crowbar/large/heavy,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/comms)
 "vp" = (
@@ -4532,6 +4533,7 @@
 	name = "shutter controls"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/flashlight/seclite,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/comms)
 "EN" = (
@@ -4589,6 +4591,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/firealarm/directional/north,
+/obj/item/flashlight/seclite,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "Fl" = (
@@ -4698,6 +4701,7 @@
 /obj/structure/table,
 /obj/effect/turf_decal/tile/blue/half,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper/fluff/ruins/tarkoff/driverpitch,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/comms)
 "FS" = (
@@ -5402,18 +5406,10 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/trauma)
 "Kc" = (
-/obj/machinery/computer{
-	desc = "A computer long since rendered non-functional due to lack of maintenance. Spitting out error messages.";
-	dir = 1;
-	name = "Broken Computer"
-	},
-/obj/effect/turf_decal/tile/blue/anticorner{
-	dir = 8
-	},
-/obj/item/paper/fluff/ruins/tarkoff/driverpitch,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark,
-/area/ruin/space/has_grav/port_tarkon/comms)
+/obj/item/flashlight/seclite,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/observ)
 "Ke" = (
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 8
@@ -6316,12 +6312,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
-"QP" = (
-/obj/machinery/meter,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/port_tarkon/centerhall)
 "QX" = (
 /obj/effect/turf_decal/tile/purple/half{
 	dir = 1
@@ -6596,6 +6586,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/flashlight/seclite,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "Sv" = (
@@ -7107,6 +7098,7 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "VK" = (
@@ -8611,7 +8603,7 @@ EQ
 KS
 yl
 La
-Uw
+Kc
 Uw
 sC
 hH
@@ -10628,7 +10620,7 @@ WD
 WD
 Ie
 gk
-ke
+hL
 YK
 zo
 zo
@@ -10775,7 +10767,7 @@ WD
 WD
 uN
 oS
-Kc
+hL
 YK
 zo
 zo
@@ -10950,7 +10942,7 @@ Wa
 kf
 VO
 KW
-Cp
+VJ
 Lr
 gd
 ga
@@ -11110,7 +11102,7 @@ Ki
 Mz
 jA
 vd
-QP
+cA
 Jq
 Ki
 LS
@@ -12005,7 +11997,7 @@ Vy
 cq
 jo
 TQ
-gS
+ke
 Bo
 Vy
 gS

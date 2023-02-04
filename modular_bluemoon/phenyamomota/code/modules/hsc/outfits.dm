@@ -85,6 +85,7 @@
 	. = ..()
 
 /obj/item/card/id/hsc/update_overlays()
+	. = ..()
 	. += mutable_appearance(icon, "idsec")
 
 /obj/item/card/id/hsc
