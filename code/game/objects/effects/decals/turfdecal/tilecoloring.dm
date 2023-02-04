@@ -2,7 +2,7 @@
 	name = "tile decal"
 	icon_state = "tile_corner"
 	layer = TURF_PLATING_DECAL_LAYER
-	alpha = 200
+	alpha = 100
 
 /// Blue tiles
 

@@ -102,7 +102,7 @@
 		wiggle_wiggle = TRUE
 		if(!do_after(user, 300, target = user))
 			user.visible_message("<span class='warning'>[user] slides back down [src]!</span>")
-			user.emote("pain")
+			user.emote("scream")
 			user.apply_damage(10, BRUTE, BODY_ZONE_CHEST)
 			playsound(user, 'sound/misc/desceration-03.ogg', 50, TRUE)
 			wiggle_wiggle = FALSE

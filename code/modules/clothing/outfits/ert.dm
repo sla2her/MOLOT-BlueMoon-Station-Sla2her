@@ -112,7 +112,7 @@
 	suit = /obj/item/clothing/suit/space/hardsuit/ert/med
 	glasses = /obj/item/clothing/glasses/hud/health
 	back = /obj/item/storage/backpack/satchel/med
-	belt = /obj/item/storage/belt/medical
+	belt = /obj/item/storage/belt/medical/surgery_belt_adv/cmo
 	r_hand = /obj/item/storage/firstaid/regular
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/melee/baton/loaded=1,\

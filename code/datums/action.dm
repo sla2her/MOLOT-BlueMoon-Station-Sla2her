@@ -848,3 +848,20 @@
 		if(istype(A, action_type))
 			return A
 	return
+
+/datum/action/item_action/toggle_cool_music
+	name = "Activate AI-assistant"
+	desc = "Activate a cool AI assistant and have him say all sorts of cool phrases."
+	icon_icon = 'icons/mob/actions/actions_items.dmi'
+	button_icon_state = "activate"
+
+
+/datum/action/item_action/toggle_cool_music/Trigger(mob/owner, params, type_override, intentional)
+	var/hevsound
+	hevsound = world.time + 30 SECONDS
+	if(ishuman(owner))
+		if(hevsound >= world.time)
+			to_chat(owner, span_warning("ИИ-ассистент [owner] ушёл на перезагрузку."))
+			SEND_SOUND(owner, 'sound/machines/buzz-sigh.ogg')
+			return
+	playsound(owner, 'modular_splurt/sound/halflife/hevsuit_firstpickup.ogg', 75, 0, 0)

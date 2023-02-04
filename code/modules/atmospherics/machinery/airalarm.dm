@@ -251,6 +251,7 @@
 			. += "<span class='notice'>It is missing wiring.</span>"
 		if(2)
 			. += "<span class='notice'>Alt-click to [locked ? "unlock" : "lock"] the interface.</span>"
+	. += "<span class='notice'>Текущий уровень угрозы: <b><u>[capitalize(get_security_level())]</u></b>.</span>"
 
 /obj/machinery/airalarm/ui_status(mob/user)
 	if(hasSiliconAccessInArea(user))

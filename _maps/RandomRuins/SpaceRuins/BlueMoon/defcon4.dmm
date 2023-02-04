@@ -973,6 +973,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/toolstorage)
+"gz" = (
+/obj/structure/lattice/catwalk,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/space/basic,
+/area/solars/tarkon)
 "gA" = (
 /obj/machinery/door/airlock/mining/glass,
 /obj/machinery/door/firedoor/heavy/closed,
@@ -1078,6 +1083,11 @@
 /obj/item/storage/backpack/satchel/explorer,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
+"hn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon/trauma)
 "hr" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Crew Storage";
@@ -1320,9 +1330,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "iI" = (
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 4;
+	name = "killroom vent"
+	},
 /turf/open/floor/plating/asteroid/airless,
-/area/ruin/space/has_grav)
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "iJ" = (
 /obj/machinery/vending/hydroseeds,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1851,6 +1864,13 @@
 /obj/structure/closet/firecloset/full,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
+"lQ" = (
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/observ)
 "lS" = (
 /obj/structure/closet,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1942,6 +1962,12 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
+"mn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/generic,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/storage)
 "mo" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/sheet/metal/fifty,
@@ -1981,6 +2007,11 @@
 /obj/machinery/door/firedoor/solid,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
+"mE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/porthall)
 "mG" = (
 /obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 8
@@ -2035,6 +2066,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/has_grav/port_tarkon/kitchen)
+"nd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "ng" = (
 /turf/closed/wall,
 /area/ruin/space/has_grav/port_tarkon/storage)
@@ -2288,6 +2324,11 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
+"oX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/storage)
 "pa" = (
 /obj/machinery/door/airlock/research/glass,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
@@ -2320,7 +2361,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/paper/fluff/ruins/tarkoff/coupplans,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "pj" = (
@@ -2528,6 +2568,10 @@
 /obj/structure/closet/crate/secure/science,
 /obj/effect/turf_decal/caution/stand_clear,
 /obj/effect/turf_decal/tile/brown/half,
+/obj/effect/spawner/lootdrop/high_loot_toilet,
+/obj/effect/spawner/lootdrop/high_loot_toilet,
+/obj/effect/spawner/lootdrop/high_loot_toilet,
+/obj/effect/spawner/lootdrop/high_loot_toilet,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "qr" = (
@@ -3181,6 +3225,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
+"uE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/porthall)
 "uJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/freezer,
@@ -3398,6 +3447,12 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/ruin/space/has_grav)
+"wj" = (
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/flashlight/seclite,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/observ)
 "wl" = (
 /obj/effect/turf_decal/tile/purple/half,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3408,6 +3463,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/porthall)
 "ww" = (
@@ -3443,6 +3499,14 @@
 /obj/item/stack/rods,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/porthall)
+"wL" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/dark/airless,
+/area/ruin/space/has_grav/port_tarkon/developement)
 "wQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
@@ -3491,6 +3555,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
+"xf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/rods,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "xi" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
@@ -3563,6 +3633,7 @@
 "xN" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
 "xO" = (
@@ -4653,6 +4724,18 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/solars/tarkon)
+"Fu" = (
+/obj/machinery/door/poddoor/shutters/window/preopen{
+	id = "tarkoninner";
+	name = "Interior Bay Shutter"
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/warning{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/storage)
 "FB" = (
 /obj/item/flashlight/lantern,
 /obj/item/flashlight/lantern,
@@ -4978,6 +5061,11 @@
 "Hy" = (
 /turf/closed/wall,
 /area/ruin/space/has_grav/port_tarkon/mining)
+"HA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "HB" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
@@ -5407,9 +5495,9 @@
 /area/ruin/space/has_grav/port_tarkon/trauma)
 "Kc" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/flashlight/seclite,
+/obj/effect/mapping_helpers/dead_body_placer,
 /turf/open/floor/iron/airless,
-/area/ruin/space/has_grav/port_tarkon/observ)
+/area/ruin/space/has_grav/port_tarkon/storage)
 "Ke" = (
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 8
@@ -5525,6 +5613,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
+"KU" = (
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/carp,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon/trauma)
 "KV" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -5896,6 +5991,11 @@
 /obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/forehall)
+"NB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/observ)
 "NC" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating/airless,
@@ -6034,6 +6134,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/toolstorage)
+"OX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/dark/airless,
+/area/ruin/space/has_grav/port_tarkon/developement)
 "OZ" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
@@ -6172,9 +6277,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
+"PP" = (
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/dark/airless,
+/area/ruin/space/has_grav/port_tarkon/developement)
 "PR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
+/obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "PS" = (
@@ -6599,6 +6712,11 @@
 "Sw" = (
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/port_tarkon/dorms)
+"SC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/dead_body_placer,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/forehall)
 "SG" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin{
@@ -6992,6 +7110,11 @@
 /obj/item/stack/rods,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/porthall)
+"Vb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/iron/airless,
+/area/ruin/space/has_grav/port_tarkon/forehall)
 "Vc" = (
 /obj/machinery/door/airlock/research,
 /obj/machinery/door/firedoor/solid,
@@ -8464,7 +8587,7 @@ qe
 WU
 rW
 hN
-RN
+uE
 wt
 RN
 RN
@@ -8528,7 +8651,7 @@ zo
 zo
 EQ
 EQ
-KS
+wj
 sK
 HP
 Uw
@@ -8603,7 +8726,7 @@ EQ
 KS
 yl
 La
-Kc
+Uw
 Uw
 sC
 hH
@@ -8676,7 +8799,7 @@ EQ
 NH
 dt
 at
-Uw
+NB
 Uw
 HP
 as
@@ -8755,7 +8878,7 @@ Uw
 Ph
 nP
 Uf
-YI
+OX
 lF
 ce
 YI
@@ -8820,7 +8943,7 @@ EQ
 EQ
 Uw
 bX
-Oi
+lQ
 Oi
 Oi
 Oi
@@ -8837,7 +8960,7 @@ YF
 uf
 KP
 Ic
-YI
+OX
 yO
 xY
 vB
@@ -8855,7 +8978,7 @@ SP
 id
 SP
 FO
-BX
+nd
 BX
 kd
 bn
@@ -8903,7 +9026,7 @@ nP
 fa
 YI
 vL
-YI
+OX
 YI
 Id
 YF
@@ -8923,7 +9046,7 @@ IG
 Un
 BX
 BX
-PA
+xf
 ap
 id
 xW
@@ -9072,7 +9195,7 @@ FO
 FO
 PA
 FO
-FO
+HA
 FO
 uk
 BX
@@ -9131,11 +9254,11 @@ TJ
 Id
 YI
 YI
-DK
+wL
 bm
 nP
 RN
-RN
+mE
 nG
 xt
 OD
@@ -9281,7 +9404,7 @@ rF
 Ni
 nP
 TD
-RN
+uE
 OI
 xt
 ST
@@ -9340,7 +9463,7 @@ zV
 nP
 oc
 yG
-cJ
+PP
 cJ
 rG
 ce
@@ -9814,7 +9937,7 @@ xP
 gn
 gX
 Qn
-Qn
+gz
 Qn
 Qn
 Qn
@@ -10284,7 +10407,7 @@ Wa
 sv
 kf
 sI
-Cq
+Vb
 Cp
 yt
 nN
@@ -10722,7 +10845,7 @@ Wa
 Wa
 kf
 Cq
-Cq
+SC
 Cp
 cV
 GF
@@ -10874,7 +10997,7 @@ iA
 xi
 xi
 xi
-Ae
+KU
 Ae
 Ae
 yS
@@ -10947,7 +11070,7 @@ Lr
 gd
 ga
 gd
-gd
+hn
 gd
 gd
 IH
@@ -11349,7 +11472,7 @@ Pq
 pu
 PR
 jW
-jW
+Kc
 dP
 rK
 RE
@@ -11497,7 +11620,7 @@ jW
 jW
 jW
 if
-cE
+Fu
 jW
 Lo
 zo
@@ -11640,7 +11763,7 @@ oy
 ng
 BF
 jW
-PR
+mn
 jW
 qq
 cE
@@ -11713,7 +11836,7 @@ Hy
 ng
 fT
 Mr
-jW
+oX
 jW
 if
 ym

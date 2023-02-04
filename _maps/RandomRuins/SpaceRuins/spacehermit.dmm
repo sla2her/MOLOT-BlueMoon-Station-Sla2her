@@ -211,7 +211,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/powered)
 "aQ" = (
-/obj/item/circuitboard/machine/circuit_imprinter,
+/obj/item/circuitboard/machine/circuit_imprinter/department,
 /turf/open/floor/plating/asteroid,
 /area/ruin/powered)
 "aR" = (
@@ -348,6 +348,10 @@
 /obj/item/pickaxe/titanium,
 /turf/open/floor/plating/asteroid,
 /area/ruin/powered)
+"cp" = (
+/obj/item/circuitboard/machine/protolathe/department,
+/turf/template_noop,
+/area/template_noop)
 "fc" = (
 /obj/item/stack/ore/iron,
 /obj/item/stack/sheet/mineral/plasma,
@@ -829,7 +833,7 @@ aZ
 aA
 aa
 aa
-aa
+cp
 aa
 aa
 aa

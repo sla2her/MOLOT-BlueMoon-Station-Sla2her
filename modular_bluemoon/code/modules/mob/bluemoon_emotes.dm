@@ -63,7 +63,7 @@
 			to_chat(user, span_warning("Рано! Очень рано!!"))
 			SEND_SOUND(user, 'sound/machines/buzz-sigh.ogg')
 			return
-		user.nextsoundemote = world.time + 3 SECONDS
+		user.nextsoundemote = world.time + 5 SECONDS
 	playsound(user, 'sound/voice/trills.ogg', 50, 1, -1)
 	. = ..()
 
@@ -79,7 +79,7 @@
 			to_chat(user, span_warning("Рано! Очень рано!!"))
 			SEND_SOUND(user, 'sound/machines/buzz-sigh.ogg')
 			return
-		user.nextsoundemote = world.time + 3 SECONDS
+		user.nextsoundemote = world.time + 5 SECONDS
 	playsound(user, 'sound/voice/woof.ogg', 50, 1, -1)
 	. = ..()
 

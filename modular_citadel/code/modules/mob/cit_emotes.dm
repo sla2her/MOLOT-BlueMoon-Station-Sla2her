@@ -27,7 +27,7 @@
 		var/mob/living/carbon/c = user
 		c.reindex_screams()
 	if(!user.is_muzzled() && !miming)
-		user.nextsoundemote = world.time + 7
+		user.nextsoundemote = world.time + 3
 		if(issilicon(user))
 			sound = 'modular_citadel/sound/voice/scream_silicon.ogg'
 			if(iscyborg(user))
