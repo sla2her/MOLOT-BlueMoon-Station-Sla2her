@@ -1,4 +1,4 @@
-#define REGENERATION_DELAY 60  // After taking damage, how long it takes for automatic regeneration to begin for megacarps (ty robustin!)
+/*#define REGENERATION_DELAY 60  // After taking damage, how long it takes for automatic regeneration to begin for megacarps (ty robustin!)
 
 /mob/living/basic/carp
 	name = "space carp"
@@ -170,3 +170,4 @@
 	// . += mutable_appearance(disk_overlay_file, "disk_overlay")
 
 #undef REGENERATION_DELAY
+*/
