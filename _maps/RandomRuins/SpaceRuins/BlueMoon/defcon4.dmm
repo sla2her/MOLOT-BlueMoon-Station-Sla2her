@@ -79,7 +79,7 @@
 "av" = (
 /obj/machinery/door/poddoor/incinerator_atmos_main,
 /turf/open/floor/engine/vacuum,
-/area/ruin/space/has_grav)
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "aF" = (
 /turf/open/space/basic,
 /area/solars/tarkon)
@@ -1500,7 +1500,7 @@
 	},
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating/airless,
-/area/ruin/space/has_grav)
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "jP" = (
 /obj/machinery/door/airlock/maintenance_hatch,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -1857,9 +1857,6 @@
 /obj/structure/grille,
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/port_tarkon/atmos)
-"lI" = (
-/turf/closed/wall/r_wall,
-/area/ruin/space/has_grav)
 "lK" = (
 /obj/structure/closet/firecloset/full,
 /turf/open/floor/plating,
@@ -2387,7 +2384,7 @@
 "po" = (
 /obj/structure/sign/warning/fire,
 /turf/closed/wall/r_wall,
-/area/ruin/space/has_grav)
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "ps" = (
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
@@ -3444,7 +3441,7 @@
 /obj/item/wrench,
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
-/area/ruin/space/has_grav)
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "wj" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4444,7 +4441,7 @@
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/engine/vacuum,
-/area/ruin/space/has_grav)
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "DI" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5435,6 +5432,10 @@
 "JN" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/machinery/door/airlock/external{
+	name = "Engineering External Access";
+	req_access_txt = "200"
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "JO" = (
@@ -6817,9 +6818,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
-"Ti" = (
-/turf/closed/wall/r_wall,
-/area/template_noop)
 "Tk" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -7081,7 +7079,7 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/ruin/space/has_grav)
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "US" = (
 /obj/machinery/door/firedoor/solid,
 /obj/effect/spawner/structure/window/reinforced/no_firelock,
@@ -8690,11 +8688,11 @@ xt
 xt
 xt
 UJ
-Ti
-lI
 xt
-MG
-MG
+xt
+xt
+sL
+sL
 sv
 sv
 Wa
@@ -8766,9 +8764,9 @@ Xb
 kS
 Gl
 xt
-lI
+xt
 po
-MG
+sL
 sv
 sv
 Wa
@@ -8841,7 +8839,7 @@ xB
 bA
 DD
 av
-MG
+sL
 Wa
 sv
 Wa
@@ -8912,9 +8910,9 @@ Ak
 kS
 eZ
 xt
-lI
+xt
 po
-MG
+sL
 sv
 sv
 Wa
@@ -8986,7 +8984,7 @@ xt
 gs
 xt
 wh
-MG
+sL
 zo
 sv
 Wa
@@ -9056,7 +9054,7 @@ hP
 KM
 Rm
 FT
-sL
+MG
 sv
 sv
 zo
@@ -9129,7 +9127,7 @@ KM
 KM
 GE
 xt
-cd
+sv
 sv
 sv
 zo
@@ -9202,7 +9200,7 @@ KM
 eQ
 Gy
 xt
-cd
+sv
 sv
 sv
 zo
@@ -9274,7 +9272,7 @@ gH
 gH
 xt
 xt
-Ti
+xt
 sv
 zo
 sv
