@@ -1868,7 +1868,7 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
 "lS" = (
@@ -1965,7 +1965,7 @@
 "mn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "mo" = (
@@ -2009,7 +2009,7 @@
 /area/ruin/space/has_grav/port_tarkon)
 "mE" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/porthall)
 "mG" = (
@@ -2068,7 +2068,7 @@
 /area/ruin/space/has_grav/port_tarkon/kitchen)
 "nd" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "ng" = (
@@ -3463,7 +3463,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/porthall)
 "ww" = (
@@ -3504,7 +3504,7 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "wQ" = (
@@ -3558,7 +3558,7 @@
 "xf" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/rods,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "xi" = (
@@ -3633,7 +3633,7 @@
 "xN" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
 "xO" = (
@@ -5063,7 +5063,7 @@
 /area/ruin/space/has_grav/port_tarkon/mining)
 "HA" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "HB" = (
@@ -5495,7 +5495,7 @@
 /area/ruin/space/has_grav/port_tarkon/trauma)
 "Kc" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "Ke" = (
@@ -6136,7 +6136,7 @@
 /area/ruin/space/has_grav/port_tarkon/toolstorage)
 "OX" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "OZ" = (
@@ -6281,7 +6281,7 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "PR" = (
@@ -6714,7 +6714,7 @@
 /area/ruin/space/has_grav/port_tarkon/dorms)
 "SC" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/mapping_helpers/dead_body_placer,
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "SG" = (
@@ -8828,7 +8828,7 @@ CP
 BX
 BX
 BX
-BX
+nd
 FO
 FO
 FO
