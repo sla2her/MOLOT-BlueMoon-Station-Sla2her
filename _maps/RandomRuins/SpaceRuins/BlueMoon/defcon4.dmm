@@ -555,7 +555,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/crowbar,
+/obj/item/crowbar/red/caravan,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "dC" = (
@@ -2409,12 +2409,10 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "pv" = (
-/obj/item/crowbar,
-/obj/item/crowbar,
-/obj/item/crowbar,
 /obj/structure/table,
 /obj/machinery/light/dim/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/crowbar/red/caravan,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "pw" = (
@@ -3977,6 +3975,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/paper/fluff/ruins/tarkoff/defcon4,
 /obj/machinery/light/dim/directional/south,
+/obj/item/crowbar/red/caravan,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "At" = (
@@ -5353,12 +5352,9 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
 "Jp" = (
-/obj/item/crowbar,
-/obj/item/crowbar,
-/obj/item/crowbar,
-/obj/item/crowbar,
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/crowbar/red/caravan,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "Jq" = (
