@@ -765,7 +765,7 @@
 	access = list(ACCESS_ENGINE_EQUIP)
 
 /obj/item/card/id/away/old/tarkoff
-	name = "Tarkof Visitor's Pass"
+	name = "Tarkov Visitor's Pass"
 	desc = "A dust-collected visitors pass, A small tagline reading \"Port Tarkof, The first step to Civilian Partnership in Space Homesteading\"."
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_TARKOFF)
 
@@ -795,7 +795,7 @@
 	access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
 
 /obj/item/card/id/away/old/tarkoff/ensign
-	assignment = "Tarkof Ensign"
+	assignment = "Tarkov Ensign"
 	desc = "An access card designated for \"tarkoff ensign\". No one has to listen to you... But you're the closest there is for command around here."
 	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
 
