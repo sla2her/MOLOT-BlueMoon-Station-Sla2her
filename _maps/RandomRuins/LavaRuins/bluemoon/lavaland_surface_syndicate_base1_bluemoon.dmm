@@ -433,7 +433,7 @@
 /area/ruin/lavaland/unpowered/syndicate_lava_base/cargo)
 "cy" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/backpack/duffelbag/syndie/surgery,
+/obj/item/storage/backpack/duffelbag/syndie/surgery_adv,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "cB" = (
@@ -2192,7 +2192,7 @@
 /obj/machinery/airalarm/directional/west{
 	req_access = list("syndicate")
 	},
-/obj/item/healthanalyzer,
+/obj/item/healthanalyzer/advanced,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "pR" = (
@@ -2201,6 +2201,27 @@
 /turf/open/floor/pod/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "pW" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/APlus,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/OPlus{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/BPlus{
+	pixel_x = 1;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/blood/BMinus{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/blood/AMinus,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
 /obj/machinery/iv_drip,
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_x = 28
@@ -4016,25 +4037,6 @@
 	},
 /turf/open/floor/engine,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/testlab)
-"Dv" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
-	dir = 8;
-	level = 1
-	},
-/obj/machinery/plantgenes{
-	pixel_y = 6
-	},
-/turf/open/floor/plasteel,
-/area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "Dy" = (
 /obj/machinery/processor,
 /obj/effect/turf_decal/tile{
@@ -5688,6 +5690,7 @@
 "Pk" = (
 /obj/structure/tank_holder/anesthetic,
 /obj/structure/railing,
+/obj/item/clothing/mask/breath/medical,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "Pr" = (
@@ -6832,6 +6835,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
 	},
+/obj/structure/closet/crate/freezer/surplus_limbs,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "Xp" = (
@@ -7034,6 +7038,10 @@
 	dir = 4
 	},
 /obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/reagent_containers/medspray/synthflesh,
+/obj/item/reagent_containers/medspray/synthflesh,
+/obj/item/reagent_containers/medspray/synthflesh,
+/obj/item/reagent_containers/medspray/synthflesh,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "YB" = (
@@ -9558,7 +9566,7 @@ aj
 Zr
 ZX
 WW
-Dv
+YJ
 WW
 YO
 Gs
