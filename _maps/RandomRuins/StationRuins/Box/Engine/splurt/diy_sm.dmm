@@ -337,6 +337,7 @@
 	req_access_txt = "10"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/fans/tiny,
 /turf/open/floor/engine,
 /area/engineering/main)
 "kW" = (
@@ -435,6 +436,7 @@
 	name = "Supermatter Engine Room";
 	req_access_txt = "10"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/engine,
 /area/engineering/main)
 "qc" = (
@@ -642,6 +644,7 @@
 	name = "Supermatter Engine Room";
 	req_access_txt = "10"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/engine,
 /area/engineering/main)
 "Bc" = (
@@ -679,6 +682,7 @@
 	name = "Supermatter Engine Room";
 	req_access_txt = "10"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
 "CT" = (
@@ -869,6 +873,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/engineering/main)
 "Ke" = (

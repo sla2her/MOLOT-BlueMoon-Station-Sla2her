@@ -1,14 +1,15 @@
 //Tarkoff.
 /datum/map_template/ruin/space/tarkoff
+	name = "Port Tarkov"
 	prefix = "_maps/RandomRuins/SpaceRuins/BlueMoon/"
-	cost = 15
 	allow_duplicates = FALSE
 	always_place = TRUE
-
+	id = "tarkoff-base"
 /datum/map_template/ruin/space/tarkoff/New()
-	if(prob(50))
+	if(prob(35))
 		suffix = "defcon5.dmm"
-	else
+	else if(prob(35))
 		suffix = "defcon4.dmm"
+	else
+		suffix = "defcon3.dmm"
 	. = ..()
-

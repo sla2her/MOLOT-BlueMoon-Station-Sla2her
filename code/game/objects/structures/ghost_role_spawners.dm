@@ -1015,9 +1015,9 @@
 	mob_name = "an abandoned ensign"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper-o"
-	short_desc = "You were tasked by tarkoff Industries to Port tarkoff as a low-level command member, Holding no actual command, but as just another scapegoat to blame should it failed... And failed it did. Scan were never done when the overseer commanded construction, and you were left, forever branded with a task not possible for you"
-	flavour_text = "The rest of command bailed, and left as nothing more than a glorified assistant, you are held responsible should you be unable to wrangle what hopes of success Headquarters has. Find the blueprints and keep them close, Lest looters and raiders plan to seize what isn't theirs. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port tarkoff. The closet in the middle of the room above contains the 'accommodations' for those species.)"
-	important_info = "People aren't obligated to listen to you, and you are, otherwise, just another body with some remnant of control. Make sure important items aren't traded and do your best to survive in the hellscape left for you. Unwelcomed and uninvited guests are not obligated to your kindness."
+	short_desc = "Вы получили задание от 'Тарков Индастриз' и были высланы в Порт Тарков в качестве члена командования низшего уровня. Вы, не имея никакого фактического командования, но будучи просто еще одним козлом отпущения, на которого можно свалить вину в случае неудачи... провалились."
+	flavour_text = "Что-то пошло не так. Эксперименты пошли наперекосяк, расширения были сделаны до того, как проверки были полностью завершены. Теперь вы должны разобраться с последствия исхода прошлого экипажа. Приведите порт 'Тарков' к успеху, который планировался, либо умрите - стараясь."
+	important_info = "Не конфликтуйте без особой на то причины, используйте свой корабль для покупки дополнительных предметов или получения помощи. Не обменивайте своё специальное, бесценное оборудование. Непрошеные и незваные гости могут оказаться сотрудником вашей станции."
 	outfit = /datum/outfit/tarkoff/ensign
 
 /datum/outfit/tarkoff/ensign //jack of all trades, master of none, spent all his credits, every last one
@@ -1027,8 +1027,8 @@
 	id = /obj/item/card/id/away/tarkoff/ensign
 	neck = /obj/item/clothing/neck/cloak/alt/boatcloak/command
 	gloves = /obj/item/clothing/gloves/combat
-	l_pocket = null
-	r_pocket = null
+	l_pocket = /obj/item/melee/classic_baton/telescopic
+	r_pocket = /obj/item/grenade/barrier
 
 /datum/outfit/proc/handlebank(mob/living/carbon/human/owner)
 	var/datum/bank_account/offstation_bank_account = new(owner.real_name)
@@ -1054,7 +1054,7 @@
 
 /obj/item/card/id/away/tarkoff/sec
 	assignment = "P-T Port Guard"
-	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_TARKOFF)
 
 /obj/item/card/id/away/tarkoff/med
 	assignment = "P-T Trauma Medic"

@@ -8424,6 +8424,13 @@
 /obj/machinery/door/poddoor/shuttledock,
 /obj/effect/turf_decal/delivery,
 /obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 4
+	},
+/obj/machinery/door/airlock/centcom{
+	name = "Смертельная Арена";
+	req_access_txt = "101"
+	},
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "sW" = (
@@ -18715,6 +18722,10 @@
 /obj/structure/table/wood/fancy/royalblue,
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
+"Qz" = (
+/obj/machinery/vending/kink,
+/turf/open/floor/plating/abductor,
+/area/abductor_ship)
 "QA" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/plasteel/cafeteria,
@@ -23495,7 +23506,7 @@ aa
 aa
 ks
 kP
-lj
+Qz
 lG
 lj
 mw
@@ -23522,7 +23533,7 @@ aa
 aa
 ks
 kP
-lj
+Qz
 lG
 lj
 mw
@@ -23552,7 +23563,7 @@ aa
 aa
 ks
 kP
-lj
+Qz
 lG
 lj
 mw
@@ -23579,7 +23590,7 @@ aa
 aa
 ks
 kP
-lj
+Qz
 lG
 lj
 mw

@@ -101,6 +101,8 @@
 	var/list/extra_titles = list(
 		"Atmos Plumber",
 		"Syndicate Atmospherics Master",
+		"Anal Plumber",
+		"Atmos-Slut",
 		"Buttplug",
 		"Disposals Technician"
 	)
@@ -115,6 +117,7 @@
 		"Station Architect",
 		"Hazardous Material Operator",
 		"Junior Engineer",
+		"Engi-Slut",
 		"Apprentice Engineer"
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -320,7 +323,6 @@
 
 /datum/job/paramedic/New()
 	var/list/extra_titles = list(
-		"Trauma Team",
 		"Field Medic Of Interdyne",
 		"Emergency Horny Technical",
 		"Emergency Cum Receiver",

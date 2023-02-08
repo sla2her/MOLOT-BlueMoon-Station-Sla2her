@@ -256,14 +256,14 @@
 	. = ..()
 	if(.)
 		var/datum/component/two_handed/TH = H.GetComponent(/datum/component/two_handed)
-		H.charge_time -= 12
+		H.charge_time -= 8
 		TH.force_wielded -= 15
 
 /obj/item/crusher_trophy/king_goat/remove_from(obj/item/kinetic_crusher/H, mob/living/user)
 	. = ..()
 	if(.)
 		var/datum/component/two_handed/TH = H.GetComponent(/datum/component/two_handed)
-		H.charge_time += 12
+		H.charge_time += 8
 		TH.force_wielded += 15
 
 //hierophant crusher small changes

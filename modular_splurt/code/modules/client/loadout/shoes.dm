@@ -2,7 +2,7 @@
 /datum/gear/shoes/footwraps
 	name = "Cloth Footwraps"
 	path= /obj/item/clothing/shoes/footwraps
-	
+
 /datum/gear/shoes/invisiboots
 	name = "Invisifiber Footwraps"
 	path= /obj/item/clothing/shoes/invisiboots
@@ -18,6 +18,7 @@
 /datum/gear/shoes/jackboots/tall
 	name = "Tall Jackboots"
 	path = /obj/item/clothing/shoes/jackboots/tall
+
 /datum/gear/shoes/highheels
 	name = "High Heels"
 	path = /obj/item/clothing/shoes/highheels

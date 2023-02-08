@@ -2088,6 +2088,9 @@
 /obj/item/hatchet,
 /obj/item/plant_analyzer,
 /obj/item/gun/energy/floragun,
+/obj/machinery/smartfridge/disks{
+	pixel_y = 2
+	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "oY" = (
@@ -3079,7 +3082,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "xx" = (
-/obj/machinery/chem_dispenser/mutagensaltpeter,
+/obj/machinery/plantgenes{
+	pixel_y = 6
+	},
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "xH" = (
@@ -4010,6 +4016,25 @@
 	},
 /turf/open/floor/engine,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/testlab)
+"Dv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 8;
+	level = 1
+	},
+/obj/machinery/plantgenes{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel,
+/area/ruin/lavaland/unpowered/syndicate_lava_base/dormitories)
 "Dy" = (
 /obj/machinery/processor,
 /obj/effect/turf_decal/tile{
@@ -7008,6 +7033,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/item/clothing/gloves/color/latex/nitrile,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/syndicate_lava_base/medbay)
 "YB" = (
@@ -9532,7 +9558,7 @@ aj
 Zr
 ZX
 WW
-YJ
+Dv
 WW
 YO
 Gs
