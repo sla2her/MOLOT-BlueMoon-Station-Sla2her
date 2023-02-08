@@ -21,7 +21,7 @@ SUBSYSTEM_DEF(nightshift)
 	check_nightshift()
 
 /datum/controller/subsystem/nightshift/proc/announce(message)
-	priority_announce(message, sound='sound/misc/notice2.ogg', sender_override="Automated Lighting System Announcement")
+	priority_announce(message, sound='sound/misc/notice2.ogg', sender_override="Объявление об Автоматической Системе Освещения")
 
 /datum/controller/subsystem/nightshift/proc/check_nightshift()
 	var/emergency = GLOB.security_level >= SEC_LEVEL_RED
@@ -33,9 +33,9 @@ SUBSYSTEM_DEF(nightshift)
 		if(night_time)
 			announcing = FALSE
 			if(!emergency)
-				announce("Restoring night lighting configuration to normal operation.")
+				announce("Восстановление нормальной работы конфигурации ночного освещения.")
 			else
-				announce("Disabling night lighting: Station is in a state of emergency.")
+				announce("Отключение ночного освещения: станция находится в аварийном состоянии.")
 	if(emergency)
 		night_time = FALSE
 	if(nightshift_active != night_time)

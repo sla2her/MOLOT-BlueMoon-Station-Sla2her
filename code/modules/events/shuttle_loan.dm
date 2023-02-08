@@ -57,11 +57,11 @@
 			bonus_points = 20000 //Toxin bees can be unbeelievably lethal
 		if(MY_GOD_JC)
 			message = "Снабжение: Мы обнаружили действующую синди-бомбу рядом с топливными линиями нашего VIP шаттла. Если вы чувствуете, что справитесь с этой задачей, мы заплатим вам за ее разрядку."
-			title = "ФСБ Центрального Командования"
+			title = "КСБ Центрального Командования"
 			bonus_points = 45000 //If you mess up, people die and the shuttle gets turned into swiss cheese
 		if(DELTA_CRATES)
 			message = "Снабжение: Мы обнаружили склад запертых DELTA-Ящиков. Мы не можем больше хранить их у себя, не могли бы вы взять их для нас?"
-			title = "ФСБ Центрального Командования"
+			title = "КСБ Центрального Командования"
 			bonus_points = 25000 //If you mess up, people die and the shuttle gets turned into swiss cheese
 	if(prob(50))
 		priority_announce(message, title)
