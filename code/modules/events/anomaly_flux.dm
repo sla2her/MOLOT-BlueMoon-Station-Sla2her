@@ -3,8 +3,8 @@
 	typepath = /datum/round_event/anomaly/anomaly_flux
 
 	min_players = 20
-	max_occurrences = 1
-	weight = 2
+	max_occurrences = 2
+	weight = 10
 
 /datum/round_event/anomaly/anomaly_flux
 	start_when = 10
@@ -12,5 +12,5 @@
 	anomaly_path = /obj/effect/anomaly/flux
 
 /datum/round_event/anomaly/anomaly_flux/announce(fake)
-	priority_announce("Localized hyper-energetic flux wave detected on long range scanners. Expected location: [impact_area.name].", "Anomaly Alert", has_important_message = TRUE)
+	priority_announce("Обнаружен гипер-энергетический поток на сканерах большой дальности. Ожидаемое место: [impact_area.name].", "Аномальная тревога", has_important_message = TRUE)
 

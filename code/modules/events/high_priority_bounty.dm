@@ -8,7 +8,7 @@
 	description = "Creates bounties that are three times original worth."
 
 /datum/round_event/high_priority_bounty/announce(fake)
-	priority_announce("Центральное командование выставило заявку с Наградой за Высокоприоритетный Груз. Подробности были отправлены на все Консоли Баунти.", "Программа Баунти Nanotrasen!")
+	priority_announce("Центральное командование выставило заявку с Наградой за Высокоприоритетный Груз. Подробности были отправлены на все Консоли Грантов.", "Программа Грантов Nanotrasen!")
 
 /datum/round_event/high_priority_bounty/start()
 	var/datum/bounty/B

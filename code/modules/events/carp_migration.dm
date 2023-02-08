@@ -25,9 +25,9 @@
 
 /datum/round_event/carp_migration/announce(fake)
 	if(prob(50))
-		priority_announce("Unknown biological entities have been detected near [station_name()], please stand-by.", "Lifesign Alert")
+		priority_announce("Неизвестные биологические организмы были обнаружены вблизи [station_name()], пожалуйста, приготовьтесь.", "Вторжение на Борт")
 	else
-		print_command_report("Unknown biological entities have been detected near [station_name()], you may wish to break out arms.", "Biological entities")
+		print_command_report("Неизвестные биологические организмы были обнаружены вблизи [station_name()], пожалуйста, приготовьтесь.", "Вторжение на Борт")
 
 
 /datum/round_event/carp_migration/start()

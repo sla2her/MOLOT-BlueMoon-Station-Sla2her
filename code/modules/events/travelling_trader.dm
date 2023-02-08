@@ -30,7 +30,7 @@
 	trader.visible_message("<b>[trader]</b> suddenly appears in a puff of smoke!")
 
 /datum/round_event/travelling_trader/announce(fake)
-	priority_announce("A mysterious figure has been detected on sensors at [get_area(spawn_location)]", "Mysterious Figure", has_important_message = !fake)
+	priority_announce("Таинственная фигура была обнаружена на камерах в [get_area(spawn_location)]", "Таинственная Фигура", has_important_message = !fake)
 
 /datum/round_event/travelling_trader/end()
 	if(trader) // the /datum/round_event/travelling_trader has given up on waiting!

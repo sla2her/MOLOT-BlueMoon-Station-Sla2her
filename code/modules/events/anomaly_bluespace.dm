@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/anomaly/anomaly_bluespace
 
 	max_occurrences = 5
-	weight = 45
+	weight = 50
 
 /datum/round_event/anomaly/anomaly_bluespace
 	start_when = 3
@@ -11,4 +11,4 @@
 	anomaly_path = /obj/effect/anomaly/bluespace
 
 /datum/round_event/anomaly/anomaly_bluespace/announce(fake)
-	priority_announce("Unstable bluespace anomaly detected on long range scanners. Expected location: [impact_area.name].", "Anomaly Alert", has_important_message = TRUE)
+	priority_announce("Нестабильная блюспейс аномалия обнаружена на сканерах большой дальности. Ожидаемое место: [impact_area.name].", "Аномальная тревога", has_important_message = TRUE)

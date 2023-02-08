@@ -74,7 +74,7 @@
 			directionstring = " towards starboard"
 		if(WEST)
 			directionstring = " towards port"
-	return "Meteors have been detected on a collision course with the station[directionstring]. Estimated time until impact: [round((start_when * SSevents.wait) / 10, 0.1)] seconds.[GLOB.singularity_counter && syndiealert ? " Warning: Anomalous gravity pulse detected, Syndicate technology interference likely." : ""]"
+	return "Метеоры были обнаружены на пути столкновения со станцией - [directionstring]. Время до столкновения: [round((start_when * SSevents.wait) / 10, 0.1)] секунд.[GLOB.singularity_counter && syndiealert ? " Предупреждение: Обнаружен аномальный гравитационный импульс, возможно вмешательство технологии Синдиката." : ""]"
 
 /datum/round_event/meteor_wave/tick()
 	if(ISMULTIPLE(activeFor, 3))

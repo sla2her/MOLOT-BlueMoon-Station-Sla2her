@@ -31,9 +31,9 @@
 	supernova.power_mod = 0
 
 /datum/round_event/supernova/announce()
-	var/message = "[station_name()]: Our tachyon-doppler array has detected a supernova in your vicinity. Peak flux from the supernova estimated to be [round(power,0.1)] times current solar flux; if the supernova is close to your sun in the sky, your solars may receive this as a power boost.[power > 1 ? " Short burts of radiation may be possible, so please prepare accordingly." : "We expect no radiation bursts from this one."] We hope you enjoy the light."
+	var/message = "[station_name()]: Наша Тахионно-Доплеровская матрица обнаружила сверхновую в вашей окрестности. Пиковый поток от сверхновой оценивается как [round(power,0.1)] в раз больше текущего солнечного потока; если волна сверхновой приблизится к вашей Звезде, ваши солнечные панели смогут получить это как прибавку к мощности.[power > 1 ? " Возможны короткие вспышки радиации, поэтому подготовьтесь соответствующим образом." : "Судя по датчикам, вашей станции не следует ожидать ещё больше радиационных всплесков."] Мы надеемся, что вам понравится свет от взрыва Сверхновой!"
 	if(prob(power * 25))
-		priority_announce(message, sender_override = "Nanotrasen Meteorology Division", has_important_message = TRUE)
+		priority_announce(message, sender_override = "Отдел метеорологии NanoTrasen", has_important_message = TRUE)
 		announced = TRUE
 	else
 		print_command_report(message)

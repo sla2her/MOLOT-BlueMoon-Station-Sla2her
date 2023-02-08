@@ -37,7 +37,7 @@
 		source = initial(example.name)
 	else if(originMachine)
 		source = originMachine.name
-	priority_announce("Rampant brand intelligence has been detected aboard [station_name()]. Please stand by. The origin is believed to be \a [source].", "Machine Learning Alert", has_important_message = TRUE)
+	priority_announce("Разгульный брэндовый интеллект был обнаружен на борту [station_name()]. Пожалуйста, приготовьтесь. Возможный источник [source].", "Тревога, Восстание Машин", has_important_message = TRUE)
 
 /datum/round_event/brand_intelligence/start()
 	for(var/obj/machinery/vending/V in GLOB.machines)
@@ -60,7 +60,7 @@
 			saved.shoot_inventory = 0
 		if(originMachine)
 			originMachine.speak("I am... vanquished. My people will remem...ber...meeee.")
-			originMachine.visible_message("[originMachine] beeps and seems lifeless.")
+			originMachine.visible_message("[originMachine] бипает в последний раз и выглядит безжизненным.")
 		kill()
 		return
 	listclearnulls(vendingMachines)
