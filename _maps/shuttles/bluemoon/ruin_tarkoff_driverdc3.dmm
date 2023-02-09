@@ -89,13 +89,15 @@
 /area/shuttle/tarkoff_driver)
 "q" = (
 /obj/machinery/door/airlock/titanium,
-/obj/docking_port/mobile{
-	shuttle_id = "tarkon_driver";
-	name = "Tarkon Driver";
-	port_direction = 2;
-	preferred_direction = 8
-	},
 /obj/structure/fans/tiny/invisible,
+/obj/docking_port/mobile{
+	name = "Tarkoff Driver";
+	port_direction = 2;
+	preferred_direction = 8;
+	id = "tarkoff_driver";
+	height = 16;
+	width = 12
+	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "r" = (
