@@ -147,6 +147,8 @@
 
 	var/registered_z
 
+	var/memory_throttle_time = 0
+
 	var/canloadappearance = FALSE
 
 	var/list/alerts = list() // contains /atom/movable/screen/alert only // On /mob so clientless mobs will throw alerts properly

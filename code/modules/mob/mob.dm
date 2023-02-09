@@ -468,30 +468,44 @@
 		I.attack_self(src)
 		update_inv_hands()
 
+/**
+ * Get the notes of this mob
+ *
+ * This actually gets the mind datums notes
+ */
 /mob/verb/memory()
-	set name = "Notes"
+	set name = "📘 Заметки"
 	set category = "IC"
 	set desc = "View your character's notes memory."
 	if(mind)
-//ambition start
-		var/datum/browser/popup = new(src, "memory", "Memory and Notes")
-		popup.set_content(mind.show_memory())
-		popup.open()
-//ambition end
+		mind.show_memory(src)
 	else
-		to_chat(src, "You don't have a mind datum for some reason, so you can't look at your notes, if you had any.")
+		to_chat(src, "По какой-то причине у вас нет данных разума, поэтому вы не можете смотреть свои записи, если они у вас были.")
 
-/mob/verb/add_memory(msg as message)
-	set name = "Add Note"
+/**
+ * Add a note to the mind datum
+ */
+/mob/verb/add_memory_wrapper(msg as message)
+	set name = "📘 Добавить заметку"
 	set category = "IC"
 
-	msg = copytext_char(msg, 1, MAX_MESSAGE_LEN)
-	msg = sanitize(msg)
+	msg = input("", "Добавить заметку") as null|message
+	if(msg)
+		add_memory(msg)
 
+/mob/verb/add_memory(msg as message)
+	set name = "📘 Добавить заметку"
+	set hidden = 1
 	if(mind)
+		if (world.time < memory_throttle_time)
+			return
+		memory_throttle_time = world.time + 5 SECONDS
+		msg = copytext_char(msg, 1, MAX_MESSAGE_LEN)
+		msg = sanitize(msg)
+
 		mind.store_memory(msg)
 	else
-		to_chat(src, "You don't have a mind datum for some reason, so you can't add a note to it.")
+		to_chat(src, "По какой-то причине у вас нет данных разума, поэтому вы не можете добавить к нему ещё записи.")
 
 /mob/proc/transfer_ckey(mob/new_mob, send_signal = TRUE)
 	if(!new_mob || (!ckey && new_mob.ckey))
