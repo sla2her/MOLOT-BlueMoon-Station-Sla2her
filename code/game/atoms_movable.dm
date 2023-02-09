@@ -32,6 +32,15 @@
 	var/generic_canpass = TRUE
 	var/moving_diagonally = 0 //0: not doing a diagonal move. 1 and 2: doing the first/second step of the diagonal move
 	var/atom/movable/moving_from_pull		//attempt to resume grab after moving instead of before.
+	///Holds information about any movement loops currently running/waiting to run on the movable. Lazy, will be null if nothing's going on
+	var/datum/movement_packet/move_packet
+	///contains every client mob corresponding to every client eye in this container. lazily updated by SSparallax and is sparse:
+	///only the last container of a client eye has this list assuming no movement since SSparallax's last fire
+	var/list/client_mobs_in_contents
+	/// String representing the spatial grid groups we want to be held in.
+	/// acts as a key to the list of spatial grid contents types we exist in via SSspatial_grid.spatial_grid_categories.
+	/// We do it like this to prevent people trying to mutate them and to save memory on holding the lists ourselves
+	var/spatial_grid_key
 	var/list/acted_explosions	//for explosion dodging
 	var/datum/forced_movement/force_moving = null	//handled soley by forced_movement.dm
 

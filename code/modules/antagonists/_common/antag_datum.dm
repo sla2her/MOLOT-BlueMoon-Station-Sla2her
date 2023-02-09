@@ -32,6 +32,9 @@ GLOBAL_LIST_EMPTY(antagonists)
 	var/antag_hud_type
 	///Name of the antag hud we provide to this mob.
 	var/antag_hud_name
+
+	var/greentext_reward = 0
+
 	/// If above 0, this is the multiplier for the speed at which we hijack the shuttle. Do not directly read, use hijack_speed().
 	var/hijack_speed = 0
 	/// The battlecry this antagonist shouts when suiciding with C4/X4.

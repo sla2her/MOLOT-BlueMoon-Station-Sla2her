@@ -95,8 +95,8 @@
 		span_danger("[user] пытается накинуть петлю на шею [M]!"),\
 		span_userdanger("[user] пытается натянуть петлю на мою шею!"))
 	if(user != M)
-		to_chat(user, span_notice("Это займёт примерно 20 секунд и надо не двигаться."))
-	if(do_mob(user, M, user == M ? 10:200))
+		to_chat(user, span_notice("Это займёт примерно 10 секунд и надо не двигаться."))
+	if(do_mob(user, M, user == M ? 10:100))
 		if(buckle_mob(M))
 			user.visible_message(span_warning("[user] вешает [M != user ? "[M]" : "себя"]!"),\
 				span_userdanger("[M != user ? "[user] вешает меня" : "Вешаю себя"]!"))

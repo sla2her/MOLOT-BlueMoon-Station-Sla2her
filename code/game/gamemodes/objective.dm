@@ -14,6 +14,7 @@ GLOBAL_LIST_EMPTY(objectives)
 	var/completable = TRUE				//Whether this objective shows greentext when completed
 	var/martyr_compatible = FALSE		//If the objective is compatible with martyr objective, i.e. if you can still do it while dead.
 	var/objective_name = "Objective"	//name used in printing this objective (Objective #1)
+	var/reward = 5
 
 /datum/objective/New(var/text)
 	GLOB.objectives += src // CITADEL EDIT FOR CRYOPODS

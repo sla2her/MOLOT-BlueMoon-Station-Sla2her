@@ -148,6 +148,7 @@
 #define TRAIT_PARALYSIS_L_LEG	"para-l-leg"
 #define TRAIT_PARALYSIS_R_LEG	"para-r-leg"
 #define TRAIT_DISK_VERIFIER     "disk-verifier"
+#define TRAIT_NOMOBSWAP 		"no-mob-swap"
 #define TRAIT_UNINTELLIGIBLE_SPEECH "unintelligible-speech"
 #define TRAIT_SOOTHED_THROAT    "soothed-throat"
 #define TRAIT_LAW_ENFORCEMENT_METABOLISM "law-enforcement-metabolism"
@@ -171,6 +172,8 @@
 #define TRAIT_EXEMPT_HEALTH_EVENTS	"exempt-health-events"
 #define TRAIT_NO_MIDROUND_ANTAG	"no-midround-antag" //can't be turned into an antag by random events
 #define TRAIT_PUGILIST	"pugilist" //This guy punches people for a living
+/// Climbable trait, given and taken by the climbable element when added or removed. Exists to be easily checked via HAS_TRAIT().
+#define TRAIT_CLIMBABLE "trait_climbable"
 #define TRAIT_NOPUGILIST "nopugilist" // for preventing ((((((((((extreme)))))))))) punch stacking
 #define TRAIT_KI_VAMPIRE	"ki-vampire" //when someone with this trait rolls maximum damage on a punch and stuns the target, they regain some stamina and do clone damage
 #define TRAIT_MAULER	"mauler" // this guy punches the shit out of people to hurt them, not to drain their stamina

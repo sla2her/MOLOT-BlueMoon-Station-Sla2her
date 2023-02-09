@@ -391,6 +391,8 @@
 
 #define COMSIG_LIVING_RESTING "living_on_resting"				//from mob/living/set_resting
 #define COMSIG_LIVING_STOPPED_PULLING "living_on_stop_pulling"	//from mob/living/stop_pulling
+///called on /living when someone is pulled (mob/living/puller)
+#define COMSIG_LIVING_GET_PULLED "living_start_pulled"
 
 #define COMSIG_LIVING_ACTIVE_BLOCK_START "active_block_start"			//from base of mob/living/keybind_start_active_blocking(): (obj/item/blocking_item, list/backup_items)
 	#define COMPONENT_PREVENT_BLOCK_START 1
@@ -621,6 +623,11 @@
 //NTnet
 #define COMSIG_COMPONENT_NTNET_RECEIVE "ntnet_receive"			//called on an object by its NTNET connection component on receive. (sending_id(number), sending_netname(text), data(datum/netdata))
 
+///Restaurant
+
+///(customer, container) venue signal sent when a venue sells an item. source is the thing sold, which can be a datum, so we send container for location checks
+#define COMSIG_ITEM_SOLD_TO_CUSTOMER "item_sold_to_customer"
+
 //Combat mode
 #define COMSIG_TOGGLE_COMBAT_MODE "toggle_combat_mode"				//safely toggles combat mode.
 #define COMSIG_DISABLE_COMBAT_MODE "disable_combat_mode"			//safely disables combat mode.
@@ -709,3 +716,15 @@
 
 ///from base of [/datum/component/multiple_lives/proc/respawn]: (mob/respawned_mob, gibbed, lives_left)
 #define COMSIG_ON_MULTIPLE_LIVES_RESPAWN "on_multiple_lives_respawn"
+
+///from [/datum/move_loop/start_loop] ():
+#define COMSIG_MOVELOOP_START "moveloop_start"
+///from [/datum/move_loop/stop_loop] ():
+#define COMSIG_MOVELOOP_STOP "moveloop_stop"
+///from [/datum/move_loop/process] ():
+#define COMSIG_MOVELOOP_PREPROCESS_CHECK "moveloop_preprocess_check"
+	#define MOVELOOP_SKIP_STEP (1<<0)
+///from [/datum/move_loop/process] (succeeded, visual_delay):
+#define COMSIG_MOVELOOP_POSTPROCESS "moveloop_postprocess"
+//from [/datum/move_loop/has_target/jps/recalculate_path] ():
+#define COMSIG_MOVELOOP_JPS_REPATH "moveloop_jps_repath"

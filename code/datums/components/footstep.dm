@@ -10,8 +10,10 @@
 	var/footstep_type
 	///This can be a list OR a soundfile OR null. Determines whatever sound gets played.
 	var/footstep_sounds
+	///Whether or not to add variation to the sounds played
+	var/sound_vary = FALSE
 
-/datum/component/footstep/Initialize(footstep_type_ = FOOTSTEP_MOB_BAREFOOT, volume_ = 0.5, e_range_ = -1)
+/datum/component/footstep/Initialize(datum/target, footstep_type_ = FOOTSTEP_MOB_BAREFOOT, volume_ = 0.5, e_range_ = -8, sound_vary = FALSE)
 	if(!isliving(parent))
 		return COMPONENT_INCOMPATIBLE
 	volume = volume_
@@ -35,6 +37,10 @@
 			footstep_sounds = 'sound/effects/footstep/slime1.ogg'
 		if(FOOTSTEP_MOB_CRAWL)
 			footstep_sounds = 'sound/effects/footstep/crawl1.ogg'
+		if(FOOTSTEP_OBJ_ROBOT)
+			footstep_sounds = 'sound/effects/tank_treads.ogg'
+			RegisterSignal(target, COMSIG_MOVABLE_MOVED, .proc/play_simplestep_machine)
+			return
 	RegisterSignal(parent, COMSIG_MOVABLE_MOVED, .proc/play_simplestep) //Note that this doesn't get called for humans.
 
 ///Prepares a footstep. Determines if it should get played. Returns the turf it should get played on. Note that it is always a /turf/open
@@ -136,3 +142,13 @@
 			L[turf_footstep][2] * volume,
 			TRUE,
 			L[turf_footstep][3] + e_range, falloff_distance = 1)
+
+///Prepares a footstep for machine walking
+/datum/component/footstep/proc/play_simplestep_machine(atom/movable/source)
+	SIGNAL_HANDLER
+
+	var/turf/open/source_loc = get_turf(source)
+	if(!istype(source_loc))
+		return
+	playsound(source_loc, footstep_sounds, 50, falloff_distance = 1, vary = sound_vary)
+

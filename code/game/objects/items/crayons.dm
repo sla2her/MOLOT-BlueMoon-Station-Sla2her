@@ -601,7 +601,7 @@
 
 /obj/item/storage/crayons
 	name = "box of crayons"
-	desc = "A box of crayons for all your rune drawing needs."
+	desc = "Полна сил для всех ваших прекрасных художеств на полу и стенах."
 	icon = 'icons/obj/crayons.dmi'
 	icon_state = "crayonbox"
 	w_class = WEIGHT_CLASS_SMALL
@@ -632,15 +632,28 @@
 		var/obj/item/toy/crayon/C = W
 		switch(C.crayon_color)
 			if("mime")
-				to_chat(usr, "This crayon is too sad to be contained in this box.")
+				to_chat(usr, "Этот мелок слишком печален, чтобы его помещать в эту коробку!")
 				return
 			if("rainbow")
-				to_chat(usr, "This crayon is too powerful to be contained in this box.")
+				to_chat(usr, "Этот мелок слишком мощный, чтобы его помещать в эту коробку!")
 				return
 		if(istype(W, /obj/item/toy/crayon/spraycan))
-			to_chat(user, "Spraycans are not crayons.")
+			to_chat(user, "Спреи не мелки!")
 			return
 	return ..()
+
+/obj/item/storage/crayons/attack_self(mob/user)
+	. = ..()
+	if(contents.len > 0)
+		to_chat(user, span_warning("Не получится развернуть [src.name], пока мелки внутри!"))
+		return
+	if(flags_1 & HOLOGRAM_1)
+		return
+
+	var/obj/item/stack/sheet/cardboard/cardboard = new /obj/item/stack/sheet/cardboard(user.drop_location())
+	to_chat(user, span_notice("Разворачиваю [src.name] в картонку."))
+	user.put_in_active_hand(cardboard)
+	qdel(src)
 
 //Spraycan stuff
 

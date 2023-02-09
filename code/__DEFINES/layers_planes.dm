@@ -193,3 +193,18 @@
 #define SPLASHSCREEN_LAYER 90
 #define SPLASHSCREEN_PLANE 90
 #define SPLASHSCREEN_RENDER_TARGET "SPLASHSCREEN_PLANE"
+
+//-------------------- Rendering ---------------------
+#define RENDER_PLANE_GAME 100
+#define RENDER_PLANE_NON_GAME 101
+#define RENDER_PLANE_MASTER 102
+
+// Lummox I swear to god I will find you
+// NOTE! You can only ever have planes greater then -10000, if you add too many with large offsets you will brick multiz
+// Same can be said for large multiz maps. Tread carefully mappers
+#define HIGHEST_EVER_PLANE RENDER_PLANE_MASTER
+/// The range unique planes can be in
+#define PLANE_RANGE (HIGHEST_EVER_PLANE - PLANE_VOID)
+
+#define SINGULARITY_LAYER 1
+#define ABOVE_SINGULARITY_LAYER 2
