@@ -635,7 +635,10 @@ GLOBAL_LIST(objective_choices)
 //ambition port end
 
 /datum/mind/Topic(href, href_list)
-//ambition start
+	//проверяем на амбиции, после чего прерываем выполнение, иначе он залезет в админский антаг-панель
+	var/ambition_func = ambition_topic(href, href_list)
+	if (ambition_func)
+		return
 
 	if (href_list["refresh_obj_amb"])
 		do_edit_objectives_ambitions()
