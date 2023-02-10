@@ -351,7 +351,7 @@
 		if(mode.station_was_nuked)
 			Reboot("Станция уничтожена Ядерной бомбой.", "nuke")
 		else
-			Reboot("КОНЕЦ!", "proper completion", 3 SECONDS)
+			Reboot("КОНЕЦ!", "proper completion", 150 SECONDS)
 	else
 		CRASH("Attempted standard reboot without ticker roundend completion")
 
