@@ -27,18 +27,6 @@ GLOBAL_LIST_EMPTY(huds_by_category)
 	///one target atom each. it will still go in the other global hud lists.
 	var/uses_global_hud_category = TRUE
 
-/datum/atom_hud/New()
-	GLOB.all_huds += src
-	for(var/z_level in 1 to world.maxz)
-		hud_atoms += list(list())
-		hud_users += list(list())
-
-	RegisterSignal(SSdcs, COMSIG_GLOB_NEW_Z, PROC_REF(add_z_level_huds))
-
-	if(uses_global_hud_category)
-		for(var/hud_icon in hud_icons)
-			GLOB.huds_by_category[hud_icon] += list(src)
-
 /datum/atom_hud/Destroy()
 	for(var/mob/mob as anything in hud_users_all_z_levels)
 		hide_from(mob)
