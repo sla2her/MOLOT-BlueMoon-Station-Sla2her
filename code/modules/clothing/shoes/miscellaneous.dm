@@ -42,11 +42,6 @@
 	clothing_flags = NOSLIP
 	armor = list(MELEE = 40, BULLET = 30, LASER = 25, ENERGY = 25, BOMB = 50, BIO = 30, RAD = 30, FIRE = 90, ACID = 50)
 
-/obj/item/clothing/shoes/combat/swat/knifed //overpowered boots for death squads
-	name = "\improper SWAT boots"
-	desc = "High speed, no drag combat boots."
-	contents = list(/obj/item/kitchen/knife/combat=1)
-
 /obj/item/clothing/shoes/sandal
 	desc = "A pair of rather plain wooden sandals."
 	name = "sandals"

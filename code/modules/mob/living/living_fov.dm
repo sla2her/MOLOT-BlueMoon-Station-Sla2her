@@ -110,7 +110,6 @@
 		if(!fov_image) //Make the image once we found one recipient to receive it
 			fov_image = new()
 			fov_image.loc = anchor_point
-			SET_PLANE(fov_image, SOUND_EFFECT_VISUAL_PLANE, anchor_point)
 			fov_image.icon_state = icon_state
 			fov_image.dir = dir
 			if(angle)
