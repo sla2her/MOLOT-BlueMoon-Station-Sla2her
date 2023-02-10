@@ -1069,7 +1069,7 @@
 
 /obj/item/card/id/away/tarkoff/ensign
 	assignment = "Tarkoff Ensign"
-	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS)
+	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_BRIG)
 
 /obj/item/card/id/away/tarkoff/sci
 	name = "P-T field researcher's access card"

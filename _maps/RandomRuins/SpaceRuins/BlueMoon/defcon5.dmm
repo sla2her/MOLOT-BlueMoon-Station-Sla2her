@@ -4243,8 +4243,7 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "wV" = (
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "wW" = (
 /obj/structure/cable/yellow{
@@ -4786,8 +4785,7 @@
 "At" = (
 /obj/machinery/power/solar,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Au" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -4951,8 +4949,7 @@
 "Bk" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Bn" = (
 /obj/machinery/door/airlock/public{
@@ -5849,8 +5846,7 @@
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Ft" = (
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "FB" = (
 /obj/item/flashlight/lantern,
@@ -5861,6 +5857,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
+"FD" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "FE" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -6324,8 +6324,7 @@
 "If" = (
 /obj/item/solar_assembly,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Ih" = (
 /obj/machinery/door/firedoor/solid,
@@ -7093,13 +7092,8 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "LH" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "63; 42"
-	},
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/port_tarkon/trauma)
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "LN" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
@@ -7630,8 +7624,7 @@
 "OS" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "OT" = (
 /obj/effect/turf_decal/tile/yellow,
@@ -11417,7 +11410,7 @@ aF
 aF
 aF
 aF
-aF
+LH
 aF
 aF
 WY
@@ -11486,12 +11479,12 @@ Wa
 aF
 aF
 aF
-aF
+LH
 aF
 aF
 At
 gX
-qi
+LH
 aF
 WY
 WY
@@ -11558,11 +11551,11 @@ sv
 aF
 aF
 aF
-qi
+LH
 qi
 Bk
 aF
-qi
+LH
 gX
 If
 aF
@@ -11631,13 +11624,13 @@ aF
 aF
 aF
 aF
+LH
 qi
-qi
-gX
+FD
 aF
 Ft
 gX
-qi
+LH
 aF
 WY
 WY
@@ -11704,11 +11697,11 @@ aF
 aF
 aF
 aF
+LH
 qi
-qi
-gX
+FD
 aF
-gX
+FD
 gX
 At
 aF
@@ -11779,11 +11772,11 @@ aF
 aF
 Bk
 qi
-qi
+LH
 aF
-gX
+FD
 qi
-qi
+LH
 aF
 WY
 WY
@@ -11850,13 +11843,13 @@ Qx
 aF
 aF
 aF
-gX
+FD
 qi
-qi
+LH
 aF
+LH
 qi
-qi
-qi
+LH
 aF
 WY
 WY
@@ -11996,13 +11989,13 @@ Qx
 aF
 aF
 aF
-qi
+LH
 gX
 Bk
 aF
-gX
+FD
 qi
-qi
+LH
 aF
 WY
 WY
@@ -12071,9 +12064,9 @@ aF
 aF
 Ft
 qi
-gX
+FD
 aF
-gX
+FD
 gX
 Ft
 aF
@@ -12142,13 +12135,13 @@ aF
 aF
 Vr
 aF
+LH
 qi
-qi
-gX
+FD
 aF
 If
 gX
-qi
+LH
 aF
 WY
 WY
@@ -12217,11 +12210,11 @@ aF
 aF
 wV
 qi
-qi
+LH
 aF
-qi
+LH
 gX
-qi
+LH
 aF
 WY
 WY
@@ -12288,11 +12281,11 @@ of
 aF
 aF
 aF
-qi
+LH
 qi
 Ft
 aF
-qi
+LH
 gX
 If
 aF
@@ -12362,12 +12355,12 @@ of
 aF
 aF
 aF
-aF
+LH
 aF
 aF
 At
 gX
-qi
+LH
 aF
 WY
 WY
@@ -12439,7 +12432,7 @@ aF
 aF
 aF
 aF
-aF
+LH
 Ho
 aF
 WY
@@ -13057,7 +13050,7 @@ ga
 gd
 gd
 gd
-LH
+gd
 IH
 ah
 Ki

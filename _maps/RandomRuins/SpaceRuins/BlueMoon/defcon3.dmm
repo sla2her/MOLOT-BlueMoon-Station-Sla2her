@@ -363,8 +363,7 @@
 /area/ruin/space/has_grav/port_tarkon/starboardhall)
 "co" = (
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "cq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4359,8 +4358,7 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "wV" = (
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "wW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -4547,6 +4545,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/porthall)
+"ya" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "yd" = (
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/port_tarkon/forehall)
@@ -6291,8 +6293,7 @@
 "If" = (
 /obj/item/solar_assembly,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Ih" = (
 /obj/machinery/door/firedoor/solid/closed,
@@ -6525,6 +6526,9 @@
 /obj/structure/loot_pile/maint,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
+"Jn" = (
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "Jp" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7481,8 +7485,7 @@
 "OS" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "OT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8882,8 +8885,7 @@
 "WB" = (
 /obj/machinery/power/solar,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "WC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8956,8 +8958,7 @@
 "Xb" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Xc" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
@@ -11012,7 +11013,7 @@ Gy
 Gy
 Gy
 Gy
-Gy
+Jn
 Gy
 Gy
 WY
@@ -11081,12 +11082,12 @@ Wa
 Gy
 Gy
 Gy
-Gy
+Jn
 Gy
 Gy
 WB
 OR
-fw
+Jn
 Gy
 WY
 WY
@@ -11153,11 +11154,11 @@ sv
 Gy
 Gy
 Gy
-fw
+Jn
 fw
 Xb
 Gy
-fw
+Jn
 OR
 If
 Gy
@@ -11226,13 +11227,13 @@ Gy
 Gy
 Gy
 Gy
+Jn
 fw
-fw
-OR
+ya
 Gy
 co
 OR
-fw
+Jn
 Gy
 WY
 WY
@@ -11299,11 +11300,11 @@ Gy
 Gy
 Gy
 Gy
+Jn
 fw
-ye
-OR
+ya
 Gy
-OR
+ya
 OR
 WB
 Gy
@@ -11374,11 +11375,11 @@ Gy
 Gy
 Xb
 fw
-fw
+Jn
 Gy
-OR
+ya
 fw
-ye
+Jn
 Gy
 WY
 WY
@@ -11445,13 +11446,13 @@ Qx
 Gy
 Gy
 Gy
-OR
+ya
 fw
-fw
+Jn
 Gy
+Jn
 fw
-fw
-fw
+Jn
 Gy
 RM
 WY
@@ -11591,13 +11592,13 @@ Qx
 Gy
 Gy
 Gy
-fw
+Jn
 OR
 Xb
 Gy
-OR
+ya
 fw
-fw
+Jn
 Gy
 WY
 WY
@@ -11666,9 +11667,9 @@ Gy
 Gy
 co
 fw
-OR
+ya
 Gy
-OR
+ya
 OR
 co
 Gy
@@ -11737,13 +11738,13 @@ Gy
 Gy
 LJ
 Gy
+Jn
 fw
-fw
-OR
+ya
 Gy
 If
 OR
-fw
+Jn
 Gy
 WY
 WY
@@ -11812,11 +11813,11 @@ Gy
 Gy
 wV
 fw
-ye
+Jn
 Gy
-fw
+Jn
 OR
-fw
+Jn
 Gy
 WY
 WY
@@ -11883,11 +11884,11 @@ of
 Gy
 Gy
 Gy
-fw
+Jn
 fw
 co
 Gy
-fw
+Jn
 OR
 If
 Gy
@@ -11957,12 +11958,12 @@ of
 Gy
 Gy
 Gy
-Gy
+Jn
 Gy
 Gy
 WB
 OR
-fw
+Jn
 Gy
 WY
 WY
@@ -12034,7 +12035,7 @@ Gy
 Gy
 Gy
 Gy
-Gy
+Jn
 Ho
 Gy
 WY

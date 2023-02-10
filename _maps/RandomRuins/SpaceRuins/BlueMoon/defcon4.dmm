@@ -1164,6 +1164,7 @@
 /obj/effect/decal/cleanable/glass,
 /mob/living/simple_animal/hostile/carp,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/lattice/catwalk,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "hj" = (
@@ -1888,6 +1889,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/toolstorage)
+"kL" = (
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "kO" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
@@ -2425,6 +2429,7 @@
 /obj/item/solar_assembly,
 /obj/item/solar_assembly,
 /obj/item/solar_assembly,
+/obj/item/electronics/tracker,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "oc" = (
@@ -3899,8 +3904,7 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "wV" = (
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "wW" = (
 /obj/structure/cable/yellow{
@@ -3951,6 +3955,10 @@
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
+"xh" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "xi" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
 	level = 1
@@ -4389,8 +4397,7 @@
 "Al" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "An" = (
 /obj/machinery/pipedispenser,
@@ -4407,8 +4414,7 @@
 "At" = (
 /obj/machinery/power/solar,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Au" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -5202,7 +5208,6 @@
 /obj/structure/closet/crate/engineering/electrical{
 	name = "electronics crate"
 	},
-/obj/item/electronics/tracker,
 /obj/item/stack/cable_coil,
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/circuitboard/computer/atmos_control/tarkon/carbon_tank,
@@ -5248,8 +5253,7 @@
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Ft" = (
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Fu" = (
 /obj/machinery/door/poddoor/shutters/window/preopen{
@@ -5727,8 +5731,7 @@
 "If" = (
 /obj/item/solar_assembly,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Ih" = (
 /obj/machinery/door/firedoor/solid/closed,
@@ -6799,8 +6802,7 @@
 "OS" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "OT" = (
 /obj/effect/turf_decal/tile/yellow,
@@ -10280,7 +10282,7 @@ aF
 aF
 aF
 aF
-aF
+kL
 aF
 aF
 WY
@@ -10349,12 +10351,12 @@ Wa
 aF
 aF
 aF
-aF
+kL
 aF
 aF
 At
 gX
-Qn
+kL
 aF
 WY
 WY
@@ -10421,11 +10423,11 @@ sv
 aF
 aF
 aF
-Qn
+kL
 Qn
 Al
 aF
-Qn
+kL
 gX
 If
 aF
@@ -10494,13 +10496,13 @@ aF
 aF
 aF
 aF
+kL
 Qn
-Qn
-gX
+xh
 aF
 Ft
 gX
-Qn
+kL
 aF
 WY
 WY
@@ -10567,11 +10569,11 @@ aF
 aF
 aF
 aF
+kL
 Qn
-gz
-gX
+xh
 aF
-gX
+xh
 gX
 At
 aF
@@ -10642,11 +10644,11 @@ aF
 aF
 Al
 Qn
-Qn
+kL
 aF
-gX
+xh
 Qn
-gz
+kL
 aF
 WY
 WY
@@ -10713,13 +10715,13 @@ Qx
 aF
 aF
 aF
-gX
+xh
 Qn
-Qn
+kL
 aF
+kL
 Qn
-Qn
-Qn
+kL
 aF
 WY
 WY
@@ -10859,13 +10861,13 @@ Qx
 aF
 aF
 aF
-Qn
+kL
 gX
 Al
 aF
-gX
+xh
 Qn
-Qn
+kL
 aF
 WY
 WY
@@ -10934,9 +10936,9 @@ aF
 aF
 Ft
 Qn
-gX
+xh
 aF
-gX
+xh
 gX
 Ft
 aF
@@ -11005,13 +11007,13 @@ aF
 aF
 LJ
 aF
+kL
 Qn
-Qn
-gX
+xh
 aF
 If
 gX
-Qn
+kL
 aF
 WY
 WY
@@ -11080,11 +11082,11 @@ aF
 aF
 wV
 Qn
-gz
+kL
 aF
-Qn
+kL
 gX
-Qn
+kL
 aF
 WY
 WY
@@ -11151,11 +11153,11 @@ of
 aF
 aF
 aF
-Qn
+kL
 Qn
 Ft
 aF
-Qn
+kL
 gX
 If
 aF
@@ -11225,12 +11227,12 @@ of
 aF
 aF
 aF
-aF
+kL
 aF
 aF
 At
 gX
-Qn
+kL
 aF
 WY
 WY
@@ -11302,7 +11304,7 @@ aF
 aF
 aF
 aF
-aF
+kL
 Ho
 aF
 WY
