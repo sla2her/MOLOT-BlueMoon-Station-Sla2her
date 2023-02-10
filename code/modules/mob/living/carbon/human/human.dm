@@ -25,7 +25,7 @@
 	physiology = new()
 
 	AddComponent(/datum/component/personal_crafting)
-	AddComponent(/datum/element/footstep, FOOTSTEP_MOB_HUMAN, 1, 2)
+	AddComponent(/datum/component/footstep, FOOTSTEP_MOB_HUMAN, 1, 2)
 	. = ..()
 
 	if(CONFIG_GET(flag/disable_stambuffer))

@@ -34,7 +34,7 @@ GLOBAL_LIST_INIT(strippable_alien_humanoid_items, create_strippable_list(list(
 
 /mob/living/carbon/alien/humanoid/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/element/footstep, FOOTSTEP_MOB_CLAW, 0.5, -3)
+	AddComponent(/datum/component/footstep, FOOTSTEP_MOB_CLAW, 0.5, -3)
 	AddElement(/datum/element/strippable, GLOB.strippable_alien_humanoid_items)
 
 /mob/living/carbon/alien/humanoid/restrained(ignore_grab)
