@@ -7068,6 +7068,15 @@
 /obj/effect/light_emitter,
 /turf/open/floor/plating/asteroid/snow/airless,
 /area/syndicate_mothership)
+"qb" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/item/ammo_casing/caseless/rocket,
+/obj/item/ammo_casing/caseless/rocket,
+/turf/open/floor/plasteel,
+/area/centcom/evac)
 "qc" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
@@ -8468,7 +8477,9 @@
 	},
 /obj/machinery/door/airlock/shuttle/glass{
 	name = "Смертельная Арена";
-	safe = 0
+	safe = 0;
+	req_access_txt = "109";
+	autoclose = 0
 	},
 /turf/open/floor/plasteel,
 /area/centcom/evac)
@@ -9580,6 +9591,9 @@
 	dir = 8
 	},
 /obj/item/gun/ballistic/automatic/ak47/akm,
+/obj/item/ammo_box/magazine/ak47,
+/obj/item/ammo_box/magazine/ak47,
+/obj/item/ammo_box/magazine/ak47,
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "vg" = (
@@ -10814,6 +10828,10 @@
 	dir = 8
 	},
 /obj/item/gun/ballistic/rocketlauncher/unrestricted,
+/obj/item/ammo_casing/caseless/rocket/hedp,
+/obj/item/ammo_casing/caseless/rocket/hedp,
+/obj/item/ammo_casing/caseless/rocket/hedp,
+/obj/item/ammo_casing/caseless/rocket/hedp,
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "xZ" = (
@@ -11677,7 +11695,13 @@
 /turf/open/floor/plating,
 /area/syndicate_mothership)
 "zS" = (
+/obj/structure/chair{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/light{
 	dir = 8
 	},
 /obj/effect/mob_spawn/human/corpse/syndicatecommando,
@@ -19342,6 +19366,21 @@
 /obj/effect/turf_decal/loading_area,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
+"RC" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/item/ammo_casing/caseless/rocket,
+/obj/item/ammo_casing/caseless/rocket,
+/turf/open/floor/plasteel,
+/area/centcom/evac)
 "RD" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -20108,6 +20147,10 @@
 	dir = 8
 	},
 /obj/item/gun/ballistic/rocketlauncher/unrestricted,
+/obj/item/ammo_casing/caseless/rocket/hedp,
+/obj/item/ammo_casing/caseless/rocket/hedp,
+/obj/item/ammo_casing/caseless/rocket/hedp,
+/obj/item/ammo_casing/caseless/rocket/hedp,
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "TX" = (
@@ -70544,8 +70587,8 @@ sN
 tS
 uA
 uA
-vV
 zS
+wK
 xs
 wK
 vV
@@ -71832,7 +71875,7 @@ ve
 Ki
 vZ
 nh
-vZ
+qb
 vZ
 AH
 uB
@@ -72602,7 +72645,7 @@ VV
 ve
 vZ
 wL
-vY
+RC
 rk
 US
 yB

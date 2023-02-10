@@ -58,7 +58,7 @@ GLOBAL_LIST_INIT(strippable_monkey_items, create_strippable_list(list(
 /mob/living/carbon/monkey/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/mob_holder, worn_state = "monkey", inv_slots = ITEM_SLOT_HEAD)
-	AddComponent(/datum/component/footstep, FOOTSTEP_MOB_BAREFOOT, 1, 2)
+	AddComponent(/datum/element/footstep, FOOTSTEP_MOB_BAREFOOT, 1, 2)
 	AddElement(/datum/element/strippable, GLOB.strippable_monkey_items)
 
 

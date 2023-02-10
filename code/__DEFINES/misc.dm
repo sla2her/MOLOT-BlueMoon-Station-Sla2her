@@ -478,11 +478,6 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define BONE_SCAR_FILE "wounds/bone_scar_desc.json"
 #define SCAR_LOC_FILE "wounds/scar_loc.json"
 
-
-//Fullscreen overlay resolution in tiles.
-#define FULLSCREEN_OVERLAY_RESOLUTION_X 15
-#define FULLSCREEN_OVERLAY_RESOLUTION_Y 15
-
 #define SUMMON_GUNS "guns"
 #define SUMMON_MAGIC "magic"
 

@@ -38,7 +38,7 @@
 
 /mob/living/simple_animal/hostile/carrion/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/footstep, FOOTSTEP_MOB_CLAW)
+	AddComponent(/datum/element/footstep, FOOTSTEP_MOB_CLAW)
 	AddElement(/datum/element/ventcrawling, given_tier = VENTCRAWLER_ALWAYS)
 
 /mob/living/simple_animal/hostile/carrion/OpenFire(atom/the_target)

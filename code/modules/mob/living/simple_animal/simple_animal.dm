@@ -164,7 +164,7 @@
 	if(dextrous)
 		AddComponent(/datum/component/personal_crafting)
 	if(footstep_type)
-		AddComponent(/datum/component/footstep, footstep_type)
+		AddComponent(/datum/element/footstep, footstep_type)
 
 /mob/living/simple_animal/Destroy()
 	GLOB.simple_animals[AIStatus] -= src

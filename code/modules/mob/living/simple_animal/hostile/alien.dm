@@ -42,7 +42,7 @@
 
 /mob/living/simple_animal/hostile/alien/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/footstep, FOOTSTEP_MOB_CLAW)
+	AddComponent(/datum/element/footstep, FOOTSTEP_MOB_CLAW)
 
 /mob/living/simple_animal/hostile/alien/drone
 	name = "alien drone"

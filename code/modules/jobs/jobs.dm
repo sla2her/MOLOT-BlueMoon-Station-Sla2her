@@ -38,6 +38,9 @@ GLOBAL_LIST_INIT(supply_positions, list(
 
 GLOBAL_LIST_INIT(civilian_positions, list(
 	"Head of Personnel",
+	"Bartender",
+	"Botanist",
+	"Cook",
 	"Janitor",
 	"Curator",
 	"Lawyer",

@@ -75,6 +75,7 @@
         "графика говно",
         "@pick(semicolon)g кто живой???",
         "Аниме!!",
+		".  .  .",
         "Это что инфинити????",
         "кто прочитал тот здохнет",
         "@pick(semicolon)А как какать?",
@@ -217,9 +218,9 @@
         "ТАК И ДАЛЖНО БЫТЬ??",
         "ЭОТ АБГ&",
         "БАГ!!!",
-        "Марк, чини!",
+        "Смайли, чини!",
         "КРЕВОЕ ГАВНО!!!",
-        "МАРК ОПЯТЬ ВСЁ СЛОМАЛ",
+        "СМАЙЛИ ОПЯТЬ ВСЁ СЛОМАЛ",
         "У нас кодерам платят вообще?"
     ],
 
@@ -238,49 +239,48 @@
         "ПАРАЗИТЫ",
         "НИЧТОЖЕСТВА",
         "ЧЕРНЬ",
-        "ШУССОИДЫ",
         "ГНИЛЬ",
         "ПАДАЛЬ",
         "ТУНЕЯДЦЫ"
     ],
 
     "god_aggressive": [
-        "BEGONE, @pick(god_foe)!",
-        "DIE, @pick(god_foe)!",
-        "BLEED, @pick(god_foe)!",
-        "BURN, @pick(god_foe)!",
-        "ALL WILL FALL BEFORE ME!",
-        "ENDLESS SUFFERING AWAITS YOU, @pick(god_foe).",
-        "DEATH TO @pick(god_foe)!"
+        "ЭТО ТОЛЬКО НАЧАЛО, @pick(god_foe)!",
+        "УМРИТЕ, @pick(god_foe)!",
+        "ПОМРИТЕ ОТ КРОВОТЕЧЕНИЯ, @pick(god_foe)!",
+        "ГОРИТЕ, @pick(god_foe)!",
+        "ВСЕ ПАДУТ ПЕРЕДО МНОЙ!!",
+        "ВАС ЖДУТ БЕСКОНЕЧНЫЕ СТРАДАНИЯ, @pick(god_foe).",
+        "СМЕРТЬ @pick(god_foe)!"
     ],
 
     "god_neutral": [
-        "STOP",
-        "HALT.",
-        "BE SILENT.",
-        "QUIET",
-        "SEE THE TRUTH BEFORE YOU, MORTALS.",
-        "MORTALS, SAY YOUR NAME",
-        "BEGONE, MORTALS.",
-        "BE HEALED, MORTALS. I AM FEELING MERCIFUL.",
-        "DANCE FOR ME, LITTLE MORTALS.",
-        "YOU. STOP.",
-        "REST, MORTALS, TOMORROW IS A LONG DAY.",
-        "YOU MORTALS MAKE ME SICK.",
-        "HONK..."
+        "ОСТАНОВИСЬ!",
+        "ХАЛЬТ.",
+        "БУДЬ ТИШЕ.",
+        "ТИШИНА!",
+        "РАСКРОЙТЕ ГЛАЗА И УЗРИТЕ ИСТИНУ, СМЕРТНЫЕ.",
+        "СМЕРТНЫЕ, НАЗОВИТЕ СВОЕ ИМЯ.",
+        "ЭТО ТОЛЬКО НАЧАЛО, MORTALS.",
+        "ИСЦЕЛИТЕСЬ, СМЕРТНЫЕ. Я ЧУВСТВУЮ СЕБЯ МИЛОСЕРДНЫМ.",
+        "ТАНЦУЙТЕ ДЛЯ МЕНЯ, МАЛЕНЬКИЕ СМЕРТНЫЕ.",
+        "ТЫ. ОСТАНОВИСЬ.",
+        "ОТДЫХАЙТЕ, СМЕРТНЫЕ, ЗАВТРА БУДЕТ ДОЛГИЙ ДЕНЬ.",
+        "ОТ ВАС, СМЕРТНЫХ, МЕНЯ ТОШНИТ.",
+        "ХОНК..."
     ],
 
     "god_unstun": [
-        "GET UP. I HAVE NO TIME TO LOSE.",
-        "GET UP, PRIEST.",
-        "GET UP."
+        "ВСТАВАЙ. МНЕ НЕЛЬЗЯ ТЕРЯТЬ ВРЕМЯ.",
+        "ВСТАВАЙ, СВЯЩЕННИК.",
+        "ВСТАВАЙ."
     ],
 
     "god_heal": [
-        "YOU WILL LIVE TO SEE ANOTHER DAY.",
-        "YOU SHALL SURVIVE THIS, MY PRIEST.",
-        "BE HEALED, PRIEST.",
-        "YOUR LIFE IS IMPORTANT. KEEP IT."
+        "ВЫ ДОЖИВЕТЕ ДО СЛЕДУЮЩЕГО ДНЯ.",
+        "ТЫ ПЕРЕЖИВЕШЬ ЭТО, МОЙ СВЯЩЕННИК.",
+        "ИСЦЕЛИТЕСЬ, СВЯЩЕННИК.",
+        "ВАША ЖИЗНЬ ВАЖНА. СОХРАНИТЕ ЕЁ."
     ]
 
 }

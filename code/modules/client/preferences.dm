@@ -392,6 +392,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/egg_shell = "chicken"
 	//SPLURT END
 
+	/// Multiz Parallax option
+	var/multiz_parallax = FALSE
+	/// Multiz Performance option
+	var/multiz_performance = -1
+
+
 /datum/preferences/New(client/C)
 	parent = C
 
