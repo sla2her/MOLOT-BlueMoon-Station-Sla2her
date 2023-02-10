@@ -128,7 +128,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/emitter/energycannon{
-	dir = 3
+	active = 0
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -165,7 +165,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/emitter/energycannon{
-	dir = 3
+	active = 0
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -695,6 +695,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
+/obj/item/documents/syndicate/red,
 /turf/open/floor/carpet,
 /area/awaymission/challenge/end)
 "cj" = (
@@ -800,6 +801,9 @@
 /obj/machinery/door/airlock/centcom{
 	name = "Security";
 	req_access_txt = "109"
+	},
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/challenge/end)
@@ -1077,7 +1081,6 @@
 /obj/structure/table/reinforced,
 /obj/item/gun/ballistic/automatic/l6_saw/unrestricted,
 /obj/item/ammo_box/magazine/mm712x82,
-/obj/item/ammo_box/magazine/mm712x82,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/challenge/end)
 "gF" = (
@@ -1115,7 +1118,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/emitter/energycannon{
-	dir = 3
+	active = 0
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -1268,13 +1271,6 @@
 	icon_state = "iron0"
 	},
 /area/awaymission/challenge/main)
-"Gu" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/middle,
-/obj/effect/spawner/structure/window/hollow/reinforced/middle{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/awaymission/challenge/end)
 "Hn" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1327,6 +1323,12 @@
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
+"KS" = (
+/obj/machinery/power/emitter/energycannon{
+	active = 0
+	},
+/turf/open/space,
+/area/space)
 "Lm" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/end{
 	dir = 4
@@ -1353,7 +1355,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/emitter/energycannon{
-	dir = 3
+	active = 0
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/challenge/main)
@@ -26748,7 +26750,7 @@ aa
 aa
 aa
 aa
-aa
+KS
 aa
 aa
 aa
@@ -27073,7 +27075,7 @@ bR
 cb
 cb
 cb
-Gu
+bP
 cn
 cn
 cE
@@ -27330,7 +27332,7 @@ bS
 cc
 cl
 cb
-Gu
+bP
 cC
 cd
 cd
@@ -28101,7 +28103,7 @@ bS
 cc
 Zw
 cb
-Gu
+bP
 cn
 cd
 cd
@@ -28358,7 +28360,7 @@ bR
 cb
 cb
 cb
-Gu
+bP
 cn
 cd
 cd

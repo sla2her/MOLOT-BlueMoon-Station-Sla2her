@@ -1157,6 +1157,7 @@
 "hf" = (
 /obj/machinery/power/smes,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable/yellow,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "hi" = (
@@ -1347,6 +1348,7 @@
 	name = "backup power storage unit"
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "ia" = (
@@ -4030,6 +4032,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "xN" = (
@@ -5930,6 +5935,9 @@
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "Jl" = (
@@ -6448,6 +6456,7 @@
 /obj/machinery/power/smes,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Mp" = (
