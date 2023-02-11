@@ -1062,6 +1062,7 @@
 
 /obj/item/card/id/away/tarkoff/eng
 	assignment = "P-T Maintenance Crew"
+		access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
 
 /obj/item/card/id/away/tarkoff/sci
 	assignment = "P-T Field Researcher"
@@ -1069,7 +1070,7 @@
 
 /obj/item/card/id/away/tarkoff/ensign
 	assignment = "Tarkoff Ensign"
-	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_BRIG)
+	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
 
 /obj/item/card/id/away/tarkoff/sci
 	name = "P-T field researcher's access card"
