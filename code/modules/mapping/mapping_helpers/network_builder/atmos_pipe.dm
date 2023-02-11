@@ -76,14 +76,12 @@
 		if(4)		//4 way manifold
 			built = new /obj/machinery/atmospherics/pipe/manifold4w(loc)
 	built.SetInitDirections()
-	built.on_construction(pipe_color, pipe_layer)
-	level = 1
+	built.on_construction(pipe_color, pipe_layer, level)
 	built.hide(!visible_pipes)
 
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro
 	name = "distro line autobuilder"
 	pipe_layer = PIPING_LAYER_MIN
-	level = 1
 	pixel_x = -PIPING_LAYER_P_X
 	pixel_y = -PIPING_LAYER_P_Y
 	pipe_color = rgb(130,43,255)
@@ -92,7 +90,6 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers
 	name = "scrubbers line autobuilder"
 	pipe_layer = PIPING_LAYER_MAX
-	level = 1
 	pixel_x = PIPING_LAYER_P_X
 	pixel_y = PIPING_LAYER_P_Y
 	pipe_color = rgb(255,0,0)

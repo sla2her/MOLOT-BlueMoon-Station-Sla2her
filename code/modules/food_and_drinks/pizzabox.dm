@@ -104,6 +104,12 @@
 		audible_message("<span class='warning'>[icon2html(src, hearers(src))] *beep*</span>")
 		bomb_active = TRUE
 		START_PROCESSING(SSobj, src)
+	else if(!open && !pizza && !bomb)
+		var/obj/item/stack/sheet/cardboard/cardboard = new /obj/item/stack/sheet/cardboard(user.drop_location())
+		to_chat(user, span_notice("Складываю коробку из-под пиццы в картон."))
+		user.put_in_active_hand(cardboard)
+		qdel(src)
+		return
 	update_icon()
 
 /obj/item/pizzabox/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)

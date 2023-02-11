@@ -1039,6 +1039,22 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		addtimer(CALLBACK(src,.verb/fit_viewport,10)) //Delayed to avoid wingets from Login calls.
 	SEND_SIGNAL(mob, COMSIG_MOB_CLIENT_CHANGE_VIEW, src, old_view, actualview)
 
+/client/proc/generate_clickcatcher()
+	if(!void)
+		void = new()
+		void_right = new()
+		void_bottom = new()
+		screen += void
+		screen += void_right
+		screen += void_bottom
+
+/client/proc/apply_clickcatcher()
+	generate_clickcatcher()
+	var/list/actualview = getviewsize(view)
+	void.UpdateGreed(actualview[1],actualview[2])
+	void_right.UpdateGreed(1, actualview[2], TRUE)
+	void_bottom.UpdateGreed(actualview[1], 1, 2)
+
 /client/proc/AnnouncePR(announcement)
 	if(prefs && prefs.chat_toggles & CHAT_PULLR)
 		to_chat(src, announcement)

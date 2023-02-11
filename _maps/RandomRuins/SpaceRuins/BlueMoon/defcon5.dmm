@@ -1293,6 +1293,7 @@
 "hf" = (
 /obj/machinery/power/smes,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable/yellow,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "hi" = (
@@ -1440,6 +1441,19 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/observ)
+"hJ" = (
+/obj/item/broken_bottle,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "hL" = (
 /obj/machinery/computer{
 	desc = "A computer long since rendered non-functional due to lack of maintenance. Spitting out error messages.";
@@ -1506,6 +1520,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/mining)
+"hT" = (
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "hV" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
 /turf/open/floor/iron/freezer,
@@ -1530,6 +1557,7 @@
 	name = "backup power storage unit"
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "ia" = (
@@ -1716,6 +1744,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
+"iV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4;
+	piping_layer = 3
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "jc" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
 	level = 1
@@ -4243,8 +4279,7 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "wV" = (
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "wW" = (
 /obj/structure/cable/yellow{
@@ -4342,7 +4377,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/autolathe/secure,
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "xL" = (
@@ -4354,6 +4389,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "xN" = (
@@ -4786,8 +4824,7 @@
 "At" = (
 /obj/machinery/power/solar,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Au" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -4951,8 +4988,7 @@
 "Bk" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/solar,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Bn" = (
 /obj/machinery/door/airlock/public{
@@ -5643,6 +5679,18 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/forehall)
+"Ev" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "Ex" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/oxygen{
@@ -5849,8 +5897,7 @@
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Ft" = (
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "FB" = (
 /obj/item/flashlight/lantern,
@@ -5861,6 +5908,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
+"FD" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "FE" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -6324,8 +6375,7 @@
 "If" = (
 /obj/item/solar_assembly,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Ih" = (
 /obj/machinery/door/firedoor/solid,
@@ -6581,6 +6631,9 @@
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "Jl" = (
@@ -7093,13 +7146,8 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "LH" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "63; 42"
-	},
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/port_tarkon/trauma)
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "LN" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
@@ -7145,6 +7193,7 @@
 /obj/machinery/power/smes,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Mi" = (
@@ -7497,6 +7546,8 @@
 /obj/item/ammo_box/magazine/fal/r10,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/ballistic/automatic/fal/nomag,
+/obj/item/gun/energy/e_gun/mini,
+/obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "Oa" = (
@@ -7630,8 +7681,7 @@
 "OS" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/item/solar_assembly,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "OT" = (
 /obj/effect/turf_decal/tile/yellow,
@@ -7966,6 +8016,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/porthall)
+"QG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8;
+	piping_layer = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "QH" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/air_input/tarkon{
 	dir = 4
@@ -8367,6 +8425,14 @@
 /obj/effect/decal/cleanable/confetti,
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "SL" = (
@@ -9750,6 +9816,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/dim/directional/south,
 /obj/item/paper/fluff/ruins/tarkoff/defcon5,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "ZR" = (
@@ -11417,7 +11491,7 @@ aF
 aF
 aF
 aF
-aF
+LH
 aF
 aF
 WY
@@ -11486,12 +11560,12 @@ Wa
 aF
 aF
 aF
-aF
+LH
 aF
 aF
 At
 gX
-qi
+LH
 aF
 WY
 WY
@@ -11558,11 +11632,11 @@ sv
 aF
 aF
 aF
-qi
+LH
 qi
 Bk
 aF
-qi
+LH
 gX
 If
 aF
@@ -11631,13 +11705,13 @@ aF
 aF
 aF
 aF
+LH
 qi
-qi
-gX
+FD
 aF
 Ft
 gX
-qi
+LH
 aF
 WY
 WY
@@ -11704,11 +11778,11 @@ aF
 aF
 aF
 aF
+LH
 qi
-qi
-gX
+FD
 aF
-gX
+FD
 gX
 At
 aF
@@ -11779,11 +11853,11 @@ aF
 aF
 Bk
 qi
-qi
+LH
 aF
-gX
+FD
 qi
-qi
+LH
 aF
 WY
 WY
@@ -11850,13 +11924,13 @@ Qx
 aF
 aF
 aF
-gX
+FD
 qi
-qi
+LH
 aF
+LH
 qi
-qi
-qi
+LH
 aF
 WY
 WY
@@ -11996,13 +12070,13 @@ Qx
 aF
 aF
 aF
-qi
+LH
 gX
 Bk
 aF
-gX
+FD
 qi
-qi
+LH
 aF
 WY
 WY
@@ -12071,9 +12145,9 @@ aF
 aF
 Ft
 qi
-gX
+FD
 aF
-gX
+FD
 gX
 Ft
 aF
@@ -12142,13 +12216,13 @@ aF
 aF
 Vr
 aF
+LH
 qi
-qi
-gX
+FD
 aF
 If
 gX
-qi
+LH
 aF
 WY
 WY
@@ -12217,11 +12291,11 @@ aF
 aF
 wV
 qi
-qi
+LH
 aF
-qi
+LH
 gX
-qi
+LH
 aF
 WY
 WY
@@ -12288,11 +12362,11 @@ of
 aF
 aF
 aF
-qi
+LH
 qi
 Ft
 aF
-qi
+LH
 gX
 If
 aF
@@ -12341,7 +12415,7 @@ pv
 uv
 uc
 Vj
-Vj
+iV
 oV
 mC
 ab
@@ -12362,12 +12436,12 @@ of
 aF
 aF
 aF
-aF
+LH
 aF
 aF
 At
 gX
-qi
+LH
 aF
 WY
 WY
@@ -12413,8 +12487,8 @@ uD
 dq
 hr
 SK
-Vj
-lC
+Ev
+hJ
 ZP
 uv
 XI
@@ -12439,7 +12513,7 @@ aF
 aF
 aF
 aF
-aF
+LH
 Ho
 aF
 WY
@@ -12487,8 +12561,8 @@ lT
 uv
 IV
 Xc
-Vj
-WJ
+QG
+hT
 ZX
 PO
 ID
@@ -13057,7 +13131,7 @@ ga
 gd
 gd
 gd
-LH
+gd
 IH
 ah
 Ki

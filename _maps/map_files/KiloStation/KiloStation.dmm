@@ -17419,7 +17419,7 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/grass/grass0/grass0,
+/turf/open/floor/grass/grass0,
 /area/service/chapel/main)
 "aDi" = (
 /obj/structure/reagent_dispensers/watertank,

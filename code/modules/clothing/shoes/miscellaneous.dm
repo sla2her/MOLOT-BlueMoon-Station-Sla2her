@@ -42,11 +42,6 @@
 	clothing_flags = NOSLIP
 	armor = list(MELEE = 40, BULLET = 30, LASER = 25, ENERGY = 25, BOMB = 50, BIO = 30, RAD = 30, FIRE = 90, ACID = 50)
 
-/obj/item/clothing/shoes/combat/swat/knifed //overpowered boots for death squads
-	name = "\improper SWAT boots"
-	desc = "High speed, no drag combat boots."
-	contents = list(/obj/item/kitchen/knife/combat=1)
-
 /obj/item/clothing/shoes/sandal
 	desc = "A pair of rather plain wooden sandals."
 	name = "sandals"
@@ -149,7 +144,7 @@
 
 /obj/item/clothing/shoes/jackboots
 	name = "jackboots"
-	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
+	desc = "Nanotrasen-brand jackboots for all your jackboots-related needs. From genuine combat to tacticool LARPing, satisfaction is guaranteed."
 	icon_state = "jackboots"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
@@ -159,6 +154,15 @@
 	permeability_coefficient = 0.05 //Thick soles, and covers the ankle
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 	lace_time = 12 SECONDS
+
+/obj/item/clothing/shoes/jackboots/Initialize()
+	. = ..()
+	AddComponent(/datum/component/squeak, list('sound/effects/footstep/sec_boots-1.ogg' = 1,'sound/effects/footstep/sec_boots-2.ogg' = 1), 30)
+
+/obj/item/clothing/shoes/jackboots/sec
+	name = "security jackboots"
+	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
+	icon_state = "jackboots_sec"
 
 /obj/item/clothing/shoes/jackboots/fast
 	slowdown = -1

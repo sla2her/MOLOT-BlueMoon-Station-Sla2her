@@ -12,6 +12,8 @@
 #define PLANE_SPACE_PARALLAX_RENDER_TARGET "PLANE_SPACE_PARALLAX"
 
 #define OPENSPACE_LAYER 17 //Openspace layer over all
+#define GRAVITY_PULSE_PLANE -12
+#define GRAVITY_PULSE_RENDER_TARGET "*GRAVPULSE_RENDER_TARGET"
 #define OPENSPACE_PLANE -10 //Openspace plane below all turfs
 #define OPENSPACE_BACKDROP_PLANE -9 //Black square just over openspace plane to guaranteed cover all in openspace turf
 
@@ -154,6 +156,9 @@
 #define CAMERA_STATIC_LAYER 19
 #define CAMERA_STATIC_RENDER_TARGET "CAMERA_STATIC_PLANE"
 
+///Visuals that represent sounds happening, and can be seen while blind.
+#define SOUND_EFFECT_VISUAL_PLANE 25
+
 /// Plane for balloon text (text that fades up)
 /// It's over lighting and every other crap because this is nearly as important as hud content and only visible to the user.
 #define BALLOON_CHAT_PLANE 20
@@ -193,3 +198,35 @@
 #define SPLASHSCREEN_LAYER 90
 #define SPLASHSCREEN_PLANE 90
 #define SPLASHSCREEN_RENDER_TARGET "SPLASHSCREEN_PLANE"
+
+//-------------------- Rendering ---------------------
+#define RENDER_PLANE_GAME 100
+#define RENDER_PLANE_NON_GAME 101
+#define RENDER_PLANE_MASTER 102
+
+// Lummox I swear to god I will find you
+// NOTE! You can only ever have planes greater then -10000, if you add too many with large offsets you will brick multiz
+// Same can be said for large multiz maps. Tread carefully mappers
+#define HIGHEST_EVER_PLANE RENDER_PLANE_MASTER
+/// The range unique planes can be in
+#define PLANE_RANGE (HIGHEST_EVER_PLANE - PLANE_VOID)
+
+#define SINGULARITY_LAYER 1
+#define ABOVE_SINGULARITY_LAYER 2
+
+#define FOV_EFFECTS_LAYER 2 //Blindness effects are not layer 4, they lie to you
+/// A value of /datum/preference/numeric/multiz_performance that disables the option
+#define MULTIZ_PERFORMANCE_DISABLE -1
+
+//Plane master critical flags
+//Describes how different plane masters behave when they are being culled for performance reasons
+/// This plane master will not go away if its layer is culled. useful for preserving effects
+#define PLANE_CRITICAL_DISPLAY (1<<0)
+/// This plane master will temporarially remove relays to non critical planes if it's layer is culled (and it's critical)
+/// This is VERY hacky, but needed to ensure that some instances of BLEND_MULITPLY work as expected (fuck you god damn parallax)
+/// It also implies that the critical plane has a *'d render target, making it mask itself
+#define PLANE_CRITICAL_NO_EMPTY_RELAY (1<<1)
+
+#define RENDER_PLANE_GAME_WORLD -1
+
+#define RENDER_PLANE_LIGHTING 15

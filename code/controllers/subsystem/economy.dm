@@ -13,6 +13,16 @@ SUBSYSTEM_DEF(economy)
 										ACCOUNT_CAR = ACCOUNT_CAR_NAME,
 										ACCOUNT_SEC = ACCOUNT_SEC_NAME)
 	var/list/generated_accounts = list()
+	/// A var that collects the total amount of credits owned in player accounts on station, reset and recounted on fire()
+	var/station_total = 0
+	/// A var that tracks how much money is expected to be on station at a given time. If less than station_total prices go up in vendors.
+	var/station_target = 1
+	/// A passively increasing buffer to help alliviate inflation later into the shift, but to a lesser degree.
+	var/station_target_buffer = 0
+	/// A var that displays the result of inflation_value for easier debugging and tracking.
+	var/inflation_value = 1
+	/// Contains the message to send to newscasters about earnings, updated on price_update()
+	var/civ_bounty_tracker = 0
 	var/full_ancap = FALSE // Enables extra money charges for things that normally would be free, such as sleepers/cryo/cloning.
 							//Take care when enabling, as players will NOT respond well if the economy is set up for low cash flows.
 	var/alive_humans_bounty = 100
@@ -20,6 +30,7 @@ SUBSYSTEM_DEF(economy)
 	var/monster_bounty = 150
 	var/mood_bounty = 100
 	var/techweb_bounty = 250
+	var/list/bank_accounts_by_id = list()
 	var/slime_bounty = list("grey" = 10,
 							// tier 1
 							"orange" = 100,
@@ -49,11 +60,11 @@ SUBSYSTEM_DEF(economy)
 	var/list/dep_cards = list()
 	///The modifier multiplied to the value of bounties paid out.
 	var/bounty_modifier = 1
+	/// Contains the message to send to newscasters about price inflation and earnings, updated on price_update()
+	var/earning_report
 	///The modifier multiplied to the value of cargo pack prices.
 	var/pack_price_modifier = 1
-
-	var/civ_bounty_tracker = 0
-	/// Contains the message to send to newscasters about earnings, updated on price_update()
+	var/market_crashing = FALSE
 
 /datum/controller/subsystem/economy/Initialize(timeofday)
 	var/budget_to_hand_out = round(budget_pool / department_accounts.len)
@@ -61,16 +72,31 @@ SUBSYSTEM_DEF(economy)
 		new /datum/bank_account/department(A, budget_to_hand_out)
 	return ..()
 
+/datum/controller/subsystem/economy/Recover()
+	generated_accounts = SSeconomy.generated_accounts
+	bank_accounts_by_id = SSeconomy.bank_accounts_by_id
+	dep_cards = SSeconomy.dep_cards
+
 /datum/controller/subsystem/economy/fire(resumed = 0)
 	eng_payout()  // Payout based on nothing. What will replace it? Surplus power, powered APC's, air alarms? Who knows.
 	sci_payout() // Payout based on slimes.
 	secmedsrv_payout() // Payout based on crew safety, health, and mood.
 	civ_payout() // Payout based on ??? Profit
 	car_payout() // Cargo's natural gain in the cash moneys.
+	var/temporary_total = 0
+	station_total = 0
+	station_target_buffer += STATION_TARGET_BUFFER
 	for(var/account in bank_accounts)
 		var/datum/bank_account/bank_account = account
 		bank_account.payday(1)
-
+	for(var/account in bank_accounts_by_id)
+		var/datum/bank_account/bank_account = bank_accounts_by_id[account]
+		if(bank_account?.account_job && !ispath(bank_account.account_job))
+			temporary_total += (bank_account.account_job.paycheck * STARTING_PAYCHECKS)
+		station_total += bank_account.account_balance
+	station_target = max(round(temporary_total / max(bank_accounts_by_id.len * 2, 1)) + station_target_buffer, 1)
+	if(!market_crashing)
+		price_update()
 
 /datum/controller/subsystem/economy/proc/get_dep_account(dep_id)
 	for(var/datum/bank_account/department/D in generated_accounts)
@@ -144,3 +170,31 @@ SUBSYSTEM_DEF(economy)
 	var/datum/bank_account/D = get_dep_account(ACCOUNT_CIV)
 	if(D)
 		D.adjust_money(min(civ_cash, MAX_GRANT_CIV))
+
+/**
+ * Updates the prices of all station vendors with the inflation_value, increasing/decreasing costs across the station, and alerts the crew.
+ *
+ * Iterates over the machines list for vending machines, resets their regular and premium product prices (Not contraband), and sends a message to the newscaster network.
+ **/
+/datum/controller/subsystem/economy/proc/price_update()
+	for(var/obj/machinery/vending/V in GLOB.machines)
+		if(istype(V, /obj/machinery/vending/custom))
+			continue
+		if(!is_station_level(V.z))
+			continue
+		V.reset_prices(V.product_records, V.coin_records)
+	earning_report = "<b>Экономический отчет сектора</b><br><br> В настоящее время цены поставщиков в секторе <b>[SSeconomy.inflation_value()*100]%</b>.<br><br> Расходная мощность станции в настоящее время <b>[station_total] кредит[get_num_string(station_total)]</b>, а целевое довольствие экипажа составляет <b>[station_target] кредит[get_num_string(station_target)]</b>.<br><br> Это всё от <i>Отдел экономистов NanoTrasen</i>."
+	GLOB.news_network.SubmitArticle(earning_report, "Экономический отчет сектора", "Станционные Объявления", null)
+
+/**
+ * Proc that returns a value meant to shift inflation values in vendors, based on how much money exists on the station.
+ *
+ * If crew are somehow aquiring far too much money, this value will dynamically cause vendables across the station to skyrocket in price until some money is spent.
+ * Additionally, civilain bounties will cost less, and cargo goodies will increase in price as well.
+ * The goal here is that if you want to spend money, you'll have to get it, and the most efficient method is typically from other players.
+ **/
+/datum/controller/subsystem/economy/proc/inflation_value()
+	if(!bank_accounts_by_id.len)
+		return 1
+	inflation_value = max(round(((station_total / bank_accounts_by_id.len) / station_target), 0.1), 1.0)
+	return inflation_value
