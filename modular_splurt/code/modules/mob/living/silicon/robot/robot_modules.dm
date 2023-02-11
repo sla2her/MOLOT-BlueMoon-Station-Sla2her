@@ -19,7 +19,8 @@
 			"RoboMaid" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "robomaid_sd"),
 			"BootyF" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "bootystandard"),
 			"BootyM" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "bootystandardM"),
-			"BootyS" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "bootystandardS")
+			"BootyS" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "bootystandardS"),
+			"Fembot" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi', icon_state = "fembot-clerc") //Gardelin0 Addon
 		)
 		stand_icons = sortList(stand_icons)
 	var/stand_borg_icon = show_radial_menu(R, R , stand_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
@@ -70,6 +71,9 @@
 			cyborg_base_icon = "bootystandardS"
 			cyborg_icon_override = 'modular_splurt/icons/mob/robots.dmi'
 			hat_offset = 3
+		if("Fembot") // //Gardelin0 Addon
+			cyborg_base_icon = "fembot-clerc"
+			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi'
 	return ..()
 
 /obj/item/robot_module/clown/be_transformed_to(obj/item/robot_module/old_module)
