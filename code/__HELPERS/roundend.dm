@@ -245,10 +245,9 @@
 /datum/controller/subsystem/ticker/proc/declare_completion()
 	set waitfor = FALSE
 
-	to_chat(world, "<BR><BR><BR><span class='big bold'>The round has ended.</span>")
-	log_game("The round has ended.")
+	to_chat(world, "<br><br><br><center><span class='big bold'>Конец раунда.</span></center><br><br><br>")
 
-	CONFIG_SET(flag/suicide_allowed,TRUE) // EORG suicides allowed
+	log_game("The round has ended.")
 
 	for(var/I in round_end_events)
 		var/datum/callback/cb = I
@@ -278,40 +277,23 @@
 			for(var/m in GLOB.player_list)
 				var/mob/M = m
 				H.add_hud_to(M)
-		CHECK_TICK
+
+	CHECK_TICK
 
 	//Set news report and mode result
 	mode.set_round_result()
 
-	var/survival_rate = GLOB.joined_player_list.len ? "[PERCENT(popcount[POPCOUNT_SURVIVORS]/GLOB.joined_player_list.len)]%" : "there's literally no player"
-
-	send2adminchat("Server", "A round of [mode.name] just ended[mode_result == "undefined" ? "." : " with a [mode_result]."] Survival rate: [survival_rate]")
+	send2adminchat("Server", "Round just ended.")
 
 	if(length(CONFIG_GET(keyed_list/cross_server)))
 		send_news_report()
 
-	//tell the nice people on discord what went on before the salt cannon happens.
-	if(CONFIG_GET(string/chat_roundend_notice_tag))
-		var/broadcastmessage = ""
-
-		if(LAZYLEN(GLOB.round_end_notifiees))
-			broadcastmessage += "[GLOB.round_end_notifiees.Join(", ")], "
-
-
-		broadcastmessage += "[((broadcastmessage == "") ? "the" : "The")] current round has ended. Please standby for your shift interlude Nanotrasen News Network's report!\n"
-		broadcastmessage += "```\n[send_news_report()]\n```"
-
-		if(CONFIG_GET(string/chat_reboot_role))
-			broadcastmessage += "\n\n<@&[CONFIG_GET(string/chat_reboot_role)]>, the server will reboot shortly!"
-
-		send2chat(broadcastmessage, CONFIG_GET(string/chat_roundend_notice_tag))
-
 	CHECK_TICK
 
-	// handle_hearts()
-	if(CONFIG_GET(flag/reveal_everything))
-		set_observer_default_invisibility(0, "<span class='warning'>The round is over! You are now visible to the living.</span>")
-		CHECK_TICK
+	handle_hearts()
+	set_observer_default_invisibility(0, span_warning("Раунд завершён. Тебя видно!"))
+
+	CHECK_TICK
 
 	//These need update to actually reflect the real antagonists
 	//Print a list of antagonists to the server log
@@ -351,9 +333,9 @@
 		if(mode.station_was_nuked)
 			Reboot("Станция уничтожена Ядерной бомбой.", "nuke")
 		else
-			Reboot("КОНЕЦ!", "proper completion", 150 SECONDS)
+			Reboot("КОНЕЦ РАУНДА! ЕОРГ ТОЛЬКО НА ЦК-АРЕНЕ!!", "proper completion", 150 SECONDS)
 	else
-		CRASH("Attempted standard reboot without ticker roundend completion")
+		Reboot("Конец раунда.", "proper completion")
 
 //Common part of the report
 /datum/controller/subsystem/ticker/proc/build_roundend_report()
@@ -780,7 +762,7 @@
 	var/currrent_category
 	var/datum/antagonist/previous_category
 
-	sortTim(all_antagonists, /proc/cmp_antag_category)
+	sortTim(all_antagonists, GLOBAL_PROC_REF(cmp_antag_category))
 
 	for(var/datum/antagonist/A in all_antagonists)
 		if(!A.show_in_roundend)

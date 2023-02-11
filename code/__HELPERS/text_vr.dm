@@ -16,7 +16,7 @@
 		else
 			return string
 	else
-		return "[copytext_char(string, 1, 37)]..."
+		return "[copytext(string, 1, 37)]..."
 
 GLOBAL_LIST_EMPTY(mentorlog)
 GLOBAL_PROTECT(mentorlog)

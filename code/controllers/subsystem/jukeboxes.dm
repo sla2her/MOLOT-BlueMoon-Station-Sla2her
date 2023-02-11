@@ -66,7 +66,7 @@ SUBSYSTEM_DEF(jukeboxes)
 
 
 //Updates jukebox by transferring to different object or modifying falloff.
-/datum/controller/subsystem/jukeboxes/proc/updatejukebox(IDtoupdate, obj/jukebox, jukefalloff) 
+/datum/controller/subsystem/jukeboxes/proc/updatejukebox(IDtoupdate, obj/jukebox, jukefalloff)
 	if(islist(activejukeboxes[IDtoupdate]))
 		if(istype(jukebox))
 			activejukeboxes[IDtoupdate][JUKE_BOX] = jukebox

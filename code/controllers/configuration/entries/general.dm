@@ -347,3 +347,9 @@
 	config_entry_value = 5
 //ambition end
 
+/datum/config_entry/number/commendations
+	integer = FALSE
+	deprecated_by = /datum/config_entry/number/commendation_percent_poll
+
+/datum/config_entry/number/commendation_percent_poll
+	integer = FALSE
