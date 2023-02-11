@@ -10,16 +10,16 @@
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon
 
 /obj/item/circuitboard/computer/atmos_control/tarkon
-	name = "Tarkoff Atmospheric Control"
+	name = "Tarkov Atmospheric Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon
 
 /obj/machinery/computer/atmos_control/tarkon/oxygen_tank
-	name = "Tarkoff Oxygen Supply Control"
+	name = "Tarkov Oxygen Supply Control"
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon/oxygen_tank
 	sensors = list(ATMOS_GAS_MONITOR_TARKOFF_O2 = "Oxygen Supply")
 
 /obj/item/circuitboard/computer/atmos_control/tarkon/oxygen_tank
-	name = "Tarkoff Oxygen Supply Control"
+	name = "Tarkov Oxygen Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon/oxygen_tank
 
 /obj/machinery/air_sensor/tarkon/oxygen_tank
@@ -33,12 +33,12 @@
 	id_tag = ATMOS_GAS_MONITOR_TARKOFF_O2
 
 /obj/machinery/computer/atmos_control/tarkon/plasma_tank
-	name = "Tarkoff Plasma Supply Control"
+	name = "Tarkov Plasma Supply Control"
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon/plasma_tank
 	sensors = list(ATMOS_GAS_MONITOR_TARKOFF_PLAS = "Plasma Supply")
 
 /obj/item/circuitboard/computer/atmos_control/tarkon/plasma_tank
-	name = "Tarkoff Plasma Supply Control"
+	name = "Tarkov Plasma Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon/plasma_tank
 
 /obj/machinery/air_sensor/tarkon/plasma_tank
@@ -52,12 +52,12 @@
 	id_tag = ATMOS_GAS_MONITOR_TARKOFF_PLAS
 
 /obj/machinery/computer/atmos_control/tarkon/mix_tank
-	name = "Tarkoff Mix Chamber Control"
+	name = "Tarkov Mix Chamber Control"
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon/mix_tank
 	sensors = list(ATMOS_GAS_MONITOR_TARKOFF_MIX = "Mix Chamber")
 
 /obj/item/circuitboard/computer/atmos_control/tarkon/mix_tank
-	name = "Tarkoff Gas Mix Supply Control"
+	name = "Tarkov Gas Mix Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon/mix_tank
 
 /obj/machinery/air_sensor/tarkon/mix_tank
@@ -71,12 +71,12 @@
 	id_tag = ATMOS_GAS_MONITOR_TARKOFF_MIX
 
 /obj/machinery/computer/atmos_control/tarkon/nitrogen_tank
-	name = "Tarkoff Nitrogen Supply Control"
+	name = "Tarkov Nitrogen Supply Control"
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon/nitrogen_tank
 	sensors = list(ATMOS_GAS_MONITOR_TARKOFF_N2 = "Nitrogen Supply")
 
 /obj/item/circuitboard/computer/atmos_control/tarkon/nitrogen_tank
-	name = "Tarkoff Nitrogen Supply Control"
+	name = "Tarkov Nitrogen Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon/nitrogen_tank
 
 /obj/machinery/air_sensor/tarkon/nitrogen_tank
@@ -90,12 +90,12 @@
 	id_tag = ATMOS_GAS_MONITOR_TARKOFF_N2
 
 /obj/machinery/computer/atmos_control/tarkon/nitrous_tank
-	name = "Tarkoff Nitrous Oxide Supply Control"
+	name = "Tarkov Nitrous Oxide Supply Control"
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon/nitrous_tank
 	sensors = list(ATMOS_GAS_MONITOR_TARKOFF_N2O = "Nitrous Oxide Supply")
 
 /obj/item/circuitboard/computer/atmos_control/tarkon/nitrous_tank
-	name = "Tarkoff Nitrous Oxide Supply Control"
+	name = "Tarkov Nitrous Oxide Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon/nitrous_tank
 
 /obj/machinery/air_sensor/tarkon/nitrous_tank
@@ -109,12 +109,12 @@
 	id_tag = ATMOS_GAS_MONITOR_TARKOFF_N2O
 
 /obj/machinery/computer/atmos_control/tarkon/carbon_tank
-	name = "Tarkoff Carbon Dioxide Supply Control"
+	name = "Tarkov Carbon Dioxide Supply Control"
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon/carbon_tank
 	sensors = list(ATMOS_GAS_MONITOR_TARKOFF_CO2 = "Carbon Dioxide Supply")
 
 /obj/item/circuitboard/computer/atmos_control/tarkon/carbon_tank
-	name = "Tarkoff Carbon Dioxide Supply Control"
+	name = "Tarkov Carbon Dioxide Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon/carbon_tank
 
 /obj/machinery/air_sensor/tarkon/carbon_tank
@@ -128,12 +128,12 @@
 	id_tag = ATMOS_GAS_MONITOR_TARKOFF_CO2
 
 /obj/machinery/computer/atmos_control/tarkon/incinerator
-	name = "Tarkoff Incinerator Chamber Control"
+	name = "Tarkov Incinerator Chamber Control"
 	circuit = /obj/item/circuitboard/computer/atmos_control/tarkon/incinerator
 	sensors = list(ATMOS_GAS_MONITOR_TARKOFF_INCINERATOR = "Incinerator Chamber")
 
 /obj/item/circuitboard/computer/atmos_control/tarkon/incinerator
-	name = "Tarkoff Incinerator Chamber Control"
+	name = "Tarkov Incinerator Chamber Control"
 	build_path = /obj/machinery/computer/atmos_control/tarkon/incinerator
 
 /obj/machinery/air_sensor/tarkon/incinerator_tank

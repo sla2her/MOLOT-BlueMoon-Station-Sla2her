@@ -731,12 +731,12 @@
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
 
-//Tarkoff Блюмуновский. Ебать.
+//Tarkov Блюмуновский. Ебать.
 
 /datum/map_template/shuttle/ruin/tarkon_driver
 	prefix = "_maps/shuttles/bluemoon/"
 	suffix = "tarkoff_driverdc54"
-	name = "Tarkoff Drill Driver"
+	name = "Tarkov Drill Driver"
 
 /datum/map_template/shuttle/ruin/tarkon_driver/defcon3
 	suffix = "tarkoff_driverdc3"
@@ -745,8 +745,8 @@
 	suffix = "tarkoff_driverdc2"
 
 /obj/machinery/computer/shuttle/tarkon_driver
-	name = "Tarkoff Driver Control"
-	desc = "Used to control the Tarkoff Driver."
+	name = "Tarkov Driver Control"
+	desc = "Used to control the Tarkov Driver."
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
 	light_color = LIGHT_COLOR_RED
@@ -755,8 +755,8 @@
 	possible_destinations = "tarkoff_driver_custom;port_tarkoff;whiteship_home"
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/tarkon_driver
-	name = "Tarkoff Driver Navigation Computer"
-	desc = "The Navigation console for the Tarkoff Driver. A broken \"Engage Drill\" button seems to dimly blink in a yellow colour"
+	name = "Tarkov Driver Navigation Computer"
+	desc = "The Navigation console for the Tarkov Driver. A broken \"Engage Drill\" button seems to dimly blink in a yellow colour"
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
 	shuttleId = "tarkoff_driver"
@@ -769,5 +769,5 @@
 
 
 /obj/item/circuitboard/computer/tarkon_driver
-	name = "Tarkoff Driver Control Console (Computer Board)"
+	name = "Tarkov Driver Control Console (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/tarkon_driver

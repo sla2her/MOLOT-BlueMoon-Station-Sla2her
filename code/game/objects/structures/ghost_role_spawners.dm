@@ -918,7 +918,7 @@
 
 /obj/effect/mob_spawn/human/tarkon
 	name = "P-T Abandoned Crew"
-	mob_name = "an abandoned Port Tarkoff member"
+	mob_name = "an abandoned Port Tarkov member"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	roundstart = FALSE
@@ -934,7 +934,7 @@
 	canloadappearance = TRUE
 
 /datum/outfit/tarkoff
-	name = "Default Port Tarkoff Outfit"
+	name = "Default Port Tarkov Outfit"
 	uniform = /obj/item/clothing/under/rank/cargo/util
 	back = /obj/item/storage/backpack
 	shoes = /obj/item/clothing/shoes/winterboots
@@ -976,7 +976,7 @@
 	outfit = /datum/outfit/tarkoff/med
 
 /datum/outfit/tarkoff/med
-	name = "Port Tarkoff Medical Outfit"
+	name = "Port Tarkov Medical Outfit"
 	uniform = /obj/item/clothing/under/rank/medical/doctor/util
 	glasses = /obj/item/clothing/glasses/hud/health
 	id = /obj/item/card/id/away/tarkoff/med
@@ -1039,13 +1039,13 @@
 	return
 
 /obj/item/radio/headset/tarkoff
-	name = "Tarkoff Headset"
+	name = "Tarkov Headset"
 	freerange = TRUE
 	freqlock = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_cargo/tarkoff
 
 /obj/item/radio/headset/tarkoff/ensign
-	name = "Tarkoff Ensign headset"
+	name = "Tarkov Ensign headset"
 	desc = "A headset personally handed to trusted crew of tarkoff. It fills you with will to do... Something."
 	command = TRUE
 /obj/item/card/id/away/tarkoff
@@ -1069,7 +1069,7 @@
 	access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
 
 /obj/item/card/id/away/tarkoff/ensign
-	assignment = "Tarkoff Ensign"
+	assignment = "Tarkov Ensign"
 	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
 
 /obj/item/card/id/away/tarkoff/sci
@@ -1094,8 +1094,8 @@
 	desc = "An access card designated for \"engineering staff\". You're going to be the one everyone points at to fix stuff, lets be honest."
 
 /obj/item/card/id/away/tarkoff/ensign
-	name = "Tarkoff Ensign's Access Card"
-	desc = "An access card designated for \"Tarkoff Ensign\". No one has to listen to you... but you're the closest there is for command around here."
+	name = "Tarkov Ensign's Access Card"
+	desc = "An access card designated for \"Tarkov Ensign\". No one has to listen to you... but you're the closest there is for command around here."
 
 //CRYO CONSOLES
 /obj/machinery/computer/cryopod/ds2

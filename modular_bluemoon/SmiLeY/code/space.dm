@@ -1,4 +1,4 @@
-//Tarkoff.
+//Tarkov.
 /datum/map_template/ruin/space/tarkoff
 	name = "Port Tarkov"
 	prefix = "_maps/RandomRuins/SpaceRuins/BlueMoon/"
