@@ -120,7 +120,7 @@
 			item = replacetextEx_char(item, "[code]\]", choosen)
 		text += item
 
-	return uppertext(copytext_char(text, 1, 2)) + copytext_char(text, 2)	//переводим первым символ в верхний регистр
+	return uppertext(copytext(text, 1, 2)) + copytext(text, 2)	//переводим первым символ в верхний регистр
 
 //выдача рандома, проверка на повторы
 /datum/ambition_objective/proc/random_choose(list_for_pick, list/choose_list)

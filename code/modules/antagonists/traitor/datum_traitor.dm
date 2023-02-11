@@ -91,9 +91,10 @@
 
 /datum/antagonist/traitor/proc/handle_hearing(datum/source, list/hearing_args)
 	var/message = hearing_args[HEARING_RAW_MESSAGE]
-	message = GLOB.syndicate_code_phrase_regex.Replace(message, "<span class='blue'>$1</span>")
-	message = GLOB.syndicate_code_response_regex.Replace(message, "<span class='red'>$1</span>")
+	message = GLOB.syndicate_code_phrase_regex.Replace_char(message, span_blue("$1"))
+	message = GLOB.syndicate_code_response_regex.Replace_char(message, span_red("$1"))
 	hearing_args[HEARING_RAW_MESSAGE] = message
+
 
 // needs to be refactored to base /datum/antagonist sometime..
 /datum/antagonist/traitor/proc/add_objective(datum/objective/O)
@@ -183,20 +184,20 @@
 	if(!owner.current)
 		return
 
-	var/mob/traitor_mob = owner.current
+	var/mob/traitor_mob=owner.current
 
 	var/phrases = jointext(GLOB.syndicate_code_phrase, ", ")
 	var/responses = jointext(GLOB.syndicate_code_response, ", ")
 
-	to_chat(traitor_mob, "<U><B>The Syndicate have provided you with the following codewords to identify fellow agents:</B></U>")
-	to_chat(traitor_mob, "<B>Code Phrase</B>: [span_blue("[phrases]")]")
-	to_chat(traitor_mob, "<B>Code Response</B>: [span_red("[responses]")]")
+	to_chat(traitor_mob, "<u><b>Синдикат предоставил мне следующие кодовые слова для идентификации других агентов:</b></u>")
+	to_chat(traitor_mob, "<b>Кодовая фраза</b>: <span class='blue'>[phrases]</span>")
+	to_chat(traitor_mob, "<b>Кодовый ответ</b>: <span class='red'>[responses]</span>")
 
-	antag_memory += "<b>Code Phrase</b>: [span_blue("[phrases]")]<br>"
-	antag_memory += "<b>Code Response</b>: [span_red("[responses]")]<br>"
+	antag_memory += "<b>Кодовая фраза</b>: <span class='blue'>[phrases]</span><br>"
+	antag_memory += "<b>Кодовый ответ</b>: <span class='red'>[responses]</span><br>"
 
-	to_chat(traitor_mob, "Use the codewords during regular conversation to identify other agents. Proceed with caution, however, as everyone is a potential foe.")
-	to_chat(traitor_mob, span_alertwarning("You memorize the codewords, allowing you to recognise them when heard."))
+	to_chat(traitor_mob, "Надо бы использовать кодовые слова в своём разговоре для кооперации с другими агентами. Только надо быть осторожнее.")
+	to_chat(traitor_mob, span_alertwarning("Запомню эти слова и буду определять их быстро."))
 
 /datum/antagonist/traitor/proc/add_law_zero()
 	var/mob/living/silicon/ai/killer = owner.current
@@ -347,8 +348,8 @@
 	var/phrases = jointext(GLOB.syndicate_code_phrase, ", ")
 	var/responses = jointext(GLOB.syndicate_code_response, ", ")
 
-	var/message = "<br><b>The code phrases were:</b> <span class='bluetext'>[phrases]</span><br>\
-					<b>The code responses were:</b> [span_redtext("[responses]")]<br>"
+	var/message = "<br><b>Кодовые фразы:</b> <span class='bluetext'>[phrases]</span><br>\
+					<b>Кодовые ответы:</b> <span class='redtext'>[responses]</span><br>"
 
 	return message
 

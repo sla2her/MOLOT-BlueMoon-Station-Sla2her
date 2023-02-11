@@ -517,12 +517,12 @@
 			//  X to allow highlighting logic to work on the tgui interface.
 			if(newgene == "X")
 				var/defaultseq = scanner_occupant.dna.default_mutation_genes[path]
-				defaultseq = copytext_char(defaultseq, 1, genepos) + newgene + copytext_char(defaultseq, genepos + 1)
+				defaultseq = copytext(defaultseq, 1, genepos) + newgene + copytext(defaultseq, genepos + 1)
 				scanner_occupant.dna.default_mutation_genes[path] = defaultseq
 
 			// Copy genome to scanner occupant and do some basic mutation checks as
 			//  we've increased the occupant rads
-			sequence = copytext_char(sequence, 1, genepos) + newgene + copytext_char(sequence, genepos + 1)
+			sequence = copytext(sequence, 1, genepos) + newgene + copytext(sequence, genepos + 1)
 			scanner_occupant.dna.mutation_index[path] = sequence
 			scanner_occupant.radiation += RADIATION_STRENGTH_MULTIPLIER/connected_scanner.damage_coeff
 			scanner_occupant.domutcheck()
@@ -2118,10 +2118,10 @@
 
 	var/len = length_char(scanner_occupant.dna.uni_identity)
 	var/num = randomize_radiation_accuracy(rad_pulse_index, radduration + (connected_scanner.precision_coeff ** 2), len) //Each manipulator level above 1 makes randomization as accurate as selected time + manipulator lvl^2																																																		 //Value is this high for the same reason as with laser - not worth the hassle of upgrading if the bonus is low
-	var/hex = copytext_char(scanner_occupant.dna.uni_identity, num, num+1)
+	var/hex = copytext(scanner_occupant.dna.uni_identity, num, num+1)
 	hex = scramble(hex, radstrength, radduration)
 
-	scanner_occupant.dna.uni_identity = copytext_char(scanner_occupant.dna.uni_identity, 1, num) + hex + copytext_char(scanner_occupant.dna.uni_identity, num + 1)
+	scanner_occupant.dna.uni_identity = copytext(scanner_occupant.dna.uni_identity, 1, num) + hex + copytext(scanner_occupant.dna.uni_identity, num + 1)
 	scanner_occupant.updateappearance(mutations_overlay_update=1)
 
 	rad_pulse_index = 0

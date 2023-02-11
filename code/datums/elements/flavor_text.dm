@@ -84,7 +84,7 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 	if(length_char(msg) <= MAX_FLAVOR_PREVIEW_LEN)
 		examine_list += "<span class='notice'>[msg]</span>"
 	else
-		examine_list += "<span class='notice'>[copytext_char(msg, 1, (MAX_FLAVOR_PREVIEW_LEN - 3))]... <a href='?src=[REF(src)];show_flavor=[REF(target)]'>More...</span></a>"
+		examine_list += "<span class='notice'>[copytext(msg, 1, (MAX_FLAVOR_PREVIEW_LEN - 3))]... <a href='?src=[REF(src)];show_flavor=[REF(target)]'>More...</span></a>"
 
 /datum/element/flavor_text/Topic(href, href_list)
 	. = ..()

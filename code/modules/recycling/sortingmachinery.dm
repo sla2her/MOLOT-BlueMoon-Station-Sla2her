@@ -105,7 +105,7 @@
 		sticker = stickerA
 		var/overlaystring = "[icon_state]_tag"
 		if(giftwrapped)
-			overlaystring = copytext_char(overlaystring, 5) //5 == length("gift") + 1
+			overlaystring = copytext(overlaystring, 5) //5 == length("gift") + 1
 		add_overlay(overlaystring)
 
 	else
@@ -252,7 +252,7 @@
 		sticker = stickerA
 		var/overlaystring = "[icon_state]_tag"
 		if(giftwrapped)
-			overlaystring = copytext_char(overlaystring, 5) //5 == length("gift") + 1
+			overlaystring = copytext(overlaystring, 5) //5 == length("gift") + 1
 		add_overlay(overlaystring)
 
 /obj/item/smallDelivery/proc/unwrap_contents()

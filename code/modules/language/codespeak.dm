@@ -22,7 +22,7 @@
 
 	. = capitalize(.)
 
-	var/input_ending = copytext_char(input, -1)
+	var/input_ending = copytext(input, -1)
 
 	var/static/list/endings
 	if(!endings)

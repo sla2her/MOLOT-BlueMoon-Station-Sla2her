@@ -899,7 +899,7 @@ GLOBAL_DATUM_INIT(sdql2_vv_statobj, /obj/effect/statclick/SDQL2_VV_all, new(null
 		val = expression[i]
 
 	else if(expression[i][1] in list("'", "\""))
-		val = copytext_char(expression[i], 2, -1)
+		val = copytext(expression[i], 2, -1)
 
 	else if(expression[i] == "\[")
 		var/list/expressions_list = expression[++i]
