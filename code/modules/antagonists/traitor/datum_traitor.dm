@@ -95,7 +95,6 @@
 	message = GLOB.syndicate_code_response_regex.Replace_char(message, span_red("$1"))
 	hearing_args[HEARING_RAW_MESSAGE] = message
 
-
 // needs to be refactored to base /datum/antagonist sometime..
 /datum/antagonist/traitor/proc/add_objective(datum/objective/O)
 	objectives += O
