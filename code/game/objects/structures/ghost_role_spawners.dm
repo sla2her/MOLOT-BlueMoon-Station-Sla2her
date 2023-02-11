@@ -1062,7 +1062,7 @@
 
 /obj/item/card/id/away/tarkoff/eng
 	assignment = "P-T Maintenance Crew"
-		access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
+	access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
 
 /obj/item/card/id/away/tarkoff/sci
 	assignment = "P-T Field Researcher"
