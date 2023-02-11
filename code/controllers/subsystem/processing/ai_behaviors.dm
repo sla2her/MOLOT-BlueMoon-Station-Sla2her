@@ -11,7 +11,7 @@ PROCESSING_SUBSYSTEM_DEF(ai_behaviors)
 
 /datum/controller/subsystem/processing/ai_behaviors/Initialize()
 	SetupAIBehaviors()
-	return SS_INIT_SUCCESS
+	return ..()
 
 /datum/controller/subsystem/processing/ai_behaviors/proc/SetupAIBehaviors()
 	ai_behaviors = list()

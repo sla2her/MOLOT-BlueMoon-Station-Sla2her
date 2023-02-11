@@ -14,7 +14,7 @@ SUBSYSTEM_DEF(ai_controllers)
 
 /datum/controller/subsystem/ai_controllers/Initialize()
 	setup_subtrees()
-	return SS_INIT_SUCCESS
+	return ..()
 
 /datum/controller/subsystem/ai_controllers/proc/setup_subtrees()
 	ai_subtrees = list()
