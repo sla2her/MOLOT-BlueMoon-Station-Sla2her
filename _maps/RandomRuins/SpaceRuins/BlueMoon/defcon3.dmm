@@ -1025,6 +1025,17 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
+"fQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "fR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/toxin_output/tarkon{
 	dir = 8
@@ -2491,6 +2502,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/paper/fluff/ruins/tarkoff/defcon3,
 /obj/item/crowbar/red/caravan,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "mC" = (
@@ -2958,6 +2976,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper/fluff/ruins/tarkoff/coupplans,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "pj" = (
@@ -3795,6 +3814,13 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "tQ" = (
@@ -4324,6 +4350,13 @@
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/forehall)
+"wp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "wt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -4468,7 +4501,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/autolathe/secure,
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "xL" = (
@@ -7376,6 +7409,8 @@
 /obj/item/ammo_box/magazine/fal/r10,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/ballistic/automatic/fal/nomag,
+/obj/item/gun/energy/e_gun/mini,
+/obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "Oa" = (
@@ -7387,6 +7422,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
+"Og" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "Oi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
@@ -11946,7 +11988,7 @@ pv
 uv
 pS
 lC
-lC
+Og
 lC
 mC
 Sv
@@ -12018,8 +12060,8 @@ uD
 dq
 hr
 tN
-lC
-lC
+fQ
+fQ
 mB
 uv
 XI
@@ -12092,8 +12134,8 @@ lT
 uv
 Vj
 lC
-lC
-lC
+wp
+fQ
 ZX
 mH
 ID

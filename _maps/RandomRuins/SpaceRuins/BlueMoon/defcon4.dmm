@@ -1639,6 +1639,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
+"jI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "jJ" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
@@ -2398,6 +2409,13 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
+"nT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "nW" = (
 /obj/structure/table/reinforced,
 /obj/item/restraints/handcuffs,
@@ -2636,6 +2654,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper/fluff/ruins/tarkoff/coupplans,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "pj" = (
@@ -4020,7 +4039,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/autolathe/secure,
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "xL" = (
@@ -4414,6 +4433,13 @@
 /obj/item/paper/fluff/ruins/tarkoff/defcon4,
 /obj/machinery/light/dim/directional/south,
 /obj/item/crowbar/red/caravan,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "At" = (
@@ -4791,6 +4817,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/power1)
+"CJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "CL" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/door/airlock/mining/glass{
@@ -6722,6 +6755,8 @@
 /obj/item/ammo_box/magazine/fal/r10,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/ballistic/automatic/fal/nomag,
+/obj/item/gun/energy/e_gun/mini,
+/obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "Oa" = (
@@ -11215,7 +11250,7 @@ pv
 uv
 RL
 Vj
-Vj
+nT
 Vj
 mC
 Sv
@@ -11286,9 +11321,9 @@ Vj
 uD
 dq
 hr
-Vj
-Vj
-Vj
+jI
+jI
+jI
 Ao
 uv
 XI
@@ -11361,8 +11396,8 @@ lT
 uv
 jT
 Vj
-Vj
-Vj
+CJ
+jI
 ZX
 PO
 ID

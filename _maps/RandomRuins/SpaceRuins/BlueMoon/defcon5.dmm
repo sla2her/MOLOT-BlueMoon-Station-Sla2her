@@ -1441,6 +1441,19 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/observ)
+"hJ" = (
+/obj/item/broken_bottle,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "hL" = (
 /obj/machinery/computer{
 	desc = "A computer long since rendered non-functional due to lack of maintenance. Spitting out error messages.";
@@ -1507,6 +1520,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/mining)
+"hT" = (
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "hV" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
 /turf/open/floor/iron/freezer,
@@ -1718,6 +1744,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
+"iV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4;
+	piping_layer = 3
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "jc" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
 	level = 1
@@ -4343,7 +4377,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/autolathe/secure,
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "xL" = (
@@ -5645,6 +5679,18 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/forehall)
+"Ev" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "Ex" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/oxygen{
@@ -7500,6 +7546,8 @@
 /obj/item/ammo_box/magazine/fal/r10,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/ballistic/automatic/fal/nomag,
+/obj/item/gun/energy/e_gun/mini,
+/obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "Oa" = (
@@ -7968,6 +8016,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/porthall)
+"QG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8;
+	piping_layer = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon)
 "QH" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/air_input/tarkon{
 	dir = 4
@@ -8369,6 +8425,14 @@
 /obj/effect/decal/cleanable/confetti,
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "SL" = (
@@ -9752,6 +9816,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/dim/directional/south,
 /obj/item/paper/fluff/ruins/tarkoff/defcon5,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
+	level = 1
+	},
+/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
+	visible_pipes = 1;
+	level = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
 "ZR" = (
@@ -12343,7 +12415,7 @@ pv
 uv
 uc
 Vj
-Vj
+iV
 oV
 mC
 ab
@@ -12415,8 +12487,8 @@ uD
 dq
 hr
 SK
-Vj
-lC
+Ev
+hJ
 ZP
 uv
 XI
@@ -12489,8 +12561,8 @@ lT
 uv
 IV
 Xc
-Vj
-WJ
+QG
+hT
 ZX
 PO
 ID
