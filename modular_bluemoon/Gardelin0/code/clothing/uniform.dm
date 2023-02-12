@@ -54,6 +54,7 @@
 	icon_state = "nightie"
 	item_state = "nightie"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/skirt/shortdress
@@ -98,7 +99,7 @@
 	item_state = "skirt_leather"
 	body_parts_covered = GROIN
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	fitted = FEMALE_UNIFORM_TOP
+	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/skirt/short
@@ -110,7 +111,7 @@
 	item_state = "skirt_short"
 	body_parts_covered = GROIN
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	fitted = FEMALE_UNIFORM_TOP
+	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/skirt/long
@@ -120,7 +121,7 @@
 	item_state = "skirt_long"
 	body_parts_covered = GROIN|LEGS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	fitted = FEMALE_UNIFORM_TOP
+	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 	flags_inv = HIDESHOES
 
@@ -133,7 +134,7 @@
 	item_state = "skirt_pleated"
 	body_parts_covered = GROIN
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	fitted = FEMALE_UNIFORM_TOP
+	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/skirt/pleatedshort
@@ -145,7 +146,7 @@
 	item_state = "skirt_pleatedshort"
 	body_parts_covered = GROIN
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	fitted = FEMALE_UNIFORM_TOP
+	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/vintage
@@ -196,7 +197,7 @@
 	item_state = "skirt_transparent"
 	body_parts_covered = GROIN
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	fitted = FEMALE_UNIFORM_TOP
+	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/skirt/toga
