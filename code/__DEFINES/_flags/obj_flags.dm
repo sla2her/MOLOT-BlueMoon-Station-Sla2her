@@ -18,6 +18,9 @@
 #define IN_STORAGE				(1<<15) //is this item in the storage item, such as backpack? used for tooltips
 #define HAND_ITEM               (1<<16) // If an item is just your hand (circled hand, slapper) and shouldn't block things like riding
 
+/// Has contextual screentips when HOVERING OVER OTHER objects
+#define ITEM_HAS_CONTEXTUAL_SCREENTIPS (1 << 19)
+
 /// Integrity defines for clothing (not flags but close enough)
 #define CLOTHING_PRISTINE	0 // We have no damage on the clothing
 #define CLOTHING_DAMAGED	1 // There's some damage on the clothing but it still has at least one functioning bodypart
