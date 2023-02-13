@@ -53,30 +53,22 @@
 	desc = "You feel so wonderfully in love!"
 	icon_state = "in_love"
 
-/atom/movable/screen/alert/status_effect/in_love
-	name = "In Love"
-	desc = "You feel so wonderfully in love!"
-	icon_state = "in_love"
-
 /datum/status_effect/in_love
 	id = "in_love"
 	duration = -1
 	status_type = STATUS_EFFECT_UNIQUE
 	alert_type = /atom/movable/screen/alert/status_effect/in_love
-	var/hearts
+	var/mob/living/date
 
-/datum/status_effect/in_love/on_creation(mob/living/new_owner, mob/living/date)
+/datum/status_effect/in_love/on_creation(mob/living/new_owner, mob/living/love_interest)
 	. = ..()
-	if(!.)
-		return
-
+	if(.)
+		date = love_interest
 	linked_alert.desc = "You're in love with [date.real_name]! How lovely."
-	hearts = WEAKREF(date.add_alt_appearance(
-		/datum/atom_hud/alternate_appearance/basic/onePerson,
-		"in_love",
-		image(icon = 'icons/effects/effects.dmi', icon_state = "love_hearts", loc = date),
-		new_owner,
-	))
+
+/datum/status_effect/in_love/tick()
+	if(date)
+		new /obj/effect/temp_visual/love_heart/invisible(get_turf(date.loc), owner)
 
 /datum/status_effect/throat_soothed
 	id = "throat_soothed"

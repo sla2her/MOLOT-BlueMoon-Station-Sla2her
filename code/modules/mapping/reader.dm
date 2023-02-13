@@ -349,7 +349,7 @@
 			var/list/fields = list()
 
 			if(variables_start)//if there's any variable
-				full_def = copytext(full_def, variables_start + length(full_def[variables_start]), -length(copytext(full_def, -1))) //removing the last '}'
+				full_def = copytext(full_def, variables_start + length(full_def[variables_start]), -length(copytext_char(full_def, -1))) //removing the last '}'
 				fields = readlist(full_def, ";")
 				if(fields.len)
 					if(!trim(fields[fields.len]))
@@ -555,7 +555,7 @@
 
 	// file
 	if(text[1] == "'")
-		return file(copytext(text, 2, -1))
+		return file(copytext_char(text, 2, -1))
 
 	// null
 	if(text == "null")

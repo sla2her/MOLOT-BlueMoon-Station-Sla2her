@@ -202,7 +202,7 @@
 		return		//protects against tiny names like "A" and also names like "' ' ' ' ' ' ' '"
 
 	if(last_char_group == SPACES_DETECTED)
-		t_out = copytext(t_out, 1, -1) //removes the last character (in this case a space)
+		t_out = copytext_char(t_out, 1, -1) //removes the last character (in this case a space)
 
 	for(var/bad_name in list("space","floor","wall","r-wall","monkey","unknown","inactive ai"))	//prevents these common metagamey names
 		if(cmptext(t_out,bad_name))
@@ -287,7 +287,7 @@
 //Returns a string with reserved characters and spaces before the first word and after the last word removed.
 /proc/trim(text, max_length)
 	if(max_length)
-		text = copytext(text, 1, max_length)
+		text = copytext_char(text, 1, max_length)
 	return trim_reduced(text)
 
 //Returns a string with the first element of the string capitalized.
@@ -637,7 +637,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 		var/cutoff = 0
 		lentext = length_char(buffer)
 		for(var/pos = 1, pos <= lentext, pos++)
-			let = copytext(buffer, -pos, -pos + 1)
+			let = copytext_char(buffer, -pos, -pos + 1)
 			if(!findtext(let, GLOB.is_punctuation)) //This won't handle things like Nyaaaa!~ but that's fine
 				break
 			punctbuffer += let

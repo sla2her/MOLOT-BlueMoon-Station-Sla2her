@@ -19,21 +19,20 @@
 /proc/arachnid_name()
 	return "[pick(GLOB.arachnid_first)] [pick(GLOB.arachnid_last)]"
 
+
 GLOBAL_VAR(command_name)
 /proc/command_name()
-	if (GLOB.command_name)
-		return GLOB.command_name
+	if (!GLOB.command_name)
+		GLOB.command_name = DEFAULT_CENTCOM_NAME
 
-	var/name = "Центральное Командование"
-
-	GLOB.command_name = name
-	return name
+	return GLOB.command_name
 
 /proc/change_command_name(name)
 
 	GLOB.command_name = name
 
 	return name
+
 
 /proc/station_name()
 	if(!GLOB.station_name)
@@ -57,6 +56,7 @@ GLOBAL_VAR(command_name)
 	else
 		world.name = GLOB.station_name
 
+
 /proc/new_station_name()
 	var/random = rand(1,5)
 	var/name = ""
@@ -69,11 +69,10 @@ GLOBAL_VAR(command_name)
 		name = ""
 
 	// Prefix
-	var/holiday_name = pick(SSevents.holidays)
-	if(holiday_name)
-		var/datum/holiday/holiday = SSevents.holidays[holiday_name]
-		if(istype(holiday, /datum/holiday/friday_thirteenth))
+	for(var/holiday_name in SSevents.holidays)
+		if(holiday_name == "Friday the 13th")
 			random = 13
+		var/datum/holiday/holiday = SSevents.holidays[holiday_name]
 		name = holiday.getStationPrefix()
 		//get normal name
 	if(!name)
@@ -98,14 +97,14 @@ GLOBAL_VAR(command_name)
 		if(5)
 			new_station_name += pick(GLOB.numbers_as_words)
 		if(13)
-			new_station_name += pick("13","XIII","Тринадцать")
-	return capitalize(new_station_name)
+			new_station_name += pick("13","XIII","Thirteen")
+	return new_station_name
 
 /proc/syndicate_name()
 	var/name = ""
 
 	// Prefix
-	name += pick("Нелегальный", "Прима", "Синий", "Невесомый", "Максимальный", "Взрывной", "Опасный", "Северный", "Всенаправленный", "Ньютоновский", "Кибер", "Угрожающий", "Геномодифицированный", "Противостоящий")
+	name += pick("Clandestine", "Prima", "Blue", "Zero-G", "Max", "Blasto", "Waffle", "North", "Omni", "Newton", "Cyber", "Bonk", "Gene", "Gib")
 
 	// Suffix
 	if (prob(80))
@@ -113,16 +112,16 @@ GLOBAL_VAR(command_name)
 
 		// Full
 		if (prob(60))
-			name += pick("Синдикат", "Консорциум", "Коллектив", "Корпорация", "Социум", "Холдинг", "Биоразработчик", "Промышленник", "Системник", "Товарник", "Химпроизводственник", "Предприниматель", "Семьянин", "Произведенец", "Интернационалец", "Межгалактик", "Межпланетар", "Фонд", "Позитроник", "Муравейник")
+			name += pick("Syndicate", "Consortium", "Collective", "Corporation", "Group", "Holdings", "Biotech", "Industries", "Systems", "Products", "Chemicals", "Enterprises", "Family", "Creations", "International", "Intergalactic", "Interplanetary", "Foundation", "Positronics", "Hive")
 		// Broken
 		else
-			name += pick("Теко", "Солнцо", "Ко", "Техо", "Иксо", "Цехо", "Корпо")
+			name += pick("Syndi", "Corp", "Bio", "System", "Prod", "Chem", "Inter", "Hive")
 			name += pick("", "-")
-			name += pick("Синдикатов", "Корпораций", "Биотехнологов", "Системников", "Крафтовиков", "Химовиков", "Интерников", "Муравейников")
+			name += pick("Tech", "Sun", "Co", "Tek", "X", "Inc", "Code")
 	// Small
 	else
 		name += pick("-", "*", "")
-		name += pick("Тех", "Солнце", "Ко", "Тек", "Икс", "Цех", "Инфо", "Звезд", "Дин", "Код", "Муравейник")
+		name += pick("Tech", "Sun", "Co", "Tek", "X", "Inc", "Gen", "Star", "Dyne", "Code", "Hive")
 
 	return name
 
@@ -203,7 +202,7 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 						. += pick(get_all_jobs())//Returns a job.
 				safety -= 1
 			if(2)
-				switch(rand(1,3))//Food, drinks, or places. Only selectable once.
+				switch(rand(1,3))//Food, drinks, or things. Only selectable once.
 					if(1)
 						. += lowertext(pick(drinks))
 					if(2)
@@ -226,57 +225,3 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 				. += "."
 			else
 				. += ", "
-
-/proc/generate_code_regex(list/words, ending_chars)
-	return regex("(^|\[^[ending_chars]])((?:[jointext(words,  "|")])\[[ending_chars]]{0,3})(?:(?!\[[ending_chars]]))", "ig")
-
-/proc/odd_organ_name()
-	return "[pick(GLOB.gross_adjectives)], [pick(GLOB.gross_adjectives)] орган"
-
-/**
- * returns an ic name of the tool needed
- * Arguments:
- * * tool_behaviour: the tool described!
- */
-/proc/tool_behaviour_name(tool_behaviour)
-	switch(tool_behaviour)
-		if(TOOL_CROWBAR)
-			return "a crowbar"
-		if(TOOL_MULTITOOL)
-			return "a multitool"
-		if(TOOL_SCREWDRIVER)
-			return "a screwdriver"
-		if(TOOL_WIRECUTTER)
-			return "a pair of wirecutters"
-		if(TOOL_WRENCH)
-			return "a wrench"
-		if(TOOL_WELDER)
-			return "a welder"
-		if(TOOL_ANALYZER)
-			return "an analyzer tool"
-		if(TOOL_MINING)
-			return "a mining implement"
-		if(TOOL_SHOVEL)
-			return "a digging tool"
-		if(TOOL_RETRACTOR)
-			return "a retractor"
-		if(TOOL_HEMOSTAT)
-			return "something to clamp bleeding"
-		if(TOOL_CAUTERY)
-			return "a cautery"
-		if(TOOL_DRILL)
-			return "a drilling tool"
-		if(TOOL_SCALPEL)
-			return "a fine cutting tool"
-		if(TOOL_SAW)
-			return "a saw"
-		if(TOOL_BONESET)
-			return "a bone setter"
-		if(TOOL_KNIFE)
-			return "a cutting tool"
-		if(TOOL_BLOODFILTER)
-			return "a blood filter"
-		if(TOOL_ROLLINGPIN)
-			return "a rolling pin"
-		else
-			return "something... but the gods didn't set this up right (Please report this bug)"

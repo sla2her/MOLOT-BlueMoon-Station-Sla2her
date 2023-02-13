@@ -1,5 +1,5 @@
 /datum/sabotage_objective
-	var/name = "Свободная Цель"
+	var/name = "Free Objective"
 	var/sabotage_type = "nothing"
 	var/special_equipment = list()
 	var/list/excludefromjob = list()

@@ -14,9 +14,6 @@
 #define TOOL_DRILL			"drill"
 #define TOOL_SCALPEL		"scalpel"
 #define TOOL_SAW			"saw"
-#define TOOL_KNIFE 			"knife"
-#define TOOL_BLOODFILTER 	"bloodfilter"
-#define TOOL_ROLLINGPIN 	"rollingpin"
 //Glasswork Tools
 #define TOOL_BLOW			"blowing_rod"
 #define TOOL_GLASS_CUT		"glasskit"

@@ -6,7 +6,7 @@
 		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>", confidential = TRUE)
 		return
 
-	msg = copytext(sanitize(msg), 1, MAX_MESSAGE_LEN)
+	msg = copytext_char(sanitize(msg), 1, MAX_MESSAGE_LEN)
 	if(!msg)
 		return
 	log_prayer("[src.key]/([src.name]): [msg]")
@@ -57,7 +57,7 @@
 
 /// Used by communications consoles to message CentCom
 /proc/message_centcom(text, mob/sender)
-	var/msg = copytext(sanitize(text), 1, MAX_MESSAGE_LEN)
+	var/msg = copytext_char(sanitize(text), 1, MAX_MESSAGE_LEN)
 	log_command_message(msg, sender, FALSE)
 	msg = "<span class='adminnotice'><b><font color=orange>CENTCOM:</font>[ADMIN_FULLMONTY(sender)] [ADMIN_CENTCOM_REPLY(sender)]:</b> [msg]</span>"
 	to_chat(GLOB.admins, msg, confidential = TRUE)
@@ -66,7 +66,7 @@
 
 /// Used by communications consoles to message the Syndicate
 /proc/message_syndicate(text, mob/sender)
-	var/msg = copytext(sanitize(text), 1, MAX_MESSAGE_LEN)
+	var/msg = copytext_char(sanitize(text), 1, MAX_MESSAGE_LEN)
 	log_command_message(msg, sender, TRUE)
 	msg = "<span class='adminnotice'><b><font color=crimson>SYNDICATE:</font>[ADMIN_FULLMONTY(sender)] [ADMIN_SYNDICATE_REPLY(sender)]:</b> [msg]</span>"
 	to_chat(GLOB.admins, msg, confidential = TRUE)
@@ -75,7 +75,7 @@
 
 /// Used by communications consoles to request the nuclear launch codes
 /proc/nuke_request(text, mob/sender)
-	var/msg = copytext(sanitize(text), 1, MAX_MESSAGE_LEN)
+	var/msg = copytext_char(sanitize(text), 1, MAX_MESSAGE_LEN)
 	msg = "<span class='adminnotice'><b><font color=orange>NUKE CODE REQUEST:</font>[ADMIN_FULLMONTY(sender)] [ADMIN_CENTCOM_REPLY(sender)] [ADMIN_SET_SD_CODE]:</b> [msg]</span>"
 	to_chat(GLOB.admins, msg, confidential = TRUE)
 	for(var/obj/machinery/computer/communications/console in GLOB.machines)
