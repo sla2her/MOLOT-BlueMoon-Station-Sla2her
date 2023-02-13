@@ -248,14 +248,18 @@
 	glass = TRUE
 
 /obj/machinery/door/airlock/captain
+	name = "Captain's Office"
+	req_access_txt = "20"
 	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/cap.dmi'
 
 /obj/machinery/door/airlock/hop
 	name = "Head of Personnel Office"
+	req_access_txt = "57"
 	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/hop.dmi'
 
 /obj/machinery/door/airlock/hos
 	name = "Head of Security Office"
+	req_access_txt = "58"
 	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/hos.dmi'
 
 /obj/machinery/door/airlock/hos/glass
@@ -265,6 +269,7 @@
 
 /obj/machinery/door/airlock/ce
 	name = "Chief Engineer Office"
+	req_access_txt = "56"
 	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/ce.dmi'
 
 /obj/machinery/door/airlock/ce/glass
@@ -274,6 +279,7 @@
 
 /obj/machinery/door/airlock/rd
 	name = "Research Director Office"
+	req_access_txt = "30"
 	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/rd.dmi'
 
 /obj/machinery/door/airlock/rd/glass
@@ -283,6 +289,7 @@
 
 /obj/machinery/door/airlock/qm
 	name = "Quartermaster's Office"
+	req_access_txt = "41"
 	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/qm.dmi'
 
 /obj/machinery/door/airlock/qm/glass
@@ -292,6 +299,7 @@
 
 /obj/machinery/door/airlock/cmo
 	name = "Chief Medical Officer Office"
+	req_access_txt = "40"
 	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/cmo.dmi'
 
 /obj/machinery/door/airlock/cmo/glass
