@@ -54,7 +54,7 @@
 	..()
 	update_icon()
 
-/obj/machinery/door/airlock/update_overlays(state=0, override=0)
+/obj/machinery/door/airlock/update_overlays()
 	. = ..()
 	var/pre_light_range = 0
 	var/pre_light_power = 0
@@ -63,7 +63,7 @@
 
 	var/frame_state
 	var/light_state
-	switch(state)
+	switch(airlock_state)
 		if(AIRLOCK_CLOSED)
 			frame_state = AIRLOCK_FRAME_CLOSED
 			if(locked)
@@ -74,10 +74,6 @@
 				light_state = AIRLOCK_LIGHT_EMERGENCY
 				lights_overlay = "lights_emergency"
 				pre_light_color = light_color_emergency
-			else if(override)
-				light_state = AIRLOCK_LIGHT_ENGINEERING
-				lights_overlay = "lights_engineering"
-				pre_light_color = light_color_engineering
 			else
 				lights_overlay = "lights_poweron"
 				pre_light_color = light_color_poweron
