@@ -109,7 +109,8 @@ export class Changelog extends Component {
             self.getData(date, attemptNumber + 1);
           }, timeout);
         } else {
-          self.setData(yaml.load(fixYAMLDuplicateKeys(result), { schema: yaml.CORE_SCHEMA }));
+          self.setData(yaml.load(fixYAMLDuplicateKeys(result),
+          { schema: yaml.CORE_SCHEMA }));
         }
       });
   };
