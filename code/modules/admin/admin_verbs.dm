@@ -723,7 +723,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	var/list/spell_list = list()
 	var/type_length = length_char("/obj/effect/proc_holder/spell") + 2
 	for(var/A in GLOB.spells)
-		spell_list[copytext("[A]", type_length)] = A
+		spell_list[copytext_char("[A]", type_length)] = A
 	var/obj/effect/proc_holder/spell/S = tgui_input_list(usr, "Choose a spell to give", "ABRAKADABRA", sortList(spell_list)) //input("Choose the spell to give to that guy", "ABRAKADABRA") as null|anything in sortList(spell_list)
 
 	if(!S)

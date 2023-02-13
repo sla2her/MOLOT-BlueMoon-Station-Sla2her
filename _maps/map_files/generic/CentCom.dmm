@@ -8475,11 +8475,10 @@
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
 	},
-/obj/machinery/door/airlock/shuttle/glass{
+/obj/machinery/door/airlock/corporate/glass{
 	name = "Смертельная Арена";
-	safe = 0;
-	req_access_txt = "109";
-	autoclose = 0
+	req_access_txt = "101";
+	safe = 0
 	},
 /turf/open/floor/plasteel,
 /area/centcom/evac)

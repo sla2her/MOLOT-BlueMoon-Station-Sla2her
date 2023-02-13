@@ -219,14 +219,14 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 	var/letter = ""
 	for(var/i = 1, i <= lentext, i += length_char(rawchars))
 		var/end = i + rand(1,4)
-		letter = rawchars = copytext(phrase, i, end > lentext ? 0 : end)
+		letter = rawchars = copytext_char(phrase, i, end > lentext ? 0 : end)
 		if (prob(50))
 			if (prob(30))
 				letter = "[letter]-[letter]-[letter]"
 			else
 				letter = "[letter]-[letter]"
 		. += letter
-	return copytext(sanitize(.),1,MAX_MESSAGE_LEN)
+	return copytext_char(sanitize(.),1,MAX_MESSAGE_LEN)
 
 /proc/shake_camera(mob/M, duration, strength=1)
 	set waitfor = FALSE

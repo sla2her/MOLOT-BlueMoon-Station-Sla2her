@@ -90,7 +90,7 @@
 	excludefromjob = list("Research Director","Scientist", "Roboticist")
 
 /datum/objective_item/steal/documents
-	name = "любой набор Секретных Документов любой организации."
+	name = "Реактивная Телепортационная Броня."
 	targetitem = /obj/item/documents //Any set of secret documents. Doesn't have to be NT's
 	difficulty = 5
 
@@ -196,12 +196,12 @@
 
 //Old ninja objectives.
 /datum/objective_item/special/pinpointer/nuke
-	name = "Капитанский Пинпоинтер."
+	name = "the captain's pinpointer."
 	targetitem = /obj/item/pinpointer
 	difficulty = 10
 
 /datum/objective_item/special/aegun
-	name = "Усовершенствованную Энергетическую Пушку."
+	name = "an advanced energy gun."
 	targetitem = /obj/item/gun/energy/e_gun/nuclear
 	difficulty = 10
 

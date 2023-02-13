@@ -227,9 +227,6 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 			else
 				. += ", "
 
-/proc/generate_code_regex(list/words, ending_chars)
-	return regex("(^|\[^[ending_chars]])((?:[jointext(words,  "|")])\[[ending_chars]]{0,3})(?:(?!\[[ending_chars]]))", "ig")
-
 /proc/odd_organ_name()
 	return "[pick(GLOB.gross_adjectives)], [pick(GLOB.gross_adjectives)] орган"
 

@@ -63,7 +63,7 @@ GLOBAL_DATUM_INIT(news_network, /datum/news_network, new)
 		NEWSCASTER.update_icon()
 
 /datum/news_network/proc/save_photo(icon/photo)
-	var/photo_file = copytext(md5("\icon[photo]"), 1, 6)
+	var/photo_file = copytext_char(md5("\icon[photo]"), 1, 6)
 	if(!fexists("[GLOB.log_directory]/photos/[photo_file].png"))
 		//Clean up repeated frames
 		var/icon/clean = new /icon()

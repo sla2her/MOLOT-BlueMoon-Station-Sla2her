@@ -524,7 +524,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 			updateUsrDialog()
 		else if(href_list["new_comment"])
 			var/datum/news/feed_message/FM = locate(href_list["new_comment"])
-			var/cominput = copytext(stripped_input(usr, "Write your message:", "New comment", null), 140)
+			var/cominput = copytext_char(stripped_input(usr, "Write your message:", "New comment", null), 140)
 			if(cominput)
 				scan_user(usr)
 				var/datum/news/feed_comment/FC = new/datum/news/feed_comment

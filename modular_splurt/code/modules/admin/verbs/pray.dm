@@ -1,6 +1,6 @@
 // Save this message to be shown on the TGUI command messages panel (centcom_communications.dm)
 /proc/log_command_message(text, mob/sender, is_emagged)
-	var/msg = copytext(sanitize(text), 1, MAX_MESSAGE_LEN)
+	var/msg = copytext_char(sanitize(text), 1, MAX_MESSAGE_LEN)
 	var/list/message_log = list()
 
 	message_log["id"] = GLOB.next_command_message_id++
