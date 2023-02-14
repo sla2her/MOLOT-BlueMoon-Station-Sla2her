@@ -752,3 +752,12 @@
 
 /// a client (re)connected, after all /client/New() checks have passed : (client/connected_client)
 #define COMSIG_GLOB_CLIENT_CONNECT "!client_connect"
+
+/// Return bitflags for the above signal which prevents the atom taking any damage.
+#define COMPONENT_NO_TAKE_DAMAGE (1<<0)
+/* Attack signals. They should share the returned flags, to standardize the attack chain. */
+/// tool_act -> pre_attack -> target.attackby (item.attack) -> afterattack
+///Ends the attack chain. If sent early might cause posterior attacks not to happen.
+#define COMPONENT_CANCEL_ATTACK_CHAIN (1<<0)
+///Skips the specific attack step, continuing for the next one to happen.
+#define COMPONENT_SKIP_ATTACK (1<<1)
