@@ -16,10 +16,9 @@
 /mob/living/list_interaction_attributes()
 	. = ..()
 	if(has_hands())
-		dat += "...обладает руками."
+		. += "...обладает руками."
 	if(has_mouth())
-		dat += "...обладает [mouth_is_free() ? "неприкрытым" : "прикрытым"] ртом."
-	return dat
+		. += "...обладает [mouth_is_free() ? "неприкрытым" : "прикрытым"] ртом."
 
 /// The base of all interactions
 /datum/interaction
