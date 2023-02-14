@@ -113,7 +113,7 @@
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
-
+/* Что-то не так.
 /obj/item/clothing/under/dress/skirt/long
 	name = "long skirt"
 	desc = "A long skirt, made of some semi-gloss material that reaches the wearer's ankles."
@@ -124,7 +124,7 @@
 	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 	flags_inv = HIDESHOES
-
+*/
 /obj/item/clothing/under/dress/skirt/pleatedmedium
 	name = "pleated skirt"
 	desc = "A pleated skirt, made of some semi-gloss material."
