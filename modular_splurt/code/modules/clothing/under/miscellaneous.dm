@@ -75,6 +75,7 @@
 	icon_state = "bluedress"
 	item_state = "bluedress"
 	can_adjust = FALSE
+	fitted = NO_FEMALE_UNIFORM // So it won't delete boobs
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	body_parts_covered = CHEST|GROIN|LEGS
 

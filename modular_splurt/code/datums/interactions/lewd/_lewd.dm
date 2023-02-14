@@ -156,7 +156,7 @@
 							if(partner.has_legs() >= 2)
 								message = "кончает между бёдер <b>[partner]</b>!"
 							else
-								message = "кончает... Как-то..."
+								message = "кончает... как-то..."
 						if(CUM_TARGET_BELLY)
 							cumin = TRUE
 							if(partner.has_belly(REQUIRE_EXPOSED))
