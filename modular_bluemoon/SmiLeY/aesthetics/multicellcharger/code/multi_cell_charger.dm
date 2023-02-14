@@ -5,7 +5,7 @@
 	icon_state = "cchargermulti"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 20
-	active_power_usage = 240
+	active_power_usage = 250
 	power_channel = EQUIP
 	circuit = /obj/item/circuitboard/machine/cell_charger_multi
 	pass_flags = PASSTABLE
@@ -15,6 +15,8 @@
 	var/charge_rate_base = 250 // Amount of charge we gain from a level one capacitor
 	var/charge_rate_max = 4000 // The highest we allow the charge rate to go
 	var/right_click_overridden = FALSE
+	var/obj/item/stock_parts/cell/charging = null
+	var/recharge_coeff = 1
 
 /obj/machinery/cell_charger_multi/update_overlays()
 	. = ..()
@@ -93,21 +95,6 @@
 			return
 		return ..()
 
-/obj/machinery/cell_charger_multi/process(delta_time)
-	if(!charging_batteries.len || !anchored || (stat & (BROKEN|NOPOWER)))
-		return
-
-	for(var/obj/item/stock_parts/cell/charging in charging_batteries)
-		if(charging.percent() >= 100)
-			continue
-		var/main_draw = use_power(charge_rate * delta_time) //Pulls directly from the Powernet to dump into the cell
-		if(!main_draw)
-			return
-		charging.give(main_draw)
-		use_power(charge_rate / 100) //use a small bit for the charger itself, but power usage scales up with the part tier
-
-	update_appearance()
-
 /obj/machinery/cell_charger_multi/attack_tk(mob/user)
 	if(!charging_batteries.len)
 		return
@@ -117,15 +104,22 @@
 	return COMPONENT_CANCEL_ATTACK_CHAIN
 
 /obj/machinery/cell_charger_multi/RefreshParts()
-	. = ..()
-	charge_rate = 0 // No, you cant get free charging speed!
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
-		charge_rate += charge_rate_base * C.rating
-		if(charge_rate >= charge_rate_max) // We've hit the charge speed cap, stop iterating.
-			charge_rate = charge_rate_max
-			break
-	if(charge_rate < charge_rate_base) // This should never happen; but we need to pretend it can.
-		charge_rate = charge_rate_base
+		recharge_coeff = C.rating
+
+/obj/machinery/cell_charger_multi/process()
+	if(!charging_batteries.len || !anchored || (stat & (BROKEN|NOPOWER)))
+		return
+
+	for(var/obj/item/stock_parts/cell/charging in charging_batteries)
+		if(charging)
+			var/obj/item/stock_parts/cell/C = charging.get_cell()
+			if(C)
+				if(C.charge < C.maxcharge)
+					C.give(C.chargerate * recharge_coeff)
+					use_power(250 * recharge_coeff)
+
+	update_icon()
 
 /obj/machinery/cell_charger_multi/emp_act(severity)
 	. = ..()

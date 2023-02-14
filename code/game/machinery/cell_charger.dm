@@ -11,6 +11,7 @@
 	pass_flags = PASSTABLE
 	var/obj/item/stock_parts/cell/charging = null
 	var/charge_rate = 250
+	var/recharge_coeff = 1
 
 /obj/machinery/cell_charger/examine(mob/user)
 	. = ..()
@@ -118,24 +119,21 @@
 		charging.emp_act(severity)
 
 /obj/machinery/cell_charger/RefreshParts()
-	. = ..()
-	charge_rate = 250
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
-		charge_rate *= C.rating
+		recharge_coeff = C.rating
 
-/obj/machinery/cell_charger/process(delta_time)
+/obj/machinery/cell_charger/process()
 	if(!charging || !anchored || (stat & (BROKEN|NOPOWER)))
 		return
-	if(charging.percent() >= 100)
-		return
 
-	var/main_draw = use_power(charge_rate * delta_time) //Pulls directly from the Powernet to dump into the cell
-	if(!main_draw)
-		return
-	charging.give(main_draw)
-	use_power(charge_rate / 100) //use a small bit for the charger itself, but power usage scales up with the part tier
+	if(charging)
+		var/obj/item/stock_parts/cell/C = charging.get_cell()
+		if(C)
+			if(C.charge < C.maxcharge)
+				C.give(C.chargerate * recharge_coeff)
+				use_power(250 * recharge_coeff)
 
-	update_appearance()
+	update_icon()
 
 /obj/item/stock_parts/cell
 	icon = 'icons/obj/power.dmi'
