@@ -10,8 +10,11 @@
 - Makes all the code good because yes as well - SandPoot
 **/
 
-/mob/living/proc/list_interaction_attributes()
-	var/dat = list()
+/mob/proc/list_interaction_attributes()
+	return list()
+
+/mob/living/list_interaction_attributes()
+	. = ..()
 	if(has_hands())
 		dat += "...обладает руками."
 	if(has_mouth())

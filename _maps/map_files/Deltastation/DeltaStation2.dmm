@@ -70391,6 +70391,20 @@
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"ehA" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plasteel,
+/area/maintenance/starboard/aft)
 "ehG" = (
 /obj/item/radio/intercom{
 	name = "Station Intercom";
@@ -77312,27 +77326,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/cargo/storage)
-"gFF" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/machinery/newscaster{
-	pixel_y = -32
-	},
-/obj/item/radio/intercom{
-	dir = 8;
-	name = "Station Intercom (General)";
-	pixel_x = 28
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/cargo/office)
 "gFG" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Maintenance Hatch";
@@ -82298,6 +82291,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/service/abandoned_gambling_den)
+"ijo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "ijN" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/med_data/laptop,
@@ -91614,25 +91613,6 @@
 /obj/effect/turf_decal/vg_decals/atmos/plasma,
 /turf/open/floor/engine/plasma,
 /area/engineering/atmos)
-"lkx" = (
-/obj/machinery/requests_console{
-	department = "Quartermaster's Desk";
-	name = "Quartermaster RC";
-	pixel_x = 32;
-	pixel_y = -32
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/light_switch{
-	pixel_x = 23
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/cargo/qm)
 "lkF" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/machinery/light_switch{
@@ -109258,6 +109238,30 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/service/hydroponics/garden/abandoned)
+"rpU" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/newscaster{
+	pixel_y = -32
+	},
+/obj/item/radio/intercom{
+	dir = 8;
+	name = "Station Intercom (General)";
+	pixel_x = 28
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/machinery/computer/bounty{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/cargo/office)
 "rpV" = (
 /obj/machinery/status_display/evac,
 /turf/closed/wall,
@@ -112557,6 +112561,28 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/solars/starboard/aft)
+"stl" = (
+/obj/machinery/requests_console{
+	department = "Quartermaster's Desk";
+	name = "Quartermaster RC";
+	pixel_x = 32;
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	pixel_x = 23
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/machinery/computer/bounty{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/cargo/qm)
 "sts" = (
 /obj/structure/table/wood,
 /obj/item/folder,
@@ -114948,6 +114974,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
+"til" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plasteel,
+/area/maintenance/starboard)
 "tin" = (
 /obj/machinery/light{
 	dir = 1
@@ -123135,6 +123175,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/dorms)
+"whu" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "whB" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
@@ -171267,7 +171316,7 @@ nOU
 tnL
 xRR
 hbT
-gFF
+rpU
 vhK
 bdV
 bdU
@@ -173601,7 +173650,7 @@ aaa
 aad
 aaa
 bHq
-bJb
+til
 bHq
 rNA
 poQ
@@ -175891,7 +175940,7 @@ sOq
 keW
 fJF
 lgx
-lkx
+stl
 vdx
 sOq
 aad
@@ -178793,7 +178842,7 @@ dkG
 dmf
 dnL
 dpE
-dpE
+ehA
 dsS
 dtV
 dvK
@@ -179034,13 +179083,13 @@ gTM
 vrH
 fzU
 cPP
-cRr
+ijo
 cRr
 cUU
 cWB
 cYf
 cZR
-dbB
+whu
 dbB
 deM
 dfN

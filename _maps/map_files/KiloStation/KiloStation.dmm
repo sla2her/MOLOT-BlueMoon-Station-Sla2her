@@ -8116,6 +8116,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -10042,6 +10043,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "aqZ" = (
@@ -33126,6 +33128,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -33233,6 +33236,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -51997,6 +52001,7 @@
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -70946,6 +70951,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -76947,6 +76953,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 6
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -84447,6 +84454,13 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/ai_monitored/security/armory)
+"jIi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/maintenance/port)
 "jNK" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -84655,6 +84669,13 @@
 	icon_state = "wood-broken7"
 	},
 /area/maintenance/port/fore)
+"kQV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/maintenance/starboard/aft)
 "kRh" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -85569,6 +85590,21 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /turf/open/space/basic,
 /area/space/nearstation)
+"tpQ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/maintenance/fore)
 "tCi" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood{
@@ -100323,7 +100359,7 @@ bhU
 aEw
 bxq
 cux
-cnL
+jIi
 awD
 agp
 bHg
@@ -116737,7 +116773,7 @@ alg
 alU
 cEX
 apb
-cFf
+tpQ
 cEh
 ahh
 ccU
@@ -122190,7 +122226,7 @@ bNU
 bQE
 bSz
 bUU
-bGH
+kQV
 bNh
 awX
 awO

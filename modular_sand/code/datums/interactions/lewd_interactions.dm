@@ -516,7 +516,7 @@
 	return ..()
 
 /mob/living/list_interaction_attributes(mob/living/LM)
-	var/dat = ..()
+	. = ..()
 	if(!COOLDOWN_FINISHED(LM, refractory_period))
 		dat += "...ощущается сексуальная истощённость."
 	switch(a_intent)
