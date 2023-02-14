@@ -4,7 +4,7 @@
 		/obj/item/clothing/under/dress/skirt/maidsexy = 5,
 	)
 	var/list/extra_contraband = list(
-		/obj/item/storage/box/tentaclescubes = 1, //Just one, because someone is going to spam it, I swear to Azura
+		/obj/item/storage/box/tentaclescubes = 1 //Just one, because someone is going to spam it, I swear to Azura
 	)
 	var/list/extra_premium = list()
 
