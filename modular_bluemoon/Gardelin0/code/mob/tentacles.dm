@@ -216,26 +216,26 @@ mob/living
 
 	var/message
 
-	if(CUM_TARGET_VAGINA)
+	if(ishuman(target) && CUM_TARGET_VAGINA)
 		if(M.is_bottomless() && M.has_vagina())
 			message = "вгоняют свои тентакли в дырочки \the [M] и заполняют их спермой!"
 			M.impregnate(src, M.getorganslot(ORGAN_SLOT_WOMB), src.type)
 		else
 			message = "кончают на \the [M]."
 
-	if(CUM_TARGET_PENIS)
+	if(ishuman(target) && CUM_TARGET_PENIS)
 		if(M.is_bottomless() && M.has_anus())
 			message = "обхватывают член \the [M] и обливают спермой!"
 		else
 			message = "кончают на \the [M]."
 
-	if(CUM_TARGET_ANUS)
+	if(ishuman(target) && CUM_TARGET_ANUS)
 		if(M.is_bottomless() && M.has_anus())
 			message = "вгоняют свои тентакли в задницу \the [M] и заполняют её спермой!"
-		else
+		else if (prob(50))
 			message = "кончают на \the [M]."
-	else
-		message = "кончают на пол!"
+		else
+			message = "кончают на пол!"
 
 	if(istype(M, /mob/living/carbon))
 		M.reagents.add_reagent(/datum/reagent/consumable/semen, 30)
