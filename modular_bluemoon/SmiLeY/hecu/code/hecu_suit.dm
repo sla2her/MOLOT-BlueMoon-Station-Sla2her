@@ -35,17 +35,14 @@
 	anthro_mob_worn_overlay = 'modular_bluemoon/SmiLeY/hecu/icons/hecumob_digi.dmi'
 	icon_state = "hecu_belt"
 	item_state = "hecu_belt"
-	reskin_binding = COMSIG_CLICK_CTRL_SHIFT
-	unique_reskin = list(
-		"Olive" = list(
-			RESKIN_ICON_STATE = "hecu_belt",
-			RESKIN_ITEM_STATE = "hecu_belt"
-		),
-		"Black" = list(
-			RESKIN_ICON_STATE = "hecu_belt_black",
-			RESKIN_ITEM_STATE = "hecu_belt_black"
-		),
-	)
+
+/obj/item/storage/belt/military/assault/hecu/black
+	name = "Black HECU warbelt"
+	icon = 'modular_bluemoon/SmiLeY/hecu/icons/hecucloth.dmi'
+	mob_overlay_icon = 'modular_bluemoon/SmiLeY/hecu/icons/hecumob.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/SmiLeY/hecu/icons/hecumob_digi.dmi'
+	icon_state = "hecu_belt_black"
+	item_state = "hecu_belt_black"
 
 /obj/item/storage/backpack/hecu
 	name = "HECU Backpack"
@@ -54,14 +51,11 @@
 	anthro_mob_worn_overlay = 'modular_bluemoon/SmiLeY/hecu/icons/hecumob_digi.dmi'
 	icon_state = "hecu_pack"
 	item_state = "hecu_pack"
-	reskin_binding = COMSIG_CLICK_CTRL_SHIFT
-	unique_reskin = list(
-		"Olive" = list(
-			RESKIN_ICON_STATE = "hecu_pack",
-			RESKIN_ITEM_STATE = "hecu_pack"
-		),
-		"Black" = list(
-			RESKIN_ICON_STATE = "hecu_pack_black",
-			RESKIN_ITEM_STATE = "hecu_pack_black"
-		),
-	)
+
+/obj/item/storage/backpack/hecu/black
+	name = "Black HECU Backpack"
+	icon = 'modular_bluemoon/SmiLeY/hecu/icons/hecucloth.dmi'
+	mob_overlay_icon = 'modular_bluemoon/SmiLeY/hecu/icons/hecumob.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/SmiLeY/hecu/icons/hecumob_digi.dmi'
+	icon_state = "hecu_pack_black"
+	item_state = "hecu_pack_black"
