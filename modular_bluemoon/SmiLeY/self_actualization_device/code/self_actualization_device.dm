@@ -9,7 +9,7 @@
 /obj/item/circuitboard/machine/self_actualization_device
 	name = "Self-Actualization Device (Machine Board)"
 	build_path = /obj/machinery/self_actualization_device
-	req_components = list(/obj/item/stock_parts/micro_laser = 1)
+	req_components = list(/obj/item/stock_parts/micro_laser = 5)
 
 /obj/machinery/self_actualization_device
 	name = "Self-Actualization Device"
