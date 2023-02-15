@@ -580,7 +580,7 @@
 /area/mine/laborcamp)
 "dm" = (
 /turf/open/genturf{
-	baseturfs = s
+	baseturfs = /turf/open/lava/smooth/lava_land_surface
 	},
 /area/lavaland/surface/outdoors/unexplored/danger)
 "do" = (
