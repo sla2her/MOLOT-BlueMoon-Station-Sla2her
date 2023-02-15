@@ -2,7 +2,7 @@
 	name = "microwave oven"
 	desc = "Cooks and boils stuff."
 	icon = 'icons/obj/kitchen.dmi'
-	icon_state = "mw"
+	icon_state = "map_icon"
 	layer = BELOW_OBJ_LAYER
 	density = TRUE
 	use_power = IDLE_POWER_USE
@@ -99,13 +99,13 @@
 	else if(dirty_anim_playing)
 		icon_state = "mwbloody1"
 	else if(dirty == 100)
-		icon_state = "mwbloody"
+		icon_state = "mwbloody1"
 	else if(operating)
-		icon_state = "mw1"
+		icon_state = "back_on"
 	else if(panel_open)
 		icon_state = "mw-o"
 	else
-		icon_state = "mw"
+		icon_state = "back_off"
 
 /obj/machinery/microwave/attackby(obj/item/O, mob/user, params)
 	if(operating)

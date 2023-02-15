@@ -1,11 +1,15 @@
-/obj/item/clothing/suit/blastwave
+/obj/item/clothing/suit/armor/blastwave
 	name = "blastwave trenchcoat"
 	desc = "A generic trenchcoat of the boring wars."
 	icon = 'modular_bluemoon/smiley/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/smiley/icons/mob/clothing/suit.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/smiley/icons/mob/clothing/suit_digi.dmi'
 	icon_state = "blastwave_suit"
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 50, BOMB = 25, BIO = 0, RAD = 0, FIRE = 70, ACID = 90, WOUND = 10)
+	cold_protection = CHEST|GROIN|LEGS|ARMS
+	heat_protection = CHEST|GROIN|LEGS|ARMS
+	strip_delay = 80
 	unique_reskin = list(
 		"Default (Purple)" = list(
 			RESKIN_ICON_STATE = "blastwave_suit",
