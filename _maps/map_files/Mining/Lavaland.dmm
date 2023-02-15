@@ -96,7 +96,7 @@
 	req_access_txt = "30"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/mine/storage)
 "ax" = (
 /obj/machinery/computer/mech_bay_power_console{
