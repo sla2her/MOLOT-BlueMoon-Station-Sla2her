@@ -67,7 +67,7 @@
 	value = 0
 	mob_trait = TRAIT_HYPNOTIC_GAZE
 	gain_text = span_notice("Ваши глаза завораживающе мерцают...")
-	lose_text = span_notice("Ваша глаза становятся обычными.")
+	lose_text = span_notice("Ваши глаза становятся обычными.")
 	medical_record_text = "Длительное воздействие глаз пациента влечет усыпляющий эффект."
 
 /datum/quirk/Hypnotic_gaze/on_spawn()
@@ -93,7 +93,7 @@
 	name = "Вегетарианец"
 	desc = "Мысли о поедании мяса для вас отвратительны."
 	value = 0
-	gain_text = span_notice("Вы чувствуете отвращение от мысли о поедании мяса.")
+	gain_text = span_notice("Сама идея поедания мяса для вас неприятна.")
 	lose_text = span_notice("Вы думаете, что поесть мяса не так уж и плохо.")
 	medical_record_text = "Пациент соблюдает вегетарианскую диету."
 
@@ -510,7 +510,7 @@
 
 /datum/quirk/werewolf //adds the werewolf quirk
 	name = "Оборотень"
-	desc = "Ликантропия позволяет вам перевоплотиться в большого прямоходящего."
+	desc = "Ликантропия позволяет вам перевоплотиться в большого прямоходящего волка."
 	value = 0
 	mob_trait = TRAIT_WEREWOLF
 	gain_text = span_notice("Полная луна зовёт.")
