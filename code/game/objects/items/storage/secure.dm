@@ -146,8 +146,8 @@
 	..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	for(var/i = 0, i < STR.max_items - 2, i++)
-		new /obj/item/stack/spacecash/c5000(src)
-
+		new /obj/item/stack/spacecash/c1000(src)
+		new /obj/item/stack/spacecash/c1000(src)
 /obj/item/storage/secure/briefcase/mws_pack
 	name = "\improper \'MWS\' gun kit"
 	desc = "A storage case for a multi-purpose handgun. Variety hour!"
