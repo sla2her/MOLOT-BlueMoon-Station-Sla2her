@@ -43,7 +43,7 @@ mob/living
 	stop_automated_movement = 1
 	speed = -5
 	turns_per_move = 3
-	anchored = 1 // Теперь точно нот мув.
+	pull_force = MOVE_FORCE_OVERPOWERING
 
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat)
 
