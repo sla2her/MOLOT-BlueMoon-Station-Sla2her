@@ -1,0 +1,57 @@
+/obj/item/clothing/head/blastwave
+	name = "blastwave helmet"
+	desc = "A plastic helmet with paint applied. Protects as much as cardboard box named 'Bomb Shelter'."
+	icon = 'modular_bluemoon/smiley/icons/obj/clothing/hats.dmi'
+	mob_overlay_icon = 'modular_bluemoon/smiley/icons/mob/clothing/head.dmi'
+	anthro_mob_worn_overlay = "blastwave_helmet"
+	flags_inv = HIDEHAIR|HIDEEARS
+	unique_reskin = list(
+		"Default (Purple)" = list(
+			RESKIN_ICON_STATE = "blastwave_suit",
+			RESKIN_ITEM_STATE = "blastwave_suit"
+		),
+		"Red" = list(
+			RESKIN_ICON_STATE = "blastwave_suit_r",
+			RESKIN_ITEM_STATE = "blastwave_suit_r"
+		),
+		"Green" = list(
+			RESKIN_ICON_STATE = "blastwave_suit_g",
+			RESKIN_ITEM_STATE = "blastwave_suit_g"
+		),
+		"Blue" = list(
+			RESKIN_ICON_STATE = "blastwave_suit_b",
+			RESKIN_ITEM_STATE = "blastwave_suit_b"
+		),
+		"Yellow" = list(
+			RESKIN_ICON_STATE = "blastwave_suit_y",
+			RESKIN_ITEM_STATE = "blastwave_suit_y"
+		)
+	)
+
+/obj/item/clothing/head/blastwave/officer
+	name = "blastwave peaked cap"
+	desc = "A simple, militaristic cap."
+	icon_state = "blastwave_offcap"
+	flags_inv = 0
+	unique_reskin = list(
+		"Default (Purple)" = list(
+			RESKIN_ICON_STATE = "blastwave_offcap",
+			RESKIN_ITEM_STATE = "blastwave_offcap"
+		),
+		"Red" = list(
+			RESKIN_ICON_STATE = "blastwave_offcap_r",
+			RESKIN_ITEM_STATE = "blastwave_offcap_r"
+		),
+		"Green" = list(
+			RESKIN_ICON_STATE = "blastwave_offcap_g",
+			RESKIN_ITEM_STATE = "blastwave_offcap_g"
+		),
+		"Blue" = list(
+			RESKIN_ICON_STATE = "blastwave_offcap_b",
+			RESKIN_ITEM_STATE = "blastwave_offcap_b"
+		),
+		"Yellow" = list(
+			RESKIN_ICON_STATE = "blastwave_offcap_y",
+			RESKIN_ITEM_STATE = "blastwave_offcap_y"
+		)
+	)

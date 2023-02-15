@@ -1536,6 +1536,9 @@
 /atom/proc/setClosed()
 		return
 
+///Called when something resists while this atom is its loc
+/atom/proc/container_resist_act(mob/living/user)
+
 //Update the screentip to reflect what we're hoverin over
 /atom/MouseEntered(location, control, params)
 	. = ..()

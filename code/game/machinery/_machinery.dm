@@ -255,6 +255,12 @@ Class Procs:
 	updateUsrDialog()
 	update_icon()
 
+/obj/machinery/proc/set_occupant(atom/movable/new_occupant)
+	SHOULD_CALL_PARENT(TRUE)
+
+	SEND_SIGNAL(src, COMSIG_MACHINERY_SET_OCCUPANT, new_occupant)
+	occupant = new_occupant
+
 /obj/machinery/proc/auto_use_power()
 	if(!powered(power_channel))
 		return FALSE
