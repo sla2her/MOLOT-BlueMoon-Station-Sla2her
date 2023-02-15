@@ -37,12 +37,13 @@ mob/living
 
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 
-	//Tentacles don't speak nor move
+	//Tentacles don't speak and not move
 	speak_chance = 0
 	wander = 0
 	stop_automated_movement = 1
 	speed = -5
 	turns_per_move = 3
+	anchored = 1 // Теперь точно нот мув.
 
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat)
 
