@@ -139,6 +139,10 @@ Class Procs:
 	var/market_verb = "Customer"
 	var/payment_department = ACCOUNT_ENG
 
+	var/clickvol = 40	// sound volume played on succesful click
+	var/next_clicksound = 0	// value to compare with world.time for whether to play clicksound according to CLICKSOUND_INTERVAL
+	var/clicksound	// sound played on succesful interface use by a carbon lifeform
+
 /obj/machinery/Initialize(mapload)
 	if(!armor)
 		armor = list(MELEE = 25, BULLET = 10, LASER = 10, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 70)
@@ -668,3 +672,12 @@ Class Procs:
 	var/alertstr = "<span class='userdanger'>Network Alert: Hacking attempt detected[get_area(src)?" in [get_area_name(src, TRUE)]":". Unable to pinpoint location"].</span>"
 	for(var/mob/living/silicon/ai/AI in GLOB.player_list)
 		to_chat(AI, alertstr)
+
+/obj/machinery/proc/play_click_sound(custom_clicksound)
+	if((custom_clicksound||clicksound) && world.time > next_clicksound)
+		next_clicksound = world.time + CLICKSOUND_INTERVAL
+		if(custom_clicksound)
+			playsound(src, custom_clicksound, clickvol)
+		else if(clicksound)
+			playsound(src, clicksound, clickvol)
+	return

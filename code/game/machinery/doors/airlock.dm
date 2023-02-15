@@ -501,7 +501,7 @@
 					lights_overlay = get_airlock_overlay("lights_emergency", overlays_file, ABOVE_LIGHTING_LAYER, ABOVE_LIGHTING_PLANE)
 				else
 					lights_overlay = get_airlock_overlay("lights_poweron", overlays_file, ABOVE_LIGHTING_LAYER, ABOVE_LIGHTING_PLANE)
-
+					light_color = LIGHT_COLOR_BLUE
 			if(note)
 				note_overlay = get_airlock_overlay(notetype, note_overlay_file)
 
