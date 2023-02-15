@@ -3,7 +3,8 @@
 	desc = "A plastic helmet with paint applied. Protects as much as cardboard box named 'Bomb Shelter'."
 	icon = 'modular_bluemoon/smiley/icons/obj/clothing/hats.dmi'
 	mob_overlay_icon = 'modular_bluemoon/smiley/icons/mob/clothing/head.dmi'
-	anthro_mob_worn_overlay = "blastwave_helmet"
+	icon_state = "blastwave_helmet"
+	item_state = "blastwave_helmet"
 	dynamic_hair_suffix = ""
 	flags_inv = HIDEHAIR|HIDEEARS
 	unique_reskin = list(
