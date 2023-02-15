@@ -4,27 +4,28 @@
 	icon = 'modular_bluemoon/smiley/icons/obj/clothing/hats.dmi'
 	mob_overlay_icon = 'modular_bluemoon/smiley/icons/mob/clothing/head.dmi'
 	anthro_mob_worn_overlay = "blastwave_helmet"
+	dynamic_hair_suffix = ""
 	flags_inv = HIDEHAIR|HIDEEARS
 	unique_reskin = list(
 		"Default (Purple)" = list(
-			RESKIN_ICON_STATE = "blastwave_suit",
-			RESKIN_ITEM_STATE = "blastwave_suit"
+			RESKIN_ICON_STATE = "blastwave_helmet",
+			RESKIN_ITEM_STATE = "blastwave_helmet"
 		),
 		"Red" = list(
-			RESKIN_ICON_STATE = "blastwave_suit_r",
-			RESKIN_ITEM_STATE = "blastwave_suit_r"
+			RESKIN_ICON_STATE = "blastwave_helmet_r",
+			RESKIN_ITEM_STATE = "blastwave_helmet_r"
 		),
 		"Green" = list(
-			RESKIN_ICON_STATE = "blastwave_suit_g",
-			RESKIN_ITEM_STATE = "blastwave_suit_g"
+			RESKIN_ICON_STATE = "blastwave_helmet_g",
+			RESKIN_ITEM_STATE = "blastwave_helmet_g"
 		),
 		"Blue" = list(
-			RESKIN_ICON_STATE = "blastwave_suit_b",
-			RESKIN_ITEM_STATE = "blastwave_suit_b"
+			RESKIN_ICON_STATE = "blastwave_helmet_b",
+			RESKIN_ITEM_STATE = "blastwave_helmet_b"
 		),
 		"Yellow" = list(
-			RESKIN_ICON_STATE = "blastwave_suit_y",
-			RESKIN_ITEM_STATE = "blastwave_suit_y"
+			RESKIN_ICON_STATE = "blastwave_helmet_y",
+			RESKIN_ITEM_STATE = "blastwave_helmet_y"
 		)
 	)
 

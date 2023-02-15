@@ -5,4 +5,4 @@
 	mob_overlay_icon = 'modular_bluemoon/smiley/icons/mob/clothing/mask.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/smiley/icons/mob/clothing/mask_muzzled.dmi'
 	icon_state = "gas_full"
-	flags_inv = HIDEEARS | HIDEEYES | HIDEFACE | HIDEHAIR | HIDEFACIALHAIR | HIDESNOUT
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT

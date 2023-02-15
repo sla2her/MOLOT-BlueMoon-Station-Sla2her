@@ -173,6 +173,8 @@
 /datum/brain_trauma/severe/monophobia/proc/check_alone()
 //SANDSTORM EDIT
 	var/check_radius = 7
+	if(!owner)
+		return FALSE
 	if(istype(owner.loc, /obj/belly))
 		return FALSE
 	if(HAS_TRAIT(owner, TRAIT_BLIND))

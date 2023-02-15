@@ -823,7 +823,8 @@
 /area/ruin/space/has_grav/port_tarkon/porthall)
 "eZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/incinerator_output{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /obj/structure/sign/warning/vacuum/external{
 	pixel_y = -32
@@ -5440,7 +5441,8 @@
 /area/ruin/space/has_grav/port_tarkon/comms)
 "Gl" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /turf/open/floor/engine/vacuum,
 /area/ruin/space/has_grav/port_tarkon/atmos)
