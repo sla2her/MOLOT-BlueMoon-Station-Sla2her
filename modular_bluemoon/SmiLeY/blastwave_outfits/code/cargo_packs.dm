@@ -10,10 +10,8 @@
 		/obj/item/clothing/head/blastwave,
 		/obj/item/clothing/head/blastwave,
 		/obj/item/clothing/head/blastwave/officer,
-		/obj/item/clothing/head/blastwave/officer,
 		/obj/item/clothing/mask/gas/full,
 		/obj/item/clothing/mask/gas/full,
-		/obj/item/clothing/shoes/jackboots,
 		/obj/item/clothing/shoes/jackboots,
 		/obj/item/toy/nuke
 	)
