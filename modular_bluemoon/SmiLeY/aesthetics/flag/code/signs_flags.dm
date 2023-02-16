@@ -121,8 +121,8 @@
 			sign_path = /obj/structure/sign/flag/tizira
 		),
 		"SSC" = list(
-			RESKIN_ICON_STATE = "flag_agurk",
-			RESKIN_ITEM_STATE = "flag_agurk",
+			RESKIN_ICON_STATE = "folded_agurk",
+			RESKIN_ITEM_STATE = "folded_agurk",
 			sign_path = /obj/structure/sign/flag/ssc
 		),
 		"Mars" = list(
