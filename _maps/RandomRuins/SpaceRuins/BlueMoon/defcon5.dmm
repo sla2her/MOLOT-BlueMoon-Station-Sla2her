@@ -2238,7 +2238,7 @@
 "lp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/paper/fluff/ruins/tarkoff/atmosincident,
-/obj/machinery/suit_storage_unit/engine/ancient,
+/obj/machinery/suit_storage_unit/industrial/ancient,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "lr" = (
@@ -6019,11 +6019,11 @@
 "Gk" = (
 /obj/effect/turf_decal/tile/blue/half,
 /obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/command/glass{
-	name = "Bridge";
-	req_access = list("66")
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 8;
+	req_access_txt = "66"
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/comms)
 "Gp" = (
@@ -7994,7 +7994,7 @@
 	dir = 8
 	},
 /obj/machinery/firealarm/directional/west,
-/obj/machinery/suit_storage_unit/engine/ancient/mason,
+/obj/machinery/suit_storage_unit/industrial/ancient/mason,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/cargo)
 "QA" = (
@@ -8373,10 +8373,6 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/command/glass{
-	name = "Bridge";
-	req_access = list("66")
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/comms)
