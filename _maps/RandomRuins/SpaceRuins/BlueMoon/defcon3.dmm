@@ -797,7 +797,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "eE" = (
@@ -1815,10 +1814,13 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "jB" = (
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
-	level = 1
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8;
+	name = "Pipe To Left";
+	piping_layer = 3;
+	layer = 3
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "jE" = (
@@ -9035,6 +9037,23 @@
 /obj/item/ammo_box/magazine/m357/dumdum,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/storage)
+"Xg" = (
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 4;
+	name = "killroom vent";
+	layer = 3;
+	piping_layer = 3
+	},
+/obj/effect/turf_decal/stripes/asteroid/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/asteroid/line,
+/obj/effect/turf_decal/stripes/asteroid/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "Xh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
@@ -10020,7 +10039,7 @@ bT
 zo
 zo
 zo
-iI
+Xg
 Wa
 Wa
 sv

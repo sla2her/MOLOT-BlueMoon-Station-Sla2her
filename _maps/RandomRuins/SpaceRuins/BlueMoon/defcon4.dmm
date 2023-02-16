@@ -1445,12 +1445,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/has_grav/port_tarkon/kitchen)
-"iz" = (
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
-	level = 1
-	},
-/turf/open/floor/plating/asteroid/airless,
-/area/ruin/space/has_grav)
 "iA" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
 	level = 1
@@ -1488,8 +1482,18 @@
 "iI" = (
 /obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 4;
-	name = "killroom vent"
+	name = "killroom vent";
+	layer = 3;
+	piping_layer = 3
 	},
+/obj/effect/turf_decal/stripes/asteroid/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/asteroid/line,
+/obj/effect/turf_decal/stripes/asteroid/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "iJ" = (
@@ -1612,11 +1616,14 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "jB" = (
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
-	level = 1
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8;
+	name = "Pipe To Left";
+	piping_layer = 3;
+	layer = 3
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/airless,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "jE" = (
 /obj/structure/window/reinforced{
@@ -8247,11 +8254,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "WP" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/structure/window/reinforced/no_firelock,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
 	level = 1
 	},
-/obj/machinery/door/firedoor/solid,
+/obj/machinery/door/firedoor/solid/closed,
 /obj/machinery/door/poddoor/shutters{
 	id = "ptatmos"
 	},
@@ -9209,7 +9217,7 @@ zo
 zo
 zo
 zo
-iz
+zo
 zo
 Wa
 Wa
