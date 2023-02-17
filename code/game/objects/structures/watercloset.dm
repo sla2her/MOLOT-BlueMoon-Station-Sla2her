@@ -263,19 +263,19 @@
 	var/watertemp = "normal"	//freezing, normal, or boiling
 	var/datum/looping_sound/showering/soundloop
 
-/obj/structure/mirror/directional/north //Pixel offsets get overwritten on New()
+/obj/structure/shower/directional/north //Pixel offsets get overwritten on New()
 	dir = SOUTH
 	pixel_y = 28
 
-/obj/structure/mirror/directional/south
+/obj/structure/shower/directional/south
 	dir = NORTH
 	pixel_y = -28
 
-/obj/structure/mirror/directional/east
+/obj/structure/shower/directional/east
 	dir = WEST
 	pixel_x = 28
 
-/obj/structure/mirror/directional/west
+/obj/structure/shower/directional/west
 	dir = EAST
 	pixel_x = -28
 

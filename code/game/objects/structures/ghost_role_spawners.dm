@@ -496,6 +496,12 @@
 	implants = list(/obj/item/implant/mindshield) //No revolutionaries, he's MY friend.
 	id = /obj/item/card/id
 
+/obj/item/radio/headset/ds1
+	name = "DS1 Headset"
+	freerange = TRUE
+	freqlock = TRUE
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds1
+
 /obj/item/radio/headset/ds2
 	name = "DS2 Headset"
 	freerange = TRUE
