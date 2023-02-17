@@ -17,9 +17,8 @@
 		/obj/item/clothing/suit/armor/vest/stripper = 5,
 		/obj/item/clothing/suit/armor/vest/stripper/bikini = 5,
 		/obj/item/clothing/neck/petcollar/locked/security = 5,
-		/obj/item/clothing/mask/gas/sechailer/slut = 5,
 		/obj/item/grenade/secbed = 3,
-		/obj/item/dildo/flared/gigantic = 1
+		/obj/item/dildo/flared/gigantic = 3
 	)
 	LAZYADD(products, extra_products)
 	LAZYADD(contraband, extra_contraband)
@@ -36,6 +35,7 @@
 	var/list/extra_products = list(
 		/obj/item/clothing/head/beret/sec/peacekeeper/cap = 5,
 		/obj/item/clothing/head/beret/sec/peacekeeper = 5,
+		/obj/item/clothing/mask/balaclava/breath = 5,
 		/obj/item/clothing/under/rank/security/officer/peacekeeper =5,
 		/obj/item/clothing/under/rank/security/officer/metrocop = 2,
 		/obj/item/clothing/under/rank/security/skirt/slut = 5,
@@ -46,6 +46,8 @@
 	var/list/extra_premium = list(
 		/obj/item/clothing/gloves/latexsleeves/security = 5,
 		/obj/item/clothing/shoes/jackboots/tall = 5,
+		/obj/item/clothing/under/custom/mw2_russian_para = 5,
+		/obj/item/clothing/under/bm/sigu = 5,
 		/obj/item/clothing/head/beret/sec/bitch = 5
 	)
 	LAZYADD(products, extra_products)
@@ -65,8 +67,11 @@
 	new /obj/item/radio/headset/headset_brigdoc(src)
 	new /obj/item/radio/headset/headset_brigdoc/alt(src)
 	new /obj/item/flashlight/seclite(src)
+	new /obj/item/clothing/gloves/color/latex/nitrile(src)
 	new /obj/item/clothing/head/brigdoc(src)
 	new /obj/item/defibrillator(src)
+	new /obj/item/storage/belt/medical(src)
+	new /obj/item/pinpointer/crew(src)
 	new /obj/item/clothing/suit/brigdoc(src)
 	new /obj/item/clothing/suit/brigdoc/labcoat(src)
 
@@ -83,7 +88,6 @@
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/clothing/mask/gas/sechailer/swat(src)
 	new /obj/item/grenade/flashbang(src)
-	new /obj/item/choice_beacon/bsbaton(src)
 
 /obj/structure/closet/secure_closet/bridgesec
 	name = "bridge officer's locker"

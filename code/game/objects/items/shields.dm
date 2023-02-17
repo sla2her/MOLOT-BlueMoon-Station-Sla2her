@@ -27,13 +27,13 @@
 	block_damage_multiplier = 0.25
 	block_stamina_efficiency = 2.5
 	block_stamina_cost_per_second = 2.5
-	block_slowdown = 0
+	block_slowdown = 2
 	block_lock_attacking = FALSE
 	block_lock_sprinting = TRUE
 	block_start_delay = 1.5
 	block_damage_absorption = 5
 	block_resting_stamina_penalty_multiplier = 2
-	block_projectile_mitigation = 75
+	block_projectile_mitigation = 20
 	block_damage_absorption_override = list(
 		TEXT_ATTACK_TYPE_TACKLE = INFINITY,
 		TEXT_ATTACK_TYPE_THROWN = 10

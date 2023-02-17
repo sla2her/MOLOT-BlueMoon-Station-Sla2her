@@ -24,3 +24,8 @@
 #define FOOD_IN_CONTAINER (1<<0)
 
 #define STOP_SERVING_BREAKFAST (15 MINUTES)
+
+///Venue reagent requirement
+#define VENUE_BAR_MINIMUM_REAGENTS 10
+
+#define IS_EDIBLE(O) (O.GetComponent(/datum/component/edible))

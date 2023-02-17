@@ -75,6 +75,7 @@
 	desc = "A plastic replica of a Syndicate agent's space helmet. You'll look just like a real murderous Syndicate agent in this! This is a toy, it is not made for use in space!"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	mutantrace_variation = STYLE_MUZZLE
+	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/cueball
 	name = "cueball helmet"
@@ -83,6 +84,7 @@
 	item_state="cueball"
 	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/snowman
 	name = "Snowman Head"
@@ -91,6 +93,7 @@
 	item_state = "snowman_h"
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/justice
 	name = "justice hat"
@@ -181,6 +184,7 @@
 /obj/item/clothing/head/bearpelt
 	name = "bear pelt hat"
 	desc = "Fuzzy."
+	alternate_screams = RUSSIAN_SCREAMS
 	icon_state = "bearpelt"
 	item_state = "bearpelt"
 
@@ -439,6 +443,8 @@
 	desc = "A security cowboy hat, perfect for any true lawman"
 	icon_state = "cowboyhat_sec"
 	item_state= "cowboyhat_sec"
+	armor = list(MELEE = 40, BULLET = 30, LASER = 30,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
+	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/head/cowboyhat/polychromic
 	name = "polychromic cowboy hat"

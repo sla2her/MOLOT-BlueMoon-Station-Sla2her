@@ -99,7 +99,7 @@
 		if("Thunderdome Overseer")
 			return list(ACCESS_CENT_GENERAL, ACCESS_CENT_THUNDER)
 		if("CentCom Official")
-			return list(ACCESS_CENT_GENERAL, ACCESS_CENT_LIVING)
+			return list(ACCESS_CENT_GENERAL, ACCESS_CENT_LIVING, ACCESS_BRIDGE_OFFICER, ACCESS_HEADS)
 		if("Medical Officer")
 			return list(ACCESS_CENT_GENERAL, ACCESS_CENT_LIVING, ACCESS_CENT_MEDICAL)
 		if("Death Commando")
@@ -107,7 +107,7 @@
 		if("Research Officer")
 			return list(ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_TELEPORTER, ACCESS_CENT_STORAGE)
 		if("Special Ops Officer")
-			return list(ACCESS_CENT_GENERAL, ACCESS_CENT_THUNDER, ACCESS_CENT_SPECOPS, ACCESS_CENT_LIVING, ACCESS_CENT_STORAGE)
+			return get_all_centcom_access()
 		if("Admiral")
 			return get_all_centcom_access()
 		if("CentCom Commander")
@@ -363,7 +363,7 @@
 	return list("Assistant", "Captain", "Blueshield", "Head of Personnel", "Bridge Officer", "Bartender", "Cook", "Botanist", "Quartermaster", "Cargo Technician",
 				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Chief Engineer", "Station Engineer",
 				"Atmospheric Technician", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist", "Psychologist", "Paramedic",
-				"Research Director", "Scientist", "Roboticist", "Head of Security", "Warden", "Detective", "Security Officer", "Brig Physician", "Peacekeeper", "Prisoner")
+				"Research Director", "Scientist", "Roboticist", "Expeditor", "Head of Security", "Warden", "Detective", "Security Officer", "Brig Physician", "Peacekeeper", "Prisoner") //BlueMoon edit
 
 /proc/get_all_job_icons() //For all existing HUD icons
 	return get_all_jobs()
@@ -376,6 +376,10 @@
 	return SSjob.real_job_name[jobName] || "Unknown"
 
 /obj/item/proc/get_job_name() //Used in secHUD icon generation
+	if (istype(src, /obj/item/card/id/debug/bst))
+		return "scrambled"
+	if (istype(src, /obj/item/card/id/syndicate))
+		return "scrambled"
 	var/obj/item/card/id/I = GetID()
 	if(!I)
 		return

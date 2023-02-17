@@ -2177,13 +2177,13 @@
 /area/awaymission/undergroundoutpost45/central)
 "eA" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass{
+/turf/open/floor/grass/grass0{
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/central)
 "eB" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass{
+/turf/open/floor/grass/grass0{
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/central)
@@ -2327,7 +2327,7 @@
 /area/awaymission/undergroundoutpost45/central)
 "eO" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass{
+/turf/open/floor/grass/grass0{
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/central)
@@ -3522,6 +3522,7 @@
 	pixel_x = -25
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel/cafeteria{
 	dir = 5;
 	heat_capacity = 1e+006
@@ -5296,6 +5297,7 @@
 /obj/structure/sign/warning/securearea{
 	pixel_x = -32
 	},
+/mob/living/simple_animal/hostile/carrion,
 /turf/open/floor/plasteel/white{
 	heat_capacity = 1e+006
 	},
@@ -5477,6 +5479,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel/white{
 	heat_capacity = 1e+006
 	},
@@ -6018,6 +6021,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/purple,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel/white{
 	heat_capacity = 1e+006
 	},
@@ -6096,6 +6100,7 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "lQ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
@@ -6199,7 +6204,7 @@
 	},
 /area/awaymission/undergroundoutpost45/engineering)
 "lZ" = (
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -7939,6 +7944,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
@@ -8826,6 +8832,7 @@
 	pixel_x = 11
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/poison/giant_spider/nurse/midwife,
 /turf/open/floor/plasteel/freezer{
 	heat_capacity = 1e+006
 	},
@@ -8999,7 +9006,7 @@
 	input_tag = "UO45_air_in";
 	name = "Mixed Air Supply Control";
 	output_tag = "UO45_air_out";
-	sensors = list("UO45_air_sensor" = "Tank")
+	sensors = list("UO45_air_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -9733,6 +9740,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
@@ -10457,7 +10465,7 @@
 	input_tag = "UO45_mix_in";
 	name = "Gas Mix Tank Control";
 	output_tag = "UO45_mix_in";
-	sensors = list("UO45_mix_sensor" = "Tank")
+	sensors = list("UO45_mix_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 6
@@ -11155,7 +11163,7 @@
 	input_tag = "UO45_n2_in";
 	name = "Nitrogen Supply Control";
 	output_tag = "UO45_n2_out";
-	sensors = list("UO45_n2_sensor" = "Tank")
+	sensors = list("UO45_n2_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/effect/turf_decal/tile/red,
@@ -11206,7 +11214,7 @@
 	input_tag = "UO45_o2_in";
 	name = "Oxygen Supply Control";
 	output_tag = "UO45_o2_out";
-	sensors = list("UO45_o2_sensor" = "Tank")
+	sensors = list("UO45_o2_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -11295,7 +11303,7 @@
 /obj/machinery/computer/atmos_control{
 	dir = 4;
 	name = "Tank Monitor";
-	sensors = list("UO45_n2_sensor" = "Nitrogen", "UO45_o2_sensor" = "Oxygen", "UO45_mix_sensor" = "Gas Mix Tank")
+	sensors = list("UO45_n2_sensor"="Nitrogen","UO45_o2_sensor"="Oxygen","UO45_mix_sensor"="Gas Mix Tank")
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -11482,7 +11490,7 @@
 	dir = 4;
 	level = 3;
 	name = "Distribution and Waste Monitor";
-	sensors = list("UO45_air_sensor" = "Mixed Air Supply Tank", "UO45_distro_meter" = "Distribution Loop", "UO45_waste_meter" = "Waste Loop")
+	sensors = list("UO45_air_sensor"="Mixed Air Supply Tank","UO45_distro_meter"="Distribution Loop","UO45_waste_meter"="Waste Loop")
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -11811,6 +11819,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
@@ -12434,6 +12443,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
@@ -13601,6 +13611,12 @@
 	name = "Cave Floor"
 	},
 /area/awaymission/undergroundoutpost45/caves)
+"yE" = (
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel/white{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/research)
 "yH" = (
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/blood/gibs/down,
@@ -13612,6 +13628,19 @@
 	name = "Cave Floor"
 	},
 /area/awaymission/undergroundoutpost45/caves)
+"zY" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/crew_quarters)
+"Gx" = (
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/central)
 "Jj" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -13631,6 +13660,17 @@
 	},
 /turf/open/floor/circuit/telecomms/server,
 /area/awaymission/undergroundoutpost45/research)
+"Mu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/crew_quarters)
 "MS" = (
 /obj/structure/cable,
 /obj/machinery/power/smes/magical,
@@ -13652,6 +13692,46 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/engineering)
+"Or" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel/white{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/research)
+"Pw" = (
+/obj/structure/bed,
+/obj/item/bedsheet,
+/mob/living/simple_animal/hostile/poison/giant_spider/hunter/viper,
+/turf/open/floor/carpet{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/crew_quarters)
+"Rq" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/mining)
+"Sg" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel/white{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/gateway)
 "SS" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -13680,6 +13760,13 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/research)
+"ZN" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/central)
 
 (1,1,1) = {"
 aa
@@ -37194,7 +37281,7 @@ eJ
 eJ
 eJ
 gU
-kH
+Sg
 ly
 gU
 eJ
@@ -41830,7 +41917,7 @@ oE
 hH
 gx
 qq
-ha
+yE
 kP
 sx
 tn
@@ -42083,7 +42170,7 @@ mk
 mk
 mk
 mk
-mk
+Or
 mk
 pM
 ha
@@ -44351,7 +44438,7 @@ ak
 aq
 ag
 an
-aF
+ZN
 aS
 aP
 ay
@@ -44383,7 +44470,7 @@ gt
 gA
 gs
 hg
-gA
+zY
 gA
 gA
 gA
@@ -44625,7 +44712,7 @@ aI
 aS
 da
 aS
-aS
+Gx
 dT
 el
 eA
@@ -45934,7 +46021,7 @@ gg
 gs
 lg
 fO
-mt
+Pw
 km
 fO
 og
@@ -46956,7 +47043,7 @@ hj
 hK
 hK
 hK
-iH
+Mu
 hK
 hJ
 hK
@@ -47453,7 +47540,7 @@ cN
 de
 dq
 dF
-aF
+ZN
 aS
 aS
 eS
@@ -48788,7 +48875,7 @@ xo
 xo
 wu
 xG
-wh
+Rq
 xV
 xX
 ya

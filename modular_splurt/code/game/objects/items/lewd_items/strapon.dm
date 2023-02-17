@@ -7,7 +7,7 @@
 	
 /obj/item/strapon_strap/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/dildo))
-		to_chat(user, span_userlove("You attach the dildo to the strap."))
+		to_chat(user, "<span class='userlove'>You attach the dildo to the strap.</span>")
 		var/obj/item/dildo/dildo = I
 		var/obj/item/clothing/underwear/briefs/strapon/new_strapon = new /obj/item/clothing/underwear/briefs/strapon(user.loc)
 		new_strapon.dildo_color = dildo.color
@@ -48,10 +48,10 @@
 /obj/item/clothing/underwear/briefs/strapon/examine(mob/user)
 	. = ..()
 	. += "There is a <span class='notice'>[GLOB.dildo_size_names[dildo_size]] [dildo_shape][dildo_can_customize ? " custom" : ""] dildo</span> attached to it."
-	. += span_notice("Alt-Click \the [src.name] to separate the strap and dildo.")
+	. += "<span class='notice'>Alt-Click \the [src.name] to separate the strap and dildo.</span>"
 
 /obj/item/clothing/underwear/briefs/strapon/AltClick(mob/living/user, obj/item/I)
-	to_chat(user, span_userlove("You separate the dildo from the strap."))
+	to_chat(user, "<span class='userlove'>You separate the dildo from the strap.</span>")
 	var/obj/item/strapon_strap/new_strapon_strap = new /obj/item/strapon_strap(user.loc)
 	var/obj/item/dildo/new_dildo
 	if(dildo_can_customize)
@@ -105,7 +105,7 @@
 
 	if(istype(user, /mob/living/carbon))
 		var/mob/living/carbon/C = user
-		to_chat(C, span_userlove("You're now ready to bone someone!"))
+		to_chat(C, "<span class='userlove'>You're now ready to bone someone!</span>")
 
 /obj/item/clothing/underwear/briefs/strapon/mob_can_equip(M, equipper, slot, disable_warning, bypass_equip_delay_self)
 	if(!..())
@@ -114,7 +114,7 @@
 	if(istype(M, /mob/living))
 		var/mob/living/living = M
 		if(living.has_penis(REQUIRE_ANY))
-			to_chat(living, span_notice("\The [living] doesn't seem to need a strapon!"))
+			to_chat(living, "<span class='notice'>\The [living] doesn't seem to need a strapon!</span>")
 			return FALSE
 
 	return TRUE

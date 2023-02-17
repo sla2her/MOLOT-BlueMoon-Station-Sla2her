@@ -63,10 +63,6 @@
 /obj/structure/destructible/cult/pylon,
 /turf/open/floor/circuit/green/off,
 /area/awaymission/wildwest/vault)
-"aw" = (
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	})
 "az" = (
 /turf/open/floor/plating/ironsand{
 	icon_state = "ironsand1"
@@ -687,7 +683,7 @@
 /area/awaymission/wildwest/mines)
 "cL" = (
 /obj/structure/table/wood,
-/obj/item/nullrod/claymore/saber/red,
+/obj/item/dualsaber,
 /turf/open/floor/wood,
 /area/awaymission/wildwest/gov)
 "cM" = (
@@ -1710,17 +1706,17 @@
 	dir = 8;
 	icon_state = "fwindow"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "fK" = (
 /obj/structure/window/reinforced{
 	dir = 1;
 	icon_state = "fwindow"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "fL" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "fM" = (
 /obj/structure/window/reinforced{
@@ -1730,7 +1726,7 @@
 	dir = 1;
 	icon_state = "fwindow"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "fN" = (
 /obj/structure/window/reinforced{
@@ -1784,17 +1780,17 @@
 	dir = 8;
 	icon_state = "fwindow"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "fV" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "fW" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "fX" = (
 /obj/structure/window/reinforced{
@@ -1825,7 +1821,7 @@
 /obj/structure/window/reinforced{
 	icon_state = "fwindow"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gb" = (
 /obj/structure/window/reinforced{
@@ -1834,7 +1830,7 @@
 /obj/structure/window/reinforced{
 	icon_state = "fwindow"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gc" = (
 /obj/structure/window/reinforced{
@@ -1876,7 +1872,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gj" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
@@ -1892,7 +1888,7 @@
 /area/awaymission/wildwest/mines)
 "gn" = (
 /mob/living/simple_animal/hostile/netherworld,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "go" = (
 /obj/structure/window/reinforced{
@@ -1901,7 +1897,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gq" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
@@ -1955,7 +1951,7 @@
 /obj/effect/mob_spawn/human/corpse/syndicatecommando{
 	mob_name = "Syndicate Commando"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gz" = (
 /obj/structure/window/reinforced,
@@ -2014,18 +2010,18 @@
 	icon_state = "fwindow"
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gE" = (
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gF" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
 "gG" = (
 /obj/structure/window/reinforced,
@@ -2098,6 +2094,18 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
+"ow" = (
+/obj/structure/closet/crate,
+/obj/item/wrench,
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 30
+	},
+/obj/structure/cable{
+	icon_state = "1-4";
+	dir = 1
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "pD" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -2121,7 +2129,6 @@
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
 "vO" = (
-/obj/machinery/gateway/away,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -2134,6 +2141,13 @@
 /obj/structure/lattice,
 /turf/open/space,
 /area/space/nearstation)
+"BK" = (
+/obj/machinery/gateway/away,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "BX" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -2143,13 +2157,26 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
+"Ce" = (
+/obj/machinery/power/port_gen/pacman,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "Gh" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/awaymission/wildwest/gov)
+"JY" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 "Kh" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2193,6 +2220,16 @@
 /obj/item/wrench,
 /turf/open/floor/plating,
 /area/awaymission/wildwest/refine)
+"Za" = (
+/obj/machinery/wish_granter,
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
+"Zh" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/circuit/green/off,
+/area/awaymission/wildwest/vault)
 
 (1,1,1) = {"
 aa
@@ -33219,7 +33256,7 @@ aN
 aN
 az
 az
-aw
+az
 az
 az
 az
@@ -47512,8 +47549,8 @@ ao
 ao
 ao
 ao
-ao
-ao
+Ce
+ow
 ab
 ac
 ac
@@ -47763,14 +47800,14 @@ ab
 ab
 ab
 ao
-ao
-ao
-ao
-ao
-ao
-ao
-ao
-ao
+BK
+JY
+JY
+JY
+JY
+JY
+JY
+Zh
 ab
 ac
 ac
@@ -51101,7 +51138,7 @@ aa
 aa
 aa
 ab
-ao
+Za
 ao
 aq
 ab

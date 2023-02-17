@@ -63,13 +63,18 @@
 	allow_duplicates = FALSE
 */
 
+/*  BlueMoon Edit Begin
+
 /datum/map_template/ruin/lavaland/syndicate_base
 	name = "Syndicate Lava Base"
 	id = "lava-base"
 	description = "A secret base researching illegal bioweapons, it is closely guarded by an elite team of syndicate agents."
 	suffix = "lavaland_surface_syndicate_base1.dmm"
-	cost = 20
+	cost = 10
 	allow_duplicates = FALSE
+	always_place = TRUE
+
+	BlueMoon Edit End */
 
 /datum/map_template/ruin/lavaland/free_golem
 	name = "Free Golem Ship"
@@ -163,6 +168,7 @@
 	description = "Ratvar's final resting place."
 	suffix = "lavaland_surface_dead_ratvar.dmm"
 	allow_duplicates = FALSE
+	cost = 5
 
 /datum/map_template/ruin/lavaland/hierophant
 	name = "Hierophant's Arena"

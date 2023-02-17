@@ -25,7 +25,7 @@
 
 /datum/mood_event/pet_animal
 	description = "<span class='nicegreen'>Animals are adorable! I can't stop petting them!</span>\n"
-	mood_change = 2
+	mood_change = 5
 	timeout = 5 MINUTES
 
 /datum/mood_event/pet_animal/add_effects(mob/animal)

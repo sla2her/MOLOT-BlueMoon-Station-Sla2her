@@ -1,11 +1,9 @@
 /datum/round_event_control/camera_failure
 	name = "Camera Failure"
 	typepath = /datum/round_event/camera_failure
-	weight = 100
-	max_occurrences = 20
-	alert_observers = FALSE
-	category = EVENT_CATEGORY_ENGINEERING
-	description = "Turns off a random amount of cameras."
+	weight = 30
+	max_occurrences = 25
+	alert_observers = TRUE
 
 /datum/round_event/camera_failure
 	fakeable = FALSE

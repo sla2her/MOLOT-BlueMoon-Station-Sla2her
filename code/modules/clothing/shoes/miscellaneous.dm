@@ -155,6 +155,10 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 	lace_time = 12 SECONDS
 
+/obj/item/clothing/shoes/jackboots/Initialize()
+	. = ..()
+	AddComponent(/datum/component/squeak, list('sound/effects/footstep/sec_boots-1.ogg' = 1,'sound/effects/footstep/sec_boots-2.ogg' = 1), 30)
+
 /obj/item/clothing/shoes/jackboots/sec
 	name = "security jackboots"
 	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
@@ -399,6 +403,7 @@
 /obj/item/clothing/shoes/russian
 	name = "russian boots"
 	desc = "Comfy shoes."
+	alternate_screams = RUSSIAN_SCREAMS
 	icon_state = "rus_shoes"
 	item_state = "rus_shoes"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes

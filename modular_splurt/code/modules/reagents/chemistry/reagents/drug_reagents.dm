@@ -54,22 +54,22 @@
 		return
 	var/mob/living/carbon/human/H = M
 	if (prob(10))
-		to_chat(H, span_notice("You feel like you can cope!"))
+		to_chat(H, "<span class='notice'>You feel like you can cope!</span>")
 		H.adjust_disgust(-10)
 		SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "copium", /datum/mood_event/cope, name)
 	. = 1
 
 /datum/reagent/drug/copium/overdose_start(mob/living/M)
-	to_chat(M, span_userdanger("What the fuck."))
+	to_chat(M, "<span class='userdanger'>What the fuck.</span>")
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
 
 /datum/reagent/drug/copium/overdose_process(mob/living/M)
 	var/mob/living/carbon/human/H = M
 	if (prob(5))
 		H.adjust_disgust(20)
-		to_chat(H, span_warning("I can't stand it anymore!"))
+		to_chat(H, "<span class='warning'>I can't stand it anymore!</span>")
 	..()
-
+/* bluemoon removal start
 /datum/reagent/drug/copium/reaction_obj(obj/O, volume)
 	if ((!O) || (!volume))
 		return 0
@@ -81,3 +81,4 @@
 		var/temp = holder ? holder.chem_temp : T20C
 		T.atmos_spawn_air("copium=[volume];TEMP=[temp]")
 	return
+bluemoon removal end*/

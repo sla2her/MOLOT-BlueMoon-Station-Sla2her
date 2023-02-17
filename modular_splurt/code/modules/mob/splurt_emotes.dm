@@ -30,7 +30,7 @@
 
 /datum/emote/living/fart/run_emote(mob/living/user, params, type_override, intentional)
 	if(TIMER_COOLDOWN_CHECK(user, COOLDOWN_EMOTE_FART))
-		to_chat(user, span_warning("You try your hardest, but no shart comes out."))
+		to_chat(user, "<span class='warning'>You try your hardest, but no shart comes out.</span>")
 		return
 	var/list/fart_emotes = list( //cope goonies
 		"lets out a girly little 'toot' from [user.p_their()] butt.",
@@ -746,7 +746,7 @@
 	playsound(user, 'modular_splurt/sound/voice/weh3.ogg', 50, 1, -1)
 
 /datum/emote/living/weh4
-	key = "weh-s"
+	key = "weh4"
 	key_third_person = "wehs4"
 	message = "let out a surprised weh!"
 
@@ -782,8 +782,10 @@
 	if(!.)
 		return
 	if(user.nextsoundemote >= world.time)
+		to_chat(user, span_warning("Рано! Очень рано!!"))
+		SEND_SOUND(user, 'sound/machines/buzz-sigh.ogg')
 		return
-	user.nextsoundemote = world.time + 10
+	user.nextsoundemote = world.time + 25
 	playsound(user, pick('modular_splurt/sound/voice/aauugghh1.ogg', 'modular_splurt/sound/voice/aauugghh2.ogg'), 40, 1, -1)
 
 /datum/emote/living/pant
@@ -793,10 +795,12 @@
 
 /datum/emote/living/pant/run_emote(mob/user, params, type_override, intentional)
 	var/list/pants = list(
-		"pants!",
-		"pants like a dog.",
-		"lets out soft pants.",
-		"pulls [user.p_their()] tongue out, panting."
+		"сопит.",
+		"резко вздыхает!",
+		"громко пыхтит!",
+		"активно дышит словно собака.",
+		"всхлипывает, после чего громко выдыхает.",
+		"показательно выставляет свой язык и начинает хватать воздух."
 	)
 	message = pick(pants)
 	. = ..()
@@ -911,21 +915,3 @@
 	key = "facehoof" // For horse enthusiasts
 	key_third_person = "facehoofs"
 	metacarpus_type = "hoof"
-
-/datum/emote/living/poyo
-	key = "poyo"
-	key_third_person = "poyos"
-	message = "%SAYS, \"Poyo!\""
-	emote_type = EMOTE_AUDIBLE
-
-/datum/emote/living/poyo/run_emote(mob/user, params, type_override, intentional)
-	var/datum/dna/D = user.has_dna()
-	var/say_mod = (D ? D.species.say_mod : "says")
-	message = replacetextEx(message, "%SAYS", say_mod)
-	. = ..()
-	if(!.)
-		return
-	if(user.nextsoundemote >= world.time)
-		return
-	user.nextsoundemote = world.time + 1 SECONDS
-	playsound(user, 'modular_splurt/sound/voice/barks/poyo.ogg', 50, 1, -1)

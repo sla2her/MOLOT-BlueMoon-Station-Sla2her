@@ -1109,7 +1109,7 @@
 	pixel_y = -32
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "aua" = (
 /obj/structure/chair/comfy/brown{
@@ -1307,7 +1307,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aAi" = (
 /obj/structure/cable{
@@ -1335,7 +1335,7 @@
 /obj/structure/sign/warning/biohazard{
 	pixel_x = -32
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "aAu" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -1344,7 +1344,7 @@
 "aAv" = (
 /obj/structure/window/spawner,
 /mob/living/carbon/monkey/punpun/curiousgorge,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aAw" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
@@ -1357,7 +1357,7 @@
 /obj/structure/window/spawner,
 /obj/structure/window/spawner/east,
 /mob/living/simple_animal/kiwi,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aAG" = (
 /obj/effect/turf_decal/tile/green{
@@ -1535,7 +1535,7 @@
 "aCo" = (
 /obj/structure/window/spawner,
 /mob/living/simple_animal/kiwi,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aCB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -1576,7 +1576,7 @@
 /obj/machinery/door/window/eastright{
 	pixel_y = 7
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aDe" = (
 /obj/machinery/door/airlock/research/glass/incinerator/toxmix_interior,
@@ -1719,7 +1719,7 @@
 "aFl" = (
 /obj/structure/window/spawner,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aFv" = (
 /obj/machinery/shower{
@@ -2450,7 +2450,7 @@
 "aSj" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/cultivator,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aSk" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -2644,7 +2644,7 @@
 	pixel_y = -26
 	},
 /obj/item/plant_analyzer,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aUl" = (
 /obj/structure/chair/stool/bar,
@@ -2728,7 +2728,7 @@
 /area/security/prison/workout)
 "aVi" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "aVl" = (
 /obj/effect/turf_decal/stripes/line{
@@ -3484,12 +3484,12 @@
 "bjz" = (
 /obj/machinery/hydroponics/soil,
 /obj/machinery/airalarm/directional/south,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "bjO" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/shovel/spade,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "bka" = (
 /obj/effect/decal/cleanable/dirt,
@@ -9882,7 +9882,7 @@
 /turf/open/floor/plasteel,
 /area/security/checkpoint/science/research)
 "dvU" = (
-/obj/machinery/suit_storage_unit/atmos,
+/obj/machinery/suit_storage_unit/industrial/atmos,
 /obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/effect/turf_decal/tile/yellow,
 /turf/open/floor/plasteel,
@@ -10484,6 +10484,9 @@
 	lootcount = 8;
 	name = "8maintenance loot spawner"
 	},
+/obj/effect/spawner/lootdrop/armory_contraband,
+/obj/effect/spawner/lootdrop/armory_contraband,
+/obj/effect/spawner/lootdrop/armory_contraband,
 /turf/open/floor/engine,
 /area/ai_monitored/security/armory)
 "dGE" = (
@@ -12304,7 +12307,7 @@
 "ejV" = (
 /obj/machinery/hydroponics/soil,
 /obj/machinery/light,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "ejY" = (
 /obj/machinery/washing_machine,
@@ -12331,7 +12334,7 @@
 /area/commons/toilet)
 "elT" = (
 /mob/living/simple_animal/butterfly,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "emg" = (
 /obj/structure/cable{
@@ -12577,7 +12580,7 @@
 /area/science/robotics/mechbay)
 "erA" = (
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "erI" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -16764,7 +16767,7 @@
 /obj/structure/sign/poster/official/love_ian{
 	pixel_y = 32
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "fMr" = (
 /obj/machinery/camera{
@@ -17548,7 +17551,7 @@
 /area/maintenance/fore)
 "gah" = (
 /mob/living/simple_animal/chick,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "gas" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -23266,7 +23269,7 @@
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "hXj" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
@@ -24493,7 +24496,7 @@
 	pixel_x = -32
 	},
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "itt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -29775,6 +29778,9 @@
 /area/maintenance/port/aft)
 "ksQ" = (
 /obj/structure/chair/sofa/corp/left,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/carpet/black,
 /area/commons/dorms)
 "ksT" = (
@@ -29955,7 +29961,7 @@
 /area/commons/fitness/locker_room)
 "kvm" = (
 /obj/item/toy/figure/md,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/department/cargo)
 "kvD" = (
 /obj/structure/lattice/catwalk,
@@ -32700,7 +32706,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/bar)
 "lrQ" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "lrW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
@@ -34599,7 +34605,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/gravity_generator)
 "lYG" = (
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -41607,7 +41613,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "osA" = (
 /obj/effect/turf_decal/tile/red{
@@ -42595,7 +42601,7 @@
 /area/ai_monitored/turret_protected/aisat/hallway)
 "oMn" = (
 /obj/item/reagent_containers/food/snacks/grown/coconut,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/department/cargo)
 "oMq" = (
 /obj/structure/cable{
@@ -43629,7 +43635,7 @@
 /area/security/prison/cells)
 "pge" = (
 /obj/item/coin/silver,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/department/cargo)
 "pgi" = (
 /obj/structure/chair/stool/bar,
@@ -43712,7 +43718,7 @@
 /area/security/brig)
 "phf" = (
 /obj/item/reagent_containers/food/snacks/grown/citrus/lime,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/maintenance/department/cargo)
 "phl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -43721,7 +43727,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "pho" = (
-/obj/machinery/suit_storage_unit/ce,
+/obj/machinery/suit_storage_unit/industrial/ce,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -44670,7 +44676,7 @@
 	pixel_x = -31
 	},
 /mob/living/simple_animal/pet/cat/kitten,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "pxO" = (
 /obj/machinery/power/apc{
@@ -45234,6 +45240,8 @@
 /obj/structure/closet/secure_closet/brigdoc{
 	pixel_y = -4
 	},
+/obj/item/clothing/suit/brigdoc/armor,
+/obj/item/clothing/head/helmet/brigdoc,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "pIu" = (
@@ -46329,7 +46337,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "qbD" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -54183,6 +54191,10 @@
 /obj/item/bedsheet/random,
 /turf/open/floor/carpet/purple,
 /area/commons/dorms)
+"sPB" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/freezer,
+/area/commons/dorms)
 "sPR" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -58755,7 +58767,7 @@
 	},
 /area/command/heads_quarters/cmo)
 "upP" = (
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -61493,7 +61505,7 @@
 /area/hallway/primary/port)
 "vms" = (
 /mob/living/simple_animal/babyKiwi,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "vmy" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -61957,7 +61969,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "vuy" = (
 /obj/structure/rack,
@@ -63861,7 +63873,7 @@
 /area/engineering/main)
 "war" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "waz" = (
 /obj/structure/rack,
@@ -64451,7 +64463,7 @@
 "wkk" = (
 /obj/structure/window/spawner/west,
 /obj/item/grown/rose,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "wkx" = (
 /obj/structure/cable{
@@ -64468,11 +64480,11 @@
 	},
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "wkQ" = (
 /obj/structure/window/spawner/east,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "wkU" = (
 /obj/effect/turf_decal/tile/brown,
@@ -64606,7 +64618,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/auxiliary)
 "wmG" = (
-/obj/machinery/suit_storage_unit/atmos,
+/obj/machinery/suit_storage_unit/industrial/atmos,
 /obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/machinery/light/small{
 	dir = 4
@@ -64703,7 +64715,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "wnF" = (
 /obj/structure/closet/secure_closet/freezer/meat,
@@ -65996,7 +66008,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/hydroponics)
 "wHo" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "wHs" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -66072,7 +66084,7 @@
 /area/tcommsat/server)
 "wIh" = (
 /mob/living/simple_animal/pet/bumbles,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "wIt" = (
 /turf/open/floor/light/colour_cycle/dancefloor_a,
@@ -67761,7 +67773,7 @@
 /obj/structure/sign/warning/biohazard{
 	pixel_x = -32
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/psychology/petpark)
 "xnG" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
@@ -123874,7 +123886,7 @@ akr
 nDw
 uoR
 hvd
-hvd
+sPB
 bLC
 fza
 kwf

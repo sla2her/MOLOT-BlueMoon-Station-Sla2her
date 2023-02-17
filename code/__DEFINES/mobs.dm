@@ -335,11 +335,6 @@
 #define SLEEP_CHECK_DEATH(X) sleep(X); if(QDELETED(src) || stat == DEAD) return;
 #define INTERACTING_WITH(X, Y) (Y in X.do_afters)
 
-// / Field of vision defines.
-#define FOV_90_DEGREES	90
-#define FOV_180_DEGREES	180
-#define FOV_270_DEGREES	270
-
 // / How far away you can be to make eye contact with someone while examining
 #define EYE_CONTACT_RANGE	5
 
@@ -347,6 +342,12 @@
 #define EXAMINE_MORE_TIME	1 SECONDS
 
 #define SILENCE_RANGED_MESSAGE	(1<<0)
+
+// Body position defines.
+/// Mob is standing up, usually associated with lying_angle value of 0.
+#define STANDING_UP 0
+/// Mob is lying down, usually associated with lying_angle values of 90 or 270.
+#define LYING_DOWN 1
 
 ///Define for spawning megafauna instead of a mob for cave gen
 #define SPAWN_MEGAFAUNA "bluh bluh huge boss"

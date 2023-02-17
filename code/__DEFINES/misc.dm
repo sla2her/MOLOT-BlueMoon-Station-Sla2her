@@ -9,6 +9,9 @@
 #define TEXT_EAST			"[EAST]"
 #define TEXT_WEST			"[WEST]"
 
+/// Inverse direction, taking into account UP|DOWN if necessary.
+#define REVERSE_DIR(dir) ( ((dir & 85) << 1) | ((dir & 170) >> 1) )
+
 /// yeah yeah i'm a lazy asshole who can't debug yeah yeah
 #define DEBUG_LINE message_admins("DEBUG: [__FILE__] [__LINE__] executing!")
 
@@ -478,11 +481,6 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define BONE_SCAR_FILE "wounds/bone_scar_desc.json"
 #define SCAR_LOC_FILE "wounds/scar_loc.json"
 
-
-//Fullscreen overlay resolution in tiles.
-#define FULLSCREEN_OVERLAY_RESOLUTION_X 15
-#define FULLSCREEN_OVERLAY_RESOLUTION_Y 15
-
 #define SUMMON_GUNS "guns"
 #define SUMMON_MAGIC "magic"
 
@@ -571,6 +569,7 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define SCAVENGING_SPAWN_MOUSE		"spawn_mouse"
 #define SCAVENGING_SPAWN_MICE		"spawn_mice"
 #define SCAVENGING_SPAWN_TOM		"spawn_tom_the_mouse"
+#define SCAVENGING_SPAWN_TENTACLES	"spawn_tentacles" //Smiley's request
 
 //Scavenging element defines for ckey/mind restrictions.
 #define NO_LOOT_RESTRICTION			0

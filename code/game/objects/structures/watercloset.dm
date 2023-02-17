@@ -263,6 +263,22 @@
 	var/watertemp = "normal"	//freezing, normal, or boiling
 	var/datum/looping_sound/showering/soundloop
 
+/obj/structure/shower/directional/north //Pixel offsets get overwritten on New()
+	dir = SOUTH
+	pixel_y = 28
+
+/obj/structure/shower/directional/south
+	dir = NORTH
+	pixel_y = -28
+
+/obj/structure/shower/directional/east
+	dir = WEST
+	pixel_x = 28
+
+/obj/structure/shower/directional/west
+	dir = EAST
+	pixel_x = -28
+
 /obj/machinery/shower/Initialize(mapload)
 	. = ..()
 	soundloop = new(src, FALSE)
@@ -512,6 +528,22 @@
 	var/dispensedreagent = /datum/reagent/water // for whenever plumbing happens
 	var/buildstacktype = /obj/item/stack/sheet/metal
 	var/buildstackamount = 1
+
+/obj/structure/sink/directional/north //Pixel offsets get overwritten on New()
+	dir = SOUTH
+	pixel_y = 13
+
+/obj/structure/sink/directional/south
+	dir = NORTH
+	pixel_y = 13
+
+/obj/structure/sink/directional/east
+	dir = WEST
+	pixel_x = -13
+
+/obj/structure/sink/directional/west
+	dir = EAST
+	pixel_x = -13
 
 /obj/structure/sink/on_attack_hand(mob/living/user, act_intent = user.a_intent, unarmed_attack_flags)
 	. = ..()

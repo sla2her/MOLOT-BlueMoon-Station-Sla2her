@@ -1,12 +1,9 @@
-/mob/living/carbon/is_muzzled()
-	return ..() || istype(wear_mask, /obj/item/clothing/mask/gas/sechailer/slut)
-
 /mob/living/carbon/cuff_resist(obj/item/I, breakouttime = 600, cuff_break = 0)
 	if(istype(I, /obj/item/restraints/bondage_rope))
 		var/obj/item/restraints/bondage_rope/rope = I
 		cuff_break = rope.prepare_resist(src)
 		if(cuff_break == -1)
-			to_chat(src, span_danger("You are not able to reach the rope."))
+			to_chat(src, "<span class='danger'>You are not able to reach the rope.</span>")
 			return
 	. = ..()
 
@@ -14,8 +11,8 @@
 	if(istype(I, /obj/item/restraints/bondage_rope))
 		var/obj/item/restraints/bondage_rope/rope = I
 		if(LAZYLEN(rope.rope_stack) > 1)
-			visible_message(span_danger("[src] manages to loosen up their rope!"))
-			to_chat(src, span_notice("You successfully loosen up your rope."))
+			visible_message("<span class='danger'>[src] manages to loosen up their rope!</span>")
+			to_chat(src, "<span class='notice'>You successfully loosen up your rope.</span>")
 
 			var/obj/item/restraints/bondage_rope/new_rope = new rope.type()
 			new_rope.color = pop(rope.rope_stack)
@@ -55,7 +52,7 @@
 	// When successfully disrobing a target
 	if(user_disrobed)
 		// Display a chat message
-		target_user.visible_message(span_userlove("[target_user] suddenly bursts out of [target_user.p_their()] clothes!"), span_userlove("You suddenly burst out of your clothes!"))
+		target_user.visible_message("<span class='userlove'>[target_user] suddenly bursts out of [target_user.p_their()] clothes!</span>", "<span class='userlove'>You suddenly burst out of your clothes!</span>")
 
 		// Play the ripped poster sound
 		playsound(target_user.loc, 'sound/items/poster_ripped.ogg', 50, 1)

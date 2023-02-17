@@ -185,7 +185,7 @@
 	mask = /obj/item/clothing/mask/gas/syndicate
 	suit = /obj/item/clothing/suit/space/syndicate/black/red
 	head = /obj/item/clothing/head/helmet/space/syndicate/black/red
-	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi
+	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\

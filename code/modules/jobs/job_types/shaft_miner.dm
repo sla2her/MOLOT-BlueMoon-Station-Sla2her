@@ -4,8 +4,8 @@
 	department_head = list("Quartermaster")
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the quartermaster"
 	selection_color = "#ca8f55"
 	custom_spawn_text = "Remember, you are a miner, not a hunter. Hunting monsters is not a requirement of your job, the only requirement of your job is to provide materials for the station. Don't be afraid to run away if you're inexperienced with fighting the mining area's locals."
@@ -24,7 +24,7 @@
 	display_order = JOB_DISPLAY_ORDER_SHAFT_MINER
 
 	threat = 1.5
-	
+
 	family_heirlooms = list(
 		/obj/item/pickaxe/mini,
 		/obj/item/shovel
@@ -60,7 +60,7 @@
 	uniform = /obj/item/clothing/under/rank/cargo/miner
 	shoes = /obj/item/clothing/shoes/workboots
 
-/datum/outfit/job/miner/equipped
+/datum/outfit/job/miner/equipped/hardsuit
 	name = "Shaft Miner (Lavaland + Equipment)"
 	suit = /obj/item/clothing/suit/hooded/explorer/standard
 	mask = /obj/item/clothing/mask/gas/explorer

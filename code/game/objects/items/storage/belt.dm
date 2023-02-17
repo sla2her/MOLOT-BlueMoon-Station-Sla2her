@@ -74,7 +74,9 @@
 		/obj/item/carpentry/hammer,
 		/obj/item/carpentry/sandpaper,
 		/obj/item/carpentry/borer,
-		/obj/item/carpentry/glue
+		/obj/item/carpentry/glue,
+		/obj/item/inducer,
+		/obj/item/lightreplacer
 		))
 	STR.can_hold = can_hold
 

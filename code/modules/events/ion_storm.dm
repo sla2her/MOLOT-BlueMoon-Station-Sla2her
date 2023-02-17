@@ -3,7 +3,7 @@
 /datum/round_event_control/ion_storm
 	name = "Ion Storm"
 	typepath = /datum/round_event/ion_storm
-	weight = 15
+	weight = 65
 	min_players = 2
 	category = EVENT_CATEGORY_AI
 	description = "Gives the AI a new, randomized law."
@@ -28,7 +28,7 @@
 
 /datum/round_event/ion_storm/announce(fake)
 	if(announceEvent == ION_ANNOUNCE || (announceEvent == ION_RANDOM && prob(announce_chance)) || fake)
-		priority_announce("Ion storm detected near the station. Please check all AI-controlled equipment for errors.", "Anomaly Alert", "ionstorm", has_important_message = prob(80))
+		priority_announce("Вблизи станции обнаружен ионный шторм. Пожалуйста, проверьте все контролируемое ИИ оборудование на наличие ошибок.", "Аномальная Тревога", "ionstorm", has_important_message = prob(80))
 
 
 /datum/round_event/ion_storm/start()

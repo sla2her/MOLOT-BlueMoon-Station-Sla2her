@@ -1,8 +1,8 @@
 /datum/round_event_control/alien_infestation
 	name = "Alien Infestation"
 	typepath = /datum/round_event/ghost_role/alien_infestation
-	weight = 5
-	min_players = 25
+	weight = 20
+	min_players = 40
 	max_occurrences = 1
 	dynamic_should_hijack = TRUE
 	category = EVENT_CATEGORY_ENTITIES
@@ -34,7 +34,7 @@
 
 /datum/round_event/ghost_role/alien_infestation/announce(fake)
 	if(successSpawn || fake)
-		priority_announce("Unidentified lifesigns detected coming aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", "aliens", has_important_message = TRUE)
+		priority_announce("Неопознанные признаки жизни обнаружены на борту [station_name()]. Заблокируйте любой внешний доступ, включая воздуховоды и вентиляцию.", "Вторжение на борт", "aliens", has_important_message = TRUE)
 
 
 /datum/round_event/ghost_role/alien_infestation/spawn_role()

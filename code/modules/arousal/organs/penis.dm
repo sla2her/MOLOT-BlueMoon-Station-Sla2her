@@ -6,8 +6,8 @@
 	zone = BODY_ZONE_PRECISE_GROIN
 	slot = ORGAN_SLOT_PENIS
 	masturbation_verb = "stroke"
-	arousal_verb = "You pop a boner"
-	unarousal_verb = "Your boner goes down"
+	arousal_verb = "У тебя сильный стояк"
+	unarousal_verb = "Твой стояк опускается"
 	genital_flags = CAN_MASTURBATE_WITH|CAN_CLIMAX_WITH|GENITAL_CAN_AROUSE|UPDATE_OWNER_APPEARANCE|GENITAL_UNDIES_HIDDEN|GENITAL_CAN_TAUR|CAN_CUM_INTO|HAS_EQUIPMENT
 	linked_organ_slot = ORGAN_SLOT_TESTICLES
 	fluid_transfer_factor = 0.5
@@ -86,7 +86,7 @@
 			if(T.taur_mode & S.accepted_taurs) //looks out of place on those.
 				lowershape = "taur, [lowershape]"
 
-	desc = "You see [aroused_state ? "an erect" : "a flaccid"] [lowershape] [name]. You estimate it's about [round(length*get_size(owner), 0.25)] inch[round(length*get_size(owner), 0.25) != 1 ? "es" : ""] long and [round(diameter*get_size(owner), 0.25)] inch[round(diameter*get_size(owner), 0.25) != 1 ? "es" : ""] in diameter."
+	desc = "You see [aroused_state ? "an erect" : "a flaccid"] [lowershape] [name]. You estimate it's about [round(length*get_size(owner), 0.25)] centimeters[round(length*get_size(owner), 0.25) != 1 ? "" : ""] long and [round(diameter*get_size(owner), 0.25)] centimeters[round(diameter*get_size(owner), 0.25) != 1 ? "" : ""] in diameter."
 
 /obj/item/organ/genital/penis/get_features(mob/living/carbon/human/H)
 	var/datum/dna/D = H.dna

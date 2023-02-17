@@ -359,15 +359,17 @@
 	playsound(src, 'sound/misc/sadtrombone.ogg', 50)
 	..()
 
+//BlueMoon Edit. Begin.
 /obj/item/bombcore/large
-	name = "large bomb payload"
-	range_heavy = 5
-	range_medium = 10
-	range_light = 20
-	range_flame = 20
+	name = "Large Bomb Payload"
+	range_heavy = 15
+	range_medium = 20
+	range_light = 30
+	range_flame = 40
+//BlueMoon Edit. End.
 
 /obj/item/bombcore/miniature
-	name = "small bomb core"
+	name = "Small Bomb Core"
 	w_class = WEIGHT_CLASS_SMALL
 	range_heavy = 1
 	range_medium = 2

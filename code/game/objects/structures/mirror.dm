@@ -10,6 +10,22 @@
 	max_integrity = 200
 	integrity_failure = 0.5
 
+/obj/structure/mirror/directional/north //Pixel offsets get overwritten on New()
+	dir = SOUTH
+	pixel_y = 28
+
+/obj/structure/mirror/directional/south
+	dir = NORTH
+	pixel_y = -28
+
+/obj/structure/mirror/directional/east
+	dir = WEST
+	pixel_x = 28
+
+/obj/structure/mirror/directional/west
+	dir = EAST
+	pixel_x = -28
+
 /obj/structure/mirror/Initialize(mapload)
 	. = ..()
 	if(icon_state == "mirror_broke" && !broken)

@@ -21,17 +21,16 @@
 	flight_y_offset = 14
 	obj_flags = UNIQUE_RENAME
 
-	unique_reskin = list(
-		"Default" = list("icon_state" = "enforcer_black"),
-		"M2611 Enforcer" = list("icon_state" = "cde"),
-		"M1911 Enforcer" = list("icon_state" = "m1911"),
-		"VP78 Enforcer" = list("icon_state" = "vp78"),
-		"USP Enforcer" = list("icon_state" = "usp-m")
-	)
+	unique_reskin = list("Default" = "enforcer_black",
+						"M2611 Enforcer" = "cde",
+						"M1911 Enforcer" = "m1911",
+						"VP78 Enforcer" = "vp78",
+						"USP Enforcer" = "usp-m"
+						)
 
 /obj/item/gun/ballistic/automatic/pistol/enforcer/update_icon_state()
 	if(current_skin)
-		icon_state = "[unique_reskin[current_skin]["icon_state"]][chambered ? "" : "-e"]"
+		icon_state = "[unique_reskin[current_skin]][chambered ? "" : "-e"]"
 	else
 		icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
 
@@ -39,7 +38,7 @@
 	spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/pistol/enforcerred
-	name = "\improper HOS's Mk. 58 Enforcer (.45)"
+	name = "\improper HOS Mk. 58 Enforcer (.45)"
 	desc = "A polymer frame pistol made by Nanotreason. Won't show up on Space port X-rays and cost more then you make in a month. Respect mah Authorita!"
 	icon = 'modular_splurt/icons/obj/guns/projectile.dmi'
 	icon_state = "enforcer_red"
@@ -78,14 +77,13 @@
 	mag_type = /obj/item/ammo_box/magazine/m9
 	can_suppress = FALSE
 	obj_flags = UNIQUE_RENAME
-	unique_reskin = list(
-		"Default" = list("icon_state" = "ninemil"),
-		"Maria" = list("icon_state" = "maria")
-	)
+	unique_reskin = list("Default" = "ninemil",
+						"Maria" = "maria"
+						)
 
 /obj/item/gun/ballistic/automatic/pistol/m9mmpistol/update_icon_state()
 	if(current_skin)
-		icon_state = "[unique_reskin[current_skin]["icon_state"]][chambered ? "" : "-e"]"
+		icon_state = "[unique_reskin[current_skin]][chambered ? "" : "-e"]"
 	else
 		icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
 
@@ -119,11 +117,10 @@
 	automatic_burst_overlay = FALSE
 	obj_flags = UNIQUE_RENAME
 
-	unique_reskin = list(
-		"Default" = list("icon_state" = "deagle"),
-		"Desert Eagle Gold" = list("icon_state" = "deagleg"),
-		"Desert Eagle Camo" = list("icon_state" = "deaglecamo")
-	)
+	unique_reskin = list("Default" = "deagle",
+						"Desert Eagle Gold" = "deagleg",
+						"Desert Eagle Camo" = "deaglecamo"
+						)
 
 /obj/item/gun/ballistic/automatic/pistol/deagle2/update_overlays()
 	. = ..()
@@ -132,7 +129,7 @@
 
 /obj/item/gun/ballistic/automatic/pistol/deagle2/update_icon_state()
 	if(current_skin)
-		icon_state = "[unique_reskin[current_skin]["icon_state"]][chambered ? "" : "-e"]"
+		icon_state = "[unique_reskin[current_skin]][chambered ? "" : "-e"]"
 	else
 		icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
 

@@ -4,10 +4,17 @@
 	department_head = list("The Security Team")
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the security team"
 	random_spawns_possible = FALSE
+	alt_titles = list(
+		"Minimum Security Prisoner",
+		"Maximum Security Prisoner",
+		"SuperMax Security Prisoner",
+		"Protective Custody Prisoner",
+		"Security Slave"
+		)
 
 	outfit = /datum/outfit/job/prisoner
 	plasma_outfit = /datum/outfit/plasmaman/prisoner
@@ -18,8 +25,8 @@
 		/obj/item/pen/blue
 	)
 
-/datum/job/prisoner/get_latejoin_spawn_point()
-	return get_roundstart_spawn_point()
+/datum/job/prisoner/get_roundstart_spawn_point()
+	return get_latejoin_spawn_point()
 
 /datum/job/prisoner/after_spawn(mob/living/carbon/human/H, client/C)
 	. = ..()

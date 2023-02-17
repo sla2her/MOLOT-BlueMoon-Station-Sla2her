@@ -87,10 +87,14 @@
 	anchored = FALSE
 	move_resist = MOVE_FORCE_NORMAL
 	density = FALSE
-	short_desc = "You are an ash walker. Your tribe worships the Necropolis."
-	flavour_text = "The wastes are sacred ground, its monsters a blessed bounty. You would never willingly leave your homeland behind. \
-	You have seen lights in the distance... they foreshadow the arrival of outsiders to your domain. \
-	Ensure your nest remains protected at all costs."
+	short_desc = "Вы Пеплоход."
+	flavour_text = "Ваше племя поклоняется матери Некрополю, как вашей Спасительнице и Наставнице. Священные стены дворца Некрополя \
+	дали вашему Дендрилу и вашему Роду защиту. Испокон веков, ваша священная обитель дарует вам Дар Перерождения, из цикла в цикл за \
+	жертвоприношения матери Некрополю, ради продолжения Великой Охоты. Однако не так давно на ваши земли вторглось Чужеродное Племя. \
+	Несмотря на ваше кровное родство в поклонении Великой Матери, не дайте иноземцам осквернить ваше святилище их изуверскими традициями. \
+	Сверх этого, с небесных крепостей из Холодного Камня, на ваши земли спустились скитальцы с далёких Звёзд. Их рудокопы накладывают \
+	священные пальцы на Некрополь, свои грязные лапы. Не дайте им украсть дары великой матери и лишить вас пищи. Охота должна быть \
+	здравой, цикл должен продолжаться, грядущие поколения должны жить!"
 	assignedrole = "Ash Walker"
 	var/datum/team/ashwalkers/team
 	var/obj/structure/ash_walker_eggshell/eggshell
@@ -278,10 +282,10 @@
 	death = FALSE
 	random = TRUE
 	mob_species = /datum/species/human
-	short_desc = "You've been stranded in this godless prison of a planet for longer than you can remember."
-	flavour_text = "Each day you barely scrape by, and between the terrible conditions of your makeshift shelter, \
-	the hostile creatures, and the ash drakes swooping down from the cloudless skies, all you can wish for is the feel of soft grass between your toes and \
-	the fresh air of Earth. These thoughts are dispelled by yet another recollection of how you got here... "
+	short_desc = "Вы застряли в этом Безбожном Месте."
+	flavour_text = "Каждый день вы еле-еле сводите концы с концами, \
+	враждебными существами и Пепельными Дрейками, слетающими с безоблачного неба. Все, что вы можете пожелать, это почувствовать мягкую траву между пальцами ног и \
+	свежий воздух Земли. Эти мысли развеиваются очередным воспоминанием о том, как вы сюда попали..."
 	assignedrole = "Hermit"
 	canloadappearance = TRUE
 
@@ -290,30 +294,29 @@
 	var/arrpee = rand(1,4)
 	switch(arrpee)
 		if(1)
-			flavour_text += "you were a [pick("arms dealer", "shipwright", "docking manager")]'s assistant on a small trading station several sectors from here. Raiders attacked, and there was \
-			only one pod left when you got to the escape bay. You took it and launched it alone, and the crowd of terrified faces crowding at the airlock door as your pod's engines burst to \
-			life and sent you to this hell are forever branded into your memory."
+			flavour_text += "вы были помощником [pick("Оружейника", "Корабельщика", "Финансового Менеджера")] на небольшой торговой станции в нескольких секторах отсюда. Рейдеры напали на ваше судно и в спасательном отсеке оставалась \
+			всего только одна капсула. Вы отбросили или отвлекли, или вас пропустили и в итоге благодаря спасательной капсуле вы... спаслись? Так или иначе, вы не забудете ту кучу испуганных лиц в момент вашего отлёта."
 			outfit.uniform = /obj/item/clothing/under/misc/assistantformal
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack
 		if(2)
-			flavour_text += "you're an exile from the Tiger Cooperative. Their technological fanaticism drove you to question the power and beliefs of the Exolitics, and they saw you as a \
-			heretic and subjected you to hours of horrible torture. You were hours away from execution when a high-ranking friend of yours in the Cooperative managed to secure you a pod, \
-			scrambled its destination's coordinates, and launched it. You awoke from stasis when you landed and have been surviving - barely - ever since."
+			flavour_text += "вы изгнанник из кооператива 'Тигр'. Их технологический фанатизм заставил вас усомниться в силе и убеждениях Экзолитиков и они сочли вас \
+			еретиком, и подвергли вас многочасовым ужасным пыткам. Вы были в нескольких часах от казни, когда ваш высокопоставленный друг в Кооперативе сумел достать для вас капсулу, \
+			зашифровал координаты места назначения и запустил ее. Вы очнулись от стазиса, когда приземлились... и с тех пор выживаете - с трудом, но выживаете."
 			outfit.uniform = /obj/item/clothing/under/rank/prisoner
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/orange
 			outfit.back = /obj/item/storage/backpack
 		if(3)
-			flavour_text += "you were a doctor on one of Nanotrasen's space stations, but you left behind that damn corporation's tyranny and everything it stood for. From a metaphorical hell \
-			to a literal one, you find yourself nonetheless missing the recycled air and warm floors of what you left behind... but you'd still rather be here than there."
+			flavour_text += "Вы были врачом на одной из космических станций Nanotrasen, но вы оставили позади тиранию этой проклятой корпорации и все то, за что она стояла. Из метафорического ада \
+			в буквальный - вы обнаружили, что вам все же не хватает чистого воздуха и теплых полов из сего того, что вы оставили... но вы все равно предпочтете быть здесь, а не там."
 			outfit.uniform = /obj/item/clothing/under/rank/medical/doctor
 			outfit.suit = /obj/item/clothing/suit/toggle/labcoat
 			outfit.back = /obj/item/storage/backpack/medic
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 		if(4)
-			flavour_text += "you were always joked about by your friends for \"not playing with a full deck\", as they so <i>kindly</i> put it. It seems that they were right when you, on a tour \
-			at one of Nanotrasen's state-of-the-art research facilities, were in one of the escape pods alone and saw the red button. It was big and shiny, and it caught your eye. You pressed \
-			it, and after a terrifying and fast ride for days, you landed here. You've had time to wisen up since then, and you think that your old friends wouldn't be laughing now."
+			flavour_text += "Ваши друзья всегда подшучивали над вами за то, что вы 'Не Играете с Полной Колодой', как они так доброжелательно выражались. Похоже, они были правы, когда вы, находясь на экскурсии \
+			по одному из самых современных исследовательских комплексов Nanotrasen, оказались в одной из спасательных капсул в одиночестве и увидели красную кнопку. Она была большой и блестящей, и это привлекло ваше внимание. Вы нажали на неё \
+			и после ужасающего, и быстрого путешествия в течение нескольких дней вы оказались здесь. С тех пор у вас было время поумнеть и вы думаете, что ваши старые друзья сейчас бы не смеялись."
 			outfit.uniform = /obj/item/clothing/under/color/grey/glorf
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack
@@ -493,6 +496,18 @@
 	implants = list(/obj/item/implant/mindshield) //No revolutionaries, he's MY friend.
 	id = /obj/item/card/id
 
+/obj/item/radio/headset/ds1
+	name = "DS1 Headset"
+	freerange = TRUE
+	freqlock = TRUE
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds1
+
+/obj/item/radio/headset/ds2
+	name = "DS2 Headset"
+	freerange = TRUE
+	freqlock = TRUE
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
+
 /obj/effect/mob_spawn/human/syndicate
 	name = "Syndicate Operative"
 	roundstart = FALSE
@@ -652,7 +667,7 @@
 	return ..()
 
 /obj/effect/mob_spawn/human/pirate
-	name = "space pirate sleeper"
+	name = "Space Pirate Sleeper"
 	desc = "A cryo sleeper smelling faintly of rum. The sleeper looks unstable. <i>Perhaps the pirate within can be killed with the right tools...</i>"
 	job_description = "Space Pirate"
 	random = TRUE
@@ -905,3 +920,197 @@
 	new /obj/item/clothing/mask/chameleon(src)
 	new /obj/item/storage/backpack/chameleon(src)
 	new /obj/item/clothing/neck/cloak/chameleon(src)
+
+//Port Tarkof, 6 people trapped in a revamped charlie-station like ghost role. Survive the aliens and threats, Fix the port and/or finish construction
+
+/obj/effect/mob_spawn/human/tarkon
+	name = "P-T Abandoned Crew"
+	mob_name = "an abandoned Port Tarkov member"
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper"
+	roundstart = FALSE
+	death = FALSE
+	random = TRUE
+	mob_species = /datum/species/human
+	short_desc = "Вы - брошенный таинственными работодателями сотрудник Порта 'Тарков' Корпорации, пытающейся создать устойчивые жилые условия внутри крупных астероидов для бедных. По какой-то причине вы понятия не имеете, что такое Синдикат и ваше последнее воспоминание о Nanotrasen - это гадкая Корпорация, предавшая вас тем или иным образом."
+	flavour_text = "Что-то пошло не так. Эксперименты пошли наперекосяк, расширения были сделаны до того, как проверки были полностью завершены. Теперь вы должны разобраться с последствия исхода прошлого экипажа. Приведите порт 'Тарков' к успеху, который планировался, либо умрите - стараясь."
+	important_info = "Не конфликтуйте без особой на то причины, используйте свой корабль для покупки дополнительных предметов или получения помощи. Не обменивайте своё специальное, бесценное оборудование. Непрошеные и незваные гости могут оказаться сотрудником вашей станции."
+	outfit = /datum/outfit/tarkoff
+	assignedrole = "Ancient Crew"
+	job_description = "Oldstation Crew"
+	canloadappearance = TRUE
+
+/datum/outfit/tarkoff
+	name = "Default Port Tarkov Outfit"
+	uniform = /obj/item/clothing/under/rank/cargo/util
+	back = /obj/item/storage/backpack
+	shoes = /obj/item/clothing/shoes/winterboots
+	gloves = /obj/item/clothing/gloves/fingerless
+	glasses = /obj/item/clothing/glasses/sunglasses
+	id = /obj/item/card/id/away/tarkoff/cargo
+	l_pocket = /obj/item/card/mining_point_card
+	r_pocket = /obj/item/mining_voucher
+	ears = /obj/item/radio/headset/tarkoff
+
+/datum/outfit/tarkoff/post_equip(mob/living/carbon/human/tarkoff, visualsOnly = FALSE)
+	var/obj/item/card/id/id_card = tarkoff.wear_id
+	if(istype(id_card))
+		id_card.registered_name = tarkoff.real_name
+		id_card.update_label()
+		id_card.update_icon()
+	var/obj/item/radio/target_radio = tarkoff.ears
+	target_radio.set_frequency(FREQ_TARKOFF)
+	target_radio.recalculateChannels()
+
+	handlebank(tarkoff)
+	return ..()
+
+/obj/effect/mob_spawn/human/tarkon/sci
+	mob_name = "an abandoned scientist"
+	outfit = /datum/outfit/tarkoff/sci
+
+/datum/outfit/tarkoff/sci
+	name = "Port tarkoff Science Outfit"
+	uniform = /obj/item/clothing/under/rank/rnd/scientist/util
+	glasses = /obj/item/clothing/glasses/hud/diagnostic
+	id = /obj/item/card/id/away/tarkoff/sci
+	l_hand = /obj/item/inducer
+	l_pocket = null
+	r_pocket = /obj/item/stock_parts/cell/high
+
+/obj/effect/mob_spawn/human/tarkon/med
+	mob_name = "an abandoned medical resident"
+	outfit = /datum/outfit/tarkoff/med
+
+/datum/outfit/tarkoff/med
+	name = "Port Tarkov Medical Outfit"
+	uniform = /obj/item/clothing/under/rank/medical/doctor/util
+	glasses = /obj/item/clothing/glasses/hud/health
+	id = /obj/item/card/id/away/tarkoff/med
+	neck = /obj/item/clothing/neck/stethoscope
+	l_pocket = /obj/item/healthanalyzer
+	r_pocket = /obj/item/stack/medical/suture/medicated
+
+/obj/effect/mob_spawn/human/tarkon/engi
+	mob_name = "an abandoned maintenance engineer"
+	outfit = /datum/outfit/tarkoff/engi
+
+/datum/outfit/tarkoff/engi
+	name = "Port tarkoff Engineering Outfit"
+	uniform = /obj/item/clothing/under/rank/engineering/engineer/util
+	glasses = /obj/item/clothing/glasses/meson/engine/tray
+	id = /obj/item/card/id/away/tarkoff/engi
+	gloves = /obj/item/clothing/gloves/combat
+	l_pocket = /obj/item/tank/internals/emergency_oxygen/engi
+	r_pocket = /obj/item/stack/cable_coil
+
+/obj/effect/mob_spawn/human/tarkon/sec
+	mob_name = "an abandoned security deputy"
+	outfit = /datum/outfit/tarkoff/sec
+
+/datum/outfit/tarkoff/sec
+	name = "Port tarkoff Security Outfit"
+	uniform = /obj/item/clothing/under/rank/security/officer/util
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	gloves = /obj/item/clothing/gloves/tackler/combat
+	id = /obj/item/card/id/away/tarkoff/sec
+	l_pocket = /obj/item/melee/classic_baton/telescopic
+	r_pocket = /obj/item/grenade/barrier
+
+/obj/effect/mob_spawn/human/tarkon/ensign
+	name = "P-T Abandoned Ensign"
+	mob_name = "an abandoned ensign"
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper-o"
+	short_desc = "Вы получили задание от 'Тарков Индастриз' и были высланы в Порт Тарков в качестве члена командования низшего уровня. Вы, не имея никакого фактического командования, но будучи просто еще одним козлом отпущения, на которого можно свалить вину в случае неудачи... провалились."
+	flavour_text = "Что-то пошло не так. Эксперименты пошли наперекосяк, расширения были сделаны до того, как проверки были полностью завершены. Теперь вы должны разобраться с последствия исхода прошлого экипажа. Приведите порт 'Тарков' к успеху, который планировался, либо умрите - стараясь."
+	important_info = "Не конфликтуйте без особой на то причины, используйте свой корабль для покупки дополнительных предметов или получения помощи. Не обменивайте своё специальное, бесценное оборудование. Непрошеные и незваные гости могут оказаться сотрудником вашей станции."
+	outfit = /datum/outfit/tarkoff/ensign
+
+/datum/outfit/tarkoff/ensign //jack of all trades, master of none, spent all his credits, every last one
+	name = "Port tarkoff Ensigns Outfit"
+	uniform = /obj/item/clothing/under/rank/captain/util
+	ears = /obj/item/radio/headset/tarkoff/ensign
+	id = /obj/item/card/id/away/tarkoff/ensign
+	neck = /obj/item/clothing/neck/cloak/alt/boatcloak/command
+	gloves = /obj/item/clothing/gloves/combat
+	l_pocket = /obj/item/melee/classic_baton/telescopic
+	r_pocket = /obj/item/grenade/barrier
+
+/datum/outfit/proc/handlebank(mob/living/carbon/human/owner)
+	var/datum/bank_account/offstation_bank_account = new(owner.real_name)
+	owner.account_id = offstation_bank_account.account_id
+	if(owner.wear_id)
+		var/obj/item/card/id/id_card = owner.wear_id
+		id_card.registered_account = offstation_bank_account
+	return
+
+/obj/item/radio/headset/tarkoff
+	name = "Tarkov Headset"
+	freerange = TRUE
+	freqlock = TRUE
+	keyslot = new /obj/item/encryptionkey/headset_cargo/tarkoff
+
+/obj/item/radio/headset/tarkoff/ensign
+	name = "Tarkov Ensign headset"
+	desc = "A headset personally handed to trusted crew of tarkoff. It fills you with will to do... Something."
+	command = TRUE
+/obj/item/card/id/away/tarkoff
+	assignment = "P-T Cargo Personell"
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/tarkoff/sec
+	assignment = "P-T Port Guard"
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/tarkoff/med
+	assignment = "P-T Trauma Medic"
+	access = list(ACCESS_MEDICAL, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/tarkoff/eng
+	assignment = "P-T Maintenance Crew"
+	access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
+
+/obj/item/card/id/away/tarkoff/sci
+	assignment = "P-T Field Researcher"
+	access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/tarkoff/ensign
+	assignment = "Tarkov Ensign"
+	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
+
+/obj/item/card/id/away/tarkoff/sci
+	name = "P-T field researcher's access card"
+	desc = "An access card designated for \"The Science Team\". You are forgotten basically immediately when it comes to the lab."
+
+/obj/item/card/id/away/tarkoff/med
+	name = "P-T trauma medic's access card"
+	desc = "An access card designated for \"Medical Staff\". You provide the medic bags."
+
+/obj/item/card/id/away/tarkoff/sec
+	name = "P-T resident deputy's access card"
+	desc = "An access card designated for \"Security Members\". Everyone wants your guns, partner. Yee-haw."
+
+/obj/item/card/id/away/tarkoff/cargo
+	name = "P-T cargo hauler's access card"
+	desc = "An access card designated for \"Cargo's Finest\". You're also a part time space miner, when cargonia is quiet."
+
+
+/obj/item/card/id/away/tarkoff/engi
+	name = "P-T maintenance engineer's access card"
+	desc = "An access card designated for \"engineering staff\". You're going to be the one everyone points at to fix stuff, lets be honest."
+
+/obj/item/card/id/away/tarkoff/ensign
+	name = "Tarkov Ensign's Access Card"
+	desc = "An access card designated for \"Tarkov Ensign\". No one has to listen to you... but you're the closest there is for command around here."
+
+//CRYO CONSOLES
+/obj/machinery/computer/cryopod/ds2
+	radio = /obj/item/radio/headset/ds2
+	announcement_channel = RADIO_CHANNEL_DS2
+	req_one_access = list("syndicate_leader")
+
+/obj/machinery/computer/cryopod/tarkoff
+	radio = /obj/item/radio/headset/tarkoff
+	announcement_channel = RADIO_CHANNEL_TARKOFF
+	req_one_access = list("tarkoff")

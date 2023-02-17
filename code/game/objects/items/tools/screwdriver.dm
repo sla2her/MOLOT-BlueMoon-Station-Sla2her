@@ -44,7 +44,6 @@
 /obj/item/screwdriver/Initialize(mapload)
 	. = ..()
 	if(random_color) //random colors!
-		icon_state = "screwdriver"
 		var/our_color = pick(screwdriver_colors)
 		add_atom_colour(screwdriver_colors[our_color], FIXED_COLOUR_PRIORITY)
 		update_icon()

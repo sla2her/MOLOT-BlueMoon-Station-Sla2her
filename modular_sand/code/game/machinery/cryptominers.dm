@@ -24,13 +24,18 @@
 	icon_state = "off"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 20
-	active_power_usage = 200
+	idle_power_usage = 40
+	active_power_usage = 400
 	circuit = /obj/item/circuitboard/machine/cryptominer
 	init_process = FALSE // Don't process upon creation
 	var/mining = FALSE
-	var/miningtime = 3000
-	var/miningpoints = 50
+	var/miningtime = 6000
+	var/miningpoints = 150
+	var/mintemp = TCRYO // 225K equals approximately -55F or -48C
+	var/midtemp = T0C // 273K equals 32F or 0C
+	var/maxtemp = 500 // 500K equals approximately 440F or 226C
+	var/heatingPower = 100 // Heat added each processing
+	var/require_conductivity = TRUE // Prevent use in space
 	var/datum/bank_account/pay_me = null
 
 /obj/machinery/cryptominer/Initialize(mapload)
@@ -194,11 +199,11 @@
 	icon_state = "off_syndie"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 10
-	active_power_usage = 100
+	idle_power_usage = 80
+	active_power_usage = 800
 	circuit = /obj/item/circuitboard/machine/cryptominer/syndie
 	miningtime = 6000
-	miningpoints = 100
+	miningpoints = 300
 
 /obj/machinery/cryptominer/syndie/update_icon()
 	. = ..()
@@ -215,10 +220,10 @@
 	icon_state = "off_nano"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 1
-	active_power_usage = 1
-	miningtime = 600000
-	miningpoints = 1000
+	idle_power_usage = 80
+	active_power_usage = 800
+	miningtime = 60000
+	miningpoints = 12500
 
 /obj/machinery/cryptominer/nanotrasen/update_icon()
 	. = ..()

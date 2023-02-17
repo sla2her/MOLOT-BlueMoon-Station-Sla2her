@@ -2566,7 +2566,7 @@
 /area/science)
 "jt" = (
 /obj/machinery/smartfridge,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "jw" = (
 /obj/machinery/power/rtg/abductor,
@@ -2586,7 +2586,7 @@
 /area/commons/storage/primary)
 "kf" = (
 /obj/machinery/vending/hydroseeds,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "kk" = (
 /obj/structure/lattice/catwalk,
@@ -2619,7 +2619,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "kQ" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -2658,7 +2658,7 @@
 /area/hallway/primary/central)
 "mI" = (
 /obj/machinery/hydroponics/constructable,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "nb" = (
 /obj/structure/filingcabinet/chestdrawer/wheeled,
@@ -2690,7 +2690,7 @@
 	},
 /obj/machinery/reagentgrinder/constructed,
 /obj/structure/table/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "pI" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2790,7 +2790,7 @@
 /area/commons/storage/primary)
 "vG" = (
 /obj/machinery/biogenerator,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "vH" = (
 /obj/structure/cable{
@@ -2852,7 +2852,7 @@
 /area/service/bar)
 "xh" = (
 /obj/structure/closet/secure_closet/hydroponics,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "xj" = (
 /turf/open/floor/plasteel,
@@ -2991,7 +2991,7 @@
 /area/engineering/atmos)
 "Fy" = (
 /obj/machinery/seed_extractor,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "Ga" = (
 /obj/machinery/vending/boozeomat,
@@ -3015,7 +3015,7 @@
 /obj/item/honey_frame,
 /obj/item/honey_frame,
 /obj/item/queen_bee/bought,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "If" = (
 /obj/machinery/rnd/production/techfab/department,
@@ -3196,7 +3196,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/plantgenes/seedvault,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "SC" = (
 /obj/structure/closet/secure_closet/freezer/meat,
@@ -3207,7 +3207,7 @@
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/glass/beaker/bluespace,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics)
 "Tp" = (
 /obj/structure/cable{
@@ -3310,7 +3310,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/service/cafeteria)
 "ZD" = (
-/obj/machinery/suit_storage_unit/ce,
+/obj/machinery/suit_storage_unit/industrial/ce,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "ZO" = (

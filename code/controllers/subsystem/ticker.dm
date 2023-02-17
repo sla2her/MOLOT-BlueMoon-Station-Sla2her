@@ -75,6 +75,9 @@ SUBSYSTEM_DEF(ticker)
 	/// If the gamemode fails to be run too many times, we swap to a preset gamemode, this should give admins time to set their preferred one
 	var/emergency_swap = 0
 
+	/// People who have been commended and will receive a heart
+	var/list/hearts
+
 /datum/controller/subsystem/ticker/Initialize(timeofday)
 	load_mode()
 
@@ -333,10 +336,12 @@ SUBSYSTEM_DEF(ticker)
 			GLOB.master_mode = gamemode
 			SSticker.save_mode(gamemode)
 			message_admins("The gamemode has been set to [gamemode].")
+			to_chat("The gamemode has been set to [gamemode].") //BlueMoon edit !!!
 		else
 			GLOB.master_mode = "extended"
 			SSticker.save_mode("extended")
 			message_admins("force_gamemode proc received an invalid gamemode, defaulting to extended.")
+			to_chat("The gamemode has been set to extended.") //BlueMoon edit !!!
 
 /datum/controller/subsystem/ticker/proc/PostSetup()
 	set waitfor = FALSE

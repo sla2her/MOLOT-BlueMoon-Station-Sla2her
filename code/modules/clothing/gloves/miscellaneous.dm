@@ -86,6 +86,8 @@
 
 /obj/item/clothing/gloves/fingerless/pugilist/crafted/reskin_obj(mob/M)
 	. = ..()
+	if(!.)
+		return
 	switch(current_skin)
 		if("Short")
 			item_state = "armwraps"

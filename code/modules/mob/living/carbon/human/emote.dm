@@ -6,8 +6,13 @@
 
 /datum/emote/living/carbon/human/cry/run_emote(mob/user, params)
 	. = ..()
+	var/mob/living/carbon/C = user
 	if(. && isrobotic(user))
 		do_fake_sparks(5,FALSE,user)
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/female_cry1.ogg', 'sound/voice/female_cry2.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/male_cry1.ogg', 'sound/voice/male_cry2.ogg'), 50, 1)
 
 /datum/emote/living/carbon/human/dap
 	key = "dap"
@@ -68,13 +73,6 @@
 	key = "raise"
 	key_third_person = "raises"
 	message = "raises a hand."
-	restraint_check = TRUE
-
-/datum/emote/living/carbon/human/salute
-	key = "salute"
-	key_third_person = "salutes"
-	message = "salutes."
-	message_param = "salutes to %t."
 	restraint_check = TRUE
 
 /datum/emote/living/carbon/human/shrug
@@ -165,6 +163,14 @@
 	mob_type_allowed_typecache = list(/mob/living/carbon/human)
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/sound/human/salute
+	key = "salute"
+	key_third_person = "salutes"
+	message = "salutes."
+	message_param = "salutes to %t."
+	sound = 'sound/voice/salute.ogg'
+	restraint_check = TRUE
+
 /datum/emote/sound/human/buzz
 	key = "buzz"
 	key_third_person = "buzzes"
@@ -194,6 +200,24 @@
 	key = "squeak"
 	message = "squeaks."
 	sound = 'sound/effects/mousesqueek.ogg'
+
+/datum/emote/sound/human/shriek
+	key = "shriek"
+	key_third_person = "shrieks"
+	message = "SHRIEKS!"
+	sound = 'sound/voice/shriek1.ogg'
+
+/datum/emote/sound/human/syndicate
+	key = "syndicate"
+	key_third_person = "syndicates"
+	message = "offers warcrimes."
+	sound = 'sound/voice/syndicate.ogg'
+
+/datum/emote/sound/human/emperorprotects
+	key = "emperorprotects"
+	key_third_person = "emperorprotectes"
+	message = "folds his arms across his chest, forming an aquila."
+	sound = 'sound/voice/emperorprotects.ogg'
 
 //rock paper scissors emote handling
 /mob/living/carbon/human/proc/beginRockPaperScissors(var/chosen_move)

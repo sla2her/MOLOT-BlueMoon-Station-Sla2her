@@ -79,7 +79,7 @@
 	desc = "Всё просто - вы не умеете ни писать, ни читать."
 	value = -1
 	mob_trait = TRAIT_ILLITERATE
-	gain_text = "<span class='notice'>Знание грамоты ускользает от вас.</span>"
+	gain_text = "<span class='notice'>Знание грамоты... ускользает от вас.</span>"
 	lose_text = "<span class='notice'>Написанные слова снова обретают смысл."
 
 /datum/quirk/flimsy
@@ -128,7 +128,7 @@
 	desc = "По той или иной причине, вы помешаны на сперме. Её тепло, запах... вкус... делают счастливее."
 	value = 0
 	gain_text = "<span class='notice'>Неожиданно вам захотелось ощутить семя внутри себя!<span>"
-	lose_text = "<span class='danger'>Всё равно сперма была не такой уж и вкусной.</span>"
+	lose_text = "<span class='danger'>Всё равно сперма была не такой уж и вкусной...</span>"
 	medical_record_text = "У пациента навязчивая одержимость семенными жидкостями."
 	var/craving_after = 15 MINUTES
 	var/timer

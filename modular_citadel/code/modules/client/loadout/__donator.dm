@@ -14,6 +14,34 @@
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1 // can be accessed by all donators
 
+/datum/gear/donator/rationpack
+	name = "Ration Pack"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/storage/box/mre/menu1/safe
+	ckeywhitelist = list()
+	donator_group_id = DONATOR_GROUP_TIER_1
+
+/datum/gear/donator/syndicase
+	name = "Syndicate Briefcase Full of Cash"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/storage/secure/briefcase/syndie
+	ckeywhitelist = list()
+	donator_group_id = DONATOR_GROUP_TIER_1
+
+/datum/gear/donator/gasmask_syndicate
+	name = "The Syndicate Mask"
+	slot = ITEM_SLOT_MASK
+	path = /obj/item/clothing/mask/gas/syndicate
+	ckeywhitelist = list()
+	donator_group_id = DONATOR_GROUP_TIER_1
+
+/datum/gear/donator/agent_card
+	name = "Agent Card"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/card/id/syndicate
+	ckeywhitelist = list()
+	donator_group_id = DONATOR_GROUP_TIER_1
+
 /datum/gear/donator/carpet
 	name = "Carpet Beacon"
 	slot = ITEM_SLOT_BACKPACK

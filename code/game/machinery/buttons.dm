@@ -196,6 +196,22 @@
 	var/normaldoorcontrol = FALSE
 	var/specialfunctions = OPEN // Bitflag, see assembly file
 
+/obj/machinery/button/door/directional/north //Pixel offsets get overwritten on New()
+	dir = SOUTH
+	pixel_y = 28
+
+/obj/machinery/button/door/directional/south
+	dir = NORTH
+	pixel_y = -28
+
+/obj/machinery/button/door/directional/east
+	dir = WEST
+	pixel_x = 28
+
+/obj/machinery/button/door/directional/west
+	dir = EAST
+	pixel_x = -28
+
 /obj/machinery/button/door/setup_device()
 	if(!device)
 		if(normaldoorcontrol)

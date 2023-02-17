@@ -5,8 +5,8 @@
 	default_priority = 0
 	flags = TONGUELESS_SPEECH | LANGUAGE_HIDE_ICON_IF_NOT_UNDERSTOOD
 	icon_state = "codespeak"
-	//SKYRAT CHANGE - language restriction
-	restricted = TRUE
+	//SKYRAT CHANGE - language restriction Bluemoob Change - Allowed
+	restricted = FALSE
 	//
 
 /datum/language/codespeak/scramble(input)

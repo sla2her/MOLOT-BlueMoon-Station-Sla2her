@@ -441,7 +441,7 @@
 	registered_name = "Thirteen"
 
 /obj/item/card/id/gold
-	name = "gold identification card"
+	name = "Gold Identification Card"
 	desc = "A golden card which shows power and might."
 	icon_state = "gold"
 	item_state = "gold_id"
@@ -449,7 +449,9 @@
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
 /obj/item/card/id/syndicate
-	name = "agent card"
+	name = "Agent Card"
+	icon_state = "syndie"
+	assignment = "Syndicate Operative"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
 	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
@@ -540,10 +542,10 @@
 	anyone = TRUE
 
 /obj/item/card/id/syndicate/nuke_leader
-	name = "lead agent card"
+	name = "Lead Agent Card"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
-/obj/item/card/id/syndicate_command
+/obj/item/card/id/syndicate/syndicate_command
 	name = "syndicate ID card"
 	desc = "An ID straight from the Syndicate."
 	registered_name = "Syndicate"
@@ -720,8 +722,8 @@
 	access = list(ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
 
 /obj/item/card/id/away
-	name = "a perfectly generic identification card"
-	desc = "A perfectly generic identification card. Looks like it could use some flavor."
+	name = "A Perfectly Generic Identification Card"
+	desc = "A Perfectly Generic Identification Card. Looks like it could use some flavor."
 	icon_state = "retro"
 	access = list(ACCESS_AWAY_GENERAL)
 
@@ -735,8 +737,8 @@
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_MAINT, ACCESS_AWAY_SEC)
 
 /obj/item/card/id/away/old
-	name = "a perfectly generic identification card"
-	desc = "A perfectly generic identification card. Looks like it could use some flavor."
+	name = "A Perfectly Generic Identification Card"
+	desc = "A Perfectly Generic Identification Card. Looks like it could use some flavor."
 	icon_state = "centcom"
 
 /obj/item/card/id/away/old/sec
@@ -761,6 +763,41 @@
 	name = "APC Access ID"
 	desc = "A special ID card that allows access to APC terminals."
 	access = list(ACCESS_ENGINE_EQUIP)
+
+/obj/item/card/id/away/old/tarkoff
+	name = "Tarkov Visitor's Pass"
+	desc = "A dust-collected visitors pass, A small tagline reading \"Port Tarkof, The first step to Civilian Partnership in Space Homesteading\"."
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/cargo
+	assignment = "P-T Cargo Personell"
+	desc = "An access card designated for \"cargo's finest\". You're also a part time space miner, when cargonia is quiet."
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/sec
+	assignment = "P-T Port Guard"
+	desc = "An access card designated for \"security members\". Everyone wants your guns, partner. Yee-haw."
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_SEC_DOORS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/med
+	assignment = "P-T Trauma Medic"
+	desc = "An access card designated for \"medical staff\". You provide the medic bags."
+	access = list(ACCESS_MEDICAL, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_SURGERY)
+
+/obj/item/card/id/away/old/tarkoff/eng
+	assignment = "P-T Maintenance Crew"
+	desc = "An access card designated for \"engineering staff\". You're going to be the one everyone points at to fix stuff, lets be honest."
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
+
+/obj/item/card/id/away/old/tarkoff/sci
+	assignment = "P-T Field Researcher"
+	desc = "An access card designated for \"the science team\". You are forgotten basically immediately when it comes to the lab."
+	access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/ensign
+	assignment = "Tarkov Ensign"
+	desc = "An access card designated for \"tarkoff ensign\". No one has to listen to you... But you're the closest there is for command around here."
+	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
 
 /obj/item/card/id/departmental_budget
 	name = "departmental card (FUCK)"

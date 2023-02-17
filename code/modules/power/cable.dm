@@ -583,17 +583,43 @@ By design, d1 is the smallest direction and d2 is the highest
 		new_cable.update_icon()
 
 /obj/item/stack/cable_coil/attack_self(mob/user)
-	if(amount < 15)
-		to_chat(user, "<span class='notice'>You don't have enough cable coil to make restraints out of them</span>")
+	if(!user)
 		return
-	to_chat(user, "<span class='notice'>You start making some cable restraints.</span>")
-	if(!do_after(user, 30, TRUE, user, TRUE) || !use(15))
-		to_chat(user, "<span class='notice'>You fail to make cable restraints, you need to be standing still to do it</span>")
-		return
-	var/obj/item/restraints/handcuffs/cable/result = new(get_turf(user))
-	user.put_in_hands(result)
-	result.color = color
-	to_chat(user, "<span class='notice'>You make some restraints out of cable</span>")
+
+	var/image/restraints_icon = image(icon = 'icons/obj/items_and_weapons.dmi', icon_state = "cuff")
+
+	var/list/radial_menu = list(
+	"Cable Restraints" = restraints_icon,
+	"Noose" = image(icon = 'modular_bluemoon/icons/obj/objects.dmi', icon_state = "noose")
+	)
+
+	var/cable_result = show_radial_menu(user, src, radial_menu, user, require_near = TRUE, tooltips = TRUE)
+	switch(cable_result)
+		if("Cable Restraints")
+			if(amount < 15)
+				to_chat(user, "<span class='notice'>You don't have enough cable coil to make restraints out of them</span>")
+				return
+			to_chat(user, "<span class='notice'>You start making some cable restraints.</span>")
+			if(!do_after(user, 30, TRUE, user, TRUE) || !use(15))
+				to_chat(user, "<span class='notice'>You fail to make cable restraints, you need to be standing still to do it</span>")
+				return
+			var/obj/item/restraints/handcuffs/cable/result = new(get_turf(user))
+			user.put_in_hands(result)
+			result.color = color
+			to_chat(user, "<span class='notice'>You make some restraints out of cable</span>")
+		if("Noose")
+			if(amount < 30)
+				to_chat(user, "<span class='notice'>You don't have enough cable coil to make noose out of them</span>")
+				return
+			to_chat(user, "<span class='notice'>You start making some cable noose...</span>")
+			if(!(locate(/obj/structure/chair) in user.loc) && !(locate(/obj/structure/bed) in user.loc) && !(locate(/obj/structure/table) in user.loc) && !(locate(/obj/structure/toilet) in user.loc))
+				to_chat(user, span_warning("Нужно стоять на вершине стула/стола/туалета для создания петли!"))
+				return
+			if(!do_after(user, 30, TRUE, user, TRUE) || !use(30))
+				to_chat(user, "<span class='notice'>You fail to make cable noose, you need to be standing still to do it</span>")
+				return
+			new /obj/structure/chair/noose(get_turf(user))
+	update_icon()
 
 //add cables to the stack
 /obj/item/stack/cable_coil/proc/give(extra)

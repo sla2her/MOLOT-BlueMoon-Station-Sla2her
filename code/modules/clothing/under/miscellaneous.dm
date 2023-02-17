@@ -211,7 +211,7 @@
 	icon_state = "russobluecamo"
 	item_state = "russobluecamo"
 	can_adjust = FALSE
-	mutantrace_variation = USE_TAUR_CLIP_MASK
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON|USE_TAUR_CLIP_MASK
 
 /obj/item/clothing/under/misc/keyholesweater
 	name = "keyhole sweater"

@@ -606,3 +606,69 @@
 #undef CONSTRUCTION_WIRES_EXPOSED
 #undef CONSTRUCTION_GUTTED
 #undef CONSTRUCTION_NOCIRCUIT
+
+/obj/machinery/door/firedoor
+	name = "Emergency Shutter"
+	desc = "Emergency air-tight shutter, capable of sealing off breached areas. This one has a glass panel. It has a mechanism to open it with crowbar."
+	icon = 'modular_bluemoon/SmiLeY/aesthetics/firedoor/icons/firedoor_glass.dmi'
+	var/door_open_sound = 'modular_bluemoon/SmiLeY/aesthetics/firedoor/sound/firedoor_open.ogg'
+	var/door_close_sound = 'modular_bluemoon/SmiLeY/aesthetics/firedoor/sound/firedoor_open.ogg'
+
+/obj/machinery/door/firedoor/open()
+	playsound(loc, door_open_sound, 100, TRUE)
+	return ..()
+
+/obj/machinery/door/firedoor/close()
+	playsound(loc, door_close_sound, 100, TRUE)
+	return ..()
+
+/obj/machinery/door/firedoor/heavy
+	name = "Heavy Emergency Shutter"
+	desc = "Emergency air-tight shutter, capable of sealing off breached areas. It has a mechanism to open it with just your hands."
+	icon = 'modular_bluemoon/SmiLeY/aesthetics/firedoor/icons/firedoor.dmi'
+
+/obj/effect/spawner/structure/window/reinforced/no_firelock
+	spawn_list = list(/obj/structure/grille, /obj/structure/window/reinforced/fulltile)
+
+/obj/machinery/door/firedoor/heavy/closed
+	icon_state = "door_closed"
+	density = TRUE
+
+/obj/machinery/door/firedoor/solid
+	name = "Solid Emergency Shutter"
+	desc = "Emergency air-tight shutter, capable of sealing off breached areas. It has a mechanism to open it with just your hands."
+	icon = 'modular_bluemoon/SmiLeY/aesthetics/firedoor/icons/firedoor.dmi'
+	glass = FALSE
+
+/obj/machinery/door/firedoor/solid/closed
+	icon_state = "door_closed"
+	density = TRUE
+	opacity = TRUE
+
+/obj/machinery/door/firedoor/AltClick(mob/user)
+	. = ..()
+	if(!user.canUseTopic(src, be_close = TRUE))
+		return
+	try_manual_override(user)
+
+/obj/machinery/door/firedoor/examine(mob/user)
+	. = ..()
+	. += span_notice("Alt-click the door to use the manual override.")
+
+/obj/machinery/door/proc/try_manual_override(mob/user)
+	if(density && !welded && !operating)
+		balloon_alert(user, "opening...")
+		if(do_after(user, 10 SECONDS, target = src))
+			try_to_crowbar(null, user)
+			return TRUE
+	return FALSE
+
+/obj/machinery/door/firedoor/try_to_crowbar(obj/item/used_object, mob/user)
+	if(welded || operating)
+		balloon_alert(user, "opening failed!")
+		return
+
+	if(density)
+		open()
+	else
+		close()

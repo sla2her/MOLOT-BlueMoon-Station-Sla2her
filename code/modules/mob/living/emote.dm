@@ -27,6 +27,14 @@
 	message = "chokes!"
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/choke/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/gasp_female1.ogg', 'sound/voice/gasp_female2.ogg', 'sound/voice/gasp_female3.ogg', 'sound/voice/gasp_female4.ogg', 'sound/voice/gasp_female5.ogg', 'sound/voice/gasp_female6.ogg', 'sound/voice/gasp_female7.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/gasp_male1.ogg', 'sound/voice/gasp_male2.ogg', 'sound/voice/gasp_male3.ogg', 'sound/voice/gasp_male4.ogg', 'sound/voice/gasp_male5.ogg', 'sound/voice/gasp_male6.ogg', 'sound/voice/gasp_male7.ogg',), 50, 1)
+
 /datum/emote/living/cross
 	key = "cross"
 	key_third_person = "crosses"
@@ -38,6 +46,14 @@
 	key_third_person = "chuckles"
 	message = "chuckles."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/chuckle/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/chuckle_f.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/chuckle_m.ogg'), 50, 1)
 
 /datum/emote/living/collapse
 	key = "collapse"
@@ -62,11 +78,25 @@
 	if(HAS_TRAIT(user, TRAIT_SOOTHED_THROAT))
 		return FALSE
 
+/datum/emote/living/cough/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/female_cough1.ogg', 'sound/voice/female_cough2.ogg', 'sound/voice/female_cough3.ogg', 'sound/voice/female_cough4.ogg', 'sound/voice/female_cough5.ogg', 'sound/voice/female_cough6.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/male_cough1.ogg', 'sound/voice/male_cough2.ogg', 'sound/voice/male_cough3.ogg', 'sound/voice/male_cough4.ogg'), 50, 1)
+
 /datum/emote/living/dance
 	key = "dance"
 	key_third_person = "dances"
 	message = "dances around happily."
 	restraint_check = TRUE
+
+/datum/emote/living/dance/run_emote(mob/user, params)
+	. = ..()
+	if(.)
+		user.SpinAnimation(8,4)
+		user.spin(30, 1)
 
 /datum/emote/living/deathgasp
 	key = "deathgasp"
@@ -81,19 +111,19 @@
 	stat_allowed = UNCONSCIOUS
 
 /datum/emote/living/deathgasp/run_emote(mob/user, params)
-	var/mob/living/simple_animal/S = user
-	if(istype(S) && S.deathmessage)
-		message_simple = S.deathmessage
-	. = ..()
-	message_simple = initial(message_simple)
-	if(. && user.deathsound)
-		if(isliving(user))
-			var/mob/living/L = user
-			if(!L.can_speak_vocal() || L.oxyloss >= 50)
-				return //stop the sound if oxyloss too high/cant speak
-		playsound(user, user.deathsound, 200, TRUE, TRUE)
-	if(. && isalienadult(user))
-		playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
+    var/mob/living/simple_animal/S = user
+    if(istype(S) && S.deathmessage)
+        message_simple = S.deathmessage
+    . = ..()
+    message_simple = initial(message_simple)
+    if(. && user.deathsound)
+        if(isliving(user))
+            var/mob/living/L = user
+            if(!L.can_speak_vocal() || L.oxyloss >= 50)
+                return //stop the sound if oxyloss too high/cant speak
+        playsound(user, pick(user.deathsound), 200, 0, 0)
+    if(. && isalienadult(user))
+        playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
 
 /datum/emote/living/drool
 	key = "drool"
@@ -155,13 +185,45 @@
 	message = "gasps!"
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = UNCONSCIOUS
-
+//bluemoon add start
+/datum/emote/living/gasp/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick(
+			'sound/voice/gasp_female1.ogg',
+			'sound/voice/gasp_female2.ogg',
+			'sound/voice/gasp_female3.ogg',
+			'sound/voice/gasp_female4.ogg',
+			'sound/voice/gasp_female5.ogg',
+			'sound/voice/gasp_female6.ogg',
+			'sound/voice/gasp_female7.ogg'),
+		10, TRUE, extrarange = -13) //2 tiles around
+	else
+		playsound(C, pick(
+			'sound/voice/gasp_male1.ogg',
+			'sound/voice/gasp_male2.ogg',
+			'sound/voice/gasp_male3.ogg',
+			'sound/voice/gasp_male4.ogg',
+			'sound/voice/gasp_male5.ogg',
+			'sound/voice/gasp_male6.ogg',
+			'sound/voice/gasp_male7.ogg'),
+		10, TRUE, extrarange = -13) //2 tiles around
+//bluemoon add end
 /datum/emote/living/giggle
 	key = "giggle"
 	key_third_person = "giggles"
 	message = "giggles."
 	message_mime = "giggles silently!"
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/giggle/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/female_giggle1.ogg', 'sound/voice/female_giggle2.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/male_giggle1.ogg', 'sound/voice/male_giggle2.ogg'), 50, 1)
 
 /datum/emote/living/glare
 	key = "glare"
@@ -179,6 +241,7 @@
 	key = "groan"
 	key_third_person = "groans"
 	message = "groans!"
+	var/sound = 'sound/voice/roar.ogg'
 	message_mime = "appears to groan!"
 
 /datum/emote/living/grimace
@@ -244,9 +307,9 @@
 				return
 		else if(ishumanbasic(C))
 			if(user.gender == FEMALE)
-				playsound(C, 'sound/voice/human/womanlaugh.ogg', 50, 1)
+				playsound(C, pick('sound/voice/human/womanlaugh.ogg', 'sound/voice/female_laugh1.ogg', 'sound/voice/female_laugh2.ogg', 'sound/voice/female_laugh3.ogg'), 50, 1)
 			else
-				playsound(C, pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg'), 50, 1)
+				playsound(C, pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg', 'sound/voice/laugh_m1.ogg', 'sound/voice/laugh_m2.ogg', 'sound/voice/laugh_m3.ogg'), 50, 1)
 
 /datum/emote/living/audio_emote/chitter
 	key = "chitter"
@@ -330,6 +393,14 @@
 	message = "sighs."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/sigh/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/sigh_female.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/sigh_male.ogg'), 50, 1)
+
 /datum/emote/living/sit
 	key = "sit"
 	key_third_person = "sits"
@@ -351,6 +422,14 @@
 	message = "sneezes."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/sneeze/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/sneezef1.ogg', 'sound/voice/sneezef2.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/sneezem1.ogg', 'sound/voice/sneezem2.ogg'), 50, 1)
+
 /datum/emote/living/smug
 	key = "smug"
 	key_third_person = "smugs"
@@ -361,6 +440,14 @@
 	key_third_person = "sniffs"
 	message = "sniffs."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/sniff/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/sniff_f1.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/sniff_m1.ogg'), 50, 1)
 
 /datum/emote/living/snore
 	key = "snore"
@@ -447,6 +534,15 @@
 	message = "yawns."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/yawn/run_emote(mob/user, params)
+	. = ..()
+	var/mob/living/carbon/C = user
+	if(user.gender == FEMALE)
+		playsound(C, pick('sound/voice/female_yawn1.ogg', 'sound/voice/female_yawn2.ogg'), 50, 1)
+	else
+		playsound(C, pick('sound/voice/male_yawn1.ogg', 'sound/voice/male_yawn2.ogg'), 50, 1)
+
+
 /datum/emote/living/custom
 	key = "me"
 	key_third_person = "custom"
@@ -510,6 +606,13 @@
 	message = jointext(message, "")
 
 	to_chat(user, message)
+
+/datum/emote/sound/AISyndiHack
+	key = "hack"
+	key_third_person = "hacks"
+	message = "hacked by Syndicate."
+	sound = 'sound/machines/AISyndiHack.ogg'
+	mob_type_allowed_typecache = list(/mob/living/brain, /mob/living/silicon, /mob/living/carbon/human, /mob/camera/aiEye)
 
 /datum/emote/sound/beep
 	key = "beep"

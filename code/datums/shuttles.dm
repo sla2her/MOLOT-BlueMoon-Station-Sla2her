@@ -419,13 +419,12 @@
 	description = "The Nanotrasen Emergency Shuttle Port(NES Port for short) is a shuttle used at other less known Nanotrasen facilities and has a more open inside for larger crowds, but fewer onboard shuttle facilities."
 	credit_cost = 500
 
-// /datum/map_template/shuttle/emergency/rollerdome
-// 	suffix = "rollerdome"
-// 	name = "Uncle Pete's Rollerdome"
-// 	description = "Developed by a member of Nanotrasen's R&D crew that claims to have travelled from the year 2028.
-// 	He says this shuttle is based off an old entertainment complex from the 1990s, though our database has no records on anything pertaining to that decade."
-// 	admin_notes = "ONLY NINETIES KIDS REMEMBER. Uses the fun balloon and drone from the Emergency Bar."
-// 	credit_cost = 500 * 5
+/datum/map_template/shuttle/emergency/rollerdome
+	suffix = "rollerdome"
+	name = "Uncle Pete's Rollerdome"
+	description = "Developed by a member of Nanotrasen's R&D crew that claims to have travelled from the year 2028. He says this shuttle is based off an old entertainment complex from the 1990s, though our database has no records on anything pertaining to that decade."
+	admin_notes = "ONLY NINETIES KIDS REMEMBER. Uses the fun balloon and drone from the Emergency Bar."
+	credit_cost = 500 * 5
 
 /datum/map_template/shuttle/emergency/wabbajack
 	suffix = "wabbajack"
@@ -453,12 +452,12 @@
 	return SSshuttle.shuttle_purchase_requirements_met["emagged"]
 
 
-// /datum/map_template/shuttle/emergency/cruise
-// 	suffix = "cruise"
-// 	name = "The NTSS Independence"
-// 	description = "Ordinarily reserved for special functions and events, the Cruise Shuttle Independence can bring a summery cheer to your next station evacuation for a 'modest' fee!"
-// 	admin_notes = "This motherfucker is BIG. You might need to force dock it."
-// 	credit_cost = 8000
+/datum/map_template/shuttle/emergency/cruise
+	suffix = "cruise"
+	name = "The NTSS Independence"
+	description = "Ordinarily reserved for special functions and events, the Cruise Shuttle Independence can bring a summery cheer to your next station evacuation for a 'modest' fee!"
+	admin_notes = "This motherfucker is BIG. You might need to force dock it."
+	credit_cost = 8000
 
 /datum/map_template/shuttle/emergency/monkey
 	suffix = "nature"
@@ -731,3 +730,78 @@
 /datum/map_template/shuttle/snowdin/excavation
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
+
+//Tarkov Блюмуновский. Ебать.
+
+/datum/map_template/shuttle/ruin/tarkon_driver
+	prefix = "_maps/shuttles/bluemoon/"
+	suffix = "tarkoff_driverdc54"
+	name = "Tarkov Drill Driver"
+
+/datum/map_template/shuttle/ruin/tarkon_driver/defcon3
+	suffix = "tarkoff_driverdc3"
+
+/datum/map_template/shuttle/ruin/tarkon_driver/defcon2
+	suffix = "tarkoff_driverdc2"
+
+/obj/machinery/computer/shuttle/tarkon_driver
+	name = "Tarkov Driver Control"
+	desc = "Used to control the Tarkov Driver."
+	icon_screen = "syndishuttle"
+	icon_keyboard = "syndie_key"
+	light_color = LIGHT_COLOR_RED
+	circuit = /obj/item/circuitboard/computer/tarkon_driver
+	shuttleId = "tarkoff_driver"
+	possible_destinations = "tarkoff_driver_custom;port_tarkoff;whiteship_home;whiteship_lavaland"
+
+/obj/machinery/computer/camera_advanced/shuttle_docker/tarkon_driver
+	name = "Tarkov Driver Navigation Computer"
+	desc = "The Navigation console for the Tarkov Driver. A broken \"Engage Drill\" button seems to dimly blink in a yellow colour"
+	icon_screen = "syndishuttle"
+	icon_keyboard = "syndie_key"
+	shuttleId = "tarkoff_driver"
+	lock_override = NONE
+	shuttlePortId = "tarkoff_driver_custom"
+	jumpto_ports = list("port_tarkoff" = 1, "whiteship_away" = 1, "whiteship_home" = 1)
+	view_range = 5.5
+	x_offset = 7
+	y_offset = 1
+
+
+/obj/item/circuitboard/computer/tarkon_driver
+	name = "Tarkov Driver Control Console (Computer Board)"
+	build_path = /obj/machinery/computer/shuttle/tarkon_driver
+
+//Lifeweb Haron
+
+/datum/map_template/shuttle/ruin/lf_haron
+	prefix = "_maps/shuttles/bluemoon/"
+	suffix = "lifeweb_haron"
+	name = "Haron Shuttle"
+
+/obj/machinery/computer/shuttle/lf_haron
+	name = "Haron Control"
+	desc = "Used to control the Haron."
+	icon_screen = "syndishuttle"
+	icon_keyboard = "syndie_key"
+	light_color = LIGHT_COLOR_RED
+	circuit = /obj/item/circuitboard/computer/lf_haron
+	shuttleId = "lf_haron"
+	possible_destinations = "whiteship_home;lf_haron_custom"
+
+/obj/item/circuitboard/computer/lf_haron
+	name = "Haron Control Console (Computer Board)"
+	build_path = /obj/machinery/computer/shuttle/lf_haron
+
+/obj/machinery/computer/camera_advanced/shuttle_docker/lf_haron
+	name = "Haron Navigation Computer"
+	desc = "The Navigation console for the Haron."
+	icon_screen = "syndishuttle"
+	icon_keyboard = "syndie_key"
+	shuttleId = "lf_haron"
+	lock_override = NONE
+	shuttlePortId = "lf_haron_custom"
+	jumpto_ports = list("whiteship_away" = 1, "whiteship_home" = 1)
+	view_range = 5.5
+	x_offset = 7
+	y_offset = 1

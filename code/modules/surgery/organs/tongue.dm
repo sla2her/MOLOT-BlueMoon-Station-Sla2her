@@ -158,6 +158,7 @@
 		/datum/language/common,
 		/datum/language/draconic,
 		/datum/language/ratvar,
+		/datum/language/codespeak, //Bluemoon Change - because blyad
 		/datum/language/monkey))
 
 /obj/item/organ/tongue/alien/Initialize(mapload)

@@ -1,10 +1,9 @@
 /datum/round_event_control/grey_tide
 	name = "Grey Tide"
 	typepath = /datum/round_event/grey_tide
-	max_occurrences = 2
-	min_players = 5
-	category = EVENT_CATEGORY_ENGINEERING
-	description = "Bolts open all doors in one or more departments."
+	max_occurrences = 1
+	min_players = 10
+	weight = 45
 
 /datum/round_event/grey_tide
 	announce_when = 50
@@ -32,9 +31,9 @@
 /datum/round_event/grey_tide/announce(fake)
 	if(areasToOpen && areasToOpen.len > 0)
 		if(prob(50))
-			priority_announce("Gr3y.T1d3 virus detected in [station_name()] door subroutines. Severity level of [severity]. Recommend station AI involvement.", "Security Alert")
+			priority_announce("Gr3y.T1d3 вирус обнаружен в дверных подпрограммах [station_name()]. Уровень тяжести [severity]. Рекомендуется участие ИИ для решения проблемы.", "Нарушение Безопасности")
 		else
-			print_command_report("Gr3y.T1d3 virus detected in [station_name()] door subroutines. Severity level of [severity]. Recommend station AI involvement.", "Gr3y.T1d3 virus")
+			print_command_report("Gr3y.T1d3 вирус обнаружен в дверных подпрограммах [station_name()]. Уровень тяжести [severity]. Рекомендуется участие ИИ для решения проблемы.", "Нарушение Безопасности")
 	else
 		log_world("ERROR: Could not initate grey-tide. No areas in the list!")
 		kill()

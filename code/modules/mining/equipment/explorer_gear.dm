@@ -74,9 +74,10 @@
 			wearer.update_inv_head()
 
 /obj/item/clothing/mask/gas/explorer
-	name = "explorer gas mask"
+	name = "Explorer Gas Mask"
 	desc = "A military-grade gas mask that can be connected to an air supply."
 	icon_state = "gas_mining"
+	item_state = "explorer_gasmask"
 	visor_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
 	visor_flags_inv = HIDEFACIALHAIR
 	visor_flags_cover = MASKCOVERSMOUTH

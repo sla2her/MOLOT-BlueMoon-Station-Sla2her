@@ -18,6 +18,7 @@
 /datum/gear/shoes/jackboots/tall
 	name = "Tall Jackboots"
 	path = /obj/item/clothing/shoes/jackboots/tall
+
 /datum/gear/shoes/highheels
 	name = "High Heels"
 	path = /obj/item/clothing/shoes/highheels

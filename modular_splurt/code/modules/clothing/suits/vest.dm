@@ -74,6 +74,7 @@
 	desc = "A heavy trench coat with a armored vest sown into it. Used by the peace minded warden"
 	icon_state = "peacekeeper_trench_warden"
 	item_state = "peacekeeper_trench_warden"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	icon = 'modular_splurt/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
 

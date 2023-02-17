@@ -67,6 +67,32 @@
 /obj/effect/turf_decal/delivery/red
 	icon_state = "delivery_red"
 
+//Blue. Bluemoon.
+
+/obj/effect/turf_decal/bot_blue
+	icon_state = "bot_blue"
+
+/obj/effect/turf_decal/caution/stand_clear/blue
+	icon_state = "stand_clear_blue"
+
+/obj/effect/turf_decal/arrows/blue
+	icon_state = "arrows_blue"
+
+/obj/effect/turf_decal/box/blue
+	icon_state = "box_blue"
+
+/obj/effect/turf_decal/box/blue/corners
+	icon_state = "box_corners_blue"
+
+
+/obj/effect/turf_decal/delivery/blue
+	icon_state = "delivery_blue"
+
+/obj/effect/turf_decal/caution/blue
+	icon_state = "caution_blue"
+
+//Blue. Bluemoon.
+
 /obj/effect/turf_decal/bot
 	icon_state = "bot"
 

@@ -294,6 +294,13 @@
 	extra_color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/snouts/mam_snouts/skulldog_alt
+	name = "Skulldog ALT"
+	icon_state = "skulldog ALT"
+	extra = TRUE
+	extra_color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/snouts/mam_snouts/toucan
 	name = "Toucan"
 	icon_state = "toucan"

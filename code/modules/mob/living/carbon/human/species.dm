@@ -1930,7 +1930,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				'modular_splurt/sound/effects/pan0.ogg',
 				'modular_splurt/sound/effects/pan1.ogg'
 			)
-			playsound(target.loc, pick(ouchies), 50, 1, -1)
+			playsound(target.loc, pick(ouchies), 15, 1, -1)
 			user.emote("scream")
 			return FALSE
 

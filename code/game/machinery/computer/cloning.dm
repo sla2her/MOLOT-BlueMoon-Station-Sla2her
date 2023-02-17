@@ -80,7 +80,7 @@
 			continue	//how though?
 
 		if(pod.growclone(R.fields["ckey"], R.fields["name"], R.fields["UI"], R.fields["SE"], R.fields["mind"], R.fields["blood_type"], R.fields["mrace"], R.fields["features"], R.fields["factions"], R.fields["quirks"], R.fields["bank_account"], R.fields["traumas"]))
-			temp = "[R.fields["name"]] => <font class='good'>Cloning cycle in progress...</font>"
+			temp = "[R.fields["name"]] => Cloning cycle in progress..."
 			records -= R
 
 /obj/machinery/computer/cloning/proc/updatemodules(findfirstcloner)

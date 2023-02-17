@@ -2,9 +2,7 @@
 	name = "Clogged Vents: Normal"
 	typepath = /datum/round_event/vent_clog
 	weight = 10
-	max_occurrences = 3
-	category = EVENT_CATEGORY_HEALTH
-	description = "All the scrubbers onstation spit random chemicals in smoke form."
+	max_occurrences = 1
 
 /datum/round_event/vent_clog
 	announce_when	= 1
@@ -33,7 +31,7 @@
 		/datum/reagent/water/holywater,
 		/datum/reagent/consumable/ethanol,
 		/datum/reagent/consumable/hot_coco,
-		/datum/reagent/toxin/acid,
+		/*/datum/reagent/toxin/acid, bluemoon removal*/
 		/datum/reagent/toxin/mindbreaker,
 		/datum/reagent/toxin/rotatium,
 		/datum/reagent/bluespace,
@@ -41,17 +39,17 @@
 		/datum/reagent/consumable/laughter,
 		/datum/reagent/concentrated_barbers_aid,
 		/datum/reagent/baldium,
-		/datum/reagent/colorful_reagent,
+		/*/datum/reagent/colorful_reagent, bluemoon removal*/
 		/datum/reagent/peaceborg_confuse,
 		/datum/reagent/peaceborg_tire,
 		/datum/reagent/consumable/sodiumchloride,
 		/datum/reagent/consumable/ethanol/beer,
-		/datum/reagent/hair_dye,
+		/*/datum/reagent/hair_dye, bluemoon removal*/
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/glitter/white,
 		/datum/reagent/growthserum,
 		/datum/reagent/consumable/cornoil,
-		/datum/reagent/uranium,
+		/*/datum/reagent/uranium, bluemoon removal*/
 		/datum/reagent/carpet,
 		/datum/reagent/firefighting_foam,
 		/datum/reagent/consumable/tearjuice,
@@ -61,7 +59,7 @@
 	//needs to be chemid unit checked at some point
 
 /datum/round_event/vent_clog/announce()
-	priority_announce("The scrubbers network is experiencing a backpressure surge. Some ejection of contents may occur.", "Atmospherics alert", has_important_message = TRUE)
+	priority_announce("Сеть вентиляции испытывает скачок противодавления. Может произойти некоторый выброс содержимого.", "Атмосферная Тревога", has_important_message = TRUE)
 
 /datum/round_event/vent_clog/setup()
 	end_when = rand(120, 180)
@@ -106,11 +104,10 @@
 /datum/round_event_control/vent_clog/threatening
 	name = "Clogged Vents: Threatening"
 	typepath = /datum/round_event/vent_clog/threatening
-	weight = 4
+	weight = 10
 	min_players = 15
 	max_occurrences = 1
-	earliest_start = 35 MINUTES
-	description = "Extra dangerous chemicals come out of the scrubbers."
+	earliest_start = 30 MINUTES
 
 /datum/round_event/vent_clog/threatening
 	randomProbability = 10
@@ -119,21 +116,20 @@
 /datum/round_event_control/vent_clog/catastrophic
 	name = "Clogged Vents: Catastrophic"
 	typepath = /datum/round_event/vent_clog/catastrophic
-	weight = 2
+	weight = 5
 	min_players = 25
 	max_occurrences = 1
-	earliest_start = 45 MINUTES
-	description = "EXTREMELY dangerous chemicals come out of the scrubbers."
+	earliest_start = 30 MINUTES
 
 /datum/round_event/vent_clog/catastrophic
 	randomProbability = 30
-	reagentsAmount = 250
+	reagentsAmount = 300
 
 /datum/round_event_control/vent_clog/beer
 	name = "Clogged Vents: Beer"
 	typepath = /datum/round_event/vent_clog/beer
-	max_occurrences = 0
-	description = "Spits out beer through the scrubber system."
+	weight = 25
+	max_occurrences = 1
 
 /datum/round_event/vent_clog/beer
 	reagentsAmount = 100

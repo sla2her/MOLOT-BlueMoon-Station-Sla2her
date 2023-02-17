@@ -1,8 +1,8 @@
 /datum/round_event_control/supermatter_surge
 	name = "Supermatter Surge"
 	typepath = /datum/round_event/supermatter_surge
-	weight = 20
-	max_occurrences = 5
+	weight = 15
+	max_occurrences = 12
 	earliest_start = 10 MINUTES
 	category = EVENT_CATEGORY_ENGINEERING
 	description = "Randomly modifies the supermatter's power, giving the engineers a lot of headaches."

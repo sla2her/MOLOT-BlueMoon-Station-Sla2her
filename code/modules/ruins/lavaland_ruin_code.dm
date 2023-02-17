@@ -120,21 +120,28 @@
 ///Syndicate Listening Post
 
 /obj/effect/mob_spawn/human/lavaland_syndicate
-	name = "Syndicate Bioweapon Scientist"
+	name = "Syndicate Bioweapon Specialist"
 	roundstart = FALSE
 	death = FALSE
-	job_description = "Off-station Syndicate Scientist"
+	job_description = "Off-station Syndicate Specialist"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
-	short_desc = "You are a syndicate science technician, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Unfortunately, your hated enemy, Nanotrasen, has begun mining in this sector. Continue your research as best you can, and try to keep a low profile."
-	important_info = "The base is rigged with explosives, DO NOT abandon it or let it fall into enemy hands!"
+	short_desc = "Вы Научный Специалист Синдиката, работающий на Аванпосту Лаваленда и изучающий аномальное поле Системы Синих Лун."
+	flavour_text = "К сожалению это или к счастью, но сотрудники вашего партнёра, Nanotrasen, начали добычу полезных ископаемых в этом секторе. Продолжайте свои исследования как можно лучше и старайтесь особо не высовываться, и не провоцировать этих же самых сотрудников."
+	important_info = "Аванпост напичкан взрывчаткой на случай выхода эксперимента из-под контроля. Не покидайте свою Базу без особой на то причины."
 	outfit = /datum/outfit/lavaland_syndicate
 	assignedrole = "Lavaland Syndicate"
 	canloadappearance = TRUE
 
 /obj/effect/mob_spawn/human/lavaland_syndicate/special(mob/living/new_spawn)
 	new_spawn.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+
+/obj/item/radio/headset/ds2
+	name = "DS2 Headset"
+	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
+	icon_state = "syndie_headset"
+	radiosound = 'modular_sand/sound/radio/syndie.ogg'
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 
 /datum/outfit/lavaland_syndicate
 	name = "Lavaland Syndicate Agent"
@@ -156,15 +163,15 @@
 /obj/effect/mob_spawn/human/lavaland_syndicate/comms
 	name = "Syndicate Comms Agent"
 	job_description = "Off-station Syndicate Comms Agent"
-	short_desc = "You are a syndicate comms agent, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Unfortunately, your hated enemy, Nanotrasen, has begun mining in this sector. Monitor enemy activity as best you can, and try to keep a low profile. Use the communication equipment to provide support to any field agents, and sow disinformation to throw Nanotrasen off your trail. Do not let the base fall into enemy hands!"
-	important_info = "DO NOT abandon the base."
+	short_desc = "Вы Специалист Разведки Синдиката, работающий на Аванпосту Лаваленда и изучающий аномальное поле Системы Синих Лун."
+	flavour_text = "К сожалению это или к счастью, но сотрудники вашего партнёра, Мега-Корпорации Nanotrasen, начали добычу полезных ископаемых в этом секторе. Следите за вражеской активностью как можно лучше и старайтесь не высовываться. Используйте коммуникационное оборудование для оказания поддержки любым полевым агентам и сотрудникам Космической Станции."
+	important_info = "Не покидайте свою Базу без особой на то причины."
 	outfit = /datum/outfit/lavaland_syndicate/comms
 	canloadappearance = TRUE
 
 /obj/effect/mob_spawn/human/lavaland_syndicate/comms/space/Initialize(mapload)
 	. = ..()
-	if(prob(90)) //only has a 10% chance of existing, otherwise it'll just be a NPC syndie.
+	if(prob(50)) //only has a 10% chance of existing, otherwise it'll just be a NPC syndie.
 		new /mob/living/simple_animal/hostile/syndicate/ranged(get_turf(src))
 		return INITIALIZE_HINT_QDEL
 

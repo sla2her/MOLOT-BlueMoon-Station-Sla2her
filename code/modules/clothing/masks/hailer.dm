@@ -13,7 +13,7 @@
 	visor_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
 	visor_flags_inv = HIDEFACE
 	flags_cover = MASKCOVERSMOUTH
-	visor_flags_cover = MASKCOVERSMOUTH
+	visor_flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 	var/aggressiveness = 2
 	var/cooldown_special
 	var/recent_uses = 0
@@ -28,6 +28,7 @@
 	item_state = "swat"
 	aggressiveness = 3
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 	visor_flags_inv = 0
 
 /obj/item/clothing/mask/gas/sechailer/cyborg
@@ -252,3 +253,6 @@
 	desc = "A close-fitting tactical mask created in cooperation with a certain megacorporation, comes with an especially aggressive Compli-o-nator 3000."
 	icon_state = "spacepol"
 	item_state = "spacepol"
+	mutantrace_variation = STYLE_NO_ANTHRO_ICON
+	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
+	visor_flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES

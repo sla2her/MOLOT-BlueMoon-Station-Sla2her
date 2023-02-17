@@ -5,7 +5,20 @@ GLOBAL_VAR_INIT(security_level, SEC_LEVEL_GREEN)
 //SEC_LEVEL_RED = code red
 //SEC_LEVEL_DELTA = code delta
 
- /*
+/proc/get_security_level()
+	switch(GLOB.security_level)
+		if(SEC_LEVEL_GREEN)
+			return "ЗЕЛЁНЫЙ"
+		if(SEC_LEVEL_BLUE)
+			return "СИНИЙ"
+		if(SEC_LEVEL_AMBER)
+			return "ЯНТАРНЫЙ"
+		if(SEC_LEVEL_RED)
+			return "КРАСНЫЙ"
+		if(SEC_LEVEL_DELTA)
+			return "ДЕЛЬТА"
+
+/*
   * All security levels, per ascending alert. Nothing too fancy, really.
   * Their positions should also match their numerical values.
   */

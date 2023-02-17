@@ -125,7 +125,7 @@
 			These items are collectively worth more than 20 telecrystals, but you do not know which specialization \
 			you will receive. May contain discontinued and/or exotic items."
 	item = /obj/item/storage/box/syndicate
-	cost = 20
+	cost = 15
 	purchasable_from = ~(UPLINK_NUKE_OPS)
 	cant_discount = TRUE
 

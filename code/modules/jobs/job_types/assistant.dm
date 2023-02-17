@@ -6,8 +6,8 @@ Assistant
 	flag = ASSISTANT
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = -1
+	spawn_positions = -1
 	supervisors = "absolutely everyone"
 	selection_color = "#dddddd"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -20,10 +20,12 @@ Assistant
 	dresscodecompliant = FALSE
 	always_can_respawn_as = TRUE
 	threat = 0.2
-	
+
 	family_heirlooms = list(
 		/obj/item/storage/toolbox/mechanical/old/heirloom,
-		/obj/item/clothing/gloves/cut/family
+		/obj/item/clothing/gloves/cut/family,
+		/obj/item/lighter,
+		/obj/item/lighter/greyscale
 	)
 
 /datum/job/assistant/get_access()

@@ -24798,10 +24798,10 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/command)
 "aVb" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/command)
 "aVc" = (
 /obj/effect/turf_decal/tile/red{
@@ -25139,13 +25139,13 @@
 "aWa" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/command)
 "aWb" = (
 /obj/structure/statue/sandstone/venus{
 	desc = "Lady Greytide. Her bored expression is a similar one to the many assistants that won't gain all access just beside her."
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/command)
 "aWc" = (
 /obj/structure/cable{
@@ -25258,7 +25258,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aWl" = (
 /obj/structure/disposalpipe/segment,
@@ -25770,7 +25770,7 @@
 "aXj" = (
 /obj/structure/flora/tree/palm,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aXq" = (
 /turf/open/floor/plasteel/dark,
@@ -25806,7 +25806,7 @@
 /area/medical/morgue)
 "aXt" = (
 /obj/structure/flora/junglebush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aXu" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -26250,12 +26250,12 @@
 /area/medical/genetics)
 "aYq" = (
 /obj/structure/flora/tree/palm,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aYs" = (
 /obj/structure/flora/ausbushes/brflowers,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "aYt" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -27994,7 +27994,7 @@
 "bbV" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bbW" = (
 /obj/effect/turf_decal/stripes/red/corner{
@@ -29657,7 +29657,7 @@
 /turf/closed/wall,
 /area/medical/genetics/cloning)
 "bfl" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bfm" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -30306,14 +30306,14 @@
 /area/science/lab)
 "bgy" = (
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bgz" = (
 /obj/structure/flora/tree/palm,
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bgA" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
@@ -32963,7 +32963,7 @@
 "bmi" = (
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/command)
 "bmj" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -33383,7 +33383,7 @@
 /area/hallway/primary/fore)
 "bno" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bnp" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -34429,7 +34429,7 @@
 	req_access_txt = "9"
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bqa" = (
 /obj/effect/spawner/lootdrop/maintenance,
@@ -34439,7 +34439,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bql" = (
 /obj/structure/cable{
@@ -35108,7 +35108,7 @@
 "brY" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/library)
 "brZ" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -35801,17 +35801,17 @@
 	name = "Monkey Enclosure";
 	req_access_txt = "9"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bup" = (
 /obj/structure/flora/junglebush,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "buq" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/tree/palm,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bur" = (
 /obj/machinery/light{
@@ -36983,7 +36983,7 @@
 	dir = 8
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bAd" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
@@ -37011,7 +37011,7 @@
 "bAm" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/machinery/light,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bAn" = (
 /obj/structure/closet/secure_closet/medical3,
@@ -38175,7 +38175,7 @@
 /area/command/corporate_showroom)
 "bDG" = (
 /obj/structure/flora/ausbushes/leafybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/library)
 "bDH" = (
 /obj/machinery/door/firedoor,
@@ -38216,7 +38216,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/library)
 "bDQ" = (
 /obj/machinery/computer/security/telescreen/entertainment{
@@ -42612,7 +42612,7 @@
 /area/command/heads_quarters/cmo)
 "bOL" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "bOM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -42674,7 +42674,7 @@
 "bOT" = (
 /obj/machinery/light/small,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "bOU" = (
 /obj/structure/chair/office/light{
@@ -43639,7 +43639,7 @@
 /area/medical/patients_rooms/room_a)
 "bRH" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "bRI" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
@@ -43797,7 +43797,7 @@
 "bSq" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "bSr" = (
 /obj/structure/flora/grass/jungle,
@@ -44078,7 +44078,7 @@
 	dir = 4;
 	light_color = "#d8b1b1"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "bTj" = (
 /obj/structure/flora/stump,
@@ -44487,12 +44487,12 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "bUh" = (
 /obj/structure/flora/rock/jungle,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "bUi" = (
 /obj/effect/turf_decal/stripes/line{
@@ -44650,7 +44650,7 @@
 /turf/open/floor/circuit/green,
 /area/science/robotics/mechbay)
 "bUF" = (
-/obj/machinery/suit_storage_unit/ce,
+/obj/machinery/suit_storage_unit/industrial/ce,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -44825,7 +44825,7 @@
 "bVc" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/machinery/light/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/starboard)
 "bVe" = (
 /obj/effect/landmark/start/ai/secondary,
@@ -48899,7 +48899,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "cgF" = (
-/obj/machinery/suit_storage_unit/atmos,
+/obj/machinery/suit_storage_unit/industrial/atmos,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
@@ -50776,11 +50776,11 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/stalkybush,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "cmO" = (
 /obj/structure/flora/rock,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "cmP" = (
 /obj/structure/flora/junglebush/large,
@@ -50788,7 +50788,7 @@
 	dir = 4;
 	light_color = "#d8b1b1"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "cmT" = (
 /obj/structure/closet/crate,
@@ -51012,7 +51012,7 @@
 /area/engineering/main)
 "cnS" = (
 /obj/structure/flora/ausbushes,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "cnT" = (
 /obj/structure/bodycontainer/morgue,
@@ -51099,7 +51099,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "coi" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
@@ -58887,7 +58887,7 @@
 /obj/structure/sign/warning/electricshock{
 	pixel_y = -32
 	},
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /turf/open/floor/plasteel,
 /area/engineering/storage_shared)
 "cKl" = (
@@ -63236,7 +63236,7 @@
 /area/maintenance/disposal/incinerator)
 "ebs" = (
 /obj/structure/flora/junglebush/large,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "eck" = (
 /obj/structure/table,
@@ -65401,7 +65401,7 @@
 /obj/structure/sign/warning/electricshock{
 	pixel_y = 32
 	},
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -66007,7 +66007,7 @@
 	dir = 8;
 	light_color = "#fff4bc"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "iMM" = (
 /obj/structure/cable/yellow{
@@ -66161,7 +66161,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "iYm" = (
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 26
 	},
@@ -66709,7 +66709,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/break_room)
 "jZq" = (
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /obj/machinery/status_display/ai{
 	pixel_y = -32
 	},
@@ -67753,7 +67753,7 @@
 	dir = 1;
 	light_color = "#cee5d2"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "lSf" = (
 /obj/structure/cable{
@@ -71994,7 +71994,7 @@
 "urx" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/rock/jungle,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/library)
 "urG" = (
 /obj/machinery/shower{

@@ -246,7 +246,7 @@
 	dir = 1
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "bD" = (
 /obj/structure/table/wood/fancy/purple,
@@ -726,7 +726,7 @@
 /area/ruin/space/has_grav/hotel/guestroom)
 "dJ" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "dM" = (
 /obj/structure/cable{
@@ -923,7 +923,7 @@
 /area/ruin/space/has_grav/hotel)
 "eF" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "eI" = (
 /obj/structure/toilet/secret/low_loot{
@@ -1339,7 +1339,7 @@
 /area/ruin/space/has_grav/hotel)
 "gI" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "gK" = (
 /obj/effect/turf_decal/tile/red,
@@ -1608,7 +1608,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "ib" = (
 /obj/structure/sign/barsign{
@@ -1932,7 +1932,7 @@
 /area/ruin/space/has_grav/hotel)
 "jO" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "jR" = (
 /obj/structure/window/reinforced/tinted{
@@ -2458,7 +2458,7 @@
 /area/ruin/space/has_grav/hotel/bar)
 "mf" = (
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "mg" = (
 /obj/machinery/light{
@@ -2685,7 +2685,7 @@
 	},
 /obj/structure/flora/ausbushes,
 /obj/structure/flora/ausbushes/leafybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "nt" = (
 /obj/machinery/conveyor/inverted{
@@ -2716,7 +2716,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/hotel/security)
 "nx" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "nB" = (
 /obj/machinery/vending/wallmed{
@@ -2831,7 +2831,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "of" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -4862,7 +4862,7 @@
 "xV" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "xW" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -5088,7 +5088,7 @@
 	dir = 9
 	},
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "zb" = (
 /obj/machinery/camera{
@@ -5364,7 +5364,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "AB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -5639,7 +5639,7 @@
 "BS" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/tree/jungle/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "BT" = (
 /obj/structure/table/plasmaglass,
@@ -6067,7 +6067,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "DD" = (
 /obj/structure/chair/sofa/corp/corner,
@@ -6453,7 +6453,7 @@
 "Fc" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "Fe" = (
 /obj/structure/table,
@@ -6507,7 +6507,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "Fq" = (
 /obj/structure/table/wood,
@@ -7059,7 +7059,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "HI" = (
 /obj/item/kirbyplants/random,
@@ -7176,7 +7176,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "Ik" = (
 /obj/machinery/food_cart,
@@ -8306,7 +8306,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "NF" = (
 /obj/structure/table,
@@ -8446,7 +8446,7 @@
 	dir = 5
 	},
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "Og" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
@@ -9359,7 +9359,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "SQ" = (
 /obj/effect/turf_decal/tile/red{
@@ -10864,7 +10864,7 @@
 /area/ruin/space/has_grav/hotel)
 "ZJ" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/space/has_grav/hotel)
 "ZK" = (
 /obj/machinery/light{

@@ -1,11 +1,10 @@
 /datum/round_event_control/portal_storm_syndicate
 	name = "Portal Storm: Syndicate Shocktroops"
 	typepath = /datum/round_event/portal_storm/syndicate_shocktroop
-	weight = 2
-	min_players = 15
-	earliest_start = 30 MINUTES
-	category = EVENT_CATEGORY_ENTITIES
-	description = "Syndicate troops pour out of portals."
+	weight = 10
+	min_players = 40
+	earliest_start = 120 MINUTES
+	max_occurrences = 1
 
 /datum/round_event/portal_storm/syndicate_shocktroop
 	boss_types = list(/mob/living/simple_animal/hostile/syndicate/melee/space/stormtrooper = 2)
@@ -15,10 +14,10 @@
 /datum/round_event_control/portal_storm_narsie
 	name = "Portal Storm: Constructs"
 	typepath = /datum/round_event/portal_storm/portal_storm_narsie
-	weight = 0
-	max_occurrences = 0
-	category = EVENT_CATEGORY_ENTITIES
-	description = "Nar'sie constructs pour out of portals."
+	weight = 20
+	min_players = 40
+	earliest_start = 120 MINUTES
+	max_occurrences = 1
 
 /datum/round_event/portal_storm/portal_storm_narsie
 	boss_types = list(/mob/living/simple_animal/hostile/construct/builder = 6)
@@ -66,7 +65,7 @@
 	set waitfor = FALSE
 	sound_to_playing_players('sound/magic/lightning_chargeup.ogg')
 	sleep(80)
-	priority_announce("Massive bluespace anomaly detected en route to [station_name()]. Brace for impact.")
+	priority_announce("Массивная Блюспейс-Аномалия приближается к [station_name()]. Готовьтесь к столкновению с Угрозами Прошлого!")
 	sleep(20)
 	sound_to_playing_players('sound/magic/lightningbolt.ogg')
 

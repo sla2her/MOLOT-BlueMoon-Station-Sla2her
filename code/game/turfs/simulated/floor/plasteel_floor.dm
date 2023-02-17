@@ -83,8 +83,6 @@
 /turf/open/floor/plasteel/airless/solarpanel
 	icon_state = "solarpanel"
 
-
-
 /turf/open/floor/plasteel/freezer
 	icon_state = "freezerfloor"
 /turf/open/floor/plasteel/freezer/airless

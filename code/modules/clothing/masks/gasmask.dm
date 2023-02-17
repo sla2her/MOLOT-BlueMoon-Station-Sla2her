@@ -1,11 +1,12 @@
 /obj/item/clothing/mask/gas
-	name = "gas mask"
+	name = "Gas Mask"
 	desc = "A face-covering mask that can be connected to an air supply. While good for concealing your identity, it isn't good for blocking gas flow." //More accurate
 	icon_state = "gas_alt"
 	clothing_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
 	w_class = WEIGHT_CLASS_NORMAL
 	item_state = "gas_alt"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 100, RAD = 0, FIRE = 0, ACID = 0)
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
@@ -24,18 +25,36 @@
 	if(flavor_adjust && adjustmask(user, TRUE))
 		return TRUE
 
+/obj/item/clothing/mask/gas/atmos
+	name = "Atmospheric Gas Mask"
+	desc = "Improved gas mask utilized by atmospheric technicians. It's flameproof!"
+	icon_state = "gas_atmos"
+	item_state = "gas_atmos"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 100, RAD = 0, FIRE = 20, ACID = 10)
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/mask/gas/atmos/captain
+	name = "Captain's Gas Mask"
+	desc = "Nanotrasen cut corners and repainted a spare atmospheric gas mask, but don't tell anyone."
+	icon_state = "gas_cap"
+	item_state = "gasmask_captain"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
 /obj/item/clothing/mask/gas/glass
-	name = "glass gas mask"
+	name = "Glass Gas Mask"
 	desc = "A face-covering mask that can be connected to an air supply. This one doesn't obscure your face however." //More accurate
 	icon_state = "gas_clear"
 	flags_inv = HIDEEYES
 	flavor_adjust = FALSE
 
+/obj/item/clothing/mask/gas/glass/alt
+	icon_state = "gas_alt2"
+	item_state = "gas_alt2"
 
 // **** Welding gas mask ****
 
 /obj/item/clothing/mask/gas/welding
-	name = "welding mask"
+	name = "Welding Mask"
 	desc = "A gas mask with built-in welding goggles and a face shield. Looks like a skull - clearly designed by a nerd."
 	icon_state = "weldingmask"
 	custom_materials = list(/datum/material/iron=4000, /datum/material/glass=2000)
@@ -59,25 +78,26 @@
 	..()
 	visor_toggling()
 
-
 // ********************************************************************
 
 //Plague Dr suit can be found in clothing/suits/bio.dm
 /obj/item/clothing/mask/gas/plaguedoctor
-	name = "plague doctor mask"
+	name = "Plague Doctor Mask"
 	desc = "A modernised version of the classic design, this mask will not only filter out toxins but it can also be connected to an air supply."
 	icon_state = "plaguedoctor"
 	item_state = "gas_mask"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 2,ENERGY = 2, BOMB = 0, BIO = 75, RAD = 0, FIRE = 0, ACID = 0)
 
 /obj/item/clothing/mask/gas/syndicate
-	name = "syndicate mask"
+	name = "Syndicate Mask"
 	desc = "A close-fitting tactical mask that can be connected to an air supply."
 	icon_state = "syndicate"
 	strip_delay = 60
+	item_state = "syndicate_gasmask"
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/clothing/mask/gas/clown_hat
-	name = "clown wig and mask"
+	name = "Clown Wig and Mask"
 	desc = "A true prankster's facial attire. A clown is incomplete without his wig and mask."
 	clothing_flags = ALLOWINTERNALS
 	icon_state = "clown"

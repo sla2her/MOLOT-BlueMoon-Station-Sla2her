@@ -267,13 +267,14 @@
 		pipe_overlay.color = col
 		PIPING_LAYER_SHIFT(pipe_overlay, piping_layer)
 
-/obj/machinery/atmospherics/on_construction(obj_color, set_layer)
+/obj/machinery/atmospherics/on_construction(obj_color, set_layer, set_level)
 	if(can_unwrench)
 		add_atom_colour(obj_color, FIXED_COLOUR_PRIORITY)
 		pipe_color = obj_color
 	setPipingLayer(set_layer)
 	var/turf/T = get_turf(src)
-	level = T.intact ? 2 : 1
+	if(set_level) level = set_level
+	else level = T.intact ? 2 : 1
 	atmosinit()
 	var/list/nodes = pipeline_expansion()
 	for(var/obj/machinery/atmospherics/A in nodes)

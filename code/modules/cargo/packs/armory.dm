@@ -161,19 +161,20 @@
 	desc = "Hello Comrade, we have the most modern Russian military equipment the black market can offer, for the right price of course. Sadly we couldn't remove the lock so it requires Armory access to open."
 	cost = 7500
 	contraband = TRUE
-	contains = list(/obj/item/reagent_containers/food/snacks/rationpack,
+	contains = list(/obj/effect/spawner/lootdrop/mre = 3,
 					/obj/item/clothing/suit/armor/vest/russian,
-					/obj/item/clothing/head/helmet/rus_helmet,
+					/obj/item/clothing/suit/armor/vest/russian_coat,
 					/obj/item/clothing/shoes/russian,
 					/obj/item/clothing/gloves/tackler/combat/insulated,
 					/obj/item/clothing/under/syndicate/rus_army,
 					/obj/item/clothing/under/costume/soviet,
 					/obj/item/clothing/mask/russian_balaclava,
-					/obj/item/clothing/head/helmet/rus_ushanka,
-					/obj/item/clothing/suit/armor/vest/russian_coat,
+					/obj/item/clothing/head/ushanka/soviet,
+					/obj/item/clothing/head/ushanka/soviet,
+					/obj/item/clothing/head/helmet/rus_helmet,
 					/obj/effect/spawner/bundle/crate/mosin,
-					/obj/item/storage/toolbox/ammo,
 					/obj/effect/spawner/bundle/crate/surplusrifle,
+					/obj/item/storage/toolbox/ammo,
 					/obj/item/storage/toolbox/ammo/surplus)
 	crate_name = "surplus military crate"
 	crate_type = /obj/structure/closet/crate/secure/soviet

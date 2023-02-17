@@ -16,7 +16,7 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 50, BIO = 0, RAD = 0, FIRE = 80, ACID = 80)
 	attack_speed = CLICK_CD_MELEE
 
-	var/stamina_loss_amount = 35
+	var/stamina_loss_amount = 45
 	var/turned_on = FALSE
 	var/armor_pen = 100
 	var/knockdown = TRUE
@@ -228,6 +228,8 @@
 	L.apply_effect(EFFECT_STUTTER, stamina_loss_amount)
 	SEND_SIGNAL(L, COMSIG_LIVING_MINOR_SHOCK)
 	if(user)
+		L.Jitter(25)
+		L.Dizzy(25)
 		L.set_last_attacker(user)
 		L.visible_message("<span class='danger'>[user] has [shoved ? "brutally stunned" : "stunned"] [L] with [src]!</span>", \
 								"<span class='userdanger'>[user] has [shoved ? "brutally stunnned" : "stunned"] you with [src]!</span>")

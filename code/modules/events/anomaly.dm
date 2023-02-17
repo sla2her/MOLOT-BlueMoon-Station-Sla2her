@@ -2,11 +2,9 @@
 	name = "Anomaly: Energetic Flux"
 	typepath = /datum/round_event/anomaly
 
-	min_players = 1
-	max_occurrences = 0 //This one probably shouldn't occur! It'd work, but it wouldn't be very fun.
-	weight = 15
-	category = EVENT_CATEGORY_ANOMALIES
-	description = "This anomaly shocks and explodes. This is the base type."
+	min_players = 10
+	max_occurrences = 1 //This one probably shouldn't occur! It'd work, but it wouldn't be very fun.
+	weight = 4
 
 /datum/round_event/anomaly
 	var/area/impact_area
@@ -47,7 +45,7 @@
 		CRASH("Anomaly : No valid turfs found for [impact_area] - [impact_area.type]")
 
 /datum/round_event/anomaly/announce(fake)
-	priority_announce("Localized energetic flux wave detected on long range scanners. Expected location of impact: [impact_area.name].", "Anomaly Alert", has_important_message = TRUE)
+	priority_announce("Обнаружена волна энергетических потоков на сканерах большой дальности. Ожидаемое место столкновения: [impact_area.name].", "Аномальная тревога", has_important_message = TRUE)
 
 /datum/round_event/anomaly/start()
 	var/list/turf/valid = list()

@@ -7,8 +7,42 @@
 					"<span class='userdanger'>You block the attack!</span>")
 		return TRUE
 
+/obj/item/melee
+	var/hole = CUM_TARGET_VAGINA
+
+/obj/item/melee/CtrlShiftClick(mob/living/carbon/human/user as mob)
+	hole = hole == CUM_TARGET_VAGINA ? CUM_TARGET_ANUS : CUM_TARGET_VAGINA
+	to_chat(user, span_notice("Я целюсь в...  \the [hole]."))
+
+/obj/item/melee/attack(mob/living/target, mob/living/user)
+	user.DelayNextAction()
+	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP)
+		do_eblya(target, user)
+	return ..()
+
+/obj/item/melee/proc/do_eblya(mob/living/target, mob/living/user)
+	var/message = ""
+	var/lust_amt = 0
+	if(ishuman(target) && (target?.client?.prefs?.toggles & VERB_CONSENT))
+		if(user.zone_selected == BODY_ZONE_PRECISE_GROIN)
+			switch(hole)
+				if(CUM_TARGET_VAGINA)
+					if(target.has_vagina(REQUIRE_EXPOSED))
+						message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою киску.", "запихивает '\the [src]' в свою киску", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в киску с помощью '\the [src]'.", "засовывает '\the [src]' прямо в киску <b>[target]</b>.")
+						lust_amt = NORMAL_LUST
+				if(CUM_TARGET_ANUS)
+					if(target.has_anus(REQUIRE_EXPOSED))
+						message = (user == target) ? pick("крепко обхватывает '\the [src]' и начинает пихать это прямо в свою попку.","запихивает '\the [src]' прямо в свою собственную попку.", "постанывает и садится на '\the [src]'.") : pick("трахает <b>[target]</b> прямо в попку '\the [src]'.", "активно суёт '\the [src]' прямо в попку <b>[target]</b>.")
+						lust_amt = NORMAL_LUST
+	if(message)
+		user.visible_message(span_lewd("<b>[user]</b> [message]"))
+		target.handle_post_sex(lust_amt, null, user)
+		playsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
+							'modular_sand/sound/interactions/bang5.ogg',
+							'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
+
 /obj/item/melee/chainofcommand
-	name = "chain of command"
+	name = "Chain Of Command"
 	desc = "A tool used by great men to placate the frothing masses."
 	icon_state = "chain"
 	item_state = "chain"
@@ -31,7 +65,7 @@
 	return (OXYLOSS)
 
 /obj/item/melee/synthetic_arm_blade
-	name = "synthetic arm blade"
+	name = "Synthetic Arm Blade"
 	desc = "A grotesque blade that on closer inspection seems made of synthetic flesh, it still feels like it would hurt very badly as a weapon."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "arm_blade"
@@ -51,7 +85,7 @@
 	AddComponent(/datum/component/butchering, 60, 80) //very imprecise
 
 /obj/item/melee/sabre
-	name = "officer's sabre"
+	name = "Officer's Sabre"
 	desc = "An elegant weapon, its monomolecular edge is capable of cutting through flesh and bone with ease."
 	icon_state = "sabre"
 	item_state = "sabre"
@@ -156,7 +190,7 @@
 	REMOVE_TRAIT(src, TRAIT_NODROP, SABRE_SUICIDE_TRAIT)
 
 /obj/item/melee/rapier
-	name = "plastitanium rapier"
+	name = "Plastitanium Rapier"
 	desc = "A thin blade made of plastitanium with a diamond tip. It appears to be coated in a persistent layer of an unknown substance."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "rapier"
@@ -388,7 +422,7 @@
 			return DISCARD_LAST_ACTION
 
 /obj/item/melee/classic_baton/telescopic
-	name = "telescopic baton"
+	name = "Telescopic Baton"
 	desc = "A compact yet robust personal defense weapon. Can be concealed when folded."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "telebaton_0"
@@ -482,7 +516,7 @@
 	item_flags = NONE
 	force = 5
 	cooldown = 20
-	stam_dmg = 45	//4 hit stamcrit
+	stam_dmg = 80
 	affect_silicon = TRUE
 	on_sound = 'sound/weapons/contractorbatonextend.ogg'
 	on_stun_sound = 'sound/effects/contractorbatonhit.ogg'
@@ -498,7 +532,8 @@
 	return "<span class='danger'>The baton is still charging!</span>"
 
 /obj/item/melee/classic_baton/telescopic/contractor_baton/additional_effects_carbon(mob/living/target, mob/living/user)
-	target.Jitter(20)
+	target.Jitter(25)
+	target.stuttering = 25
 	target.apply_effect(EFFECT_STUTTER, 20)
 	target.apply_status_effect(/datum/status_effect/electrostaff, 30)	//knockdown, disarm, and slowdown, the unholy triumvirate of stam combat
 
@@ -607,6 +642,8 @@
 	if(ishuman(target) && proximity_flag)
 		var/mob/living/carbon/human/H = target
 		H.drop_all_held_items()
+		H.Jitter(50)
+		H.stuttering = 50
 		H.visible_message("<span class='danger'>[user] disarms [H]!</span>", "<span class='userdanger'>[user] disarmed you!</span>")
 
 /obj/item/melee/roastingstick

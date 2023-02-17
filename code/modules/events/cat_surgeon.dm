@@ -1,14 +1,12 @@
 /datum/round_event_control/cat_surgeon
-	name = "Cat Surgeon"
-	typepath = /datum/round_event/cat_surgeon
-	max_occurrences = 1
-	weight = 5
-	category = EVENT_CATEGORY_ENTITIES
-	description = "Spawns a crazy surgeon ready to perverse things with the crew."
+    name = "Cat Surgeon"
+    typepath = /datum/round_event/cat_surgeon
+    max_occurrences = 2
+    weight = 30
 
 /datum/round_event/cat_surgeon/announce(fake)
-	priority_announce("One of our... ahem... 'special' cases has escaped. As it happens their last known location before their tracker went dead is your station so keep an eye out for them. On an unrelated note, has anyone seen our cats?",
-	sender_override = "Nanotrasen Psych Ward", has_important_message = TRUE)
+	priority_announce("Один из наших... кхм... особых заключённых сбежал. Так получилось, что его последнее известное местонахождение до того, как их маячок заглох, - это ваша станция, так что будьте осторожней и остерегайтесь Технических Тоннелей. И еще... никто не видел наших кошек?",
+	sender_override = "Психиатрический Отдел Nanotrasen", has_important_message = TRUE)
 
 /datum/round_event/cat_surgeon/start()
 	var/list/spawn_locs = list()

@@ -50,7 +50,9 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 
 	flags_1 = CONDUCT_1
+	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT
+	item_flags = SURGICAL_TOOL
 	force = 8
 
 	var/max_uses = 20
@@ -259,14 +261,14 @@
 			if(!proximity && bluespace_toggle)
 				// Set variable for target light
 				var/obj/machinery/light/target = A
-				
+
 				// Check light status before playing effects
 				if(target.status != LIGHT_OK)
 					// Display RPED beam
 					U.Beam(A, icon_state = "rped_upgrade", time = 1 SECONDS)
 
 					// Play RPED sound
-					playsound(src, 'sound/items/pshoom.ogg', 40, 1)		
+					playsound(src, 'sound/items/pshoom.ogg', 40, 1)
 
 			ReplaceLight(A, U)
 

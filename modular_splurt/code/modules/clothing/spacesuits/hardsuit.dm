@@ -6,18 +6,10 @@
 		mob_overlay_icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
 		anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/suit_digi.dmi'
 
-/obj/item/clothing/suit/space/hardsuit/engine
-	icon = 'modular_splurt/icons/obj/clothing/suits.dmi'
-	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
-	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/suit_digi.dmi'
-
 /obj/item/clothing/head/helmet/space/hardsuit/Initialize()
 	. = ..()
 	if(type == /obj/item/clothing/head/helmet/space/hardsuit)
 		mob_overlay_icon = 'modular_splurt/icons/mob/clothing/head.dmi'
-
-/obj/item/clothing/head/helmet/space/hardsuit/engine
-	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/head.dmi'
 
 //Own stuff
 /obj/item/clothing/head/helmet/space/hardsuit/rd/hev
@@ -72,6 +64,27 @@
 			SEND_SOUND(user, sound('modular_splurt/sound/halflife/hevsuit_firstpickup.ogg', volume = 50))
 			SEND_SOUND(user, sound('modular_splurt/sound/halflife/anomalous_materials.ogg', volume = 50))
 	return
+
+/obj/item/clothing/head/helmet/space/hardsuit/rd/hev/cosmetic
+	resistance_flags = null
+	max_heat_protection_temperature = null
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0)
+	actions_types = list()
+
+/obj/item/clothing/suit/space/hardsuit/rd/hev/cosmetic
+	resistance_flags = null
+	max_heat_protection_temperature = null
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/gun/energy/wormhole_projector, /obj/item/hand_tele, /obj/item/aicard)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/rd/hev/cosmetic
+	actions_types = list(/datum/action/item_action/toggle_helmet, /datum/action/item_action/toggle_cool_music)
+	firstpickup = list('modular_splurt/sound/halflife/hevsuit_pickup.ogg')
+
+/obj/item/clothing/suit/space/hardsuit/rd/hev/cosmetic/Initialize()
+	. = ..()
+
+/obj/item/clothing/suit/space/hardsuit/rd/hev/cosmetic/equipped(slot)
+	. = ..()
 
 /obj/item/clothing/suit/space/hardsuit/shielded/goldenpa
 	name = "Nanotrasen Power Armor"
@@ -157,9 +170,9 @@
 			var/datum/effect_system/spark_spread/sparks = new /datum/effect_system/spark_spread
 			sparks.set_up(1, 1, src)
 			sparks.start()
-			owner.visible_message(span_danger("The tesla capacitors on [owner]'s Tesla Power Armor are still recharging! The armor merely emits some sparks."))
+			owner.visible_message("<span class='danger'>The tesla capacitors on [owner]'s Tesla Power Armor are still recharging! The armor merely emits some sparks.</span>")
 			return
-		owner.visible_message(span_danger("[src] blocks [attack_text], sending out arcs of lightning!"))
+		owner.visible_message("<span class='danger'>[src] blocks [attack_text], sending out arcs of lightning!</span>")
 		if(!legacy)
 			tesla_zap(owner, tesla_range, tesla_power, tesla_flags)
 		else

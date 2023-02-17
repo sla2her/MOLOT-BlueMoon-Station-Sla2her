@@ -3,6 +3,7 @@
 	name = "bio hood"
 	icon_state = "bio"
 	desc = "A hood that protects the head and face from biological contaminants."
+	dynamic_hair_suffix = ""
 	permeability_coefficient = 0.01
 	clothing_flags = THICKMATERIAL | BLOCK_GAS_SMOKE_EFFECT
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 100, RAD = 60, FIRE = 30, ACID = 100)

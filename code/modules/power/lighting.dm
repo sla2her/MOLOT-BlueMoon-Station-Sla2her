@@ -196,7 +196,7 @@
 	var/static_power_used = 0
 	var/brightness = 9			// luminosity when on, also used in power calculation
 	var/bulb_power = 0.75			// basically the alpha of the emitted light source
-	var/bulb_colour = "#FFF6ED"	// befault colour of the light.
+	var/bulb_colour = "#dcdeff"	// befault colour of the light.
 	var/status = LIGHT_OK		// LIGHT_OK, _EMPTY, _BURNED or _BROKEN
 	var/flickering = FALSE
 	var/light_type = /obj/item/light/tube		// the type of light item
@@ -223,6 +223,38 @@
 	var/bulb_emergency_pow_min = 0.5	// the minimum value for the light's power in emergency mode
 	var/hijacked = FALSE	// if true, the light is in a hijacked area
 
+/obj/machinery/light/directional/north //Pixel offsets get overwritten on New()
+	dir = SOUTH
+	pixel_y = 28
+
+/obj/machinery/light/directional/south
+	dir = NORTH
+	pixel_y = -28
+
+/obj/machinery/light/directional/east
+	dir = WEST
+	pixel_x = 28
+
+/obj/machinery/light/directional/west
+	dir = EAST
+	pixel_x = -28
+
+/obj/machinery/light/dim/directional/north //Pixel offsets get overwritten on New()
+	dir = SOUTH
+	pixel_y = 28
+
+/obj/machinery/light/dim/directional/south
+	dir = NORTH
+	pixel_y = -28
+
+/obj/machinery/light/dim/directional/east
+	dir = WEST
+	pixel_x = 28
+
+/obj/machinery/light/dim/directional/west
+	dir = EAST
+	pixel_x = -28
+
 /obj/machinery/light/broken
 	status = LIGHT_BROKEN
 	icon_state = "tube-broken"
@@ -238,6 +270,18 @@
 	bulb_colour = "#FFDDBB"
 	desc = "A small lighting fixture."
 	light_type = /obj/item/light/bulb
+
+/obj/machinery/light/small/directional/north //Pixel offsets get overwritten on New()
+	dir = NORTH
+
+/obj/machinery/light/small/directional/south
+	dir = SOUTH
+
+/obj/machinery/light/small/directional/east
+	dir = EAST
+
+/obj/machinery/light/small/directional/west
+	dir = WEST
 
 /obj/machinery/light/small/broken
 	status = LIGHT_BROKEN

@@ -762,7 +762,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/effect/landmark/xmastree,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "acc" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2920,6 +2920,9 @@
 /obj/item/poster/random_contraband,
 /obj/item/clothing/suit/armor/navyblue/russian,
 /obj/item/grenade/plastic/c4,
+/obj/effect/spawner/lootdrop/armory_contraband,
+/obj/effect/spawner/lootdrop/armory_contraband,
+/obj/effect/spawner/lootdrop/armory_contraband,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "aid" = (
@@ -16444,7 +16447,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aQv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -16976,7 +16979,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aRE" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -16988,7 +16991,7 @@
 	dir = 1;
 	pixel_y = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aRF" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -17004,7 +17007,7 @@
 	dir = 4;
 	layer = 2.9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aRG" = (
 /obj/structure/rack,
@@ -17326,11 +17329,11 @@
 	dir = 8
 	},
 /mob/living/simple_animal/butterfly,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aSw" = (
 /obj/item/statuebust,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aSx" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -17342,7 +17345,7 @@
 	dir = 4;
 	layer = 2.9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aSz" = (
 /obj/structure/cable{
@@ -17848,7 +17851,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aTL" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -17857,7 +17860,7 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/palebush,
 /obj/structure/window/reinforced,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aTM" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -17870,7 +17873,7 @@
 	dir = 4;
 	layer = 2.9
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/hallway/secondary/exit/departure_lounge)
 "aTO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -26630,16 +26633,16 @@
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bos" = (
 /obj/structure/flora/junglebush/large,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bot" = (
 /obj/structure/flora/junglebush,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bou" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -27164,12 +27167,12 @@
 "bpv" = (
 /obj/structure/flora/junglebush,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bpw" = (
 /obj/structure/flora/grass/jungle,
 /obj/item/reagent_containers/food/snacks/grown/banana,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bpx" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -27180,7 +27183,7 @@
 /obj/structure/flora/ausbushes/pointybush,
 /obj/structure/flora/junglebush,
 /obj/structure/flora/junglebush/large,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bpy" = (
 /obj/machinery/clonepod,
@@ -27900,14 +27903,14 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bqU" = (
 /obj/structure/sink/puddle,
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_y = 6
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bqV" = (
 /obj/structure/flora/grass/jungle/b,
@@ -27915,7 +27918,7 @@
 	dir = 4
 	},
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bqW" = (
 /obj/machinery/computer/cloning{
@@ -28585,16 +28588,16 @@
 /obj/structure/flora/junglebush,
 /obj/structure/flora/grass/jungle/b,
 /mob/living/simple_animal/butterfly,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bsp" = (
 /obj/item/toy/beach_ball,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bsq" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bsr" = (
 /obj/machinery/dna_scannernew,
@@ -29270,17 +29273,17 @@
 "btR" = (
 /obj/structure/flora/ausbushes/brflowers,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "btS" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "btT" = (
 /obj/structure/flora/junglebush,
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/item/reagent_containers/food/snacks/grown/banana,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "btU" = (
 /obj/item/kirbyplants{
@@ -30366,7 +30369,7 @@
 /area/maintenance/department/engine)
 "bwu" = (
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bwv" = (
 /obj/structure/table,
@@ -31167,7 +31170,7 @@
 "byd" = (
 /obj/structure/flora/junglebush/c,
 /mob/living/carbon/monkey,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bye" = (
 /obj/structure/window/reinforced{
@@ -31177,7 +31180,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "byf" = (
 /obj/structure/table,
@@ -31926,7 +31929,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bzF" = (
 /obj/machinery/door/window/eastleft{
@@ -31934,7 +31937,7 @@
 	req_one_access_txt = "9"
 	},
 /obj/item/reagent_containers/food/snacks/grown/banana,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bzG" = (
 /obj/effect/turf_decal/tile/purple{
@@ -32458,14 +32461,14 @@
 /area/maintenance/department/engine)
 "bAN" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bAO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
 /obj/machinery/light/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bAP" = (
 /obj/structure/window/reinforced{
@@ -32476,7 +32479,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/palebush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bAQ" = (
 /obj/structure/table,
@@ -40519,7 +40522,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/obj/machinery/suit_storage_unit/atmos,
+/obj/machinery/suit_storage_unit/industrial/atmos,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
@@ -40527,7 +40530,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "bSe" = (
-/obj/machinery/suit_storage_unit/atmos,
+/obj/machinery/suit_storage_unit/industrial/atmos,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
@@ -42152,7 +42155,7 @@
 /turf/open/floor/plasteel/dark,
 /area/engineering/engine_smes)
 "bVN" = (
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/industrial,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -42707,7 +42710,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
 "bXf" = (
-/obj/machinery/suit_storage_unit/ce,
+/obj/machinery/suit_storage_unit/industrial/ce,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -45592,12 +45595,12 @@
 	c_tag = "Monastery Garden";
 	network = list("ss13","monastery")
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cgm" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/watermelon/holy,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cgn" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -45654,20 +45657,20 @@
 /turf/open/floor/plating,
 /area/service/chapel/main/monastery)
 "cgH" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cgI" = (
 /mob/living/simple_animal/butterfly,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cgJ" = (
 /obj/item/cultivator,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cgK" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/sugarcane,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cgL" = (
 /obj/structure/closet/cabinet,
@@ -45785,23 +45788,23 @@
 "chi" = (
 /obj/structure/flora/ausbushes/pointybush,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "chj" = (
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "chk" = (
 /obj/structure/sink/puddle,
 /obj/item/reagent_containers/glass/bucket,
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "chl" = (
 /obj/structure/flora/ausbushes/sunnybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "chn" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -45913,7 +45916,7 @@
 "chG" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/wheat,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "chJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -45999,16 +46002,16 @@
 /area/service/chapel/main/monastery)
 "cib" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cic" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cid" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cif" = (
 /obj/effect/turf_decal/stripes/line{
@@ -46104,7 +46107,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "ciF" = (
 /obj/machinery/door/airlock{
@@ -46182,22 +46185,22 @@
 /area/service/chapel/main/monastery)
 "ciS" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "ciT" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/harebell,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "ciV" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "ciW" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "ciX" = (
 /obj/structure/table/wood,
@@ -46273,7 +46276,7 @@
 /obj/machinery/hydroponics/soil,
 /obj/machinery/light/small,
 /obj/item/seeds/poppy,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cjp" = (
 /turf/closed/wall,
@@ -46282,13 +46285,13 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/palebush,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cjr" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cjt" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
@@ -46752,7 +46755,10 @@
 /turf/closed/wall/r_wall,
 /area/tcommsat/computer)
 "clF" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 8;
+	name = "8maintenance loot spawner"
+	},
 /turf/closed/mineral/random/low_chance,
 /area/asteroid/nearstation/bomb_site)
 "clG" = (
@@ -49144,12 +49150,12 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cuo" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cup" = (
 /obj/machinery/hydroponics/soil,
@@ -49157,7 +49163,7 @@
 	dir = 1
 	},
 /obj/item/seeds/watermelon/holy,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cus" = (
 /obj/structure/closet{
@@ -49243,16 +49249,16 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/beebox,
 /obj/item/queen_bee/bought,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cuB" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cuE" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/carrot,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cuG" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -49295,7 +49301,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cuO" = (
 /obj/machinery/hydroponics/soil,
@@ -49303,7 +49309,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cuP" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -49415,7 +49421,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cvc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -49454,24 +49460,24 @@
 "cvg" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cvh" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/poppy,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cvi" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cvj" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/machinery/light/small,
-/turf/open/floor/grass,
+/turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden/monastery)
 "cvk" = (
 /obj/machinery/light/small{
