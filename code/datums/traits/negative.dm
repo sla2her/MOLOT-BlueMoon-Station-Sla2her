@@ -17,13 +17,13 @@
 		quirk_holder.blood_volume -= 0.2
 
 /datum/quirk/depression
-	name = "Depression"
-	desc = "You sometimes just hate life."
+	name = "Депрессия"
+	desc = "Время от времени вы просто ненавидите жизнь."
 	mob_trait = TRAIT_DEPRESSION
 	value = -1
-	gain_text = "<span class='danger'>You start feeling depressed.</span>"
-	lose_text = "<span class='notice'>You no longer feel depressed.</span>" //if only it were that easy!
-	medical_record_text = "Patient has a severe mood disorder, causing them to experience acute episodes of depression."
+	gain_text = "<span class='danger'>У вас начинается депрессия.</span>"
+	lose_text = "<span class='notice'>У вас больше нет депрессии.</span>" //if only it were that easy!
+	medical_record_text = "У пациента наблюдаются серьёзные перепады настроения, вызывающие острые периоды депрессии."
 	mood_quirk = TRUE
 	processing_quirk = TRUE
 
@@ -32,11 +32,11 @@
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "depression", /datum/mood_event/depression)
 
 /datum/quirk/family_heirloom
-	name = "Family Heirloom"
-	desc = "You are the current owner of an heirloom, passed down for generations. You have to keep it safe!"
+	name = "Семейная реликвия"
+	desc = "Вы текущий владелец реликвии, передающейся из поколения в поколение. Её нужно беречь!"
 	value = -1
 	mood_quirk = TRUE
-	medical_record_text = "Patient demonstrates an unnatural attachment to a family heirloom."
+	medical_record_text = "Пациент демонстрирует неестественную привязанность к семейной реликвии."
 	var/obj/item/heirloom
 	var/where
 	processing_quirk = TRUE
@@ -70,9 +70,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 	// Determine and assign item location
 	var/list/slots = list(
-		"in your left pocket" = ITEM_SLOT_LPOCKET,
-		"in your right pocket" = ITEM_SLOT_RPOCKET,
-		"in your backpack" = ITEM_SLOT_BACKPACK
+		"В левом кармане" = ITEM_SLOT_LPOCKET,
+		"В правом кармане" = ITEM_SLOT_RPOCKET,
+		"В рюкзаке" = ITEM_SLOT_BACKPACK
 	)
 	where = human_holder.equip_in_one_of_slots(heirloom, slots, FALSE) || "at your feet"
 
@@ -81,7 +81,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		var/mob/living/carbon/human/H = quirk_holder
 		SEND_SIGNAL(H.back, COMSIG_TRY_STORAGE_SHOW, H)
 
-	to_chat(quirk_holder, "<span class='boldnotice'>There is a precious family [heirloom.name] [where], passed down from generation to generation. Keep it safe!</span>")
+	to_chat(quirk_holder, "<span class='boldnotice'>[where] находится [heirloom.name], передающаяся из поколения в поколение. Береги её!</span>")
 	var/list/family_name = splittext(quirk_holder.real_name, " ")
 	heirloom.name = "\improper [family_name[family_name.len]] family [heirloom.name]"
 
@@ -112,33 +112,33 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	heirloom = data
 
 /datum/quirk/heavy_sleeper
-	name = "Heavy Sleeper"
-	desc = "You sleep like a rock! Whenever you're put to sleep, you sleep for a little bit longer."
+	name = "Крепко спящиц"
+	desc = "Вы спите, как камень! Каждый раз засыпая, вы спите чуть дольше."
 	value = -1
 	mob_trait = TRAIT_HEAVY_SLEEPER
-	gain_text = "<span class='danger'>You feel sleepy.</span>"
-	lose_text = "<span class='notice'>You feel awake again.</span>"
-	medical_record_text = "Patient has abnormal sleep study results and is difficult to wake up."
+	gain_text = "<span class='danger'>Вы чувствуете сонливость.</span>"
+	lose_text = "<span class='notice'>Вы снова чувствуете себя бодрым!.</span>"
+	medical_record_text = "Пациент показал аномальные способности ко сну — его тяжелее разбудить."
 
 /datum/quirk/brainproblems
-	name = "Brain Tumor"
-	desc = "You have a little friend in your brain that is slowly destroying it. Better bring some mannitol!"
+	name = "Опухоль мозга"
+	desc = "В вашей голово есть маленький друг, который медленно разрушает его. Стоит прихвотить с собой маннит!"
 	value = -3
-	gain_text = "<span class='danger'>You feel smooth.</span>"
+	gain_text = "<span class='danger'>You feel smooth.</span>" /// Хз как это перевести 
 	lose_text = "<span class='notice'>You feel wrinkled again.</span>"
-	medical_record_text = "Patient has a tumor in their brain that is slowly driving them to brain death."
+	medical_record_text = "У пациента опухоль, которая постепенно разрушает его мозг."
 	processing_quirk = TRUE
 
 /datum/quirk/brainproblems/on_process()
 	quirk_holder.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.2)
 
 /datum/quirk/nearsighted //t. errorage
-	name = "Nearsighted"
-	desc = "You are nearsighted without prescription glasses, but spawn with a pair."
+	name = "Близорукость"
+	desc = "Вы близорукий без выписанных очков, но появляетесь с ними."
 	value = -1
-	gain_text = "<span class='danger'>Things far away from you start looking blurry.</span>"
-	lose_text = "<span class='notice'>You start seeing faraway things normally again.</span>"
-	medical_record_text = "Patient requires prescription glasses in order to counteract nearsightedness."
+	gain_text = "<span class='danger'>Вещи вдали от вас расплываются.</span>"
+	lose_text = "<span class='notice'>Ваше зрение снова стало нормальным.</span>"
+	medical_record_text = "Для того, чтобы бороться с близорукость, пациенту требуются выписанные очки."
 
 /datum/quirk/nearsighted/add()
 	quirk_holder.become_nearsighted(ROUNDSTART_TRAIT)
