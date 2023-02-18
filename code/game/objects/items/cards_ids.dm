@@ -460,24 +460,6 @@
 	name = "Agent Card"
 	icon_state = "card_black"
 
-/obj/item/card/id/syndicate/advanced/prisoner
-	name = "Agent Card"
-	icon_state = "card_ds2prisoner"
-
-/obj/item/card/id/syndicate/advanced/black
-	name = "Agent Card"
-	icon_state = "card_black"
-
-/obj/item/card/id/syndicate/advanced/black/command
-	name = "Agent Card"
-	icon_state = "card_black"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
-
-/obj/item/card/id/syndicate/advanced/black/gold
-	name = "Agent Card"
-	icon_state = "gold"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
-
 /obj/item/card/id/syndicate/Initialize(mapload)
 	. = ..()
 	var/datum/action/item_action/chameleon/change/chameleon_action = new(src)

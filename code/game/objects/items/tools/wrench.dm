@@ -39,12 +39,43 @@
 /obj/item/wrench/combat
 	name = "combat wrench"
 	desc = "It's like a normal wrench but edgier. Can be found on the battlefield."
+	icon = 'icons/obj/tools.dmi'
 	icon_state = "wrench_combat"
 	item_state = "wrench_combat"
 	attack_verb_continuous = list("devastates", "brutalizes", "commits a war crime against", "obliterates", "humiliates")
 	attack_verb_simple = list("devastate", "brutalize", "commit a war crime against", "obliterate", "humiliate")
 	tool_behaviour = null
 	toolspeed = null
+
+/obj/item/wrench/combat/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/transforming, \
+		force_on = 10, \
+		throwforce_on = 15, \
+		hitsound_on = hitsound, \
+		w_class_on = WEIGHT_CLASS_NORMAL, \
+		clumsy_check = FALSE)
+	RegisterSignal(src, COMSIG_TRANSFORMING_ON_TRANSFORM, PROC_REF(on_transform))
+
+/*
+ * Signal proc for [COMSIG_TRANSFORMING_ON_TRANSFORM].
+ *
+ * Gives it wrench behaviors when active.
+ */
+/obj/item/wrench/combat/proc/on_transform(obj/item/source, mob/user, active)
+	SIGNAL_HANDLER
+
+	if(active)
+		tool_behaviour = TOOL_WRENCH
+		toolspeed = 1
+	else
+		tool_behaviour = initial(tool_behaviour)
+		toolspeed = initial(toolspeed)
+
+	balloon_alert(user, "[name] [active ? "active, woe!":"restrained"]")
+	playsound(user ? user : src, active ? 'sound/weapons/saberon.ogg' : 'sound/weapons/saberoff.ogg', 5, TRUE)
+	return COMPONENT_NO_DEFAULT_MESSAGE
+
 
 /obj/item/wrench/brass
 	name = "brass wrench"
