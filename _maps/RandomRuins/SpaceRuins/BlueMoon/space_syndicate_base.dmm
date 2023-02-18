@@ -11364,7 +11364,7 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "YC" = (
 /obj/machinery/air_sensor{
-	id = "syndieincinerator"
+	id_tag = "syndieincinerator"
 	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
