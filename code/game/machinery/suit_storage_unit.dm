@@ -256,11 +256,11 @@
 
 	if (!items)
 		items = list(
-			"suit" = create_silhouette_of(/obj/item/clothing/suit/space/eva),
-			"helmet" = create_silhouette_of(/obj/item/clothing/head/helmet/space/eva),
-			"mask" = create_silhouette_of(/obj/item/clothing/mask/breath),
+			"suit" = create_silhouette_of(/obj/item/clothing/suit/space),
+			"helmet" = create_silhouette_of(/obj/item/clothing/head/helmet/space),
+			"mask" = create_silhouette_of(/obj/item/clothing/mask),
 			"shoes" = create_silhouette_of(/obj/item/clothing/shoes),
-			"storage" = create_silhouette_of(/obj/item/tank/internals/oxygen),
+			"storage" = create_silhouette_of(/obj/item),
 		)
 
 	. = ..()
