@@ -27,7 +27,7 @@
 	AddComponent(/datum/action/item_action/toggle_hood)
 
 /obj/item/clothing/head/hats/warden/syndicate
-	name = "master at arms' police hat"
+	name = "Master At Arms' Police Hat"
 	desc = "A fashionable police cap emblazoned with a golden badge, issued to the Master at Arms. Protects the head from impacts."
 	icon = 'icons/obj/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/head.dmi'
@@ -114,26 +114,26 @@
 	desc = "A pair of spiffy overalls with a turtleneck underneath, this one is a skirt instead, breezy."
 	icon_state = "syndicate_overallskirt"
 	dying_key = DYE_REGISTRY_JUMPSKIRT
-	mutantrace_variation = STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_NO_ANTHRO_ICON|DIGITIGRADE
 
 /obj/item/clothing/head/maidheadband/syndicate
-	name = "tactical maid headband"
+	name = "Tactical Maid Headband"
 	desc = "Tacticute."
 	icon_state = "syndimaid_headband"
 	icon = 'icons/obj/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/head.dmi'
 
 /obj/item/clothing/gloves/combat/maid
-	name = "combat maid sleeves"
+	name = "Combat Maid Sleeves"
 	desc = "These 'tactical' gloves and sleeves are fireproof and electrically insulated. Warm to boot."
 	icon_state = "syndimaid_arms"
 
 /obj/item/clothing/under/syndicate/maid
-	name = "tactical maid outfit"
+	name = "Tactical Maid outfit"
 	desc = "A 'tactical' skirtleneck fashioned to the likeness of a maid outfit. Why the Syndicate has these, you'll never know."
 	icon_state = "syndimaid"
 	dying_key = DYE_REGISTRY_JUMPSKIRT
-	mutantrace_variation = STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_NO_ANTHRO_ICON|DIGITIGRADE
 
 /obj/item/clothing/under/syndicate/bluemoon/maid/Initialize(mapload)
 	. = ..()

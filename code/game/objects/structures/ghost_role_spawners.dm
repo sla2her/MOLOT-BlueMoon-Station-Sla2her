@@ -1095,10 +1095,11 @@
 
 //DS-2.
 /obj/effect/mob_spawn/human/ds2
-	name = "DS2 personnel"
-	mob_name = "DS2 personnel"
-	flavour_text = "You are a syndicate operative, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Unfortunately, your hated enemy, Nanotrasen, has begun mining in this sector. Continue operating as best you can, and try to keep a low profile."
+	name = "DS-2 personnel"
+	mob_name = "DS-2 personnel"
+	short_desc = "Вы Специалист Синдиката, работающий на Общем Корабле Синдиката из ячейки 'Глубокий Космос Два' под названием 'Благославлённый' под Начальством Адмирала одной из Сторон и изучающий аномальное поле Системы Синих Лун."
+	flavour_text = "Синдикат счел нужным направить передовую оперативную базу в Сектор Тринадцать для наблюдения за операциями NT и Кордоном. Ваш приказ - поддерживать целостность корабля и по возможности не высовываться."
+	important_info = "Вы не Антагонист, но вы можете помогать Станции и тем более с одобрения Администрации."
 	roundstart = FALSE
 	death = FALSE
 	random = TRUE
@@ -1108,9 +1109,9 @@
 /obj/effect/mob_spawn/human/ds2/prisoner
 	name = "Syndicate Prisoner"
 	mob_name = "a Syndicate prisoner"
-	flavour_text = "You are a syndicate prisoner aboard an unknown ship."
-	flavour_text = "Unaware of where you are, all you know is you are a prisoner. The plastitanium should clue you into who your captors are... as for why you're here? That's for you to know, and for us to find out."
-	important_info = "You are still subject to standard prisoner policy and must Adminhelp before antagonizing DS2."
+	short_desc = "По какой-то причине вы оказались в тюремной части Корабля 'Благославлённый' с неизвестным сроком."
+	flavour_text = "Не осознавая, где вы находитесь, вы знаете только то, что вы в плену. Что касается того, почему вы здесь? Ваша голова раскалывается и вы просто не помните..."
+	important_info = "Вы все еще подчиняетесь стандартной политике заключенных и должны обратиться к администратору, прежде чем враждовать с DS2."
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	outfit = /datum/outfit/ds2/prisoner
@@ -1120,9 +1121,9 @@
 	mob_name = "a Syndicate operative"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
-	flavour_text = "You are an operative of the Sothran Syndicate terrorist cell, employed onboard the Deep Space 2 FOB for reasons that are yours."
-	flavour_text = "The Sothran Syndicate has found it fit to send a forward operating base to Sector 13 to monitor NT's operations. Your orders are maintaining the ship's integrity and keeping a low profile as well as possible."
-	important_info = "You are not an antagonist. Adminhelp before antagonizing station crew."
+	short_desc = "Вы Специалист Синдиката, работающий на Оперативной Базе Синдиката из формирования 'Глубокий Космос Два' под названием 'Благославлённый' под Начальством Адмирала одной из Сторон и изучающий аномальное поле Системы Синих Лун."
+	flavour_text = "Синдикат счел нужным направить передовую оперативную базу в Сектор Тринадцать для наблюдения за операциями NT и Кордоном. Ваш приказ - поддерживать целостность корабля и по возможности не высовываться."
+	important_info = "Вы не Антагонист, но вы можете помогать Станции и тем более с одобрения Администрации."
 	outfit = /datum/outfit/ds2/syndicate
 
 /obj/effect/mob_spawn/human/ds2/syndicate_command
@@ -1130,9 +1131,9 @@
 	mob_name = "a Syndicate leader"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
-	flavour_text = "You are a command operative of the Sothran Syndicate terrorist cell, employed onboard the Deep Space 2 FOB to guide it forward in its goals."
-	flavour_text = "The Sothran Syndicate has found it fit to send you to help command the forward operating base in Sector 13. Your orders are commanding the crew of DS-2 while keeping a low profile as well as possible."
-	important_info = "Keep yourself to the same standards as Command Policy. You are not an antagonist and must Adminhelp before antagonizing station crew."
+	short_desc = "Вы Адмирал одной из ячеек Синдиката, работающий на Корабле Синдиката из ячейки 'Глубокий Космос Два' под названием 'Благославлённый'. Приведите Объект под вашей ответственностью к успеху, который планировался, либо умрите - стараясь."
+	flavour_text = "Синдикат счел нужным направить передовую оперативную базу в Сектор Тринадцать для наблюдения за операциями NT и Кордоном. Ваш приказ - поддерживать целостность корабля и по возможности не высовываться."
+	important_info = "Вы не Антагонист, но вы можете помогать Станции и тем более с одобрения Администрации."
 	outfit = /datum/outfit/ds2/syndicate_command
 
 /obj/effect/mob_spawn/human/ds2/syndicate/special(mob/living/new_spawn)

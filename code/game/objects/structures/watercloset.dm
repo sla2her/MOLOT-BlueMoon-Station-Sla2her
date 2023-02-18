@@ -264,20 +264,16 @@
 	var/datum/looping_sound/showering/soundloop
 
 /obj/machinery/shower/directional/north //Pixel offsets get overwritten on New()
-	dir = SOUTH
-	pixel_y = 28
+	dir = NORTH
 
 /obj/machinery/shower/directional/south
-	dir = NORTH
-	pixel_y = -28
+	dir = SOUTH
 
 /obj/machinery/shower/directional/east
-	dir = WEST
-	pixel_x = 28
+	dir = EAST
 
 /obj/machinery/shower/directional/west
-	dir = EAST
-	pixel_x = -28
+	dir = WEST
 
 /obj/machinery/shower/Initialize(mapload)
 	. = ..()

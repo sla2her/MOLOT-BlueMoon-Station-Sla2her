@@ -318,7 +318,7 @@
 	dir = 1
 	},
 /obj/machinery/quantumpad{
-	map_pad_id = "interdyne";
+	map_pad_id = "ds1";
 	map_pad_link_id = "ds2";
 	name = "quantum pad to DS-2"
 	},
@@ -6970,14 +6970,6 @@
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/aviators{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/aviators{
-	pixel_x = -5;
-	pixel_y = -5
 	},
 /obj/item/clothing/glasses/hud/security/sunglasses/aviators,
 /obj/item/clothing/glasses/hud/security/sunglasses{
