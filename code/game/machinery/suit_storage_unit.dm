@@ -240,6 +240,7 @@
 	helmet = null
 	suit = null
 	mask = null
+	shoes = null
 	storage = null
 	occupant = null
 
