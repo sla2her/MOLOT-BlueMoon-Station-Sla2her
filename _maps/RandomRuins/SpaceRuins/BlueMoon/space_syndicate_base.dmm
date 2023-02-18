@@ -894,10 +894,7 @@
 "dv" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/curtain{
-	color = "#555555";
-	icon_state = "bathroom-open";
-	id = "DS2cell2";
-	icon_type = "bathroom"
+	color = "#555555"
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
@@ -1305,7 +1302,7 @@
 /mob/living/simple_animal/bot/medbot/catmedbot{
 	radio_channel = "150";
 	faction = list("150");
-	maints_access_required = list("150");
+	prev_access = list("150");
 	name = "Insurgent Care"
 	},
 /turf/open/floor/iron/white/diagonal,
@@ -1647,8 +1644,7 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "gN" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
-	dir = 8;
-	chamber_id = "syndicatelava_incinerator"
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -2228,7 +2224,7 @@
 	desc = "A console meant to allow modifications to IDs. There's a chameleon ID stuck inside and no one has been able to pull it out..."
 	},
 /obj/item/paper{
-	default_raw_text = "<h1>DS2 Corporate Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate welcomes you onboard, Corporate Liaison. It is deeply suggested you help our crew via informing them of their corporate investors' goal and to help maintain cohesion. Don't hurt yourself now, and stay winning.</p>";
+	info = "<h1>DS2 Corporate Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate welcomes you onboard, Corporate Liaison. It is deeply suggested you help our crew via informing them of their corporate investors' goal and to help maintain cohesion. Don't hurt yourself now, and stay winning.</p>";
 	name = "paper- 'DS2 Corporate Report'"
 	},
 /turf/open/floor/wood/wood_large,
@@ -2432,7 +2428,7 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /obj/machinery/computer/turbine_computer{
 	dir = 1;
-	mapping_id = "syndicatelava_turbine"
+	id = "ds2_turbine"
 	},
 /obj/structure/window/reinforced/survival_pod,
 /obj/structure/window/reinforced/survival_pod{
@@ -3353,7 +3349,7 @@
 	desc = "A console meant to communicate with Syndicate upper command. This one seems to be busy processing flight calculations since you last saw it..."
 	},
 /obj/item/paper{
-	default_raw_text = "<h1>DS2 Transfer Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>Active syndicate operatives have been transferred over to the target NT workplace and are NOT to be interacted with under any circumstances, unless Syndicate Command allows it. Permission to monitor their activities is granted and heavily suggested.</p><p>Stay winning.</p>";
+	info = "<h1>DS2 Transfer Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>Active syndicate operatives have been transferred over to the target NT workplace and are NOT to be interacted with under any circumstances, unless Syndicate Command allows it. Permission to monitor their activities is granted and heavily suggested.</p><p>Stay winning.</p>";
 	name = "paper- 'DS2 Transfer Report'"
 	},
 /turf/open/floor/iron/dark/textured_large,
@@ -3795,8 +3791,7 @@
 	},
 /obj/item/storage/wallet/random,
 /obj/item/clothing/under/costume/jabroni{
-	has_sensor = 0;
-	random_sensor = 0
+	has_sensor = 0
 	},
 /obj/structure/closet/secure_closet/personal{
 	icon_state = "cabinet"
@@ -4259,12 +4254,10 @@
 	},
 /obj/item/card/id/syndicate/advanced/prisoner,
 /obj/item/card/id/syndicate/advanced/prisoner{
-	pixel_y = 4;
-	trim = /datum/id_trim/syndicom/ds2/prisoner
+	pixel_y = 4
 	},
 /obj/item/card/id/syndicate/advanced/prisoner{
-	pixel_y = 8;
-	trim = /datum/id_trim/syndicom/ds2/prisoner
+	pixel_y = 8
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
@@ -4465,7 +4458,7 @@
 	dir = 1
 	},
 /obj/item/paper{
-	default_raw_text = "<h1>Gorlex Engineering</h1><p>New to setting up a turbine, operative? This neat little guide and set-up should teach you how, step by step.</p><p>The first step is setting up the burn chamber. The Air alarm is unlocked for syndicate access, and a single scrubber in the area is inactive. That is our burn chamber's scrubber. Set it to scoop up any gas you don't want in it - anything but plasma and oxygen - and set it on expanded reach.</p><p>Next is setting up the Plasma Mixer. A good ratio is somewhere between 30-70 and 40-60 Plasma and Oxygen, respectively. Don't forget to max out the mixer's pressure, else it'll only dribble in the gas!</p><p>Once that is done, make sure to activate the two digital valves on the floor. One will allow O2 to be brought to the mixer, and the other one will lead the gas mix directly into the chamber.</p><p>With the burn being ready, two last things are needed. First, you'll need to set up the ship's scrubbers system to actively pump into space the excess gasses (Water vapour, Co2) the burn will produce. If you want, you can select a gas to filter out, but that isn't necessary. Once everything is set up, flick the igniter switch on, turn on the turbine at the terminal, and watch that fire shine bright!</p>";
+	info = "<h1>Gorlex Engineering</h1><p>New to setting up a turbine, operative? This neat little guide and set-up should teach you how, step by step.</p><p>The first step is setting up the burn chamber. The Air alarm is unlocked for syndicate access, and a single scrubber in the area is inactive. That is our burn chamber's scrubber. Set it to scoop up any gas you don't want in it - anything but plasma and oxygen - and set it on expanded reach.</p><p>Next is setting up the Plasma Mixer. A good ratio is somewhere between 30-70 and 40-60 Plasma and Oxygen, respectively. Don't forget to max out the mixer's pressure, else it'll only dribble in the gas!</p><p>Once that is done, make sure to activate the two digital valves on the floor. One will allow O2 to be brought to the mixer, and the other one will lead the gas mix directly into the chamber.</p><p>With the burn being ready, two last things are needed. First, you'll need to set up the ship's scrubbers system to actively pump into space the excess gasses (Water vapour, Co2) the burn will produce. If you want, you can select a gas to filter out, but that isn't necessary. Once everything is set up, flick the igniter switch on, turn on the turbine at the terminal, and watch that fire shine bright!</p>";
 	name = "paper- 'Gorlex Engineering Division - Turbine Easy-Set Guide'"
 	},
 /turf/open/floor/plating,
@@ -4960,7 +4953,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/item/paper{
-	default_raw_text = "<h1>DS2 Long-Term Brig Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate has been capable of kidnapping a few key NT workers of various hierarchy levels. It is your task to interrogate, question and break their wills in order to find more intel on our enemy, Nanotrasen.</p><p>Stay winning.";
+	info = "<h1>DS2 Long-Term Brig Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate has been capable of kidnapping a few key NT workers of various hierarchy levels. It is your task to interrogate, question and break their wills in order to find more intel on our enemy, Nanotrasen.</p><p>Stay winning.";
 	name = "paper- 'DS2 Long-Term Brig Report'"
 	},
 /obj/machinery/airalarm/syndicate{
@@ -7258,7 +7251,7 @@
 	pixel_y = 6
 	},
 /obj/item/paper{
-	default_raw_text = "<h1>DS2 Command Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate is glad to have you on-field, admiral. Nanotrasen is in the direct sector and, as such, is the direct target of our operatives. Manage your crew well and with respect, and leave all your anger to the gravel that is Nanotrasen. Remember that Interdyne has an unaffiliated facade to keep up, as such, advise against your crew flaunting their affiliation to non-crew.</p><p>Stay winning.</p>";
+	info = "<h1>DS2 Command Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate is glad to have you on-field, admiral. Nanotrasen is in the direct sector and, as such, is the direct target of our operatives. Manage your crew well and with respect, and leave all your anger to the gravel that is Nanotrasen. Remember that Interdyne has an unaffiliated facade to keep up, as such, advise against your crew flaunting their affiliation to non-crew.</p><p>Stay winning.</p>";
 	name = "paper- 'DS2 Command Report'"
 	},
 /turf/open/floor/wood/wood_large,
@@ -7680,7 +7673,7 @@
 /obj/machinery/suit_storage_unit{
 	mask_type = /obj/item/clothing/mask/gas/syndicate;
 	storage_type = /obj/item/tank/jetpack/oxygen/harness;
-	mod_type = /obj/item/clothing/suit/space/hardsuit/syndi/elite
+	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi/elite
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)
@@ -11374,7 +11367,7 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "YC" = (
 /obj/machinery/air_sensor{
-	chamber_id = "syndieincinerator"
+	id = "syndieincinerator"
 	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
