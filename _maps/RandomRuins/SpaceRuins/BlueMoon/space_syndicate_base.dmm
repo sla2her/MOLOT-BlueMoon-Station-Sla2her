@@ -3726,10 +3726,7 @@
 "pX" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/curtain{
-	color = "#555555";
-	icon_state = "bathroom-open";
-	id = "DS2cell1";
-	icon_type = "bathroom"
+	color = "#555555"
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
