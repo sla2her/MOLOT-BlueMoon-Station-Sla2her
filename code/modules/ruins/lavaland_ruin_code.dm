@@ -120,7 +120,7 @@
 ///Syndicate Listening Post
 
 /obj/effect/mob_spawn/human/lavaland_syndicate
-	name = "Syndicate Bioweapon Specialist"
+	name = "Lavaland Syndicate Specialist"
 	roundstart = FALSE
 	death = FALSE
 	job_description = "Off-station Syndicate Specialist"
@@ -135,13 +135,6 @@
 
 /obj/effect/mob_spawn/human/lavaland_syndicate/special(mob/living/new_spawn)
 	new_spawn.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
-
-/obj/item/radio/headset/ds2
-	name = "DS2 Headset"
-	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
-	icon_state = "syndie_headset"
-	radiosound = 'modular_sand/sound/radio/syndie.ogg'
-	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 
 /datum/outfit/lavaland_syndicate
 	name = "Lavaland Syndicate Agent"
@@ -180,7 +173,7 @@
 	r_hand = /obj/item/melee/transforming/energy/sword/saber
 	mask = /obj/item/clothing/mask/chameleon/gps
 	suit = /obj/item/clothing/suit/armor/vest
-	ears = /obj/item/radio/headset/ds2/command
+	ears = /obj/item/radio/headset/ds1/comms
 
 /obj/item/clothing/mask/chameleon/gps/Initialize(mapload)
 	. = ..()
@@ -190,22 +183,32 @@
 	gpstag = "Encrypted Signal"
 
 /obj/item/radio/headset/ds1
-	name = "DS1 Headset"
+	name = "DS-1 Headset"
+	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
+	icon_state = "syndie_headset"
+	radiosound = 'modular_sand/sound/radio/syndie.ogg'
 	freerange = TRUE
 	freqlock = TRUE
-	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds1
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 
 /obj/item/radio/headset/ds2
-	name = "DS2 Headset"
+	name = "DS-2 Headset"
+	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
+	icon_state = "syndie_headset"
+	radiosound = 'modular_sand/sound/radio/syndie.ogg'
 	freerange = TRUE
 	freqlock = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 
 /obj/item/radio/headset/ds2/command
-	name = "DS2 Command Headset"
+	name = "DS-2 Command Headset"
 	desc = "A commanding headset to gather your underlings. Protects the ears from flashbangs."
 	command = TRUE
 
-/obj/item/radio/headset/ds2/comms
+/obj/item/radio/headset/ds1/comms
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
+	keyslot2 = new /obj/item/encryptionkey/headset_syndicate/ds1
+
+/obj/item/radio/headset/ds2/command
 	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 	keyslot2 = new /obj/item/encryptionkey/headset_syndicate/ds1
