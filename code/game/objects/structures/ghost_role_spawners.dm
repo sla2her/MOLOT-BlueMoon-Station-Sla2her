@@ -1278,6 +1278,7 @@
 	r_pocket = /obj/item/flashlight/seclite
 	mask = /obj/item/clothing/mask/gas/syndicate
 	ears = /obj/item/radio/headset/ds2
+	id = /obj/item/card/id/syndicate/advanced/black/command
 	id_trim = /datum/id_trim/syndicom/ds2/brigofficer
 
 /datum/outfit/ds2/syndicate/post_equip(mob/living/carbon/human/syndicate)
@@ -1295,7 +1296,7 @@
 		/obj/item/storage/box/survival = 1,
 		/obj/item/crowbar = 1,
 		)
-	id = /obj/item/card/id/syndicate/advanced/black
+	id = /obj/item/card/id/syndicate/advanced/black/command
 	implants = list(/obj/item/implant/weapons_auth)
 	id_trim = /datum/id_trim/syndicom/ds2
 

@@ -468,9 +468,15 @@
 	name = "Agent Card"
 	icon_state = "card_black"
 
+/obj/item/card/id/syndicate/advanced/black/command
+	name = "Agent Card"
+	icon_state = "card_black"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
+
 /obj/item/card/id/syndicate/advanced/black/gold
 	name = "Agent Card"
 	icon_state = "gold"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/syndicate/Initialize(mapload)
 	. = ..()

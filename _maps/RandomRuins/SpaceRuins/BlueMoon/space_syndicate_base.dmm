@@ -855,9 +855,6 @@
 /obj/structure/window/reinforced/survival_pod{
 	dir = 1
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 9
-	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "cS" = (
@@ -1668,13 +1665,15 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "gk" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -3243,7 +3242,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/armory)
 "mC" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/smes/engineering{
 	input_level = 150000;
 	charge = 4.5e+006
@@ -3258,6 +3256,10 @@
 	},
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -3339,9 +3341,6 @@
 	},
 /obj/structure/window/reinforced/survival_pod{
 	dir = 1
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 5
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
@@ -3441,7 +3440,6 @@
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
 "nA" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/terminal{
 	dir = 1
 	},
@@ -3857,7 +3855,6 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/diner)
 "oZ" = (
-/obj/machinery/vending/games,
 /obj/machinery/camera/xray/directional/west{
 	network = list("ds2");
 	c_tag = "DS-2 Lounge"
@@ -3865,6 +3862,9 @@
 /obj/machinery/airalarm/syndicate{
 	dir = 4;
 	pixel_x = -24
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
@@ -7697,10 +7697,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
 "FC" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -8372,7 +8374,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -8456,6 +8457,17 @@
 /obj/structure/window/reinforced/survival_pod{
 	dir = 4;
 	pixel_x = 4
+	},
+/obj/effect/spawner/lootdrop/healing_kits{
+	pixel_y = -3;
+	pixel_x = -6
+	},
+/obj/effect/spawner/lootdrop/healing_kits{
+	pixel_y = 3
+	},
+/obj/effect/spawner/lootdrop/healing_kits{
+	pixel_y = 3;
+	pixel_x = 6
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
@@ -8591,6 +8603,9 @@
 	},
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "JC" = (
@@ -9176,11 +9191,13 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "LA" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -9860,6 +9877,10 @@
 	},
 /obj/machinery/light/dim/directional/east,
 /obj/machinery/vending/snack,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 10;
+	pixel_y = -7
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "Ov" = (
@@ -9939,7 +9960,6 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "OD" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
@@ -9962,7 +9982,6 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "OK" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -10057,6 +10076,7 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
 	level = 1
 	},
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Pn" = (
@@ -10297,13 +10317,15 @@
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Qe" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -11311,7 +11333,6 @@
 	},
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "TM" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
@@ -11319,6 +11340,9 @@
 /obj/machinery/light/dim/directional/south,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -11635,10 +11659,12 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -12582,10 +12608,12 @@
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
 "Yz" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 4
-	},
 /obj/machinery/light/dim/directional/west,
+/obj/machinery/vending/games,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 6;
+	pixel_y = -7
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "YC" = (

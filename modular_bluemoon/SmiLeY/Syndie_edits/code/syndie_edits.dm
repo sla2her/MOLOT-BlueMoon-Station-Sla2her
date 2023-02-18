@@ -4,12 +4,7 @@
 	icon = 'modular_bluemoon/smiley/syndie_edits/icons/obj.dmi'
 	mob_overlay_icon = 'modular_bluemoon/smiley/syndie_edits/icons/worn.dmi'
 	icon_state = "syndievest"
-	mutantrace_variation = STYLE_NO_ANTHRO_ICON
-
-
-/obj/item/clothing/suit/armor/vest/capcarapace/syndicate/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/action/item_action/toggle_hood)
+	mutantrace_variation = STYLE_NO_ANTHRO_ICON|DIGITIGRADE
 
 /obj/item/clothing/suit/armor/vest/capcarapace/syndicate/winter
 	name = "syndicate captain's winter vest"
