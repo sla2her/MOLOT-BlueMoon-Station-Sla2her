@@ -20,16 +20,16 @@
 	speed = 0
 	see_in_dark = 8
 	attack_verb_continuous = "claws"
-	maxHealth = 300
-	health = 300
+	maxHealth = 200
+	health = 200
 	obj_damage = 20
 	armour_penetration = 0
-	melee_damage_lower = 20
-	melee_damage_upper = 25
+	melee_damage_lower = 15
+	melee_damage_upper = 20
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	faction = list("spirit")
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
-	unsuitable_atmos_damage = 5
+	unsuitable_atmos_damage = 10
 	gold_core_spawnable = NO_SPAWN
 	has_butt = TRUE
 	pixel_w = -8
@@ -43,6 +43,10 @@
 	. = ..()
 
 	AddElement(/datum/element/flavor_text, _name = "OOC Notes", _addendum = "Put information on ERP/vore/lewd-related preferences here. THIS SHOULD NOT CONTAIN REGULAR FLAVORTEXT!!", _save_key = "ooc_notes", _examine_no_preview = TRUE)
+
+/mob/living/simple_animal/hostile/beastspirit/Initialize()
+	. = ..()
+	add_movespeed_modifier(/datum/movespeed_modifier/beastspirit_main)
 
 /mob/living/simple_animal/hostile/beastspirit/update_icon()
 	. = ..()
@@ -58,23 +62,35 @@
 	desc = "Change your feral appearance."
 	icon_icon = 'modular_bluemoon/vagabond/icons/mob/actions/misc_actions.dmi'
 	button_icon_state = "change"
+	var/beastskin = ""
+	var/beastsound = 'modular_bluemoon/vagabond/sound/wolf.ogg'
 
 /datum/action/innate/beastchange/Activate()
 	. = ..()
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/beast/B = locate() in owner.mob_spell_list
-	if(!B)
-		return
-	var/appearances = list("Default", "Black", "White", "Skull")
+	var/appearances = list("Default", "Black", "White", "Skull", "Werecat", "Panther", "Garfield")
 	var/skin = input(owner, "Pick appearance for your beast", "Change Appearance") as null|anything in appearances
 	switch(skin)
 		if("Default")
-			B.beast_type = ""
+			beastskin = ""
+			beastsound = 'modular_bluemoon/vagabond/sound/wolf.ogg'
 		if("Black")
-			B.beast_type = "black_"
+			beastskin = "black_"
+			beastsound = 'modular_bluemoon/vagabond/sound/wolf.ogg'
 		if("White")
-			B.beast_type = "white_"
+			beastskin = "white_"
+			beastsound = 'modular_bluemoon/vagabond/sound/wolf.ogg'
 		if("Skull")
-			B.beast_type = "skull_"
+			beastskin = "skull_"
+			beastsound = 'modular_bluemoon/vagabond/sound/wolf.ogg'
+		if("Werecat")
+			beastskin = "werecat_"
+			beastsound = 'modular_bluemoon/vagabond/sound/cat.ogg'
+		if("Panther")
+			beastskin = "panther_"
+			beastsound = 'modular_bluemoon/vagabond/sound/cat.ogg'
+		if("Garfield")
+			beastskin = "garfield_"
+			beastsound = 'modular_bluemoon/vagabond/sound/cat.ogg'
 	if(skin)
 		to_chat(owner, "<span class='notice'>Your inner Beast's skin now will be [skin].</span>")
 
@@ -92,6 +108,12 @@
 
 /datum/movespeed_modifier/beastspirit
 	multiplicative_slowdown = -2.5
+	priority = 500
+	complex_calculation = TRUE
+	absolute_max_tiles_per_second = 7
+
+/datum/movespeed_modifier/beastspirit_main
+	multiplicative_slowdown = -1
 	priority = 500
 	complex_calculation = TRUE
 	absolute_max_tiles_per_second = 7
@@ -125,7 +147,7 @@
 
 /datum/quirk/beastspirit
 	name = "Beast Spirit"
-	desc = "Your soul is now under control of your beast patron. Do not allow the anger to unleash your inner animal."
+	desc = "Your soul is now under control of your beast patron. Do not allow the anger to unleash your inner animal. <b>NOTE: This can create some issues with Werewolf quirk because of the same functional.</b>"
 	value = 2
 	mob_trait = TRAIT_BEASTSPIRIT
 	gain_text = span_notice("You've gained acceptance of your inner beast.")
@@ -154,6 +176,7 @@
 	shapeshift_type = /mob/living/simple_animal/hostile/beastspirit
 	var/beast_gender = "male"
 	var/beast_type = ""
+	var/beast_sound = 'modular_bluemoon/vagabond/sound/wolf.ogg'
 
 /obj/effect/proc_holder/spell/targeted/shapeshift/beast/Shapeshift(mob/living/caster)
 	var/obj/shapeshift_holder/H = locate() in caster
@@ -166,6 +189,12 @@
 		return
 
 	var/mob/living/carbon/human/action_owner = caster
+
+	var/datum/action/innate/beastchange/B = locate() in caster.actions
+	if(B)
+		beast_type = B.beastskin
+		beast_sound = B.beastsound
+
 	var/obj/item/organ/genital/penis/organ_penis = action_owner.getorganslot(ORGAN_SLOT_PENIS)
 	var/obj/item/organ/genital/breasts/organ_breasts = action_owner.getorganslot(ORGAN_SLOT_BREASTS)
 	var/obj/item/organ/genital/vagina/organ_vagina = action_owner.getorganslot(ORGAN_SLOT_VAGINA)
@@ -181,24 +210,33 @@
 	caster.visible_message(span_danger(toggle_message))
 
 	caster.shake_animation(2)
-	caster.Stun(50)
+	caster.Stun(30)
 
-	var/mob/living/carbon/human/human_caster = caster
+	playsound(caster, beast_sound, 50, 0)
+
+	sleep(30)
+
+	var/has_clothes_to_rip = FALSE
+
 	for(var/obj/item/I in caster)
 		if(!istype(I, /obj/item/storage))
+			has_clothes_to_rip = TRUE
 			caster.dropItemToGround(I, TRUE)
 	var/mob/living/shape = new shapeshift_type(caster.loc)
-	H = new(shape,src,human_caster)
+	H = new(shape, src, action_owner)
 	var/mob/living/simple_animal/hostile/beastspirit/BEAST = shape
-	BEAST.name = human_caster.name
+	BEAST.name = action_owner.name
 	BEAST.beast_type = beast_type
-	BEAST.gender = human_caster.gender
+	BEAST.gender = action_owner.gender
 	BEAST.based_icon = beast_gender
-	BEAST.eyecolor = "#[human_caster.left_eye_color]"
+	BEAST.eyecolor = "#[action_owner.left_eye_color]"
 	BEAST.update_icon()
 	var/icon/M = new(BEAST.icon)
 	M.SwapColor("#ffffff",BEAST.eyecolor)
 	BEAST.icon = M
+
+	if(has_clothes_to_rip)
+		playsound(caster, 'modular_bluemoon/vagabond/sound/transform.ogg', 50, 1)
 
 	switch(beast_gender)
 		if("male")
