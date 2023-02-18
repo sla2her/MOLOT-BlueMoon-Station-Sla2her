@@ -6466,6 +6466,9 @@
 "Kl" = (
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/computer/cryopod/tarkoff{
+	pixel_y = 30
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "Km" = (

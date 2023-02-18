@@ -3110,12 +3110,11 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
-/obj/structure/frame/machine{
-	anchored = 1;
-	state = 2;
-	icon_state = "box_1"
+/obj/machinery/autolathe/hacked,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty{
+	pixel_y = 9
 	},
-/obj/item/circuitboard/machine/smes,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "md" = (
@@ -7576,10 +7575,6 @@
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"Fc" = (
-/obj/item/pipe_dispenser,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Fe" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -13993,7 +13988,7 @@ Tt
 SI
 rb
 hn
-Fc
+uD
 uD
 od
 iS
