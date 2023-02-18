@@ -682,20 +682,20 @@
 	icon_state = "sink_alt"
 
 /obj/structure/sink/kitchen/directional/north //Pixel offsets get overwritten on New()
-	dir = SOUTH
-	pixel_y = 24
+	dir = NORTH
+	pixel_y = 20
 
 /obj/structure/sink/kitchen/directional/south
-	dir = NORTH
-	pixel_y = -24
+	dir = SOUTH
+	pixel_y = -20
 
 /obj/structure/sink/kitchen/directional/east
-	dir = WEST
-	pixel_x = 24
+	dir = EAST
+	pixel_x = 20
 
 /obj/structure/sink/kitchen/directional/west
-	dir = EAST
-	pixel_x = -24
+	dir = WEST
+	pixel_x = -20
 
 /obj/structure/sink/well
 	name = "well"

@@ -8,7 +8,6 @@
 	},
 /obj/machinery/power/apc/auto_name/west{
 	req_access_txt = "150";
-	req_access = null;
 	req_access = null
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -1659,12 +1658,11 @@
 	dir = 8
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/security{
-	hackProof = 1;
-	name = "Long-Term Brig"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "DS2permabrig"
+	},
+/obj/machinery/door/airlock/security/glass{
+	name = "Long-Term Brig"
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
@@ -6456,12 +6454,11 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
 	level = 1
 	},
-/obj/machinery/door/airlock/security{
-	hackProof = 1;
-	name = "Long-Term Brig"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "DS2permabrig"
+	},
+/obj/machinery/door/airlock/security/glass{
+	name = "Long-Term Brig"
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
