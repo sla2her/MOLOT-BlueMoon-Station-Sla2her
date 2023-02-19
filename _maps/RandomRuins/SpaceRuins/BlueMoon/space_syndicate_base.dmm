@@ -10173,10 +10173,6 @@
 /obj/machinery/door/airlock/grunge{
 	name = "Cell 2"
 	},
-/obj/machinery/syndicatebomb/self_destruct{
-	anchored = 1;
-	level = 1
-	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "PA" = (
