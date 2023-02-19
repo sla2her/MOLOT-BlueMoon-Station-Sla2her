@@ -41,6 +41,13 @@
 	/// The last lines used for changing the status display
 	var/static/last_status_display
 
+/obj/machinery/computer/communications/syndicate
+	name = "Syndicate Communications Console"
+	desc = "A console meant to communicate with Syndicate upper command."
+	req_access = list(ACCESS_SYNDICATE_LEADER)
+	light_color = LIGHT_COLOR_RED
+	obj_flags = EMAGGED|CAN_BE_HIT|IN_USE
+
 /obj/machinery/computer/communications/Initialize(mapload)
 	. = ..()
 	GLOB.shuttle_caller_list += src

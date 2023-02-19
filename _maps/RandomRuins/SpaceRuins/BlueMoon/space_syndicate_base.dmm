@@ -3714,16 +3714,11 @@
 /obj/effect/turf_decal/trimline/dark_red/corner{
 	dir = 8
 	},
-/obj/machinery/computer{
-	name = "syndicate communications console";
-	icon_keyboard = "tech_key";
-	icon_screen = "comm";
-	desc = "A console meant to communicate with Syndicate upper command. This one seems to be busy processing flight calculations since you last saw it..."
-	},
 /obj/item/paper{
 	info = "<h1>DS2 Transfer Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>Active syndicate operatives have been transferred over to the target NT workplace and are NOT to be interacted with under any circumstances, unless Syndicate Command allows it. Permission to monitor their activities is granted and heavily suggested.</p><p>Stay winning.</p>";
 	name = "paper- 'DS2 Transfer Report'"
 	},
+/obj/machinery/computer/communications/syndicate,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge)
 "ov" = (
