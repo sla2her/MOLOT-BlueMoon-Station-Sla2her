@@ -1201,7 +1201,7 @@
 	back = /obj/item/storage/backpack
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
-		/obj/item/crowbar = 1,
+		/obj/item/crowbar/red = 1,
 		)
 	id = /obj/item/card/id/syndicate/advanced/black
 	id_trim = /datum/id_trim/syndicom/ds2
@@ -1214,7 +1214,7 @@
 	back = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
-		/obj/item/crowbar = 1,
+		/obj/item/crowbar/red = 1,
 		/obj/item/kitchen/knife/combat/survival = 1,
 		/obj/item/t_scanner/adv_mining_scanner/lesser = 1,
 		/obj/item/gun/energy/kinetic_accelerator = 1,
@@ -1283,7 +1283,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/medicalofficer
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
-		/obj/item/crowbar = 1,
+		/obj/item/crowbar/red = 1,
 		/obj/item/storage/firstaid/tactical = 1,
 		)
 
@@ -1323,7 +1323,7 @@
 	back = /obj/item/storage/backpack
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
-		/obj/item/crowbar = 1,
+		/obj/item/crowbar/red = 1,
 		)
 	id = /obj/item/card/id/syndicate/advanced/black/command
 	implants = list(/obj/item/implant/weapons_auth)
