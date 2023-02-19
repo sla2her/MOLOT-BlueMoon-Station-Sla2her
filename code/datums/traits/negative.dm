@@ -112,7 +112,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	heirloom = data
 
 /datum/quirk/heavy_sleeper
-	name = "Крепко спящиц"
+	name = "Крепко спящий"
 	desc = "Вы спите, как камень! Каждый раз засыпая, вы спите чуть дольше."
 	value = -1
 	mob_trait = TRAIT_HEAVY_SLEEPER
@@ -122,7 +122,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/brainproblems
 	name = "Опухоль мозга"
-	desc = "В вашей голово есть маленький друг, который медленно разрушает его. Стоит прихвотить с собой маннит!"
+	desc = "В вашей голове есть маленький друг, который медленно разрушает мозг. Стоит прихвотить с собой маннит!"
 	value = -3
 	gain_text = "<span class='danger'>You feel smooth.</span>" /// Хз как это перевести 
 	lose_text = "<span class='notice'>You feel wrinkled again.</span>"
@@ -134,11 +134,11 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/nearsighted //t. errorage
 	name = "Близорукость"
-	desc = "Вы близорукий без выписанных очков, но появляетесь с ними."
+	desc = "Вы близорукий без очков по рецепту, но прибываете на станцию с ними."
 	value = -1
-	gain_text = "<span class='danger'>Вещи вдали от вас расплываются.</span>"
+	gain_text = "<span class='danger'>Вещи вдали вас расплываются.</span>"
 	lose_text = "<span class='notice'>Ваше зрение снова стало нормальным.</span>"
-	medical_record_text = "Для того, чтобы бороться с близорукость, пациенту требуются выписанные очки."
+	medical_record_text = "Для того, чтобы бороться с близорукость, пациенту требуются очки по рецепту."
 
 /datum/quirk/nearsighted/add()
 	quirk_holder.become_nearsighted(ROUNDSTART_TRAIT)
@@ -150,10 +150,10 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		H.put_in_hands(glasses)
 
 /datum/quirk/nyctophobia
-	name = "Nyctophobia"
-	desc = "As far as you can remember, you've always been afraid of the dark. While in the dark without a light source, you instinctually act careful, and constantly feel a sense of dread."
+	name = "Никтофобия"
+	desc = "Сколько себя помните вы всегда боялись темноты. Находясь в полной темноте, вы инстинктивно осторожничаете и боитесь."
 	value = -1
-	medical_record_text = "Patient demonstrates a fear of the dark. (Seriously?)"
+	medical_record_text = "Пациент боится темноты. (В самом деле?)"
 
 /datum/quirk/nyctophobia/add()
 	RegisterSignal(quirk_holder, COMSIG_MOVABLE_MOVED, .proc/on_holder_moved)
@@ -184,17 +184,17 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		return
 
 	if(quirk_holder.m_intent == MOVE_INTENT_RUN)
-		to_chat(quirk_holder, span_warning("Easy, easy, take it slow... you're in the dark..."))
+		to_chat(quirk_holder, span_warning("Тише! Не торопитесь... вы в кромешной тьме..."))
 		quirk_holder.toggle_move_intent()
 	SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "nyctophobia", /datum/mood_event/nyctophobia)
 
 /datum/quirk/lightless
-	name = "Light Sensitivity"
-	desc = "Bright lights irritate you. Your eyes start to water, your skin feels itchy against the photon radiation, and your hair gets dry and frizzy. Maybe it's a medical condition. If only Nanotrasen was more considerate of your needs..."
+	name = "Светобоязнь"
+	desc = "Яркий свет раздражает вас. Глаза начинают слезиться и кожа чешется под излучением фотонов, а волосы становятся сухими и вьющимися. Возможно, это заболевание. Если бы только Nanotrasen учитывал ваши потребности..."
 	value = -1
-	gain_text = "<span class='danger'>Bright lights seem irritating.</span>"
-	lose_text = "<span class='notice'>Enlightening.</span>"
-	medical_record_text = "Despite my warnings, the patient refuses turn on the lights, only to end up rolling down a full flight of stairs and into the cellar."
+	gain_text = "<span class='danger'>Яркий свет раздражает вас.</span>"
+	lose_text = "<span class='notice'>Вы достигли просветления.</span>"
+	medical_record_text = "Несмотря на мои предупреждения, пацинает отказываться включать свет, что приводит к падению с лестницы прямо в подвал."
 
 /datum/quirk/lightless/add()
 	RegisterSignal(quirk_holder, COMSIG_MOVABLE_MOVED, .proc/on_holder_moved)
@@ -235,24 +235,24 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "brightlight")
 
 /datum/quirk/nonviolent
-	name = "Pacifist"
-	desc = "The thought of violence makes you sick. So much so, in fact, that you can't hurt anyone."
+	name = "Пацифист"
+	desc = "Насилие противно вам. До такой степени, что в следствие, вы не можете никому навредить."
 	value = -2
 	mob_trait = TRAIT_PACIFISM
-	gain_text = "<span class='danger'>You feel repulsed by the thought of violence!</span>"
-	lose_text = "<span class='notice'>You think you can defend yourself again.</span>"
-	medical_record_text = "Patient is unusually pacifistic and cannot bring themselves to cause physical harm."
-	antag_removal_text = "Your antagonistic nature has caused you to renounce your pacifism."
+	gain_text = "<span class='danger'>Вы отвергаете саму мысль о возможном насилии!</span>"
+	lose_text = "<span class='notice'>Вам кажется, что вы снова можете постоять за себя.</span>"
+	medical_record_text = "Пациент крайне миролюбивый и не может заставить себя сделать кому-то больно."
+	antag_removal_text = "Ваша антагонистическая натура привела к отказу от пацифизма."
 
 /datum/quirk/paraplegic
-	name = "Paraplegic"
-	desc = "Your legs do not function. Nothing will ever fix this. But hey, free wheelchair!"
+	name = "Парализованный"
+	desc = "Ваши ноги не работаются. Ничто и никогда не исправит это. Подумайте о хорошем — о бесплатной инвалидной коляске!"
 	value = -4
 	mob_trait = TRAIT_PARA
 	human_only = TRUE
 	gain_text = null // Handled by trauma.
 	lose_text = null
-	medical_record_text = "Patient has an untreatable impairment in motor function in the lower extremities."
+	medical_record_text = "У пациента неизлечимое нарушение опорно-двигательных функций нижних конечностей."
 	on_spawn_immediate = FALSE
 
 /datum/quirk/paraplegic/add()
@@ -284,27 +284,27 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 					quirk_holder.put_in_hands(I)
 
 /datum/quirk/poor_aim
-	name = "Poor Aim"
-	desc = "You're terrible with guns and can't line up a straight shot to save your life. Dual-wielding is right out."
+	name = "Ужасный стрелок"
+	desc = "Ваши навыки обращения с оружием не позволяют точно прицелится даже для того, чтобы спасти свою жизнь. Стрельб даже не обсуждается."
 	value = -1
 	mob_trait = TRAIT_POOR_AIM
-	medical_record_text = "Patient possesses a strong tremor in both hands."
+	medical_record_text = "Обе руки пациента подвержены сильной дрожи."
 
 /datum/quirk/prosopagnosia
-	name = "Prosopagnosia"
-	desc = "You have a mental disorder that prevents you from being able to recognize faces at all."
+	name = "Прозопагнозия"
+	desc = "Расстройство не позволяет вам узнавать лица, совсем."
 	value = -1
 	mob_trait = TRAIT_PROSOPAGNOSIA
-	medical_record_text = "Patient suffers from prosopagnosia and cannot recognize faces."
+	medical_record_text = "Пациент страдает от прозопагнозии и не способен узнавать лица."
 
 /datum/quirk/insanity
-	name = "Reality Dissociation Syndrome"
-	desc = "You suffer from a severe disorder that causes very vivid hallucinations. Mindbreaker toxin can suppress its effects, and you are immune to mindbreaker's hallucinogenic properties. <b>This is not a license to grief.</b>"
+	name = "Диссоциативное расстройство"
+	desc = "Вы страдаете от серьёзного расстройства и видите пёстрые галлюцинации. Mindbreaker может подавить эти эффекты, также у вас невосприимчивость к mindbreaker's галлюциногенному эффекту. <b>Это не разрешает грифинг.</b>"
 	value = -2
 	//no mob trait because it's handled uniquely
 	gain_text = "<span class='userdanger'>...</span>"
-	lose_text = "<span class='notice'>You feel in tune with the world again.</span>"
-	medical_record_text = "Patient suffers from acute Reality Dissociation Syndrome and experiences vivid hallucinations."
+	lose_text = "<span class='notice'>Вам снова кажется, что вы понимаете мир вокруг.</span>"
+	medical_record_text = "Пациент страдает от острого диссоциативного расстройства и испытывает яркие галлюцинации."
 	processing_quirk = TRUE
 
 /datum/quirk/insanity/on_process()
