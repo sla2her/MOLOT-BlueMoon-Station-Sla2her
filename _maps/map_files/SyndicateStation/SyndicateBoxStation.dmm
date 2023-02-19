@@ -39256,6 +39256,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bUv" = (
@@ -42381,6 +42382,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "ccq" = (
@@ -47180,6 +47182,7 @@
 /area/maintenance/disposal/incinerator)
 "cqv" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cqw" = (
@@ -51978,6 +51981,10 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/range)
+"dDA" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "dDG" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -53445,6 +53452,10 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/range)
+"fsq" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
 "fty" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /obj/structure/lattice/catwalk,
@@ -53725,6 +53736,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
+"fMS" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "fMY" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 5
@@ -56514,6 +56529,15 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/commons/dorms)
+"keH" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/fore/secondary)
 "keM" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/machinery/door/poddoor/preopen{
@@ -57247,6 +57271,14 @@
 /obj/machinery/space_heater,
 /turf/open/floor/plating,
 /area/commons/storage/emergency/starboard)
+"lbb" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
 "lcx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -59704,6 +59736,15 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/gravity_generator)
+"oru" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "oss" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -85930,7 +85971,7 @@ fmJ
 ygb
 kiW
 qlV
-amC
+fMS
 ntt
 nBI
 qlV
@@ -87034,7 +87075,7 @@ cqn
 cAh
 chT
 bHE
-bHE
+dDA
 ckv
 bHE
 bCq
@@ -88048,7 +88089,7 @@ bRg
 bCq
 bHE
 bVG
-bHE
+dDA
 bHE
 bCq
 mqZ
@@ -90863,7 +90904,7 @@ bAK
 bCn
 bGq
 bGq
-bGq
+oru
 rGq
 bLw
 bGq
@@ -90887,7 +90928,7 @@ bVI
 bVI
 aJq
 xgk
-bHE
+dDA
 kEm
 bHE
 bHE
@@ -100822,7 +100863,7 @@ aif
 aif
 aif
 fpz
-aif
+keH
 fpz
 bkV
 jKP
@@ -107773,7 +107814,7 @@ apB
 aqx
 art
 anf
-anf
+fsq
 auF
 apC
 awH
@@ -111376,7 +111417,7 @@ aFn
 aBB
 awM
 ayg
-ayg
+lbb
 ayg
 ayg
 aCl

@@ -2254,6 +2254,7 @@
 /obj/structure/cable/white{
 	icon_state = "0-2"
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -11892,6 +11893,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -25243,6 +25245,7 @@
 /obj/effect/turf_decal/trimline/green/line{
 	dir = 1
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "aVe" = (
@@ -34754,6 +34757,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+"cUH" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "cWv" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden,
 /turf/closed/wall/r_wall,
@@ -35653,6 +35664,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+"gAa" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "gBp" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
@@ -36950,6 +36969,16 @@
 /obj/machinery/portable_atmospherics/canister/nitrous_oxide,
 /turf/open/floor/plating,
 /area/science/mixing)
+"lmA" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/maintenance/port/aft)
 "low" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
@@ -37633,6 +37662,16 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/science/mixing)
+"oid" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "oiL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/yellow{
@@ -38438,6 +38477,10 @@
 	icon_state = "wood-broken5"
 	},
 /area/maintenance/starboard/aft)
+"rno" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "rwH" = (
 /turf/closed/wall/mineral/titanium,
 /area/asteroid/nearstation)
@@ -40880,6 +40923,18 @@
 	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
+	},
+/area/maintenance/starboard/aft)
+"sPT" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
 	},
 /area/maintenance/starboard/aft)
 "sSy" = (
@@ -74682,7 +74737,7 @@ aad
 aad
 aro
 ars
-ars
+rno
 asI
 ars
 ars
@@ -76008,7 +76063,7 @@ aEj
 aFM
 aJN
 aKl
-aKl
+lmA
 aFM
 aFM
 aFM
@@ -77555,7 +77610,7 @@ aDn
 aDo
 aKn
 aLy
-aFM
+cUH
 aFM
 aPP
 lFj
@@ -88341,7 +88396,7 @@ aPy
 aQA
 sOM
 sOU
-sOV
+oid
 sKa
 aVC
 aWt
@@ -88613,7 +88668,7 @@ bxW
 bdw
 bep
 aZl
-sPI
+sPT
 bfP
 pej
 bhi
@@ -89605,7 +89660,7 @@ aXJ
 aXJ
 xTs
 aXJ
-aXJ
+gAa
 sEn
 sEN
 sFo

@@ -23384,6 +23384,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bXc" = (
@@ -26942,6 +26943,7 @@
 /area/maintenance/starboard/aft)
 "cgn" = (
 /obj/item/cigbutt,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -44641,6 +44643,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "dbl" = (
@@ -51306,6 +51309,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/commons/dorms)
+"fiL" = (
+/obj/item/cigbutt,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/port)
 "fjZ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -54099,6 +54107,10 @@
 /obj/item/integrated_circuit_printer,
 /turf/open/floor/plasteel/white,
 /area/science/circuit)
+"gRY" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
 "gSK" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -54484,6 +54496,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/command/corporate_showroom)
+"hgU" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/maintenance/port)
 "hgV" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -60019,6 +60037,10 @@
 "ker" = (
 /turf/closed/wall,
 /area/service/chapel/office)
+"kes" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "keE" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -105158,7 +105180,7 @@ bqq
 bsD
 alK
 dhR
-aoa
+hgU
 alC
 bBq
 apz
@@ -105170,7 +105192,7 @@ aqO
 bMG
 alC
 bPN
-apz
+fiL
 bTt
 bTv
 alC
@@ -123685,7 +123707,7 @@ caU
 ccD
 cdV
 cfj
-apc
+kes
 chC
 dvY
 dvY
@@ -125938,7 +125960,7 @@ fmO
 dnh
 dnR
 aus
-dnS
+gRY
 dnh
 aAm
 aLJ
@@ -127734,7 +127756,7 @@ ack
 dni
 bcO
 dnS
-dnS
+gRY
 dnS
 dnh
 avu
