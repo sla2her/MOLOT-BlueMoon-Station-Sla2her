@@ -175,7 +175,7 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 
 /obj/item/storage/toolbox/syndicate/PopulateContents()
 	new /obj/item/screwdriver/nuke(src)
-	new /obj/item/wrench/syndicate(src)
+	new /obj/item/wrench/combat(src)
 	new /obj/item/weldingtool/largetank(src)
 	new /obj/item/crowbar/red(src)
 	new /obj/item/wirecutters(src, "red")
