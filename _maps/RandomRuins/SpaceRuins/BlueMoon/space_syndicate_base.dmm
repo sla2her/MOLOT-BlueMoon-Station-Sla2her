@@ -2994,9 +2994,20 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "lu" = (
-/obj/machinery/light/dim/directional/north,
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/mineral/plastitanium/red,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_red/line,
+/obj/effect/turf_decal/trimline/dark_red/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_red/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_red/mid_joiner,
+/obj/machinery/light/dim/directional/south,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/iron/dark/textured_half,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge)
 "lD" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
@@ -3856,6 +3867,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4
+	},
+/obj/machinery/vending/coffee{
+	onstation = 0
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
@@ -6513,10 +6527,13 @@
 	},
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "Av" = (
-/obj/machinery/computer/atmos_alert,
 /obj/effect/turf_decal/trimline/dark_red/line,
 /obj/effect/turf_decal/trimline/dark_red/mid_joiner,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/machinery/computer/message_monitor{
+	dir = 2
+	},
+/obj/item/paper/monitorkey,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge)
 "Aw" = (
@@ -11840,11 +11857,9 @@
 	level = 1
 	},
 /obj/machinery/light/dim/directional/south,
-/obj/item/circuitboard/machine/ore_silo,
-/obj/structure/frame/machine{
-	anchored = 1;
-	state = 2;
-	icon_state = "box_1"
+/obj/item/multitool,
+/obj/machinery/telecomms/relay/preset/ruskie{
+	use_power = 0
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/vault)
@@ -12529,18 +12544,25 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/hydroponics)
 "Ya" = (
+/obj/structure/filingcabinet,
+/obj/item/paper/fluff/ruins/listeningstation/reports/april,
+/obj/item/paper/fluff/ruins/listeningstation/reports/may,
+/obj/item/paper/fluff/ruins/listeningstation/reports/june,
+/obj/item/paper/fluff/ruins/listeningstation/reports/july,
+/obj/item/paper/fluff/ruins/listeningstation/reports/august,
+/obj/item/paper/fluff/ruins/listeningstation/reports/september,
+/obj/item/paper/fluff/ruins/listeningstation/reports/october,
+/obj/item/paper/fluff/ruins/listeningstation/receipt,
+/obj/item/paper/fluff/ruins/listeningstation/odd_report,
+/obj/effect/turf_decal/trimline/dark_red/line,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/dark_red/line,
 /obj/structure/sign/flag/syndicate/directional/south{
 	pixel_x = -16
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1
-	},
-/obj/machinery/vending/coffee{
-	onstation = 0
 	},
 /turf/open/floor/iron/dark/textured_half,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge)
@@ -14009,7 +14031,7 @@ wg
 wg
 aT
 Bk
-lu
+VM
 fa
 dO
 ak
@@ -14066,7 +14088,7 @@ Bk
 XN
 AV
 fa
-of
+lu
 RX
 RX
 lg
