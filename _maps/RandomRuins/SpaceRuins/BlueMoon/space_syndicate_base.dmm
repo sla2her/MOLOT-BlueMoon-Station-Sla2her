@@ -2470,8 +2470,8 @@
 	desc = "A console meant to allow modifications to IDs. There's a chameleon ID stuck inside and no one has been able to pull it out..."
 	},
 /obj/item/paper{
-	info = "<h1>DS2 Corporate Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate welcomes you onboard, Corporate Liaison. It is deeply suggested you help our crew via informing them of their corporate investors' goal and to help maintain cohesion. Don't hurt yourself now, and stay winning.</p>";
-	name = "paper- 'DS2 Corporate Report'"
+	info = "<h1>Корпоративный отчет DS2</h1><p>Передовая оперативная база 'Благословлённый' под кодовым названием Deep Space 2 успешно разместилась вблизи активных объектов NanoTrasen. Идет перезагрузка двигателей шаттла...</p><p>Синдикат приветствует вас на борту, Корпоративный Связной. Вам предлагается помочь нашему экипажу, информируя их о цели их корпоративных инвесторов и помогая поддерживать сплоченность. Не болейте и оставайтесь в выигрыше.</p>";
+	name = "paper- 'Корпоративный отчет DS2'"
 	},
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/cl)
@@ -3715,8 +3715,8 @@
 	dir = 8
 	},
 /obj/item/paper{
-	info = "<h1>DS2 Transfer Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>Active syndicate operatives have been transferred over to the target NT workplace and are NOT to be interacted with under any circumstances, unless Syndicate Command allows it. Permission to monitor their activities is granted and heavily suggested.</p><p>Stay winning.</p>";
-	name = "paper- 'DS2 Transfer Report'"
+	info = "<h1>Отчёт о Пополнении Состава DS2</h1><p>Передовая оперативная база 'Благословлённый' под кодовым названием Deep Space 2 успешно переместилась вблизи активных объектов NanoTrasen. Идет перезагрузка двигателей шаттла...</p><p>Активные оперативники Синдиката были переведены на DS2 для слежки за Кордоном и не должны взаимодействовать с Космической Станцией Тринадцатого Сектора, если только командование Синдиката это не разрешит или не появится особо серьёзная для этого причина. Разрешение на наблюдение за их деятельностью получено и настоятельно рекомендуется.</p><p>Не болейте и оставайтесь в выигрыше.</p>";
+	name = "paper- 'Отчёт о Пополнении Состава DS2'"
 	},
 /obj/machinery/computer/communications/syndicate,
 /turf/open/floor/iron/dark/textured_large,
@@ -5520,8 +5520,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/item/paper{
-	info = "<h1>DS2 Long-Term Brig Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate has been capable of kidnapping a few key NT workers of various hierarchy levels. It is your task to interrogate, question and break their wills in order to find more intel on our enemy, Nanotrasen.</p><p>Stay winning.";
-	name = "paper- 'DS2 Long-Term Brig Report'"
+	info = "<h1>Отчет для Тюремного Отдела DS2</h1><p>Передовая оперативная база 'Благословлённый' под кодовым названием Deep Space 2 успешно разместилась вблизи активных объектов NanoTrasen. Идет перезагрузка двигателей шаттла...</p><p>Синдикат смог похитить несколько ключевых работников NanoTrasen различных уровней иерархии из иных Пластов Вселенной. Ваша задача - допросить, расспросить и сломить их волю, чтобы получить больше информации о нашем враге.</p><p>Оставайтесь победителями.";
+	name = "paper- 'Отчет для Тюремного Отдела DS2'"
 	},
 /obj/machinery/airalarm/syndicate{
 	pixel_y = 24
@@ -8034,8 +8034,8 @@
 	pixel_y = 6
 	},
 /obj/item/paper{
-	info = "<h1>DS2 Command Report</h1><p>The Deep Space 2 Forward Operating Base has successfully relocated itself near active Nanotrasen installations. Reboot of shuttle engines in progress...</p><p>The Sothran Syndicate is glad to have you on-field, admiral. Nanotrasen is in the direct sector and, as such, is the direct target of our operatives. Manage your crew well and with respect, and leave all your anger to the gravel that is Nanotrasen. Remember that Interdyne has an unaffiliated facade to keep up, as such, advise against your crew flaunting their affiliation to non-crew.</p><p>Stay winning.</p>";
-	name = "paper- 'DS2 Command Report'"
+	info = "<h1>Командный Отчёт DS2</h1><p>Передовая оперативная база 'Благословлённый' под кодовым названием Deep Space 2 успешно разместилась вблизи активных объектов NanoTrasen. Идет перезагрузка двигателей шаттла...</p><p>Синдикат рад видеть вас на поле боя, адмирал. Nanotrasen находится в опасном секторе и, как таковой, является прямой целью оперативников из других Пластов Вселенной. Управляйте своим экипажем хорошо и с уважением, а весь свой гнев оставьте для достойной битвы с Аномалиями. Помните о том, что DS1 находятся под вашей ответственностью и их проблемы - ваши проблемы. Не советуем вашему экипажу выставлять напоказ свою групповую принадлежность, если только вы не являетесь представителем Кайберсанов или Горлексов.</p><p>Не болейте и оставайтесь в выигрыше.</p>";
+	name = "paper- 'Командный Отчёт DS2'"
 	},
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)
