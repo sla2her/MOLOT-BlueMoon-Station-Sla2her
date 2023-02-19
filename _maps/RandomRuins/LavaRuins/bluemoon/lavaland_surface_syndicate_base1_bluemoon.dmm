@@ -318,7 +318,7 @@
 	dir = 1
 	},
 /obj/machinery/quantumpad{
-	map_pad_id = "interdyne";
+	map_pad_id = "ds1";
 	map_pad_link_id = "ds2";
 	name = "quantum pad to DS-2"
 	},
@@ -5764,8 +5764,9 @@
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "Qa" = (
 /obj/machinery/cryopod/tele,
-/obj/machinery/computer/cryopod{
-	pixel_x = -32
+/obj/machinery/computer/cryopod/ds1{
+	dir = 4;
+	pixel_x = -30
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
@@ -6321,7 +6322,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/mob/living/carbon/monkey/punpun,
+/mob/living/carbon/monkey/punpun{
+	faction = list("Syndicate")
+	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "TY" = (
@@ -6970,14 +6973,6 @@
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/aviators{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/aviators{
-	pixel_x = -5;
-	pixel_y = -5
 	},
 /obj/item/clothing/glasses/hud/security/sunglasses/aviators,
 /obj/item/clothing/glasses/hud/security/sunglasses{

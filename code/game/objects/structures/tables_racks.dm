@@ -37,6 +37,16 @@
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/obj/structure/table, /obj/structure/table/reinforced, /obj/structure/table/greyscale)
 
+/obj/structure/table/Initialize(mapload)
+	. = ..()
+
+	var/static/list/barehanded_interactions = list(
+		INTENT_ANY = "Slap",
+		INTENT_HARM = "Slam"
+	)
+
+	AddElement(/datum/element/contextual_screentip_bare_hands, rmb_text_combat_mode = barehanded_interactions)
+
 /obj/structure/table/examine(mob/user)
 	. = ..()
 	. += deconstruction_hints(user)
@@ -490,6 +500,19 @@
 	// the sprites in the editor to see why.
 	icon = smooth_icon
 
+	if (!(flags_1 & NODECONSTRUCT_1))
+		var/static/list/tool_behaviors = list(
+			TOOL_SCREWDRIVER = list(
+				SCREENTIP_CONTEXT_LMB = list(INTENT_ANY = "Disassemble"),
+			),
+
+			TOOL_WRENCH = list(
+				SCREENTIP_CONTEXT_LMB = list(INTENT_ANY = "Deconstruct"),
+			),
+		)
+
+		AddElement(/datum/element/contextual_screentip_tools, tool_behaviors)
+
 /obj/structure/table/wood/fancy/black
 	icon_state = "fancy_table_black"
 	buildstack = /obj/item/stack/tile/carpet/black
@@ -581,6 +604,11 @@
 				deconstruction_ready = 1
 	else
 		. = ..()
+
+/obj/structure/table/reinforced/plastitaniumglass
+	name = "Plastitanium Glass Table"
+	desc = "A table made of titanium reinforced silica-plasma composite. About as durable as it sounds."
+	max_integrity = 300
 
 /obj/structure/table/reinforced/brass
 	name = "brass table"
@@ -688,6 +716,11 @@
 	attack_hand_speed = CLICK_CD_MELEE
 	attack_hand_is_action = TRUE
 
+/obj/structure/rack/shelf
+	name = "shelf"
+	desc = "A shelf, for storing things on. Conveinent!"
+	icon_state = "shelf"
+
 /obj/structure/rack/examine(mob/user)
 	. = ..()
 	. += "<span class='notice'>It's held together by a couple of <b>bolts</b>.</span>"
@@ -704,7 +737,7 @@
 	. = !density
 	if(istype(caller))
 		. = . || (caller.pass_flags & PASSTABLE)
-		
+
 /obj/structure/rack/MouseDrop_T(obj/O, mob/user)
 	. = ..()
 	if ((!( istype(O, /obj/item) ) || user.get_active_held_item() != O))

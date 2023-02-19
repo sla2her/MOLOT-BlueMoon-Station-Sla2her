@@ -49,4 +49,10 @@
 #define SCREENTIP_PREFERENCE_ENABLED "Enabled"
 
 /// Screentips are only enabled when they have context
+#define REENTIP_PREFERENCE_CONTEXT_ONLY "Only with tips"
+
+/// Screentips are only enabled when they have context
 #define SCREENTIP_PREFERENCE_CONTEXT_ONLY "Only with tips"
+
+/// Regardless of intent
+#define INTENT_ANY "intent_any"

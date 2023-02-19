@@ -263,21 +263,17 @@
 	var/watertemp = "normal"	//freezing, normal, or boiling
 	var/datum/looping_sound/showering/soundloop
 
-/obj/structure/shower/directional/north //Pixel offsets get overwritten on New()
-	dir = SOUTH
-	pixel_y = 28
-
-/obj/structure/shower/directional/south
+/obj/machinery/shower/directional/north //Pixel offsets get overwritten on New()
 	dir = NORTH
-	pixel_y = -28
 
-/obj/structure/shower/directional/east
-	dir = WEST
-	pixel_x = 28
+/obj/machinery/shower/directional/south
+	dir = SOUTH
 
-/obj/structure/shower/directional/west
+/obj/machinery/shower/directional/east
 	dir = EAST
-	pixel_x = -28
+
+/obj/machinery/shower/directional/west
+	dir = WEST
 
 /obj/machinery/shower/Initialize(mapload)
 	. = ..()
@@ -684,6 +680,22 @@
 /obj/structure/sink/kitchen
 	name = "kitchen sink"
 	icon_state = "sink_alt"
+
+/obj/structure/sink/kitchen/directional/north //Pixel offsets get overwritten on New()
+	dir = NORTH
+	pixel_y = 20
+
+/obj/structure/sink/kitchen/directional/south
+	dir = SOUTH
+	pixel_y = -20
+
+/obj/structure/sink/kitchen/directional/east
+	dir = EAST
+	pixel_x = 20
+
+/obj/structure/sink/kitchen/directional/west
+	dir = WEST
+	pixel_x = -20
 
 /obj/structure/sink/well
 	name = "well"

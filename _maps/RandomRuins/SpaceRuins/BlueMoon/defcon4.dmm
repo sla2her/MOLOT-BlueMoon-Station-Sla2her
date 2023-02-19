@@ -745,7 +745,10 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "eE" = (
@@ -1157,8 +1160,11 @@
 /area/solars/tarkon)
 "hf" = (
 /obj/machinery/power/smes,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/structure/cable/yellow,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "hi" = (
@@ -1344,12 +1350,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "hZ" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/smes/engineering{
 	charge = 0;
 	name = "backup power storage unit"
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "ia" = (
@@ -4055,12 +4061,11 @@
 /obj/machinery/power/smes/engineering{
 	charge = 0
 	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable/yellow{
+/obj/structure/cable{
 	icon_state = "0-4"
 	},
 /turf/open/floor/iron,
@@ -5981,9 +5986,8 @@
 /obj/machinery/power/smes/engineering{
 	charge = 0
 	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable/yellow{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
 	icon_state = "0-4"
 	},
 /turf/open/floor/iron,
@@ -6198,6 +6202,9 @@
 "Kl" = (
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/computer/cryopod/tarkoff{
+	pixel_y = 30
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "Kr" = (
@@ -6498,9 +6505,12 @@
 	dir = 1
 	},
 /obj/machinery/power/smes,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable/yellow,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Mp" = (
@@ -7890,6 +7900,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
+"UG" = (
+/obj/machinery/power/smes,
+/obj/structure/cable/yellow,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/port_tarkon/atmos)
 "UI" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/oxygen{
@@ -10244,7 +10263,7 @@ Qu
 uK
 XH
 Me
-hf
+UG
 hf
 xt
 sv

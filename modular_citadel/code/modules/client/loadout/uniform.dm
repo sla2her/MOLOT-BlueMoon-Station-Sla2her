@@ -202,14 +202,6 @@
 
 // Pantsless Sweaters
 
-/datum/gear/uniform/turtleneck
-	name = "Tactitool Turtleneck"
-	path = /obj/item/clothing/under/syndicate/cosmetic
-
-/datum/gear/uniform/skirtleneck
-	name = "Tactitool Skirtleneck"
-	path = /obj/item/clothing/under/syndicate/cosmetic/skirt
-
 /datum/gear/uniform/sweater
 	name = "Cream Commando Sweater"
 	path = /obj/item/clothing/under/sweater
