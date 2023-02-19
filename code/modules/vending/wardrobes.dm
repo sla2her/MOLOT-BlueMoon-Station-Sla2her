@@ -552,8 +552,10 @@
 	product_ads = "Put a Donk on it! Aim, Style, Shoot!;Brigged for wearing the best!"
 	vend_reply = "Thank you for using the SynDrobe!"
 	products = list(
-		/obj/item/clothing/under/syndicate/cosmetic = 3,
-		/obj/item/clothing/under/syndicate/cosmetic/skirt = 3,
+		/obj/item/clothing/under/syndicate = 3,
+		/obj/item/clothing/under/syndicate/skirt = 3,
+		/obj/item/clothing/under/syndicate/tacticool = 3,
+		/obj/item/clothing/under/syndicate/tacticool/skirt = 3,
 		/obj/item/clothing/under/syndicate/overalls = 3,
 		/obj/item/clothing/under/syndicate/overalls/skirt = 3,
 		/obj/item/clothing/under/syndicate/bloodred = 3,
@@ -568,13 +570,14 @@
 		/obj/item/clothing/head/beret/sec/syndicate = 3,
 	)
 	contraband = list(
-		/obj/item/kitchen/knife/combat = 2,
+		/obj/item/kitchen/knife/combat = 4,
 		/obj/item/clothing/under/syndicate/coldres = 2,
 		/obj/item/clothing/shoes/combat/coldres = 2,
 	)
 	premium = list(
 		/obj/item/kitchen/knife/combat/survival/knuckledagger = 2,
 		/obj/item/storage/fancy/cigarettes/cigpack_syndicate = 5,
+		/obj/item/lighter = 5,
 		/obj/item/clothing/gloves/combat = 3,
 		/obj/item/clothing/under/syndicate/maid = 5,
 		/obj/item/clothing/gloves/combat/maid = 5,

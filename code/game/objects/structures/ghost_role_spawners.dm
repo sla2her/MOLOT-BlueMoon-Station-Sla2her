@@ -1317,7 +1317,7 @@
 //DS-2 Command
 /datum/outfit/ds2/syndicate_command
 	name = "DS-2 Command Operative"
-	uniform = /obj/item/clothing/under/syndicate/cosmetic
+	uniform = /obj/item/clothing/under/syndicate
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/ds2/command
 	back = /obj/item/storage/backpack
