@@ -1226,7 +1226,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/miner
 
 /obj/item/card/id/syndicate/advanced/black/mining
-	name = "DS-2 Mining Officer"
+	assignment = "DS-2 Mining Officer"
 	icon_state = "card_black"
 
 /datum/outfit/ds2/syndicate/service
@@ -1239,7 +1239,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/syndicatestaff
 
 /obj/item/card/id/syndicate/advanced/black/general
-	name = "DS-2 General Staff"
+	assignment = "DS-2 General Staff"
 	icon_state = "card_black"
 
 /datum/outfit/ds2/syndicate/enginetech
@@ -1256,7 +1256,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/enginetechnician
 
 /obj/item/card/id/syndicate/advanced/black/engine
-	name = "DS-2 Engine Technician"
+	assignment = "DS-2 Engine Technician"
 	icon_state = "card_black"
 
 /datum/outfit/ds2/syndicate/researcher
@@ -1270,7 +1270,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/researcher
 
 /obj/item/card/id/syndicate/advanced/black/researcher
-	name = "DS-2 Researcher"
+	assignment = "DS-2 Researcher"
 	icon_state = "card_black"
 
 /datum/outfit/ds2/syndicate/stationmed
@@ -1288,7 +1288,7 @@
 		)
 
 /obj/item/card/id/syndicate/advanced/black/stationmed
-	name = "DS-2 Medical Officer"
+	assignment = "DS-2 Medical Officer"
 	icon_state = "card_black"
 
 /datum/outfit/ds2/syndicate/brigoff
@@ -1306,7 +1306,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/brigofficer
 
 /obj/item/card/id/syndicate/advanced/black/command/brigoff
-	name = "DS-2 Brig Officer"
+	assignment = "DS-2 Brig Officer"
 	icon_state = "card_black"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
@@ -1330,7 +1330,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2
 
 /obj/item/card/id/syndicate/advanced/black/command
-	name = "DS-2 Command Operative"
+	assignment = "DS-2 Command Operative"
 	icon_state = "card_black"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
@@ -1351,7 +1351,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/masteratarms
 
 /obj/item/card/id/syndicate/advanced/black/command/masteratarms
-	name = "DS-2 Master At Arms"
+	assignment = "DS-2 Master At Arms"
 	icon_state = "card_black"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
@@ -1364,7 +1364,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/corporateliasion
 
 /obj/item/card/id/syndicate/advanced/black/command/corporateliaison
-	name = "DS-2 Corporate Liasion"
+	assignment = "DS-2 Corporate Liasion"
 	icon_state = "card_black"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
@@ -1379,7 +1379,7 @@
 	id_trim = /datum/id_trim/syndicom/ds2/stationadmiral
 
 /obj/item/card/id/syndicate/advanced/black/gold
-	name = "DS-2 Admiral"
+	assignment = "DS-2 Admiral"
 	icon_state = "gold"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 

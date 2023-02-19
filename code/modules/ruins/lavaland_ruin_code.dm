@@ -169,11 +169,12 @@
 		return INITIALIZE_HINT_QDEL
 
 /datum/outfit/lavaland_syndicate/comms
-	name = "Lavaland Syndicate Comms Agent"
+	name = "Syndicate Comms Agent"
 	r_hand = /obj/item/melee/transforming/energy/sword/saber
 	mask = /obj/item/clothing/mask/chameleon/gps
 	suit = /obj/item/clothing/suit/armor/vest
 	ears = /obj/item/radio/headset/ds1/comms
+	id = /obj/item/card/id/syndicate/anyone/comms
 
 /obj/item/clothing/mask/chameleon/gps/Initialize(mapload)
 	. = ..()

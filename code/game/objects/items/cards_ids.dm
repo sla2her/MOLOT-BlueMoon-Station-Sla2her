@@ -544,6 +544,12 @@
 
 /obj/item/card/id/syndicate/anyone
 	anyone = TRUE
+	assignment = "Lavaland Syndicate Agent"
+
+/obj/item/card/id/syndicate/anyone/comms
+	anyone = TRUE
+	assignment = "Syndicate Comms Agent"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/syndicate/nuke_leader
 	name = "Lead Agent Card"

@@ -6322,7 +6322,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/mob/living/carbon/monkey/punpun,
+/mob/living/carbon/monkey/punpun{
+	faction = list("Syndicate")
+	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "TY" = (
