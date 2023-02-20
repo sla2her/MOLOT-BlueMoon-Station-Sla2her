@@ -3663,12 +3663,13 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ai_monitored/security/armory)
 "aii" = (
-/obj/machinery/rnd/production/techfab/department/security,
-/obj/effect/turf_decal/delivery,
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
-	},
+/obj/machinery/autolathe/hacked,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/sheet/plastic/fifty,
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
 "aij" = (
@@ -36549,6 +36550,8 @@
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/sheet/plastic/fifty,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ai_monitored/security/armory)
 "bMZ" = (
@@ -41772,6 +41775,7 @@
 /area/maintenance/aft)
 "caV" = (
 /obj/item/gun/ballistic/automatic/pistol/luger/mag,
+/obj/effect/mob_spawn/human/corpse/german,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "caX" = (
@@ -52709,6 +52713,10 @@
 	smooth = 2
 	},
 /area/engineering/gravity_generator)
+"eDa" = (
+/obj/machinery/piratepad/civilian,
+/turf/open/floor/mineral/plastitanium,
+/area/cargo/office)
 "eDf" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 8
@@ -56435,6 +56443,13 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/atmos)
+"jYQ" = (
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/security/brig)
 "jZT" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -57765,6 +57780,12 @@
 	},
 /turf/open/floor/plating,
 /area/security/prison)
+"lEV" = (
+/obj/machinery/computer/piratepad_control/civilian{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/cargo/office)
 "lGz" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance{
@@ -61258,11 +61279,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "qPk" = (
-/obj/machinery/autolathe/toy/hacked,
-/obj/item/stack/sheet/plastic/fifty,
-/obj/item/stack/sheet/plastic/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
+/obj/machinery/rnd/production/techfab/department/security,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ai_monitored/security/armory)
 "qQx" = (
@@ -89608,7 +89625,7 @@ boR
 bqs
 bbR
 bkM
-bbR
+eDa
 bwd
 bxB
 bvL
@@ -89865,7 +89882,7 @@ boT
 bbR
 bbR
 buI
-bbR
+lEV
 bwd
 bxD
 byL
@@ -92890,7 +92907,7 @@ aeO
 afG
 afq
 aii
-afM
+jYQ
 aig
 agp
 aiX
