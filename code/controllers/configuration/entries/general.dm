@@ -114,6 +114,7 @@
 
 /datum/config_entry/number/shuttle_refuel_delay
 	config_entry_value = 12000
+	integer = FALSE
 	min_val = 0
 
 /datum/config_entry/flag/show_game_type_odds	//if set this allows players to see the odds of each roundtype on the get revision screen
