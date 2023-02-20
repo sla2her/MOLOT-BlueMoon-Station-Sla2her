@@ -418,7 +418,7 @@
 /obj/item/clothing/mask/gas/sechailer/syndicate,
 /obj/item/gun/energy/disabler,
 /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch,
-/obj/item/clothing/glasses/hud/security/sunglasses/disablers,
+/obj/item/clothing/glasses/hud/security/sunglasses/aviators,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "bs" = (
@@ -9740,7 +9740,7 @@
 /obj/item/clothing/mask/gas/sechailer/syndicate,
 /obj/item/gun/energy/disabler,
 /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch,
-/obj/item/clothing/glasses/hud/security/sunglasses/disablers,
+/obj/item/clothing/glasses/hud/security/sunglasses/aviators,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "NQ" = (
@@ -9958,7 +9958,7 @@
 /obj/item/clothing/mask/gas/sechailer/syndicate,
 /obj/item/gun/energy/disabler,
 /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch,
-/obj/item/clothing/glasses/hud/security/sunglasses/disablers,
+/obj/item/clothing/glasses/hud/security/sunglasses/aviators,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "OD" = (
