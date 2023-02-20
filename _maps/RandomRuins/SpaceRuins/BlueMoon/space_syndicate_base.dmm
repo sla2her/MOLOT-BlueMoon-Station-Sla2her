@@ -3135,7 +3135,8 @@
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/door/airlock/cmo/glass{
-	name = "Medical Bay"
+	name = "Medical Bay";
+	req_access = null
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
@@ -5954,7 +5955,8 @@
 "ya" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/cmo/glass{
-	name = "Medical Bay"
+	name = "Medical Bay";
+	req_access = null
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
@@ -6803,7 +6805,8 @@
 	dir = 2
 	},
 /obj/machinery/door/airlock/cmo/glass{
-	name = "Medical Bay"
+	name = "Medical Bay";
+	req_access = null
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
