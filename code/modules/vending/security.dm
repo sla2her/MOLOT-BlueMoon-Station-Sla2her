@@ -15,9 +15,6 @@
 					/obj/item/storage/box/evidence = 6,
 					/obj/item/flashlight/seclite = 4,
 					/obj/item/restraints/legcuffs/bola/energy = 10,
-					/obj/item/clothing/mask/gas/sechailer = 8,
-					/obj/item/clothing/mask/gas/sechailer/slut = 4,
-					/obj/item/clothing/mask/gas/sechailer/swat = 2,
 					/obj/item/secbat = 5)
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,
 					/obj/item/storage/fancy/donut_box = 2,
@@ -27,7 +24,7 @@
 					/obj/item/clothing/suit/armor/vest/blueshirt = 5, //BlueMoon edit
 					/obj/item/clothing/under/rank/security/officer/blueshirt = 5, //BlueMoon edit
 					/obj/item/clothing/gloves/tackler = 5, //BlueMoon edit
-					/obj/item/grenade/stingbang = 3, //BlueMoon edit
+					/obj/item/grenade/stingbang = 5, //BlueMoon edit
 					/obj/item/ssword_kit = 1,
 					/obj/item/clothing/suit/armor/hos/platecarrier = 1,
 					/obj/item/storage/belt/bandolier = 2,

@@ -475,8 +475,8 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "by" = (
 /obj/machinery/vending/security{
-	name = "\improper Stolen Armadyne Equipment Vendor";
-	desc = "An Armadyne peacekeeper equipment vendor. Makes you wonder why there's no Gorlex Equipment Vendor yet."
+	name = "\improper Stolen Security Equipment Vendor";
+	desc = "An Security peacekeeper equipment vendor. Makes you wonder why there's no Gorlex Equipment Vendor yet."
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
