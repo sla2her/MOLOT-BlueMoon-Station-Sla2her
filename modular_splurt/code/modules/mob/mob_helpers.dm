@@ -10,8 +10,8 @@
 		return
 
 	// Pronoun stuff
-	var/t_He = p_they(FALSE)
-	//var/t_his = p_their()
+	var/t_He = ru_who(FALSE)
+	//var/t_his = ru_ego()
 	//var/t_is = p_are()
 
 	// Check for Distant (no touch head!)

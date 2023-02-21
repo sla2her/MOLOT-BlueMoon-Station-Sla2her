@@ -22,7 +22,7 @@
 			fragment = replacetext(fragment, "%ADJECTIVE% ", "")
 			fragment = "\a [replacetext(fragment, "%A% ", "")]"
 			to_chat(src, "<span class='warning'><b>Тебе приснился ужасный кошмар о [fragment]...</b></span>")
-			src.visible_message("<span class='notice'>[src] shakes in their sleep.</span>")
+			src.visible_message("<span class='notice'>[src] трясется во сне.</span>")
 			src.do_jitter_animation() //shake in their sleep.
 			fragment = ""
 			return
@@ -69,6 +69,13 @@
 
 	dreaming = TRUE
 	dream_sequence(dream_fragments)
+
+/mob/living/carbon/proc/custom_dreams(list/dreamlist, mob/user)
+	var/list/dream_fragments = list()
+	var/list/newlist = dream_fragments.Copy()
+	for(var/i in 1 to newlist.len)
+		newlist[i] = replacetext(newlist[i], "\[DREAMER\]", "[user]")
+	return newlist
 
 /mob/living/carbon/proc/dream_sequence(list/dream_fragments)
 	if(stat != UNCONSCIOUS || InCritical())

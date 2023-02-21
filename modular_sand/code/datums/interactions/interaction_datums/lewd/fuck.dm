@@ -9,7 +9,7 @@
 
 /datum/interaction/lewd/fuck/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/genital_name = user.get_penetrating_genital_name()
 
 	if(user.is_fucking(partner, CUM_TARGET_VAGINA))
@@ -36,8 +36,8 @@
 
 /datum/interaction/lewd/fuck/anal/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
-	//var/t_His = partner.p_their()
+	//var/u_His = user.ru_ego()
+	//var/t_His = partner.ru_ego()
 	var/genital_name = user.get_penetrating_genital_name()
 
 	if(user.is_fucking(partner, CUM_TARGET_ANUS))
@@ -70,7 +70,7 @@
 
 /datum/interaction/lewd/breastfuck/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/genital_name = user.get_penetrating_genital_name()
 
 	if(user.is_fucking(partner, CUM_TARGET_BREASTS))
@@ -101,7 +101,7 @@
 
 /datum/interaction/lewd/footfuck/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/genital_name = user.get_penetrating_genital_name()
 
 	//var/shoes = partner.get_shoes(TRUE)
@@ -130,7 +130,7 @@
 
 /datum/interaction/lewd/footfuck/double/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/genital_name = user.get_penetrating_genital_name()
 
 	var/shoes = partner.get_shoes()
@@ -165,7 +165,7 @@
 /datum/interaction/lewd/footfuck/vag/display_interaction(mob/living/user, mob/living/partner)
 	var/message
 
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 
 	//var/shoes = partner.get_shoes(TRUE)
 

@@ -50,7 +50,7 @@
 	return TRUE
 
 /obj/item/fleshlight/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
-	var/possessive_verb = user.p_their()
+	var/possessive_verb = user.ru_ego()
 	var/message = ""
 	var/lust_amt = 0
 	if(ishuman(M) && (M?.client?.prefs?.toggles & VERB_CONSENT))
@@ -122,7 +122,7 @@
 	var/target_lust_amt = NONE
 	var/target
 	var/mob/living/carbon/human/portal_target = ishuman(portalunderwear.loc) && (portalunderwear.current_equipped_slot & (ITEM_SLOT_UNDERWEAR | ITEM_SLOT_MASK)) ? portalunderwear.loc : null
-	
+
 	// This list is structured as [M's longname, M's shortname, wearer's longname, wearer's shortname]
 	var/penis_names = list()
 	for(var/mob/living/carbon/human/person in list(M, portal_target))
@@ -137,7 +137,7 @@
 		else
 			LAZYADD(penis_names, "none")
 			LAZYADD(penis_names, "none")
-	
+
 	if(ishuman(M) && (M?.client?.prefs?.toggles & VERB_CONSENT) && useable) // I promise all those checks are worth it!
 		switch(user.zone_selected)
 			if(BODY_ZONE_PRECISE_GROIN)
@@ -187,19 +187,19 @@
 									user_lust_amt = NORMAL_LUST
 									target_lust_amt = NORMAL_LUST
 								if(CUM_TARGET_VAGINA)
-									user_message = (user == M) ? "grinds [M.p_their()] pussy into \the [src]'s pussy" : "rubs \the [src]'s pussy against \the [M]'s pussy"
+									user_message = (user == M) ? "grinds [M.ru_ego()] pussy into \the [src]'s pussy" : "rubs \the [src]'s pussy against \the [M]'s pussy"
 									target_message = "grind their pussy into yours"
 									target = CUM_TARGET_VAGINA
 									user_lust_amt = NORMAL_LUST
 									target_lust_amt = NORMAL_LUST
 								if(CUM_TARGET_ANUS)
-									user_message = (user == M) ? "grinds [M.p_their()] pussy into \the [src]'s anus" : "rubs \the [src]'s anus against \the [M]'s pussy"
+									user_message = (user == M) ? "grinds [M.ru_ego()] pussy into \the [src]'s anus" : "rubs \the [src]'s anus against \the [M]'s pussy"
 									target_message = "grind their pussy into your anus"
 									target = CUM_TARGET_VAGINA
 									user_lust_amt = LOW_LUST
 									target_lust_amt = LOW_LUST
 								if(CUM_TARGET_MOUTH)
-									user_message = (user == M) ? "grinds [M.p_their()] pussy into \the [src]'s mouth" : "rubs \the [src]'s mouth against \the [M]'s pussy"
+									user_message = (user == M) ? "grinds [M.ru_ego()] pussy into \the [src]'s mouth" : "rubs \the [src]'s mouth against \the [M]'s pussy"
 									target_message = "grind their pussy into your mouth"
 									target = CUM_TARGET_VAGINA
 									user_lust_amt = NORMAL_LUST
@@ -218,25 +218,25 @@
 						if(M.has_anus(REQUIRE_EXPOSED))
 							switch(portalunderwear.targetting)
 								if(CUM_TARGET_PENIS)
-									user_message = (user == M) ? "uses the [penis_names[3]] [name] to fuck [M.p_them()]self anally" : "fucks \the [M] anally with the [penis_names[3]] [name]"
+									user_message = (user == M) ? "uses the [penis_names[3]] [name] to fuck [M.ru_na()]self anally" : "fucks \the [M] anally with the [penis_names[3]] [name]"
 									target_message = "fuck your [penis_names[4]] with an anus"
 									target = CUM_TARGET_ANUS
 									user_lust_amt = NORMAL_LUST
 									target_lust_amt = NORMAL_LUST
 								if(CUM_TARGET_VAGINA)
-									user_message = (user == M) ? "grinds [M.p_their()] anus into \the [src]'s pussy" : "rubs \the [src]'s pussy against \the [M]'s anus"
+									user_message = (user == M) ? "grinds [M.ru_ego()] anus into \the [src]'s pussy" : "rubs \the [src]'s pussy against \the [M]'s anus"
 									target_message = "grind their anus into your pussy"
 									target = CUM_TARGET_ANUS
 									user_lust_amt = LOW_LUST
 									target_lust_amt = LOW_LUST
 								if(CUM_TARGET_ANUS)
-									user_message = (user == M) ? "grinds [M.p_their()] anus into \the [src]'s anus" : "rubs \the [src]'s anus against \the [M]'s anus"
+									user_message = (user == M) ? "grinds [M.ru_ego()] anus into \the [src]'s anus" : "rubs \the [src]'s anus against \the [M]'s anus"
 									target_message = "grind their anus into yours"
 									target = CUM_TARGET_ANUS
 									user_lust_amt = LOW_LUST
 									target_lust_amt = LOW_LUST
 								if(CUM_TARGET_MOUTH)
-									user_message = (user == M) ? "grinds [M.p_their()] anus into \the [src]'s mouth" : "rubs \the [src]'s mouth against \the [M]'s anus"
+									user_message = (user == M) ? "grinds [M.ru_ego()] anus into \the [src]'s mouth" : "rubs \the [src]'s mouth against \the [M]'s anus"
 									target_message = "grind their anus into your mouth"
 									target = CUM_TARGET_ANUS
 									user_lust_amt = NORMAL_LUST
@@ -382,25 +382,25 @@
 					if(can_interact)
 						switch(portalunderwear.targetting)
 							if(CUM_TARGET_PENIS)
-								user_message = (user == M) ? "rubs the [penis_names[3]] [name] with [M.p_their()] foot" : "rubs the [penis_names[3]] [name] against \the [M]'s foot"
+								user_message = (user == M) ? "rubs the [penis_names[3]] [name] with [M.ru_ego()] foot" : "rubs the [penis_names[3]] [name] against \the [M]'s foot"
 								target_message = "rub your [penis_names[4]] with their foot"
 								target = CUM_TARGET_FEET
 								user_lust_amt = NONE
 								target_lust_amt = NORMAL_LUST
 							if(CUM_TARGET_VAGINA)
-								user_message = (user == M) ? "rubs \the [src]'s pussy with [M.p_their()] toes" : "rubs \the [src]'s pussy with \the [M]'s toes"
+								user_message = (user == M) ? "rubs \the [src]'s pussy with [M.ru_ego()] toes" : "rubs \the [src]'s pussy with \the [M]'s toes"
 								target_message = "rub your pussy with their toes"
 								target = CUM_TARGET_FEET
 								user_lust_amt = NONE
 								target_lust_amt = NORMAL_LUST
 							if(CUM_TARGET_ANUS)
-								user_message = (user == M) ? "rubs \the [src]'s anus with [M.p_their()] toes" : "rubs \the [src]'s anus with \the [M]'s toes"
+								user_message = (user == M) ? "rubs \the [src]'s anus with [M.ru_ego()] toes" : "rubs \the [src]'s anus with \the [M]'s toes"
 								target_message = "rub your anus with their toes"
 								target = CUM_TARGET_FEET
 								user_lust_amt = NONE
 								target_lust_amt = NORMAL_LUST
 							if(CUM_TARGET_MOUTH)
-								user_message = (user == M) ? "sticks [M.p_their()] toes inside of \the [src]'s mouth" : "sticks \the [M]'s toes inside of \the [src]'s mouth"
+								user_message = (user == M) ? "sticks [M.ru_ego()] toes inside of \the [src]'s mouth" : "sticks \the [M]'s toes inside of \the [src]'s mouth"
 								target_message = "stick their toes inside of your mouth"
 								target = CUM_TARGET_FEET
 								user_lust_amt = NONE

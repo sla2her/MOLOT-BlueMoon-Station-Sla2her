@@ -324,7 +324,7 @@
 	if(!isclownjob(user))
 		return
 
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/list/honks = list(
 		"<span class='lewd'>\ Сиськи <b>[user]</b> громко пищат!</span>",
 		"<span class='lewd'>\ <b>[user]</b> издаёт громкое пищание своими [pick(GLOB.breast_nouns)]!</span>"
@@ -350,7 +350,7 @@
 	if(!isclownjob(user))
 		return
 
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/list/honks = list(
 		"<span class='lewd'>\ Сиськи <b>[target]</b> громко пищат!</span>",
 		"<span class='lewd'>\ <b>[target]</b> издаёт громкое пищание своими [pick(GLOB.breast_nouns)]!</span>"

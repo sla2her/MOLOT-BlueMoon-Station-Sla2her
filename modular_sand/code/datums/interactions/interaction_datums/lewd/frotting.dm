@@ -9,7 +9,7 @@
 
 /datum/interaction/lewd/frotting/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/t_His = user.p_their()
+	//var/t_His = user.ru_ego()
 	var/genital_name = user.get_penetrating_genital_name()
 
 	message = "потирает свой [genital_name] о [genital_name] <b>[partner]</b>."
@@ -30,7 +30,7 @@
 /datum/interaction/lewd/tribadism/display_interaction(mob/living/user, mob/living/partner)
 	var/message
 
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 
 	if(partner.is_fucking(user, CUM_TARGET_VAGINA))
 		message = "[pick("трётся своей киской с <b>[partner]</b>.",

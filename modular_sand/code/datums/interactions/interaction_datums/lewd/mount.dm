@@ -7,7 +7,7 @@
 
 /datum/interaction/lewd/mount/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/genital_name = partner.get_penetrating_genital_name()
 
 	if(partner.is_fucking(user, CUM_TARGET_VAGINA))
@@ -33,7 +33,7 @@
 
 /datum/interaction/lewd/mountass/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//.var/u_His = user.p_their()
+	//.var/u_His = user.ru_ego()
 	var/genital_name = partner.get_penetrating_genital_name()
 
 	if(partner.is_fucking(user, CUM_TARGET_ANUS))
@@ -60,7 +60,7 @@
 /datum/interaction/lewd/mountface/display_interaction(mob/living/user, mob/living/partner)
 	var/message
 
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 
 	if(user.is_fucking(partner, GRINDING_FACE_WITH_ANUS))
 		message = "[pick("втирает свою задницу в лицо <b>[partner]</b> и ехидно ухмыляется.",
@@ -100,10 +100,10 @@
 	var/obj/item/organ/genital/genital = null
 	var/lust_increase = 1
 
-	//var/u_His = user.p_their()
-	//var/t_His = partner.p_their()
-	//var/t_Him = partner.p_them()
-	//var/t_Hes = partner.p_theyre()
+	//var/u_His = user.ru_ego()
+	//var/t_His = partner.ru_ego()
+	//var/t_Him = partner.ru_na()
+	//var/t_Hes = partner.ru_who()
 
 	if(user.is_fucking(partner, THIGH_SMOTHERING))
 		var/improv = FALSE

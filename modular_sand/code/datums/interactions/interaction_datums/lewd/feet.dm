@@ -61,10 +61,10 @@
 /datum/interaction/lewd/grindmouth/display_interaction(mob/living/user, mob/living/partner)
 	var/message
 
-	//var/u_His = user.p_their()
-	var/t_His = partner.p_their()
-	var/t_Him = partner.p_them()
-	var/t_He = partner.p_they()
+	//var/u_His = user.ru_ego()
+	var/t_His = partner.ru_ego()
+	var/t_Him = partner.ru_na()
+	var/t_He = partner.ru_who()
 	//var/t_S = partner.p_s()
 
 	var/shoes = user.get_shoes()
@@ -115,7 +115,7 @@
 
 /datum/interaction/lewd/footjob/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/shoes = user.get_shoes(TRUE)
 	var/genital_name = partner.get_penetrating_genital_name()
 
@@ -142,7 +142,7 @@
 
 /datum/interaction/lewd/footjob/double/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 	var/shoes = user.get_shoes()
 	var/genital_name = partner.get_penetrating_genital_name()
 
@@ -172,7 +172,7 @@
 /datum/interaction/lewd/footjob/vagina/display_interaction(mob/living/user, mob/living/partner)
 	var/message
 
-	//var/u_His = user.p_their()
+	//var/u_His = user.ru_ego()
 
 	var/shoes = partner.get_shoes(TRUE)
 
