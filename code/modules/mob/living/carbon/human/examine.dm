@@ -105,6 +105,28 @@
 	var/list/status_examines = status_effect_examines()
 	if (length(status_examines))
 		. += status_examines
+	//Approximate character height based on current sprite scale
+	var/dispSize = round(12*get_size(src)) // gets the character's sprite size percent and converts it to the nearest half foot
+	if(dispSize % 2) // returns 1 or 0. 1 meaning the height is not exact and the code below will execute, 0 meaning the height is exact and the else will trigger.
+		dispSize = dispSize - 1 //makes it even
+		dispSize = dispSize / 2 //rounds it out
+		. += "[t_on], кажется, чуть выше или около [dispSize] футов в высоту."
+	else
+		dispSize = dispSize / 2
+		. += "[t_on], кажется, около [dispSize] футов в высоту."
+	//CIT CHANGES START HERE - adds genital details to examine text
+	if(LAZYLEN(internal_organs) && (user.client?.prefs.cit_toggles & GENITAL_EXAMINE))
+		for(var/obj/item/organ/genital/dicc in internal_organs)
+			if(istype(dicc) && dicc.is_exposed())
+				. += "[dicc.desc]"
+				if((src == user || HAS_TRAIT(user, TRAIT_GFLUID_DETECT)) && ((dicc?.genital_flags & GENITAL_FUID_PRODUCTION) || ((dicc?.linked_organ?.genital_flags & GENITAL_FUID_PRODUCTION) && !dicc?.linked_organ?.is_exposed())))
+					var/datum/reagent/cummies = find_reagent_object_from_type(dicc?.get_fluid_id())
+					. += "Вы чувствуете, как от [t_ego] тела пахнет '<span style='color:[cummies.color]';>[cummies.name]</span>'..."
+	if(user.client?.prefs.cit_toggles & VORE_EXAMINE)
+		var/cursed_stuff = attempt_vr(src,"examine_bellies",args) //vore Code
+		if(cursed_stuff)
+			. += cursed_stuff
+	//END OF CIT CHANGES
 	//Jitters
 	switch(jitteriness)
 		if(300 to INFINITY)
@@ -308,7 +330,7 @@
 				msg += "[t_on] [stun_absorption[i]["examine_message"]]\n"
 
 	if(just_sleeping)
-		msg += "[t_on] похоже спит. Гы.\n"
+		msg += "[t_on] спит. Гы.\n"
 
 	if(!appears_dead)
 		if(drunkenness && !skipface) //Drunkenness
@@ -381,57 +403,62 @@
 
 	switch(scar_severity)
 		if(1 to 4)
-			msg += span_smallnoticeital("\n[t_on] похоже имеет шрамы... стоит присмотреться, чтобы разглядеть ещё.")
+			msg += span_smallnoticeital("\n[t_on], похоже, имеет шрамы... стоит присмотреться, чтобы разглядеть ещё.")
 		if(5 to 8)
 			msg += span_notice("\n<i>[t_on] имеет несколько серьёзных шрамов... стоит присмотреться, чтобы разглядеть ещё.</i>")
 		if(9 to 11)
 			msg += span_notice("\n<b><i>[t_on] имеет множество ужасных шрамов... стоит присмотреться, чтобы разглядеть ещё.</i></b>")
 		if(12 to INFINITY)
-			msg += span_notice("\n<b><i>[t_on] имеет разорванное в хлам тело состоящее из шрамов... стоит присмотреться, чтобы разглядеть ещё?</i></b>")
+			msg += span_notice("\n<b><i>[t_on] имеет разорванное в хлам тело, состоящее из шрамов... стоит присмотреться, чтобы разглядеть ещё?</i></b>")
 
 	if (length(msg))
 		. += span_warning("[msg.Join("")]")
 
-	var/perpname = get_face_name(get_id_name(""))
 	var/traitstring = get_trait_string()
-	if(perpname && (HAS_TRAIT(user, TRAIT_SECURITY_HUD) || HAS_TRAIT(user, TRAIT_MEDICAL_HUD)))
-		var/datum/data/record/R = find_record("name", perpname, GLOB.data_core.general)
-		if(R)
-			. += "<hr><span class='deptradio'>Должность:</span> [R.fields["rank"]]\n<a href='?src=[REF(src)];hud=1;photo_front=1'>\[Фото\]</a><a href='?src=[REF(src)];hud=1;photo_side=1'>\[Альт.\]</a>"
-		if(HAS_TRAIT(user, TRAIT_MEDICAL_HUD))
-			var/cyberimp_detect
-			for(var/obj/item/organ/cyberimp/CI in internal_organs)
-				if(CI.status == ORGAN_ROBOTIC && !CI.syndicate_implant)
-					cyberimp_detect += "[!cyberimp_detect ? "[CI.get_examine_string(user)]" : ", [CI.get_examine_string(user)]"]\n"
-			if(cyberimp_detect)
-				. += "<hr><span class='notice ml-1'>Обнаружены кибернетические модификации:</span>\n"
-				. += "<span class='notice ml-2'>[cyberimp_detect]</span>"
-			if(R)
-				var/health_r = R.fields["p_stat"]
-				. += "<a href='?src=[REF(src)];hud=m;p_stat=1'>\[[health_r]\]</a>"
-				health_r = R.fields["m_stat"]
-				. += "<a href='?src=[REF(src)];hud=m;m_stat=1'>\[[health_r]\]</a>"
-			R = find_record("name", perpname, GLOB.data_core.medical)
-			if(R)
-				. += "<a href='?src=[REF(src)];hud=m;evaluation=1'>\[Медицинское заключение\]</a><br>"
-			. += "<a href='?src=[REF(src)];hud=m;quirk=1'>\[Признаки\]</a>"
-
-		if(HAS_TRAIT(user, TRAIT_SECURITY_HUD))
-			if(!user.stat && user != src)
-			//|| !user.canmove || user.restrained()) Fluff: Sechuds have eye-tracking technology and sets 'arrest' to people that the wearer looks and blinks at.
-				var/criminal = "None"
-
-				R = find_record("name", perpname, GLOB.data_core.security)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		var/obj/item/organ/cyberimp/eyes/hud/CIH = H.getorgan(/obj/item/organ/cyberimp/eyes/hud)
+		if(istype(H.glasses, /obj/item/clothing/glasses/hud) || CIH)
+			var/perpname = get_face_name(get_id_name(""))
+			if(perpname)
+				var/datum/data/record/R = find_record("name", perpname, GLOB.data_core.general)
 				if(R)
-					criminal = R.fields["criminal"]
+					. += "<span class='deptradio'>Должность:</span> [R.fields["rank"]]\n<a href='?src=[REF(src)];hud=1;photo_front=1'>\[Фото\]</a><a href='?src=[REF(src)];hud=1;photo_side=1'>\[Альт.\]</a>"
+				if(istype(H.glasses, /obj/item/clothing/glasses/hud/health) || istype(CIH, /obj/item/organ/cyberimp/eyes/hud/medical))
+					var/cyberimp_detect
+					for(var/obj/item/organ/cyberimp/CI in internal_organs)
+						if(CI.status == ORGAN_ROBOTIC && !CI.syndicate_implant)
+							cyberimp_detect += "[name] имеет модификацию [CI.name]."
+					if(cyberimp_detect)
+						. += "Обнаружены кибернетические модификации:"
+						. += cyberimp_detect
+					if(R)
+						var/health_r = R.fields["p_stat"]
+						. += "<a href='?src=[REF(src)];hud=m;p_stat=1'>\[[health_r]\]</a>"
+						health_r = R.fields["m_stat"]
+						. += "<a href='?src=[REF(src)];hud=m;m_stat=1'>\[[health_r]\]</a>"
+					R = find_record("name", perpname, GLOB.data_core.medical)
+					if(R)
+						. += "<a href='?src=[REF(src)];hud=m;evaluation=1'>\[Медицинское заключение\]</a>"
+					if(traitstring)
+						. += "<span class='info'>Обнаружены Физиологические Черты:\n[traitstring]</span>"
 
-				. += jointext(list("<span class='deptradio'>Статус:</span> <a href='?src=[REF(src)];hud=s;status=1'>\[[criminal]\]</a>",
-				"<span class='deptradio'>Заметки:</span> <a href='?src=[REF(src)];hud=s;view=1'>\[View\]</a>",
-				"<a href='?src=[REF(src)];hud=s;add_crime=1'>\[Добавить нарушение\]</a>",
-				"<a href='?src=[REF(src)];hud=s;view_comment=1'>\[Просмотреть комментарии\]</a>",
-				"<a href='?src=[REF(src)];hud=s;add_comment=1'>\[Добавить комментарий\]</a>"), "")
-		else if(isobserver(user) && traitstring)
-			. += "<span class='info'><b>Traits:</b> [traitstring]</span>"
+				if(istype(H.glasses, /obj/item/clothing/glasses/hud/security) || istype(CIH, /obj/item/organ/cyberimp/eyes/hud/security))
+					if(!user.stat && user != src)
+					//|| !user.canmove || user.restrained()) Fluff: Sechuds have eye-tracking technology and sets 'arrest' to people that the wearer looks and blinks at.
+						var/criminal = "None"
+
+						R = find_record("name", perpname, GLOB.data_core.security)
+						if(R)
+							criminal = R.fields["criminal"]
+
+						. += jointext(list("<span class='deptradio'>Criminal status:</span> <a href='?src=[REF(src)];hud=s;status=1'>\[[criminal]\] </a>",
+							"<span class='deptradio'>Security record:</span> <a href='?src=[REF(src)];hud=s;view=1'>\[Показать\] </a>",
+							"<a href='?src=[REF(src)];hud=s;add_crime=1'>\[Добавить нарушение\] </a>",
+							"<a href='?src=[REF(src)];hud=s;view_comment=1'>\[Просмотреть комментарии\] </a>",
+							"<a href='?src=[REF(src)];hud=s;add_comment=1'>\[Добавить комментарий\]</a>"), "")
+	else if(isobserver(user) && traitstring)
+		. += "<span class='info'><b>Физиологические Черты:</b> [traitstring]</span>"
 
 	if(LAZYLEN(.) > 2) //Want this to appear after species text
 		.[2] += "<hr>"
