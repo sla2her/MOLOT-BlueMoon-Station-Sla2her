@@ -4000,6 +4000,7 @@
 #include "modular_bluemoon\SmiLeY\code\serverside\pronouns_ru.dm"
 #include "modular_bluemoon\SmiLeY\code\serverside\padezhi.dm"
 #include "modular_bluemoon\SmiLeY\code\serverside\varies.dm"
+#include "modular_bluemoon\SmiLeY\code\serverside\emote_panel.dm"
 #include "modular_bluemoon\SmiLeY\hecu\code\hecu_helmet.dm"
 #include "modular_bluemoon\SmiLeY\hecu\code\hecu_suit.dm"
 #include "modular_bluemoon\SmiLeY\mapping\access_helpers.dm"

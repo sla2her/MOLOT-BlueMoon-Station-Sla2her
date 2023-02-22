@@ -7,6 +7,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	var/colour = "red"
 	var/open = FALSE
+	var/lipstick_trait
 
 /obj/item/lipstick/purple
 	name = "purple lipstick"
@@ -20,6 +21,11 @@
 /obj/item/lipstick/black
 	name = "black lipstick"
 	colour = "black"
+
+/obj/item/lipstick/black/death
+	name = "\improper Kiss of Death"
+	desc = "An incredibly potent tube of lipstick made from the venom of the dreaded Yellow Spotted Space Lizard, as deadly as it is chic. Try not to smear it!"
+	lipstick_trait = TRAIT_KISS_OF_DEATH
 
 /obj/item/lipstick/random
 	name = "lipstick"

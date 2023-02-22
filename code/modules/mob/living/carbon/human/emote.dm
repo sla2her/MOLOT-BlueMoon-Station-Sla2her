@@ -213,12 +213,6 @@
 	message = "offers warcrimes."
 	sound = 'sound/voice/syndicate.ogg'
 
-/datum/emote/sound/human/emperorprotects
-	key = "emperorprotects"
-	key_third_person = "emperorprotectes"
-	message = "folds his arms across his chest, forming an aquila."
-	sound = 'sound/voice/emperorprotects.ogg'
-
 //rock paper scissors emote handling
 /mob/living/carbon/human/proc/beginRockPaperScissors(var/chosen_move)
 	GLOB.rockpaperscissors_players[src] = list(chosen_move, ROCKPAPERSCISSORS_NOT_DECIDED)

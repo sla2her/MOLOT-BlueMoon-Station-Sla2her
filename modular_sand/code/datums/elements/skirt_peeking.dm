@@ -44,7 +44,7 @@
 
 /datum/element/skirt_peeking/proc/on_examine(mob/living/carbon/human/peeked, mob/peeker, list/examine_list)
 	if(can_skirt_peek(peeked, peeker))
-		examine_list += span_purple("[peeked.ru_who(TRUE)] wearing a skirt! I can probably give it a little peek <b>looking closer</b>.")
+		examine_list += span_purple("[peeked.ru_who(TRUE)] одет[peeked.ru_a()] в юбку! Возможно, я смогу немного подсмотреть, <b>просто присмотревшись.</b>.")
 
 /datum/element/skirt_peeking/proc/on_closer_look(mob/living/carbon/human/peeked, mob/peeker, list/examine_content)
 	if(can_skirt_peek(peeked, peeker))
