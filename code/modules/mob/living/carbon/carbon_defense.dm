@@ -389,7 +389,7 @@
 			if(!embeds)
 				embeds = TRUE
 				// this way, we only visibly try to examine ourselves if we have something embedded, otherwise we'll still hug ourselves :)
-				visible_message("<span class='notice'>[src] examines [ru_na()]self.</span>", "")
+				visible_message("<span class='notice'>[src] осматривает себя.</span>", "")
 				output = "<span class='notice'>You check yourself for shrapnel.</span><hr>"
 			if(I.isEmbedHarmless())
 				output += "\n\t <a href='?src=[REF(src)];embedded_object=[REF(I)];embedded_limb=[REF(LB)]' class='warning'>There is \a [I] stuck to your [LB.name]!</a>"

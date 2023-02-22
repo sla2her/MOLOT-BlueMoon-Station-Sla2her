@@ -416,7 +416,7 @@
 				. += "<a href='?src=[REF(src)];hud=m;evaluation=1'>\[Медицинское заключение\]</a><br>"
 			. += "<a href='?src=[REF(src)];hud=m;quirk=1'>\[Признаки\]</a>"
 
-		if(HAS_TRAIT(user, TRAIT_SECURITY_HUD))
+		if(istype(H.glasses, /obj/item/clothing/glasses/hud/security) || istype(CIH, /obj/item/organ/cyberimp/eyes/hud/security))
 			if(!user.stat && user != src)
 			//|| !user.canmove || user.restrained()) Fluff: Sechuds have eye-tracking technology and sets 'arrest' to people that the wearer looks and blinks at.
 				var/criminal = "None"
@@ -425,14 +425,13 @@
 				if(R)
 					criminal = R.fields["criminal"]
 
-				. += "<hr><span class='deptradio'>Статус:</span> <a href='?src=[REF(src)];hud=s;status=1'>\[[criminal]\]</a>\n"
-				. += jointext(list("<span class='deptradio'>Заметки:</span> <a href='?src=[REF(src)];hud=s;view=1'>\[Показать\]</a>\n",
-					"<a href='?src=[REF(src)];hud=s;add_citation=1'>\[Добавить цитату\]</a> ",
-					"<a href='?src=[REF(src)];hud=s;add_crime=1'>\[Добавить нарушение\]</a>\n",
-					"<a href='?src=[REF(src)];hud=s;view_comment=1'>\[Просмотреть комментарии\]</a>",
-					"<a href='?src=[REF(src)];hud=s;add_comment=1'>\[Добавить комментарий\]</a> "), "")
-		else if(isobserver(user))
-			. += "<hr><span class='info'><b>Обнаружены Физиологические Черты:</b> [traitstring]</span>"
+				. += jointext(list("<span class='deptradio'>Статус:</span> <a href='?src=[REF(src)];hud=s;status=1'>\[[criminal]\]</a>",
+				"<span class='deptradio'>Заметки:</span> <a href='?src=[REF(src)];hud=s;view=1'>\[View\]</a>",
+				"<a href='?src=[REF(src)];hud=s;add_crime=1'>\[Добавить нарушение\]</a>",
+				"<a href='?src=[REF(src)];hud=s;view_comment=1'>\[Просмотреть комментарии\]</a>",
+				"<a href='?src=[REF(src)];hud=s;add_comment=1'>\[Добавить комментарий\]</a>"), "")
+		else if(isobserver(user) && traitstring)
+			. += "<span class='info'><b>Traits:</b> [traitstring]</span>"
 
 	if(LAZYLEN(.) > 2) //Want this to appear after species text
 		.[2] += "<hr>"
