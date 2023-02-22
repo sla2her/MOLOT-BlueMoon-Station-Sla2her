@@ -234,7 +234,7 @@
 		return TRUE
 	to_chat(user, "<span class='notice'>Используя отвёртку, вы снимаете колёса и разбираете '[src]'...</span>")
 	if(I.use_tool(src, user, 20, volume=50))
-		to_chat(user, "<span class='notice'>Вы раскладыватее колеса с '[src]'.</span>")
+		to_chat(user, "<span class='notice'>Вы раскладывате колеса с '[src]'.</span>")
 		new /obj/item/stack/sheet/metal(drop_location(), 5)
 		new /obj/item/scooter_frame(drop_location())
 		if(has_buckled_mobs())
