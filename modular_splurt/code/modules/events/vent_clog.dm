@@ -35,7 +35,7 @@
 	reagentsAmount = 100
 
 /datum/round_event/vent_clog/female/announce()
-	priority_announce("The scrubbers network is experiencing a backpressure squirt. Some squirting of contents may occur.", "Atmospherics alert")
+	priority_announce("Сеть скрубберов испытывает противодавление из-за откуда-то взявшегося в них <b>сквирта</b>. Может произойти некоторое разбрызгивание содержимого.", "Атмосферная Тревога")
 
 /datum/round_event/vent_clog/female/start()
 	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
@@ -61,7 +61,7 @@
 	reagentsAmount = 100
 
 /datum/round_event/vent_clog/male/announce()
-	priority_announce("The scrubbers network is experiencing a backpressure surge. Some ejaculation of contents may occur.", "Atmospherics alert")
+	priority_announce("Сеть скрубберов испытывает противодавление из-за откуда-то взявшегося в них <b>семени</b>. Может произойти некоторое разбрызгивание содержимого.", "Атмосферная Тревога")
 
 /datum/round_event/vent_clog/male/start()
 	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
