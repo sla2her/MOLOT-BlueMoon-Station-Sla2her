@@ -83,7 +83,7 @@
 /datum/emote/living/carbon/human/wag
 	key = "wag"
 	key_third_person = "wags"
-	message = "wags their tail."
+	message = "начинает вилять своим хвостом."
 
 /datum/emote/living/carbon/human/wag/run_emote(mob/user, params)
 	. = ..()
