@@ -6,7 +6,7 @@
  * made by quotefox and heavily modified by SandPoot
 */
 /obj/item/fleshlight
-	name 				= "Фонарик"
+	name 				= "Fleshlight"
 	desc				= "Секс-игрушка, замаскированная под фонарик, используемая для стимуляции пениса в комплекте с меняющим цвет 'рукавом'."
 	icon 				= 'modular_sand/icons/obj/fleshlight.dmi'
 	icon_state 			= "fleshlight_base"
@@ -762,7 +762,7 @@
 	new /obj/item/paper/fluff/portallight(src)
 
 /obj/item/paper/fluff/portallight
-	name = "Portal Fleshlight Instructions"
+	name = "Инструкция по Использованию Портального Фонарика"
 	info = "Благодарим вас за покупку Портального Фонарика Silver Love Portal!<BR>\
 	Для использования просто зарегистрируйте ваш новый Портальный Фонарик при помощи предоставленного нижнего белья, чтобы соединить их вместе, после чего попросите своего любовника надеть белье.<BR>\
 	Повеселитесь, любовники,<BR>\

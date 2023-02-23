@@ -1,5 +1,5 @@
 /obj/structure/extinguisher_cabinet
-	name = "extinguisher cabinet"
+	name = "Extinguisher Cabinet"
 	desc = "A small wall mounted cabinet designed to hold a fire extinguisher."
 	icon = 'icons/obj/wallmounts.dmi'
 	icon_state = "extinguisher_closed"
@@ -139,7 +139,7 @@
 			else if(istype(stored_extinguisher, /obj/item/extinguisher/advanced))
 				icon_state = "extinguisher_advanced_closed"
 			else
-				icon_state = "extinguisher_standard_closed"
+				icon_state = "extinguisher_closed"
 		else
 			icon_state = "extinguisher_empty_closed"
 	else if(stored_extinguisher)

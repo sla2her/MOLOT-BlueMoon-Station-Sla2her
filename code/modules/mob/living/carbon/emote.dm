@@ -41,8 +41,8 @@
 /datum/emote/living/carbon/moan
 	key = "moan"
 	key_third_person = "moans"
-	message = "moans!"
-	message_mime = "appears to moan!"
+	message = "постанывает!"
+	message_mime = "делает вид, что издает стон!"
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = SOFT_CRIT
 
@@ -161,11 +161,11 @@
 /datum/emote/living/carbon/lick/run_emote(mob/user)
 	. = ..()
 	if(user.get_active_held_item())
-		to_chat(user, span_warning("Your active hand is full, and therefore you can't lick anything! Don't ask why!"))
+		to_chat(user, span_warning("Ваша активная рука занята, и поэтому вы не можете ничего лизнуть! Не спрашивайте, почему!"))
 		return
 	var/obj/item/soap/tongue/organic/licky = new(user)
 	if(user.put_in_active_hand(licky))
-		to_chat(user, span_notice("You extend your tongue and get ready to lick something."))
+		to_chat(user, span_notice("Вы вытягиваете язык и готовитесь что-то лизнуть."))
 	else
 		qdel(licky)
 

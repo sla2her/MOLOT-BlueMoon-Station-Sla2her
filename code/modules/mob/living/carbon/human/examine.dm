@@ -158,7 +158,7 @@
 		if(client.prefs.toggles & VERB_CONSENT)
 			. += "<b>Игрок разрешил всяческие непристойности в случае с его персонажем.</b>"
 		else
-			. += "<b>Игрок не разрешил всяческие непристойности в случае с его персонажем.</b>"
+			. += "<b>Игрок НЕ разрешил всяческие непристойности в случае с его персонажем.</b>"
 
 	var/list/missing = list(BODY_ZONE_HEAD, BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 	var/list/disabled = list()

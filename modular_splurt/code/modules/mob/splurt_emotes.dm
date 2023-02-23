@@ -177,11 +177,11 @@
 		if(isalien(user))
 			sound = 'sound/voice/hiss6.ogg'
 		playsound(user.loc, sound, 50, 1, 4, 1.2)
-		message = "moans!"
+		message = "постанывает!"
 	else if(miming)
-		message = "acts out a moan."
+		message = "делает вид, что издает стон."
 	else
-		message = "makes a very loud noise."
+		message = "издает очень громкий звук!"
 	. = ..()
 
 /datum/emote/living/audio_emote/chitter2
