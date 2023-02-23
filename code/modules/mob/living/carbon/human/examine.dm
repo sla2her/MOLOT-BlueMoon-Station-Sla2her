@@ -121,7 +121,7 @@
 				. += "[dicc.desc]"
 				if((src == user || HAS_TRAIT(user, TRAIT_GFLUID_DETECT)) && ((dicc?.genital_flags & GENITAL_FUID_PRODUCTION) || ((dicc?.linked_organ?.genital_flags & GENITAL_FUID_PRODUCTION) && !dicc?.linked_organ?.is_exposed())))
 					var/datum/reagent/cummies = find_reagent_object_from_type(dicc?.get_fluid_id())
-					. += "Вы чувствуете, как от [t_ego] тела пахнет '<span style='color:[cummies.color]';>[cummies.name]</span>'..."
+					. += "Вы чувствуете, как от [t_ego] тела пахнет <b>'<span style='color:[cummies.color]';>[cummies.name]</span>'</b>..."
 	if(user.client?.prefs.cit_toggles & VORE_EXAMINE)
 		var/cursed_stuff = attempt_vr(src,"examine_bellies",args) //vore Code
 		if(cursed_stuff)
@@ -156,9 +156,9 @@
 
 	if(client && client.prefs)
 		if(client.prefs.toggles & VERB_CONSENT)
-			. += "Игрок разрешил всяческие непристойности в случае с его персонажем."
+			. += "<b>Игрок разрешил всяческие непристойности в случае с его персонажем.</b>"
 		else
-			. += "Игрок <b>не</b> разрешил всяческие непристойности в случае с его персонажем."
+			. += "<b>Игрок не разрешил всяческие непристойности в случае с его персонажем.</b>"
 
 	var/list/missing = list(BODY_ZONE_HEAD, BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 	var/list/disabled = list()

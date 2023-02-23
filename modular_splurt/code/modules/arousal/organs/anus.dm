@@ -25,7 +25,7 @@
 	var/datum/sprite_accessory/anus/S = GLOB.anus_shapes_list[shape]
 	var/lowershape = lowertext(S?.icon_state || DEF_ANUS_SHAPE)
 
-	desc = "You see [u_His] squishy [lowershape] pucker parting [u_His] asscheeks"
+	desc = "Вы наблюдаете [u_His] сплюснутый [lowershape] анус между [u_His] ягодицами"
 
 	icon_state = "anus_[lowershape]_[size]"
 	if(owner)

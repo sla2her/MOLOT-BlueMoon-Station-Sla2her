@@ -1,6 +1,6 @@
 /datum/emote/living/carbon/airguitar
 	key = "airguitar"
-	message = "is strumming the air and headbanging like a safari chimp."
+	message = "играет на воображаемой гитаре и бьет головой, как шимпанзе в сафари."
 	restraint_check = TRUE
 
 /datum/emote/living/carbon/blink
@@ -81,7 +81,7 @@
 
 /datum/emote/living/carbon/tail
 	key = "tail"
-	message = "waves their tail."
+	message = "начинает двигать своим хвостом."
 
 /datum/emote/living/carbon/wink
 	key = "wink"
@@ -91,7 +91,7 @@
 /datum/emote/living/carbon/human/dap
 	key = "dap"
 	key_third_person = "daps"
-	message = "sadly can't find anybody to give daps to, and daps themself. Shameful."
+	message = "делает ДЭП и... к сожалению, не может найти никого, кому можно было бы дать DAP. Стыдно."
 	message_param = "give daps to %t."
 	restraint_check = TRUE
 
@@ -107,16 +107,16 @@
 
 /datum/emote/living/carbon/human/handshake
 	key = "handshake"
-	message = "shakes their own hands."
-	message_param = "shakes hands with %t."
+	message = "пожимает собственные руки."
+	message_param = "пожимает руку %t."
 	restraint_check = TRUE
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/hug
 	key = "hug"
 	key_third_person = "hugs"
-	message = "hugs themself."
-	message_param = "hugs %t."
+	message = "обнимает себя."
+	message_param = "обнимает %t."
 	restraint_check = TRUE
 	emote_type = EMOTE_AUDIBLE
 
