@@ -519,7 +519,7 @@
 	set category = "Эмоции.Звуковые Действия"
 	emote("chitter2")
 
-/mob/living/proc/emote_howl()
+/mob/living/proc/emote_awoo()
 	set name = "< Выть >"
 	set category = "Эмоции.Звуковые Действия"
 	emote("awoo")
