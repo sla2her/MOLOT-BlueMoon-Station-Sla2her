@@ -1,5 +1,5 @@
 /datum/interaction/lewd/jack
-	description = "Подрочить."
+	description = "Член. Подрочить себе."
 	interaction_sound = null
 	require_user_hands = TRUE
 	require_user_penis = REQUIRE_EXPOSED

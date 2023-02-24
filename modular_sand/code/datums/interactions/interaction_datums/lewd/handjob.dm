@@ -1,5 +1,5 @@
 /datum/interaction/lewd/handjob
-	description = "Подрочить партнёру."
+	description = "Рука. Подрочить."
 	interaction_sound = null
 	require_user_hands = TRUE
 	require_target_penis = REQUIRE_EXPOSED
