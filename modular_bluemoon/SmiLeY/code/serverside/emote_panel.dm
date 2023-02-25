@@ -212,7 +212,7 @@
 /mob/living/verb/emote_blush()
 	set name = "~ Краснеть "
 	set category = "Эмоции.3. Простые Действия"
-	emote("blush").3. Простые Действия
+	emote("blush")
 
 /mob/living/verb/emote_blink1()
 	set name = "~ Моргать "

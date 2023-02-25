@@ -38,6 +38,9 @@
 						/obj/item/clothing/mask/gas/sechailer/swat = 2,
 						/obj/item/clothing/mask/gas/syndicate/ds = 5,
 						/obj/item/clothing/mask/gas/sechailer/syndicate = 5,
+						/obj/item/clothing/head/helmet/rus_helmet = 3,
+						/obj/item/clothing/head/helmet/rus_cap = 3,
+						/obj/item/clothing/under/syndicate/rus_army = 3,
 						/obj/item/clothing/mask/gas/soviet = 3,
 						/obj/item/clothing/mask/gas/german = 3,
 						/obj/item/clothing/under/syndicate/combat = 2
