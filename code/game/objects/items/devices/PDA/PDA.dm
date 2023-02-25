@@ -798,7 +798,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	return t
 
 /obj/item/pda/proc/send_message(mob/living/user, list/obj/item/pda/targets, everyone)
-	if(HAS_TRAIT(user, TRAIT_DUMB4CUM))
+	if(HAS_TRAIT(user, TRAIT_DUMB_CUM_CRAVE))
 		to_chat(user, "<span class='love'>Сейчас ты не можешь сосредоточиться ни на чем, кроме мужского семени!</span>")
 		return
 
