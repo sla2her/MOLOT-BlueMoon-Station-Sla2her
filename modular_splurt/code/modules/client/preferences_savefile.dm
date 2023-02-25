@@ -1,8 +1,3 @@
-/datum/preferences/update_preferences(current_version, savefile/S)
-	. = ..()
-	if(current_version < 57.01) //a
-		new_character_creator = TRUE
-
 /datum/preferences/update_character(current_version, savefile/S)
 	. = ..()
 	if(current_version < 53.01)

@@ -19,14 +19,4 @@
 		. += "<span class='warning'>Вы понимаете, что [t_He] может беспокоить физическая близость.</span>\n"
 	// Check for Heatpat Slut (pls touch head!)
 	if(HAS_TRAIT(src, TRAIT_HEADPAT_SLUT))
-		. += span_info("Вы понимаете, что [t_He] ценит физическую привязанность больше, чем обычно.")
-
-/mob/can_read(obj/O)
-	// Check for D4C craving
-	if(HAS_TRAIT(src, TRAIT_DUMB_CUM_CRAVE))
-		// Warn user, then return
-		to_chat(src, span_love("Вы пытаетесь прочитать [O], но вам приходит на ум только теплое семя.!"))
-		return
-
-	// Return normally
-	. = ..()
+		. += "<span class='info'>Вы понимаете, что [t_He] ценит физическую привязанность больше, чем обычно.</span>\n"
