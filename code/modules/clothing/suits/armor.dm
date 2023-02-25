@@ -44,7 +44,7 @@
 	heat_protection = CHEST|GROIN|ARMS
 	armor = list(MELEE = 20, BULLET = 20, LASER = 25, ENERGY = 20, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
 
-/obj/item/clothing/suit/armor/navyblue
+/obj/item/clothing/suit/armor/secjacket
 	name = "security officer's jacket"
 	desc = "This jacket is for those special occasions when a security officer isn't required to wear their armor."
 	icon_state = "officerbluejacket"
