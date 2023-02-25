@@ -3957,6 +3957,7 @@
 #include "modular_bluemoon\Gardelin0\code\vending\kinkmate.dm"
 #include "modular_bluemoon\icons\code\under.dm"
 #include "modular_bluemoon\jobs_species_blacklist\jobs_species_blacklist.dm"
+#include "modular_bluemoon\kovac_shitcode\code\clothing\mask.dm"
 #include "modular_bluemoon\krashly\code\game\machinery\doors\airlock_types.dm"
 #include "modular_bluemoon\krashly\code\game\objects\items\weaponry.dm"
 #include "modular_bluemoon\krashly\code\game\objects\structures\window.dm"
