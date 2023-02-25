@@ -15,7 +15,7 @@
 //Penises
 /datum/sprite_accessory/penis/thick
 	icon_state = "thick"
-	name = "Thick"
+	name = "толстый"
 
 //Bellies
 /datum/sprite_accessory/belly
@@ -41,4 +41,4 @@
 
 /datum/sprite_accessory/anus/squished
 	icon_state = "squished"
-	name = "squished"
+	name = "сплющенный"
