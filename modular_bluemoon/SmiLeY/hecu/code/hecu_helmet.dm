@@ -33,7 +33,7 @@
 	icon_state = "m38_mask"
 	item_state = "m38_mask"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
-	mutantrace_variation = NULL
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/mask/gas/soviet
 	name = "soviet gas mask"
@@ -41,7 +41,7 @@
 	icon_state = "gp5_mask"
 	item_state = "gp5_mask"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDEHAIR|HIDESNOUT
-	mutantrace_variation = NULL
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/mask/gas/hecu
 	name = "M40 gas mask"
