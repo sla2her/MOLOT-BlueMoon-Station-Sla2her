@@ -133,6 +133,15 @@
 	mask_type = /obj/item/clothing/mask/gas/syndicate
 	storage_type = /obj/item/tank/internals/oxygen/red
 
+/obj/machinery/suit_storage_unit/syndicate/chameleon
+	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi/elite
+
+/obj/machinery/suit_storage_unit/syndicate/softsuit
+	helmet_type =/obj/item/clothing/head/helmet/space/syndicate
+	suit_type = /obj/item/clothing/suit/space/syndicate
+	mask_type = /obj/item/clothing/mask/gas/syndicate
+	storage_type = /obj/item/tank/jetpack/oxygen/harness
+
 /obj/machinery/suit_storage_unit/ert/command
 	suit_type = /obj/item/clothing/suit/space/hardsuit/ert
 	mask_type = /obj/item/clothing/mask/breath
@@ -231,6 +240,7 @@
 	helmet = null
 	suit = null
 	mask = null
+	shoes = null
 	storage = null
 	occupant = null
 
@@ -246,11 +256,11 @@
 
 	if (!items)
 		items = list(
-			"suit" = create_silhouette_of(/obj/item/clothing/suit/space/eva),
-			"helmet" = create_silhouette_of(/obj/item/clothing/head/helmet/space/eva),
-			"mask" = create_silhouette_of(/obj/item/clothing/mask/breath),
+			"suit" = create_silhouette_of(/obj/item/clothing/suit/space),
+			"helmet" = create_silhouette_of(/obj/item/clothing/head/helmet/space),
+			"mask" = create_silhouette_of(/obj/item/clothing/mask),
 			"shoes" = create_silhouette_of(/obj/item/clothing/shoes),
-			"storage" = create_silhouette_of(/obj/item/tank/internals/oxygen),
+			"storage" = create_silhouette_of(/obj/item),
 		)
 
 	. = ..()

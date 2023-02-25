@@ -456,6 +456,10 @@
 	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
 
+/obj/item/card/id/syndicate/advanced
+	name = "Agent Card"
+	icon_state = "card_black"
+
 /obj/item/card/id/syndicate/Initialize(mapload)
 	. = ..()
 	var/datum/action/item_action/chameleon/change/chameleon_action = new(src)
@@ -540,6 +544,12 @@
 
 /obj/item/card/id/syndicate/anyone
 	anyone = TRUE
+	assignment = "Lavaland Syndicate Agent"
+
+/obj/item/card/id/syndicate/anyone/comms
+	anyone = TRUE
+	assignment = "Syndicate Comms Agent"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/syndicate/nuke_leader
 	name = "Lead Agent Card"

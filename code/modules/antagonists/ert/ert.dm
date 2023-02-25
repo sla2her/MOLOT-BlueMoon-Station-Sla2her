@@ -93,6 +93,11 @@
 	outfit = /datum/outfit/death_commando
 	role = "Trooper"
 
+/datum/antagonist/ert/syndiesquad
+	name = "Syndiesquad Specialist"
+	outfit = /datum/outfit/syndiesquad
+	role = "Specialist"
+
 /datum/antagonist/ert/medic/inquisitor
 	outfit = /datum/outfit/ert/medic/inquisitor
 
@@ -121,6 +126,11 @@
 	name = "Deathsquad Officer"
 	outfit = /datum/outfit/death_commando
 	role = "Officer"
+
+/datum/antagonist/ert/syndiesquad/leader
+	name = "Syndiesquad Specialist"
+	outfit = /datum/outfit/syndiesquad
+	role = "Master-Specialist"
 
 /datum/antagonist/ert/create_team(datum/team/ert/new_team)
 	if(istype(new_team))

@@ -7,7 +7,7 @@
 	var/roles = list(/datum/antagonist/ert/security, /datum/antagonist/ert/medic, /datum/antagonist/ert/engineer) //List of possible roles to be assigned to ERT members.
 	var/rename_team
 	var/code
-	var/mission = "Assist the station."
+	var/mission = "Защити станцию любой ценой и докажи свою состоятельность!"
 	var/teamsize = 5
 	var/polldesc
 
@@ -34,8 +34,16 @@
 	leader_role = /datum/antagonist/ert/deathsquad/leader
 	rename_team = "Deathsquad"
 	code = "Delta"
-	mission = "Leave no witnesses."
+	mission = "Разберитесь с проблемами, достойными Дельта-Кода."
 	polldesc = "an elite Nanotrasen Strike Team"
+
+/datum/ert/syndiesquad
+	roles = list(/datum/antagonist/ert/syndiesquad)
+	leader_role = /datum/antagonist/ert/syndiesquad/leader
+	rename_team = "Syndicate Strike Team"
+	code = "Crimson"
+	mission = "Разберитесь с проблемами, достойными Дельта-Кода."
+	polldesc = "an elite Syndicate Strike Team"
 
 /datum/ert/centcom_official
 	code = "Green"
@@ -47,13 +55,13 @@
 	polldesc = "a CentCom Official"
 
 /datum/ert/centcom_official/New()
-	mission = "Conduct a routine performance review of [station_name()] and its Captain."
+	mission = "Разберитесь с проблемами на станции [station_name()], а также проведите плановую проверку всех Отделов и Командования."
 
 /datum/ert/inquisition
 	roles = list(/datum/antagonist/ert/chaplain/inquisitor, /datum/antagonist/ert/security/inquisitor, /datum/antagonist/ert/medic/inquisitor)
 	leader_role = /datum/antagonist/ert/commander/inquisitor
 	rename_team = "Inquisition"
-	mission = "Destroy any traces of paranormal activity aboard the station."
+	mission = "Уничтожьте любые следы паранормальной активности на борту Космической Станции Тринадцатого Сектора."
 	polldesc = "a Nanotrasen paranormal response team"
 
 /datum/ert/greybois

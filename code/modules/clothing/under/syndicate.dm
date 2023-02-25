@@ -4,7 +4,7 @@
 	icon_state = "syndicate"
 	item_state = "bl_suit"
 	has_sensor = NO_SENSORS
-	armor = list(MELEE = 10, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 40, WOUND = 5)
+	armor = list(MELEE = 10, BULLET = 10, LASER = 10,ENERGY = 10, BOMB = 0, BIO = 0, RAD = 10, FIRE = 50, ACID = 40, WOUND = 10)
 	alt_covers_chest = TRUE
 
 /obj/item/clothing/under/syndicate/skirt
@@ -14,10 +14,10 @@
 	item_state = "bl_suit"
 	has_sensor = NO_SENSORS
 	body_parts_covered = CHEST|GROIN|ARMS
-	armor = list(MELEE = 10, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 40, WOUND = 5)
+	armor = list(MELEE = 10, BULLET = 10, LASER = 10,ENERGY = 10, BOMB = 0, BIO = 0, RAD = 10, FIRE = 50, ACID = 40, WOUND = 10)
 	alt_covers_chest = TRUE
 	fitted = FEMALE_UNIFORM_TOP
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/syndicate/bloodred
 	name = "blood-red sneaksuit"
@@ -25,7 +25,7 @@
 	icon_state = "bloodred_pajamas"
 	item_state = "bl_suit"
 	dummy_thick = TRUE
-	armor = list(MELEE = 10, BULLET = 10, LASER = 10,ENERGY = 10, BOMB = 0, BIO = 0, RAD = 10, FIRE = 50, ACID = 40, WOUND = 10)
+	armor = list(MELEE = 10, BULLET = 10, LASER = 10,ENERGY = 10, BOMB = 0, BIO = 0, RAD = 10, FIRE = 100, ACID = 100, WOUND = 10)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	can_adjust = FALSE
 
@@ -53,21 +53,6 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 5)
 	fitted = FEMALE_UNIFORM_TOP
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-/obj/item/clothing/under/syndicate/cosmetic
-	name = "tactitool turtleneck"
-	desc = "Just looking at it makes you want to buy an SKS, go into the woods, and -operate-."
-	icon_state = "tactifool"
-	item_state = "bl_suit"
-	has_sensor = HAS_SENSORS
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 5)
-
-/obj/item/clothing/under/syndicate/cosmetic/skirt
-	name = "tactitool skirtleneck"
-	icon_state = "tactifool_skirt"
-	fitted = FEMALE_UNIFORM_TOP
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	can_adjust = FALSE
 
 /obj/item/clothing/under/syndicate/sniper
 	name = "Tactical turtleneck suit"
@@ -134,3 +119,13 @@
 	alt_covers_chest = TRUE
 	mutantrace_variation = USE_TAUR_CLIP_MASK
 
+/obj/item/clothing/under/syndicate/scrubs
+	name = "tactical scrubs"
+	desc = "A deep burgundy set of scrubs, made tactically for tactical reasons."
+	icon = 'icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/uniform.dmi'
+	anthro_mob_worn_overlay = 'icons/mob/clothing/uniform_digi.dmi'
+	icon_state = "scrubswine"
+	item_state = "scrubswine"
+	can_adjust = TRUE
+	armor = list(MELEE = 10, BULLET = 5, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 50, RAD = 0, FIRE = 50, ACID = 40, WOUND = 10)

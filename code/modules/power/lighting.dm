@@ -224,36 +224,28 @@
 	var/hijacked = FALSE	// if true, the light is in a hijacked area
 
 /obj/machinery/light/directional/north //Pixel offsets get overwritten on New()
-	dir = SOUTH
-	pixel_y = 28
+	dir = NORTH
 
 /obj/machinery/light/directional/south
-	dir = NORTH
-	pixel_y = -28
+	dir = SOUTH
 
 /obj/machinery/light/directional/east
-	dir = WEST
-	pixel_x = 28
+	dir = EAST
 
 /obj/machinery/light/directional/west
-	dir = EAST
-	pixel_x = -28
+	dir = WEST
 
 /obj/machinery/light/dim/directional/north //Pixel offsets get overwritten on New()
-	dir = SOUTH
-	pixel_y = 28
+	dir = NORTH
 
 /obj/machinery/light/dim/directional/south
-	dir = NORTH
-	pixel_y = -28
+	dir = SOUTH
 
 /obj/machinery/light/dim/directional/east
-	dir = WEST
-	pixel_x = 28
+	dir = EAST
 
 /obj/machinery/light/dim/directional/west
-	dir = EAST
-	pixel_x = -28
+	dir = WEST
 
 /obj/machinery/light/broken
 	status = LIGHT_BROKEN

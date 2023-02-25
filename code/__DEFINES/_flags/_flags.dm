@@ -61,8 +61,7 @@ GLOBAL_LIST_INIT(bitflags, list(
 /// Can players recolor this in-game via vendors (and maybe more if support is added)?
 #define IS_PLAYER_COLORABLE_1 (1<<21)
 #define KEEP_ON_ARENA_1 (1<<22)
-/// Whether or not this atom has contextual screentips when hovered OVER
-#define HAS_CONTEXTUAL_SCREENTIPS_1 (1<<23)
+
 /// Whether or not this atom is storing contents for a disassociated storage object
 #define HAS_DISASSOCIATED_STORAGE_1 (1<<24)
 
@@ -78,6 +77,8 @@ GLOBAL_LIST_INIT(bitflags, list(
 #define NO_RUINS_1 (1<<10)
 /// Should this tile be cleaned up and reinserted into an excited group?
 #define EXCITED_CLEANUP_1 (1 << 13)
+/// Whether or not this atom has contextual screentips when hovered OVER
+#define HAS_CONTEXTUAL_SCREENTIPS_1 (1 << 14)
 
 ////////////////Area flags\\\\\\\\\\\\\\
 /// If it's a valid territory for cult summoning or the CRAB-17 phone to spawn
