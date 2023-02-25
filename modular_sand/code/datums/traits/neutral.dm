@@ -1,11 +1,11 @@
 /datum/quirk/hypnotic_stupor //straight from skyrat
-	name = "Hypnotic Stupor"
-	desc = "Your prone to episodes of extreme stupor that leaves you extremely suggestible."
+	name = "Гипнотический Ступор"
+	desc = "Вы склонны к приступам крайнего ступора, который делает вас чрезвычайно внушаемым."
 	value = 0
 	human_only = TRUE
 	gain_text = null // Handled by trauma.
 	lose_text = null
-	medical_record_text = "Patient has an untreatable condition with their brain, wiring them to be extreamly suggestible..."
+	medical_record_text = "Пациент имеет не поддающееся лечению заболевание мозга, в результате чего он становится чрезвычайно... внушаемым...."
 
 /datum/quirk/hypnotic_stupor/add()
 	var/datum/brain_trauma/severe/hypnotic_stupor/T = new()
@@ -36,16 +36,50 @@
 	desc = "Your system burns with the desire to be bred. Satisfying your lust will make you happy, while ignoring it may cause you to become sad and needy."
 	value = 0
 	mob_trait = TRAIT_ESTROUS_ACTIVE
-	gain_text = span_love("You body burns with the desire to be bred.")
+	gain_text = span_love("You body burns with the desire to engage in breeding.")
 	lose_text = span_notice("You feel more in control of your body and thoughts.")
+
+	// Default heat message for examine text
+	var/heat_type = "нахождение в эстральном цикле"
+
+	// Type of interaction to be performed
+	// Intended for use with downstream quirks
+	var/positional_orientation = "принять участие в совокуплении ради размножения"
 
 /datum/quirk/estrous_active/add()
 	// Add examine hook
 	RegisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE, .proc/quirk_examine_estrous_active)
 
+	// Add organ change hooks
+	RegisterSignal(quirk_holder, COMSIG_MOB_ORGAN_ADD, .proc/update_heat_type)
+	RegisterSignal(quirk_holder, COMSIG_MOB_ORGAN_REMOVE, .proc/update_heat_type)
+
 /datum/quirk/estrous_active/remove()
-	// Remove examine hook
-	UnregisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE)
+	// Remove signals
+	UnregisterSignal(quirk_holder, list(COMSIG_MOB_ORGAN_ADD, COMSIG_MOB_ORGAN_REMOVE, COMSIG_PARENT_EXAMINE))
+
+/datum/quirk/estrous_active/post_add()
+	// Update text used by message
+	update_heat_type()
+
+/datum/quirk/estrous_active/proc/update_heat_type()
+	// Define temporary list of heat phrases
+	var/list/heat_phrases = list()
+
+	// Check for male hormonal organ
+	if(quirk_holder.has_balls())
+		heat_phrases += "сильный стояк"
+
+	// Check for female hormonal organ
+	if(quirk_holder.getorganslot(ORGAN_SLOT_WOMB))
+		heat_phrases += "сильную течку"
+
+	// Check for synthetic
+	if(isrobotic(quirk_holder))
+		heat_phrases += "множество ошибок в гормональной программе"
+
+	// Build English list
+	heat_type = english_list(heat_phrases, nothing_text = "переизбыток гормонов")
 
 /datum/quirk/estrous_active/proc/quirk_examine_estrous_active(atom/examine_target, mob/living/carbon/human/examiner, list/examine_list)
 	SIGNAL_HANDLER
@@ -59,4 +93,4 @@
 		return
 
 	// Add quirk message
-	examine_list += span_love("[quirk_holder.ru_who(TRUE)] [quirk_holder.p_are()] currently influenced by the estrous cycle, and long for breeding.")
+	examine_list += span_love("<b>[quirk_holder.p_they(TRUE)] [quirk_holder.p_are()]</b> испытывает [heat_type], однозначно желая [positional_orientation].")
