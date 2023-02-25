@@ -146,7 +146,7 @@
 		if(restraint_check && user.restrained())
 			if(!intentional)
 				return FALSE
-			to_chat(user, "<span class='notice'>Вы не можете использовать [key], когда находитесь в физическом ограничении.</span>")
+			to_chat(user, "<span class='notice'>Вы не можете использовать [key] в связанном состоянии.</span>")
 			return FALSE
 
 	if(isliving(user))
