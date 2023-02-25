@@ -24,20 +24,20 @@
 */
 
 /datum/quirk/estrous_detection
-	name = "Estrous Detection"
-	desc = "You have a mammalian sense of detecting if someone\'s body longs for breeding."
+	name = "Обнаружение Эструса"
+	desc = "Вы обладаете особым чувством, чтобы определить, находится ли кто-то в эстральном цикле."
 	value = 0
 	mob_trait = TRAIT_ESTROUS_DETECT
-	gain_text = span_love("Your senses adjust, allowing a mammalian sense of others' fertility.")
-	lose_text = span_notice("Your sense of others' fertility fades.")
+	gain_text = span_love("Ваши органы чувств адаптируются, позволяя вам ощущать фертильность окружающих.")
+	lose_text = span_notice("Ваши особые чувства регрессируют и вы больше не ощущаете фертильность окружающих.")
 
 /datum/quirk/estrous_active
-	name = "In Estrous"
-	desc = "Your system burns with the desire to be bred. Satisfying your lust will make you happy, while ignoring it may cause you to become sad and needy."
+	name = "Эстральный Цикл"
+	desc = "Ваш организм сгорает от желания совокупиться ради размножения. Удовлетворение вашей похоти сделает вас счастливей, в то время как игнорирование этого желания может привести к тому, что вам станет плохо..."
 	value = 0
 	mob_trait = TRAIT_ESTROUS_ACTIVE
-	gain_text = span_love("You body burns with the desire to engage in breeding.")
-	lose_text = span_notice("You feel more in control of your body and thoughts.")
+	gain_text = span_love("Ваше тело горит от желания заняться размножением.")
+	lose_text = span_notice("Вы чувствуете, что лучше контролируете свое тело и мысли.")
 
 	// Default heat message for examine text
 	var/heat_type = "нахождение в эстральном цикле"
