@@ -9,24 +9,6 @@
 	max_integrity = 250
 	resistance_flags = NONE
 	armor = list(MELEE = 35, BULLET = 30, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
-	unique_reskin = list(
-		"Basic" = list(
-			RESKIN_ICON_STATE = "armor",
-			RESKIN_ITEM_STATE = "armor"
-		),
-		"Old" = list(
-			RESKIN_ICON_STATE = "armorold",
-			RESKIN_ITEM_STATE = "armorold"
-		),
-		"Alternative" = list(
-			RESKIN_ICON_STATE = "armoralt",
-			RESKIN_ITEM_STATE = "armoralt"
-		),
-		"Bloody" = list(
-			RESKIN_ICON_STATE = "bloody_armor",
-			RESKIN_ITEM_STATE = "bloody_armor"
-		),
-	)
 
 /obj/item/clothing/suit/armor/Initialize(mapload)
 	. = ..()
@@ -65,6 +47,24 @@
 	desc = "A Type I armored vest that provides decent protection against most types of damage."
 	icon_state = "armor"
 	item_state = "armor"
+	unique_reskin = list(
+		"Basic" = list(
+			RESKIN_ICON_STATE = "armor",
+			RESKIN_ITEM_STATE = "armor"
+		),
+		"Old" = list(
+			RESKIN_ICON_STATE = "armorold",
+			RESKIN_ITEM_STATE = "armorold"
+		),
+		"Alternative" = list(
+			RESKIN_ICON_STATE = "armoralt",
+			RESKIN_ITEM_STATE = "armoralt"
+		),
+		"Bloody" = list(
+			RESKIN_ICON_STATE = "bloody_armor",
+			RESKIN_ITEM_STATE = "bloody_armor"
+		),
+	)
 
 /obj/item/clothing/suit/armor/vest/old
 	name = "degrading armor vest"

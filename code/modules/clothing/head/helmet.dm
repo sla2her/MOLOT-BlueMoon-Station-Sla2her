@@ -15,17 +15,6 @@
 	flags_inv = HIDEHAIR|HIDEEARS
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	unique_reskin = list(
-		"Basic" = list(
-			RESKIN_ICON_STATE = "helmet",
-			RESKIN_ITEM_STATE = "helmet"
-		),
-		"Old" = list(
-			RESKIN_ICON_STATE = "helmetold",
-			RESKIN_ITEM_STATE = "helmetold"
-		),
-	)
-
 
 	dog_fashion = /datum/dog_fashion/head/helmet
 
@@ -65,6 +54,16 @@
 
 /obj/item/clothing/head/helmet/sec
 	can_flashlight = 1
+	unique_reskin = list(
+		"Basic" = list(
+			RESKIN_ICON_STATE = "helmet",
+			RESKIN_ITEM_STATE = "helmet"
+		),
+		"Old" = list(
+			RESKIN_ICON_STATE = "helmetold",
+			RESKIN_ITEM_STATE = "helmetold"
+		),
+	)
 
 /obj/item/clothing/head/helmet/sec/attackby(obj/item/I, mob/user, params)
 	if(issignaler(I))
@@ -99,6 +98,16 @@
 	dog_fashion = null
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+	unique_reskin = list(
+		"Basic" = list(
+			RESKIN_ICON_STATE = "helmet",
+			RESKIN_ITEM_STATE = "helmet"
+		),
+		"Old" = list(
+			RESKIN_ICON_STATE = "helmetold",
+			RESKIN_ITEM_STATE = "helmetold"
+		),
+	)
 
 /obj/item/clothing/head/helmet/old
 	name = "degrading helmet"
@@ -106,6 +115,8 @@
 	tint = 2
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+	icon_state = "helmetold"
+	item_state = "helmetold"
 
 /obj/item/clothing/head/helmet/blueshirt
 	name = "blue helmet"
