@@ -764,6 +764,13 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	desc = "Грабли, используемые для борьбы со всяким дерьмом."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "rake"
+	force = 20
+	w_class = WEIGHT_CLASS_NORMAL
+	throwforce = 25
+	icon_state = "switchblade_ext"
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	sharpness = SHARP_EDGED
 	resistance_flags = FLAMMABLE
 	var/quick_parry = FALSE // false = default parry, true = really small parry window
 	item_flags = ITEM_CAN_PARRY
