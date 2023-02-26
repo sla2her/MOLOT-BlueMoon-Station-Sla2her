@@ -555,8 +555,8 @@
 /datum/emote/living/nod
 	key = "nod"
 	key_third_person = "nods"
-	message = "кивает своей головой."
-	message_param = "кивает своей головой в согласии с %t."
+	message = "кивает головой."
+	message_param = "кивает головой в согласии с %t."
 
 /datum/emote/living/point
 	key = "point"

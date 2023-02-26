@@ -1,11 +1,11 @@
 /datum/quirk/sheltered
-	name = "Sheltered"
-	desc = "For one reason or another, you either can't or haven't learned the common tongue."
+	name = "Унесённый Взрывом"
+	desc = "По тем или иным причинам вы либо не можете говорить на всеобщем, либо не выучили этот же самый всеобщий язык."
 	value = 0
 	mob_trait = TRAIT_SHELTERED
-	gain_text = "<span class='danger'>The words of others begin to blur together...</span>"
-	lose_text = "<span class='notice'>You start putting together what people are saying!</span>"
-	medical_record_text = "Patient has shown an inability to use common speaking languages."
+	gain_text = "<span class='danger'>Слова других теряют для вас всякий смысл...</span>"
+	lose_text = "<span class='notice'>Вы начинаете собирать воедино то, что говорят люди!</span>"
+	medical_record_text = "Пациент демонстрирует неспособность использовать обычные разговорные языки."
 
 /datum/quirk/sheltered/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder

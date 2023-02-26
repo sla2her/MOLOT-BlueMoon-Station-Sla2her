@@ -492,7 +492,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	quirk_holder?.cure_blind(ROUNDSTART_TRAIT)
 
 /datum/quirk/coldblooded
-	name = "Хладнокровие"
+	name = "Холоднокровие"
 	desc = "Ваше тело не генерирует тепло, из-за чего требуется внешняя регуляция."
 	value = -2
 	medical_record_text = "Пациент эктотермичен."
@@ -547,7 +547,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/cursed
 	name = "Проклятый"
-	desc = "Вас преследует злой рок. У вас выше шансы пострадать от несчастных случаев. Пришла беда — отворяй ворота."
+	desc = "Вас преследует злой рок. У вас выше шансы пострадать от несчастных случаев. Пришла беда — отворяй врата."
 	value = -3
 	mob_trait = TRAIT_CURSED
 	gain_text = span_danger("Вы чувствуете, что сейчас будет плохой день.")
