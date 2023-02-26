@@ -188,7 +188,7 @@
 	if(user.nextsoundemote >= world.time)
 		return
 	user.nextsoundemote = world.time + 7
-	playsound(user, 'modular_citadel/sound/voice/purr.ogg', 50, 1, -1)
+	playsound(user, 'modular_citadel/sound/voice/purr.ogg', 100, 1, -1)
 
 /datum/emote/living/nya
 	key = "nya"
