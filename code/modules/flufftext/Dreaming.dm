@@ -1,4 +1,4 @@
-	/mob/living/carbon/proc/dream(mob/user)
+/mob/living/carbon/proc/dream(mob/user)
 	set waitfor = FALSE
 	var/list/dream_fragments = list()
 	var/list/custom_dream_nouns = list()
