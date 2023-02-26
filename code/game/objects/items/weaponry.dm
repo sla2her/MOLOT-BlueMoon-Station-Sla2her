@@ -767,7 +767,6 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	force = 20
 	w_class = WEIGHT_CLASS_NORMAL
 	throwforce = 25
-	icon_state = "switchblade_ext"
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
