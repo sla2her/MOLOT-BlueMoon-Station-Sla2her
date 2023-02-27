@@ -116,6 +116,23 @@
 	cum_splatter_icon.Blend(icon('modular_splurt/icons/effects/cumoverlay.dmi', "cum_obj"), ICON_MULTIPLY)
 	add_overlay(cum_splatter_icon)
 
+/mob/living/carbon/add_cum_overlay()
+	var/size = 2
+	switch(size)
+		if(BALLS_SIZE_MIN)
+			type = pick("")
+		if(BALLS_SIZE_DEF)
+			type = pick("", "", "normal", "normal")
+		if(BALLS_SIZE_2)
+			type = pick("", "normal", "normal", "large")
+		if(BALLS_SIZE_3)
+			type = pick("normal", "normal", "large", "large")
+		if(BALLS_SIZE_MAX)
+			type = pick("normal", "large", "large", "large")
+	var/mutable_appearance/cumoverlay = mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi')
+	cumoverlay.icon_state = "cum_[type]"
+	add_overlay(cumoverlay)
+
 /atom/proc/wash_cum()
 	cut_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', "cum_normal"))
 	cut_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', "cum_large"))
