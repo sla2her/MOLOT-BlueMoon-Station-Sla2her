@@ -48,7 +48,7 @@
 			new_size = 3
 		if(51 to 90) //If comical
 			new_size = 4 //no new sprites for anything larger yet //Now there is :3
-		if(61 to INFINITY)
+		if(91 to INFINITY)
 			new_size = 5
 
 	if(linked_organ)

@@ -43,7 +43,7 @@
 		eggo.forceMove(container)
 		eggo.AddComponent(/datum/component/pregnancy, src, partner, baby_type)
 
-/mob/living/carbon/human/do_climax(datum/reagents/R, atom/target, obj/item/organ/genital/sender, spill, cover = FALSE, obj/item/organ/genital/receiver)
+/mob/living/carbon/human/do_climax(datum/reagents/R, atom/target, obj/item/organ/genital/sender, spill, cover = TRUE, obj/item/organ/genital/receiver)
 	if(!sender)
 		return
 	if(!target || !R)
@@ -70,7 +70,25 @@
 			rod.forceMove(get_turf(src))
 
 	if(cover)
-		target.add_cum_overlay()
+		if(istype(sender, /obj/item/organ/genital/penis))
+			var/obj/item/organ/genital/penis/bepis = sender
+			var/size = bepis.size
+			switch(size)
+				if(BALLS_SIZE_MIN)
+					size = pick("", "", "", "")
+				if(BALLS_SIZE_DEF)
+					size = pick("", "", "cum_normal", "cum_normal")
+				if(BALLS_SIZE_2)
+					size = pick("", "cum_normal", "cum_normal", "cum_large")
+				if(BALLS_SIZE_3)
+					size = pick("cum_normal", "cum_normal", "cum_large", "cum_large")
+				if(BALLS_SIZE_MAX)
+					size = pick("cum_normal", "cum_large", "cum_large", "cum_large")
+			target.add_cum_overlay(size)
+
+
+	/*if(cover)
+		target.add_cum_overlay()*/
 
 	. = ..()
 
@@ -110,10 +128,10 @@
 	to_chat(L, "<span class='userlove'>[src] climaxes all over you using [ru_ego()] [G.name]!</span>")
 	do_climax(fluid_source, L, G, spillage, cover = TRUE)
 
-/atom/proc/add_cum_overlay() //This can go in a better spot, for now its here.
+/atom/proc/add_cum_overlay(size = BALLS_SIZE_MIN) //This can go in a better spot, for now its here.
 	cum_splatter_icon = icon(initial(icon), initial(icon_state), dir = 1)
 	cum_splatter_icon.Blend("#fff", ICON_ADD)
-	cum_splatter_icon.Blend(icon('modular_splurt/icons/effects/cumoverlay.dmi', "cum_obj"), ICON_MULTIPLY)
+	cum_splatter_icon.Blend(icon('modular_splurt/icons/effects/cumoverlay.dmi', size), ICON_MULTIPLY)
 	add_overlay(cum_splatter_icon)
 
 /atom/proc/wash_cum()
