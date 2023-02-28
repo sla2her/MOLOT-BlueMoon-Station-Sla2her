@@ -293,7 +293,7 @@
 					switch(portalunderwear.targetting)
 						if(CUM_TARGET_PENIS)
 							user_message = (user == M) ? "присасывается к [penis_names[3]] [name]" : "использует <b>'[src]'</b> по прямому назначению и стимулирует член кого-то на другой стороне усилиями ротика <b>[M]</b>, таким образом заставляя посасывать [penis_names[3]] [name]"
-							target_message = "посасывает твой [penis_names[4]]"
+							target_message = "suck on your [penis_names[4]]"
 							target = CUM_TARGET_MOUTH
 							user_lust_amt = LOW_LUST
 							target_lust_amt = NORMAL_LUST
@@ -338,7 +338,7 @@
 						switch(portalunderwear.targetting)
 							if(CUM_TARGET_PENIS)
 								user_message = (user == M) ? "надрачивает [penis_names[3]] [name]" : "использует <b>[M]</b> по прямому назначению и надрачивает [penis_names[3]] [name]"
-								target_message = "вздрачивает твой [penis_names[4]]"
+								target_message = "jerk you off"
 								target = CUM_TARGET_HAND
 								user_lust_amt = NONE
 								target_lust_amt = NORMAL_LUST
@@ -495,7 +495,7 @@
 							if(CUM_TARGET_FEET)
 								to_chat(M, "<span class='userlove'>Вы ощущаете, как [portalunderwear.targetting] дергается несколько раз, прежде чем кончить прямо на твою ножку!</span>")
 							if(CUM_TARGET_URETHRA)
-								to_chat(M, "<span class='userlove'>Вы ощущаете, как [portalunderwear.targetting] дергается несколько раз, прежде чем кончить прямо в твою уретру!</span>")
+								to_chat(M, "<span class='userlove'>cum in your urethra</span>")
 					if(CUM_TARGET_MOUTH)
 						switch(target)
 							if(CUM_TARGET_PENIS)
