@@ -416,6 +416,9 @@
 /area/ruin/space/has_grav/port_tarkon/starboardhall)
 "co" = (
 /obj/item/solar_assembly,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "cp" = (
@@ -782,7 +785,6 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /obj/effect/decal/cleanable/blood,
-/obj/effect/mob_spawn/human/corpse/assistant,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/cult,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
@@ -829,9 +831,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "eE" = (
@@ -1223,9 +1223,6 @@
 "hf" = (
 /obj/machinery/power/smes,
 /obj/structure/cable/yellow,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
@@ -1272,6 +1269,20 @@
 /obj/structure/barricade/wooden/crude,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon)
+"ht" = (
+/obj/structure/lattice/catwalk,
+/obj/item/organ/zombie_infection/nodamage,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "hu" = (
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/iron/airless,
@@ -1433,6 +1444,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mob_spawn/human/corpse/damaged/legioninfested,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "il" = (
@@ -2156,6 +2168,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/secoff)
+"lX" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "lZ" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/tile/brown/anticorner{
@@ -2297,6 +2315,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/has_grav/port_tarkon/kitchen)
+"mQ" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "mT" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/door/airlock/public/glass{
@@ -2365,6 +2396,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/cult,
 /area/ruin/space/has_grav/port_tarkon/mining)
+"nf" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "ng" = (
 /turf/closed/wall,
 /area/ruin/space/has_grav/port_tarkon/storage)
@@ -2663,6 +2707,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/comms)
+"oX" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "pa" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
@@ -2932,6 +2989,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mob_spawn/human/corpse/bee_terrorist,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "qr" = (
@@ -2947,9 +3005,9 @@
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
-/obj/effect/mob_spawn/human/corpse/assistant,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mob_spawn/human/corpse/german,
 /turf/open/floor/plasteel/cult,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "qy" = (
@@ -4002,10 +4060,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/observ)
-"wV" = (
-/obj/machinery/power/solar,
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/solars/tarkon)
 "wW" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -4582,6 +4636,13 @@
 "Aq" = (
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav)
+"Ar" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "At" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/vomit/old,
@@ -5115,6 +5176,13 @@
 "Dp" = (
 /turf/closed/wall/mineral/cult/artificer,
 /area/ruin/space/has_grav)
+"Dr" = (
+/obj/machinery/power/solar,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "Dv" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5185,6 +5253,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
+"DW" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "DY" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
@@ -5704,6 +5778,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "Gy" = (
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "GB" = (
@@ -5843,6 +5918,12 @@
 "Ho" = (
 /mob/living/simple_animal/hostile/carp,
 /turf/open/space/basic,
+/area/solars/tarkon)
+"Hp" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Hq" = (
 /turf/open/floor/plating,
@@ -6026,6 +6107,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/cult,
 /area/ruin/space/has_grav/port_tarkon/storage)
+"Ip" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "Ir" = (
 /mob/living/simple_animal/hostile/cult/ghost,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6116,10 +6210,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/mining)
-"IL" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/solars/tarkon)
 "IO" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1
@@ -7139,12 +7229,6 @@
 /obj/item/ammo_box/magazine/fal,
 /obj/item/ammo_box/magazine/fal,
 /obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal/r10,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/energy/e_gun/mini,
@@ -7272,6 +7356,7 @@
 "OS" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/item/solar_assembly,
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "OT" = (
@@ -7479,6 +7564,19 @@
 	},
 /turf/open/floor/engine/plasma,
 /area/ruin/space/has_grav/port_tarkon/atmos)
+"Ql" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "Qo" = (
 /obj/effect/turf_decal/delivery/blue,
 /obj/effect/turf_decal/tile/neutral/half,
@@ -8589,7 +8687,7 @@
 /area/ruin/space/has_grav/port_tarkon/mining)
 "WB" = (
 /obj/machinery/power/solar,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "WC" = (
@@ -8674,11 +8772,6 @@
 "WY" = (
 /turf/open/space/basic,
 /area/template_noop)
-"Xb" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/machinery/power/solar,
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/solars/tarkon)
 "Xh" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -8743,11 +8836,11 @@
 /area/ruin/space/has_grav/port_tarkon/starboardhall)
 "XE" = (
 /obj/structure/statue/bone/rib,
-/obj/effect/mob_spawn/human/corpse/assistant,
 /obj/machinery/light/small/directional/north,
 /obj/structure/toilet{
 	dir = 8
 	},
+/obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plasteel/cult,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "XG" = (
@@ -8807,7 +8900,7 @@
 /area/ruin/space/has_grav/port_tarkon/power1)
 "Yc" = (
 /obj/item/solar_assembly,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Yh" = (
@@ -10692,7 +10785,7 @@ MG
 MG
 MG
 MG
-Gy
+DW
 MG
 MG
 WY
@@ -10761,11 +10854,11 @@ Wa
 MG
 MG
 MG
-Gy
+DW
 MG
 MG
-WB
-Mr
+Dr
+Ql
 Gy
 MG
 WY
@@ -10833,12 +10926,12 @@ sv
 MG
 MG
 MG
-Gy
-UJ
-Xb
+Hp
+oX
+WB
 MG
-Gy
-Mr
+Hp
+Ql
 Yc
 MG
 WY
@@ -10906,12 +10999,12 @@ MG
 MG
 MG
 MG
+Hp
+oX
 Gy
-UJ
-IL
 MG
 co
-Mr
+Ql
 Gy
 MG
 WY
@@ -10979,12 +11072,12 @@ MG
 MG
 MG
 MG
+Hp
+oX
 Gy
-UJ
-IL
 MG
-IL
-Mr
+Hp
+Ql
 WB
 MG
 WY
@@ -11052,12 +11145,12 @@ MG
 MG
 MG
 MG
-Xb
-UJ
+Dr
+Ip
 Gy
 MG
-IL
-UJ
+Hp
+Ql
 Gy
 MG
 WY
@@ -11125,12 +11218,12 @@ Qx
 MG
 MG
 MG
-IL
-UJ
+Hp
+oX
 Gy
 MG
-Gy
-UJ
+Hp
+Ql
 Gy
 MG
 WY
@@ -11199,12 +11292,12 @@ Mr
 UJ
 UJ
 UJ
+Ar
 UJ
 UJ
 UJ
 UJ
 UJ
-Mr
 OS
 WY
 WY
@@ -11271,12 +11364,12 @@ Qx
 MG
 MG
 MG
-Gy
-Mr
-Xb
+Hp
+nf
+WB
 MG
-IL
-UJ
+Hp
+mQ
 Gy
 MG
 WY
@@ -11345,12 +11438,12 @@ MG
 MG
 MG
 co
-UJ
-IL
+nf
+Gy
 MG
-IL
-Mr
-co
+Hp
+mQ
+Yc
 MG
 WY
 WY
@@ -11417,12 +11510,12 @@ MG
 MG
 LJ
 MG
+Hp
+ht
 Gy
-UJ
-IL
 MG
-Yc
-Mr
+co
+mQ
 Gy
 MG
 WY
@@ -11490,12 +11583,12 @@ MG
 MG
 MG
 MG
-wV
-UJ
+Dr
+nf
 Gy
 MG
-Gy
-Mr
+Hp
+mQ
 Gy
 MG
 WY
@@ -11563,12 +11656,12 @@ of
 MG
 MG
 MG
-Gy
-UJ
-co
+Hp
+nf
+Yc
 MG
-Gy
-Mr
+Hp
+mQ
 Yc
 MG
 WY
@@ -11637,11 +11730,11 @@ of
 MG
 MG
 MG
-Gy
+lX
 MG
 MG
-WB
-Mr
+Dr
+mQ
 Gy
 MG
 WY
@@ -11714,7 +11807,7 @@ MG
 MG
 MG
 MG
-Gy
+lX
 Ho
 MG
 WY

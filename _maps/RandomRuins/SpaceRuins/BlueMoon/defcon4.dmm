@@ -454,6 +454,19 @@
 	},
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/storage)
+"cS" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "cT" = (
 /obj/machinery/light/dim/directional/east,
 /obj/effect/turf_decal/tile/neutral/anticorner{
@@ -746,9 +759,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/power1)
 "eE" = (
@@ -950,6 +961,20 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/comms)
+"fM" = (
+/obj/structure/lattice/catwalk,
+/obj/item/organ/zombie_infection/nodamage,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "fP" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
 	level = 1
@@ -1080,11 +1105,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/toolstorage)
-"gz" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/space/basic,
-/area/solars/tarkon)
 "gA" = (
 /obj/machinery/door/airlock/mining/glass{
 	req_access = list("tarkoff")
@@ -1158,12 +1178,22 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/solars/tarkon)
-"hf" = (
-/obj/machinery/power/smes,
-/obj/structure/cable/yellow,
+"ha" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
+"hf" = (
+/obj/machinery/power/smes,
+/obj/structure/cable/yellow,
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
@@ -1667,6 +1697,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "jM" = (
@@ -1914,6 +1945,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/toolstorage)
 "kL" = (
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "kO" = (
@@ -2013,6 +2045,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
+"lm" = (
+/obj/machinery/power/solar,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "lp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/paper/fluff/ruins/tarkoff/atmosincident,
@@ -3311,6 +3350,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/garden)
+"sY" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "tc" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
@@ -3680,6 +3725,12 @@
 /obj/machinery/door/firedoor/solid,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/port_tarkon/secoff)
+"uY" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "vd" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/apc/auto_name/east{
@@ -3861,6 +3912,19 @@
 /obj/effect/spawner/lootdrop/healing_kits,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/trauma)
+"wg" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "wh" = (
 /obj/item/wrench,
 /obj/structure/lattice/catwalk,
@@ -3938,10 +4002,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
-"wV" = (
-/obj/machinery/power/solar,
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/solars/tarkon)
 "wW" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -3991,10 +4051,6 @@
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
-"xh" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/solars/tarkon)
 "xi" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
 	level = 1
@@ -4437,11 +4493,6 @@
 	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/port_tarkon/atmos)
-"Al" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/machinery/power/solar,
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/solars/tarkon)
 "An" = (
 /obj/machinery/pipedispenser,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4463,7 +4514,7 @@
 /area/ruin/space/has_grav/port_tarkon)
 "At" = (
 /obj/machinery/power/solar,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Au" = (
@@ -5310,6 +5361,9 @@
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "Ft" = (
 /obj/item/solar_assembly,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Fu" = (
@@ -5446,6 +5500,7 @@
 /obj/structure/table/wood,
 /obj/machinery/light/dim/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/neck/stethoscope,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
 "Gk" = (
@@ -5678,6 +5733,19 @@
 "Hq" = (
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
+"Hx" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "Hy" = (
 /turf/closed/wall,
 /area/ruin/space/has_grav/port_tarkon/mining)
@@ -5788,7 +5856,7 @@
 /area/ruin/space/has_grav/port_tarkon/comms)
 "If" = (
 /obj/item/solar_assembly,
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "Ih" = (
@@ -6768,12 +6836,6 @@
 /obj/item/ammo_box/magazine/fal,
 /obj/item/ammo_box/magazine/fal,
 /obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal/r10,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/ballistic/automatic/fal/nomag,
 /obj/item/gun/energy/e_gun/mini,
@@ -6867,6 +6929,7 @@
 "OS" = (
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/item/solar_assembly,
+/obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/tarkon)
 "OT" = (
@@ -6951,6 +7014,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/port_tarkon/observ)
+"Pi" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "Pl" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7186,6 +7256,19 @@
 "QC" = (
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/port_tarkon/cargo)
+"QF" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/space/basic,
+/area/solars/tarkon)
 "QH" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/air_input/tarkon{
 	dir = 4
@@ -8193,6 +8276,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/cargo)
+"Ws" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solars/tarkon)
 "Wt" = (
 /turf/closed/mineral/random,
 /area/awaymission)
@@ -10348,7 +10437,7 @@ aF
 aF
 aF
 aF
-kL
+uY
 aF
 aF
 WY
@@ -10417,11 +10506,11 @@ Wa
 aF
 aF
 aF
-kL
+uY
 aF
 aF
-At
-gX
+lm
+wg
 kL
 aF
 WY
@@ -10489,12 +10578,12 @@ sv
 aF
 aF
 aF
-kL
-Qn
-Al
+Ws
+cS
+At
 aF
-kL
-gX
+Ws
+wg
 If
 aF
 WY
@@ -10562,12 +10651,12 @@ aF
 aF
 aF
 aF
+Ws
+cS
 kL
-Qn
-xh
 aF
 Ft
-gX
+wg
 kL
 aF
 WY
@@ -10635,12 +10724,12 @@ aF
 aF
 aF
 aF
+Ws
+cS
 kL
-Qn
-xh
 aF
-xh
-gX
+Ws
+wg
 At
 aF
 WY
@@ -10708,12 +10797,12 @@ aF
 aF
 aF
 aF
-Al
-Qn
+lm
+Hx
 kL
 aF
-xh
-Qn
+Ws
+wg
 kL
 aF
 WY
@@ -10781,12 +10870,12 @@ Qx
 aF
 aF
 aF
-xh
-Qn
+Ws
+cS
 kL
 aF
-kL
-Qn
+Ws
+wg
 kL
 aF
 WY
@@ -10853,14 +10942,14 @@ xP
 gn
 gX
 Qn
-gz
+Qn
+Qn
+Pi
 Qn
 Qn
 Qn
 Qn
 Qn
-Qn
-gX
 OS
 WY
 WY
@@ -10927,12 +11016,12 @@ Qx
 aF
 aF
 aF
-kL
-gX
-Al
+Ws
+ha
+At
 aF
-xh
-Qn
+Ws
+QF
 kL
 aF
 WY
@@ -11001,12 +11090,12 @@ aF
 aF
 aF
 Ft
-Qn
-xh
+ha
+kL
 aF
-xh
-gX
-Ft
+Ws
+QF
+If
 aF
 WY
 WY
@@ -11073,12 +11162,12 @@ aF
 aF
 LJ
 aF
+Ws
+fM
 kL
-Qn
-xh
 aF
-If
-gX
+Ft
+QF
 kL
 aF
 WY
@@ -11146,12 +11235,12 @@ aF
 aF
 aF
 aF
-wV
-Qn
+lm
+ha
 kL
 aF
-kL
-gX
+Ws
+QF
 kL
 aF
 WY
@@ -11219,12 +11308,12 @@ of
 aF
 aF
 aF
-kL
-Qn
-Ft
+Ws
+ha
+If
 aF
-kL
-gX
+Ws
+QF
 If
 aF
 WY
@@ -11293,11 +11382,11 @@ of
 aF
 aF
 aF
-kL
+sY
 aF
 aF
-At
-gX
+lm
+QF
 kL
 aF
 WY
@@ -11370,7 +11459,7 @@ aF
 aF
 aF
 aF
-kL
+sY
 Ho
 aF
 WY
