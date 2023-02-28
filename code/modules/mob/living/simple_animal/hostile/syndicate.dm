@@ -28,8 +28,8 @@
 	speed = 0
 	stat_attack = UNCONSCIOUS
 	robust_searching = 1
-	maxHealth = 100
-	health = 100
+	maxHealth = 150
+	health = 150
 	harm_intent_damage = 5
 	melee_damage_lower = 10
 	melee_damage_upper = 10

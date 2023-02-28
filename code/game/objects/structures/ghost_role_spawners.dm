@@ -1050,7 +1050,7 @@
 
 /obj/item/card/id/away/tarkoff/sec
 	assignment = "P-T Port Guard"
-	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_TARKOFF)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_TARKOFF, ACCESS_AWAY_SEC)
 
 /obj/item/card/id/away/tarkoff/med
 	assignment = "P-T Trauma Medic"
@@ -1066,7 +1066,7 @@
 
 /obj/item/card/id/away/tarkoff/ensign
 	assignment = "Tarkov Ensign"
-	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
+	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS, ACCESS_BRIG, ACCESS_ATMOSPHERICS, ACCESS_AWAY_SEC, ACCESS_ENGINE_EQUIP)
 
 /obj/item/card/id/away/tarkoff/sci
 	name = "P-T field researcher's access card"
