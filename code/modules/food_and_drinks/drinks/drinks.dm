@@ -479,7 +479,7 @@
 	desc = "A cup with the british flag emblazoned on it."
 	icon_state = "britcup"
 	volume = 30
-	spillable = TRUE[user]
+	spillable = TRUE
 
 //////////////////////////soda_cans////////////////////////////////////////////////////
 //These are in their own group to be used as IED's in /obj/item/grenade/ghettobomb.dm//
