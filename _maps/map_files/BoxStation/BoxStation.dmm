@@ -49687,7 +49687,7 @@
 /obj/item/electropack,
 /obj/item/screwdriver,
 /obj/item/wrench,
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet/sec,
 /obj/item/assembly/signaler,
 /obj/machinery/light/small{
 	dir = 1

@@ -55227,7 +55227,7 @@
 /obj/item/electropack,
 /obj/item/screwdriver,
 /obj/item/wrench,
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet/sec,
 /obj/item/assembly/signaler,
 /obj/machinery/light/small,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{

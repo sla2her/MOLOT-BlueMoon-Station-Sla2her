@@ -1766,8 +1766,8 @@
 /area/ruin/space/has_grav/port_tarkon/storage)
 "jY" = (
 /obj/structure/rack,
-/obj/item/clothing/head/helmet,
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/sec,
 /obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},

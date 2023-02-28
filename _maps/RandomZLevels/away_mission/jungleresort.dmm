@@ -3316,7 +3316,7 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/stone_tile/surrounding/cracked,
 /obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet/sec,
 /turf/open/floor/plating/dirt/jungle,
 /area/awaymission/jungleresort)
 "SV" = (

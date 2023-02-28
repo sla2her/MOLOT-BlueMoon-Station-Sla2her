@@ -63,7 +63,7 @@
 	stat_attack = UNCONSCIOUS
 	robust_searching = 0
 	maxHealth = 300
-	Health = 300
+	health = 300
 	harm_intent_damage = 5
 	melee_damage_lower = 10
 	melee_damage_upper = 10
@@ -85,7 +85,7 @@
 	icon_state = "cultghost"
 	icon_living = "cultghost"
 	maxHealth = 150
-	Health = 150
+	health = 150
 	harm_intent_damage = 8
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -99,7 +99,7 @@
 	icon_state = "mannequin_cult"
 	icon_living = "mannequin_cult"
 	maxHealth = 150
-	Health = 150
+	health = 150
 	harm_intent_damage = 8
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -206,7 +206,7 @@
 	icon_state = "cultelite"
 	icon_living = "cultelite"
 	maxHealth = 300
-	Health = 300
+	health = 300
 	move_to_delay = 10
 	projectiletype = /obj/item/gun/ballistic/shotgun/boltaction/enchanted/arcane_barrage/blood
 	projectilesound = 'sound/weapons/barragespellhit.ogg'
@@ -221,7 +221,7 @@
 	loot = list(/obj/effect/spawner/lootdrop/maintenance/three)
 	rapid_melee = 1
 	maxHealth = 200
-	Health = 200
+	health = 200
 	harm_intent_damage = 5
 	melee_damage_lower = 18
 	melee_damage_upper = 18
@@ -258,7 +258,7 @@
 	icon_living = "scavcrush"
 	loot = list(/obj/effect/spawner/lootdrop/maintenance/three)
 	maxHealth = 200
-	Health = 200
+	health = 200
 	harm_intent_damage = 5
 	melee_damage_lower = 18
 	melee_damage_upper = 18
@@ -319,7 +319,7 @@
 	icon_living = "evilbotold"
 	gender = NEUTER
 	mob_biotypes = MOB_ROBOTIC
-	Health = 300
+	health = 300
 	maxHealth = 300
 	healable = 0
 	melee_damage_lower = 10
@@ -348,7 +348,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "evilbotheavy"
 	icon_living = "evilbotheavy"
-	Health = 180
+	health = 180
 	maxHealth = 180
 	melee_damage_lower = 20
 	melee_damage_upper = 20
@@ -376,7 +376,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "evilbotengi"
 	icon_living = "evilbotengi"
-	Health = 250
+	health = 250
 	maxHealth = 250
 	melee_damage_type = BURN
 	melee_damage_lower = 15
@@ -393,7 +393,7 @@
 	icon_living = "evilbotsec"
 	casingtype = /obj/item/ammo_casing/c45
 	projectilesound = 'sound/weapons/gun/smg/shot.ogg'
-	Health = 300
+	health = 300
 	maxHealth = 300
 	ranged = 1
 	melee_damage_lower = 8
@@ -408,7 +408,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "evilbotroomba"
 	icon_living = "evilbotroomba"
-	Health = 200
+	health = 200
 	maxHealth = 200
 	melee_damage_lower = 12
 	melee_damage_upper = 12
@@ -422,7 +422,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs64x32.dmi'
 	icon_state = "evilbotmine"
 	icon_living = "evilbotmine"
-	Health = 200
+	health = 200
 	maxHealth = 200
 	melee_damage_lower = 12
 	melee_damage_upper = 12
@@ -436,7 +436,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs64x32.dmi'
 	icon_state = "evilbotelite" // ported from VORE
 	icon_living = "evilbotelite"
-	Health = 200
+	health = 200
 	maxHealth = 200
 	melee_damage_lower = 18
 	melee_damage_upper = 18
@@ -467,7 +467,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "protectbot"
 	icon_living = "protectbot"
-	Health = 250
+	health = 250
 	maxHealth = 250
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -497,7 +497,7 @@
 	move_to_delay = 20
 	speed = 2
 	maxHealth = 300
-	Health = 300
+	health = 300
 	harm_intent_damage = 3
 	obj_damage = 40
 	melee_damage_lower = 20
@@ -532,7 +532,7 @@
 	taunt_chance = 30
 	speed = 0
 	maxHealth = 200
-	Health = 200
+	health = 200
 	harm_intent_damage = 8
 	obj_damage = 30
 	melee_damage_lower = 18
@@ -614,7 +614,7 @@
 	taunt_chance = 30
 	speed = 0
 	maxHealth = 120
-	Health = 120
+	health = 120
 	melee_damage_type = TOX
 	melee_damage_lower = 25
 	melee_damage_upper = 25
@@ -685,7 +685,7 @@
 	response_disarm_simple = "gently push aside"
 	speed = 0
 	maxHealth = 300
-	Health = 300
+	health = 300
 	melee_damage_type = TOX
 	harm_intent_damage = 5
 	melee_damage_lower = 15
@@ -756,7 +756,7 @@
 	response_disarm_simple = "gently push aside"
 	speed = 2
 	maxHealth = 150
-	Health = 150
+	health = 150
 	harm_intent_damage = 3
 	obj_damage = 15
 	melee_damage_lower = 10
@@ -826,7 +826,7 @@
 	taunt_chance = 30
 	speed = 3
 	maxHealth = 1500
-	Health = 1500
+	health = 1500
 	harm_intent_damage = 12
 	obj_damage = 40
 	melee_damage_lower = 25
@@ -956,6 +956,6 @@
 	icon_state = "cheesezomb"
 	icon_living = "cheesezomb"
 	maxHealth = 250
-	Health = 250
+	health = 250
 	del_on_death = 1
 	loot = list(/obj/effect/gibspawner/human)

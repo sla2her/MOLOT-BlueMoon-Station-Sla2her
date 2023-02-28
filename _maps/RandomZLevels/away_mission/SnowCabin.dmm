@@ -4641,7 +4641,7 @@
 	armor = list("melee" = 2, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 10);
 	desc = "Anyone enjoying their time while working in a megacorporation, planetary government, or band of pirates is under the jurisdiction of the fun police."
 	},
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet/sec,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/cabin/caves/mountain)
 "lP" = (
