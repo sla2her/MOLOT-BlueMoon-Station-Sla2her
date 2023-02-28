@@ -32,7 +32,7 @@
 	var/can_impregnate = 100
 	if(partner?.client?.prefs)
 		can_impregnate = partner.client.prefs.virility
-	var/can_get_pregnant = (client?.prefs?.fertility && !is_type_in_typecache(src.type, GLOB.pregnancy_blocked_mob_typecache))
+	var/can_get_pregnant = (client?.prefs?.fertility && !is_type_in_typecache(src , GLOB.pregnancy_blocked_mob_typecache))
 	if(!(can_impregnate && can_get_pregnant))
 		return
 
@@ -116,21 +116,23 @@
 	cum_splatter_icon.Blend(icon('modular_splurt/icons/effects/cumoverlay.dmi', "cum_obj"), ICON_MULTIPLY)
 	add_overlay(cum_splatter_icon)
 
-/mob/living/carbon/add_cum_overlay()
-	var/size = 2
+/mob/living/carbon/add_cum_overlay(type="normal")
+	var/obj/item/organ/genital/linked_organ
+	var/size = BALLS_SIZE_MIN
+	size = linked_organ.size
 	switch(size)
 		if(BALLS_SIZE_MIN)
-			type = pick("")
+			size = pick("")
 		if(BALLS_SIZE_DEF)
-			type = pick("", "", "normal", "normal")
+			size = pick("", "", "normal", "normal")
 		if(BALLS_SIZE_2)
-			type = pick("", "normal", "normal", "large")
+			size = pick("", "normal", "normal", "large")
 		if(BALLS_SIZE_3)
-			type = pick("normal", "normal", "large", "large")
+			size = pick("normal", "normal", "large", "large")
 		if(BALLS_SIZE_MAX)
-			type = pick("normal", "large", "large", "large")
+			size = pick("normal", "large", "large", "large")
 	var/mutable_appearance/cumoverlay = mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi')
-	cumoverlay.icon_state = "cum_[type]"
+	cumoverlay.icon_state = "cum_[size]"
 	add_overlay(cumoverlay)
 
 /atom/proc/wash_cum()
