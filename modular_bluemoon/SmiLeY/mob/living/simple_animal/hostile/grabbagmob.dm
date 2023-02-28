@@ -141,7 +141,7 @@
 	desc = "A follower of the Blood Mother, armed with a blood-spear."
 	icon_state = "cultspear"
 	icon_living = "cultspear"
-	maxhealth = 200
+	maxHealth = 200
 	health = 200
 	harm_intent_damage = 8
 	melee_damage_lower = 15
@@ -155,7 +155,7 @@
 	desc = "A follower of the Blood Mother, armed with two ritual daggers."
 	icon_state = "cultliz"
 	icon_living = "cultliz"
-	maxhealth = 200
+	maxHealth = 200
 	health = 200
 	harm_intent_damage = 8
 	melee_damage_lower = 15
@@ -176,7 +176,7 @@
 	ranged = TRUE
 	ranged_message = "fires a spell"
 	ranged_cooldown_time = 8
-	maxhealth = 200
+	maxHealth = 200
 	health = 200
 	harm_intent_damage = 5
 	obj_damage = 20
@@ -275,7 +275,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "scavshotgun"
 	icon_living = "scavshotgun"
-	maxhealth = 200
+	maxHealth = 200
 	health = 200
 	casingtype = /obj/item/ammo_casing/shotgun/buckshot
 	loot = list(/obj/effect/spawner/lootdrop/maintenance/five)
@@ -363,7 +363,7 @@
 	icon_state = "evilbotpeace"
 	icon_living = "evilbotpeace"
 	health = 200
-	maxhealth = 200
+	maxHealth = 200
 	melee_damage_lower = 18
 	melee_damage_upper = 18
 	attack_verb_continuous = "smacks"
@@ -570,7 +570,7 @@
 	emote_taunt = list("gnashes")
 	taunt_chance = 30
 	speed = 0
-	maxhealth = 200
+	maxHealth = 200
 	health = 200
 	obj_damage = 10
 	melee_damage_lower = 18
@@ -857,7 +857,7 @@
 	speed = 0
 	stat_attack = UNCONSCIOUS
 	robust_searching = 0
-	maxhealth = 200
+	maxHealth = 200
 	health = 200
 	harm_intent_damage = 8
 	melee_damage_lower = 10
