@@ -86,10 +86,6 @@
 					size = pick("cum_normal", "cum_large", "cum_large", "cum_large")
 			target.add_cum_overlay(size)
 
-
-	/*if(cover)
-		target.add_cum_overlay()*/
-
 	. = ..()
 
 	if(cached_fluid)
