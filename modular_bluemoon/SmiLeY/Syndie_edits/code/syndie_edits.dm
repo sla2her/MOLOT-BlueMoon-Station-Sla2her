@@ -127,8 +127,9 @@
 	name = "Tactical Maid outfit"
 	desc = "A 'tactical' skirtleneck fashioned to the likeness of a maid outfit. Why the Syndicate has these, you'll never know."
 	icon_state = "syndimaid"
-	dying_key = DYE_REGISTRY_JUMPSKIRT
 	mutantrace_variation = STYLE_NO_ANTHRO_ICON|DIGITIGRADE
+	dying_key = DYE_REGISTRY_JUMPSKIRT
+	can_adjust = FALSE
 
 /obj/item/clothing/under/syndicate/bluemoon/maid/Initialize(mapload)
 	. = ..()
