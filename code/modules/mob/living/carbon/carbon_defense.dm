@@ -56,12 +56,12 @@
 		return
 	if (get_active_held_item())
 		if (HAS_TRAIT_FROM(src, TRAIT_AUTO_CATCH_ITEM,RISING_BASS_TRAIT))
-			visible_message("<span class='warning'>[src] chops [I] out of the air!</span>")
+			visible_message("<span class='warning'><b>[src]</b> chops [I] out of the air!</span>")
 			return TRUE
 		return
 	I.attack_hand(src)
 	if(get_active_held_item() == I) //if our attack_hand() picks up the item...
-		visible_message("<span class='warning'>[src] catches [I]!</span>") //catch that sucker!
+		visible_message("<span class='warning'><b>[src]</b> catches [I]!</span>") //catch that sucker!
 		throw_mode_off()
 		return TRUE
 
@@ -165,9 +165,9 @@
 			if(M.powerlevel < 0)
 				M.powerlevel = 0
 
-			visible_message("<span class='danger'>The [M.name] has shocked [src]!</span>", \
+			visible_message("<span class='danger'>The [M.name] has shocked <b>[src]</b>!</span>", \
 			"<span class='userdanger'>The [M.name] has shocked you!</span>", target = M,
-			target_message = "<span class='danger'>You have shocked [src]!</span>")
+			target_message = "<span class='danger'>You have shocked <b>[src]</b>!</span>")
 
 			do_sparks(5, TRUE, src)
 			var/power = M.powerlevel + rand(0,3)
@@ -205,7 +205,7 @@
 	if (stat == DEAD)
 		return
 	else
-		show_message("<span class='userdanger'>The blob attacks!</span>")
+		show_message("<span class='userdanger'>Блоб атакует!</span>")
 		adjustBruteLoss(10)
 
 /mob/living/carbon/emp_act(severity)
@@ -261,7 +261,7 @@
 
 /mob/living/carbon/proc/help_shake_act(mob/living/carbon/M)
 	if(on_fire)
-		to_chat(M, "<span class='warning'>You can't put [ru_na()] out with just your bare hands!</span>")
+		to_chat(M, "<span class='warning'>Вы не можете потушить [ru_ego()] голыми руками!!</span>")
 		return
 
 	if(M == src && check_self_for_injuries())
@@ -273,17 +273,17 @@
 			return
 		if(lying)
 			if(buckled)
-				to_chat(M, "<span class='warning'>You need to unbuckle [src] first to do that!")
+				to_chat(M, "<span class='warning'>Для этого вам для начала нужно отстегнуть <b>[src]</b>!")
 				return
-			M.visible_message("<span class='notice'>[M] shakes [src] trying to get [ru_na()] up!</span>", \
-							"<span class='notice'>You shake [src] trying to get [ru_na()] up!</span>", target = src,
-							target_message = "<span class='notice'>[M] shakes you trying to get you up!</span>")
+			M.visible_message("<span class='notice'><b>[M]</b> трясет <b>[src]</b> в попытке [ru_ego()] на ноги!</span>", \
+							"<span class='notice'>Вы трясете <b>[src]</b> в попытке поднять [ru_ego()] на ноги!</span>", target = src,
+							target_message = "<span class='notice'><b>[M]</b> трясет тебя в однозначной попытке поднять!</span>")
 
 		else if(M.zone_selected == BODY_ZONE_PRECISE_MOUTH) // I ADDED BOOP-EH-DEH-NOSEH - Jon
 			M.visible_message( \
-				"<span class='notice'>[M] boops [src]'s nose.</span>", \
-				"<span class='notice'>You boop [src] on the nose.</span>", target = src,
-				target_message = "<span class='notice'>[M] boops your nose.</span>")
+				"<span class='notice'><b>[M]</b> бупает носик <b>[src]</b>.</span>", \
+				"<span class='notice'>Ты бупаешь носик <b>[src]</b>!</span>", target = src,
+				target_message = "<span class='notice'><b>[M]</b> бупает твой носик!</span>")
 			playsound(src, 'sound/items/Nose_boop.ogg', 50, 0)
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_HEAD)
@@ -301,12 +301,12 @@
 				SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "dom_trained", /datum/mood_event/dominant/good_boy)
 
 			if(HAS_TRAIT(H, TRAIT_DISTANT)) //No mood buff since you're not really liking it.
-				M.visible_message("<span class='warning'>[H] glares at [M] as they give them a pat on the head! They seem annoyed...</span>", \
-					"<span class='warning'>You give [H] a pat on the head to make [ru_na()] feel better! Their eyes shift towards you contemptuously...</span>")
+				M.visible_message("<span class='warning'><b>[H]</b> резко осматривается на <b>[M]</b>, когда [ru_ego()] гладят по голове! Кажется, [ru_who()] раздражен[ru_a()]...</span>", \
+					"<span class='warning'>Вы гладите <b>[H]</b> по голове, чтобы [ru_who()] почувствовал[ru_a()] себя лучше! Кажется, [ru_who()] глаза презрительно смещаются в вашу сторону...</span>")
 				H.add_lust(-5) //Why are you touching me?
 				if(prob(5))
-					M.visible_message("<span class='warning'>[H] quickly twists [M]\'s arm!</span>", \
-						"<span class='boldwarning'>Your arm gets twisted in [H]\'s grasp! Maybe you should've taken the hint.</span>")
+					M.visible_message("<span class='warning'><b>[H]</b> быстро выкручивает руку <b>[M]</b>!</span>", \
+						"<span class='boldwarning'>Твоя рука выкручивается в хватке <b>[H]</b>! Может, тебе следовало понять тот явственный намек...</span>")
 					playsound(get_turf(H), 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 					M.emote("scream")
 					M.dropItemToGround(M.get_active_held_item())
@@ -319,15 +319,15 @@
 			else
 				friendly_check = TRUE
 				if(HAS_TRAIT(H, TRAIT_HEADPAT_SLUT))
-					M.visible_message("<span class='notice'>[M] gives [src] a pat on the head to make [ru_na()] feel better! They seem incredibly pleased!</span>", \
-								"<span class='notice'>You give [src] a pat on the head to make [ru_na()] feel better! They seem to be way too into it...</span>", target = src,
-								target_message = "<span class='boldnotice'>[M] gives you a pat on the head to make you feel better!</span>")
+					M.visible_message("<span class='notice'><b>[M]</b> похлопывает <b>[src]</b> по голове, чтобы [ru_who()] почувствовал[ru_a()] себя лучше! Он[ru_a()] выглядит невероятно довольно!</span>", \
+								"<span class='notice'>Ты гладишь <b>[src]</b> по голове, чтобы [ru_who()] почувствовал себя лучше! Кажется, он[ru_a()] принимает эту ласку слишком близко к сердцу...</span>", target = src,
+								target_message = "<span class='boldnotice'><b>[M]</b> гладит вас по голове, чтобы вы почувствовали себя лучше!</span>")
 					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "lewd_headpat", /datum/mood_event/lewd_headpat)
 					H.handle_post_sex(5, null, null) //Headpats are hot af
 				else
-					M.visible_message("<span class='notice'>[M] gives [src] a pat on the head to make [ru_na()] feel better!</span>", \
-								"<span class='notice'>You give [src] a pat on the head to make [ru_na()] feel better!</span>", target = src,
-								target_message = "<span class='notice'>[M] gives you a pat on the head to make you feel better!</span>")
+					M.visible_message("<span class='notice'><b>[M]</b> похлопывает <b>[src]</b> по голове, чтобы [ru_who()] почувствовал[ru_a()] себя лучше!</span>", \
+								"<span class='notice'>Ты гладишь <b>[src]</b> по голове, чтобы [ru_who()] почувствовал себя лучше!</span>", target = src,
+								target_message = "<span class='boldnotice'><b>[M]</b> гладит вас по голове, чтобы вы почувствовали себя лучше!</span>")
 					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
 			//SPLURT EDIT END
 
@@ -341,19 +341,19 @@
 		else if(check_zone(M.zone_selected) == BODY_ZONE_R_ARM || check_zone(M.zone_selected) == BODY_ZONE_L_ARM)
 			if((pulling == M) && (grab_state == GRAB_PASSIVE))
 				M.visible_message( \
-					"<span class='notice'>[M] squeezes [src]'s hand.</span>", \
-					"<span class='notice'>You squeeze [src]'s hand.</span>", target = src,
-					target_message = "<span class='notice'>[M] squeezes your hand.</span>")
+					"<span class='notice'><b>[M]</b> squeezes <b>[src]</b>'s hand.</span>", \
+					"<span class='notice'>You squeeze <b>[src]</b>'s hand.</span>", target = src,
+					target_message = "<span class='notice'><b>[M]</b> squeezes your hand.</span>")
 			else
 				M.visible_message( \
-					"<span class='notice'>[M] shakes [src]'s hand.</span>", \
-					"<span class='notice'>You shake [src]'s hand.</span>", target = src,
-					target_message = "<span class='notice'>[M] shakes your hand.</span>")
+					"<span class='notice'><b>[M]</b> shakes <b>[src]</b>'s hand.</span>", \
+					"<span class='notice'>You shake <b>[src]</b>'s hand.</span>", target = src,
+					target_message = "<span class='notice'><b>[M]</b> shakes your hand.</span>")
 
 		else
-			M.visible_message("<span class='notice'>[M] hugs [src] to make [ru_na()] feel better!</span>", \
-						"<span class='notice'>You hug [src] to make [ru_na()] feel better!</span>", target = src,\
-						target_message = "<span class='notice'>[M] hugs you to make you feel better!</span>")
+			M.visible_message("<span class='notice'><b>[M]</b> hugs <b>[src]</b> to make [ru_na()] feel better!</span>", \
+						"<span class='notice'>You hug <b>[src]</b> to make [ru_na()] feel better!</span>", target = src,\
+						target_message = "<span class='notice'><b>[M]</b> hugs you to make you feel better!</span>")
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "hug", /datum/mood_event/hug)
 			friendly_check = TRUE
 
@@ -389,7 +389,7 @@
 			if(!embeds)
 				embeds = TRUE
 				// this way, we only visibly try to examine ourselves if we have something embedded, otherwise we'll still hug ourselves :)
-				visible_message("<span class='notice'>[src] осматривает себя.</span>", "")
+				visible_message("<span class='notice'><b>[src]</b> осматривает себя.</span>", "")
 				output = "<span class='notice'>You check yourself for shrapnel.</span><hr>"
 			if(I.isEmbedHarmless())
 				output += "\n\t <a href='?src=[REF(src)];embedded_object=[REF(I)];embedded_limb=[REF(LB)]' class='warning'>There is \a [I] stuck to your [LB.name]!</a>"
@@ -541,10 +541,10 @@
 	var/message_hit_area = ""
 	if(hit_area)
 		message_hit_area = " in the [hit_area]"
-	var/attack_message = "[src] is [message_verb][message_hit_area] with [I][extra_wound_details]!"
+	var/attack_message = "<b>[src]</b> is [message_verb][message_hit_area] with [I][extra_wound_details]!"
 	var/attack_message_local = "You're [message_verb][message_hit_area] with [I][extra_wound_details]!"
 	if(user in viewers(src, null))
-		attack_message = "[user] [message_verb] [src][message_hit_area] with [I][extra_wound_details]!"
+		attack_message = "[user] [message_verb] <b>[src]</b>[message_hit_area] with [I][extra_wound_details]!"
 		attack_message_local = "[user] [message_verb] you[message_hit_area] with [I][extra_wound_details]!"
 	if(user == src)
 		attack_message_local = "You [message_verb] yourself[message_hit_area] with [I][extra_wound_details]"
