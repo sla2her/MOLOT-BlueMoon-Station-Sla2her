@@ -95,7 +95,7 @@
 
 /datum/antagonist/ert/syndiesquad
 	name = "Syndiesquad Specialist"
-	outfit = /datum/outfit/syndiesquad
+	outfit = /datum/outfit/syndicate/syndiesquad
 	role = "Specialist"
 
 /datum/antagonist/ert/medic/inquisitor
@@ -129,7 +129,7 @@
 
 /datum/antagonist/ert/syndiesquad/leader
 	name = "Syndiesquad Specialist"
-	outfit = /datum/outfit/syndiesquad
+	outfit = /datum/outfit/syndicate/syndiesquad
 	role = "Master-Specialist"
 
 /datum/antagonist/ert/create_team(datum/team/ert/new_team)

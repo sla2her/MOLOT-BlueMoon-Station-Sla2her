@@ -82,11 +82,6 @@
 "oo" = (
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/tarkoff_driver)
-"oK" = (
-/mob/living/simple_animal/hostile/cult/magic,
-/obj/effect/decal/cleanable/blood,
-/turf/open/floor/plasteel/cult,
-/area/shuttle/tarkoff_driver)
 "pL" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 8
@@ -130,6 +125,14 @@
 /obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
+"zb" = (
+/mob/living/simple_animal/hostile/cult/warrior,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/tarkoff_driver)
+"zt" = (
+/mob/living/simple_animal/hostile/cult/magic/elite,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/tarkoff_driver)
 "zR" = (
 /obj/machinery/door/airlock/titanium,
 /obj/structure/fans/tiny/invisible,
@@ -155,6 +158,7 @@
 /obj/machinery/door/poddoor{
 	id = "driverwindows"
 	},
+/obj/effect/spawner/structure/window/shuttle,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
 "Dw" = (
@@ -219,10 +223,6 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
-"Ig" = (
-/obj/structure/destructible/cult/pylon,
-/turf/open/floor/mineral/titanium,
-/area/shuttle/tarkoff_driver)
 "Ms" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
@@ -276,6 +276,10 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/tarkoff_driver)
+"TC" = (
+/obj/structure/destructible/cult/pylon,
+/turf/open/floor/plasteel/cult,
+/area/shuttle/tarkoff_driver)
 "UE" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -319,8 +323,8 @@ oo
 oo
 lV
 lV
-Dx
-oo
+aj
+bz
 oo
 oo
 oo
@@ -387,11 +391,11 @@ Ms
 kQ
 xy
 Dx
-Dx
+zt
 wZ
 Sl
 mZ
-YA
+TC
 Dx
 Dx
 Dx
@@ -421,11 +425,11 @@ xg
 Cm
 DX
 Tt
-Dx
+er
 Dx
 wZ
 Dx
-oK
+mZ
 YA
 Dx
 Dx
@@ -441,13 +445,13 @@ Ti
 Dw
 VD
 wZ
+er
 Dx
-Ig
-YA
+TC
 YA
 YA
 wZ
-Dx
+zb
 Dx
 Dx
 Qj
@@ -463,7 +467,7 @@ oo
 kb
 mZ
 wt
-YA
+FA
 UE
 pL
 kC
@@ -476,7 +480,7 @@ lV
 lV
 xg
 Dx
-er
+Dx
 Dx
 oo
 Bv
@@ -517,8 +521,8 @@ oo
 oo
 lV
 lV
-Dx
-oo
+aj
+bz
 oo
 oo
 oo

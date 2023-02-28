@@ -413,43 +413,6 @@
 	name = "Death Commando Officer"
 	head = /obj/item/clothing/head/helmet/space/beret
 
-/datum/outfit/syndiesquad
-	name = "Syndicate Special Forces"
-	uniform = /obj/item/clothing/under/syndicate
-	shoes = /obj/item/clothing/shoes/combat
-	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	back = /obj/item/storage/backpack
-	id = /obj/item/card/id/syndicate/locked_banking
-	belt = /obj/item/gun/ballistic/automatic/pistol/APS
-	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\
-		/obj/item/kitchen/knife/combat/survival)
-
-/datum/outfit/syndiesquad/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	. = ..()
-	var/obj/item/radio/R = H.ears
-	R.set_frequency(FREQ_CENTCOM)
-	R.freqlock = TRUE
-
-	var/obj/item/implant/mindshield/L = new //Here you go Deuryn
-	L.implant(H, null, 1)
-
-	var/obj/item/card/id/syndicate/W = H.wear_id
-	W.icon_state = "syndie"
-	W.access = get_all_accesses()//They get full station access.
-	W.access += get_centcom_access("Death Commando")//Let's add their alloted CentCom access.
-	W.assignment = "Syndicate Special Forces"
-	W.registered_name = H.real_name
-	W.update_label(W.registered_name, W.assignment)
-
-	var/key = H.key ? H.key : preference_source ? preference_source.key : null
-	var/obj/item/uplink/U = new /obj/item/uplink/nuclear_restricted(H, key, 80)
-	H.equip_to_slot_or_del(U, ITEM_SLOT_BACKPACK)
-	var/obj/item/implant/weapons_auth/Q = new
-	Q.implant(H)
-	var/obj/item/implant/explosive/E = new
-	E.implant(H)
-	H.update_icons()
-
 /* /datum/outfit/chrono_agent //Begone skyrat change on sandstorm
 	name = "Timeline Eradication Agent"
 	uniform = /obj/item/clothing/under/color/white
