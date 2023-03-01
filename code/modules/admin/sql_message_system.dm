@@ -46,9 +46,9 @@
 			server = ssqlname
 	if(isnull(secret))
 		switch(alert("Hide note from being viewed by players?", "Secret note?","Да","Нет","Cancel"))
-			if("Yes")
+			if("Да")
 				secret = 1
-			if("No")
+			if("Нет")
 				secret = 0
 			else
 				return

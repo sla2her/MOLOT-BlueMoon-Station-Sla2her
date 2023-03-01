@@ -36,7 +36,7 @@
 	if(!user.client || !user.client.holder || popped)
 		return
 	var/confirmation = alert("Pop [src]?","Fun Balloon","Да","Нет")
-	if(confirmation == "Yes" && !popped)
+	if(confirmation == "Да" && !popped)
 		popped = TRUE
 		effect()
 		pop()

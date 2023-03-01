@@ -591,7 +591,7 @@ Difficulty: Very Hard
 		if(!user.can_reenter_round())
 			return FALSE
 		var/be_helper = alert("Become a Lightgeist? (Warning, You can no longer be cloned!)",,"Да","Нет")
-		if(be_helper == "Yes" && !QDELETED(src) && isobserver(user))
+		if(be_helper == "Да" && !QDELETED(src) && isobserver(user))
 			var/mob/living/simple_animal/hostile/lightgeist/W = new /mob/living/simple_animal/hostile/lightgeist(get_turf(loc))
 			user.transfer_ckey(W, FALSE)
 

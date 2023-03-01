@@ -212,16 +212,16 @@ ImageErrorMsg = (
 #-----------------------------------------------------------------------
 def ynbox(msg="Shall I continue?"
     , title=" "
-    , choices=("Yes", "No")
+    , choices=("Да", "No")
     , image=None
     ):
     """
-    Display a msgbox with choices of Yes and No.
+    Display a msgbox with choices of Да and No.
 
-    The default is "Yes".
+    The default is "Да".
 
     The returned value is calculated this way::
-        if the first choice ("Yes") is chosen, or if the dialog is cancelled:
+        if the first choice ("Да") is chosen, or if the dialog is cancelled:
             return 1
         else:
             return 0
@@ -2384,7 +2384,7 @@ ENHANCEMENTS
 ENHANCEMENTS
 ------------------------------------------------------
  * The codebox and textbox functions now return the contents of the box, rather
-   than simply the name of the button ("Yes").  This makes it possible to use
+   than simply the name of the button ("Да").  This makes it possible to use
    codebox and textbox as data-entry widgets.  A big "thank you!" to Dominic
    Comtois for requesting this feature, patiently explaining his requirement,
    and helping to discover the tkinter techniques to implement it.

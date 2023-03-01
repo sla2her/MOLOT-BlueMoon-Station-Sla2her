@@ -331,7 +331,7 @@
 			if(!is_funmin)
 				return
 			if(!SSevents.wizardmode)
-				if(alert("Do you want to toggle summon events on?",,"Да","Нет") == "Yes")
+				if(alert("Do you want to toggle summon events on?",,"Да","Нет") == "Да")
 					summonevents()
 					SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Summon Events", "Activate"))
 

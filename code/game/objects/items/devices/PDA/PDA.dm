@@ -1189,7 +1189,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 	if(aicamera.stored.len)
 		var/add_photo = input(user,"Do you want to attach a photo?","Photo","No") as null|anything in list("Да","Нет")
-		if(add_photo=="Yes")
+		if(add_photo=="Да")
 			var/datum/picture/Pic = aicamera.selectpicture(user)
 			aiPDA.picture = Pic
 

@@ -50,17 +50,17 @@
 	qdel(query_validate_time)
 	var/adminonly
 	switch(alert("Admin only poll?",,"Да","Нет","Cancel"))
-		if("Yes")
+		if("Да")
 			adminonly = 1
-		if("No")
+		if("Нет")
 			adminonly = 0
 		else
 			return
 	var/dontshow
 	switch(alert("Hide poll results from tracking until completed?",,"Да","Нет","Cancel"))
-		if("Yes")
+		if("Да")
 			dontshow = 1
-		if("No")
+		if("Нет")
 			dontshow = 0
 		else
 			return
@@ -77,9 +77,9 @@
 			var/default_percentage_calc = 0
 			if(polltype != POLLTYPE_IRV)
 				switch(alert("Should this option be included by default when poll result percentages are generated?",,"Да","Нет","Cancel"))
-					if("Yes")
+					if("Да")
 						default_percentage_calc = 1
-					if("No")
+					if("Нет")
 						default_percentage_calc = 0
 					else
 						return

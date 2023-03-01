@@ -16,7 +16,7 @@
 	. = ..()
 	if(.)
 		return
-	if(alert(question,name,"Да","Нет") == "Yes" && Adjacent(user))
+	if(alert(question,name,"Да","Нет") == "Да" && Adjacent(user))
 		var/turf/T = find_safe_turf(zlevels=zlevels)
 
 		if(T)

@@ -173,7 +173,7 @@
 	if(target && in_range(src, target))
 		to_chat(src,"<span class='notice'>Ожидание согласия...</span>")
 		var/consenting = input(target, "Вы хотите, чтобы [src] кончил совместно с вами?","Механика Кульминации","Нет") in list("Да","Нет")
-		if(consenting == "Yes")
+		if(consenting == "Да")
 			return target
 		else
 			message_admins("[ADMIN_LOOKUPFLW(src)] tried to climax with [target], but [target] did not consent.")
