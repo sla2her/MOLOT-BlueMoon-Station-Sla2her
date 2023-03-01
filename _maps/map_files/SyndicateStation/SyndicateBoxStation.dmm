@@ -58067,6 +58067,10 @@
 	},
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
+"mar" = (
+/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/turf/open/floor/plating,
+/area/maintenance/fore)
 "mau" = (
 /obj/machinery/power/apc{
 	areastring = "/area/service/theater";
@@ -88040,7 +88044,7 @@ aaa
 aaa
 aaa
 aqQ
-aqR
+mar
 aqR
 pjg
 sqg
