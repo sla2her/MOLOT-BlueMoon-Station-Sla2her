@@ -43,9 +43,9 @@
 		. += "На ушах у н[t_ego] [ears_extra.get_examine_string(user)]."
 
 	//mask
-	if(wear_mask && !(obscured & ITEM_SLOT_MASK)  && !(wear_mask.item_flags & EXAMINE_SKIP))
+	if(wear_mask && !(ITEM_SLOT_MASK in obscured))
 		. += "На лице у н[t_ego] [wear_mask.get_examine_string(user)]."
-	if(wear_neck && !(obscured & ITEM_SLOT_NECK)  && !(wear_neck.item_flags & EXAMINE_SKIP))
+	if(wear_mask && !(ITEM_SLOT_MASK in obscured))
 		. += "На шее у н[t_ego] [wear_neck.get_examine_string(user)]."
 
 	//suit/armor
