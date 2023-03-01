@@ -156,9 +156,9 @@
 				if(1) //A specific crewmember
 					switch(rand(1,2)) //What is X?
 						if(1) //X is a threat
-							message = "[ioncrew1] ЯВЛЯЕТСЯ [ionnumberbase] [ionnumbermodhalf][ionadjectiveshalf][ionthreats]"
+							message = "[ioncrew1] ЯВЛЯЮТСЯ [ionnumberbase] [ionnumbermodhalf][ionadjectiveshalf][ionthreats]"
 						if(2) //X is an object
-							message = "[ioncrew1] ЯВЛЯЕТСЯ [ionnumberbase] [ionnumbermodhalf][ionadjectiveshalf][ionobjects]"
+							message = "[ioncrew1] ЯВЛЯЮТСЯ [ionnumberbase] [ionnumbermodhalf][ionadjectiveshalf][ionobjects]"
 				if(2) //The entire crew
 					switch(rand(1,2)) //What is X?
 						if(1) //X is a threat
@@ -282,14 +282,14 @@
 				if(2) //X is a specific job
 					switch(rand(1,4))
 						if(1) //It is allergic to objects
-							message = "[ioncrew1] ЯВЛЯЕТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionadjectiveshalf][ionobjects]"
+							message = "[ioncrew1] ЯВЛЯЮТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionadjectiveshalf][ionobjects]"
 
 						if(2) //It is allergic to abstracts
-							message = "[ioncrew1] ЯВЛЯЕТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionabstract]"
+							message = "[ioncrew1] ЯВЛЯЮТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionabstract]"
 						if(3) //It is allergic to jobs
-							message = "[ioncrew1] ЯВЛЯЕТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionadjectiveshalf][ioncrew1]"
+							message = "[ioncrew1] ЯВЛЯЮТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionadjectiveshalf][ioncrew1]"
 						if(4) //It is allergic to allergies
-							message = "[ioncrew1] ЯВЛЯЕТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionallergy]"
+							message = "[ioncrew1] ЯВЛЯЮТСЯ [ionallergysev] АЛЛЕРГИЧЕН К [ionallergy]"
 
 		if(18 to 20) //X is Y of Z
 			switch(rand(1,4)) //What is X?
@@ -380,11 +380,11 @@
 						if(2) //Change a specific crewmember's job
 							switch(rand(1,3)) //Change to what?
 								if(1) //Change to a specific random job
-									message = "[ioncrew1] ЯВЛЯЕТСЯ [ionadjectiveshalf][ioncrew2]"
+									message = "[ioncrew1] ЯВЛЯЮТСЯ [ionadjectiveshalf][ioncrew2]"
 								if(2) //Change to clowns (HONK)
-									message = "[ioncrew1] ЯВЛЯЕТСЯ [ionadjectiveshalf]КЛОУНЫ"
+									message = "[ioncrew1] ЯВЛЯЮТСЯ [ionadjectiveshalf]КЛОУНЫ"
 								if(3) //Change to heads
-									message = "[ioncrew1] ЯВЛЯЕТСЯ [ionadjectiveshalf]ГЛАВЫ"
+									message = "[ioncrew1] ЯВЛЯЮТСЯ [ionadjectiveshalf]ГЛАВЫ"
 
 				if(2) //Change rank
 					switch(rand(1,2)) //Change to what rank?
