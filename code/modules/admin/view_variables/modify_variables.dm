@@ -9,7 +9,7 @@ GLOBAL_PROTECT(VVpixelmovement)
 
 /client/proc/vv_parse_text(O, new_var)
 	if(O && findtext(new_var,"\["))
-		var/process_vars = alert(usr,"\[] detected in string, process as variables?","Process Variables?","Yes","No")
+		var/process_vars = alert(usr,"\[] detected in string, process as variables?","Process Variables?","Да","Нет")
 		if(process_vars == "Yes")
 			. = string2listofvars(new_var, O)
 
@@ -97,7 +97,7 @@ GLOBAL_PROTECT(VVpixelmovement)
 
 	L += var_value
 
-	switch(alert("Would you like to associate a value with the list entry?",,"Yes","No"))
+	switch(alert("Would you like to associate a value with the list entry?",,"Да","Нет"))
 		if("Yes")
 			L[var_value] = mod_list_add_ass(O) //hehe
 	if (O)

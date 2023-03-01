@@ -438,7 +438,7 @@
 			return
 
 		var/delmob = 0
-		switch(alert("Delete old mob?","Message","Yes","No","Cancel"))
+		switch(alert("Delete old mob?","Message","Да","Нет","Cancel"))
 			if("Cancel")
 				return
 			if("Yes")
@@ -534,7 +534,7 @@
 
 		var/duration
 
-		switch(alert("Temporary Ban for [banned_key]?",,"Yes","No"))
+		switch(alert("Temporary Ban for [banned_key]?",,"Да","Нет"))
 			if("Yes")
 				temp = 1
 				var/mins = 0
@@ -582,7 +582,7 @@
 
 
 		if(jobban_isbanned(M, "appearance"))
-			switch(alert("Remove appearance ban?","Please Confirm","Yes","No"))
+			switch(alert("Remove appearance ban?","Please Confirm","Да","Нет"))
 				if("Yes")
 					ban_unban_log_save("[key_name(usr)] removed [key_name(M)]'s appearance ban.")
 					log_admin_private("[key_name(usr)] removed [key_name(M)]'s appearance ban.")
@@ -592,7 +592,7 @@
 					message_admins("<span class='adminnotice'>[key_name_admin(usr)] removed [key_name_admin(M)]'s appearance ban.</span>")
 					to_chat(M, "<span class='boldannounce'><BIG>[usr.client.key] has removed your appearance ban.</BIG></span>")
 
-		else switch(alert("Appearance ban [M.key]?",,"Yes","No", "Cancel"))
+		else switch(alert("Appearance ban [M.key]?",,"Да","Нет", "Cancel"))
 			if("Yes")
 				var/reason = input(usr,"Please State Reason.","Reason") as message|null
 				if(!reason)
@@ -1022,7 +1022,7 @@
 		//Banning comes first
 		if(notbannedlist.len) //at least 1 unbanned job exists in joblist so we have stuff to ban.
 			var/severity = null
-			switch(alert("Temporary Ban for [M.key]?",,"Yes","No", "Cancel"))
+			switch(alert("Temporary Ban for [M.key]?",,"Да","Нет", "Cancel"))
 				if("Yes")
 					var/mins = input(usr,"How long (in minutes)?","Ban time",1440) as num|null
 					if(mins <= 0)
@@ -1091,7 +1091,7 @@
 				var/reason = jobban_isbanned(M, job)
 				if(!reason)
 					continue //skip if it isn't jobbanned anyway
-				switch(alert("Job: '[job]' Reason: '[reason]' Un-jobban?","Please Confirm","Yes","No"))
+				switch(alert("Job: '[job]' Reason: '[reason]' Un-jobban?","Please Confirm","Да","Нет"))
 					if("Yes")
 						ban_unban_log_save("[key_name(usr)] unjobbanned [key_name(M)] from [job]")
 						log_admin_private("[key_name(usr)] unbanned [key_name(M)] from [job]")
@@ -1173,7 +1173,7 @@
 	else if(href_list["deletemessage"])
 		if(!check_rights(R_ADMIN))
 			return
-		var/safety = alert("Delete message/note?",,"Yes","No");
+		var/safety = alert("Delete message/note?",,"Да","Нет");
 		if (safety == "Yes")
 			var/message_id = href_list["deletemessage"]
 			delete_message(message_id)
@@ -1181,7 +1181,7 @@
 	else if(href_list["deletemessageempty"])
 		if(!check_rights(R_ADMIN))
 			return
-		var/safety = alert("Delete message/note?",,"Yes","No");
+		var/safety = alert("Delete message/note?",,"Да","Нет");
 		if (safety == "Yes")
 			var/message_id = href_list["deletemessageempty"]
 			delete_message(message_id, browse = TRUE)
@@ -1298,7 +1298,7 @@
 		if(M.client && M.client.holder)
 			return	//admins cannot be banned. Even if they could, the ban doesn't affect them anyway
 
-		switch(alert("Temporary Ban for [M.key]?",,"Yes","No", "Cancel"))
+		switch(alert("Temporary Ban for [M.key]?",,"Да","Нет", "Cancel"))
 			if("Yes")
 				var/mins = input(usr,"How long (in minutes)?","Ban time",1440) as num|null
 				if(mins <= 0)
@@ -1330,7 +1330,7 @@
 				var/reason = input(usr,"Please State Reason For Banning [M.key].","Reason") as message|null
 				if(!reason)
 					return
-				switch(alert(usr,"IP ban?",,"Yes","No","Cancel"))
+				switch(alert(usr,"IP ban?",,"Да","Нет","Cancel"))
 					if("Cancel")
 						return
 					if("Yes")

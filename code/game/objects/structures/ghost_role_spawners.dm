@@ -247,7 +247,7 @@
 
 /obj/effect/mob_spawn/human/golem/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(isgolem(user) && can_transfer)
-		var/transfer_choice = alert("Transfer your soul to [src]? (Warning, your old body will die!)",,"Yes","No")
+		var/transfer_choice = alert("Transfer your soul to [src]? (Warning, your old body will die!)",,"Да","Нет")
 		if(transfer_choice != "Yes" || QDELETED(src) || uses <= 0 || !user.canUseTopic(src, BE_CLOSE, NO_DEXTERY, NO_TK))
 			return
 		log_game("[key_name(user)] golem-swapped into [src]")

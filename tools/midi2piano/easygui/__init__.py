@@ -277,7 +277,7 @@ def ccbox(msg="Shall I continue?"
 #-----------------------------------------------------------------------
 def boolbox(msg="Shall I continue?"
     , title=" "
-    , choices=("Yes","No")
+    , choices=("Да","Нет")
     , image=None
     ):
     """
@@ -301,7 +301,7 @@ def boolbox(msg="Shall I continue?"
 #-----------------------------------------------------------------------
 def indexbox(msg="Shall I continue?"
     , title=" "
-    , choices=("Yes","No")
+    , choices=("Да","Нет")
     , image=None
     ):
     """
@@ -2258,7 +2258,7 @@ for someItem in myListOfStuff:
 def _demo_buttonbox_with_image():
 
     msg   = "Do you like this picture?\nIt is "
-    choices = ["Yes","No","No opinion"]
+    choices = ["Да","Нет","No opinion"]
 
     for image in [
         "python_and_check_logo.gif"

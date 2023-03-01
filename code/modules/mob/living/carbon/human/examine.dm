@@ -56,6 +56,21 @@
 			suit_thing += " вместе с [s_store.get_examine_string(user)]"
 		. += "На [t_na] надет [wear_suit.get_examine_string(user)][suit_thing]."
 
+	//Underwear
+	var/shirt_hidden = undershirt_hidden()
+	var/undies_hidden = underwear_hidden()
+	var/socks_hidden = socks_hidden()
+	if(w_underwear && !undies_hidden)
+		. += "[t_on] одет[t_a] в [w_underwear.get_examine_string(user)]."
+	if(w_socks && !socks_hidden)
+		. += "[t_on] одет[t_a] в [w_socks.get_examine_string(user)]."
+	if(w_shirt && !shirt_hidden)
+		. += "[t_on] одет[t_a] в [w_shirt.get_examine_string(user)]."
+	//Wrist slot because you're epic
+	if(wrists && !(ITEM_SLOT_WRISTS in obscured))
+		. += "[t_on] одет[t_a] в [wrists.get_examine_string(user)]."
+	//End of skyrat changes
+
 	//uniform
 	if(w_uniform && !(ITEM_SLOT_ICLOTHING in obscured))
 		//accessory
