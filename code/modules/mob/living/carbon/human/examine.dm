@@ -8,6 +8,13 @@
 	var/obscure_name
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
 
+	var/vampDesc = ReturnVampExamine(user) // Vamps recognize the names of other vamps.
+	var/vassDesc = ReturnVassalExamine(user) // Vassals recognize each other's marks.
+	if (vampDesc != "") // If we don't do it this way, we add a blank space to the string...something to do with this -->  . += ""
+		. += vampDesc
+	if (vassDesc != "")
+		. += vassDesc
+
 	if(isliving(user))
 		var/mob/living/L = user
 		if(HAS_TRAIT(L, TRAIT_PROSOPAGNOSIA) || HAS_TRAIT(L, TRAIT_INVISIBLE_MAN))
