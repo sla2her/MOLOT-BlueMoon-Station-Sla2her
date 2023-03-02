@@ -364,8 +364,9 @@
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
 
 	// Add quirk traits
-	ADD_TRAIT(quirk_mob,TRAIT_NO_PROCESS_FOOD,ROUNDSTART_TRAIT)
-	ADD_TRAIT(quirk_mob,TRAIT_NOTHIRST,ROUNDSTART_TRAIT)
+	ADD_TRAIT(quirk_mob,TRAIT_NOBREATH, ROUNDSTART_TRAIT)
+	ADD_TRAIT(quirk_mob,TRAIT_NO_PROCESS_FOOD, ROUNDSTART_TRAIT)
+	ADD_TRAIT(quirk_mob,TRAIT_NOTHIRST, ROUNDSTART_TRAIT)
 
 	// Set skin tone, if possible
 	if(!quirk_mob.dna.skin_tone_override)
