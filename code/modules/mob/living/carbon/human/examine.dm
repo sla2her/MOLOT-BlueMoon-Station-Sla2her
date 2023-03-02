@@ -26,7 +26,7 @@
 		. += "Это же <EM>[spec_trait_examine_font()][dna.custom_species ? dna.custom_species : dna.species.name]</EM></font>!"
 	if(user?.stat == CONSCIOUS && ishuman(user))
 		user.visible_message(span_small("<b>[user]</b> смотрит на <b>[!obscure_name ? name : "Неизвестного"]</b>.") , span_small("Смотрю на <b>[!obscure_name ? name : "Неизвестного"]</b>.") , null, COMBAT_MESSAGE_RANGE)
-	var/obscured = check_obscured_slots()
+	var/list/obscured = check_obscured_slots()
 
 	//head
 	if(head && !(head.obj_flags & EXAMINE_SKIP))

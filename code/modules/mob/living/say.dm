@@ -404,6 +404,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 			return 0
 
 	if(is_muzzled())
+		emote("moan")
 		return 0
 
 	if(!IsVocal())

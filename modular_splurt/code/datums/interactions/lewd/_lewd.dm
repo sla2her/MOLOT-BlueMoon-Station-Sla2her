@@ -261,15 +261,13 @@
 	var/message
 	var/obj/item/organ/genital/peepee = null
 	var/lust_increase = NORMAL_LUST
-	//var/t_His = ru_ego()
-	var/t_Him = ru_na()
 
 	if(user.is_fucking(src, CUM_TARGET_MOUTH))
 		if(prob(user.get_sexual_potency()))
 			if(istype(src, /mob/living)) // Argh.
 				var/mob/living/H = src
 				H.adjustOxyLoss(3)
-			message = "sucks [t_Him]self off"
+			message = "сосёт себе"
 			lust_increase += 5
 		else
 			var/improv = FALSE

@@ -3693,6 +3693,7 @@
 #include "code\modules\surgery\brain_surgery.dm"
 #include "code\modules\surgery\burn_dressing.dm"
 #include "code\modules\surgery\cavity_implant.dm"
+#include "code\modules\surgery\sew_up_the_mouth.dm"
 #include "code\modules\surgery\core_removal.dm"
 #include "code\modules\surgery\coronary_bypass.dm"
 #include "code\modules\surgery\dental_implant.dm"
