@@ -82,6 +82,8 @@
 				return
 			if(32)
 				continue		//whitespace
+			if(1040 to 1103)
+				continue
 			if(127 to INFINITY)
 				if(ascii_only)
 					return

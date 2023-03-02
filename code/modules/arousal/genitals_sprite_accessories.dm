@@ -71,7 +71,7 @@
 //Vaginas
 /datum/sprite_accessory/vagina
 	icon = 'icons/obj/genitals/vagina_onmob.dmi'
-	name = "vagina"
+	name = "вагина"
 	color_src = "vag_color"
 	alt_aroused = TRUE
 

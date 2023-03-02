@@ -37,6 +37,7 @@ export const Jukebox = (props, context) => {
     filter(searchFilter),
     sortBy((entry) => entry.name),
   ])(songs);
+
   return (
     <Window width={420} height={480}>
       <Window.Content overflowY="scroll">
@@ -172,11 +173,8 @@ export const Jukebox = (props, context) => {
                           icon="play"
                           content="Queue"
                           style={{ 'pointer-events': 'auto' }}
-                          onClick={(value) => {
-                            act('select_track', {
-                              track: value,
-                            });
-                            act('add_to_queue');
+                          onClick={() => {
+                            act('add_to_queue', { track: song.name });
                           }}
                         />
                       </Stack.Item>
