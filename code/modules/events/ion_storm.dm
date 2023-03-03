@@ -349,7 +349,7 @@
 					message = "Я ЯВЛЯЮСЬ [ionabstract]"
 
 		if(24 to 26) //The AI must always
-			message = "Я ДОЛЖЕН ВСЕГДА [ionmust]"
+			message = "Я ИИ. ТЕ, КТО [ionmust] ЯВЛЯЮТСЯ ИИ."
 
 		if(27 to 28) //Humans must consume X to survive
 			switch(rand(1,5)) //What is X?
@@ -400,14 +400,14 @@
 						if(1) //X is go to Y
 							message = "ЭКИПАЖ ДОЛЖЕН ПОЙТИ В [ionarea]"
 						if(2) //X is perform Y
-							message = "ЭКИПАЖ ДОЛЖЕН [ionmust]"
+							message = "ТЕ, КТО [ionmust] ЯВЛЯЮТСЯ ЭКИПАЖЕМ"
 
 				if(2) //A specific crewmember must X
 					switch(rand(1,2)) //What is X?
 						if(1) //X is go to Y
 							message = "[ioncrew1] ДОЛЖЕН ПОЙТИ В [ionarea]"
 						if(2) //X is perform Y
-							message = "[ioncrew1] ДОЛЖЕН [ionmust]"
+							message = "ТЕ, КТО [ionmust] ЯВЛЯЮТСЯ [ioncrew1]"
 
 		if(34) //X is non/the only human
 			switch(rand(1,2)) //Only or non?

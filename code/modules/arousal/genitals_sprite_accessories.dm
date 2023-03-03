@@ -27,7 +27,7 @@
 
 /datum/sprite_accessory/penis/flared
 	icon_state = "flared"
-	name = "уширенный"
+	name = "утолщённый"
 	taur_icon = 'icons/obj/genitals/taur_penis_onmob.dmi'
 	taur_dimension_x = 64
 
