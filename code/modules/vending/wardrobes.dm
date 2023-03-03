@@ -578,6 +578,7 @@
 		/obj/item/clothing/under/syndicate/sniper = 3,
 		/obj/item/clothing/under/syndicate/camo = 3,
 		/obj/item/clothing/under/syndicate/combat = 3,
+		/obj/item/clothing/suit/jacket/gorlex_harness = 3,
 		/obj/item/clothing/shoes/combat = 3,
 		/obj/item/clothing/mask/gas/syndicate = 3,
 		/obj/item/clothing/mask/gas/sechailer/syndicate = 3,

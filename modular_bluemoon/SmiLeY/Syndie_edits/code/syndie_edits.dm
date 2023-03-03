@@ -54,6 +54,7 @@
 	desc = "For the agent wanting to keep a low profile whilst concealing their identity. Has a small respirator to be used with internals."
 	actions_types = list(/datum/action/item_action/adjust)
 	icon_state = "half_mask"
+	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
 	icon = 'icons/obj/clothing/masks.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/mask.dmi'
 
@@ -172,7 +173,7 @@
 	icon_state = "winterhood_syndie"
 	armor = list(MELEE = 35, BULLET = 30, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
 
-/obj/item/clothing/suit/jacket/gorlex_harness
+/obj/item/clothing/suit/armor/vest/infiltrator/gorlex_harness
 	name = "Engine Technician Harness"
 	desc = "A blood-red engineering technician harness. You can't seem to figure out a use to it, but it seems to seal magnetically in some places."
 	icon = 'icons/obj/clothing/suits.dmi'
