@@ -43,7 +43,7 @@
 		eggo.forceMove(container)
 		eggo.AddComponent(/datum/component/pregnancy, src, partner, baby_type)
 
-/mob/living/carbon/human/do_climax(datum/reagents/R, atom/target, obj/item/organ/genital/sender, spill, cover = TRUE, obj/item/organ/genital/receiver)
+/mob/living/carbon/human/do_climax(datum/reagents/R, atom/target, obj/item/organ/genital/sender, spill, cover = FALSE, obj/item/organ/genital/receiver)
 	if(!sender)
 		return
 	if(!target || !R)
@@ -85,7 +85,6 @@
 				if(BALLS_SIZE_MAX)
 					size = pick("cum_normal", "cum_large", "cum_large", "cum_large")
 			target.add_cum_overlay(size)
-
 	. = ..()
 
 	if(cached_fluid)
@@ -125,14 +124,13 @@
 	do_climax(fluid_source, L, G, spillage, cover = TRUE)
 
 /atom/proc/add_cum_overlay(size = BALLS_SIZE_MIN) //This can go in a better spot, for now its here.
-	cum_splatter_icon = icon(initial(icon), initial(icon_state), dir = 1)
-	cum_splatter_icon.Blend("#fff", ICON_ADD)
-	cum_splatter_icon.Blend(icon('modular_splurt/icons/effects/cumoverlay.dmi', size), ICON_MULTIPLY)
-	add_overlay(cum_splatter_icon)
+	if(!istype(src, /mob/living/carbon/human))
+		return
+	if(initial(icon) && initial(icon_state))
+		add_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', size))
+
 
 /atom/proc/wash_cum()
 	cut_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', "cum_normal"))
 	cut_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', "cum_large"))
-	if(cum_splatter_icon)
-		cut_overlay(cum_splatter_icon)
 	return TRUE
