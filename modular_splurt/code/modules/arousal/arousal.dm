@@ -127,7 +127,7 @@
 	if(!istype(src, /mob/living/carbon/human))
 		return
 	if(initial(icon) && initial(icon_state))
-		add_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', size))
+		add_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', size), ICON_MULTIPLY)
 
 
 /atom/proc/wash_cum()
