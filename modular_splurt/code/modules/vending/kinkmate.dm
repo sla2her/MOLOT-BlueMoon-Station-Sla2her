@@ -34,7 +34,8 @@
 		/obj/item/clothing/suit/chaplain/nun = 5,
 		/obj/item/clothing/head/nun_hood = 5,
 		/obj/item/clothing/shoes/highheel_sandals = 3,
-		/obj/item/clothing/shoes/invisiboots = 10 // Added here to go with the Gear Harness
+		/obj/item/clothing/shoes/invisiboots = 10, // Added here to go with the Gear Harness
+		/obj/item/clothing/neck/petcollar/poly = 5
 	)
 	var/list/extra_contraband = list(
 		//Lewd-Clothes

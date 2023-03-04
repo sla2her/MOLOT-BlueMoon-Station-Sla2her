@@ -30,7 +30,7 @@
 		"Big Iron",
 		"Magos",
 		"Magos Biologis"
-		
+
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
@@ -260,7 +260,10 @@
 		"Toxins Researcher",
 		"Research Intern",
 		"Junior Scientist",
-		"Sex Researcher"
+		"Sex Researcher",
+		"Rack Researcher",
+		"Nanite Programmer",
+		"Tetromino Researcher"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
@@ -272,7 +275,8 @@
 		"Borgs Slut",
 		"Borgs Raper",
 		"Robo-Slut",
-		"Techpriest Biologis"
+		"Techpriest Biologis",
+		"MOD Mechanic"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
@@ -419,7 +423,8 @@
 		"Mailroom Technician",
 		"Disposal Technician",
 		"Syndicate Deck Worker",
-		"Logistics Technician"
+		"Logistics Technician",
+		"Cryptocurrency Technician"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
@@ -433,6 +438,19 @@
 		"Ashwalker Breeder",
 		"Shaft Syndi-Miner",
 		"Slayer"
+	)
+	LAZYADD(alt_titles, extra_titles)
+	. = ..()
+
+// Prisoner
+/datum/job/prisoner/New()
+	var/list/extra_titles = list(
+		"Low Security Prisoner",
+		"Medium Security Prisoner",
+		"Maximum Security Prisoner",
+		"Supermax Prisoner",
+		"Protective Custody Prisoner",
+		"Security Slave"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
