@@ -226,9 +226,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark/diagonal,
 /area/shuttle/supply)
-"T" = (
-/turf/closed/wall/mineral/titanium/spaceship,
-/area/shuttle/supply)
 "U" = (
 /obj/structure/marker_beacon/burgundy,
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -259,7 +256,7 @@
 /area/shuttle/supply)
 
 (1,1,1) = {"
-T
+V
 V
 Y
 k
@@ -343,7 +340,7 @@ Z
 C
 "}
 (7,1,1) = {"
-T
+V
 V
 U
 C

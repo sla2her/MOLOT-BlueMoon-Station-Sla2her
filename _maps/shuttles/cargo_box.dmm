@@ -102,7 +102,7 @@
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/shuttle/supply)
 "s" = (
-/turf/closed/wall/mineral/titanium/spaceship,
+/turf/open/space/basic,
 /area/template_noop)
 "t" = (
 /obj/effect/turf_decal/stripes/line,

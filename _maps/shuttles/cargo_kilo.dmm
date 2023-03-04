@@ -244,9 +244,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/shuttle/supply)
-"W" = (
-/turf/closed/wall/mineral/titanium/spaceship,
-/area/shuttle/supply)
 "X" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/tile/neutral/diagonal_edge,
@@ -259,7 +256,7 @@
 /area/shuttle/supply)
 
 (1,1,1) = {"
-W
+R
 R
 I
 i
@@ -343,7 +340,7 @@ F
 C
 "}
 (7,1,1) = {"
-W
+R
 R
 G
 C

@@ -51,9 +51,9 @@
 
 /datum/surgery_step/proc/unsew_up_the_mouth(mob/living/carbon/human/owner)
 	REMOVE_TRAIT(owner, TRAIT_MUTE, GENETIC_MUTATION)
-
+/*
 /mob/living/carbon/attackby(knife, mob/living/user, zone_selected)
-	if(user.a_intent == INTENT_HELP && HAS_TRAIT(src, TRAIT_MUTE))
+	if(user.a_intent == INTENT_HELP || HAS_TRAIT(src, TRAIT_MUTE))
 		if(user.zone_selected == list(BODY_ZONE_PRECISE_MOUTH) && istype(knife, list(TOOL_SCALPEL, /obj/item/kitchen/knife, /obj/item/shard, TOOL_WIRECUTTER)))
 			var/mob/living/carbon/human/target = src
 			var/obj/item/bodypart/BP = user.get_bodypart(zone_selected)
@@ -67,3 +67,4 @@
 				to_chat(loc, "[user] завершает свою работу.")
 				new/obj/effect/decal/cleanable/blood(loc)
 	else . = ..()
+*/
