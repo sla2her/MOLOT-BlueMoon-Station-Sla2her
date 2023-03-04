@@ -63,11 +63,12 @@
 	dir = 2;
 	dwidth = 6;
 	height = 7;
-	id = "ds_shuttle";
-	name = "SFC Drop Ship";
+	id = "sbc_corvette";
+	name = "SBC Drop Ship";
 	port_direction = 8;
 	preferred_direction = 4;
-	width = 12
+	width = 12;
+	callTime = 2500
 	},
 /turf/open/floor/plating,
 /area/shuttle/sbc_corvette)
@@ -79,15 +80,13 @@
 	lethal = 1;
 	name = "Ship Turret Control";
 	pixel_x = 32;
-	pixel_y = -2;
-	req_access = list("syndicate")
+	pixel_y = -2
 	},
 /obj/machinery/button/door{
 	id = "SBC_corvette_blast";
 	name = "Corvette Blast Doors";
 	pixel_x = 32;
-	pixel_y = 8;
-	req_access = list("syndicate_leader")
+	pixel_y = 8
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_corvette)

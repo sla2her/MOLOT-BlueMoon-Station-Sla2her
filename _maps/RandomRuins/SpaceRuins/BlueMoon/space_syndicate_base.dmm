@@ -5960,11 +5960,11 @@
 "yA" = (
 /obj/docking_port/stationary{
 	dir = 4;
-	dwidth = 6;
-	height = 7;
+	height = 16;
 	name = "DS-2 Hangar";
-	width = 12;
-	id = ds2_syndicate;
+	width = 16;
+	id = "ds2_syndicate";
+	dwidth = 6;
 	roundstart_template = /datum/map_template/shuttle/ruin/ds_shuttle
 	},
 /turf/open/floor/plating,
@@ -8098,6 +8098,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/computer/crew{
+	dir = 1
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
@@ -15311,9 +15314,9 @@ aW
 kx
 kx
 kx
-wg
-wg
-wg
+kx
+kx
+Hz
 aW
 hM
 hM

@@ -3619,11 +3619,11 @@
 "Bu" = (
 /obj/docking_port/stationary{
 	dir = 4;
-	dwidth = 6;
-	height = 7;
+	height = 16;
 	name = "DS-1 Parking Spot";
-	width = 12;
-	id = ds1_syndicate
+	width = 16;
+	id = "ds1_syndicate";
+	dwidth = 6
 	},
 /turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)

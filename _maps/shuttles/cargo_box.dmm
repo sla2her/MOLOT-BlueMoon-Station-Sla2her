@@ -29,7 +29,7 @@
 "g" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Supply Shuttle Airlock";
-	req_access = list("cargo")
+	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/delivery/white,
 /turf/open/floor/iron/dark/smooth_large,
@@ -49,14 +49,14 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "i" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Supply Shuttle Airlock";
-	req_access = list("cargo")
-	},
 /obj/effect/turf_decal/delivery/white,
 /obj/docking_port/mobile/supply{
 	dwidth = 5;
 	width = 12
+	},
+/obj/machinery/door/airlock/grunge{
+	name = "Supply Shuttle Airlock";
+	req_access_txt = "31"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/supply)

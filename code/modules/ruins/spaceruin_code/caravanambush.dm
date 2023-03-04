@@ -172,37 +172,37 @@
 	y_offset = -3
 
 /obj/machinery/computer/shuttle/caravan/syndicate4
-	name = "Syndicate Drop Ship Console"
+	name = "SBC Starfury Console"
 	desc = "Used to control the Syndicate Drop Ship."
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
 	req_access = list(ACCESS_SYNDICATE)
 	light_color = LIGHT_COLOR_RED
 	circuit = /obj/item/circuitboard/computer/caravan/syndicate4
-	shuttleId = "ds_shuttle"
-	possible_destinations = "ds1_syndicate;ds2_syndicate;caravansyndicate3_listeningpost"
+	shuttleId = "sbc_corvette"
+	possible_destinations = "sbc_corvette_custom;ds1_syndicate;ds2_syndicate;caravansyndicate3_listeningpost;whiteship_z4"
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/caravan/syndicate4
-	name = "Syndicate Drop Ship Navigation Computer"
+	name = "Starfury Navigation Computer"
 	desc = "Used to designate a precise transit location for the Syndicate Drop Ship."
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
-	shuttleId = "ds_shuttle"
+	shuttleId = "sbc_corvette"
 	lock_override = NONE
-	shuttlePortId = "ds2_syndicate"
-	jumpto_ports = list("ds2_syndicate" = 1, "caravansyndicate3_listeningpost" = 1, "whiteship_home" = 1)
+	shuttlePortId = "sbc_corvette_custom"
+	jumpto_ports = list("ds2_syndicate" = 1, "caravansyndicate3_listeningpost" = 1, "whiteship_home" = 1, "whiteship_z4" = 1)
 	view_range = 2.5
-	x_offset = -1
-	y_offset = -3
+	x_offset = 7
+	y_offset = 1
 	designate_time = 500
 
 /obj/machinery/computer/shuttle/ds_syndicate
-	name = "Syndicate Drop Ship"
+	name = "Starfury Navigation Computer"
 	desc = "A console that controls the Syndicate Drop Ship."
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
 	circuit = /obj/item/circuitboard/computer/ds_syndicate
-	shuttleId = "ds_shuttle"
+	shuttleId = "sbc_corvette"
 	possible_destinations = "ds1_syndicate;ds2_syndicate"
 	req_access = list(ACCESS_SYNDICATE)
 	var/allow_silicons = FALSE
