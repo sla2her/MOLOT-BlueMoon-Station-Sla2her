@@ -590,6 +590,11 @@
 	icon_state = "supply"
 	build_path = /obj/machinery/computer/shuttle/ferry
 
+/obj/item/circuitboard/computer/ds_syndicate
+	name = "Syndicate Shuttle (Computer Board)"
+	icon_state = "generic"
+	build_path = /obj/machinery/computer/shuttle/ds_syndicate
+
 /obj/item/circuitboard/computer/ferry/request
 	name = "Transport Ferry Console (Computer Board)"
 	icon_state = "supply"

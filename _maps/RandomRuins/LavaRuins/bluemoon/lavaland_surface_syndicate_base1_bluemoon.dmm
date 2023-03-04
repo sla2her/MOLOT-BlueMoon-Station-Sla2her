@@ -27,6 +27,14 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/pod/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
+"al" = (
+/obj/machinery/door/poddoor{
+	id = "interdynecargo"
+	},
+/obj/structure/window/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "aq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
 	level = 1
@@ -312,17 +320,6 @@
 	light_color = "#c1caff"
 	},
 /turf/open/indestructible/hoteltile,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
-"bY" = (
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 1
-	},
-/obj/machinery/quantumpad{
-	map_pad_id = "ds1";
-	map_pad_link_id = "ds2";
-	name = "quantum pad to DS-2"
-	},
-/turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "ca" = (
 /obj/machinery/door/airlock/external{
@@ -998,24 +995,12 @@
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "gB" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "interdynecargoout"
-	},
-/obj/structure/closet/crate,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/item/storage/box/donkpockets{
-	pixel_x = 2
-	},
-/obj/item/storage/box/donkpockets{
-	pixel_y = 3
-	},
-/obj/item/storage/box/donkpockets{
-	pixel_x = -2;
-	pixel_y = 6
+/obj/machinery/computer/shuttle/ds_syndicate{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
@@ -1047,6 +1032,8 @@
 	id = "interdynecargoout"
 	},
 /obj/structure/fans/tiny,
+/obj/structure/window/plastitanium,
+/obj/structure/grille,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "gJ" = (
@@ -1064,14 +1051,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
-"gQ" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "interdynecargoout"
-	},
-/obj/structure/plasticflaps,
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "gR" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/machinery/light{
@@ -1421,17 +1400,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
+"jI" = (
+/obj/machinery/door/poddoor{
+	id = "interdynecargo"
+	},
+/obj/structure/window/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "jK" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
-"jN" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 6
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "jP" = (
 /obj/machinery/computer/arcade/tetris{
 	dir = 4
@@ -1529,18 +1510,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
-"kL" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 5
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/engineering)
 "kS" = (
 /obj/machinery/porta_turret/syndicate{
 	dir = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
-/area/ruin/lavaland/unpowered/deepspaceone/testlab)
+/area/ruin/lavaland/unpowered/deepspaceone/main)
 "kV" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -1927,7 +1902,7 @@
 	dir = 6
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/dormitories)
+/area/ruin/lavaland/unpowered/deepspaceone/main)
 "nH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -2488,10 +2463,8 @@
 /obj/machinery/door/poddoor{
 	id = "interdynecargowest"
 	},
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "interdynecargoout"
-	},
+/obj/structure/window/plastitanium,
+/obj/structure/grille,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "rE" = (
@@ -2617,38 +2590,6 @@
 	dir = 6
 	},
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
-"tI" = (
-/obj/machinery/button/door{
-	id = "interdynecargowest";
-	pixel_x = 32;
-	pixel_y = 8
-	},
-/obj/machinery/button/door{
-	id = "interdynecargoeast";
-	pixel_x = 32;
-	pixel_y = -8
-	},
-/obj/machinery/computer/shuttle{
-	desc = "Occasionally used to call in a resupply shuttle if one is in range.";
-	dir = 8;
-	icon_keyboard = "syndie_key";
-	icon_screen = "syndishuttle";
-	light_color = "#FA8282";
-	name = "syndicate cargo shuttle terminal";
-	possible_destinations = "syndielavaland_cargo";
-	req_access = list("syndicate");
-	shuttleId = "syndie_cargo"
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "tJ" = (
 /obj/machinery/conveyor{
 	id = "interdynedisp"
@@ -3230,16 +3171,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
-"yh" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "interdynecargoin"
-	},
+"yr" = (
 /obj/structure/closet/crate/medical,
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
 /obj/item/storage/firstaid/regular{
 	pixel_x = -3;
 	pixel_y = -3
@@ -3249,14 +3182,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
-"yr" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "interdynecargoin"
-	},
-/obj/structure/plasticflaps,
+/obj/structure/closet/crate,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "yu" = (
@@ -3403,17 +3329,6 @@
 	dir = 8
 	},
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
-"zz" = (
-/obj/machinery/door/poddoor{
-	id = "interdynecargoeast"
-	},
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "interdynecargoin"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "zB" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -3617,7 +3532,7 @@
 	dir = 10
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/dormitories)
+/area/ruin/lavaland/unpowered/deepspaceone/main)
 "AJ" = (
 /turf/open/floor/engine,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
@@ -3701,6 +3616,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
+"Bu" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 6;
+	height = 7;
+	name = "DS-1 Parking Spot";
+	width = 12;
+	id = ds1_syndicate
+	},
+/turf/open/lava/smooth/lava_land_surface,
+/area/lavaland/surface/outdoors)
 "Bw" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -4025,12 +3951,6 @@
 /obj/machinery/atmospherics/components/unary/portables_connector,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
-"Dp" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 9
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "Dt" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 4
@@ -4136,16 +4056,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
-"ED" = (
-/obj/machinery/door/poddoor{
-	id = "interdynecargoeast"
-	},
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "interdynecargoin"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "EN" = (
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
@@ -4302,12 +4212,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
-"FA" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 10
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/testlab)
 "FC" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/dark,
@@ -4633,6 +4537,15 @@
 /obj/machinery/monkey_recycler,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
+"Ib" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/obj/item/weldingtool/hugetank,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "Ig" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -5047,12 +4960,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
-"KQ" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 10
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "KS" = (
 /obj/structure/filingcabinet,
 /obj/item/folder/syndicate/mining,
@@ -5514,7 +5421,7 @@
 	dir = 1
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
+/area/ruin/lavaland/unpowered/deepspaceone/main)
 "NX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -5896,12 +5803,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
-"QS" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 6
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/engineering)
 "QW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -6079,13 +5980,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
-"RW" = (
-/obj/docking_port/stationary{
-	name = "Syndicate Dock";
-	dir = 4
-	},
-/turf/open/lava/smooth/lava_land_surface,
-/area/lavaland/surface/outdoors)
 "RY" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
@@ -6459,12 +6353,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
-"Va" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 9
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "Vb" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
@@ -6931,12 +6819,6 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
-"XU" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 9
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/lavaland/unpowered/deepspaceone/testlab)
 "XV" = (
 /obj/structure/chair/office/light{
 	dir = 4
@@ -7095,6 +6977,24 @@
 /obj/structure/window/plastitanium,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
+"YT" = (
+/obj/structure/closet/crate,
+/obj/item/storage/box/donkpockets{
+	pixel_x = 2
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_y = 3
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "YV" = (
 /obj/effect/mob_spawn/human/lavaland_syndicate{
 	dir = 8;
@@ -7203,12 +7103,6 @@
 	pixel_y = 5
 	},
 /turf/open/floor/pod/dark,
-/area/ruin/lavaland/unpowered/deepspaceone/medbay)
-"Zy" = (
-/obj/machinery/porta_turret/syndicate{
-	dir = 5
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "Zz" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -7604,7 +7498,7 @@ ab
 ab
 ab
 ab
-XU
+DV
 OW
 OW
 OW
@@ -7657,7 +7551,7 @@ ab
 ab
 ab
 ab
-XU
+DV
 OW
 HA
 HA
@@ -7792,7 +7686,7 @@ KY
 OW
 UG
 UG
-FA
+AH
 ab
 ab
 ab
@@ -7932,7 +7826,7 @@ ag
 ag
 ab
 ab
-Va
+DV
 Zz
 Zz
 Zz
@@ -7944,7 +7838,7 @@ Zz
 Zz
 Zz
 Zz
-KQ
+AH
 ab
 ab
 ab
@@ -8473,7 +8367,7 @@ qa
 gS
 vX
 iH
-bY
+Qw
 Zz
 Zz
 KK
@@ -9060,8 +8954,8 @@ ab
 Zz
 fN
 gB
-tI
-yh
+vZ
+vZ
 vZ
 jS
 Zz
@@ -9119,10 +9013,10 @@ ab
 OC
 gj
 rD
+Sr
+Sr
+Sr
 Zz
-ED
-gj
-OC
 Zz
 ab
 ab
@@ -9177,10 +9071,10 @@ ab
 ab
 OC
 Sr
-gQ
-Sr
+rD
+Ib
 yr
-Sr
+YT
 OC
 ab
 ab
@@ -9237,10 +9131,10 @@ ab
 OC
 AG
 gF
-Zz
-zz
-AG
-OC
+jI
+jI
+jI
+al
 ab
 ab
 ab
@@ -9294,11 +9188,11 @@ ab
 ab
 ab
 ab
+Bu
 ab
 ab
 ab
 ab
-RW
 ab
 ab
 ab
@@ -9421,7 +9315,7 @@ ab
 ab
 ab
 ab
-Dp
+DV
 ZX
 ZX
 ZX
@@ -10042,7 +9936,7 @@ Lq
 Lq
 Lq
 Lq
-QS
+nC
 ab
 ab
 ag
@@ -10070,7 +9964,7 @@ ab
 ab
 ab
 Sy
-Zy
+xX
 ZX
 ZX
 ZX
@@ -10085,19 +9979,19 @@ ZX
 ZX
 ZX
 ZX
-jN
+nC
 ab
 ab
 ab
 ab
-kL
+xX
 Lq
 Lq
 Lq
 Lq
 Lq
 eq
-QS
+nC
 ab
 ab
 ab

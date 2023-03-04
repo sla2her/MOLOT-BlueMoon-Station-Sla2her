@@ -59,3 +59,51 @@
 /obj/item/paper/crumpled/fluff/tarkoff/prisoner
 	name = "Кровавая Записка"
 	info = "<span style=color:crimson><b>Я слы шу, как он и пол заю т в  кан аве.<br>О н по ет  скре жет ан ие.<br><br><br>О ни    и дут.</b></span>"
+
+/* ----------------- Fluff/Decor ----------------- */
+/obj/structure/decorative/fluff/ai_node //Budding AI's way of interfacing with stuff it couldn't normally do so with. Needed to be placed by a willing human, before borgs were created. Used in any ruins regarding pre-bluespace, self-aware AIs
+	icon = 'modular_bluemoon/SmiLeY/mapping/icons/obj/fluff.dmi'
+	name = "ai node"
+	desc = "A mysterious, blinking device, attached straight to a surface. It's function is beyond you."
+	icon_state = "ai_node"	//credit to @Hay#7679 on the SR Discord
+
+	max_integrity = 100
+	integrity_failure = 0
+	anchored = TRUE
+	can_be_unanchored = FALSE	//cannot be removed without being destroyed
+
+/obj/structure/decorative/fluff/ai_node/take_damage()
+	. = ..()
+	if(obj_integrity >= 50)	//breaks it a bit earlier than it should, but still takes a few hits to kill it
+		return
+	else if(. && !QDELETED(src))
+		visible_message(span_notice("[src] sparks and explodes! You hear a faint, buzzy scream..."), span_hear("You hear a loud pop, followed by a faint, buzzy scream."))
+		playsound(src.loc, 'sound/voice/borg_deathsound.ogg', 75, TRUE)	//Credit to @yungfunnyman#3798 on the SR Discord
+		do_sparks(2, TRUE, src)
+		qdel(src)
+		return
+
+
+/* ----- Metal Poles (These shouldn't be in this file but there's not a better place tbh) -----*/
+//Just a re-done Tram Rail, but with all 4 directions instead of being stuck east/west - more varied placement, and a more vague name. Good for mapping support beams/antennae/etc
+/obj/structure/fluff/metalpole
+	icon = 'modular_bluemoon/SmiLeY/mapping/icons/obj/fluff.dmi'
+	name = "metal pole"
+	desc = "A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g."
+	icon_state = "pole"
+	layer = ABOVE_OPEN_TURF_LAYER
+	plane = FLOOR_PLANE
+	deconstructible = TRUE
+
+/obj/structure/fluff/metalpole/end
+	icon_state = "poleend"
+
+/obj/structure/fluff/metalpole/end/left
+	icon_state = "poleend_left"
+
+/obj/structure/fluff/metalpole/end/right
+	icon_state = "poleend_right"
+
+/obj/structure/fluff/metalpole/anchor
+	name = "metal pole anchor"
+	icon_state = "poleanchor"

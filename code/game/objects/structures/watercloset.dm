@@ -683,19 +683,19 @@
 
 /obj/structure/sink/kitchen/directional/north //Pixel offsets get overwritten on New()
 	dir = NORTH
-	pixel_y = 20
+	pixel_y = -13
 
 /obj/structure/sink/kitchen/directional/south
 	dir = SOUTH
-	pixel_y = -20
+	pixel_y = 13
 
 /obj/structure/sink/kitchen/directional/east
 	dir = EAST
-	pixel_x = 20
+	pixel_x = -13
 
 /obj/structure/sink/kitchen/directional/west
 	dir = WEST
-	pixel_x = -20
+	pixel_x = 13
 
 /obj/structure/sink/well
 	name = "well"

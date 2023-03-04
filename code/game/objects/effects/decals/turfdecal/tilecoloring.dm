@@ -429,7 +429,7 @@
 /obj/effect/turf_decal/tile/neutral
 	name = "neutral corner"
 	color = "#D4D4D4"
-	alpha = 100
+	alpha = 50
 
 /obj/effect/turf_decal/tile/neutral/opposingcorners
 	icon_state = "tile_opposing_corners"

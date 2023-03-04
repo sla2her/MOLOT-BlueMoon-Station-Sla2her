@@ -54,7 +54,7 @@
 	desc = "For the agent wanting to keep a low profile whilst concealing their identity. Has a small respirator to be used with internals."
 	actions_types = list(/datum/action/item_action/adjust)
 	icon_state = "half_mask"
-	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
+	flags_inv = HIDEFACE|HIDEFACIALHAIR
 	icon = 'icons/obj/clothing/masks.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/mask.dmi'
 

@@ -41,12 +41,22 @@
 	/// The last lines used for changing the status display
 	var/static/last_status_display
 
+	/// Whether syndicate mode is enabled or not.
+	var/syndicate = FALSE
+
 /obj/machinery/computer/communications/syndicate
 	name = "Syndicate Communications Console"
-	desc = "A console meant to communicate with Syndicate upper command."
+	desc = "A Syndicate console used for high-priority announcements and emergencies."
+	icon_screen = "commsyndie"
 	req_access = list(ACCESS_SYNDICATE_LEADER)
-	light_color = LIGHT_COLOR_RED
-	obj_flags = EMAGGED|CAN_BE_HIT|IN_USE
+	light_color = LIGHT_COLOR_BLOOD_MAGIC
+	syndicate = TRUE
+
+/obj/machinery/computer/communications/syndicate/emag_act(mob/user, obj/item/card/emag/emag_card)
+	return
+
+/obj/machinery/computer/communications/syndicate/authenticated_as_silicon_or_captain(mob/user)
+	return FALSE
 
 /obj/machinery/computer/communications/Initialize(mapload)
 	. = ..()
@@ -84,13 +94,14 @@
 
 /obj/machinery/computer/communications/emag_act(mob/user)
 	. = ..()
-	if (obj_flags & EMAGGED)
+	if ((obj_flags & EMAGGED) || syndicate)
 		return
 	obj_flags |= EMAGGED
 	if (authenticated)
 		authorize_access = get_all_accesses()
 	to_chat(user, span_danger("You scramble the communication routing circuits!"))
 	playsound(src, 'sound/machines/terminal_alert.ogg', 50, FALSE)
+	icon_screen = "commsyndie"
 	SSshuttle.shuttle_purchase_requirements_met["emagged"] = TRUE
 
 /obj/machinery/computer/communications/ui_act(action, list/params)
@@ -199,11 +210,14 @@
 			if (emagged)
 				message_syndicate(message, usr)
 				to_chat(usr, span_danger("SYSERR @l(19833)of(transmit.dm): !@$ MESSAGE TRANSMITTED TO SYNDICATE COMMAND."))
+			else if(syndicate)
+				message_syndicate(message, usr)
+				to_chat(usr, span_danger("Message transmitted to Syndicate Command."))
 			else
 				message_centcom(message, usr)
 				to_chat(usr, span_notice("Message transmitted to Central Command."))
 
-			var/associates = emagged ? "the Syndicate": "CentCom"
+			var/associates = (emagged || syndicate) ? "the Syndicate": "CentCom"
 			usr.log_talk(message, LOG_SAY, tag = "message to [associates]")
 			deadchat_broadcast(" has messaged [associates], \"[message]\" at [span_name("[get_area_name(usr, TRUE)]")].", span_name("[usr.real_name]"), usr, message_type = DEADCHAT_ANNOUNCEMENT)
 			COOLDOWN_START(src, important_action_cooldown, IMPORTANT_ACTION_COOLDOWN)
@@ -239,7 +253,7 @@
 			state = STATE_MAIN
 		if ("recallShuttle")
 			// AIs cannot recall the shuttle
-			if (!authenticated(usr) || issilicon(usr))
+			if (!authenticated(usr) || issilicon(usr) || syndicate)
 				return
 			SSshuttle.cancelEvac(usr)
 		if ("requestNukeCodes")
@@ -386,6 +400,7 @@
 	var/list/data = list(
 		"authenticated" = FALSE,
 		"emagged" = FALSE,
+		"syndicate" = syndicate,
 	)
 
 	var/ui_state = issilicon(user) ? cyborg_state : state
@@ -431,6 +446,8 @@
 				data["authorizeName"] = authorize_name
 				data["canLogOut"] = !issilicon(user)
 				data["shuttleCanEvacOrFailReason"] = SSshuttle.canEvac(user)
+				if(syndicate)
+					data["shuttleCanEvacOrFailReason"] = "You cannot summon the shuttle from this console!"
 
 				var/list/slaves = list()
 				data["slaves"] = list()
@@ -493,10 +510,12 @@
 					data["alertLevelTick"] = alert_level_tick
 					data["canMakeAnnouncement"] = TRUE
 					data["canSetAlertLevel"] = issilicon(user) ? "NO_SWIPE_NEEDED" : "SWIPE_NEEDED"
+				else if(syndicate)
+					data["canMakeAnnouncement"] = TRUE
 
 				if (SSshuttle.emergency.mode != SHUTTLE_IDLE && SSshuttle.emergency.mode != SHUTTLE_RECALL)
 					data["shuttleCalled"] = TRUE
-					data["shuttleRecallable"] = SSshuttle.canRecall()
+					data["shuttleRecallable"] = SSshuttle.canRecall() || syndicate
 
 				if (SSshuttle.emergencyCallAmount)
 					data["shuttleCalledPreviously"] = TRUE
@@ -560,6 +579,8 @@
 /obj/machinery/computer/communications/proc/has_communication()
 	var/turf/current_turf = get_turf(src)
 	var/z_level = current_turf.z
+	if(syndicate)
+		return TRUE
 	return is_station_level(z_level) || is_centcom_level(z_level)
 
 /obj/machinery/computer/communications/proc/set_state(mob/user, new_state)
@@ -620,7 +641,7 @@
 		to_chat(user, span_warning("You find yourself unable to speak."))
 	else
 		input = user.treat_message(input) //Adds slurs and so on. Someone should make this use languages too.
-	SScommunications.make_announcement(user, is_ai, input)
+	SScommunications.make_announcement(user, is_ai, input, syndicate)
 	deadchat_broadcast(" made a priority announcement from [span_name("[get_area_name(usr, TRUE)]")].", span_name("[user.real_name]"), user, message_type=DEADCHAT_ANNOUNCEMENT)
 
 /obj/machinery/computer/communications/proc/post_status(command, data1, data2)

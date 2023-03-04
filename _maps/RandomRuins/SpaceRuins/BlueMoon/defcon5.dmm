@@ -274,9 +274,8 @@
 /area/ruin/space/has_grav/port_tarkon/power1)
 "bA" = (
 /obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/public/glass{
-	name = "Starboard Primary Hallway";
-	req_access = list("tarkoff")
+/obj/machinery/door/airlock/glass_large{
+	dir = 4
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/garden)
@@ -1712,6 +1711,10 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/storage)
+"iE" = (
+/obj/machinery/door/firedoor/solid,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon/garden)
 "iG" = (
 /obj/effect/turf_decal/tile/red/fourcorners{
 	color = "#DE3A3A"
@@ -3626,6 +3629,11 @@
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers,
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/port_tarkon/dorms)
+"sA" = (
+/obj/machinery/door/firedoor/solid,
+/obj/machinery/door/airlock/glass_large,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/port_tarkon/garden)
 "sD" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
@@ -6086,7 +6094,7 @@
 /obj/effect/turf_decal/tile/blue/half,
 /obj/machinery/door/firedoor/solid,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	dir = 8;
 	req_access_txt = "66"
 	},
@@ -7881,10 +7889,6 @@
 	level = 1
 	},
 /obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/public/glass{
-	name = "Starboard Primary Hallway";
-	req_access = list("tarkoff")
-	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "PB" = (
@@ -13410,7 +13414,7 @@ Ki
 Bg
 fU
 SP
-bA
+sA
 yn
 Cu
 go
@@ -13483,7 +13487,7 @@ AP
 JE
 XD
 Hg
-bA
+iE
 XG
 XG
 gb

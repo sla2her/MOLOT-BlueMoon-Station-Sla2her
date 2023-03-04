@@ -41,13 +41,14 @@
 	width = 2
 	has_environment_lights = FALSE
 
-/obj/machinery/door/airlock/multi_tile/glass
+/obj/machinery/door/airlock/glass_large
 	name = "Large Glass Airlock"
 	icon = 'modular_bluemoon/smiley/aesthetics/large_doors/icons/glass/multi_tile.dmi'
 	overlays_file = 'modular_bluemoon/smiley/aesthetics/large_doors/icons/glass/overlays.dmi'
 	opacity = FALSE
 	airlock_material = "glass"
 	glass = TRUE
+	bound_width = 64 // 2x1
 	assemblytype = /obj/structure/door_assembly/multi_tile/glass
 
 /obj/machinery/door/airlock/multi_tile/metal
@@ -55,6 +56,7 @@
 	icon = 'modular_bluemoon/smiley/aesthetics/large_doors/icons/metal/multi_tile.dmi'
 	overlays_file = 'modular_bluemoon/smiley/aesthetics/large_doors/icons/metal/overlays.dmi'
 	assemblytype = /obj/structure/door_assembly/multi_tile/metal
+	bound_width = 64 // 2x1
 
 /obj/airlock_filler_object
 	name = ""
@@ -112,12 +114,14 @@
 	base_name = "Large Airlock"
 	overlays_file = 'modular_bluemoon/smiley/aesthetics/large_doors/icons/metal/overlays.dmi'
 	airlock_type = /obj/machinery/door/airlock/multi_tile/metal
-	glass_type = /obj/machinery/door/airlock/multi_tile/glass
+	glass_type = /obj/machinery/door/airlock/glass_large
+	bound_width = 64 // 2x1
 
 /obj/structure/door_assembly/multi_tile/glass
 	name = "Large Glass Airlock Assembly"
 	icon = 'modular_bluemoon/smiley/aesthetics/large_doors/icons/glass/multi_tile.dmi'
 	base_name = "Large Glass Airlock"
 	overlays_file = 'modular_bluemoon/smiley/aesthetics/large_doors/icons/glass/overlays.dmi'
-	airlock_type = /obj/machinery/door/airlock/multi_tile/glass
+	airlock_type = /obj/machinery/door/airlock/glass_large
+	bound_width = 64 // 2x1
 

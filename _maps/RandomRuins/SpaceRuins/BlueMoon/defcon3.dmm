@@ -1648,7 +1648,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor/solid,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/machinery/door/airlock/multi_tile/glass,
+/obj/machinery/door/airlock/glass_large,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/trauma)
 "iB" = (
@@ -4542,7 +4542,7 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "xy" = (
 /obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -4848,7 +4848,7 @@
 /area/ruin/space/has_grav/port_tarkon/secoff)
 "zx" = (
 /obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/multi_tile/glass,
+/obj/machinery/door/airlock/glass_large,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/garden)
 "zB" = (
@@ -6085,7 +6085,7 @@
 "Gk" = (
 /obj/effect/turf_decal/tile/blue/half,
 /obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	dir = 8;
 	req_access_txt = "66"
 	},

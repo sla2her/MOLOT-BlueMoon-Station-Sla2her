@@ -1683,7 +1683,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/has_grav/port_tarkon/kitchen)
 "iA" = (
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	req_access = list("tarkoff")
 	},
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
@@ -2339,7 +2339,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
 "lR" = (
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/solid,
@@ -6379,7 +6379,7 @@
 /turf/open/floor/plasteel/cult,
 /area/ruin/space/has_grav/port_tarkon/observ)
 "Gk" = (
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	dir = 8;
 	req_access_txt = "66"
 	},
@@ -6755,7 +6755,7 @@
 /turf/open/floor/plasteel/cult,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "Ih" = (
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	req_access = list("tarkoff")
 	},
 /obj/machinery/door/firedoor/solid,
@@ -9755,7 +9755,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "Xj" = (
-/obj/machinery/door/airlock/multi_tile/glass{
+/obj/machinery/door/airlock/glass_large{
 	req_access = list("tarkoff")
 	},
 /obj/machinery/door/firedoor/solid,

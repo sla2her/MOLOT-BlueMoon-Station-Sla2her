@@ -223,12 +223,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
-"aJ" = (
-/obj/effect/turf_decal/vg_decals/numbers/one{
-	dir = 4
-	},
-/turf/open/floor/engine/hull,
-/area/template_noop)
 "aL" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
@@ -316,10 +310,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
-"ba" = (
-/obj/effect/turf_decal/stripes/red/corner,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "bd" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -601,27 +591,6 @@
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/iron/dark,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
-"cb" = (
-/obj/item/clothing/shoes/galoshes{
-	pixel_y = -8
-	},
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_x = 6;
-	pixel_y = -6
-	},
-/obj/item/mop,
-/obj/effect/turf_decal/tile/purple/half{
-	dir = 4
-	},
-/obj/machinery/light/small/directional/east,
-/obj/structure/janitorialcart{
-	dir = 4
-	},
-/obj/item/holosign_creator,
-/turf/open/floor/iron/dark/textured_half{
-	dir = 1
-	},
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "ch" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners{
@@ -1043,7 +1012,9 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)
 "dI" = (
 /obj/effect/turf_decal/bot_white,
-/obj/structure/sink/kitchen/directional/west,
+/obj/structure/sink/kitchen/directional/west{
+	pixel_x = 13
+	},
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "dN" = (
@@ -1176,10 +1147,6 @@
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge)
-"el" = (
-/obj/structure/mecha_wreckage/mauler,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "em" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
@@ -1673,13 +1640,6 @@
 "go" = (
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
-"gr" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 8
-	},
-/obj/structure/mecha_wreckage/ripley/deathripley,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "gv" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 5
@@ -2275,12 +2235,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
-"iz" = (
-/obj/effect/turf_decal/stripes/red/corner{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "iB" = (
 /obj/machinery/light/dim/directional/west,
 /obj/machinery/atmospherics/miner/oxygen,
@@ -2532,19 +2486,6 @@
 	},
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/cl)
-"jE" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 9
-	},
-/obj/item/toy/figure/syndie{
-	pixel_y = 20;
-	pixel_x = 10
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "jJ" = (
 /obj/structure/frame/machine{
 	anchored = 1;
@@ -3038,16 +2979,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
-"lI" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
-	},
-/obj/machinery/light/dim/directional/south,
-/obj/effect/turf_decal/siding/white{
-	dir = 10
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "lJ" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -3392,7 +3323,7 @@
 /obj/effect/turf_decal/box/red/corners{
 	dir = 4
 	},
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "ni" = (
@@ -3792,13 +3723,6 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
-"oM" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 8
-	},
-/obj/effect/spawner/lootdrop/crate_spawner,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "oO" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
@@ -3906,6 +3830,7 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
+/obj/structure/mecha_wreckage/gygax/dark,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
 "pf" = (
@@ -3957,6 +3882,22 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
+"pm" = (
+/obj/item/clothing/shoes/galoshes{
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/mop,
+/obj/machinery/light/small/directional/east,
+/obj/structure/janitorialcart{
+	dir = 4
+	},
+/obj/item/holosign_creator,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "pn" = (
 /obj/effect/turf_decal/bluemoon_decals/departments/bridge{
 	dir = 4
@@ -4742,15 +4683,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
-"ss" = (
-/obj/effect/turf_decal/vg_decals/numbers/four{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/turf/open/floor/engine/hull,
-/area/template_noop)
 "st" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -4954,11 +4886,6 @@
 /obj/item/bedsheet/brown/double,
 /turf/open/floor/wood/wood_tiled,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms)
-"tx" = (
-/obj/effect/turf_decal/stripes/red/line,
-/obj/effect/spawner/lootdrop/crate_spawner,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "tA" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 1
@@ -5001,15 +4928,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
-"tE" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 5
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "tG" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -5464,14 +5382,6 @@
 /obj/item/ammo_box/a357,
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)
-"vA" = (
-/obj/machinery/quantumpad{
-	map_pad_id = "ds2";
-	map_pad_link_id = "ds1";
-	name = "Quantum pad to DS1"
-	},
-/turf/open/floor/iron/dark,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "vB" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -5734,10 +5644,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"wF" = (
-/obj/structure/mecha_wreckage/gygax/dark,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "wH" = (
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -5799,19 +5705,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
-"xd" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/siding/white,
-/obj/item/toy/figure/syndie{
-	pixel_x = 10;
-	pixel_y = -3
-	},
-/obj/machinery/camera/xray/directional/south{
-	network = list("ds2");
-	c_tag = "DS-2 Hangar South"
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "xk" = (
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
 	dir = 8;
@@ -6064,6 +5957,18 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/diner)
+"yA" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 6;
+	height = 7;
+	name = "DS-2 Hangar";
+	width = 12;
+	id = ds2_syndicate;
+	roundstart_template = /datum/map_template/shuttle/ruin/ds_shuttle
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "yH" = (
 /obj/effect/turf_decal/trimline/dark_red/filled/line{
 	dir = 5
@@ -6214,18 +6119,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
-"zh" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch{
-	name = "Janitorial Supplies"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/mapping_helpers/airlock/unres{
-	dir = 4
-	},
-/turf/open/floor/iron/dark/textured_large,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "zl" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -6273,13 +6166,6 @@
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
-"zv" = (
-/obj/effect/turf_decal/vg_decals/numbers/zero{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/engine/hull,
-/area/template_noop)
 "zx" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -6612,19 +6498,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/lawyer)
-"AR" = (
-/obj/machinery/light/dim/directional/south,
-/obj/machinery/airalarm/syndicate{
-	pixel_y = -24;
-	dir = 1
-	},
+"AS" = (
 /obj/structure/marker_beacon/burgundy,
-/obj/effect/turf_decal/tile/dark_red/half{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 1
-	},
+/obj/effect/turf_decal/tile/dark_red/half,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 4
 	},
@@ -6733,7 +6610,9 @@
 /turf/template_noop,
 /area/template_noop)
 "Bt" = (
-/obj/structure/sink/kitchen/directional/west,
+/obj/structure/sink/kitchen/directional/west{
+	pixel_x = 13
+	},
 /turf/open/floor/iron/kitchen{
 	dir = 4
 	},
@@ -6763,30 +6642,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
-"Bw" = (
-/obj/structure/railing{
-	dir = 4;
-	pixel_x = 2
-	},
-/obj/machinery/conveyor_switch{
-	id = "ds2fakelevator";
-	pixel_y = 12;
-	desc = "An elevator control switch. This one seems defunct.";
-	name = "elevator control"
-	},
-/obj/structure/railing/corner{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/tile/dark_red/half{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/textured_half{
-	dir = 4
-	},
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "By" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -7025,22 +6880,6 @@
 /obj/structure/shuttle/engine/heater,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo)
-"CS" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 1
-	},
-/obj/item/toy/figure/syndie{
-	pixel_y = 20;
-	pixel_x = 10
-	},
-/obj/item/toy/figure/syndie{
-	pixel_y = 23
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "CT" = (
 /obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/stripes/red/line{
@@ -7048,15 +6887,6 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"CV" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 1
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "CX" = (
 /obj/machinery/light/dim/directional/north,
 /obj/effect/turf_decal/siding/yellow{
@@ -7067,6 +6897,10 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
+"Dd" = (
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "De" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -7161,6 +6995,17 @@
 /obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
+"Dx" = (
+/obj/effect/turf_decal/stripes/red/corner,
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/box/white/corners{
+	dir = 8
+	},
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Dy" = (
 /obj/machinery/smartfridge/chemistry,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -7802,20 +7647,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
-"Gd" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 6
-	},
-/obj/machinery/light/dim/directional/south,
-/obj/effect/turf_decal/siding/white{
-	dir = 6
-	},
-/obj/item/toy/figure/syndie{
-	pixel_y = -1;
-	pixel_x = -12
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Ge" = (
 /obj/effect/turf_decal/stripes/red/line,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -8047,26 +7878,6 @@
 	},
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)
-"GX" = (
-/obj/structure/sign/flag/syndicate/directional/south{
-	pixel_x = 16
-	},
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/siding/white,
-/obj/item/toy/figure/syndie{
-	pixel_x = -10
-	},
-/obj/item/toy/figure/syndie{
-	pixel_y = -3;
-	pixel_x = 4
-	},
-/obj/structure/shipping_container/gorlex/red{
-	pixel_x = -17;
-	pixel_y = 15;
-	level = 1
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "GY" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -9052,13 +8863,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/armory)
-"Lr" = (
-/obj/effect/turf_decal/box/red/corners{
-	dir = 1
-	},
-/obj/effect/spawner/lootdrop/crate_spawner,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Ls" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 4
@@ -9443,16 +9247,7 @@
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
 "MT" = (
-/obj/machinery/computer/shuttle{
-	desc = "A shuttle terminal which allows a connection to the DS-2 forward base's supply shuttle.";
-	icon_keyboard = "syndie_key";
-	icon_screen = "syndishuttle";
-	light_color = "#FA8282";
-	name = "syndicate cargo shuttle terminal";
-	possible_destinations = "IP-DS-2";
-	req_access_txt = "150";
-	shuttleId = "syndie_cargo"
-	},
+/obj/machinery/computer/shuttle/ds_syndicate,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "MZ" = (
@@ -10474,19 +10269,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
-"QE" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/effect/turf_decal/tile/dark_red/anticorner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 9
-	},
-/obj/machinery/power/apc/auto_name/south,
-/turf/open/floor/iron/dark/textured_half{
-	dir = 4
-	},
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "QF" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -10835,16 +10617,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/vault)
-"RV" = (
-/obj/effect/turf_decal/stripes/red/corner,
-/obj/effect/turf_decal/stripes/red/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/box/white/corners{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "RX" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/cl)
@@ -11169,27 +10941,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
-"Ts" = (
-/obj/structure/railing{
-	dir = 8;
-	pixel_x = -2
-	},
-/obj/structure/marker_beacon/burgundy,
-/obj/structure/railing/corner{
-	dir = 8;
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/tile/dark_red/half{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 1
-	},
-/obj/machinery/light/dim/directional/south,
-/turf/open/floor/iron/dark/textured_half{
-	dir = 4
-	},
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Tt" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -11243,16 +10994,6 @@
 /obj/machinery/vending/syndichem,
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay/chem)
-"TB" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 5;
-	height = 8;
-	name = "DS-2 Hangar";
-	width = 11
-	},
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "TG" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 8
@@ -11294,7 +11035,6 @@
 /obj/item/clothing/under/syndicate/overalls,
 /obj/item/clothing/under/syndicate/overalls/skirt,
 /obj/item/clothing/under/rank/engineering/engineer/util/syndicate,
-/obj/item/clothing/suit/jacket/gorlex_harness,
 /obj/item/clothing/suit/hazardvest,
 /obj/structure/closet/secure_closet{
 	icon_state = "eng_secure";
@@ -11325,6 +11065,7 @@
 /obj/item/holosign_creator/atmos{
 	pixel_y = -8
 	},
+/obj/item/clothing/suit/armor/vest/infiltrator/gorlex_harness,
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
@@ -11715,10 +11456,6 @@
 	},
 /turf/open/floor/engine/o2,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
-"Vj" = (
-/obj/effect/spawner/lootdrop/crate_spawner,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Vm" = (
 /obj/machinery/light/dim/directional/east,
 /obj/effect/turf_decal/siding/dark{
@@ -14812,7 +14549,7 @@ xG
 Hz
 my
 ih
-vA
+FZ
 qO
 ds
 rd
@@ -15041,7 +14778,7 @@ my
 tG
 ml
 my
-zh
+my
 my
 my
 my
@@ -15087,17 +14824,17 @@ xQ
 xE
 Tp
 Tp
-iz
-TB
-ba
+Tp
+Tp
+Tp
+Tp
+Tp
+Tp
 Tp
 Tp
 Ww
 xQ
-QE
-my
-cb
-my
+nm
 zX
 Oi
 uq
@@ -15142,17 +14879,17 @@ eH
 HD
 nh
 nm
-Vj
 nm
 nm
-Vj
+yA
+nm
+nm
+nm
+nm
 QG
 Nb
 Ww
-AR
-my
-my
-my
+pm
 zX
 Oi
 Yb
@@ -15198,15 +14935,15 @@ mQ
 nm
 nm
 nm
-Vj
 nm
 nm
 nm
-Lr
+nm
+nm
+Dd
+nm
+QG
 st
-Bw
-Mt
-Ax
 Td
 Oi
 Oi
@@ -15248,20 +14985,20 @@ gw
 pk
 Hz
 zc
-tx
-nm
-Vj
+tQ
 nm
 nm
 nm
-Vj
-el
+nm
+nm
+nm
+nm
+nm
+nm
+nm
 nm
 nm
 dv
-jE
-lI
-Ax
 zX
 Oi
 Oi
@@ -15306,17 +15043,17 @@ Ns
 tQ
 nm
 nm
-Vj
 nm
 nm
 nm
 nm
-Vj
+nm
+nm
+nm
+nm
+nm
 nm
 jN
-CV
-GX
-Ax
 zX
 Oi
 Oi
@@ -15359,19 +15096,19 @@ wn
 Hz
 py
 tQ
-fc
-wF
 nm
 nm
 nm
 nm
 nm
 nm
-Ra
+nm
+nm
+nm
+nm
+nm
+nm
 dv
-CS
-xd
-Ax
 zX
 Oi
 VP
@@ -15412,21 +15149,21 @@ Dt
 fw
 Wz
 Hz
-Lb
-wt
-RV
+AS
+tQ
 fc
 nm
 nm
 nm
-Vj
+nm
+nm
+nm
+nm
+nm
+nm
 nm
 Ra
-KI
-jR
-tE
-Gd
-Ax
+dv
 zX
 Oi
 ZY
@@ -15467,21 +15204,21 @@ jW
 qo
 JK
 Hz
-zc
-xQ
+Lb
 wt
-sr
-sr
-sr
-oM
-sr
-gr
-sr
-KR
-xQ
-Ts
-Ax
-Ax
+Dx
+fc
+nm
+nm
+nm
+nm
+nm
+nm
+Dd
+nm
+Ra
+KI
+jR
 NB
 NB
 NB
@@ -15522,22 +15259,22 @@ Hz
 Hz
 Hz
 Hz
-aW
-hM
-hM
-hM
-hM
-hM
-hM
-hM
-hM
-hM
-hM
-hM
-Mt
-Ax
-Ay
-wg
+zc
+xQ
+wt
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+KR
+xQ
+NB
 wg
 wg
 wg
@@ -15577,22 +15314,22 @@ kx
 wg
 wg
 wg
-kx
-wg
-kx
-wg
-EJ
-ss
-aJ
-zv
-EJ
-wg
-kx
-wg
-kx
-wg
-wg
-wg
+aW
+hM
+hM
+hM
+hM
+hM
+hM
+hM
+hM
+hM
+hM
+hM
+Mt
+Ax
+Ay
+NB
 wg
 wg
 wg
@@ -15632,7 +15369,7 @@ wg
 wg
 wg
 wg
-EJ
+kx
 wg
 kx
 wg
@@ -15644,7 +15381,7 @@ wg
 wg
 kx
 wg
-EJ
+kx
 wg
 wg
 wg
@@ -15687,19 +15424,19 @@ wg
 wg
 wg
 wg
-wg
-wg
-kx
-wg
-wg
-wg
-wg
-wg
-wg
+EJ
 wg
 kx
 wg
 wg
+wg
+wg
+wg
+wg
+wg
+kx
+wg
+EJ
 wg
 wg
 wg

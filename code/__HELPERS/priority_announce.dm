@@ -9,12 +9,15 @@
 		sound = SSstation.announcer.event_sounds[sound]
 
 	if(type == "Priority")
-		announcement += "<h1 class='alert'>Priority Announcement</h1>"
+		announcement += "<h1 class='alert'>Приоритетное Объявление</h1>"
 		if (title && length(title) > 0)
 			announcement += "<br><h2 class='alert'>[html_encode(title)]</h2>"
 	else if(type == "Captain")
-		announcement += "<h1 class='alert'>Captain Announces</h1>"
-		GLOB.news_network.SubmitArticle(html_encode(text), "Captain's Announcement", "Station Announcements", null)
+		announcement += "<h1 class='alert'>Капитан Объявляет</h1>"
+		GLOB.news_network.SubmitArticle(html_encode(text), "Капитан Объявляет", "Станционное Объявление", null)
+	else if(type == "Syndicate")
+		announcement += "<h1 class='alert'>Синдикат Объявляет</h1>"
+		GLOB.news_network.SubmitArticle(html_encode(text), "Синдикат Объявляет", "Станционное Объявление", null)
 
 	else
 		if(!sender_override)

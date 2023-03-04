@@ -49,7 +49,7 @@
 		else
 			icon_state = "sad_off"
 
-	else if(state_open)
+	if(!state_open)
 		icon_state = "sad_closed"
 	else
 		icon_state = "sad_open"
