@@ -4,10 +4,6 @@
 	broken_states = list("damaged1", "damaged2", "damaged3", "damaged4", "damaged5")
 	burnt_states = list("floorscorched1", "floorscorched2")
 
-/turf/open/floor/iron/examine(mob/user)
-	. = ..()
-	. += "<span class='notice'>There's a <b>small crack</b> on the edge of it.</span>"
-
 /turf/open/floor/iron/rust_heretic_act()
 	if(prob(70))
 		new /obj/effect/temp_visual/glowing_rune(src)
