@@ -7,7 +7,7 @@
 /turf/open/floor/iron/dark/diagonal,
 /area/shuttle/supply)
 "b" = (
-/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/supply)
 "e" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -102,8 +102,8 @@
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/shuttle/supply)
 "s" = (
-/turf/open/space/basic,
-/area/template_noop)
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle/supply)
 "t" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/fluff/metalpole/end{
