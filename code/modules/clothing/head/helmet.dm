@@ -82,7 +82,7 @@
 	return ..()
 
 /obj/item/clothing/head/helmet/nvg
-	name = "NVG helmet"
+	name = "NVG Helmet"
 	desc = "Standard Security gear. Protects the head from impacts. Equipped with a night vision apparatus on the front edge."
 	icon_state = "helmetNVG"
 	item_state = "helmetNVG"

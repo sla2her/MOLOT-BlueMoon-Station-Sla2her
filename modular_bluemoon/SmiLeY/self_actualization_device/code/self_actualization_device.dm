@@ -43,16 +43,6 @@
 
 /obj/machinery/self_actualization_device/update_appearance(updates)
 	. = ..()
-	if(occupant)
-		if(processing == TRUE)
-			icon_state = "sad_on"
-		else
-			icon_state = "sad_off"
-
-	if(!state_open)
-		icon_state = "sad_closed"
-	else
-		icon_state = "sad_open"
 
 /obj/machinery/self_actualization_device/Initialize(mapload)
 	. = ..()
@@ -67,6 +57,7 @@
 		occupant.forceMove(drop_location())
 		set_occupant(null)
 		return FALSE
+	icon_state = "sad_closed"
 	to_chat(occupant, span_notice("You enter [src]."))
 	update_appearance()
 
@@ -76,15 +67,20 @@
 
 /obj/machinery/self_actualization_device/open_machine(mob/user)
 	playsound(src, 'sound/machines/click.ogg', 50)
+	icon_state = "sad_open"
 	..()
 
 /obj/machinery/self_actualization_device/AltClick(mob/user)
 	. = ..()
 	if(!powered() || !occupant || state_open)
 		return FALSE
-
 	to_chat(user, "You power on [src].")
 	addtimer(CALLBACK(src, PROC_REF(eject_new_you)), processing_time, TIMER_OVERRIDE|TIMER_UNIQUE)
+	if(occupant)
+		if(!processing)
+			icon_state = "sad_on"
+		else
+			icon_state = "sad_off"
 	processing = TRUE
 	update_appearance()
 
