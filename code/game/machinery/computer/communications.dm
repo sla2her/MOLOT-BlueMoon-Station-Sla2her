@@ -48,6 +48,7 @@
 	name = "Syndicate Communications Console"
 	desc = "A Syndicate console used for high-priority announcements and emergencies."
 	icon_screen = "commsyndie"
+	icon_keyboard = "syndie_key"
 	req_access = list(ACCESS_SYNDICATE_LEADER)
 	light_color = LIGHT_COLOR_BLOOD_MAGIC
 	syndicate = TRUE
