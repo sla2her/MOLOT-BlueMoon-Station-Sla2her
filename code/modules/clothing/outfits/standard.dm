@@ -377,16 +377,16 @@
 	l_pocket = /obj/item/melee/transforming/energy/sword/saber
 	r_pocket = /obj/item/shield/energy
 	suit_store = /obj/item/tank/internals/emergency_oxygen
-	belt = /obj/item/gun/ballistic/revolver/mateba
+	belt = /obj/item/storage/belt/grenade/full
 	r_hand = /obj/item/gun/energy/pulse/loyalpin
 	id = /obj/item/card/id
 	ears = /obj/item/radio/headset/headset_cent/alt
 
-	backpack_contents = list(/obj/item/storage/box=1,\
-		/obj/item/ammo_box/a357=1,\
-		/obj/item/storage/firstaid/regular=1,\
-		/obj/item/storage/box/flashbangs=1,\
-		/obj/item/flashlight=1,\
+	backpack_contents = list(/obj/item/storage/box/survival/security=1,\
+		/obj/item/storage/box/syndie_kit/revolver=1,\
+		/obj/item/storage/firstaid/tactical/slaver=1,\
+		/obj/item/storage/box/flashbangs/super=1,\
+		/obj/item/pinpointer/nuke=1,\
 		/obj/item/grenade/plastic/x4=1)
 
 /datum/outfit/death_commando/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)

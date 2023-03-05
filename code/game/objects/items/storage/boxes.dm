@@ -276,7 +276,7 @@
 		new /obj/item/dnainjector/m2h(src)
 
 /obj/item/storage/box/flashbangs
-	name = "box of flashbangs (WARNING)"
+	name = "Box of Flashbangs (WARNING)"
 	desc = "<B>WARNING: These devices are extremely dangerous and can cause blindness or deafness in repeated use.</B>"
 	icon_state = "secbox"
 	illustration = "flashbang"
@@ -284,6 +284,16 @@
 /obj/item/storage/box/flashbangs/PopulateContents()
 	for(var/i in 1 to 7)
 		new /obj/item/grenade/flashbang(src)
+
+/obj/item/storage/box/flashbangs/super
+	name = "Box of Super Flashbangs (WARNING)"
+	desc = "<B>WARNING: These devices are extremely dangerous and can cause blindness or deafness in repeated use.</B>"
+	icon_state = "secbox"
+	illustration = "flashbang"
+
+/obj/item/storage/box/flashbangs/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/grenade/clusterbuster/soap(src)
 
 /obj/item/storage/box/stingbangs
 	name = "box of stingbangs (WARNING)"
