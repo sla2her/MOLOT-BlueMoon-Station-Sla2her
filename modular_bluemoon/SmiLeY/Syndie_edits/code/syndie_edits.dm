@@ -3,7 +3,7 @@
 /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
 	icon = 'modular_bluemoon/smiley/syndie_edits/icons/obj.dmi'
 	mob_overlay_icon = 'modular_bluemoon/smiley/syndie_edits/icons/worn.dmi'
-	icon_state = "syndievest"
+	icon_state = "syndievest_t"
 	mutantrace_variation = STYLE_NO_ANTHRO_ICON|DIGITIGRADE
 
 /obj/item/clothing/suit/armor/vest/capcarapace/syndicate/winter
@@ -11,15 +11,11 @@
 	desc = "A sinister yet comfortable looking vest of advanced armor worn over a black and red fireproof jacket. The fur is said to be from wolves on the icemoon."
 	icon = 'modular_bluemoon/smiley/syndie_edits/icons/obj.dmi'
 	mob_overlay_icon = 'modular_bluemoon/smiley/syndie_edits/icons/worn.dmi'
-	icon_state = "syndievest_winter"
-	body_parts_covered = CHEST|GROIN
+	icon_state = "syndievest_winter_t"
+	body_parts_covered = CHEST|ARMS
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF
-
-/obj/item/clothing/suit/armor/vest/capcarapace/syndicate/winter/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/action/item_action/toggle_hood)
 
 /obj/item/clothing/head/hats/warden/syndicate
 	name = "Master At Arms' Police Hat"

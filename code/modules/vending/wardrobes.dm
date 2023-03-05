@@ -599,6 +599,9 @@
 		/obj/item/clothing/under/syndicate/maid = 5,
 		/obj/item/clothing/gloves/combat/maid = 5,
 		/obj/item/clothing/head/maidheadband/syndicate = 5,
+		/obj/item/clothing/suit/armor/vest/capcarapace/syndicate/winter = 2,
+		/obj/item/clothing/suit/armor/vest/capcarapace/syndicate = 2,
+		/obj/item/clothing/head/hats/warden/syndicate = 1
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/syndie_wardrobe
 	light_color = COLOR_MOSTLY_PURE_RED
