@@ -90,6 +90,7 @@
 
 /mob/living/simple_animal/hostile/tentacles/death(gibbed)
 	. = ..()
+	qdel(src)
 	//SShorny_mobs_pool.horny_mobs -= src
 
 /mob/living/simple_animal/hostile/tentacles/Destroy()
@@ -128,6 +129,9 @@
 
 	var/onLewdCooldown = FALSE
 	var/wantsNoncon = FALSE
+
+	if(M.client && M.client?.prefs.mobsexpref == "No")
+		return
 
 	if(get_refraction_dif() > 0)
 		onLewdCooldown = TRUE
@@ -168,8 +172,6 @@
 	while(M.pulledby && !tired)
 		if(activate_after(src, 25))
 			do_lewd_action(M)
-			icon_state = "[base_icon]"
-			update_icon()
 
 /mob/living/simple_animal/hostile/tentacles/proc/pickNewHole(mob/living/M)
 	if(M.has_vagina())
@@ -265,8 +267,6 @@
 
 	set_lust(0) // Nuts at 400
 	tired += rand(20, 50)
-	icon_state = "[base_icon]_sleep"
-	update_icon()
 
 /mob/living/simple_animal/hostile/tentacles/proc/tearSlot(mob/living/M, slot)
 	var/obj/item/W = M.get_item_by_slot(slot)
@@ -285,7 +285,7 @@
 	dried_being = /mob/living/simple_animal/hostile/tentacles
 
 /obj/item/storage/box/tentaclescubes
-	name = "tentacles cube box"
+	name = "Instante tentacles box"
 	desc = "Drymate brand tentacles cubes. Just add water!"
 	icon = 'modular_bluemoon/Gardelin0/icons/mob/tentacles.dmi'
 	icon_state = "tentaclecubebox"
