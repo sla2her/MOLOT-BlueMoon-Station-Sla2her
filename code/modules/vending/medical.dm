@@ -3,7 +3,7 @@
 	desc = "Medical drug dispenser."
 	icon_state = "med"
 	icon_deny = "med-deny"
-	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
+	product_ads = "Иди и спаси чью-то жизнь!;Только лучшие лекарства!;Натуральные химикаты - здесь!"
 	req_access = list(ACCESS_MEDICAL)
 	products = list(/obj/item/reagent_containers/syringe = 12,
 					/obj/item/reagent_containers/dropper = 3,
@@ -118,7 +118,7 @@
 	desc = "Medical drugs dispenser."
 	icon_state = "drug"
 	icon_deny = "drug-deny"
-	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
+	product_ads = "Иди и спаси чью-то жизнь!;Только лучшие лекарства!;Натуральные химикаты - здесь!"
 	req_access = list(ACCESS_MEDICAL)
 	products = list(
 		/obj/item/reagent_containers/pill/patch/silver_sulf = 5,
