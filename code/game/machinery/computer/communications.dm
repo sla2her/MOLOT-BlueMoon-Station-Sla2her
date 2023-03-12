@@ -195,7 +195,7 @@
 				return
 			emergency_meeting(usr)
 		if ("makePriorityAnnouncement")
-			if (!authenticated_as_silicon_or_captain(usr) || !syndicate)
+			if (!authenticated_as_silicon_or_captain(usr))
 				return
 			make_announcement(usr)
 		if ("messageAssociates")
