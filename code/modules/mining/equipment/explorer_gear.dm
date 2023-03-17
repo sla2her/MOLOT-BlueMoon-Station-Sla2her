@@ -207,7 +207,7 @@
 	desc = "A robust suit for fighting dangerous animals. Its design and material make it harder for a Goliath to keep their grip on the wearer."
 	icon_state = "exo"
 	item_state = "exo"
-	icon = 'modular_sand/icons/obj/clothing/suit.dmi'
+	icon = 'modular_sand/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_sand/icons/mob/clothing/suit.dmi'
 	anthro_mob_worn_overlay = 'modular_sand/icons/mob/clothing/suit_digi.dmi'
 	w_class = WEIGHT_CLASS_BULKY
