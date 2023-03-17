@@ -207,18 +207,24 @@
 	desc = "A robust suit for fighting dangerous animals. Its design and material make it harder for a Goliath to keep their grip on the wearer."
 	icon_state = "exo"
 	item_state = "exo"
+	icon = 'modular_sand/icons/obj/clothing/suit.dmi'
+	mob_overlay_icon = 'modular_sand/icons/mob/clothing/suit.dmi'
+	anthro_mob_worn_overlay = 'modular_sand/icons/mob/clothing/suit_digi.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	hoodtype = /obj/item/clothing/head/hooded/explorer/exo
-	armor = list(MELEE = 55, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 40, BIO = 25, RAD = 10, FIRE = 0, ACID = 0)
+	armor = list(MELEE = 55, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 50, BIO = 25, RAD = 25, FIRE = 10, ACID = 10)
 	resistance_flags = FIRE_PROOF | GOLIATH_RESISTANCE
 
 /obj/item/clothing/head/hooded/explorer/exo
 	name = "Exo-hood"
 	desc = "A robust helmet for fighting dangerous animals. Its design and material make it harder for a Goliath to keep their grip on the wearer."
+	icon = 'modular_sand/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'modular_sand/icons/mob/clothing/head.dmi'
+	anthro_mob_worn_overlay = 'modular_sand/icons/mob/clothing/head_muzzled.dmi'
 	icon_state = "exo"
 	item_state = "exo"
-	armor = list(MELEE = 55, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 40, BIO = 25, RAD = 10, FIRE = 0, ACID = 0)
+	armor = list(MELEE = 55, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 50, BIO = 25, RAD = 25, FIRE = 10, ACID = 10)
 	resistance_flags = FIRE_PROOF | GOLIATH_RESISTANCE
 
 /obj/item/clothing/mask/gas/exo
