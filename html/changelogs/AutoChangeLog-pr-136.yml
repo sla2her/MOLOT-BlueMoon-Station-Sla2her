@@ -1,9 +1,0 @@
-author: CheBuRek017
-delete-after: true
-changes:
-  - rscadd: ARCSIN
-  - rscadd: ARCCOS
-  - rscadd: ARCTAN
-  - rscadd: Телекоммуникационное реле на верхний этаж Lambda-station
-  - bugfix: Дали возможность говорить на Galactic Common для животных с человеческим
-      сознанием (Human-level intelligence)
