@@ -20,7 +20,6 @@ GLOBAL_LIST_INIT(slavers_ransom_values, list(
 	"Brig Physician" 			= 20000,
 	"Security Officer" 			= 20000,
 	"Detective" 				= 20000,
-	"NanoTrasen Representative" = 30000,
 
 	"Quartermaster" 			= 10000,
 	"Cargo Technician" 			= SLAVER_STANDARD_RANSOM,

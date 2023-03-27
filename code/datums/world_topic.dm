@@ -247,7 +247,6 @@
 	var/list/science = list()
 	var/list/cargo = list()
 	var/list/civilian = list()
-	var/list/law = list()
 	var/list/misc = list()
 	for(var/datum/data/record/R in GLOB.data_core.general)
 		var/name = R.fields["name"]
@@ -263,8 +262,6 @@
 			science[name] = rank
 		else if(GetJobName(real_rank) in GLOB.supply_positions)
 			cargo[name] = rank
-		else if(GetJobName(real_rank) in GLOB.law_positions)
-			law[name] = rank
 		else if(GetJobName(real_rank) in GLOB.civilian_positions)
 			civilian[name] = rank
 		else
@@ -277,7 +274,6 @@
 	.["Command"] = command
 	.["Security"] = security
 	.["Engineering"] = engineering
-	.["Law"] = law
 	.["Medical"] = medical
 	.["Science"] = science
 	.["Cargo"] = cargo
