@@ -6871,7 +6871,8 @@
 "api" = (
 /obj/machinery/door/airlock{
 	name = "Law Office";
-	req_access_txt = "38"
+	req_access_txt = "38";
+	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/station/command.dmi'
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/service/lawoffice)
@@ -52608,6 +52609,10 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
+"esY" = (
+/obj/effect/landmark/start/ntr,
+/turf/open/floor/mineral/plastitanium,
+/area/command/bridge)
 "esZ" = (
 /obj/machinery/door/airlock{
 	desc = "Private study room where nerds are probably playing Dungeons and Dragons 13e, or a place for blood cult rituals.";
@@ -94687,7 +94692,7 @@ aOE
 aPU
 aRl
 aSx
-aTX
+esY
 aVi
 aWR
 aYv
