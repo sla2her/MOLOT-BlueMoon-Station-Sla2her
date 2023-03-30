@@ -6754,7 +6754,8 @@
 "ctx" = (
 /obj/machinery/door/airlock{
 	name = "Law Office";
-	req_access_txt = "38"
+	req_access_txt = "38";
+	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/station/command.dmi'
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -26634,6 +26635,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/medbay/central)
+"jfE" = (
+/obj/effect/landmark/start/ntr,
+/turf/open/floor/plasteel/dark,
+/area/command/bridge)
 "jfI" = (
 /obj/item/lipstick,
 /turf/open/floor/plating,
@@ -102667,7 +102672,7 @@ dHK
 oyZ
 jMm
 lvb
-yhO
+jfE
 dUG
 fBu
 lPo
