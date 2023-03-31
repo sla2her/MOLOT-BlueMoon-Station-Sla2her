@@ -24,7 +24,7 @@
 	paycheck_department = ACCOUNT_CIV
 	alt_titles = list("Command Secretary", "Command Officer", "Bridge Secretary", "Ensign", "Bridge Bitch", "Bridge Advisor", "Bridge Intern")
 	display_order = JOB_DISPLAY_ORDER_BO
-	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/prosopagnosia, /datum/quirk/insanity)
+	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/insanity)
 	threat = 1
 
 /datum/outfit/job/bridgeofficer

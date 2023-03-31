@@ -132,6 +132,9 @@
 		. += "На ушах у н[t_ego] [ears.get_examine_string(user)]."
 	if(ears_extra && !(ITEM_SLOT_EARS_RIGHT in obscured))
 		. += "На ушах у н[t_ego] [ears_extra.get_examine_string(user)]."
+	//wearing two ear items makes you look like an idiot
+	if((istype(ears, /obj/item/radio/headset) && !(ITEM_SLOT_EARS_LEFT in obscured)) && (istype(ears_extra, /obj/item/radio/headset) && !(ITEM_SLOT_EARS_RIGHT in obscured)))
+		. += "<span class='warning'>[t_He] looks quite tacky wearing both \an [ears.name] and \an [ears_extra.name] on [t_his] head.</span>"
 
 	//ID
 	if(wear_id && !(wear_id.item_flags & EXAMINE_SKIP))
