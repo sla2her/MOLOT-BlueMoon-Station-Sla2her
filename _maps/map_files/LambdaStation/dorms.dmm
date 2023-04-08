@@ -13843,7 +13843,7 @@
 "JC" = (
 /obj/machinery/door/airlock/command{
 	name = "Gateway Atrium";
-	req_access_txt = "62"
+	req_access_txt = ыыыыыыыыыыыыыыыы
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
@@ -15944,9 +15944,11 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "OU" = (
-/obj/machinery/door/airlock/maintenance,
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "62"
 	},
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -62911,7 +62913,7 @@ gg
 Wj
 OA
 Pu
-Bs
+nN
 fl
 Xx
 Xx
@@ -63168,8 +63170,8 @@ mg
 bD
 Go
 TJ
-nN
-fl
+Bs
+Bs
 fl
 fl
 Xx

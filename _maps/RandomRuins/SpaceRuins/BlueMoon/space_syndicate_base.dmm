@@ -1145,7 +1145,8 @@
 /obj/item/storage/fancy/egg_box,
 /obj/effect/turf_decal/bot_blue,
 /obj/structure/closet/secure_closet/freezer/kitchen{
-	req_access_txt = "150"
+	req_access_txt = "150";
+	req_access = null
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/diner)
@@ -1634,6 +1635,9 @@
 /obj/machinery/door/airlock/security/glass{
 	name = "Long-Term Brig"
 	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "gk" = (
@@ -1901,11 +1905,6 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/cl)
-"hl" = (
-/obj/effect/turf_decal/stripes/red/line,
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "hn" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -2808,13 +2807,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"kS" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 8
-	},
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "kT" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
 	level = 1
@@ -2986,7 +2978,8 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge)
 "lE" = (
 /obj/structure/closet/secure_closet/freezer/kitchen{
-	req_access_txt = "150"
+	req_access_txt = "150";
+	req_access = null
 	},
 /obj/item/reagent_containers/food/condiment/milk,
 /obj/item/reagent_containers/food/condiment/soymilk,
@@ -3347,13 +3340,6 @@
 	dir = 4
 	},
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
-"nh" = (
-/obj/effect/turf_decal/box/red/corners{
-	dir = 4
-	},
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "ni" = (
 /obj/effect/turf_decal/stripes/red/line,
 /obj/effect/turf_decal/stripes/red/corner{
@@ -3690,7 +3676,8 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/medical1{
-	req_access_txt = "150"
+	req_access_txt = "150";
+	req_access = null
 	},
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay/chem)
@@ -4035,6 +4022,9 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "DS2permabrig"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
@@ -6359,6 +6349,9 @@
 /obj/machinery/door/airlock/security/glass{
 	name = "Long-Term Brig"
 	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "Af" = (
@@ -6922,10 +6915,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
-"Dd" = (
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "De" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -7028,7 +7017,6 @@
 /obj/effect/turf_decal/box/white/corners{
 	dir = 8
 	},
-/obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Dy" = (
@@ -8432,6 +8420,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "JC" = (
@@ -9995,11 +9984,6 @@
 	dir = 1
 	},
 /obj/machinery/light/dim/directional/north,
-/obj/structure/closet/secure_closet{
-	icon_state = "science";
-	name = "scientist gear locker";
-	req_access_txt = "150"
-	},
 /obj/item/clothing/under/rank/rnd/scientist/utility/syndicate,
 /obj/item/clothing/suit/hooded/wintercoat/science,
 /obj/item/clothing/suit/toggle/labcoat/science,
@@ -10014,6 +9998,11 @@
 /obj/item/clothing/accessory/armband/science{
 	desc = "An armband, worn by the FOB's operatives to display which department they're assigned to.";
 	name = "researcher armband"
+	},
+/obj/structure/closet/secure_closet{
+	icon_state = "science";
+	name = "scientist gear locker";
+	req_one_access_txt = "150"
 	},
 /turf/open/floor/iron/dark/side{
 	dir = 1
@@ -11528,16 +11517,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"Vq" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 1
-	},
-/obj/structure/railing{
-	pixel_y = -2
-	},
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Vv" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -11712,13 +11691,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"VZ" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 4
-	},
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "Wf" = (
 /obj/effect/turf_decal/bot,
 /obj/item/storage/toolbox/syndicate{
@@ -11820,6 +11792,9 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "DS2permabrig"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
@@ -14873,7 +14848,7 @@ Tp
 Tp
 Tp
 Tp
-VZ
+Tp
 Ww
 xQ
 nm
@@ -14919,7 +14894,7 @@ wk
 Hz
 eH
 HD
-nh
+mQ
 nm
 nm
 nm
@@ -14982,7 +14957,7 @@ nm
 nm
 nm
 nm
-Dd
+nm
 nm
 QG
 st
@@ -15027,11 +15002,11 @@ gw
 pk
 Hz
 zc
-hl
+tQ
 nm
 nm
 nm
-Dd
+nm
 nm
 nm
 nm
@@ -15094,7 +15069,7 @@ nm
 nm
 nm
 nm
-Dd
+nm
 jN
 zX
 Oi
@@ -15141,11 +15116,11 @@ tQ
 nm
 nm
 nm
-Dd
 nm
 nm
 nm
-Dd
+nm
+nm
 nm
 nm
 nm
@@ -15205,7 +15180,7 @@ nm
 nm
 nm
 Ra
-Vq
+dv
 zX
 Oi
 ZY
@@ -15256,7 +15231,7 @@ nm
 nm
 nm
 nm
-Dd
+nm
 nm
 Ra
 KI
@@ -15306,7 +15281,7 @@ xQ
 wt
 sr
 sr
-kS
+sr
 sr
 sr
 sr
