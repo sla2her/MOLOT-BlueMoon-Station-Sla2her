@@ -13841,10 +13841,6 @@
 /turf/open/floor/wood,
 /area/commons/dorms)
 "JC" = (
-/obj/machinery/door/airlock/command{
-	name = "Gateway Atrium";
-	req_access_txt = ыыыыыыыыыыыыыыыы
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -13854,6 +13850,10 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
 	icon_state = "1-4"
+	},
+/obj/machinery/door/airlock/command{
+	name = "Gateway Atrium";
+	req_access_txt = "62"
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
