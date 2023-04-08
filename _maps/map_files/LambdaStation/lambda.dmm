@@ -19270,10 +19270,9 @@
 /area/security/brig)
 "aIx" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock{
+/obj/machinery/door/airlock/security/glass{
 	name = "Law Office";
-	req_access_txt = "38";
-	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/station/command.dmi'
+	req_access_txt = "38"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -22285,17 +22284,16 @@
 /area/security/brig)
 "aOw" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock{
-	name = "Law Office";
-	req_access_txt = "38";
-	icon = 'modular_bluemoon/smiley/aesthetics/airlock/icons/airlocks/station/command.dmi'
-	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/door/airlock/security/glass{
+	name = "Law Office";
+	req_access_txt = "38"
+	},
 /turf/open/floor/plasteel,
 /area/service/lawoffice)
 "aOx" = (
