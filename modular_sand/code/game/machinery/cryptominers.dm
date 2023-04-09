@@ -24,8 +24,8 @@
 	icon_state = "off"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 20
-	active_power_usage = 200
+	idle_power_usage = 50
+	active_power_usage = 500
 	circuit = /obj/item/circuitboard/machine/cryptominer
 	init_process = FALSE // Don't process upon creation
 	var/mining = FALSE
@@ -281,8 +281,8 @@
 	icon_state = "off_syndie"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 10
-	active_power_usage = 100
+	idle_power_usage = 100
+	active_power_usage = 1000
 	circuit = /obj/item/circuitboard/machine/cryptominer/syndie
 	miningtime = 6000
 	miningpoints = 100
@@ -303,8 +303,8 @@
 	icon_state = "off_nano"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 1
-	active_power_usage = 1
+	idle_power_usage = 50
+	active_power_usage = 500
 	miningtime = 600000
 	miningpoints = 1000
 	radio_snitch = FALSE // None of cargo's business!
