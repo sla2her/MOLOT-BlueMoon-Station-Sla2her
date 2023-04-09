@@ -3407,6 +3407,9 @@
 	pixel_x = -2
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "nG" = (
