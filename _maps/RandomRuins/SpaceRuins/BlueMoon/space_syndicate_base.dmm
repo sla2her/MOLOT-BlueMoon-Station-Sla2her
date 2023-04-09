@@ -802,20 +802,6 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/lawyer)
-"cN" = (
-/obj/effect/turf_decal/trimline/dark_blue/line{
-	dir = 8
-	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
-	level = 1
-	},
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
-	level = 1
-	},
-/obj/item/card/emag,
-/turf/open/floor/iron/dark,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
 "cO" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/trimline/purple/filled/line{
@@ -8419,10 +8405,6 @@
 	},
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "JC" = (
@@ -14451,7 +14433,7 @@ vQ
 yv
 iy
 az
-cN
+az
 az
 jc
 JN
