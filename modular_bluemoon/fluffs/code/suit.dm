@@ -61,10 +61,11 @@
 	desc = "Модифицированный штатный Бронескафандр Лорданианских пилотов для ВКД даже в боевых условиях. Выполняет все необходимые от него функции."
 	icon_state = "hardsuit0-kikimora"
 	hardsuit_type = "kikimora"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/space/hardsuit/security/kikimora
 	name = "ACS.Kikimora-MK2 Hardsuit"
 	desc = "Модифицированный штатный Бронескафандр Лорданианских пилотов для ВКД даже в боевых условиях. Выполняет все необходимые от него функции."
 	icon_state = "hardsuit0-kikimora"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/kikimora
-	mutantrace_variation = STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
