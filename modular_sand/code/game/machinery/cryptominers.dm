@@ -24,8 +24,8 @@
 	icon_state = "off"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 50
-	active_power_usage = 500
+	idle_power_usage = 20
+	active_power_usage = 200
 	circuit = /obj/item/circuitboard/machine/cryptominer
 	init_process = FALSE // Don't process upon creation
 	var/mining = FALSE
@@ -215,17 +215,21 @@
 	// Check for temperature effects
 	// Minimum (most likely)
 	if(env_temp <= temp_min)
-		produce_points(CRYPTO_MULT_MAX)
+		say("Критически низкая температура! Экстренное отключение!!") // Ваще холодно, пиздец.
+		playsound(loc, 'sound/machines/beep.ogg', 100, TRUE, -1)
+		set_mining(FALSE)
+	else if(env_temp <= temp_mid) && (env_temp >= temp_min)
+		produce_points(CRYPTO_MULT_MAX) // Чем холоднее, тем больше.
 	// Mid
 	else if((env_temp <= temp_mid) && (env_temp >= temp_min))
 		produce_points(CRYPTO_MULT_MID)
 	// Maximum
 	else if((env_temp <= temp_max) && (env_temp >= temp_mid))
-		produce_points(CRYPTO_MULT_MIN)
+		produce_points(CRYPTO_MULT_MIN) // Чем горячее, тем меньше.
 	// Overheat
 	else if(env_temp >= temp_max)
-		say("Critical overheating detected! Shutting off!")
-		playsound(loc, 'sound/machines/beep.ogg', 50, TRUE, -1)
+		say("Критически высокая температура! Экстренное отключение!!")
+		playsound(loc, 'sound/machines/beep.ogg', 100, TRUE, -1)
 		set_mining(FALSE)
 
 	// Increase heat by heating_power
@@ -281,8 +285,8 @@
 	icon_state = "off_syndie"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 100
-	active_power_usage = 1000
+	idle_power_usage = 10
+	active_power_usage = 100
 	circuit = /obj/item/circuitboard/machine/cryptominer/syndie
 	miningtime = 6000
 	miningpoints = 100
@@ -303,8 +307,8 @@
 	icon_state = "off_nano"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 50
-	active_power_usage = 500
+	idle_power_usage = 1
+	active_power_usage = 1
 	miningtime = 600000
 	miningpoints = 1000
 	radio_snitch = FALSE // None of cargo's business!
