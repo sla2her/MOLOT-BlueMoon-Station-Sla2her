@@ -218,7 +218,7 @@
 		say("Критически низкая температура! Экстренное отключение!!") // Ваще холодно, пиздец.
 		playsound(loc, 'sound/machines/beep.ogg', 100, TRUE, -1)
 		set_mining(FALSE)
-	else if(env_temp <= temp_mid) && (env_temp >= temp_min)
+	else if((env_temp <= temp_mid) && (env_temp >= temp_min))
 		produce_points(CRYPTO_MULT_MAX) // Чем холоднее, тем больше.
 	// Mid
 	else if((env_temp <= temp_mid) && (env_temp >= temp_min))
