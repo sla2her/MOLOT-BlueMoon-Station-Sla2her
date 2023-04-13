@@ -15,12 +15,12 @@
 		"Head 2" = list("icon_state" = "head2"),
 		"Head 3" = list("icon_state" = "head3"),
 		"Head Bloody" = list("icon_state" = "head1b"),
-		"Head Bloody 2" = list("icon_state" = "head2b"),
+		"Head Bloody 2" = list("icon_state" = "headb"),
 		"Head Bloody 3" = list("icon_state" = "head3b"),
 		"Chest" = list("icon_state" = "chest1"),
 		"Chest 2" = list("icon_state" = "chest2"),
 		"Chest Bloody" = list("icon_state" = "chest1b"),
-		"Chest 2 Bloody" = list("icon_state" = "chest2b")
+		"Chest 2 Bloody" = list("icon_state" = "chestb")
 	)
 
 /datum/gear/neck/cross
