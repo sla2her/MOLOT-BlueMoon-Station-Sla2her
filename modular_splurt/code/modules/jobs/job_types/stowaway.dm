@@ -8,7 +8,7 @@ GLOBAL_LIST_EMPTY(roundstart_stowaway)
 	paycheck = 0
 	paycheck_department = null
 	faction = "Station"
-	total_positions = 0
+	total_positions = 3
 	spawn_positions = 3
 	threat = 0.5
 	supervisors = "no one"
@@ -20,6 +20,12 @@ GLOBAL_LIST_EMPTY(roundstart_stowaway)
 	outfit = /datum/outfit/job/stowaway
 	plasma_outfit = /datum/outfit/plasmaman/stowaway
 	display_order = JOB_DISPLAY_ORDER_STOWAWAY
+	alt_titles = list(
+		"Hobo",
+		"Migrant",
+		"Tunnel Warrior",
+		"Escapist"
+		)
 
 /datum/job/stowaway/get_latejoin_spawn_point()
 	return get_roundstart_spawn_point()
