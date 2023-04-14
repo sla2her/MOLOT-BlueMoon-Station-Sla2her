@@ -16,7 +16,7 @@ GLOBAL_LIST_EMPTY(roundstart_stowaway)
 	exp_requirements = 100
 	exp_type = EXP_TYPE_CREW
 	considered_combat_role = FALSE
-	custom_spawn_text = "<font color='red' size='4'><b>You are a stowaway. You should NOT be starting fights or attempting to fight security for any reason. At best you should be actively on the run from them as you are on the station illegally.</b></font>"
+	custom_spawn_text = "<font color='red' size='4'><b>Вы - безбилетный пассажир. Вы НЕ должны начинать драки или пытаться бороться с охраной по какой-либо причине. В лучшем случае вы должны активно убегать от них, поскольку находитесь на станции нелегально.</b></font>"
 	outfit = /datum/outfit/job/stowaway
 	plasma_outfit = /datum/outfit/plasmaman/stowaway
 	display_order = JOB_DISPLAY_ORDER_STOWAWAY
@@ -24,7 +24,9 @@ GLOBAL_LIST_EMPTY(roundstart_stowaway)
 		"Hobo",
 		"Migrant",
 		"Tunnel Warrior",
-		"Escapist"
+		"Escapist",
+		"Proshmandovka",
+		"Jigolo"
 		)
 
 /datum/job/stowaway/get_latejoin_spawn_point()
@@ -36,7 +38,7 @@ GLOBAL_LIST_EMPTY(roundstart_stowaway)
 	uniform = suited ? /obj/item/clothing/under/color/random : /obj/item/clothing/under/color/jumpskirt/random
 
 /obj/item/card/id/stowaway_stolen
-	name = "unknown ID card"
+	name = "Unknown ID Card"
 	desc = "An strange-looking old ID card."
 	icon_state = "data_1"
 	uses_overlays = FALSE
