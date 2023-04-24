@@ -584,6 +584,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+/obj/machinery/computer/cargo{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/cargo/sorting)
 "adU" = (
@@ -4642,6 +4645,13 @@
 	dir = 1
 	},
 /area/hallway/secondary/exit/departure_lounge)
+"bjY" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/piratepad/civilian{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard/aft)
 "bkI" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -24603,7 +24613,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/machinery/piratepad/civilian,
+/obj/machinery/computer/bounty,
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "jjA" = (
@@ -25631,13 +25641,13 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "jHD" = (
-/obj/machinery/computer/cargo{
-	dir = 1
-	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown,
+/obj/machinery/computer/security/qm{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/cargo/qm)
 "jHF" = (
@@ -50530,6 +50540,13 @@
 	},
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors)
+"uzz" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/computer/cargo{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard/aft)
 "uzD" = (
 /obj/structure/rack,
 /obj/item/radio,
@@ -57729,13 +57746,13 @@
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "xEf" = (
-/obj/machinery/piratepad/civilian{
-	dir = 1
-	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown,
+/obj/machinery/computer/cargo{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/cargo/qm)
 "xEs" = (
@@ -104973,8 +104990,8 @@ nwe
 kwl
 kwl
 qSi
-kwl
-kwl
+bjY
+uzz
 pUz
 ohS
 nOv
