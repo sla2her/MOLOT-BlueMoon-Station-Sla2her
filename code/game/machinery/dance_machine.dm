@@ -181,7 +181,7 @@
 			else if(new_volume == "max")
 				volume = ((obj_flags & EMAGGED) ? 210 : 100)
 			else if(text2num(new_volume) != null)
-				volume = clamp(0, text2num(new_volume), ((obj_flags & EMAGGED) ? 210 : 100))
+				volume = clamp(0, text2num(new_volume), ((obj_flags & EMAGGED) ? 500 : 100))
 			var/wherejuke = SSjukeboxes.findjukeboxindex(src)
 			if(wherejuke)
 				SSjukeboxes.updatejukebox(wherejuke, jukefalloff = volume/35)
