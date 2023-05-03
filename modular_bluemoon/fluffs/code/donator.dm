@@ -45,6 +45,12 @@
 	path = /obj/item/clothing/suit/donator/bm/lightning_holocloak
 	ckeywhitelist = list("weirdbutton")
 
+/datum/gear/donator/bm/modern_suit
+	name = "Modern Suit"
+	slot = ITEM_SLOT_OCLOTHING
+	path = /obj/item/clothing/suit/donator/bm/modern_suit
+	ckeywhitelist = list("RainbowKurwa")
+
 /datum/gear/donator/bm/case_ds
 	name = "military case"
 	slot = ITEM_SLOT_BACKPACK

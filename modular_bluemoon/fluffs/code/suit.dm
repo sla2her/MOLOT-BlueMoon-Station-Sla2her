@@ -69,3 +69,10 @@
 	icon_state = "hardsuit0-kikimora"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/kikimora
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+/obj/item/clothing/suit/donator/bm/modern_suit
+	name = "Modern Suit"
+	desc = "A costume in red and black colors. It includes shorts, suspenders, and a tie. On the chest, you can see the inscription 'Epoque limited collection 2563, made specially for Tex'."
+	icon_state = "modern_suit"
+	item_state = "bl_suit"
+	mutantrace_variation = STYLE_DIGITIGRADE | STYLE_NO_ANTHRO_ICON
