@@ -49,7 +49,7 @@
 	name = "Modern Suit"
 	slot = ITEM_SLOT_OCLOTHING
 	path = /obj/item/clothing/suit/donator/bm/modern_suit
-	ckeywhitelist = list("RainbowKurwa")
+	ckeywhitelist = list("rainbowkurwa")
 
 /datum/gear/donator/bm/case_ds
 	name = "military case"
