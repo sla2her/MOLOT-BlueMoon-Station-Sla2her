@@ -1,9 +1,9 @@
 /obj/item/clothing/head/helmet/hephaestus
 	name = "helmet"
 	desc = "A helmet made by Hephaestus Industries. Comfy, reliable and, most importantly, fucking stylish! You can also apply a helmet cover for free."
-	icon = 'modular_bluemoon/dementia/icon/obj/clothing/hats.dmi'
-	mob_overlay_icon = 'modular_bluemoon/dementia/icon/mob/clothing/head.dmi'
-	anthro_mob_worn_overlay = 'modular_bluemoon/dementia/icon/mob/clothing/head_muzzled.dmi'
+	icon = 'modular_bluemoon/dementia/icons/obj/clothing/hats.dmi'
+	mob_overlay_icon = 'modular_bluemoon/dementia/icons/mob/clothing/head.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/dementia/icons/mob/clothing/head_muzzled.dmi'
 	icon_state = "helmet"
 	item_state = "helmet"
 	mutantrace_variation = STYLE_MUZZLE
