@@ -47,7 +47,7 @@
 
 /datum/gear/donator/bm/modern_suit
 	name = "Modern Suit"
-	slot = ITEM_SLOT_OCLOTHING
+	slot = ITEM_SLOT_ICLOTHING
 	path = /obj/item/clothing/suit/donator/bm/modern_suit
 	ckeywhitelist = list("rainbowkurwa")
 
