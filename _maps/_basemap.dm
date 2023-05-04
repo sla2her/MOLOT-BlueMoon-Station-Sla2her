@@ -19,6 +19,7 @@
 		#include "splurt_maps\map_files\Smexistation\Snaxi_Splurt.dmm"
 		#include "map_files\BoxedInStation\BoxedInStation.dmm"
 		#include "map_files\RatvarStation\RatvarStation.dmm"
+		#include "map_files\RatvarStation\ArmyStation.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

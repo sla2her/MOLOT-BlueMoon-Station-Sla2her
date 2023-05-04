@@ -3196,18 +3196,6 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/centerhall)
-"qd" = (
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/scrubbers{
-	level = 1
-	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
-	level = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/port_tarkon/atmos)
 "qe" = (
 /obj/effect/mapping_helpers/network_builder/atmos_pipe/distro{
 	level = 1
@@ -10386,7 +10374,7 @@ RF
 RF
 PK
 dC
-qd
+dC
 lp
 lH
 te

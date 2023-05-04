@@ -26,8 +26,11 @@ map metastation
 endmap
 
 map ratvarstation
-	minplayers 25
-	#voteweight 0.5
+	minplayers 120
+endmap
+
+map armystation
+	minplayers 120
 endmap
 
 map pubbystation
