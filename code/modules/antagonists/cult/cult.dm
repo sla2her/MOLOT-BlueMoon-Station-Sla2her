@@ -144,6 +144,7 @@
 	communion.Remove(current)
 	magic.Remove(current)
 	current.clear_alert("bloodsense")
+
 	if(ishuman(current))
 		var/mob/living/carbon/human/H = current
 		var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
@@ -153,6 +154,7 @@
 		H.dna?.update_ui_block(DNA_RIGHT_EYE_COLOR_BLOCK)
 		REMOVE_TRAIT(H, TRAIT_CULT_EYES, "valid_cultist")
 		H.update_body()
+		H.cut_overlay(ANTAG_LAYER)
 		H.cut_overlays()
 		H.regenerate_icons()
 
@@ -248,6 +250,8 @@
 		H.dna?.update_ui_block(DNA_LEFT_EYE_COLOR_BLOCK)
 		H.dna?.update_ui_block(DNA_RIGHT_EYE_COLOR_BLOCK)
 		REMOVE_TRAIT(H, TRAIT_CULT_EYES, "valid_cultist")
+		H.update_body()
+		H.cut_overlay(ANTAG_LAYER)
 		H.cut_overlays()
 		H.regenerate_icons()
 
