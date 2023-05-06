@@ -13,6 +13,7 @@
 	var/list/sac_targetted = list()		//Which targets did living hearts give them, but they did not sac?
 	var/list/actually_sacced = list()	//Which targets did they actually sac?
 	var/ascended = FALSE
+	var/datum/mind/target
 
 /datum/antagonist/heretic/admin_add(datum/mind/new_owner,mob/admin)
 	give_equipment = TRUE
@@ -106,7 +107,6 @@
 		EK.on_death(owner.current)
 
 /datum/antagonist/heretic/proc/forge_primary_objectives()
-	var/datum/mind/target
 	var/datum/objective/protect/protect_objective = new /datum/objective/protect
 	protect_objective.owner = owner
 	protect_objective.target = target
