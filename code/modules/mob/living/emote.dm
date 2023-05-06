@@ -15,12 +15,6 @@
 	message_param = "поднимает руку при виде %t."
 	restraint_check = TRUE
 
-/datum/emote/living/burp
-	key = "burp"
-	key_third_person = "burps"
-	message = "рыгает."
-	emote_type = EMOTE_AUDIBLE
-
 /datum/emote/living/choke
 	key = "choke"
 	key_third_person = "chokes"

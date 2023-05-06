@@ -283,7 +283,14 @@
 	emote_sound = 'modular_splurt/sound/voice/caw.ogg'
 	emote_cooldown = 0.35 SECONDS
 
-/datum/emote/living/burp/run_emote(mob/user, params, type_override, intentional)
+/datum/emote/living/audio/burp
+	key = "burp"
+	key_third_person = "burps"
+	message = "рыгает."
+	emote_type = EMOTE_AUDIBLE
+	emote_cooldown = 10 SECONDS
+
+/datum/emote/living/audio/burp/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
 	var/list/burp_noises = list(
 		'modular_splurt/sound/voice/burps/belch1.ogg','modular_splurt/sound/voice/burps/belch2.ogg','modular_splurt/sound/voice/burps/belch3.ogg','modular_splurt/sound/voice/burps/belch4.ogg',
@@ -300,7 +307,7 @@
 	message = "bleats loudly!"
 	message_mime = "bleats silently!"
 	emote_sound = 'modular_splurt/sound/voice/bleat.ogg'
-	emote_cooldown = 0.7 SECONDS
+	emote_cooldown = 3 SECONDS
 
 /datum/emote/living/carbon/moan/run_emote(mob/user, params, type_override, intentional) //I can't not port this shit, come on.
 	if(user.nextsoundemote >= world.time || user.stat != CONSCIOUS)
