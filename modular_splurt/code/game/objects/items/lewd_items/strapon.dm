@@ -33,6 +33,8 @@
 	icon = 'modular_splurt/icons/obj/strapon.dmi'
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/strapon.dmi'
 	icon_state = "strapon_base"
+	mutantrace_variation = STYLE_DIGITIGRADE | STYLE_NO_ANTHRO_ICON
+	flags_inv = NONE
 	var/dildo_color = "#ff54dd"
 	var/dildo_shape = "human"
 	var/dildo_size = 3
