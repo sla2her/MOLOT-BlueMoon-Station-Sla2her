@@ -110,7 +110,7 @@
 	var/datum/objective/protect/protect_objective = new /datum/objective/protect
 	protect_objective.owner = owner
 	protect_objective.target = target
-	if(!ishuman(target.current))
+	if(!ishuman(owner.current))
 		protect_objective.human_check = FALSE
 	protect_objective.explanation_text = "Защищай [target.name] ценой своей жизни!"
 	objectives += protect_objective
