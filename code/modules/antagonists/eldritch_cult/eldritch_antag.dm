@@ -106,18 +106,14 @@
 		EK.on_death(owner.current)
 
 /datum/antagonist/heretic/proc/forge_primary_objectives()
-	var/list/assasination = list()
-	var/list/protection = list()
-	for(var/i in 1 to 2)
-		var/pck = pick("assasinate")
-		switch(pck)
-			if("assasinate")
-				var/datum/objective/assassinate/once/A = new
-				A.owner = owner
-				var/list/owners = A.get_owners()
-				A.find_target(owners,protection)
-				assasination += A.target
-				objectives += A
+	var/datum/mind/target
+	var/datum/objective/protect/protect_objective = new /datum/objective/protect
+	protect_objective.owner = owner
+	protect_objective.target = target
+	if(!ishuman(target.current))
+		protect_objective.human_check = FALSE
+	protect_objective.explanation_text = "Защищай [target.name] ценой своей жизни!"
+	objectives += protect_objective
 
 	var/datum/objective/sacrifice_ecult/SE = new
 	SE.owner = owner
@@ -256,7 +252,7 @@
 
 /datum/objective/sacrifice_ecult/update_explanation_text()
 	. = ..()
-	target_amount = rand(2,4)
+	target_amount = rand(2,6)
 	explanation_text = "Sacrifice at least [target_amount] people."
 
 /datum/objective/sacrifice_ecult/check_completion()
