@@ -32,7 +32,7 @@
 		/obj/item/reagent_containers/food/snacks/meat/cutlet = 3,
 		/obj/item/reagent_containers/food/snacks/grown/cabbage = 1,
 		/obj/item/reagent_containers/food/snacks/tofu = 1,
-		/datum/reagent/consumable/soysauce = 1,
+		/datum/reagent/consumable/soysauce = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/meat_poke
 	category = CAT_SEAFOOD
@@ -45,7 +45,7 @@
 		/obj/item/reagent_containers/food/snacks/sushi_rice = 1,
 		/obj/item/reagent_containers/food/snacks/carpmeat = 1,
 		/obj/item/reagent_containers/food/snacks/tofu = 1,
-		/datum/reagent/consumable/soysauce = 1,
+		/datum/reagent/consumable/soysauce = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/fish_poke
 	category = CAT_SEAFOOD
@@ -56,7 +56,7 @@
 		/obj/item/reagent_containers/food/snacks/sushi_rice = 1,
 		/obj/item/reagent_containers/food/snacks/carpmeat = 1,
 		/datum/reagent/consumable/soysauce = 2,
-		/datum/reagent/consumable/sugar = 1,
+		/datum/reagent/consumable/sugar = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/sushi_feline
 	category = CAT_SEAFOOD
@@ -67,6 +67,6 @@
 		/datum/reagent/consumable/soysauce = 5,
 		/datum/reagent/consumable/sugar = 2,
 		/obj/item/reagent_containers/food/snacks/sushi_rice = 4,
-		/obj/item/reagent_containers/food/snacks/carpmeat = 2,
+		/obj/item/reagent_containers/food/snacks/carpmeat = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/sushi_feline/nekobara
