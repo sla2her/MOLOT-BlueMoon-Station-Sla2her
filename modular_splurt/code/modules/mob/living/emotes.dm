@@ -792,7 +792,7 @@
 	message = "lets out an <b>earthshaking</b> snore"
 	message_mime = "lets out an <b>inaudible</b> snore!"
 	emote_sound = 'modular_splurt/sound/voice/aauugghh1.ogg'
-	emote_cooldown = 2.1 SECONDS
+	emote_cooldown = 15 SECONDS
 
 /datum/emote/living/audio/snore/snore2/run_emote(mob/user, params)
 	var/datum/dna/D = user.has_dna()
@@ -831,7 +831,7 @@
 	message = "lets out a yippee!"
 	message_mime = "acts out a yippee!"
 	emote_sound = 'modular_splurt/sound/voice/yippee.ogg'
-	emote_cooldown = 1.2 SECONDS
+	emote_cooldown = 4 SECONDS
 
 /datum/emote/living/audio/mewo
 	key = "mewo"
@@ -839,7 +839,7 @@
 	message = "mewos!"
 	message_mime = "mewos silently!"
 	emote_sound = 'modular_splurt/sound/voice/mewo.ogg'
-	emote_cooldown = 0.7 SECONDS
+	emote_cooldown = 4 SECONDS
 
 /datum/emote/living/audio/ara_ara
 	key = "ara"
@@ -847,12 +847,12 @@
 	message = "coos with sultry surprise~..."
 	message_mime = "exudes a sultry aura~"
 	emote_sound = 'modular_splurt/sound/voice/ara-ara.ogg'
-	emote_cooldown = 1.25 SECONDS
+	emote_cooldown = 4 SECONDS
 
 /datum/emote/living/audio/ara_ara/alt
 	key = "ara2"
 	emote_sound = 'modular_splurt/sound/voice/ara-ara2.ogg'
-	emote_cooldown = 1.3 SECONDS
+	emote_cooldown = 4 SECONDS
 
 /datum/emote/living/audio/missouri
 	key = "missouri"
@@ -860,7 +860,7 @@
 	message = "has relocated to Missouri."
 	message_mime = "starts thinking about Missouri."
 	emote_sound = 'modular_splurt/sound/voice/missouri.ogg'
-	emote_cooldown = 3.4 SECONDS
+	emote_cooldown = 5 SECONDS
 
 /datum/emote/living/audio/missouri/run_emote(mob/user, params)
 	// Set message pronouns
@@ -879,7 +879,7 @@
 	emote_sound = 'modular_splurt/sound/effects/slap.ogg'
 	// Defines appendage type for generated message
 	var/metacarpus_type = "palm" // Default to hands
-	emote_cooldown = 0.25 SECONDS
+	emote_cooldown = 1 SECONDS
 
 /datum/emote/living/audio/facemetacarpus/run_emote(mob/user, params)
 	// Randomly pick a message using metacarpus_type for hand
