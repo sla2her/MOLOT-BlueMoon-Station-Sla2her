@@ -80,7 +80,7 @@
 	visible_message("<span class='boldwarning'>[src] shudders and roars to life, its parts beginning to whirr and screech!</span>")
 	priority_announce("Massive [Gibberish("bluespace", 100)] anomaly detected on all frequencies. All crew are directed to \
 	@!$, [text2ratvar("PURGE ALL UNTRUTHS")] <&. the anomalies and destroy their source to prevent further damage to corporate property. This is \
-	not a drill.", "Central Command Higher Dimensional Affairs", 'sound/magic/clockwork/ark_activation_sequence.ogg')
+	not a drill.", "Центральное Командование, Отдел Работы с Реальностью", 'sound/magic/clockwork/ark_activation_sequence.ogg')
 	set_security_level("Delta")
 	for(var/V in SSticker.mode.servants_of_ratvar)
 		var/datum/mind/M = V
@@ -158,7 +158,7 @@
 	var/was_stranded = SSshuttle.emergency.mode == SHUTTLE_STRANDED
 	SSshuttle.clearHostileEnvironment(src)
 	if(!was_stranded && !purpose_fulfilled)
-		priority_announce("Massive energy anomaly no longer on short-range scanners, bluespace distortions still detected.","Central Command Higher Dimensional Affairs")
+		priority_announce("Massive energy anomaly no longer on short-range scanners, bluespace distortions still detected.","Центральное Командование, Отдел Работы с Реальностью")
 	if(glow)
 		qdel(glow)
 		glow = null
