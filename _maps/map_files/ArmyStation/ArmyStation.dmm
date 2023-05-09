@@ -1277,15 +1277,15 @@
 	pixel_y = -3
 	},
 /obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
+	pixel_x = -4;
+	pixel_y = 5
 	},
 /obj/item/storage/firstaid/regular{
 	pixel_x = 3;
-	pixel_y = -3
+	pixel_y = 4
 	},
 /obj/item/storage/firstaid/regular{
-	pixel_x = 3;
+	pixel_x = -4;
 	pixel_y = -3
 	},
 /obj/structure/table/glass,
@@ -2960,6 +2960,10 @@
 	},
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
+"Ah" = (
+/obj/effect/landmark/start/ai,
+/turf/open/floor/engine,
+/area/hilbertshotel)
 "Ap" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -3078,10 +3082,6 @@
 "Bh" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"Bi" = (
-/obj/effect/landmark/start/ai,
-/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Bo" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -3844,6 +3844,7 @@
 /obj/item/stack/medical/suture,
 /obj/item/stack/medical/suture,
 /obj/item/stack/medical/suture,
+/obj/item/storage/firstaid/tactical,
 /turf/open/floor/carpet/cyan,
 /area/hilbertshotel)
 "Hd" = (
@@ -20843,7 +20844,7 @@ SN
 SN
 td
 Zj
-Bi
+Ut
 Ob
 eO
 Ut
@@ -37850,7 +37851,7 @@ WF
 WF
 bF
 xL
-Sc
+Ah
 Sc
 Sc
 Sc
