@@ -28,7 +28,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/wood/dorms{
-	id_tag = "tiloh"
+	id_tag = "tiloh";
+	req_access_txt = "20"
 	},
 /turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
@@ -2492,7 +2493,8 @@
 	},
 /obj/structure/railing/corner,
 /obj/machinery/door/airlock/wood/dorms{
-	id_tag = "tiloh"
+	id_tag = "tiloh";
+	req_access_txt = "20"
 	},
 /turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
@@ -4555,7 +4557,8 @@
 	},
 /obj/structure/railing/corner,
 /obj/machinery/door/airlock/wood/dorms{
-	id_tag = "tihuy"
+	id_tag = "tihuy";
+	req_access_txt = "20"
 	},
 /turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
@@ -5517,7 +5520,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/wood/dorms{
-	id_tag = "tihuy"
+	id_tag = "tihuy";
+	req_access_txt = "20"
 	},
 /turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
