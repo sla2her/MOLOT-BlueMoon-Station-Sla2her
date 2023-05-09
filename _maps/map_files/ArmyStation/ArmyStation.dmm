@@ -315,6 +315,13 @@
 	},
 /turf/open/floor/carpet/black,
 /area/hilbertshotel)
+"dH" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/AIcore/latejoin_inactive,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "dL" = (
 /obj/structure/streetdecor/lamp,
 /obj/effect/turf_decal/weather/dirt{
@@ -2624,6 +2631,10 @@
 	},
 /turf/open/water/decorative,
 /area/hilbertshotel)
+"xb" = (
+/obj/effect/landmark/start/depsec/science,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "xe" = (
 /obj/machinery/telecomms/bus/preset_three,
 /turf/open/floor/wood/wood_tiled,
@@ -3094,6 +3105,13 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"Bs" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "Bt" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/carpet/green,
@@ -3258,6 +3276,10 @@
 /obj/structure/flora/tree/jungle,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"CB" = (
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "CC" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/misc/grass,
@@ -3311,6 +3333,13 @@
 	},
 /obj/structure/mineral_door/silver,
 /turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"Dn" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start/expeditor,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Dr" = (
 /obj/structure/railing,
@@ -3532,6 +3561,10 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"EN" = (
+/obj/effect/landmark/start/depsec/medical,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "EV" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -4078,6 +4111,13 @@
 /area/hilbertshotel)
 "II" = (
 /obj/effect/landmark/start/captain,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"IL" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start/ai/secondary,
 /turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "IQ" = (
@@ -4638,6 +4678,13 @@
 /obj/item/storage/box/syringes,
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
+"NN" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/latejoin,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "NS" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plasteel/cafeteria{
@@ -4953,6 +5000,13 @@
 	req_access_txt = "19"
 	},
 /turf/open/floor/engine,
+/area/hilbertshotel)
+"QV" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start/assistant/override,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "QW" = (
 /obj/structure/rack,
@@ -5767,6 +5821,10 @@
 	},
 /turf/open/floor/carpet/green,
 /area/hilbertshotel)
+"WX" = (
+/obj/effect/landmark/start/depsec/supply,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "Xe" = (
 /obj/structure/rack,
 /obj/item/clothing/under/syndicate/rus_army_alt,
@@ -5814,6 +5872,13 @@
 	dir = 4
 	},
 /turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"XC" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/ert_spawn,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "XH" = (
 /obj/structure/rack,
@@ -5942,6 +6007,10 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_large,
+/area/hilbertshotel)
+"YB" = (
+/obj/effect/landmark/start/depsec/engineering,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "YG" = (
 /obj/structure/rack,
@@ -20847,7 +20916,7 @@ Zj
 Ut
 Ob
 eO
-Ut
+YB
 Hd
 WF
 WF
@@ -21029,7 +21098,7 @@ Zj
 Tr
 Dd
 Zb
-Ut
+EN
 Hd
 WF
 Lh
@@ -21207,11 +21276,11 @@ SN
 (84,1,1) = {"
 SN
 WF
-Zj
+QV
 hQ
 tR
 OP
-Ut
+xb
 Hd
 td
 Xf
@@ -21389,11 +21458,11 @@ SN
 (85,1,1) = {"
 SN
 WF
-Zj
+Dn
 rZ
 Rl
 Qj
-Ut
+WX
 Tw
 rA
 Yf
@@ -21575,7 +21644,7 @@ Zj
 GX
 Gc
 au
-Ut
+CB
 Ut
 hP
 te
@@ -21935,7 +22004,7 @@ SN
 (88,1,1) = {"
 SN
 WF
-Zj
+XC
 zL
 uW
 mX
@@ -22117,7 +22186,7 @@ SN
 (89,1,1) = {"
 SN
 WF
-Zj
+dH
 NE
 dB
 Tr
@@ -22299,7 +22368,7 @@ SN
 (90,1,1) = {"
 SN
 td
-Zj
+NN
 sA
 UF
 ji
@@ -22481,7 +22550,7 @@ SN
 (91,1,1) = {"
 SN
 WF
-Zj
+IL
 Tr
 Wn
 cc
@@ -22663,7 +22732,7 @@ SN
 (92,1,1) = {"
 SN
 WF
-Zj
+Bs
 UC
 Ca
 MX
