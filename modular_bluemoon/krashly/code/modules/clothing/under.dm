@@ -99,7 +99,7 @@
 	icon_state = "inteqmed"
 	item_state = "inteqmed"
 
-	/obj/item/clothing/under/inteq_med_skirt
+/obj/item/clothing/under/inteq_med_skirt
 	name = "white combat skirtleneck"
 	desc = "It sits comfortably, does not hinder movement, and most importantly, it is very stylish. Designed for field medics."
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/under.dmi'

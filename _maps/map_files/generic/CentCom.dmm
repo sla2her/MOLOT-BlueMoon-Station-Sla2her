@@ -7522,7 +7522,7 @@
 	name = "Equipment Room";
 	req_one_access_txt = "150"
 	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "rd" = (
 /obj/machinery/light{
@@ -9031,9 +9031,6 @@
 	},
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/basketball)
-"ud" = (
-/turf/open/floor/iron,
-/area/syndicate_mothership)
 "ue" = (
 /obj/machinery/autolathe/toy,
 /turf/open/indestructible/hotelwood,
@@ -11805,7 +11802,10 @@
 	},
 /area/slavers)
 "Aa" = (
-/turf/open/floor/mech_bay_recharge_floor,
+/obj/item/kirbyplants/hedge{
+	anchored = 1
+	},
+/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "Ab" = (
 /obj/machinery/photocopier,
@@ -12287,7 +12287,8 @@
 /area/slavers)
 "Bl" = (
 /obj/machinery/mech_bay_recharge_port,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "Bm" = (
 /obj/machinery/light{
@@ -14861,12 +14862,6 @@
 	},
 /turf/open/lava/airless,
 /area/wizard_station)
-"GA" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/syndicate_mothership)
 "GC" = (
 /obj/structure/table,
 /obj/structure/bedsheetbin,
@@ -18565,7 +18560,8 @@
 /obj/structure/sign/poster/contraband/inteq/inteq_recruitment{
 	pixel_y = 35
 	},
-/turf/open/floor/iron,
+/obj/structure/mecha_wreckage/ares,
+/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "OT" = (
 /obj/effect/turf_decal/bot,
@@ -19228,7 +19224,8 @@
 /obj/machinery/computer/mech_bay_power_console{
 	dir = 1
 	},
-/turf/open/floor/iron,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "QQ" = (
 /obj/machinery/computer/telecrystals/uplinker,
@@ -40496,7 +40493,7 @@ Do
 QV
 QV
 OS
-ud
+wp
 Bl
 QV
 aa
@@ -40751,10 +40748,10 @@ SO
 SO
 SO
 rc
-ud
-ud
-ud
-Aa
+wp
+wp
+wp
+Sk
 QV
 aa
 aa
@@ -41009,8 +41006,8 @@ SO
 SV
 QV
 jO
-ud
-ud
+wp
+wp
 QP
 QV
 aa
@@ -41266,9 +41263,9 @@ QV
 QV
 QV
 zs
-ud
-GA
-ud
+wp
+yP
+wp
 Pn
 aa
 aa
@@ -41515,7 +41512,7 @@ Rl
 uM
 QV
 wp
-wp
+Aa
 xG
 Xl
 Xl

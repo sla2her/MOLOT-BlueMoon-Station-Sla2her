@@ -3,6 +3,7 @@
 	desc = "A modification of the M4 body armor, it is designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer."
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	icon_state = "officer_armor"
 	item_state = "officer_armor"
 
@@ -11,6 +12,7 @@
 	desc = "White butler jacket."
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	icon_state = "butler"
 	item_state = "butler"
 
@@ -36,6 +38,7 @@
 	desc = "A red overcoat with the coat of arms of Ravenheart in the middle. It has steel plates sewn into it."
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	icon_state = "censor"
 	item_state = "censor"
 
@@ -44,6 +47,7 @@
 	desc = "Lush black outfit with red stripes. Looks definitely very rich."
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	icon_state = "baron"
 	item_state = "baron"
 
@@ -61,17 +65,17 @@
 //InteQ Hardsuits//
 
 //Helmet
-/obj/item/clothing/head/helmet/space/hardsuit/ert/sec/inteq
-    name = "InteQ hardsuit helmet"
-    desc = "InteQ stormtrooper hardsuit helmet."
-    icon_state = "hardsuit0-inteq"
-    item_state = "hardsuit0-inteq"
-    icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
-    mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
-    hardsuit_type = "inteq"
-
+/obj/item/clothing/head/helmet/space/hardsuit/ert/alert/inteq
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	name = "InteQ hardsuit helmet"
+	desc = "InteQ stormtrooper hardsuit helmet."
+	icon_state = "hardsuit0-inteq"
+	item_state = "hardsuit0-inteq"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	hardsuit_type = "inteq"
 //Suit
-/obj/item/clothing/suit/space/hardsuit/ert/sec/inteq
+/obj/item/clothing/suit/space/hardsuit/ert/alert/inteq
 	name = "InteQ hardsuit"
 	desc = "InteQ stormtrooper hardsuit."
 	icon_state = "hardsuit-inteq"
@@ -79,6 +83,6 @@
 	hardsuit_type = "inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
-	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/sec/inteq
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/alert/inteq
 //////////

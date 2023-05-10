@@ -168,7 +168,7 @@
 
 	glasses = /obj/item/clothing/glasses/night/syndicate
 	mask = /obj/item/clothing/mask/gas/sechailer
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/sec/inteq
+	suit = /obj/item/clothing/suit/space/hardsuit/ert/alert/inteq
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi
 	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military/inteq
@@ -183,8 +183,8 @@
 
 	glasses = /obj/item/clothing/glasses/night/syndicate
 	mask = /obj/item/clothing/mask/gas/sechailer
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/sec/inteq
-	head = /obj/item/clothing/head/helmet/space/hardsuit/ert/sec/inteq
+	suit = /obj/item/clothing/suit/space/hardsuit/ert/alert/inteq
+	head = /obj/item/clothing/head/helmet/space/hardsuit/ert/alert/inteq
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military/inteq

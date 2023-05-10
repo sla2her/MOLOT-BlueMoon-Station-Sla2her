@@ -20,6 +20,6 @@
 	new /obj/item/clothing/under/inteq_maid
 
 /obj/machinery/suit_storage_unit/syndicate/inteq
-	suit_type = /obj/item/clothing/suit/space/hardsuit/ert/sec/inteq
+	suit_type = /obj/item/clothing/suit/space/hardsuit/ert/alert/inteq
 	mask_type = /obj/item/clothing/mask/gas/sechailer
 	storage_type = /obj/item/tank/jetpack/oxygen/harness

@@ -59,7 +59,7 @@
 	desc = "A lightweight exosuit, painted in a dark scheme. Its speed and equipment selection make it excellent \
 			for hit-and-run style attacks. Features an incendiary carbine, flash bang launcher, teleporter, ion thrusters and a Tesla energy array. \
 			Repainted in brown SolFed Mecha. They supply them to us clandestinely and almost for next to nothing."
-	item = /obj/vehicle/sealed/mecha/combat/gygax/dark/hermes
+	item = /obj/vehicle/sealed/mecha/combat/gygax/dark/loaded/hermes
 	cost = 80
 
 /datum/uplink_item/support/honker
@@ -74,5 +74,5 @@
 	desc = "A massive and incredibly deadly military-grade exosuit. Features long-range targeting, thrust vectoring \
 			and deployable smoke. Comes equipped with an LMG, Scattershot rifle, missile rack, an antiprojectile armor booster and a Tesla energy array. \
 			Repainted in brown SolFed Mecha. They supply them to us clandestinely and almost for next to nothing."
-	item = /obj/vehicle/sealed/mecha/combat/marauder/mauler/ares
+	item = /obj/vehicle/sealed/mecha/combat/marauder/mauler/loaded/ares
 	cost = 140

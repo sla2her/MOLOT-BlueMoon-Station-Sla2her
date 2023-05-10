@@ -17,7 +17,7 @@
 /datum/uplink_item/inteq/hardsuit
 	name = "Elite InteQ Hardsuit"
 	desc = "The latest InteQ developments in the field of Hardsuits."
-	item = /obj/item/clothing/suit/space/hardsuit/ert/sec/inteq
+	item = /obj/item/clothing/suit/space/hardsuit/ert/alert/inteq
 	cost = 12
 
 /datum/uplink_item/inteq/ak12
