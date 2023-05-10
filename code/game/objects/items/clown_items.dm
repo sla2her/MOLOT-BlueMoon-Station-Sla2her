@@ -43,7 +43,7 @@
 /obj/item/soap/deluxe
 	desc = "A deluxe Waffle Co. brand bar of soap. Smells of high-class luxury."
 	icon_state = "soapdeluxe"
-	cleanspeed = 40 //same speed as mop because deluxe -- captain gets one of these
+	cleanspeed = 40 //same speed as mop because deluxe -- captain gets one of these // Алло, ебланы, у швабр вообще убрали клинспид, они моментальные.
 
 /obj/item/soap/syndie
 	desc = "An untrustworthy bar of soap made of strong chemical agents that dissolve blood faster."
@@ -51,7 +51,7 @@
 	cleanspeed = 10 //much faster than mop so it is useful for traitors who want to clean crime scenes
 
 /obj/item/soap/suicide_act(mob/user)
-	user.say(";FFFFFFFFFFFFFFFFUUUUUUUDGE!!", forced="soap suicide")
+	user.say(";ВВВВВВКККККУУУУУУУСНЯЯЯЯЯЯЯЯЯЯШКАААА!!", forced="soap suicide")
 	user.visible_message("<span class='suicide'>[user] lifts [src] to [user.ru_ego()] mouth and gnaws on it furiously, producing a thick froth! [user.ru_who(TRUE)]'ll never get that BB gun now!</span>")
 	new /obj/effect/particle_effect/foam(loc)
 	return (TOXLOSS)

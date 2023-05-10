@@ -10,8 +10,8 @@
 
 /datum/uplink_item/inteq/clothes_box
 	name = "InteQ Starter Pack"
-	desc = "A box with a full set of clothes and armor from InteQ."
-	item = /obj/item/storage/inteq_box/inteq_clothes
+	desc = "A box with a full set of clothes and armor designed by InteQ."
+	item = /obj/item/storage/box/inteq_box/inteq_clothes
 	cost = 4
 
 /datum/uplink_item/inteq/hardsuit
@@ -24,7 +24,7 @@
 	name = "AK-12 Automatic Assault Rifle"
 	desc = "The stolen blueprints from the NRI helped us a lot to release our small modification for the AK-12. Use it."
 	item = /obj/item/gun/ballistic/automatic/ak12
-	cost = 26
+	cost = 18
 
 /datum/uplink_item/inteq/ak12_mag
 	name = "AK-12 Magazine"
