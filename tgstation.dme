@@ -4193,7 +4193,6 @@
 #include "modular_sand\code\datums\mood_events\generic_negative_events.dm"
 #include "modular_sand\code\datums\mood_events\needs_events.dm"
 #include "modular_sand\code\datums\mutations\combined.dm"
-#include "modular_splurt/code/modules/food_and_drinks/recipes/tablecraft/recipes_seafood.dm"
 #include "modular_sand\code\datums\ruins\lavaland.dm"
 #include "modular_sand\code\datums\status_effects\buffs.dm"
 #include "modular_sand\code\datums\status_effects\debuffs.dm"

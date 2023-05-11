@@ -78,6 +78,7 @@
 
 //Helmet_ELITE
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/inteq
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	name = "InteQ elite hardsuit helmet"
 	desc = "InteQ elite stormtrooper hardsuit helmet."
 	icon_state = "hardsuit0-inteq"
@@ -85,7 +86,6 @@
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
 	hardsuit_type = "inteq"
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 //Suit_ELITE
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/inteq
 	name = "InteQ elite hardsuit"
@@ -95,7 +95,7 @@
 	hardsuit_type = "inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
-	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/inteq
 //////////
 
