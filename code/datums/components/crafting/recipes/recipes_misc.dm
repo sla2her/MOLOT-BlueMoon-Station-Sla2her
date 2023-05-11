@@ -560,6 +560,17 @@
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/sheet/glass = 10)
 	time = 70
+
+/datum/crafting_recipe/mod_core
+	name = "MOD core"
+	result = /obj/item/mod/construction/core
+	tools = list(TOOL_SCREWDRIVER)
+	time = 10 SECONDS
+	reqs = list(/obj/item/stack/cable_coil = 5,
+				/obj/item/stack/rods = 2,
+				/obj/item/stack/sheet/glass = 1,
+				/obj/item/organ/heart = 1
+				)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISCELLANEOUS
 
