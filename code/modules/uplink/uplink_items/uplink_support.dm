@@ -9,7 +9,7 @@
 
 /datum/uplink_item/support/clown_reinforcement
 	name = "Clown Reinforcements"
-	desc = "Call in an additional clown to share the fun, equipped with full starting gear, but no telecrystals."
+	desc = "Call in an additional clown to share the fun, equipped with full starting gear, but no credits."
 	item = /obj/item/antag_spawner/nuke_ops/clown
 	cost = 20
 	purchasable_from = UPLINK_CLOWN_OPS
@@ -17,7 +17,7 @@
 
 /datum/uplink_item/support/reinforcement
 	name = "Reinforcements"
-	desc = "Call in an additional team member. They won't come with any gear, so you'll have to save some telecrystals \
+	desc = "Call in an additional team member. They won't come with any gear, so you'll have to save some credits \
 			to arm them as well."
 	item = /obj/item/antag_spawner/nuke_ops
 	cost = 25

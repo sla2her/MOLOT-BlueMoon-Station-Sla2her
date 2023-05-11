@@ -62,27 +62,86 @@
 	icon_state = "armor"
 	item_state = "armor"
 
+/obj/item/clothing/suit/armor/inteq/vanguard
+	name = "InteQ armored coat"
+	desc = "Lush overcoat with fur around the neck. Has armor plates in its composition."
+	icon_state = "armor_vanguard"
+	item_state = "armor_vanguard"
+
+/obj/item/clothing/suit/armor/inteq/labcoat
+	name = "InteQ armored labcoat"
+	desc = "Sterile (or almost) lab coat of the InteQ department for the modernization of existing technologies."
+	icon_state = "labcoat_inteq"
+	item_state = "labcoat_inteq"
+
 //InteQ Hardsuits//
 
-//Helmet
-/obj/item/clothing/head/helmet/space/hardsuit/ert/alert/inteq
+//Helmet_ELITE
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/inteq
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	name = "InteQ hardsuit helmet"
-	desc = "InteQ stormtrooper hardsuit helmet."
+	name = "InteQ elite hardsuit helmet"
+	desc = "InteQ elite stormtrooper hardsuit helmet."
 	icon_state = "hardsuit0-inteq"
 	item_state = "hardsuit0-inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
 	hardsuit_type = "inteq"
-//Suit
-/obj/item/clothing/suit/space/hardsuit/ert/alert/inteq
-	name = "InteQ hardsuit"
-	desc = "InteQ stormtrooper hardsuit."
-	icon_state = "hardsuit-inteq"
-	item_state = "hardsuit-inteq"
+//Suit_ELITE
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/inteq
+	name = "InteQ elite hardsuit"
+	desc = "InteQ elite stormtrooper hardsuit."
+	icon_state = "hardsuit0-inteq"
+	item_state = "hardsuit0-inteq"
 	hardsuit_type = "inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/alert/inteq
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/inteq
+//////////
+
+//Helmet_STANDART
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	name = "InteQ hardsuit helmet"
+	desc = "InteQ stormtrooper hardsuit helmet."
+	icon_state = "hardsuit0-brown"
+	item_state = "hardsuit0-brown"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	hardsuit_type = "brown"
+//Suit_STANDART
+/obj/item/clothing/suit/space/hardsuit/syndi/inteq
+	name = "InteQ hardsuit"
+	desc = "InteQ stormtrooper hardsuit."
+	icon_state = "hardsuit0-brown"
+	item_state = "hardsuit0-brown"
+	hardsuit_type = "brown"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
+//////////
+
+//Helmet_SHIELDED
+/obj/item/clothing/head/helmet/space/hardsuit/shielded/syndi/inteq
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	name = "InteQ shielded hardsuit helmet"
+	desc = "InteQ shielded stormtrooper hardsuit helmet."
+	icon_state = "hardsuit0-brown"
+	item_state = "hardsuit0-brown"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	hardsuit_type = "brown"
+//Suit_SHIELDED
+/obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq
+	name = "InteQ shielded hardsuit"
+	desc = "InteQ shielded stormtrooper hardsuit."
+	icon_state = "hardsuit0-brown"
+	item_state = "hardsuit0-brown"
+	hardsuit_type = "brown"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/shielded/syndi/inteq
+	shield_state = "shield-yellow"
 //////////

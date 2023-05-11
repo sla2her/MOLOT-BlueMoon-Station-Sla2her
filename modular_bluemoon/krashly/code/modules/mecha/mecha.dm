@@ -10,7 +10,6 @@
 /obj/vehicle/sealed/mecha/combat/marauder/mauler/ares/generate_actions()
 	. = ..()
 	initialize_passenger_action_type(/datum/action/vehicle/sealed/mecha/mech_smoke)
-	initialize_passenger_action_type(/datum/action/vehicle/sealed/mecha/syndicate/mech_zoom)
 
 /obj/structure/mecha_wreckage/ares
 	name = "\improper MIB-02 Ares wreckage"
