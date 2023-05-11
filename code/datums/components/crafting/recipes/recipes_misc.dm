@@ -560,6 +560,8 @@
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/sheet/glass = 10)
 	time = 70
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISCELLANEOUS
 
 /datum/crafting_recipe/mod_core
 	name = "MOD core"
@@ -569,8 +571,8 @@
 	reqs = list(/obj/item/stack/cable_coil = 5,
 				/obj/item/stack/rods = 2,
 				/obj/item/stack/sheet/glass = 1,
-				/obj/item/organ/heart = 1
-				)
+				/obj/item/organ/heart = 1)
+	time = 70
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISCELLANEOUS
 
