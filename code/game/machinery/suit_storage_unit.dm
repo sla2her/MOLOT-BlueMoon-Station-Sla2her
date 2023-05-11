@@ -12,6 +12,7 @@
 	var/obj/item/clothing/head/helmet/space/helmet = null
 	var/obj/item/clothing/mask/mask = null
 	var/obj/item/clothing/shoes/shoes = null
+	var/obj/item/mod/control/mod = null
 	var/obj/item/storage = null
 								// if you add more storage slots, update cook() to clear their radiation too.
 
@@ -23,6 +24,8 @@
 	var/mask_type = null
 	/// What type of SHOES the unit starts with when spawned.
 	var/shoes_type = null
+	/// What type of MOD the unit starts with when spawned.
+	var/mod_type = null
 	/// What type of additional item the unit starts with when spawned.
 	var/storage_type = null
 
@@ -71,6 +74,11 @@
 	mask_type = /obj/item/clothing/mask/gas/glass/alt
 	shoes_type = /obj/item/clothing/shoes/magboots
 
+/obj/machinery/suit_storage_unit/captainmod
+	mask_type = /obj/item/clothing/mask/gas/atmos/captain
+	storage_type = /obj/item/tank/jetpack/oxygen/captain
+	mod_type = /obj/item/mod/control/pre_equipped/magnate
+
 /obj/machinery/suit_storage_unit/industrial/ancient
 	suit_type = /obj/item/clothing/suit/space/hardsuit/ancient
 	mask_type = /obj/item/clothing/mask/gas/glass/alt
@@ -91,15 +99,49 @@
 	mask_type = /obj/item/clothing/mask/gas/glass/alt
 	shoes_type = /obj/item/clothing/shoes/magboots/advance
 
+/obj/machinery/suit_storage_unit/enginemod
+	mask_type = /obj/item/clothing/mask/breath
+	mod_type = /obj/item/mod/control/pre_equipped/engineering
+
+/obj/machinery/suit_storage_unit/atmos
+	suit_type = /obj/item/clothing/suit/space/hardsuit/engine/atmos
+	mask_type = /obj/item/clothing/mask/breath
+	storage_type = /obj/item/watertank/atmos
+
+/obj/machinery/suit_storage_unit/atmosmod
+	mask_type = /obj/item/clothing/mask/breath
+	storage_type = /obj/item/watertank/atmos
+	mod_type = /obj/item/mod/control/pre_equipped/atmospheric
+
+/obj/machinery/suit_storage_unit/cemod
+	mask_type = /obj/item/clothing/mask/breath
+	storage_type = /obj/item/clothing/shoes/magboots/advance
+	mod_type = /obj/item/mod/control/pre_equipped/advanced
+
 /obj/machinery/suit_storage_unit/security
 	suit_type = /obj/item/clothing/suit/space/hardsuit/security
 	mask_type = /obj/item/clothing/mask/gas/sechailer
 	storage_type = /obj/item/tank/jetpack/oxygen/security
 
+/obj/machinery/suit_storage_unit/securitymod
+	mask_type = /obj/item/clothing/mask/gas/sechailer
+	mod_type = /obj/item/mod/control/pre_equipped/security
+
+
 /obj/machinery/suit_storage_unit/hos
 	suit_type = /obj/item/clothing/suit/space/hardsuit/security/hos
 	mask_type = /obj/item/clothing/mask/gas/sechailer
 	storage_type = /obj/item/tank/internals/oxygen
+
+/obj/machinery/suit_storage_unit/atmos
+	suit_type = /obj/item/clothing/suit/space/hardsuit/engine/atmos
+	mask_type = /obj/item/clothing/mask/gas
+	storage_type = /obj/item/watertank/atmos
+
+/obj/machinery/suit_storage_unit/hosmod
+	mask_type = /obj/item/clothing/mask/gas/sechailer
+	storage_type = /obj/item/tank/internals/oxygen
+	mod_type = /obj/item/mod/control/pre_equipped/safeguard
 
 /obj/machinery/suit_storage_unit/mining
 	suit_type = /obj/item/clothing/suit/hooded/explorer/standard
@@ -108,6 +150,16 @@
 /obj/machinery/suit_storage_unit/mining/eva
 	suit_type = /obj/item/clothing/suit/space/hardsuit/mining
 	mask_type = /obj/item/clothing/mask/breath
+
+/obj/machinery/suit_storage_unit/mining/evahos
+	suit_type = null
+	mask_type = /obj/item/clothing/mask/breath
+	mod_type = /obj/item/mod/control/pre_equipped/mining
+
+/obj/machinery/suit_storage_unit/medicalmod
+	mask_type = /obj/item/clothing/mask/breath/medical
+	storage_type = /obj/item/tank/internals/oxygen
+	mod_type = /obj/item/mod/control/pre_equipped/medical
 
 /obj/machinery/suit_storage_unit/cmo
 	suit_type = /obj/item/clothing/suit/space/hardsuit/medical
@@ -119,9 +171,18 @@
 	helmet_type = /obj/item/clothing/head/helmet/space/eva/paramedic
 	mask_type = /obj/item/clothing/mask/breath
 
+/obj/machinery/suit_storage_unit/cmomod
+	mask_type = /obj/item/clothing/mask/breath/medical
+	storage_type = /obj/item/tank/internals/oxygen
+	mod_type = /obj/item/mod/control/pre_equipped/rescue
+
 /obj/machinery/suit_storage_unit/rd
 	suit_type = /obj/item/clothing/suit/space/hardsuit/rd
 	mask_type = /obj/item/clothing/mask/breath
+
+/obj/machinery/suit_storage_unit/rdmod
+	mask_type = /obj/item/clothing/mask/breath
+	mod_type = /obj/item/mod/control/pre_equipped/research
 
 /obj/machinery/suit_storage_unit/syndicate
 	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi
@@ -141,6 +202,11 @@
 	suit_type = /obj/item/clothing/suit/space/syndicate
 	mask_type = /obj/item/clothing/mask/gas/syndicate
 	storage_type = /obj/item/tank/jetpack/oxygen/harness
+
+/obj/machinery/suit_storage_unit/syndicatemod
+	mask_type = /obj/item/clothing/mask/gas/syndicate
+	storage_type = /obj/item/tank/jetpack/oxygen/harness
+	mod_type = /obj/item/mod/control/pre_equipped/nuclear
 
 /obj/machinery/suit_storage_unit/ert/command
 	suit_type = /obj/item/clothing/suit/space/hardsuit/ert
@@ -184,6 +250,8 @@
 		mask = new mask_type(src)
 	if(shoes_type)
 		shoes = new shoes_type(src)
+	if(mod_type)
+		mod = new mod_type(src)
 	if(storage_type)
 		storage = new storage_type(src)
 	update_icon()
@@ -193,6 +261,7 @@
 	QDEL_NULL(helmet)
 	QDEL_NULL(mask)
 	QDEL_NULL(shoes)
+	QDEL_NULL(mod)
 	QDEL_NULL(storage)
 	return ..()
 
@@ -241,6 +310,7 @@
 	suit = null
 	mask = null
 	shoes = null
+	mod = null
 	storage = null
 	occupant = null
 
@@ -256,11 +326,11 @@
 
 	if (!items)
 		items = list(
-			"suit" = create_silhouette_of(/obj/item/clothing/suit/space),
-			"helmet" = create_silhouette_of(/obj/item/clothing/head/helmet/space),
-			"mask" = create_silhouette_of(/obj/item/clothing/mask/gas),
-			"shoes" = create_silhouette_of(/obj/item/clothing/shoes/jackboots),
-			"storage" = create_silhouette_of(/obj/item/tank/internals/oxygen),
+			"suit" = create_silhouette_of(/obj/item/clothing/suit/space/eva),
+			"helmet" = create_silhouette_of(/obj/item/clothing/head/helmet/space/eva),
+			"mask" = create_silhouette_of(/obj/item/clothing/mask/breath),
+			"shoes" = create_silhouette_of(/obj/item/clothing/shoes/magboots),
+			"mod" = create_silhouette_of(/obj/item/mod),
 		)
 
 	. = ..()
@@ -416,16 +486,20 @@
 		uv = FALSE
 		locked = FALSE
 		if(uv_super)
-			visible_message(span_warning("[src]'s door creaks open with a loud whining noise. A cloud of foul black smoke escapes from its chamber."))
-			playsound(src, 'sound/machines/airlock_alien_prying.ogg', 50, TRUE)
-			var/datum/effect_system/smoke_spread/bad/smoke = new
-			smoke.set_up(4, src)
-			smoke.start()
-			QDEL_NULL(helmet)
-			QDEL_NULL(suit)
-			QDEL_NULL(mask)
-			QDEL_NULL(shoes)
-			QDEL_NULL(storage)
+			visible_message("<span class='warning'>[src]'s door creaks open with a loud whining noise. A cloud of foul black smoke escapes from its chamber.</span>")
+			playsound(src, 'sound/machines/airlock_alien_prying.ogg', 50, 1)
+			helmet = null
+			qdel(helmet)
+			suit = null
+			qdel(suit) // Delete everything but the occupant.
+			mask = null
+			qdel(mask)
+			shoes = null
+			qdel(shoes)
+			mod = null
+			qdel(mod)
+			storage = null
+			qdel(storage)
 			// The wires get damaged too.
 			wires.cut_all()
 		else
@@ -448,6 +522,9 @@
 			if(shoes)
 				things_to_clear += shoes
 				things_to_clear += shoes.GetAllContents()
+			if(mod)
+				things_to_clear += mod
+				things_to_clear += mod.GetAllContents()
 			if(storage)
 				things_to_clear += storage
 				things_to_clear += storage.GetAllContents()
@@ -464,6 +541,20 @@
 		open_machine(FALSE)
 		if(occupant)
 			dump_contents()
+
+/obj/machinery/suit_storage_unit/process(delta_time)
+	var/obj/item/stock_parts/cell/cell
+	if(mod)
+		if(!istype(mod))
+			return
+		if(!mod.cell)
+			return
+		cell = mod.cell
+	else
+		return
+
+	use_power(charge_rate * delta_time)
+	cell.give(charge_rate * delta_time)
 
 /obj/machinery/suit_storage_unit/proc/shock(mob/user, prb)
 	if(!prob(prb))
@@ -545,6 +636,13 @@
 			if(!user.transferItemToLoc(I, src))
 				return
 			shoes = I
+		else if(istype(I, /obj/item/mod/control))
+			if(mod)
+				to_chat(user, span_warning("The unit already contains a MOD!"))
+				return
+			if(!user.transferItemToLoc(I, src))
+				return
+			mod = I
 		else
 			if(storage)
 				to_chat(user, span_warning("The auxiliary storage compartment is full!"))
@@ -579,6 +677,94 @@
 		return TRUE
 	return ..()
 
+/obj/machinery/suit_storage_unit/ui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "SuitStorageUnit", name)
+		ui.open()
+
+/obj/machinery/suit_storage_unit/ui_data()
+	var/list/data = list()
+	data["locked"] = locked
+	data["open"] = state_open
+	data["safeties"] = safeties
+	data["uv_active"] = uv
+	data["uv_super"] = uv_super
+	if(helmet)
+		data["helmet"] = helmet.name
+	else
+		data["helmet"] = null
+	if(suit)
+		data["suit"] = suit.name
+	else
+		data["suit"] = null
+	if(mask)
+		data["mask"] = mask.name
+	else
+		data["mask"] = null
+	if(shoes)
+		data["shoes"] = shoes.name
+	else
+		data["shoes"] = null
+	if(mod)
+		data["mod"] = mod.name
+	else
+		data["mod"] = null
+	if(storage)
+		data["storage"] = storage.name
+	else
+		data["storage"] = null
+	if(occupant)
+		data["occupied"] = TRUE
+	else
+		data["occupied"] = FALSE
+	return data
+
+/obj/machinery/suit_storage_unit/ui_act(action, params)
+	if(..() || uv)
+		return
+	switch(action)
+		if("door")
+			if(state_open)
+				close_machine()
+			else
+				open_machine(0)
+				if(occupant)
+					dump_contents() // Dump out contents if someone is in there.
+			. = TRUE
+		if("lock")
+			if(state_open)
+				return
+			locked = !locked
+			. = TRUE
+		if("uv")
+			if(occupant && safeties)
+				return
+			else if(!helmet && !mask && !mod && !suit && !storage && !occupant)
+				return
+			else
+				if(occupant)
+					var/mob/living/mob_occupant = occupant
+					to_chat(mob_occupant, "<span class='userdanger'>[src]'s confines grow warm, then hot, then scorching. You're being burned [!mob_occupant.stat ? "alive" : "away"]!</span>")
+				cook()
+				. = TRUE
+		if("dispense")
+			if(!state_open)
+				return
+
+			var/static/list/valid_items = list("helmet", "suit", "mask", "shoes", "mod", "storage")
+			var/item_name = params["item"]
+			if(item_name in valid_items)
+				var/obj/item/I = vars[item_name]
+				vars[item_name] = null
+				if(I)
+					var/mob/living/living_person = usr
+					if(!istype(living_person))
+						return
+					if(!istype(living_person) || !Adjacent(living_person) || !living_person.put_in_active_hand(I))
+						I.forceMove(loc)
+			. = TRUE
+	update_icon()
 
 /obj/machinery/suit_storage_unit/default_pry_open(obj/item/I)//needs to check if the storage is locked.
 	. = !(state_open || panel_open || is_operational() || locked || (flags_1 & NODECONSTRUCT_1)) && I.tool_behaviour == TOOL_CROWBAR

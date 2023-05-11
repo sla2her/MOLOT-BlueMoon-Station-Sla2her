@@ -18,7 +18,7 @@
 /obj/machinery/vr_sleeper{
 	dir = 4
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "ao" = (
 /obj/structure/railing/corner{
@@ -27,15 +27,19 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/obj/machinery/door/airlock/wood/dorms{
+	id_tag = "tiloh";
+	req_access_txt = "20"
+	},
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "as" = (
 /obj/effect/turf_decal/bot,
 /turf/open/floor/carpet/red,
 /area/hilbertshotel)
-"at" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/dirt,
+"au" = (
+/obj/effect/landmark/start/medical_doctor,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "aI" = (
 /obj/machinery/light{
@@ -45,13 +49,13 @@
 /area/hilbertshotel)
 "aR" = (
 /obj/structure/weightmachine/stacklifter,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "aZ" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "ba" = (
 /obj/machinery/light{
@@ -73,7 +77,7 @@
 /area/hilbertshotel)
 "bl" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "bm" = (
 /obj/structure/chair/comfy/black{
@@ -130,12 +134,22 @@
 /area/hilbertshotel)
 "bD" = (
 /obj/item/grown/log/tree,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "bF" = (
 /obj/structure/flora/tree/jungle,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"bL" = (
+/obj/machinery/telecomms/receiver/preset_left,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"bM" = (
+/obj/machinery/telecomms/broadcaster/preset_right,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "bP" = (
 /obj/structure/rack,
@@ -159,6 +173,10 @@
 	icon_state = "wood-broken2"
 	},
 /area/hilbertshotel)
+"cc" = (
+/obj/effect/landmark/start/nukeop_leader,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "cl" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/loot_pile/maint,
@@ -171,17 +189,17 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "cu" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
-"cB" = (
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/water/jungle,
+"cD" = (
+/obj/machinery/telecomms/processor/preset_one,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "cE" = (
 /obj/structure/table/reinforced,
@@ -227,7 +245,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "dk" = (
 /obj/structure/rack,
@@ -260,7 +278,7 @@
 /obj/structure/chair/pew/left{
 	dir = null
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "du" = (
 /obj/machinery/door/airlock{
@@ -271,7 +289,7 @@
 /area/hilbertshotel)
 "dv" = (
 /obj/effect/festive/street/streetlinenw,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "dz" = (
 /obj/item/reagent_containers/food/drinks/beer,
@@ -279,6 +297,10 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
+/area/hilbertshotel)
+"dB" = (
+/obj/effect/landmark/start/chief_medical_officer,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "dC" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -293,6 +315,13 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
+/area/hilbertshotel)
+"dH" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/AIcore/latejoin_inactive,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "dL" = (
 /obj/structure/streetdecor/lamp,
@@ -355,7 +384,15 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/water/decorative,
+/area/hilbertshotel)
+"el" = (
+/obj/machinery/door/airlock/security/glass{
+	id_tag = "outerbrig";
+	name = "Brig";
+	req_access_txt = "63"
+	},
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "eq" = (
 /obj/structure/chair/office{
@@ -370,7 +407,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "eu" = (
 /obj/structure/streetdecor/lamp,
@@ -397,7 +434,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "eL" = (
 /obj/structure/table/glass,
@@ -437,6 +474,10 @@
 /obj/item/storage/box/lights/mixed,
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
+"eO" = (
+/obj/effect/landmark/start/head_of_security,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "eV" = (
 /obj/item/storage/box/mre/menu4,
 /turf/open/floor/wood{
@@ -450,7 +491,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "fa" = (
 /obj/machinery/vending/engivend,
@@ -461,6 +502,10 @@
 /obj/structure/flora/rock/pile,
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"ff" = (
+/obj/effect/landmark/start/warden,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "fg" = (
 /obj/structure/closet/crate/bin{
@@ -482,10 +527,18 @@
 	dir = 5
 	},
 /area/hilbertshotel)
+"fo" = (
+/obj/structure/bed,
+/turf/open/floor/padded,
+/area/hilbertshotel)
 "fv" = (
 /obj/machinery/door/airlock/wood/dorms{
 	id_tag = "awoo1"
 	},
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"fy" = (
+/obj/machinery/telecomms/receiver/preset_right,
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "fA" = (
@@ -507,11 +560,13 @@
 /obj/item/restraints/legcuffs/beartrap{
 	armed = 1
 	},
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "fQ" = (
 /obj/structure/mineral_door/silver,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "fR" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -542,7 +597,9 @@
 /area/hilbertshotel)
 "gc" = (
 /obj/item/storage/box/mre/menu2,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "gg" = (
 /obj/structure/table/wood/fancy,
@@ -557,7 +614,13 @@
 /obj/item/restraints/legcuffs/beartrap{
 	armed = 1
 	},
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
+/area/hilbertshotel)
+"gs" = (
+/obj/effect/landmark/start/peacekeeper,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "gu" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -622,11 +685,11 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "hk" = (
 /obj/structure/railing,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "hl" = (
 /obj/structure/rack,
@@ -646,7 +709,11 @@
 /area/hilbertshotel)
 "hm" = (
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"hr" = (
+/obj/machinery/telecomms/broadcaster/preset_left,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "ht" = (
 /obj/structure/bed,
@@ -669,6 +736,29 @@
 	icon_state = "wood-broken2"
 	},
 /area/hilbertshotel)
+"hF" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
 "hG" = (
 /obj/machinery/light,
 /turf/open/floor/iron/dark,
@@ -677,7 +767,11 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"hQ" = (
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "hV" = (
 /obj/structure/railing,
@@ -687,7 +781,7 @@
 /obj/structure/chair/pew/left{
 	dir = 1
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "hX" = (
 /obj/structure/rack,
@@ -698,7 +792,7 @@
 /turf/open/floor/engine,
 /area/hilbertshotel)
 "hZ" = (
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "ia" = (
 /obj/structure/window/reinforced{
@@ -708,7 +802,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "if" = (
 /obj/item/restraints/legcuffs/beartrap{
@@ -726,7 +820,7 @@
 	dir = 1
 	},
 /obj/item/pda,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "im" = (
 /obj/item/reagent_containers/food/drinks/beer,
@@ -778,7 +872,7 @@
 /area/hilbertshotel)
 "iA" = (
 /obj/item/pda,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "iB" = (
 /obj/structure/table/wood,
@@ -793,7 +887,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "iH" = (
 /obj/machinery/computer/card{
@@ -811,7 +905,7 @@
 /area/hilbertshotel)
 "iP" = (
 /obj/effect/turf_decal/bot,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "iS" = (
 /obj/structure/rack,
@@ -846,11 +940,9 @@
 /obj/item/storage/box/beakers,
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
-"jk" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/water/jungle,
+"ji" = (
+/obj/effect/landmark/start/nukeop,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "jl" = (
 /obj/machinery/light{
@@ -865,6 +957,10 @@
 	light_color = "#e8eaff"
 	},
 /turf/open/floor/carpet/red,
+/area/hilbertshotel)
+"jx" = (
+/obj/effect/landmark/start/station_engineer,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "jD" = (
 /obj/structure/table,
@@ -895,7 +991,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "jQ" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -912,11 +1008,11 @@
 	dir = 4;
 	light_color = "#e8eaff"
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "jT" = (
 /obj/machinery/biogenerator,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "ka" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -927,6 +1023,10 @@
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"kf" = (
+/obj/effect/landmark/start/slaver_leader,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "kk" = (
 /obj/structure/flora/tree/jungle,
@@ -958,7 +1058,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "kv" = (
 /obj/structure/closet,
@@ -975,7 +1075,7 @@
 	dir = 4
 	},
 /obj/structure/chair/pew/right,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "kz" = (
 /obj/machinery/light{
@@ -995,7 +1095,7 @@
 /area/hilbertshotel)
 "kD" = (
 /obj/machinery/seed_extractor,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "kH" = (
 /obj/structure/chair/comfy{
@@ -1021,7 +1121,7 @@
 	dir = 1
 	},
 /obj/structure/chair/pew,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "kP" = (
 /obj/structure/railing{
@@ -1030,7 +1130,7 @@
 /obj/structure/chair/pew{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "kX" = (
 /obj/structure/flora/grass/jungle,
@@ -1042,7 +1142,7 @@
 "lb" = (
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "lk" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -1079,6 +1179,7 @@
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
+/obj/item/storage/belt/military/army,
 /turf/open/floor/engine,
 /area/hilbertshotel)
 "lE" = (
@@ -1101,16 +1202,18 @@
 "lH" = (
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "lI" = (
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/tree/spookylog,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"lK" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/dirt/dark,
+"lN" = (
+/obj/effect/landmark/start/research_director,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "lR" = (
 /obj/structure/bed,
@@ -1182,25 +1285,29 @@
 	pixel_y = -3
 	},
 /obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
+	pixel_x = -4;
+	pixel_y = 5
 	},
 /obj/item/storage/firstaid/regular{
 	pixel_x = 3;
-	pixel_y = -3
+	pixel_y = 4
 	},
 /obj/item/storage/firstaid/regular{
-	pixel_x = 3;
+	pixel_x = -4;
 	pixel_y = -3
 	},
 /obj/structure/table/glass,
 /turf/open/floor/carpet/cyan,
 /area/hilbertshotel)
+"mm" = (
+/obj/machinery/telecomms/server/presets/medical,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
 "mo" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "mq" = (
 /obj/structure/railing{
@@ -1224,11 +1331,13 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"mN" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
+"mM" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
 	},
-/turf/open/water/jungle,
+/obj/machinery/vending/boozeomat,
+/turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
 "mO" = (
 /obj/item/storage/box/mre/menu3,
@@ -1243,7 +1352,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "mR" = (
 /obj/structure/chair/comfy/black{
@@ -1268,7 +1377,15 @@
 	},
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /mob/living/simple_animal/hostile/faithless,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"mX" = (
+/obj/effect/landmark/start/ntr,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"na" = (
+/obj/effect/landmark/start/virologist,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "nc" = (
 /obj/item/reagent_containers/food/drinks/beer,
@@ -1283,16 +1400,18 @@
 /area/hilbertshotel)
 "ng" = (
 /obj/effect/festive/street/streetlinesouth,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "ni" = (
 /obj/structure/flora/tree/jungle,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "nq" = (
 /obj/structure/streetdecor/lamp,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "nw" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -1365,6 +1484,10 @@
 /obj/item/restraints/handcuffs,
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
+"nI" = (
+/obj/structure/table,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
 "nJ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -1414,7 +1537,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "oi" = (
 /obj/structure/railing,
@@ -1424,7 +1547,7 @@
 /obj/structure/chair/pew/right{
 	dir = 1
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "on" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -1445,7 +1568,7 @@
 /turf/open/misc/grass,
 /area/hilbertshotel)
 "ot" = (
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "ou" = (
 /obj/item/kitchen/knife/combat,
@@ -1494,7 +1617,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "oO" = (
 /mob/living/simple_animal/hostile/faithless,
@@ -1508,7 +1631,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "oQ" = (
 /obj/structure/table,
@@ -1519,10 +1642,6 @@
 /turf/open/floor/plasteel/cafeteria{
 	dir = 5
 	},
-/area/hilbertshotel)
-"oR" = (
-/obj/structure/mineral_door/wood,
-/turf/open/space/basic,
 /area/hilbertshotel)
 "oS" = (
 /obj/structure/rack,
@@ -1537,14 +1656,14 @@
 	dir = 8
 	},
 /obj/item/pda,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "pf" = (
 /obj/structure/sink{
 	dir = 4;
 	pixel_x = 11
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "ph" = (
 /obj/machinery/computer/crew{
@@ -1557,6 +1676,24 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
+/area/hilbertshotel)
+"pl" = (
+/obj/machinery/computer/card{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	id = "tihuy";
+	name = "Lock Control";
+	normaldoorcontrol = 1;
+	pixel_x = -25;
+	specialfunctions = 4;
+	req_access_txt = "3"
+	},
+/turf/open/floor/iron/dark,
+/area/hilbertshotel)
+"po" = (
+/obj/effect/landmark/start/slaver,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "pp" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -1658,6 +1795,10 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"qe" = (
+/obj/machinery/telecomms/server/presets/supply,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
 "ql" = (
 /obj/structure/table/wood/fancy,
 /turf/open/floor/wood/wood_tiled,
@@ -1679,14 +1820,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
-/area/hilbertshotel)
-"qA" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/obj/item/restraints/legcuffs/beartrap{
-	armed = 1
-	},
-/turf/open/floor/plating/dirt,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "qD" = (
 /obj/structure/railing{
@@ -1698,7 +1832,7 @@
 /obj/structure/chair/pew/right{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "qF" = (
 /obj/structure/rack,
@@ -1759,6 +1893,10 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"rc" = (
+/obj/machinery/telecomms/server/presets/science,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
 "rd" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/item/gun/ballistic/automatic/pistol/enforcer,
@@ -1784,7 +1922,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "rh" = (
 /obj/machinery/seed_extractor,
@@ -1801,7 +1939,7 @@
 "rl" = (
 /obj/structure/streetdecor/lamp,
 /obj/item/storage/box/mre/menu1,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "rq" = (
 /obj/machinery/light{
@@ -1837,7 +1975,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "rK" = (
 /obj/structure/closet/crate/bin{
@@ -1858,7 +1996,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "rN" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -1883,6 +2021,10 @@
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
+"rZ" = (
+/obj/effect/landmark/start/atmospheric_technician,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "sg" = (
 /obj/machinery/light{
 	dir = 4
@@ -1906,6 +2048,10 @@
 /obj/item/restraints/handcuffs,
 /obj/item/restraints/handcuffs,
 /turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"sA" = (
+/obj/effect/landmark/start/bridgeofficer,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "sK" = (
 /obj/structure/flora/tree/jungle/small,
@@ -1944,7 +2090,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "tf" = (
 /obj/structure/table,
@@ -1997,7 +2143,7 @@
 "tm" = (
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/pda,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "tn" = (
 /obj/machinery/light{
@@ -2043,9 +2189,16 @@
 /obj/structure/table/wood/fancy,
 /turf/open/floor/carpet/red,
 /area/hilbertshotel)
+"tF" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "tK" = (
 /obj/structure/streetdecor/lamp,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "tL" = (
 /obj/structure/railing/corner,
@@ -2053,7 +2206,7 @@
 	dir = 4
 	},
 /obj/structure/mineral_door/silver,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "tM" = (
 /obj/machinery/light{
@@ -2071,6 +2224,10 @@
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/effect/turf_decal/box,
 /turf/open/floor/wood/wood_large,
+/area/hilbertshotel)
+"tR" = (
+/obj/effect/landmark/start/detective,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "tT" = (
 /obj/structure/sink{
@@ -2163,7 +2320,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "uw" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -2185,6 +2342,45 @@
 "uz" = (
 /obj/structure/bonfire/dense,
 /turf/open/floor/wood,
+/area/hilbertshotel)
+"uA" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "uC" = (
 /obj/structure/toilet/secret/low_loot{
@@ -2213,6 +2409,14 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
+/area/hilbertshotel)
+"uT" = (
+/obj/effect/landmark/start/mime,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"uW" = (
+/obj/effect/landmark/start/clown,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "va" = (
 /obj/machinery/door/airlock/command{
@@ -2253,13 +2457,15 @@
 /area/hilbertshotel)
 "vm" = (
 /obj/machinery/vr_sleeper,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "vn" = (
 /turf/open/floor/iron/rockvault/sandstone,
 /area/hilbertshotel)
 "vo" = (
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "vp" = (
 /obj/structure/rack,
@@ -2286,7 +2492,11 @@
 	dir = 4
 	},
 /obj/structure/railing/corner,
-/turf/open/floor/festive/alleyway,
+/obj/machinery/door/airlock/wood/dorms{
+	id_tag = "tiloh";
+	req_access_txt = "20"
+	},
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "vA" = (
 /obj/structure/flora/tree/jungle,
@@ -2295,6 +2505,10 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"vC" = (
+/obj/machinery/telecomms/server/presets/command,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "vE" = (
 /obj/structure/chair/comfy,
@@ -2322,7 +2536,7 @@
 "vY" = (
 /mob/living/simple_animal/hostile/faithless,
 /obj/item/storage/box/mre/menu1,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "vZ" = (
 /obj/structure/railing{
@@ -2331,7 +2545,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "wh" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -2356,13 +2570,15 @@
 /area/hilbertshotel)
 "ww" = (
 /obj/structure/flora/tree/jungle,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "wx" = (
 /obj/structure/railing/corner{
 	dir = 1
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "wy" = (
 /obj/structure/sink{
@@ -2396,13 +2612,17 @@
 /area/hilbertshotel)
 "wM" = (
 /obj/structure/weightmachine/weightlifter,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "wN" = (
 /obj/item/restraints/legcuffs/beartrap{
 	armed = 1
 	},
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"wP" = (
+/obj/machinery/telecomms/message_server,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "wZ" = (
 /turf/open/misc/grass,
@@ -2411,13 +2631,15 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
-"xd" = (
-/obj/structure/flora/tree/jungle,
-/obj/structure/flora/ausbushes/fullgrass,
-/obj/item/pda,
-/turf/open/misc/grass,
+"xb" = (
+/obj/effect/landmark/start/depsec/science,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"xe" = (
+/obj/machinery/telecomms/bus/preset_three,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "xf" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -2439,7 +2661,7 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "xo" = (
 /obj/machinery/vending/tool,
@@ -2465,7 +2687,7 @@
 	dir = 1
 	},
 /obj/structure/chair/pew/right,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "xt" = (
 /obj/structure/mineral_door/wood,
@@ -2479,7 +2701,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "xv" = (
 /obj/machinery/hydroponics/soil,
@@ -2502,7 +2724,7 @@
 /area/hilbertshotel)
 "xz" = (
 /mob/living/simple_animal/hostile/faithless,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "xC" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -2537,7 +2759,7 @@
 /area/hilbertshotel)
 "xW" = (
 /obj/machinery/deepfryer,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "xX" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -2549,9 +2771,6 @@
 /obj/structure/flora/tree/jungle,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"ye" = (
-/turf/open/water/jungle,
 /area/hilbertshotel)
 "yf" = (
 /obj/structure/flora/tree/jungle,
@@ -2575,7 +2794,7 @@
 /obj/structure/chair/pew/right{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "yn" = (
 /turf/open/floor/plasteel/cafeteria{
@@ -2589,19 +2808,33 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "yq" = (
 /obj/effect/festive/street/streetlinenorth,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"yt" = (
+/obj/structure/rack,
+/obj/item/clothing/under/rank/prisoner,
+/obj/item/clothing/under/rank/prisoner,
+/obj/item/clothing/under/rank/prisoner,
+/obj/item/clothing/under/rank/prisoner,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "yB" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "yK" = (
 /obj/machinery/vending/coffee,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "yL" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -2617,7 +2850,7 @@
 	dir = 4;
 	layer = 2.9
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "yV" = (
 /obj/machinery/light{
@@ -2632,7 +2865,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "zc" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -2665,6 +2898,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"zx" = (
+/obj/effect/landmark/start/quartermaster,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "zB" = (
 /obj/item/clothing/head/welding,
 /obj/item/clothing/head/welding,
@@ -2689,10 +2926,20 @@
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
+/obj/item/storage/belt/military/army,
 /turf/open/floor/engine,
 /area/hilbertshotel)
 "zD" = (
 /turf/open/floor/iron/grimy,
+/area/hilbertshotel)
+"zG" = (
+/turf/open/floor/festive/white_alleyway{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
+/area/hilbertshotel)
+"zL" = (
+/obj/effect/landmark/start/blueshield,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "zR" = (
 /obj/structure/mineral_door/wood,
@@ -2702,7 +2949,7 @@
 /area/hilbertshotel)
 "zS" = (
 /obj/effect/festive/street/streetlinese,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "zZ" = (
 /obj/structure/flora/tree/spookylog,
@@ -2726,13 +2973,17 @@
 	},
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
+"Ah" = (
+/obj/effect/landmark/start/ai,
+/turf/open/floor/engine,
+/area/hilbertshotel)
 "Ap" = (
 /obj/structure/table,
 /obj/machinery/microwave{
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Av" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -2785,7 +3036,7 @@
 	dir = 8
 	},
 /obj/structure/mineral_door/wood,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "AN" = (
 /obj/item/storage/box/mre/menu2,
@@ -2811,7 +3062,7 @@
 "AS" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "AX" = (
 /obj/structure/flora/tree/jungle,
@@ -2828,7 +3079,7 @@
 /obj/structure/chair/pew/right{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Bb" = (
 /obj/machinery/vending/engivend,
@@ -2839,7 +3090,7 @@
 /area/hilbertshotel)
 "Be" = (
 /obj/structure/closet,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Bh" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -2849,12 +3100,19 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "Br" = (
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"Bs" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Bt" = (
 /obj/structure/mineral_door/wood,
@@ -2877,7 +3135,11 @@
 /obj/item/restraints/legcuffs/beartrap{
 	armed = 1
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"BH" = (
+/obj/machinery/ntnet_relay,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "BK" = (
 /obj/structure/chair/comfy{
@@ -2924,14 +3186,18 @@
 /area/hilbertshotel)
 "BU" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"Ca" = (
+/obj/effect/landmark/start/chaplain,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Cb" = (
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Ce" = (
 /obj/structure/flora/tree/jungle,
@@ -2948,7 +3214,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "Ci" = (
 /obj/structure/flora/tree/jungle/small,
@@ -2978,6 +3244,10 @@
 /obj/structure/table/glass,
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
+"Cp" = (
+/obj/machinery/telecomms/hub/preset,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
 "Cq" = (
 /obj/structure/flora/tree/jungle,
 /turf/closed/wall,
@@ -2987,6 +3257,10 @@
 /obj/item/cultivator,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"Ct" = (
+/obj/structure/bed,
+/turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
 "Cv" = (
 /obj/structure/table,
@@ -3004,6 +3278,10 @@
 /obj/structure/flora/tree/jungle,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"CB" = (
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "CC" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/misc/grass,
@@ -3012,12 +3290,6 @@
 /obj/structure/table/wood/fancy,
 /obj/machinery/recharger,
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
-"CN" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/water/jungle,
 /area/hilbertshotel)
 "CR" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -3031,7 +3303,7 @@
 /obj/structure/closet/crate/bin{
 	pixel_y = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "CU" = (
 /obj/structure/streetdecor/lamp,
@@ -3050,6 +3322,10 @@
 	icon_state = "wood-broken2"
 	},
 /area/hilbertshotel)
+"Dd" = (
+/obj/effect/landmark/start/geneticist,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "Dj" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -3058,14 +3334,21 @@
 	dir = 1
 	},
 /obj/structure/mineral_door/silver,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"Dn" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start/expeditor,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Dr" = (
 /obj/structure/railing,
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Ds" = (
 /obj/structure/table/reinforced,
@@ -3076,7 +3359,7 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Dw" = (
 /obj/structure/flora/grass/jungle,
@@ -3106,7 +3389,7 @@
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "DM" = (
 /obj/structure/table,
@@ -3143,6 +3426,10 @@
 /obj/structure/streetdecor/lamp,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"DW" = (
+/obj/machinery/vending/kink,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "DX" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood{
@@ -3161,7 +3448,7 @@
 /obj/structure/chair/pew/left{
 	dir = null
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Eb" = (
 /obj/structure/reagent_dispensers/watertank/high,
@@ -3175,7 +3462,7 @@
 "Ed" = (
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Eg" = (
 /obj/structure/flora/tree/jungle,
@@ -3225,6 +3512,10 @@
 /obj/item/target,
 /turf/open/indestructible/cobble,
 /area/hilbertshotel)
+"EA" = (
+/obj/effect/landmark/xeno_spawn,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "EC" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -3273,6 +3564,10 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"EN" = (
+/obj/effect/landmark/start/depsec/medical,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "EV" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -3301,6 +3596,41 @@
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 3
 	},
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/plasteel/cafeteria{
 	dir = 5
 	},
@@ -3361,7 +3691,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "FC" = (
 /obj/structure/streetdecor/lamp,
@@ -3383,6 +3713,10 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"FP" = (
+/obj/machinery/telecomms/server/presets/engineering,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
 "FR" = (
 /obj/structure/closet/secure_closet/freezer/meat,
 /turf/open/floor/plasteel/cafeteria{
@@ -3391,7 +3725,7 @@
 /area/hilbertshotel)
 "FS" = (
 /obj/effect/festive/street/streetlinene,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "FT" = (
 /obj/structure/table,
@@ -3405,11 +3739,15 @@
 /area/hilbertshotel)
 "FV" = (
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Gb" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"Gc" = (
+/obj/effect/landmark/start/cyborg,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Gd" = (
 /obj/structure/chair/comfy{
@@ -3473,7 +3811,7 @@
 /area/hilbertshotel)
 "GE" = (
 /obj/item/grown/log/tree,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "GJ" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -3482,7 +3820,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "GK" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -3491,7 +3829,11 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
+/area/hilbertshotel)
+"GL" = (
+/obj/item/gun/ballistic/automatic/l6_saw/unrestricted,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "GN" = (
 /obj/structure/table/wood/fancy,
@@ -3500,7 +3842,7 @@
 "GO" = (
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /obj/item/storage/box/mre/menu1,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "GQ" = (
 /obj/structure/rack,
@@ -3518,7 +3860,15 @@
 /area/hilbertshotel)
 "GT" = (
 /obj/machinery/vending/snack/random,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"GX" = (
+/obj/effect/landmark/start/bartender,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"GZ" = (
+/obj/machinery/telecomms/processor/preset_four,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "Hb" = (
 /obj/item/stack/medical/suture,
@@ -3529,11 +3879,12 @@
 /obj/item/stack/medical/suture,
 /obj/item/stack/medical/suture,
 /obj/item/stack/medical/suture,
+/obj/item/storage/firstaid/tactical,
 /turf/open/floor/carpet/cyan,
 /area/hilbertshotel)
 "Hd" = (
 /obj/structure/railing,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Hh" = (
 /obj/structure/rack,
@@ -3569,7 +3920,7 @@
 /obj/item/reagent_containers/glass/beaker{
 	pixel_x = 5
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Ho" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -3585,7 +3936,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Hr" = (
 /obj/structure/toilet/secret/low_loot{
@@ -3636,7 +3987,7 @@
 /obj/structure/closet/crate/bin{
 	pixel_y = 8
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "HC" = (
 /obj/machinery/door/airlock/command{
@@ -3649,7 +4000,7 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "HG" = (
 /obj/structure/sink{
@@ -3732,7 +4083,7 @@
 	dir = 8
 	},
 /obj/structure/railing,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Iu" = (
 /obj/structure/chair/comfy/teal{
@@ -3760,6 +4111,17 @@
 /obj/structure/flora/rock/pile,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"II" = (
+/obj/effect/landmark/start/captain,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"IL" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start/ai/secondary,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "IQ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -3774,12 +4136,6 @@
 	dir = 8
 	},
 /turf/open/floor/festive/stairs/stairsnorth,
-/area/hilbertshotel)
-"IW" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/turf/open/water/jungle,
 /area/hilbertshotel)
 "IX" = (
 /obj/structure/table,
@@ -3846,14 +4202,11 @@
 /obj/item/bedsheet/brown,
 /turf/open/floor/carpet/black,
 /area/hilbertshotel)
-"Jz" = (
-/turf/open/floor/plating/dirt,
-/area/hilbertshotel)
 "JB" = (
 /obj/machinery/door/airlock/command{
 	req_access_txt = "19"
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "JD" = (
 /obj/machinery/autolathe,
@@ -3893,7 +4246,7 @@
 	},
 /obj/structure/railing/corner,
 /obj/structure/mineral_door/silver,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "JW" = (
 /obj/machinery/vending/hydroseeds{
@@ -3947,11 +4300,19 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"Ks" = (
+/obj/machinery/vending/boozeomat,
+/turf/open/floor/wood/wood_large,
+/area/hilbertshotel)
 "Kt" = (
 /obj/structure/table,
 /obj/item/clothing/suit/apron/surgical,
 /obj/item/clothing/gloves/color/latex,
 /turf/open/floor/iron/white,
+/area/hilbertshotel)
+"Kv" = (
+/obj/effect/landmark/start/scientist,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Ky" = (
 /obj/machinery/light/floor,
@@ -3975,7 +4336,7 @@
 /area/hilbertshotel)
 "KJ" = (
 /obj/structure/table,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "KN" = (
 /obj/structure/rack,
@@ -4003,12 +4364,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"KV" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/water/jungle,
-/area/hilbertshotel)
 "KX" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -4020,7 +4375,7 @@
 /obj/structure/chair{
 	pixel_y = -2
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Ld" = (
 /turf/closed/wall/mineral/wood,
@@ -4032,7 +4387,7 @@
 /area/hilbertshotel)
 "Lj" = (
 /obj/effect/festive/street/streetlinesw,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Lk" = (
 /obj/structure/chair{
@@ -4045,7 +4400,15 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"Lu" = (
+/obj/item/ammo_box/magazine/mm712x82,
+/obj/item/ammo_box/magazine/mm712x82,
+/obj/item/ammo_box/magazine/mm712x82,
+/obj/item/ammo_box/magazine/mm712x82,
+/obj/item/ammo_box/magazine/mm712x82,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "LB" = (
 /mob/living/simple_animal/hostile/faithless,
@@ -4103,13 +4466,17 @@
 /obj/machinery/door/airlock/command{
 	req_access_txt = "19"
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "LY" = (
 /obj/item/storage/box/mre/menu1,
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
+/area/hilbertshotel)
+"Ma" = (
+/obj/machinery/telecomms/processor/preset_three,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "Md" = (
 /obj/structure/mineral_door/wood,
@@ -4121,10 +4488,6 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/hilbertshotel)
-"Mp" = (
-/obj/item/clothing/under/syndicate/rus_army_alt,
-/turf/open/floor/festive/alleyway,
-/area/hilbertshotel)
 "Mr" = (
 /obj/structure/chair{
 	dir = 8
@@ -4135,18 +4498,26 @@
 /obj/structure/railing/corner{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "My" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Mz" = (
 /obj/machinery/door/airlock/wood/dorms{
 	id_tag = "awoo6"
 	},
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"MC" = (
+/obj/effect/landmark/start/cargo_technician,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"MF" = (
+/obj/machinery/telecomms/server/presets/service,
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "MG" = (
@@ -4157,7 +4528,7 @@
 /area/hilbertshotel)
 "MN" = (
 /obj/machinery/vending/cola/random,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "MU" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -4176,6 +4547,21 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/engine,
 /area/hilbertshotel)
+"MX" = (
+/obj/effect/landmark/start/paramedic,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"Nb" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/structure/railing/corner,
+/obj/machinery/door/airlock/wood/dorms{
+	id_tag = "tihuy";
+	req_access_txt = "20"
+	},
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
 "Nd" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -4187,12 +4573,20 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"Nh" = (
+/obj/machinery/telecomms/server/presets/common,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
 "Ni" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /obj/structure/flora/tree/jungle,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"Nn" = (
+/obj/machinery/blackbox_recorder,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "Np" = (
 /obj/structure/rack,
@@ -4243,9 +4637,6 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"NB" = (
-/turf/open/floor/festive/white_alleyway,
-/area/hilbertshotel)
 "NC" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -4253,7 +4644,11 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"NE" = (
+/obj/effect/landmark/start/botanist,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "NF" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -4286,6 +4681,13 @@
 /obj/item/storage/box/syringes,
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
+"NN" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/latejoin,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "NS" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plasteel/cafeteria{
@@ -4304,6 +4706,10 @@
 	},
 /mob/living/simple_animal/hostile/faithless,
 /turf/open/floor/festive/stairs/stairsnorth,
+/area/hilbertshotel)
+"Ob" = (
+/obj/effect/landmark/start/head_of_personnel,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Oc" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -4345,7 +4751,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Ox" = (
 /obj/structure/flora/tree/spookylog,
@@ -4371,6 +4777,34 @@
 "OJ" = (
 /turf/closed/wall,
 /area/hilbertshotel)
+"OO" = (
+/obj/structure/rack,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/turf/open/floor/wood/wood_large,
+/area/hilbertshotel)
+"OP" = (
+/obj/effect/landmark/start/lawyer,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "OT" = (
 /turf/open/floor/iron/dark,
 /area/hilbertshotel)
@@ -4389,7 +4823,7 @@
 /obj/structure/railing/corner{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "OY" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -4400,6 +4834,10 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"OZ" = (
+/obj/item/clothing/suit/space/hardsuit/advancedpa,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "Pb" = (
 /obj/structure/table/wood/fancy/red,
@@ -4423,7 +4861,13 @@
 /area/hilbertshotel)
 "Pu" = (
 /obj/item/lighter,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
+/area/hilbertshotel)
+"PB" = (
+/obj/effect/landmark/observer_start,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "PH" = (
 /turf/open/floor/wood{
@@ -4438,13 +4882,17 @@
 /area/hilbertshotel)
 "PM" = (
 /obj/structure/railing/corner,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "PQ" = (
 /obj/structure/chair{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
+/area/hilbertshotel)
+"PR" = (
+/obj/machinery/telecomms/server/presets/security,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "PY" = (
 /obj/structure/railing,
@@ -4457,9 +4905,17 @@
 	icon_state = "wood-broken2"
 	},
 /area/hilbertshotel)
+"Qj" = (
+/obj/effect/landmark/start/librarian,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "Ql" = (
 /obj/structure/chair,
 /turf/open/floor/carpet/green,
+/area/hilbertshotel)
+"Qm" = (
+/obj/machinery/telecomms/bus/preset_four,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "Qq" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -4476,7 +4932,15 @@
 	dir = 4
 	},
 /obj/structure/railing,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"Qx" = (
+/obj/effect/landmark/start/shaft_miner,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"Qz" = (
+/obj/effect/landmark/start/cook,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "QA" = (
 /obj/structure/rack,
@@ -4529,12 +4993,6 @@
 /obj/structure/bed/badhaybed,
 /turf/open/floor/wood,
 /area/hilbertshotel)
-"QR" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/turf/open/water/jungle,
-/area/hilbertshotel)
 "QT" = (
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/ausbushes/brflowers,
@@ -4545,6 +5003,13 @@
 	req_access_txt = "19"
 	},
 /turf/open/floor/engine,
+/area/hilbertshotel)
+"QV" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/start/assistant/override,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "QW" = (
 /obj/structure/rack,
@@ -4581,7 +5046,11 @@
 /area/hilbertshotel)
 "Rj" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/water/decorative,
+/area/hilbertshotel)
+"Rl" = (
+/obj/effect/landmark/start/depsec,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Rn" = (
 /mob/living/simple_animal/hostile/faithless,
@@ -4632,6 +5101,14 @@
 /obj/machinery/door/airlock/wood/dorms{
 	id_tag = "awoo12"
 	},
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"RI" = (
+/obj/effect/landmark/start/wizard,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"RJ" = (
+/obj/machinery/telecomms/bus/preset_one,
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "RK" = (
@@ -4695,7 +5172,7 @@
 "Sk" = (
 /obj/structure/railing/corner,
 /obj/structure/mineral_door/wood,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Sl" = (
 /obj/structure/railing{
@@ -4716,7 +5193,11 @@
 /area/hilbertshotel)
 "Ss" = (
 /obj/item/hilbertshotel/ghostdojo,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"Sy" = (
+/obj/effect/landmark/start/prisoner,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "SB" = (
 /obj/structure/rack,
@@ -4731,11 +5212,52 @@
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
+/obj/item/storage/belt/military/army,
 /turf/open/floor/engine,
+/area/hilbertshotel)
+"SC" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/obj/item/reagent_containers/food/drinks/flask/steel,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "SE" = (
 /obj/machinery/computer/arcade,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "SJ" = (
 /obj/machinery/button/door{
@@ -4779,13 +5301,13 @@
 	},
 /obj/item/pda,
 /mob/living/simple_animal/hostile/faithless,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "SV" = (
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/reagent_containers/food/drinks/beer,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "SZ" = (
 /obj/machinery/vending/medical,
@@ -4806,7 +5328,7 @@
 /area/hilbertshotel)
 "Tb" = (
 /obj/machinery/vending/dinnerware,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Th" = (
 /turf/open/indestructible/cobble,
@@ -4817,7 +5339,7 @@
 /area/hilbertshotel)
 "Tr" = (
 /obj/effect/landmark/start/security_officer,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Ts" = (
 /obj/structure/barricade/wooden,
@@ -4829,7 +5351,7 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "TA" = (
 /obj/item/gun/ballistic/automatic/pistol/enforcer/nomag,
@@ -4845,7 +5367,17 @@
 /obj/machinery/computer/card{
 	dir = 1
 	},
+/obj/machinery/button/door{
+	id = "tiloh";
+	name = "Armory Shutters";
+	pixel_x = 28;
+	req_access_txt = "20"
+	},
 /turf/open/floor/iron/dark,
+/area/hilbertshotel)
+"TF" = (
+/obj/machinery/telecomms/processor/preset_two,
+/turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "TG" = (
 /obj/structure/bed{
@@ -4871,7 +5403,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "TV" = (
 /obj/structure/rack,
@@ -4894,7 +5426,7 @@
 /area/hilbertshotel)
 "Ub" = (
 /obj/item/storage/box/mre,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Ug" = (
 /obj/machinery/button/door{
@@ -4903,7 +5435,7 @@
 	normaldoorcontrol = 1;
 	pixel_x = -25;
 	specialfunctions = 4;
-	req_access_txt = "3"
+	req_access_txt = "20"
 	},
 /turf/open/floor/engine,
 /area/hilbertshotel)
@@ -4920,7 +5452,7 @@
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Ut" = (
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Uv" = (
 /obj/structure/streetdecor/lamp,
@@ -4950,6 +5482,14 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet/black,
 /area/hilbertshotel)
+"UC" = (
+/obj/effect/landmark/start/brigdoc,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"UF" = (
+/obj/effect/landmark/start/chief_engineer,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "UH" = (
 /obj/structure/table,
 /turf/open/floor/carpet/orange,
@@ -4957,7 +5497,7 @@
 "UI" = (
 /obj/structure/streetdecor/lamp,
 /obj/effect/spawner/bundle/crate/mosin,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "UK" = (
 /obj/structure/chair/comfy{
@@ -4971,6 +5511,19 @@
 	specialfunctions = 4
 	},
 /turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"UL" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/machinery/door/airlock/wood/dorms{
+	id_tag = "tihuy";
+	req_access_txt = "20"
+	},
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "UO" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -4999,7 +5552,10 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"UT" = (
+/turf/open/floor/padded,
 /area/hilbertshotel)
 "UY" = (
 /obj/structure/chair/comfy/black,
@@ -5026,7 +5582,7 @@
 "Ve" = (
 /obj/machinery/vending/snack/random,
 /obj/machinery/vending/snack/random,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Vn" = (
 /obj/structure/rack,
@@ -5041,16 +5597,11 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"Vr" = (
-/obj/item/restraints/legcuffs/beartrap{
-	armed = 1
-	},
-/turf/open/floor/plating/dirt,
-/area/hilbertshotel)
 "Vu" = (
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/closet,
 /turf/open/floor/carpet/black,
 /area/hilbertshotel)
 "Vx" = (
@@ -5063,7 +5614,7 @@
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/under/rank/prisoner,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "VA" = (
 /obj/machinery/light{
@@ -5076,9 +5627,6 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_tiled,
-/area/hilbertshotel)
-"VG" = (
-/turf/open/floor/plating/dirt/dark,
 /area/hilbertshotel)
 "VJ" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -5151,6 +5699,10 @@
 /obj/structure/chair/stool/directional,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"Wn" = (
+/obj/effect/landmark/start/chemist,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "Wo" = (
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /turf/open/floor/wood,
@@ -5173,7 +5725,20 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
+/area/hilbertshotel)
+"Wu" = (
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/structure/rack,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/turf/open/floor/wood/wood_large,
+/area/hilbertshotel)
+"Wv" = (
+/obj/structure/closet,
+/turf/open/floor/carpet/black,
 /area/hilbertshotel)
 "WA" = (
 /obj/structure/railing{
@@ -5185,7 +5750,7 @@
 /obj/structure/chair/pew/left{
 	dir = 8
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "WC" = (
 /obj/machinery/light{
@@ -5217,7 +5782,7 @@
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/reagent_containers/food/drinks/beer,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "WJ" = (
 /obj/structure/rack,
@@ -5245,7 +5810,7 @@
 /area/hilbertshotel)
 "WP" = (
 /obj/structure/railing/corner,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "WS" = (
 /obj/structure/rack,
@@ -5259,6 +5824,19 @@
 	light_color = "#e8eaff"
 	},
 /turf/open/floor/carpet/green,
+/area/hilbertshotel)
+"WX" = (
+/obj/effect/landmark/start/depsec/supply,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"Xe" = (
+/obj/structure/rack,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/obj/item/clothing/under/syndicate/rus_army_alt,
+/turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
 "Xf" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -5274,16 +5852,20 @@
 /area/hilbertshotel)
 "Xi" = (
 /obj/effect/festive/street/streetlinewest,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Xj" = (
 /obj/structure/railing,
 /obj/structure/railing,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Xk" = (
 /obj/machinery/vending/cigarette,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"Xq" = (
+/obj/effect/landmark/start/roboticist,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Xt" = (
 /obj/structure/railing,
@@ -5293,7 +5875,14 @@
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
+/area/hilbertshotel)
+"XC" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/landmark/ert_spawn,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "XH" = (
 /obj/structure/rack,
@@ -5360,16 +5949,20 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "Yf" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"Yi" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "Yj" = (
 /obj/effect/festive/street/streetlineeast,
-/turf/open/floor/festive/alleyway,
+/turf/open/floor/festive/alleyway/safe,
 /area/hilbertshotel)
 "Ym" = (
 /obj/machinery/iv_drip,
@@ -5380,7 +5973,9 @@
 /area/hilbertshotel)
 "Yn" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "Yo" = (
 /obj/structure/flora/tree/jungle/small,
@@ -5393,6 +5988,10 @@
 /turf/open/floor/plasteel/cafeteria{
 	dir = 5
 	},
+/area/hilbertshotel)
+"Yv" = (
+/obj/effect/landmark/start/psychologist,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Yw" = (
 /obj/structure/sink{
@@ -5413,6 +6012,10 @@
 	},
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
+"YB" = (
+/obj/effect/landmark/start/depsec/engineering,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "YG" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/box,
@@ -5427,7 +6030,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "YL" = (
 /obj/structure/chair/office,
@@ -5475,6 +6078,10 @@
 	},
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"Zb" = (
+/obj/effect/landmark/start/janitor,
+/turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
 "Zc" = (
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -5487,13 +6094,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water/jungle,
-/area/hilbertshotel)
-"Zh" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/water/jungle,
+/turf/open/water/decorative,
 /area/hilbertshotel)
 "Zi" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -5507,11 +6108,13 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "Zm" = (
 /obj/structure/bonfire/dense,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/floor/plating/dirt/jungle{
+	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
+	},
 /area/hilbertshotel)
 "Zt" = (
 /obj/machinery/computer/operating,
@@ -5530,14 +6133,14 @@
 	dir = 4
 	},
 /obj/item/storage/box/mre/menu1,
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "ZJ" = (
 /obj/structure/railing,
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/festive/cobblestone,
+/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "ZL" = (
 /obj/structure/table,
@@ -7032,11 +7635,11 @@ WF
 AB
 vo
 vo
-VG
-VG
+vo
+vo
 Wt
-VG
-VG
+vo
+vo
 vo
 vo
 vo
@@ -7217,12 +7820,12 @@ vo
 GJ
 vo
 vo
-IW
-KV
+rM
+Ya
 hg
-VG
+vo
 Wt
-VG
+vo
 vo
 vo
 xJ
@@ -7395,25 +7998,25 @@ bF
 WF
 qd
 vo
-VG
-jk
-mN
-VG
-jk
-cB
-VG
+vo
+eh
+mo
+vo
+eh
+Rj
+vo
 mQ
-VG
-IW
+vo
+rM
 YK
 vo
 vo
 vo
 jQ
-VG
 vo
 vo
-VG
+vo
+vo
 ud
 WF
 WF
@@ -7578,23 +8181,23 @@ kc
 EC
 vo
 vo
-Zh
-CN
-KV
-ye
-ye
-KV
-ye
-KV
-cB
-VG
+Bo
+cu
+Ya
+ot
+ot
+Ya
+ot
+Ya
+Rj
 vo
 vo
 vo
 vo
-VG
 vo
-VG
+vo
+vo
+vo
 vo
 vo
 Yz
@@ -7760,20 +8363,20 @@ qd
 vo
 vo
 Zf
-VG
-VG
-jk
-ye
-ye
-ye
-ye
-ye
-ye
+vo
+vo
+eh
+ot
+ot
+ot
+ot
+ot
+ot
 xu
 hg
 vo
 vo
-VG
+vo
 vo
 vo
 oo
@@ -7941,19 +8544,19 @@ WF
 bF
 bp
 vo
-VG
-IW
-KV
-ye
-ye
-ye
-ye
-ye
-ye
-cB
-VG
 vo
-VG
+rM
+Ya
+ot
+ot
+ot
+ot
+ot
+ot
+Rj
+vo
+vo
+vo
 vo
 KF
 HN
@@ -8123,17 +8726,17 @@ WF
 WF
 RM
 vo
-VG
-jk
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-CN
-mN
+vo
+eh
+ot
+ot
+ot
+ot
+ot
+ot
+ot
+cu
+mo
 vo
 vo
 Jn
@@ -8306,14 +8909,14 @@ qd
 vo
 vo
 er
-CN
-ye
-ye
-ye
-ye
-ye
-ye
-cB
+cu
+ot
+ot
+ot
+ot
+ot
+ot
+Rj
 vo
 oJ
 vo
@@ -8488,19 +9091,19 @@ kc
 bp
 vo
 vo
-VG
-jk
-ye
-ye
-ye
-ye
-ye
-ye
-mN
-VG
+vo
+eh
+ot
+ot
+ot
+ot
+ot
+ot
+mo
 vo
 vo
-VG
+vo
+vo
 ud
 kc
 WF
@@ -8671,16 +9274,16 @@ WF
 dL
 vo
 bD
-Zh
-ye
-ye
-ye
-ye
-ye
-ye
-ye
+Bo
+ot
+ot
+ot
+ot
+ot
+ot
+ot
 hg
-VG
+vo
 vo
 nJ
 Yn
@@ -8853,14 +9456,14 @@ WF
 VM
 vo
 vo
-VG
-Zh
-ye
-ye
-ye
-ye
-CN
-cB
+vo
+Bo
+ot
+ot
+ot
+ot
+cu
+Rj
 vo
 vo
 gu
@@ -9036,13 +9639,13 @@ WF
 pL
 gc
 GK
-VG
-jk
-CN
-ye
-QR
 vo
-Zh
+eh
+cu
+ot
+xa
+vo
+Bo
 YK
 vo
 vo
@@ -9220,15 +9823,15 @@ vo
 bD
 gc
 oJ
-VG
+vo
 TT
-VG
+vo
 ct
 vo
 vo
-KV
+Ya
 vo
-lK
+Yn
 Yz
 VM
 Yn
@@ -9590,7 +10193,7 @@ vo
 vo
 KF
 bp
-VG
+vo
 Av
 Nz
 WF
@@ -10127,7 +10730,7 @@ Ld
 Ld
 Ld
 CU
-VG
+vo
 Ld
 Ld
 Ld
@@ -10309,7 +10912,7 @@ Ry
 fi
 Ld
 vo
-VG
+vo
 Ld
 Ry
 Ry
@@ -10490,7 +11093,7 @@ Wo
 Ry
 Ry
 Rx
-VG
+vo
 vo
 Rx
 Ry
@@ -11217,7 +11820,7 @@ WF
 kk
 EC
 vo
-VG
+vo
 vo
 Ce
 Ld
@@ -11398,7 +12001,7 @@ wZ
 Bh
 vo
 vo
-VG
+vo
 vo
 vo
 vo
@@ -11583,7 +12186,7 @@ HN
 HN
 FC
 bp
-VG
+vo
 vo
 vo
 Yz
@@ -13635,49 +14238,49 @@ WF
 WF
 WF
 jO
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
 hZ
 hZ
 hZ
@@ -13817,7 +14420,7 @@ WF
 WF
 rw
 jO
-NB
+zG
 hZ
 Hq
 Hq
@@ -13859,7 +14462,7 @@ Hq
 Hq
 Hq
 Mw
-NB
+zG
 PM
 Hq
 Hq
@@ -13999,7 +14602,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -14041,7 +14644,7 @@ kc
 WF
 td
 jO
-NB
+zG
 hk
 td
 WF
@@ -14181,7 +14784,7 @@ WF
 rw
 WF
 jO
-NB
+zG
 hk
 OJ
 OJ
@@ -14223,7 +14826,7 @@ WF
 bF
 RX
 jO
-NB
+zG
 hk
 bF
 WF
@@ -14363,7 +14966,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -14405,7 +15008,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 OJ
@@ -14545,7 +15148,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 Ra
@@ -14587,7 +15190,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hZ
 xn
 MN
@@ -14727,7 +15330,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -14769,7 +15372,7 @@ WF
 RX
 WF
 jO
-NB
+zG
 hZ
 hZ
 GT
@@ -14909,7 +15512,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -14951,7 +15554,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hZ
 hZ
 yK
@@ -15091,7 +15694,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -15119,9 +15722,9 @@ OJ
 ir
 ir
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 Ra
@@ -15133,7 +15736,7 @@ WF
 WF
 RX
 jO
-NB
+zG
 hZ
 jR
 Xk
@@ -15273,7 +15876,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -15286,16 +15889,16 @@ Ra
 Ra
 OJ
 Ra
-Gp
+Wv
 Ra
-Gp
+Wv
 OJ
 ir
 Ra
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 ir
@@ -15315,7 +15918,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hk
 UO
 UO
@@ -15455,7 +16058,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -15463,7 +16066,7 @@ Ra
 Hz
 Ra
 Ra
-Ra
+uA
 Ra
 Hz
 OJ
@@ -15485,7 +16088,7 @@ ir
 OJ
 Vu
 Ra
-Gp
+Wv
 Ra
 OJ
 Ra
@@ -15497,7 +16100,7 @@ wZ
 WF
 bF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -15637,7 +16240,7 @@ kc
 WF
 td
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -15650,16 +16253,16 @@ Ra
 Hz
 OJ
 Ra
-Gp
+Wv
 Ra
 Gp
 OJ
 ir
 Ra
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 ir
@@ -15679,7 +16282,7 @@ OJ
 OJ
 OJ
 jO
-NB
+zG
 hk
 OJ
 OJ
@@ -15819,7 +16422,7 @@ WF
 WF
 rw
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -15847,9 +16450,9 @@ OJ
 ir
 ir
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 Ra
@@ -15861,7 +16464,7 @@ Ut
 Ut
 IS
 wx
-NB
+zG
 hk
 td
 iD
@@ -16001,7 +16604,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -16014,16 +16617,16 @@ Ra
 Hz
 OJ
 Ra
-Gp
+Wv
 Ra
-Gp
+Wv
 OJ
 ba
 Ra
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 Ra
@@ -16043,7 +16646,7 @@ Ut
 Ut
 qJ
 hZ
-NB
+zG
 hP
 te
 te
@@ -16183,7 +16786,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -16224,11 +16827,11 @@ ll
 Ut
 Ut
 qJ
-NB
-NB
-NB
-NB
-NB
+zG
+zG
+zG
+zG
+zG
 wB
 Ut
 ll
@@ -16365,7 +16968,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -16406,11 +17009,11 @@ ll
 Ut
 Ut
 qJ
-NB
-NB
-NB
-NB
-NB
+zG
+zG
+zG
+zG
+zG
 wB
 Ut
 ll
@@ -16547,7 +17150,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -16560,24 +17163,24 @@ Ra
 Hz
 OJ
 Ra
-Gp
+Wv
 Ra
-Gp
+Wv
 OJ
 ba
 Ra
 OJ
-Gp
+Wv
 Ra
-Gp
-Ra
-OJ
-Ra
+Wv
 Ra
 OJ
-Gp
 Ra
-Gp
+Ra
+OJ
+Wv
+Ra
+Wv
 Ra
 OJ
 Ra
@@ -16589,7 +17192,7 @@ Ut
 Ut
 qJ
 hZ
-NB
+zG
 PM
 Hq
 Hq
@@ -16729,7 +17332,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -16771,7 +17374,7 @@ Ut
 Ut
 hy
 Mw
-NB
+zG
 hk
 td
 zb
@@ -16911,7 +17514,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -16924,24 +17527,24 @@ Ra
 Hz
 OJ
 Ra
-Gp
+Wv
 Ra
-Gp
+Wv
 OJ
 ir
 Ra
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 ir
 ir
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 Ra
@@ -16953,7 +17556,7 @@ OJ
 OJ
 OJ
 jO
-NB
+zG
 hk
 OJ
 OJ
@@ -17093,7 +17696,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -17101,7 +17704,7 @@ Ra
 Hz
 Ra
 Ra
-Ra
+SC
 Ra
 Hz
 OJ
@@ -17135,7 +17738,7 @@ wZ
 wZ
 yf
 jO
-NB
+zG
 hk
 WF
 bF
@@ -17275,7 +17878,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -17288,24 +17891,24 @@ Ra
 Ra
 OJ
 Ra
-Gp
+Wv
 Ra
-Gp
+Wv
 OJ
 ir
 Ra
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 ir
 ir
 OJ
-Gp
+Wv
 Ra
-Gp
+Wv
 Ra
 OJ
 Ra
@@ -17317,7 +17920,7 @@ WF
 WF
 RX
 jO
-NB
+zG
 hk
 WF
 WF
@@ -17457,7 +18060,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -17499,7 +18102,7 @@ bF
 WF
 kc
 jO
-NB
+zG
 hk
 WF
 WF
@@ -17639,7 +18242,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 Cq
 mf
@@ -17681,7 +18284,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -17821,7 +18424,7 @@ kc
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 Ra
@@ -17863,7 +18466,7 @@ WF
 RX
 RX
 jO
-NB
+zG
 hk
 WF
 WF
@@ -18003,7 +18606,7 @@ WF
 kc
 td
 jO
-NB
+zG
 hk
 OJ
 mf
@@ -18045,7 +18648,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -18185,7 +18788,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 hk
 OJ
 OJ
@@ -18227,7 +18830,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -18367,7 +18970,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hk
 kc
 WF
@@ -18409,7 +19012,7 @@ WF
 WF
 Ts
 jO
-NB
+zG
 hk
 td
 WF
@@ -18549,7 +19152,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hP
 te
 te
@@ -18591,7 +19194,7 @@ te
 te
 te
 wx
-NB
+zG
 hP
 te
 te
@@ -18731,67 +19334,67 @@ WF
 bF
 WF
 jO
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
 hZ
 hZ
 hZ
@@ -18913,7 +19516,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 PM
 Hq
 Hq
@@ -18933,7 +19536,7 @@ Hq
 Hq
 Hq
 Mw
-NB
+zG
 PM
 Hq
 Hq
@@ -18960,7 +19563,7 @@ Hq
 Hq
 Hq
 hZ
-hZ
+zG
 hZ
 hZ
 hZ
@@ -19095,7 +19698,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hk
 yf
 Nz
@@ -19115,7 +19718,7 @@ IH
 wZ
 Nz
 jO
-NB
+zG
 hk
 td
 kc
@@ -19142,7 +19745,7 @@ WF
 WF
 td
 hZ
-hZ
+zG
 hZ
 td
 WF
@@ -19277,7 +19880,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hk
 zZ
 wZ
@@ -19297,7 +19900,7 @@ wZ
 yf
 wZ
 jO
-NB
+zG
 hk
 WF
 bF
@@ -19324,7 +19927,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -19442,7 +20045,7 @@ Hq
 Hq
 Mw
 hZ
-NB
+zG
 hk
 WF
 WF
@@ -19459,7 +20062,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 wZ
 yf
@@ -19479,7 +20082,7 @@ DI
 IH
 Ox
 jO
-NB
+zG
 hk
 WF
 WF
@@ -19506,7 +20109,7 @@ bF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 bF
@@ -19624,7 +20227,7 @@ WF
 WF
 rg
 Mw
-NB
+zG
 hk
 WF
 bF
@@ -19641,7 +20244,7 @@ WF
 kc
 WF
 jO
-NB
+zG
 hk
 wZ
 iM
@@ -19661,7 +20264,7 @@ hk
 wZ
 Nz
 jO
-NB
+zG
 hk
 WF
 WF
@@ -19688,7 +20291,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -19806,7 +20409,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -19823,7 +20426,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 yf
 Nz
@@ -19843,7 +20446,7 @@ hk
 wZ
 yf
 jO
-NB
+zG
 hk
 WF
 WF
@@ -19870,7 +20473,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -19988,7 +20591,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -20005,7 +20608,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 IH
 Ox
@@ -20025,7 +20628,7 @@ hk
 wZ
 Nz
 jO
-NB
+zG
 hk
 WF
 bF
@@ -20052,7 +20655,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 bF
 OJ
@@ -20170,7 +20773,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 kc
@@ -20187,7 +20790,7 @@ WF
 kc
 WF
 jO
-NB
+zG
 hk
 wZ
 yf
@@ -20207,7 +20810,7 @@ hk
 wZ
 iM
 jO
-NB
+zG
 hk
 WF
 WF
@@ -20234,7 +20837,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 Ab
@@ -20315,9 +20918,9 @@ SN
 td
 Zj
 Ut
-Ut
-Ut
-Ut
+Ob
+eO
+YB
 Hd
 WF
 WF
@@ -20352,7 +20955,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hk
 WF
 WF
@@ -20369,7 +20972,7 @@ WF
 bF
 td
 jO
-NB
+zG
 hk
 wZ
 Nz
@@ -20389,7 +20992,7 @@ hk
 wZ
 yf
 jO
-NB
+zG
 hk
 WF
 WF
@@ -20416,7 +21019,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 bF
 Ab
@@ -20497,9 +21100,9 @@ SN
 WF
 Zj
 Tr
-Ut
-Ut
-Ut
+Dd
+Zb
+EN
 Hd
 WF
 Lh
@@ -20534,7 +21137,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -20551,7 +21154,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hk
 yf
 iM
@@ -20571,7 +21174,7 @@ hk
 wZ
 wZ
 jO
-NB
+zG
 hk
 WF
 WF
@@ -20598,7 +21201,7 @@ xL
 bF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 Ab
@@ -20677,11 +21280,11 @@ SN
 (84,1,1) = {"
 SN
 WF
-Zj
-Ut
-Ut
-Ut
-Ut
+QV
+hQ
+tR
+OP
+xb
 Hd
 td
 Xf
@@ -20716,7 +21319,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 WF
 kc
@@ -20733,7 +21336,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 wZ
 Nz
@@ -20753,7 +21356,7 @@ hk
 yf
 Nz
 jO
-NB
+zG
 hk
 WF
 bF
@@ -20780,7 +21383,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 Ab
@@ -20859,11 +21462,11 @@ SN
 (85,1,1) = {"
 SN
 WF
-Zj
-Ut
-Ut
-Ut
-Ut
+Dn
+rZ
+Rl
+Qj
+WX
 Tw
 rA
 Yf
@@ -20898,7 +21501,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 bF
@@ -20915,7 +21518,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 wZ
 yf
@@ -20935,7 +21538,7 @@ hk
 iM
 XW
 jO
-NB
+zG
 hk
 WF
 WF
@@ -20962,7 +21565,7 @@ xL
 WF
 td
 hZ
-hZ
+zG
 hZ
 WF
 Ab
@@ -21042,10 +21645,10 @@ SN
 SN
 WF
 Zj
-Ut
-Ut
-Ut
-Ut
+GX
+Gc
+au
+CB
 Ut
 hP
 te
@@ -21080,7 +21683,7 @@ WF
 ur
 te
 wx
-NB
+zG
 hk
 WF
 WF
@@ -21097,7 +21700,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 IH
 iM
@@ -21117,7 +21720,7 @@ hk
 wZ
 yf
 jO
-NB
+zG
 hk
 WF
 WF
@@ -21144,7 +21747,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 bF
 OJ
@@ -21225,8 +21828,8 @@ SN
 WF
 Zj
 Tr
-Ut
-Ut
+Qz
+uT
 Ut
 hZ
 Ut
@@ -21260,9 +21863,9 @@ ao
 te
 te
 wx
-NB
-NB
-NB
+zG
+zG
+zG
 hk
 td
 WF
@@ -21279,7 +21882,7 @@ WF
 kc
 WF
 jO
-NB
+zG
 hk
 yf
 Nz
@@ -21299,7 +21902,7 @@ hk
 wZ
 QT
 jO
-NB
+zG
 hk
 WF
 WF
@@ -21326,7 +21929,7 @@ xL
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -21405,10 +22008,10 @@ SN
 (88,1,1) = {"
 SN
 WF
-Zj
-Ut
-Ut
-Ut
+XC
+zL
+uW
+mX
 Ut
 Ut
 Ut
@@ -21442,9 +22045,9 @@ vx
 Hq
 Hq
 Mw
-NB
-NB
-NB
+zG
+zG
+zG
 hP
 Dt
 Dt
@@ -21461,7 +22064,7 @@ EK
 Dw
 Ng
 jO
-NB
+zG
 hk
 nM
 pS
@@ -21481,7 +22084,7 @@ hk
 RY
 wG
 jO
-NB
+zG
 hk
 LL
 Ng
@@ -21489,7 +22092,7 @@ Dw
 sK
 Ot
 wx
-oR
+ll
 JR
 JR
 VE
@@ -21508,7 +22111,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -21587,9 +22190,9 @@ SN
 (89,1,1) = {"
 SN
 WF
-Zj
-Ut
-Ut
+dH
+NE
+dB
 Tr
 Ut
 Ut
@@ -21625,9 +22228,9 @@ WF
 WF
 vZ
 Mw
-NB
-NB
-NB
+zG
+zG
+zG
 hZ
 hP
 te
@@ -21643,7 +22246,7 @@ te
 te
 te
 wx
-NB
+zG
 hP
 te
 te
@@ -21663,7 +22266,7 @@ hP
 te
 te
 wx
-NB
+zG
 hP
 te
 te
@@ -21671,7 +22274,7 @@ te
 te
 wx
 hZ
-oR
+ll
 JR
 JR
 zD
@@ -21690,7 +22293,7 @@ xL
 bF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -21769,14 +22372,14 @@ SN
 (90,1,1) = {"
 SN
 td
-Zj
+NN
+sA
+UF
+ji
 Ut
 Ut
 Ut
-Ut
-Ut
-Ut
-Ut
+PB
 Ss
 hZ
 hZ
@@ -21808,49 +22411,49 @@ WF
 td
 jO
 hZ
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
 hZ
 xL
 xL
@@ -21872,7 +22475,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -21951,10 +22554,10 @@ SN
 (91,1,1) = {"
 SN
 WF
-Zj
+IL
 Tr
-Ut
-Ut
+Wn
+cc
 Ut
 Ut
 hZ
@@ -21989,9 +22592,9 @@ WF
 WF
 ur
 wx
-NB
-NB
-NB
+zG
+zG
+zG
 hZ
 PM
 Hq
@@ -22007,7 +22610,7 @@ Hq
 Hq
 Hq
 Mw
-NB
+zG
 tK
 hZ
 hZ
@@ -22035,7 +22638,7 @@ Hq
 Hq
 Mw
 hZ
-oR
+ll
 JR
 JR
 zD
@@ -22054,7 +22657,7 @@ xL
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -22133,10 +22736,10 @@ SN
 (92,1,1) = {"
 SN
 WF
-Zj
-Ut
-Ut
-Ut
+Bs
+UC
+Ca
+MX
 Ut
 Ut
 Ut
@@ -22166,13 +22769,13 @@ te
 te
 te
 te
-ao
+UL
 te
 te
 wx
-NB
-NB
-NB
+zG
+zG
+zG
 PM
 Hq
 Lq
@@ -22189,8 +22792,8 @@ OU
 rb
 wG
 jO
-NB
-Mp
+zG
+hZ
 zS
 Yj
 Yj
@@ -22217,7 +22820,7 @@ Dw
 sK
 rg
 Mw
-oR
+xt
 JR
 JR
 rq
@@ -22236,7 +22839,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 bF
 OJ
@@ -22316,8 +22919,8 @@ SN
 SN
 WF
 Zj
-Ut
-Ut
+II
+MC
 Tr
 Ut
 hZ
@@ -22348,13 +22951,13 @@ Mw
 PM
 Hq
 Hq
-vx
+Nb
 Hq
 Hq
 Mw
-NB
-NB
-NB
+zG
+zG
+zG
 hk
 td
 WF
@@ -22371,7 +22974,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hZ
 ng
 FV
@@ -22418,7 +23021,7 @@ xL
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -22498,9 +23101,9 @@ SN
 SN
 WF
 Zj
-Ut
-Ut
-Ut
+gs
+Sy
+Yv
 Ut
 Ut
 PM
@@ -22536,7 +23139,7 @@ WF
 vZ
 Hq
 Mw
-NB
+zG
 hk
 WF
 WF
@@ -22553,7 +23156,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 ng
 iP
@@ -22600,7 +23203,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -22681,8 +23284,8 @@ SN
 WF
 Zj
 Tr
-Ut
-Ut
+zx
+lN
 Ut
 WP
 Lq
@@ -22718,7 +23321,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -22735,7 +23338,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hZ
 ng
 iP
@@ -22782,7 +23385,7 @@ xL
 WF
 td
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -22862,9 +23465,9 @@ SN
 SN
 WF
 Zj
-Ut
-Ut
-Ut
+Xq
+Kv
+Tr
 Ut
 Hd
 td
@@ -22892,7 +23495,7 @@ cT
 OT
 OT
 vE
-TE
+pl
 VA
 SN
 WF
@@ -22900,7 +23503,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -22917,7 +23520,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 ng
 iP
@@ -22964,7 +23567,7 @@ xL
 bF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -23044,9 +23647,9 @@ SN
 SN
 td
 Zj
-Ut
-Ut
-Ut
+Qx
+po
+kf
 Ut
 Hd
 WF
@@ -23082,7 +23685,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -23099,7 +23702,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 ng
 FV
@@ -23146,7 +23749,7 @@ xL
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -23226,9 +23829,9 @@ SN
 SN
 WF
 Zj
-Ut
-Ut
-Ut
+jx
+Yi
+na
 Ut
 Hd
 Lh
@@ -23264,7 +23867,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hk
 WF
 WF
@@ -23281,7 +23884,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hZ
 Lj
 Xi
@@ -23328,7 +23931,7 @@ xL
 WF
 bF
 hZ
-hZ
+zG
 hZ
 bF
 OJ
@@ -23409,8 +24012,8 @@ SN
 WF
 Zj
 Tr
-Ut
-Ut
+ff
+RI
 Ut
 Hd
 WF
@@ -23446,7 +24049,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -23463,7 +24066,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -23510,7 +24113,7 @@ wZ
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -23590,7 +24193,7 @@ SN
 SN
 WF
 Zj
-Ut
+EA
 Ut
 Ut
 Ut
@@ -23628,7 +24231,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -23645,7 +24248,7 @@ WF
 bF
 td
 jO
-NB
+zG
 hZ
 zS
 Yj
@@ -23692,7 +24295,7 @@ yf
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -23810,7 +24413,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 WF
 bF
@@ -23827,7 +24430,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 ng
 FV
@@ -23874,7 +24477,7 @@ wZ
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -23992,7 +24595,7 @@ WF
 WF
 ur
 wx
-NB
+zG
 hk
 WF
 WF
@@ -24009,7 +24612,7 @@ WF
 kc
 WF
 jO
-NB
+zG
 hZ
 ng
 iP
@@ -24056,7 +24659,7 @@ wZ
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -24174,7 +24777,7 @@ te
 te
 wx
 hZ
-NB
+zG
 hk
 WF
 kc
@@ -24191,7 +24794,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 ng
 iP
@@ -24238,7 +24841,7 @@ bF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 bF
 WF
@@ -24373,7 +24976,7 @@ WF
 bF
 WF
 Zj
-NB
+zG
 hZ
 ng
 iP
@@ -24420,7 +25023,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -24555,7 +25158,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hZ
 ng
 FV
@@ -24602,7 +25205,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -24737,7 +25340,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 hZ
 Lj
 Xi
@@ -24784,7 +25387,7 @@ bF
 WF
 td
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -24919,7 +25522,7 @@ WF
 kc
 WF
 jO
-NB
+zG
 tK
 hZ
 hZ
@@ -24966,7 +25569,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -25101,7 +25704,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -25148,7 +25751,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -25283,7 +25886,7 @@ WF
 bF
 WF
 Zj
-NB
+zG
 hZ
 hZ
 hZ
@@ -25330,7 +25933,7 @@ xL
 xL
 bF
 hZ
-hZ
+zG
 hZ
 bF
 OJ
@@ -25465,7 +26068,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -25512,7 +26115,7 @@ ir
 xL
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -25647,7 +26250,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -25694,7 +26297,7 @@ ir
 xL
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -25829,7 +26432,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -25876,7 +26479,7 @@ ir
 xL
 WF
 hZ
-hZ
+zG
 hZ
 OJ
 OJ
@@ -25967,7 +26570,7 @@ HB
 Ut
 ak
 ak
-Ut
+tK
 SN
 Be
 Ut
@@ -26011,7 +26614,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -26058,7 +26661,7 @@ ir
 xL
 WF
 hZ
-hZ
+zG
 hZ
 eC
 oh
@@ -26193,7 +26796,7 @@ WF
 WF
 kc
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -26240,7 +26843,7 @@ ir
 xL
 bF
 hZ
-hZ
+zG
 hZ
 hZ
 wB
@@ -26336,7 +26939,7 @@ SN
 Be
 Ut
 Ut
-Ut
+tF
 Ut
 Be
 SN
@@ -26375,7 +26978,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -26422,8 +27025,8 @@ xL
 xL
 WF
 hZ
-hZ
-hZ
+zG
+zG
 hZ
 wB
 Ut
@@ -26531,6 +27134,7 @@ WF
 WF
 WF
 WF
+fR
 WF
 WF
 WF
@@ -26540,8 +27144,7 @@ WF
 WF
 WF
 WF
-WF
-WF
+fR
 WF
 WF
 WF
@@ -26557,7 +27160,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -26604,8 +27207,8 @@ WF
 WF
 WF
 hZ
-hZ
-hZ
+zG
+zG
 hZ
 wB
 Ut
@@ -26732,14 +27335,14 @@ WF
 WF
 WF
 WF
-WF
+fR
 WF
 WF
 WF
 WF
 Ci
 Zj
-NB
+zG
 hZ
 hZ
 hZ
@@ -26786,7 +27389,7 @@ bF
 WF
 td
 hZ
-hZ
+zG
 hZ
 hZ
 wB
@@ -26881,7 +27484,7 @@ Ut
 JB
 Ut
 Ut
-Ut
+tF
 Ut
 Ut
 Ut
@@ -26921,7 +27524,7 @@ hZ
 hZ
 hZ
 hZ
-NB
+zG
 hZ
 hZ
 hZ
@@ -26968,7 +27571,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 yo
 US
@@ -27068,7 +27671,7 @@ fQ
 SN
 SN
 SN
-WF
+fR
 WF
 WF
 WF
@@ -27103,7 +27706,7 @@ hZ
 hZ
 hZ
 hZ
-NB
+zG
 hZ
 hZ
 hZ
@@ -27137,7 +27740,7 @@ ir
 ir
 ir
 ir
-KO
+mM
 ir
 ir
 ir
@@ -27150,7 +27753,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 OJ
 OJ
@@ -27285,7 +27888,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -27332,7 +27935,7 @@ wZ
 wZ
 bF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -27412,12 +28015,12 @@ SN
 SN
 Ut
 aR
-Ut
+hZ
 aR
 Ut
 Ut
 wM
-Ut
+hZ
 wM
 Ut
 Ut
@@ -27427,7 +28030,7 @@ Ut
 SN
 Vz
 Ut
-Vz
+yt
 Vz
 Ut
 Vz
@@ -27467,7 +28070,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -27514,7 +28117,7 @@ WF
 WF
 Nd
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -27593,14 +28196,14 @@ SN
 (122,1,1) = {"
 SN
 Ut
+hZ
+hZ
+hZ
 Ut
 Ut
-Ut
-Ut
-Ut
-Ut
-Ut
-Ut
+hZ
+hZ
+hZ
 Ut
 Ut
 Ut
@@ -27649,7 +28252,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -27696,7 +28299,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -27774,20 +28377,20 @@ SN
 "}
 (123,1,1) = {"
 SN
-Ut
+tK
 aR
-Ut
+hZ
 aR
 Ut
 Ut
 wM
-Ut
+hZ
 wM
 Ut
 Ut
 Ut
 Ut
-Ut
+tK
 SN
 WF
 WF
@@ -27831,7 +28434,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -27878,7 +28481,7 @@ bF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 bF
 OJ
@@ -27957,14 +28560,14 @@ SN
 (124,1,1) = {"
 SN
 Ut
+hZ
+hZ
+hZ
 Ut
 Ut
-Ut
-Ut
-Ut
-Ut
-Ut
-Ut
+hZ
+hZ
+hZ
 Ut
 Ut
 Ut
@@ -28013,7 +28616,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -28060,7 +28663,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -28140,12 +28743,12 @@ SN
 SN
 Ut
 aR
-Ut
+hZ
 aR
 Ut
 Ut
 wM
-Ut
+hZ
 wM
 Ut
 Ut
@@ -28195,7 +28798,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -28242,7 +28845,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -28326,7 +28929,7 @@ Ut
 Ut
 Ut
 Ut
-Ut
+tK
 Ut
 Ut
 Ut
@@ -28377,7 +28980,7 @@ bF
 WF
 td
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -28424,7 +29027,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -28559,7 +29162,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -28606,7 +29209,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 OJ
@@ -28686,11 +29289,11 @@ SN
 SN
 Ut
 La
-KJ
+nI
 dd
 Ut
 La
-KJ
+nI
 dd
 Ut
 Ut
@@ -28741,7 +29344,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -28788,7 +29391,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 bF
@@ -28868,11 +29471,11 @@ SN
 SN
 Ut
 La
-KJ
+nI
 dd
 Ut
 La
-KJ
+nI
 dd
 Ut
 Ut
@@ -28923,7 +29526,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -28970,7 +29573,7 @@ bF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -29050,11 +29653,11 @@ SN
 SN
 Ut
 La
-KJ
+nI
 dd
 Ut
 La
-KJ
+nI
 dd
 Ut
 Ut
@@ -29105,7 +29708,7 @@ WF
 bF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -29152,7 +29755,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -29287,7 +29890,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -29334,7 +29937,7 @@ WF
 bF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -29412,6 +30015,7 @@ SN
 "}
 (132,1,1) = {"
 SN
+tK
 Ut
 Ut
 Ut
@@ -29424,8 +30028,7 @@ Ut
 Ut
 Ut
 Ut
-Ut
-Ut
+tK
 SN
 WF
 WF
@@ -29469,7 +30072,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -29516,7 +30119,7 @@ WF
 WF
 fR
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -29651,7 +30254,7 @@ WF
 WF
 WF
 oP
-NB
+zG
 hZ
 hZ
 hZ
@@ -29698,7 +30301,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 bF
@@ -29783,13 +30386,13 @@ Ut
 Cb
 jT
 Tb
-Ut
-Ut
+hZ
+hZ
 Gb
-Ut
-Ut
+hZ
+hZ
 BU
-Ut
+hZ
 SN
 WF
 WF
@@ -29833,7 +30436,7 @@ WF
 WF
 WF
 Zj
-NB
+zG
 hZ
 hZ
 hZ
@@ -29880,7 +30483,7 @@ bF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -29965,13 +30568,13 @@ Ut
 Cr
 SN
 lb
-Ut
-Ut
+hZ
+hZ
 Hi
-Ut
-Ut
+hZ
+hZ
 KJ
-Ut
+hZ
 SN
 WF
 WF
@@ -30015,7 +30618,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -30062,7 +30665,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -30147,13 +30750,13 @@ Ut
 Js
 SN
 KJ
-Ut
-Ut
+hZ
+hZ
 AS
-Ut
-Ut
+hZ
+hZ
 KJ
-Ut
+hZ
 SN
 WF
 WF
@@ -30197,7 +30800,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -30244,7 +30847,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -30329,13 +30932,13 @@ Ut
 xv
 SN
 KJ
-Ut
-Ut
+hZ
+hZ
 xW
-Ut
-Ut
+hZ
+hZ
 KJ
-Ut
+hZ
 SN
 rw
 WF
@@ -30379,7 +30982,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hZ
 hZ
 hZ
@@ -30391,7 +30994,7 @@ kc
 WF
 OJ
 MN
-NB
+zG
 hZ
 OJ
 OJ
@@ -30426,7 +31029,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -30511,13 +31114,13 @@ Ut
 zn
 SN
 Ap
-Ut
-Ut
+hZ
+hZ
 KJ
-Ut
-Ut
+hZ
+hZ
 KJ
-Ut
+hZ
 SN
 WF
 WF
@@ -30561,7 +31164,7 @@ bF
 WF
 WF
 jO
-NB
+zG
 PM
 Hq
 Hq
@@ -30573,7 +31176,7 @@ WF
 WF
 OJ
 yK
-NB
+zG
 hZ
 hZ
 AH
@@ -30608,7 +31211,7 @@ bF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 bF
 WF
@@ -30693,8 +31296,8 @@ SN
 SN
 SN
 SN
-SN
-SN
+Ut
+Ut
 SN
 SN
 SN
@@ -30743,7 +31346,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -30755,7 +31358,7 @@ WF
 WF
 OJ
 yK
-NB
+zG
 hZ
 hZ
 Sk
@@ -30790,7 +31393,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -30868,21 +31471,21 @@ SN
 "}
 (140,1,1) = {"
 SN
-ee
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-rw
-WF
-WF
-WF
-WF
-WF
-rw
+Pl
+ir
+ir
+fQ
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+SN
+UT
+UT
+UT
+SN
 WF
 WF
 WF
@@ -30925,7 +31528,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 td
 WF
@@ -30937,7 +31540,7 @@ bF
 WF
 OJ
 GT
-NB
+zG
 hZ
 OJ
 OJ
@@ -30972,7 +31575,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -31050,21 +31653,21 @@ SN
 "}
 (141,1,1) = {"
 SN
-WF
-WF
-WF
-rw
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+Ct
+ir
+ir
+SN
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+el
+UT
+fo
+UT
+SN
 WF
 WF
 WF
@@ -31107,7 +31710,7 @@ WF
 WF
 bF
 jO
-NB
+zG
 hk
 bF
 WF
@@ -31154,7 +31757,7 @@ WF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 wZ
 wZ
@@ -31232,21 +31835,21 @@ SN
 "}
 (142,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+SN
+SN
+SN
+SN
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+SN
+UT
+UT
+UT
+SN
 WF
 WF
 WF
@@ -31289,7 +31892,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 WF
@@ -31336,7 +31939,7 @@ bF
 WF
 WF
 hZ
-hZ
+zG
 hZ
 WF
 WF
@@ -31414,21 +32017,21 @@ SN
 "}
 (143,1,1) = {"
 SN
-WF
-WF
-rw
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-rw
-WF
-WF
-WF
+Pl
+ir
+ir
+fQ
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+SN
+SN
+SN
+SN
+SN
 WF
 WF
 WF
@@ -31471,7 +32074,7 @@ WF
 WF
 WF
 jO
-NB
+zG
 hk
 WF
 kc
@@ -31518,7 +32121,7 @@ WF
 WF
 bF
 hZ
-hZ
+zG
 hZ
 bF
 WF
@@ -31596,21 +32199,21 @@ SN
 "}
 (144,1,1) = {"
 SN
-WF
-WF
-rw
-WF
-WF
-WF
-rw
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+Ct
+ir
+ir
+SN
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+SN
+UT
+UT
+UT
+SN
 rw
 WF
 WF
@@ -31653,7 +32256,7 @@ WF
 WF
 td
 jO
-NB
+zG
 hk
 td
 WF
@@ -31700,7 +32303,7 @@ WF
 WF
 fR
 hZ
-hZ
+zG
 hZ
 fR
 WF
@@ -31778,21 +32381,21 @@ SN
 "}
 (145,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+SN
+SN
+SN
+SN
+Ut
+Ut
+hZ
+hZ
+hZ
+Ut
+el
+UT
+fo
+UT
+SN
 WF
 WF
 WF
@@ -31835,7 +32438,7 @@ te
 te
 te
 wx
-NB
+zG
 hP
 te
 te
@@ -31882,7 +32485,7 @@ hZ
 hZ
 hZ
 hZ
-hZ
+zG
 hZ
 hZ
 hZ
@@ -31960,21 +32563,21 @@ SN
 "}
 (146,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-rw
-WF
-WF
-WF
-WF
-rw
-WF
-WF
-WF
-WF
-WF
+Pl
+ir
+ir
+fQ
+Ut
+Ut
+hZ
+tK
+hZ
+Ut
+SN
+UT
+UT
+UT
+SN
 WF
 WF
 WF
@@ -32006,102 +32609,102 @@ iZ
 ir
 ll
 qJ
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-NB
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
+zG
 hZ
 hZ
 hZ
@@ -32142,21 +32745,21 @@ SN
 "}
 (147,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+Ct
+ir
+ir
+SN
+Ut
+Ut
+hZ
+hZ
+hZ
+Ut
+SN
+SN
+SN
+SN
+SN
 WF
 WF
 WF
@@ -32324,21 +32927,21 @@ SN
 "}
 (148,1,1) = {"
 SN
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-bF
-WF
-WF
-WF
+SN
+SN
+SN
+SN
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+SN
+UT
+UT
+UT
+SN
 bF
 WF
 WF
@@ -32506,21 +33109,21 @@ SN
 "}
 (149,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+Pl
+ir
+ir
+fQ
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+el
+UT
+fo
+UT
+SN
 WF
 WF
 WF
@@ -32688,21 +33291,21 @@ SN
 "}
 (150,1,1) = {"
 SN
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+Ct
+ir
+ir
+SN
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+SN
+UT
+UT
+UT
+SN
 bF
 WF
 WF
@@ -32870,21 +33473,21 @@ SN
 "}
 (151,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
+SN
+SN
+SN
+SN
+Ut
+Ut
+Ut
+Ut
+Ut
+Ut
+SN
+SN
+SN
+SN
+SN
 WF
 WF
 WF
@@ -33052,17 +33655,17 @@ SN
 "}
 (152,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
+Pl
+ir
+ir
+fQ
+Ut
+Ut
+Ut
+Ut
+Ut
+DW
+SN
 WF
 WF
 WF
@@ -33234,17 +33837,17 @@ SN
 "}
 (153,1,1) = {"
 SN
-WF
-bF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-WF
+Ct
+ir
+ir
+SN
+SN
+SN
+SN
+SN
+SN
+SN
+SN
 WF
 WF
 WF
@@ -33416,10 +34019,10 @@ SN
 "}
 (154,1,1) = {"
 SN
-WF
-WF
-WF
-WF
+SN
+SN
+SN
+SN
 WF
 WF
 WF
@@ -34396,7 +34999,7 @@ ir
 ir
 ir
 aI
-ir
+Ks
 xL
 xL
 xL
@@ -34921,7 +35524,7 @@ WF
 WF
 OJ
 Ve
-NB
+zG
 hZ
 AH
 te
@@ -34942,7 +35545,7 @@ XQ
 XQ
 XQ
 Ra
-ir
+Xe
 Ra
 zi
 XQ
@@ -35103,7 +35706,7 @@ FI
 Nd
 OJ
 MN
-NB
+zG
 hZ
 Sk
 Hq
@@ -35124,7 +35727,7 @@ XQ
 XQ
 XQ
 Ra
-ir
+Xe
 Ra
 XQ
 XQ
@@ -35285,7 +35888,7 @@ WF
 WF
 OJ
 MN
-NB
+zG
 hZ
 OJ
 WF
@@ -35306,7 +35909,7 @@ XQ
 XQ
 XQ
 Ra
-ir
+Xe
 Ra
 XQ
 XQ
@@ -35317,7 +35920,7 @@ XQ
 XQ
 XQ
 ov
-KD
+hF
 Er
 Er
 Er
@@ -35467,7 +36070,7 @@ WF
 WF
 OJ
 yK
-NB
+zG
 hZ
 OJ
 WF
@@ -35488,7 +36091,7 @@ Ra
 Ra
 Ra
 Ra
-ir
+Xe
 Ra
 XQ
 XQ
@@ -35649,7 +36252,7 @@ WF
 bF
 OJ
 yK
-NB
+zG
 hZ
 OJ
 WF
@@ -35670,7 +36273,7 @@ ir
 ix
 SL
 ir
-ir
+Wu
 Ra
 XQ
 XQ
@@ -35850,7 +36453,7 @@ xL
 xL
 xL
 xL
-ir
+OO
 ir
 ir
 Ra
@@ -37321,7 +37924,7 @@ WF
 WF
 bF
 xL
-Sc
+Ah
 Sc
 Sc
 Sc
@@ -40922,7 +41525,7 @@ WF
 WF
 WF
 WF
-bF
+WF
 fR
 WF
 WF
@@ -45277,9 +45880,9 @@ ot
 ot
 cu
 xa
-Jz
-Jz
-Jz
+vo
+vo
+vo
 eh
 cu
 cu
@@ -45457,14 +46060,14 @@ ot
 ot
 cu
 xa
-Jz
-Jz
-Jz
-Jz
+vo
+vo
+vo
+vo
 Cf
 xa
-Jz
-Jz
+vo
+vo
 Bo
 ot
 ot
@@ -45637,17 +46240,17 @@ eh
 ot
 ot
 xa
-Jz
-Jz
-Jz
+vo
+vo
+vo
 KF
 bp
 vo
 vo
 vo
-Jz
-Jz
-Jz
+vo
+vo
+vo
 eh
 ot
 ot
@@ -45818,8 +46421,8 @@ rM
 ot
 ot
 xa
-Jz
-Jz
+vo
+vo
 KF
 HN
 Jm
@@ -45828,8 +46431,8 @@ HN
 HN
 xC
 th
-Jz
-Jz
+vo
+vo
 eh
 ot
 ot
@@ -45999,8 +46602,8 @@ vo
 eh
 ot
 Rj
-Jz
-Jz
+vo
+vo
 KF
 WF
 WF
@@ -46010,7 +46613,7 @@ WF
 WF
 WF
 qd
-Jz
+vo
 rM
 ot
 ot
@@ -46181,7 +46784,7 @@ vo
 eh
 ot
 Rj
-Jz
+vo
 gu
 WF
 bF
@@ -46192,7 +46795,7 @@ Jm
 Eg
 WF
 qd
-Jz
+vo
 eh
 ot
 ot
@@ -46363,8 +46966,8 @@ vo
 eh
 ot
 Rj
-Jz
-Jz
+vo
+vo
 Yz
 Jm
 bF
@@ -46374,7 +46977,7 @@ WF
 WF
 Jm
 Gj
-Jz
+vo
 eh
 ot
 ot
@@ -46546,7 +47149,7 @@ ot
 ot
 ot
 mo
-Jz
+vo
 Yz
 WF
 mS
@@ -46556,7 +47159,7 @@ WF
 WF
 WF
 qd
-Jz
+vo
 eh
 ot
 Rj
@@ -46728,7 +47331,7 @@ ot
 ot
 ot
 Rj
-Vr
+fM
 Jo
 WF
 DC
@@ -46738,7 +47341,7 @@ DC
 ig
 WF
 qd
-Jz
+vo
 eh
 ot
 xa
@@ -46910,7 +47513,7 @@ ot
 ot
 ot
 Rj
-Jz
+vo
 Yz
 WF
 ig
@@ -46920,12 +47523,12 @@ EE
 RK
 WF
 qd
-Jz
+vo
 eh
 Rj
 vo
 vo
-Jz
+vo
 Jo
 HN
 bp
@@ -47092,7 +47695,7 @@ ot
 ot
 ot
 Rj
-Jz
+vo
 Yz
 bF
 WF
@@ -47102,12 +47705,12 @@ Zc
 WF
 WF
 EC
-Jz
+vo
 eh
 ot
 mo
 vo
-Jz
+vo
 Yz
 WF
 WF
@@ -47274,7 +47877,7 @@ ot
 ot
 ot
 xa
-Jz
+vo
 Yz
 WF
 nc
@@ -47283,8 +47886,8 @@ Zc
 WF
 Nd
 EC
-Jz
-Jz
+vo
+vo
 eh
 ot
 xa
@@ -47455,8 +48058,8 @@ Bo
 ot
 ot
 Rj
-Jz
-Jz
+vo
+vo
 Yz
 EE
 WF
@@ -47464,8 +48067,8 @@ ig
 WF
 WF
 EC
-Jz
-Jz
+vo
+vo
 rM
 ot
 xa
@@ -47637,7 +48240,7 @@ vo
 eh
 ot
 Rj
-Jz
+vo
 KF
 FI
 Jm
@@ -47645,8 +48248,8 @@ WF
 WF
 bF
 EC
-Jz
-Jz
+vo
+vo
 rM
 ot
 xa
@@ -47819,15 +48422,15 @@ vo
 eh
 ot
 Rj
-Jz
+vo
 Yz
 WF
 ig
 WF
 WF
 EC
-Jz
-Jz
+vo
+vo
 rM
 ot
 Rj
@@ -48001,14 +48604,14 @@ vo
 eh
 ot
 Rj
-Jz
+vo
 dT
 WF
 Jm
 yi
 EC
-Jz
-Jz
+vo
+vo
 rM
 ot
 ot
@@ -48183,13 +48786,13 @@ vo
 Bo
 ot
 Rj
-Jz
-at
+vo
+Yn
 Yz
 EC
-Jz
-Jz
-Jz
+vo
+vo
+vo
 rM
 ot
 ot
@@ -48366,10 +48969,10 @@ vo
 eh
 ot
 mo
-qA
+go
 xX
-Jz
-Jz
+vo
+vo
 rM
 Ya
 ot
@@ -48548,9 +49151,9 @@ vo
 eh
 ot
 Rj
-Jz
-Jz
-Jz
+vo
+vo
+vo
 rM
 ot
 ot
@@ -48826,12 +49429,12 @@ Rj
 vo
 Yz
 WF
+WF
+WF
 oG
 oG
-oG
-oG
-oG
-oG
+WF
+WF
 oG
 WF
 WF
@@ -49008,12 +49611,12 @@ xa
 vo
 Jo
 WF
-oG
-oG
-oG
-xd
-oG
-oG
+WF
+WF
+WF
+bF
+WF
+WF
 oG
 WF
 WF
@@ -49190,13 +49793,13 @@ vo
 vo
 Yz
 WF
+WF
+WF
+WF
+WF
+WF
 oG
-oG
-oG
-oG
-oG
-oG
-oG
+WF
 WF
 WF
 WF
@@ -50160,15 +50763,15 @@ SN
 "}
 (246,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+SN
+SN
+SN
+SN
+SN
+SN
+SN
+SN
+SN
 WF
 WF
 WF
@@ -50342,17 +50945,17 @@ SN
 "}
 (247,1,1) = {"
 SN
+cD
+RJ
+Ra
+hr
+Ra
+Ra
+GZ
+rc
+SN
 WF
 WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
-bF
 WF
 WF
 WF
@@ -50524,15 +51127,15 @@ SN
 "}
 (248,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
+Ra
+Ra
+Ra
+vC
+Ra
+Ra
+Qm
+mm
+SN
 WF
 WF
 WF
@@ -50706,15 +51309,15 @@ SN
 "}
 (249,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+bL
+Ra
+Ra
+PR
+Ra
+Ra
+Nn
+Ra
+SN
 WF
 WF
 bF
@@ -50888,15 +51491,15 @@ SN
 "}
 (250,1,1) = {"
 SN
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+GL
+OZ
+Lu
+BH
+Ra
+Ra
+Ra
+Ra
+SN
 WF
 WF
 WF
@@ -51070,15 +51673,15 @@ SN
 "}
 (251,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-bF
+GL
+OZ
+Lu
+Cp
+Ra
+Ra
+Ra
+Ra
+SN
 WF
 WF
 WF
@@ -51252,15 +51855,15 @@ SN
 "}
 (252,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
+fy
+Ra
+Ra
+MF
+Ra
+Ra
+wP
+Ra
+SN
 WF
 WF
 WF
@@ -51434,15 +52037,15 @@ SN
 "}
 (253,1,1) = {"
 SN
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-bF
+Ra
+Ra
+Ra
+qe
+Ra
+Ra
+Qm
+Nh
+SN
 WF
 WF
 WF
@@ -51616,15 +52219,15 @@ SN
 "}
 (254,1,1) = {"
 SN
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
+Ma
+xe
+Ra
+bM
+Ra
+Ra
+TF
+FP
+SN
 WF
 WF
 WF
