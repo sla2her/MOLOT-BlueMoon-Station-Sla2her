@@ -1,6 +1,6 @@
 /obj/item/stack/telecrystal
 	name = "credit"
-	desc = "This is money. Dirty money..."
+	desc = "This is money. Dirty money.."
 	singular_name = "credit"
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "telecrystal"
