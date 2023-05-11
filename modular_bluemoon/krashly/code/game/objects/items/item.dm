@@ -30,7 +30,7 @@
 //InteQ
 
 /obj/item/poster/random_inteq
-	name = "random inteq poster"
+	name = "random InteQ poster"
 	poster_type = /obj/structure/sign/poster/contraband/inteq/random
 	icon_state = "rolled_contraband"
 

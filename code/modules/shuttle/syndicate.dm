@@ -1,8 +1,8 @@
 #define SYNDICATE_CHALLENGE_TIMER 17500	// ¯\_(ツ)_/¯ minutes
 
 /obj/machinery/computer/shuttle/syndicate
-	name = "inteq shuttle terminal"
-	desc = "The terminal used to control the inteq transport shuttle."
+	name = "InteQ shuttle terminal"
+	desc = "The terminal used to control the InteQ transport shuttle."
 	circuit = /obj/item/circuitboard/computer/syndicate_shuttle
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
@@ -36,12 +36,12 @@
 	return ..()
 
 /obj/machinery/computer/shuttle/syndicate/recall
-	name = "inteq shuttle recall terminal"
+	name = "InteQ shuttle recall terminal"
 	desc = "Use this if your friends left you behind."
 	possible_destinations = "syndicate_away"
 
 /obj/machinery/computer/shuttle/syndicate/drop_pod
-	name = "inteq assault pod control"
+	name = "InteQ assault pod control"
 	desc = "Controls the drop pod's launch system."
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "dorm_available"
@@ -52,7 +52,7 @@
 	clockwork = TRUE //it'd look weird
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate
-	name = "inteq shuttle navigation computer"
+	name = "InteQ shuttle navigation computer"
 	desc = "Used to designate a precise transit location for the syndicate shuttle."
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
