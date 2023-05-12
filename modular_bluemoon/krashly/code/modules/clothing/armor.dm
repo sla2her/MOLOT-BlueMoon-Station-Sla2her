@@ -101,13 +101,13 @@
 
 //Helmet_STANDART
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	name = "InteQ hardsuit helmet"
 	desc = "InteQ stormtrooper hardsuit helmet."
 	icon_state = "hardsuit0-brown"
 	item_state = "hardsuit0-brown"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/head_muzzled.dmi'
 	hardsuit_type = "brown"
 //Suit_STANDART
 /obj/item/clothing/suit/space/hardsuit/syndi/inteq
@@ -124,13 +124,13 @@
 
 //Helmet_SHIELDED
 /obj/item/clothing/head/helmet/space/hardsuit/shielded/syndi/inteq
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	name = "InteQ shielded hardsuit helmet"
 	desc = "InteQ shielded stormtrooper hardsuit helmet."
 	icon_state = "hardsuit0-brown"
 	item_state = "hardsuit0-brown"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/head_muzzled.dmi'
 	hardsuit_type = "brown"
 //Suit_SHIELDED
 /obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq
