@@ -179,15 +179,15 @@
 		/obj/item/kitchen/knife/combat/survival)
 
 /datum/outfit/syndicate/lone
-	name = "InteQ Operative - Lone"
+	name = "Lone Operative"
 
 	glasses = /obj/item/clothing/glasses/night/syndicate
-	mask = /obj/item/clothing/mask/gas/sechailer
-	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite/inteq
-	head = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/inteq
+	mask = /obj/item/clothing/mask/gas/syndicate
+	suit = /obj/item/clothing/suit/space/syndicate/black/red
+	head = /obj/item/clothing/head/helmet/space/syndicate/black/red
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	internals_slot = ITEM_SLOT_RPOCKET
-	belt = /obj/item/storage/belt/military/inteq
+	belt = /obj/item/storage/belt/military
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\
 	/obj/item/clothing/accessory/permit=1,\
 	/obj/item/tank/jetpack/oxygen/harness=1,\
@@ -197,11 +197,11 @@
 	tc = 60
 
 /datum/outfit/syndicate/syndiesquad
-	name = "InteQ Brown Berserkers Squad"
-	uniform = /obj/item/clothing/under/inteq
+	name = "Syndicate Special Forces"
+	uniform = /obj/item/clothing/under/syndicate
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	back = /obj/item/storage/backpack/security/inteq
+	back = /obj/item/storage/backpack
 	id = /obj/item/card/id/syndicate/locked_banking
 	belt = /obj/item/gun/ballistic/automatic/pistol/APS
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\
@@ -226,7 +226,7 @@
 	W.icon_state = "syndie"
 	W.access = get_all_accesses()//They get full station access.
 	W.access += get_centcom_access("Death Commando")//Let's add their alloted CentCom access.
-	W.assignment = "InteQ Brown Berserkers Squad"
+	W.assignment = "Syndicate Special Forces"
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)
 
