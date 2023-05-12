@@ -4881,7 +4881,6 @@
 #include "modular_splurt\code\modules\food_and_drinks\food\snacks_vend.dm"
 #include "modular_splurt\code\modules\food_and_drinks\recipes\drink_recipes.dm"
 #include "modular_splurt\code\modules\food_and_drinks\recipes\tablecraft\recipes_burger.dm"
-#include "modular_splurt\code\modules\food_and_drinks\recipes\tablecraft\recipes_seafood.dm"
 #include "modular_splurt\code\modules\holiday\holidays.dm"
 #include "modular_splurt\code\modules\hydroponics\grown\towercap.dm"
 #include "modular_splurt\code\modules\jobs\job_types\_job_alt_titles.dm"
