@@ -32,3 +32,7 @@
 /obj/item/inteq/uplink/Initialize(mapload, owner, tc_amount = 30)
 	. = ..()
 	AddComponent(/datum/component/uplink/syndicate, owner, FALSE, TRUE, uplink_flag, tc_amount)
+
+/obj/item/inteq/uplink/syndicate/nuclear
+	name = "syndicate nuclear uplink"
+	uplink_flag = UPLINK_NUKE_OPS

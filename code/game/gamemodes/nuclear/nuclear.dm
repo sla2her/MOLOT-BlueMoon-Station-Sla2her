@@ -194,6 +194,7 @@
 	/obj/item/gun/ballistic/automatic/pistol=1,\
 	/obj/item/kitchen/knife/combat/survival)
 
+	uplink_type = /obj/item/inteq/uplink/syndicate/nuclear
 	tc = 60
 
 /datum/outfit/syndicate/syndiesquad
