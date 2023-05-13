@@ -14,9 +14,7 @@
   - rscadd: Broken MOD cores can be found in maintenance loot
   - tweak: Defibs fire a signal on a successful result
   - tweak: AI and pAI procs to enable MODsuit control
-2023-05-12:
-  ActuallyALovelyGrave:
-  - rscadd: "\u0420\u0435\u0444\u0438\u043B\u043B KinkMate'\u0430 \u0431\u044B\u043B\
-      \ \u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0432 \u0440\u0430\u0437\
-      \u0434\u0430\u0442\u0447\u0438\u043A \u0448\u0430\u0445\u0442\u0451\u0440\u043E\
-      \u0432 \u0437\u0430 12000 \u043E\u0447\u043A\u043E\u0432."
+2023-05-13:
+  LeChatGuid2:
+  - rscadd: New sprites for snout, ears and floof
+  - rscadd: New markings
