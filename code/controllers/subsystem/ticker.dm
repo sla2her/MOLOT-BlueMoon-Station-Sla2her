@@ -351,7 +351,7 @@ SUBSYSTEM_DEF(ticker)
 
 	var/list/adm = get_admin_counts()
 	var/list/allmins = adm["present"]
-	send2chat("Сервер Bещает", "Раунд [GLOB.round_id ? "#[GLOB.round_id]:" : "в режиме"] [hide_mode ? "секретном":"[mode.name]"] стартует[allmins.len ? "!":" без администрации!!"]")
+	send2chat("Раунд [GLOB.round_id ? "#[GLOB.round_id]:" : "в режиме"] [hide_mode ? "секретном":"[mode.name]"] стартует[allmins.len ? "!":" без администрации!!"]", CONFIG_GET(string/chat_announce_new_game))
 	if(CONFIG_GET(string/new_round_ping))
 		send2chat("<@&[CONFIG_GET(string/new_round_ping)]> | Новый раунд стартует на [SSmapping.config.map_name]!", CONFIG_GET(string/chat_announce_new_game))
 	setup_done = TRUE
