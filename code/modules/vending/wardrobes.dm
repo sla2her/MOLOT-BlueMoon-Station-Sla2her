@@ -605,6 +605,7 @@
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/syndie_wardrobe
 	light_color = COLOR_MOSTLY_PURE_RED
-
+	default_price = PRICE_ABOVE_EXPENSIVE
+	extra_price = PRICE_REALLY_EXPENSIVE
 /obj/item/vending_refill/wardrobe/syndie_wardrobe
 	machine_name = "\improper SynDrobe"
