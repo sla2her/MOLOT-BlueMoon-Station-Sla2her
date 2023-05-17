@@ -93,7 +93,7 @@
 	item = /obj/item/storage/briefcase/modularbundle
 	cost = 12
 
-/datum/uplink_item/bundles_tc/shredder
+/datum/uplink_item/bundles_tc/shredderbundle
 	name = "Shredder bundle"
 	desc = "A truly horrific weapon designed simply to maim its victim, the CX Shredder is banned by several intergalactic treaties. \
 			You'll get two of them with this. And spare ammo to boot. And we'll throw in an extra elite hardsuit and chest rig to hold them all!"
