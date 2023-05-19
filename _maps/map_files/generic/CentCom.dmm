@@ -17320,7 +17320,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/evac)
 "Lu" = (
-/obj/item/inteq/uplink,
+/obj/item/inteq/uplink/radio,
 /turf/open/floor/plating/asteroid/snow/airless,
 /area/syndicate_mothership)
 "Lv" = (

@@ -14,4 +14,5 @@
 	/obj/item/gun/ballistic/automatic/pistol=1,\
 	/obj/item/kitchen/knife/combat/survival)
 
+	uplink_type = /obj/item/inteq/uplink/radio
 	tc = 60
