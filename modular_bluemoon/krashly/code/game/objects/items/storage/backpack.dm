@@ -52,7 +52,7 @@
 	slowdown = 0
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 
-/obj/item/storage/backpack/duffelbag/syndie/ComponentInitialize()
+/obj/item/storage/backpack/duffelbag/syndie/inteq/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.silent = TRUE
