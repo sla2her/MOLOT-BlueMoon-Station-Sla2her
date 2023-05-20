@@ -398,14 +398,22 @@
 			else
 				msg += "[t_on] имеет дикие, космические глаза, которые в свою очередь имеют странный, абсолютно ненормальный вид.\n"
 
+	for(var/X in writing)
+		if(!w_uniform)
+			var/obj/item/bodypart/BP = X
+			msg += "<span class='notice'>На [t_ego] [BP.name] написано: \"[html_encode(BP.writtentext)]\".</span>\n"
+	for(var/obj/item/organ/genital/G in internal_organs)
+		if(length(G.writtentext) && istype(G) && G.is_exposed())
+			msg += "<span class='notice'>На [t_ego] [G.name] написано: \"[html_encode(G.writtentext)]\".</span>\n"
+
 		if(!user)
 			return
 
 		if(src != user)
 			if (a_intent != INTENT_HELP)
-				msg += "[t_on] выглядит на готове.\n"
+				msg += "[t_on] выглядит наготове.\n"
 			if (getOxyLoss() >= 10)
-				msg += "[t_on] выглядит измотанно.\n"
+				msg += "[t_on] жадно глотает воздух.\n"
 			if (getToxLoss() >= 10)
 				msg += "[t_on] выглядит болезненно.\n"
 			var/datum/component/mood/mood = src.GetComponent(/datum/component/mood)
@@ -441,7 +449,7 @@
 			if(!key)
 				msg += "<span class='deadsay'>[t_on] кататоник. Стресс от жизни в глубоком космосе сильно повлиял на н[t_ego]. Восстановление маловероятно.</span>\n"
 			else if(!client)
-				msg += "<span class='notice'>[t_on] имеет пустой, рассеянный взгляд и кажется совершенно не реагирующим ни на что. [t_on] может выйти из этого в ближайшее время.</span>\n"
+				msg += "[t_on] имеет пустой, рассеянный взгляд и кажется совершенно не реагирующим ни на что. В этом состоянии [t_on] находится [round(((world.time - lastclienttime) / (1 MINUTES)), 1)] минут. [t_on] может выйти из этого состояни в ближайшее время.\n" //SKYRAT CHANGE - ssd indicator
 
 	var/trait_exam = common_trait_examine()
 	if (!isnull(trait_exam))
