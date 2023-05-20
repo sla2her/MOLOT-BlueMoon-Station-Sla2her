@@ -14,12 +14,12 @@
 	obj_flags = CAN_BE_HIT|SHOVABLE_ONTO
 	pass_flags = LETPASSTHROW //You can throw objects over this, despite it's density.")
 	circuit = /obj/item/circuitboard/machine/research_table
-	var/self_unbuckle_time = 3 MINUTES
+	var/self_unbuckle_time = 2 MINUTES
 	var/static/list/users = list()
 	var/tier = 1
 	var/configured = FALSE
 	var/point_type = POINT_TYPE_SCIENCE
-	var/max_repeat_usage = 3
+	var/max_repeat_usage = 6
 	var/slaver_mode = FALSE
 
 /obj/machinery/research_table/examine(mob/user)
