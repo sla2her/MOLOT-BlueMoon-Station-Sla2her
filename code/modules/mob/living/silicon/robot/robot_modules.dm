@@ -1208,7 +1208,7 @@
 		"(Janitor) Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinajan"),
 		"(Janitor) Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekjan"),
 		"(Janitor) Can" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "canjan"),
-		"(Janitor) Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyjan"),
+		"(Janitor) Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyres"),
 		"(Janitor) MissM" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "missm_janitor"), // SPLURT Addon (Skyrat Port)
 		"(Janitor) Protectron" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "protectron_janitor"), // SPLURT Addon (Skyrat Port)
 		"(Janitor) Zoomba" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "zoomba_jani"), // SPLURT Addon (Skyrat Port)
@@ -1223,10 +1223,10 @@
 		"(Janitor) BootyS" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "bootyjanitorS"), // SPLURT Addon (Hyper Port)
 		"(Janitor) Borgi" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "borgi-jani-b"), // SPLURT Addon (Skyrat Port)
 		"(Janitor) Otie" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "otiej-b"), // SPLURT Addon (Skyrat Port)
-		"(Janitor) Drake" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakejanitbox"),
-		"(Janitor) Fembot" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi', icon_state = "fembot-janitor"), //Gardelin0 Addon
 		"(Janitor) Ratge" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/ratge.dmi', icon_state = "ratge"), //CassiusRogue Request
 		"(Janitor) Meka" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "mekajani") //Krashly Request
+		"(Janitor) Fembot" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "fembot-service"), // SPLURT Addon
+		"(Janitor) Drake" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakejanitbox")
 		)
 		var/list/L = list("(Service) DarkK9" = "k50", "(Service) Vale" = "valeserv", "(Service) ValeDark" = "valeservdark",
 						"(Janitor) Scrubpuppy" = "scrubpup")
@@ -1405,6 +1405,10 @@
 			cyborg_icon_override = 'modular_splurt/icons/mob/widerobot.dmi'
 			sleeper_overlay = "otiejsleeper"
 			dogborg = TRUE
+		if("(Janitor) Fembot") // SPLURT Addon
+			cyborg_base_icon = "fembot-service"
+			cyborg_icon_override = 'modular_splurt/icons/mob/robots.dmi'
+			sleeper_overlay = "fembotsleeper"
 		if("(Janitor) Drake") // Dergborg brought to you by Navier#1236 | Skyrat | Commissioned Artist: deviantart.com/mizartz
 			cyborg_base_icon = "drakejanit"
 			cyborg_icon_override = 'modular_sand/icons/mob/cyborg/drakemech.dmi'
