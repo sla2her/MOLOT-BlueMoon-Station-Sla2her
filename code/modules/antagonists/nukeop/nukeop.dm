@@ -211,7 +211,21 @@
 	name = "Lone Operative"
 	always_new_team = TRUE
 	send_to_spawnpoint = FALSE //Handled by event
-	nukeop_outfit = /datum/outfit/syndicate/lone
+
+/datum/antagonist/nukeop/lone/on_gain()
+	ExtaOrNeExta()
+	. = ..()
+
+/datum/antagonist/nukeop/lone/proc/ExtaOrNeExta()
+	var/mob/living/carbon/human/H = owner.current
+	if(!istype(H))
+		return
+	if(nuke_team && istype(SSticker.mode, /datum/game_mode/extended))
+		H.equipOutfit(/datum/outfit/syndicate/lone)
+	else
+		H.equipOutfit(/datum/outfit/syndicate/lone/inteq)
+	return
+
 
 /datum/antagonist/nukeop/lone/assign_nuke()
 	if(nuke_team && !nuke_team.tracked_nuke)
@@ -225,7 +239,6 @@
 				nuke_team.memorized_code = nuke.r_code
 		else
 			stack_trace("Station self destruct not found during lone op team creation.")
-			ExtaOrNeExta()
 			nuke_team.memorized_code = null
 
 /datum/antagonist/nukeop/reinforcement

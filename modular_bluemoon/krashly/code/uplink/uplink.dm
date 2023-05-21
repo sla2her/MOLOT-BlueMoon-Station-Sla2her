@@ -40,7 +40,7 @@
 	desc = "A basic handheld radio that communicates with local telecommunication networks. (You can turn Uplink to dust if you Alt + Click it.)"
 	dog_fashion = /datum/dog_fashion/back
 
-/obj/item/inteq/uplink/Initialize(mapload, owner, tc_amount = 30)
+/obj/item/inteq/uplink/syndicate/Initialize(mapload, owner, tc_amount = 30)
 	. = ..()
 	AddComponent(/datum/component/uplink/syndicate, owner, FALSE, TRUE, uplink_flag, tc_amount)
 

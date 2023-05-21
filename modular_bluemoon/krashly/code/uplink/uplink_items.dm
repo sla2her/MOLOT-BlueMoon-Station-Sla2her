@@ -48,3 +48,38 @@
 	item = /obj/item/ammo_box/magazine/ak12/ap
 	cost = 6
 	purchasable_from = (UPLINK_NUKE_OPS)
+
+/datum/uplink_item/inteq/space_suit
+	name = "InteQ Space Suit"
+	desc = "This Yellow and Black Inteq space suit is less encumbering than Nanotrasen variants, \
+			fits inside bags, and has a weapon slot. Nanotrasen crew members are trained to report InteQ space suit \
+			sightings, however."
+	item = /obj/item/storage/box/syndie_kit/space
+	cost = 4
+
+/datum/uplink_item/inteq/hardsuit
+	name = "InteQ Hardsuit"
+	desc = "The feared suit of a Admiral Brown's Chancellery. Features slightly better armoring and a built in jetpack \
+			that runs off standard atmospheric tanks. Toggling the suit in and out of \
+			combat mode will allow you all the mobility of a loose fitting uniform without sacrificing armoring. \
+			Additionally the suit is collapsible, making it small enough to fit within a backpack. \
+			Nanotrasen crew who spot these suits are known to panic."
+	item = /obj/item/clothing/suit/space/hardsuit/syndi/inteq
+	cost = 8
+	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS) //you can't buy it in nuke, because the elite hardsuit costs the same while being better
+
+/datum/uplink_item/inteq/hardsuit/elite
+	name = "Elite InteQ Hardsuit"
+	desc = "An upgraded, elite version of the Admiral Brown's Chancellery hardsuit. It features fireproofing, and also \
+			provides the user with superior armor and mobility compared to the standard InteQ hardsuit."
+	item = /obj/item/clothing/suit/space/hardsuit/syndi/elite/inteq
+	cost = 8
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+
+/datum/uplink_item/inteq/hardsuit/shielded
+	name = "Shielded InteQ Hardsuit"
+	desc = "An upgraded version of the standard Admiral Brown's Chancellery hardsuit. It features a built-in energy shielding system. \
+			The shields can handle up to three impacts within a short duration and will rapidly recharge while not under fire."
+	item = /obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq
+	cost = 30
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS

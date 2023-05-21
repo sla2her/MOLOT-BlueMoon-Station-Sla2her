@@ -12,7 +12,7 @@
 	desc = "A pair of running shoes. Excellent for running and even better for smashing skulls."
 	icon_state = "s-ninja"
 	item_state = "s-ninja"
-	permeability_coefficient = 0.01
+	permeability_coefficient = 1
 	slowdown = -0.25
 	clothing_flags = NOSLIP
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
