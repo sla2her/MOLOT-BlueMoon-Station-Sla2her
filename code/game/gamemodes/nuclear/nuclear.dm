@@ -182,6 +182,7 @@
 	name = "Lone Operative"
 
 	glasses = /obj/item/clothing/glasses/night/syndicate
+	uniform = /obj/item/clothing/under/syndicate
 	mask = /obj/item/clothing/mask/gas/syndicate
 	suit = /obj/item/clothing/suit/space/syndicate/black/red
 	head = /obj/item/clothing/head/helmet/space/syndicate/black/red

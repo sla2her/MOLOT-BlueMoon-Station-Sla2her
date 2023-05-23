@@ -224,8 +224,6 @@
 		H.equipOutfit(/datum/outfit/syndicate/lone)
 	else
 		H.equipOutfit(/datum/outfit/syndicate/lone/inteq)
-	return
-
 
 /datum/antagonist/nukeop/lone/assign_nuke()
 	if(nuke_team && !nuke_team.tracked_nuke)

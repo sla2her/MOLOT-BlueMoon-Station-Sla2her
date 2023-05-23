@@ -109,8 +109,7 @@
 /datum/antagonist/heretic/proc/forge_primary_objectives()
 	var/datum/objective/protect/protection_objective = new
 	protection_objective.owner = owner
-	protection_objective.target = yandere
-	protection_objective.explanation_text = "Защищай [yandere.name] ценой своей жизни!"
+	protection_objective.update_explanation_text()
 	objectives += protection_objective
 
 	var/datum/objective/sacrifice_ecult/SE = new
