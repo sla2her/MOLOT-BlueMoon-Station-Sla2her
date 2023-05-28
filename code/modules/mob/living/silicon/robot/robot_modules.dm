@@ -413,7 +413,8 @@
 		"Borgi" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "borgi-medi-b"), // SPLURT Adoon (Skyrat Port)
 		"Drake" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakemedbox"),
 		"Fembot" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi', icon_state = "fembot-medic"), //Gardelin0 Addon
-		"Meka" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "mekamed") //Krashly Request
+		"Meka" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "mekamed"), //Krashly Request
+		"Assaultron" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "assaultron_medical") // SPLURT Addon
 		)
 		var/list/L = list("Medihound" = "medihound", "Medihound Dark" = "medihounddark", "Vale" = "valemed")
 		for(var/a in L)
@@ -543,6 +544,10 @@
 			cyborg_base_icon = "mekamed"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
 			canrest = TRUE
+		if("Assaultron") // SPLURT Addon (Hyper Port)
+			cyborg_base_icon = "assaultron_medical"
+			cyborg_icon_override = 'modular_splurt/icons/mob/robots.dmi'
+			hat_offset = 3
 		else
 			return FALSE
 	return ..()
@@ -617,7 +622,8 @@
 		"Otie" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "otiee-b"), // SPLURT Adoon (Skyrat Port)
 		"Drake" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakeengbox"),
 		"Fembot" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi', icon_state = "fembot-engineering"), //Gardelin0 Addon
-		"Meka" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "mekaengi") //Krashly Request
+		"Meka" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "mekaengi"), //Krashly Request
+		"Assaultron" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "assaultron_engi") // SPLURT Addon
 		)
 		var/list/L = list("Pup Dozer" = "pupdozer", "Vale" = "valeeng")
 		for(var/a in L)
@@ -747,6 +753,10 @@
 			cyborg_base_icon = "mekaengi"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
 			canrest = TRUE
+		if("Assaultron") // SPLURT Addon (Hyper Port)
+			cyborg_base_icon = "assaultron_engi"
+			cyborg_icon_override = 'modular_splurt/icons/mob/robots.dmi'
+			hat_offset = 3
 		else
 			return FALSE
 	return ..()
@@ -804,7 +814,9 @@
 		"EdgyGirl" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "prettyboi-b"), // SPLURT Addon (VIRGO Port)
 		"Syndicate" = image(icon = 'modular_splurt/icons/mob/widerobot_synd.dmi', icon_state = "syndihounddark"), // BLUEMOON Addon
 		"Drake" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakesecbox"),
-		"Fembot" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi', icon_state = "fembot-security") //Gardelin0 Addon
+		"Fembot" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi', icon_state = "fembot-security"), //Gardelin0 Addon
+		"Assaultron" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "assaultron_sec") // SPLURT Addon
+
 		)
 		var/list/L = list("K9" = "k9", "Vale" = "valesec", "K9 Dark" = "k9dark")
 		for(var/a in L)
@@ -935,6 +947,11 @@
 		if("Fembot") // //Gardelin0 Addon
 			cyborg_base_icon = "fembot-security"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/robots.dmi'
+		if("Assaultron") // SPLURT Addon
+			cyborg_base_icon = "assaultron_sec"
+			cyborg_icon_override = 'modular_splurt/icons/mob/robots.dmi'
+			hat_offset = 3
+
 		else
 			return FALSE
 	return ..()

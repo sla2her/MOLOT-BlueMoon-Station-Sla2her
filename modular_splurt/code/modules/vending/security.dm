@@ -9,7 +9,9 @@
 		/obj/item/clothing/head/helmet/blueshirt = 5,
 		/obj/item/clothing/head/helmet/hephaestus = 5,
 		/obj/item/clothing/under/rank/security/officer/blueshirt = 5,
-		/obj/item/clothing/suit/armor/vest/blueshirt = 5
+		/obj/item/clothing/suit/armor/vest/blueshirt = 5,
+		/obj/item/armorkit/security = 5,
+		/obj/item/armorkit/security/helmet = 5
 	)
 	var/list/extra_contraband = list(
 		/obj/item/storage/belt/slut = 5,
@@ -91,11 +93,22 @@
 
 /obj/structure/closet/secure_closet/blueshield/PopulateContents()
 	..()
-	new /obj/item/clothing/head/helmet/sec/blueshield(src)
+	new /obj/item/clothing/head/helmet/sec(src)
 	new /obj/item/radio/headset/headset_blueshield(src)
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/clothing/mask/gas/sechailer/swat(src)
 	new /obj/item/grenade/flashbang(src)
+	new /obj/item/choice_beacon/bsbaton(src)
+	new /obj/item/armorkit/blueshield(src)
+	new /obj/item/armorkit/blueshield/helmet(src)
+	new /obj/item/clothing/head/helmet/sec(src)
+	new /obj/item/radio/headset/headset_blueshield(src)
+	new /obj/item/flashlight/seclite(src)
+	new /obj/item/clothing/mask/gas/sechailer/swat(src)
+	new /obj/item/grenade/flashbang(src)
+	new /obj/item/choice_beacon/bsbaton(src)
+	new /obj/item/armorkit/blueshield(src)
+	new /obj/item/armorkit/blueshield/helmet(src)
 
 /obj/structure/closet/secure_closet/bridgesec
 	name = "bridge officer's locker"

@@ -1304,6 +1304,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	cit_character_pref_load(S)
 
+	splurt_character_pref_load(S)
+
 	return 1
 
 /datum/preferences/proc/save_character(bypass_cooldown = FALSE)
@@ -1549,6 +1551,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		S["tcg_decks"] << safe_json_encode(list())
 
 	cit_character_pref_save(S)
+
+	splurt_character_pref_save(S)
 
 	return 1
 
