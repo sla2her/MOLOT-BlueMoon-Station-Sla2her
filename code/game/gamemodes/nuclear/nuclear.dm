@@ -132,7 +132,7 @@
 
 	var/tc = 30
 	var/command_radio = FALSE
-	var/uplink_type = /obj/item/inteq/uplink/syndicate/nuclear
+	var/uplink_type = /obj/item/inteq/uplink/radio/nuclear
 
 
 /datum/outfit/syndicate/leader
@@ -195,7 +195,7 @@
 	/obj/item/gun/ballistic/automatic/pistol=1,\
 	/obj/item/kitchen/knife/combat/survival)
 
-	uplink_type = /obj/item/inteq/uplink/syndicate/nuclear
+	uplink_type = /obj/item/uplink/syndicate/nuclear
 	tc = 60
 
 /datum/outfit/syndicate/syndiesquad
@@ -218,7 +218,7 @@
 	R.freqlock = TRUE
 
 	var/key = H.key ? H.key : preference_source ? preference_source.key : null
-	var/obj/item/inteq/uplink/syndicate/U = new /obj/item/uplink/nuclear_restricted(H, key, 80)
+	var/obj/item/uplink/syndicate/U = new /obj/item/uplink/nuclear_restricted(H, key, 80)
 	H.equip_to_slot_or_del(U, ITEM_SLOT_BACKPACK)
 
 	var/obj/item/implant/mindshield/L = new //Here you go Deuryn
