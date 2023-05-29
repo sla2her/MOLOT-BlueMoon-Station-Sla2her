@@ -433,6 +433,12 @@ GLOBAL_LIST_INIT(pp_limbs, list(
 				return
 			requesting_mind.do_edit_objectives_ambitions()
 
+		if("makementor")
+			admin.holder.makeMentor(ckey = targetMob.ckey)
+
+		if("removementor")
+			admin.holder.removeMentor(ckey = targetMob.ckey)
+
 		if ("traitor_panel")
 			admin.holder.show_traitor_panel(targetMob)
 
