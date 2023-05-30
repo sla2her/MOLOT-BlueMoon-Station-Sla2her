@@ -307,10 +307,10 @@
 			G.on_report()
 			intercepttext += G.get_report()
 
-	print_command_report(intercepttext, "Отчёт от Центрального Командования", announce=FALSE)
-	priority_announce("Сводка была скопирована и распечатана на всех коммуникационных консолях.", "Данные о угрозе перехвачены. Код повышен.", "intercept")
-	if(GLOB.security_level < SEC_LEVEL_BLUE)
-		set_security_level(SEC_LEVEL_BLUE)
+	print_command_report(intercepttext, "Отдел ССО Пакта Синих Лун", announce=FALSE)
+	priority_announce("Благодаря неустанным усилиям наших специальных оперативных подразделений мы обнаружили несколько возможных угроз для [station_name()]. Будьте осторожней!", "Отдел ССО Пакта Синих Лун", "intercept")
+	//if(GLOB.security_level < SEC_LEVEL_BLUE)
+	//	set_security_level(SEC_LEVEL_BLUE)
 
 
 // This is a frequency selection system. You may imagine it like a raffle where each player can have some number of tickets. The more tickets you have the more likely you are to
