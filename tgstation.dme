@@ -4058,6 +4058,8 @@
 #include "modular_bluemoon\SmiLeY\aesthetics\flag\code\signs_flags.dm"
 #include "modular_bluemoon\SmiLeY\aesthetics\large_doors\code\large_doors.dm"
 #include "modular_bluemoon\SmiLeY\aesthetics\multicellcharger\code\multi_cell_charger.dm"
+#include "modular_bluemoon\SmiLeY\aesthetics\barsign\barsigns.dm"
+#include "modular_bluemoon\SmiLeY\aesthetics\sign\_signs.dm"
 #include "modular_bluemoon\SmiLeY\all_in\landmarks.dm"
 #include "modular_bluemoon\SmiLeY\blastwave_outfits\code\cargo_packs.dm"
 #include "modular_bluemoon\SmiLeY\blastwave_outfits\code\clothing\blastwave_head.dm"
