@@ -570,21 +570,21 @@
 		sleep(20)
 		var/static/list/curses
 		if(!curses)
-			curses = list("A fuel technician just slit his own throat and begged for death.",
-			"The shuttle's navigation programming was replaced by a file containing just two words: IT COMES.",
-			"The shuttle's custodian was found washing the windows with their own blood.",
-			"A shuttle engineer began screaming 'DEATH IS NOT THE END' and ripped out wires until an arc flash seared off her flesh.",
-			"A shuttle inspector started laughing madly over the radio and then threw herself into an engine turbine.",
-			"An assistant was found on the shuttle.",
-			"A medical officer was found pouring out several blood bags onto the shuttle's instrument panels, before slitting both wrists open and screaming 'DEATH IS NOT THE END'.",
-			"A fuel technician was found replacing the fuel with his blood.",
-			"All the lights aboard the shuttle turned a crimson red before blowing out..",
-			"The shuttle dispatcher was found dead with bloody symbols carved into their flesh.",
-			"An engine turbine began leaking blood when it was powered on.",
-			"The shuttle's transponder is emitting the encoded message 'FEAR THE OLD BLOOD' in lieu of its assigned identification signal.")
+			curses = list("Специалист по Заправке Шаттлов только что перерезал себе горло и умолял о смерти",
+			"Навигационная программа шаттла была заменена файлом, содержащим всего два слова: ОНА ИДЁТ.",
+			"Смотритель Шаттла Эвакуации был найден в Диспетчерской, моющий окна собственной кровью.",
+			"Инженер шаттла начала кричать 'СМЕРТЬ - НЕ КОНЕЦ' и вырвала провода, пока вспышка дуги не сожгла ее плоть.",
+			"Безумная Инспектор начала смеяться по радио, а затем бросилась в турбину двигателя...",
+			"На шаттле был найден... АССИСТЕНТ!",
+			"Сотрудник Медицинского Блока был найден на мостике щаттла с множеством пустых пакетов крови. Он замкнул проводку Консолей этой субстанцией и зачем добавил своей крови, вскрикнув 'СМЕРТЬ - НЕ КОНЕЦ'",
+			"Специалист по Заправке Шаттлов был найден заменяющим топливо своей кровью...",
+			"Все лампы на борту шаттла стали багрово-красными, а затем погасли... нам нужно время разобраться с этим...",
+			"Диспетчер был найден мертвым... прямо на его плоти были вырезаны кровавые символы.",
+			"Из турбины Двигателя хлынул огромный поток крови и нам нужно... время...",
+			"Транспондер шаттла излучает закодированное сообщение 'ОНО ИДЁТ' вместо положенного идентификационного сигнала.")
 		var/message = pick_n_take(curses)
-		message += " The shuttle will be delayed by three minutes."
-		priority_announce("[message]", "System Failure", 'sound/misc/notice1.ogg')
+		message += " Шаттл будет задержан на три минуты."
+		priority_announce("[message]", "Центральное Командование, Отдел Работы с Реальностью", 'sound/misc/notice1.ogg')
 		curselimit++
 
 /obj/item/cult_shift
