@@ -206,7 +206,7 @@
 /obj/item/clothing/suit/space/space_ninja/proc/unlock_suit(mob/living/carbon/human/ninja)
 	affecting = null
 	REMOVE_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-	slowdown = 1
+	slowdown = 0
 	icon_state = "s-ninja"
 	if(n_hood)//Should be attached, might not be attached.
 		REMOVE_TRAIT(n_hood, TRAIT_NODROP, NINJA_SUIT_TRAIT)
