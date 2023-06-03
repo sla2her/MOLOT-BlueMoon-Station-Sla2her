@@ -20,6 +20,12 @@
 		do_eblya(target, user)
 	return ..()
 
+/obj/item/melee/baton/attack(mob/living/target, mob/living/user)
+	user.DelayNextAction()
+	if (user.zone_selected == BODY_ZONE_PRECISE_GROIN && user.a_intent == INTENT_HELP)
+		do_eblya(target, user)
+	return ..()
+
 /obj/item/melee/proc/do_eblya(mob/living/target, mob/living/user)
 	var/message = ""
 	var/lust_amt = 0
