@@ -363,6 +363,10 @@ GLOBAL_LIST_EMPTY(gravity_generators) // We will keep track of this by adding ne
 		if(M.client)
 			shake_camera(M, 15, 1)
 			M.playsound_local(T, null, 100, 1, 0.5, S = alert_sound)
+	if(on)
+		priority_announce("Гравитационный Генератор успешно перезапустил гравитационное поле Космической Станции, искусственная гравитация возвращена в номинальное состояние.", "Гравитационный Генератор", 'sound/announcer/classic/gravityon.ogg')
+	else
+		priority_announce("Гравитационный Генератор потерял номинальную подачу энергии в Гравитационное Поле Космической Станции, искусственная гравитация отключена.", "Гравитационный Генератор", 'sound/announcer/classic/gravityoff.ogg')
 
 /obj/machinery/gravity_generator/main/proc/gravity_in_level()
 	var/turf/T = get_turf(src)
