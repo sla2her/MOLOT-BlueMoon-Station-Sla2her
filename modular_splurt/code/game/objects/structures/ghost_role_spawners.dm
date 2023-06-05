@@ -131,6 +131,7 @@
 	short_desc = "Вы гость дорогого Космического Отеля!"
 	flavour_text = "Вы - гость первоклассного космического отеля! Развлекайтесь!"
 	important_info = "Развлекайтесь, как только можете!"
+	job_description = "Hotel Tourist"
 	id_job = "Hotel Tourist"
 	id = /obj/item/card/id/away
 	ears = /obj/item/radio/headset
