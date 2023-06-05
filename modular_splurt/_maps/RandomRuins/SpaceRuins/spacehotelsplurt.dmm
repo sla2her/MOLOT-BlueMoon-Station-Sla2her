@@ -7289,6 +7289,11 @@
 /obj/machinery/chem_master/condimaster,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/hotel/bar)
+"IP" = (
+/obj/machinery/light,
+/obj/effect/mob_spawn/human/hotel_staff/splurt/guest,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/hotel/dock)
 "IR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
@@ -9009,6 +9014,13 @@
 	},
 /turf/open/floor/carpet/blackred,
 /area/ruin/space/has_grav/hotel/workroom)
+"Rm" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/mob_spawn/human/hotel_staff/splurt/guest,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/hotel/dock)
 "Rn" = (
 /obj/structure/table/glass,
 /obj/item/paper/pamphlet/ruin/spacehotel,
@@ -14551,12 +14563,12 @@ oB
 gW
 Fw
 qo
-Pv
+Rm
 gW
 gW
 gW
 gW
-di
+IP
 qo
 CV
 gW

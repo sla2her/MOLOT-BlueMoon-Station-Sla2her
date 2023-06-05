@@ -9,8 +9,8 @@
 /obj/effect/mob_spawn/human/ash_walker/western
 	job_description = "Western Ashwalker's"
 	short_desc = "Вы магмовый скиталец женского пола. Ваше племя поклоняется материнскому Тендрилу."
-	flavour_text = "Ваш прошлый дом и материнский Дендрил были разрушены чужаками с Холодных Звёзд и те из ваших сородичей, кто остались \
-	в живых, покинули южные моря на поиски нового дома. Эти земли хороши для вашего нового дома, ибо обилие Дендрилов дарует этим землям \
+	flavour_text = "Ваш прошлый дом и материнский Тендрил были разрушены чужаками с Холодных Звёзд и те из ваших сородичей, кто остались \
+	в живых, покинули южные моря на поиски нового дома. Эти земли хороши для вашего нового дома, ибо обилие Тендрилов дарует этим землям \
 	изобилие пищи и материалов для выживания, а также восстановления утерянных знаний и взращивание нового потомства. Однако вы здесь не \
 	одни, туземные сородичи обеспокоены вашим присутствием, а особенно знаниями, которыми вы обладаете. Может есть возможность с ними \
 	договорится? При этом всём чужаки с Небесных Крепостей добрались и до этих земель. \n\n\
@@ -63,7 +63,7 @@
 
 //Splurt-Specific Space Hotel Staff
 /obj/effect/mob_spawn/human/hotel_staff/splurt //not free antag u little shits
-	name = "staff sleeper"
+	name = "Staff Sleeper"
 	desc = "A sleeper designed for long-term stasis between guest visits."
 	mob_name = "hotel staff member"
 	job_description = "Hotel Staff"
@@ -86,12 +86,14 @@
 	r_pocket = /obj/item/pda
 	back = /obj/item/storage/backpack/satchel
 	ears = /obj/item/radio/headset
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+						/obj/item/storage/ifak=1)
 
 /obj/effect/mob_spawn/human/hotel_staff/splurt/security
-	name = "hotel security sleeper"
+	name = "Hotel Security Sleeper"
 	mob_name = "hotel security member"
 	job_description = "Hotel Security"
-	short_desc = "You are a peacekeeper."
+	short_desc = "Вы Миротворец."
 	flavour_text = "Вы были назначены в этот отель, чтобы защищать интересы компании, сохраняя мир между гостями и персоналом."
 	important_info = "Do NOT abandon the hotel, as that is grounds for contract termination."
 	objectives = "Do not abandon your assigned hotel. Try and keep the peace between staff and guests, non-lethal force heavily advised if possible."
@@ -105,10 +107,10 @@
 	id = /obj/item/card/id/away/hotel/splurt/security
 
 /obj/effect/mob_spawn/human/hotel_staff/splurt/manager
-	name = "hotel manager sleeper"
+	name = "Hotel Manager Sleeper"
 	mob_name = "hotel manager"
 	job_description = "Hotel Manager"
-	short_desc = "You are the manager of a space hotel"
+	short_desc = "Вы Менеджер Космического Отеля."
 	flavour_text = "Вы управляете одним из объектов успешной сети Космических Отелей. Недавно ваша материнская компания была выкуплена Nanotrasen и вам поручили обслуживать некоторые из их станций; в результате вы получили в свое распоряжение набор модных технологий! Защищайте интересы своей материнской компании и следите за тем, чтобы ваш персонал работал на должном уровне, и постарайтесь сделать так, чтобы ваши гости были довольны!"
 	important_info = "Staff, including you, are NOT to abandon the hotel."
 	objectives = "Don't abandon your assigned hotel. Cater to visiting guests. Maintain good corporate relations and remember: The customer is always right!"
@@ -117,4 +119,30 @@
 	suit = /obj/item/clothing/suit/toggle/lawyer/black
 	head = /obj/item/clothing/head/beret/black
 	id = /obj/item/card/id/away/hotel/manager
+	l_pocket = /obj/item/door_remote/away
 
+/obj/effect/mob_spawn/human/hotel_staff/splurt/guest
+	name = "Guest Sleeper"
+	desc = "A sleeper designed for long-term stasis between guest visits."
+	uses = -1
+	mob_name = "hotel staff member"
+	job_description = "Hotel Staff"
+	icon = 'icons/obj/telescience.dmi'
+	icon_state = "lpad-idle"
+	objectives = "Вы заплатили кучу денег за пребывание в этом месте и вы ДОЛЖНЫ оторваться по полной!"
+	short_desc = "Вы гость дорогого Космического Отеля!"
+	flavour_text = "Вы - гость первоклассного космического отеля! Развлекайтесь!"
+	important_info = "Развлекайтесь, как только можете!"
+	assignedrole = "Hotel Staff"
+	death = FALSE
+	roundstart = FALSE
+	random = TRUE
+	canloadappearance = TRUE
+	id_job = "Tourist"
+	id = /obj/item/card/id/away
+	ears = /obj/item/radio/headset
+	uniform = /obj/item/clothing/under/rank/civilian/util
+	shoes = /obj/item/clothing/shoes/jackboots/tall
+	head = /obj/item/clothing/head/beret/black
+	r_pocket = /obj/item/pda
+	back = /obj/item/storage/backpack

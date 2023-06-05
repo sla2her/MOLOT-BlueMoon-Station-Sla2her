@@ -213,6 +213,9 @@
 	send_to_spawnpoint = FALSE //Handled by event
 
 /datum/antagonist/nukeop/lone/on_gain()
+	var/mob/living/carbon/human/H = owner.current
+	H.canloadappearance = TRUE
+	H.checkloadappearance()
 	ExtaOrNeExta()
 	. = ..()
 
