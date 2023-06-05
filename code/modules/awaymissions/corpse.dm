@@ -190,7 +190,7 @@
 	var/facial_hair_style
 	var/skin_tone
 	var/canloadappearance = FALSE
-	var/loadout_enabled = TRUE
+	var/loadout_enabled = FALSE
 
 /obj/effect/mob_spawn/human/Initialize(mapload)
 	if(ispath(outfit))
@@ -198,6 +198,14 @@
 	if(!outfit)
 		outfit = new /datum/outfit
 	return ..()
+
+/obj/effect/mob_spawn/human/create(ckey, name)
+	var/mob/living/new_spawn
+	if(loadout_enabled)
+		SSjob.equip_loadout(null, new_spawn)
+		SSjob.post_equip_loadout(null, new_spawn)
+	else
+		equip(new_spawn)
 
 /obj/effect/mob_spawn/human/equip(mob/living/carbon/human/H)
 	if(mob_species)
@@ -263,11 +271,6 @@
 		H.canloadappearance = TRUE
 	else
 		H.canloadappearance = FALSE
-	if (loadout_enabled)
-		SSjob.equip_loadout(null, H)
-		SSjob.post_equip_loadout(null, H)
-	else
-		equip(H)
 
 //Instant version - use when spawning corpses during runtime
 /obj/effect/mob_spawn/human/corpse

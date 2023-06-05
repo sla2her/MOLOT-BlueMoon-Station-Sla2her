@@ -62,7 +62,7 @@
 	new_spawn.language_holder.spoken_languages += /datum/language/draconic
 
 //Splurt-Specific Space Hotel Staff
-/obj/effect/mob_spawn/human/hotel_staff/splurt //not free antag u little shits
+/obj/effect/mob_spawn/human/hotel_staff/splurt
 	name = "Staff Sleeper"
 	desc = "A sleeper designed for long-term stasis between guest visits."
 	mob_name = "hotel staff member"
@@ -70,7 +70,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	objectives = "Cater to visiting guests with your fellow staff. Don't abandon the hotel - you can advertise and link up with potential guests, but always remember who signs your cheques! The customer is always right!"
-	short_desc = "You are a staff member of a top-of-the-line space hotel!"
+	short_desc = "Вы сотрудник Космического Отеля!"
 	flavour_text = "Вы - сотрудник первоклассного космического отеля! Ухаживайте за гостями и следите за тем, чтобы менеджер не уволил вас."
 	important_info = "DON'T abandon the hotel"
 	assignedrole = "Hotel Staff"
@@ -123,22 +123,15 @@
 
 /obj/effect/mob_spawn/human/hotel_staff/splurt/guest
 	name = "Guest Sleeper"
-	desc = "A sleeper designed for long-term stasis between guest visits."
+	desc = "Телепортационная штука для гостей."
 	uses = -1
-	mob_name = "hotel staff member"
-	job_description = "Hotel Staff"
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "lpad-idle"
 	objectives = "Вы заплатили кучу денег за пребывание в этом месте и вы ДОЛЖНЫ оторваться по полной!"
 	short_desc = "Вы гость дорогого Космического Отеля!"
 	flavour_text = "Вы - гость первоклассного космического отеля! Развлекайтесь!"
 	important_info = "Развлекайтесь, как только можете!"
-	assignedrole = "Hotel Staff"
-	death = FALSE
-	roundstart = FALSE
-	random = TRUE
-	canloadappearance = TRUE
-	id_job = "Tourist"
+	id_job = "Hotel Tourist"
 	id = /obj/item/card/id/away
 	ears = /obj/item/radio/headset
 	uniform = /obj/item/clothing/under/rank/civilian/util
