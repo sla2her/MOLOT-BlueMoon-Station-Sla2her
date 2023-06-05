@@ -199,14 +199,6 @@
 		outfit = new /datum/outfit
 	return ..()
 
-/obj/effect/mob_spawn/human/create(ckey, name)
-	var/mob/living/new_spawn
-	if(loadout_enabled)
-		SSjob.equip_loadout(null, new_spawn)
-		SSjob.post_equip_loadout(null, new_spawn)
-	else
-		equip(new_spawn)
-
 /obj/effect/mob_spawn/human/equip(mob/living/carbon/human/H)
 	if(mob_species)
 		H.set_species(mob_species)
@@ -271,6 +263,15 @@
 		H.canloadappearance = TRUE
 	else
 		H.canloadappearance = FALSE
+
+/obj/effect/mob_spawn/human/special(mob/living/carbon/human/new_spawn)
+	if (loadout_enabled)
+		if(new_spawn.client)
+			new_spawn.client.prefs.copy_to(new_spawn)
+			SSjob.equip_loadout(null, new_spawn)
+			SSjob.post_equip_loadout(null, new_spawn)
+			SSquirks.AssignQuirks(new_spawn, new_spawn.client, TRUE, TRUE, null, FALSE, new_spawn)
+			to_chat(new_spawn,"<span class='boldwarning'>В Эксту посещать станцию допустимо, в Динамику запрещено!</span>")
 
 //Instant version - use when spawning corpses during runtime
 /obj/effect/mob_spawn/human/corpse

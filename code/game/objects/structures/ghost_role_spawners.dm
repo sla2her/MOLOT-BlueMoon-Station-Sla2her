@@ -442,8 +442,6 @@
 	..()
 
 /obj/effect/mob_spawn/human/hotel_staff/special(mob/living/carbon/human/new_spawn)
-	SSjob.equip_loadout(null, new_spawn)
-	SSjob.post_equip_loadout(null, new_spawn)
 	ADD_TRAIT(new_spawn,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT)
 
 /obj/effect/mob_spawn/human/demonic_friend
@@ -750,7 +748,7 @@
 /obj/effect/mob_spawn/human/ghostcafe
 	name = "Ghost Cafe Sleeper"
 	uses = -1
-	icon = 'icons/obj/telescience.dmi'
+	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	mob_name = "a ghost cafe visitor"
 	roundstart = FALSE
