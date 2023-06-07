@@ -196,7 +196,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 		return
 	if (href_list["forced_extended"])
 		GLOB.dynamic_forced_extended = !GLOB.dynamic_forced_extended
-	else if (href_list["extended"])
+	else if (href_list["Extended"])
 		GLOB.dynamic_extended = !GLOB.dynamic_extended
 	else if (href_list["no_stacking"])
 		GLOB.dynamic_no_stacking = !GLOB.dynamic_no_stacking

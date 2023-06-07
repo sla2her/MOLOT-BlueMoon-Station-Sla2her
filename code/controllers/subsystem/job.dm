@@ -497,9 +497,11 @@ SUBSYSTEM_DEF(job)
 		to_chat(M, "<b><span class = 'big'>Your account ID is [wageslave.account_id].</span></b>")
 		H.add_memory("Your account ID is [wageslave.account_id].")
 	if(job && H)
+		if(job.dresscodecompliant)// CIT CHANGE - dress code compliance
+			equip_loadout(N, H) // CIT CHANGE - allows players to spawn with loadout items
 		job.after_spawn(H, M.client, joined_late) // note: this happens before the mob has a key! M will always have a client, H might not.
-		equip_loadout(N, H)
 		post_equip_loadout(N, H)//CIT CHANGE - makes players spawn with in-backpack loadout items properly. A little hacky but it works
+
 		handle_roundstart_items(H, M.ckey, H.mind.assigned_role, H.mind.special_role)
 
 	var/list/tcg_cards
