@@ -21,10 +21,10 @@
 	path = /obj/item/clothing/head/donator/bm/bishop_mitre
 	ckeywhitelist = list("snacksman")
 
-/datum/gear/donator/bm/cerberus_suit
+/datum/gear/donator/bm/bishop_mantle
 	name = "Bishop Mantle"
 	slot = ITEM_SLOT_OCLOTHING
-	path = /obj/item/clothing/suit/donator/bm/cerberus_suit
+	path = /obj/item/clothing/suit/donator/bm/bishop_mantle
 	ckeywhitelist = list("snacksman")
 
 /datum/gear/donator/bm/modern_watch
