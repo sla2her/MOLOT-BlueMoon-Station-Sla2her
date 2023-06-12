@@ -540,10 +540,10 @@
 	if(!iscultist(user, TRUE))
 		user.dropItemToGround(src, TRUE)
 		user.DefaultCombatKnockdown(100)
-		to_chat(user, "<span class='warning'>A powerful force shoves you away from [src]!</span>")
+		to_chat(user, "<span class='warning'>Мощная сила отталкивает вас от [src]!</span>")
 		return
 	if(curselimit > 1)
-		to_chat(user, "<span class='notice'>We have exhausted our ability to curse the shuttle.</span>")
+		to_chat(user, "<span class='notice'>Мы исчерпали свою способность проклинать Космическую Станцию.</span>")
 		return
 	if(locate(/obj/singularity/narsie) in GLOB.poi_list)
 		to_chat(user, "<span class='warning'>Nar'Sie is already on this plane, there is no delaying the end of all things.</span>")
@@ -567,7 +567,7 @@
 		SSshuttle.emergency.setTimer(timer)
 		if(surplus > 0)
 			SSshuttle.block_recall(surplus)
-		to_chat(user, "<span class='danger'>You shatter the orb! A dark essence spirals into the air, then disappears.</span>")
+		to_chat(user, "<span class='danger'>Вы разбиваете сферу! Темная сущность поднимается в воздух, затем исчезает.</span>")
 		playsound(user.loc, 'sound/effects/glassbr1.ogg', 50, 1)
 		qdel(src)
 		sleep(20)
@@ -589,6 +589,35 @@
 		message += " Шаттл будет задержан на три минуты."
 		priority_announce("[message]", "Центральное Командование, Отдел Работы с Реальностью", 'sound/misc/notice1.ogg')
 		curselimit++
+
+/obj/item/station_curse
+	name = "cursed orb"
+	desc = "You peer within this smokey orb and glimpse terrible fates befalling the escape shuttle."
+	icon = 'icons/obj/cult.dmi'
+	icon_state ="shuttlecurse"
+	var/static/curselimit = 0
+
+/obj/item/station_curse/attack_self(mob/living/user)
+	if(!iscultist(user, TRUE))
+		user.dropItemToGround(src, TRUE)
+		user.DefaultCombatKnockdown(100)
+		to_chat(user, "<span class='warning'>Мощная сила отталкивает вас от [src]!</span>")
+		return
+	if(curselimit > 1)
+		to_chat(user, "<span class='notice'>Мы исчерпали свою способность проклинать Космическую Станцию.</span>")
+		return
+	if(locate(/obj/singularity/narsie) in GLOB.poi_list)
+		to_chat(user, "<span class='warning'>Nar'Sie is already on this plane, there is no delaying the end of all things.</span>")
+		return
+
+	to_chat(user, "<span class='danger'>Вы разбиваете сферу! Темная сущность поднимается в воздух, затем исчезает.</span>")
+	playsound(user.loc, 'sound/effects/glassbr1.ogg', 50, 1)
+	qdel(src)
+	sleep(20)
+	priority_announce("Что-то очень массивное и пугающее приближается к [station_name()]! Пусть Господь хранит Ваши души!!", "Центральное Командование, Отдел Работы с Реальностью", 'sound/announcer/classic/_admin_horror_music.ogg')
+	var/datum/round_event_control/portal_storm_narsie/portal_storm_narsie = new/datum/round_event_control/portal_storm_narsie
+	portal_storm_narsie.runEvent()
+	curselimit++
 
 /obj/item/cult_shift
 	name = "veil shifter"

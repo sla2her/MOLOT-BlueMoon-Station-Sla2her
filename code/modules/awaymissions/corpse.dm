@@ -32,6 +32,7 @@
 	var/banType = "lavaland"
 	var/ghost_usable = TRUE
 	var/skip_reentry_check = FALSE //Skips the ghost role blacklist time for people who ghost/suicide/cryo
+	var/loadout_enabled = FALSE
 
 ///override this to add special spawn conditions to a ghost role
 /obj/effect/mob_spawn/proc/allow_spawn(mob/user, silent = FALSE)
@@ -143,6 +144,12 @@
 		if(assignedrole)
 			M.mind.assigned_role = assignedrole
 		special(M, name)
+		if (M.client)
+			if (loadout_enabled == TRUE)
+				M.client.prefs.copy_to(M)
+				SSjob.equip_loadout(null, M)
+				SSjob.post_equip_loadout(null, M)
+				to_chat(M,"<span class='boldwarning'>В Эксту посещать станцию допустимо, в Динамику запрещено!</span>")
 		MM.name = M.real_name
 		M.checkloadappearance()
 	if(uses > 0)
@@ -190,7 +197,6 @@
 	var/facial_hair_style
 	var/skin_tone
 	var/canloadappearance = FALSE
-	var/loadout_enabled = FALSE
 
 /obj/effect/mob_spawn/human/Initialize(mapload)
 	if(ispath(outfit))
@@ -263,15 +269,6 @@
 		H.canloadappearance = TRUE
 	else
 		H.canloadappearance = FALSE
-
-/obj/effect/mob_spawn/human/special(mob/living/carbon/human/new_spawn)
-	if (loadout_enabled)
-		if(new_spawn.client)
-			new_spawn.client.prefs.copy_to(new_spawn)
-			SSjob.equip_loadout(null, new_spawn)
-			SSjob.post_equip_loadout(null, new_spawn)
-			SSquirks.AssignQuirks(new_spawn, new_spawn.client, TRUE, TRUE, null, FALSE, new_spawn)
-			to_chat(new_spawn,"<span class='boldwarning'>В Эксту посещать станцию допустимо, в Динамику запрещено!</span>")
 
 //Instant version - use when spawning corpses during runtime
 /obj/effect/mob_spawn/human/corpse

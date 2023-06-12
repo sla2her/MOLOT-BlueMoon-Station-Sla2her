@@ -43,23 +43,24 @@
 	src.applied_coupon = coupon
 
 /datum/supply_order/proc/generateRequisition(turf/T)
-	var/obj/item/paper/P = new(T)
+	var/obj/item/paper/requisition_paper = new(T)
 
-	P.name = "requisition form - #[id] ([pack.name])"
-	P.default_raw_text += "<h2>[station_name()] Supply Requisition</h2>"
-	P.default_raw_text += "<hr/>"
-	P.default_raw_text += "Order #[id]<br/>"
-	P.default_raw_text += "Time of Order: [STATION_TIME_TIMESTAMP("hh:mm:ss", world.time)]<br/>"
-	P.default_raw_text += "Item: [pack.name]<br/>"
-	P.default_raw_text += "Access Restrictions: [get_access_desc(pack.access)]<br/>"
-	P.default_raw_text += "Requested by: [orderer]<br/>"
+	requisition_paper.name = "requisition form - #[id] ([pack.name])"
+	var/requisition_text = "<h2>[station_name()] Supply Requisition</h2>"
+	requisition_text += "<hr/>"
+	requisition_text += "Order #[id]<br/>"
+	requisition_text+= "Time of Order: [STATION_TIME_TIMESTAMP("hh:mm:ss", world.time)]<br/>"
+	requisition_text += "Item: [pack.name]<br/>"
+	requisition_text += "Access Restrictions: [get_access_desc(pack.access)]<br/>"
+	requisition_text += "Requested by: [orderer]<br/>"
 	if(paying_account)
-		P.default_raw_text += "Paid by: [paying_account.account_holder]<br/>"
-	P.default_raw_text += "Rank: [orderer_rank]<br/>"
-	P.default_raw_text += "Comment: [reason]<br/>"
+		requisition_text += "Paid by: [paying_account.account_holder]<br/>"
+	requisition_text += "Rank: [orderer_rank]<br/>"
+	requisition_text += "Comment: [reason]<br/>"
 
-	P.update_icon()
-	return P
+	requisition_paper.add_raw_text(requisition_text)
+	requisition_paper.update_appearance()
+	return requisition_paper
 
 /datum/supply_order/proc/generateManifest(obj/container, owner, packname) //generates-the-manifests.
 	var/obj/item/paper/fluff/jobs/cargo/manifest/P = new(container, id, 0)
