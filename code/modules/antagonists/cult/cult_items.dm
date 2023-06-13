@@ -530,7 +530,7 @@
 	list_reagents = list(/datum/reagent/fuel/unholywater = 50)
 
 /obj/item/shuttle_curse
-	name = "cursed orb"
+	name = "Проклятая Сфера"
 	desc = "You peer within this smokey orb and glimpse terrible fates befalling the escape shuttle."
 	icon = 'icons/obj/cult.dmi'
 	icon_state ="shuttlecurse"
@@ -591,8 +591,8 @@
 		curselimit++
 
 /obj/item/station_curse
-	name = "cursed orb"
-	desc = "You peer within this smokey orb and glimpse terrible fates befalling the escape shuttle."
+	name = "Проклятая Сфера"
+	desc = "Эта сфера хранит в себе первородное зло и, наверное, это недопустимо ронять или даже ломать..."
 	icon = 'icons/obj/cult.dmi'
 	icon_state ="shuttlecurse"
 	var/static/curselimit = 0
@@ -613,7 +613,7 @@
 	to_chat(user, "<span class='danger'>Вы разбиваете сферу! Темная сущность поднимается в воздух, затем исчезает.</span>")
 	playsound(user.loc, 'sound/effects/glassbr1.ogg', 50, 1)
 	qdel(src)
-	sleep(20)
+	sleep(pick(50, 100, 150, 200, 250))
 	priority_announce("Что-то очень массивное и пугающее приближается к [station_name()]! Пусть Господь хранит Ваши души!!", "Центральное Командование, Отдел Работы с Реальностью", 'sound/announcer/classic/_admin_horror_music.ogg')
 	var/datum/round_event_control/portal_storm_narsie/portal_storm_narsie = new/datum/round_event_control/portal_storm_narsie
 	portal_storm_narsie.runEvent()
@@ -882,11 +882,11 @@
 		if(ishuman(target))
 			var/mob/living/carbon/human/H = target
 			if(H.stat != DEAD)
-				H.reagents.add_reagent(/datum/reagent/fuel/unholywater, 4)
+				H.reagents.add_reagent(/datum/reagent/fuel/unholywater, 10)
 		if(isshade(target) || isconstruct(target))
 			var/mob/living/simple_animal/M = target
 			if(M.health+5 < M.maxHealth)
-				M.adjustHealth(-5)
+				M.adjustHealth(-25)
 		new /obj/effect/temp_visual/cult/sparks(T)
 		qdel(src)
 	else
