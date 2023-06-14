@@ -776,7 +776,8 @@ export class PreviewView extends Component<PreviewViewProps> {
     return 'paperfield_' + index;
   };
 
-  // Returns the width the text with the provided attributes would take up in px.
+  // Returns the width the text with
+  // the provided attributes would take up in px.
   textWidth = (text: string, font: string, fontsize: number): number => {
     const c = document.createElement('canvas');
     const ctx = c.getContext('2d');
