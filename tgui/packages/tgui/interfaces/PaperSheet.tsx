@@ -114,7 +114,7 @@ const fieldRegex: RegExp = /\[((?:_+))\]/gi;
 // Handles the ghost stamp when attempting to stamp paper sheets.
 class PaperSheetStamper extends Component<PaperSheetStamperProps> {
   style: null;
-  state: PaperSheetStamperState;
+  state: null;
   scrollableRef: RefObject<HTMLDivElement>;
 
   constructor(props, context) {
