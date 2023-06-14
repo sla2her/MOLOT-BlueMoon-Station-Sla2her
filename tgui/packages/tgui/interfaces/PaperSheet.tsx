@@ -114,14 +114,14 @@ const fieldRegex: RegExp = /\[((?:_+))\]/gi;
 // Handles the ghost stamp when attempting to stamp paper sheets.
 class PaperSheetStamper extends Component<PaperSheetStamperProps> {
   style: null;
-  state: null;
+  state: PaperSheetStamperState = { x: 0, y: 0, rotation: 0, yOffset: 0 };
   scrollableRef: RefObject<HTMLDivElement>;
 
   constructor(props, context) {
     super(props, context);
 
     this.style = null;
-    this.state = { x: 0, y: 0, rotation: 0, yOffset: 0 };
+    this.state = props.state;
     this.scrollableRef = props.scrollableRef;
   }
 
@@ -1028,7 +1028,7 @@ export const PaperSheet = (props, context) => {
       title={paper_name}
       theme="paper"
       width={500}
-      height={600 + (writeMode ? TEXTAREA_INPUT_HEIGHT : 0)}>
+      height={650 + (writeMode ? TEXTAREA_INPUT_HEIGHT : 0)}>
       <Window.Content backgroundColor={paper_color}>
         <PrimaryView />
       </Window.Content>
