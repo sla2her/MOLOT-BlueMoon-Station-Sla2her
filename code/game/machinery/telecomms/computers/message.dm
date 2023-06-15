@@ -392,7 +392,7 @@
 	update_appearance()
 
 /obj/item/paper/monitorkey/LateInitialize()
-	for (var/obj/machinery/telecomms/message_server/preset/server in GLOB.telecomms_list)
+	for (var/obj/machinery/telecomms/message_server/server in GLOB.telecomms_list)
 		if (server.decryptkey)
 			print(server)
 			break
