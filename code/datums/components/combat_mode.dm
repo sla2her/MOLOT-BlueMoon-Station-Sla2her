@@ -62,7 +62,7 @@
 			enable_combat_mode(parent, FALSE, TRUE)
 
 /// Enables combat mode. Please use 'safe_enable_combat_mode' instead, if you wish to also enable the toggle flag.
-/datum/component/combat_mode/proc/enable_combat_mode(mob/living/source, mob/living/carbon/human/H, silent = TRUE, forced = TRUE, visible = FALSE, locked = FALSE, playsound = FALSE)
+/datum/component/combat_mode/proc/enable_combat_mode(mob/living/source, silent = TRUE, forced = TRUE, visible = FALSE, locked = FALSE, playsound = FALSE)
 	if(locked)
 		if(hud_icon)
 			hud_icon.combat_on = TRUE
@@ -89,7 +89,7 @@
 		if(playsound)
 			playsound(source, 'sound/machines/chime.ogg', 10) 	//sandstorm stuff - combat mode indicator
 			flick_emote_popup_on_mob(source, "combat", 10)	//sandstorm stuff - combat mode indicator
-	log_combat(source, H, "включает Комбат Индикатор")
+	log_combat(source, source, "включает Комбат Индикатор")
 	RegisterSignal(source, COMSIG_MOB_CLIENT_MOUSEMOVE, .proc/onMouseMove)
 	RegisterSignal(source, COMSIG_MOVABLE_MOVED, .proc/on_move)
 	if(hud_icon)
