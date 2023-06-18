@@ -55,3 +55,7 @@
   LunarFleet:
   - rscadd: Added a new positive quirk, 'Rope Bunny'
   - rscadd: Added a new neutral quirk, 'Modular Limbs'
+2023-06-17:
+  ActuallyALovelyGrave:
+  - rscadd: Added new 4 implants in RnD.
+  - bugfix: fixed a few things from Cybernetic Division - 01 update.
