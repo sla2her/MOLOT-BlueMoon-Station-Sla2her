@@ -131,7 +131,7 @@
 	spawn_type = /obj/item/reagent_containers/food/snacks/jellybean
 
 /obj/item/storage/fancy/jellybean_bowl/attack_self(mob/user)
-	if(boxes.len > 0)
+	if(contents.len > 0)
 		return
 	fancy_open = !fancy_open
 	if(!fancy_open)

@@ -74,7 +74,7 @@
 	appearance_flags = KEEP_TOGETHER
 
 /obj/item/storage/fancy/donut_box/attack_self(mob/user)
-	if(boxes.len > 0)
+	if(contents.len > 0)
 		return
 	fancy_open = !fancy_open
 	if(!fancy_open)
@@ -143,7 +143,7 @@
 	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/food/snacks/egg))
 
 /obj/item/storage/fancy/egg_box/attack_self(mob/user)
-	if(boxes.len > 0)
+	if(contents.len > 0)
 		return
 	fancy_open = !fancy_open
 	if(!fancy_open)
