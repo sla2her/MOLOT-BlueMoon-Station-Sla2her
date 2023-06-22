@@ -14628,11 +14628,11 @@
 	pixel_x = 7;
 	pixel_y = 9
 	},
-/obj/item/genital_equipment/dildo/random{
+/obj/item/dildo/random{
 	pixel_x = -4;
 	pixel_y = 6
 	},
-/obj/item/genital_equipment/dildo/knotted{
+/obj/item/dildo/knotted{
 	pixel_y = 2
 	},
 /turf/open/floor/padded,
