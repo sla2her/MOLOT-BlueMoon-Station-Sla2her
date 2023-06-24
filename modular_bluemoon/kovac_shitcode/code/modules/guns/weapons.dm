@@ -55,13 +55,13 @@
 //RSH-12
 
 /obj/item/ammo_box/magazine/internal/shot/com/rsh12
-	name = "rsh-12 internal magazine"
+	name = "rsh-15 internal magazine"
 	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
-	max_ammo = 5
+	max_ammo = 4
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/rsh12
-	name = "RSH-12"
-	desc = "A russian-made semi-automatic beast, intended to use with 12 gauge."
+/obj/item/gun/ballistic/shotgun/rsh12
+	name = "RSH-15"
+	desc = "A moden Russian-made semi-automatic revolver, intended to used with 12 gauge."
 	icon_state = "rsh12"
 	item_state = "rsh12"
 	icon = 'modular_bluemoon/kovac_shitcode/icons/obj/weapons/weapons.dmi'
@@ -76,7 +76,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	unique_reskin = list(
-		"RSH-12" = list("icon_state" = "rsh12")
+		"RSH-15" = list("icon_state" = "rsh12")
 	)
 
 //HoS G22 pistol
@@ -150,11 +150,11 @@
 //Head of Security's new weapons beacon and stuff
 
 /obj/item/storage/secure/briefcase/rsh12_box
-	name = "\improper RSH-12 revolver box"
+	name = "\improper RSH-15 revolver box"
 	desc = "A storage case for a heavy revolver."
 
 /obj/item/storage/secure/briefcase/rsh12_box/PopulateContents()
-	new /obj/item/gun/ballistic/shotgun/automatic/combat/rsh12(src)
+	new /obj/item/gun/ballistic/shotgun/rsh12(src)
 	new /obj/item/ammo_box/shotgun/loaded/rubbershot(src)
 	new /obj/item/ammo_box/shotgun/loaded/rubbershot(src)
 	new /obj/item/ammo_box/shotgun/loaded/buckshot(src)
@@ -330,9 +330,82 @@
 	Bought massively from NRI mercenaries, it has become one of the most beloved InteQ weapons."
 	item = /obj/item/inteq_sledgehammer
 	cost = 10
+	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)
 
 /datum/uplink_item/dangerous/inteq_chainsaw
 	name = "Chainsaw"
 	desc = "A high powered chainsaw for cutting up ...you know...."
 	item = /obj/item/chainsaw/inteq_chainsaw
 	cost = 12
+
+
+/// Clown Ops Uplink additions
+/datum/uplink_item/suits/hardsuit/elite_clown
+	name = "Elite HONK Hardsuit"
+	desc = "Getting  bored? Are you still being abused by the security officers? STOP! \
+			take this shit and show them who is the boss here. HONK"
+	item = /obj/item/clothing/suit/space/hardsuit/syndi/elite/clown
+	cost = 8
+	purchasable_from = UPLINK_CLOWN_OPS
+
+/datum/uplink_item/suits/hardsuit/shielded_clown
+	name = "Shielded HONK Hardsuit"
+	desc = "Seems like you a big fan of hit-and-run tactics. Or trying to look awesome. \
+			No matter what. You should try the newest HONK-MOTHER invention. DOUBLE PROTECTION. DOUBLE HONK."
+	item = /obj/item/clothing/suit/space/hardsuit/shielded/syndi/clown
+	cost = 30
+	purchasable_from = UPLINK_CLOWN_OPS
+
+
+/// Syndicate Hardsuits and Mechas (previously removed by Krashly)
+
+/datum/uplink_item/suits/space_suit_red
+	name = "Syndicate Space Suit"
+	desc = "This red and black Syndicate space suit is less encumbering than Nanotrasen variants, \
+			fits inside bags, and has a weapon slot."
+	item = /obj/item/storage/box/syndie_kit/space
+	cost = 4
+	purchasable_from = UPLINK_SYNDICATE
+
+/datum/uplink_item/suits/hardsuit/syndi
+	name = "Syndicate Blood-Red Hardsuit"
+	desc = "The feared suit of a Syndicate agent. Features slightly better armoring and a built in jetpack \
+			that runs off standard atmospheric tanks. Toggling the suit in and out of \
+			combat mode will allow you all the mobility of a loose fitting uniform without sacrificing armoring. \
+			Additionally the suit is collapsible, making it small enough to fit within a backpack."
+	item = /obj/item/clothing/suit/space/hardsuit/syndi
+	cost = 8
+	purchasable_from = UPLINK_SYNDICATE
+
+/datum/uplink_item/suits/hardsuit/syndi_elite
+	name = "Syndicate Elite Hardsuit"
+	desc = "An upgraded, elite version of the Syndicate hardsuit. It features fireproofing, and also \
+			provides the user with superior armor and mobility compared to the standard Syndicate hardsuit."
+	item = /obj/item/clothing/suit/space/hardsuit/syndi/elite
+	cost = 12
+	purchasable_from = UPLINK_SYNDICATE
+
+/datum/uplink_item/suits/hardsuit/syndi_shield
+	name = "Syndicate Shielded Hardsuit"
+	desc = "An upgraded version of the standard Syndicate hardsuit. It features a built-in energy shielding system. \
+			The shields can handle up to three impacts within a short duration and will rapidly recharge while not under fire."
+	item = /obj/item/clothing/suit/space/hardsuit/shielded/syndi
+	cost = 30
+	purchasable_from = UPLINK_SYNDICATE
+
+
+/datum/uplink_item/support/dark_gygax
+	name = "Dark Gygax Exosuit"
+	desc = "A Syndicate lightweight exosuit, painted in a dark scheme. Its speed and equipment selection make it excellent \
+			for hit-and-run style attacks. Features an incendiary carbine, flash bang launcher, teleporter, ion thrusters and a Tesla energy array."
+	item = /obj/vehicle/sealed/mecha/combat/gygax/dark/loaded
+	cost = 40
+	purchasable_from = UPLINK_SYNDICATE
+
+/datum/uplink_item/support/mauler
+	name = "Mauler Exosuit"
+	desc = "A massive and incredibly deadly military-grade exosuit. Features long-range targeting, thrust vectoring \
+			and deployable smoke. Comes equipped with an LMG, Scattershot rifle, missile rack, an antiprojectile armor booster and a Tesla energy array."
+	item = /obj/vehicle/sealed/mecha/combat/marauder/mauler/loaded
+	cost = 100
+	purchasable_from = UPLINK_SYNDICATE

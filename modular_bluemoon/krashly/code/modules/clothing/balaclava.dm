@@ -19,7 +19,7 @@
 
 //InteQ
 
-/obj/item/clothing/mask/balaclava/inteq
+/obj/item/clothing/mask/balaclava/breath/inteq
 	name = "InteQ armored balaclava"
 	desc = "Black balaclava made of high quality fabric with two cutouts for the eyes."
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/mask.dmi'
@@ -27,3 +27,4 @@
 	icon_state = "inteq_balaclava"
 	item_state = "inteq_balaclava"
 	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/mask_muzzled.dmi'
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR

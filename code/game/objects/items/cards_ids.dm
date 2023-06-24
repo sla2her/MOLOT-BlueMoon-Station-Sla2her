@@ -579,6 +579,24 @@
 /obj/item/card/id/pirate
 	access = list(ACCESS_SYNDICATE)
 
+/obj/item/card/id/syndicate/inteq
+	name = "Mercenary Card"
+	icon_state = "inteq"
+	assignment = "Mercenary"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
+
+/obj/item/card/id/syndicate/anyone/inteq
+	name = "Vanguard Mercenary Card"
+	icon_state = "inteq"
+	assignment = "Vanguard Mercenary"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
+
+/obj/item/card/id/syndicate/nuke_leader/inteq
+	name = "Nuclear Vanguard Mercenary Card"
+	icon_state = "inteq"
+	assignment = "Vanguard Mercenary"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
+
 /obj/item/card/id/captains_spare
 	name = "captain's spare ID"
 	desc = "The spare ID of the High Lord himself."

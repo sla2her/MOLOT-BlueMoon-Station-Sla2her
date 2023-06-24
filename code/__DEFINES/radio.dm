@@ -38,7 +38,7 @@
 #define RADIO_TOKEN_AI_PRIVATE ":o"
 
 
-#define RADIO_CHANNEL_SYNDICATE "Syndicate"
+#define RADIO_CHANNEL_SYNDICATE "Illegal"
 #define RADIO_KEY_SYNDICATE "t"
 #define RADIO_TOKEN_SYNDICATE ":t"
 
@@ -124,6 +124,12 @@
 #define RADIO_KEY_PIRATE "p"
 #define RADIO_TOKEN_PIRATE ":p"
 #define FREQ_PIRATE 1208
+
+// BlueMoon Kovac added
+#define RADIO_CHANNEL_SOL "Sol"
+#define RADIO_KEY_SOL "x"
+#define RADIO_TOKEN_SOL ":x"
+#define FREQ_SOL 1244
 
 #define RADIO_CHANNEL_HOTEL "Hotel"
 #define RADIO_KEY_HOTEL "q"

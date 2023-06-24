@@ -55,6 +55,12 @@
 	can_adjust = FALSE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	body_parts_covered = CHEST|GROIN
+	unique_reskin = list(
+		"Adjusted" = list("icon_state" = "bunnysuit_d"),
+		"Red" = list("icon_state" = "bunnysuit_r"),
+		"Blue" = list("icon_state" = "bunnysuit_b"),
+		"White" = list("icon_state" = "bunnysuit_w")
+	)
 
 /obj/item/clothing/under/domina
 	name = "Dominatrix Dress"
@@ -191,7 +197,7 @@
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/under/plasmaman/security/blueshield
-	name = "security plasma envirosuit"
+	name = "blueshield plasma envirosuit"
 	desc = "A slick black and blue  plasmaman containment suit designed for the Blueshield."
 	icon_state = "bs_envirosuit"
 	item_state = "bs_envirosuit"
@@ -200,12 +206,12 @@
 	armor = list("melee" = 10, "bullet" = 5, "laser" = 5,"energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 30, "wound" = 10)
 
 /obj/item/clothing/head/helmet/space/plasmaman/security/blueshield
-	name = "head of security's plasma envirosuit helmet"
+	name = "blueshield plasma envirosuit helmet"
 	desc = "A plasmaman containment helmet designed for the Blueshield, menacing black with blue stripes."
 	icon_state = "bs_envirohelm"
 	item_state = "bs_envirohelm"
 	icon = 'modular_splurt/icons/obj/clothing/head.dmi'
-	mob_overlay_icon = 'modular_splurt/icons/mobs/head.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/head.dmi'
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 50, "acid" = 60)
 
 /obj/item/clothing/under/rank/bridgeofficer

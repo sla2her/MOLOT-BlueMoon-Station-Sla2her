@@ -29,13 +29,16 @@
 	desc = "A piece of clothing adorned by the gods of Coding. Should never exist in this mortal realm."
 	allowed = list(/obj/item/storage/book/bible, HOLY_WEAPONS, /obj/item/reagent_containers/food/drinks/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/candle, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
 
+//Unused and replaced by the uniform one. The only reason of this existing is splurtoid updates
 /obj/item/clothing/suit/chaplain/nun
-	name = "nun robe"
-	desc = "Maximum piety in this star system."
-	icon_state = "nun"
-	item_state = "nun"
+	//name = "nun robe"
+	//desc = "Maximum piety in this star system."
+	//icon = 'icons/obj/clothing/suits.dmi'
+	//mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
+	//icon_state = "nun"
+	//item_state = "nun"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
-	flags_inv = HIDESHOES|HIDEJUMPSUIT
+	flags_inv = HIDEJUMPSUIT
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/chaplain/studentuni
@@ -106,10 +109,6 @@
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	unique_reskin = list(
-		"Trenchcoat" = list("icon_state" = "detective"),
-		"Distinguish Trenchcoat" = list("icon_state" = "detective_newtg")
-	)	
 
 /obj/item/clothing/suit/det_suit/Initialize(mapload)
 	. = ..()
@@ -120,10 +119,6 @@
 	desc = "A hard-boiled private investigator's grey trenchcoat."
 	icon_state = "greydet"
 	item_state = "greydet"
-	unique_reskin = list(
-		"Trenchcoat" = list("icon_state" = "greydet"),
-		"Distinguish Trenchcoat" = list("icon_state" = "detective_noir_newtg")
-	)		
 
 /obj/item/clothing/suit/det_suit/forensicsred
 	name = "red forensics coat"
