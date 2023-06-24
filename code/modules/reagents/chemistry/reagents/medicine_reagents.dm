@@ -1145,7 +1145,7 @@
 	overdose_threshold = 60
 	pH = 8.7
 	chemical_flags = REAGENT_ALL_PROCESS
-	value = REAGENT_VALUE_RARE
+	value = REAGENT_VALUE_GLORIOUS
 
 /datum/reagent/medicine/stimulants/on_mob_metabolize(mob/living/L)
 	..()
@@ -1160,11 +1160,10 @@
 	..()
 
 /datum/reagent/medicine/stimulants/on_mob_life(mob/living/carbon/M)
-	if(M.health < 0 && M.health > 0)
-		M.adjustOxyLoss(-1*REAGENTS_EFFECT_MULTIPLIER, FALSE)
-		M.adjustToxLoss(-1*REAGENTS_EFFECT_MULTIPLIER, FALSE)
-		M.adjustBruteLoss(-1*REAGENTS_EFFECT_MULTIPLIER, FALSE)
-		M.adjustFireLoss(-1*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustOxyLoss(-4*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustToxLoss(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustBruteLoss(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustFireLoss(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)
 	if(M.blood_volume < (BLOOD_VOLUME_NORMAL*M.blood_ratio))
 		M.adjust_integration_blood(40) // blood fall out man bad
 	M.AdjustAllImmobility(-60, FALSE)
