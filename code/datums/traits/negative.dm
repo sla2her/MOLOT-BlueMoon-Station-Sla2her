@@ -268,14 +268,11 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/paraplegic
 	name = "Парализованный"
 	desc = "Ваши ноги не работают. Ничто и никогда не исправит это. Подумайте о хорошем — о бесплатной инвалидной коляске!"
-	name = "Парализованный"
-	desc = "Ваши ноги не работают. Ничто и никогда не исправит это. Подумайте о хорошем — о бесплатной инвалидной коляске!"
 	value = -4
 	mob_trait = TRAIT_PARA
 	human_only = TRUE
 	gain_text = null // Handled by trauma.
 	lose_text = null
-	medical_record_text = "У пациента неизлечимое нарушение опорно-двигательных функций нижних конечностей."
 	medical_record_text = "У пациента неизлечимое нарушение опорно-двигательных функций нижних конечностей."
 	on_spawn_immediate = FALSE
 

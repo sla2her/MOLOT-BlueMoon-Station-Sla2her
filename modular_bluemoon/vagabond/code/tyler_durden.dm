@@ -15,3 +15,8 @@
 	var/datum/brain_trauma/severe/split_personality/T = new()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.gain_trauma(T, TRAUMA_RESILIENCE_ABSOLUTE)
+
+/datum/quirk/imaginary_person/remove()
+	var/datum/brain_trauma/severe/split_personality/T = new()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.cure_trauma_type(T, TRAUMA_RESILIENCE_ABSOLUTE)

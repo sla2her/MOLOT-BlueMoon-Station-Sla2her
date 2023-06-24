@@ -92,7 +92,7 @@
 /mob/living/simple_animal/qareen/proc/random_qareen_name()
 	var/built_name = ""
 	built_name += pick(strings(QAREEN_NAME_FILE, "spirit_type"))
-	built_name += " of "
+	built_name += " "
 	built_name += pick(strings(QAREEN_NAME_FILE, "adverb"))
 	built_name += pick(strings(QAREEN_NAME_FILE, "theme"))
 	name = built_name

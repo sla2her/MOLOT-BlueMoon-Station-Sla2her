@@ -1,4 +1,4 @@
-#define EGG_STAGE_TIME 2 MINUTES
+#define EGG_STAGE_TIME 15 MINUTES
 
 /datum/component/ovipositor
 	dupe_mode = COMPONENT_DUPE_UNIQUE
