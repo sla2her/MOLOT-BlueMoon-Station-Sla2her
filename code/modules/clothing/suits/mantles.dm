@@ -3,6 +3,7 @@
 /obj/item/clothing/neck/mantle
 	name = "mantle"
 	desc = "A heavy quilted mantle, for keeping your shoulders warm and stylish."
+	icon = 'icons/obj/clothing/cloaks.dmi'
 	icon_state = "mantle"
 	body_parts_covered = CHEST | ARMS
 	cold_protection = CHEST | ARMS
