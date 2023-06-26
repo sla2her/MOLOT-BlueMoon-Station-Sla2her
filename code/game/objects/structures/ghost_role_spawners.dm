@@ -755,7 +755,7 @@
 	anchored = TRUE
 	density = FALSE
 	death = FALSE
-	loadout_enabled = TRUE
+	loadout_enabled = FALSE
 	assignedrole = "Ghost Cafe Visitor"
 	short_desc = "Вы посетитель Призрачного Кафе!"
 	flavour_text = "You know one thing for sure. You arent actually alive. Are you in a simulation?"
