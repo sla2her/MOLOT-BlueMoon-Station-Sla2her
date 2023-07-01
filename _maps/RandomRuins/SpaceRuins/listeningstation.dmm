@@ -631,9 +631,8 @@
 /obj/item/bedsheet/syndie{
 	dir = 8
 	},
-/obj/effect/mob_spawn/human/lavaland_syndicate/comms{
-	dir = 4;
-	faction = list("Syndicate")
+/obj/effect/mob_spawn/human/lavaland_syndicate/comms/space{
+	dir = 4
 	},
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/listeningstation)
@@ -963,18 +962,6 @@
 	},
 /obj/item/paper/monitorkey,
 /turf/open/floor/plasteel/dark,
-/area/ruin/space/has_grav/listeningstation)
-"ek" = (
-/obj/structure/bed/pod{
-	dir = 1
-	},
-/obj/item/bedsheet/syndie{
-	dir = 8
-	},
-/obj/effect/mob_spawn/human/syndicate{
-	dir = 4
-	},
-/turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/listeningstation)
 "es" = (
 /obj/machinery/atmospherics/miner/toxins,
@@ -2926,7 +2913,7 @@ Vr
 qc
 Lu
 ag
-ek
+bd
 xf
 cA
 Qu
