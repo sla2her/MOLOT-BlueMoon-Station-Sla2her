@@ -199,7 +199,7 @@
 	. = ..()
 	AddElement(/datum/element/polychromic, poly_colors, 3)
 
-/obj/item/clothing/neck/ninjascarf
+/obj/item/clothing/neck/cloak/ninjascarf
 	name = "Ninja Scarf"
 	desc = "A stealthy, dark scarf."
 	icon_state = "ninja_scarf_classic"
@@ -207,7 +207,7 @@
 	strip_delay = 12
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/neck/ninjascarf_new
+/obj/item/clothing/neck/cloak/ninjascarf_new
 	name = "Newn Ninja Scarf"
 	desc = "A stealthy, more fashion dark scarf."
 	icon_state = "ninja_scarf_new"
