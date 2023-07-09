@@ -7,13 +7,13 @@
 	mission = "Remove all nuclear residue from X station"
 	enforce_human = FALSE
 	opendoors = FALSE
-	polldesc = "a Sanitation Expert in nuclear waste"
+	polldesc = "a Universal Cleaners"
 	teamsize = 3	//2 is not enough for such a big area, 4 is too much
 	leader_role = /datum/antagonist/ert/cleanup
 	roles = list(/datum/antagonist/ert/cleanup)
 
 /datum/ert/cleanup/New()
-	mission = "Remove all nuclear waste on [station_name()]."
+	mission = "Уберитесь на [station_name()]."
 
 //Antag mind & team (for objectives on what to do)
 /datum/antagonist/ert/cleanup
@@ -43,13 +43,13 @@
 	back = /obj/item/storage/backpack/industrial
 	gloves = /obj/item/clothing/gloves/color/yellow/nuclear_sanitation
 	shoes = /obj/item/clothing/shoes/jackboots/nuclear_sanitation
-	suit_store = /obj/item/tank/internals/emergency_oxygen/engi
-	belt = /obj/item/gun/energy/e_gun/advtaser
-	backpack_contents = list(/obj/item/storage/firstaid/radbgone=2,
-		/obj/item/storage/firstaid/toxin=1,
+	suit_store = /obj/item/tank/internals/emergency_oxygen/double
+	belt = /obj/item/storage/belt/military/abductor/full/debug
+	backpack_contents = list(/obj/item/storage/firstaid/tactical/slaver=1,
 		/obj/item/crowbar/power=1,
-		/obj/item/shovel=1,
-		/obj/item/geiger_counter=1)
+		/obj/item/mop/advanced=1,
+		/obj/item/gun/energy/e_gun/advtaser=1,
+		/obj/item/construction/rcd/combat/admin=1)
 
 /datum/outfit/ert/cleanup/New()
 	if(prob(30))
@@ -88,7 +88,7 @@
 	name = "improved radiation suit"
 	desc = "A radiation suit that's been manufactured for being a hardsuit. It provides complete protection from radiation and bio contaminants."
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/rd/hev/no_scanner/nuclear_sanitation
-	slowdown = 0.7		//removes 30% of the slowness. This is actually a considerable amount
+	slowdown = 0.25		//removes 30% of the slowness. This is actually a considerable amount
 
 /obj/item/clothing/head/helmet/space/hardsuit/rd/hev/no_scanner/nuclear_sanitation
 	name = "improved radiation hood"
