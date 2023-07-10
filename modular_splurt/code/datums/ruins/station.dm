@@ -8,4 +8,4 @@
 /datum/map_template/ruin/station/box/engine/diy_sm
 	id = "engine_diy_sm"
 	suffix = "Box/Engine/engine_diy_sm.dmm"
-	name = "Box DIY SM"
+	name = "Box DIY_SM"
