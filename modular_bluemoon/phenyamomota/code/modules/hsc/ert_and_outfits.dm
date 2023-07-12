@@ -20,19 +20,19 @@
 	name = "Trauma Team Squad"
 	role = "Медик-Специалист"
 	ert_team = /datum/team/ert/hsc
-	outfit = /datum/outfit/ert/hsc/medic
+	outfit = /datum/outfit/hsc/medic
 
 /datum/antagonist/ert/hsc/sec
 	name = "Trauma Team Squad"
 	role = "Защитник"
 	ert_team = /datum/team/ert/hsc
-	outfit = /datum/outfit/ert/hsc
+	outfit = /datum/outfit/hsc
 
 /datum/antagonist/ert/hsc/assistant
 	name = "Trauma Team Squad"
 	role = "Специалист"
 	ert_team = /datum/team/ert/hsc
-	outfit = /datum/outfit/ert/hsc/assistant
+	outfit = /datum/outfit/hsc/assistant
 
 /datum/antagonist/ert/hsc/greet()
 	//\an [name] because modularization is nice
