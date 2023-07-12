@@ -1,9 +1,32 @@
+/datum/team/ghost_role
+	name = "Ghost Role"
+	show_roundend_report = FALSE
+	var/list/players_spawned = new
+
 /datum/antagonist/ghost_role
 	name = "\improper Ghost Role"
 	job_rank = ROLE_GHOSTROLE
 	show_in_antagpanel = FALSE
 	show_to_ghosts = TRUE
 	antagpanel_category = "Ghost Role"
+
+/datum/antagonist/ghost_role
+	name = "\improper Ash Walker"
+	job_rank = ROLE_LAVALAND
+	show_in_antagpanel = FALSE
+	show_to_ghosts = TRUE
+	antagpanel_category = "Ash Walkers"
+	var/datum/team/ghost_role/ghost_team
+
+/datum/antagonist/ghost_role/create_team(datum/team/team)
+	if(team)
+		ghost_team = team
+		objectives |= ghost_team.objectives
+	else
+		ghost_team = new
+
+/datum/antagonist/ghost_role/get_team()
+	return ghost_team
 
 //Objects that spawn ghosts in as a certain role when they click on it, i.e. away mission bartenders.
 #define spawnOverride TRUE
