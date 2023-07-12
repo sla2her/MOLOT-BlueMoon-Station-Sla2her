@@ -10,7 +10,7 @@
 	polldesc = "Trauma Team Squad"
 	teamsize = 3	//2 is not enough for such a big area, 4 is too much
 	leader_role = /datum/antagonist/ert/hsc/medic
-	roles = list(/datum/antagonist/ert/hsc, /datum/antagonist/ert/hsc/assistant)
+	roles = list(/datum/antagonist/ert/hsc/sec, /datum/antagonist/ert/hsc/assistant)
 
 /datum/ert/hsc/New()
 	mission = "Спасти как можно больше сотрудников и жизней на [station_name()]."
