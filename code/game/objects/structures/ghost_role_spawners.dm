@@ -5,13 +5,6 @@
 
 /datum/antagonist/ghost_role
 	name = "\improper Ghost Role"
-	job_rank = ROLE_GHOSTROLE
-	show_in_antagpanel = FALSE
-	show_to_ghosts = TRUE
-	antagpanel_category = "Ghost Role"
-
-/datum/antagonist/ghost_role
-	name = "\improper Ash Walker"
 	job_rank = ROLE_LAVALAND
 	show_in_antagpanel = FALSE
 	show_to_ghosts = TRUE
