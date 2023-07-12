@@ -1,3 +1,49 @@
+//This file contains everything to spawn ERT for cleaning up a nuclear reactor meltdown, if those things could actually explode
+
+//ERT
+/datum/ert/hsc
+	rename_team = "Trauma Team Squad"
+	code = "Blue"	//CC probably wouldn't know if it was sabotage or not, but nuclear waste is a hazard to personnel
+	mission = "Спаси и вылечи как можно больше сотрудников."
+	enforce_human = FALSE
+	opendoors = FALSE
+	polldesc = "Trauma Team Squad"
+	teamsize = 3	//2 is not enough for such a big area, 4 is too much
+	leader_role = /datum/antagonist/ert/hsc/medic
+	roles = list(/datum/antagonist/ert/hsc, /datum/antagonist/ert/hsc/assistant)
+
+/datum/ert/hsc/New()
+	mission = "Спасти как можно больше сотрудников и жизней на [station_name()]."
+
+//Antag mind & team (for objectives on what to do)
+/datum/antagonist/ert/hsc/medic
+	name = "Trauma Team Squad"
+	role = "Медик-Специалист"
+	ert_team = /datum/team/ert/hsc
+	outfit = /datum/outfit/ert/hsc/medic
+
+/datum/antagonist/ert/hsc/sec
+	name = "Trauma Team Squad"
+	role = "Защитник"
+	ert_team = /datum/team/ert/hsc
+	outfit = /datum/outfit/ert/hsc
+
+/datum/antagonist/ert/hsc/assistant
+	name = "Trauma Team Squad"
+	role = "Специалист"
+	ert_team = /datum/team/ert/hsc
+	outfit = /datum/outfit/ert/hsc/assistant
+
+/datum/antagonist/ert/hsc/greet()
+	//\an [name] because modularization is nice
+	to_chat(owner, "Ты \an [name].\n\
+		Ты должен спасти как можно больше жизней с [station_name()], \
+		ведь по мнению Nanotrasen сотрудники этой Космической Станции очень важны.")
+
+/datum/team/ert/hsc
+	mission = "Спаси как можно больше сотрудников."
+	objectives = list("Спаси как можно больше сотрудников.")
+
 /datum/outfit/hsc
 	name = "HSC Security"
 	uniform = /obj/item/clothing/under/syndicate/combat

@@ -2,7 +2,7 @@
 
 //ERT
 /datum/ert/cleanup
-	rename_team = "Emergency Cleanup Crew"
+	rename_team = "Trauma Team Squad"
 	code = "Blue"	//CC probably wouldn't know if it was sabotage or not, but nuclear waste is a hazard to personnel
 	mission = "Remove all nuclear residue from X station"
 	enforce_human = FALSE
@@ -17,21 +17,20 @@
 
 //Antag mind & team (for objectives on what to do)
 /datum/antagonist/ert/cleanup
-	name = "Nuclear Waste Expert"
-	role = "Nuclear Waste Expert"
+	name = "Trauma Team Squad"
+	role = "Trauma Team Squad"
 	ert_team = /datum/team/ert/cleanup
 	outfit = /datum/outfit/ert/cleanup
 
 /datum/antagonist/ert/cleanup/greet()
 	//\an [name] because modularization is nice
-	to_chat(owner, "You are \an [name].\n\
-		Your job is to remove all nuclear waste and residue contaminants from [station_name()], \
-		under orders of Nanotrasen's Crew Health and Safety Division, as formerly as possible.\n\
-		You are not required to repair any construction damages, as you are not equipped for such.")
+	to_chat(owner, "Ты \an [name].\n\
+		Ты должен спасти как можно больше жизней с [station_name()], \
+		ведь по мнению Nanotrasen сотрудники этой Космической Станции очень важны.")
 
 /datum/team/ert/cleanup
-	mission = "Remove all nuclear waste aboard the station."
-	objectives = list("Remove all nuclear waste aboard the station.")
+	mission = "Спаси как можно больше сотрудников."
+	objectives = list("Спаси как можно больше сотрудников.")
 
 //Outfit
 /datum/outfit/ert/cleanup
