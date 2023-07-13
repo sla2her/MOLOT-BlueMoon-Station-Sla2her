@@ -5,10 +5,10 @@
 
 /datum/antagonist/ghost_role
 	name = "\improper Ghost Role"
-	job_rank = ROLE_LAVALAND
+	job_rank = ROLE_GHOSTROLE
 	show_in_antagpanel = FALSE
 	show_to_ghosts = TRUE
-	antagpanel_category = "Ash Walkers"
+	antagpanel_category = "Ghost Role"
 	var/datum/team/ghost_role/ghost_team
 
 /datum/antagonist/ghost_role/create_team(datum/team/team)
