@@ -792,6 +792,7 @@
 #include "code\datums\elements\mob_holder.dm"
 #include "code\datums\elements\object_reskinning.dm"
 #include "code\datums\elements\photosynthesis.dm"
+#include "code\datums\elements\photosynthesis_revert.dm"
 #include "code\datums\elements\polychromic.dm"
 #include "code\datums\elements\scavenging.dm"
 #include "code\datums\elements\series.dm"
