@@ -31,10 +31,10 @@
 	needs_physical_contact = TRUE
 	interaction_sound = 'sound/weapons/thudswoosh.ogg'
 
-/datum/interaction/headpat/display_interaction(mob/living/carbon/human/owner)
-	if(owner.CheckActionCooldown(CLICK_CD_MELEE) && owner.a_intent == INTENT_HELP)
-		owner.help_shake_act(owner)
-		owner.DelayNextAction()
+/datum/interaction/headpat/display_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(user.CheckActionCooldown(CLICK_CD_MELEE) && user.a_intent == INTENT_HELP)
+		target.help_shake_act(user)
+		target.DelayNextAction()
 
 /datum/interaction/salute
 	description = "Исполнить Воинское Приветствие!"
