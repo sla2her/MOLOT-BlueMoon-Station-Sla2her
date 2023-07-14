@@ -81,3 +81,8 @@
 	box = /obj/item/storage/box/survival/syndie
 	pda_slot = ITEM_SLOT_BELT
 	backpack_contents = list(/obj/item/gun/energy/e_gun=1, /obj/item/stamp/law=1, /obj/item/syndicate_uplink=1)
+
+/datum/outfit/job/lawyer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	..()
+
+	H.typing_indicator_state = /obj/effect/overlay/typing_indicator/additional/law
