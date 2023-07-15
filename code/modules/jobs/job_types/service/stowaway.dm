@@ -78,7 +78,6 @@ GLOBAL_LIST_EMPTY(roundstart_stowaway)
 	satchel = /obj/item/storage/backpack/duffelbag/syndie
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
-	backpack_contents = list(/obj/item/syndicate_uplink=1)
 
 /datum/outfit/plasmaman/stowaway
 	name = "Stowaway Plasmaman"
