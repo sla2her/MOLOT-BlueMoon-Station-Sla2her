@@ -245,6 +245,16 @@
 	if(SSmapping.config?.map_name == "Syndicate Station")
 		return get_all_accesses()
 
+/datum/job/detective/New()
+	. = ..()
+	if(SSmapping.config?.map_name == "Syndicate Station")
+		outfit = /datum/outfit/job/detective/syndicate
+
+/datum/job/detective/get_access()
+	. = ..()
+	if(SSmapping.config?.map_name == "Syndicate Station")
+		return get_all_accesses()
+
 /datum/job/peacekeeper/New()
 	. = ..()
 	if(SSmapping.config?.map_name == "Syndicate Station")

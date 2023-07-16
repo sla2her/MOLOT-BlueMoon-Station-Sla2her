@@ -4,6 +4,7 @@
 	roundend_category = "Fugitive"
 	silent = TRUE //greet called by the spawn
 	show_in_antagpanel = FALSE
+	show_to_ghosts = TRUE
 	var/datum/team/fugitive_hunters/hunter_team
 	var/backstory = "error"
 
