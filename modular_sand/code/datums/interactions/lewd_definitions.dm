@@ -21,9 +21,9 @@
 	var/has_balls = FALSE
 	var/has_vagina = FALSE
 	var/has_anus = TRUE
-	var/has_breasts = FALSE
 	var/has_butt = FALSE
 	var/anus_always_accessible = FALSE
+	var/has_breasts = FALSE
 	var/anus_exposed = FALSE
 	var/last_partner
 	var/last_orifice
@@ -140,7 +140,7 @@
 	return has_penis()
 
 /mob/living/proc/get_penetrating_genital_name(long = FALSE)
-	return has_penis() ? (long ? pick(GLOB.dick_nouns) : pick("член", "пенис")) : pick("страпон")
+	return has_penis() ? (long ? pick(GLOB.dick_nouns) : pick("cock", "dick")) : pick("strapon")
 
 /mob/living/proc/has_balls(visibility = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
@@ -348,29 +348,11 @@
 					return TRUE
 	return FALSE
 
-/mob/living/proc/has_butt(var/nintendo = REQUIRE_ANY)
+/mob/living/proc/has_butt(visibility = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(has_butt && !istype(C))
 		return TRUE
-	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.getorganslot(ORGAN_SLOT_BUTT)
-		if(peepee)
-			switch(nintendo)
-				if(REQUIRE_ANY)
-					return TRUE
-				if(REQUIRE_EXPOSED)
-					if(peepee.is_exposed())
-						return TRUE
-					else
-						return FALSE
-				if(REQUIRE_UNEXPOSED)
-					if(!peepee.is_exposed())
-						return TRUE
-					else
-						return FALSE
-				else
-					return TRUE
-	return FALSE
+	return has_genital(ORGAN_SLOT_BUTT, visibility)
 
 ///Are we wearing something that covers our chest?
 /mob/living/proc/is_topless()
@@ -421,19 +403,19 @@
 	if(moan == lastmoan)
 		moan--
 	if(!is_muzzled())
-		visible_message(message = "<span class='lewd'><B>\The [src]</B> [pick("стонет", "стонет в удовольствии")].</span>", ignored_mobs = get_unconsenting())
+		visible_message(message = span_lewd("<B>\The [src]</B> [pick("moans", "moans in pleasure")]."), ignored_mobs = get_unconsenting())
 	if(is_muzzled())//immursion
-		audible_message("<span class='lewd'><B>[src]</B> [pick("имитирует стон удовольствия","стонет в тишине")].</span>")
+		audible_message(span_lewd("<B>[src]</B> [pick("mimes a pleasured moan","moans in silence")]."))
 	lastmoan = moan
 
 /mob/living/proc/cum(mob/living/partner, target_orifice)
 	if(HAS_TRAIT(src, TRAIT_NEVERBONER))
 		return FALSE
 	var/message
-	var/u_His = ru_ego()
-	var/u_He = ru_who()
+	var/u_His = p_their()
+	var/u_He = p_they()
 	var/u_S = p_s()
-	var/t_His = partner?.ru_ego()
+	var/t_His = partner?.p_their()
 	var/cumin = FALSE
 	var/partner_carbon_check = FALSE
 	var/obj/item/organ/genital/target_gen = null
@@ -500,12 +482,12 @@
 								if(partner.has_feet())
 									message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 								else
-									message = "кончает под себя!"
+									message = "cums on the floor!"
 							else
 								if(partner.has_feet())
 									message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 								else
-									message = "кончает под себя!"
+									message = "cums on the floor!"
 						//weird shit goes here
 						if(CUM_TARGET_EARS)
 							if(partner.has_ears())
@@ -524,9 +506,9 @@
 							if(partner.has_penis(REQUIRE_EXPOSED))
 								message = "cums on \the <b>[partner]</b>."
 							else
-								message = "кончает под себя!"
+								message = "cums on the floor!"
 						else
-							message = "кончает под себя!"
+							message = "cums on the floor!"
 				else if(has_vagina())
 					if(!istype(partner))
 						target_orifice = null
@@ -577,12 +559,12 @@
 								if(partner.has_feet())
 									message = "squirts on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 								else
-									message = "сквиртит под себя!"
+									message = "squirts on the floor!"
 							else
 								if(partner.has_feet())
 									message = "squirts on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 								else
-									message = "сквиртит под себя!"
+									message = "squirts on the floor!"
 						//weird shit goes here
 						if(CUM_TARGET_EARS)
 							if(partner.has_ears())
@@ -601,12 +583,12 @@
 							if(partner.has_penis(REQUIRE_EXPOSED))
 								message = "squirts on \the <b>[partner]</b>'s penis"
 							else
-								message = "сквиртит под себя!"
+								message = "squirts on the floor!"
 						else
-							message = "сквиртит под себя!"
+							message = "squirts on the floor!"
 
 				else
-					message = pick("бурно оргазмирует!", "изгибается в оргазме.")
+					message = pick("orgasms violently!", "twists in orgasm.")
 			else
 				switch(last_genital.type)
 					if(/obj/item/organ/genital/penis)
@@ -664,12 +646,12 @@
 									if(partner.has_feet())
 										message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 									else
-										message = "кончает под себя!"
+										message = "cums on the floor!"
 								else
 									if(partner.has_feet())
 										message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 									else
-										message = "кончает под себя!"
+										message = "cums on the floor!"
 							//weird shit goes here
 							if(CUM_TARGET_EARS)
 								if(partner.has_ears())
@@ -688,9 +670,9 @@
 								if(partner.has_penis(REQUIRE_EXPOSED))
 									message = "cums on \the <b>[partner]</b>."
 								else
-									message = "кончает под себя!"
+									message = "cums on the floor!"
 							else
-								message = "кончает под себя!"
+								message = "cums on the floor!"
 					if(/obj/item/organ/genital/vagina)
 						if(!istype(partner))
 							target_orifice = null
@@ -742,12 +724,12 @@
 									if(partner.has_feet())
 										message = "squirts on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 									else
-										message = "сквиртит под себя!"
+										message = "squirts on the floor!"
 								else
 									if(partner.has_feet())
 										message = "squirts on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
 									else
-										message = "сквиртит под себя!"
+										message = "squirts on the floor!"
 							//weird shit goes here
 							if(CUM_TARGET_EARS)
 								if(partner.has_ears())
@@ -766,9 +748,9 @@
 								if(partner.has_penis(REQUIRE_EXPOSED))
 									message = "squirts on \the <b>[partner]</b>'s penis"
 								else
-									message = "сквиртит под себя!"
+									message = "squirts on the floor!"
 							else
-								message = "сквиртит под себя!"
+								message = "squirts on the floor!"
 					else
 						message = pick("orgasms violently!", "twists in orgasm.")
 		else if(istype(partner, /obj/item/reagent_containers))
@@ -778,7 +760,7 @@
 				if(/obj/item/organ/genital/vagina)
 					message = "squirts into \the <b>[partner]</b>"
 	else //todo: better self cum messages
-		message = "кончает прямо на себя!"
+		message = "cums all over themselves!"
 	if(gender == MALE)
 		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_m1.ogg',
 							'modular_sand/sound/interactions/final_m2.ogg',
@@ -793,7 +775,7 @@
 		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_f1.ogg',
 							'modular_sand/sound/interactions/final_f2.ogg',
 							'modular_sand/sound/interactions/final_f3.ogg'), 70, 1, 0)
-	visible_message(message = "<span class='userlove'><b>\The [src]</b> [message]</span>", ignored_mobs = get_unconsenting())
+	visible_message(message = span_userlove("<b>\The [src]</b> [message]"), ignored_mobs = get_unconsenting())
 	multiorgasms += 1
 
 	COOLDOWN_START(src, refractory_period, (rand(300, 900) - get_sexual_potency()))//sex cooldown
@@ -857,7 +839,7 @@
 		add_lust(amount)
 	if(get_lust() >= get_lust_tolerance())
 		if(prob(10))
-			to_chat(src, "<b>Ты изо всех сил стараешься не кончить раньше времени!</b>")
+			to_chat(src, "<b>You struggle to not orgasm!</b>")
 			return FALSE
 		if(lust >= get_lust_tolerance()*3)
 			cum(partner, orifice)

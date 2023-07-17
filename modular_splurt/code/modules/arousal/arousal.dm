@@ -85,10 +85,10 @@
 					size = pick("cum_normal", "cum_large", "cum_large", "cum_large")
 			target.add_cum_overlay(size)
 
+	. = ..()
+
 	if(cached_fluid)
 		sender.set_fluid_id(cached_fluid)
-
-	. = ..()
 
 /mob/living/carbon/human/mob_fill_container(obj/item/organ/genital/G, obj/item/reagent_containers/container, mb_time, obj/item/milking_machine/M)
 	if(!M)
