@@ -437,30 +437,30 @@
 								message = "cums right in \the <b>[partner]</b>'s mouth."
 								cumin = TRUE
 							else
-								message = "cums on \the <b>[partner]</b>'s face."
+								message = "cums on \the лицо <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_THROAT)
 							if(partner.has_mouth() && partner.mouth_is_free())
 								message = "shoves deep into \the <b>[partner]</b>'s throat and cums."
 								cumin = TRUE
 							else
-								message = "cums on \the <b>[partner]</b>'s face."
+								message = "cums on \the лицо <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_VAGINA)
 							if(partner.has_vagina(REQUIRE_EXPOSED))
 								if(partner_carbon_check)
 									target_gen = c_partner.getorganslot(ORGAN_SLOT_VAGINA)
-								message = "cums in \the <b>[partner]</b>'s pussy."
+								message = "cums in \the киску <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							else
-								message = "cums on \the <b>[partner]</b>'s belly."
+								message = "cums on \the живот <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_ANUS)
 							if(partner.has_anus(REQUIRE_EXPOSED))
-								message = "cums in \the <b>[partner]</b>'s asshole."
+								message = "cums in \the попку <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							else
-								message = "cums on \the <b>[partner]</b>'s backside."
+								message = "cums on \the спину <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_HAND)
 							if(partner.has_hand(REQUIRE_ANY))
-								message = "cums in \the <b>[partner]</b>'s hand."
+								message = "cums in \the руку <b>[partner]</b> сквиртом."
 							else
 								message = "cums on \the <b>[partner]</b>."
 						if(CUM_TARGET_BREASTS)
@@ -480,26 +480,26 @@
 						if(CUM_TARGET_FEET)
 							if(!last_lewd_datum.require_target_num_feet)
 								if(partner.has_feet())
-									message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+									message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 								else
 									message = "cums on the floor!"
 							else
 								if(partner.has_feet())
-									message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+									message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 								else
 									message = "cums on the floor!"
 						//weird shit goes here
 						if(CUM_TARGET_EARS)
 							if(partner.has_ears())
-								message = "cums inside \the <b>[partner]</b>'s ear."
+								message = "cums inside \the ухо <b>[partner]</b> сквиртом."
 							else
-								message = "cums inside \the <b>[partner]</b>'s earsocket."
+								message = "cums inside \the ушную раковину <b>[partner]</b> сквиртом."
 							cumin = TRUE
 						if(CUM_TARGET_EYES)
 							if(partner.has_eyes())
-								message = "cums on \the <b>[partner]</b>'s eyeball."
+								message = "cums on \the глаз <b>[partner]</b> сквиртом."
 							else
-								message = "cums inside \the <b>[partner]</b>'s eyesocket."
+								message = "cums inside \the глазницу <b>[partner]</b> сквиртом."
 							cumin = TRUE
 						//
 						if(CUM_TARGET_PENIS)
@@ -519,35 +519,35 @@
 								message = "squirts right in \the <b>[partner]</b>'s mouth."
 								cumin = TRUE
 							else
-								message = "squirts on \the <b>[partner]</b>'s face."
+								message = "обливает лицо <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_THROAT)
 							if(partner.has_mouth() && partner.mouth_is_free())
 								message = "rubs [u_His] vagina against \the <b>[partner]</b>'s mouth and cums."
 								cumin = TRUE
 							else
-								message = "squirts on \the <b>[partner]</b>'s face."
+								message = "обливает лицо <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_VAGINA)
 							if(partner.has_vagina(REQUIRE_EXPOSED))
-								message = "squirts on \the <b>[partner]</b>'s pussy."
+								message = "обливает киску <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							else
-								message = "squirts on \the <b>[partner]</b>'s belly."
+								message = "обливает живот <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_ANUS)
 							if(partner.has_anus(REQUIRE_EXPOSED))
-								message = "squirts on \the <b>[partner]</b>'s asshole."
+								message = "обливает попку <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							else
-								message = "squirts on \the <b>[partner]</b>'s backside."
+								message = "обливает спину <b>[partner]</b> сквиртом."
 						if(CUM_TARGET_HAND)
 							if(partner.has_hand(REQUIRE_ANY))
-								message = "squirts on \the <b>[partner]</b>'s hand."
+								message = "обливает руку <b>[partner]</b> сквиртом."
 							else
-								message = "squirts on \the <b>[partner]</b>."
+								message = "обливает <b>[partner]</b>."
 						if(CUM_TARGET_BREASTS)
 							if(partner.has_breasts(REQUIRE_EXPOSED))
 								message = "squirts onto \the <b>[partner]</b>'s breasts."
 							else
-								message = "squirts on \the <b>[partner]</b>'s chest and neck."
+								message = "обливает <b>[partner]</b>'s chest and neck."
 						if(NUTS_TO_FACE)
 							if(partner.has_mouth() && partner.mouth_is_free())
 								message = "vigorously ruts [u_His] clit into \the <b>[partner]</b>'s mouth before shooting [u_His] femcum all over [t_His] eyes and hair."
@@ -557,35 +557,35 @@
 						if(CUM_TARGET_FEET)
 							if(!last_lewd_datum.require_target_num_feet)
 								if(partner.has_feet())
-									message = "squirts on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+									message = "обливает <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 								else
-									message = "squirts on the floor!"
+									message = "обливает пространство под собой сквиртом!"
 							else
 								if(partner.has_feet())
-									message = "squirts on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+									message = "обливает <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 								else
-									message = "squirts on the floor!"
+									message = "обливает пространство под собой сквиртом!"
 						//weird shit goes here
 						if(CUM_TARGET_EARS)
 							if(partner.has_ears())
-								message = "squirts on \the <b>[partner]</b>'s ear."
+								message = "обливает ухо <b>[partner]</b> сквиртом."
 							else
-								message = "squirts on \the <b>[partner]</b>'s earsocket."
+								message = "обливает ушную раковину <b>[partner]</b> сквиртом."
 							cumin = TRUE
 						if(CUM_TARGET_EYES)
 							if(partner.has_eyes())
-								message = "squirts on \the <b>[partner]</b>'s eyeball."
+								message = "обливает глаз <b>[partner]</b> сквиртом."
 							else
-								message = "squirts on \the <b>[partner]</b>'s eyesocket."
+								message = "обливает глазницу <b>[partner]</b> сквиртом."
 							cumin = TRUE
 						//
 						if(CUM_TARGET_PENIS)
 							if(partner.has_penis(REQUIRE_EXPOSED))
-								message = "squirts on \the <b>[partner]</b>'s penis"
+								message = "обливает пенис <b>[partner]</b> сквиртом"
 							else
-								message = "squirts on the floor!"
+								message = "обливает пространство под собой сквиртом!"
 						else
-							message = "squirts on the floor!"
+							message = "обливает пространство под собой сквиртом!"
 
 				else
 					message = pick("orgasms violently!", "twists in orgasm.")
@@ -601,30 +601,30 @@
 									message = "cums right in \the <b>[partner]</b>'s mouth."
 									cumin = TRUE
 								else
-									message = "cums on \the <b>[partner]</b>'s face."
+									message = "cums on \the лицо <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_THROAT)
 								if(partner.has_mouth() && partner.mouth_is_free())
 									message = "shoves deep into \the <b>[partner]</b>'s throat and cums."
 									cumin = TRUE
 								else
-									message = "cums on \the <b>[partner]</b>'s face."
+									message = "cums on \the лицо <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_VAGINA)
 								if(partner.has_vagina(REQUIRE_EXPOSED))
 									if(partner_carbon_check)
 										target_gen = c_partner.getorganslot(ORGAN_SLOT_VAGINA)
-									message = "cums in \the <b>[partner]</b>'s pussy."
+									message = "cums in \the киску <b>[partner]</b> сквиртом."
 									cumin = TRUE
 								else
-									message = "cums on \the <b>[partner]</b>'s belly."
+									message = "cums on \the живот <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_ANUS)
 								if(partner.has_anus(REQUIRE_EXPOSED))
-									message = "cums in \the <b>[partner]</b>'s asshole."
+									message = "cums in \the попку <b>[partner]</b> сквиртом."
 									cumin = TRUE
 								else
-									message = "cums on \the <b>[partner]</b>'s backside."
+									message = "cums on \the спину <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_HAND)
 								if(partner.has_hand())
-									message = "cums in \the <b>[partner]</b>'s hand."
+									message = "cums in \the руку <b>[partner]</b> сквиртом."
 								else
 									message = "cums on \the <b>[partner]</b>."
 							if(CUM_TARGET_BREASTS)
@@ -644,26 +644,26 @@
 							if(CUM_TARGET_FEET)
 								if(!last_lewd_datum || !last_lewd_datum.require_target_num_feet)
 									if(partner.has_feet())
-										message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+										message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 									else
 										message = "cums on the floor!"
 								else
 									if(partner.has_feet())
-										message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+										message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 									else
 										message = "cums on the floor!"
 							//weird shit goes here
 							if(CUM_TARGET_EARS)
 								if(partner.has_ears())
-									message = "cums inside \the <b>[partner]</b>'s ear."
+									message = "cums inside \the ухо <b>[partner]</b> сквиртом."
 								else
-									message = "cums inside \the <b>[partner]</b>'s earsocket."
+									message = "cums inside \the ушную раковину <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							if(CUM_TARGET_EYES)
 								if(partner.has_eyes())
-									message = "cums on \the <b>[partner]</b>'s eyeball."
+									message = "cums on \the глаз <b>[partner]</b> сквиртом."
 								else
-									message = "cums inside \the <b>[partner]</b>'s eyesocket."
+									message = "cums inside \the глазницу <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							//
 							if(CUM_TARGET_PENIS)
@@ -683,38 +683,38 @@
 									message = "squirts right in \the <b>[partner]</b>'s mouth."
 									cumin = TRUE
 								else
-									message = "squirts on \the <b>[partner]</b>'s face."
+									message = "обливает лицо <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_THROAT)
 								if(partner.has_mouth() && partner.mouth_is_free())
 									message = "rubs [u_His] vagina against \the <b>[partner]</b>'s mouth and cums."
 									cumin = TRUE
 								else
-									message = "squirts on \the <b>[partner]</b>'s face."
+									message = "обливает лицо <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_VAGINA)
 								if(partner.has_vagina(REQUIRE_EXPOSED))
-									message = "squirts on \the <b>[partner]</b>'s pussy."
+									message = "обливает киску <b>[partner]</b> сквиртом."
 									cumin = TRUE
 								else
-									message = "squirts on \the <b>[partner]</b>'s belly."
+									message = "обливает живот <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_ANUS)
 								if(partner.has_anus(REQUIRE_EXPOSED))
-									message = "squirts on \the <b>[partner]</b>'s asshole."
+									message = "обливает попку <b>[partner]</b> сквиртом."
 									cumin = TRUE
 								else
-									message = "squirts on \the <b>[partner]</b>'s backside."
+									message = "обливает спину <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_HAND)
 								if(partner.has_hand())
-									message = "squirts on \the <b>[partner]</b>'s hand."
+									message = "обливает руку <b>[partner]</b> сквиртом."
 								else
-									message = "squirts on \the <b>[partner]</b>."
+									message = "обливает <b>[partner]</b> сквиртом."
 							if(CUM_TARGET_BREASTS)
 								if(partner.has_breasts(REQUIRE_EXPOSED))
-									message = "squirts onto \the <b>[partner]</b>'s breasts."
+									message = "обливает грудь <b>[partner]</b> сквиртом."
 								else
-									message = "squirts on \the <b>[partner]</b>'s chest and neck."
+									message = "обливает <b>[partner]</b>'s chest and neck."
 							if(NUTS_TO_FACE)
 								if(partner.has_mouth() && partner.mouth_is_free())
-									message = "vigorously ruts [u_His] clit into \the <b>[partner]</b>'s mouth before shooting [u_His] femcum all over [t_His] eyes and hair."
+									message = "vigorously ruts [ru_ego] clit into \the <b>[partner]</b>'s mouth before shooting [u_His] femcum all over [t_His] eyes and hair."
 
 							if(THIGH_SMOTHERING)
 								message = "keeps \the <b>[partner]</b> locked in [u_His] thighs as [u_He] orgasm[u_S], squirting over [t_His] face."
@@ -722,45 +722,47 @@
 							if(CUM_TARGET_FEET)
 								if(!last_lewd_datum || !last_lewd_datum.require_target_num_feet)
 									if(partner.has_feet())
-										message = "squirts on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+										message = "обливает <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 									else
-										message = "squirts on the floor!"
+										message = "обливает пространство под собой сквиртом!"
 								else
 									if(partner.has_feet())
-										message = "squirts on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("foot", "sole") : pick("feet", "soles")]."
+										message = "обливает <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 									else
-										message = "squirts on the floor!"
+										message = "обливает пространство под собой сквиртом!"
 							//weird shit goes here
 							if(CUM_TARGET_EARS)
 								if(partner.has_ears())
-									message = "squirts on \the <b>[partner]</b>'s ear."
+									message = "обливает ухо <b>[partner]</b> сквиртом."
 								else
-									message = "squirts on \the <b>[partner]</b>'s earsocket."
+									message = "обливает ушную раковину <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							if(CUM_TARGET_EYES)
 								if(partner.has_eyes())
-									message = "squirts on \the <b>[partner]</b>'s eyeball."
+									message = "обливает глаз <b>[partner]</b> сквиртом."
 								else
-									message = "squirts on \the <b>[partner]</b>'s eyesocket."
+									message = "обливает глазницу <b>[partner]</b> сквиртом."
 								cumin = TRUE
 							//
 							if(CUM_TARGET_PENIS)
 								if(partner.has_penis(REQUIRE_EXPOSED))
-									message = "squirts on \the <b>[partner]</b>'s penis"
+									message = "обливает пенис <b>[partner]</b> сквиртом"
 								else
-									message = "squirts on the floor!"
+									message = "обливает пространство под собой сквиртом!"
 							else
-								message = "squirts on the floor!"
+								message = "обливает пространство под собой сквиртом!"
 					else
-						message = pick("orgasms violently!", "twists in orgasm.")
+						message = pick("оргазмирует!", "трясётся в оргазме.", "дрожит от оргазма!")
 		else if(istype(partner, /obj/item/reagent_containers))
 			switch(last_genital.type)
 				if(/obj/item/organ/genital/penis)
-					message = "cums into \the <b>[partner]</b>"
+					message = "кончает на <b>[partner]</b>!"
 				if(/obj/item/organ/genital/vagina)
-					message = "squirts into \the <b>[partner]</b>"
+					message = "обливает <b>[partner]</b> сквиртом!"
+		else //todo: better self cum messages
+			message = "кончает на себя!"
 	else //todo: better self cum messages
-		message = "cums all over themselves!"
+		message = "кончает на себя!"
 	if(gender == MALE)
 		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_m1.ogg',
 							'modular_sand/sound/interactions/final_m2.ogg',

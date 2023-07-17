@@ -413,11 +413,6 @@
 	set category = "Эмоции.2: Звуковые Действия"
 	emote("eyebrow3")
 
-/mob/living/verb/emote_fart()
-	set name = "~ Пернуть "
-	set category = "Эмоции.2: Звуковые Действия"
-	emote("fart")
-
 /mob/living/verb/emote_peep1()
 	set name = "~ Пискнуть по-птичьи 1 "
 	set category = "Эмоции.2: Звуковые Действия"
@@ -437,11 +432,6 @@
 	set name = "~ Прыгать "
 	set category = "Эмоции.3: Простые Действия"
 	emote("jump")
-
-/mob/living/verb/emote_burp()
-	set name = "~ Рыгнуть "
-	set category = "Эмоции.2: Звуковые Действия"
-	emote("burp")
 
 /mob/living/verb/emote_mumble()
 	set name = "~ Бормотать "

@@ -125,16 +125,16 @@
 	if(!fluid_source)
 		return
 	if(mb_time) //Skip warning if this is an instant climax.
-		to_chat(src,"<span class='userlove'>Ты вот-вот достигнешь кульминации [(Lgen) ? "в <b>[L]</b> [Lgen.name]" : "совместно с <b>[L]</b>"]!</span>")
-		to_chat(L,"<span class='userlove'>[src] вот-вот достигнет кульминации [(Lgen) ? "в твой [Lgen.name]" : "совместно с тобой"]!</span>")
+		to_chat(src, span_userlove("Ты вот-вот достигнешь кульминации [(Lgen) ? "в [L] [Lgen.name]" : "совместно с [L]"]!"))
+		to_chat(L, span_userlove("[src] вот-вот достигнет кульминации [(Lgen) ? "в твой [Lgen.name]" : "совместно с тобой"]!"))
 		if(!do_after(src, mb_time, target = src) || !in_range(src, L) || !G.climaxable(src, TRUE))
 			return
 	if(spillage)
-		to_chat(src,"<span class='userlove'>Вы испытываете оргазм с <b>[L]</b>, изливая [(Lgen) ? "[L.ru_ego()] [Lgen.name]" : "[L.ru_ego()] / [Lgen.name]"]. [G.name] требует отдыха после использования!</span>")
-		to_chat(L,"<span class='userlove'>[src] кульминирует [(Lgen) ? "в твою [Lgen.name]" : "совместно с тобой"], в процессе попросту переполненяя и закономерно проливая всякое. [G.name] требует отдыха после использования!</span>")
+		to_chat(src, span_userlove("Bы испытываете оргазм с <b>[L]</b>, изливая [(Lgen) ? "[L.ru_ego()] [Lgen.name]" : "[L.p_them()]"]. [G.name] требует отдыха."))
+		to_chat(L, span_userlove("[src] кульминирует [(Lgen) ? "в [Lgen.name]" : "с тобой"], заполняя тебя при помощи [ru_ego()] [G.name]!"))
 	else //knots and other non-spilling orgasms
-		to_chat(src,"<span class='userlove'>Вы достигаете кульминации И [(Lgen) ? "в <b>[L]</b> [Lgen.name]" : "совместно с <b>[L]</b>"], в процессе ничего не проливая. [G.name] требует отдыха после использования!</span>")
-		to_chat(L,"<span class='userlove'>[src] кульминирует [(Lgen) ? "в твою [Lgen.name]" : "совместно с тобой"], [ru_ego()] [G.name] ничего не проливает в процессе! [G.name] требует отдыха после использования!</span>")
+		to_chat(src, span_userlove("Bы кончаете [(Lgen) ? "в [L] [Lgen.name]" : "[L]"]. [G.name] не проливает ни миллилитра мимо."))
+		to_chat(L, span_userlove("[src] кончает [(Lgen) ? "в [Lgen.name]" : ""]. [G.name] не проливает ни миллилитра мимо!"))
 	//SEND_SIGNAL(L, COMSIG_ADD_MOOD_EVENT, "orgasm", /datum/mood_event/orgasm) //Sandstorm edit
 	do_climax(fluid_source, spillage ? loc : L, G, spillage,, Lgen)
 	//L.receive_climax(src, Lgen, G, spillage)
