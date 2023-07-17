@@ -482,12 +482,12 @@
 								if(partner.has_feet())
 									message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 								else
-									message = "cums on the floor!"
+									message = "кончает под себя!"
 							else
 								if(partner.has_feet())
 									message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 								else
-									message = "cums on the floor!"
+									message = "кончает под себя!"
 						//weird shit goes here
 						if(CUM_TARGET_EARS)
 							if(partner.has_ears())
@@ -506,9 +506,9 @@
 							if(partner.has_penis(REQUIRE_EXPOSED))
 								message = "cums on \the <b>[partner]</b>."
 							else
-								message = "cums on the floor!"
+								message = "кончает под себя!"
 						else
-							message = "cums on the floor!"
+							message = "кончает под себя!"
 				else if(has_vagina())
 					if(!istype(partner))
 						target_orifice = null
@@ -646,12 +646,12 @@
 									if(partner.has_feet())
 										message = "cums on \the <b>[partner]</b>'s [partner.has_feet() == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 									else
-										message = "cums on the floor!"
+										message = "кончает под себя!"
 								else
 									if(partner.has_feet())
 										message = "cums on \the <b>[partner]</b>'s [last_lewd_datum.require_target_feet == 1 ? pick("стопу", "ножку") : pick("стопу", "ножку")]."
 									else
-										message = "cums on the floor!"
+										message = "кончает под себя!"
 							//weird shit goes here
 							if(CUM_TARGET_EARS)
 								if(partner.has_ears())
@@ -670,9 +670,9 @@
 								if(partner.has_penis(REQUIRE_EXPOSED))
 									message = "cums on \the <b>[partner]</b>."
 								else
-									message = "cums on the floor!"
+									message = "кончает под себя!"
 							else
-								message = "cums on the floor!"
+								message = "кончает под себя!"
 					if(/obj/item/organ/genital/vagina)
 						if(!istype(partner))
 							target_orifice = null
@@ -714,7 +714,7 @@
 									message = "обливает <b>[partner]</b>'s chest and neck."
 							if(NUTS_TO_FACE)
 								if(partner.has_mouth() && partner.mouth_is_free())
-									message = "vigorously ruts [ru_ego] clit into \the <b>[partner]</b>'s mouth before shooting [u_His] femcum all over [t_His] eyes and hair."
+									message = "vigorously ruts [u_His] clit into \the <b>[partner]</b>'s mouth before shooting [u_His] femcum all over [t_His] eyes and hair."
 
 							if(THIGH_SMOTHERING)
 								message = "keeps \the <b>[partner]</b> locked in [u_His] thighs as [u_He] orgasm[u_S], squirting over [t_His] face."
