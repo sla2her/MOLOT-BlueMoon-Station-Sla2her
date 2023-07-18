@@ -431,6 +431,9 @@
 "cy" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/syndie/surgery_adv,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "cB" = (
@@ -1911,6 +1914,10 @@
 /obj/item/stack/rods/ten,
 /turf/open/floor/pod/dark,
 /area/lavaland/surface/outdoors)
+"nK" = (
+/obj/machinery/atmospherics/pipe/manifold/general/visible,
+/turf/open/floor/plasteel/shuttle,
+/area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "nT" = (
 /mob/living/simple_animal/hostile/syndicate{
 	desc = "It's HIM.";
@@ -1944,14 +1951,8 @@
 /turf/open/floor/pod/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "oe" = (
-/obj/structure/rack,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/item/clothing/suit/space/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate,
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/components/unary/cryo_cell,
+/turf/open/floor/plasteel/shuttle,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "oi" = (
 /obj/effect/turf_decal/siding/thinplating/dark/corner,
@@ -2165,10 +2166,10 @@
 /area/ruin/lavaland/unpowered/deepspaceone/engineering)
 "pM" = (
 /obj/structure/table/reinforced,
-/obj/machinery/airalarm/directional/west{
-	req_access = list("syndicate")
-	},
 /obj/item/healthanalyzer/advanced,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "pR" = (
@@ -4277,10 +4278,7 @@
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "FO" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	req_access_txt = "150"
-	},
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/shuttle,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "FT" = (
 /obj/structure/cable/yellow{
@@ -4526,6 +4524,12 @@
 /obj/structure/railing,
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
+"HW" = (
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 9
+	},
+/turf/open/floor/plasteel/shuttle,
+/area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "HX" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 4
@@ -5067,7 +5071,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "LC" = (
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 5
+	},
+/turf/open/floor/plasteel/shuttle,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "LK" = (
 /obj/structure/table/glass,
@@ -5596,6 +5603,9 @@
 /obj/structure/tank_holder/anesthetic,
 /obj/structure/railing,
 /obj/item/clothing/mask/breath/medical,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "Pr" = (
@@ -6198,6 +6208,13 @@
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
+"TG" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	name = "Connector Port (Air Supply)"
+	},
+/turf/open/floor/plasteel/shuttle,
+/area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "TJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -6539,8 +6556,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "Wr" = (
-/obj/structure/tank_dispenser/oxygen,
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 1
+	},
+/turf/open/floor/plasteel/shuttle,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "Wt" = (
 /obj/structure/disposalpipe/segment,
@@ -7097,6 +7116,12 @@
 	pixel_y = 5
 	},
 /turf/open/floor/pod/dark,
+/area/ruin/lavaland/unpowered/deepspaceone/medbay)
+"Zx" = (
+/obj/machinery/airalarm/directional/west{
+	req_access = list("syndicate")
+	},
+/turf/open/floor/plasteel/shuttle,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "Zz" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -9607,7 +9632,7 @@ ab
 xL
 Wr
 LC
-ZX
+Zx
 pY
 Yp
 ZX
@@ -9665,7 +9690,7 @@ ab
 ab
 xL
 oe
-LC
+nK
 FO
 so
 Lg
@@ -9723,9 +9748,9 @@ ab
 ab
 ab
 xL
-ZX
-ZX
-ZX
+TG
+HW
+FO
 WU
 FI
 FT

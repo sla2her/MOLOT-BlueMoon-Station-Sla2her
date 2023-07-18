@@ -40,10 +40,6 @@
 /obj/machinery/door/airlock/external,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/syndicate2)
-"al" = (
-/mob/living/simple_animal/hostile/syndicate,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate2)
 "am" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/space/hardsuit/syndi,
@@ -57,10 +53,6 @@
 /obj/machinery/sleeper/syndie/fullupgrade{
 	name = "Ultra Cool Inteq Sleeper"
 	},
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate2)
-"ap" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/spacebattle,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate2)
 "aq" = (
@@ -122,10 +114,6 @@
 /obj/machinery/door/airlock/external,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/syndicate3)
-"aG" = (
-/mob/living/simple_animal/hostile/syndicate/melee/spacebattle,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate2)
 "aI" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/space/hardsuit/syndi,
@@ -289,10 +277,6 @@
 /obj/item/restraints/handcuffs,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate1)
-"br" = (
-/mob/living/simple_animal/hostile/syndicate,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate3)
 "bt" = (
 /obj/structure/table/reinforced,
 /obj/item/melee/transforming/energy/sword/saber/red,
@@ -465,10 +449,6 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
-"ck" = (
-/mob/living/simple_animal/hostile/syndicate,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate1)
 "cm" = (
 /turf/open/floor/plasteel{
 	icon_state = "damaged4"
@@ -718,10 +698,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/spacebattle/cruiser)
-"db" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/spacebattle,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate3)
 "dc" = (
 /obj/machinery/computer/pod{
 	dir = 1;
@@ -1019,8 +995,12 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"ee" = (
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
+/area/awaymission/spacebattle/syndicate4)
 "ef" = (
-/mob/living/simple_animal/hostile/syndicate/melee/spacebattle,
+/obj/effect/spawner/lootdrop/hostile/syndicate,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate3)
 "eg" = (
@@ -1030,10 +1010,6 @@
 /obj/item/mecha_parts/mecha_equipment/repair_droid,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
-"eh" = (
-/mob/living/simple_animal/hostile/syndicate/melee/spacebattle,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate1)
 "ei" = (
 /obj/structure/closet/l3closet/security,
 /obj/effect/turf_decal/tile/red,
@@ -1100,10 +1076,6 @@
 /obj/item/ammo_casing/shotgun,
 /turf/open/floor/plasteel,
 /area/awaymission/spacebattle/cruiser)
-"eA" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/spacebattle,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/syndicate1)
 "eC" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/blue{
@@ -1208,7 +1180,6 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/syndicate,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate4)
 "eT" = (
@@ -1300,13 +1271,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/spacebattle/cruiser)
-"fe" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/syndicate,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/cruiser)
 "ff" = (
 /obj/machinery/button/door{
 	id = "spacebattlestorage";
@@ -1325,13 +1289,6 @@
 	name = "Secure Storage"
 	},
 /turf/open/floor/plasteel,
-/area/awaymission/spacebattle/cruiser)
-"fi" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/mob/living/simple_animal/hostile/syndicate,
-/turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/cruiser)
 "fj" = (
 /obj/machinery/computer/security/telescreen,
@@ -1837,10 +1794,6 @@
 /obj/machinery/vending/coffee,
 /turf/open/floor/wood,
 /area/awaymission/spacebattle/cruiser)
-"gJ" = (
-/mob/living/simple_animal/hostile/syndicate,
-/turf/open/floor/mineral/plastitanium/yellow,
-/area/awaymission/spacebattle/cruiser)
 "gK" = (
 /obj/machinery/computer/security{
 	dir = 8
@@ -2181,7 +2134,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/syndicate,
+/obj/effect/spawner/lootdrop/hostile/syndicate,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate7)
 "hU" = (
@@ -2410,7 +2363,6 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/syndicate,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate5)
 "iR" = (
@@ -2461,7 +2413,6 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/syndicate,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate6)
 "jf" = (
@@ -2643,7 +2594,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/syndicate/melee/sword,
+/obj/effect/spawner/lootdrop/hostile/syndicate,
 /turf/open/floor/plasteel,
 /area/awaymission/spacebattle/cruiser)
 "jL" = (
@@ -2715,12 +2666,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/spacebattle/cruiser)
-"jW" = (
-/mob/living/simple_animal/hostile/syndicate/mecha_pilot{
-	spawn_mecha_type = /obj/vehicle/sealed/mecha/combat/gygax/dark
-	},
-/turf/open/floor/plasteel/airless,
-/area/awaymission/spacebattle/cruiser)
 "jX" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced{
@@ -2770,10 +2715,6 @@
 /obj/structure/rack,
 /obj/structure/window/reinforced,
 /turf/open/floor/engine,
-/area/awaymission/spacebattle/cruiser)
-"kh" = (
-/mob/living/simple_animal/hostile/syndicate,
-/turf/open/floor/plasteel/white,
 /area/awaymission/spacebattle/cruiser)
 "ki" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/end{
@@ -2837,10 +2778,6 @@
 /obj/structure/barricade/security,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
-"ku" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/smg,
-/turf/open/floor/plasteel/white,
-/area/awaymission/spacebattle/cruiser)
 "kv" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/middle,
 /turf/open/floor/engine/vacuum,
@@ -2901,7 +2838,6 @@
 /obj/item/ammo_casing/c10mm,
 /obj/item/ammo_casing/c10mm,
 /obj/item/ammo_casing/c10mm,
-/mob/living/simple_animal/hostile/syndicate/ranged/smg,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/spacebattle/cruiser)
 "kH" = (
@@ -2958,6 +2894,13 @@
 "vw" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/spacebattle/syndicate5)
+"xZ" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
+/area/awaymission/spacebattle/syndicate2)
 "zi" = (
 /obj/effect/decal/cleanable/robot_debris/gib,
 /turf/open/floor/mineral/plastitanium/yellow/airless,
@@ -2969,12 +2912,27 @@
 "zS" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/spacebattle/syndicate6)
+"Bn" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
+/area/awaymission/spacebattle/syndicate2)
 "BO" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/spacebattle/syndicate2)
+"Ce" = (
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
+/area/awaymission/spacebattle/syndicate1)
 "Dv" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/spacebattle/syndicate3)
+"EQ" = (
+/mob/living/simple_animal/hostile/morph,
+/turf/open/floor/plasteel/rockvault/alien,
+/area/awaymission/spacebattle/secret)
 "FA" = (
 /obj/effect/spawner/lootdrop/hostile/syndicate,
 /turf/open/floor/plasteel/freezer,
@@ -2982,6 +2940,10 @@
 "FR" = (
 /obj/effect/spawner/lootdrop/hostile/syndicate,
 /turf/open/floor/plasteel,
+/area/awaymission/spacebattle/cruiser)
+"KL" = (
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/cruiser)
 "Mo" = (
 /obj/structure/chair{
@@ -2994,9 +2956,17 @@
 /obj/effect/spawner/lootdrop/hostile/syndicate,
 /turf/open/floor/plasteel,
 /area/awaymission/spacebattle/cruiser)
+"Og" = (
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
+/area/awaymission/spacebattle/syndicate6)
 "UZ" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/spacebattle/syndicate1)
+"VL" = (
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
+/area/awaymission/spacebattle/syndicate5)
 "Wv" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/spacebattle/cruiser)
@@ -3004,6 +2974,10 @@
 /obj/effect/decal/cleanable/robot_debris/gib,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/cruiser)
+"WL" = (
+/obj/effect/spawner/lootdrop/hostile/syndicate,
+/turf/open/floor/mineral/plastitanium/yellow,
+/area/awaymission/spacebattle/syndicate2)
 "Yq" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/spacebattle/syndicate4)
@@ -17016,11 +16990,11 @@ ab
 ab
 er
 eK
+ee
 eK
 eK
 eK
-eK
-eK
+ee
 eK
 eK
 eK
@@ -17273,11 +17247,11 @@ ab
 ab
 er
 eK
+ee
 eK
 eK
 eK
-eK
-eK
+ee
 eK
 eK
 eK
@@ -21821,7 +21795,7 @@ ab
 ab
 aQ
 aV
-ck
+Ce
 aY
 aY
 be
@@ -21829,13 +21803,13 @@ aU
 aY
 aY
 aY
-ck
 aY
+Ce
 aY
 aU
 bf
 aY
-aY
+Ce
 aY
 aY
 aY
@@ -22092,7 +22066,7 @@ aY
 aU
 bf
 aY
-ck
+aY
 aY
 aY
 aY
@@ -22341,7 +22315,7 @@ aY
 bf
 aU
 aY
-aY
+Ce
 aY
 aY
 aY
@@ -22350,7 +22324,7 @@ aU
 bf
 aY
 aY
-aY
+Ce
 aY
 aY
 aU
@@ -22593,7 +22567,7 @@ ab
 aQ
 aV
 aY
-aY
+Ce
 aY
 bf
 aU
@@ -22709,11 +22683,11 @@ ab
 ab
 iI
 iL
+VL
 iL
 iL
 iL
-iL
-iL
+VL
 iL
 iL
 iL
@@ -22907,11 +22881,11 @@ ab
 bI
 bN
 bQ
-fe
+bQ
 bQ
 bQ
 bO
-bO
+KL
 cb
 Wv
 bM
@@ -22966,11 +22940,11 @@ ab
 ab
 iI
 iL
+VL
 iL
 iL
 iL
-iL
-iL
+VL
 iL
 iL
 iL
@@ -23118,7 +23092,7 @@ aY
 aY
 aY
 aY
-eh
+Ce
 aY
 aY
 aY
@@ -23165,7 +23139,7 @@ bJ
 bO
 bO
 bO
-bO
+KL
 bO
 bO
 bO
@@ -23375,7 +23349,7 @@ aY
 aY
 aY
 aY
-eh
+Ce
 aY
 aY
 aY
@@ -23420,7 +23394,7 @@ ab
 ab
 bJ
 bO
-bO
+KL
 bO
 bO
 bO
@@ -23678,11 +23652,11 @@ ab
 bK
 bP
 bR
-fi
+bR
 bR
 bR
 dN
-bO
+KL
 WE
 Wv
 bM
@@ -24139,7 +24113,7 @@ aY
 aY
 bf
 aU
-aY
+Ce
 aY
 aY
 aY
@@ -24148,7 +24122,7 @@ aY
 aU
 bf
 aY
-aY
+Ce
 aY
 aY
 aY
@@ -24391,14 +24365,14 @@ ab
 ab
 aQ
 aV
+Ce
 aY
-ck
-aY
+Ce
 bf
 aU
 aY
 aY
-ck
+aY
 aY
 aY
 aY
@@ -24406,9 +24380,9 @@ aU
 bn
 aY
 aY
+Ce
 aY
-eA
-aY
+Ce
 aU
 aY
 aY
@@ -24657,7 +24631,7 @@ aY
 aY
 aY
 aY
-aY
+Ce
 aY
 aU
 bn
@@ -24748,7 +24722,7 @@ cc
 cc
 is
 cc
-cc
+FR
 bT
 ab
 ab
@@ -25004,7 +24978,7 @@ cc
 cc
 cc
 cc
-it
+cc
 cc
 bT
 ab
@@ -25773,7 +25747,7 @@ cc
 cc
 cc
 cc
-fm
+FR
 cM
 cN
 cN
@@ -28902,11 +28876,11 @@ ab
 ab
 iZ
 jb
+Og
 jb
 jb
 jb
-jb
-jb
+Og
 jb
 jb
 jb
@@ -29159,11 +29133,11 @@ ab
 ab
 iZ
 jb
+Og
 jb
 jb
 jb
-jb
-jb
+Og
 jb
 jb
 jb
@@ -29625,7 +29599,7 @@ hz
 bT
 bT
 bT
-hW
+FA
 hW
 hW
 hW
@@ -30366,7 +30340,7 @@ ab
 ab
 bT
 cc
-fm
+cc
 cc
 cc
 cc
@@ -30880,7 +30854,7 @@ ab
 ab
 bT
 cc
-cc
+FR
 ct
 bT
 bT
@@ -31423,8 +31397,8 @@ gH
 gH
 gH
 gH
-kh
 gH
+zm
 im
 gH
 iq
@@ -31935,7 +31909,7 @@ gH
 gH
 gH
 gH
-ku
+zm
 gH
 gH
 gH
@@ -32447,11 +32421,11 @@ gH
 gH
 gW
 gW
-kh
+zm
 gH
 gH
 gH
-gH
+zm
 ii
 gH
 gH
@@ -33717,7 +33691,7 @@ cc
 cc
 cc
 cc
-it
+FR
 cc
 fL
 cn
@@ -36556,7 +36530,7 @@ cc
 gd
 gz
 cc
-it
+FR
 gZ
 bT
 cc
@@ -37321,7 +37295,7 @@ eD
 cc
 eY
 cc
-it
+FR
 ft
 cc
 cc
@@ -37474,21 +37448,21 @@ ab
 ae
 ai
 aj
-aj
+WL
 aj
 an
 ah
 aj
 aj
-aG
+WL
 aj
 aj
 aj
 ah
 an
 aj
+WL
 aj
-al
 aj
 aj
 ah
@@ -37731,7 +37705,7 @@ ab
 ae
 ai
 aj
-al
+aj
 aj
 an
 ah
@@ -37746,11 +37720,11 @@ an
 aj
 aj
 aj
-aj
+WL
 aj
 ah
-aG
 aj
+WL
 aj
 BO
 ah
@@ -38269,11 +38243,11 @@ aj
 ah
 ad
 aW
+Bn
+Bn
 aZ
 aZ
-aZ
-aZ
-aZ
+Bn
 aj
 bj
 BO
@@ -38506,10 +38480,10 @@ aj
 aj
 aj
 aj
+WL
 aj
 aj
 aj
-ap
 aj
 aj
 aj
@@ -38758,14 +38732,14 @@ ab
 ab
 ae
 ai
+WL
 aj
 aj
 aj
 aj
-ap
 aj
 aj
-aj
+WL
 aj
 aj
 aj
@@ -39042,7 +39016,7 @@ af
 aX
 ba
 ba
-ba
+xZ
 ba
 ba
 aj
@@ -39293,7 +39267,7 @@ aj
 ah
 aj
 aj
-aj
+WL
 ah
 ah
 ah
@@ -39531,7 +39505,7 @@ ae
 ai
 aj
 aj
-al
+aj
 an
 ah
 aj
@@ -39786,13 +39760,13 @@ ab
 ab
 ae
 ai
-aj
+WL
 aj
 aj
 an
 ah
 aj
-aj
+WL
 aj
 aj
 aj
@@ -39800,9 +39774,9 @@ aj
 ah
 an
 aj
+WL
+WL
 aj
-aj
-aG
 aj
 ah
 aj
@@ -40051,7 +40025,7 @@ ah
 aj
 aj
 aj
-al
+WL
 aj
 aj
 ah
@@ -40161,7 +40135,7 @@ dD
 cZ
 cZ
 bT
-it
+FR
 cc
 bT
 ab
@@ -46057,14 +46031,14 @@ ek
 el
 bT
 cc
-it
+FR
 cc
 bT
 ab
 ab
 bT
 jS
-jW
+jS
 jS
 cZ
 ke
@@ -50600,7 +50574,7 @@ ax
 aC
 aD
 aD
-br
+aD
 aI
 aB
 aD
@@ -50613,7 +50587,7 @@ aB
 aJ
 aD
 aD
-aD
+ef
 aD
 aD
 aB
@@ -50855,16 +50829,16 @@ ab
 ab
 ax
 aC
-aD
+ef
 aD
 aD
 aJ
 aB
 aD
 aD
+ef
 aD
-db
-aD
+ef
 aD
 aB
 aJ
@@ -50935,7 +50909,7 @@ cc
 cm
 cc
 cc
-cc
+FR
 cc
 cc
 cc
@@ -51125,10 +51099,10 @@ aD
 aD
 aB
 aJ
-aD
-aD
-aD
 ef
+aD
+aD
+aD
 aD
 aB
 aD
@@ -51371,7 +51345,7 @@ ax
 aC
 aD
 aD
-aD
+ef
 aJ
 aB
 aT
@@ -51449,7 +51423,7 @@ bM
 bM
 bM
 cm
-it
+cc
 cc
 cc
 cc
@@ -51697,7 +51671,7 @@ ab
 ab
 bI
 bN
-fe
+bQ
 bQ
 bQ
 bQ
@@ -51721,8 +51695,8 @@ jS
 jS
 jS
 jS
+tn
 jS
-jU
 jS
 jS
 tn
@@ -51956,9 +51930,9 @@ bJ
 bO
 bO
 bO
+KL
 bO
 bO
-gJ
 bO
 bO
 dr
@@ -51966,8 +51940,8 @@ cn
 cp
 cn
 cc
-jz
-cc
+FR
+FR
 cc
 cc
 bT
@@ -52211,13 +52185,13 @@ ab
 ab
 bJ
 bO
-bO
+KL
 bO
 bO
 bO
 hy
 bO
-bO
+KL
 dr
 ca
 ea
@@ -52232,7 +52206,7 @@ ab
 ab
 bT
 jS
-jS
+tn
 jS
 jS
 jS
@@ -52913,25 +52887,25 @@ ax
 aC
 aD
 aD
-br
+aD
 aJ
 aB
 aD
 aD
 aD
-aD
+ef
 aD
 aD
 aB
 aJ
 aD
 aD
-aD
+ef
 aD
 aD
 aB
 aD
-db
+aD
 aD
 Dv
 aB
@@ -52994,7 +52968,7 @@ cc
 cc
 cc
 cc
-it
+cc
 cc
 cc
 cc
@@ -53003,10 +52977,10 @@ ab
 ab
 bT
 jS
-jU
 jS
 jS
 jS
+tn
 jS
 jS
 jS
@@ -53169,20 +53143,20 @@ ab
 ax
 aC
 aD
-aD
+ef
 aD
 aJ
 aB
 aD
 aD
 aD
-br
+aD
 aD
 aD
 aB
 aJ
 aD
-db
+aD
 aD
 aD
 aD
@@ -53249,7 +53223,7 @@ cc
 cc
 dJ
 cc
-cc
+FR
 cc
 cc
 cc
@@ -53431,7 +53405,7 @@ aD
 aJ
 aB
 aD
-aD
+ef
 aD
 aD
 aD
@@ -65965,7 +65939,7 @@ jm
 jm
 jm
 jm
-jm
+EQ
 jm
 jm
 jm

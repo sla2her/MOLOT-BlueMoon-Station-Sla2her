@@ -315,6 +315,9 @@
 	dir = 2
 	},
 /obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/components/unary/outlet_injector/layer3{
+	dir = 1
+	},
 /turf/template_noop,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "bj" = (
@@ -909,6 +912,7 @@
 	dir = 2
 	},
 /obj/machinery/power/apc/auto_name/east,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "dh" = (
@@ -1399,6 +1403,10 @@
 /obj/effect/turf_decal/siding/dark,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 4;
+	level = 1
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -2088,6 +2096,10 @@
 	amount = 15
 	},
 /obj/item/storage/box/aphrodisiac_pump/plus,
+/obj/item/storage/box/aphrodisiac_pump/plus{
+	pixel_x = -6;
+	pixel_y = 10
+	},
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay/chem)
 "ie" = (
@@ -2681,6 +2693,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/dark,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "kx" = (
@@ -3699,6 +3712,7 @@
 /obj/item/trash/syndi_cakes{
 	pixel_y = -10
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "pe" = (
@@ -4633,6 +4647,13 @@
 /obj/effect/spawner/lootdrop/maintenance/eight,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
+"sT" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 9;
+	level = 1
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "sV" = (
 /obj/item/storage/box/beakers/bluespace{
 	pixel_y = 8;
@@ -4704,6 +4725,7 @@
 /obj/machinery/conveyor{
 	id = "ds2disposals"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "tm" = (
@@ -5342,6 +5364,7 @@
 /obj/machinery/conveyor{
 	id = "ds2disposals"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "vS" = (
@@ -5953,6 +5976,7 @@
 /obj/machinery/door/airlock/external/glass{
 	name = "External Access"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "zg" = (
@@ -6005,13 +6029,9 @@
 	},
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/diner)
 "zt" = (
-/obj/structure/table/glass,
-/obj/item/clothing/neck/stethoscope{
-	pixel_x = 12;
-	pixel_y = 4
-	},
 /obj/effect/turf_decal/tile/dark_blue/full,
 /obj/effect/turf_decal/siding/white,
+/obj/machinery/computer/pandemic,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
 "zx" = (
@@ -6417,6 +6437,7 @@
 /obj/item/cigbutt/cigarbutt{
 	pixel_y = -10
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Bs" = (
@@ -7147,6 +7168,7 @@
 	pixel_x = -4;
 	pixel_y = -3
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "EU" = (
@@ -7921,10 +7943,7 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
-	dir = 9;
-	level = 1
-	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Ia" = (
@@ -7963,7 +7982,12 @@
 	},
 /obj/machinery/light/dim/directional/east,
 /obj/structure/extinguisher_cabinet/directional/east,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/dark/diagonal,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
+"In" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Io" = (
 /obj/effect/turf_decal/stripes/line{
@@ -8334,6 +8358,10 @@
 /obj/machinery/camera/xray/directional/east{
 	c_tag = "DS-2 Engineering Airlock";
 	network = list("ds2")
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 6;
+	level = 1
 	},
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -8916,18 +8944,20 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/diner)
 "MB" = (
-/obj/item/clothing/suit/toggle/labcoat/syndicate{
-	pixel_y = 4;
-	pixel_x = -3
-	},
-/obj/item/clothing/suit/toggle/labcoat/syndicate{
-	pixel_x = -7
-	},
+/obj/structure/cable,
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/dark_blue/full,
+/obj/machinery/reagentgrinder,
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 5
+	},
+/obj/item/stack/sheet/mineral/uranium{
+	amount = 10
+	},
+/obj/item/stack/sheet/mineral/gold{
+	amount = 10
+	},
 /obj/machinery/light/dim/directional/north,
-/obj/effect/turf_decal/siding/white,
-/turf/open/floor/iron/white/textured_large,
+/turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
 "MC" = (
 /obj/structure/table/wood,
@@ -8963,6 +8993,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 6
 	},
+/obj/machinery/smartfridge/chemistry/virology/preloaded,
 /turf/open/floor/plasteel/showroomfloor/shower,
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
@@ -9689,6 +9720,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Py" = (
@@ -10244,6 +10276,7 @@
 	pixel_x = 4;
 	pixel_y = 5
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "RH" = (
@@ -10830,6 +10863,17 @@
 /obj/structure/table/glass,
 /obj/effect/turf_decal/tile/dark_blue/full,
 /obj/effect/turf_decal/siding/white,
+/obj/item/clothing/suit/toggle/labcoat/syndicate{
+	pixel_x = -7
+	},
+/obj/item/clothing/suit/toggle/labcoat/syndicate{
+	pixel_y = 4;
+	pixel_x = -3
+	},
+/obj/item/clothing/neck/stethoscope{
+	pixel_x = 12;
+	pixel_y = 4
+	},
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
 "TS" = (
@@ -11291,6 +11335,10 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 10;
+	level = 1
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -12200,7 +12248,6 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "Zp" = (
-/obj/machinery/iv_drip,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
 	dir = 6;
 	level = 1
@@ -12215,8 +12262,9 @@
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)
 "Zs" = (
-/obj/item/bedsheet/medical,
-/obj/structure/bed,
+/obj/structure/chair/office/light{
+	dir = 8
+	},
 /turf/open/floor/iron/white/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
 "Zt" = (
@@ -13857,8 +13905,8 @@ Bm
 RE
 tl
 vR
-Tt
-Tt
+In
+sT
 Tt
 Tt
 vS

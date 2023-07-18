@@ -165,7 +165,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		return
 
 	if(!can_speak_vocal(message))
-		to_chat(src, "<span class='warning'>You find yourself unable to speak!</span>")
+		to_chat(src, "<span class='warning'>Вы не можете говорить!</span>")
 		return
 
 	var/message_range = 7
@@ -386,7 +386,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	var/obj/item/bodypart/leftarm = get_bodypart(BODY_ZONE_L_ARM)
 	var/obj/item/bodypart/rightarm = get_bodypart(BODY_ZONE_R_ARM)
 	if(HAS_TRAIT(src, TRAIT_MUTE) && HAS_TRAIT(src, TRAIT_SEWED) && get_selected_language() != /datum/language/signlanguage)
-		return 0
+		return
 
 	if (get_selected_language() == /datum/language/signlanguage)
 		var/left_disabled = FALSE

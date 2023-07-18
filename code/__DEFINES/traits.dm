@@ -71,9 +71,9 @@
 
 //mob traits
 /// Prevents voluntary movement.
-#define TRAIT_IMMOBILIZED "immobilized"
+#define TRAIT_IMMOBILIZED 		"immobilized"
 /// Prevents usage of manipulation appendages (picking, holding or using items, manipulating storage).
-#define TRAIT_HANDS_BLOCKED "handsblocked"
+#define TRAIT_HANDS_BLOCKED 	"handsblocked"
 #define TRAIT_BLIND 			"blind"
 #define TRAIT_MUTE				"mute"
 #define TRAIT_EMOTEMUTE			"emotemute"

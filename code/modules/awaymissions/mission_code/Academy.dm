@@ -91,7 +91,7 @@
 	max_integrity = 200
 	var/mob/living/current_wizard = null
 	var/next_check = 0
-	var/cooldown = 600
+	var/cooldown = 5000
 	var/faction = ROLE_WIZARD
 	var/braindead_check = 0
 

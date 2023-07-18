@@ -206,12 +206,16 @@
 /obj/item/radio/headset/ds2/command
 	name = "DS-2 Command Headset"
 	desc = "A commanding headset to gather your underlings. Protects the ears from flashbangs."
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
+	keyslot2 = new /obj/item/encryptionkey/headset_syndicate/ds1
 	command = TRUE
 
 /obj/item/radio/headset/ds1/comms
+	name = "Universal DS Command Headset"
+	desc = "A commanding headset to gather your underlings. Protects the ears from flashbangs."
 	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 	keyslot2 = new /obj/item/encryptionkey/headset_syndicate/ds1
+	command = TRUE
 
 /obj/item/radio/headset/ds2/command
-	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
-	keyslot2 = new /obj/item/encryptionkey/headset_syndicate/ds1
+

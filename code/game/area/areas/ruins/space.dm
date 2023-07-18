@@ -604,88 +604,88 @@
 	has_gravity = STANDARD_GRAVITY
 
 //Deep Space 2.
-///DS-1 'Blessed', Forward Operating Base
+///DS-2 'Blessed', Forward Operating Base
 /area/ruin/space/has_grav/bluemoon/deepspacetwo
-	name = "DS-1" //If DS-1 is so great...
+	name = "DS-2" //If DS-1 is so great...
 	icon = 'icons/area/areas_centcom.dmi'
 	icon_state = "syndie-ship"
 
 //Cargo
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo
-	name = "DS-1 'Blessed' | Warehouse"
+	name = "DS-2 'Blessed' | Warehouse"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar
-	name = "DS-1 'Blessed' | Hangar"
+	name = "DS-2 'Blessed' | Hangar"
 
 //Bridge
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge
-	name = "DS-1 'Blessed' | Bridge"
+	name = "DS-2 'Blessed' | Bridge"
 	icon_state = "syndie-control"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/cl
-	name = "DS-1 'Blessed' | Corporate Liaison's Office"
+	name = "DS-2 'Blessed' | Corporate Liaison's Office"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral
-	name = "DS-1 'Blessed' | Station Admiral's Office"
+	name = "DS-2 'Blessed' | Station Admiral's Office"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/vault
-	name = "DS-1 'Blessed' | Vault"
+	name = "DS-2 'Blessed' | Vault"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/eva
-	name = "DS-1 'Blessed' | E.V.A."
+	name = "DS-2 'Blessed' | E.V.A."
 
 //Security
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security
-	name = "DS-1 'Blessed' | Security"
+	name = "DS-2 'Blessed' | Security"
 	ambientsounds = HIGHSEC
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/armory
-	name = "DS-1 'Blessed' | Armory"
+	name = "DS-2 'Blessed' | Armory"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/lawyer
-	name = "DS-1 'Blessed' | Interrogation Office"
+	name = "DS-2 'Blessed' | Interrogation Office"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison
-	name = "DS-1 'Blessed' | Long-Term Brig"
+	name = "DS-2 'Blessed' | Long-Term Brig"
 
 //Service
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service
-	name = "DS-1 'Blessed' | Service Wing"
+	name = "DS-2 'Blessed' | Service Wing"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/diner
-	name = "DS-1 'Blessed' | Diner"
+	name = "DS-2 'Blessed' | Diner"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms
-	name = "DS-1 'Blessed' | Dormitories"
+	name = "DS-2 'Blessed' | Dormitories"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms/fitness
-	name = "DS-1 'Blessed' | Fitness Room"
+	name = "DS-2 'Blessed' | Fitness Room"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge
-	name = "DS-1 'Blessed' | Lounge"
+	name = "DS-2 'Blessed' | Lounge"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/hydroponics
-	name = "DS-1 'Blessed' | Hydroponics"
+	name = "DS-2 'Blessed' | Hydroponics"
 
 //Hallways
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls
-	name = "DS-1 'Blessed' | Central Halls"
+	name = "DS-2 'Blessed' | Central Halls"
 
 //Engineering
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering
-	name = "DS-1 'Blessed' | Engineering"
+	name = "DS-2 'Blessed' | Engineering"
 
 //Research
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research
-	name = "DS-1 'Blessed' | Research"
+	name = "DS-2 'Blessed' | Research"
 
 //Medbay
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay
-	name = "DS-1 'Blessed' | Medical Bay"
+	name = "DS-2 'Blessed' | Medical Bay"
 
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay/chem
-	name = "DS-1 'Blessed' | Chemistry"
+	name = "DS-2 'Blessed' | Chemistry"
 
 /area/ruin/space/has_grav/shuttle8532engineering
 	name = "Shuttle 8532 Engine Room"

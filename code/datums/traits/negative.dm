@@ -441,8 +441,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/mute
 	name = "Немота"
-	desc = "Из-за несчастного случая, заболевания или выбора, вы не можете говорить."
+	desc = "Из-за несчастного случая, заболевания или вовсе по собственному желанию вы не можете говорить."
 	value = -2 //HALP MAINTS
+	mob_trait = TRAIT_MUTE
 	gain_text = "<span class='danger'>Вы не можете говорить!</span>"
 	lose_text = "<span class='notice'>Вы чувствуете, как сила в голосовых связках растёт.</span>"
 	medical_record_text = "Пациент страдает от немоты."

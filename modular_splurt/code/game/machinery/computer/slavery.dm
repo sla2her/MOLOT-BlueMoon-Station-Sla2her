@@ -165,7 +165,7 @@
 			if(!input || !user.canUseTopic(src, !issilicon(usr)))
 				return
 			if(!(user.can_speak())) //No more cheating, mime/random mute guy!
-				to_chat(user, "<span class='warning'>You find yourself unable to speak.</span>")
+				to_chat(user, "<span class='warning'>Вы не можете говорить.</span>")
 				return
 
 			input = user.treat_message(input) //Adds slurs and so on. Someone should make this use languages too.
