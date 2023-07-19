@@ -96,13 +96,13 @@
 	icon_state = "bulletproof-wm"
 
 /obj/item/clothing/under/syndicate/overalls
-	name = "utility overalls turtleneck"
+	name = "Utility Overalls Turtleneck"
 	desc = "A pair of spiffy overalls with a turtleneck underneath, useful for both engineering and botanical work."
 	icon_state = "syndicate_overalls"
 	can_adjust = TRUE
 
 /obj/item/clothing/under/syndicate/overalls/skirt
-	name = "utility overalls skirtleneck"
+	name = "Utility Overalls Skirtleneck"
 	desc = "A pair of spiffy overalls with a turtleneck underneath, this one is a skirt instead, breezy."
 	icon_state = "syndicate_overallskirt"
 	dying_key = DYE_REGISTRY_JUMPSKIRT

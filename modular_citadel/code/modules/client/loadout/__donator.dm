@@ -63,6 +63,20 @@
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1
 
+/datum/gear/donator/syndicate_overalls
+	name = "Utility Overalls Turtleneck"
+	slot = ITEM_SLOT_ICLOTHING
+	path = /obj/item/clothing/under/syndicate/overalls
+	ckeywhitelist = list()
+	donator_group_id = DONATOR_GROUP_TIER_1
+
+/datum/gear/donator/syndicate_overalls_skirt
+	name = "Utility Overalls Skirtleneck"
+	slot = ITEM_SLOT_ICLOTHING
+	path = /obj/item/clothing/under/syndicate/overalls/skirt
+	ckeywhitelist = list()
+	donator_group_id = DONATOR_GROUP_TIER_1
+
 /datum/gear/donator/carpet
 	name = "Carpet Beacon"
 	slot = ITEM_SLOT_BACKPACK
