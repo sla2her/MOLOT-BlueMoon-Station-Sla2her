@@ -1175,17 +1175,6 @@
 	dir = 10
 	},
 /area/ruin/space/has_grav/listeningstation)
-"nf" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 6;
-	height = 16;
-	id = "caravansyndicate1_listeningpost";
-	name = "Syndicate Listening Post";
-	width = 16
-	},
-/turf/open/floor/carpet/black,
-/area/ruin/space/has_grav/listeningstation)
 "nw" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -3053,7 +3042,7 @@ ag
 Qe
 OD
 aA
-nf
+ik
 ik
 ik
 PB
