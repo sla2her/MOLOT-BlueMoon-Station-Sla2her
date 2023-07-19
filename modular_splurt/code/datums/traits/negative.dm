@@ -222,3 +222,20 @@
 		var/datum/physiology/P = H.physiology
 		P.hunger_mod /= 2
 		P.thirst_mod /= 2
+
+/datum/quirk/less_nightmare
+	name = "Отпрыск Ночного Кошмара"
+	desc = "Вы очень схожи с так называемыми Ночными Кошмарами. Каким бы образом это не получилось, теперь всякое свечение вам опасно."
+	value = -4
+	mob_trait = TRAIT_LESS_NIGHTMARE
+	gain_text = span_notice("Ваше тело становится уязвимым к свету...")
+	lose_text = span_notice("Ваше тело более устойчивым, чем раньше.")
+	medical_record_text = "Тело пациента уязвимо к свету."
+
+/datum/quirk/less_nightmare/add()
+	var/mob/living/carbon/human/C = quirk_holder
+	C.AddElement(/datum/element/photosynthesis, 1, 1, 0, 0, 0, 0, SHADOW_SPECIES_LIGHT_THRESHOLD, SHADOW_SPECIES_LIGHT_THRESHOLD)
+
+/datum/quirk/less_nightmare/remove()
+	var/mob/living/carbon/human/C = quirk_holder
+	C.RemoveElement(/datum/element/photosynthesis, 1, 1, 0, 0, 0, 0, SHADOW_SPECIES_LIGHT_THRESHOLD, SHADOW_SPECIES_LIGHT_THRESHOLD)

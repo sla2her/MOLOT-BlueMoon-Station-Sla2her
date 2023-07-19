@@ -43,5 +43,6 @@
 #define TRAIT_DUMB_CUM_CRAVE	"dumb_for_cum_need"
 #define TRAIT_RAD_FIEND     	"RadFiend"
 #define TRAIT_BODY_MORPHER		"body_morpher"
+#define TRAIT_LESS_NIGHTMARE	"less_nightmare"
 #define TRAIT_HALLOWED			"hallowed"
 #define TRAIT_HARD_SOLES 		"hard_soles"

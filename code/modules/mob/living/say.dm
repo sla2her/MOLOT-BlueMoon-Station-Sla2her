@@ -377,7 +377,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		if(client.prefs.muted & MUTE_IC)
 			to_chat(src, "<span class='danger'>You cannot speak in IC (muted).</span>")
 			return 0
-		if(!ignore_spam && client.handle_spam_prevention(message,MUTE_IC))
+		if(!ignore_spam && client.handle_spam_prevention(message, MUTE_IC))
 			return 0
 
 	return 1
@@ -385,8 +385,11 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 /mob/living/proc/can_speak_vocal(message) //Check AFTER handling of xeno and ling channels
 	var/obj/item/bodypart/leftarm = get_bodypart(BODY_ZONE_L_ARM)
 	var/obj/item/bodypart/rightarm = get_bodypart(BODY_ZONE_R_ARM)
-	if(HAS_TRAIT(src, TRAIT_MUTE) && HAS_TRAIT(src, TRAIT_SEWED) && get_selected_language() != /datum/language/signlanguage)
-		return
+	if(HAS_TRAIT(src, TRAIT_SEWED) && get_selected_language() != /datum/language/signlanguage)
+		return FALSE
+
+	if(HAS_TRAIT(src, TRAIT_MUTE))
+		return FALSE
 
 	if (get_selected_language() == /datum/language/signlanguage)
 		var/left_disabled = FALSE
@@ -402,16 +405,16 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		else
 			right_disabled = TRUE
 		if (left_disabled && right_disabled) // We want this to only return false if both arms are either missing or disabled since you could technically sign one-handed.
-			return 0
+			return FALSE
 
 	if(is_muzzled())
 		emote("moan")
-		return 0
+		return FALSE
 
 	if(!IsVocal())
-		return 0
+		return FALSE
 
-	return 1
+	return TRUE
 
 /mob/living/proc/get_key(message)
 	var/key = message[1]

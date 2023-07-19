@@ -910,7 +910,7 @@ proc/asiatish(message)
 
 /datum/quirk/modular
 	name = "Modular Limbs"
-	desc = "Your limbs are able to be attached and detached easily... Unfortunately, everyone around you can alter your limbs too! Right click yourself to use this quirk."
+	desc = "Your limbs are able to be attached and detached easily... unfortunately, everyone around you can alter your limbs too! Right click yourself to use this quirk."
 	value = 0
 
 /datum/quirk/modular/add()
