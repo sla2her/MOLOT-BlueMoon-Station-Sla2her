@@ -1129,6 +1129,10 @@
 	req_access = null;
 	req_access_txt = "204"
 	},
+/obj/item/storage/part_replacer/bluespace/tier5{
+	pixel_x = -2;
+	pixel_y = 11
+	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/hotel/power)
 "fH" = (
