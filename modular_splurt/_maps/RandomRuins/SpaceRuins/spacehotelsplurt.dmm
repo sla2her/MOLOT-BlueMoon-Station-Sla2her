@@ -635,6 +635,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/hotel/power)
 "do" = (
@@ -667,6 +670,9 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/hotel/power)
@@ -5209,6 +5215,14 @@
 	},
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/hotel/guestroom)
+"zq" = (
+/obj/machinery/atmospherics/pipe/simple/supply/visible,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/rtg/abductor,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/hotel/power)
 "zt" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -5562,6 +5576,10 @@
 /obj/item/bedsheet/blue/double,
 /turf/open/floor/carpet/blue,
 /area/ruin/space/has_grav/hotel/guestroom)
+"Bg" = (
+/obj/machinery/power/solar,
+/turf/template_noop,
+/area/template_noop)
 "Bj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -6371,10 +6389,10 @@
 /turf/open/pool,
 /area/ruin/space/has_grav/hotel)
 "ED" = (
-/obj/machinery/rnd/production/circuit_imprinter/department,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 6
 	},
+/obj/machinery/recharge_station/fullupgrade,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/hotel/power)
 "EE" = (
@@ -7685,7 +7703,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/rnd/production/protolathe,
+/obj/machinery/rnd/production/protolathe/department/service,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/hotel/power)
 "Ke" = (
@@ -8733,12 +8751,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/hotel/guestroom)
-"Py" = (
-/obj/machinery/atmospherics/pipe/simple/supply/visible,
-/obj/item/stack/sheet/mineral/wood/fifty,
-/obj/item/stack/sheet/mineral/wood/fifty,
-/turf/open/floor/plasteel,
-/area/ruin/space/has_grav/hotel/power)
 "Pz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/cable{
@@ -9097,6 +9109,8 @@
 /obj/structure/closet/crate,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/hotel/power)
 "Rq" = (
@@ -11637,7 +11651,7 @@ Av
 fz
 vC
 uM
-Ek
+Bg
 Xw
 Ek
 Ek
@@ -12048,8 +12062,8 @@ Oa
 Iz
 GW
 hy
-Py
-qM
+zq
+zq
 qM
 MG
 rq
