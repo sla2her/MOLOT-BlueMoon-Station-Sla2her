@@ -78319,9 +78319,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plating/layeniaredder{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/layeniaredder,
 /area/service/hydroponics/garden)
 "lBc" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
@@ -79170,9 +79168,7 @@
 /turf/open/floor/wood,
 /area/service/library)
 "lHn" = (
-/turf/open/floor/plating/layeniaredder{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/layeniaredder,
 /area/service/hydroponics/garden)
 "lHq" = (
 /obj/machinery/computer/communications,
@@ -122858,9 +122854,7 @@
 	},
 /area/security/brig)
 "sfj" = (
-/turf/open/floor/plating/layeniaredder{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/layeniaredder,
 /area/command/bridge)
 "sfo" = (
 /obj/machinery/hydroponics/soil,
@@ -127283,9 +127277,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plating/layeniaredder{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/layeniaredder,
 /area/hallway/primary/fore)
 "sLR" = (
 /obj/machinery/door/airlock/security/glass{
@@ -142306,9 +142298,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plating/layeniaredder{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/layeniaredder,
 /area/command/bridge)
 "uXI" = (
 /obj/structure/railing{
@@ -153152,9 +153142,7 @@
 /turf/open/floor/wood,
 /area/service/chapel/main)
 "wvS" = (
-/turf/open/floor/plating/layeniaredder{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/layeniaredder,
 /area/hallway/primary/fore)
 "wvV" = (
 /obj/effect/turf_decal/loading_area{
