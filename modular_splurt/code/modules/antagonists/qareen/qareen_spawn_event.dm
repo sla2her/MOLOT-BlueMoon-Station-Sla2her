@@ -6,7 +6,7 @@
 	weight = 25
 	max_occurrences = 1
 	min_players = 25
-	EVENT_CATEGORY_ENTITIES
+	category = EVENT_CATEGORY_ENTITIES
 
 /datum/round_event/ghost_role/qareen
 	var/ignore_mobcheck = FALSE
