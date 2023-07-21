@@ -16,7 +16,7 @@
 					/obj/item/dyespray=3,
 					)
 	contraband = list(/obj/item/dice/fudge = 9,
-					/obj/item/cardpack/syndicatek = 10)
+					/obj/item/cardpack/syndicate = 10)
 	premium = list(/obj/item/melee/skateboard/pro = 3,
 					/obj/item/melee/skateboard/hoverboard = 1)
 	refill_canister = /obj/item/vending_refill/games
