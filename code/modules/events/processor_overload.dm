@@ -4,6 +4,7 @@
 	weight = 5
 	max_occurrences = 1
 	min_players = 45
+	category = EVENT_CATEGORY_ENGINEERING
 
 /datum/round_event/processor_overload
 	announce_when	= 1

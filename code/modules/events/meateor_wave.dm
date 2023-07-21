@@ -4,6 +4,7 @@
 	weight = 2
 	max_occurrences = 1
 	description = "A meteor wave made of meat."
+	category = EVENT_CATEGORY_SPACE
 
 /datum/round_event/meteor_wave/meaty
 	wave_name = "meaty"

@@ -3,6 +3,7 @@
 	typepath = /datum/round_event/wisdomcow
 	max_occurrences = 2
 	weight = 50
+	category = EVENT_CATEGORY_FRIENDLY
 
 /datum/round_event/wisdomcow/announce(fake)
 	priority_announce("В этом районе была замечена мудрая корова. Обязательно спросите у нее совета.", "Агентство NanoTrasen по Разведению Коров")

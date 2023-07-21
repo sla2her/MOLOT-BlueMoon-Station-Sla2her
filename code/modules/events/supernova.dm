@@ -4,6 +4,7 @@
 	weight = 2
 	max_occurrences = 1
 	min_players = 30
+	category = EVENT_CATEGORY_ANOMALIES
 
 /datum/round_event/supernova
 	announce_when = 40

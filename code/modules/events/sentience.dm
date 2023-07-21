@@ -3,6 +3,7 @@
 	typepath = /datum/round_event/ghost_role/sentience
 	weight = 50
 	max_occurrences = 2
+	category = EVENT_CATEGORY_FRIENDLY
 
 /datum/round_event/ghost_role/sentience
 	minimum_required = 1

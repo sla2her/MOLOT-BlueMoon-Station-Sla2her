@@ -10,6 +10,7 @@
 	min_players = 60
 	max_occurrences = 1
 	earliest_start = 120 MINUTES
+	category = EVENT_CATEGORY_SPACE
 
 /datum/round_event/meteor_wave
 	start_when		= 6
@@ -87,7 +88,7 @@
 	min_players = 60
 	max_occurrences = 1
 	earliest_start = 120 MINUTES
-
+	category = EVENT_CATEGORY_SPACE
 
 /datum/round_event/meteor_wave/threatening
 	wave_name = "threatening"
@@ -100,6 +101,7 @@
 	min_players = 60
 	max_occurrences = 1
 	earliest_start = 120 MINUTES
+	category = EVENT_CATEGORY_SPACE
 
 /datum/round_event/meteor_wave/catastrophic
 	wave_name = "catastrophic"

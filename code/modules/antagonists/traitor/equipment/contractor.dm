@@ -245,7 +245,7 @@
 	desc = "A handheld tracking device that locks onto certain signals. Ignores suit sensors, but is much less accurate."
 	icon_state = "pinpointer_syndicate"
 	item_state = "pinpointer_black"
-	minimum_range = 25
+	minimum_range = 10
 	has_owner = TRUE
 	ignore_suit_sensor_level = TRUE
 

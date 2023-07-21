@@ -5,6 +5,7 @@
 	min_players = 40
 	earliest_start = 60 MINUTES
 	max_occurrences = 1
+	category = EVENT_CATEGORY_INVASION
 
 /datum/round_event/portal_storm/syndicate_shocktroop
 	boss_types = list(/mob/living/simple_animal/hostile/syndicate/ranged/space/anthro/cat = 3,\
@@ -23,6 +24,7 @@
 	min_players = 40
 	earliest_start = 60 MINUTES
 	max_occurrences = 1
+	category = EVENT_CATEGORY_INVASION
 
 /datum/round_event/portal_storm/portal_storm_narsie
 	boss_types = list(/mob/living/simple_animal/hostile/cult/magic/elite = 2)
@@ -44,6 +46,7 @@
 	min_players = 40
 	earliest_start = 60 MINUTES
 	max_occurrences = 1
+	category = EVENT_CATEGORY_INVASION
 
 /datum/round_event/portal_storm/portal_storm_clown
 	boss_types = list(/mob/living/simple_animal/hostile/clown/clownhulk = 1)
@@ -63,6 +66,7 @@
 	min_players = 50
 	earliest_start = 60 MINUTES
 	max_occurrences = 1
+	category = EVENT_CATEGORY_INVASION
 
 /datum/round_event/portal_storm/portal_storm_necros
 	boss_types = list(/mob/living/simple_animal/hostile/brute = 1)
@@ -78,6 +82,7 @@
 	min_players = 40
 	earliest_start = 60 MINUTES
 	max_occurrences = 1
+	category = EVENT_CATEGORY_INVASION
 
 /datum/round_event/portal_storm/portal_storm_clock
 	boss_types = list(/mob/living/simple_animal/hostile/boss/clockcultistboss = 1)

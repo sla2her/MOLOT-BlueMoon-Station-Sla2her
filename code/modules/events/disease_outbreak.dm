@@ -4,6 +4,7 @@
 	max_occurrences = 2
 	min_players = 15
 	weight = 30
+	category = EVENT_CATEGORY_HEALTH
 
 /datum/round_event/disease_outbreak
 	announce_when	= 15

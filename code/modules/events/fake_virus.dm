@@ -2,6 +2,7 @@
 	name = "Fake Virus"
 	typepath = /datum/round_event/fake_virus
 	weight = 90
+	category = EVENT_CATEGORY_HEALTH
 
 /datum/round_event/fake_virus/start()
 	var/list/fake_virus_victims = list()

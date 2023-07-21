@@ -3,6 +3,7 @@
 	typepath = /datum/round_event/communications_blackout
 	weight = 50
 	max_occurrences = 5
+	category = EVENT_CATEGORY_ENGINEERING
 
 /datum/round_event/communications_blackout
 	announce_when	= 1

@@ -6,6 +6,7 @@
 	weight = 25
 	max_occurrences = 2
 	alert_observers = FALSE
+	category = EVENT_CATEGORY_JANITORIAL
 
 /datum/round_event/electrical_storm
 	var/lightsoutAmount	= 1

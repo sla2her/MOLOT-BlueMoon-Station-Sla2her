@@ -4,6 +4,7 @@
 	weight = 30
 	max_occurrences = 25
 	alert_observers = TRUE
+	category = EVENT_CATEGORY_ENGINEERING
 
 /datum/round_event/camera_failure
 	fakeable = FALSE

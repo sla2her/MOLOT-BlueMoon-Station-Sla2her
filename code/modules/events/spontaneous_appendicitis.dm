@@ -5,6 +5,7 @@
 	max_occurrences = 5
 	earliest_start = 10 MINUTES
 	min_players = 30 // To make your chance of getting help a bit higher.
+	category = EVENT_CATEGORY_HEALTH
 
 /datum/round_event/spontaneous_appendicitis
 	fakeable = FALSE

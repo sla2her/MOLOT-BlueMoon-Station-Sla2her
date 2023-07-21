@@ -2,6 +2,7 @@
 	name = "Major Space Dust"
 	typepath = /datum/round_event/meteor_wave/major_dust
 	weight = 10
+	category = EVENT_CATEGORY_SPACE
 
 /datum/round_event/meteor_wave/major_dust
 	wave_name = "space dust"
