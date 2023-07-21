@@ -2637,7 +2637,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "avP" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 5
@@ -2976,7 +2976,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/snowed/smoothed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "ayl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
 	dir = 8;
@@ -3586,7 +3586,7 @@
 "aCR" = (
 /obj/structure/sign/warning/docking,
 /turf/closed/wall/r_wall,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "aCW" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/tinted{
@@ -6667,7 +6667,7 @@
 "bbg" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "bbh" = (
 /obj/effect/turf_decal/loading_area{
 	icon_state = "ledge";
@@ -9299,7 +9299,7 @@
 	name = "steel pannel"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "bto" = (
 /turf/closed/wall,
 /area/medical/surgery)
@@ -11794,7 +11794,7 @@
 	},
 /obj/structure/railing,
 /turf/open/floor/plating/snowed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "bMb" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor,
@@ -13124,7 +13124,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/railing,
 /turf/open/floor/plating/snowed/smoothed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "bWI" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	dir = 8;
@@ -17462,7 +17462,7 @@
 	name = "steel pannel"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "cGG" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8;
@@ -19699,7 +19699,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "cXo" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -23917,7 +23917,7 @@
 	icon_state = "concrete2";
 	name = "concrete"
 	},
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "dCn" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -27879,7 +27879,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/railing,
 /turf/open/floor/plating/snowed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "egD" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -32652,7 +32652,7 @@
 	name = "steel pannel"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "eQR" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Starboard Quarter Solar Access";
@@ -35002,7 +35002,7 @@
 	name = "short ledge"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "fji" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/structure/disposalpipe/segment,
@@ -37258,7 +37258,7 @@
 	name = "steel pannel"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "fBz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -39388,7 +39388,7 @@
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "fRi" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
@@ -42724,7 +42724,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/snowed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "gry" = (
 /obj/item/reagent_containers/food/snacks/grown/coconut,
 /turf/open/floor/plating/beach/sand,
@@ -45217,7 +45217,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark/airless,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "gLv" = (
 /obj/effect/decal/cleanable/semendrip{
 	icon_state = "drip4"
@@ -49503,7 +49503,7 @@
 /obj/structure/fence,
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "hqx" = (
 /obj/machinery/light{
 	pixel_y = -1
@@ -50547,7 +50547,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/snowed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "hzB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	name = "scrubbers pipe"
@@ -50590,10 +50590,6 @@
 	},
 /turf/open/floor/plasteel/white/corner,
 /area/engineering/break_room)
-"hAa" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/ruin/powered/shuttle)
 "hAl" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 6;
@@ -50607,7 +50603,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "hAm" = (
 /obj/effect/baseturf_helper/asteroid/layenia,
 /turf/closed/wall/r_wall,
@@ -54284,7 +54280,7 @@
 	dir = 10
 	},
 /turf/open/water,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "iaX" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -54492,7 +54488,7 @@
 	},
 /obj/effect/landmark/carpspawn,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "icl" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 8
@@ -54607,7 +54603,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "idE" = (
 /obj/machinery/light{
 	dir = 8
@@ -59473,7 +59469,7 @@
 	dir = 9
 	},
 /turf/open/water,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "iQc" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -60619,7 +60615,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "iXx" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
 	dir = 4;
@@ -67836,7 +67832,7 @@
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "jXU" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -70907,7 +70903,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "kwL" = (
 /obj/machinery/camera{
 	c_tag = "Kitchen Cold Room"
@@ -82418,7 +82414,7 @@
 	dir = 6
 	},
 /turf/open/water,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "mdz" = (
 /obj/machinery/door/poddoor/preopen{
 	dir = 8;
@@ -85258,7 +85254,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "myU" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/dark{
@@ -85989,7 +85985,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/snowed/smoothed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "mFs" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 8;
@@ -87002,7 +86998,7 @@
 	dir = 5
 	},
 /turf/open/water,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "mNa" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4;
@@ -88969,7 +88965,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/landmark/carpspawn,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "nbn" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -93768,7 +93764,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "nMp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4;
@@ -95221,7 +95217,7 @@
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "nYi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	name = "air scrubber"
@@ -106813,7 +106809,7 @@
 	name = "steel pannel"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "pMp" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/keg,
@@ -107359,7 +107355,7 @@
 	name = "steel pannel"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "pRs" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 6
@@ -108487,7 +108483,7 @@
 	dir = 2
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "qaC" = (
 /obj/machinery/door/airlock/maintenance{
 	dir = 8;
@@ -108785,7 +108781,7 @@
 	},
 /obj/structure/railing,
 /turf/open/floor/plating/snowed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "qcl" = (
 /obj/effect/baseturf_helper/asteroid/layenia,
 /turf/closed/wall,
@@ -110512,7 +110508,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "qqy" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 8;
@@ -110819,7 +110815,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/snowed/smoothed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "qta" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -115573,7 +115569,7 @@
 /area/maintenance/starboard/aft)
 "rdv" = (
 /turf/open/lava/plasma,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "rdy" = (
 /obj/structure/flora/junglebush/large{
 	pixel_x = -3;
@@ -117329,7 +117325,7 @@
 /area/security/range)
 "rqP" = (
 /turf/open/floor/plasteel/stairs,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "rqS" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 9
@@ -118577,7 +118573,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/fire,
 /turf/open/floor/plating,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "rAn" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -122471,7 +122467,7 @@
 /obj/structure/fence,
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "scB" = (
 /obj/machinery/navbeacon{
 	codes_txt = "patrol;next_patrol=ArrivalsCentral";
@@ -124304,7 +124300,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/snowed/smoothed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "soU" = (
 /obj/machinery/light{
 	dir = 8
@@ -132290,7 +132286,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/snowed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "tvF" = (
 /obj/machinery/light{
 	dir = 8
@@ -135479,7 +135475,7 @@
 	name = "steel pannel"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "tTb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 5;
@@ -139124,7 +139120,7 @@
 	name = "short ledge"
 	},
 /turf/open/floor/plasteel/dark/airless,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "uvR" = (
 /obj/structure/railing{
 	dir = 1
@@ -140390,7 +140386,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "uHm" = (
 /obj/structure/railing{
 	dir = 9
@@ -143865,7 +143861,7 @@
 	icon_state = "concrete2";
 	name = "concrete"
 	},
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "vjN" = (
 /obj/structure/sink/kitchen{
 	pixel_y = 28
@@ -144137,7 +144133,7 @@
 	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "vlw" = (
 /obj/structure/chair/wood,
 /turf/open/floor/carpet,
@@ -145338,7 +145334,7 @@
 /obj/structure/fence,
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "vuD" = (
 /obj/structure/table,
 /turf/open/floor/plasteel,
@@ -148508,7 +148504,7 @@
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "vPA" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/bot,
@@ -150161,7 +150157,7 @@
 /area/commons/fitness/pool)
 "wbW" = (
 /turf/open/floor/plating/layeniaredder,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "wbX" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 6;
@@ -152160,7 +152156,7 @@
 	},
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "wpn" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -152963,7 +152959,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/snowed/smoothed,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "wuZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4;
@@ -153264,7 +153260,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark/airless,
-/area/ruin/powered/shuttle)
+/area/hallway/secondary/exit)
 "wwP" = (
 /obj/docking_port/stationary{
 	dir = 2;
@@ -156121,6 +156117,13 @@
 /obj/structure/sign/warning/electricshock,
 /turf/closed/wall/r_wall,
 /area/maintenance/solars/starboard/fore)
+"wSd" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plating/layeniaredder{
+	icon_state = "concrete2";
+	name = "concrete"
+	},
+/area/hallway/secondary/exit)
 "wSj" = (
 /obj/effect/turf_decal/loading_area{
 	icon_state = "drain";
@@ -156174,9 +156177,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
-"wSt" = (
-/turf/closed/wall/r_wall,
-/area/ruin/powered/shuttle)
 "wSv" = (
 /obj/effect/turf_decal/tile/neutral{
 	color = "#ffffff"
@@ -216184,7 +216184,7 @@ iEz
 bDL
 utw
 iEz
-wSt
+mFH
 aCR
 scy
 vuy
@@ -216953,7 +216953,7 @@ gyt
 gyt
 gyt
 gyt
-wSt
+mFH
 qav
 kwF
 kwF
@@ -217258,9 +217258,9 @@ dCi
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 upU
 uoy
@@ -217517,7 +217517,7 @@ dCi
 wph
 rAk
 rdv
-hAa
+vLt
 jXI
 upU
 uoy
@@ -217728,53 +217728,53 @@ bbg
 hAl
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
+wSd
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 upU
 uoy
@@ -217981,7 +217981,7 @@ boa
 boa
 boa
 boa
-wSt
+mFH
 hAl
 dCi
 dCi
@@ -218800,9 +218800,9 @@ dCi
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 upU
 uoy
@@ -219009,57 +219009,57 @@ boa
 boa
 boa
 boa
-wSt
+mFH
 hAl
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
+wSd
 dCi
 dCi
 cXn
 rAk
 rdv
-hAa
+vLt
 jXI
 upU
 idZ
@@ -219314,9 +219314,9 @@ dCi
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 upU
 uoy
@@ -220037,7 +220037,7 @@ boa
 boa
 boa
 boa
-wSt
+mFH
 hAl
 dCi
 dCi
@@ -220085,9 +220085,9 @@ dCi
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 upU
 uoy
@@ -220298,53 +220298,53 @@ bbg
 hAl
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
+wSd
 dCi
 dCi
 cXn
 rAk
 rdv
-hAa
+vLt
 jXI
 upU
 uoy
@@ -220599,9 +220599,9 @@ dCi
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 upU
 uoy
@@ -221065,7 +221065,7 @@ boa
 boa
 boa
 boa
-wSt
+mFH
 hAl
 dCi
 dCi
@@ -221583,53 +221583,53 @@ bbg
 hAl
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
+wSd
 dCi
 dCi
 dCi
 dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
-dCi
+wSd
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 upU
 wfk
@@ -221886,7 +221886,7 @@ dCi
 wph
 rAk
 rdv
-hAa
+vLt
 jXI
 upU
 kZm
@@ -222093,7 +222093,7 @@ boa
 boa
 boa
 boa
-wSt
+mFH
 hAl
 dCi
 dCi
@@ -222141,9 +222141,9 @@ dCi
 dCi
 dCi
 cXn
-wSt
-hAa
-wSt
+mFH
+vLt
+mFH
 jXI
 xda
 fdg
@@ -223121,7 +223121,7 @@ boa
 boa
 boa
 boa
-wSt
+mFH
 gyt
 gyt
 gyt
