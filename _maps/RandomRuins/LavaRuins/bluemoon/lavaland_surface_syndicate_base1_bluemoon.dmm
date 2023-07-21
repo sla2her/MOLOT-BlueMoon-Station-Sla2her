@@ -3671,6 +3671,13 @@
 /obj/item/storage/backpack/duffelbag/syndie/surgery,
 /turf/open/floor/pod/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
+"BE" = (
+/obj/machinery/stasis{
+	dir = 8
+	},
+/obj/structure/railing,
+/turf/open/floor/plasteel/shuttle,
+/area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "BH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -7141,6 +7148,15 @@
 /obj/machinery/airalarm/directional/west{
 	req_access = list("syndicate")
 	},
+/obj/item/reagent_containers/glass/beaker/cryoxadone{
+	pixel_y = 5;
+	pixel_x = -1
+	},
+/obj/item/reagent_containers/glass/bottle/cryoxadone{
+	pixel_x = 8
+	},
+/obj/structure/table/reinforced,
+/obj/structure/railing,
 /turf/open/floor/plasteel/shuttle,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "Zz" = (
@@ -9770,7 +9786,7 @@ ab
 xL
 TG
 HW
-FO
+BE
 WU
 FI
 FT

@@ -420,6 +420,10 @@
 	var/partner_carbon_check = FALSE
 	var/obj/item/organ/genital/target_gen = null
 	var/mob/living/carbon/c_partner = null
+
+	// Do not display to those people as well
+	var/list/mob/obscure_to
+
 	//Carbon checks
 	if(iscarbon(partner))
 		c_partner = partner
@@ -754,13 +758,16 @@
 					else
 						message = pick("оргазмирует!", "трясётся в оргазме.", "дрожит от оргазма!")
 		else if(istype(partner, /obj/item/reagent_containers))
+			var/did_anything = TRUE
 			switch(last_genital.type)
 				if(/obj/item/organ/genital/penis)
-					message = "кончает на <b>[partner]</b>!"
+					message = "кончает в <b>[partner]</b>!"
 				if(/obj/item/organ/genital/vagina)
-					message = "обливает <b>[partner]</b> сквиртом!"
-		else //todo: better self cum messages
-			message = "кончает на себя!"
+					message = "обливает <b>[partner]</b> горячим сквиртом!"
+				else
+					did_anything = FALSE
+			if(did_anything)
+				LAZYADD(obscure_to, src)
 	else //todo: better self cum messages
 		message = "кончает на себя!"
 	if(gender == MALE)
@@ -769,15 +776,11 @@
 							'modular_sand/sound/interactions/final_m3.ogg',
 							'modular_sand/sound/interactions/final_m4.ogg',
 							'modular_sand/sound/interactions/final_m5.ogg'), 90, 1, 0)
-	else if(gender == FEMALE)
-		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_f1.ogg',
-							'modular_sand/sound/interactions/final_f2.ogg',
-							'modular_sand/sound/interactions/final_f3.ogg'), 70, 1, 0)
 	else
 		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_f1.ogg',
 							'modular_sand/sound/interactions/final_f2.ogg',
 							'modular_sand/sound/interactions/final_f3.ogg'), 70, 1, 0)
-	visible_message(message = span_userlove("<b>\The [src]</b> [message]"), ignored_mobs = get_unconsenting())
+	visible_message(message = span_userlove("<b>\The [src]</b> [message]"), ignored_mobs = get_unconsenting(ignored_mobs = obscure_to))
 	multiorgasms += 1
 
 	COOLDOWN_START(src, refractory_period, (rand(300, 900) - get_sexual_potency()))//sex cooldown

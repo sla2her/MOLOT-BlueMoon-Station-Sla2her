@@ -5,12 +5,40 @@
 	interaction_sound = null
 	max_distance = 1
 
+	additional_details = list(
+		list(
+			"info" = "You can fill a container if you hold it in your hand or pull it",
+			"icon" = "flask",
+			"color" = "transparent"
+			)
+	)
+
 /datum/interaction/lewd/finger/display_interaction(mob/living/user, mob/living/partner)
-	user.visible_message(message = "<span class='lewd'><b>\The [user]</b> [pick("охотно играется с киской \the <b>[partner]</b>.",
-		"возбуждённо выдыхает и всовывает палец во влагалище <b>[partner]</b>.",
-		"разрабатывает влагалище <b>[partner]</b> при помощи своего собственного пальчика.")]</span>", ignored_mobs = user.get_unconsenting())
+	var/obj/item/reagent_containers/liquid_container
+
+	var/obj/item/cached_item = user.get_active_held_item()
+	if(istype(cached_item, /obj/item/reagent_containers))
+		liquid_container = cached_item
+	else
+		cached_item = user.pulling
+		if(istype(cached_item, /obj/item/reagent_containers))
+			liquid_container = cached_item
+
+	var/message = "[pick("охотно играется с киской <b>[partner]</b>",
+		"играется с киской <b>[partner]</b>",
+		"фингерит киску \the <b>[partner]</b>",
+		"разрабатывает влагалище <b>[partner]</b>",
+		"грубо играется с киской <b>[partner]</b>")]"
+
+	if(!partner.is_fucking(user, CUM_TARGET_HAND, partner.getorganslot(ORGAN_SLOT_VAGINA)))
+		partner.set_is_fucking(user, CUM_TARGET_HAND, partner.getorganslot(ORGAN_SLOT_VAGINA))
+
+	if(liquid_container)
+		message += " над [liquid_container]"
+
+	user.visible_message(span_lewd("<b>\The [user]</b> [message]."), ignored_mobs = user.get_unconsenting())
 	playlewdinteractionsound(get_turf(user), 'modular_sand/sound/interactions/champ_fingering.ogg', 50, 1, -1)
-	partner.handle_post_sex(NORMAL_LUST, null, user, ORGAN_SLOT_VAGINA) //SPLURT edit
+	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_HAND, liquid_container ? liquid_container : user, ORGAN_SLOT_VAGINA) //SPLURT edit
 
 /datum/interaction/lewd/fingerass
 	description = "Пальчики. Поиграться с попкой."
