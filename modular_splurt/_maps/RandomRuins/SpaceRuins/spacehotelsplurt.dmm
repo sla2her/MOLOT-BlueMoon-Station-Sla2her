@@ -9155,6 +9155,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/hotel/dock)
 "Rz" = (

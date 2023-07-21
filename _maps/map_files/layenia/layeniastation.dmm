@@ -23621,7 +23621,9 @@
 	},
 /area/engineering/main)
 "dzU" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/fridge{
+	req_access = ""
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/freezer,
 /area/security/prison)
@@ -84358,7 +84360,9 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "mrr" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/structure/closet/secure_closet/freezer/kitchen{
+	req_access = ""
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/freezer,
 /area/security/prison)
