@@ -9,13 +9,14 @@
 		            /obj/item/toy/cards/deck/cas/black = 3,
 					/obj/item/toy/cards/deck/unum = 3,
 					/obj/item/camera = 3,
-					/obj/item/cardpack/series_one = 10,
+					/obj/item/cardpack/series_one = 100,
 					/obj/item/tcgcard_binder = 5,
 					/obj/item/canvas = 3,
 					/obj/item/toy/crayon/spraycan = 3,
 					/obj/item/dyespray=3,
 					)
-	contraband = list(/obj/item/dice/fudge = 9)
+	contraband = list(/obj/item/dice/fudge = 9,
+					/obj/item/cardpack/syndicatek = 10)
 	premium = list(/obj/item/melee/skateboard/pro = 3,
 					/obj/item/melee/skateboard/hoverboard = 1)
 	refill_canister = /obj/item/vending_refill/games

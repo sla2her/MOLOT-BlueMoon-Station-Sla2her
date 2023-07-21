@@ -90,4 +90,4 @@
 	name = "TCG Nuclear Cardpack"
 	desc = "A cardpack filled with top-tier TCG cards."
 	item = /obj/item/cardpack/syndicate
-	cost = 4
+	cost = 1
