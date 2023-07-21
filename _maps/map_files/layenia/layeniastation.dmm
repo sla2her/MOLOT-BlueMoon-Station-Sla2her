@@ -1044,6 +1044,7 @@
 /area/commons/fitness)
 "air" = (
 /obj/effect/turf_decal/bot,
+/obj/machinery/suit_storage_unit/industrial,
 /turf/open/floor/plasteel/dark{
 	icon_state = "darkfull_whole_alt"
 	},
@@ -87085,6 +87086,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/machinery/suit_storage_unit/industrial/ce,
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/ce)
 "mNA" = (
@@ -104833,6 +104835,7 @@
 	c_tag = "Engineering Access North";
 	dir = 5
 	},
+/obj/machinery/suit_storage_unit/industrial,
 /turf/open/floor/plasteel/dark{
 	icon_state = "darkfull_whole_alt"
 	},
@@ -134472,10 +134475,10 @@
 /turf/open/floor/plasteel,
 /area/engineering/lobby)
 "tKZ" = (
-/obj/machinery/suit_storage_unit/atmos,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/machinery/suit_storage_unit/industrial/atmos,
 /turf/open/floor/plasteel/dark{
 	icon_state = "darkfull_whole_alt"
 	},
@@ -135614,6 +135617,7 @@
 /area/commons/dorms)
 "tTz" = (
 /obj/effect/turf_decal/bot,
+/obj/machinery/suit_storage_unit/industrial/atmos,
 /turf/open/floor/plasteel/dark{
 	icon_state = "darkfull_whole_alt"
 	},
