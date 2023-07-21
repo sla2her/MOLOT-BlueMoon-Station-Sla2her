@@ -4775,6 +4775,10 @@
 /obj/machinery/gibber,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ruin/space/has_grav/hotel/bar)
+"xj" = (
+/obj/machinery/mineral/bluespace_miner,
+/turf/open/floor/engine,
+/area/ruin/space/has_grav/hotel)
 "xk" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Manager's Office";
@@ -8331,6 +8335,7 @@
 	dir = 4
 	},
 /obj/structure/frame/machine,
+/obj/item/circuitboard/machine/bluespace_miner,
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/hotel)
 "Nq" = (
@@ -11291,7 +11296,7 @@ FT
 bb
 Tg
 UH
-sm
+xj
 Tg
 fy
 Pb
