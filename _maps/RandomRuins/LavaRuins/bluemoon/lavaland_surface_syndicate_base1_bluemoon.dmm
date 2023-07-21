@@ -42,7 +42,9 @@
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "as" = (
-/obj/effect/mob_spawn/human/lavaland_syndicate/comms,
+/obj/effect/mob_spawn/human/lavaland_syndicate/comms{
+	dir = 4
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
@@ -91,6 +93,19 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
+"aK" = (
+/obj/machinery/shower{
+	dir = 8;
+	pixel_x = -4
+	},
+/obj/structure/curtain,
+/obj/structure/window/reinforced/tinted,
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/westleft,
+/turf/open/indestructible/hoteltile,
+/area/ruin/lavaland/unpowered/deepspaceone/main)
 "aM" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
@@ -575,7 +590,7 @@
 "dA" = (
 /obj/machinery/door/airlock/command{
 	name = "Comms Officer";
-	req_access_txt = "150"
+	req_access_txt = "151"
 	},
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -783,7 +798,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "fj" = (
-/obj/structure/tank_dispenser,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -793,7 +807,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "fm" = (
 /obj/machinery/door/airlock/public/glass{
@@ -806,9 +824,6 @@
 	},
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "fq" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -1164,9 +1179,8 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/obj/effect/mob_spawn/human/lavaland_syndicate{
-	dir = 4;
-	faction = list("Syndicate")
+/obj/effect/mob_spawn/human/lavaland_syndicate/shaft{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
@@ -1252,7 +1266,7 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/turf/open/misc/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "is" = (
 /obj/structure/chair/office/light{
@@ -1680,6 +1694,10 @@
 	dir = 6
 	},
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
+"ma" = (
+/obj/structure/sink/kitchen/directional/east,
+/turf/open/indestructible/hoteltile,
+/area/ruin/lavaland/unpowered/deepspaceone/main)
 "mb" = (
 /obj/structure/dresser,
 /turf/open/floor/wood,
@@ -2742,12 +2760,13 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "vm" = (
-/obj/structure/toilet{
-	dir = 8
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/structure/toilet{
+	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/westleft,
 /turf/open/indestructible/hoteltile,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "vt" = (
@@ -2888,7 +2907,7 @@
 "wu" = (
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/airalarm/directional/south,
-/turf/open/misc/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "wx" = (
 /obj/structure/window/reinforced/survival_pod{
@@ -3424,7 +3443,7 @@
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "Aa" = (
 /obj/machinery/hydroponics/constructable,
-/turf/open/misc/grass,
+/turf/open/floor/grass/grass0,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "Ac" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -3954,6 +3973,10 @@
 /obj/machinery/atmospherics/components/unary/portables_connector,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
+"Dq" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/open/indestructible/hoteltile,
+/area/ruin/lavaland/unpowered/deepspaceone/main)
 "Dt" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 4
@@ -4028,7 +4051,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "DZ" = (
-/obj/effect/mob_spawn/human/lavaland_syndicate,
+/obj/effect/mob_spawn/human/lavaland_syndicate{
+	dir = 8
+	},
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#c1caff"
@@ -4699,7 +4724,7 @@
 "Jg" = (
 /obj/machinery/door/airlock/command{
 	name = "Comms Officer";
-	req_access_txt = "150";
+	req_access_txt = "151";
 	id_tag = "interdynecomm"
 	},
 /turf/open/floor/plasteel/dark,
@@ -5269,14 +5294,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
-"MP" = (
-/obj/machinery/door/airlock{
-	name = "Unisex Toilet";
-	id_tag = "interdynerec1";
-	req_access_txt = "150"
-	},
-/turf/open/indestructible/hoteltile,
-/area/ruin/lavaland/unpowered/deepspaceone/main)
 "MR" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/airalarm/directional/east{
@@ -5349,16 +5366,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "Nj" = (
-/obj/structure/sink/kitchen{
-	dir = 8;
-	pixel_x = 11
-	},
 /obj/structure/mirror{
 	pixel_x = 28
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
+/obj/structure/toilet{
 	dir = 8
 	},
+/obj/structure/window/reinforced/tinted,
+/obj/machinery/door/window/brigdoor/westleft,
 /turf/open/indestructible/hoteltile,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "Nl" = (
@@ -5912,6 +5927,16 @@
 	dir = 4
 	},
 /area/ruin/lavaland/unpowered/deepspaceone/main)
+"Rt" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 4;
+	level = 1
+	},
+/turf/open/floor/plasteel,
+/area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "Ru" = (
 /obj/structure/frame/machine{
 	anchored = 1;
@@ -6066,10 +6091,10 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "Sz" = (
-/obj/item/kirbyplants/random,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
 	},
+/obj/structure/sink/kitchen/directional/east,
 /turf/open/indestructible/hoteltile,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "SC" = (
@@ -6430,16 +6455,11 @@
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
 "Vt" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
 	dir = 10;
 	level = 1
 	},
-/obj/machinery/airalarm/directional/north{
-	req_access_txt = "150"
-	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/indestructible/hoteltile,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "Vv" = (
@@ -8559,7 +8579,7 @@ ab
 Sy
 Zz
 fj
-qa
+Rt
 gU
 wi
 Ug
@@ -8879,7 +8899,7 @@ Pf
 SV
 Ot
 PM
-PM
+ma
 Tz
 Sz
 Tx
@@ -8937,8 +8957,8 @@ Ao
 AV
 oY
 Tx
-MP
-Tx
+PM
+Dq
 Vt
 IC
 mB
@@ -8997,7 +9017,7 @@ Xb
 hA
 Tx
 vm
-Tx
+aK
 Nj
 St
 Tx

@@ -16,6 +16,10 @@
 	var/clockwork = FALSE
 	var/time_to_screwdrive = 20
 	var/authenticated = 0
+	/// The object that will drop on deconstruction. Mainly used for computer alt skins.
+	var/obj/structure/frame/computer/deconpath = /obj/structure/frame/computer
+	///Does this computer have a unique icon_state? Prevents the changing of icons from alternative computer construction
+	var/unique_icon = FALSE
 
 /obj/machinery/computer/ratvar_act()
 	if(!clockwork)

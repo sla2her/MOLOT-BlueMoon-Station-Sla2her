@@ -212,6 +212,7 @@
 	icon_keyboard = "no_keyboard"
 	icon_screen = "detective_tv"
 	pass_flags = PASSTABLE
+	unique_icon = TRUE
 
 /obj/machinery/computer/security/mining
 	name = "outpost camera console"
@@ -257,6 +258,7 @@
 	density = FALSE
 	circuit = null
 	light_power = 0
+	unique_icon = TRUE
 
 /obj/machinery/computer/security/telescreen/update_icon_state()
 	icon_state = initial(icon_state)

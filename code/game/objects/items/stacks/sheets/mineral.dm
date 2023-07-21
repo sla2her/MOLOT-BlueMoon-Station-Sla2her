@@ -186,7 +186,7 @@ GLOBAL_LIST_INIT(plasma_recipes, list ( \
 	if(W.get_temperature() > 300)//If the temperature of the object is over 300, then ignite
 		var/turf/T = get_turf(src)
 		message_admins("Plasma sheets ignited by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(T)]")
-		log_game("Plasma sheets ignited by [key_name(user)] in [AREACOORD(T)]")
+		log_admin("Plasma sheets ignited by [key_name(user)] in [AREACOORD(T)]")
 		fire_act(W.get_temperature())
 	else
 		return ..()

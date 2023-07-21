@@ -585,3 +585,4 @@
 	icon_keyboard = "laptop_key"
 	clockwork = TRUE //it'd look weird
 	pass_flags = PASSTABLE
+	unique_icon = TRUE

@@ -21,6 +21,7 @@
 	icon_keyboard = null
 	circuit = /obj/item/circuitboard/computer/libraryconsole
 	desc = "Checked out books MUST be returned on time."
+	unique_icon = TRUE
 	var/screenstate = 0
 	var/title
 	var/category = "Any"
@@ -166,7 +167,7 @@
 	verb_ask = "beeps"
 	verb_exclaim = "beeps"
 	pass_flags = PASSTABLE
-
+	unique_icon = TRUE
 	circuit = /obj/item/circuitboard/computer/libraryconsole
 
 	// var/screenstate = 0 // 0 - Main Menu, 1 - Inventory, 2 - Checked Out, 3 - Check Out a Book

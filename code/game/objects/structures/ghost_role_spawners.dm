@@ -1409,6 +1409,7 @@
 /datum/outfit/ds2/syndicate_command/admiral
 	name = "DS-2 Admiral"
 	uniform = /obj/item/clothing/under/rank/captain/utility/syndicate
+	neck = /obj/item/clothing/neck/cloak/syndieadm
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
 	back = /obj/item/storage/backpack/satchel
 	belt = /obj/item/gun/ballistic/automatic/pistol/APS

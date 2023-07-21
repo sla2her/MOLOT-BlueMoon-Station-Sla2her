@@ -146,7 +146,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	ears = /obj/item/radio/headset/ds2
+	ears = /obj/item/radio/headset/ds1
 	back = /obj/item/storage/backpack
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol
 	id = /obj/item/card/id/syndicate/anyone
@@ -155,25 +155,50 @@
 /datum/outfit/lavaland_syndicate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	H.faction |= ROLE_SYNDICATE
 
+/obj/effect/mob_spawn/human/lavaland_syndicate/shaft
+	name = "Syndicate Shaft-Miner Specialist"
+	roundstart = FALSE
+	death = FALSE
+	job_description = "Syndicate Shaft-Miner Specialist"
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper_s"
+	short_desc = "Вы Шахтёр Синдиката, работающий на Аванпосту Лаваленда и изучающий аномальное поле Системы Синих Лун. Вы второй по главенству оперативник после Специалиста Прослушки на Дюне и исполняете роль офицера."
+	flavour_text = "К сожалению это или к счастью, но сотрудники вашего партнёра, Nanotrasen, начали добычу полезных ископаемых в этом секторе. Продолжайте свои исследования как можно лучше и старайтесь особо не высовываться, и не провоцировать этих же самых сотрудников."
+	important_info = "Аванпост напичкан взрывчаткой на случай выхода эксперимента из-под контроля. Не покидайте свою Базу без особой на то причины."
+	outfit = /datum/outfit/lavaland_syndicate/shaft
+	assignedrole = "Lavaland Syndicate"
+	canloadappearance = TRUE
+	loadout_enabled = TRUE
+
+/datum/outfit/lavaland_syndicate/shaft
+	name = "Syndicate Shaft-Miner Specialist"
+	name = "Syndicate Shaft-Miner Specialist"
+	r_hand = /obj/item/melee/transforming/energy/sword/saber
+	uniform = /obj/item/clothing/under/syndicate
+	suit = /obj/item/clothing/suit/armor/vest
+	neck = /obj/item/clothing/neck/baron
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
+	ears = /obj/item/radio/headset/ds1
+	back = /obj/item/storage/backpack
+	r_pocket = /obj/item/gun/ballistic/automatic/pistol
+	id = /obj/item/card/id/syndicate/anyone
+	implants = list(/obj/item/implant/weapons_auth)
+
 /obj/effect/mob_spawn/human/lavaland_syndicate/comms
 	name = "Syndicate Comms Agent"
 	job_description = "Off-station Syndicate Comms Agent"
-	short_desc = "Вы Специалист Разведки Синдиката, работающий на Аванпосту Лаваленда и изучающий аномальное поле Системы Синих Лун."
+	short_desc = "Вы Специалист Разведки Синдиката, работающий на Аванпосту Лаваленда и изучающий аномальное поле Системы Синих Лун. Вы первый по главенству оперативник после Специалиста Прослушки на Дюне и исполняете Главенствующую Роль на своём объекте."
 	flavour_text = "К сожалению это или к счастью, но сотрудники вашего партнёра, Мега-Корпорации Nanotrasen, начали добычу полезных ископаемых в этом секторе. Следите за вражеской активностью как можно лучше и старайтесь не высовываться. Используйте коммуникационное оборудование для оказания поддержки любым полевым агентам и сотрудникам Космической Станции."
 	important_info = "Не покидайте свою Базу без особой на то причины."
 	outfit = /datum/outfit/lavaland_syndicate/comms
 	canloadappearance = TRUE
 
-/obj/effect/mob_spawn/human/lavaland_syndicate/comms/space/Initialize(mapload)
-	. = ..()
-	if(prob(50)) //only has a 10% chance of existing, otherwise it'll just be a NPC syndie.
-		new /mob/living/simple_animal/hostile/syndicate/ranged(get_turf(src))
-		return INITIALIZE_HINT_QDEL
-
 /datum/outfit/lavaland_syndicate/comms
 	name = "Syndicate Comms Agent"
 	r_hand = /obj/item/melee/transforming/energy/sword/saber
 	mask = /obj/item/clothing/mask/chameleon/gps
+	neck = /obj/item/clothing/neck/cloak/syndiecap
 	suit = /obj/item/clothing/suit/armor/vest
 	ears = /obj/item/radio/headset/ds1/comms
 	id = /obj/item/card/id/syndicate/anyone/comms
@@ -216,6 +241,3 @@
 	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 	keyslot2 = new /obj/item/encryptionkey/headset_syndicate/ds1
 	command = TRUE
-
-/obj/item/radio/headset/ds2/command
-
