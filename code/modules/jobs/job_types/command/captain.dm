@@ -73,7 +73,6 @@
 	name = "Syndicate Captain"
 	jobtype = /datum/job/captain
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -90,7 +89,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
 	pda_slot = ITEM_SLOT_BELT
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/station_charter=1, /obj/item/syndicate_uplink=1)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/station_charter=1, /obj/item/syndicate_uplink/high=1)
 
 /datum/outfit/job/captain/hardsuit
 	name = "Captain (Hardsuit)"

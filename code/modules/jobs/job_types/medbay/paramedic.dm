@@ -58,7 +58,6 @@
 	name = "Syndicate Paramedic"
 	jobtype = /datum/job/paramedic
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	ears = /obj/item/radio/headset/headset_med

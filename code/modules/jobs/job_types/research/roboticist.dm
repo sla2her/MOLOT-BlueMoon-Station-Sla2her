@@ -48,7 +48,6 @@
 	name = "Syndicate Roboticist"
 	jobtype = /datum/job/roboticist
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	l_pocket = /obj/item/pda/roboticist

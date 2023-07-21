@@ -61,7 +61,6 @@
 	name = "Syndicate Lawyer"
 	jobtype = /datum/job/lawyer
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	belt = /obj/item/pda/lawyer

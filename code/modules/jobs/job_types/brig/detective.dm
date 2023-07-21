@@ -59,7 +59,6 @@
 	name = "Syndicate Detective"
 	jobtype = /datum/job/detective
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	ears = /obj/item/radio/headset/headset_sec/alt
@@ -73,7 +72,7 @@
 	r_pocket = /obj/item/lighter
 	backpack_contents = list(/obj/item/storage/box/evidence=1,\
 		/obj/item/detective_scanner=1,\
-		/obj/item/syndicate_uplink=1,\
+		/obj/item/syndicate_uplink/high=1,\
 		/obj/item/melee/classic_baton=1)
 	mask = /obj/item/clothing/mask/cigarette/cigar/havana
 

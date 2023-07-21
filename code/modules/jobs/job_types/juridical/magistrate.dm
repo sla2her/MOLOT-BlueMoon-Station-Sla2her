@@ -109,7 +109,6 @@
 	name = "Syndicate Representative"
 	jobtype = /datum/job/ntr
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	ears = /obj/item/radio/headset/heads/ntr

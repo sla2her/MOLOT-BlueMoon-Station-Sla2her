@@ -45,7 +45,6 @@
 	name = "Syndicate Bridge Officer"
 	jobtype = /datum/job/bridgeofficer
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	gloves = /obj/item/clothing/gloves/combat

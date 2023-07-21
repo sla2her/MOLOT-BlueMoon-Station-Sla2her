@@ -64,7 +64,6 @@
 	name = "Syndicate Head of Personnel"
 	jobtype = /datum/job/hop
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	neck = /obj/item/clothing/neck/cloak/syndiecap
@@ -78,6 +77,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
 	pda_slot = ITEM_SLOT_BELT
-	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/syndicate_uplink=1,\
+	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/syndicate_uplink/high=1,\
 		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 

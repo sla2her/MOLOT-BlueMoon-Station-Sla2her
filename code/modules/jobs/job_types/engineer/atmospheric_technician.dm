@@ -54,7 +54,6 @@
 	name = "Syndicate  Atmospheric Technician"
 	jobtype = /datum/job/atmos
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/storage/belt/utility/atmostech
 	l_pocket = /obj/item/pda/syndicate/no_deto
 	ears = /obj/item/radio/headset/headset_eng

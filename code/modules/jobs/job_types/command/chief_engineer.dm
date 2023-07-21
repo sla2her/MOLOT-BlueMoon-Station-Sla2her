@@ -72,7 +72,6 @@
 	name = "Syndicate Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 
-	id = /obj/item/card/id/syndicate/advanced
 	l_pocket = /obj/item/pda/syndicate/no_deto
 
 	belt = /obj/item/storage/belt/utility/chief/full
@@ -82,7 +81,7 @@
 	head = /obj/item/clothing/head/hardhat/red/upgraded
 	gloves = /obj/item/clothing/gloves/combat
 	neck = /obj/item/clothing/neck/cloak/syndiecap
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/syndicate_uplink=1)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/syndicate_uplink/high=1)
 
 	backpack = /obj/item/storage/backpack/duffelbag/syndie/ammo
 	satchel = /obj/item/storage/backpack/duffelbag/syndie/ammo

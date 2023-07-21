@@ -46,7 +46,6 @@
 	name = "Syndicate Expeditor"
 	jobtype = /datum/job/expeditor
 
-	id = /obj/item/card/id/syndicate/advanced
 	l_pocket = /obj/item/pda/syndicate/no_deto
 
 	ears = /obj/item/radio/headset/headset_sci

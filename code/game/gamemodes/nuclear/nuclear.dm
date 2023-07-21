@@ -196,7 +196,7 @@
 	/obj/item/kitchen/knife/combat/survival)
 
 	uplink_type = /obj/item/syndicate_uplink
-	tc = 60
+	tc = 120
 
 /datum/outfit/syndicate/lone/inteq
 	name = "InteQ Lone Operative"

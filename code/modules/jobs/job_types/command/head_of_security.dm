@@ -74,7 +74,6 @@
 	name = "Syndicate Head of Security"
 	jobtype = /datum/job/hos
 
-	id = /obj/item/card/id/syndicate/advanced
 	belt = /obj/item/pda/syndicate/no_deto
 
 	ears = /obj/item/radio/headset/heads/hos/alt
@@ -93,7 +92,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie/ammo
 	box = /obj/item/storage/box/survival/syndie
 	pda_slot = ITEM_SLOT_BELT
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/syndicate_uplink=1)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/syndicate_uplink/high=1)
 
 /datum/outfit/job/hos/hardsuit
 	name = "Head of Security (Hardsuit)"

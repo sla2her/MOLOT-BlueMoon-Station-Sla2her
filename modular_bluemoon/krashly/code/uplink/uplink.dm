@@ -34,7 +34,7 @@
 	uplink_flag = UPLINK_NUKE_OPS
 
 /obj/item/syndicate_uplink
-	name = "syndicate uplink"
+	name = "Syndicate Uplink"
 	icon = 'modular_bluemoon/krashly/icons/obj/inteq-uplink.dmi'
 	icon_state = "syndicate-uplink"
 	item_state = "walkietalkie"
@@ -50,8 +50,19 @@
 	w_class = WEIGHT_CLASS_SMALL
 	var/uplink_flag = UPLINK_SYNDICATE
 
-/obj/item/syndicate_uplink/Initialize(mapload, owner, tc_amount = 30)
+/obj/item/syndicate_uplink/Initialize(mapload, owner, tc_amount = 15)
 	. = ..()
+	AddComponent(/datum/component/uplink/syndicate, owner, FALSE, TRUE, uplink_flag, tc_amount)
+
+/obj/item/syndicate_uplink/AltClick(mob/user)
+	. = ..()
+	to_chat(user, span_warning("The Uplink turns to dust in your hands."))
+	qdel(src)
+
+/obj/item/syndicate_uplink/high
+	name = "Great One Syndicate Uplink"
+
+/obj/item/syndicate_uplink/high/Initialize(mapload, owner, tc_amount = 60)
 	AddComponent(/datum/component/uplink/syndicate, owner, FALSE, TRUE, uplink_flag, tc_amount)
 
 /obj/item/syndicate_uplink/nuclear
