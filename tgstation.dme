@@ -779,6 +779,7 @@
 #include "code\datums\elements\chewable.dm"
 #include "code\datums\elements\cleaning.dm"
 #include "code\datums\elements\connect_loc.dm"
+#include "code\datums\elements\connect_mob_behalf.dm"
 #include "code\datums\elements\decal.dm"
 #include "code\datums\elements\dusts_on_catatonia.dm"
 #include "code\datums\elements\dusts_on_leaving_area.dm"
