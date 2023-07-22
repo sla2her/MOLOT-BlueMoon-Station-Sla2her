@@ -1,6 +1,6 @@
 /datum/parallax/space
-	var/static/planet_offset_x = 125
-	var/static/planet_offset_y = 125
+	var/static/planet_offset_x = rand(100, 160)
+	var/static/planet_offset_y = rand(100, 160)
 	var/static/random_layer = pickweightAllowZero(list(
 		/atom/movable/screen/parallax_layer/space/random/asteroids = 35,
 		/atom/movable/screen/parallax_layer/space/random/space_gas = 35,
@@ -13,12 +13,10 @@
 	. += new /atom/movable/screen/parallax_layer/space/layer_1
 	. += new /atom/movable/screen/parallax_layer/space/layer_2
 	. += new /atom/movable/screen/parallax_layer/space/layer_3
-
-	var/atom/movable/screen/parallax_layer/planet/P = new
+	var/atom/movable/screen/parallax_layer/space/planet/P = new
 	P.pixel_x = planet_offset_x
 	P.pixel_y = planet_offset_y
 	. += P
-
 	if(ispath(random_layer, /atom/movable/screen/parallax_layer))
 		. += new random_layer
 	if(ispath(random_layer, /atom/movable/screen/parallax_layer/space/random/space_gas))
@@ -55,36 +53,14 @@
 /atom/movable/screen/parallax_layer/space/random/asteroids
 	icon_state = "asteroids"
 
-/atom/movable/screen/parallax_layer/planet
+/atom/movable/screen/parallax_layer/space/planet
 	icon_state = "planet"
 	blend_mode = BLEND_OVERLAY
 	absolute = TRUE //Status of seperation
 	speed = 3
 	layer = 30
+	dynamic_self_tile = FALSE
 
-/atom/movable/screen/parallax_layer/planet/Initialize(mapload, mob/owner)
-	. = ..()
-	if(!owner?.client)
-		return
-	var/static/list/connections = list(
-		COMSIG_MOVABLE_Z_CHANGED = PROC_REF(on_z_change),
-		COMSIG_MOB_LOGOUT = PROC_REF(on_mob_logout),
-	)
-	AddComponent(/datum/component/connect_mob_behalf, owner.client, connections)
-	on_z_change(owner)
-
-/atom/movable/screen/parallax_layer/planet/proc/on_mob_logout(mob/source)
-	SIGNAL_HANDLER
-	var/client/boss = source.canon_client
-	on_z_change(boss.mob)
-
-/atom/movable/screen/parallax_layer/planet/proc/on_z_change(mob/source)
-	SIGNAL_HANDLER
-	var/client/boss = source.client
-	var/turf/posobj = get_turf(boss?.eye)
-	if(!posobj)
-		return
-	invisibility = is_station_level(posobj.z) ? 0 : INVISIBILITY_ABSTRACT
-
-/atom/movable/screen/parallax_layer/planet/SetView()
-	return //Shit won't move
+/atom/movable/screen/parallax_layer/space/planet/ShouldSee(client/C, atom/location)
+	var/turf/T = get_turf(location)
+	return ..() && T && is_station_level(T.z)

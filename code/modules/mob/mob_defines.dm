@@ -195,7 +195,3 @@
 
 /// A mock client, provided by tests and friends
 	var/datum/client_interface/mock_client
-
-	/// We also need to clear this var/do other cleanup in client/Destroy, since that happens before logout
-	/// HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-	var/client/canon_client
