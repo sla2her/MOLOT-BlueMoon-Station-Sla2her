@@ -359,7 +359,7 @@
 	uniform = /obj/item/clothing/under/syndicate/maid
 	//suit = /obj/item/clothing/suit/armor/vest/agent
 	gloves = /obj/item/clothing/gloves/combat/maid
-	head = /obj/item/clothing/head/maidheadband/syndicate
+	head = /obj/item/clothing/head/maid/syndicate
 	shoes = /obj/item/clothing/shoes/sneakers/noslip
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	back = /obj/item/storage/backpack/hecu/black
@@ -389,7 +389,7 @@
 	//suit = /obj/item/clothing/suit/armor/vest/agent
 	gloves = /obj/item/clothing/gloves/combat/maid
 	shoes = /obj/item/clothing/shoes/sneakers/noslip
-	head = /obj/item/clothing/head/maidheadband/syndicate
+	head = /obj/item/clothing/head/maid/syndicate
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	back = /obj/item/storage/backpack/hecu/black
 	belt = /obj/item/storage/belt/janitor/ert_maid
