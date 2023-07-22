@@ -7,7 +7,7 @@
 	name = "Firesquad Commander"
 	outfit = /datum/outfit/ert/firesquad_commander
 	role = "Командир"
-
+//////////////////////////////
 /datum/antagonist/ert/heavysquad
 	name = "Heavy Squad"
 	outfit = /datum/outfit/ert/heavysquad_trooper
@@ -22,7 +22,7 @@
 	name = "Heavy Squad"
 	outfit = /datum/outfit/ert/heavysquad_commander
 	role = "Командир"
-
+///////////////////////////
 /datum/antagonist/ert/russian_ert
 	name = "NRI Spetsnaz Squad"
 	outfit = /datum/outfit/ert/ert_russian_soldier
@@ -32,7 +32,7 @@
 	name = "NRI Spetsnaz Squad"
 	outfit = /datum/outfit/ert/ert_russian_leader
 	role = "Полковник"
-
+/////////////////////////
 /datum/antagonist/ert/sol_ert
 	name = "SolFed Squad"
 	outfit = /datum/outfit/ert/sol_soldier
@@ -47,3 +47,29 @@
 	name = "SolFed Squad"
 	outfit = /datum/outfit/ert/sol_soldier_leader
 	role = "Капитан"
+/////////////////////////////////////////
+/datum/antagonist/ert/engineer_squadleader
+	role = "Бригадир"
+	outfit = /datum/outfit/ert/engineer/alert/red
+	skill_modifiers = list(/datum/skill_modifier/job/level/wiring)
+/////////////////////////////////////////
+/datum/antagonist/ert/ntr_ert_agent
+	name = "Internal Affairs Squad"
+	outfit = /datum/outfit/ert/ntr_ert_agent
+	role = "Агент"
+
+/datum/antagonist/ert/ntr_ert_leader
+	name = "Internal Affairs Squad"
+	outfit = /datum/outfit/ert/ntr_ert_leader
+	role = "Следователь"
+
+//////////////////////////////////////////
+/datum/antagonist/ert/maid_leader
+	name = "Maid Squad"
+	outfit = /datum/outfit/ert/maid_leader
+	role = "Старшая горничная"
+
+/datum/antagonist/ert/maid
+	name = "Maid Squad"
+	outfit = /datum/outfit/ert/maid
+	role = "Горничная"

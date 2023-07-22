@@ -240,7 +240,7 @@
 	path = /obj/item/clothing/under/misc/keyholesweater
 
 /datum/gear/uniform/tealturtle
-	name = "Teal Turtleneck"
+	name = "Green Turtleneck"
 	path = /obj/item/clothing/under/suit/turtle/teal
 
 /datum/gear/uniform/greyturtle

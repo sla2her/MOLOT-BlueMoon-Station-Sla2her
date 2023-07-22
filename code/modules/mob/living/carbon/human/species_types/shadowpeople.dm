@@ -161,8 +161,8 @@
 	name = "light eater" //as opposed to heavy eater
 	icon_state = "arm_blade"
 	item_state = "arm_blade"
-	force = 40
-	armour_penetration = 35
+	force = 30
+	armour_penetration = 25
 	lefthand_file = 'icons/mob/inhands/antag/changeling_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/antag/changeling_righthand.dmi'
 	item_flags = ABSTRACT | DROPDEL

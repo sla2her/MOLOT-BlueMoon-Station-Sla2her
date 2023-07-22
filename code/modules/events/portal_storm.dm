@@ -66,10 +66,12 @@
 
 /datum/round_event/portal_storm/portal_storm_necros
 	boss_types = list(/mob/living/simple_animal/hostile/brute = 1)
-	hostile_types = list(/mob/living/simple_animal/hostile/brute = 3,\
+	hostile_types = list(/mob/living/simple_animal/hostile/brute = 2,\
+						/mob/living/simple_animal/hostile/grunt = 10,\
+						/mob/living/simple_animal/hostile/spider = 6,\
 						/mob/living/simple_animal/hostile/brute/leaper = 5,\
 						/mob/living/simple_animal/hostile/brute/uber = 5)
-	triggersound = 'sound/announcer/classic/_admin_horror_music.ogg'
+	triggersound = 'modular_bluemoon/kovac_shitcode/sound/necros_storm.ogg'
 
 /datum/round_event_control/portal_storm_clock
 	name = "Portal Storm: Clock Cult"
@@ -83,8 +85,8 @@
 	boss_types = list(/mob/living/simple_animal/hostile/boss/clockcultistboss = 1)
 	hostile_types = list(/mob/living/simple_animal/hostile/clockcultistmelee = 8,\
 						/mob/living/simple_animal/hostile/clockcultistranged = 5,\
-						/mob/living/simple_animal/hostile/clocktank/weak = 5,\
-						/mob/living/simple_animal/hostile/clocktank = 3)
+						/mob/living/simple_animal/hostile/clocktank/weak = 3,\
+						/mob/living/simple_animal/hostile/clocktank = 2)
 	triggersound = 'modular_bluemoon/kovac_shitcode/sound/clock_storm.ogg'
 
 /datum/round_event/portal_storm

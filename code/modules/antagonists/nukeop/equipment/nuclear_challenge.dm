@@ -16,7 +16,7 @@ GLOBAL_VAR_INIT(war_declared, FALSE)
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	desc = "Use to send a declaration of hostilities to the target, delaying your shuttle departure for 20 minutes while they prepare for your assault.  \
-			Such a brazen move will attract the attention of powerful benefactors within the Syndicate, who will supply your team with a massive amount of bonus telecrystals.  \
+			Such a brazen move will attract the attention of powerful benefactors within the Syndicate, who will supply your team with a massive amount of bonus credits.  \
 			Must be used within five minutes, or your benefactors will lose interest."
 	var/declaring_war = FALSE
 	var/uplink_type = /obj/item/inteq/uplink/radio/nuclear
@@ -142,7 +142,7 @@ GLOBAL_VAR_INIT(war_declared, FALSE)
 
 	for (var/mob/living/L in orphans)
 		var/TC = new /obj/item/stack/telecrystal(L.drop_location(), tc_per_nukie)
-		to_chat(L, span_warning("Your uplink could not be found so your share of the team's bonus telecrystals has been bluespaced to your [L.put_in_hands(TC) ? "hands" : "feet"]."))
+		to_chat(L, span_warning("Your uplink could not be found so your share of the team's bonus credits has been bluespaced to your [L.put_in_hands(TC) ? "hands" : "feet"]."))
 		tc_to_distribute -= tc_per_nukie
 
 	if (tc_to_distribute > 0) // What shall we do with the remainder...
@@ -150,7 +150,7 @@ GLOBAL_VAR_INIT(war_declared, FALSE)
 			if (C.stat != DEAD)
 				var/obj/item/stack/telecrystal/TC = new(C.drop_location(), tc_to_distribute)
 				TC.throw_at(get_step(C, C.dir), 3, 3)
-				C.visible_message(span_notice("[C] coughs up a half-digested telecrystal"),span_notice("You cough up a half-digested telecrystal!"))
+				C.visible_message(span_notice("[C] coughs up a half-digested credits"),span_notice("You cough up a half-digested credits!"))
 				break
 
 /obj/item/nuclear_challenge/proc/check_allowed(mob/living/user)

@@ -65,5 +65,5 @@
 	imp_type = /obj/item/implant/radio
 
 /obj/item/implanter/radio/syndicate
-	name = "implanter (internal syndicate radio)"
+	name = "implanter (internal illegal radio)"
 	imp_type = /obj/item/implant/radio/syndicate

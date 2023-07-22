@@ -37,7 +37,7 @@
 
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_brigdoc/alt
-	uniform = /obj/item/clothing/under/rank/brigdoc
+	uniform = /obj/item/clothing/under/syndicate/brigdoc
 	gloves = /obj/item/clothing/gloves/color/latex
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	suit = /obj/item/clothing/suit/armor/brigdoc

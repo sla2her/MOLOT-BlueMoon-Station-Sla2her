@@ -21,7 +21,7 @@
 /proc/send_raider_threat()
 	var/datum/comm_message/threat_msg = new
 	var/payoff = 0
-	var/payoff_min = 10000 //documented this time
+	var/payoff_min = 50000 //documented this time
 	var/ship_template
 	var/ship_name = "Admiral Brown's fleet battlecruiser"
 	var/initial_send_time = world.time

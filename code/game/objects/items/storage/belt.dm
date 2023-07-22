@@ -429,7 +429,8 @@
 		/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game,
 		/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime,
 		/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola,
-		/obj/item/reagent_containers/food/drinks/drinkingglass/filled/syndicatebomb
+		/obj/item/reagent_containers/food/drinks/drinkingglass/filled/syndicatebomb,
+		/obj/item/reagent_containers/food/snacks/intecookies // Bluemoon Changes
 		))
 		new rig_snacks(src)
 
@@ -618,6 +619,19 @@
 		/obj/item/screwdriver,
 		/obj/item/stack/cable_coil
 		))
+
+/obj/item/storage/belt/janitor/ert_maid
+	name = "tactical janibelt"
+	icon_state = "assaultbelt"
+	item_state = "security"
+
+/obj/item/storage/belt/janitor/ert_maid/PopulateContents()
+	new /obj/item/grenade/chem_grenade/cleaner(src)
+	new /obj/item/grenade/chem_grenade/cleaner(src)
+	new /obj/item/grenade/chem_grenade/cleaner(src)
+	new /obj/item/grenade/chem_grenade/cleaner(src)
+	new /obj/item/soap(src)
+	new /obj/item/soap(src)
 
 /obj/item/storage/belt/bandolier
 	name = "bandolier"

@@ -120,8 +120,8 @@
 	purchasable_from = UPLINK_NUKE_OPS
 
 /datum/uplink_item/bundles_tc/bundle
-	name = "InteQ Operative Bundle"
-	desc = "InteQ Bundles are specialized groups of items that arrive in a plain box. \
+	name = "Operative Bundle"
+	desc = "Operative Bundles are specialized groups of items that arrive in a plain box. \
 			These items are collectively worth more than 20 credits, but you do not know which specialization \
 			you will receive. May contain discontinued and/or exotic items."
 	item = /obj/item/storage/box/syndicate
@@ -215,7 +215,7 @@
 		U.MakePurchase(user, I)
 
 /datum/uplink_item/bundles_tc/telecrystal
-	name = "1 InteQ Credit"
+	name = "1 Tele Credit"
 	desc = "Golden credit. Can be inserted into Uplink."
 	item = /obj/item/stack/telecrystal
 	cost = 1
@@ -226,13 +226,13 @@
 	purchase_log_vis = FALSE
 
 /datum/uplink_item/bundles_tc/telecrystal/five
-	name = "5 InteQ Credits"
+	name = "5 Tele Credits"
 	desc = "Five golden credits. Can be inserted into Uplink."
 	item = /obj/item/stack/telecrystal/five
 	cost = 5
 
 /datum/uplink_item/bundles_tc/telecrystal/twenty
-	name = "20 InteQ Credits"
+	name = "20 Tele Credits"
 	desc = "Twenty golden credits. Can be inserted into Uplink."
 	item = /obj/item/stack/telecrystal/twenty
 	cost = 20

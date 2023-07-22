@@ -168,10 +168,10 @@
 	item_state = "helmetold"
 
 /obj/item/clothing/head/helmet/blueshirt
-	name = "blue helmet"
+	name = "peacekeeper helmet"
 	desc = "A reliable, blue tinted helmet reminding you that you <i>still</i> owe that engineer a beer."
-	icon_state = "blueshift"
-	item_state = "blueshift"
+	icon_state = "peacekeeper"
+	item_state = "peacekeeper"
 	custom_premium_price = PRICE_ABOVE_EXPENSIVE
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""

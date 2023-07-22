@@ -148,9 +148,9 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/suit/turtle/teal
-	name = "teal turtleneck"
-	icon_state = "tealturtle"
-	item_state = "tealturtle"
+	name = "green turtleneck"
+	icon_state = "centcom_t"
+	item_state = "centcom_t"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/suit/turtle/grey

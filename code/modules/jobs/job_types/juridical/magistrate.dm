@@ -67,8 +67,9 @@
 	mob_overlay_icon = 'modular_bluemoon/kovac_shitcode/icons/mob/clothing/suit.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/kovac_shitcode/icons/mob/clothing/suit.dmi'
 	unique_reskin = list(
-		"Peacekeeper" = list("icon_state" = "peacekeeper_trench_hos_white"),
-		"Spacecoat" = list("icon_state" = "peacekeeper_spacecoat")
+		"Trenchcoat" = list("icon_state" = "detective"),
+		"Spacecoat" = list("icon_state" = "peacekeeper_spacecoat"),
+		"Red Coat" = list("icon_state" = "armadyne_trench")
 	)
 
 /obj/item/clothing/head/beret/sec/ntr
@@ -78,6 +79,12 @@
 	item_state = "ntr"
 	icon = 'modular_bluemoon/kovac_shitcode/icons/obj/clothing/hats.dmi'
 	mob_overlay_icon = 'modular_bluemoon/kovac_shitcode/icons/mob/clothing/head.dmi'
+
+/obj/item/clothing/head/beret/sec/ntr_beret
+	name = "NanoTrasen Representative Beret"
+	desc = "The standard-issue beret of the NanoTrasen Central Command."
+	icon_state = "ntrberet"
+	item_state = "ntrberet"
 
 /datum/outfit/job/ntr
 	name = "NanoTrasen Representative"
