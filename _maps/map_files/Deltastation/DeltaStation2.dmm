@@ -70724,7 +70724,7 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
 	},
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plasteel,
 /area/maintenance/starboard)
 "esk" = (
@@ -74336,7 +74336,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/structure/closet/wardrobe/grey,
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
 /turf/open/floor/plasteel/dark,
 /area/commons/locker)
 "fHT" = (
@@ -100274,7 +100274,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/structure/closet/wardrobe/mixed,
+/obj/structure/closet/wardrobe/grey,
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},

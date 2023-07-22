@@ -686,6 +686,19 @@
 		/obj/item/stack/sheet/glass = 1,
 		/obj/item/vending_refill/donksoft = 1)
 
+/obj/item/circuitboard/machine/vending/syndicate_clothes_vendor
+	name = "SynDrobe Vendor (Machine Board)"
+	build_path = /obj/machinery/vending/wardrobe/syndie_wardrobe
+	req_components = list(
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/vending_refill/wardrobe/syndie_wardrobe = 1)
+
+/obj/item/circuitboard/machine/vending/syndicate_clothes_vendor/civil
+	name = "Civilian SynDrobe Vendor (Machine Board)"
+	build_path = /obj/machinery/vending/wardrobe/syndie_wardrobe/civil
+	req_components = list(
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/vending_refill/wardrobe/syndie_wardrobe/civil = 1)
 
 /obj/item/circuitboard/machine/bountypad
 	name = "Civilian Bounty Pad (Machine Board)"

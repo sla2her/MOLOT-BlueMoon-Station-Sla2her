@@ -59,11 +59,31 @@
 	to_chat(user, span_warning("The Uplink turns to dust in your hands."))
 	qdel(src)
 
-/obj/item/syndicate_uplink/high
+/obj/item/syndicate_uplink_high
 	name = "Great One Syndicate Uplink"
+	icon = 'modular_bluemoon/krashly/icons/obj/inteq-uplink.dmi'
+	icon_state = "syndicate-uplink"
+	item_state = "walkietalkie"
+	desc = "A basic handheld radio that communicates with local telecommunication networks. (You can turn Uplink to dust if you Alt + Click it.)"
+	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
+	dog_fashion = /datum/dog_fashion/back
 
-/obj/item/syndicate_uplink/high/Initialize(mapload, owner, tc_amount = 60)
+	flags_1 = CONDUCT_1
+	slot_flags = ITEM_SLOT_BELT
+	throw_speed = 3
+	throw_range = 7
+	w_class = WEIGHT_CLASS_SMALL
+	var/uplink_flag = UPLINK_SYNDICATE
+
+/obj/item/syndicate_uplink_high/Initialize(mapload, owner, tc_amount = 60)
+	. = ..()
 	AddComponent(/datum/component/uplink/syndicate, owner, FALSE, TRUE, uplink_flag, tc_amount)
+
+/obj/item/syndicate_uplink_high/AltClick(mob/user)
+	. = ..()
+	to_chat(user, span_warning("The Uplink turns to dust in your hands."))
+	qdel(src)
 
 /obj/item/syndicate_uplink/nuclear
 	name = "syndicate strike team uplink"

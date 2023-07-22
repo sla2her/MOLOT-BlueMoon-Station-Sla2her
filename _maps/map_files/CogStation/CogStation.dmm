@@ -2181,9 +2181,7 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "agY" = (
-/obj/structure/table,
-/obj/item/storage/crayons,
-/obj/item/toy/beach_ball/holoball,
+/obj/machinery/vending/kink,
 /turf/open/floor/plasteel,
 /area/commons/lounge)
 "agZ" = (
@@ -2273,6 +2271,8 @@
 /obj/structure/table,
 /obj/effect/turf_decal/tile/blue,
 /obj/item/storage/fancy/donut_box,
+/obj/item/toy/beach_ball/holoball,
+/obj/item/storage/crayons,
 /turf/open/floor/plasteel,
 /area/commons/lounge)
 "ahj" = (
@@ -4478,7 +4478,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
-/obj/machinery/vending/snack/random,
+/obj/machinery/gear_painter,
 /turf/open/floor/plasteel,
 /area/commons/lounge)
 "ano" = (
@@ -5942,7 +5942,6 @@
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "arl" = (
-/obj/machinery/vending/kink,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -5952,6 +5951,7 @@
 	dir = 8;
 	pixel_y = -22
 	},
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "arm" = (
@@ -24337,8 +24337,8 @@
 /turf/open/floor/plasteel,
 /area/maintenance/disposal)
 "bkO" = (
-/obj/machinery/vending/kink,
 /obj/effect/turf_decal/bot,
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "bkP" = (
@@ -28360,10 +28360,8 @@
 /turf/closed/wall/r_wall,
 /area/engineering/storage/tech)
 "btW" = (
-/obj/structure/table,
 /obj/machinery/light,
-/obj/item/paper_bin,
-/obj/item/pen,
+/obj/machinery/vending/kink,
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "btX" = (
@@ -33356,7 +33354,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/machinery/gear_painter,
+/obj/machinery/vending/autodrobe/all_access,
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "bGN" = (
@@ -42665,10 +42663,12 @@
 "ccF" = (
 /obj/structure/table,
 /obj/effect/turf_decal/bot,
-/obj/item/flashlight,
 /obj/machinery/light_switch{
 	pixel_y = -24
 	},
+/obj/item/pen,
+/obj/item/paper_bin,
+/obj/item/flashlight,
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "ccG" = (
@@ -61508,7 +61508,6 @@
 /obj{
 	name = "---Merge conflict marker---"
 	},
-/obj/machinery/suit_storage_unit/engine,
 /obj/machinery/airalarm{
 	dir = 4;
 	pixel_x = -23
@@ -70322,7 +70321,7 @@
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "wFL" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/solars/port)
 "wGq" = (

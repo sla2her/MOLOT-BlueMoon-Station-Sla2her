@@ -11150,7 +11150,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/vending/kink,
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "aQY" = (
@@ -13265,6 +13265,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/machinery/vending/kink,
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "bbt" = (
@@ -43515,7 +43516,7 @@
 /turf/open/floor/plating,
 /area/security/prison/upper)
 "dhc" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "diq" = (
@@ -49944,7 +49945,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "iSD" = (
-/obj/machinery/vending/kink,
+/obj/machinery/vending/autodrobe/all_access,
 /turf/open/floor/plasteel/dark,
 /area/commons/dorms)
 "iSI" = (
@@ -57512,6 +57513,9 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
+"pjh" = (
+/turf/open/floor/plating,
+/area/space/station_ruins)
 "pjO" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -66266,6 +66270,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+"wEZ" = (
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
+/turf/open/floor/plasteel/dark,
+/area/commons/dorms)
 "wFr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -69864,7 +69872,7 @@ cNd
 cNd
 cNd
 cNd
-cNd
+pjh
 cNd
 cNd
 cNd
@@ -104691,7 +104699,7 @@ acV
 viP
 lfG
 oHB
-iSD
+wEZ
 cVt
 iSD
 oHB

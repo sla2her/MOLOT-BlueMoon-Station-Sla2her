@@ -207,3 +207,7 @@
 #define COLOR_PRIDE_GREEN "#41FC66"
 #define COLOR_PRIDE_BLUE "#42FFF2"
 #define COLOR_PRIDE_PURPLE "#5D5DFC"
+
+/// Диван, ебать.
+#define SOFA_BROWN "#a75400"
+#define SOFA_MAROON "#830000"

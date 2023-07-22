@@ -16407,8 +16407,7 @@
 /turf/open/floor/carpet/black,
 /area/service/bar)
 "aQd" = (
-/obj/structure/window/plasma,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -16924,17 +16923,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
-"aRu" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/window/plasma,
-/obj/effect/landmark/start/assistant,
-/obj/structure/chair/sofa/corp/left{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/service/bar)
 "aRx" = (
 /obj/machinery/computer/arcade/orion_trail,
 /turf/open/floor/mineral/plastitanium,
@@ -20324,7 +20312,7 @@
 /area/service/bar)
 "baa" = (
 /obj/effect/landmark/start/assistant,
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -20341,7 +20329,7 @@
 /obj/structure/noticeboard{
 	pixel_y = -27
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -57114,13 +57102,6 @@
 /obj/machinery/computer/arcade/orion_trail,
 /turf/open/floor/mineral/plastitanium,
 /area/service/bar)
-"kAO" = (
-/obj/structure/window/plasma,
-/obj/structure/chair/sofa/corp{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/service/bar)
 "kBH" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/mineral/plastitanium,
@@ -58224,7 +58205,7 @@
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "mar" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "mau" = (
@@ -63831,9 +63812,8 @@
 /turf/open/floor/carpet,
 /area/commons/cryopod)
 "ujS" = (
-/obj/structure/closet/wardrobe/pjs,
-/obj/item/clothing/under/rank/civilian/janitor/maid,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/vending/wardrobe/syndie_wardrobe,
 /turf/open/floor/mineral/plastitanium,
 /area/commons/fitness/recreation)
 "ulP" = (
@@ -64590,6 +64570,10 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
+"vwT" = (
+/obj/machinery/vending/autodrobe/all_access,
+/turf/open/floor/mineral/plastitanium,
+/area/commons/fitness/recreation)
 "vxh" = (
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
@@ -100345,7 +100329,7 @@ fWi
 adq
 aQb
 aPZ
-aRu
+baa
 kAH
 fWi
 tCa
@@ -100602,7 +100586,7 @@ fWi
 fWi
 fxe
 aPY
-kAO
+aZZ
 aRx
 fWi
 iTU
@@ -103406,7 +103390,7 @@ mXG
 mXG
 fyS
 sUz
-pku
+vwT
 ctq
 ahs
 sJI
@@ -103663,7 +103647,7 @@ aro
 aro
 con
 sUz
-iBv
+pku
 ctq
 eAJ
 eAJ

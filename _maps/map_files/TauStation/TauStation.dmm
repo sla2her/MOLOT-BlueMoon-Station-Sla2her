@@ -12673,13 +12673,13 @@
 /turf/open/floor/plating/snowed,
 /area/science/test_area)
 "etR" = (
-/obj/structure/closet/wardrobe/pjs,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "etW" = (
@@ -47462,7 +47462,7 @@
 /obj/structure/sign/poster/contraband/bountyhunters{
 	pixel_y = 32
 	},
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},

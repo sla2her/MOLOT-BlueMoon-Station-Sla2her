@@ -474,11 +474,11 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness/recreation)
 "abe" = (
-/obj/machinery/vending/kink,
 /obj/machinery/status_display/evac{
 	pixel_x = 32;
 	pixel_y = 32
 	},
+/obj/machinery/vending/autodrobe/all_access,
 /turf/open/floor/plasteel,
 /area/commons/fitness/recreation)
 "abf" = (
@@ -51115,7 +51115,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/bar)
 "epj" = (
-/obj/machinery/cryopod/tele,
+/obj/machinery/vending/kink,
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "epJ" = (
@@ -52036,9 +52036,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "fIN" = (
@@ -54832,7 +54830,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "jRr" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
 "jRG" = (
@@ -60502,6 +60500,10 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/department/science)
+"rCC" = (
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
+/turf/open/floor/plasteel,
+/area/commons/fitness/recreation)
 "rEh" = (
 /obj/structure/table/glass,
 /obj/item/restraints/handcuffs/cable/zipties,
@@ -106981,7 +106983,7 @@ abe
 abi
 uNA
 qAx
-axw
+rCC
 axw
 aBX
 atn

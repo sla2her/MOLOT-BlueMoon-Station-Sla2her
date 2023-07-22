@@ -251,7 +251,7 @@
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
-	clothing_flags = STOPSPRESSUREDAMAGE
+	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	strip_delay = 80

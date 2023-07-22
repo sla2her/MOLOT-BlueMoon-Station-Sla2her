@@ -71865,7 +71865,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "tSf" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
 "tTs" = (

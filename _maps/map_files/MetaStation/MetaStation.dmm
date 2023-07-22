@@ -27044,6 +27044,20 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
+"cij" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
+/turf/open/floor/plasteel/dark,
+/area/commons/locker)
 "cil" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -55545,7 +55559,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "hRF" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "hSe" = (
@@ -79192,7 +79206,6 @@
 /turf/open/floor/wood,
 /area/service/theater)
 "url" = (
-/obj/structure/closet/wardrobe/mixed,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -79203,6 +79216,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/machinery/vending/autodrobe/all_access,
 /turf/open/floor/plasteel/dark,
 /area/commons/locker)
 "urp" = (
@@ -122232,7 +122246,7 @@ xGp
 pmb
 uCj
 qHe
-url
+cij
 jUz
 dhN
 dnh

@@ -83043,7 +83043,7 @@
 /turf/open/floor/clockwork/reebe,
 /area/commons/fitness/recreation)
 "wSF" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "wSJ" = (

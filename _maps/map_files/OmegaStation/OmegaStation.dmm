@@ -15201,8 +15201,7 @@
 /turf/open/floor/plasteel/checker,
 /area/engineering/lobby)
 "aDC" = (
-/obj/structure/table/reinforced,
-/obj/item/airlock_painter,
+/obj/machinery/vending/kink,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aDD" = (
@@ -15805,7 +15804,7 @@
 /area/commons/dorms)
 "aEM" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/vending/kink,
+/obj/machinery/vending/wardrobe/syndie_wardrobe/civil,
 /turf/open/floor/plasteel/dark/side,
 /area/commons/dorms)
 "aEN" = (
@@ -16780,6 +16779,7 @@
 /obj/item/stock_parts/cell/high,
 /obj/item/stock_parts/cell/high,
 /obj/machinery/cell_charger,
+/obj/item/airlock_painter,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aGw" = (
@@ -41067,7 +41067,7 @@
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "tKA" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "tKM" = (

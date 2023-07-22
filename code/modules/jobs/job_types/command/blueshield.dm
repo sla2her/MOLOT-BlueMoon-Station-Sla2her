@@ -74,7 +74,7 @@
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
 
-	backpack_contents = list(/obj/item/storage/firstaid/regular, /obj/item/reagent_containers/spray/pepper, /obj/item/clothing/accessory/badge/holo, /obj/item/choice_beacon/hosgun, /obj/item/choice_beacon/bsbaton, /obj/item/flashlight/seclite, /obj/item/syndicate_uplink/high=1)
+	backpack_contents = list(/obj/item/storage/firstaid/regular, /obj/item/reagent_containers/spray/pepper, /obj/item/clothing/accessory/badge/holo, /obj/item/choice_beacon/hosgun, /obj/item/choice_beacon/bsbaton, /obj/item/flashlight/seclite, /obj/item/syndicate_uplink_high=1)
 	backpack = /obj/item/storage/backpack/duffelbag/syndie
 	satchel = /obj/item/storage/backpack/duffelbag/syndie
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie

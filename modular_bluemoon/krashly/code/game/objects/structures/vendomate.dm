@@ -15,7 +15,7 @@
 		/obj/item/clothing/under/inteq_med_skirt = 3, //////////////////////////////
 		/obj/item/clothing/under/inteq_maid = 3,
 		/obj/item/clothing/gloves/combat/maid/inteq = 3,
-		/obj/item/clothing/head/maidheadband/syndicate/inteq = 3, //////////////////
+		/obj/item/clothing/head/maid/syndicate/inteq = 3, //////////////////
 		/obj/item/clothing/head/helmet/swat/inteq = 2,
 		/obj/item/clothing/suit/armor/inteq = 2,
 		/obj/item/clothing/shoes/combat = 2,

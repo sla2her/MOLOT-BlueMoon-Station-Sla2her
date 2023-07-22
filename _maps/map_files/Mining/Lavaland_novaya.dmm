@@ -8713,10 +8713,8 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/eva)
 "uT" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/water_vapor,
+/obj/structure/reagent_dispensers/watertank/high,
+/obj/item/reagent_containers/glass/bucket/wood,
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "uV" = (
@@ -9281,12 +9279,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/mine/laborcamp)
-"wF" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden{
-	dir = 9
-	},
-/turf/open/floor/plasteel,
-/area/mine/living_quarters)
 "wG" = (
 /turf/open/floor/wood,
 /area/mine/living_quarters)
@@ -10186,15 +10178,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/mine/eva)
-"Ap" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/mine/living_quarters)
 "Aq" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -13817,9 +13800,7 @@
 /turf/open/floor/wood,
 /area/mine/living_quarters)
 "NR" = (
-/obj/machinery/vending/wardrobe/syndie_wardrobe{
-	onstation_override = 1
-	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/carpet/royalblue,
 /area/mine/storage)
 "NS" = (
@@ -16255,7 +16236,6 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "WK" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
 /area/mine/living_quarters)
@@ -16393,7 +16373,6 @@
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
 "Xg" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/wood/glass{
 	name = "Sauna"
@@ -16465,12 +16444,13 @@
 /turf/open/floor/plasteel,
 /area/mine/laborcamp/security)
 "Xq" = (
-/obj/machinery/space_heater,
-/obj/machinery/atmospherics/components/unary/outlet_injector/on,
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/sauna_oven,
+/obj/item/stack/sheet/mineral/wood/twenty,
+/obj/item/stack/sheet/mineral/wood/twenty,
 /turf/open/floor/plasteel/dark/telecomms{
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
@@ -54121,10 +54101,10 @@ ab
 CS
 yX
 Xq
-Ap
+iU
 WK
 Xg
-wF
+Bd
 Bd
 Pn
 CS

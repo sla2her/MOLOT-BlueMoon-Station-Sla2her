@@ -108,7 +108,7 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	mutantrace_variation = STYLE_NO_ANTHRO_ICON|DIGITIGRADE
 
-/obj/item/clothing/head/maidheadband/syndicate
+/obj/item/clothing/head/maid/syndicate
 	name = "Tactical Maid Headband"
 	desc = "Tacticute."
 	icon_state = "syndimaid_headband"
