@@ -784,7 +784,7 @@
 	Transforming it immediately after an attack causes the next attack to come out faster.</span>"
 
 /obj/item/melee/transforming/cleaving_saw/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is [active ? "closing [src] on [user.ru_ego()] neck" : "opening [src] into [user.ru_ego()] chest"]! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] is [active ? "closing [src] on [user.ru_ego()] neck" : "opening [src] into [user.ru_ego()] chest"]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	transform_cooldown = 0
 	transform_weapon(user, TRUE)
 	return BRUTELOSS
@@ -1291,7 +1291,7 @@
 
 /obj/item/hierophant_club/suicide_act(mob/living/user)
 	say("Xverwpsgexmrk...", forced = "hierophant club suicide")
-	user.visible_message("<span class='suicide'>[user] holds [src] into the air! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] holds [src] into the air! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	new/obj/effect/temp_visual/hierophant/telegraph(get_turf(user))
 	playsound(user,'sound/machines/airlockopen.ogg', 75, TRUE)
 	user.visible_message("<span class='hierophant_warning'>[user] fades out, leaving [user.ru_ego()] belongings behind!</span>")

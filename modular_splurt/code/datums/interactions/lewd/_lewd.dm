@@ -62,10 +62,6 @@
 
 /mob/living/cum(mob/living/partner, target_orifice)
 	var/message //if this doesn't exist it calls ..()
-	//var/u_His = ru_ego()
-	//var/u_He = ru_who()
-	//var/u_S = p_s()
-	//var/t_His = partner?.ru_ego()
 	var/cumin = FALSE
 	var/obj/item/organ/genital/target_gen
 	var/mob/living/carbon/c_partner
@@ -205,7 +201,7 @@
 		if(iswendigo(partner) && partner.pulling == src)
 			var/mob/living/carbon/wendigo/W = partner
 			W.slaves |= src
-			to_chat(src, "<font color='red'> You are now [W]'s slave! Serve your master properly! </font>")
+			to_chat(src, "<font color='red'> Теперь ты раб <b>[W]</b>! Служи, служи и ещё раз служи!!! </font>")
 	if(!message)
 		return ..()
 	if(gender == MALE)
@@ -395,23 +391,6 @@
 						'modular_sand/sound/interactions/bang3.ogg'), 70, 1, -1)
 	visible_message(message = span_lewd("<b>\The [src]</b> [message]"), ignored_mobs = get_unconsenting())
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_BREASTS, user, ORGAN_SLOT_PENIS)
-
-/*
-
-/mob/living/proc/remove_equipment(mob/living/carbon/target)
-	var/obj/item/organ/genital/holder = pick_receiving_organ(target, HAS_EQUIPMENT, "Remove equipment", "What genital?")
-	if(!holder)
-		to_chat(src, "<span class='warning'>Нужно обнажить гениталии!</b>")
-		return
-	if(!LAZYLEN(holder.equipment))
-		to_chat(src, "<span class='warning'>Там ничего нет.</span>")
-		return
-
-	var/obj/item/gimme = input(src, "Что ты хочешь убрать?", "Убрать предмет", null) as null|anything in holder.equipment
-	if(gimme)
-		holder.remove_equipment(src, gimme)
-
-*/
 
 /mob/living/proc/nuzzle_belly(mob/living/target)
 	var/message
@@ -703,14 +682,9 @@
 		handle_post_sex(NORMAL_LUST, CUM_TARGET_NIPPLE, target, ORGAN_SLOT_PENIS)
 	target.handle_post_sex(NORMAL_LUST, null, src, ORGAN_SLOT_BREASTS)
 
-/mob/living/proc/do_thighfuck(obj/item/organ/genital/G, mob/living/target, spillage = TRUE,)
+/mob/living/proc/do_thighfuck(mob/living/target, spillage = TRUE,)
 	var/message
 	var/list/lines
-	var/datum/reagents/fluid_source = G.climaxable(src)
-	var/mob/living/carbon/human/sex
-
-	if(!fluid_source)
-		return
 
 	if(is_fucking(target, CUM_TARGET_THIGHS))
 		lines = list(
@@ -731,7 +705,6 @@
 	playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/bang1.ogg',
 						'modular_sand/sound/interactions/bang2.ogg',
 						'modular_sand/sound/interactions/bang3.ogg'), 70, 1, -1)
-	sex.do_climax(fluid_source, target, G, spillage, cover = TRUE)
 	if(can_penetrating_genital_cum())
 		handle_post_sex(NORMAL_LUST, CUM_TARGET_THIGHS, target, ORGAN_SLOT_PENIS)
 	target.handle_post_sex(LOW_LUST, CUM_TARGET_PENIS, src)
@@ -739,10 +712,6 @@
 /mob/living/proc/do_thighjob(mob/living/target)
 	var/message
 	var/list/lines
-	//var/u_His = ru_ego()
-	//var/genital_name = target.get_penetrating_genital_name()
-	//var/t_He = target.ru_who()
-	//var/t_His = target.ru_ego()
 
 	if(target.is_fucking(src, CUM_TARGET_THIGHS))
 		lines = list(
@@ -761,8 +730,8 @@
 	message = "<span class='lewd'>\The <b>[src]</b> [pick(lines)]!</span>"
 	visible_message(message, ignored_mobs = get_unconsenting())
 	playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/bang1.ogg',
-						'modular_sand/sound/interactions/bang2.ogg',
-						'modular_sand/sound/interactions/bang3.ogg'), 70, 1, -1)
+								'modular_sand/sound/interactions/bang2.ogg',
+								'modular_sand/sound/interactions/bang3.ogg'), 70, 1, -1)
 	handle_post_sex(LOW_LUST, CUM_TARGET_PENIS, target)
 	if(target.can_penetrating_genital_cum())
 		target.handle_post_sex(NORMAL_LUST, CUM_TARGET_THIGHS, src, ORGAN_SLOT_PENIS)
@@ -803,27 +772,7 @@
 
 /mob/living/proc/do_crotchfart(mob/living/carbon/target)
 	var/message
-	/* Bluemoon edit - DON'T FUCKIN' TOUCH
-	var/u_His = ru_ego()
-	var/genital_name = "crotch"
-	if(target.has_penis(REQUIRE_EXPOSED) || target.has_strapon(REQUIRE_EXPOSED))
-		genital_name = target.get_penetrating_genital_name()
-	else if(target.has_vagina(REQUIRE_EXPOSED))
-		var/obj/item/organ/genital/vagina/genital = target.getorganslot(ORGAN_SLOT_VAGINA)
-		genital_name = genital.name
-	*/
 
-	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	/*var/list/braps = list(
-		"выдает массивный, зловонный метеоризм.",
-		"громко разрывает задницу, выпуская клуб пахнущего газа.",
-		"выпусакет немного вонючего газа.",
-		"сбрасывает вонючую газовую бомбу.",
-		"позволяет заднице расслабиться, выпуская ненормальное количество зловонного облака газа."
-	)*/
 	var/list/hell = list(
 		" толкает свою жопу прямо на промежность <b>[target]</b>, выдавая смачные и вонючие газы.",
 		" и <b>[target]</b> могут почувствовать запах зловония, заполняющего комнату, когда жопа просачивается между ляжек <b>[target]</b>!",
@@ -941,23 +890,6 @@
 
 /mob/living/proc/do_crotchshit(mob/living/carbon/target)
 	var/message
-	//var/t_His = target.ru_ego()
-	//var/u_His = ru_ego()
-
-	/* Bluemoon edit - DON'T FUCKIN' TOUCH
-	var/genital_name = "crotch"
-	if(target.has_penis(REQUIRE_EXPOSED) || target.has_strapon(REQUIRE_EXPOSED))
-		genital_name = target.get_penetrating_genital_name()
-	else if(target.has_vagina(REQUIRE_EXPOSED))
-		var/obj/item/organ/genital/vagina/genital = target.getorganslot(ORGAN_SLOT_VAGINA)
-		genital_name = genital.name
-	*/
-
-	//var/list/asscheeks = list("asscheeks", "buttcheeks", "ass buns", "booty pillows", "dumptruck spheres", "[pick(list("jiggly", "bouncy", "wobbly"))] buttocks")
-	//var/list/ass = list("ass", "butt", "dumptruck", "tush", "badonk", "booty", "rump")
-	//var/jiggle = "[u_His] [pick(asscheeks)] [pick(list("jiggle", "bounce", "bounce around", "wobble"))] like crazy!"
-	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	//var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "shitting", "noisy", "quaking", "musky", "messy", "shitcaked", "nasty")
 
 	var/list/hell = list(
 		"прижимает свои ягодицы к промежности <b>[target]</b>, покрывая все большим количеством теплого дерьма,",

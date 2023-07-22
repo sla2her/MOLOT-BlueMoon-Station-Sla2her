@@ -152,7 +152,7 @@
 
 /obj/item/dualsaber/suicide_act(mob/living/carbon/user)
 	if(wielded)
-		user.visible_message("<span class='suicide'>[user] begins spinning way too fast! It looks like [user.ru_who()] trying to commit suicide!</span>")
+		user.visible_message("<span class='suicide'>[user] begins spinning way too fast! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 		var/obj/item/bodypart/head/myhead = user.get_bodypart(BODY_ZONE_HEAD)//stole from chainsaw code
 		var/obj/item/organ/brain/B = user.getorganslot(ORGAN_SLOT_BRAIN)
 		B.organ_flags &= ~ORGAN_VITAL	//this cant possibly be a good idea

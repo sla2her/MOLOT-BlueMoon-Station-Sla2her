@@ -19,7 +19,7 @@
 	var/damp_threshold = 0.5
 
 /obj/item/reagent_containers/rag/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is smothering себя with [src]! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] is smothering себя with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (OXYLOSS)
 
 /obj/item/reagent_containers/rag/examine(mob/user)

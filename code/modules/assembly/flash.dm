@@ -26,7 +26,7 @@
 	else if (user.eye_blind)
 		user.visible_message("<span class='suicide'>[user] raises \the [src] up to [user.ru_ego()] eyes and activates it ... but [user.ru_who()] blind!</span>")
 		return SHAME
-	user.visible_message("<span class='suicide'>[user] raises \the [src] up to [user.ru_ego()] eyes and activates it! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] raises \the [src] up to [user.ru_ego()] eyes and activates it! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	attack(user,user)
 	return FIRELOSS
 

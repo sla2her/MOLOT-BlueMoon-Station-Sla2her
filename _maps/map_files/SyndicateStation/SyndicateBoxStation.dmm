@@ -53355,6 +53355,12 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/sauna_oven,
+/obj/item/reagent_containers/glass/bucket{
+	pixel_y = -5
+	},
+/obj/item/stack/sheet/mineral/wood/twenty,
+/obj/item/stack/sheet/mineral/wood/twenty,
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "fmR" = (
@@ -54442,6 +54448,7 @@
 /area/maintenance/port/fore)
 "gKG" = (
 /obj/structure/bedsheetbin/towel,
+/obj/structure/table/wood,
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "gLw" = (
@@ -55894,6 +55901,10 @@
 	},
 /turf/open/floor/carpet/black,
 /area/service/bar)
+"jhS" = (
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "jiK" = (
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/r_wall/syndicate{
@@ -63995,7 +64006,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/grille,
+/obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "uBo" = (
@@ -85408,7 +85419,7 @@ jon
 atU
 amC
 uBf
-amC
+jhS
 aKY
 amC
 aAY

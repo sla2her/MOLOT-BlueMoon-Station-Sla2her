@@ -235,7 +235,7 @@
 	icon_state = "sledgehammer"
 
 /obj/item/inteq_sledgehammer/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is trying to literally smash himself with [src]! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] is trying to literally smash himself with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		var/obj/item/bodypart/BP = C.get_bodypart(BODY_ZONE_HEAD)

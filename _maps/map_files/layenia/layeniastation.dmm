@@ -29633,6 +29633,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"esJ" = (
+/obj/effect/turf_decal/loading_area{
+	color = "#55391A";
+	dir = 8;
+	icon_state = "siding_wood_line";
+	name = "wood"
+	},
+/obj/structure/table/wood,
+/obj/structure/bedsheetbin/towel,
+/turf/open/floor/wood{
+	icon_state = "wood_tile";
+	name = "tile"
+	},
+/area/construction)
 "esU" = (
 /obj/structure/table,
 /obj/item/storage/fancy/donut_box{
@@ -245334,7 +245348,7 @@ nLS
 nLS
 nLS
 hFG
-gEl
+esJ
 lpG
 heV
 uhV

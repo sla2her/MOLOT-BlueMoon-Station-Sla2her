@@ -248,6 +248,7 @@
 /obj/machinery/atmospherics/pipe/manifold/orange/hidden{
 	dir = 8
 	},
+/obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plating,
 /area/commons/fitness/locker_room)
 "aeO" = (
@@ -20187,6 +20188,19 @@
 /obj/structure/sign/warning/electricshock,
 /turf/closed/wall/r_wall,
 /area/science/xenobiology)
+"gXD" = (
+/obj/effect/turf_decal/loading_area{
+	color = "#55391A";
+	dir = 4;
+	icon_state = "siding_wood_line";
+	name = "wood"
+	},
+/obj/structure/table/wood,
+/turf/open/floor/wood{
+	icon_state = "wood_tile";
+	name = "tile"
+	},
+/area/space)
 "gXF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
@@ -28040,6 +28054,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
+"jKQ" = (
+/obj/effect/turf_decal/loading_area{
+	color = "#55391A";
+	dir = 1;
+	icon_state = "siding_wood_line";
+	name = "wood"
+	},
+/turf/open/floor/wood{
+	icon_state = "wood_tile";
+	name = "tile"
+	},
+/area/space)
 "jKS" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
 /obj/machinery/meter,
@@ -33063,6 +33089,11 @@
 "lyh" = (
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/structure/sauna_oven,
+/obj/item/reagent_containers/glass/bucket{
+	pixel_x = 12;
+	pixel_y = -9
 	},
 /turf/open/floor/wood/wood_diagonal,
 /area/commons/fitness/locker_room)
@@ -38807,6 +38838,21 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/wood/wood_tiled,
 /area/commons/vacant_room/office)
+"nsq" = (
+/obj/effect/turf_decal/loading_area{
+	color = "#55391A";
+	dir = 4;
+	icon_state = "siding_wood_corner";
+	name = "wood corner"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	name = "air scrubber"
+	},
+/turf/open/floor/wood{
+	icon_state = "wood_tile";
+	name = "tile"
+	},
+/area/space)
 "nsw" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/effect/turf_decal/tile/yellow,
@@ -43974,6 +44020,18 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
+"pne" = (
+/obj/effect/turf_decal/loading_area{
+	color = "#55391A";
+	dir = 1;
+	icon_state = "siding_wood_corner";
+	name = "wood corner"
+	},
+/turf/open/floor/wood{
+	icon_state = "wood_tile";
+	name = "tile"
+	},
+/area/space)
 "pnf" = (
 /obj/machinery/camera{
 	c_tag = "Gateway";
@@ -45281,6 +45339,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/ce)
+"pKO" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/sauna_oven,
+/obj/item/reagent_containers/glass/bucket{
+	pixel_x = -13;
+	pixel_y = -9
+	},
+/turf/open/floor/plasteel/dark{
+	dir = 1;
+	icon_state = "darkfull_trim"
+	},
+/area/space)
 "pKV" = (
 /obj/item/radio/intercom{
 	name = "Station Intercom (General)";
@@ -47985,6 +48057,19 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
+"qJa" = (
+/obj/effect/turf_decal/loading_area{
+	color = "#55391A";
+	dir = 8;
+	icon_state = "siding_wood_line";
+	name = "wood"
+	},
+/obj/structure/table/wood,
+/turf/open/floor/wood{
+	icon_state = "wood_tile";
+	name = "tile"
+	},
+/area/space)
 "qJe" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
@@ -127875,8 +127960,8 @@ tSk
 fza
 fza
 fza
-fza
-fza
+gXD
+nsq
 fza
 fza
 fza
@@ -128132,8 +128217,8 @@ iUD
 fza
 fza
 fza
-fza
-fza
+pKO
+jKQ
 fza
 fza
 fza
@@ -128389,8 +128474,8 @@ roA
 roA
 kwf
 fza
-fza
-fza
+qJa
+pne
 fza
 fza
 fza

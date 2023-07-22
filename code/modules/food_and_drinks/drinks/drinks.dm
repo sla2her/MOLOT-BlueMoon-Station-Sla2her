@@ -494,7 +494,7 @@
 	custom_price = PRICE_CHEAP_AS_FREE
 
 /obj/item/reagent_containers/food/drinks/soda_cans/suicide_act(mob/living/carbon/user)
-	user.visible_message("<span class='suicide'><b>[user]</b> is trying to eat \the <b>[src]</b>! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'><b>[user]</b> is trying to eat \the <b>[src]</b>! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	var/obj/item/trash/can/crushed_can = new /obj/item/trash/can(user.loc)
 	crushed_can.icon_state = icon_state
 	qdel(src)

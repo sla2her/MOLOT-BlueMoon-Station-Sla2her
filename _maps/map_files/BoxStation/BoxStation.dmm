@@ -45872,6 +45872,13 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/sauna_oven,
+/obj/item/reagent_containers/glass/bucket{
+	pixel_x = 12;
+	pixel_y = -9
+	},
+/obj/item/stack/sheet/mineral/wood/twenty,
+/obj/item/stack/sheet/mineral/wood/twenty,
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "fmL" = (
@@ -47691,6 +47698,7 @@
 /area/maintenance/port/fore)
 "gKG" = (
 /obj/structure/bedsheetbin/towel,
+/obj/structure/table/wood,
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "gKW" = (
@@ -57513,9 +57521,6 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
-"pjh" = (
-/turf/open/floor/plating,
-/area/space/station_ruins)
 "pjO" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -66077,6 +66082,10 @@
 "wql" = (
 /turf/closed/wall/r_wall,
 /area/command/gateway)
+"wqu" = (
+/obj/structure/reagent_dispensers/watertank/high,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "wqW" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -69872,7 +69881,7 @@ cNd
 cNd
 cNd
 cNd
-pjh
+cNd
 cNd
 cNd
 cNd
@@ -86711,7 +86720,7 @@ avX
 amC
 arK
 amC
-amC
+wqu
 jFB
 ppw
 enJ

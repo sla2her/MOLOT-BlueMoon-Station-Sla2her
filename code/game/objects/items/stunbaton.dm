@@ -42,7 +42,7 @@
 		. = R.get_cell()
 
 /obj/item/melee/baton/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is putting the live [name] in [user.ru_ego()] mouth! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] is putting the live [name] in [user.ru_ego()] mouth! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (FIRELOSS)
 
 /obj/item/melee/baton/Initialize(mapload)

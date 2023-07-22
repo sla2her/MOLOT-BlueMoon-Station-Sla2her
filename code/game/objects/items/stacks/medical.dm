@@ -110,7 +110,7 @@
 	to_chat(user, "<span class='notice'>You can't heal [M] with the \the [src]!</span>")
 
 /obj/item/stack/medical/bruise_pack/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is bludgeoning себя with [src]! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] is bludgeoning себя with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (BRUTELOSS)
 
 /obj/item/stack/medical/gauze
@@ -419,7 +419,7 @@
 /obj/item/stack/medical/bone_gel/suicide_act(mob/user)
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
-		C.visible_message("<span class='suicide'>[C] is squirting all of \the [src] into [C.ru_ego()] mouth! That's not proper procedure! It looks like [C.ru_who()] trying to commit suicide!</span>")
+		C.visible_message("<span class='suicide'>[C] is squirting all of \the [src] into [C.ru_ego()] mouth! That's not proper procedure! It looks like [C.p_theyre()] trying to commit suicide!</span>")
 		if(do_after(C, 2 SECONDS))
 			C.emote("scream")
 			for(var/i in C.bodyparts)

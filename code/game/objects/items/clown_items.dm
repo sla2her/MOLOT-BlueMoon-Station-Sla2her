@@ -125,7 +125,7 @@
 	return ..()
 
 /obj/item/bikehorn/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] solemnly points the horn at [user.ru_ego()] temple! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] solemnly points the horn at [user.ru_ego()] temple! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	playsound(src, pickweight(honksounds), 50, 1)
 	return (BRUTELOSS)
 

@@ -67,7 +67,7 @@
 	custom_materials = list(/datum/material/iron = 1000)
 
 /obj/item/melee/chainofcommand/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is strangling себя with [src]! It looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] is strangling себя with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (OXYLOSS)
 
 /obj/item/melee/synthetic_arm_blade
@@ -103,7 +103,7 @@
 	throwforce = 15
 	w_class = WEIGHT_CLASS_BULKY
 	armour_penetration = 75
-	sharpness = SHARP_EDGED
+	sharpness = WOUND_SLASH
 	attack_verb = list("slashed", "cut")
 	hitsound = 'sound/weapons/rapierhit.ogg'
 	custom_materials = list(/datum/material/iron = 1000)
@@ -112,27 +112,53 @@
 	block_parry_data = /datum/block_parry_data/captain_saber
 
 /datum/block_parry_data/captain_saber
+	can_block_directions = BLOCK_DIR_NORTH | BLOCK_DIR_NORTHEAST | BLOCK_DIR_NORTHWEST | BLOCK_DIR_WEST | BLOCK_DIR_EAST
+	block_damage_absorption = 5
+	block_damage_multiplier = 0.15
+	block_damage_multiplier_override = list(
+		ATTACK_TYPE_MELEE = 0.25
+	)
+	block_start_delay = 0		// instantaneous block
+	block_stamina_cost_per_second = 2.5
+	block_stamina_efficiency = 3
+	block_lock_sprinting = TRUE
+	// no attacking while blocking
+	block_lock_attacking = TRUE
+	block_projectile_mitigation = 85
+	// more efficient vs projectiles
+	block_stamina_efficiency_override = list(
+		TEXT_ATTACK_TYPE_PROJECTILE = 6
+	)
+
 	parry_time_windup = 0
-	parry_time_active = 10
+	parry_time_active = 12
 	parry_time_spindown = 0
-	parry_time_perfect = 0.75
-	parry_time_perfect_leeway = 1.5
-	parry_imperfect_falloff_percent = 30
-	parry_efficiency_perfect = 100
-	parry_failed_stagger_duration = 3 SECONDS
-	parry_failed_clickcd_duration = 0
+	parry_time_windup_visual_override = 1
+	parry_time_active_visual_override = 3
+	parry_time_spindown_visual_override = 4
 	parry_flags = PARRY_DEFAULT_HANDLE_FEEDBACK
-	parry_automatic_enabled = TRUE
+	parry_time_perfect = 2		// first ds isn't perfect
+	parry_time_perfect_leeway = 1
+	parry_imperfect_falloff_percent = 10
+	parry_efficiency_considered_successful = 25		// VERY generous
+	parry_failed_stagger_duration = 3 SECONDS
+
+/obj/item/melee/sabre/directional_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return, override_direction)
+	if((attack_type & ATTACK_TYPE_PROJECTILE) && is_energy_reflectable_projectile(object))
+		block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_RETURN_TO_SENDER
+		return BLOCK_SUCCESS | BLOCK_REDIRECTED | BLOCK_SHOULD_REDIRECT
+	return ..()
+
+/obj/item/melee/sabre/on_active_parry(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, list/block_return, parry_efficiency, parry_time)
+	. = ..()
+	if(parry_efficiency >= 90)		// perfect parry
+		block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
+		. |= BLOCK_SHOULD_REDIRECT
 
 /obj/item/melee/sabre/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 95, 5) //fast and effective, but as a sword, it might damage the results.
 	AddElement(/datum/element/sword_point)
-
-/obj/item/melee/sabre/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if(attack_type & ATTACK_TYPE_PROJECTILE)		// Don't bring a sword to a gunfight.
-		return BLOCK_NONE
-	return ..()
 
 /obj/item/melee/sabre/on_exit_storage(datum/component/storage/S)
 	var/obj/item/storage/belt/sabre/B = S.parent
@@ -153,7 +179,7 @@
 	return mutable_appearance(icon_file, "-sabre")
 
 /obj/item/melee/sabre/suicide_act(mob/living/user)
-	user.visible_message("<span class='suicide'>[user] is trying to cut off all [user.ru_ego()] limbs with [src]! it looks like [user.ru_who()] trying to commit suicide!</span>")
+	user.visible_message("<span class='suicide'>[user] is trying to cut off all [user.ru_ego()] limbs with [src]! it looks like [user.p_theyre()] trying to commit suicide!</span>")
 	var/i = 0
 	ADD_TRAIT(src, TRAIT_NODROP, SABRE_SUICIDE_TRAIT)
 	if(iscarbon(user))

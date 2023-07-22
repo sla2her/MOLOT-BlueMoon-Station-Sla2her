@@ -544,11 +544,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/suicide_act(mob/living/carbon/user)
 	if (lit)
-		user.visible_message("<span class='suicide'>[user] begins holding \the [src]'s flame up to [user.ru_ego()] face! It looks like [user.ru_who()] trying to commit suicide!</span>")
+		user.visible_message("<span class='suicide'>[user] begins holding \the [src]'s flame up to [user.ru_ego()] face! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 		playsound(src, 'sound/items/welder.ogg', 50, 1)
 		return FIRELOSS
 	else
-		user.visible_message("<span class='suicide'>[user] begins whacking себя with \the [src]! It looks like [user.ru_who()] trying to commit suicide!</span>")
+		user.visible_message("<span class='suicide'>[user] begins whacking себя with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 		return BRUTELOSS
 
 /obj/item/lighter/update_icon_state()
