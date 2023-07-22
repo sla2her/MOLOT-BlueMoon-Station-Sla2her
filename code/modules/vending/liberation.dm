@@ -2,8 +2,7 @@
 	name = "\improper Liberation Station"
 	desc = "An overwhelming amount of <b>ancient patriotism</b> washes over you just by looking at the machine."
 	icon_state = "liberationstation"
-	product_slogans = "Liberation Station: Your one-stop shop for all things second amendment!;Be a patriot today, pick up a gun!;Quality weapons for cheap prices!;Better dead than red!"
-	product_ads = "Float like an astronaut, sting like a bullet!;Express your second amendment today!;Guns don't kill people, but you can!;Who needs responsibilities when you have guns?"
+	product_slogans = "Станция Освобождения: Ваш универсальный магазин для всех вещей, связанных со второй поправкой!;Будь патриотом сегодня, возьми оружие!;Качественное оружие по низким ценам!;Лучше мертвый, чем красный!;Плавать как космонавт, жалить как пуля!;Вырази свою вторую поправку сегодня!;Оружие не убивает людей, но ты можешь!;Кому нужна ответственность, когда у тебя есть оружие?"
 	vend_reply = "Remember the name: Liberation Station!"
 	products = list(/obj/item/reagent_containers/food/snacks/burger/plain = 5, //O say can you see, by the dawn's early light
 					/obj/item/reagent_containers/food/snacks/burger/baseball = 3, //What so proudly we hailed at the twilight's last gleaming

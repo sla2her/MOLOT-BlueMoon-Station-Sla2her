@@ -3,7 +3,7 @@
 	desc = "Spend your hard earned credits!"
 	icon = 'modular_bluemoon/krashly/icons/obj/structures.dmi'
 	icon_state = "intedrobe"
-	product_ads = "Почти не пачкается кровью!; Потрать свои тяжело заработанные кредиты!; Новые поставки от наших клиентов!"
+	product_slogans = "Почти не пачкается кровью!;Потрать свои тяжело заработанные кредиты!;Новые поставки от наших клиентов!"
 	vend_reply = "Удачных контрактов, наёмник!"
 	req_access = list(ACCESS_SYNDICATE)
 	products = list(

@@ -97,8 +97,6 @@
 
 	///String of slogans separated by semicolons, optional
 	var/product_slogans = ""
-	///String of small ad messages in the vending screen - random chance
-	var/product_ads = ""
 
 	var/list/product_records = list()
 	var/list/hidden_records = list()

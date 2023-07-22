@@ -3,7 +3,7 @@
 	desc = "Stay alive until the end. Dispenses stuff for brig physicians."
 	icon = 'modular_bluemoon/kovac_shitcode/icons/misc/vending_additional.dmi'
 	icon_state = "brigdoc"
-	product_ads = "А вы знаете, что такое Женевская конвенция?; Синдикат ведь не будет стрелять в офицеров с красным крестом, правда?;Иди и спаси чью-то жизнь!"
+	product_slogans = "А вы знаете, что такое Женевская конвенция?;Террористы ведь не будут стрелять в офицеров с красным крестом, правда?;Иди и спаси чью-то жизнь!"
 	vend_reply = "Медицинское снаряжение выдано. Удачной службы."
 	req_access = list(ACCESS_MEDICAL)
 	products = list(/obj/item/reagent_containers/syringe = 3,

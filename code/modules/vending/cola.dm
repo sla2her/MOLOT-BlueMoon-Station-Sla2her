@@ -3,10 +3,9 @@
 	name = "\improper Robust Softdrinks"
 	desc = "A softdrink vendor provided by Robust Industries, LLC."
 	icon_state = "Cola_Machine"
-	product_slogans = "Robust Softdrinks: More robust than a toolbox to the head!"
-	product_ads = "Refreshing!;Hope you're thirsty!;Over 1 million drinks sold!;Thirsty? Why not cola?;Please, have a drink!;Drink up!;The best drinks in space."
+	product_slogans = "Robust Softdrinks: прочнее, чем ящиком с инструментами по голове!;Освежающие!;Надеюсь, вы хотите пить!;Продано более одного миллиона напитков за сутки!;Хотите пить? Почему не кола?;Пожалуйста, выпейте!;Выпейте!;Лучшие напитки в космосе."
 	products = list(/obj/item/reagent_containers/food/drinks/soda_cans/cola = 10,
-		            /obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind = 10,
+					/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/starkist = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/space_up = 10,
@@ -101,8 +100,7 @@
 					/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/sol_dry = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/shamblers = 10)
-	product_slogans = "~Shake me up some of that Shambler's Juice!~"
-	product_ads = "Refreshing!;Jyrbv dv lg jfdv fw kyrk Jyrdscvi'j Alztv!;Over 1 trillion souls drank!;Thirsty? Nyp efk uizeb kyv uribevjj?;Kyv Jyrdscvi uizebj kyv ezxyk!;Drink up!;Krjkp."
+	product_slogans = "~Взболтай мне немного этого сока Шамблера! ~;Освежающий!;Jyrbv dv lg jfdv fw kyrk Jyrdscvi'j Alztv!;Более 1 триллиона душ выпито!;Жаждущий?;Nyp efk uizeb kyv uribevjj?;Kyv Jyrdscvi uizebj kyv ezxyk!;Drink up!;Krjkp."
 	light_mask = "shamblers-light-mask"
 	light_color = COLOR_MOSTLY_PURE_PINK
 /obj/machinery/vending/cola/buzz_fuzz
@@ -122,5 +120,4 @@
 	contraband = list(/obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko = 6)
 	premium = list(/obj/item/reagent_containers/food/drinks/beer/light = 1,
 					/obj/item/reagent_containers/food/drinks/soda_cans/grey_bull = 1)
-	product_slogans = "~A hive of Flavour!~"
-	product_ads = "Stinging flavour!;Ideal of the worker drone!;Buzz Buzz!;Got Honey?;The Queen approves of this drink!;Sap back that missing energy!;Bee the consumer unit!"
+	product_slogans = "~Улей со вкусом!;Жгучий вкус!;Идеал рабочего трутня!;Жужжание!;Есть мед?;Королева одобряет этот напиток!;Верните недостающую энергию!;Пчела - потребитель!"

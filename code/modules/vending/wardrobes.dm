@@ -15,7 +15,7 @@
 	name = "\improper SecDrobe"
 	desc = "A vending machine for security and security-related clothing!"
 	icon_state = "secdrobe"
-	product_ads = "Лови преступников стильно!;Мы пачкаем форму кровью, чтобы станция оставалась чистой!;У вас есть право соблюдать моду!;Дорогой, не забудь надеть бронежилет!"
+	product_slogans = "Лови преступников стильно!;Мы пачкаем форму кровью, чтобы станция оставалась чистой!;У вас есть право соблюдать моду!;Дорогой, не забудь надеть бронежилет!"
 	vend_reply = "Удачной службы!"
 	products = list(/obj/item/clothing/suit/hooded/wintercoat/security = 2,
 					/obj/item/storage/backpack/security = 3,
@@ -75,7 +75,7 @@
 	name = "\improper MediDrobe"
 	desc = "A vending machine rumoured to be capable of dispensing clothing for medical personnel."
 	icon_state = "medidrobe"
-	product_ads = "Сделайте пятна крови модными!!!"
+	product_slogans = "Сделайте пятна крови модными!!!"
 	vend_reply = "Спасибо за использование MediDrobe!"
 	products = list(/obj/item/clothing/accessory/pocketprotector = 5,
 					/obj/item/clothing/head/beret/med = 5,
@@ -124,7 +124,7 @@
 	name = "EngiDrobe"
 	desc = "A vending machine renowned for vending industrial grade clothing."
 	icon_state = "engidrobe"
-	product_ads = "Гарантированно защитит ваши ноги от несчастных случаев на производстве!;Боитесь радиации? Тогда носите жёлтое!;Жёлтое значит защита!"
+	product_slogans = "Гарантированно защитит ваши ноги от несчастных случаев на производстве!;Боитесь радиации? Тогда носите жёлтое!;Жёлтое значит защита!"
 	vend_reply = "Спасибо за использование EngiDrobe!"
 	products = list(/obj/item/clothing/accessory/pocketprotector = 5,
 					/obj/item/clothing/head/beret/eng = 3,
@@ -156,7 +156,7 @@
 	name = "AtmosDrobe"
 	desc = "This relatively unknown vending machine delivers clothing for Atmospherics Technicians, an equally unknown job."
 	icon_state = "atmosdrobe"
-	product_ads = "Приобретайте легковоспламеняющуюся одежду прямо здесь!!!"
+	product_slogans = "Приобретайте легковоспламеняющуюся одежду прямо здесь!!!"
 	vend_reply = "Спасибо за использование AtmosDrobe!"
 	products = list(/obj/item/clothing/accessory/pocketprotector = 3,
 					/obj/item/clothing/head/beret/atmos = 3,
@@ -179,7 +179,7 @@
 	name = "CargoDrobe"
 	desc = "A highly advanced vending machine for buying cargo related clothing for free."
 	icon_state = "cargodrobe"
-	product_ads = "Обновленный стиль Техника Склада!;Выбери свой стиль сегодня!;Эти шорты удобны и просты в носке, получи свои сейчас!"
+	product_slogans = "Обновленный стиль Техника Склада!;Выбери свой стиль сегодня!;Эти шорты удобны и просты в носке, получи свои сейчас!"
 	vend_reply = "Спасибо за использование CargoDrobe!"
 	products = list(/obj/item/clothing/suit/hooded/wintercoat/cargo = 3,
 					/obj/item/clothing/under/rank/cargo/tech = 5,
@@ -202,7 +202,7 @@
 	name = "RoboDrobe"
 	desc = "A vending machine designed to dispense clothing known only to roboticists."
 	icon_state = "robodrobe"
-	product_ads = "Ты превращаешь меня в TRUE, используй определения!;1000011110010000110000100010000101000100110010000010000110101100001100011000011000010000111011"
+	product_slogans = "Ты превращаешь меня в TRUE, используй определения!;1000011110010000110000100010000101000100110010000010000110101100001100011000011000010000111011"
 	vend_reply = "Спасибо за использование RoboDrobe!"
 	products = list(/obj/item/clothing/glasses/hud/diagnostic = 3,
 					/obj/item/stack/medical/nanogel = 5,
@@ -231,7 +231,7 @@
 	name = "SciDrobe"
 	desc = "A simple vending machine suitable to dispense well tailored science clothing. Endorsed by Space Cubans."
 	icon_state = "scidrobe"
-	product_ads = "Тоскуете по запаху плазмы, сжигающей плоть?;Купите научную одежду прямо сейчас!;Изготовлена с использованием 10% ауксетика, так что вы можете не беспокоиться о том, что потеряете руку!"
+	product_slogans = "Тоскуете по запаху плазмы, сжигающей плоть?;Купите научную одежду прямо сейчас!;Изготовлена с использованием 10% ауксетика, так что вы можете не беспокоиться о том, что потеряете руку!"
 	vend_reply = "Спасибо за использование SciDrobe!"
 	products = list(/obj/item/clothing/accessory/pocketprotector = 5,
 					/obj/item/clothing/head/beret/sci = 3,
@@ -257,7 +257,7 @@
 	name = "Hydrobe"
 	desc = "A machine with a catchy name. It dispenses botany related clothing and gear."
 	icon_state = "hydrobe"
-	product_ads = "Вы любите почву? Тогда покупайте нашу одежду!;Приобрести наряды, соответствующие вашему зеленому стилю, можно здесь!"
+	product_slogans = "Вы любите почву? Тогда покупайте нашу одежду!;Приобрести наряды, соответствующие вашему зеленому стилю, можно здесь!"
 	vend_reply = "Спасибо за использование Hydrobe!"
 	products = list(/obj/item/storage/backpack/botany = 3,
 					/obj/item/storage/backpack = 3,
@@ -280,7 +280,7 @@
 	name = "CuraDrobe"
 	desc = "A lowstock vendor only capable of vending clothing for curators and librarians."
 	icon_state = "curadrobe"
-	product_ads = "Очки для глаз и литература для души - в Curadrobe есть все!;Впечатлите и поразите гостей вашей библиотеки расширенной линейкой ручек Curadrob!"
+	product_slogans = "Очки для глаз и литература для души - в Curadrobe есть все!;Впечатлите и поразите гостей вашей библиотеки расширенной линейкой ручек Curadrob!"
 	vend_reply = "Спасибо за использование CuraDrobe!"
 	products = list(/obj/item/pen = 4,
 					/obj/item/pen/red = 2,
@@ -304,7 +304,7 @@
 	name = "BarDrobe"
 	desc = "A stylish vendor to dispense the most stylish bar clothing!"
 	icon_state = "bardrobe"
-	product_ads = "Гарантированно предотвращает появление пятен от пролитых напитков!"
+	product_slogans = "Гарантированно предотвращает появление пятен от пролитых напитков!"
 	vend_reply = "Спасибо за использование BarDrobe!"
 	products = list(/obj/item/clothing/head/that = 3,
 					/obj/item/radio/headset/headset_srv = 3,
@@ -333,7 +333,7 @@
 	name = "ChefDrobe"
 	desc = "This vending machine might not dispense meat, but it certainly dispenses chef related clothing."
 	icon_state = "chefdrobe"
-	product_ads = "Наша одежда гарантированно защитит вас от брызга!;Сквирт!"
+	product_slogans = "Наша одежда гарантированно защитит вас от брызга!;Сквирт!"
 	vend_reply = "Спасибо за использование ChefDrobe!"
 	products = list(/obj/item/clothing/under/suit/waiter = 3,
 					/obj/item/radio/headset/headset_srv = 4,
@@ -358,7 +358,7 @@
 	name = "JaniDrobe"
 	desc = "A self cleaning vending machine capable of dispensing clothing for janitors."
 	icon_state = "janidrobe"
-	product_ads = "Приходите и получите свою одежду для уборщиков, которую теперь одобряют все чешуйчатые мира!;Чешуйчатые, объединяйтесь!"
+	product_slogans = "Приходите и получите свою одежду для уборщиков, которую теперь одобряют все чешуйчатые мира!;Чешуйчатые, объединяйтесь!"
 	vend_reply = "Спасибо за использование JaniDrobe!"
 	products = list(/obj/item/clothing/under/rank/civilian/janitor = 2,
 					/obj/item/clothing/under/rank/civilian/janitor/skirt = 2,
@@ -394,7 +394,7 @@
 	name = "LawDrobe"
 	desc = "Objection! This wardrobe dispenses the rule of law... and lawyer clothing."
 	icon_state = "lawdrobe"
-	product_ads = "Я ПРОТИВ!;Добейтесь верховенства закона сейчас же!"
+	product_slogans = "Я ПРОТИВ!;Добейтесь верховенства закона сейчас же!"
 	vend_reply = "Спасибо за использование LawDrobe!"
 	products = list(/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt = 3,
 					/obj/item/clothing/under/rank/civilian/lawyer/purpsuit = 3,
@@ -425,7 +425,7 @@
 	name = "DeusVend"
 	desc = "God wills your purchase."
 	icon_state = "chapdrobe"
-	product_ads = "Вас донимают культисты или назойливые ревенанты? Тогда приходите и оденьтесь как святой человек!;Одежда для настоящих мужчин!"
+	product_slogans = "Вас донимают культисты или назойливые ревенанты? Тогда приходите и оденьтесь как святой человек!;Одежда для настоящих мужчин!"
 	vend_reply = "Спасибо за использование DeusVend!"
 	products = list(/obj/item/choice_beacon/holy = 1,
 					/obj/item/staff/bostaff/chaplain = 1,
@@ -459,7 +459,7 @@
 	name = "ChemDrobe"
 	desc = "A vending machine for dispensing chemistry related clothing."
 	icon_state = "chemdrobe"
-	product_ads = "Наша одежда на 0,5% более устойчива к воздействию кислот! Приобретайте прямо сейчас!"
+	product_slogans = "Наша одежда на 0,5% более устойчива к воздействию кислот! Приобретайте прямо сейчас!"
 	vend_reply = "Спасибо за использование ChemDrobe!"
 	products = list(/obj/item/clothing/under/rank/medical/chemist = 3,
 					/obj/item/clothing/head/beret/chem = 3,
@@ -480,7 +480,7 @@
 	name = "GeneDrobe"
 	desc = "A machine for dispensing clothing related to genetics."
 	icon_state = "genedrobe"
-	product_ads = "Идеально подходит для безумного ученого!"
+	product_slogans = "Идеально подходит для безумного ученого!"
 	vend_reply = "Спасибо за использование GeneDrobe!"
 	products = list(/obj/item/clothing/under/rank/medical/geneticist = 3,
 					/obj/item/clothing/under/rank/medical/geneticist/skirt = 3,
@@ -498,7 +498,7 @@
 	name = "ViroDrobe"
 	desc = "An unsterilized machine for dispending virology related clothing."
 	icon_state = "virodrobe"
-	product_ads = " Вирусы донимают вас? Тогда перейдите на стерильную одежду уже сегодня!"
+	product_slogans = " Вирусы донимают вас? Тогда перейдите на стерильную одежду уже сегодня!"
 	vend_reply = "Спасибо за использование ViroDrobe"
 	products = list(/obj/item/clothing/head/beret/viro = 3,
 					/obj/item/clothing/under/rank/medical/virologist = 3,
@@ -518,7 +518,7 @@
 	name = "\improper DetDrobe"
 	desc = "A machine for all your detective needs, as long as you need clothes."
 	icon_state = "detdrobe"
-	product_ads = "Применяйте свои блестящие дедуктивные методы в стиле!"
+	product_slogans = "Применяйте свои блестящие дедуктивные методы в стиле!"
 	vend_reply = "Спасибо за использование DetDrobe!"
 	products = list(/obj/item/clothing/under/rank/security/detective = 2,
 					/obj/item/clothing/under/rank/security/detective/skirt = 2,
@@ -556,7 +556,7 @@
 	desc = "The latest and greatest in Nanotrasen fashion for your great leader."
 	icon_state = "capsdrobe"
 	icon_deny = "capsdrobe-deny"
-	product_ads = "Только самое лучшее для лучших."
+	product_slogans = "Только самое лучшее для лучших."
 	vend_reply = "A wonderful day to you, great leader."
 	products = list(/obj/item/clothing/suit/hooded/wintercoat/captain = 1,
 					/obj/item/storage/backpack/captain = 1,
@@ -595,7 +595,7 @@
 	name = "\improper SynDrobe"
 	desc = "A vending machine for our boys in red, now in brand new crimson!"
 	icon_state = "syndrobe"
-	product_ads = "Натягивай!;Целься, Одевайся, Стреляй!;Красная Бригада за ношение лучшего!"
+	product_slogans = "Натягивай!;Целься, Одевайся, Стреляй!;Красная Бригада за ношение лучшего!"
 	vend_reply = "Спасибо за использование SynDrobe!"
 	circuit = /obj/item/circuitboard/machine/vending/syndicate_clothes_vendor
 	products = list(
@@ -631,7 +631,7 @@
 		/obj/item/clothing/under/syndicate/maid = 5,
 		/obj/item/clothing/gloves/combat/maid = 5,
 		/obj/item/clothing/head/maid/syndicate = 5,
-		/obj/item/card/id/syndicate/no_access_copy = 5,
+		/obj/item/card/id/syndicate = 5,
 		/obj/item/clothing/suit/armor/vest/capcarapace/syndicate/winter = 1,
 		/obj/item/clothing/suit/armor/vest/capcarapace/syndicate = 1,
 		/obj/item/clothing/head/hats/warden/syndicate = 1
@@ -647,7 +647,7 @@
 	name = "\improper Civilian SynDrobe"
 	desc = "A vending machine for our boys in red, now in brand new crimson!"
 	icon_state = "syndrobe"
-	product_ads = "Натягивай!;Целься, Одевайся, Стреляй!;Красная Бригада за ношение лучшего!"
+	product_slogans = "Натягивай!;Целься, Одевайся, Стреляй!;Красная Бригада за ношение лучшего!"
 	vend_reply = "Спасибо за использование SynDrobe!"
 	circuit = /obj/item/circuitboard/machine/vending/syndicate_clothes_vendor/civil
 	products = list(
@@ -684,7 +684,8 @@
 		/obj/item/clothing/suit/armor/vest/capcarapace/syndicate/civil = 5,
 		/obj/item/clothing/head/maid/syndicate/civil = 5,
 		/obj/item/clothing/head/helmet/swat/ds/civil = 5,
-		/obj/item/clothing/head/hats/warden/syndicate/civil = 5
+		/obj/item/clothing/head/hats/warden/syndicate/civil = 5,
+		/obj/item/card/id/syndicate/no_access_copy = 5
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/syndie_wardrobe/civil
 	light_color = COLOR_MOSTLY_PURE_RED

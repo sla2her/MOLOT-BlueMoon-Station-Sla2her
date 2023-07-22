@@ -60,8 +60,8 @@
 	desc = "A vending machine for blueshield and blueshield-related clothing!"
 	icon_state = "commdrobe"
 	icon = 'modular_splurt/icons/obj/objects.dmi'
-	product_ads = "Protect and Serve!;Feel good while keeping people alive!;"
-	vend_reply = "Thank you for using the BlueDrobe!"
+	product_slogans = "Защищать и служить!;Чувствуй себя хорошо, сохраняя жизнь людям!;"
+	vend_reply = "Спасибо за использование BlueDrobe!"
 	products = list(/obj/item/clothing/under/rank/blueshield = 2,
 					/obj/item/clothing/under/rank/blueshield/skirt = 2,
 					/obj/item/clothing/under/rank/blueshield/formal = 2,
@@ -96,8 +96,8 @@
 	desc = "A vending machine for bridge officers and officer-related clothing!"
 	icon_state = "commdrobe"
 	icon = 'modular_splurt/icons/obj/objects.dmi'
-	product_ads = "Make yourself feel important!;Feel good while serving command!;"
-	vend_reply = "Thank you for using the BlueDrobe!"
+	product_slogans = "Make yourself feel important!;Feel good while serving command!;"
+	vend_reply = "Спасибо за использование BlueDrobe!"
 	products = list(/obj/item/clothing/under/rank/bridgeofficer = 2,
 					/obj/item/clothing/under/rank/bridgeofficer/skirt = 2,
 					/obj/item/clothing/under/rank/bridgeofficer/formal = 2,
@@ -125,8 +125,8 @@
 	name = "\improper HOSDrobe"
 	desc = "A vending machine for the head of security and security-related clothing!"
 	icon_state = "secdrobe"
-	product_ads = "Beat perps in style!;It's red so you can't see the blood!;You have the right to be fashionable!;Now you can be the fashion police you always wanted to be!"
-	vend_reply = "Thank you for using the HosDrobe!"
+	product_slogans = "Бей преступников в стиле!;На красном красного не видно!;Вы имеете право быть модным!;Теперь вы можете быть полицейским моды, которым вы всегда хотели быть!"
+	vend_reply = "Спасибо за использование HosDrobe!"
 	products = list(/obj/item/clothing/neck/cloak/hos = 1,
 					/obj/item/clothing/neck/mantle/head_of_security = 1,
 					/obj/item/clothing/neck/cloak/regal_hos = 1,

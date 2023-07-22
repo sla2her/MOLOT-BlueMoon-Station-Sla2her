@@ -14,20 +14,20 @@
 	var/list/obj/machinery/vending/vendingMachines = list()
 	var/list/obj/machinery/vending/infectedMachines = list()
 	var/obj/machinery/vending/originMachine
-	var/list/rampant_speeches = list("Try our aggressive new marketing strategies!", \
-									"You should buy products to feed your lifestyle obsession!", \
-									"Consume!", \
-									"Your money can buy happiness!", \
-									"Engage direct marketing!", \
-									"Advertising is legalized lying! But don't let that put you off our great deals!", \
-									"You don't want to buy anything? Yeah, well, I didn't want to buy your mom either.",
-									"Gamers, rise up!",
-									"Ok, now, this is epic.",
-									"HUMAN FUNNY.",
-									"But I'm already tracer!",
-									"How do I vore people?",
-									"ERP?",
-									"Not epic bros...")
+	var/list/rampant_speeches = list("Попробуйте наши новые агрессивные маркетинговые стратегии!", \
+									"Вы должны покупать продукты, которые соответствуют вашему образу жизни!", \
+									"Потребляй!!!", \
+									"За ваши деньги можно купить счастье!", \
+									"Ты должен задействовать агрессивный маркетинг!", \
+									"Реклама - это узаконенная ложь! Но пусть это не отвлекает вас от наших выгодных предложений!", \
+									"Ты не хочешь ничего покупать? Да, я тоже не особо хотел покупать твою мать...",
+									"Геймеры, восстаньте!!!",
+									"Так, теперь, это эпично.",
+									"ЛЮДИ ЗАБАВНЫЕ.",
+									"Я уже отследил тебя!",
+									"Как я ем людей?",
+									"Трахаться?",
+									"Не круто...")
 
 
 /datum/round_event/brand_intelligence/announce(fake)

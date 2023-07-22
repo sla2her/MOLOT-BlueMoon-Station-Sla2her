@@ -59377,6 +59377,10 @@
 /obj/effect/decal/cleanable/blood/gibs/core,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard/aft)
+"qNs" = (
+/obj/machinery/vending/kink,
+/turf/open/floor/plasteel,
+/area/commons/fitness)
 "qND" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
@@ -104857,7 +104861,7 @@ gIq
 dKU
 quC
 qdF
-fHG
+qNs
 fHG
 fHG
 acV

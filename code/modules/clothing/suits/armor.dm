@@ -224,6 +224,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor = list(MELEE = 60, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 0, RAD = 0, FIRE = 80, ACID = 80, WOUND = 20)
 	blocks_shove_knockdown = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 	strip_delay = 80
 	equip_delay_other = 60
 	unique_reskin = list(
@@ -255,7 +256,7 @@
 	armor = list(MELEE = 15, BULLET = 60, LASER = 10, ENERGY = 10, BOMB = 40, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 20)
 	strip_delay = 70
 	equip_delay_other = 50
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_DIGITIGRADE
 	unique_reskin = list(
 		"Basic" = list(
 			RESKIN_ICON_STATE = "bulletproof",
