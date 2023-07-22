@@ -53,8 +53,8 @@
 	fitted = FEMALE_UNIFORM_TOP
 
 /obj/item/clothing/under/syndicate/sniper
-	name = "Tactical turtleneck suit"
-	desc = "A double seamed tactical turtleneck disguised as a civilian grade silk suit. Intended for the most formal operator. The collar is really sharp."
+	name = "Tactical suit"
+	desc = "A double seamed tactical fatigues disguised as a civilian grade silk suit. Intended for the most formal operator. The collar is really sharp."
 	icon_state = "really_black_suit"
 	item_state = "bl_suit"
 	can_adjust = FALSE

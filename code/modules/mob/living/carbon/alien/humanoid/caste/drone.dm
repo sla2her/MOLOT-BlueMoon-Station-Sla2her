@@ -1,8 +1,8 @@
 /mob/living/carbon/alien/humanoid/drone
 	name = "alien drone"
 	caste = "d"
-	maxHealth = 125
-	health = 125
+	maxHealth = 250
+	health = 250
 	icon_state = "aliend"
 	meleeKnockdownPower = 80
 
@@ -19,7 +19,7 @@
 /obj/effect/proc_holder/alien/evolve
 	name = "Evolve to Praetorian"
 	desc = "Praetorian"
-	plasma_cost = 500
+	plasma_cost = 450
 
 	action_icon_state = "alien_evolve_drone"
 

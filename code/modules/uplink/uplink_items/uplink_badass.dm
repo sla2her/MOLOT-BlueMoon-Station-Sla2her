@@ -37,15 +37,15 @@
 
 /datum/uplink_item/badass/balloon
 	name = "Syndicate Balloon"
-	desc = "For showing that you are THE BOSS: A useless red balloon with the Syndicate logo on it. \
-			Can blow the deepest of covers."
+	desc = "For showing that you are Syndicate member: A useless red balloon with the Syndicate logo on it. \
+			Can blow the deepest of covers. Seriously, it's totally useless nowadays. The friendship pact as is."
 	item = /obj/item/toy/syndicateballoon
 	cost = 20
 	cant_discount = TRUE
 	illegal_tech = FALSE
 
 /datum/uplink_item/badass/syndiecash
-	name = "Syndicate Briefcase Full of Cash"
+	name = "Briefcase Full of Cash"
 	desc = "A secure briefcase containing 5000 space credits. Useful for bribing personnel, or purchasing goods \
 			and services at lucrative prices. The briefcase also feels a little heavier to hold; it has been \
 			manufactured to pack a little bit more of a punch if your client needs some convincing."
@@ -69,6 +69,15 @@
 	item = /obj/item/storage/fancy/cigarettes/cigpack_syndicate
 	cost = 2
 	illegal_tech = FALSE
+	purchasable_from = UPLINK_SYNDICATE // Bluemoon Changes
+
+/datum/uplink_item/badass/inteqcigs // Bluemoon Changes
+	name = "InteQ Smokes"
+	desc = "Strong flavor, dense smoke, infused with omnizine."
+	item = /obj/item/storage/fancy/cigarettes/cigpack_inteq
+	cost = 2
+	illegal_tech = FALSE
+	purchasable_from = ~(UPLINK_SYNDICATE)
 
 /datum/uplink_item/badass/tactical_naptime
 	name = "Sleepy Time Pajama Bundle"

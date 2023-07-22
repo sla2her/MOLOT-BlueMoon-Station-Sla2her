@@ -128,9 +128,6 @@
 	new /obj/item/clipboard(src)
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/clothing/neck/petcollar(src)
-	new /obj/item/clothing/neck/cloak/nanotrasen_representative(src)
-	new /obj/item/clothing/neck/cloak/nanotrasen_representative(src)
-	new /obj/item/clothing/neck/cloak/nanotrasen_representative(src)
 
 //do not map these in anywhere but if you do, Central command only!!! These are for Admin spawn only!!!!
 
@@ -242,3 +239,24 @@
 	new /obj/item/mod/construction/armor/safeguard(src)
 	new /obj/item/mod/module/jetpack(src)
 	new /obj/item/mod/module/holster(src)
+
+/obj/structure/closet/secure_closet/ntr
+	name = "representative's locker"
+	req_access = list(ACCESS_HOS)
+	icon_state = "ntr"
+
+/obj/structure/closet/secure_closet/ntr/PopulateContents()
+	..()
+	new /obj/item/clothing/neck/cloak/nanotrasen_representative(src)
+	new /obj/item/clothing/neck/cloak/syndiecap(src)
+	new /obj/item/clothing/under/rank/centcom/officer_alt(src)
+	new /obj/item/clothing/under/syndicate(src)
+	new /obj/item/clothing/head/beret/sec/ntr_beret(src)
+	new /obj/item/clothing/head/HoS/beret/syndicate(src)
+	new /obj/item/megaphone/sec(src)
+	new /obj/item/radio/headset/heads/ntr(src)
+	new /obj/item/stamp/syndicate(src)
+	new /obj/item/stamp/ntr(src)
+	new /obj/item/clothing/accessory/lawyers_badge(src)
+	new /obj/item/clothing/accessory/lawyers_badge(src)
+	new /obj/item/clothing/accessory/lawyers_badge(src)

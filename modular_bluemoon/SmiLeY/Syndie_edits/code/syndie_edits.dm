@@ -133,6 +133,18 @@
 	var/obj/item/clothing/accessory/maidcorset/syndicate/A = new (src)
 	attach_accessory(A)
 
+/obj/item/clothing/under/syndicate/maid_revealing
+	name = "Revealing Tactical Maid outfit"
+	desc = "A 'tactical' skirtleneck fashioned to the likeness of a maid outfit. Why the Syndicate has these, you'll never know."
+	icon = 'modular_bluemoon/Gardelin0/icons/clothing/object/uniforms.dmi'
+	mob_overlay_icon = 'modular_bluemoon/Gardelin0/icons/clothing/worn/uniform.dmi'
+	icon_state = "maid_revealing"
+	item_state = "maid_revealing"
+	fitted = NO_FEMALE_UNIFORM
+	mutantrace_variation = STYLE_NO_ANTHRO_ICON|DIGITIGRADE
+	dying_key = DYE_REGISTRY_JUMPSKIRT
+	can_adjust = FALSE
+
 /obj/item/clothing/accessory/maidcorset/syndicate
 	name = "syndicate maid apron"
 	desc = "Practical? No. Tactical? Also no. Cute? Most definitely yes."
@@ -166,7 +178,7 @@
 	desc = "A sinister black hood with armor padding."
 	icon = 'icons/obj/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/head.dmi'
-	icon_state = "winterhood_syndie"
+	icon_state = "hood_syndie"
 	armor = list(MELEE = 35, BULLET = 30, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
 
 /obj/item/clothing/suit/armor/vest/infiltrator/gorlex_harness

@@ -63,3 +63,57 @@
 	speed = 1.5
 	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	attack_sound = 'modular_bluemoon/kovac_shitcode/sound/necros/ubermorph_attack_1.ogg'
+
+/////////////////Grunt///////////////
+/mob/living/simple_animal/hostile/grunt
+	name = "Necromorph"
+	real_name = "Necromorph"
+	icon = 'modular_bluemoon/kovac_shitcode/icons/necros.dmi'
+	desc = "Hey down there, hugs!"
+	icon_state = "alien_s"
+	icon_living = "alien_s"
+	maxHealth = 100
+	health = 100
+	response_harm_continuous = "harmlessly punches"
+	response_harm_simple = "harmlessly punch"
+	harm_intent_damage = 0
+	obj_damage = 15
+	melee_damage_lower = 15
+	melee_damage_upper = 25
+	attack_verb_continuous = "claws"
+	attack_verb_simple = "claws"
+	speed = 1
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	attack_sound = 'modular_bluemoon/kovac_shitcode/sound/necros/puker_attack_1.ogg'
+	status_flags = 0
+	mob_size = MOB_SIZE_HUMAN
+	force_threshold = 10
+	AIStatus = AI_ON
+	loot = list(/obj/effect/gibspawner/xeno/bodypartless, /obj/effect/gibspawner/generic, /obj/effect/gibspawner/generic/animal, /obj/effect/gibspawner/human/bodypartless, /obj/effect/gibspawner/human)
+
+/////////////////Spider///////////////
+/mob/living/simple_animal/hostile/spider
+	name = "Necromorph"
+	real_name = "Necromorph"
+	icon = 'modular_bluemoon/kovac_shitcode/icons/necros.dmi'
+	desc = "Fear the arachnids"
+	icon_state = "aliend_s"
+	icon_living = "aliend_s"
+	maxHealth = 40
+	health = 40
+	response_harm_continuous = "harmlessly punches"
+	response_harm_simple = "harmlessly punch"
+	harm_intent_damage = 0
+	obj_damage = 10
+	melee_damage_lower = 10
+	melee_damage_upper = 15
+	attack_verb_continuous = "claws"
+	attack_verb_simple = "claws"
+	speed = 1.8
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	attack_sound = 'modular_bluemoon/kovac_shitcode/sound/necros/infector_attack_4.ogg'
+	status_flags = 0
+	mob_size = MOB_SIZE_SMALL
+	force_threshold = 10
+	AIStatus = AI_ON
+	loot = list(/obj/effect/gibspawner/xeno/bodypartless, /obj/effect/gibspawner/generic, /obj/effect/gibspawner/generic/animal, /obj/effect/gibspawner/human/bodypartless, /obj/effect/gibspawner/human)

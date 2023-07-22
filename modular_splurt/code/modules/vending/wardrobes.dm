@@ -63,8 +63,8 @@
 	product_ads = "Protect and Serve!;Feel good while keeping people alive!;"
 	vend_reply = "Thank you for using the BlueDrobe!"
 	products = list(/obj/item/clothing/under/rank/blueshield = 2,
-					/obj/item/clothing/under/rank/blueshield/formal = 2,
 					/obj/item/clothing/under/rank/blueshield/skirt = 2,
+					/obj/item/clothing/under/rank/blueshield/formal = 2,
 					/obj/item/clothing/under/custom/mw2_russian_para = 2,
 					/obj/item/storage/backpack/blueshield = 2,
 					/obj/item/storage/backpack/satchel/blueshield = 2,
@@ -78,6 +78,7 @@
 					/obj/item/clothing/under/rank/blueshield/formal/skirt = 2,
 					/obj/item/clothing/shoes/jackboots/tall = 2,
 					/obj/item/clothing/suit/armor/vest/bluesheid/spacecoat = 2,
+					/obj/item/clothing/suit/armor/vest/bluesheid/jacket = 2,
 					/obj/item/clothing/under/rank/blueshield/formal/pmc_leader_jumpsuit = 2,
 					/obj/item/clothing/mask/balaclava/pmc_leader_balaclava = 2,
 					/obj/item/clothing/head/HoS/pmc_leader_cap = 2,

@@ -27,7 +27,7 @@
 	cost = 2
 
 /datum/uplink_item/device_tools/phantomthief
-	name = "Syndicate Mask"
+	name = "Adrenaline Mask"
 	desc = "A cheap plastic mask fitted with an adrenaline autoinjector, which can be used by simply tensing your muscles"
 	item = /obj/item/clothing/glasses/phantomthief/syndicate
 	cost = 2
@@ -125,8 +125,8 @@
 	restricted = TRUE
 
 /datum/uplink_item/device_tools/toolbox
-	name = "Full Syndicate Toolbox"
-	desc = "The Syndicate toolbox is a suspicious black and red. It comes loaded with a full tool set including a \
+	name = "Full Illegal Toolbox"
+	desc = "The Illegal toolbox is a suspicious black and red. It comes loaded with a full tool set including a \
 			multitool and combat gloves that are resistant to shocks and heat."
 	item = /obj/item/storage/toolbox/syndicate
 	cost = 1
@@ -226,22 +226,22 @@
 	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/device_tools/surgerybag
-	name = "Syndicate Surgery Duffel Bag"
-	desc = "The Syndicate surgery duffel bag is a toolkit containing all surgery tools, surgical drapes, \
-			a Syndicate brand MMI, a straitjacket, and a muzzle."
+	name = "Illegal Surgery Duffel Bag"
+	desc = "The Illegal surgery duffel bag is a toolkit containing all surgery tools, surgical drapes, \
+			a Syndicate stolen brand MMI, a straitjacket, and a muzzle."
 	item = /obj/item/storage/backpack/duffelbag/syndie/inteq/surgery
 	cost = 3
 
 /datum/uplink_item/device_tools/surgerybag_adv
-	name = "Advanced Syndicate Surgery Duffel Bag"
-	desc = "A Syndicate surgery duffel bag, with a set of upgraded surgery tools to boot."
+	name = "Advanced Illegal Surgery Duffel Bag"
+	desc = "A Syndicate stolen surgery duffel bag, with a set of upgraded surgery tools to boot."
 	item = /obj/item/storage/backpack/duffelbag/syndie/inteq/surgery_adv
 	cost = 6
 
 /datum/uplink_item/device_tools/encryptionkey
-	name = "Syndicate Encryption Key"
+	name = "Illegal Encryption Key"
 	desc = "A key that, when inserted into a radio headset, allows you to listen to all station department channels \
-			as well as talk on an encrypted Syndicate channel with other agents that have the same key."
+			as well as talk on an encrypted Illegal channel with other agents that have the same key."
 	item = /obj/item/encryptionkey/syndicate
 	cost = 2
 	surplus = 75

@@ -14758,6 +14758,14 @@
 	},
 /turf/open/floor/plasteel/stairs,
 /area/centcom/holding)
+"FY" = (
+/obj/structure/bed,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/item/bedsheet/inteq,
+/turf/open/floor/wood/wood_parquet,
+/area/syndicate_mothership)
 "FZ" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -21059,17 +21067,11 @@
 /area/slavers)
 "Vk" = (
 /obj/structure/bed,
-/obj/item/bedsheet/syndie{
-	icon_state = "sheetinteq"
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/bed,
-/obj/item/bedsheet/syndie,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
+/obj/item/bedsheet/inteq,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
 "Vn" = (
@@ -42664,8 +42666,8 @@ SO
 QV
 TQ
 Vk
-Vk
-Vk
+FY
+FY
 Vk
 tb
 QV

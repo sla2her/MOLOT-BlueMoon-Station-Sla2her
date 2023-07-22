@@ -43,3 +43,4 @@
 	message_admins("A cat surgeon has been spawned at [COORD(T)][ADMIN_JMP(T)]")
 	log_game("A cat surgeon has been spawned at [COORD(T)]")
 	return SUCCESSFUL_SPAWN
+

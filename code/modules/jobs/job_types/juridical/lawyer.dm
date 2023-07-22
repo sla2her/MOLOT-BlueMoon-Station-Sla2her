@@ -40,8 +40,8 @@
 	belt = /obj/item/pda/lawyer
 	ears = /obj/item/radio/headset/headset_sec
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	uniform = /obj/item/clothing/under/rank/civilian/lawyer/black/alt
-	suit = /obj/item/clothing/suit/toggle/lawyer/black
+	uniform = /obj/item/clothing/under/rank/civilian/lawyer/really_black
+	//suit = /obj/item/clothing/suit/toggle/lawyer/black
 	shoes = /obj/item/clothing/shoes/laceup
 	l_hand = /obj/item/storage/briefcase/lawyer
 	l_pocket = /obj/item/laser_pointer
@@ -67,8 +67,8 @@
 	ears = /obj/item/radio/headset/headset_sec
 	gloves = /obj/item/clothing/gloves/combat
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	uniform = /obj/item/clothing/under/rank/civilian/lawyer/black/alt
-	suit = /obj/item/clothing/suit/toggle/lawyer/black
+	uniform = /obj/item/clothing/under/rank/civilian/lawyer/really_black
+	//suit = /obj/item/clothing/suit/toggle/lawyer/black
 	shoes = /obj/item/clothing/shoes/jackboots/tall
 	l_hand = /obj/item/storage/briefcase/lawyer
 	l_pocket = /obj/item/laser_pointer

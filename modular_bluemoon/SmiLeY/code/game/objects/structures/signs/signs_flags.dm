@@ -15,9 +15,9 @@
 	icon_state = "flag_ssc"
 
 /obj/structure/sign/flag/terragov
-	name = "flag of TerraGov"
-	desc = "The flag of TerraGov. It's a symbol of humanity no matter where they go, or how much they wish it wasn't."
-	icon_state = "flag_terragov"
+	name = "flag of SolFed"
+	desc = "The flag of Solar Federation. It's a symbol of humanity no matter where they go, or how much they wish it wasn't."
+	icon_state = "flag_solfed"
 
 /obj/structure/sign/flag/tizira
 	name = "flag of the Tiziran Empire"

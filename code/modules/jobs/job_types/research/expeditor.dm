@@ -89,13 +89,10 @@
 	pin = /obj/item/firing_pin/explorer
 
 /obj/item/clothing/under/syndicate/combat/exp
-	icon = 'modular_bluemoon/phenyamomota/icon/obj/clothing/under.dmi'
-	mob_overlay_icon = 'modular_bluemoon/phenyamomota/icon/mob/clothing/under.dmi'
-	anthro_mob_worn_overlay = 'modular_bluemoon/phenyamomota/icon/mob/clothing/under_digi.dmi'
 	name = "expeditionary turtleneck"
 	desc = "Standart combat turtleneck with printed expiditionary marks."
-	icon_state = "tactical_exp"
-	item_state = "tactical_exp"
+	icon_state = "exp_corps"
+	item_state = "exp_corps"
 	mutantrace_variation = STYLE_DIGITIGRADE|USE_SNEK_CLIP_MASK|USE_QUADRUPED_CLIP_MASK
 
 /obj/item/clothing/shoes/combat/exp

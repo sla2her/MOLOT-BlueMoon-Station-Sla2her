@@ -39,7 +39,7 @@
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_blueshield
 	uniform = /obj/item/clothing/under/rank/blueshield
-	head = /obj/item/clothing/head/helmet/blueshirt/blueshield
+	head = /obj/item/clothing/head/helmet/sec/blueshield
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	glasses = /obj/item/clothing/glasses/hud/blueshield
 	suit = /obj/item/clothing/suit/armor/vest/bluesheid

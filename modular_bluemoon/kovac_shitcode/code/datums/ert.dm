@@ -34,3 +34,30 @@
 	mission = "НТ авторизовало интервенцию сил Солнечной Федерации на космическую станцию. Окажите помощь её экипажу."
 	polldesc = "Solar Federation Marine Squad"
 	ertphrase = "modular_bluemoon/kovac_shitcode/sound/ert/sol_send.ogg"
+
+/datum/ert/engineer_ert // Инженерное подразделение
+	roles = list(/datum/antagonist/ert/engineer)
+	leader_role = /datum/antagonist/ert/engineer_squadleader
+	rename_team = "Emergency Engineer Squad"
+	code = "Red"
+	mission = "Окажите поддержку станции по части ремонтных работ."
+	polldesc = "Emergency Engineer Squad"
+	//ertphrase = "modular_bluemoon/kovac_shitcode/sound/ert/sol_send.ogg"
+
+/datum/ert/ntr_ert // Агенты Внутренних Дел
+	roles = list(/datum/antagonist/ert/ntr_ert_agent)
+	leader_role = /datum/antagonist/ert/ntr_ert_leader
+	rename_team = "Internal Affairs Squad"
+	code = "Red"
+	mission = "Слушайтесь Представителя Корпорации. Окажите поддержку Представителю Корпорации в установлении порядка и верховенства права на станции."
+	polldesc = "Internal Affairs Squad"
+	//ertphrase = "modular_bluemoon/kovac_shitcode/sound/ert/sol_send.ogg"
+
+/datum/ert/maid_ert // рофлоЕРТ горничных
+	roles = list(/datum/antagonist/ert/maid)
+	leader_role = /datum/antagonist/ert/maid_leader
+	rename_team = "Elite maid Squad"
+	code = "Delta"
+	mission = "Наведите порядок на станции, если вы понимаете, что офицер ССО имел ввиду."
+	polldesc = "Elite maid Squad"
+	//ertphrase = "modular_bluemoon/kovac_shitcode/sound/ert/sol_send.ogg"

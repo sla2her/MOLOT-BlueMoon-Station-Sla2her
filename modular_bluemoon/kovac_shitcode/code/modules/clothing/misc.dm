@@ -27,7 +27,7 @@
 
 
 /obj/item/clothing/mask/balaclava/breath/redscarf
-	name = "Security facescarf"
+	name = "Red facescarf"
 	desc = "tacticool"
 	icon_state = "red"
 	item_state = "red"
@@ -39,23 +39,23 @@
 	clothing_flags = ALLOWINTERNALS
 
 /obj/item/clothing/mask/balaclava/breath/redscarf/bluescarf
-	name = "Medical facescarf"
+	name = "Blue facescarf"
 	icon_state = "blue"
 	item_state = "blue"
 
 /obj/item/clothing/mask/balaclava/breath/redscarf/purplescarf
-	name = "Research facescarf"
+	name = "Purple facescarf"
 	icon_state = "purple"
 	item_state = "purple"
 
 /obj/item/clothing/mask/balaclava/breath/redscarf/yellowscarf
-	name = "Cargo facescarf"
+	name = "Yellow facescarf"
 	icon_state = "yellow"
 	item_state = "yellow"
 
 
 /obj/item/clothing/mask/balaclava/breath/redscarf/greenscarf
-	name = "Facescarf"
+	name = "Green facescarf"
 	icon_state = "green"
 	item_state = "green"
 

@@ -698,7 +698,7 @@
 	allowed = GLOB.security_wintercoat_allowed
 
 /obj/item/clothing/head/hooded/winterhood/centcom
-	icon_state = "winterhood_centcom"
+	icon_state = "hood_centcom"
 	armor = list(MELEE = 40, BULLET = 45, LASER = 45, ENERGY = 35, BOMB = 40, BIO = 25, RAD = 25, FIRE = 35, ACID = 50)
 
 /obj/item/clothing/suit/hooded/wintercoat/captain
@@ -715,7 +715,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/captain
 	desc = "A blue and yellow hood attached to a heavy winter jacket."
-	icon_state = "winterhood_captain"
+	icon_state = "hood_captain"
 
 /obj/item/clothing/suit/hooded/wintercoat/hop
 	name = "head of personnel's winter coat"
@@ -727,7 +727,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/hop
 	desc = "A cozy winter hood attached to a heavy winter jacket."
-	icon_state = "winterhood_hop"
+	icon_state = "hood_hop"
 
 /obj/item/clothing/suit/hooded/wintercoat/security
 	name = "security winter coat"
@@ -743,7 +743,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/security
 	desc = "A red, armor-padded winter hood."
-	icon_state = "winterhood_security"
+	icon_state = "hood_security"
 
 /obj/item/clothing/suit/hooded/wintercoat/hos
 	name = "head of security's winter coat"
@@ -759,7 +759,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/hos
 	desc = "A red, armor-padded winter hood, lovingly woven with a Kevlar interleave. Definitely not bulletproof, especially not the part where your face goes."
-	icon_state = "winterhood_hos"
+	icon_state = "hood_hos"
 
 /obj/item/clothing/suit/hooded/wintercoat/medical
 	name = "medical winter coat"
@@ -772,7 +772,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/medical
 	desc = "A white winter coat hood."
-	icon_state = "winterhood_medical"
+	icon_state = "hood_medical"
 
 /obj/item/clothing/suit/hooded/wintercoat/cmo
 	name = "chief medical officer's winter coat"
@@ -785,7 +785,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/cmo
 	desc = "A white winter coat hood."
-	icon_state = "winterhood_cmo"
+	icon_state = "hood_cmo"
 
 /obj/item/clothing/suit/hooded/wintercoat/chemistry
 	name = "chemistry winter coat"
@@ -798,7 +798,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/chemistry
 	desc = "A white winter coat hood."
-	icon_state = "winterhood_chemistry"
+	icon_state = "hood_chemistry"
 
 /obj/item/clothing/suit/hooded/wintercoat/viro
 	name = "virology winter coat"
@@ -811,7 +811,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/viro
 	desc = "A white winter coat hood with green markings."
-	icon_state = "winterhood_viro"
+	icon_state = "hood_viro"
 
 /obj/item/clothing/suit/hooded/wintercoat/paramedic
 	name = "paramedic winter coat"
@@ -824,7 +824,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/paramedic
 	desc = "A white winter coat hood with blue markings."
-	icon_state = "winterhood_paramed"
+	icon_state = "hood_paramed"
 
 /obj/item/clothing/suit/hooded/wintercoat/science
 	name = "science winter coat"
@@ -837,7 +837,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/science
 	desc = "A white winter coat hood. This one will keep your brain warm. About as much as the others, really."
-	icon_state = "winterhood_science"
+	icon_state = "hood_science"
 
 /obj/item/clothing/suit/hooded/wintercoat/robotics
 	name = "robotics winter coat"
@@ -850,7 +850,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/robotics
 	desc = "A black winter coat hood. You can pull it down over your eyes and pretend that you're an outdated, late 1980s interpretation of a futuristic mechanized police force. They'll fix you. They fix everything."
-	icon_state = "winterhood_robotics"
+	icon_state = "hood_robotics"
 
 /obj/item/clothing/suit/hooded/wintercoat/genetics
 	name = "genetics winter coat"
@@ -862,7 +862,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/genetics
 	desc = "A white winter coat hood. It's warm."
-	icon_state = "winterhood_genetics"
+	icon_state = "hood_genetics"
 
 /obj/item/clothing/suit/hooded/wintercoat/rd
 	name = "research director's winter coat"
@@ -875,7 +875,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/rd
 	desc = "A white winter coat hood. It smells faintly of hair gel."
-	icon_state = "winterhood_rd"
+	icon_state = "hood_rd"
 
 /obj/item/clothing/suit/hooded/wintercoat/ce
 	name = "chief engineer's winter coat"
@@ -888,7 +888,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/ce
 	desc = "A white winter coat hood. Feels surprisingly heavy. The tag says that it's not child safe."
-	icon_state = "winterhood_ce"
+	icon_state = "hood_ce"
 
 /obj/item/clothing/suit/hooded/wintercoat/engineering
 	name = "engineering winter coat"
@@ -901,7 +901,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/engineering
 	desc = "A yellow winter coat hood. Definitely not a replacement for a hard hat."
-	icon_state = "winterhood_engineer"
+	icon_state = "hood_engineer"
 
 /obj/item/clothing/suit/hooded/wintercoat/engineering/atmos
 	name = "atmospherics winter coat"
@@ -912,7 +912,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/engineering/atmos
 	desc = "A yellow and blue winter coat hood."
-	icon_state = "winterhood_atmos"
+	icon_state = "hood_atmos"
 
 /obj/item/clothing/suit/hooded/wintercoat/hydro
 	name = "hydroponics winter coat"
@@ -924,7 +924,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/hydro
 	desc = "A green winter coat hood."
-	icon_state = "winterhood_hydro"
+	icon_state = "hood_hydro"
 
 /obj/item/clothing/suit/hooded/wintercoat/bar
 	name = "bartender winter coat"
@@ -935,7 +935,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/bar
 	desc = "A fancy winter coat hood."
-	icon_state = "winterhood_bar"
+	icon_state = "hood_bar"
 
 /obj/item/clothing/suit/hooded/wintercoat/cosmic
 	name = "cosmic winter coat"
@@ -948,7 +948,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/cosmic
 	desc = "A starry winter hood."
-	icon_state = "winterhood_cosmic"
+	icon_state = "hood_cosmic"
 
 /obj/item/clothing/suit/hooded/wintercoat/janitor
 	name = "janitors winter coat"
@@ -960,7 +960,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/janitor
 	desc = "A purple hood that smells of space cleaner."
-	icon_state = "winterhood_janitor"
+	icon_state = "hood_janitor"
 
 /obj/item/clothing/suit/hooded/wintercoat/cargo
 	name = "cargo winter coat"
@@ -971,7 +971,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/cargo
 	desc = "A grey hood for a winter coat."
-	icon_state = "winterhood_cargo"
+	icon_state = "hood_cargo"
 
 /obj/item/clothing/suit/hooded/wintercoat/qm
 	name = "quartermaster's winter coat"
@@ -982,7 +982,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/qm
 	desc = "A dark brown winter hood"
-	icon_state = "winterhood_qm"
+	icon_state = "hood_qm"
 
 /obj/item/clothing/suit/hooded/wintercoat/aformal
 	name = "assistant's formal winter coat"
@@ -1007,7 +1007,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/miner
 	desc = "A dusty winter coat hood."
-	icon_state = "winterhood_miner"
+	icon_state = "hood_miner"
 
 /obj/item/clothing/suit/hooded/wintercoat/ratvar
 	name = "ratvarian winter coat"
@@ -1020,7 +1020,7 @@
 	var/real = TRUE
 
 /obj/item/clothing/head/hooded/winterhood/ratvar
-	icon_state = "winterhood_ratvar"
+	icon_state = "hood_ratvar"
 	desc = "A brass-plated winter hood that glows softly, hinting at its divinity."
 	light_range = 3
 	light_power = 1
@@ -1062,7 +1062,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/narsie
 	desc = "A black winter hood full of whispering secrets that only She shall ever know."
-	icon_state = "winterhood_narsie"
+	icon_state = "hood_narsie"
 
 /obj/item/clothing/suit/hooded/wintercoat/ratvar/fake
 	name = "brass winter coat"
@@ -1095,7 +1095,7 @@
 	allowed = GLOB.security_wintercoat_allowed
 
 /obj/item/clothing/head/hooded/winterhood/durathread
-	icon_state = "winterhood_durathread"
+	icon_state = "hood_durathread"
 	armor = list(MELEE = 20, BULLET = 8, LASER = 15, ENERGY = 8, BOMB = 25, BIO = 10, RAD = 15, FIRE = 75, ACID = 37)
 
 /obj/item/clothing/suit/spookyghost
@@ -1169,22 +1169,22 @@
 /obj/item/clothing/suit/hooded/wintercoat/christmascoatr
 	name = "red christmas coat"
 	desc = "A festive red Christmas coat! Smells like Candy Cane!"
-	icon_state = "christmascoatr"
-	item_state = "christmascoatr"
+	icon_state = "coatchristmas"
+	item_state = "coatchristmas"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/christmashoodr
 
 /obj/item/clothing/head/hooded/winterhood/christmashoodr
-	icon_state = "christmashoodr"
+	icon_state = "hood_christmas"
 
 /obj/item/clothing/suit/hooded/wintercoat/christmascoatg
 	name = "green christmas coat"
 	desc = "A festive green Christmas coat! Smells like Candy Cane!"
-	icon_state = "christmascoatg"
-	item_state = "christmascoatg"
+	icon_state = "coatchristmas_green"
+	item_state = "coatchristmas_green"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/christmashoodg
 
 /obj/item/clothing/head/hooded/winterhood/christmashoodg
-	icon_state = "christmashoodg"
+	icon_state = "hood_christmas_green"
 
 /obj/item/clothing/suit/hooded/wintercoat/christmascoatrg
 	name = "red and green christmas coat"
@@ -1207,8 +1207,8 @@
 	AddElement(/datum/element/polychromic, list("#6A6964", "#C4B8A6", "#0000FF"), 3)
 
 /obj/item/clothing/head/hooded/winterhood/polychromic
-	icon_state = "winterhood_poly"
-	item_state = "winterhood_poly"
+	icon_state = "hood_poly"
+	item_state = "hood_poly"
 
 /obj/item/clothing/suit/hooded/wintercoat/timidcostume
 	name = "timid woman hoodie"

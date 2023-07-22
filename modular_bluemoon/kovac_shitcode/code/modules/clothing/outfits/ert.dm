@@ -291,3 +291,120 @@
 	R.freqlock = TRUE
 
 	H.grant_language(/datum/language/modular_sand/solcommon, TRUE, TRUE)
+
+
+///Агенты Внутренних Дел
+/datum/outfit/ert/ntr_ert_leader
+	name = "Internal Affairs Squad Leader"
+
+	id = /obj/item/card/id/ert
+	uniform = /obj/item/clothing/under/rank/civilian/lawyer/black/alt
+	suit = /obj/item/clothing/suit/armor/vest/agent
+	//head = /obj/item/clothing/head/beret/sec/syndicate
+	shoes = /obj/item/clothing/shoes/laceup
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	back = /obj/item/storage/backpack/hecu/black
+	belt = /obj/item/storage/belt/security/full
+	r_hand = /obj/item/gun/ballistic/automatic/ar
+	l_pocket = /obj/item/clothing/accessory/lawyers_badge
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/stamp/syndicate=1,\
+		/obj/item/stamp/ntr=1,\
+		/obj/item/ammo_box/magazine/m556=3,\
+		/obj/item/storage/ifak=1)
+	l_pocket = /obj/item/melee/transforming/energy/sword/saber
+
+/datum/outfit/ert/ntr_ert_leader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	..()
+
+	if(visualsOnly)
+		return
+	var/obj/item/radio/R = H.ears
+	R.keyslot = new /obj/item/encryptionkey/heads/captain
+	R.recalculateChannels()
+
+/datum/outfit/ert/ntr_ert_agent
+	name = "Internal Affairs Squad Agent"
+
+	id = /obj/item/card/id/ert/Security
+	uniform = /obj/item/clothing/under/syndicate/sniper
+	suit = /obj/item/clothing/suit/armor/vest/agent
+	shoes = /obj/item/clothing/shoes/laceup
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	back = /obj/item/storage/backpack/hecu/black
+	belt = /obj/item/storage/belt/security/full
+	r_hand = /obj/item/gun/ballistic/automatic/wt550
+	l_pocket = /obj/item/clothing/accessory/lawyers_badge
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/stamp/law=1,\
+		/obj/item/ammo_box/magazine/wt550m9=3,\
+		/obj/item/storage/ifak=1)
+
+/datum/outfit/ert/ntr_ert_agent/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	..()
+
+	if(visualsOnly)
+		return
+
+	var/obj/item/radio/R = H.ears
+	R.keyslot = new /obj/item/encryptionkey/heads/hos
+	R.recalculateChannels()
+
+
+///Горничные
+/datum/outfit/ert/maid_leader
+	name = "Tactical Maid Leader"
+
+	id = /obj/item/card/id/ert
+	uniform = /obj/item/clothing/under/syndicate/maid
+	//suit = /obj/item/clothing/suit/armor/vest/agent
+	gloves = /obj/item/clothing/gloves/combat/maid
+	head = /obj/item/clothing/head/maidheadband/syndicate
+	shoes = /obj/item/clothing/shoes/sneakers/noslip
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	back = /obj/item/storage/backpack/hecu/black
+	belt = /obj/item/storage/belt/janitor/ert_maid
+	r_hand = /obj/item/mop/advanced
+	//l_pocket = /obj/item/clothing/accessory/lawyers_badge
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/storage/ifak=1)
+	l_pocket = /obj/item/dualsaber
+
+/datum/outfit/ert/maid_leader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	..()
+
+	if(visualsOnly)
+		return
+	var/obj/item/radio/R = H.ears
+	R.keyslot = new /obj/item/encryptionkey/heads/captain
+	R.recalculateChannels()
+	var/datum/martial_art/the_sleeping_carp/justablue = new
+	justablue.teach(H)
+
+/datum/outfit/ert/maid
+	name = "Tactical Maid"
+
+	id = /obj/item/card/id/ert
+	uniform = /obj/item/clothing/under/syndicate/maid_revealing
+	//suit = /obj/item/clothing/suit/armor/vest/agent
+	gloves = /obj/item/clothing/gloves/combat/maid
+	shoes = /obj/item/clothing/shoes/sneakers/noslip
+	head = /obj/item/clothing/head/maidheadband/syndicate
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	back = /obj/item/storage/backpack/hecu/black
+	belt = /obj/item/storage/belt/janitor/ert_maid
+	r_hand = /obj/item/mop/advanced
+	//l_pocket = /obj/item/clothing/accessory/lawyers_badge
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/storage/ifak=1)
+
+/datum/outfit/ert/maid/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	..()
+
+	if(visualsOnly)
+		return
+	var/obj/item/radio/R = H.ears
+	R.keyslot = new /obj/item/encryptionkey/heads/captain
+	R.recalculateChannels()
+	var/datum/martial_art/cqc/justablue = new
+	justablue.teach(H)

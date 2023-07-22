@@ -65,8 +65,6 @@
 	desc = "Keep your head safe while under fire."
 	icon_state = "secmed_helmet"
 	item_state = "secmed_helmet"
-	icon = 'modular_splurt/icons/obj/clothing/head.dmi'
-	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/head.dmi'
 
 /obj/item/clothing/head/beret/sec/bitch
 	name = "security's bitch beret"
