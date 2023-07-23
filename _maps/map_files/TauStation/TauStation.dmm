@@ -5778,8 +5778,7 @@
 "cdj" = (
 /obj/machinery/vending/sustenance{
 	contraband = list(/obj/item/kitchen/knife=6,/obj/item/reagent_containers/food/drinks/coffee=12);
-	desc = "A vending machine which vends food.";
-	product_ads = "Sufficiently healthy."
+	desc = "A vending machine which vends food."
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -8037,7 +8036,6 @@
 	contraband = list(/obj/item/reagent_containers/food/condiment/flour=4);
 	desc = "This vendor is full of condiments to put on food.";
 	name = "\improper Condiments Vendor";
-	product_ads = "Get your sauces here!;No slave labour was used to make these products!;Nanotrasen Approved?!";
 	products = list(/obj/item/storage/bag/tray=8,/obj/item/reagent_containers/food/drinks/drinkingglass=10,/obj/item/storage/box/cups=5,/obj/item/reagent_containers/food/condiment/pack/ketchup=20,/obj/item/reagent_containers/food/condiment/pack/mustard=20,/obj/item/reagent_containers/food/condiment/pack/hotsauce=20,/obj/item/reagent_containers/food/condiment/pack/astrotame=20,/obj/item/reagent_containers/food/condiment/saltshaker=20,/obj/item/reagent_containers/food/condiment/peppermill=20)
 	},
 /turf/open/floor/plasteel/dark,
@@ -70955,8 +70953,7 @@
 "ygi" = (
 /obj/machinery/vending/sustenance{
 	contraband = list(/obj/item/kitchen/knife=6,/obj/item/reagent_containers/food/drinks/coffee=12);
-	desc = "A vending machine which vends food.";
-	product_ads = "Sufficiently healthy."
+	desc = "A vending machine which vends food."
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)

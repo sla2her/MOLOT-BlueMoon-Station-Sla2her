@@ -32,18 +32,25 @@
 	AddElement(/datum/element/update_icon_blocker)
 	. = ..()
 	target = new_employee_name
-	name = "paper- [target] employment contract"
-	add_raw_text("<center>Conditions of Employment</center>\
-	<BR><BR><BR><BR>\
-	This Agreement is made and entered into as of the date of last signature below, by and between [target] (hereafter referred to as SLAVE), \
-	and Nanotrasen (hereafter referred to as the omnipresent and helpful watcher of humanity).\
-	<BR>WITNESSETH:<BR>WHEREAS, SLAVE is a natural born human or humanoid, possessing skills upon which he can aid the omnipresent and helpful watcher of humanity, \
-	who seeks employment in the omnipresent and helpful watcher of humanity.<BR>WHEREAS, the omnipresent and helpful watcher of humanity agrees to sporadically provide payment to SLAVE, \
-	in exchange for permanent servitude.<BR>NOW THEREFORE in consideration of the mutual covenants herein contained, and other good and valuable consideration, the parties hereto mutually agree as follows:\
-	<BR>In exchange for paltry payments, SLAVE agrees to work for the omnipresent and helpful watcher of humanity, \
-	for the remainder of his or her current and future lives.<BR>Further, SLAVE agrees to transfer ownership of his or her soul to the loyalty department of the omnipresent and helpful watcher of humanity.\
-	<BR>Should transfership of a soul not be possible, a lien shall be placed instead.\
-	<BR>Signed,<BR><i>[target]</i>")
+	name =  "Подписка о Корпоративной Лояльности Сотрудника [target]"
+	add_raw_text("<center>Подписка о Корпоративной Лояльности</center>\
+	<BR>\
+	<u><i>Сектор Голубых Лун</i></u>' \
+	<BR><BR>\
+	<u>Центральное Командование НаноТрейзен и Центральное Командование Триглава Синдикат, объединённое Пактом</u>, \
+	а именно Работодатель с одной стороны и <u>[target]</u>, являясь Работником с другой стороны, заключают настоящее соглашение, \
+	а Работник берёт на себя обязательство о нижеследующем: \
+	<BR><BR>\
+	Я, <u>[target]</u>, заключив трудовой договор с корпорациями Пакта, даю настоящую подписку о том, что я, в соответствии с \
+	Галактическим Актом No. 4590 «О защите корпоративных тайн», несу уголовную ответственность за разглашение корпоративной тайны, \
+	несогласованный переход или перевод на работу в несвязанные с Пактом структуры, а также обязуюсь сохранять корпоративную тайну, \
+	самовольно не сменять нанимателя, а также исправно выполнять всю работу, в соответствии со своим трудовым договором, НРП и Космозаконом, \
+	признавая их юрисдикцию в мою сторону. \
+	<BR><BR>\
+	Подпись: <u><i>[target]</u></i> \
+	<BR><BR>\
+	Подписка получена кадровиком #15782, ответственного за кадры Пакта и вступает в силу немедленно.")
+
 
 /obj/item/paper/contract/employment/attack(mob/living/M, mob/living/carbon/human/user)
 	var/deconvert = FALSE
