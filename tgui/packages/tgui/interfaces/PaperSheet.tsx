@@ -112,9 +112,9 @@ const canEdit = (heldItemDetails?: WritingImplement): boolean => {
 const fieldRegex: RegExp = /\[((?:_+))\]/gi;
 
 // Handles the ghost stamp when attempting to stamp paper sheets.
-class PaperSheetStamper extends Component<PaperSheetStamperProps> {
+class PaperSheetStamper extends Component<PaperSheetStamperProps,
+  PaperSheetStamperState> {
   style: null;
-  state: PaperSheetStamperState = { x: 0, y: 0, rotation: 0, yOffset: 0 };
   scrollableRef: RefObject<HTMLDivElement>;
 
   constructor(props, context) {
@@ -122,7 +122,9 @@ class PaperSheetStamper extends Component<PaperSheetStamperProps> {
 
     this.style = null;
     this.scrollableRef = props.scrollableRef;
+    this.state = { x: 0, y: 0, rotation: 0, yOffset: 0 };
   }
+
 
   // Stops propagation of a given event.
   pauseEvent = (e: Event): boolean => {
@@ -287,8 +289,8 @@ export class PrimaryView extends Component {
     this.onScrollHandler = (ev: Event) => {
       const scrollable = ev.currentTarget as HTMLDivElement;
       if (scrollable) {
-        this.lastDistanceFromBottom =
-          scrollable.scrollHeight - scrollable.scrollTop;
+        this.lastDistanceFromBottom
+          = scrollable.scrollHeight - scrollable.scrollTop;
       }
     };
   }
@@ -321,14 +323,14 @@ export class PrimaryView extends Component {
       ''
     );
 
-    const interactMode =
-      held_item_details?.interaction_mode || InteractionType.reading;
+    const interactMode
+      = held_item_details?.interaction_mode || InteractionType.reading;
 
-    const savableData =
-      textAreaText.length || Object.keys(inputFieldData).length;
+    const savableData
+      = textAreaText.length || Object.keys(inputFieldData).length;
 
-    const dmCharacters =
-      raw_text_input?.reduce((lhs: number, rhs: PaperInput) => {
+    const dmCharacters
+      = raw_text_input?.reduce((lhs: number, rhs: PaperInput) => {
         return lhs + rhs.raw_text.length;
       }, 0) || 0;
 
@@ -342,9 +344,8 @@ export class PrimaryView extends Component {
         <Flex direction="column" fillPositionedParent>
           <Flex.Item grow={3} basis={1}>
             <PreviewView
-              key={`${raw_field_input?.length || 0}_${
-                raw_text_input?.length || 0
-              }`}
+              key={`${raw_field_input?.length || 0}_
+              ${raw_text_input?.length || 0}`}
               scrollableRef={this.scrollableRef}
               handleOnScroll={this.onScrollHandler}
               textArea={textAreaText}
@@ -396,11 +397,11 @@ export class PrimaryView extends Component {
                     setTextAreaText(text);
 
                     if (this.scrollableRef.current) {
-                      let thisDistFromBottom =
-                        this.scrollableRef.current.scrollHeight -
-                        this.scrollableRef.current.scrollTop;
-                      this.scrollableRef.current.scrollTop +=
-                        thisDistFromBottom - this.lastDistanceFromBottom;
+                      let thisDistFromBottom
+                        = this.scrollableRef.current.scrollHeight
+                        - this.scrollableRef.current.scrollTop;
+                      this.scrollableRef.current.scrollTop
+                        += thisDistFromBottom - this.lastDistanceFromBottom;
                     }
                   }}
                 />
@@ -584,9 +585,9 @@ export class PreviewView extends Component<PreviewViewProps> {
     // And the input stats are the same (no new text inputs since last time)
     // Then use any cached values.
     if (
-      this.lastReadOnly === readOnly &&
-      this.lastDMInputCount === raw_text_input?.length &&
-      this.lastFieldInputCount === raw_field_input?.length
+      this.lastReadOnly === readOnly
+      && this.lastDMInputCount === raw_text_input?.length
+      && this.lastFieldInputCount === raw_field_input?.length
     ) {
       return { text: this.parsedDMCache, newFieldCount: this.lastFieldCount };
     }
@@ -673,9 +674,8 @@ export class PreviewView extends Component<PreviewViewProps> {
     color: string,
     bold: boolean = false
   ): string => {
-    return `<span style="color:${color};font-family:${font};${
-      bold ? 'font-weight: bold;' : ''
-    }">${text}</span>`;
+    return `<span style="color:${color};font-family:${font};${bold
+      ? 'font-weight: bold;' : ''}">${text}</span>`;
   };
 
   // Parses the given raw text through marked for applying markdown.
@@ -938,8 +938,8 @@ export class PreviewView extends Component<PreviewViewProps> {
   render() {
     const { data } = useBackend<PaperContext>(this.context);
     const { paper_color, held_item_details } = data;
-    const interactMode =
-      held_item_details?.interaction_mode || InteractionType.reading;
+    const interactMode
+      = held_item_details?.interaction_mode || InteractionType.reading;
 
     const dmTextPreviewData = this.createPreviewFromDM();
     let previewText = dmTextPreviewData.text;
