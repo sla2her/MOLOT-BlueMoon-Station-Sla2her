@@ -21,12 +21,12 @@
 	. = ..()
 
 // Liquid Panty Dropper effect
-/mob/living/carbon/proc/clothing_burst(mob/living/carbon/target_user)
+/mob/living/carbon/proc/clothing_burst(throw_clothes = FALSE)
 	// Variable for if the action succeeded
 	var/user_disrobed = FALSE
 
 	// Get worn items
-	var/items = target_user.get_contents()
+	var/items = get_contents()
 
 	// Iterate over worn items
 	for(var/obj/item/item_worn in items)
@@ -35,7 +35,7 @@
 			continue
 
 		// Ignore held items
-		if(target_user.is_holding(item_worn))
+		if(is_holding(item_worn))
 			continue
 
 		// Check for anything covering a body part
@@ -44,15 +44,16 @@
 			user_disrobed = TRUE
 
 			// Drop the target item
-			target_user.dropItemToGround(item_worn, TRUE)
+			dropItemToGround(item_worn, TRUE)
 
 			// Throw item to a random spot
-			item_worn.throw_at(pick(oview(7,get_turf(src))),10,1)
+			if(throw_clothes)
+				item_worn.throw_at(pick(oview(7,get_turf(src))),10,1)
 
 	// When successfully disrobing a target
 	if(user_disrobed)
 		// Display a chat message
-		target_user.visible_message("<span class='userlove'>[target_user] suddenly bursts out of [target_user.ru_ego()] clothes!</span>", "<span class='userlove'>You suddenly burst out of your clothes!</span>")
+		visible_message(span_userlove("[src] вырывается из своей одежды!"), span_userlove("Ты вырываешься из своей одежды!"))
 
 		// Play the ripped poster sound
-		playsound(target_user.loc, 'sound/items/poster_ripped.ogg', 50, 1)
+		playsound(loc, 'sound/items/poster_ripped.ogg', 50, 1)
