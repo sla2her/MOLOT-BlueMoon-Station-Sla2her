@@ -4020,6 +4020,7 @@
 	dir = 2;
 	pixel_x = -24
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark/corner,
 /area/command/bridge)
 "aFC" = (
@@ -30180,6 +30181,18 @@
 	},
 /turf/open/pool,
 /area/commons/fitness/pool)
+"exz" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 3;
+	height = 5;
+	id = "commonmining_home";
+	name = "SS13: Common Mining Dock";
+	roundstart_template = /datum/map_template/shuttle/mining_common/meta;
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "exN" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/tile/purple{
@@ -43742,6 +43755,7 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security)
 "gzR" = (
@@ -55240,6 +55254,7 @@
 	icon_state = "ledge_short";
 	name = "short ledge"
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark{
 	dir = 1;
 	icon_state = "darkfull_plate"
@@ -75631,6 +75646,14 @@
 	icon_state = "floor_whole_alt"
 	},
 /area/hallway/primary/starboard)
+"lgB" = (
+/obj/structure/table,
+/obj/item/flashlight,
+/obj/item/gps/mining{
+	gpstag = "MINE_PUB"
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness)
 "lgC" = (
 /obj/structure/chair/stool{
 	dir = 1
@@ -77052,6 +77075,10 @@
 	icon_state = "plaswhite_whole_alt"
 	},
 /area/medical/medbay/central)
+"lrD" = (
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel/showroomfloor,
+/area/security/warden)
 "lrG" = (
 /turf/open/floor/plasteel/dark{
 	dir = 4;
@@ -96837,6 +96864,12 @@
 	},
 /turf/open/floor/wood,
 /area/engineering/break_room)
+"okm" = (
+/obj/machinery/computer/shuttle/mining/common{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness)
 "okn" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -100248,6 +100281,7 @@
 	dir = 2;
 	pixel_x = 24
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark/side,
 /area/command/bridge)
 "oLp" = (
@@ -103714,6 +103748,14 @@
 	icon_state = "floor_plate"
 	},
 /area/hallway/primary/central)
+"pmY" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	name = "Public Maining Shuttle Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/plasteel,
+/area/commons/fitness)
 "pmZ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Dormitory"
@@ -107933,6 +107975,18 @@
 	icon_state = "darkfull_whole_alt"
 	},
 /area/engineering/storage/tech)
+"pVT" = (
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 3;
+	height = 5;
+	id = "commonmining_home";
+	name = "SS13: Common Mining Dock";
+	roundstart_template = /datum/map_template/shuttle/mining_common/meta;
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "pVV" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 1;
@@ -156359,6 +156413,16 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
+"wSD" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	name = "Public Maining Shuttle Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness)
 "wSK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -173124,7 +173188,7 @@ boa
 boa
 boa
 boa
-boa
+pVT
 boa
 boa
 boa
@@ -178558,7 +178622,7 @@ lXA
 lXA
 ngu
 oDp
-boa
+oDp
 boa
 boa
 boa
@@ -178813,11 +178877,11 @@ jpg
 nVy
 nVy
 tpF
-tAA
+ouM
+okm
 oDp
-boa
-boa
-boa
+oDp
+oDp
 boa
 boa
 boa
@@ -179070,12 +179134,12 @@ aOc
 oDp
 oDp
 vNH
-tAA
-oDp
-boa
-boa
-boa
-boa
+ouM
+ouM
+pmY
+ouM
+wSD
+exz
 boa
 boa
 boa
@@ -179327,11 +179391,11 @@ aOc
 boa
 oDp
 vNH
-tAA
+ouM
+lgB
 oDp
-boa
-boa
-boa
+oDp
+oDp
 boa
 boa
 boa
@@ -179586,7 +179650,7 @@ oDp
 vNH
 tAA
 oDp
-boa
+oDp
 boa
 boa
 boa
@@ -262029,7 +262093,7 @@ lSG
 oIH
 tzw
 aVe
-rrA
+lrD
 ths
 cDf
 njo

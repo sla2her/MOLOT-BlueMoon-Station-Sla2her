@@ -627,7 +627,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 	if(announce_contents)
 		priority_announce(command_report_content, null, report_sound, has_important_message = TRUE)
-	print_command_report(command_report_content, "[announce_contents ? "" : "Секретный "] Отчёт [command_name]", !announce_contents)
+	print_command_report(command_report_content, "[announce_contents ? "" : "Секретно:"] [command_name]", !announce_contents)
 
 	change_command_name(original_command_name)
 

@@ -1,7 +1,7 @@
 #define INSULTS_FILE "insult.json"
 
 /mob
-	var/nextsoundemote = 1
+	var/nextsoundemote = 10
 
 /datum/emote/living/insult
 	key = "insult"

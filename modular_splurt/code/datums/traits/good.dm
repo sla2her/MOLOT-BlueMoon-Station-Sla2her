@@ -218,7 +218,7 @@
 	value = 2
 
 /datum/quirk/ropebunny/add()
-	.=..()
+	. = ..()
 	var/mob/living/carbon/human/H = quirk_holder
 	if (!H)
 		return
@@ -275,3 +275,17 @@
 // Quirk examine text.
 /datum/quirk/hallowed/proc/quirk_examine_Hallowed(atom/examine_target, mob/living/carbon/human/examiner, list/examine_list)
 	examine_list += "[quirk_holder.ru_who(TRUE)] излучает священную силу..."
+
+/datum/quirk/bomber
+	name = "Подрывник-Самоубийца"
+	desc = "Благодаря своим связям с Красной Бригадой вы получили специальный имплант для самоуничтожения! Ну или почему-то вы решили ввести себе какую-то зелёную штуку из имплантера с мусорки и теперь вы научились делать что-то потрясное..."
+	value = 1
+
+/datum/quirk/bomber/add()
+	. = ..()
+	var/mob/living/carbon/human/H = quirk_holder
+	if (!H)
+		return
+	var/obj/item/implant/explosive/E = new
+	E.implant(H)
+	H.update_icons()
