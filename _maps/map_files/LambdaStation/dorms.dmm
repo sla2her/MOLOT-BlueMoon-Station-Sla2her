@@ -13451,7 +13451,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
@@ -14852,7 +14852,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "Ma" = (

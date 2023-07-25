@@ -227,11 +227,11 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aaQ" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aaR" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aaS" = (
@@ -562,14 +562,14 @@
 /turf/open/floor/carpet/royalblack,
 /area/eventmap/inside)
 "abW" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1;
 	icon_state = "sofamiddle"
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "abX" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -625,13 +625,13 @@
 /area/eventmap/inside)
 "acg" = (
 /obj/machinery/light/small,
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "ach" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -1269,7 +1269,7 @@
 /turf/open/floor/spooktime/cobble/roadmid,
 /area/eventmap/outside)
 "adX" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood{
@@ -1277,7 +1277,7 @@
 	},
 /area/eventmap/inside)
 "adY" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood{
@@ -3107,7 +3107,7 @@
 /turf/open/floor/sepia,
 /area/eventmap/inside)
 "ajq" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood{
@@ -5867,7 +5867,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/eventmap/inside)
 "arc" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -6560,7 +6560,7 @@
 /turf/closed/wall/mineral/snow,
 /area/eventmap/inside)
 "atl" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -10701,7 +10701,7 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aER" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/wood,
 /area/eventmap/mountaininside)
 "aES" = (
@@ -12519,7 +12519,7 @@
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
 "aKm" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -13216,7 +13216,7 @@
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
 "aMl" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/storage/daki,
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
@@ -15213,7 +15213,7 @@
 /turf/open/floor/sepia,
 /area/eventmap/mountaininside)
 "aTi" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/eventmap/mountaininside)
 "aTj" = (
@@ -15940,7 +15940,7 @@
 /turf/open/floor/wood,
 /area/eventmap/mountaininside)
 "aYp" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/item/flashlight/seclite,
 /turf/open/floor/carpet/red,
 /area/eventmap/mountaininside)
@@ -16458,7 +16458,7 @@
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)
 "bdO" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/toy/cards/deck/cas,
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)
@@ -16468,7 +16468,7 @@
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)
 "bdQ" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/item/toy/cards/deck/cas/black,
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)
@@ -16506,7 +16506,7 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "beA" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/structure/cable/yellow{
@@ -16524,7 +16524,7 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "beE" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/structure/cable/yellow{
@@ -16616,7 +16616,7 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "bfD" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood,
 /area/eventmap/inside)

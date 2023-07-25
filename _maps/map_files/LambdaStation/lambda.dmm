@@ -17037,7 +17037,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "aEv" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/plasteel/grimy,
 /area/hallway/primary/fore)
 "aEw" = (
@@ -37977,7 +37977,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bDl" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/status_display/evac{
 	pixel_y = 32
 	},
@@ -38004,7 +38004,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bDn" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
@@ -46879,7 +46879,7 @@
 /area/space/nearstation)
 "caW" = (
 /obj/effect/turf_decal/tile/blue,
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/effect/landmark/start/assistant,
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 9
@@ -51212,7 +51212,7 @@
 /area/engineering/transit_tube)
 "coy" = (
 /obj/machinery/light,
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/machinery/status_display/ai{
@@ -51340,7 +51340,7 @@
 /turf/open/space/basic,
 /area/engineering/main)
 "coQ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/machinery/power/apc{
@@ -55823,7 +55823,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "cAs" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -59835,7 +59835,7 @@
 /turf/open/floor/plating,
 /area/construction)
 "cNr" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/grimy,

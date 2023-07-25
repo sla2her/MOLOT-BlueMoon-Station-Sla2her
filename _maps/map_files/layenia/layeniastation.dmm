@@ -2964,7 +2964,7 @@
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "azx" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood{
@@ -6080,7 +6080,7 @@
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/ce)
 "aXE" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "aXF" = (
@@ -22711,7 +22711,7 @@
 	},
 /area/commons/fitness)
 "dtd" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/loading_area{
 	color = "#55391A";
 	dir = 1;
@@ -22998,7 +22998,7 @@
 /turf/open/floor/plating/snowed,
 /area/hallway/secondary/exit)
 "duX" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -24008,7 +24008,7 @@
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hos)
 "dCn" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/structure/window,
@@ -32290,7 +32290,7 @@
 	icon_state = "siding_wood_line";
 	name = "wood"
 	},
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/structure/window{
 	dir = 1
 	},
@@ -35576,7 +35576,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "fkZ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/loading_area{
@@ -39879,7 +39879,7 @@
 /turf/open/floor/plating,
 /area/cargo/sorting)
 "fTs" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	desc = "More inviting than the average couch.";
 	dir = 8;
 	name = "comfy couch"
@@ -43877,7 +43877,7 @@
 /turf/open/floor/engine,
 /area/science/observatory)
 "gxR" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/effect/turf_decal/loading_area{
 	color = "#55391A";
 	dir = 1;
@@ -45024,7 +45024,7 @@
 /turf/open/floor/grass/grass3,
 /area/ruin/unpowered/no_grav)
 "gHp" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/structure/window{
@@ -45224,7 +45224,7 @@
 	icon_state = "siding_wood_line";
 	name = "wood"
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/structure/window{
 	dir = 1
 	},
@@ -49055,7 +49055,7 @@
 	dir = 8;
 	pixel_x = -7
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -55105,7 +55105,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
 "ifs" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/machinery/newscaster{
@@ -61479,7 +61479,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/grimy{
@@ -64234,7 +64234,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "jwi" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /obj/effect/turf_decal/loading_area{
@@ -67542,7 +67542,7 @@
 	},
 /area/engineering/lobby)
 "jTb" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/light/small{
 	dir = 8;
 	pixel_x = -7
@@ -67720,7 +67720,7 @@
 	},
 /area/service/chapel/main)
 "jUw" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/firealarm{
 	dir = 2;
 	pixel_x = -24
@@ -72434,7 +72434,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark{
@@ -72875,7 +72875,7 @@
 /obj/machinery/light/small{
 	pixel_y = -1
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet,
@@ -75028,7 +75028,7 @@
 	},
 /area/medical/virology)
 "kZl" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/loading_area{
 	color = "#55391A";
 	dir = 1;
@@ -76951,7 +76951,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/engineering)
 "lna" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -77599,7 +77599,7 @@
 	icon_state = "siding_wood_line";
 	name = "wood"
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/machinery/light{
@@ -80151,7 +80151,7 @@
 	},
 /area/security/checkpoint/science)
 "lJp" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/wood{
@@ -82707,7 +82707,7 @@
 	layer = 2.9
 	},
 /obj/structure/window/reinforced,
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/loading_area{
@@ -87992,7 +87992,7 @@
 	},
 /area/medical/medbay/central)
 "mOe" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/structure/window{
@@ -89497,7 +89497,7 @@
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/unpowered/no_grav)
 "mYd" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -91341,7 +91341,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/office)
 "nnA" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/structure/window{
@@ -92379,7 +92379,7 @@
 	},
 /area/hallway/primary/port/fore)
 "nvH" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/blue,
@@ -93554,7 +93554,7 @@
 	icon_state = "siding_wood_corner";
 	name = "wood corner"
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood{
@@ -94756,7 +94756,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark{
@@ -95196,7 +95196,7 @@
 	},
 /area/command/gateway)
 "nRl" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -98479,7 +98479,7 @@
 	},
 /area/ruin/unpowered/no_grav)
 "osI" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -99715,7 +99715,7 @@
 /turf/open/space/basic,
 /area/space)
 "oCb" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/carpet,
 /area/commons/dorms)
 "oCe" = (
@@ -100902,7 +100902,7 @@
 /turf/open/floor/plasteel/dark,
 /area/maintenance/disposal/incinerator)
 "oLp" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/item/grown/rose,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
@@ -103220,7 +103220,7 @@
 /turf/open/floor/plasteel,
 /area/maintenance/fore)
 "pcf" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "floor_plate"
@@ -105780,7 +105780,7 @@
 	},
 /area/security/brig)
 "pwU" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/machinery/newscaster{
 	pixel_y = 28
 	},
@@ -106917,7 +106917,7 @@
 	},
 /area/service/hydroponics/garden)
 "pFD" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	desc = "More inviting than the average couch.";
 	dir = 8;
 	name = "comfy couch"
@@ -108664,7 +108664,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/chapel/main)
 "pUG" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/carpet,
 /area/security/brig)
 "pUH" = (
@@ -111318,7 +111318,7 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered/no_grav)
 "qqE" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/blue,
@@ -113996,7 +113996,7 @@
 /turf/open/floor/carpet/blue,
 /area/ai_monitored/turret_protected/aisat/hallway)
 "qKR" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/structure/window{
@@ -116886,7 +116886,7 @@
 	icon_state = "drain_corner";
 	name = "drain"
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/grimy{
@@ -116959,7 +116959,7 @@
 /turf/open/floor/plating,
 /area/commons/fitness)
 "riA" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	desc = "More inviting than the average couch.";
 	dir = 8;
 	name = "comfy couch"
@@ -118954,7 +118954,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "ryx" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -120644,7 +120644,7 @@
 	},
 /area/medical/medbay/central)
 "rLb" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/structure/window{
@@ -123597,7 +123597,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	desc = "More inviting than the average couch.";
 	dir = 8;
 	name = "comfy couch"
@@ -126095,7 +126095,7 @@
 /turf/closed/wall/mineral/lead,
 /area/engineering/lobby)
 "sAi" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -129631,7 +129631,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
 "sZr" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -130231,7 +130231,7 @@
 	icon_state = "siding_wood_line";
 	name = "wood"
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -135417,7 +135417,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/storage/eva)
 "tPb" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -136948,7 +136948,7 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered/no_grav)
 "ubz" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/loading_area{
@@ -139081,7 +139081,7 @@
 	},
 /area/service/theater)
 "utt" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood{
@@ -140130,7 +140130,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "uCl" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /obj/effect/turf_decal/loading_area{
@@ -141180,7 +141180,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "uKR" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel{
@@ -141276,7 +141276,7 @@
 	},
 /area/medical/medbay/central)
 "uLB" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/loading_area{
 	color = "#55391A";
 	dir = 5;
@@ -141466,7 +141466,7 @@
 	},
 /area/medical/medbay/central)
 "uNt" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "floor_plate"
@@ -147894,7 +147894,7 @@
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/ce)
 "vJf" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -152134,7 +152134,7 @@
 	icon_state = "siding_wood_line";
 	name = "wood"
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood{
 	icon_state = "wood_parquet";
 	name = "parquet"
@@ -153152,7 +153152,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "wua" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -153892,7 +153892,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/grimy{
@@ -153920,7 +153920,7 @@
 	},
 /area/hallway/primary/central)
 "wAs" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	desc = "More inviting than the average couch.";
 	dir = 8;
 	name = "comfy couch"
@@ -155065,7 +155065,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "wIm" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet{
@@ -157906,7 +157906,7 @@
 /turf/open/floor/grass/grass3,
 /area/medical/medbay/central)
 "xdJ" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	desc = "More inviting than the average couch.";
 	dir = 8;
 	name = "comfy couch"
@@ -158310,7 +158310,7 @@
 /turf/open/openspace,
 /area/space)
 "xhB" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "xhE" = (
@@ -163982,7 +163982,7 @@
 	},
 /area/hallway/primary/fore)
 "xVF" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/loading_area{
 	icon_state = "ledge_short";
 	name = "short ledge"

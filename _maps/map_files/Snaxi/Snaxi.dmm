@@ -879,7 +879,7 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "abz" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/structure/sign/poster/official/fruit_bowl{
@@ -10198,7 +10198,7 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "aDX" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/machinery/firealarm{
@@ -10645,7 +10645,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
 "aLG" = (
@@ -17886,7 +17886,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/supply)
 "enP" = (
@@ -21247,7 +21247,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
 "guV" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -30239,7 +30239,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -31225,7 +31225,7 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
 	dir = 8
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -36966,7 +36966,7 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 9
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -38271,7 +38271,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "rqG" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/machinery/firealarm{
@@ -46194,7 +46194,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "wqe" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,

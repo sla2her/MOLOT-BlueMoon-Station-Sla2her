@@ -2947,7 +2947,7 @@
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "bwt" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/wood,
 /area/service/bar)
 "bwy" = (
@@ -14530,7 +14530,7 @@
 /turf/open/floor/carpet,
 /area/service/lawoffice)
 "hBm" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/machinery/airalarm{
@@ -17152,7 +17152,7 @@
 /turf/open/floor/wood,
 /area/service/library)
 "iRB" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -17834,7 +17834,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/sorting)
 "jma" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/commons/dorms)
 "jmc" = (
@@ -21339,7 +21339,7 @@
 /turf/open/floor/plasteel,
 /area/security/office)
 "lhN" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/wood,
 /area/commons/dorms)
 "lid" = (
@@ -21612,7 +21612,7 @@
 /turf/open/floor/plasteel,
 /area/command/bridge)
 "lnV" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/machinery/light{
@@ -26319,7 +26319,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "nUt" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/carpet,
 /area/commons/dorms)
 "nUF" = (
@@ -28700,7 +28700,7 @@
 /turf/open/floor/plating/airless,
 /area/engineering/atmos)
 "oZI" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -35643,7 +35643,7 @@
 /turf/open/floor/plasteel/white,
 /area/command/heads_quarters/rd)
 "sxS" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -38270,7 +38270,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
 "tOj" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/machinery/button/door{
@@ -40133,7 +40133,7 @@
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
 "uGX" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -46434,7 +46434,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "xNj" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,

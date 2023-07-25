@@ -2528,7 +2528,7 @@
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "bIc" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/item/radio/intercom{
@@ -11325,7 +11325,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ilb" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/service/bar)
 "ilf" = (
@@ -26282,7 +26282,7 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "tyx" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -29922,7 +29922,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "wlK" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},

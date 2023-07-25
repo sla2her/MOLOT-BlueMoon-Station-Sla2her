@@ -138,11 +138,11 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/powered)
 "G" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/engine,
 /area/ruin/powered)
 "H" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/item/bedsheet/ian,
 /turf/open/floor/engine,
 /area/ruin/powered)

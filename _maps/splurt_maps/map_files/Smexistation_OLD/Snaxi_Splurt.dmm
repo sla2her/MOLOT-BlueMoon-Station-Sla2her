@@ -7094,7 +7094,7 @@
 /turf/open/floor/carpet,
 /area/service/library)
 "bPm" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -11413,7 +11413,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "dyb" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -13722,7 +13722,7 @@
 /turf/closed/wall,
 /area/commons/dorms)
 "eGx" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/structure/sign/poster/random{
@@ -16957,7 +16957,7 @@
 /turf/open/floor/plasteel,
 /area/medical/genetics)
 "gbt" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /obj/effect/landmark/start/assistant,
@@ -17809,7 +17809,7 @@
 /turf/open/floor/plasteel,
 /area/medical/chemistry)
 "guV" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -18518,7 +18518,7 @@
 /turf/open/floor/plating,
 /area/maintenance/aft/secondary)
 "gNq" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -23235,7 +23235,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -23553,7 +23553,7 @@
 /obj/machinery/newscaster{
 	pixel_x = 32
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet,
@@ -24835,7 +24835,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/commons/toilet)
 "jDK" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -25172,7 +25172,7 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
 	dir = 8
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -27308,7 +27308,7 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 9
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -30889,7 +30889,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -31637,7 +31637,7 @@
 /turf/open/floor/grass/grass0,
 /area/hallway/primary/aft)
 "mKD" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/carpet,
 /area/hallway/primary/starboard)
 "mKO" = (
@@ -33617,7 +33617,7 @@
 /obj/structure/railing/corner{
 	dir = 4
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/carpet,
 /area/hallway/primary/starboard)
 "nEJ" = (
@@ -33849,7 +33849,7 @@
 /turf/open/floor/plasteel/stairs/left,
 /area/hallway/primary/starboard/fore)
 "nKf" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/plasteel/grimy,
 /area/service/chapel/main)
 "nKO" = (
@@ -34626,7 +34626,7 @@
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/lab)
 "oaY" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/plasteel/grimy,
 /area/service/chapel/main)
 "oba" = (
@@ -41440,7 +41440,7 @@
 /turf/open/floor/plasteel,
 /area/medical/chemistry)
 "qVH" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel/grimy,
@@ -41933,7 +41933,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard/fore)
 "rgG" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/plasteel/grimy,
@@ -42107,7 +42107,7 @@
 /turf/open/floor/plasteel/dark,
 /area/tcommsat/computer)
 "rkw" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel/grimy,
@@ -46888,7 +46888,7 @@
 /turf/open/floor/plating,
 /area/construction)
 "ttS" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/plasteel/grimy,
@@ -52309,7 +52309,7 @@
 /turf/open/floor/plasteel/dark,
 /area/engineering/storage/tech)
 "vTF" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -52386,7 +52386,7 @@
 /turf/open/floor/plasteel/dark,
 /area/engineering/storage/tech)
 "vUF" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/machinery/computer/security/telescreen/entertainment{
@@ -53356,7 +53356,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "wqe" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,

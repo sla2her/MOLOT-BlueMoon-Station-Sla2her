@@ -1339,7 +1339,7 @@
 /area/commons/storage/auxiliary)
 "aAw" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -1363,7 +1363,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -20671,7 +20671,7 @@
 /area/ai_monitored/command/storage/satellite)
 "hif" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -25339,7 +25339,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
 "iLC" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "iLI" = (
@@ -26318,7 +26318,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/civilian)
 "jdM" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -34387,7 +34387,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -46765,7 +46765,7 @@
 	},
 /area/hallway/secondary/civilian)
 "qjD" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -48140,7 +48140,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/genetics/cloning)
 "qKE" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/effect/decal/cleanable/semen,
 /turf/open/floor/wood,
 /area/maintenance/bar)
@@ -48524,7 +48524,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "qRh" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -50033,7 +50033,7 @@
 /area/service/bar)
 "rrD" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -53770,7 +53770,7 @@
 /turf/open/floor/grass/grass0,
 /area/security/prison/garden)
 "sFF" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet,
@@ -56613,7 +56613,7 @@
 /turf/open/floor/plasteel/dark,
 /area/science/mixing)
 "tFV" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/item/toy/plush/beeplushie{
@@ -57883,7 +57883,7 @@
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "tYv" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet{
@@ -61472,7 +61472,7 @@
 	name = "Cell 1";
 	pixel_x = -32
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/plasteel,

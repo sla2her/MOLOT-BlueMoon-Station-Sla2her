@@ -819,7 +819,7 @@
 /turf/open/floor/grass/grass0,
 /area/awaymission/jungleresort)
 "lB" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -2851,7 +2851,7 @@
 /turf/closed/wall/mineral/wood,
 /area/awaymission/jungleresort)
 "Mx" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/wood,
 /area/awaymission/jungleresort)
 "MD" = (
@@ -3077,7 +3077,7 @@
 /turf/open/floor/grass/grass0,
 /area/awaymission/jungleresort)
 "PW" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,

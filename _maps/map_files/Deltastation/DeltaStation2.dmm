@@ -92769,7 +92769,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "lMF" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -98719,7 +98719,7 @@
 /turf/open/floor/plating,
 /area/engineering/break_room)
 "nKy" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/machinery/light{
@@ -107890,7 +107890,7 @@
 /turf/closed/wall/r_wall,
 /area/engineering/supermatter)
 "qVe" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/structure/sign/painting/library{
@@ -116533,7 +116533,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,

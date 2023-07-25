@@ -55686,7 +55686,7 @@
 /turf/open/floor/plasteel/dark,
 /area/commons/cryopod)
 "hYX" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /obj/machinery/power/apc/auto_name/east,
@@ -64900,7 +64900,7 @@
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/port/aft)
 "mTh" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/machinery/light{

@@ -5229,7 +5229,7 @@
 	},
 /area/service/chapel/main)
 "apa" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "chapel"
@@ -5293,7 +5293,7 @@
 /turf/open/floor/wood,
 /area/commons/fitness)
 "apl" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/clothing/head/beret/black,
 /turf/open/floor/wood,
 /area/commons/fitness)
@@ -5340,7 +5340,7 @@
 /turf/closed/wall,
 /area/hallway/secondary/entry)
 "apw" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/landmark/start/assistant,
 /obj/machinery/firealarm{
 	pixel_y = 26
@@ -5406,7 +5406,7 @@
 /turf/closed/wall/r_wall,
 /area/security/office)
 "apL" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -5558,7 +5558,7 @@
 /turf/open/floor/plasteel/white,
 /area/commons/fitness/cogpool)
 "aqd" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/camera{
 	c_tag = "Chapel - Fore"
 	},
@@ -5586,7 +5586,7 @@
 /turf/open/floor/wood,
 /area/commons/fitness)
 "aqh" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/commons/fitness)
 "aqi" = (
@@ -5955,7 +5955,7 @@
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "arm" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/wood,
 /area/commons/fitness)
@@ -7294,7 +7294,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "auW" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -10723,7 +10723,7 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness)
 "aCP" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/tile/green{
 	dir = 4
 	},
@@ -11816,7 +11816,7 @@
 /turf/open/floor/plating,
 /area/security/checkpoint)
 "aFl" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
@@ -14444,7 +14444,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/chapel/office)
 "aKY" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -20362,7 +20362,7 @@
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "bav" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/firealarm{
 	pixel_y = 26
 	},
@@ -20539,7 +20539,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "baR" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/landmark/start/lawyer,
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
@@ -22917,7 +22917,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
 "bhq" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/instrument/recorder,
 /turf/open/floor/plasteel/dark,
 /area/commons/lounge/jazz)
@@ -22953,7 +22953,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
 "bhv" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/machinery/firealarm{
 	pixel_y = 26
 	},
@@ -23114,7 +23114,7 @@
 /turf/open/floor/plasteel,
 /area/security/office)
 "bhO" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/light_switch{
 	pixel_y = 24
 	},
@@ -23260,7 +23260,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/qm)
 "bid" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /mob/living/simple_animal/pet/cat/Proc,
 /turf/open/floor/plasteel/dark,
 /area/commons/lounge/jazz)
@@ -37879,7 +37879,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/miningoffice)
 "bRH" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/radio/intercom{
 	name = "Station Intercom (Common)";
 	pixel_y = 29
@@ -37890,7 +37890,7 @@
 /turf/closed/wall/r_wall,
 /area/medical/medbay/central)
 "bRJ" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/landmark/start/assistant,
 /obj/machinery/status_display{
 	pixel_y = 32
@@ -40853,7 +40853,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bYu" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -40873,7 +40873,7 @@
 /turf/closed/wall,
 /area/science/robotics/mechbay)
 "bYw" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -50830,7 +50830,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/chapel)
 "cvK" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -52935,7 +52935,7 @@
 	dir = 1;
 	light_color = "#ffc1c1"
 	},
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/reagent_containers/food/drinks/bottle/vermouth/empty,
 /obj/item/reagent_containers/food/snacks/grown/cannabis{
 	pixel_x = -4;
@@ -52951,7 +52951,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 26
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/item/storage/box/hug/medical,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass{
@@ -62681,7 +62681,7 @@
 /turf/open/floor/plating,
 /area/commons/fitness/cogpool)
 "fUq" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel,
 /area/security/prison/rec)
@@ -67173,7 +67173,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison/cells)
 "qaH" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -68051,7 +68051,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison/rec)
 "rSi" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -68700,7 +68700,7 @@
 /turf/open/floor/plating,
 /area/security/prison/work)
 "tlw" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -69285,7 +69285,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison/upper)
 "uxF" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet,
@@ -69930,7 +69930,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "vMu" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -70057,7 +70057,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison/upper)
 "wbi" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet,

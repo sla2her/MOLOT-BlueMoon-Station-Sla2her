@@ -8865,7 +8865,7 @@
 	},
 /area/maintenance/fore)
 "apS" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57";
 	dir = 8
 	},
@@ -24493,7 +24493,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/medbay/central)
 "aQp" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57"
 	},
 /obj/effect/turf_decal/tile/neutral,
@@ -25078,7 +25078,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/theater)
 "aRp" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57";
 	dir = 4
 	},
@@ -26765,7 +26765,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/checkpoint/medical)
 "aTJ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57"
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -27839,7 +27839,7 @@
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/ai_upload)
 "aVd" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57"
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -29590,7 +29590,7 @@
 	dir = 4;
 	name = "diner camera"
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57";
 	dir = 1
 	},
@@ -41583,7 +41583,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "brj" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57"
 	},
 /obj/effect/turf_decal/tile/neutral,
@@ -41649,7 +41649,7 @@
 /turf/open/floor/plating,
 /area/service/chapel/office)
 "brq" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57"
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -41822,7 +41822,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57";
 	dir = 1
 	},
@@ -41865,7 +41865,7 @@
 	dir = 1;
 	pixel_y = -26
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57";
 	dir = 1
 	},
@@ -41889,7 +41889,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57";
 	dir = 1
 	},
@@ -78374,7 +78374,7 @@
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
 "cDW" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57"
 	},
 /turf/open/floor/wood{
@@ -83625,7 +83625,7 @@
 /turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "kdk" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/structure/window/reinforced/tinted,
@@ -85440,7 +85440,7 @@
 /turf/open/floor/wood,
 /area/commons/vacant_room/office)
 "uud" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/structure/window/reinforced/tinted,

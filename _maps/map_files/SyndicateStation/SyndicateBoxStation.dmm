@@ -2683,7 +2683,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -3761,7 +3761,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -8385,7 +8385,7 @@
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "atb" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -13566,7 +13566,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/service/chapel/office)
 "aIH" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/machinery/firealarm{
@@ -52839,7 +52839,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "fcd" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/plating{
@@ -55199,7 +55199,7 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -57865,7 +57865,7 @@
 	dir = 4;
 	pixel_x = -22
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -58473,7 +58473,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/maintenance/bar)
 "mpY" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/machinery/light{
@@ -59533,7 +59533,7 @@
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "nLP" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/effect/landmark/event_spawn,
@@ -59816,7 +59816,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/commons/dorms)
 "ohq" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/mineral/plastitanium,
 /area/commons/fitness/recreation)
 "oiY" = (
@@ -61446,7 +61446,7 @@
 /turf/open/space,
 /area/space/nearstation)
 "qLy" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -61978,7 +61978,7 @@
 	},
 /area/maintenance/port/fore)
 "rwp" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/mineral/plastitanium,
 /area/commons/fitness/recreation)
 "rwA" = (
@@ -64353,7 +64353,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/secondary/entry)
 "uQQ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -65811,7 +65811,7 @@
 /area/science/robotics/lab)
 "wWW" = (
 /obj/effect/landmark/start/assistant,
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/radio/intercom{
 	pixel_x = -25
 	},

@@ -1687,7 +1687,7 @@
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "gB" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -10767,7 +10767,7 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/iron/white/diagonal,
