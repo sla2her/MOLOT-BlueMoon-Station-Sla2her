@@ -2859,7 +2859,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/chapel/office)
 "bus" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/wood,
 /area/service/bar)
 "buN" = (
@@ -4846,7 +4846,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "cwn" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/service/bar)
 "cwv" = (
@@ -5127,7 +5127,7 @@
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "cDa" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/wood,
 /area/commons/dorms)
 "cDc" = (
@@ -42933,7 +42933,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
 "wac" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/commons/dorms)
 "was" = (
@@ -43700,7 +43700,7 @@
 	},
 /area/hallway/primary/aft)
 "wwM" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/wood,
@@ -43843,7 +43843,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "wzK" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/carpet,
 /area/commons/dorms)
 "wzR" = (

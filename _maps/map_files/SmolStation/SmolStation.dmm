@@ -11843,7 +11843,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/maintenance/central)
 "iEU" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/service/bar)
 "iFg" = (
@@ -17668,7 +17668,7 @@
 /turf/open/floor/plating,
 /area/security/brig)
 "mNe" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 9
 	},

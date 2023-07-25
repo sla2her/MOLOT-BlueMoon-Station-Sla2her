@@ -4492,7 +4492,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/ai_monitored/turret_protected/aisat_interior)
 "alD" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/effect/landmark/start/cyborg,
 /turf/open/floor/carpet/royalblack,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -9985,7 +9985,7 @@
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "azr" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -11500,7 +11500,7 @@
 /turf/open/floor/festive/cobblestone,
 /area/edina/street/intersection/princessperimeter/north)
 "aEf" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/commons/storage/tools)
 "aEg" = (
@@ -28044,7 +28044,7 @@
 /turf/open/indestructible/hotelwood,
 /area/service/chapel/main/monastery)
 "btZ" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -33988,11 +33988,11 @@
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bHf" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bHg" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bHh" = (
@@ -34013,12 +34013,12 @@
 /turf/open/floor/carpet/royalblack,
 /area/service/bar/atrium)
 "bHk" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/effect/decal/festive/fairylights,
 /turf/open/floor/carpet/royalblack,
 /area/service/bar/atrium)
 "bHl" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /obj/effect/decal/festive/fairylights,
 /turf/open/floor/carpet/royalblack,
 /area/service/bar/atrium)
@@ -38516,11 +38516,11 @@
 /turf/open/floor/wood,
 /area/service/cafeteria/lunchroom)
 "bQr" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/service/cafeteria/lunchroom)
 "bQs" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/wood,
 /area/service/cafeteria/lunchroom)
 "bQt" = (
@@ -49689,7 +49689,7 @@
 /turf/open/floor/festive/wooden/wooden1,
 /area/cargo/qm)
 "cqM" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/festive/wooden/wooden1,
 /area/cargo/qm)
 "cqN" = (
@@ -52333,11 +52333,11 @@
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "cyh" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "cyi" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#706891"

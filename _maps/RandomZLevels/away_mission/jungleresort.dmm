@@ -792,7 +792,7 @@
 /turf/closed/wall/rust,
 /area/awaymission/jungleresort)
 "le" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /obj/machinery/light{
 	dir = 4
 	},

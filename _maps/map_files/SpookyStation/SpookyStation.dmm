@@ -450,7 +450,7 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "abC" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "abD" = (
@@ -13708,7 +13708,7 @@
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)
 "aNG" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/eventmap/mountaininside)
 "aNH" = (
@@ -15945,7 +15945,7 @@
 /turf/open/floor/carpet/red,
 /area/eventmap/mountaininside)
 "aYr" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/carpet/red,
 /area/eventmap/mountaininside)
 "aYs" = (
@@ -16463,7 +16463,7 @@
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)
 "bdP" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/item/toy/cards/deck/syndicate,
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)

@@ -15377,7 +15377,7 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 4
 	},
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "frL" = (
@@ -15536,7 +15536,7 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
 	},
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "fuB" = (
@@ -42675,7 +42675,7 @@
 /turf/closed/wall,
 /area/engineering/break_room)
 "rwz" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/plasteel/grimy,
 /area/service/chapel/main)
 "rwR" = (
@@ -44107,7 +44107,7 @@
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "siY" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/plasteel/grimy,
 /area/service/chapel/main)
 "sjk" = (

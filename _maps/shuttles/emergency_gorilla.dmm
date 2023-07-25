@@ -288,16 +288,16 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bf" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /mob/living/simple_animal/hostile/gorilla,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bg" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bh" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /mob/living/simple_animal/hostile/gorilla,
 /turf/open/floor/plasteel/shuttle,
 /area/shuttle/escape)
@@ -364,7 +364,7 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Pi" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/machinery/light/small{
 	dir = 1
 	},

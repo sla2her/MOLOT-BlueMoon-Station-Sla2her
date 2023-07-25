@@ -17053,11 +17053,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/plasteel/grimy,
 /area/hallway/primary/fore)
 "aEx" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/plasteel/grimy,
 /area/hallway/primary/fore)
 "aEy" = (
@@ -38010,7 +38010,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bDm" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/item/radio/intercom{
 	broadcasting = 1;
 	frequency = 1485;
