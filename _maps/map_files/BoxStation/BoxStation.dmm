@@ -52227,6 +52227,9 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "kJl" = (
