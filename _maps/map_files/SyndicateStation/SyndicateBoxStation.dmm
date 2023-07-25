@@ -52528,8 +52528,6 @@
 	id = "lawyer_blast";
 	name = "privacy door"
 	},
-/obj/effect/spawner/structure/window/reinforced,
-/obj/effect/spawner/structure/window/plastitanium,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/service/lawoffice)
@@ -52924,19 +52922,6 @@
 /obj/effect/landmark/start/paramedic,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/central)
-"fba" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/door/poddoor/preopen{
-	id = "ntr"
-	},
-/obj/machinery/button/door{
-	id = "ntr";
-	name = "Representative Office Shutters";
-	pixel_y = -25
-	},
-/obj/effect/spawner/structure/window/plastitanium,
-/turf/open/floor/plating,
-/area/service/lawoffice)
 "fbp" = (
 /obj/structure/tank_dispenser,
 /obj/effect/turf_decal/bot,
@@ -53583,6 +53568,12 @@
 /obj/machinery/camera{
 	c_tag = "Sauna Room";
 	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "ntr";
+	name = "Privacy Shutters";
+	pixel_x = 25;
+	pixel_y = 8
 	},
 /turf/open/floor/carpet,
 /area/service/lawoffice)
@@ -55411,15 +55402,6 @@
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/starboard)
-"ivf" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "lawyer_blast";
-	name = "privacy door"
-	},
-/obj/effect/spawner/structure/window/reinforced,
-/obj/effect/spawner/structure/window/plastitanium,
-/turf/open/floor/plating,
-/area/service/lawoffice)
 "ivJ" = (
 /obj/structure/curtain{
 	pixel_y = -32
@@ -57743,7 +57725,6 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
 "lpV" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "ntr"
 	},
@@ -57994,7 +57975,6 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
 "lBK" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
@@ -62583,17 +62563,6 @@
 	smooth = 2
 	},
 /area/engineering/engine_smes)
-"sdh" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp/green{
-	pixel_x = 1;
-	pixel_y = 5
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "ntr"
-	},
-/turf/open/floor/wood,
-/area/service/lawoffice)
 "see" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/mineral/plastitanium/red,
@@ -64394,9 +64363,6 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/obj/machinery/door/poddoor/preopen{
-	id = "ntr"
-	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "uFV" = (
@@ -94569,7 +94535,7 @@ gFJ
 lDT
 koO
 ltB
-sdh
+are
 uFT
 eRj
 wWk
@@ -95339,7 +95305,7 @@ aph
 cIv
 ezJ
 ezJ
-ivf
+ezJ
 aph
 aph
 tmG
@@ -95347,7 +95313,7 @@ gLj
 aph
 gIL
 lpV
-fba
+lpV
 aph
 aph
 aph
