@@ -60,7 +60,7 @@
 		/mob/living/simple_animal/hostile/syndicate/melee/anthro,
 		/mob/living/simple_animal/hostile/syndicate/melee/sword/anthro,
 		/mob/living/simple_animal/hostile/syndicate/ranged/smg/anthro,
-		/mob/living/simple_animal/hostile/syndicate/ranged/anthro,
+		/mob/living/simple_animal/hostile/syndicate/ranged/anthro
 	)
 // Cult
 /mob/living/simple_animal/hostile/cult
