@@ -1502,9 +1502,13 @@
 /obj/item/coin/plasma,
 /obj/item/coin/plasma,
 /obj/item/coin/plasma,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
@@ -1709,7 +1713,9 @@
 /area/hallway/primary/aft)
 "aQa" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/storage/belt/utility,
 /turf/open/floor/plating,
@@ -8575,7 +8581,9 @@
 /area/science/xenobiology)
 "eyD" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/relic,
 /turf/open/floor/plating,
@@ -9081,6 +9089,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
@@ -12824,6 +12833,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -19071,7 +19081,9 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "jQC" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light/small,
 /turf/open/floor/plating,
@@ -21056,6 +21068,7 @@
 /area/engineering/main)
 "lbu" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/stack/spacecash/c500,
 /turf/open/floor/plating,
@@ -23514,6 +23527,7 @@
 /area/medical/genetics)
 "mrU" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/storage/belt/utility,
 /turf/open/floor/plating,
@@ -26165,8 +26179,11 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
@@ -26500,6 +26517,7 @@
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hos)
 "nXN" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /obj/item/radio/intercom{
@@ -28259,6 +28277,7 @@
 /area/maintenance/disposal/incinerator)
 "oNb" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
@@ -31937,6 +31956,7 @@
 /turf/open/floor/plasteel,
 /area/medical/medbay/central)
 "qCw" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /turf/open/floor/plating,
@@ -32441,6 +32461,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/radio,
 /obj/item/radio,
@@ -37424,6 +37445,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/power/apc{
 	areastring = "/area/service/hydroponics";
@@ -38383,6 +38405,7 @@
 /area/ai_monitored/turret_protected/ai)
 "tQI" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light/small{
 	dir = 1
@@ -38792,6 +38815,7 @@
 /turf/open/floor/plasteel,
 /area/medical/medbay/central)
 "uat" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /obj/machinery/light/small{
@@ -39459,7 +39483,9 @@
 /area/commons/dorms)
 "urA" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
@@ -41378,6 +41404,7 @@
 /turf/open/floor/plating,
 /area/security/brig)
 "vnC" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/space_cash,
@@ -45977,8 +46004,11 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/spawner/lootdrop/space_cash,
 /turf/open/floor/plating,

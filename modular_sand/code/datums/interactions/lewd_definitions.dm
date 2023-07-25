@@ -792,8 +792,6 @@
 					did_anything = FALSE
 			if(did_anything)
 				LAZYADD(obscure_to, src)
-	else //todo: better self cum messages
-		message = "кончает на себя!"
 	if(gender == MALE)
 		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_m1.ogg',
 							'modular_sand/sound/interactions/final_m2.ogg',
@@ -804,6 +802,8 @@
 		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_f1.ogg',
 							'modular_sand/sound/interactions/final_f2.ogg',
 							'modular_sand/sound/interactions/final_f3.ogg'), 70, 1, 0)
+	if (message == "") //todo: better self cum messages
+		message = pick("оргазмирует!", "трясётся в оргазме.", "дрожит от оргазма!", "кончает на себя!")
 	visible_message(message = span_userlove("<b>\The [src]</b> [message]"), ignored_mobs = get_unconsenting(ignored_mobs = obscure_to))
 	multiorgasms += 1
 

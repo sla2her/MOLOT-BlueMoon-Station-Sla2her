@@ -766,6 +766,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
@@ -2520,6 +2521,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -3105,6 +3107,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -5399,6 +5402,7 @@
 "nU" = (
 /obj/structure/closet/toolcloset,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -5660,6 +5664,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -8229,6 +8234,7 @@
 	},
 /obj/item/storage/toolbox/emergency,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light_switch{
 	pixel_x = -26
@@ -8949,6 +8955,7 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness/recreation)
 "xl" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
@@ -9177,6 +9184,7 @@
 /area/commons/vacant_room/commissary)
 "xR" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -9848,6 +9856,7 @@
 "zx" = (
 /obj/structure/closet/toolcloset,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -11167,6 +11176,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
@@ -15630,6 +15640,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -16064,6 +16075,7 @@
 /area/service/chapel/main)
 "Pg" = (
 /obj/structure/table,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
@@ -16368,6 +16380,7 @@
 /turf/open/floor/plasteel,
 /area/service/cafeteria)
 "PW" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -17417,6 +17430,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "SP" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -19799,6 +19813,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
 "YB" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating,
@@ -20307,6 +20322,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "ZM" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/spawner/lootdrop/glowstick,
 /turf/open/floor/plating,

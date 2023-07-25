@@ -147,6 +147,7 @@
 /obj/item/weldingtool,
 /obj/item/assembly/voice,
 /obj/item/clothing/head/welding,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/aft)
@@ -1706,6 +1707,7 @@
 "agI" = (
 /obj/structure/closet/toolcloset,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -2205,6 +2207,7 @@
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -2652,6 +2655,7 @@
 "ajq" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -2899,6 +2903,7 @@
 /area/maintenance/starboard/fore)
 "ajO" = (
 /obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
@@ -3805,6 +3810,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/crowbar/red,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -3818,6 +3824,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -6135,6 +6142,7 @@
 /obj/item/weldingtool,
 /obj/item/assembly/voice,
 /obj/item/clothing/head/welding,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -6778,6 +6786,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/crowbar/red,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -7184,6 +7193,7 @@
 "axJ" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/food/drinks/bottle/whiskey,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -14865,6 +14875,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -27488,6 +27499,7 @@
 "cdY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -28973,6 +28985,7 @@
 /area/space/nearstation)
 "chI" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/port)
@@ -30113,6 +30126,7 @@
 /obj/item/wrench,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -30415,6 +30429,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
@@ -33542,6 +33557,7 @@
 /obj/structure/table,
 /obj/item/storage/box/bodybags,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
@@ -34574,6 +34590,7 @@
 "czc" = (
 /obj/structure/rack,
 /obj/item/wrench,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -34759,6 +34776,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -35474,6 +35492,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -36488,6 +36507,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/clothing/gloves/color/fyellow,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -36806,6 +36826,7 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -37119,6 +37140,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/port)
@@ -37630,6 +37652,7 @@
 "cOF" = (
 /obj/structure/rack,
 /obj/item/book/manual/wiki/engineering_guide,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -42709,6 +42732,7 @@
 "cYn" = (
 /obj/structure/closet/crate,
 /obj/item/storage/box/donkpockets,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -43540,6 +43564,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -45376,6 +45401,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate,
 /obj/item/retractor,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
@@ -46098,6 +46124,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/clothing/neck/stethoscope,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/tile/neutral{
@@ -50344,6 +50371,7 @@
 "dnU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/tile/neutral{
@@ -56653,6 +56681,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -56719,6 +56748,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -59267,6 +59297,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/costume,
 /obj/effect/spawner/lootdrop/costume,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/tile/neutral{
@@ -59907,6 +59938,7 @@
 "dJp" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/costume,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
@@ -60368,6 +60400,7 @@
 	},
 /obj/item/folder/red,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel/grimy,
 /area/security/detectives_office/private_investigators_office)
@@ -60927,6 +60960,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -61472,6 +61506,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet,
 /obj/item/storage/box/bodybags,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -61539,6 +61574,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/aft)
@@ -64620,6 +64656,7 @@
 "dSE" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/costume,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -65303,6 +65340,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
@@ -71196,6 +71234,7 @@
 	icon_state = "crateopen"
 	},
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -75878,6 +75917,7 @@
 /turf/open/floor/plating/airless,
 /area/engineering/main)
 "gog" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -76764,6 +76804,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/cargo/warehouse)
@@ -78650,6 +78691,7 @@
 	},
 /obj/item/storage/toolbox/emergency,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light_switch{
 	pixel_x = -26
@@ -79662,6 +79704,7 @@
 /area/command/heads_quarters/captain)
 "hDo" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
@@ -81935,6 +81978,7 @@
 /area/hallway/primary/port)
 "imK" = (
 /obj/structure/table/wood/poker,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
@@ -84462,6 +84506,7 @@
 /area/engineering/atmos)
 "iZz" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -87526,6 +87571,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -92522,6 +92568,7 @@
 /area/service/bar)
 "lJg" = (
 /obj/structure/closet/cardboard,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -93582,6 +93629,7 @@
 /turf/open/floor/plating,
 /area/cargo/qm)
 "mbo" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
@@ -94067,6 +94115,7 @@
 	},
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel/dark,
 /area/service/abandoned_gambling_den)
@@ -97366,6 +97415,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "nlV" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/delivery,
@@ -98780,6 +98830,7 @@
 /turf/closed/wall,
 /area/security/office)
 "nMh" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -99516,6 +99567,7 @@
 /obj/item/assembly/igniter,
 /obj/item/assembly/igniter,
 /obj/item/assembly/igniter,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light{
 	dir = 1
@@ -104660,6 +104712,7 @@
 /area/engineering/atmos)
 "pLV" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -107209,6 +107262,7 @@
 /obj/machinery/conveyor{
 	id = "cargodisposals"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/cargo/sorting)
@@ -117136,6 +117190,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/crowbar/red,
 /obj/item/book/manual/splurt_space_law,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
@@ -121189,6 +121244,7 @@
 "vsP" = (
 /obj/structure/table/wood/poker,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/wood,
 /area/service/abandoned_gambling_den)
@@ -124731,6 +124787,7 @@
 "wFf" = (
 /obj/structure/closet/toolcloset,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -125006,6 +125063,7 @@
 "wKa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -128352,6 +128410,7 @@
 	pixel_y = 8
 	},
 /obj/item/stack/spacecash/c100,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel/grimy,
 /area/service/abandoned_gambling_den)
@@ -128497,6 +128556,7 @@
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "xVH" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,

@@ -4899,12 +4899,14 @@
 /turf/open/floor/festive/cobblestone,
 /area/edina/street/intersection/princessperimeter/north)
 "amL" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/table,
 /obj/item/poster/random_official,
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
 "amM" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/wardrobe/mixed,
 /turf/open/floor/festive/alleyway/safe,
@@ -4913,6 +4915,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/table,
 /obj/item/poster/random_official,
@@ -4925,6 +4928,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/emcloset,
 /turf/open/floor/festive/alleyway/safe,
@@ -4936,6 +4940,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/table,
 /obj/item/poster/random_official,
@@ -4948,6 +4953,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/wardrobe/mixed,
 /turf/open/floor/festive/alleyway/safe,
@@ -4959,6 +4965,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -4969,6 +4976,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/wardrobe/mixed,
 /turf/open/floor/festive/alleyway/safe,
@@ -4996,6 +5004,7 @@
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
 "amW" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /turf/open/floor/festive/alleyway/safe,
@@ -5005,11 +5014,13 @@
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
 "amY" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/firecloset,
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
 "amZ" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/emcloset,
 /turf/open/floor/festive/alleyway/safe,
@@ -5509,6 +5520,7 @@
 /turf/open/floor/carpet,
 /area/security/detectives_office)
 "aoh" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /turf/open/floor/festive/alleyway/safe,
@@ -8588,6 +8600,7 @@
 /turf/open/floor/grass/snow/edina,
 /area/edina)
 "avQ" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/table,
 /turf/open/floor/festive/alleyway/safe,
@@ -9481,6 +9494,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /turf/open/floor/festive/alleyway/safe,
@@ -9492,9 +9506,12 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/wardrobe/mixed,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
@@ -9505,6 +9522,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/cardboard,
 /turf/open/floor/festive/alleyway/safe,
@@ -9554,6 +9572,7 @@
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
 "ayh" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance{
@@ -9563,13 +9582,17 @@
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
 "ayi" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/wardrobe/mixed,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
 "ayj" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/festive/alleyway/safe,
 /area/maintenance/starboard/fore)
@@ -13895,8 +13918,10 @@
 /turf/open/floor/carpet/orange,
 /area/maintenance/bar)
 "aJY" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/festive/alleyway/safe,
 /area/service/bar/atrium)
@@ -14155,8 +14180,10 @@
 /turf/open/floor/festive/alleyway,
 /area/science)
 "aKJ" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/wardrobe/mixed,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/festive/alleyway/safe,
 /area/service/bar/atrium)
@@ -14464,7 +14491,9 @@
 /turf/open/floor/wood,
 /area/security/prison)
 "aLF" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/rack,
 /turf/open/floor/festive/alleyway/safe,
@@ -15586,11 +15615,13 @@
 /turf/open/floor/festive/stairs/stairssouth,
 /area/service/bar/atrium)
 "aOy" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/table,
 /turf/open/floor/festive/alleyway/safe,
 /area/service/bar/atrium)
 "aOz" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/firecloset,
 /turf/open/floor/festive/alleyway/safe,
@@ -15604,6 +15635,7 @@
 /turf/open/floor/festive/alleyway/safe,
 /area/service/bar/atrium)
 "aOC" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance{
@@ -15617,6 +15649,7 @@
 /turf/open/floor/festive/alleyway/safe,
 /area/service/bar/atrium)
 "aOE" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/wardrobe/mixed,
 /turf/open/floor/festive/alleyway/safe,
@@ -20992,6 +21025,7 @@
 /area/service/chapel/main/monastery)
 "bcN" = (
 /obj/structure/closet/crate/trashcart,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/weather/snow/corner{
 	color = "#FFFFFF";
@@ -30141,6 +30175,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
 "bzB" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -30844,6 +30879,7 @@
 /turf/open/indestructible,
 /area/cargo)
 "bBa" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /obj/structure/cable{
@@ -31296,6 +31332,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
 "bBO" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
@@ -32886,6 +32923,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/indestructible,
 /area/cargo/warehouse)
@@ -35738,6 +35776,7 @@
 	dir = 4;
 	id = "packageSort2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/airalarm{
 	dir = 1;
@@ -35750,6 +35789,7 @@
 	dir = 4;
 	id = "packageSort2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light{
 	light_color = "#e8eaff"
@@ -35761,6 +35801,7 @@
 	dir = 4;
 	id = "packageSort2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/cargo)
@@ -47814,6 +47855,7 @@
 /obj/item/assembly/igniter,
 /obj/item/assembly/igniter,
 /obj/item/assembly/igniter,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -49663,6 +49705,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/festive/alleyway,
 /area/edina/backstreet/med)

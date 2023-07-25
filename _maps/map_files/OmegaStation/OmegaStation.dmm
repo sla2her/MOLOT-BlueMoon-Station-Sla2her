@@ -1750,6 +1750,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating,
@@ -7607,6 +7608,7 @@
 /obj/item/crowbar/red,
 /obj/item/wrench,
 /obj/item/tank/internals/emergency_oxygen/engi,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -8786,6 +8788,7 @@
 /obj/item/assembly/igniter,
 /obj/item/assembly/igniter,
 /obj/item/assembly/igniter,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/status_display{
 	pixel_y = 32
@@ -11982,6 +11985,7 @@
 "axn" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/food/drinks/bottle/whiskey,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light/small,
 /obj/effect/turf_decal/delivery,
@@ -12582,6 +12586,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
@@ -37165,6 +37170,7 @@
 /area/science/mixing)
 "ncG" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/wrench,
 /obj/item/wirecutters,
@@ -38824,6 +38830,7 @@
 /area/service/theater)
 "sDq" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8

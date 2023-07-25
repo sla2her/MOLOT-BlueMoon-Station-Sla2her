@@ -119,6 +119,7 @@
 	name = "Port Bow Maintenance APC";
 	pixel_x = -25
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "aaw" = (
@@ -3160,6 +3161,7 @@
 /obj/item/storage/toolbox/mechanical,
 /obj/item/crowbar,
 /obj/item/extinguisher,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "ajI" = (
@@ -3273,6 +3275,7 @@
 	name = "Brig APC";
 	pixel_x = 24
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/solars/port)
 "ajV" = (
@@ -4005,6 +4008,7 @@
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/t_scanner,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/construction/secondary)
 "alZ" = (
@@ -4903,6 +4907,7 @@
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/clothing/ears/earmuffs,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -26430,6 +26435,7 @@
 /obj/item/tank/internals/air,
 /obj/item/extinguisher,
 /obj/item/crowbar,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "bpn" = (
@@ -28433,6 +28439,7 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "bun" = (
@@ -32305,6 +32312,7 @@
 	c_tag = "Starboard Bow Maintenance - Port";
 	pixel_x = 22
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "bED" = (
@@ -32553,6 +32561,7 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden{
 	dir = 6
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plasteel,
 /area/maintenance/department/chapel)
 "bFe" = (
@@ -33169,6 +33178,7 @@
 	},
 /obj/item/clothing/mask/gas,
 /obj/item/tank/internals/air,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "bGp" = (
@@ -36195,6 +36205,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/oil,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
 "bNO" = (
@@ -41339,6 +41350,7 @@
 	c_tag = "Fire Suppression Storage";
 	pixel_x = 22
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bZw" = (
@@ -52802,6 +52814,7 @@
 /obj/machinery/atmospherics/pipe/manifold/cyan/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/department/chapel)
 "czO" = (
@@ -57333,6 +57346,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 10
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "cIg" = (
@@ -61543,6 +61557,7 @@
 "dzz" = (
 /obj/item/armyknife,
 /obj/item/toy/plush/catgirl,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "dAn" = (
@@ -61568,6 +61583,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "dFL" = (
@@ -62432,6 +62448,7 @@
 /obj/structure/rack,
 /obj/item/stack/cable_coil/random,
 /obj/item/flashlight/seclite,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "foR" = (
@@ -63317,6 +63334,7 @@
 	lootcount = 8;
 	name = "8maintenance loot spawner"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/solars/port)
 "htr" = (
@@ -63692,6 +63710,7 @@
 /obj/machinery/cell_charger,
 /obj/item/stock_parts/cell/high/empty,
 /obj/item/stock_parts/cell/high/empty,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "ibb" = (

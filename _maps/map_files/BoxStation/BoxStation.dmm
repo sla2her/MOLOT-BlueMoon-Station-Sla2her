@@ -4220,6 +4220,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
 "apr" = (
@@ -4692,6 +4693,7 @@
 /area/maintenance/solars/starboard/fore)
 "aqy" = (
 /obj/structure/closet/emcloset,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aqz" = (
@@ -4971,6 +4973,7 @@
 "arv" = (
 /obj/structure/table,
 /obj/item/pen,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "arw" = (
@@ -6335,6 +6338,7 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "awO" = (
@@ -14748,6 +14752,7 @@
 /area/maintenance/port)
 "bgt" = (
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port)
 "bgu" = (
@@ -16997,6 +17002,7 @@
 /area/commons/dorms)
 "blV" = (
 /obj/machinery/light/small,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "blW" = (
@@ -20028,6 +20034,7 @@
 	dir = 1;
 	name = "Space Loop Out"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -30301,6 +30308,7 @@
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/effect/decal/cleanable/cobweb,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bSs" = (
@@ -33143,6 +33151,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cay" = (
@@ -38591,6 +38600,7 @@
 /area/maintenance/disposal/incinerator)
 "cqv" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cqw" = (
@@ -46974,6 +46984,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/commons/fitness)
+"ghJ" = (
+/obj/structure/loot_pile/maint,
+/obj/effect/spawner/lootdrop/syndicate_present,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "giT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -48899,6 +48914,13 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"hPM" = (
+/obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
+	dir = 9
+	},
+/obj/effect/spawner/lootdrop/syndicate_present,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "hPP" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -49013,6 +49035,11 @@
 	},
 /turf/open/floor/wood/wood_diagonal,
 /area/security/prison/upper)
+"hUC" = (
+/obj/effect/turf_decal,
+/obj/effect/spawner/lootdrop/syndicate_present,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "hUK" = (
 /obj/structure/table,
 /obj/item/stack/sheet/plasteel{
@@ -53138,6 +53165,10 @@
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel,
 /area/commons/fitness)
+"luk" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "lvf" = (
 /obj/machinery/button/door{
 	id = "secdormtwo";
@@ -54274,6 +54305,7 @@
 /area/commons/dorms)
 "mpI" = (
 /obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
@@ -55686,6 +55718,7 @@
 	name = "8maintenance loot spawner"
 	},
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "nAt" = (
@@ -64820,6 +64853,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
 "vxh" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -66703,6 +66737,15 @@
 "wUr" = (
 /turf/closed/wall,
 /area/service/theater)
+"wUv" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
+/obj/effect/spawner/lootdrop/syndicate_present,
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
 "wUC" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -85596,7 +85639,7 @@ aaf
 aaf
 alU
 amF
-aoU
+hPM
 amC
 alU
 apP
@@ -88489,7 +88532,7 @@ aaa
 aaa
 bCq
 bHE
-bHE
+luk
 bSo
 bHE
 bCq
@@ -88931,7 +88974,7 @@ aaa
 aaa
 ali
 aoo
-avY
+hUC
 vPd
 gsM
 sCa
@@ -91058,7 +91101,7 @@ bxy
 aaH
 aaH
 bCq
-bHE
+luk
 bRh
 bLu
 bCq
@@ -110025,7 +110068,7 @@ aoP
 auF
 azr
 jez
-atw
+wUv
 alP
 alP
 aCE
@@ -118041,7 +118084,7 @@ bKc
 cNW
 bMB
 bNA
-cmo
+ghJ
 bSl
 bUq
 flc

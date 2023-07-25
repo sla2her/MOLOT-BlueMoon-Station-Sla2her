@@ -647,6 +647,7 @@
 /area/security/prison)
 "abP" = (
 /obj/effect/decal/cleanable/cobweb,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -2031,6 +2032,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "afa" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -14487,6 +14489,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science)
 "azV" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/firecloset,
 /obj/item/storage/toolbox/emergency,
@@ -14494,11 +14497,13 @@
 /area/maintenance/department/science)
 "azW" = (
 /obj/structure/reagent_dispensers/fueltank,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
 "azX" = (
 /obj/structure/reagent_dispensers/watertank,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
@@ -15156,6 +15161,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
@@ -22009,6 +22015,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "aNQ" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -22416,17 +22423,20 @@
 /area/cargo/storage)
 "aOI" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "aOJ" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "aOK" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -22764,6 +22774,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/miningoffice)
 "aPz" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/cargo/storage)
@@ -23306,6 +23317,7 @@
 /area/cargo/miningoffice)
 "aQt" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -23314,6 +23326,7 @@
 /area/cargo/storage)
 "aQu" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -25943,11 +25956,13 @@
 /area/cargo/warehouse)
 "aXI" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
 "aXJ" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -26857,6 +26872,7 @@
 /area/cargo/warehouse)
 "aZH" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -26874,6 +26890,7 @@
 /area/cargo/warehouse)
 "aZJ" = (
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -27011,6 +27028,7 @@
 /area/command/heads_quarters/captain/private)
 "aZW" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -31681,6 +31699,7 @@
 /obj/structure/closet,
 /obj/item/extinguisher,
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -31725,6 +31744,7 @@
 	pixel_x = 4;
 	pixel_y = 3
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -32937,6 +32957,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/command)
 "bmd" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
@@ -34451,6 +34472,7 @@
 /turf/open/floor/grass/grass0,
 /area/medical/genetics)
 "bqa" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
@@ -37579,6 +37601,7 @@
 /turf/closed/wall,
 /area/medical/medbay/central)
 "bCm" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -38729,6 +38752,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -39289,6 +39313,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
@@ -43178,6 +43203,7 @@
 	base_state = "right";
 	icon_state = "right"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/stock_parts/cell/crap,
 /obj/structure/table/reinforced,
@@ -43187,6 +43213,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bQi" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/storage/toolbox/emergency,
 /turf/open/floor/plating{
@@ -43618,6 +43645,7 @@
 "bRw" = (
 /obj/structure/closet/crate,
 /obj/item/soap/deluxe,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,
@@ -43937,6 +43965,7 @@
 /obj/item/coin/silver,
 /obj/item/storage/box/lights/mixed,
 /obj/item/storage/box/donkpockets,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/grenade/empgrenade,
 /turf/open/floor/plating,
@@ -44261,6 +44290,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/transit_tube)
 "bTD" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/port)
@@ -50925,6 +50955,7 @@
 "cnu" = (
 /obj/structure/closet/crate,
 /obj/item/storage/box/donkpockets,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -50988,6 +51019,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "cnG" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/aft)
@@ -52454,6 +52486,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "crT" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -52472,6 +52505,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "crW" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -53761,6 +53795,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -55763,6 +55798,7 @@
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "cAf" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
@@ -56332,6 +56368,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
@@ -57152,6 +57189,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "cFf" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet/crate,
 /turf/open/floor/plating,
@@ -60819,6 +60857,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "cQF" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
@@ -60876,10 +60915,12 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "cQY" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet,
 /obj/item/tank/internals/oxygen,
@@ -60887,6 +60928,7 @@
 /area/maintenance/department/cargo)
 "cQZ" = (
 /obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
@@ -61015,6 +61057,7 @@
 "cRw" = (
 /obj/structure/rack,
 /obj/item/tank/internals/oxygen,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/commons/storage/emergency/starboard)
@@ -61424,6 +61467,7 @@
 /obj/structure/rack,
 /obj/item/tank/internals/air,
 /obj/item/wrench,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -61537,6 +61581,7 @@
 /obj/item/stack/sheet/glass{
 	amount = 12
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
@@ -61555,6 +61600,7 @@
 	pixel_y = 16
 	},
 /obj/item/flashlight/seclite,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/sign/poster/contraband/random{
 	pixel_y = -32
@@ -61574,6 +61620,7 @@
 	pixel_x = -1;
 	pixel_y = -3
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/sign/poster/contraband/random{
 	pixel_y = -32
@@ -62069,6 +62116,7 @@
 "cVN" = (
 /obj/structure/closet/crate,
 /obj/item/coin/silver,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
@@ -63688,6 +63736,7 @@
 "eJn" = (
 /obj/structure/closet,
 /obj/item/flashlight,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -64445,6 +64494,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/aft)
@@ -66051,6 +66101,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "iCA" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
@@ -67655,6 +67706,7 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/fore)
 "lFs" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -69032,6 +69084,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "nUI" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
@@ -69270,6 +69323,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/break_room)
 "owp" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -71205,6 +71259,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
@@ -71234,6 +71289,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/foyer)
 "sEC" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/closet,
 /turf/open/floor/plating,
@@ -71847,6 +71903,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
@@ -72838,6 +72895,7 @@
 /turf/open/space,
 /area/space/nearstation)
 "vEe" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -74011,6 +74069,7 @@
 "ybs" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/storage/box/lights/mixed,
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
@@ -74156,6 +74215,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/break_room)
 "ykP" = (
+/obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/disposalpipe/segment{
 	dir = 9
