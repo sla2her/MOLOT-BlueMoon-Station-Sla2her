@@ -208,7 +208,7 @@
 /datum/job/hos/New()
 	. = ..()
 	if(SSmapping.config?.map_name == "Syndicate Station")
-		outfit = /datum/outfit/job/security/syndicate
+		outfit = /datum/outfit/job/hos/syndicate
 
 /datum/job/hos/get_access()
 	. = ..()
@@ -218,7 +218,7 @@
 /datum/job/warden/New()
 	. = ..()
 	if(SSmapping.config?.map_name == "Syndicate Station")
-		outfit = /datum/outfit/job/security/syndicate
+		outfit = /datum/outfit/job/warden/syndicate
 
 /datum/job/warden/get_access()
 	. = ..()
@@ -258,7 +258,7 @@
 /datum/job/peacekeeper/New()
 	. = ..()
 	if(SSmapping.config?.map_name == "Syndicate Station")
-		outfit = /datum/outfit/job/security/syndicate
+		outfit = /datum/outfit/job/peacekeeper/syndicate
 
 /datum/job/peacekeeper/get_access()
 	. = ..()
