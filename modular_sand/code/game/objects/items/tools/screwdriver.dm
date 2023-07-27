@@ -5,3 +5,4 @@
 	icon_state = "makeshift_screwdriver"
 	random_color = FALSE
 	toolspeed = 2.5
+	random_color = FALSE
