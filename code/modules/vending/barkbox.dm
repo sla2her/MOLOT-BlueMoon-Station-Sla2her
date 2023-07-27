@@ -2,7 +2,7 @@
 	name = "Bark Box"
 	desc = "For all your pet needs!"
 	icon_state = "barkbox"
-	product_slogans = "Whuff!;Bark!;Give me a treat!"
+	product_slogans = "Вуф!;Гаф!;Раф-раф!!;Хочу лакомство!!!"
 	products = list(
 				/obj/item/storage/fancy/treat_box = 8,
 				/obj/item/clothing/neck/petcollar = 5,

@@ -2068,7 +2068,7 @@
 /obj/machinery/vending/sustenance{
 	desc = "A vending machine normally reserved for work camps.";
 	name = "\improper sustenance vendor";
-	product_slogans = "Enjoy your meal.;Enough calories to support any worker."
+	product_slogans = "Насладись своей едой!"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,

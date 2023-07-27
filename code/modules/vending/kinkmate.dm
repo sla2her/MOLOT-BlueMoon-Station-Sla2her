@@ -2,7 +2,7 @@
 	name = "KinkMate"
 	desc = "A vending machine for all your unmentionable desires."
 	icon_state = "kink"
-	product_slogans = "Kinky!;Sexy!;Check me out, big boy!"
+	product_slogans = "Извращённый, хи-хи!;Сексуальный, мр!;Осмотри мой Внутренний Мир, большой мальчик!;Загляни в мою душу, милый!;Отругай меня!;Ах, какой брутал!;У тебя есть меч?;Я привяжу тебя к кровати!"
 	vend_reply = "Have fun, you shameless pervert!"
 	products = list(
 				/obj/item/genital_equipment/condom = 10,

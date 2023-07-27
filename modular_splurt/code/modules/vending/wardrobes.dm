@@ -96,7 +96,7 @@
 	desc = "A vending machine for bridge officers and officer-related clothing!"
 	icon_state = "commdrobe"
 	icon = 'modular_splurt/icons/obj/objects.dmi'
-	product_slogans = "Make yourself feel important!;Feel good while serving command!;"
+	product_slogans = "Почувствуйте себя важным!;Служить!!;Тебе следует быть лучше, щенок!!!"
 	vend_reply = "Спасибо за использование BlueDrobe!"
 	products = list(/obj/item/clothing/under/rank/bridgeofficer = 2,
 					/obj/item/clothing/under/rank/bridgeofficer/skirt = 2,
