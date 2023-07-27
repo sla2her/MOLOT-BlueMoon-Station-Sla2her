@@ -109,51 +109,7 @@
 	custom_materials = list(/datum/material/iron = 1000)
 	total_mass = 3.4
 	item_flags = NEEDS_PERMIT | ITEM_CAN_PARRY
-	block_parry_data = /datum/block_parry_data/captain_saber
-
-/datum/block_parry_data/captain_saber
-	can_block_directions = BLOCK_DIR_NORTH | BLOCK_DIR_NORTHEAST | BLOCK_DIR_NORTHWEST | BLOCK_DIR_WEST | BLOCK_DIR_EAST
-	block_damage_absorption = 5
-	block_damage_multiplier = 0.15
-	block_damage_multiplier_override = list(
-		ATTACK_TYPE_MELEE = 0.25
-	)
-	block_start_delay = 0		// instantaneous block
-	block_stamina_cost_per_second = 2.5
-	block_stamina_efficiency = 3
-	block_lock_sprinting = TRUE
-	// no attacking while blocking
-	block_lock_attacking = TRUE
-	block_projectile_mitigation = 85
-	// more efficient vs projectiles
-	block_stamina_efficiency_override = list(
-		TEXT_ATTACK_TYPE_PROJECTILE = 6
-	)
-
-	parry_time_windup = 0
-	parry_time_active = 12
-	parry_time_spindown = 0
-	parry_time_windup_visual_override = 1
-	parry_time_active_visual_override = 3
-	parry_time_spindown_visual_override = 4
-	parry_flags = PARRY_DEFAULT_HANDLE_FEEDBACK
-	parry_time_perfect = 2		// first ds isn't perfect
-	parry_time_perfect_leeway = 1
-	parry_imperfect_falloff_percent = 10
-	parry_efficiency_considered_successful = 25		// VERY generous
-	parry_failed_stagger_duration = 3 SECONDS
-
-/obj/item/melee/sabre/directional_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return, override_direction)
-	if((attack_type & ATTACK_TYPE_PROJECTILE) && is_energy_reflectable_projectile(object))
-		block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_RETURN_TO_SENDER
-		return BLOCK_SUCCESS | BLOCK_REDIRECTED | BLOCK_SHOULD_REDIRECT
-	return ..()
-
-/obj/item/melee/sabre/on_active_parry(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, list/block_return, parry_efficiency, parry_time)
-	. = ..()
-	if(parry_efficiency >= 90)		// perfect parry
-		block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
-		. |= BLOCK_SHOULD_REDIRECT
+	block_parry_data = /datum/block_parry_data/shield
 
 /obj/item/melee/sabre/Initialize(mapload)
 	. = ..()
