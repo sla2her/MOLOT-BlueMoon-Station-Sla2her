@@ -345,13 +345,3 @@
 	desc = "A powerful rune that will increase the number of hits a suit of battlemage armour can take before failing.."
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "electricity2"
-
-/obj/item/wizard_armour_charge/afterattack(obj/item/clothing/suit/space/hardsuit/shielded/wizard/W, mob/user)
-	. = ..()
-	if(!istype(W))
-		to_chat(user, "<span class='warning'>The rune can only be used on battlemage armour!</span>")
-		return
-	var/datum/component/shielded/S = GetComponent(/datum/component/shielded)
-	S.adjust_charges(8)
-	to_chat(user, "<span class='notice'>You charge \the [W]. It can now absorb [S.charges] hits.</span>")
-	qdel(src)

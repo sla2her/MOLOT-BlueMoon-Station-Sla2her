@@ -2261,14 +2261,6 @@
 	icon_state = "darkfull_plate"
 	},
 /area/hallway/primary/starboard)
-"aul" = (
-/obj/machinery/button/door{
-	id = "permacells4";
-	name = "Privacy Shutters";
-	pixel_y = 25
-	},
-/turf/open/space/basic,
-/area/space)
 "auv" = (
 /obj/machinery/light{
 	pixel_y = -1
@@ -33954,7 +33946,9 @@
 	icon_state = "drain_corner";
 	name = "drain"
 	},
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/north{
+	cell_type = /obj/item/stock_parts/cell/vortex
+	},
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "floor_plate"
@@ -162644,11 +162638,6 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/door/airlock/engineering/glass{
-	dir = 1;
-	name = "Engineering";
-	req_access_txt = "10"
-	},
 /turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "floor_plate"
@@ -197848,7 +197837,7 @@ boa
 boa
 boa
 boa
-aul
+boa
 boa
 cqU
 cqU
