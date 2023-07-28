@@ -2,7 +2,7 @@
 	name = "Makeshift Wirecutters"
 	desc = "It's two metal rods hammered flat with cables holding them together."
 	icon = 'modular_sand/icons/obj/tools.dmi'
-	icon_state = "makeshift_cutters"
+	icon_state = "cutters"
 	random_color = FALSE
 	toolspeed = 2.5
 	random_color = FALSE

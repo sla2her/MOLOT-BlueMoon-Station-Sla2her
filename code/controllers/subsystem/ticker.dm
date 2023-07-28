@@ -289,8 +289,6 @@ SUBSYSTEM_DEF(ticker)
 
 	if(!CONFIG_GET(flag/ooc_during_round))
 		toggle_ooc(FALSE) // Turn it off
-
-	if(!CONFIG_GET(flag/ooc_during_round))
 		toggle_aooc(FALSE) // Turn it off
 
 	CHECK_TICK
