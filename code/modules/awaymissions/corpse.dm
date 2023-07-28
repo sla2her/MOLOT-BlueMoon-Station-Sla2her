@@ -197,6 +197,7 @@
 	var/facial_hair_style
 	var/skin_tone
 	var/canloadappearance = FALSE
+	var/datum/team/ghost_role/ghost_team
 
 /obj/effect/mob_spawn/human/Initialize(mapload)
 	if(ispath(outfit))

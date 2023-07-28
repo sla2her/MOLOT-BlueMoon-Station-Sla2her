@@ -472,7 +472,6 @@
 /obj/effect/mob_spawn/human/hotel_staff/special(mob/living/carbon/human/new_spawn)
 	. = ..()
 	ADD_TRAIT(new_spawn,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT)
-	new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)
 
 /obj/effect/mob_spawn/human/demonic_friend
 	name = "Essence of friendship"
