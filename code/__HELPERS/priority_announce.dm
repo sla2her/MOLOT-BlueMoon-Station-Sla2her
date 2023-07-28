@@ -29,9 +29,9 @@
 
 		if(!sender_override)
 			if(title == "")
-				GLOB.news_network.SubmitArticle(text, "Central Command Update", "Station Announcements", null)
+				GLOB.news_network.SubmitArticle(text, "Центральное Командование Объявляет", "Станционное Объявление", null)
 			else
-				GLOB.news_network.SubmitArticle(title + "<br><br>" + text, "Central Command", "Station Announcements", null)
+				GLOB.news_network.SubmitArticle(title + "<br><br>" + text, "Central Command", "Станционное Объявление", null)
 
 	///If the announcer overrides alert messages, use that message.
 	if(SSstation.announcer.custom_alert_message && !has_important_message)
