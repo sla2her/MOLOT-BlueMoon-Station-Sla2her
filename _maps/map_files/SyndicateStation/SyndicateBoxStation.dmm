@@ -16421,7 +16421,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/vending/kink,
+/obj/machinery/vending/wardrobe/syndie_wardrobe,
 /turf/open/floor/mineral/plastitanium,
 /area/commons/locker)
 "aQY" = (
@@ -20480,6 +20480,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/machinery/vending/kink,
 /turf/open/floor/mineral/plastitanium,
 /area/commons/locker)
 "bbt" = (
@@ -60632,6 +60633,7 @@
 /area/maintenance/port/fore)
 "pku" = (
 /obj/machinery/vending/games,
+/obj/machinery/vending/wardrobe/syndie_wardrobe,
 /turf/open/floor/mineral/plastitanium,
 /area/commons/fitness/recreation)
 "pkF" = (
