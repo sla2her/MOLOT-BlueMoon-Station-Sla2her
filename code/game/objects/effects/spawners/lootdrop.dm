@@ -74,10 +74,9 @@
 	icon_state = "esword_dual"
 	lootdoubles = FALSE
 	loot = list(
-				/obj/item/poster/random_contraband = 80,
+				/obj/item/poster/random_contraband = 120,
 				/obj/item/reagent_containers/syringe/mulligan = 4,
 				/obj/item/reagent_containers/hypospray/medipen/magillitis = 2,
-				/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
 				/obj/item/gun/ballistic/automatic/pistol = 4,
 				/obj/item/ammo_box/magazine/m10mm = 4,
 				/obj/item/ammo_box/magazine/m10mm/soporific = 8,
@@ -87,8 +86,10 @@
 				/obj/item/grenade/clusterbuster/soap = 6,
 				/obj/item/soap/syndie = 12,
 				/obj/item/pen/sleepy = 2,
-				/obj/item/storage/backpack/duffelbag/syndie/med = 4,
-				/obj/item/storage/backpack/duffelbag/syndie/surgery = 2,
+				/obj/item/pen/edagger = 4,
+				/obj/item/storage/backpack/duffelbag/syndie/surgery = 4,
+				/obj/item/storage/box/syndie_kit/chameleon = 4,
+				/obj/item/storage/firstaid/tactical/slaver = 2,
 				/obj/item/storage/box/syndie_kit/northstar = 1,
 				/obj/item/storage/backpack/duffelbag/syndie/policing_shipment = 1,
 				/obj/item/syndicate_uplink = 1

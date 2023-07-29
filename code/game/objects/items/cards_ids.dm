@@ -472,17 +472,16 @@
 /obj/item/card/id/syndicate/afterattack(obj/item/O, mob/user, proximity)
 	if(!proximity)
 		return
-//BLUEMOON ADDITION START
-	if(stationed)
-		to_chat(usr, "<span class='warning'>The card seems to have its microscanners removed, as nothing happens. You can't copy access with it.</span>")
+	if(!uses)
+		to_chat(usr, "<span class='notice'>Микросканеры устройства издают отрицательное жужжание при попытке использовать его больше одного раза.</span>")
+		playsound(src, 'sound/effects/light_flicker.ogg', 100, 1)
 		return
-//BLUEMOON ADDITION END
+	uses = max(uses - 1, 0)
 	if(istype(O, /obj/item/card/id))
 		var/obj/item/card/id/I = O
 		src.access |= I.access
 		if(isliving(user) && user.mind)
-			if(user.mind.special_role || anyone)
-				to_chat(usr, "<span class='notice'>The card's microscanners activate as you pass it over the ID, copying its access.</span>")
+			to_chat(usr, "<span class='notice'>Микросканеры устройства активизируются при проведении ею по Идентификационной Карте и копируют её доступ.</span>")
 
 /obj/item/card/id/syndicate/attack_self(mob/user)
 	if(isliving(user) && user.mind)

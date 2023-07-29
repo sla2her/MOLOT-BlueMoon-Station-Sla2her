@@ -3707,6 +3707,7 @@
 /obj/effect/turf_decal/stripes/white/corner{
 	dir = 1
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel,
 /area/slavers)
 "jB" = (
@@ -7467,6 +7468,18 @@
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/plasteel/dark,
 /area/slavers)
+"qM" = (
+/obj/structure/table/wood,
+/obj/item/toy/prize/mauler{
+	pixel_x = -3;
+	pixel_y = 14
+	},
+/obj/item/toy/figure/syndie{
+	pixel_x = 5;
+	pixel_y = 1
+	},
+/turf/open/floor/carpet/red,
+/area/slavers)
 "qN" = (
 /obj/effect/turf_decal/tile/blue,
 /turf/open/floor/plasteel/dark,
@@ -8176,6 +8189,18 @@
 /obj/effect/turf_decal/tile/brown,
 /turf/open/floor/iron/white,
 /area/syndicate_mothership)
+"so" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/item/bedsheet/hos{
+	desc = "A fancy red bedsheet.";
+	name = "red bedsheet"
+	},
+/obj/effect/landmark/start/slaver,
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/wood,
+/area/slavers)
 "sp" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -8689,18 +8714,27 @@
 /obj/effect/turf_decal/tile/red,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/rglass{
-	amount = 50;
-	pixel_x = 2;
-	pixel_y = -1
+/obj/structure/rack,
+/obj/effect/turf_decal/tile/bar{
+	dir = 8
+	},
+/obj/item/storage/toolbox/emergency{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency{
+	pixel_x = 5;
+	pixel_y = 5
 	},
 /obj/item/stack/sheet/glass/fifty{
 	pixel_x = -3;
 	pixel_y = -2
 	},
-/obj/structure/rack,
-/obj/effect/turf_decal/tile/bar{
-	dir = 8
+/obj/item/stack/sheet/rglass{
+	amount = 50;
+	pixel_x = 2;
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/slavers)
@@ -10750,15 +10784,7 @@
 /turf/open/floor/carpet,
 /area/wizard_station)
 "xA" = (
-/obj/structure/table/wood,
-/obj/item/toy/prize/mauler{
-	pixel_x = -3;
-	pixel_y = 14
-	},
-/obj/item/toy/figure/syndie{
-	pixel_x = 5;
-	pixel_y = 1
-	},
+/obj/machinery/vending/wardrobe/syndie_wardrobe,
 /turf/open/floor/wood,
 /area/slavers)
 "xB" = (
@@ -12670,14 +12696,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/control)
-"BM" = (
-/obj/machinery/door/airlock/centcom{
-	name = "CentCom Security";
-	req_access_txt = "101"
-	},
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plasteel,
-/area/centcom/evac)
 "BN" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
@@ -12906,6 +12924,20 @@
 /obj/structure/statue/uranium/nuke,
 /turf/open/floor/plating/asteroid/snow/airless,
 /area/syndicate_mothership)
+"Cq" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/item/bedsheet/hos{
+	desc = "A fancy red bedsheet.";
+	name = "red bedsheet"
+	},
+/obj/effect/landmark/start/slaver,
+/obj/structure/sign/poster/contraband/syndicate_recruitment{
+	pixel_y = 32
+	},
+/turf/open/floor/wood,
+/area/slavers)
 "Cr" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
@@ -18016,6 +18048,14 @@
 	dir = 5
 	},
 /area/slavers/export)
+"MO" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/bar{
+	dir = 8
+	},
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/plasteel/dark,
+/area/slavers)
 "MP" = (
 /obj/machinery/light{
 	dir = 8
@@ -18401,12 +18441,7 @@
 	dir = 8
 	},
 /obj/item/electropack/shockcollar/slave,
-/obj/machinery/power/apc{
-	cell_type = /obj/item/stock_parts/cell/infinite;
-	name = "Slaver Hideout APC";
-	pixel_x = 28;
-	start_charge = 100
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/slavers)
 "NN" = (
@@ -19831,12 +19866,14 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/item/cautery,
-/obj/item/circular_saw,
-/obj/item/scalpel,
-/obj/item/surgicaldrill,
-/obj/item/retractor/advanced,
 /obj/structure/table,
+/obj/item/roller{
+	pixel_x = 3;
+	pixel_y = -1
+	},
+/obj/item/storage/backpack/duffelbag/syndie/surgery_adv{
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel/dark,
 /area/slavers)
 "RO" = (
@@ -20059,9 +20096,10 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/syndie/fullupgrade{
 	dir = 8
 	},
+/obj/machinery/vending/wallmed/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/slavers)
 "Sx" = (
@@ -21048,12 +21086,13 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/sleeper{
-	dir = 8
-	},
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+/obj/machinery/sleeper/syndie/fullupgrade{
+	dir = 8
+	},
+/obj/machinery/vending/wallmed/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/slavers)
 "Vi" = (
@@ -21399,6 +21438,19 @@
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/plasteel,
 /area/centcom/evac)
+"Wn" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/bar{
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	cell_type = /obj/item/stock_parts/cell/infinite;
+	name = "Slaver Hideout APC";
+	pixel_x = 28;
+	start_charge = 100
+	},
+/turf/open/floor/plasteel/dark,
+/area/slavers)
 "Wp" = (
 /obj/machinery/processor,
 /obj/machinery/light{
@@ -22484,11 +22536,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/item/roller,
-/obj/item/roller{
-	pixel_x = 3;
-	pixel_y = 5
-	},
+/obj/machinery/self_actualization_device,
 /turf/open/floor/plasteel/dark,
 /area/slavers)
 "Zt" = (
@@ -67846,12 +67894,12 @@ io
 io
 io
 tP
-UO
+io
 io
 im
-yU
-mk
-yU
+io
+io
+io
 im
 io
 iu
@@ -70684,7 +70732,7 @@ qx
 zL
 qV
 sM
-BM
+qx
 Cc
 CO
 Cc
@@ -70945,7 +70993,7 @@ qx
 qx
 qx
 qx
-Wc
+qx
 qx
 VO
 pz
@@ -77424,7 +77472,7 @@ YZ
 YS
 xN
 RE
-XK
+MO
 YS
 YZ
 YS
@@ -78182,7 +78230,7 @@ Zg
 YS
 px
 Dp
-Dp
+qM
 Dp
 Bp
 yR
@@ -78447,7 +78495,7 @@ ED
 MN
 RI
 PB
-XK
+Wn
 YL
 YY
 RJ
@@ -78695,8 +78743,8 @@ aa
 Zg
 YS
 YS
-wg
-wg
+Cq
+so
 wg
 YS
 YS

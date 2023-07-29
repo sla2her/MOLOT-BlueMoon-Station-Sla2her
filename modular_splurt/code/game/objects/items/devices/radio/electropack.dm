@@ -102,7 +102,7 @@
 	if (station_rank)
 		slaveJobText = " ([station_rank])"
 
-	var/announceMessage = "[M.real_name][slaveJobText] has been captured. Send us [newPrice] credits with your communications console to get them back!"
+	var/announceMessage = "Мы позаимствовали у вас [M.real_name][slaveJobText] на добровольно-принудительный отпуск. Отправьте нам [newPrice] и мы вернём вашего сотрудника в течении получаса! Вам же... нужны рабочие?"
 	if (price) // If price has already been set once, we are just changing it
 		if (newPrice > price) // Price has increased
 			announceMessage = "[M.real_name]'s ransom has increased to [newPrice] credits."

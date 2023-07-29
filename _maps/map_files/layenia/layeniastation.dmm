@@ -34062,15 +34062,10 @@
 	},
 /area/science/mixing)
 "eYf" = (
-/obj/structure/table/glass,
-/obj/machinery/computer/med_data/laptop,
-/obj/effect/turf_decal/tile/red{
-	dir = 5
+/obj/effect/turf_decal/tile/red/half{
+	dir = 4
 	},
-/turf/open/floor/plasteel/dark{
-	dir = 4;
-	icon_state = "darkfull_plate"
-	},
+/turf/open/floor/plasteel/dark,
 /area/security/brig)
 "eYi" = (
 /obj/structure/table,
@@ -34959,11 +34954,19 @@
 /turf/open/floor/engine/plasma,
 /area/engineering/atmos)
 "fge" = (
-/obj/machinery/iv_drip,
-/obj/item/reagent_containers/blood,
 /obj/effect/turf_decal/loading_area{
 	dir = 8;
 	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "drain_corner";
 	name = "drain"
 	},
 /turf/open/floor/plasteel/white{
@@ -35689,6 +35692,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
+/obj/effect/landmark/start/brigdoc,
 /turf/open/floor/plasteel/white{
 	icon_state = "plaswhite_traction"
 	},
@@ -55484,6 +55488,16 @@
 	name = "parquet"
 	},
 /area/medical/medbay/central)
+"igT" = (
+/obj/structure/closet/secure_closet/brigdoc,
+/obj/item/clothing/head/helmet/brigdoc,
+/obj/item/storage/belt/security/full,
+/obj/item/clothing/glasses/hud/security/sunglasses,
+/obj/item/clothing/suit/armor/vest/alt,
+/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/suit/armor/brigdoc/armor,
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "igU" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -66364,19 +66378,6 @@
 	icon_state = "floor_plate"
 	},
 /area/tcommsat/server)
-"jIV" = (
-/obj/structure/table/glass,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/clothing/mask/surgical,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/effect/turf_decal/tile/red{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark{
-	dir = 4;
-	icon_state = "darkfull_plate"
-	},
-/area/security/brig)
 "jJa" = (
 /obj/machinery/light{
 	dir = 8
@@ -70763,10 +70764,13 @@
 /obj/machinery/camera/autoname{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark{
-	dir = 4;
-	icon_state = "darkfull_plate"
+/obj/structure/bodycontainer/morgue{
+	dir = 1
 	},
+/obj/effect/turf_decal/tile/red/half{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
 /area/security/brig)
 "kqy" = (
 /obj/structure/disposalpipe/segment,
@@ -75671,6 +75675,12 @@
 	},
 /turf/open/floor/carpet/black,
 /area/service/bar)
+"lbs" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "lbu" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet,
@@ -103295,13 +103305,13 @@
 	},
 /area/hallway/secondary/entry)
 "paW" = (
-/obj/structure/bed,
-/obj/item/clothing/suit/straight_jacket,
 /obj/effect/turf_decal/loading_area{
 	dir = 4;
 	icon_state = "drain";
 	name = "drain"
 	},
+/obj/structure/bed/roller,
+/obj/machinery/iv_drip,
 /turf/open/floor/plasteel/white{
 	icon_state = "plaswhite_traction"
 	},
@@ -103730,6 +103740,26 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/no_grav)
+"pdO" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain_corner";
+	name = "drain"
+	},
+/turf/open/floor/plasteel/white{
+	icon_state = "plaswhite_traction"
+	},
+/area/security/brig)
 "pdV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 9;
@@ -106700,6 +106730,15 @@
 	},
 /turf/open/floor/plating,
 /area/tcommsat/server)
+"pBK" = (
+/obj/structure/table/glass,
+/obj/machinery/computer/med_data/laptop{
+	dir = 4;
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "pBM" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -108016,6 +108055,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/port)
+"pMA" = (
+/obj/effect/turf_decal/tile/red/half,
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "pME" = (
 /obj/structure/chair/comfy{
 	dir = 8
@@ -113161,24 +113204,6 @@
 	icon_state = "darkfull_whole_alt"
 	},
 /area/security/brig)
-"qCS" = (
-/obj/structure/table/glass,
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/firstaid/regular,
-/obj/effect/turf_decal/tile/red{
-	dir = 5
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark{
-	dir = 4;
-	icon_state = "darkfull_plate"
-	},
-/area/security/brig)
 "qCY" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 6
@@ -115171,6 +115196,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/teg)
+"qTK" = (
+/obj/structure/closet/crate/freezer/blood,
+/obj/item/reagent_containers/blood,
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "qTO" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/condiment/peppermill{
@@ -123338,22 +123368,11 @@
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard)
 "sdk" = (
-/obj/item/storage/box/bodybags{
-	pixel_y = 4
+/obj/effect/turf_decal/tile/red/half{
+	dir = 4
 	},
-/obj/item/reagent_containers/syringe{
-	name = "steel point"
-	},
-/obj/item/reagent_containers/glass/bottle/charcoal,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/structure/table/glass,
-/obj/effect/turf_decal/tile/red{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark{
-	dir = 4;
-	icon_state = "darkfull_plate"
-	},
+/obj/effect/landmark/start/brigdoc,
+/turf/open/floor/plasteel/dark,
 /area/security/brig)
 "sdl" = (
 /turf/open/floor/plating,
@@ -125257,6 +125276,29 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/fore)
+"sqg" = (
+/obj/structure/table/glass,
+/obj/item/storage/firstaid/regular{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/firstaid/regular,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/storage/box/bodybags{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/bottle/epinephrine,
+/obj/item/reagent_containers/glass/bottle/charcoal,
+/obj/item/storage/box/bodybags{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/syringe{
+	name = "steel point"
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "sqi" = (
 /obj/machinery/firealarm{
 	pixel_y = -28
@@ -128703,8 +128745,11 @@
 	},
 /area/security/prison)
 "sQZ" = (
-/obj/effect/baseturf_helper/asteroid/layenia,
-/turf/closed/wall/r_wall,
+/obj/machinery/vending/brigdoc_vendomat,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
 /area/security/brig)
 "sRj" = (
 /obj/structure/railing{
@@ -135566,6 +135611,13 @@
 /obj/machinery/space_heater,
 /turf/open/floor/plating,
 /area/science/mixing)
+"tNU" = (
+/obj/structure/table/glass,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/mask/surgical,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "tNX" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 6;
@@ -135627,7 +135679,6 @@
 	icon_state = "right";
 	name = "Brig Infirmary"
 	},
-/obj/machinery/iv_drip,
 /obj/effect/turf_decal/loading_area{
 	dir = 4;
 	icon_state = "drain";
@@ -141280,11 +141331,13 @@
 /turf/open/floor/carpet/royalblue,
 /area/command/heads_quarters/captain)
 "uJm" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 8
-	},
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/structure/table/optable,
+/obj/item/storage/backpack/duffelbag/syndie/surgery,
+/obj/effect/turf_decal/tile/dark_blue/half{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark{
 	icon_state = "darkfull_whole_alt"
@@ -159069,7 +159122,6 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/effect/landmark/start/brigdoc,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "floor_trim"
@@ -164080,7 +164132,10 @@
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hos)
 "xTH" = (
-/obj/structure/bodycontainer/morgue{
+/obj/machinery/computer/operating{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark{
@@ -192828,14 +192883,14 @@ boa
 boa
 boa
 boa
-boa
 vHv
-vHv
-vHv
-vHv
-vHv
-vHv
-vHv
+cJi
+cJi
+cJi
+cJi
+cJi
+cJi
+cJi
 vHv
 bZn
 tKx
@@ -193085,13 +193140,13 @@ boa
 boa
 boa
 boa
-boa
-vHv
+cJi
+cJi
 sQZ
-cJi
-cJi
-cJi
-cJi
+qTK
+sqg
+tNU
+pBK
 cJi
 cJi
 bZn
@@ -193342,12 +193397,12 @@ boa
 boa
 boa
 boa
-boa
-vHv
 cJi
-qCS
+igT
+lbs
+eYf
 sdk
-jIV
+eYf
 eYf
 kqw
 mGi
@@ -193599,9 +193654,9 @@ boa
 boa
 boa
 boa
-boa
-vHv
 cJi
+igT
+pMA
 fge
 egr
 egr
@@ -193856,10 +193911,10 @@ boa
 boa
 boa
 boa
-boa
-vHv
 cJi
-flm
+cJi
+cJi
+pdO
 flm
 paW
 paW
@@ -194113,7 +194168,7 @@ boa
 boa
 boa
 boa
-boa
+vHv
 vHv
 cJi
 uJm

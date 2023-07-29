@@ -178,3 +178,9 @@
 	desc = "A traditional clusterbang grenade with a payload consisting entirely of soap. Useful in any scenario!"
 	item = /obj/item/grenade/clusterbuster/soap
 	cost = 3
+
+/datum/uplink_item/stealthy_weapons/soap_clusterbang
+	name = "Space Carps Clusterbang"
+	desc = "A traditional clusterbang grenade with a payload consisting entirely of carps. Useful in any scenario!"
+	item = /obj/item/grenade/clusterbuster/spawner_spesscarp
+	cost = 3
