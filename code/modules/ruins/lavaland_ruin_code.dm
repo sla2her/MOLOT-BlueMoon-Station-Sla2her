@@ -223,7 +223,7 @@
 	radiosound = 'modular_sand/sound/radio/syndie.ogg'
 	freerange = TRUE
 	freqlock = TRUE
-	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds1
 
 /obj/item/radio/headset/ds2
 	name = "DS-2 Headset"
