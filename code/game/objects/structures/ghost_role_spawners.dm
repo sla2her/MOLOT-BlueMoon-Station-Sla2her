@@ -897,9 +897,7 @@
 		D.Grant(new_spawn)
 		var/datum/action/disguise/disguise_action = new(new_spawn)
 		disguise_action.Grant(new_spawn)
-		if(ghost_team)
-			new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)
-			ghost_team.players_spawned += (new_spawn.key)
+		new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)
 
 /datum/outfit/ghostcafe
 	name = "ID, jumpsuit and shoes"
