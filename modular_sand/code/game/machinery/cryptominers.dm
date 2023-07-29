@@ -29,8 +29,8 @@
 	circuit = /obj/item/circuitboard/machine/cryptominer
 	init_process = FALSE // Don't process upon creation
 	var/mining = FALSE
-	var/miningtime = 3000
-	var/miningpoints = 100
+	var/miningtime = 10000
+	var/miningpoints = 50
 	var/datum/bank_account/pay_me = null
 	var/obj/item/radio/cargo_radio
 	// Should this machine send messages on cargo radio?
@@ -288,8 +288,8 @@
 	idle_power_usage = 10
 	active_power_usage = 100
 	circuit = /obj/item/circuitboard/machine/cryptominer/syndie
-	miningtime = 6000
-	miningpoints = 200
+	miningtime = 10000
+	miningpoints = 100
 	radio_snitch = FALSE // Illegal tech!
 
 /obj/machinery/cryptominer/syndie/update_icon()
@@ -307,10 +307,10 @@
 	icon_state = "off_nano"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 1
-	active_power_usage = 1
-	miningtime = 600000
-	miningpoints = 1000
+	idle_power_usage = 100
+	active_power_usage = 1000
+	miningtime = 100000
+	miningpoints = 2000
 	radio_snitch = FALSE // None of cargo's business!
 
 /obj/machinery/cryptominer/nanotrasen/update_icon()
