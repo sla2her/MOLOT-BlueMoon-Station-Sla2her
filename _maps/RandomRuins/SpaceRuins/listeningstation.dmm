@@ -1170,7 +1170,7 @@
 /obj/item/storage/firstaid/regular,
 /obj/item/clothing/neck/stethoscope,
 /obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/defibrillator/compact/combat/loaded,
+/obj/item/defibrillator/compact/combat,
 /turf/open/floor/plasteel/white/side{
 	dir = 10
 	},

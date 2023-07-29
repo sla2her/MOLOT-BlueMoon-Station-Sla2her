@@ -19874,6 +19874,7 @@
 /obj/item/storage/backpack/duffelbag/syndie/surgery_adv{
 	pixel_y = 9
 	},
+/obj/item/defibrillator/compact/combat,
 /turf/open/floor/plasteel/dark,
 /area/slavers)
 "RO" = (

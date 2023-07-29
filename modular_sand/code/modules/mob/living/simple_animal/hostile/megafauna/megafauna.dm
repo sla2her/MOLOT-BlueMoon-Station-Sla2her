@@ -4,8 +4,8 @@
 	var/list/glorymessagescrusher = list() //SAME AS ABOVE BUT CRUSHER
 	var/list/glorymessagespka = list() //SAME AS ABOVE THE ABOVE BUT PKA
 	var/list/glorymessagespkabayonet = list() //SAME AS ABOVE BUT WITH A HONKING KNIFE ON THE FUCKING THING
-	var/gloryhealth = 200
-	var/glorythreshold = 100
+	var/gloryhealth = 400
+	var/glorythreshold = 200
 	var/retaliated = FALSE
 	var/retaliatedcooldowntime = 6000
 	var/retaliatedcooldown
@@ -114,10 +114,10 @@
 	if(glorykill)
 		if(ranged)
 			if(ranged_cooldown >= world.time)
-				ranged_cooldown += 10
+				ranged_cooldown += 3
 			else
-				ranged_cooldown = 10 + world.time
-		if(do_mob(slayer, src, 10) && (stat != DEAD))
+				ranged_cooldown = 3 + world.time
+		if(do_mob(slayer, src, 3) && (stat != DEAD))
 			var/message
 			if(!slayer.get_active_held_item() || (!istype(slayer.get_active_held_item(), /obj/item/kinetic_crusher) && !istype(slayer.get_active_held_item(), /obj/item/gun/energy/kinetic_accelerator)))
 				message = pick(glorymessageshand)

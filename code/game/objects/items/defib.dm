@@ -255,11 +255,6 @@
 	disarm_shock_time = 0
 	cell = /obj/item/stock_parts/cell/infinite
 
-/obj/item/defibrillator/compact/combat/loaded/attackby(obj/item/W, mob/user, params)
-	if(W == paddles)
-		toggle_paddles()
-		return
-
 //paddles
 
 /obj/item/shockpaddles

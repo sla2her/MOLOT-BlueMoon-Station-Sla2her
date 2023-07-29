@@ -168,7 +168,7 @@
 	if(empty)
 		return
 	new /obj/item/stack/medical/gauze(src)
-	new /obj/item/defibrillator/compact/combat/loaded(src)
+	new /obj/item/defibrillator/compact/combat(src)
 	new /obj/item/reagent_containers/hypospray/combat/omnizine(src)
 	new /obj/item/reagent_containers/medspray/styptic(src)
 	new /obj/item/reagent_containers/medspray/silver_sulf(src)
@@ -182,7 +182,7 @@
 	if(empty)
 		return
 	new /obj/item/stack/medical/gauze(src)
-	new /obj/item/defibrillator/compact/combat/loaded(src)
+	new /obj/item/defibrillator/compact/combat(src)
 	new /obj/item/reagent_containers/hypospray/combat(src)
 	new /obj/item/reagent_containers/medspray/styptic(src)
 	new /obj/item/reagent_containers/medspray/silver_sulf(src)
@@ -563,7 +563,7 @@
 /obj/item/storage/hypospraykit/tactical/PopulateContents()
 	if(empty)
 		return
-	new /obj/item/defibrillator/compact/combat/loaded(src)
+	new /obj/item/defibrillator/compact/combat(src)
 	new /obj/item/hypospray/mkii/CMO/combat(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/combat(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/combat(src)
