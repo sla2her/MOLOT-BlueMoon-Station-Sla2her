@@ -10,7 +10,6 @@ They are drawn with a ritual dagger in blood, and are distinguishable to cultist
 Fake runes can be drawn in crayon to fool people.
 Runes can either be invoked by one's self or with many different cultists. Each rune has a specific incantation that the cultists will say when invoking it.
 
-
 */
 
 /obj/effect/rune
