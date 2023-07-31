@@ -47,7 +47,7 @@ Contains:
 	dog_fashion = /datum/dog_fashion/back/deathsquad
 
 	//NEW SWAT suit
-/obj/item/clothing/suit/space/swat
+/obj/item/clothing/suit/armor/hos
 	name = "MK.I SWAT Suit"
 	desc = "A tactical space suit first developed in a joint effort by the defunct IS-ERI and Nanotrasen in 20XX for military space operations. A tried and true workhorse, it is very difficult to move in but offers robust protection against all threats!"
 	icon_state = "heavy"
@@ -187,7 +187,7 @@ Contains:
 	ADD_TRAIT(src, TRAIT_NODROP, LOCKED_HELMET_TRAIT)
 
 /obj/item/clothing/suit/space/hardsuit/ert
-	name = "emergency response team suit"
+	name = "Emergency Response Team suit"
 	desc = "Standard issue command suit for the ERT."
 	icon_state = "ert_command"
 	item_state = "ert_command"
@@ -251,7 +251,7 @@ Contains:
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 
 /obj/item/clothing/suit/space/hardsuit/ert/alert
-	name = "emergency response team suit"
+	name = "Emergency Response Team suit"
 	desc = "Red alert command suit for the ERT. This one is more armored than its standard version."
 	icon_state = "ert_command-alert"
 	item_state = "ert_command-alert"

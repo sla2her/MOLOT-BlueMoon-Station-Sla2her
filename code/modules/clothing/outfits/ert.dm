@@ -26,17 +26,17 @@
 	name = "ERT Commander"
 
 	id = /obj/item/card/id/ert
-	suit = /obj/item/clothing/suit/space/hardsuit/ert
+	head = /obj/item/clothing/head/helmet/swat/command
+	suit = /obj/item/clothing/suit/armor/hos/command
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	back = /obj/item/storage/backpack/captain
 	belt = /obj/item/storage/belt/security/full
 	r_hand = /obj/item/gun/ballistic/automatic/wt550
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
-
 		/obj/item/clothing/mask/gas/sechailer=1,\
 		/obj/item/storage/ifak=1,\
 		/obj/item/ammo_box/magazine/wt550m9=3)
-	l_pocket = /obj/item/switchblade
+	l_pocket = /obj/item/kitchen/knife/combat
 
 /datum/outfit/ert/commander/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	..()
@@ -73,7 +73,8 @@
 	name = "ERT Security"
 
 	id = /obj/item/card/id/ert/Security
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/sec
+	head = /obj/item/clothing/head/helmet/swat/security
+	suit = /obj/item/clothing/suit/armor/hos/security
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	belt = /obj/item/storage/belt/security/full
 	back = /obj/item/storage/backpack/security
@@ -121,7 +122,8 @@
 	name = "ERT Medic"
 
 	id = /obj/item/card/id/ert/Medical
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/med
+	head = /obj/item/clothing/head/helmet/swat/medical
+	suit = /obj/item/clothing/suit/armor/hos/medical
 	glasses = /obj/item/clothing/glasses/hud/health
 	back = /obj/item/storage/backpack/satchel/med
 	belt = /obj/item/storage/belt/medical/surgery_belt_adv/cmo
@@ -170,7 +172,8 @@
 	name = "ERT Engineer"
 
 	id = /obj/item/card/id/ert/Engineer
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/engi
+	head = /obj/item/clothing/head/helmet/swat/engineer
+	suit = /obj/item/clothing/suit/armor/hos/engineer
 	glasses =  /obj/item/clothing/glasses/meson/engine
 	back = /obj/item/storage/backpack/industrial
 	belt = /obj/item/storage/belt/utility/full
@@ -214,6 +217,31 @@
 		/obj/item/ammo_box/magazine/m556=3,\
 		/obj/item/storage/ifak=1,\
 		/obj/item/construction/rcd/combat=1)
+
+/datum/outfit/ert/janitor
+	name = "ERT Janitor"
+
+	id = /obj/item/card/id/ert
+	head = /obj/item/clothing/head/helmet/swat/janitor
+	suit = /obj/item/clothing/suit/armor/hos/janitor
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	back = /obj/item/storage/backpack/captain
+	belt = /obj/item/storage/belt/security/full
+	r_hand = /obj/item/gun/ballistic/automatic/wt550
+	backpack_contents = list(/obj/item/storage/firstaid/tactical/slaver=1,
+		/obj/item/crowbar/power=1,
+		/obj/item/mop/advanced=1,
+		/obj/item/gun/energy/e_gun/advtaser=1)
+	l_pocket = /obj/item/kitchen/knife/combat
+
+/datum/outfit/ert/janitor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	..()
+
+	if(visualsOnly)
+		return
+	var/obj/item/radio/R = H.ears
+	R.keyslot = new /obj/item/encryptionkey/heads/captain
+	R.recalculateChannels()
 
 /datum/outfit/ert/greybois
 	name = "Emergency Assistant"

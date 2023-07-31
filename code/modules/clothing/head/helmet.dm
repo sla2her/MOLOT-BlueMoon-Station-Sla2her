@@ -1,8 +1,8 @@
 /obj/item/clothing/head/helmet
-	name = "helmet"
+	name = "Helmet"
 	desc = "Standard Security gear. Protects the head from impacts."
-	icon_state = "helmet"
-	item_state = "helmet"
+	icon_state = "Helmet"
+	item_state = "Helmet"
 	armor = list(MELEE = 40, BULLET = 30, LASER = 30,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
 	flags_inv = HIDEEARS
 	cold_protection = HEAD
@@ -56,8 +56,8 @@
 	can_flashlight = 1
 	unique_reskin = list(
 		"Basic" = list(
-			RESKIN_ICON_STATE = "helmet",
-			RESKIN_ITEM_STATE = "helmet"
+			RESKIN_ICON_STATE = "Helmet",
+			RESKIN_ITEM_STATE = "Helmet"
 		),
 		"Old" = list(
 			RESKIN_ICON_STATE = "helmetold",
@@ -142,7 +142,7 @@
 					sleep(15)
 
 /obj/item/clothing/head/helmet/alt
-	name = "bulletproof helmet"
+	name = "bulletproof Helmet"
 	desc = "A bulletproof combat helmet that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent."
 	icon_state = "helmetalt"
 	item_state = "helmetalt"
@@ -153,8 +153,8 @@
 	dynamic_fhair_suffix = ""
 	unique_reskin = list(
 		"Basic" = list(
-			RESKIN_ICON_STATE = "helmet",
-			RESKIN_ITEM_STATE = "helmet"
+			RESKIN_ICON_STATE = "Helmet",
+			RESKIN_ITEM_STATE = "Helmet"
 		),
 		"Old" = list(
 			RESKIN_ICON_STATE = "helmetold",
@@ -163,7 +163,7 @@
 	)
 
 /obj/item/clothing/head/helmet/old
-	name = "degrading helmet"
+	name = "degrading Helmet"
 	desc = "Standard issue security helmet. Due to degradation the helmet's visor obstructs the users ability to see long distances."
 	tint = 2
 	dynamic_hair_suffix = ""
@@ -172,7 +172,7 @@
 	item_state = "helmetold"
 
 /obj/item/clothing/head/helmet/blueshirt
-	name = "peacekeeper helmet"
+	name = "peacekeeper Helmet"
 	desc = "A reliable, blue tinted helmet reminding you that you <i>still</i> owe that engineer a beer."
 	icon_state = "peacekeeper"
 	item_state = "peacekeeper"
@@ -181,10 +181,10 @@
 	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/riot
-	name = "riot helmet"
+	name = "riot Helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks."
 	icon_state = "riot"
-	item_state = "helmet"
+	item_state = "Helmet"
 	toggle_message = "You pull the visor down on"
 	alt_toggle_message = "You push the visor up on"
 	can_toggle = 1
@@ -237,7 +237,7 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/helmet/justice/escape
-	name = "alarm helmet"
+	name = "alarm Helmet"
 	desc = "WEEEEOOO. WEEEEEOOO. STOP THAT MONKEY. WEEEOOOO."
 	icon_state = "justice2"
 	toggle_message = "You turn off the light on"
@@ -246,7 +246,7 @@
 	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/swat
-	name = "\improper SWAT helmet"
+	name = "\improper SWAT Helmet"
 	desc = "An extremely robust, space-worthy helmet in a nefarious red and black stripe pattern."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
@@ -262,15 +262,52 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/helmet/swat/nanotrasen
-	name = "\improper SWAT helmet"
+	name = "\improper SWAT Helmet"
 	desc = "An extremely robust, space-worthy helmet with the Nanotrasen logo emblazoned on the top."
 	icon_state = "swat"
 	item_state = "swat"
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
+//Commander
+/obj/item/clothing/head/helmet/swat/command
+	name = "\improper Emergency Response Team commander Helmet"
+	desc = "An in-atmosphere helmet worn by the commander of a Nanotrasen Emergency Response Team. Has blue highlights."
+	icon_state = "erthelmet_cmd"
+	mutantrace_variation = STYLE_MUZZLE
+
+//Security
+/obj/item/clothing/head/helmet/swat/security
+	name = "\improper Emergency Response Team security Helmet"
+	desc = "An in-atmosphere helmet worn by security members of the Nanotrasen Emergency Response Team. Has red highlights."
+	icon_state = "erthelmet_sec"
+	mutantrace_variation = STYLE_MUZZLE
+
+//Engineer
+/obj/item/clothing/head/helmet/swat/engineer
+	name = "\improper Emergency Response Team engineer Helmet"
+	desc = "An in-atmosphere helmet worn by engineering members of the Nanotrasen Emergency Response Team. Has orange highlights."
+	icon_state = "erthelmet_eng"
+	mutantrace_variation = STYLE_MUZZLE
+
+//Medical
+/obj/item/clothing/head/helmet/swat/medical
+	name = "\improper Emergency Response Team medical Helmet"
+	desc = "A set of armor worn by medical members of the Nanotrasen Emergency Response Team. Has red and white highlights."
+	icon_state = "erthelmet_med"
+	mutantrace_variation = STYLE_MUZZLE
+
+//Janitorial
+/obj/item/clothing/head/helmet/swat/janitor
+	name = "\improper Emergency Response Team janitor Helmet"
+	desc = "A set of armor worn by janitorial members of the Nanotrasen Emergency Response Team. Has red and white highlights."
+	icon_state = "erthelmet_jan"
+	sprite_sheets = list(
+		"Vulpkanin" = 'icons/mob/species/vulpkanin/head.dmi'
+	)
+
 /obj/item/clothing/head/helmet/thunderdome
-	name = "\improper Thunderdome helmet"
+	name = "\improper Thunderdome Helmet"
 	desc = "<i>'Let the battle commence!'</i>"
 	flags_inv = HIDEEARS|HIDEHAIR
 	dynamic_hair_suffix = ""
@@ -286,7 +323,7 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/helmet/roman
-	name = "\improper Roman helmet"
+	name = "\improper Roman Helmet"
 	desc = "An ancient helmet made of bronze and leather."
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
@@ -304,7 +341,7 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
 
 /obj/item/clothing/head/helmet/roman/legionnaire
-	name = "\improper Roman legionnaire helmet"
+	name = "\improper Roman legionnaire Helmet"
 	desc = "An ancient helmet made of bronze and leather. Has a red crest on top of it."
 	icon_state = "roman_c"
 	item_state = "roman_c"
@@ -314,7 +351,7 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
 
 /obj/item/clothing/head/helmet/gladiator
-	name = "gladiator helmet"
+	name = "gladiator Helmet"
 	desc = "Ave, Imperator, morituri te salutant."
 	icon_state = "gladiator"
 	item_state = "gladiator"
@@ -325,7 +362,7 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/helmet/redtaghelm
-	name = "red laser tag helmet"
+	name = "red laser tag Helmet"
 	desc = "They have chosen their own end."
 	icon_state = "redtaghelm"
 	flags_cover = HEADCOVERSEYES
@@ -337,7 +374,7 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/helmet/bluetaghelm
-	name = "blue laser tag helmet"
+	name = "blue laser tag Helmet"
 	desc = "They'll need more men."
 	icon_state = "bluetaghelm"
 	flags_cover = HEADCOVERSEYES
@@ -347,7 +384,7 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/helmet/knight
-	name = "medieval helmet"
+	name = "medieval Helmet"
 	desc = "A classic metal helmet."
 	icon_state = "knight_green"
 	item_state = "knight_green"
@@ -379,7 +416,7 @@
 	item_state = "knight_red"
 
 /obj/item/clothing/head/helmet/knight/greyscale
-	name = "knight helmet"
+	name = "knight Helmet"
 	desc = "A classic medieval helmet, if you hold it upside down you could see that it's actually a bucket."
 	icon_state = "knight_greyscale"
 	item_state = "knight_greyscale"
@@ -387,7 +424,7 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 
 /obj/item/clothing/head/helmet/skull
-	name = "skull helmet"
+	name = "skull Helmet"
 	desc = "An intimidating tribal helmet, it doesn't look very comfortable."
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE
 	flags_cover = HEADCOVERSEYES
@@ -400,7 +437,7 @@
 	mutantrace_variation = STYLE_MUZZLE
 
 /obj/item/clothing/head/helmet/infiltrator
-	name = "insidious helmet"
+	name = "insidious Helmet"
 	desc = "An insidious armored combat helmet signed with Syndicate insignia. The visor is coated with a resistant paste guaranteed to withstand bright flashes perfectly."
 	icon_state = "infiltrator"
 	item_state = "infiltrator"
@@ -504,7 +541,7 @@
 		A.UpdateButtonIcon()
 
 /obj/item/clothing/head/helmet/durathread
-	name = "makeshift helmet"
+	name = "makeshift Helmet"
 	desc = "A hardhat with strips of leather and durathread for additional blunt protection."
 	icon_state = "durathread"
 	item_state = "durathread"
@@ -514,8 +551,8 @@
 	name = "Russian Helmet"
 	desc = "It can hold a bottle of vodka."
 	alternate_screams = RUSSIAN_SCREAMS
-	icon_state = "rus_helmet"
-	item_state = "rus_helmet"
+	icon_state = "rus_Helmet"
+	item_state = "rus_Helmet"
 	flags_inv = HIDEEARS
 	armor = list(MELEE = 30, BULLET = 25, LASER = 20,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 20, FIRE = 30, ACID = 50)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/rushelmet

@@ -209,8 +209,8 @@
 
 /datum/supply_pack/security/armory/swat
 	name = "SWAT Crate"
-	desc = "Содержит два полных комплекта прочных, огнеупорных герметичных костюмов, разработанных совместными усилиями IS-ERI и Nanotrasen. Каждый комплект содержит костюм, шлем, маску, боевой пояс и боевые перчатки. Для открытия требуется доступ к оружейной."
-	cost = 6000
+	desc = "Содержит два полных комплекта прочных, огнеупорных герметичных костюмов, разработанных совместными усилиями IS-ERI и Nanotrasen. Каждый комплект содержит костюм, шлем, маску, боевой пояс, боевой нож и боевые перчатки. Для открытия требуется доступ к оружейной."
+	cost = 9000
 	contains = list(/obj/item/clothing/head/helmet/swat/nanotrasen,
 					/obj/item/clothing/head/helmet/swat/nanotrasen,
 					/obj/item/clothing/suit/space/swat,
@@ -219,6 +219,62 @@
 					/obj/item/clothing/mask/gas/sechailer/swat,
 					/obj/item/storage/belt/military/assault,
 					/obj/item/storage/belt/military/assault,
+					/obj/item/kitchen/knife/combat,
+					/obj/item/kitchen/knife/combat,
+					/obj/item/clothing/gloves/tackler/combat/insulated,
+					/obj/item/clothing/gloves/tackler/combat/insulated)
+	crate_name = "swat crate"
+
+/datum/supply_pack/security/armory/swat/updated_medsec
+	name = "ERT Armor Crate | MedSec"
+	desc = "Содержит два полных комплекта прочных костюмов, разработанных совместными усилиями Дочерних Компаний Синдиката и Nanotrasen. Каждый комплект содержит костюм, шлем, маску, боевой пояс, боевой нож и боевые перчатки. Для открытия требуется доступ к оружейной."
+	cost = 6000
+	contains = list(/obj/item/clothing/suit/armor/hos/security,
+					/obj/item/clothing/suit/armor/hos/medical,
+					/obj/item/clothing/head/helmet/swat/security,
+					/obj/item/clothing/head/helmet/swat/medical,
+					/obj/item/clothing/mask/gas/sechailer/swat,
+					/obj/item/clothing/mask/gas/sechailer/swat,
+					/obj/item/storage/belt/military/assault,
+					/obj/item/storage/belt/military/assault,
+					/obj/item/kitchen/knife/combat,
+					/obj/item/kitchen/knife/combat,
+					/obj/item/clothing/gloves/tackler/combat/insulated,
+					/obj/item/clothing/gloves/tackler/combat/insulated)
+	crate_name = "swat crate"
+
+/datum/supply_pack/security/armory/swat/updated_medsec
+	name = "ERT Armor Crate | JanEng"
+	desc = "Содержит два полных комплекта прочных костюмов, разработанных совместными усилиями Дочерних Компаний Синдиката и Nanotrasen. Каждый комплект содержит костюм, шлем, маску, боевой пояс, боевой нож и боевые перчатки. Для открытия требуется доступ к оружейной."
+	cost = 6000
+	contains = list(/obj/item/clothing/suit/armor/hos/engineer,
+					/obj/item/clothing/suit/armor/hos/janitor,
+					/obj/item/clothing/head/helmet/swat/engineer,
+					/obj/item/clothing/head/helmet/swat/janitor,
+					/obj/item/clothing/mask/gas/sechailer/swat,
+					/obj/item/clothing/mask/gas/sechailer/swat,
+					/obj/item/storage/belt/military/assault,
+					/obj/item/storage/belt/military/assault,
+					/obj/item/kitchen/knife/combat,
+					/obj/item/kitchen/knife/combat,
+					/obj/item/clothing/gloves/tackler/combat/insulated,
+					/obj/item/clothing/gloves/tackler/combat/insulated)
+	crate_name = "swat crate"
+
+/datum/supply_pack/security/armory/swat/updated_medsec
+	name = "ERT Armor Crate | Command"
+	desc = "Содержит два полных комплекта прочных костюмов, разработанных совместными усилиями Дочерних Компаний Синдиката и Nanotrasen. Каждый комплект содержит костюм, шлем, маску, боевой пояс, боевой нож и боевые перчатки. Для открытия требуется доступ к оружейной."
+	cost = 6000
+	contains = list(/obj/item/clothing/suit/armor/hos/command,
+					/obj/item/clothing/suit/armor/hos/command,
+					/obj/item/clothing/head/helmet/swat/command,
+					/obj/item/clothing/head/helmet/swat/command,
+					/obj/item/clothing/mask/gas/sechailer/swat,
+					/obj/item/clothing/mask/gas/sechailer/swat,
+					/obj/item/storage/belt/military/assault,
+					/obj/item/storage/belt/military/assault,
+					/obj/item/kitchen/knife/combat,
+					/obj/item/kitchen/knife/combat,
 					/obj/item/clothing/gloves/tackler/combat/insulated,
 					/obj/item/clothing/gloves/tackler/combat/insulated)
 	crate_name = "swat crate"

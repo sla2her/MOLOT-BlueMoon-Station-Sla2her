@@ -279,6 +279,8 @@
 					/obj/item/clothing/shoes/swagshoes = 5,
 					/obj/item/clothing/suit/jacket/letterman_nanotrasen = 5,
 					/obj/item/clothing/under/misc/corporateuniform = 5,
+					/obj/item/clothing/suit/hooded/wintercoat/narsie/fake = 5,
+					/obj/item/clothing/suit/hooded/wintercoat/ratvar/fake = 5,
 					/obj/item/clothing/suit/hooded/wintercoat/polychromic = 5,
 					/obj/item/clothing/suit/toggle/wbreakpoly/polychromic = 5,
 					/obj/item/clothing/shoes/sneakers/poly/polychromic = 10,

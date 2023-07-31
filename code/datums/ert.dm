@@ -16,6 +16,12 @@
 	if (!polldesc)
 		polldesc = "a Code [code] Nanotrasen Emergency Response Team"
 
+/datum/ert/janitor
+	opendoors = FALSE
+	code = "Crap"
+	leader_role = /datum/antagonist/ert/janitor
+	roles = list(/datum/antagonist/ert/janitor)
+
 /datum/ert/blue
 	opendoors = FALSE
 	code = "Blue"
@@ -49,10 +55,10 @@
 
 /datum/ert/centcom_official
 	code = "Green"
-	teamsize = 1
+	teamsize = 3
 	opendoors = FALSE
 	leader_role = /datum/antagonist/official
-	roles = list(/datum/antagonist/official)
+	roles = list(/datum/antagonist/ert/security, /datum/antagonist/ert/medic)
 	rename_team = "CentCom Officials"
 	polldesc = "a CentCom Official"
 

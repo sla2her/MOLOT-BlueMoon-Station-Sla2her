@@ -8,7 +8,7 @@
 	var/datum/team/ert/ert_team
 	var/leader = FALSE
 	var/datum/outfit/outfit = /datum/outfit/ert/security
-	var/role = "Security Officer"
+	var/role = "Офицер"
 	var/list/name_source
 	threat = -5
 	var/random_names = TRUE
