@@ -46,8 +46,8 @@ Contains:
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/deathsquad
 	dog_fashion = /datum/dog_fashion/back/deathsquad
 
-	//NEW SWAT suit
-/obj/item/clothing/suit/armor/hos
+//NEW SWAT suit
+/obj/item/clothing/suit/space/swat
 	name = "MK.I SWAT Suit"
 	desc = "A tactical space suit first developed in a joint effort by the defunct IS-ERI and Nanotrasen in 20XX for military space operations. A tried and true workhorse, it is very difficult to move in but offers robust protection against all threats!"
 	icon_state = "heavy"

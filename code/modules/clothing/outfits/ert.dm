@@ -23,7 +23,7 @@
 		W.update_label(W.registered_name, W.assignment)
 
 /datum/outfit/ert/commander
-	name = "ERT Commander"
+	name = "ERT Commander - Blue Alert"
 
 	id = /obj/item/card/id/ert
 	head = /obj/item/clothing/head/helmet/swat/command
@@ -70,7 +70,7 @@
 		/obj/item/gun/energy/pulse/pistol/loyalpin=1)
 
 /datum/outfit/ert/security
-	name = "ERT Security"
+	name = "ERT Security - Blue Alert"
 
 	id = /obj/item/card/id/ert/Security
 	head = /obj/item/clothing/head/helmet/swat/security
@@ -119,7 +119,7 @@
 		/obj/item/gun/energy/pulse/carbine/loyalpin=1)
 
 /datum/outfit/ert/medic
-	name = "ERT Medic"
+	name = "ERT Medic - Blue Alert"
 
 	id = /obj/item/card/id/ert/Medical
 	head = /obj/item/clothing/head/helmet/swat/medical
@@ -169,7 +169,7 @@
 		/obj/item/gun/medbeam=1)
 
 /datum/outfit/ert/engineer
-	name = "ERT Engineer"
+	name = "ERT Engineer - Blue Alert"
 
 	id = /obj/item/card/id/ert/Engineer
 	head = /obj/item/clothing/head/helmet/swat/engineer

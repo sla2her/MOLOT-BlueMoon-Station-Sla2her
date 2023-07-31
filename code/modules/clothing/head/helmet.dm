@@ -302,9 +302,6 @@
 	name = "\improper Emergency Response Team janitor Helmet"
 	desc = "A set of armor worn by janitorial members of the Nanotrasen Emergency Response Team. Has red and white highlights."
 	icon_state = "erthelmet_jan"
-	sprite_sheets = list(
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/head.dmi'
-	)
 
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome Helmet"
