@@ -220,7 +220,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 			to_chat(C, "<span class='notice'>No active admins are online, your adminhelp was sent to the admin irc.</span>")
 		else
 			// citadel edit: send anyways
-			send2adminchat(initiator_ckey, "Ticket #[id]: [name] - Heard by [admin_number_present] admins present with +BAN.")
+			send2adminchat(initiator_ckey, "[key_name(initiator)] | Ticket #[id]: [name] - Heard by [admin_number_present] admins present with +BAN.")
 
 	GLOB.ahelp_tickets.active_tickets += src
 
@@ -233,7 +233,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 /datum/admin_help/proc/AddInteraction(formatted_message)
 	if(usr && (usr.ckey != initiator_ckey) && !answered)
 		answered = TRUE
-		send2adminchat(initiator_ckey, "Ticket #[id]: Answered by [key_name(usr)]")
+		send2adminchat(initiator_ckey, "[key_name(initiator)] | Ticket #[id]: Answered by [key_name(usr)]")
 	_interactions += "[TIME_STAMP("hh:mm:ss", FALSE)]: [formatted_message]"
 
 //Removes the ahelp verb and returns it after 2 minutes
