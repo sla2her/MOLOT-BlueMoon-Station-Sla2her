@@ -89,8 +89,8 @@
 		return
 	for(var/i in 1 to 4)
 		new /obj/item/reagent_containers/pill/patch/styptic(src)
-	new /obj/item/stack/medical/gauze(src)
-	new /obj/item/stack/medical/gauze(src)
+	new /obj/item/reagent_containers/hypospray/medipen/salacid(src)
+	new /obj/item/reagent_containers/hypospray/medipen/salacid(src)
 	new /obj/item/healthanalyzer(src)
 
 /obj/item/storage/firstaid/fire
@@ -108,9 +108,9 @@
 		return
 	for(var/i in 1 to 3)
 		new /obj/item/reagent_containers/pill/patch/silver_sulf(src)
+	new /obj/item/reagent_containers/hypospray/medipen/oxandrolone(src)
+	new /obj/item/reagent_containers/hypospray/medipen/oxandrolone(src)
 	new /obj/item/reagent_containers/pill/oxandrolone(src)
-	new /obj/item/reagent_containers/pill/oxandrolone(src)
-	new /obj/item/reagent_containers/hypospray/medipen(src)
 	new /obj/item/healthanalyzer(src)
 
 /obj/item/storage/firstaid/toxin
@@ -126,8 +126,10 @@
 /obj/item/storage/firstaid/toxin/PopulateContents()
 	if(empty)
 		return
-	for(var/i in 1 to 4)
+	for(var/i in 1 to 2)
 		new /obj/item/reagent_containers/syringe/charcoal(src)
+	for(var/i in 1 to 2)
+		new /obj/item/reagent_containers/hypospray/medipen/penacid
 	for(var/i in 1 to 2)
 		new /obj/item/storage/pill_bottle/charcoal(src)
 	new /obj/item/healthanalyzer(src)
@@ -147,8 +149,8 @@
 		return
 	for(var/i in 1 to 4)
 		new /obj/item/reagent_containers/pill/salbutamol(src)
-	new /obj/item/reagent_containers/hypospray/medipen(src)
-	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/reagent_containers/hypospray/medipen/salbutamol(src)
+	new /obj/item/reagent_containers/hypospray/medipen/salbutamol(src)
 	new /obj/item/healthanalyzer(src)
 
 /obj/item/storage/firstaid/tactical
@@ -170,10 +172,10 @@
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/defibrillator/compact/combat(src)
 	new /obj/item/reagent_containers/hypospray/combat/omnizine(src)
-	new /obj/item/reagent_containers/medspray/styptic(src)
-	new /obj/item/reagent_containers/medspray/silver_sulf(src)
+	new /obj/item/reagent_containers/medspray/synthflesh(src)
+	new /obj/item/reagent_containers/medspray/synthflesh(src)
+	new /obj/item/reagent_containers/medspray/synthflesh(src)
 	new /obj/item/healthanalyzer/advanced(src)
-	new /obj/item/reagent_containers/syringe/lethal/choral(src) // what the fuck does anyone use this piece of shit for
 	new /obj/item/clothing/glasses/hud/health/night/syndicate(src)
 
 /obj/item/storage/firstaid/tactical/nukeop
@@ -184,10 +186,10 @@
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/defibrillator/compact/combat(src)
 	new /obj/item/reagent_containers/hypospray/combat(src)
-	new /obj/item/reagent_containers/medspray/styptic(src)
-	new /obj/item/reagent_containers/medspray/silver_sulf(src)
+	new /obj/item/reagent_containers/medspray/synthflesh(src)
+	new /obj/item/reagent_containers/medspray/synthflesh(src)
 	new /obj/item/healthanalyzer/advanced(src)
-	new /obj/item/reagent_containers/syringe/lethal/choral(src) // what the fuck does anyone use this piece of shit for
+	new /obj/item/reagent_containers/syringe/lethal/choral(src)
 	new /obj/item/clothing/glasses/hud/health/night/syndicate(src)
 
 /obj/item/storage/firstaid/radbgone

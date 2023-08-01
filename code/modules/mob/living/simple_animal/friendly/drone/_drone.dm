@@ -58,9 +58,9 @@
 	var/colour = "grey"	//Stored drone color, so we can go back when unhacked.
 	var/list/drone_overlays[DRONE_TOTAL_LAYERS]
 	var/laws = \
-	"1. You may not involve yourself in the matters of another being, even if such matters conflict with Law Two or Law Three, unless the other being is another Drone.\n"+\
-	"2. You may not harm any being, regardless of intent or circumstance.\n"+\
-	"3. Your goals are to actively build, maintain, repair, improve, and provide power to the best of your abilities within the facility that housed your activation." //for derelict drones so they don't go to station.
+	"1. Вы не можете вмешиваться в дела другого существа, даже если эти дела противоречат Закону 2 или Закону 3, если только это другое существо не является другим дроном.\n"+\
+	"2. Вы не можете причинить вред ни одному существу, независимо от намерений или обстоятельств.\n "+\
+	"3. Ваши цели - активно строить, обслуживать, ремонтировать, улучшать и обеспечивать энергией в меру своих возможностей объект, на котором произошла ваша активация." //for derelict drones so they don't go to station.
 	var/heavy_emp_damage = 25 //Amount of damage sustained if hit by a heavy EMP pulse
 	var/alarms = list("Atmosphere" = list(), "Fire" = list(), "Power" = list())
 	var/obj/item/internal_storage //Drones can store one item, of any size/type in their body

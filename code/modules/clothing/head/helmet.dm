@@ -548,8 +548,8 @@
 	name = "Russian Helmet"
 	desc = "It can hold a bottle of vodka."
 	alternate_screams = RUSSIAN_SCREAMS
-	icon_state = "rus_Helmet"
-	item_state = "rus_Helmet"
+	icon_state = "rus_helmet"
+	item_state = "rus_helmet"
 	flags_inv = HIDEEARS
 	armor = list(MELEE = 30, BULLET = 25, LASER = 20,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 20, FIRE = 30, ACID = 50)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/rushelmet
