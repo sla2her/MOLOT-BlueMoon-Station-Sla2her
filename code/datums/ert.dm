@@ -22,6 +22,12 @@
 	leader_role = /datum/antagonist/ert/janitor
 	roles = list(/datum/antagonist/ert/janitor)
 
+/datum/ert/green
+	opendoors = FALSE
+	code = "Green"
+	leader_role = /datum/antagonist/ert/commander/green
+	roles = list(/datum/antagonist/ert/security/green, /datum/antagonist/ert/medic/green, /datum/antagonist/ert/engineer/green)
+
 /datum/ert/blue
 	opendoors = FALSE
 	code = "Blue"
@@ -34,11 +40,13 @@
 /datum/ert/red
 	leader_role = /datum/antagonist/ert/commander/red
 	roles = list(/datum/antagonist/ert/security/red, /datum/antagonist/ert/medic/red, /datum/antagonist/ert/engineer/red)
+	opendoors = TRUE
 	code = "Red"
 
 /datum/ert/deathsquad
 	roles = list(/datum/antagonist/ert/deathsquad)
 	leader_role = /datum/antagonist/ert/deathsquad/leader
+	opendoors = TRUE
 	rename_team = "Deathsquad"
 	code = "Delta"
 	mission = "Разберитесь с проблемами, достойными Дельта-Кода."
@@ -48,13 +56,14 @@
 /datum/ert/syndiesquad
 	roles = list(/datum/antagonist/ert/syndiesquad)
 	leader_role = /datum/antagonist/ert/syndiesquad/leader
+	opendoors = TRUE
 	rename_team = "Syndicate Strike Team"
 	code = "Crimson"
 	mission = "Разберитесь с проблемами, достойными Дельта-Кода."
 	polldesc = "an elite Syndicate Strike Team"
 
 /datum/ert/centcom_official
-	code = "Green"
+	code = "Official"
 	teamsize = 3
 	opendoors = FALSE
 	leader_role = /datum/antagonist/official

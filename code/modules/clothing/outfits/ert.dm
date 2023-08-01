@@ -22,12 +22,27 @@
 		W.registered_name = H.real_name
 		W.update_label(W.registered_name, W.assignment)
 
+/datum/outfit/ert/commander/green
+	name = "ERT Commander - Green Alert"
+
+	id = /obj/item/card/id/ert
+	head = /obj/item/clothing/head/helmet/swat/command
+	mask = /obj/item/clothing/mask/gas/sechailer
+	suit = /obj/item/clothing/suit/armor/hos/command
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	back = /obj/item/storage/backpack/captain
+	belt = /obj/item/storage/belt/security/full
+	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/storage/firstaid/tactical/slaver=1,
+		/obj/item/crowbar/power=1)
+	l_pocket = /obj/item/kitchen/knife/combat
+
 /datum/outfit/ert/commander
 	name = "ERT Commander - Blue Alert"
 
 	id = /obj/item/card/id/ert
-	head = /obj/item/clothing/head/helmet/swat/command
-	suit = /obj/item/clothing/suit/armor/hos/command
+	suit = /obj/item/clothing/suit/space/hardsuit/ert
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	back = /obj/item/storage/backpack/captain
 	belt = /obj/item/storage/belt/security/full
@@ -69,12 +84,28 @@
 		/obj/item/storage/ifak=1,\
 		/obj/item/gun/energy/pulse/pistol/loyalpin=1)
 
+/datum/outfit/ert/security/green
+	name = "ERT Security - Green Alert"
+
+	id = /obj/item/card/id/ert/Security
+	head = /obj/item/clothing/head/helmet/swat/security
+	mask = /obj/item/clothing/mask/gas/sechailer
+	suit = /obj/item/clothing/suit/armor/hos/security
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	belt = /obj/item/storage/belt/security/full
+	back = /obj/item/storage/backpack/security
+	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/storage/firstaid/tactical/slaver=1,
+		/obj/item/storage/box/handcuffs=1,\
+		/obj/item/crowbar/power=1)
+	l_pocket = /obj/item/kitchen/knife/combat
+
 /datum/outfit/ert/security
 	name = "ERT Security - Blue Alert"
 
 	id = /obj/item/card/id/ert/Security
-	head = /obj/item/clothing/head/helmet/swat/security
-	suit = /obj/item/clothing/suit/armor/hos/security
+	suit = /obj/item/clothing/suit/space/hardsuit/ert/sec
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	belt = /obj/item/storage/belt/security/full
 	back = /obj/item/storage/backpack/security
@@ -118,12 +149,29 @@
 		/obj/item/storage/ifak=1,\
 		/obj/item/gun/energy/pulse/carbine/loyalpin=1)
 
+/datum/outfit/ert/medic/green
+	name = "ERT Medic - Green Alert"
+
+	id = /obj/item/card/id/ert/Medical
+	head = /obj/item/clothing/head/helmet/swat/medical
+	mask = /obj/item/clothing/mask/gas/sechailer
+	suit = /obj/item/clothing/suit/armor/hos/medical
+	glasses = /obj/item/clothing/glasses/hud/health
+	back = /obj/item/storage/backpack/satchel/med
+	belt = /obj/item/storage/belt/medical/surgery_belt_adv/cmo
+	l_hand = /obj/item/storage/firstaid/regular
+	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/storage/firstaid/tactical=1,
+		/obj/item/crowbar/power=1,
+		/obj/item/gun/medbeam=1)
+	l_pocket = /obj/item/kitchen/knife/combat
+
 /datum/outfit/ert/medic
 	name = "ERT Medic - Blue Alert"
 
 	id = /obj/item/card/id/ert/Medical
-	head = /obj/item/clothing/head/helmet/swat/medical
-	suit = /obj/item/clothing/suit/armor/hos/medical
+	suit = /obj/item/clothing/suit/space/hardsuit/ert/med
 	glasses = /obj/item/clothing/glasses/hud/health
 	back = /obj/item/storage/backpack/satchel/med
 	belt = /obj/item/storage/belt/medical/surgery_belt_adv/cmo
@@ -135,6 +183,7 @@
 		/obj/item/ammo_box/magazine/wt550m9=3,\
 		/obj/item/reagent_containers/hypospray/combat=1,\
 		/obj/item/gun/medbeam=1)
+	l_pocket = /obj/item/kitchen/knife/combat
 
 /datum/outfit/ert/medic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	..()
@@ -168,11 +217,12 @@
 		/obj/item/reagent_containers/hypospray/combat/nanites=1,\
 		/obj/item/gun/medbeam=1)
 
-/datum/outfit/ert/engineer
-	name = "ERT Engineer - Blue Alert"
+/datum/outfit/ert/engineer/green
+	name = "ERT Engineer - Green Alert"
 
 	id = /obj/item/card/id/ert/Engineer
 	head = /obj/item/clothing/head/helmet/swat/engineer
+	mask = /obj/item/clothing/mask/gas/sechailer
 	suit = /obj/item/clothing/suit/armor/hos/engineer
 	glasses =  /obj/item/clothing/glasses/meson/engine
 	back = /obj/item/storage/backpack/industrial
@@ -185,6 +235,30 @@
 		/obj/item/ammo_box/magazine/wt550m9=3,\
 		/obj/item/storage/ifak=1,\
 		/obj/item/construction/rcd/loaded=1)
+	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/storage/firstaid/tactical=1,
+		/obj/item/crowbar/power=1,
+		/obj/item/construction/rcd/loaded=1)
+	r_pocket = /obj/item/kitchen/knife/combat
+
+/datum/outfit/ert/engineer
+	name = "ERT Engineer - Blue Alert"
+
+	id = /obj/item/card/id/ert/Engineer
+	suit = /obj/item/clothing/suit/space/hardsuit/ert/engi
+	glasses =  /obj/item/clothing/glasses/meson/engine
+	back = /obj/item/storage/backpack/industrial
+	belt = /obj/item/storage/belt/utility/full
+	l_pocket = /obj/item/rcd_ammo/large
+	r_hand = /obj/item/gun/ballistic/automatic/wt550
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/melee/baton/loaded=1,\
+		/obj/item/clothing/mask/gas/sechailer=1,\
+		/obj/item/ammo_box/magazine/wt550m9=3,\
+		/obj/item/storage/ifak=1,\
+		/obj/item/construction/rcd/loaded=1)
+	r_pocket = /obj/item/kitchen/knife/combat
 
 /datum/outfit/ert/engineer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	..()

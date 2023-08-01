@@ -13,3 +13,32 @@
 	if(new_action)
 		action = new_action
 		action.weapon = src
+
+/obj/item/station_clock_curse
+	name = "Проклятая Сфера"
+	desc = "Эта сфера хранит в себе первородное зло и, наверное, это недопустимо ронять или даже ломать..."
+	icon = 'icons/effects/clockwork_effects.dmi'
+	icon_state ="ratvars_flame"
+	var/static/curselimit = 0
+
+/obj/item/station_clock_curse/attack_self(mob/living/user)
+	if(!is_servant_of_ratvar(user, TRUE))
+		user.dropItemToGround(src, TRUE)
+		user.DefaultCombatKnockdown(100)
+		to_chat(user, "<span class='warning'>Мощная сила отталкивает вас от [src]!</span>")
+		return
+	if(curselimit > 1)
+		to_chat(user, "<span class='notice'>Мы исчерпали свою способность проклинать Космическую Станцию.</span>")
+		return
+	if(locate(/obj/structure/destructible/clockwork/massive/ratvar) in GLOB.poi_list)
+		to_chat(user, "<span class='warning'>Ratvar is already on this plane, there is no delaying the end of all things.</span>")
+		return
+
+	to_chat(user, "<span class='danger'>Вы разбиваете сферу! Бронзовая сущность поднимается в воздух, затем исчезает.</span>")
+	playsound(user.loc, 'sound/effects/glassbr1.ogg', 50, 1)
+	qdel(src)
+	sleep(pick(100, 200, 400, 800, 1200))
+	priority_announce("Что-то очень массивное и пугающее приближается к [station_name()]! Пусть Господь хранит Ваши души!!", "Центральное Командование, Отдел Работы с Реальностью", 'modular_bluemoon/kovac_shitcode/sound/clock_storm.ogg')
+	var/datum/round_event_control/portal_storm_clock/portal_storm_clock = new/datum/round_event_control/portal_storm_clock
+	portal_storm_clock.runEvent()
+	curselimit++
