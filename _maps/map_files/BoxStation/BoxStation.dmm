@@ -4826,8 +4826,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/maintenance{
-	name = "Security Maintenance";
-	req_access_txt = "1"
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -45022,7 +45021,7 @@
 	req_access_txt = "38"
 	},
 /obj/machinery/door/firedoor,
-/turf/closed/wall,
+/turf/open/floor/plating,
 /area/maintenance/fore)
 "eIC" = (
 /obj/machinery/hydroponics/soil,

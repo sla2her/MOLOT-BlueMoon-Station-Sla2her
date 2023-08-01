@@ -7596,8 +7596,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/maintenance{
-	name = "Security Maintenance";
-	req_access_txt = "1"
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -52706,9 +52705,7 @@
 	req_access_txt = "38"
 	},
 /obj/machinery/door/firedoor,
-/turf/closed/wall/r_wall/syndicate{
-	smooth = 2
-	},
+/turf/open/floor/mineral/plastitanium,
 /area/service/lawoffice)
 "eMs" = (
 /obj/machinery/light/small{
@@ -52758,6 +52755,9 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "eRr" = (
@@ -53659,7 +53659,7 @@
 	req_access_txt = "38"
 	},
 /obj/machinery/door/firedoor,
-/turf/closed/wall,
+/turf/open/floor/plating,
 /area/maintenance/fore)
 "fJY" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -57820,12 +57820,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
-"ltB" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/wood,
-/area/service/lawoffice)
 "ltK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -58100,15 +58094,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/prison)
-"lJX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/wood,
-/area/service/lawoffice)
 "lKj" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
@@ -60649,6 +60634,17 @@
 	},
 /turf/open/floor/glass/reinforced,
 /area/commons/dorms)
+"plP" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood,
+/area/service/lawoffice)
 "plS" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -64364,6 +64360,9 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "uFV" = (
@@ -65533,9 +65532,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/closed/wall/r_wall/syndicate{
 	smooth = 2
@@ -94278,7 +94274,7 @@ aph
 cDw
 ara
 uTE
-lJX
+apZ
 fmH
 gmR
 gWf
@@ -94535,8 +94531,8 @@ aph
 gFJ
 lDT
 koO
-ltB
-are
+lDT
+plP
 uFT
 eRj
 wWk
