@@ -1,8 +1,8 @@
 /obj/item/clothing/head/helmet
 	name = "Helmet"
 	desc = "Standard Security gear. Protects the head from impacts."
-	icon_state = "Helmet"
-	item_state = "Helmet"
+	icon_state = "helmet"
+	item_state = "helmet"
 	armor = list(MELEE = 40, BULLET = 30, LASER = 30,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
 	flags_inv = HIDEEARS
 	cold_protection = HEAD
@@ -56,8 +56,8 @@
 	can_flashlight = 1
 	unique_reskin = list(
 		"Basic" = list(
-			RESKIN_ICON_STATE = "Helmet",
-			RESKIN_ITEM_STATE = "Helmet"
+			RESKIN_ICON_STATE = "helmet",
+			RESKIN_ITEM_STATE = "helmet"
 		),
 		"Old" = list(
 			RESKIN_ICON_STATE = "helmetold",
@@ -153,8 +153,8 @@
 	dynamic_fhair_suffix = ""
 	unique_reskin = list(
 		"Basic" = list(
-			RESKIN_ICON_STATE = "Helmet",
-			RESKIN_ITEM_STATE = "Helmet"
+			RESKIN_ICON_STATE = "helmet",
+			RESKIN_ITEM_STATE = "helmet"
 		),
 		"Old" = list(
 			RESKIN_ICON_STATE = "helmetold",
@@ -184,7 +184,7 @@
 	name = "riot Helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks."
 	icon_state = "riot"
-	item_state = "Helmet"
+	item_state = "helmet"
 	toggle_message = "You pull the visor down on"
 	alt_toggle_message = "You push the visor up on"
 	can_toggle = 1
