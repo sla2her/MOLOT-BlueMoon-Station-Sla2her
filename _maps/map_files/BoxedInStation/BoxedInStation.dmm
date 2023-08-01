@@ -6254,7 +6254,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "drC" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -10460,7 +10460,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "fsw" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -12419,7 +12419,7 @@
 /turf/open/floor/plating,
 /area/hallway/secondary/exit)
 "guz" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -17459,7 +17459,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "jcp" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -19208,7 +19208,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "jTW" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -25840,7 +25840,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "nFf" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -28225,7 +28225,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "oLC" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -31693,7 +31693,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "quT" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -31712,7 +31712,7 @@
 /turf/open/floor/plating,
 /area/science/robotics/lab)
 "qvi" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -32253,7 +32253,7 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/command/nuke_storage)
 "qLf" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -32984,7 +32984,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "ren" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -34551,7 +34551,7 @@
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/rd)
 "rUy" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -35424,7 +35424,7 @@
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "sqs" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -38566,7 +38566,7 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "tVf" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /obj/machinery/camera/preset{

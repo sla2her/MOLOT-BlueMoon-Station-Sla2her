@@ -6185,7 +6185,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/eventmap/inside)
 "asb" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -16515,7 +16515,7 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "beB" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /obj/structure/cable/yellow{

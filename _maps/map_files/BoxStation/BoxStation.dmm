@@ -38774,7 +38774,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -43928,7 +43928,7 @@
 /turf/open/floor/wood,
 /area/command/bridge)
 "dIu" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -45501,7 +45501,7 @@
 /turf/closed/wall/r_wall,
 /area/security/office)
 "fcd" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/plating{
@@ -47271,7 +47271,7 @@
 /turf/open/space/basic,
 /area/solars/starboard/fore)
 "gwi" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -48042,7 +48042,7 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "hbE" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -48435,7 +48435,7 @@
 /turf/open/floor/plating,
 /area/command/gateway)
 "hub" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/machinery/firealarm{
@@ -52479,7 +52479,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /obj/effect/landmark/start/security_officer,
@@ -53431,7 +53431,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/effect/landmark/start/security_officer,
@@ -55030,7 +55030,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -55983,7 +55983,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/bar)
 "nNw" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -57204,7 +57204,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "oNt" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/line,
@@ -57561,7 +57561,7 @@
 /area/security/prison/upper)
 "piw" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line,
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -58545,7 +58545,7 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "pWy" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -59380,7 +59380,7 @@
 /turf/open/floor/festive/wooden/wooden1,
 /area/commons/fitness/recreation)
 "qLy" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -67285,7 +67285,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -67517,7 +67517,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,

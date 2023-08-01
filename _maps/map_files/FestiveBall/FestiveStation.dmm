@@ -8927,7 +8927,7 @@
 /area/security/processing)
 "awA" = (
 /obj/effect/decal/festive/fairylights,
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -13256,7 +13256,7 @@
 /turf/open/floor/wood,
 /area/commons/storage/tools)
 "aIC" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -25235,7 +25235,7 @@
 /turf/open/floor/festive/wooden/wooden1,
 /area/maintenance/bar)
 "bnD" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 1
 	},
 /turf/open/floor/festive/wooden/wooden1,
@@ -33981,7 +33981,7 @@
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bHe" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /obj/effect/decal/festive/fairylights,
@@ -34006,7 +34006,7 @@
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bHj" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /obj/effect/decal/festive/fairylights,
@@ -34379,7 +34379,7 @@
 /turf/open/floor/plasteel,
 /area/cargo)
 "bHU" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 8
 	},
 /turf/open/floor/festive/wooden/wooden1,
@@ -34870,13 +34870,13 @@
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bIP" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bIQ" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -34891,7 +34891,7 @@
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "bIS" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
@@ -34901,7 +34901,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/service/bar/atrium)
 "bIU" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
@@ -52327,7 +52327,7 @@
 /turf/open/floor/carpet/monochrome,
 /area/maintenance/bar/cafe)
 "cyg" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -52550,7 +52550,7 @@
 /turf/open/floor/plasteel/checker,
 /area/maintenance/bar/cafe)
 "cyQ" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -52664,7 +52664,7 @@
 /turf/open/floor/plasteel/checker,
 /area/maintenance/bar/cafe)
 "czm" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /obj/machinery/light{
@@ -52791,13 +52791,13 @@
 /turf/open/floor/plasteel/checker,
 /area/maintenance/bar/cafe)
 "czH" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "czI" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -54354,7 +54354,7 @@
 /turf/open/floor/circuit/off,
 /area/science)
 "jCx" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -55245,7 +55245,7 @@
 /turf/open/floor/carpet/red,
 /area/maintenance/bar)
 "ptp" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -55437,7 +55437,7 @@
 /turf/open/floor/circuit/off,
 /area/science)
 "qzx" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,

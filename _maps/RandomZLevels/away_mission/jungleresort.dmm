@@ -1171,7 +1171,7 @@
 /turf/open/floor/plating/dirt/jungle,
 /area/awaymission/jungleresort)
 "rt" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -3102,7 +3102,7 @@
 /turf/open/floor/plating/asteroid,
 /area/awaymission/jungleresort)
 "Qr" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,

@@ -41245,7 +41245,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/hydroponics)
 "bqK" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	color = "#c45c57";
 	dir = 4
 	},
@@ -41255,7 +41255,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/bar/atrium)
 "bqL" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	color = "#c45c57"
 	},
 /turf/open/floor/plasteel/dark,
@@ -78392,7 +78392,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	color = "#c45c57"
 	},
 /obj/structure/sign/poster/contraband/random{
@@ -78401,7 +78401,7 @@
 /turf/open/floor/wood,
 /area/maintenance/starboard/fore)
 "cDY" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	color = "#c45c57"
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,

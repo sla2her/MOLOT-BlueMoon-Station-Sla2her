@@ -17814,7 +17814,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/hallway/primary/fore)
 "aFZ" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /obj/machinery/status_display/evac{
@@ -18234,7 +18234,7 @@
 	dir = 4;
 	light_color = "#c1caff"
 	},
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel/grimy,
@@ -18588,13 +18588,13 @@
 /turf/open/floor/plasteel,
 /area/science/lab)
 "aHu" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/grimy,
 /area/hallway/primary/fore)
 "aHv" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel/grimy,
@@ -23400,7 +23400,7 @@
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain/private)
 "aQG" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /obj/machinery/camera/autoname{
@@ -51253,7 +51253,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/transit_tube)
 "coz" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel,

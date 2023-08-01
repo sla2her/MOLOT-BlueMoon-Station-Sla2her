@@ -28337,7 +28337,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/brig)
 "jPW" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /obj/machinery/light,

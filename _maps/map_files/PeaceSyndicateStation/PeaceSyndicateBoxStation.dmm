@@ -3801,7 +3801,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 1
 	},
 /obj/item/radio/intercom{
@@ -51855,7 +51855,7 @@
 	},
 /area/maintenance/fore/secondary)
 "dIu" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown{
 	dir = 8
 	},
 /turf/open/floor/plating,
