@@ -143,13 +143,22 @@
 	cost = 6
 	purchasable_from = ~UPLINK_CLOWN_OPS
 
+/datum/uplink_item/explosives/syndicate_minibombs
+	name = "Syndicate Minibomb Clusterbang"
+	desc = "The clusterbang minibomb is a grenade with a five-second fuse. Upon detonation, it will create a small hull breach \
+			in addition to dealing high amounts of damage to nearby personnel."
+	item = /obj/item/grenade/clusterbuster/syndieminibomb
+	cost = 21
+	surplus = 35
+	purchasable_from = UPLINK_NUKE_OPS
+
 /datum/uplink_item/explosives/tearstache
 	name = "Teachstache Grenade"
 	desc = "A teargas grenade that launches sticky moustaches onto the face of anyone not wearing a clown or mime mask. The moustaches will \
 		remain attached to the face of all targets for two minutes, preventing the use of breath masks and other such devices."
 	item = /obj/item/grenade/chem_grenade/teargas/moustache
 	cost = 3
-	surplus = 0
+	surplus = 1
 	purchasable_from = UPLINK_CLOWN_OPS
 
 /datum/uplink_item/explosives/viscerators
@@ -160,3 +169,27 @@
 	cost = 5
 	surplus = 35
 	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
+
+/datum/uplink_item/explosives/spesscarp
+	name = "Space Carps Delivery Grenade"
+	desc = "A traditional grenade with a payload consisting entirely of carps. Useful in any scenario!"
+	item = /obj/item/grenade/spawnergrenade/spesscarp
+	cost = 5
+	surplus = 35
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
+
+/datum/uplink_item/explosives/spesscarps
+	name = "Space Carps Clusterbang"
+	desc = "A traditional clusterbang grenade with a payload consisting entirely of carps. Useful in any scenario!"
+	item = /obj/item/grenade/clusterbuster/spawner_spesscarp
+	cost = 16
+	surplus = 35
+	purchasable_from = UPLINK_NUKE_OPS
+
+/datum/uplink_item/explosives/clf3
+	name = "Clusterbang CLF3"
+	desc = "WELCOME TO THE HELL, BITCHES."
+	item = /obj/item/grenade/clusterbuster/clf3
+	cost = 28
+	surplus = 0
+	purchasable_from = UPLINK_NUKE_OPS
