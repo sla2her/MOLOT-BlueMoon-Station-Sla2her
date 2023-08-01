@@ -50,6 +50,9 @@
 
 /datum/antagonist/ert/security // kinda handled by the base template but here for completion
 
+/datum/antagonist/ert/security/green
+	outfit = /datum/outfit/ert/security/green
+
 /datum/antagonist/ert/security/amber
 	outfit = /datum/outfit/ert/security/alert
 
@@ -61,6 +64,9 @@
 	outfit = /datum/outfit/ert/engineer
 	skill_modifiers = list(/datum/skill_modifier/job/level/wiring)
 
+/datum/antagonist/ert/engineer/green
+	outfit = /datum/outfit/ert/engineer/green
+
 /datum/antagonist/ert/engineer/amber
 	outfit = /datum/outfit/ert/engineer/alert
 
@@ -71,6 +77,9 @@
 	role = "Полевой Медик"
 	outfit = /datum/outfit/ert/medic
 	skill_modifiers = list(/datum/skill_modifier/job/affinity/surgery)
+
+/datum/antagonist/ert/medic/green
+	outfit = /datum/outfit/ert/medic/green
 
 /datum/antagonist/ert/medic/amber
 	outfit = /datum/outfit/ert/medic/alert
@@ -84,6 +93,9 @@
 
 /datum/antagonist/ert/commander/amber
 	outfit = /datum/outfit/ert/commander/alert
+
+/datum/antagonist/ert/commander/green
+	outfit = /datum/outfit/ert/commander/green
 
 /datum/antagonist/ert/commander/red
 	outfit = /datum/outfit/ert/commander/alert/red
@@ -181,7 +193,6 @@
 
 	missiondesc += "<BR><B>Your Mission</B> : [ert_team.mission.explanation_text]"
 	to_chat(owner,missiondesc)
-
 
 /datum/antagonist/ert/families
 	name = "Space Police Responder"

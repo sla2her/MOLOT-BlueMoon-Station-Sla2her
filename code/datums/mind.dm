@@ -1651,6 +1651,13 @@ GLOBAL_LIST(objective_choices)
 	if(!(has_antag_datum(/datum/antagonist/traitor/contractor_support)))
 		add_antag_datum(/datum/antagonist/traitor/contractor_support)
 
+/datum/mind/proc/make_Heretic()
+	var/datum/antagonist/heretic/C = has_antag_datum(/datum/antagonist/heretic)
+	if(!C)
+		C = add_antag_datum(/datum/antagonist/heretic)
+		special_role = ROLE_HERETIC
+	return C
+
 /datum/mind/proc/make_Changeling()
 	var/datum/antagonist/changeling/C = has_antag_datum(/datum/antagonist/changeling)
 	if(!C)

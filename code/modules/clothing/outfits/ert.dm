@@ -32,7 +32,7 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	back = /obj/item/storage/backpack/captain
 	belt = /obj/item/storage/belt/security/full
-	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	r_hand = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/storage/firstaid/tactical/slaver=1,
 		/obj/item/crowbar/power=1)
@@ -94,7 +94,7 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	belt = /obj/item/storage/belt/security/full
 	back = /obj/item/storage/backpack/security
-	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	r_hand = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/storage/firstaid/tactical/slaver=1,
 		/obj/item/storage/box/handcuffs=1,\
@@ -160,7 +160,7 @@
 	back = /obj/item/storage/backpack/satchel/med
 	belt = /obj/item/storage/belt/medical/surgery_belt_adv/cmo
 	l_hand = /obj/item/storage/firstaid/regular
-	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	r_hand = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/storage/firstaid/tactical=1,
 		/obj/item/crowbar/power=1,
@@ -235,7 +235,7 @@
 		/obj/item/ammo_box/magazine/wt550m9=3,\
 		/obj/item/storage/ifak=1,\
 		/obj/item/construction/rcd/loaded=1)
-	r_hand = /obj/item/gun/energy/e_gun/advtaser=1
+	r_hand = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/storage/firstaid/tactical=1,
 		/obj/item/crowbar/power=1,
@@ -301,11 +301,10 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	back = /obj/item/storage/backpack/captain
 	belt = /obj/item/storage/belt/security/full
-	r_hand = /obj/item/gun/ballistic/automatic/wt550
+	r_hand = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/storage/firstaid/tactical/slaver=1,
 		/obj/item/crowbar/power=1,
-		/obj/item/mop/advanced=1,
-		/obj/item/gun/energy/e_gun/advtaser=1)
+		/obj/item/mop/advanced=1)
 	l_pocket = /obj/item/kitchen/knife/combat
 
 /datum/outfit/ert/janitor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)

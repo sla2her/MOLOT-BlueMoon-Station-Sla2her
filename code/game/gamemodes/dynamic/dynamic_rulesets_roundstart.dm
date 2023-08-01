@@ -471,6 +471,7 @@
 	for(var/datum/mind/M in assigned)
 		var/datum/antagonist/clockcult/new_cultist = new antag_datum()
 		new_cultist.clock_team = main_clockcult
+		new_cultist.give_equipment = TRUE
 		SSticker.mode.equip_servant(new_cultist)
 		SSticker.mode.greet_servant(new_cultist)
 		M.add_antag_datum(new_cultist)
