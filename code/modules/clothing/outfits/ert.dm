@@ -284,6 +284,7 @@
 /datum/outfit/ert/engineer/alert/red
 	name = "ERT Engineer - Red Alert"
 	r_hand = /obj/item/gun/ballistic/automatic/ar
+	mask = /obj/item/clothing/mask/gas/sechailer
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/melee/baton/loaded=1,\
 		/obj/item/clothing/mask/gas/sechailer/swat=1,\
