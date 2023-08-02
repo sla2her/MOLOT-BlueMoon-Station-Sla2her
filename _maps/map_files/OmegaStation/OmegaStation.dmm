@@ -1111,6 +1111,7 @@
 	dir = 4
 	},
 /obj/item/beacon,
+/obj/effect/landmark/start/ntr,
 /turf/open/floor/carpet,
 /area/command/bridge)
 "ack" = (
@@ -3821,7 +3822,7 @@
 	req_access_txt = "63"
 	},
 /turf/open/floor/plasteel,
-/area/security/prison)
+/area/security/brig)
 "ahv" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -33654,9 +33655,6 @@
 	pixel_x = -3
 	},
 /obj/item/storage/lockbox/loyalty,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Security Maintenance";
 	req_access_txt = "63"
@@ -33665,9 +33663,6 @@
 /area/security/brig)
 "bDh" = (
 /obj/structure/closet/l3closet/security,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/closet{
 	name = "Evidence Closet"
 	},
@@ -33808,16 +33803,11 @@
 	name = "Station Intercom";
 	pixel_x = 28
 	},
-/obj/effect/landmark/start/ntr,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/item/radio/intercom{
 	name = "Station Intercom";
 	pixel_x = 28
 	},
-/obj/machinery/vending/wardrobe/blueshield_wardrobe,
 /turf/open/floor/plasteel/dark/side{
 	dir = 5
 	},
@@ -34505,10 +34495,6 @@
 	dir = 10
 	},
 /area/service/library)
-"eKl" = (
-/obj/structure/sign/warning/electricshock,
-/turf/open/floor/plasteel/dark,
-/area/security/brig)
 "eOg" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -34646,9 +34632,6 @@
 /area/hallway/primary/starboard)
 "ffC" = (
 /obj/structure/closet/secure_closet/bridgesec,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/landmark/start/blueshield,
 /turf/open/floor/plasteel/dark/side{
 	dir = 10
@@ -34919,7 +34902,6 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/bridgesec,
 /turf/open/floor/plasteel/dark/side{
 	dir = 5
 	},
@@ -35389,8 +35371,7 @@
 /obj/machinery/status_display/ai{
 	pixel_x = 32
 	},
-/obj/structure/table/optable,
-/obj/item/storage/backpack/duffelbag/sec/surgery,
+/obj/machinery/suit_storage_unit/security,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "hAy" = (
@@ -35833,7 +35814,6 @@
 	dir = 8;
 	name = "command camera"
 	},
-/obj/structure/closet/secure_closet/blueshield,
 /turf/open/floor/plasteel/dark/side{
 	dir = 5
 	},
@@ -36233,7 +36213,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/vending/wardrobe/bridgeofficer_wardrobe,
 /turf/open/floor/plasteel/dark/side{
 	dir = 5
 	},
@@ -36378,9 +36357,6 @@
 /area/command/gateway)
 "kcj" = (
 /obj/structure/closet/secure_closet/blueshield,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/landmark/start/bridgeofficer,
 /turf/open/floor/plasteel/dark/side{
 	dir = 6
@@ -37002,9 +36978,6 @@
 	pixel_y = -3
 	},
 /obj/item/poster/random_contraband,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "mnD" = (
@@ -37886,9 +37859,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/vending/wardrobe/blueshield_wardrobe,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
@@ -38059,9 +38029,6 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/item/folder/red,
 /obj/item/book/manual/wiki/security_space_law,
@@ -38295,14 +38262,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/obj/structure/closet/secure_closet/brigdoc,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
-"qZv" = (
-/obj/machinery/suit_storage_unit/security,
-/obj/effect/turf_decal/stripes/end,
-/turf/closed/wall/r_wall,
-/area/security/prison)
 "rae" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 1;
@@ -38325,14 +38286,6 @@
 	dir = 8
 	},
 /area/science/xenobiology)
-"rcE" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/suit_storage_unit/security,
-/obj/effect/turf_decal/stripes/end,
-/turf/closed/wall/r_wall,
-/area/security/brig)
 "ria" = (
 /obj/effect/turf_decal/bot_white/right,
 /obj/effect/turf_decal/tile/neutral{
@@ -38550,9 +38503,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/vending/wardrobe/bridgeofficer_wardrobe,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
@@ -38736,15 +38686,11 @@
 /turf/closed/wall/rust,
 /area/service/bar/atrium)
 "sAX" = (
-/obj/machinery/suit_storage_unit/security,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/end{
 	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -26
@@ -38757,6 +38703,15 @@
 	},
 /obj/structure/closet{
 	name = "Evidence Closet"
+	},
+/obj/item/poster/random_contraband{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/poster/random_contraband,
+/obj/item/poster/random_contraband{
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /turf/open/floor/plasteel/checker,
 /area/security/brig)
@@ -40917,10 +40872,6 @@
 "sVt" = (
 /turf/closed/wall/r_wall,
 /area/science/mixing)
-"sYc" = (
-/obj/effect/landmark/start/stowaway,
-/turf/closed/wall/r_wall,
-/area/security/brig)
 "sYi" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/wood{
@@ -41058,9 +41009,6 @@
 /obj/item/clothing/suit/armor/bulletproof{
 	pixel_x = -3;
 	pixel_y = 3
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/effect/turf_decal/caution{
 	dir = 4
@@ -41718,9 +41666,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/structure/bed,
-/obj/item/bedsheet/medical,
-/obj/machinery/iv_drip,
+/obj/machinery/suit_storage_unit/security,
 /turf/open/floor/plasteel/checker,
 /area/security/brig)
 "vxf" = (
@@ -42062,7 +42008,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/computer/operating,
+/obj/machinery/suit_storage_unit/security,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "wBP" = (
@@ -75390,7 +75336,7 @@ acH
 acH
 acH
 acH
-sYc
+agF
 agF
 agF
 agF
@@ -76417,7 +76363,7 @@ aep
 azo
 aAo
 aep
-qZv
+acH
 tyI
 aiT
 ajT
@@ -76674,8 +76620,8 @@ aiS
 acH
 aAw
 acH
-rcE
-eKl
+agF
+aip
 aiU
 ajU
 agF
