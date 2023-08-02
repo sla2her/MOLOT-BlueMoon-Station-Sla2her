@@ -46762,15 +46762,6 @@
 /turf/open/floor/plating,
 /area/construction)
 "gbR" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/structure/bed{
-	dir = 1
-	},
-/obj/item/bedsheet/red{
-	dir = 1
-	},
 /obj/machinery/button/door{
 	id = "secdormone";
 	name = "Door Bolt Control";
@@ -55535,11 +55526,6 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "nuS" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/item/bedsheet/red,
-/obj/structure/bed,
 /obj/machinery/button/door{
 	id = "secdormtwo";
 	name = "Door Bolt Control";
