@@ -214,16 +214,18 @@
 	desc = "Cyka blyat."
 	icon_state = "squatteroutfit"
 	item_state = "squatteroutfit"
+	alternate_screams = RUSSIAN_SCREAMS
 	can_adjust = FALSE
-	mutantrace_variation = USE_TAUR_CLIP_MASK
+	mutantrace_variation = USE_TAUR_CLIP_MASK|STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/under/misc/blue_camo
 	name = "russian blue camo"
 	desc = "Drop and give me dvadtsat!"
 	icon_state = "russobluecamo"
 	item_state = "russobluecamo"
+	alternate_screams = RUSSIAN_SCREAMS
 	can_adjust = FALSE
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON|USE_TAUR_CLIP_MASK
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/under/misc/keyholesweater
 	name = "keyhole sweater"

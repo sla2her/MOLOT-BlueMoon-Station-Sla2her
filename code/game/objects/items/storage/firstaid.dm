@@ -129,7 +129,7 @@
 	for(var/i in 1 to 2)
 		new /obj/item/reagent_containers/syringe/charcoal(src)
 	for(var/i in 1 to 2)
-		new /obj/item/reagent_containers/hypospray/medipen/penacid
+		new /obj/item/reagent_containers/hypospray/medipen/penacid(src)
 	for(var/i in 1 to 2)
 		new /obj/item/storage/pill_bottle/charcoal(src)
 	new /obj/item/healthanalyzer(src)
