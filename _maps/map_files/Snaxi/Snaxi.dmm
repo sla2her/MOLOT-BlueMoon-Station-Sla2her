@@ -19686,7 +19686,7 @@
 /area/maintenance/aft/secondary)
 "fuX" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -23342,7 +23342,7 @@
 /area/cargo/storage)
 "hNi" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -30645,7 +30645,7 @@
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "mJr" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /obj/machinery/airalarm{
@@ -47005,7 +47005,7 @@
 /turf/open/floor/plasteel/chapel,
 /area/service/chapel/main)
 "wZJ" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /obj/machinery/airalarm{

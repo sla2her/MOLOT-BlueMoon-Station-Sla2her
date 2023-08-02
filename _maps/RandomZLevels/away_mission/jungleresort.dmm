@@ -3102,7 +3102,7 @@
 /turf/open/floor/plating/asteroid,
 /area/awaymission/jungleresort)
 "Qr" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 8
 	},
 /turf/open/floor/wood,

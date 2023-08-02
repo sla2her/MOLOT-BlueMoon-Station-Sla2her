@@ -15079,7 +15079,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/theater)
 "coL" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /obj/item/grown/rose,
@@ -16326,7 +16326,7 @@
 	},
 /area/service/kitchen)
 "cyG" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/loading_area{
@@ -18575,7 +18575,7 @@
 /turf/open/floor/plasteel,
 /area/ai_monitored/command/storage/eva)
 "cPB" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -27017,7 +27017,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port/fore)
 "dYC" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /obj/machinery/light/small{
@@ -30855,7 +30855,7 @@
 	},
 /area/hallway/primary/port/fore)
 "ezd" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark/side{
@@ -32473,7 +32473,7 @@
 	},
 /area/hallway/primary/central)
 "eKQ" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/wood{
@@ -35812,7 +35812,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "fmG" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/loading_area{
@@ -40273,7 +40273,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -46119,7 +46119,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "gOP" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet,
@@ -50051,7 +50051,7 @@
 /turf/open/floor/plating,
 /area/security/prison)
 "hrA" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 8
 	},
 /turf/open/floor/plasteel{
@@ -57427,7 +57427,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/chapel/main)
 "iwr" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet,
@@ -68933,7 +68933,7 @@
 	icon_state = "siding_wood_line";
 	name = "wood"
 	},
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -82705,7 +82705,7 @@
 	},
 /area/security/courtroom)
 "lYB" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark/side{
@@ -94834,7 +94834,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "nNv" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /turf/open/floor/wood{
@@ -111161,7 +111161,7 @@
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hos)
 "qmW" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -113946,7 +113946,7 @@
 	},
 /area/hallway/primary/central)
 "qIi" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/loading_area{
@@ -127540,7 +127540,7 @@
 /turf/open/floor/plasteel/stairs/right,
 /area/commons/fitness)
 "sHv" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/machinery/light{
@@ -130419,7 +130419,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark{
@@ -139437,7 +139437,7 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "utp" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/loading_area{
@@ -140422,7 +140422,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port)
 "uBS" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/structure/railing,
@@ -141608,7 +141608,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port/fore)
 "uLp" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/structure/railing,
@@ -157689,7 +157689,7 @@
 /turf/open/floor/plasteel/recharge_floor,
 /area/maintenance/port)
 "wYt" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet,
@@ -157920,7 +157920,7 @@
 /turf/open/floor/plasteel/dark,
 /area/engineering/main/reactor_control)
 "xaj" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/structure/railing,
@@ -162358,7 +162358,7 @@
 	},
 /area/ai_monitored/turret_protected/ai)
 "xIR" = (
-/obj/structure/chair/sofa/brown{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /obj/machinery/firealarm{
