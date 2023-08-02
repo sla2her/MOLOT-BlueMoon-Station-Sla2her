@@ -48,6 +48,7 @@
 						/obj/item/clothing/mask/gas/sechailer/slut = 4,
 						/obj/item/clothing/mask/gas/sechailer/swat = 2,
 						/obj/item/clothing/mask/gas/syndicate/ds = 5,
+						/obj/item/clothing/mask/russian_balaclava = 5,
 						/obj/item/clothing/mask/gas/sechailer/syndicate = 5,
 						/obj/item/clothing/head/helmet/rus_helmet = 3,
 						/obj/item/clothing/head/helmet/rus_cap = 3,

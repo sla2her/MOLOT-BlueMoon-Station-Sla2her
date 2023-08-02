@@ -36,8 +36,9 @@
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/mask/gas/soviet
-	name = "soviet gas mask"
+	name = "Soviet Gas Mask"
 	desc = "A white gas mask with a green filter, there's a small sticker attached saying it's not got Asbestos anymore."
+	alternate_screams = RUSSIAN_SCREAMS
 	icon_state = "gp5_mask"
 	item_state = "gp5_mask"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDEHAIR|HIDESNOUT

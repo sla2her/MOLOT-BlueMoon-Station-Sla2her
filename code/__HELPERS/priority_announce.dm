@@ -8,7 +8,7 @@
 	else if(SSstation.announcer.event_sounds[sound])
 		sound = pick(SSstation.announcer.event_sounds[sound])
 
-	var/mob/living/user
+	var/mob/living/carbon/human/user
 
 	if(type == "Priority")
 		announcement += "<h1 class='alert'>Приоритетное Объявление</h1>"
