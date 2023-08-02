@@ -77,6 +77,14 @@
 	name = "Revealing maid uniform"
 	path = /obj/item/clothing/under/dress/skirt/lustymaid
 
+/datum/gear/uniform/squatter
+	name = "Slav Squatter Tracksuit"
+	path = /obj/item/clothing/under/misc/squatter
+
+/datum/gear/uniform/blue_camo
+	name = "Russian Blue Camo"
+	path = /obj/item/clothing/under/misc/blue_camo
+
 /datum/gear/uniform/sexymaid
 	name = "Sexy maid uniform"
 	path = /obj/item/clothing/under/dress/skirt/maidsexy

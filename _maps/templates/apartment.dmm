@@ -105,6 +105,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
 	dir = 8
 	},
+/obj/item/kitchen/knife,
 /turf/open/floor/plasteel/kitchen_coldroom,
 /area/hilbertshotel)
 "dT" = (
