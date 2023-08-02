@@ -8,13 +8,15 @@
 	else if(SSstation.announcer.event_sounds[sound])
 		sound = pick(SSstation.announcer.event_sounds[sound])
 
+	var/mob/living/user
+
 	if(type == "Priority")
 		announcement += "<h1 class='alert'>Приоритетное Объявление</h1>"
 		if (title && length(title) > 0)
 			announcement += "<br><h2 class='alert'>[html_encode(title)]</h2>"
 	else if(type == "Captain")
-		announcement += "<h1 class='alert'>Капитан Объявляет</h1>"
-		GLOB.news_network.SubmitArticle(html_encode(text), "Капитан Объявляет", "Станционное Объявление", null)
+		announcement += "<h1 class='alert'>Капитан Объявляет (— [user.name])</h1>"
+		GLOB.news_network.SubmitArticle(html_encode(text), "Капитан Объявляет (— [user.name])", "Станционное Объявление", null)
 	else if(type == "Syndicate")
 		announcement += "<h1 class='alert'>Синдикат Объявляет</h1>"
 		GLOB.news_network.SubmitArticle(html_encode(text), "Синдикат Объявляет", "Станционное Объявление", null)
