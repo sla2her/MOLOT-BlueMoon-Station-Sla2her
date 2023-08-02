@@ -225,7 +225,7 @@
 	item_state = "russobluecamo"
 	alternate_screams = RUSSIAN_SCREAMS
 	can_adjust = FALSE
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/misc/keyholesweater
 	name = "keyhole sweater"
@@ -233,7 +233,7 @@
 	icon_state = "keyholesweater"
 	item_state = "keyholesweater"
 	can_adjust = FALSE
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/misc/stripper
 	name = "pink stripper outfit"
