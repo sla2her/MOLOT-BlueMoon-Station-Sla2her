@@ -186,7 +186,7 @@
 	suit = /obj/item/clothing/suit/space/syndicate/black/red
 	head = /obj/item/clothing/head/helmet/space/syndicate/black/red
 	id = /obj/item/card/id/syndicate
-	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
+	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi/syndi
 	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\
@@ -207,7 +207,7 @@
 	suit = /obj/item/clothing/suit/space/syndicate/inteq
 	head = /obj/item/clothing/head/helmet/space/syndicate/inteq
 	id = /obj/item/card/id/syndicate/inteq
-	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
+	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi/syndi
 	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military/inteq
 	back = /obj/item/storage/backpack/security/inteq

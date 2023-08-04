@@ -191,6 +191,8 @@ Peacekeeper Hypospray
 						return
 		to_chat(M, "<span class='warning'>You feel a tiny prick!</span>")
 		to_chat(user, "<span class='notice'>You inject [M] with the injector.</span>")
+		playsound(loc, 'sound/items/medi/hypo.ogg', 80, 0)
+
 		var/fraction = min(amount_per_transfer_from_this/R.total_volume, 1)
 		R.reaction(M, INJECT, fraction)
 		if(M.reagents)

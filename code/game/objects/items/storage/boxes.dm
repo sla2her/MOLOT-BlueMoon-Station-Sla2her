@@ -167,10 +167,16 @@
 // Security survival box
 /obj/item/storage/box/survival/security
 	mask_type = /obj/item/clothing/mask/gas/sechailer
+	internal_type = /obj/item/tank/internals/emergency_oxygen/engi/sec
+
+/obj/item/storage/box/survival/security/PopulateContents()
+	..() // we want the regular stuff too
+	new /obj/item/crowbar/red/sec(src)
 
 /obj/item/storage/box/survival/security/radio/PopulateContents()
 	..() // we want the regular stuff too
 	new /obj/item/radio/off(src)
+	new /obj/item/flashlight/glowstick/red(src)
 
 /obj/item/storage/box/seclooking
 	icon_state = "secbox"

@@ -250,6 +250,7 @@
 /obj/item/storage/box/syndie_kit/space/PopulateContents()
 	new /obj/item/clothing/suit/space/syndicate(src) // Black and red is so in right now
 	new /obj/item/clothing/head/helmet/space/syndicate(src)
+	new /obj/item/tank/internals/emergency_oxygen/engi/syndi(src)
 
 /obj/item/storage/box/syndie_kit/emp
 	name = "boxed EMP kit"

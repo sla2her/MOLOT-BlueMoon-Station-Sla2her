@@ -171,6 +171,17 @@
 	icon_state = "emergency_engi"
 	volume = 6
 
+/obj/item/tank/internals/emergency_oxygen/engi/sec
+	name = "security extended-capacity emergency oxygen tank"
+	icon_state = "emergency_sec"
+	desc = "A black-red emergency oxygen tank. Used by corporate security departments."
+
+/obj/item/tank/internals/emergency_oxygen/engi/syndi
+	name = "Suspicious Emergency Oxygen Tank"
+	icon_state = "emergency_syndi"
+	desc = "A dark emergency oxygen tank. The label on the back reads \"Original Oxygen Tank Design, Do Not Steal.\""
+	volume = 12
+
 /obj/item/tank/internals/emergency_oxygen/engi/empty/populate_gas()
 	return
 
