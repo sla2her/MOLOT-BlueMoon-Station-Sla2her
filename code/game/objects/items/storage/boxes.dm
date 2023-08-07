@@ -165,8 +165,8 @@
 	desc = "A box with the bare essentials of ensuring the survival of you and others. This one is labelled to contain an extended-capacity tank."
 	illustration = "extendedtank"
 	mask_type = /obj/item/clothing/mask/gas/syndicate
-	internal_type = /obj/item/tank/internals/emergency_oxygen/engi
-	medipen_type = null
+	internal_type = /obj/item/tank/internals/emergency_oxygen/engi/syndi
+	medipen_type = /obj/item/reagent_containers/hypospray/medipen/atropine
 
 // Security survival box
 /obj/item/storage/box/survival/security

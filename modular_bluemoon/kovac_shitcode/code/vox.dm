@@ -60,7 +60,7 @@
 	say_mod = "says"
 	eye_type = "vox"
 	mutant_bodyparts = list("mcolor" = "F8F8F8", "mcolor2" = "F8F8F8", "mcolor3" = "F8F8F8", "mam_snouts" = "Vox",  "mam_tail" = "Vox", "deco_wings" = "None",
-						 "horns" = "None", "legs" = "Digitigrade", "meat_type" = "Mammalian")
+						"horns" = "None", "legs" = "Digitigrade", "meat_type" = "Mammalian")
 	allowed_limb_ids = null
 	override_bp_icon = 'modular_bluemoon/kovac_shitcode/icons/species/vox_body.dmi' // Берём части тела из иного файла. Цвет тела всегда один
 	eye_type = "vox"
