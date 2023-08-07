@@ -46789,13 +46789,6 @@
 	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
-"gbY" = (
-/obj/effect/turf_decal/trimline/neutral/filled/line{
-	dir = 8
-	},
-/obj/structure/chair/sofa/left/brown,
-/turf/open/floor/plasteel/dark,
-/area/service/bar)
 "gcm" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -48299,7 +48292,7 @@
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "hnG" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -52609,7 +52602,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/service/kitchen)
 "kXi" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
@@ -56539,7 +56532,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 24
 	},
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel,
 /area/commons/fitness)
@@ -57566,7 +57559,7 @@
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "piG" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 4
 	},
@@ -59248,7 +59241,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/hydroponics)
 "qGT" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/security/prison/upper)
@@ -67114,7 +67107,7 @@
 	},
 /area/hallway/secondary/exit)
 "xli" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/plasteel/dark,
 /area/service/bar)
 "xlX" = (
@@ -105184,7 +105177,7 @@ aJI
 bge
 wfi
 stq
-gbY
+wfi
 xwE
 pWy
 aJC
