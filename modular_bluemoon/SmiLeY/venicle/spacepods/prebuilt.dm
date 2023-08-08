@@ -1,5 +1,5 @@
 /obj/spacepod/prebuilt
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/2x2.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/2x2.dmi'
 	icon_state = "pod_civ"
 	var/cell_type = /obj/item/stock_parts/cell/high/plus
 	var/armor_type = /obj/item/pod_parts/armor
@@ -45,7 +45,7 @@
 	armor_type = /obj/item/pod_parts/armor/security/red
 
 /obj/spacepod/random
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/2x2.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/2x2.dmi'
 	icon_state = "pod_civ"
 	construction_state = SPACEPOD_ARMOR_WELDED
 
@@ -68,9 +68,9 @@
 /obj/spacepod/prebuilt/ship
 	name = "корабль"
 	desc = "Ох..."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x3.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x3.dmi'
 	icon_state = "ship_civ"
-	overlay_file = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x3.dmi'
+	overlay_file = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x3.dmi'
 	bound_x = 64
 	bound_y = 96
 	armor_type = /obj/item/pod_parts/armor/ship

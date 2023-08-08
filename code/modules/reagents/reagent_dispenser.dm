@@ -175,7 +175,7 @@
 	icon_state = "fuel_pizdec"
 	tank_volume = 100000
 
-/obj/structure/reagent_dispensers/fueltank/limitka/boom()
+/obj/structure/reagent_dispensers/fueltank/limitka/explode()
 	explosion(src, heavy_impact_range = 7, light_impact_range = 14, flame_range = 21, flash_range = 34)
 	qdel(src)
 
@@ -317,6 +317,9 @@
 		if(!QDELETED(src))
 			qdel(src)
 		return TRUE
+	. = ..()
+
+/obj/structure/reagent_dispensers/beerkeg/attackby(mob/living/carbon/human/M)
 	if(ismammal(M))
 		explosion(src, light_impact_range = 3, flame_range = 5, flash_range = 10)
 		if(!QDELETED(src))

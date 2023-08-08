@@ -1,6 +1,6 @@
 /obj/item/spacepod_equipment
 	var/obj/spacepod/spacepod
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/parts.dmi'
 	var/slot = SPACEPOD_SLOT_MISC
 	var/slot_space = 1
 
@@ -197,7 +197,7 @@
 	projectile_type = /obj/projectile/beam/disabler
 	shot_cost = 400
 	fire_sound = 'sound/weapons/taser2.ogg'
-	overlay_icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x2.dmi'
+	overlay_icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x2.dmi'
 	overlay_icon_state = "pod_weapon_disabler"
 
 /obj/item/spacepod_equipment/weaponry/burst_disabler
@@ -209,7 +209,7 @@
 	shots_per = 3
 	fire_sound = 'sound/weapons/taser2.ogg'
 	fire_delay = 30
-	overlay_icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x2.dmi'
+	overlay_icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x2.dmi'
 	overlay_icon_state = "pod_weapon_disabler"
 
 /obj/item/spacepod_equipment/weaponry/laser
@@ -219,7 +219,7 @@
 	projectile_type = /obj/projectile/beam/laser
 	shot_cost = 600
 	fire_sound = 'sound/weapons/Laser.ogg'
-	overlay_icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x2.dmi'
+	overlay_icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x2.dmi'
 	overlay_icon_state = "pod_weapon_laser"
 
 /obj/item/spacepod_equipment/weaponry/laser_heavylaser
@@ -229,14 +229,14 @@
 	projectile_type = /obj/projectile/beam/laser/heavylaser
 	shot_cost = 1200
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	overlay_icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x2.dmi'
+	overlay_icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x2.dmi'
 	overlay_icon_state = "pod_weapon_laser"
 
 // MINING LASERS
 /obj/item/spacepod_equipment/weaponry/basic_pod_ka
 	name = "Кинетический акселератор Спейспода"
 	desc = "Ведет огонь слабыми импульсами кинетической энергии."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/parts.dmi'
 	icon_state = "pod_taser"
 	projectile_type = /obj/projectile/kinetic/pod
 	shot_cost = 300
@@ -246,7 +246,7 @@
 /obj/item/spacepod_equipment/weaponry/pod_ka
 	name = "Продвинутый кинетический акселератор Спейспода"
 	desc = "Ведет огонь мощными импульсами кинетической энергии. Продвинутая версия обладает повышенной скорострельностью и более экономичным энергопотреблением."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/parts.dmi'
 	icon_state = "pod_m_laser"
 	projectile_type = /obj/projectile/kinetic/pod/regular
 	shot_cost = 250
@@ -263,13 +263,13 @@
 /obj/item/spacepod_equipment/weaponry/plasma_cutter
 	name = "Плазменный резак Спейспода"
 	desc = "Ведет огонь концентрированными сгустками плазмы, используется при добыче полезных ископаемых на астероидах."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/parts.dmi'
 	icon_state = "pod_p_cutter"
 	projectile_type = /obj/projectile/plasma
 	shot_cost = 250
 	fire_delay = 10
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	overlay_icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x2.dmi'
+	overlay_icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x2.dmi'
 	overlay_icon_state = "pod_weapon_plasma"
 
 /obj/item/spacepod_equipment/weaponry/plasma_cutter/adv
@@ -289,7 +289,7 @@
 /obj/item/spacepod_equipment/tracker
 	name = "Маяк Спейспода"
 	desc = "Следящее устройство для поиска корабля в бескрайнем космосе."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/parts.dmi'
 	icon_state = "pod_locator"
 
 /*
@@ -366,7 +366,7 @@
 /obj/item/spacepod_key
 	name = "Ключ от Спейспода"
 	desc = "Ключ от центрального замка Спейспода. После изготовления необходимо синхронизировать с замком."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/parts.dmi'
 	icon_state = "podkey"
 	w_class = WEIGHT_CLASS_TINY
 	var/id = null
@@ -384,7 +384,7 @@
 /obj/item/device/lock_buster
 	name = "Взломщик центрального замка Спейспода"
 	desc = "Уничтожает замок и разблокирует Спейспод. Внимание: после использования гарантия обнуляется."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/parts.dmi'
 	icon_state = "lock_buster_off"
 	var/on = FALSE
 

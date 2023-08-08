@@ -96871,7 +96871,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "ncW" = (
-/mob/living/simple_animal/hostile/retaliate/goat{
+/mob/living/simple_animal/hostile/goat{
 	name = "Pete"
 	},
 /turf/open/floor/plasteel/freezer,

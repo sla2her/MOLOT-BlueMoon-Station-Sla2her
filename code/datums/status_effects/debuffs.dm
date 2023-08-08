@@ -87,6 +87,94 @@
 	if(prob((tick_interval+1) * 0.2) && owner.health > owner.crit_threshold)
 		owner.emote("snore")
 
+/**
+ * # Transient Status Effect (basetype)
+ *
+ * A status effect that works off a (possibly decimal) counter before expiring, rather than a specified world.time.
+ * This allows for a more precise tweaking of status durations at runtime (e.g. paralysis).
+ */
+/datum/status_effect/transient
+	tick_interval = 0.2 SECONDS // SSfastprocess interval
+	alert_type = null
+	/// How much strength left before expiring? time in deciseconds.
+	var/strength = 0
+
+/datum/status_effect/transient/on_creation(mob/living/new_owner, set_duration)
+	if(isnum(set_duration))
+		strength = set_duration
+	. = ..()
+
+
+/datum/status_effect/transient/tick()
+	if(QDELETED(src) || QDELETED(owner))
+		return FALSE
+	. = TRUE
+	strength += calc_decay()
+	if(strength <= 0)
+		qdel(src)
+		return FALSE
+
+/**
+ * Returns how much strength should be adjusted per tick.
+ */
+/datum/status_effect/transient/proc/calc_decay()
+	return -0.2 SECONDS // 1 per second by default
+
+//SLOWED - slows down the victim for a duration and a given slowdown value.
+/datum/status_effect/incapacitating/slowed
+	id = "slowed"
+	var/slowdown_value = 10 // defaults to this value if none is specified
+
+/datum/status_effect/incapacitating/slowed/on_creation(mob/living/new_owner, set_duration, _slowdown_value)
+	. = ..()
+	if(isnum(_slowdown_value))
+		slowdown_value = _slowdown_value
+
+/datum/status_effect/transient/silence
+	id = "silenced"
+
+/datum/status_effect/transient/silence/on_apply()
+	. = ..()
+	ADD_TRAIT(owner, TRAIT_MUTE, id)
+
+/datum/status_effect/transient/silence/on_remove()
+	. = ..()
+	REMOVE_TRAIT(owner, TRAIT_MUTE, id)
+
+/**
+ * # Confusion
+ *
+ * Prevents moving straight, sometimes changing movement direction at random.
+ * Decays at a rate of 1 per second.
+ */
+/datum/status_effect/transient/confusion
+	id = "confusion"
+	var/image/overlay
+
+/datum/status_effect/transient/confusion/tick()
+	. = ..()
+	if(!.)
+		return
+	if(!owner.stat) //add or remove the overlay if they are alive or unconscious/dead
+		add_overlay()
+	else if(overlay)
+		owner.cut_overlay(overlay)
+		overlay = null
+
+/datum/status_effect/transient/confusion/proc/add_overlay()
+	if(overlay)
+		return
+	var/matrix/M = matrix()
+	M.Scale(0.6)
+	overlay = image('icons/effects/effects.dmi', "confusion", pixel_y = 20)
+	overlay.transform = M
+	owner.add_overlay(overlay)
+
+/datum/status_effect/transient/confusion/on_remove()
+	owner.cut_overlay(overlay)
+	overlay = null
+	return ..()
+
 /datum/status_effect/staggered
 	id = "staggered"
 	blocks_sprint = TRUE

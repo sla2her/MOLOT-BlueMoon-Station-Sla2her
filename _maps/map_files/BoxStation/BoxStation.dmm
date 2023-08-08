@@ -324,7 +324,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/mob/living/simple_animal/hostile/retaliate/bat/secbat{
+/mob/living/simple_animal/hostile/bat/secbat{
 	desc = "An adorable fruit bat with a cute little hat, may or may not have a reputation for biting out eyeballs, or at least that's what the HoS'd tell you.";
 	name = "Colonel Chomps"
 	},
@@ -19860,7 +19860,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/retaliate/ghost,
+/mob/living/simple_animal/hostile/ghost,
 /turf/open/floor/wood,
 /area/maintenance/port/fore)
 "bsV" = (
@@ -45791,7 +45791,7 @@
 	name = "Kitchen Delivery";
 	req_access_txt = "28"
 	},
-/mob/living/simple_animal/hostile/retaliate/goat{
+/mob/living/simple_animal/hostile/goat{
 	name = "Pete"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -49380,7 +49380,7 @@
 /turf/open/floor/wood,
 /area/service/library)
 "inw" = (
-/mob/living/simple_animal/hostile/retaliate/goose{
+/mob/living/simple_animal/hostile/goose{
 	desc = "Some evil loose goose.";
 	name = "Cere"
 	},

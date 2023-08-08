@@ -7,9 +7,9 @@
 /obj/spacepod
 	name = "space pod"
 	desc = "A frame for a spacepod."
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/construction_2x2.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/construction_2x2.dmi'
 	icon_state = "pod_1"
-	var/icon/overlay_file = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x2.dmi'
+	var/icon/overlay_file = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x2.dmi'
 	density = 1
 	opacity = 0
 	dir = NORTH // always points north because why not
@@ -406,10 +406,10 @@
 	. = ..()
 	cut_overlays()
 	if(construction_state != SPACEPOD_ARMOR_WELDED)
-		icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/construction_2x2.dmi'
+		icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/construction_2x2.dmi'
 		icon_state = "pod_[construction_state]"
 		if(pod_armor && construction_state >= SPACEPOD_ARMOR_LOOSE)
-			var/mutable_appearance/masked_armor = mutable_appearance(icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/construction_2x2.dmi', icon_state = "armor_mask")
+			var/mutable_appearance/masked_armor = mutable_appearance(icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/construction_2x2.dmi', icon_state = "armor_mask")
 			var/mutable_appearance/armor = mutable_appearance(pod_armor.pod_icon, pod_armor.pod_icon_state)
 			armor.blend_mode = BLEND_MULTIPLY
 			masked_armor.overlays = list(armor)

@@ -1,5 +1,5 @@
 /obj/item/pod_parts
-	icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/parts.dmi'
+	icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/parts.dmi'
 	w_class = WEIGHT_CLASS_GIGANTIC
 	flags_1 = CONDUCT_1
 
@@ -120,7 +120,7 @@
 	name = "Броня Спейспода - Гражданская"
 	desc = "Внешняя герметичная, защитная обшивка. Гражданский образец."
 	icon_state = "pod_armor_civ"
-	var/pod_icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/goon/2x2.dmi'
+	var/pod_icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/goon/2x2.dmi'
 	var/pod_icon_state = "pod_civ"
 	var/pod_desc = "A sleek civilian space pod."
 	var/pod_integrity = 250
@@ -176,7 +176,7 @@
 	name = "корабль"
 	icon_state = "pod_armor_mil"
 	desc = "Ого..."
-	pod_icon = 'modular_bluemoon/SmiLeY/venicle/spacepods_icons/2x3.dmi'
+	pod_icon = 'modular_bluemoon/SmiLeY/vehicle/spacepods_icons/2x3.dmi'
 	pod_icon_state = "ship_civ"
 	pod_desc = "Хых..."
 	pod_integrity = 650

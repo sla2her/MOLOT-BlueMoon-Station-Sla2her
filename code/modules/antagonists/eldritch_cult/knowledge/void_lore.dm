@@ -161,7 +161,7 @@
 	desc = "Gain the ability to mark a 7x7 area as your domain after a short delay. Creatures in your domain are slowed and branded with a void mark, allowing you to quickly teleport to them and slash them, further inhibiting their ability to move."
 	cost = 2
 	sacs_needed = 3
-	spell_to_add = /obj/effect/proc_holder/spell/aoe_turf/domain_expansion
+	spell_to_add = /obj/effect/proc_holder/spell/aoe/domain_expansion
 	next_knowledge = list(/datum/eldritch_knowledge/final/void_final)
 	route = PATH_VOID
 
@@ -184,7 +184,7 @@
 
 /datum/eldritch_knowledge/final/void_final/on_finished_recipe(mob/living/user, list/atoms, loc)
 	var/mob/living/carbon/human/waltzing = user
-	waltzing.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/repulse/eldritch)
+	waltzing.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe/repulse/eldritch)
 	waltzing.physiology.brute_mod *= 0.5
 	waltzing.physiology.burn_mod *= 0.5
 	ADD_TRAIT(waltzing, TRAIT_RESISTLOWPRESSURE, MAGIC_TRAIT)

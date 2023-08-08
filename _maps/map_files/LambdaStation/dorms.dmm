@@ -5085,7 +5085,7 @@
 /turf/open/floor/plating,
 /area/maintenance/central)
 "ni" = (
-/mob/living/simple_animal/hostile/retaliate/goose,
+/mob/living/simple_animal/hostile/goose,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
@@ -18405,7 +18405,7 @@
 /turf/open/floor/plating,
 /area/maintenance/central)
 "Vg" = (
-/mob/living/simple_animal/hostile/retaliate/goat{
+/mob/living/simple_animal/hostile/goat{
 	name = "Pete"
 	},
 /turf/open/floor/plasteel/freezer,

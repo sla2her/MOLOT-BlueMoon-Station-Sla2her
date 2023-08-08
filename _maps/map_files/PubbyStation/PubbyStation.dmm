@@ -18125,7 +18125,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/service/kitchen)
 "aUZ" = (
-/mob/living/simple_animal/hostile/retaliate/goat{
+/mob/living/simple_animal/hostile/goat{
 	name = "Pete"
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -63790,7 +63790,7 @@
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "wfO" = (
-/mob/living/simple_animal/hostile/retaliate/poison/snake,
+/mob/living/simple_animal/hostile/poison/snake,
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
 "wfP" = (
@@ -64687,7 +64687,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "xjg" = (
-/mob/living/simple_animal/hostile/retaliate/goose,
+/mob/living/simple_animal/hostile/goose,
 /turf/open/floor/wood,
 /area/maintenance/department/crew_quarters/dorms)
 "xjK" = (

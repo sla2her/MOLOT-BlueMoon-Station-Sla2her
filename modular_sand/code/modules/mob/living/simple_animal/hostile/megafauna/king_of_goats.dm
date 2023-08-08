@@ -107,12 +107,12 @@ Difficulty: Insanely Hard
 		return A
 	return ..()
 
-/mob/living/simple_animal/hostile/retaliate/goat/guard/Found(atom/A)
+/mob/living/simple_animal/hostile/goat/guard/Found(atom/A)
 	if(isliving(A))
 		return A
 	return ..()
 
-/mob/living/simple_animal/hostile/retaliate/goat/guard
+/mob/living/simple_animal/hostile/goat/guard
 	name = "honour guard"
 	desc = "A very handsome and noble beast."
 	icon = 'modular_sand/icons/mob/king_of_goats.dmi'
@@ -134,7 +134,7 @@ Difficulty: Insanely Hard
 	melee_damage_lower = 10
 	melee_damage_upper = 15
 
-/mob/living/simple_animal/hostile/retaliate/goat/guard/master
+/mob/living/simple_animal/hostile/goat/guard/master
 	name = "master of the guard"
 	desc = "A very handsome and noble beast - the most trusted of all the king's men."
 	icon_state = "goat_guard_m"
@@ -147,7 +147,7 @@ Difficulty: Insanely Hard
 	melee_damage_upper = 20
 	move_to_delay = 3
 
-/mob/living/simple_animal/hostile/retaliate/goat/guard/pope
+/mob/living/simple_animal/hostile/goat/guard/pope
 	name = "Goat Pope"
 	desc = "For what is a God without a pope to spread their holy words"
 	icon_state = "goat_pope"
@@ -182,9 +182,9 @@ Difficulty: Insanely Hard
 		else if(prob(5)) //spawn adds
 			spellscast++
 			visible_message("<span class='cult'>\The [src] summons the imperial guard to his aid, and they appear in a flash!</span>")
-			var/mob/living/simple_animal/hostile/retaliate/goat/guard/master/M = new(get_step(src,pick(GLOB.cardinals)))
+			var/mob/living/simple_animal/hostile/goat/guard/master/M = new(get_step(src,pick(GLOB.cardinals)))
 			M.enemies |= enemies
-			var/mob/living/simple_animal/hostile/retaliate/goat/guard/G = new(get_step(src,pick(GLOB.cardinals)))
+			var/mob/living/simple_animal/hostile/goat/guard/G = new(get_step(src,pick(GLOB.cardinals)))
 			G.enemies |= enemies
 			G = new(get_step(src,pick(GLOB.cardinals)))
 			G.enemies |= enemies
