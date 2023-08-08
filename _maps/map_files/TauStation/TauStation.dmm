@@ -49722,6 +49722,11 @@
 	},
 /turf/open/floor/carpet/black,
 /area/service/library)
+"rmf" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/mob/living/simple_animal/pet/dog/corgi/pig,
+/turf/open/floor/plasteel/cafeteria,
+/area/service/kitchen)
 "rmh" = (
 /obj/structure/chair/sofa/corp/left,
 /obj/machinery/light/small{
@@ -117225,7 +117230,7 @@ lia
 lia
 fkL
 gkc
-lia
+rmf
 lia
 vlj
 xJe

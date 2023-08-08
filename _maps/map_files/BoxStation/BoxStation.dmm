@@ -43786,6 +43786,15 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/snacks/burger/cumburger{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/snacks/burger/cumburger{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/snacks/burger/cumburger{
+	pixel_x = 7
+	},
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
 "dCo" = (
@@ -59934,6 +59943,25 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"rhS" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchen";
+	name = "kitchen shutters"
+	},
+/obj/machinery/door/firedoor,
+/obj/item/reagent_containers/food/snacks/donut/semen{
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/snacks/donut/semen{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/snacks/donut/semen{
+	pixel_x = 7
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/service/kitchen)
 "rhX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
@@ -66241,6 +66269,7 @@
 	dir = 8;
 	pixel_x = 12
 	},
+/mob/living/simple_animal/pet/dog/corgi/pig,
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
 "wpQ" = (
@@ -105944,7 +105973,7 @@ xGg
 wgU
 gdJ
 aVz
-faV
+rhS
 wEk
 jVS
 tjV

@@ -2,7 +2,7 @@
 	name = "Свинья"
 	real_name = "Свинья"
 	desc = "Хрюкает."
-	icon = 'white/valtos/icons/animal.dmi'
+	icon = 'icons/mob/animal.dmi'
 	icon_state = "pig"
 	icon_living = "pig"
 	icon_dead = "pig_dead"
@@ -10,7 +10,6 @@
 	speak_emote = list("хрюкает")
 	emote_hear = list("хрюкает.")
 	emote_see = list("хрюкает.")
-	pet_bonus = FALSE
 	speak_chance = 5
 	turns_per_move = 1
 	see_in_dark = 3
@@ -18,7 +17,7 @@
 	health = 50
 	damaged_sound = list('modular_bluemoon/SmiLeY/code/mob/pig/oink.ogg')
 	deathsound = 'modular_bluemoon/SmiLeY/code/mob/pig/death.ogg'
-	butcher_results = list(/obj/item/food/meat/slab/pig = 3)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/pig = 6)
 	response_help_continuous = "гладит"
 	response_help_simple = "гладит"
 	response_disarm_continuous = "отталкивает"
@@ -29,8 +28,7 @@
 	mob_size = MOB_SIZE_LARGE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	gold_core_spawnable = FRIENDLY_SPAWN
-	can_be_held = FALSE
-	held_state = "pig"
+	held_icon = "pig"
 	faction = list("neutral")
 
 /mob/living/simple_animal/pet/dog/corgi/pig/Initialize(mapload)
@@ -40,7 +38,6 @@
 		desc = "<big>Самый жирный боров.</big>"
 		maxHealth = 500
 		health = 500
-		AddElement(/datum/element/swabable, CELL_LINE_TABLE_SHVAINOKARAS, CELL_VIRUS_TABLE_GENERIC_MOB, 1, 5)
 
 /mob/living/simple_animal/pet/dog/corgi/pig/Life()
 	..()
@@ -67,21 +64,14 @@
 		var/datum/dog_fashion/DF = new inventory_back.dog_fashion(src)
 		DF.apply(src)
 
-/mob/living/simple_animal/pet/dog/corgi/pig/add_cell_sample()
-	AddElement(/datum/element/swabable, CELL_LINE_TABLE_PIG, CELL_VIRUS_TABLE_GENERIC_MOB, 1, 5)
-
-/obj/item/food/meat/slab/pig
-	name = "сало"
+/obj/item/reagent_containers/food/snacks/meat/slab/pig
+	name = "Сало"
 	icon_state = "salo"
-	foodtypes = MEAT
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/plain/pig
+	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/salo
+	tastes = list("pig meat" = 1)
+	foodtype = MEAT
 
-/obj/item/food/meat/slab/pig/Initialize(mapload)
-	. = ..()
-	AddElement(/datum/element/swabable, CELL_LINE_TABLE_PIG, CELL_VIRUS_TABLE_GENERIC_MOB)
-
-/obj/item/food/meat/slab/pig/MakeProcessable()
-	AddElement(/datum/element/processable, TOOL_KNIFE,  /obj/item/food/meat/rawcutlet/plain/salo, 3, 30)
-
-/obj/item/food/meat/rawcutlet/plain/salo
-	name = "сало"
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/salo
+	name = "Кусочек Салалы"
 	icon_state = "salo_slice"

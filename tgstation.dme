@@ -4136,6 +4136,7 @@
 #include "modular_bluemoon\SmiLeY\code\terror_spiders\terror_spiders.dm"
 #include "modular_bluemoon\SmiLeY\code\terror_spiders\widow.dm"
 #include "modular_bluemoon\SmiLeY\code\mob\carps.dm"
+#include "modular_bluemoon\SmiLeY\code\mob\pig\pig.dm"
 #include "modular_bluemoon\SmiLeY\code\serverside\emote_panel.dm"
 #include "modular_bluemoon\SmiLeY\code\serverside\fullscreen.dm"
 #include "modular_bluemoon\SmiLeY\code\serverside\padezhi.dm"

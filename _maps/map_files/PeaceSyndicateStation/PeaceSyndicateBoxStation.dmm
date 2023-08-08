@@ -63083,6 +63083,10 @@
 	smooth = 2
 	},
 /area/hallway/secondary/service)
+"taF" = (
+/mob/living/simple_animal/pet/dog/corgi/pig,
+/turf/open/floor/mineral/plastitanium,
+/area/service/kitchen)
 "tcU" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "46"
@@ -104773,7 +104777,7 @@ aRC
 aSK
 aVz
 ijO
-aVz
+taF
 aYL
 aJI
 bbz

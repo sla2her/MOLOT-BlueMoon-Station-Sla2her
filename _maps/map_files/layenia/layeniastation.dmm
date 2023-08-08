@@ -1235,6 +1235,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
+"akQ" = (
+/mob/living/simple_animal/pet/dog/corgi/pig,
+/turf/open/floor/plasteel/cafeteria,
+/area/service/kitchen)
 "akV" = (
 /obj/structure/flora/junglebush,
 /obj/effect/turf_decal/loading_area{
@@ -16076,6 +16080,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/service/theater)
+"cwp" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/mob/living/simple_animal/pet/dog/corgi/pig,
+/turf/open/floor/plasteel/cafeteria,
+/area/service/kitchen)
 "cwt" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
 	dir = 8;
@@ -197335,7 +197348,7 @@ kSY
 nug
 mUP
 uFg
-kSY
+cwp
 peL
 chj
 byv
@@ -261058,7 +261071,7 @@ gqx
 gXY
 vkS
 dpc
-qbL
+akQ
 eAM
 rsN
 gRD
