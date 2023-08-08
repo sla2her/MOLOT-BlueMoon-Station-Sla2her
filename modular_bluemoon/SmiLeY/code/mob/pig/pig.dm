@@ -28,8 +28,10 @@
 	mob_size = MOB_SIZE_LARGE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	gold_core_spawnable = FRIENDLY_SPAWN
-	held_icon = "pig"
+	held_icon = "pug"
 	faction = list("neutral")
+	talk_sound = list('modular_bluemoon/SmiLeY/code/mob/pig/hru.ogg', 'modular_bluemoon/SmiLeY/code/mob/pig/oink.ogg', 'modular_bluemoon/SmiLeY/code/mob/pig/squeak.ogg')
+	damaged_sound = list('modular_bluemoon/SmiLeY/code/mob/pig/hru.ogg', 'modular_bluemoon/SmiLeY/code/mob/pig/oink.ogg', 'modular_bluemoon/SmiLeY/code/mob/pig/squeak.ogg')
 
 /mob/living/simple_animal/pet/dog/corgi/pig/Initialize(mapload)
 	. = ..()
@@ -43,7 +45,7 @@
 	..()
 	if(stat)
 		return
-	if(prob(10))
+	if(prob(25))
 		var/chosen_sound = pick('modular_bluemoon/SmiLeY/code/mob/pig/hru.ogg', 'modular_bluemoon/SmiLeY/code/mob/pig/oink.ogg', 'modular_bluemoon/SmiLeY/code/mob/pig/squeak.ogg')
 		playsound(src, chosen_sound, 50, TRUE)
 
