@@ -3,26 +3,30 @@
 #define TS_MINPLAYERS_TRIGGER 35
 
 /datum/round_event_control/spider_terror
-	announce_when = 240
+	name = "Terror Spider Infestation"
 	weight = 1
 	max_occurrences = 1
 	min_players = 40
+	category = EVENT_CATEGORY_ENTITIES
+	description = "Spawns spider eggs, ready to hatch."
+
+/datum/round_event/spider_terror
+	announce_when = 240
 	var/spawncount = 1
 	var/successSpawn = FALSE	//So we don't make a command report if nothing gets spawned.
 
-/datum/round_event_control/spider_terror/setup()
+/datum/round_event/spider_terror/setup()
 	announce_when = rand(announce_when, announce_when + 30)
-	spawncount = 1
 
-/datum/round_event_control/spider_terror/announce()
+/datum/round_event/spider_terror/announce()
 	if(successSpawn)
 		priority_announce("Вспышка биологической угрозы 3-го уровня зафиксирована на борту станции [station_name()]. Всему персоналу надлежит сдержать её распространение любой ценой!", "ВНИМАНИЕ: БИОЛОГИЧЕСКАЯ УГРОЗА.", 'sound/effects/siren-spooky.ogg')
 
-/datum/round_event_control/spider_terror/start()
+/datum/round_event/spider_terror/start()
 	// It is necessary to wrap this to avoid the event triggering repeatedly.
 	INVOKE_ASYNC(src, PROC_REF(wrappedstart))
 
-/datum/round_event_control/spider_terror/proc/wrappedstart()
+/datum/round_event/spider_terror/proc/wrappedstart()
 	var/spider_type
 	var/infestation_type
 	if((length(GLOB.clients)) >= TS_HIGHPOP_TRIGGER)
