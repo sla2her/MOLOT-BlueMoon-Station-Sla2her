@@ -321,13 +321,13 @@
 	. = ..()
 
 /obj/structure/reagent_dispensers/beerkeg/attack_generic(mob/living/carbon/human/M)
+	. = ..()
 	if(ismammal(M))
 		explosion(src, light_impact_range = 3, flame_range = 5, flash_range = 10)
 		playsound(src, 'sound/effects/kega.ogg', 100, 1)
 		if(!QDELETED(src))
 			qdel(src)
 		return TRUE
-	. = ..()
 
 /obj/structure/reagent_dispensers/beerkeg/blob_act(obj/structure/blob/B)
 	explosion(src, light_impact_range = 3, flame_range = 5, flash_range = 10)

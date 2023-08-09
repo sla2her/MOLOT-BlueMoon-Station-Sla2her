@@ -13,7 +13,7 @@
 	user.visible_message(span_lewd("<b>\The [user]</b> [pick(
 		"погружает палец в свой сфинктер.",
 		"суёт палец в своё анальное колечко.",
-		"разрабатывает своё анальное кольцо собственнsv пальцtv.")]"), ignored_mobs = user.get_unconsenting())
+		"разрабатывает своё анальное кольцо собственного пальца.")]"), ignored_mobs = user.get_unconsenting())
 	playlewdinteractionsound(get_turf(user), 'modular_sand/sound/interactions/champ_fingering.ogg', 50, 1, -1)
 	user.handle_post_sex(NORMAL_LUST, CUM_TARGET_HAND, user, CUM_TARGET_ANUS) //SPLURT edit
 

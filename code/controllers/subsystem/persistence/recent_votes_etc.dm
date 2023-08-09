@@ -66,6 +66,7 @@
 		return
 	last_dynamic_gamemode = json["data"]
 //BLUEMOON ADDITION END
+
 /datum/controller/subsystem/persistence/proc/LoadRecentModes()
 	var/json_file = file("data/RecentModes.json")
 	if(!fexists(json_file))

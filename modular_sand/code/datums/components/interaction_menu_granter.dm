@@ -195,10 +195,11 @@
 		.["belly_inflation"] = 		!!CHECK_BITFIELD(prefs.cit_toggles, BELLY_INFLATION)
 		.["never_hypno"] = 			!CHECK_BITFIELD(prefs.cit_toggles, NEVER_HYPNO)
 		.["no_aphro"] = 			!CHECK_BITFIELD(prefs.cit_toggles, NO_APHRO)
-		.["no_ass_slap"] = 		!CHECK_BITFIELD(prefs.cit_toggles, NO_ASS_SLAP)
-		.["no_auto_wag"] = 		!CHECK_BITFIELD(prefs.cit_toggles, NO_AUTO_WAG)
+		.["no_ass_slap"] = 			!CHECK_BITFIELD(prefs.cit_toggles, NO_ASS_SLAP)
+		.["no_auto_wag"] = 			!CHECK_BITFIELD(prefs.cit_toggles, NO_AUTO_WAG)
 		.["chastity_pref"] = 		!!CHECK_BITFIELD(prefs.cit_toggles, CHASTITY)
 		.["stimulation_pref"] = 	!!CHECK_BITFIELD(prefs.cit_toggles, STIMULATION)
+		.["disco_dance"] = 			!!CHECK_BITFIELD(prefs.cit_toggles, NO_DISCO_DANCE)
 		.["edging_pref"] =			!!CHECK_BITFIELD(prefs.cit_toggles, EDGING)
 
 /proc/num_to_pref(num)
@@ -359,6 +360,8 @@
 					TOGGLE_BITFIELD(prefs.cit_toggles, CHASTITY)
 				if("stimulation_pref")
 					TOGGLE_BITFIELD(prefs.cit_toggles, STIMULATION)
+				if("disco_dance")
+					TOGGLE_BITFIELD(prefs.cit_toggles, NO_DISCO_DANCE)
 				if("edging_pref")
 					TOGGLE_BITFIELD(prefs.cit_toggles, EDGING)
 				//

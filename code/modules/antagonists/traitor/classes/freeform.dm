@@ -6,7 +6,7 @@
 
 /datum/traitor_class/human/freeform/forge_objectives(datum/antagonist/traitor/T)
 	var/datum/objective/freedom/O = new
-	O.explanation_text = "You have no explicit goals! While we don't approve of mindless slaughter, you may antagonize Nanotrasen and Syndicate any way you wish! Don't get captured or killed, but if you've done nothing, you'll be in trouble!"
+	O.explanation_text = "У вас нет явных целей! Хотя мы не одобряем бездумную резню, вы можете враждовать с Nanotrasen и Синдикатом, как вам заблагорассудится! Не попадайте в плен и не убивайте, но если вы ничего не сделали, у вас будут проблемы!"
 	O.owner = T.owner
 	T.add_objective(O)
 	return

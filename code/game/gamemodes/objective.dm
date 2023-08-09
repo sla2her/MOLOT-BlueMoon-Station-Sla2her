@@ -537,7 +537,7 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 
 /datum/objective/martyr
 	name = "martyr"
-	explanation_text = "Die a glorious death."
+	explanation_text = "Умри Славной Смертью. Мы допускаем использование ЛЮБЫХ инструментов. О тебе и твоих действиях должны знать ВСЕ!"
 
 /datum/objective/martyr/check_completion()
 	var/list/datum/mind/owners = get_owners()

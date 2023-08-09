@@ -129,7 +129,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/extremeharm = "No" //If "extreme content" is enabled, this option serves as a toggle for the related interactions to cause damage or not
 	var/see_chat_emotes = TRUE
 	var/view_pixelshift = FALSE
-	var/disco_dance = FALSE
+	var/disco_dance = TRUE
 	var/enable_personal_chat_color = FALSE
 	var/personal_chat_color = "#ffffff"
 	var/list/alt_titles_preferences = list()
@@ -1320,7 +1320,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<b>See Runechat for emotes:</b> <a href='?_src_=prefs;preference=see_chat_emotes'>[see_chat_emotes ? "Enabled" : "Disabled"]</a><br>"
 					//SKYRAT CHANGES END
 					dat += "<b>Shift view when pixelshifting:</b> <a href='?_src_=prefs;preference=view_pixelshift'>[view_pixelshift ? "Enabled" : "Disabled"]</a><br>" //SPLURT Edit
-					dat += "<b>Dance near disco ball:</b> <a href='?_src_=prefs;preference=disco_dance'>[disco_dance ? "Enabled" : "Disabled"]</a><br>"
 					dat += "<br>"
 					dat += "<b>Action Buttons:</b> <a href='?_src_=prefs;preference=action_buttons'>[(buttons_locked) ? "Locked In Place" : "Unlocked"]</a><br>"
 					dat += "<br>"
@@ -1565,6 +1564,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<b><span style='color: #e60000;'>Harmful ERP verbs :</b> <a href='?_src_=prefs;preference=extremeharm'>[extremeharm]</a><br>"
 					//END OF SKYRAT EDIT
 					//SPLURT EDIT
+					dat += "<b>Dance Near Disco Ball:</b> <a href='?_src_=prefs;preference=disco_dance'>[(cit_toggles & NO_DISCO_DANCE) ? "Disabled" : "Enabled"]</a><br>" NO_DISCO_DANCE
 					dat += "<b>Automatic Wagging:</b> <a href='?_src_=prefs;preference=auto_wag'>[(cit_toggles & NO_AUTO_WAG) ? "Disabled" : "Enabled"]</a><br>"
 					dat += "<span style='border-radius: 2px;border:1px dotted white;cursor:help;' title='If anyone cums a blacklisted fluid into you, it uses the default fluid for that genital.'>?</span> "
 					dat += "<b><a href='?_src_=prefs;preference=gfluid_black;task=input'>Genital Fluid Blacklist</a></b><br>"
@@ -3879,6 +3879,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("auto_wag")
 					cit_toggles ^= NO_AUTO_WAG
+
+				if("disco_dance")
+					cit_toggles ^= NO_DISCO_DANCE
 
 				//END CITADEL EDIT
 
