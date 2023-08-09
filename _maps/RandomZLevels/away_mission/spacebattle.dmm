@@ -2916,7 +2916,7 @@
 /area/awaymission/spacebattle/syndicate2)
 "pp" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/backpack/duffelbag/syndie/shotgun,
+/obj/item/storage/backpack/duffelbag/syndie/inteq/shotgun,
 /turf/open/floor/mineral/plastitanium/yellow,
 /area/awaymission/spacebattle/syndicate7)
 "pP" = (
