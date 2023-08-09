@@ -90776,9 +90776,6 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "laA" = (
@@ -126503,7 +126500,7 @@
 "xlH" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock{
-	id_tag = "Dorm5";
+	id_tag = "Dorm1";
 	name = "Cabin 1"
 	},
 /obj/effect/decal/cleanable/dirt{
