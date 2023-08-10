@@ -110,8 +110,9 @@ do { \
 
 #define RENDER_PLANE_TRANSPARENT -9 //Transparent plane that shows openspace underneath the floor
 
-#define GAME_PLANE_FOV_HIDDEN -6
-#define GAME_PLANE_UPPER -5
+#define GAME_PLANE_FOV_HIDDEN -7
+#define GAME_PLANE_UPPER -6
+#define WALL_PLANE_UPPER -5
 #define GAME_PLANE_UPPER_FOV_HIDDEN -4
 
 #define SEETHROUGH_PLANE -3
