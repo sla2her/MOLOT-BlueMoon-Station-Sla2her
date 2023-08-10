@@ -332,6 +332,7 @@ Key procs
 								/datum/language/tajaran = list(LANGUAGE_ATOM),
 								/datum/language/drone = list(LANGUAGE_ATOM),
 								/datum/language/signlanguage = list(LANGUAGE_ATOM))
+
 	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
 							/datum/language/machine = list(LANGUAGE_ATOM),
 							/datum/language/draconic = list(LANGUAGE_ATOM),
