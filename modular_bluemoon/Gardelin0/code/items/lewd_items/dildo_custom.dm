@@ -4,6 +4,86 @@
 	item_state = "dildo"
 	var/inside = FALSE
 
+/obj/item/dildo/buttplug
+	icon 		= 'modular_splurt/icons/obj/lewd_items/lewd_items.dmi'
+
+/obj/item/dildo/buttplug/small
+	name		= "Small Buttplug"
+	desc		= "Маленькая затычка для анального кольца. Обычно, она используется... для удовлетворения."
+	icon_state  = "buttplug_metal_small"
+	dildo_size  = 1
+	unique_reskin = list(
+		"Basic Metal" = list(
+			RESKIN_ICON_STATE = "buttplug_metal_small"
+		),
+		"Pink" = list(
+			RESKIN_ICON_STATE = "buttplug_pink_small"
+		),
+		"Teal" = list(
+			RESKIN_ICON_STATE = "buttplug_teal_small"
+		),
+		"Yellow" = list(
+			RESKIN_ICON_STATE = "buttplug_yellow_small"
+		),
+		"Green" = list(
+			RESKIN_ICON_STATE = "buttplug_green_small"
+		),
+	)
+
+/obj/item/dildo/buttplug/med
+	name		= "Medium Buttplug"
+	desc		= "Средняя затычка для анального кольца. Обычно, она используется... для удовлетворения."
+	icon_state  = "buttplug_metal_medium"
+	dildo_size  = 3
+	unique_reskin = list(
+		"Basic Metal" = list(
+			RESKIN_ICON_STATE = "buttplug_metal_medium"
+		),
+		"Pink" = list(
+			RESKIN_ICON_STATE = "buttplug_pink_medium"
+		),
+		"Teal" = list(
+			RESKIN_ICON_STATE = "buttplug_teal_medium"
+		),
+		"Yellow" = list(
+			RESKIN_ICON_STATE = "buttplug_yellow_medium"
+		),
+		"Green" = list(
+			RESKIN_ICON_STATE = "buttplug_green_medium"
+		),
+	)
+
+/obj/item/dildo/buttplug/big
+	name		= "Big Buttplug"
+	desc		= "Большая затычка для анального кольца. Обычно, она используется... для удовлетворения."
+	icon_state  = "buttplug_metal_big"
+	dildo_size  = 4
+	unique_reskin = list(
+		"Basic Metal" = list(
+			RESKIN_ICON_STATE = "buttplug_metal_big"
+		),
+		"Pink" = list(
+			RESKIN_ICON_STATE = "buttplug_pink_big"
+		),
+		"Teal" = list(
+			RESKIN_ICON_STATE = "buttplug_teal_big"
+		),
+		"Yellow" = list(
+			RESKIN_ICON_STATE = "buttplug_yellow_big"
+		),
+		"Green" = list(
+			RESKIN_ICON_STATE = "buttplug_green_big"
+		),
+	)
+
+/obj/item/dildo/ComponentInitialize()
+	. = ..()
+	var/list/procs_list = list(
+		"before_inserting" = CALLBACK(src, .proc/item_inserting),
+		"after_inserting" = CALLBACK(src, .proc/item_inserted),
+	)
+	AddComponent(/datum/component/genital_equipment, list(ORGAN_SLOT_PENIS, ORGAN_SLOT_WOMB, ORGAN_SLOT_VAGINA, ORGAN_SLOT_BREASTS, ORGAN_SLOT_ANUS), procs_list)
+
 /obj/item/dildo/proc/item_inserting(mob/living/carbon/user, mob/living/carbon/target, obj/item/organ/genital/target_organ)
 	. = TRUE
 
@@ -34,7 +114,13 @@
 	inside = TRUE
 	stuffed_movement()
 
-obj/item/dildo/MouseDrop_T(mob/living/M, mob/living/user)
+/obj/item/dildo/proc/item_inserted(datum/source, obj/item/organ/genital/G, mob/user)
+	. = TRUE
+	to_chat(user, span_userlove("You attach [src] to <b>\The [G.owner]</b>'s [G]."))
+	playsound(G.owner, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
+	inside = TRUE
+
+/obj/item/dildo/MouseDrop_T(mob/living/M, mob/living/user)
 	var/message = ""
 	var/lust_amt = 0
 	if(ishuman(M) && (M?.client?.prefs?.toggles & VERB_CONSENT))

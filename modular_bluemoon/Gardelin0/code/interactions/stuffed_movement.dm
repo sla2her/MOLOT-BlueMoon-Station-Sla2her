@@ -6,7 +6,7 @@
 		stoplag()
 
 //Dildo
-/obj/item/dildo/proc/stuffed_movement()
+/obj/item/dildo/proc/stuffed_movement(obj/item/item)
 	var/obj/item/organ/genital/G = loc
 	var/mob/living/carbon/U = G.owner
 
@@ -16,20 +16,35 @@
 				if(!istype(loc, /obj/item/organ/genital))
 					return
 				if(prob(10))
+					if(dildo_size == 5)
+						to_chat(U, span_userdanger(pick("Гигантский дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от гигантского дилдо глубоко внутри!")))
+						U.handle_post_sex(HIGH_LUST, null, U)
+						U.Jitter(6)
+						U.Stun(10)
+						U.emote("moan")
 					if(dildo_size == 4)
-						to_chat(U, span_userdanger(pick("Огромный дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от огромного дилдо глубоко внутри!")))
-						U.handle_post_sex(NORMAL_LUST, null, U)
+						if(istype(item, /obj/item/dildo/buttplug))
+							to_chat(U, span_userdanger(pick("Огромная затычка внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от огромной затычки глубоко внутри!")))
+						else
+							to_chat(U, span_userdanger(pick("Огромный дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от огромного дилдо глубоко внутри!")))
+						U.handle_post_sex(HIGH_LUST, null, U)
 						U.Jitter(3)
-						U.Stun(5)
+						U.Stun(6)
 						U.emote("moan")
 					if(prob(5) && !dildo_size == 1)
-						to_chat(U, span_userdanger(pick("Дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от дилдо глубоко внутри!")))
+						if(istype(item, /obj/item/dildo/buttplug))
+							to_chat(U, span_love(pick("Затычка внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от затычки глубоко внутри!")))
+						else
+							to_chat(U, span_love(pick("Дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от дилдо глубоко внутри!")))
 						U.handle_post_sex(NORMAL_LUST, null, U)
 						U.Jitter(3)
-						U.Stun(5)
+						U.Stun(3)
 						U.emote("moan")
 					else
-						to_chat(U, span_love(pick("Я чувствую дилдо внутри!", "Дилдо заполняет меня изнутри!")))
+						if(istype(item, /obj/item/dildo/buttplug))
+							to_chat(U, span_love(pick("Я чувствую затычку внутри!", "Вы чувствуете удовольствие от затычки внутри!")))
+						else
+							to_chat(U, span_love(pick("Я чувствую дилдо внутри!", "Вы чувствуете удовольствие от дилдо глубоко внутри!")))
 						U.handle_post_sex(LOW_LUST, null, U)
 						U.do_jitter_animation()
 
@@ -39,7 +54,7 @@
 		return
 	while(istype(src, M.w_underwear))
 		if(tired == TRUE)
-			if(activate_after(src, rand(300,500)))
+			if(activate_after(src, rand(500,1000)))
 				tired = FALSE
 
 		if(activate_after(src, rand(25 ,50)) && tired == FALSE)
