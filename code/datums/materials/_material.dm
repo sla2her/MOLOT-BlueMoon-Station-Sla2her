@@ -43,6 +43,8 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/cached_texture_filter
 	///What type of shard the material will shatter to
 	var/obj/item/shard_type
+	///What type of debris the tile will leave behind when shattered.
+	var/obj/effect/decal/debris_type
 
 
 /** Handles initializing the material.

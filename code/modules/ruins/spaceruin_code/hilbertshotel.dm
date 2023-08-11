@@ -139,12 +139,10 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
     if(ruinSpawned && roomNumber == mysteryRoom)
         hotelRoomTempLore.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
     else
-    //BLUEMOON EDIT ADDITION - GHOST HOTEL UPDATE
         switch(chosen_room)
             if("Apartment")
                 ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
             else
-    //BLUEMOON EDIT END
                 hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
     activeRooms["[roomNumber]"] = roomReservation
     linkTurfs(roomReservation, roomNumber)

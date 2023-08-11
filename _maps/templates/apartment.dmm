@@ -102,26 +102,25 @@
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/reagent_containers/food/drinks/beer,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
+/obj/item/kitchen/knife,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
 	},
-/obj/item/kitchen/knife,
 /turf/open/floor/plasteel/kitchen_coldroom,
 /area/hilbertshotel)
 "dT" = (
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "eJ" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/outlet_injector/hilbertshotel/layer3,
-/turf/open/space/bluespace,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "eO" = (
 /obj/structure/bookcase/random,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_tiled,
@@ -216,6 +215,9 @@
 "kS" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
 /turf/open/floor/carpet,
 /area/hilbertshotel)
 "kW" = (
@@ -244,12 +246,11 @@
 /turf/open/floor/carpet,
 /area/hilbertshotel)
 "lS" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/open/space/bluespace,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "lU" = (
 /obj/effect/turf_decal/siding/wood{
@@ -386,11 +387,10 @@
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "xM" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 8
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "xT" = (
 /turf/closed/indestructible/wall,
@@ -497,11 +497,10 @@
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "Cz" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "DR" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -804,7 +803,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4
 	},
 /turf/open/indestructible/hoteltile,
@@ -876,7 +875,7 @@
 /obj/item/pizzabox/margherita{
 	pixel_y = 11
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_tiled,

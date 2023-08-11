@@ -53,6 +53,8 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	var/electrochromatic_status = NOT_ELECTROCHROMATIC
 	/// Electrochromatic ID. Set the first character to ! to replace with a SSmapping generated pseudorandom obfuscated ID for mapping purposes.
 	var/electrochromatic_id
+	///Datum that the shard and debris type is pulled from for when the glass is broken.
+	var/datum/material/glass_material_datum = /datum/material/glass
 
 /obj/structure/window/examine(mob/user)
 	. = ..()
@@ -478,7 +480,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	if(!disassembled)
 		playsound(src, breaksound, 70, 1)
 		if(!(flags_1 & NODECONSTRUCT_1))
-			for(var/obj/item/shard/debris in spawnDebris(drop_location()))
+			for(var/obj/item/shard/debris in spawn_debris(drop_location()))
 				transfer_fingerprints_to(debris) // transfer fingerprints to shards only
 	if(electrochromatic_status != NOT_ELECTROCHROMATIC)		//eh fine keep your kit.
 		new /obj/item/electronics/electrochromatic_kit(drop_location())
@@ -486,17 +488,21 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	qdel(src)
 	update_nearby_icons()
 
-/obj/structure/window/proc/spawnDebris(location)
-	. = list()
-	var/shard = initial(glass_type.shard_type)
-	if(shard)
-		. += new shard(location)
+///Spawns shard and debris decal based on the glass_material_datum, spawns rods if window is reinforned and number of shards/rods is determined by the window being fulltile or not.
+/obj/structure/window/proc/spawn_debris(location)
+	var/datum/material/glass_material_ref = GET_MATERIAL_REF(glass_material_datum)
+	var/obj/item/shard_type = glass_material_ref.shard_type
+	var/obj/effect/decal/debris_type = glass_material_ref.debris_type
+	var/list/dropped_debris = list()
+	if(!isnull(shard_type))
+		dropped_debris += new shard_type(location)
 		if (fulltile)
-			. += new shard(location)
-	if(cleanable_type)
-		. += new cleanable_type(location)
+			dropped_debris += new shard_type(location)
+	if(!isnull(debris_type))
+		dropped_debris += new debris_type(location)
 	if (reinf)
-		. += new /obj/item/stack/rods(location, (fulltile ? 2 : 1))
+		dropped_debris += new /obj/item/stack/rods(location, (fulltile ? 2 : 1))
+	return dropped_debris
 
 /obj/structure/window/proc/can_be_rotated(mob/user,rotation_type)
 	if (get_dist(src,user) > 1)
@@ -835,6 +841,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	explosion_block = 3
 	level = 3
 	glass_type = /obj/item/stack/sheet/titaniumglass
+	cleanable_type = /obj/effect/decal/cleanable/glass/titanium
 	glass_amount = 2
 	ricochet_chance_mod = 0.9
 
@@ -866,6 +873,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	explosion_block = 3
 	level = 3
 	glass_type = /obj/item/stack/sheet/plastitaniumglass
+	cleanable_type = /obj/effect/decal/cleanable/glass/plastitanium
 	glass_amount = 2
 
 /obj/structure/window/plastitanium/unanchored
@@ -901,7 +909,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	. = ..()
 	change_construction_value(fulltile ? 2 : 1)
 
-/obj/structure/window/reinforced/clockwork/spawnDebris(location)
+/obj/structure/window/reinforced/clockwork/spawn_debris(location)
 	. = list()
 	var/gearcount = fulltile ? 4 : 2
 	for(var/i in 1 to gearcount)
@@ -982,7 +990,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	. = ..()
 	update_icon()
 
-/obj/structure/window/paperframe/spawnDebris(location)
+/obj/structure/window/paperframe/spawn_debris(location)
 	. = list(new /obj/item/stack/sheet/mineral/wood(location))
 	for (var/i in 1 to rand(1,4))
 		. += new /obj/item/paper/natural(location)

@@ -13,3 +13,16 @@
 #define MATERIAL_AFFECT_STATISTICS (1<<2)
 
 #define MATERIAL_SOURCE(mat) "[mat.name]_material"
+
+/// Wrapper for fetching material references. Exists exclusively so that people don't need to wrap everything in a list every time.
+#define GET_MATERIAL_REF(arguments...) SSmaterials.GetMaterialRef(list(##arguments))
+
+// The following flags are for decomposing alloys. Should be expanded upon and diversified once someone gets around to reworking recycling.
+/// Can reduce an alloy into its component materials.
+#define BREAKDOWN_ALLOYS (1<<4)
+
+// Slowdown values.
+/// The slowdown value of one [SHEET_MATERIAL_AMOUNT] of plasteel.
+#define MATERIAL_SLOWDOWN_PLASTEEL (0.05)
+/// The slowdown value of one [SHEET_MATERIAL_AMOUNT] of alien alloy.
+#define MATERIAL_SLOWDOWN_ALIEN_ALLOY (0.1)
