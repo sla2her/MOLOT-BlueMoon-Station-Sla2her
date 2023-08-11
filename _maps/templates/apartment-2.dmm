@@ -1,0 +1,864 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/open/space/bluespace,
+/area/hilbertshotel)
+"ab" = (
+/obj/machinery/telecomms/relay/preset/auto,
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"ac" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/hilbertshotel/layer3,
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"ad" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"ae" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/meter,
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"af" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"ag" = (
+/turf/closed/indestructible/wall,
+/area/hilbertshotel)
+"ah" = (
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"ai" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"aj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"ak" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"am" = (
+/obj/machinery/vending/kink,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"an" = (
+/obj/machinery/door/morgue,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"ao" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"ap" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"aq" = (
+/obj/structure/dresser,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"ar" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/closet/cabinet{
+	anchored = 1
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"as" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 6;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/closed/indestructible/wall,
+/area/hilbertshotel)
+"at" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/turf/closed/indestructible/hoteldoor{
+	icon_state = "door_closed";
+	icon = 'icons/obj/doors/puzzledoor/default.dmi'
+	},
+/area/hilbertshotel)
+"au" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/turf/closed/indestructible/wall,
+/area/hilbertshotel)
+"av" = (
+/obj/machinery/light_switch{
+	pixel_x = -32
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aw" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"ax" = (
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"ay" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"az" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"aA" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"aB" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/indestructible/hoteltile,
+/area/hilbertshotel)
+"aC" = (
+/obj/structure/window/reinforced/tinted,
+/obj/structure/toilet{
+	dir = 8
+	},
+/obj/machinery/door/window/westleft,
+/turf/open/indestructible/hoteltile,
+/area/hilbertshotel)
+"aD" = (
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aE" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/structure/window/reinforced/tinted,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"aF" = (
+/obj/structure/window/reinforced/tinted,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"aG" = (
+/obj/structure/bed/double,
+/obj/item/bedsheet/random/double,
+/obj/structure/window/reinforced/tinted,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"aH" = (
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"aI" = (
+/obj/structure/mirror{
+	pixel_x = -32
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/turf/open/indestructible/hoteltile,
+/area/hilbertshotel)
+"aJ" = (
+/turf/open/indestructible/hoteltile,
+/area/hilbertshotel)
+"aK" = (
+/obj/structure/mineral_door/paperframe,
+/turf/open/indestructible/hoteltile,
+/area/hilbertshotel)
+"aL" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aM" = (
+/obj/machinery/light_switch{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"aN" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/obj/machinery/shower{
+	dir = 8;
+	pixel_y = -5;
+	pixel_x = 1
+	},
+/obj/item/soap/deluxe,
+/obj/machinery/door/window/westright,
+/turf/open/indestructible/hoteltile,
+/area/hilbertshotel)
+"aO" = (
+/obj/machinery/light/small,
+/obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
+	dir = 4
+	},
+/obj/item/kirbyplants/random,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aP" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aQ" = (
+/obj/machinery/light/small,
+/obj/structure/table/wood/fancy,
+/obj/item/toy/plush/beeplushie,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aR" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/stairs/left,
+/area/hilbertshotel)
+"aS" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/stairs/medium,
+/area/hilbertshotel)
+"aT" = (
+/turf/open/floor/plasteel/stairs/right,
+/area/hilbertshotel)
+"aU" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/stairs/left,
+/area/hilbertshotel)
+"aV" = (
+/obj/machinery/airalarm/all_access{
+	dir = 4;
+	pixel_x = -24
+	},
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"aW" = (
+/turf/open/floor/plasteel/stairs/right{
+	dir = 8
+	},
+/area/hilbertshotel)
+"aX" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aY" = (
+/obj/item/kirbyplants/random,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"aZ" = (
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"ba" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"bb" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"bc" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/stairs/left{
+	dir = 8
+	},
+/area/hilbertshotel)
+"bd" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"be" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bf" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/chair/sofa/right/maroon,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bg" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/chair/sofa/middle/maroon,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bh" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 2;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/obj/structure/chair/sofa/left/maroon,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bi" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 9;
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"bk" = (
+/obj/structure/chair/sofa/left/maroon{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bl" = (
+/obj/structure/table/wood,
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bm" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
+	dir = 1
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bn" = (
+/obj/structure/chair/sofa/right/maroon{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bo" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"bp" = (
+/obj/structure/table/reinforced,
+/obj/machinery/microwave,
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"bq" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/three_course_meal,
+/obj/effect/spawner/lootdrop/three_course_meal,
+/obj/effect/spawner/lootdrop/three_course_meal,
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"br" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"bs" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#cee5d2"
+	},
+/obj/item/reagent_containers/food/drinks/bottle/champagne,
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"bt" = (
+/obj/structure/chair/stool/bar,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"bu" = (
+/obj/structure/chair/sofa/right/maroon{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bv" = (
+/obj/structure/chair/sofa/left/maroon{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
+"bw" = (
+/obj/structure/table/reinforced,
+/obj/structure/sink/kitchen{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"bx" = (
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"by" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"bz" = (
+/obj/machinery/smartfridge/food,
+/turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"bA" = (
+/obj/structure/table/reinforced,
+/obj/item/candle/infinite,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"bB" = (
+/obj/machinery/jukebox{
+	req_one_access = null
+	},
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"bC" = (
+/obj/machinery/vending/games,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+"bD" = (
+/obj/item/kirbyplants/random,
+/turf/open/indestructible/hotelwood,
+/area/hilbertshotel)
+
+(1,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(2,1,1) = {"
+aa
+ab
+ah
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(3,1,1) = {"
+aa
+ac
+ai
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+aa
+"}
+(4,1,1) = {"
+aa
+ad
+aj
+as
+ay
+aH
+aM
+aR
+aV
+aZ
+ag
+bp
+bw
+bz
+ag
+aa
+"}
+(5,1,1) = {"
+aa
+ae
+ak
+at
+az
+az
+az
+aS
+az
+ba
+ag
+bq
+bx
+bx
+ag
+aa
+"}
+(6,1,1) = {"
+aa
+af
+ah
+au
+aA
+aH
+aH
+aT
+aH
+bb
+ag
+br
+bx
+bx
+ag
+aa
+"}
+(7,1,1) = {"
+aa
+aa
+aa
+ag
+ag
+ag
+ag
+ag
+aW
+bc
+ag
+bs
+by
+bx
+ag
+aa
+"}
+(8,1,1) = {"
+aa
+ag
+ag
+ag
+aB
+aI
+aJ
+ag
+aD
+bd
+aD
+bt
+bt
+aD
+ag
+aa
+"}
+(9,1,1) = {"
+aa
+ag
+am
+ag
+aC
+aJ
+aN
+ag
+aD
+be
+bk
+bu
+ax
+aD
+ag
+aa
+"}
+(10,1,1) = {"
+aa
+ag
+an
+ag
+ag
+aK
+ag
+ag
+aD
+bf
+bl
+bl
+ax
+bA
+ag
+aa
+"}
+(11,1,1) = {"
+aa
+ag
+ao
+av
+aD
+aD
+aO
+ag
+aD
+bg
+bl
+bl
+ax
+bB
+ag
+aa
+"}
+(12,1,1) = {"
+aa
+ag
+ap
+aw
+aE
+aL
+aP
+aU
+aX
+bh
+bm
+bl
+ax
+bA
+ag
+aa
+"}
+(13,1,1) = {"
+aa
+ag
+aq
+ax
+aF
+aD
+aD
+aT
+aD
+bi
+bn
+bv
+ax
+bC
+ag
+aa
+"}
+(14,1,1) = {"
+aa
+ag
+ar
+ax
+aG
+aD
+aQ
+ag
+aY
+bj
+bo
+aD
+aD
+bD
+ag
+aa
+"}
+(15,1,1) = {"
+aa
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+ag
+aa
+"}
+(16,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}

@@ -8,7 +8,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	//BlueMoon Edit
-	var/list/static/hotel_maps = list("Generic", "Apartment")
+	var/list/static/hotel_maps = list("Generic", "Apartment", "Apartment-1", "Apartment-2")
 	var/datum/map_template/ghost_cafe_rooms/ghost_cafe_rooms_apartment
 	//BlueMoon Edit
 	var/datum/map_template/hilbertshotel/hotelRoomTemp
@@ -141,6 +141,10 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
     else
         switch(chosen_room)
             if("Apartment")
+                ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+			if("Apartment-1")
+                ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+			if("Apartment-2")
                 ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
             else
                 hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))

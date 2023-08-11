@@ -19,3 +19,11 @@
 /datum/map_template/ghost_cafe_rooms
 	name = "Apartment"
 	mappath = '_maps/templates/apartment.dmm'
+
+/datum/map_template/ghost_cafe_rooms/one
+	name = "Apartment-1"
+	mappath = '_maps/templates/apartment-1.dmm'
+
+/datum/map_template/ghost_cafe_rooms/two
+	name = "Apartment-2"
+	mappath = '_maps/templates/apartment-2.dmm'
