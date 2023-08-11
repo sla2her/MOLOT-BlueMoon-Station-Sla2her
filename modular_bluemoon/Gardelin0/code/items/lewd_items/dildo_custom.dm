@@ -4,14 +4,16 @@
 	item_state = "dildo"
 	var/inside = FALSE
 
-/obj/item/dildo/buttplug
+/obj/item/buttplug
 	icon 		= 'modular_splurt/icons/obj/lewd_items/lewd_items.dmi'
+	var/buttplug_size  = 1
+	var/inside = FALSE
 
-/obj/item/dildo/buttplug/small
+/obj/item/buttplug/small
 	name		= "Small Buttplug"
 	desc		= "Маленькая затычка для анального кольца. Обычно, она используется... для удовлетворения."
 	icon_state  = "buttplug_metal_small"
-	dildo_size  = 1
+	buttplug_size  = 1
 	unique_reskin = list(
 		"Basic Metal" = list(
 			RESKIN_ICON_STATE = "buttplug_metal_small"
@@ -30,11 +32,11 @@
 		),
 	)
 
-/obj/item/dildo/buttplug/med
+/obj/item/buttplug/med
 	name		= "Medium Buttplug"
 	desc		= "Средняя затычка для анального кольца. Обычно, она используется... для удовлетворения."
 	icon_state  = "buttplug_metal_medium"
-	dildo_size  = 3
+	buttplug_size  = 3
 	unique_reskin = list(
 		"Basic Metal" = list(
 			RESKIN_ICON_STATE = "buttplug_metal_medium"
@@ -53,11 +55,11 @@
 		),
 	)
 
-/obj/item/dildo/buttplug/big
+/obj/item/buttplug/big
 	name		= "Big Buttplug"
 	desc		= "Большая затычка для анального кольца. Обычно, она используется... для удовлетворения."
 	icon_state  = "buttplug_metal_big"
-	dildo_size  = 4
+	buttplug_size  = 4
 	unique_reskin = list(
 		"Basic Metal" = list(
 			RESKIN_ICON_STATE = "buttplug_metal_big"
@@ -76,6 +78,46 @@
 		),
 	)
 
+/obj/item/buttplug/ComponentInitialize()
+	. = ..()
+	var/list/procs_list = list(
+		"before_inserting" = CALLBACK(src, .proc/item_inserting),
+		"after_inserting" = CALLBACK(src, .proc/item_inserted),
+	)
+	AddComponent(/datum/component/genital_equipment, list(ORGAN_SLOT_PENIS, ORGAN_SLOT_WOMB, ORGAN_SLOT_VAGINA, ORGAN_SLOT_BREASTS, ORGAN_SLOT_ANUS), procs_list)
+
+/obj/item/buttplug/proc/item_inserting(datum/source, obj/item/organ/genital/G, mob/living/user)
+	. = TRUE
+	if(!(G.owner.client?.prefs?.erppref == "Yes"))
+		to_chat(user, span_warning("They don't want you to do that!"))
+		return FALSE
+
+	if(!(CHECK_BITFIELD(G.genital_flags, GENITAL_CAN_STUFF)))
+		to_chat(user, span_warning("This genital can't be stuffed!"))
+		return FALSE
+
+	if(user == G.owner)
+		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert dildo inside themselves!"),\
+					span_warning("You try to insert dildo inside yourself!"))
+	else
+		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert dildo inside \the <b>[G.owner]</b>!"),\
+					span_warning("\The <b>[user]</b> is trying to insert dildo inside you!"))
+
+	if(!do_mob(user, G.owner, 5 SECONDS))
+		return FALSE
+
+	to_chat(user, span_userlove("Your [G] feels stuffed and stretched!"))
+	user.handle_post_sex(LOW_LUST, null, user)
+	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
+	inside = TRUE
+	stuffed_movement()
+
+/obj/item/buttplug/proc/item_inserted(datum/source, obj/item/organ/genital/G, mob/user)
+	. = TRUE
+	to_chat(user, span_userlove("You attach [src] to <b>\The [G.owner]</b>'s [G]."))
+	playsound(G.owner, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
+	inside = TRUE
+
 /obj/item/dildo/ComponentInitialize()
 	. = ..()
 	var/list/procs_list = list(
@@ -84,33 +126,29 @@
 	)
 	AddComponent(/datum/component/genital_equipment, list(ORGAN_SLOT_PENIS, ORGAN_SLOT_WOMB, ORGAN_SLOT_VAGINA, ORGAN_SLOT_BREASTS, ORGAN_SLOT_ANUS), procs_list)
 
-/obj/item/dildo/proc/item_inserting(mob/living/carbon/user, mob/living/carbon/target, obj/item/organ/genital/target_organ)
+/obj/item/dildo/proc/item_inserting(datum/source, obj/item/organ/genital/G, mob/living/user)
 	. = TRUE
-
-	if(!(target.client?.prefs?.erppref == "Yes"))
+	if(!(G.owner.client?.prefs?.erppref == "Yes"))
 		to_chat(user, span_warning("They don't want you to do that!"))
-		return
+		return FALSE
 
-	if(!(istype(target_organ, /obj/item/organ/genital/vagina)) && !(istype(target_organ, /obj/item/organ/genital/anus))) //dildos dont fit on anything but vaginas and anus
-		to_chat(user, "<span class='warning'> How do you even imagine that?!</span>")
-		return
+	if(!(CHECK_BITFIELD(G.genital_flags, GENITAL_CAN_STUFF)))
+		to_chat(user, span_warning("This genital can't be stuffed!"))
+		return FALSE
 
-	if(locate(src.type) in target_organ.contents)
-		to_chat(user, span_notice("\The <b>[target]</b>'s [target_organ] already has a dildo inside!"))
-		return
+	if(user == G.owner)
+		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert dildo inside themselves!"),\
+					span_warning("You try to insert dildo inside yourself!"))
+	else
+		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert dildo inside \the <b>[G.owner]</b>!"),\
+					span_warning("\The <b>[user]</b> is trying to insert dildo inside you!"))
 
-	target.visible_message(span_warning("\The <b>[user]</b> is trying to insert a [src] inside \the <b>[target]</b>!"),\
-					span_warning("\The <b>[user]</b> is trying to insert a [src] inside you!"))
+	if(!do_mob(user, G.owner, 5 SECONDS))
+		return FALSE
 
-	if(!do_mob(user, target, 5 SECONDS))
-		return
-
-	if(!user.transferItemToLoc(src, target_organ))
-		return
-
-	to_chat(target, span_userlove("Your [target_organ] feels stuffed and stretched!"))
-	target.handle_post_sex(LOW_LUST, null, target)
-	playsound(target, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
+	to_chat(user, span_userlove("Your [G] feels stuffed and stretched!"))
+	user.handle_post_sex(LOW_LUST, null, user)
+	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
 	inside = TRUE
 	stuffed_movement()
 
