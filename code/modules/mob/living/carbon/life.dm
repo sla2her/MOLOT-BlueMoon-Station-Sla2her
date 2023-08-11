@@ -365,7 +365,7 @@
 		return
 
 	// Wait a bit before decaying
-	if(world.time - timeofdeath < 1200)
+	if(world.time - timeofdeath < 600)
 		return
 
 	var/deceasedturf = get_turf(src)
@@ -378,7 +378,7 @@
 
 	var/datum/gas_mixture/stank = new
 
-	stank.set_moles(GAS_MIASMA,0.1)
+	stank.set_moles(GAS_MIASMA,2.5)
 
 	stank.set_temperature(BODYTEMP_NORMAL)
 
