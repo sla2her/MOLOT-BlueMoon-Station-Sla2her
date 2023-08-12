@@ -1,8 +1,8 @@
-/mob/living/simple_animal/hostile/poison
+/mob/living/simple_animal/hostile/retaliate/poison
 	var/poison_per_bite = 0
 	var/poison_type = /datum/reagent/toxin
 
-/mob/living/simple_animal/hostile/poison/AttackingTarget()
+/mob/living/simple_animal/hostile/retaliate/poison/AttackingTarget()
 	. = ..()
 	if(. && isliving(target))
 		var/mob/living/L = target
