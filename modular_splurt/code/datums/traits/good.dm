@@ -56,32 +56,12 @@
 	gain_text = span_notice("Вы чувствуете в себе силы благодаря свечению Атома.")
 	lose_text = span_notice("Вы понимаете, что радиация не такая уж безопасная.")
 
-	// Variable for the radiation immunity check
-	var/can_gain = TRUE
-
 /datum/quirk/rad_fiend/add()
 	// Define quirk holder mob
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
-
-	// Check for any radiation immunity
-	if(HAS_TRAIT(quirk_mob, TRAIT_RADIMMUNE))
-		// Set gain status
-		can_gain = FALSE
-
-		// Return without doing anything
-		return
-
 	// Add glow control action
 	var/datum/action/rad_fiend/update_glow/quirk_action = new
 	quirk_action.Grant(quirk_mob)
-
-/datum/quirk/rad_fiend/post_add()
-	// Check if quirk effect was gained
-	if(can_gain)
-		return
-
-	// Alert quirk holder of gain status
-	to_chat(quirk_holder, span_warning("Поскольку у вас иммунитет к радиации, вы не смогли получить благословение Атома. Пожалуйста, обсудите альтернативные варианты с медицинским специалистом."))
 
 /datum/quirk/rad_fiend/remove()
 	// Define quirk holder mob
