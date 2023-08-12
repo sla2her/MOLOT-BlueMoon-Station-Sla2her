@@ -102,21 +102,36 @@
 
 /obj/item/spear/CheckParts(list/parts_list)
 	var/obj/item/shard/tip = locate() in parts_list
-	if (istype(tip, /obj/item/shard/plasma))
-		throwforce = 21
-		embedding = list(embed_chance = 75, pain_mult = 1.5) //plasmaglass spears are sharper
-		updateEmbedding()
-		icon_prefix = "spearplasma"
-		AddComponent(/datum/component/two_handed, force_unwielded=11, force_wielded=19, icon_wielded="[icon_prefix]1")
-	qdel(tip)
-	var/obj/item/spear/S = locate() in parts_list
-	if(S)
-		if(S.explosive)
-			S.explosive.forceMove(get_turf(src))
-			S.explosive = null
-		parts_list -= S
-		qdel(S)
-	..()
+	if(!tip)
+		return ..()
+
+	switch(tip.type)
+		if(/obj/item/shard/plasma)
+			force = 11
+			throwforce = 21
+			custom_materials = list(/datum/material/iron= HALF_SHEET_MATERIAL_AMOUNT, /datum/material/alloy/plasmaglass= HALF_SHEET_MATERIAL_AMOUNT * 2)
+			icon_prefix = "spearplasma"
+			AddComponent(/datum/component/two_handed, force_unwielded=11, force_wielded=19, icon_wielded="[icon_prefix]1")
+		if(/obj/item/shard/titanium)
+			force = 13
+			throwforce = 21
+			throw_range = 8
+			throw_speed = 5
+			custom_materials = list(/datum/material/iron= HALF_SHEET_MATERIAL_AMOUNT, /datum/material/alloy/titaniumglass= HALF_SHEET_MATERIAL_AMOUNT * 2)
+			wound_bonus = -10
+			icon_prefix = "speartitanium"
+			AddComponent(/datum/component/two_handed, force_unwielded=13, force_wielded=18, icon_wielded="[icon_prefix]1")
+		if(/obj/item/shard/plastitanium)
+			force = 13
+			throwforce = 22
+			throw_range = 9
+			throw_speed = 5
+			custom_materials = list(/datum/material/iron= HALF_SHEET_MATERIAL_AMOUNT, /datum/material/alloy/plastitaniumglass= HALF_SHEET_MATERIAL_AMOUNT * 2)
+			wound_bonus = -10
+			bare_wound_bonus = 20
+			icon_prefix = "spearplastitanium"
+			AddComponent(/datum/component/two_handed, force_unwielded=13, force_wielded=20, icon_wielded="[icon_prefix]1")
+
 	var/obj/item/grenade/G = locate() in contents
 	if(G)
 		explosive = G
@@ -125,6 +140,11 @@
 		updateEmbedding()
 		desc = "A makeshift spear with \a [G] attached to it."
 	update_icon()
+
+	update_appearance()
+	parts_list -= tip
+	qdel(tip)
+	return ..()
 
 //GREY TIDE
 /obj/item/spear/grey_tide

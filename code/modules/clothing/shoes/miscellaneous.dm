@@ -25,6 +25,7 @@
 	icon_state = "sneakboots"
 	item_state = "sneakboots"
 	resistance_flags = FIRE_PROOF |  ACID_PROOF
+	clothing_flags = NOSLIP
 
 /obj/item/clothing/shoes/combat/sneakboots/equipped(mob/user, slot)
 	. = ..()
@@ -39,7 +40,7 @@
 	name = "\improper SWAT boots"
 	desc = "High speed, no drag combat boots."
 	permeability_coefficient = 0.01
-	clothing_flags = NOSLIP
+	clothing_flags = NOSLIP | NOSLIP_ICE
 	armor = list(MELEE = 40, BULLET = 30, LASER = 25, ENERGY = 25, BOMB = 50, BIO = 30, RAD = 30, FIRE = 90, ACID = 50)
 
 /obj/item/clothing/shoes/sandal

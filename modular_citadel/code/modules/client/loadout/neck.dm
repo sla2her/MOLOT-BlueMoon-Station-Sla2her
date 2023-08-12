@@ -112,3 +112,8 @@
 	path = /obj/item/clothing/neck/maid
 	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
 	loadout_initial_colors = list("#333333", "#FFFFFF")
+
+/datum/gear/neck/shockcollar
+	name = "Shock Collar"
+	path = /datum/design/electropack/shockcollar
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_FREQCODE

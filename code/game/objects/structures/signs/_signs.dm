@@ -106,24 +106,6 @@
 		if(BURN)
 			playsound(loc, 'sound/items/welder.ogg', 80, 1)
 
-/*/obj/structure/sign/welder_act(mob/living/user, obj/item/I)
-	. = ..()
-	if(user.combat_mode)
-		return FALSE
-	if(atom_integrity == max_integrity)
-		to_chat(user, span_warning("This sign is already in perfect condition."))
-		return TRUE
-	if(!I.tool_start_check(user, amount=0))
-		return TRUE
-	user.visible_message(span_notice("[user] starts repairing [src]..."), \
-		span_notice("You start repairing [src]."))
-	if(!I.use_tool(src, user, 4 SECONDS, volume = 50 ))
-		return TRUE
-	user.visible_message(span_notice("[user] finishes repairing [src]."), \
-		span_notice("You finish repairing [src]."))
-	atom_integrity = max_integrity
-	return TRUE*/
-
 /obj/structure/sign/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_WRENCH && buildable_sign)
 		user.visible_message("<span class='notice'>[user] starts removing [src]...</span>", \

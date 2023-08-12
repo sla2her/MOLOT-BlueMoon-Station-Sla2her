@@ -215,8 +215,8 @@
 		U.MakePurchase(user, I)
 
 /datum/uplink_item/bundles_tc/telecrystal
-	name = "1 Tele Credit"
-	desc = "Golden credit. Can be inserted into Uplink."
+	name = "1 Telecrystal"
+	desc = "A telecrystal in its rawest and purest form; can be utilized on active uplinks to increase their telecrystal count."
 	item = /obj/item/stack/telecrystal
 	cost = 1
 	surplus = 0
@@ -224,15 +224,40 @@
 	// Don't add telecrystals to the purchase_log since
 	// it's just used to buy more items (including itself!)
 	purchase_log_vis = FALSE
+	purchasable_from = UPLINK_SYNDICATE
 
 /datum/uplink_item/bundles_tc/telecrystal/five
-	name = "5 Tele Credits"
-	desc = "Five golden credits. Can be inserted into Uplink."
+	name = "5 Telecrystals"
+	desc = "Five telecrystals in their rawest and purest form; can be utilized on active uplinks to increase their telecrystal count."
 	item = /obj/item/stack/telecrystal/five
 	cost = 5
+	purchasable_from = UPLINK_SYNDICATE
 
 /datum/uplink_item/bundles_tc/telecrystal/twenty
-	name = "20 Tele Credits"
-	desc = "Twenty golden credits. Can be inserted into Uplink."
+	name = "20 Telecrystals"
+	desc = "Twenty telecrystals in their rawest and purest form; can be utilized on active uplinks to increase their telecrystal count."
 	item = /obj/item/stack/telecrystal/twenty
 	cost = 20
+	purchasable_from = UPLINK_SYNDICATE
+
+/datum/uplink_item/bundles_tc/telecrystal/inteq
+	name = "1 Tele Credit"
+	desc = "Golden credit. Can be inserted into Uplink."
+	item = /obj/item/stack/telecrystal/inteq
+	cost = 1
+	surplus = 0
+	purchasable_from = ~(UPLINK_SYNDICATE)
+
+/datum/uplink_item/bundles_tc/telecrystal/five/inteq
+	name = "5 Tele Credits"
+	desc = "Five golden credits. Can be inserted into Uplink."
+	item = /obj/item/stack/telecrystal/five/inteq
+	cost = 5
+	purchasable_from = ~(UPLINK_SYNDICATE)
+
+/datum/uplink_item/bundles_tc/telecrystal/twenty/inteq
+	name = "20 Tele Credits"
+	desc = "Twenty golden credits. Can be inserted into Uplink."
+	item = /obj/item/stack/telecrystal/twenty/inteq
+	cost = 20
+	purchasable_from = ~(UPLINK_SYNDICATE)

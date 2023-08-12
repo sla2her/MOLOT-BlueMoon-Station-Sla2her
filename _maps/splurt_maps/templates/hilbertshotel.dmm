@@ -71,9 +71,8 @@
 /turf/closed/indestructible/hotelwall,
 /area/hilbertshotel)
 "fv" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/outlet_injector/hilbertshotel/layer3,
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "fF" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -150,7 +149,7 @@
 /area/hilbertshotel)
 "kU" = (
 /obj/machinery/telecomms/relay/preset/auto,
-/turf/open/floor/catwalk_floor,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "kX" = (
 /obj/structure/table/reinforced,
@@ -318,11 +317,10 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
 "CO" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 8
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "FR" = (
 /obj/item/bikehorn/rubberducky,
@@ -335,12 +333,11 @@
 /turf/open/space/bluespace,
 /area/hilbertshotel)
 "HD" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "Ii" = (
 /obj/machinery/vending/kink,
@@ -471,11 +468,10 @@
 /turf/open/floor/plasteel/stairs/right,
 /area/hilbertshotel)
 "TB" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "Uc" = (
 /obj/item/kirbyplants/random,

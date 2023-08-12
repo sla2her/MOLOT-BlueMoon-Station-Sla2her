@@ -293,6 +293,41 @@
 	desc = "Unlike other carrots, you should probably keep this far away from your eyes."
 	custom_materials = null
 
+/obj/item/kitchen/knife/shiv/plasma
+	name = "plasma shiv"
+	icon_state = "plasmashiv"
+	item_state = "plasmashiv"
+	desc = "A makeshift plasma glass shiv."
+	force = 9
+	throwforce = 13
+	armor = list(MELEE = 25, BULLET = 25, LASER = 25, ENERGY = 25, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
+	custom_materials = list(/datum/material/glass=SHEET_MATERIAL_AMOUNT *4, /datum/material/plasma=SHEET_MATERIAL_AMOUNT * 2)
+
+/obj/item/kitchen/knife/shiv/titanium
+	name = "titanium shiv"
+	icon_state = "titaniumshiv"
+	item_state = "titaniumshiv"
+	desc = "A makeshift titanium-infused glass shiv."
+	throwforce = 14
+	throw_range = 7
+	wound_bonus = 10
+	armor = list(MELEE = 25, BULLET = 25, LASER = 25, ENERGY = 25, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
+	custom_materials = list(/datum/material/glass=SHEET_MATERIAL_AMOUNT * 4, /datum/material/titanium=SHEET_MATERIAL_AMOUNT * 2)
+
+/obj/item/kitchen/knife/shiv/plastitanium
+	name = "plastitanium shiv"
+	icon_state = "plastitaniumshiv"
+	item_state = "plastitaniumshiv"
+	desc = "A makeshift titanium-infused plasma glass shiv."
+	force = 10
+	throwforce = 15
+	throw_speed = 4
+	throw_range = 8
+	wound_bonus = 10
+	bare_wound_bonus = 20
+	armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 0, RAD = 0, FIRE = 75, ACID = 75)
+	custom_materials = list(/datum/material/glass= SHEET_MATERIAL_AMOUNT * 4, /datum/material/alloy/plastitanium= SHEET_MATERIAL_AMOUNT * 2)
+
 /obj/item/kitchen/knife/shiv/carrot/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] forcefully drives \the [src] into [user.ru_ego()] eye! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return BRUTELOSS

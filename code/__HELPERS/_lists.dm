@@ -827,3 +827,7 @@
 /proc/safe_json_decode(string, default = list())
 	. = default
 	return json_decode(string)
+
+///sort any value in a list
+/proc/sort_list(list/list_to_sort, cmp=/proc/cmp_text_asc)
+	return sortTim(list_to_sort.Copy(), cmp)

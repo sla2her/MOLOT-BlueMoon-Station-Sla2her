@@ -7,7 +7,7 @@
 	body_parts_covered = HAND_LEFT | ARM_LEFT
 	attack_verb = list("показывает время")
 
-/obj/item/clothing/wrists/clockwork_watch
+/obj/item/clothing/wrists/clockwork_watch/red
 	name = "Красные Стильные Часы"
 	desc = "Особо красивые часы красного цвета. Сидят довольно удобно!"
 	gender = MALE

@@ -241,42 +241,39 @@
 
 /obj/item/gun/ballistic/shotgun/automatic/combat
 	name = "Combat Shotgun"
-	desc = "A semi automatic shotgun with tactical furniture and a six-shell capacity underneath."
+	desc = "A modified version of the semi-automatic combat shotgun with a collapsible stock and a safety that prevents firing while folded. For close encounters."
 	icon_state = "cshotgun"
 	item_state = "cshotgun-wielded"
 	fire_delay = 5
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com
-	w_class = WEIGHT_CLASS_HUGE
+	w_class = WEIGHT_CLASS_NORMAL
 	unique_reskin = list(
 		"Tactical" = list("icon_state" = "cshotgun"),
 		"Slick" = list("icon_state" = "cshotgun_slick")
 	)
+	var/stock = FALSE
+	var/extend_sound = 'sound/weapons/batonextend.ogg'
 
 /obj/item/gun/ballistic/shotgun/automatic/combat/pindicate
 	pin = /obj/item/firing_pin/implant/pindicate
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact
+/obj/item/gun/ballistic/shotgun/automatic/combat/warden
 	name = "Warden's Combat Shotgun"
 	desc = "A modified version of the semi-automatic combat shotgun with a collapsible stock and a safety that prevents firing while folded. For close encounters."
-	icon_state = "cshotgunc"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/com
-	w_class = WEIGHT_CLASS_NORMAL
-	var/stock = FALSE
-	var/extend_sound = 'sound/weapons/batonextend.ogg'
 	recoil = 5
 	spread = 2
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact/AltClick(mob/living/user)
+/obj/item/gun/ballistic/shotgun/automatic/combat/AltClick(mob/living/user)
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)) || item_flags & IN_STORAGE)
 		return
 	toggle_stock(user)
 	. = ..()
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact/examine(mob/user)
+/obj/item/gun/ballistic/shotgun/automatic/combat/examine(mob/user)
 	. = ..()
 	. += "<span class='notice'>Alt-click to toggle the stock.</span>"
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact/proc/toggle_stock(mob/living/user)
+/obj/item/gun/ballistic/shotgun/automatic/combat/proc/toggle_stock(mob/living/user)
 	stock = !stock
 	if(stock)
 		w_class = WEIGHT_CLASS_HUGE
@@ -291,10 +288,10 @@
 	playsound(src.loc, extend_sound, 50, 1)
 	update_icon()
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact/update_icon_state()
+/obj/item/gun/ballistic/shotgun/automatic/combat/update_icon_state()
 	icon_state = "[current_skin ? unique_reskin[current_skin]["icon_state"] : "cshotgun"][stock ? "" : "c"]"
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact/afterattack(atom/target, mob/living/user, flag, params)
+/obj/item/gun/ballistic/shotgun/automatic/combat/afterattack(atom/target, mob/living/user, flag, params)
 	if(!stock)
 		shoot_with_empty_chamber(user)
 		to_chat(user, "<span class='warning'>[src] won't fire with a folded stock!</span>")

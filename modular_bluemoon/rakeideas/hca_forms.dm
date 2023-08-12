@@ -15,6 +15,8 @@
 	item_state = "hcaarmbanditem"
 	icon = 'modular_bluemoon/rakeideas/hcaarmbanditem.dmi'
 	mob_overlay_icon = 'modular_bluemoon/rakeideas/hcaarmbandchar.dmi'
+	strip_delay = 60
+	dog_fashion = null
 
 /datum/gear/head/beret_hca
     name = "HCA beret"

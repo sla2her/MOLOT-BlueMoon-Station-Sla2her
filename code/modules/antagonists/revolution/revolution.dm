@@ -14,7 +14,7 @@
 	var/datum/team/revolution/rev_team
 	///when this antagonist is being de-antagged, this is why
 	var/deconversion_reason
-
+	show_in_antagpanel = TRUE
 	/// What message should the player receive when they are being demoted, and the revolution has won?
 	var/victory_message = "The revolution has overpowered the command staff! Viva la revolution! Execute any head of staff and security should you find them alive."
 
@@ -290,7 +290,7 @@
 /// "Enemy of the Revolutionary", given to heads and security when the revolution wins
 /datum/antagonist/revolution_enemy
 	name = "Enemy of the Revolution"
-	show_in_antagpanel = FALSE
+	show_in_antagpanel = TRUE
 
 /datum/antagonist/revolution_enemy/on_gain()
 	owner.special_role = "revolution enemy"

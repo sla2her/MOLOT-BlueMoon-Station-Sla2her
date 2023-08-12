@@ -8,8 +8,12 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	//BlueMoon Edit
-	var/list/static/hotel_maps = list("Generic", "Apartment")
+	var/list/static/hotel_maps = list("Generic", "Apartment", "Apartment_1", "Apartment_2")
 	var/datum/map_template/ghost_cafe_rooms/ghost_cafe_rooms_apartment
+	var/datum/map_template/ghost_cafe_rooms/one/ghost_cafe_rooms_apartment_one
+	var/datum/map_template/ghost_cafe_rooms/two/ghost_cafe_rooms_apartment_two
+	var/datum/map_template/ghost_cafe_rooms/one/ghost_cafe_rooms_apartment_bar
+	var/datum/map_template/ghost_cafe_rooms/two/ghost_cafe_rooms_apartment_syndi
 	//BlueMoon Edit
 	var/datum/map_template/hilbertshotel/hotelRoomTemp
 	var/datum/map_template/hilbertshotel/empty/hotelRoomTempEmpty
@@ -33,6 +37,10 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	hotelRoomTempLore = new()
 	//BlueMoon Edit
 	ghost_cafe_rooms_apartment = new()
+	ghost_cafe_rooms_apartment_one = new()
+	ghost_cafe_rooms_apartment_two = new()
+	ghost_cafe_rooms_apartment_bar = new()
+	ghost_cafe_rooms_apartment_syndi = new()
 	//BlueMoon Edit
 	var/area/currentArea = get_area(src)
 	if(currentArea.type == /area/ruin/space/has_grav/hilbertresearchfacility)
@@ -134,22 +142,28 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 
 /// This is a BLOCKING OPERATION. Note the room load call, and the block reservation calls.
 /obj/item/hilbertshotel/proc/sendToNewRoom(roomNumber, mob/user, chosen_room) //BLUEMOON EDIT ADDITION - GHOST HOTEL UPDATE. Was sendToNewRoom(chosenRoomNumber, target)
-    var/datum/turf_reservation/roomReservation = SSmapping.RequestBlockReservation(hotelRoomTemp.width, hotelRoomTemp.height)
-    mysteryRoom = GLOB.hhmysteryRoomNumber
-    if(ruinSpawned && roomNumber == mysteryRoom)
-        hotelRoomTempLore.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
-    else
-    //BLUEMOON EDIT ADDITION - GHOST HOTEL UPDATE
-        switch(chosen_room)
-            if("Apartment")
-                ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
-            else
-    //BLUEMOON EDIT END
-                hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
-    activeRooms["[roomNumber]"] = roomReservation
-    linkTurfs(roomReservation, roomNumber)
-    do_sparks(3, FALSE, get_turf(user))
-    user.forceMove(locate(roomReservation.bottom_left_coords[1] + hotelRoomTemp.landingZoneRelativeX, roomReservation.bottom_left_coords[2] + hotelRoomTemp.landingZoneRelativeY, roomReservation.bottom_left_coords[3]))
+	var/datum/turf_reservation/roomReservation = SSmapping.RequestBlockReservation(hotelRoomTemp.width, hotelRoomTemp.height)
+	mysteryRoom = GLOB.hhmysteryRoomNumber
+	if(ruinSpawned && roomNumber == mysteryRoom)
+		hotelRoomTempLore.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+	else
+		switch(chosen_room)
+			if("Apartment")
+				ghost_cafe_rooms_apartment.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+			if("Apartment_1")
+				ghost_cafe_rooms_apartment_one.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+			if("Apartment_2")
+				ghost_cafe_rooms_apartment_two.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+			if("Apartment_bar")
+				ghost_cafe_rooms_apartment_bar.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+			if("Apartment_syndi")
+				ghost_cafe_rooms_apartment_syndi.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+			else
+				hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+	activeRooms["[roomNumber]"] = roomReservation
+	linkTurfs(roomReservation, roomNumber)
+	do_sparks(3, FALSE, get_turf(user))
+	user.forceMove(locate(roomReservation.bottom_left_coords[1] + hotelRoomTemp.landingZoneRelativeX, roomReservation.bottom_left_coords[2] + hotelRoomTemp.landingZoneRelativeY, roomReservation.bottom_left_coords[3]))
 
 /obj/item/hilbertshotel/proc/linkTurfs(var/datum/turf_reservation/currentReservation, var/currentRoomnumber)
 	var/area/hilbertshotel/currentArea = get_area(locate(currentReservation.bottom_left_coords[1], currentReservation.bottom_left_coords[2], currentReservation.bottom_left_coords[3]))
@@ -362,6 +376,12 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	var/obj/item/hilbertshotel/parentSphere
 	var/datum/turf_reservation/reservation
 	var/turf/storageTurf
+
+/area/hilbertshotel/room_one
+	name = "Hilbert's Hotel Room One"
+
+/area/hilbertshotel/room_two
+	name = "Hilbert's Hotel Room Two"
 
 /area/hilbertshotel/Entered(atom/movable/AM)
 	. = ..()
