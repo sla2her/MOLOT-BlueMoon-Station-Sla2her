@@ -1,6 +1,6 @@
 /obj/item/clothing/head/hcaberet
 	name = "HCA beret"
-	desc = "Glory to Humanity. Humanity above all."
+	desc = "A black beret with a silver sun, around which rays spread. The symbol of the Triad of the Sun - the main idea of the political party Human Commonwealth. Glory to Humanity!"
 	icon_state = "hcaberetitem"
 	item_state = "hcaberetitem"
 	icon = 'modular_bluemoon/rakeideas/hcaberetitem.dmi'
@@ -8,9 +8,9 @@
 	strip_delay = 60
 	dog_fashion = null
 
-/obj/item/clothing/head/hcaarmband
+/obj/item/clothing/accessorry/armband/hcaarmband
 	name = "HCA armband"
-	desc = "Glory to Humanity. Humanity above all. Cool fashion for all humans."
+	desc = "A black and white armband depicting two swords crossed around the fascia within wreaths representing prosperity. This flag refers to the political party of the Human Commonwealth."
 	icon_state = "hcaarmbanditem"
 	item_state = "hcaarmbanditem"
 	icon = 'modular_bluemoon/rakeideas/hcaarmbanditem.dmi'
