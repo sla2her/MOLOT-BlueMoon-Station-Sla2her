@@ -28,9 +28,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/hilbertshotel)
-"fm" = (
-/turf/closed/indestructible/wall,
-/area/hilbertshotel/room_one)
 "fo" = (
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/wood/wood_tiled,
@@ -110,7 +107,7 @@
 "lT" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "nj" = (
 /obj/structure/chair/stool/bar{
 	dir = 1
@@ -173,7 +170,7 @@
 	pixel_y = 24
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "sY" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/siding/wood{
@@ -184,7 +181,7 @@
 "te" = (
 /obj/machinery/door/morgue,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "tx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	piping_layer = 3;
@@ -239,7 +236,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "Ce" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
 	dir = 1
@@ -252,7 +249,7 @@
 	},
 /obj/structure/toilet,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "EI" = (
 /obj/structure/chair/stool/bar,
 /obj/effect/turf_decal/siding/wood{
@@ -287,7 +284,7 @@
 /area/hilbertshotel)
 "GV" = (
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "Hs" = (
 /obj/structure/window,
 /obj/structure/chair/sofa/corp/right{
@@ -406,7 +403,7 @@
 /obj/structure/table,
 /obj/structure/bedsheetbin,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "Tx" = (
 /obj/structure/chair/sofa/corp{
 	color = "#DE3A3A";
@@ -447,7 +444,7 @@
 "WO" = (
 /obj/structure/table,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel/room_one)
+/area/hilbertshotel)
 "Xq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
 	dir = 1
@@ -600,11 +597,11 @@ Xr
 (8,1,1) = {"
 Xr
 Xr
-fm
-fm
-fm
-fm
-fm
+ZE
+ZE
+ZE
+ZE
+ZE
 Ji
 yz
 cK
@@ -618,7 +615,7 @@ Xr
 (9,1,1) = {"
 Xr
 Xr
-fm
+ZE
 sU
 BL
 GV
@@ -636,11 +633,11 @@ Xr
 (10,1,1) = {"
 Xr
 Xr
-fm
+ZE
 sU
 lT
 GV
-fm
+ZE
 Mr
 yz
 yz
@@ -654,11 +651,11 @@ Xr
 (11,1,1) = {"
 Xr
 Xr
-fm
-fm
-fm
+ZE
+ZE
+ZE
 GV
-fm
+ZE
 We
 cK
 cK
@@ -672,11 +669,11 @@ Xr
 (12,1,1) = {"
 Xr
 Xr
-fm
+ZE
 DV
 te
 GV
-fm
+ZE
 ZE
 ut
 sY
@@ -690,9 +687,9 @@ Xr
 (13,1,1) = {"
 Xr
 Xr
-fm
-fm
-fm
+ZE
+ZE
+ZE
 GV
 Tk
 ZE
@@ -708,7 +705,7 @@ Xr
 (14,1,1) = {"
 Xr
 Xr
-fm
+ZE
 DV
 te
 GV
@@ -726,11 +723,11 @@ Xr
 (15,1,1) = {"
 Xr
 Xr
-fm
-fm
-fm
-fm
-fm
+ZE
+ZE
+ZE
+ZE
+ZE
 ZE
 ZE
 ZE
