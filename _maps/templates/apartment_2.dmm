@@ -68,19 +68,19 @@
 "am" = (
 /obj/machinery/vending/kink,
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "an" = (
 /obj/machinery/door/morgue,
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "ap" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3,
 /turf/open/floor/carpet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aq" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "ar" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -89,7 +89,7 @@
 	anchored = 1
 	},
 /turf/open/floor/carpet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "at" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4;
@@ -112,7 +112,7 @@
 	pixel_y = 5
 	},
 /turf/open/floor/carpet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "ax" = (
 /turf/open/floor/carpet,
 /area/hilbertshotel)
@@ -127,7 +127,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aC" = (
 /obj/structure/window/reinforced/tinted,
 /obj/structure/toilet{
@@ -135,7 +135,7 @@
 	},
 /obj/machinery/door/window/westleft,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aD" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/closet/crate/bin,
@@ -145,7 +145,7 @@
 /obj/structure/bed/double,
 /obj/item/bedsheet/random/double,
 /turf/open/floor/carpet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aI" = (
 /obj/structure/mirror{
 	pixel_x = -32
@@ -156,14 +156,14 @@
 	pixel_y = 2
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aJ" = (
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aK" = (
 /obj/structure/mineral_door/paperframe,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aL" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -172,7 +172,7 @@
 	dir = 1
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	piping_layer = 3;
@@ -186,17 +186,17 @@
 	dir = 8
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aP" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aQ" = (
 /obj/machinery/light/small,
 /obj/structure/table/wood/fancy,
 /obj/item/toy/plush/beeplushie,
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	piping_layer = 3;
@@ -210,7 +210,7 @@
 /area/hilbertshotel)
 "aT" = (
 /turf/open/floor/plasteel/stairs/right,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	piping_layer = 3;
@@ -221,7 +221,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/stairs/left,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "aV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	piping_layer = 3;
@@ -505,7 +505,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "lm" = (
 /obj/machinery/light/small,
 /obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
@@ -516,16 +516,16 @@
 	dir = 10
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "mf" = (
-/obj/structure/sign/painting/library{
-	pixel_x = 32
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
 	dir = 1
+	},
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = 32
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/hilbertshotel)
@@ -540,7 +540,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "ob" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	piping_layer = 3;
@@ -554,11 +554,8 @@
 	dir = 1
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "oY" = (
-/obj/structure/sign/painting/library{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
 	},
@@ -599,12 +596,16 @@
 /obj/item/soap/deluxe,
 /obj/machinery/door/window/westright,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "yI" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/three_course_meal,
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
+"zH" = (
+/obj/structure/sign/poster/contraband/random,
+/turf/closed/indestructible/wall,
+/area/hilbertshotel/room_one)
 "GL" = (
 /obj/machinery/airalarm/all_access{
 	dir = 4;
@@ -637,6 +638,12 @@
 	},
 /turf/open/floor/plasteel/stairs/medium,
 /area/hilbertshotel)
+"KM" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/hilbertshotel)
 "Lo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -645,7 +652,7 @@
 	dir = 1
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "LU" = (
 /obj/structure/table/reinforced,
 /obj/item/candle/infinite,
@@ -666,13 +673,20 @@
 	dir = 1
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
+"Oi" = (
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/carpet,
+/area/hilbertshotel/room_one)
+"Ph" = (
+/turf/closed/indestructible/wall,
+/area/hilbertshotel/room_one)
 "PJ" = (
-/obj/structure/sign/painting/library{
-	pixel_x = 32
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
+	},
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = 32
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/hilbertshotel)
@@ -683,13 +697,13 @@
 	},
 /turf/open/floor/carpet,
 /area/hilbertshotel)
+"SL" = (
+/turf/open/floor/carpet,
+/area/hilbertshotel/room_one)
 "TK" = (
 /turf/open/floor/plasteel/stairs/medium,
 /area/hilbertshotel)
 "Vu" = (
-/obj/structure/sign/painting/library{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
@@ -730,7 +744,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/hotelwood,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "Yw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4;
@@ -806,7 +820,7 @@ ab
 ah
 XP
 XP
-XP
+Xr
 XP
 XP
 XP
@@ -860,7 +874,7 @@ ae
 ak
 sT
 mf
-PJ
+KM
 PJ
 TK
 az
@@ -892,13 +906,13 @@ aa
 "}
 (7,1,1) = {"
 aa
-XP
-XP
-XP
+Ph
+Ph
+Ph
 aB
 aI
 aJ
-XP
+Ph
 Ka
 YK
 ag
@@ -910,13 +924,13 @@ aa
 "}
 (8,1,1) = {"
 aa
-XP
+Ph
 am
-XP
+Ph
 aC
 aJ
 xS
-XP
+Ph
 Ka
 be
 bk
@@ -928,13 +942,13 @@ aa
 "}
 (9,1,1) = {"
 aa
-XP
+Ph
 an
-XP
-XP
+Ph
+Ph
 aK
-XP
-Xr
+Ph
+zH
 Ka
 Yw
 wX
@@ -946,13 +960,13 @@ aa
 "}
 (10,1,1) = {"
 aa
-XP
+Ph
 Nv
 Yf
 kT
 nE
 lm
-XP
+Ph
 Ka
 bg
 Rh
@@ -964,7 +978,7 @@ aa
 "}
 (11,1,1) = {"
 aa
-XP
+Ph
 ap
 aw
 aw
@@ -982,10 +996,10 @@ aa
 "}
 (12,1,1) = {"
 aa
-XP
+Ph
 aq
-ax
-ax
+SL
+SL
 aL
 aP
 aT
@@ -1000,13 +1014,13 @@ aa
 "}
 (13,1,1) = {"
 aa
-XP
+Ph
 ar
-ax
+Oi
 aF
 Lo
 aQ
-XP
+Ph
 XQ
 gc
 dU
@@ -1018,13 +1032,13 @@ aa
 "}
 (14,1,1) = {"
 aa
-XP
-XP
-XP
-XP
-XP
-XP
-XP
+Ph
+Ph
+Ph
+Ph
+Ph
+Ph
+Ph
 XP
 XP
 XP

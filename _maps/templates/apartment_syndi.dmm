@@ -32,7 +32,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "bV" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/three_course_meal,
@@ -44,10 +44,13 @@
 	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/hilbertshotel)
+"cc" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/hilbertshotel/room_one)
 "ch" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "cm" = (
 /obj/effect/turf_decal/bluemoon_decals/syndicate/top/middle,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -55,7 +58,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3,
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "cC" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -65,14 +68,14 @@
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "dx" = (
 /turf/open/floor/plasteel/kitchen_coldroom,
 /area/hilbertshotel)
 "dy" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "dI" = (
 /obj/machinery/vending/kink,
 /turf/open/floor/wood/wood_parquet,
@@ -95,7 +98,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/machinery/vending/wallmed/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "fB" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -107,16 +110,16 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "fE" = (
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "fR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "gd" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -129,10 +132,8 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/turf/open/floor/light{
-	light_color = red
-	},
-/area/hilbertshotel)
+/turf/open/floor/light/red,
+/area/hilbertshotel/room_two)
 "gY" = (
 /obj/machinery/shower{
 	dir = 4
@@ -142,13 +143,13 @@
 /obj/structure/window/reinforced/tinted,
 /obj/structure/window/reinforced/tinted,
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "ht" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "hx" = (
 /obj/structure/chair{
 	dir = 8
@@ -184,14 +185,14 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "jf" = (
 /obj/structure/closet/cabinet,
 /obj/machinery/light{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "jp" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -200,7 +201,10 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
+"jr" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/hilbertshotel/room_two)
 "jy" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -228,7 +232,7 @@
 	dir = 10
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "mf" = (
 /obj/structure/bed/double{
 	dir = 1
@@ -237,7 +241,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "my" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -249,7 +253,7 @@
 	dir = 9
 	},
 /turf/open/floor/wood/wood_parquet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "mN" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -261,7 +265,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_parquet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "mR" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -276,7 +280,7 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "nk" = (
 /obj/structure/chair/office/dark,
 /obj/structure/chair/office/dark,
@@ -286,7 +290,7 @@
 /obj/structure/sign/flag/syndicate/directional/north,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "nO" = (
 /obj/effect/turf_decal/tile/dark/half{
 	dir = 1
@@ -308,7 +312,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "oU" = (
 /obj/structure/sink/kitchen{
 	pixel_y = 28
@@ -332,7 +336,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "pH" = (
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/hilbertshotel)
@@ -342,14 +346,14 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "qJ" = (
 /obj/structure/chair/sofa/corp/left{
 	color = "#DE3A3A";
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "ry" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
@@ -364,7 +368,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "rE" = (
 /obj/effect/turf_decal/bluemoon_decals/syndicate/middle/middle,
 /obj/structure/chair/office,
@@ -376,7 +380,7 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "rF" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/candle_box{
@@ -398,14 +402,14 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "sn" = (
 /obj/structure/chair/sofa/corp{
 	color = "#DE3A3A";
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "sX" = (
 /obj/machinery/computer{
 	dir = 8
@@ -426,17 +430,15 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "tZ" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/light{
-	light_color = red
-	},
-/area/hilbertshotel)
+/turf/open/floor/light/red,
+/area/hilbertshotel/room_two)
 "ub" = (
 /obj/structure/chair{
 	dir = 4
@@ -455,7 +457,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "uN" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/hilbertshotel/layer3,
 /turf/open/floor/plating/airless,
@@ -484,11 +486,11 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "wm" = (
 /obj/machinery/door/morgue,
 /turf/open/floor/wood/wood_parquet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "ww" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -501,17 +503,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/turf/open/floor/light{
-	light_color = red
-	},
-/area/hilbertshotel)
+/turf/open/floor/light/red,
+/area/hilbertshotel/room_two)
 "wC" = (
 /obj/structure/chair/sofa/corp/right{
 	color = "#DE3A3A";
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "xo" = (
 /obj/structure/flora/junglebush,
 /obj/structure/window/reinforced/tinted,
@@ -526,14 +526,14 @@
 	},
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/grass/grass0,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "xT" = (
 /obj/machinery/door/morgue,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "zd" = (
 /turf/open/space/bluespace,
 /area/hilbertshotel)
@@ -543,13 +543,11 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "Ao" = (
 /obj/machinery/vending/kink,
-/turf/open/floor/light{
-	light_color = red
-	},
-/area/hilbertshotel)
+/turf/open/floor/light/red,
+/area/hilbertshotel/room_two)
 "AT" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -559,7 +557,7 @@
 	},
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/wood/wood_parquet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "Bj" = (
 /obj/effect/spawner/lootdrop/three_course_meal,
 /obj/structure/table,
@@ -579,7 +577,7 @@
 	dir = 9
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "Cw" = (
 /obj/machinery/door/morgue,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -596,7 +594,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "DB" = (
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4
@@ -607,7 +605,7 @@
 /obj/effect/turf_decal/bluemoon_decals/syndicate/bottom/middle,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "ED" = (
 /obj/effect/turf_decal/tile/dark/half,
 /obj/effect/turf_decal/tile/dark/half,
@@ -633,7 +631,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "GT" = (
 /obj/structure/chair/office/dark,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -642,11 +640,11 @@
 /obj/structure/sign/flag/syndicate/directional/north,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "Ie" = (
 /obj/structure/sign/flag/syndicate/directional/south,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "Ir" = (
 /obj/machinery/door/morgue,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -657,7 +655,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "IF" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
@@ -667,7 +665,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "IN" = (
 /obj/effect/turf_decal/bluemoon_decals/syndicate/bottom/right,
 /obj/effect/turf_decal/siding/thinplating/dark,
@@ -675,7 +673,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "IX" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -685,10 +683,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 9
 	},
-/turf/open/floor/light{
-	light_color = red
-	},
-/area/hilbertshotel)
+/turf/open/floor/light/red,
+/area/hilbertshotel/room_two)
 "JH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/kitchen_coldroom,
@@ -701,7 +697,7 @@
 	},
 /obj/structure/sign/flag/syndicate/directional/north,
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "Kx" = (
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -709,13 +705,13 @@
 	piping_layer = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "KA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "Mf" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -731,7 +727,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "Nt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -751,7 +747,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/hoteltile,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "NN" = (
 /obj/effect/turf_decal/tile/dark/half,
 /obj/effect/turf_decal/tile/dark/half,
@@ -763,7 +759,7 @@
 "Op" = (
 /obj/machinery/door/morgue,
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "Qh" = (
 /obj/effect/turf_decal/tile/dark/half{
 	dir = 1
@@ -789,10 +785,10 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3,
 /turf/open/floor/wood/wood_parquet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "QM" = (
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "Rx" = (
 /obj/effect/turf_decal/tile/dark/half{
 	dir = 1
@@ -811,7 +807,7 @@
 	dir = 1
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "So" = (
 /turf/closed/indestructible/hoteldoor{
 	icon_state = "door_closed";
@@ -844,7 +840,7 @@
 	},
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/grass/grass0,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "TL" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/hilbertshotel)
@@ -859,7 +855,7 @@
 	},
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/grass/grass0,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "Un" = (
 /obj/machinery/computer{
 	dir = 8
@@ -873,7 +869,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
+"Xw" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/hilbertshotel/room_two)
 "XB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
@@ -883,7 +882,7 @@
 "XF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "Yn" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
@@ -896,14 +895,18 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "YA" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
 	pixel_x = -10
 	},
 /turf/open/floor/carpet/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
+"YC" = (
+/obj/machinery/door/morgue,
+/turf/open/floor/mineral/plastitanium/red,
+/area/hilbertshotel/room_two)
 "YS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -919,7 +922,7 @@
 	dir = 5
 	},
 /turf/open/floor/wood/wood_parquet,
-/area/hilbertshotel)
+/area/hilbertshotel/room_one)
 "YX" = (
 /obj/effect/turf_decal/bluemoon_decals/syndicate/top/right,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -929,11 +932,11 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 "Zk" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/mineral/plastitanium,
-/area/hilbertshotel)
+/area/hilbertshotel/room_two)
 
 (1,1,1) = {"
 zd
@@ -962,13 +965,13 @@ TL
 TL
 So
 TL
-TL
-TL
-TL
-TL
-TL
-TL
-TL
+cc
+cc
+cc
+cc
+cc
+cc
+cc
 zd
 "}
 (3,1,1) = {"
@@ -980,13 +983,13 @@ bk
 TL
 nO
 as
-TL
+cc
 rF
 wC
 xo
 mf
 jf
-TL
+cc
 zd
 "}
 (4,1,1) = {"
@@ -1004,7 +1007,7 @@ sn
 TZ
 fE
 dy
-TL
+cc
 zd
 "}
 (5,1,1) = {"
@@ -1016,13 +1019,13 @@ pH
 TL
 nO
 ED
-TL
+cc
 YA
 qJ
 Ti
 fR
 fE
-TL
+cc
 zd
 "}
 (6,1,1) = {"
@@ -1040,7 +1043,7 @@ Qn
 YS
 my
 AT
-TL
+cc
 zd
 "}
 (7,1,1) = {"
@@ -1052,13 +1055,13 @@ dx
 TL
 vs
 ED
-TL
-TL
-TL
+cc
+cc
+cc
 Ir
-TL
+cc
 wm
-TL
+cc
 zd
 "}
 (8,1,1) = {"
@@ -1070,7 +1073,7 @@ ry
 TL
 Qh
 pn
-TL
+cc
 gY
 op
 Nz
@@ -1088,7 +1091,7 @@ Nt
 TL
 vs
 ED
-TL
+cc
 ch
 Cz
 BH
@@ -1101,36 +1104,36 @@ zd
 zd
 TL
 TL
-TL
+jr
 KA
-TL
+jr
 xT
-Op
-TL
-TL
+YC
+jr
+jr
 wg
-TL
-TL
-TL
-TL
+jr
+jr
+jr
+jr
 zd
 "}
 (11,1,1) = {"
 zd
 zd
 Nw
-TL
+jr
 Yn
 mR
 rz
 qA
 uB
-ah
+Xw
 bK
 zs
 hZ
 eT
-TL
+jr
 zd
 "}
 (12,1,1) = {"
@@ -1143,12 +1146,12 @@ Kx
 jp
 Zk
 ht
-ah
+Xw
 ww
 cm
 rE
 Et
-TL
+jr
 zd
 "}
 (13,1,1) = {"
@@ -1166,7 +1169,7 @@ ww
 YX
 Fs
 IN
-TL
+jr
 zd
 "}
 (14,1,1) = {"
@@ -1184,25 +1187,25 @@ gd
 tZ
 IX
 Ao
-TL
+jr
 zd
 "}
 (15,1,1) = {"
 zd
 zd
 jB
-TL
-TL
-TL
-TL
-TL
-TL
-TL
-TL
-TL
-TL
-TL
-TL
+jr
+jr
+jr
+jr
+jr
+jr
+jr
+jr
+jr
+jr
+jr
+jr
 zd
 "}
 (16,1,1) = {"
