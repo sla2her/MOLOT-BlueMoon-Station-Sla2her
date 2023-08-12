@@ -96,17 +96,24 @@
 		to_chat(user, span_warning("This genital can't be stuffed!"))
 		return FALSE
 
+	if(locate(src.type) in G.contents)
+		if(user == G.owner)
+			to_chat(user, span_notice("You already have a buttplug inside your [G]!"))
+		else
+			to_chat(user, span_notice("\The <b>[G.owner]</b>'s [G] already has a buttplug inside!"))
+		return FALSE
+
 	if(user == G.owner)
-		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert dildo inside themselves!"),\
-					span_warning("You try to insert dildo inside yourself!"))
+		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert buttplug inside themselves!"),\
+					span_warning("You try to insert buttplug inside yourself!"))
 	else
-		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert dildo inside \the <b>[G.owner]</b>!"),\
-					span_warning("\The <b>[user]</b> is trying to insert dildo inside you!"))
+		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert buttplug inside \the <b>[G.owner]</b>!"),\
+					span_warning("\The <b>[user]</b> is trying to insert buttplug inside you!"))
 
 	if(!do_mob(user, G.owner, 5 SECONDS))
 		return FALSE
 
-	to_chat(user, span_userlove("Your [G] feels stuffed and stretched!"))
+	to_chat(user, span_userlove("[G] чувствует что-то крупное внутри!"))
 	user.handle_post_sex(NORMAL_LUST*2, null, user)
 	user.Jitter(2)
 	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
@@ -137,6 +144,13 @@
 		to_chat(user, span_warning("This genital can't be stuffed!"))
 		return FALSE
 
+	if(locate(src.type) in G.contents)
+		if(user == G.owner)
+			to_chat(user, span_notice("You already have a dildo inside your [G]!"))
+		else
+			to_chat(user, span_notice("\The <b>[G.owner]</b>'s [G] already has a dildo inside!"))
+		return FALSE
+
 	if(user == G.owner)
 		G.owner.visible_message(span_warning("\The <b>[user]</b> is trying to insert dildo inside themselves!"),\
 					span_warning("You try to insert dildo inside yourself!"))
@@ -147,7 +161,7 @@
 	if(!do_mob(user, G.owner, 5 SECONDS))
 		return FALSE
 
-	to_chat(user, span_userlove("Your [G] feels stuffed and stretched!"))
+	to_chat(user, span_userlove("[G] чувствует что-то крупное внутри!"))
 	user.handle_post_sex(NORMAL_LUST*2, null, user)
 	user.Jitter(2)
 	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)

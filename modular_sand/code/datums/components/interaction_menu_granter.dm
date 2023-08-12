@@ -148,7 +148,7 @@
 			genitals += list(genital_entry)
 		if(!get_genitals.getorganslot(ORGAN_SLOT_ANUS)) //SPLURT Edit
 			var/simulated_ass = list()
-			simulated_ass["name"] = "Anus"
+			simulated_ass["name"] = "Анус"
 			simulated_ass["key"] = "anus"
 			var/visibility = "Invalid"
 			switch(get_genitals.anus_exposed)

@@ -105,7 +105,7 @@
 
 	if(!genital_holder.getorganslot(ORGAN_SLOT_ANUS) && user_is_target)
 		var/simulated_ass = list()
-		simulated_ass["name"] = "Anus"
+		simulated_ass["name"] = "Анус"
 		simulated_ass["key"] = "anus"
 		var/visibility = "Invalid"
 		switch(genital_holder.anus_exposed)
