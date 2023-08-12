@@ -1,6 +1,6 @@
 /obj/item/clothing/head/hcaberet
 	name = "HCA beret"
-	desc = "A black beret with a silver sun, around which rays spread. The symbol of the Triad of the Sun - the main idea of the political party Human Commonwealth."
+	desc = "A black beret with a silver sun, around which rays spread. The symbol of the Triad of the Sun - the main idea of the political party Human Commonwealth. Glory to Humanity!"
 	icon_state = "hcaberetitem"
 	item_state = "hcaberetitem"
 	icon = 'modular_bluemoon/rakeideas/hcaberetitem.dmi'
