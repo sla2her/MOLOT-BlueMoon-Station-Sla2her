@@ -107,7 +107,8 @@
 		return FALSE
 
 	to_chat(user, span_userlove("Your [G] feels stuffed and stretched!"))
-	user.handle_post_sex(LOW_LUST, null, user)
+	user.handle_post_sex(NORMAL_LUST*2, null, user)
+	user.Jitter(2)
 	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
 	inside = TRUE
 	stuffed_movement()
@@ -147,7 +148,8 @@
 		return FALSE
 
 	to_chat(user, span_userlove("Your [G] feels stuffed and stretched!"))
-	user.handle_post_sex(LOW_LUST, null, user)
+	user.handle_post_sex(NORMAL_LUST*2, null, user)
+	user.Jitter(2)
 	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
 	inside = TRUE
 	stuffed_movement()

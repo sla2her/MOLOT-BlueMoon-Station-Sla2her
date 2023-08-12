@@ -655,6 +655,7 @@
 	assignedrole = "Cydonian Knight"
 
 /obj/effect/mob_spawn/human/lavaknight/special(mob/living/new_spawn)
+	. = ..()
 	if(ishuman(new_spawn))
 		var/mob/living/carbon/human/H = new_spawn
 		H.dna.features["mam_ears"] = "Cat, Big"	//cat people

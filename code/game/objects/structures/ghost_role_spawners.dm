@@ -57,7 +57,6 @@
 	new_spawn.socks = "Nude"
 	new_spawn.update_body(TRUE)
 	new_spawn.language_holder.selected_language = /datum/language/sylvan
-	new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)
 
 //Ash walker eggs: Spawns in ash walker dens in lavaland. Ghosts become unbreathing lizards that worship the Necropolis and are advised to retrieve corpses to create more ash walkers.
 
@@ -897,7 +896,6 @@
 		D.Grant(new_spawn)
 		var/datum/action/disguise/disguise_action = new(new_spawn)
 		disguise_action.Grant(new_spawn)
-		new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)
 
 /datum/outfit/ghostcafe
 	name = "ID, jumpsuit and shoes"
@@ -1176,7 +1174,6 @@
 /obj/effect/mob_spawn/human/ds2/syndicate/special(mob/living/new_spawn)
 	. = ..()
 	new_spawn.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
-	new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)
 
 /obj/effect/mob_spawn/human/ds2/syndicate_command/special(mob/living/new_spawn)
 	. = ..()

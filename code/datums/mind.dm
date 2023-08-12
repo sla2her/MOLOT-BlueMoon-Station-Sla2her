@@ -279,7 +279,7 @@
 	remove_antag_equip()
 
 /datum/mind/proc/remove_rev()
-	var/datum/antagonist/rev/rev = has_antag_datum(/datum/antagonist/rev)
+	var/datum/antagonist/rev/rev = has_antag_datum(/datum/antagonist/rev, /datum/antagonist/rev/head)
 	if(rev)
 		remove_antag_datum(rev.type)
 		special_role = null

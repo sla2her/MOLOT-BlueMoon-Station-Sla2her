@@ -61,7 +61,6 @@
 	ADD_TRAIT(new_spawn,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT)
 	new_spawn.language_holder.understood_languages += /datum/language/draconic
 	new_spawn.language_holder.spoken_languages += /datum/language/draconic
-	new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)
 
 //Splurt-Specific Space Hotel Staff
 /obj/effect/mob_spawn/human/hotel_staff/splurt

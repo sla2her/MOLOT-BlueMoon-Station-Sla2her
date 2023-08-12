@@ -12,7 +12,7 @@
 	min_val = 0
 
 /datum/config_entry/number/butt_min_size_prefs
-	config_entry_value = 1
+	config_entry_value = BUTT_SIZE_DEF
 	min_val = 0
 	max_val = BUTT_SIZE_MAX
 

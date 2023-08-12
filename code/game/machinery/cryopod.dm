@@ -532,8 +532,10 @@ GLOBAL_LIST_EMPTY(ghost_records)
 		if("CRYO_LEAVE")
 			radio.talk_into(src, "[user][rank ? ", [rank]" : ""] has been moved to cryo storage.", announcement_channel)
 
-/obj/effect/mob_spawn/human/special(mob/living/spawned_mob, mob/mob_possessor)
+/obj/effect/mob_spawn/human/special()
 	. = ..()
+	var/mob/living/carbon/human/spawned_mob
+
 	spawned_mob.mind.add_antag_datum(/datum/antagonist/ghost_role)
 	ghost_team.players_spawned += (spawned_mob.key)
 	var/obj/machinery/computer/cryopod/control_computer = find_control_computer()
