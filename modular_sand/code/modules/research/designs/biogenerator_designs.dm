@@ -29,3 +29,11 @@
 	materials = list(/datum/material/biomass = 800)
 	build_path = /obj/item/seeds/random
 	category = list("initial","Organic Materials")
+
+/datum/design/strange_seed
+	name = "Rolling Paper"
+	id = "rolling_paper"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 250)
+	build_path = /obj/item/rollingpaper
+	category = list("initial","Organic Materials")
