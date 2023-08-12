@@ -814,7 +814,7 @@
 
 /obj/item/melee/blood_magic/manipulator/attack_self(mob/living/user)
 	if(iscultist(user))
-		var/list/options = list("Blood Spear (150)", "Blood Bolt Barrage (300)", "Blood Beam (500)")
+		var/list/options = list("Blood Spear (150)", "Blood Halberd (250)", "Blood Bolt Barrage (300)", "Blood Beam (500)")
 		var/choice = input(user, "Choose a greater blood rite...", "Greater Blood Rites") as null|anything in options
 		if(!choice)
 			to_chat(user, "<span class='cultitalic'>You decide against conducting a greater blood rite.</span>")
@@ -835,7 +835,23 @@
 						to_chat(user, "<span class='cultitalic'>A [rite.name] appears in your hand!</span>")
 					else
 						user.visible_message("<span class='warning'>A [rite.name] appears at [user]'s feet!</span>", \
-							 "<span class='cultitalic'>A [rite.name] materializes at your feet.</span>")
+							"<span class='cultitalic'>A [rite.name] materializes at your feet.</span>")
+			if("Blood Halberd (250)")
+				if(uses < 250)
+					to_chat(user, "<span class='cultitalic'>You need 250 charges to perform this rite.</span>")
+				else
+					uses -= 250
+					var/turf/T = get_turf(user)
+					qdel(src)
+					var/datum/action/innate/cult/spear/S = new(user)
+					var/obj/item/cult_halberd/rite = new(T)
+					S.Grant(user, rite)
+					rite.spear_act = S
+					if(user.put_in_hands(rite))
+						to_chat(user, "<span class='cultitalic'>A [rite.name] appears in your hand!</span>")
+					else
+						user.visible_message("<span class='warning'>A [rite.name] appears at [user]'s feet!</span>", \
+							"<span class='cultitalic'>A [rite.name] materializes at your feet.</span>")
 			if("Blood Bolt Barrage (300)")
 				if(uses < 300)
 					to_chat(user, "<span class='cultitalic'>You need 300 charges to perform this rite.</span>")

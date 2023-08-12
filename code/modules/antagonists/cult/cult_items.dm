@@ -732,14 +732,14 @@
 		qdel(src)
 
 /obj/item/cult_spear
-	name = "blood halberd"
+	name = "Blood Spear"
 	desc = "A sickening spear composed entirely of crystallized blood."
 	icon_state = "bloodspear0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	slot_flags = 0
 	force = 17
-	throwforce = 40
+	throwforce = 52
 	throw_speed = 2
 	armour_penetration = 30
 	block_chance = 30
@@ -758,7 +758,7 @@
 /obj/item/cult_spear/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 90)
-	AddComponent(/datum/component/two_handed, force_unwielded=17, force_wielded=24, icon_wielded="bloodspear1")
+	AddComponent(/datum/component/two_handed, force_unwielded=17, force_wielded=25, icon_wielded="bloodspear1")
 
 /// triggered on wield of two handed item
 /obj/item/cult_spear/proc/on_wield(obj/item/source, mob/user)
@@ -811,6 +811,100 @@
 	qdel(src)
 
 /obj/item/cult_spear/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
+	if(wielded)
+		final_block_chance *= 2
+	if(prob(final_block_chance))
+		if(attack_type & ATTACK_TYPE_PROJECTILE)
+			owner.visible_message("<span class='danger'>[owner] deflects [attack_text] with [src]!</span>")
+			playsound(src, pick('sound/weapons/effects/ric1.ogg', 'sound/weapons/effects/ric2.ogg', 'sound/weapons/effects/ric3.ogg', 'sound/weapons/effects/ric4.ogg', 'sound/weapons/effects/ric5.ogg'), 100, 1)
+			return BLOCK_SUCCESS | BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_PHYSICAL_EXTERNAL
+		else
+			playsound(src, 'sound/weapons/parry.ogg', 100, 1)
+			owner.visible_message("<span class='danger'>[owner] parries [attack_text] with [src]!</span>")
+			return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
+	return BLOCK_NONE
+
+/obj/item/cult_halberd
+	name = "Blood Halberd"
+	desc = "A sickening halberd composed entirely of crystallized blood."
+	icon_state = "occultpoleaxe0"
+	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
+	slot_flags = 0
+	force = 17
+	throwforce = 28
+	throw_speed = 2
+	armour_penetration = 30
+	block_chance = 45
+	attack_verb = list("attacked", "impaled", "stabbed", "torn", "gored")
+	sharpness = SHARP_EDGED
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	block_parry_data = /datum/block_parry_data/inteq_sledgehammer
+	var/datum/action/innate/cult/spear/halberd_act
+	var/wielded = FALSE // track wielded status on item
+
+
+/obj/item/cult_halberd/Initialize(mapload)
+	. = ..()
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
+
+/obj/item/cult_halberd/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/butchering, 100, 90)
+	AddComponent(/datum/component/two_handed, force_unwielded=17, force_wielded=34, icon_wielded="occultpoleaxe1")
+
+/// triggered on wield of two handed item
+/obj/item/cult_halberd/proc/on_wield(obj/item/source, mob/user)
+	wielded = TRUE
+
+/// triggered on unwield of two handed item
+/obj/item/cult_halberd/proc/on_unwield(obj/item/source, mob/user)
+	wielded = FALSE
+
+/obj/item/cult_halberd/update_icon_state()
+	icon_state = "occultpoleaxe0"
+
+/obj/item/cult_halberd/Destroy()
+	if(halberd_act)
+		qdel(halberd_act)
+	..()
+
+/obj/item/cult_halberd/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
+	var/turf/T = get_turf(hit_atom)
+	if(isliving(hit_atom))
+		var/mob/living/L = hit_atom
+		if(iscultist(L))
+			playsound(src, 'sound/weapons/throwtap.ogg', 50)
+			if(L.put_in_active_hand(src))
+				L.visible_message("<span class='warning'>[L] catches [src] out of the air!</span>")
+			else
+				L.visible_message("<span class='warning'>[src] bounces off of [L], as if repelled by an unseen force!</span>")
+		else if(!..())
+			if(!L.anti_magic_check())
+				if(is_servant_of_ratvar(L))
+					to_chat(L, "<span class='cultlarge'>\"Kneel for me, scum\"</span>")
+					L.confused += clamp(10 - L.confused, 0, 5) //confuses and lightly knockdowns + damages hostile cultists instead of hardstunning like before
+					L.DefaultCombatKnockdown(15)
+					L.adjustBruteLoss(10)
+				else
+					L.DefaultCombatKnockdown(50)
+			break_halberd(T)
+	else
+		..()
+
+/obj/item/cult_halberd/proc/break_halberd(turf/T)
+	if(src)
+		if(!T)
+			T = get_turf(src)
+		if(T)
+			T.visible_message("<span class='warning'>[src] shatters and melts back into blood!</span>")
+			new /obj/effect/temp_visual/cult/sparks(T)
+			new /obj/effect/decal/cleanable/blood/splatter(T)
+			playsound(T, 'sound/effects/glassbr3.ogg', 100)
+	qdel(src)
+
+/obj/item/cult_halberd/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(wielded)
 		final_block_chance *= 2
 	if(prob(final_block_chance))
