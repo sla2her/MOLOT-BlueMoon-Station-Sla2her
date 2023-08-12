@@ -18,12 +18,6 @@
 	damaged_sound = list('modular_bluemoon/SmiLeY/code/mob/pig/oink.ogg')
 	deathsound = 'modular_bluemoon/SmiLeY/code/mob/pig/death.ogg'
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/pig = 6)
-	response_help_continuous = "гладит"
-	response_help_simple = "гладит"
-	response_disarm_continuous = "отталкивает"
-	response_disarm_simple = "отталкивает"
-	response_harm_continuous = "пинает"
-	response_harm_simple = "пинает"
 	density = TRUE
 	mob_size = MOB_SIZE_LARGE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
