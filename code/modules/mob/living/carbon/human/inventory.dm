@@ -151,7 +151,7 @@
 		if(ITEM_SLOT_HEAD)
 			head = I
 			var/obj/item/clothing/head/helmet/H = I
-			if(H.vision_flags || H.darkness_view || H.invis_override || H.invis_view || !isnull(H.lighting_alpha))
+			if(H.vision_flags || H.darkness_view || H.invis_view || !isnull(H.lighting_alpha))
 				update_sight()
 			update_inv_head()
 		///
@@ -289,7 +289,7 @@
 	else if(I == head)
 		head = null
 		var/obj/item/clothing/head/helmet/H = I
-		if(H.vision_flags || H.darkness_view || H.invis_override || H.invis_view || !isnull(H.lighting_alpha))
+		if(H.vision_flags || H.darkness_view || H.invis_view || !isnull(H.lighting_alpha))
 			update_sight()
 		if(!QDELETED(src))
 			update_inv_head()
