@@ -150,7 +150,7 @@
 	invocation = "Squeak!"
 	charge_max = 50
 	cooldown_min = 50
-	shapeshift_type = /mob/living/simple_animal/hostile/bat
+	shapeshift_type = /mob/living/simple_animal/hostile/retaliate/bat
 	var/ventcrawl_nude_only = TRUE
 	var/transfer_name = TRUE
 

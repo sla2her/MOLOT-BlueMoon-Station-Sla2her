@@ -11456,7 +11456,7 @@
 "atW" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/mob/living/simple_animal/hostile/ghost,
+/mob/living/simple_animal/hostile/retaliate/ghost,
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
@@ -30497,7 +30497,7 @@
 	},
 /area/maintenance/port/fore)
 "aZB" = (
-/mob/living/simple_animal/hostile/goat{
+/mob/living/simple_animal/hostile/retaliate/goat{
 	name = "Pete"
 	},
 /turf/open/floor/plasteel,
@@ -68953,7 +68953,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/mob/living/simple_animal/hostile/bat{
+/mob/living/simple_animal/hostile/retaliate/bat{
 	desc = "A failed experiment of Nanotrasen to create weaponised carp technology. This less than intimidating carp now serves as an authority figure's pet.";
 	emote_taunt = list("gnashes");
 	faction = list("carp");
@@ -83219,7 +83219,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/ghost,
+/mob/living/simple_animal/hostile/retaliate/ghost,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard/fore)
 "iXU" = (

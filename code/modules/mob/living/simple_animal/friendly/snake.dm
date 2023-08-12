@@ -10,7 +10,7 @@
 			L.reagents.add_reagent(poison_type, poison_per_bite)
 	return
 
-/mob/living/simple_animal/hostile/poison/snake
+/mob/living/simple_animal/hostile/retaliate/poison/snake
 	name = "snake"
 	desc = "A slithery snake. These legless reptiles are the bane of mice and adventurers alike."
 	icon_state = "snake"
@@ -38,11 +38,11 @@
 	obj_damage = 0
 	environment_smash = ENVIRONMENT_SMASH_NONE
 
-/mob/living/simple_animal/hostile/poison/snake/Initialize(mapload)
+/mob/living/simple_animal/hostile/retaliate/poison/snake/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/ventcrawling, given_tier = VENTCRAWLER_ALWAYS)
 
-/mob/living/simple_animal/hostile/poison/snake/ListTargets(atom/the_target)
+/mob/living/simple_animal/hostile/retaliate/poison/snake/ListTargets(atom/the_target)
 	. = oview(vision_range, targets_from) //get list of things in vision range
 	var/list/living_mobs = list()
 	var/list/mice = list()
@@ -59,7 +59,7 @@
 		return  living_mobs & enemies
 	return mice
 
-/mob/living/simple_animal/hostile/poison/snake/AttackingTarget()
+/mob/living/simple_animal/hostile/retaliate/poison/snake/AttackingTarget()
 	if(istype(target, /mob/living/simple_animal/mouse))
 		visible_message("<span class='notice'>[name] consumes [target] in a single gulp!</span>", "<span class='notice'>You consume [target] in a single gulp!</span>")
 		QDEL_NULL(target)

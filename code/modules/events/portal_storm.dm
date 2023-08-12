@@ -49,14 +49,14 @@
 	category = EVENT_CATEGORY_INVASION
 
 /datum/round_event/portal_storm/portal_storm_clown
-	boss_types = list(/mob/living/simple_animal/hostile/clown/clownhulk = 1)
-	hostile_types = list(/mob/living/simple_animal/hostile/clown/mutant = 7,\
-						/mob/living/simple_animal/hostile/clown/mutant/blob = 4,\
-						/mob/living/simple_animal/hostile/clown/longface = 4,\
-						/mob/living/simple_animal/hostile/clown/clownhulk/honcmunculus = 7,\
-						/mob/living/simple_animal/hostile/clown/lube = 5,\
-						/mob/living/simple_animal/hostile/clown/banana = 5,\
-						/mob/living/simple_animal/hostile/clown/fleshclown = 4)
+	boss_types = list(/mob/living/simple_animal/hostile/retaliate/clown/clownhulk = 1)
+	hostile_types = list(/mob/living/simple_animal/hostile/retaliate/clown/mutant = 7,\
+						/mob/living/simple_animal/hostile/retaliate/clown/mutant/blob = 4,\
+						/mob/living/simple_animal/hostile/retaliate/clown/longface = 4,\
+						/mob/living/simple_animal/hostile/retaliate/clown/clownhulk/honcmunculus = 7,\
+						/mob/living/simple_animal/hostile/retaliate/clown/lube = 5,\
+						/mob/living/simple_animal/hostile/retaliate/clown/banana = 5,\
+						/mob/living/simple_animal/hostile/retaliate/clown/fleshclown = 4)
 	triggersound = 'modular_bluemoon/kovac_shitcode/sound/clown_storm.ogg'
 
 /datum/round_event_control/portal_storm_necros

@@ -781,7 +781,7 @@
 /turf/open/floor/plasteel/dark,
 /area/commons/cryopod)
 "apo" = (
-/mob/living/simple_animal/hostile/clown/clownhulk/chlown,
+/mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown,
 /turf/open/floor/plating,
 /area/service/theater/abandoned)
 "apt" = (
@@ -20428,7 +20428,7 @@
 /turf/open/floor/plating,
 /area/security/prison)
 "hcC" = (
-/mob/living/simple_animal/hostile/goose,
+/mob/living/simple_animal/hostile/retaliate/goose,
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "hdv" = (
@@ -21415,7 +21415,7 @@
 	},
 /area/science/robotics/lab)
 "htK" = (
-/mob/living/simple_animal/hostile/clown/lube{
+/mob/living/simple_animal/hostile/retaliate/clown/lube{
 	faction = list("neutral")
 	},
 /turf/open/floor/mineral/bananium,
@@ -30568,7 +30568,7 @@
 /turf/open/floor/plasteel,
 /area/service/hydroponics/garden)
 "kGz" = (
-/mob/living/simple_animal/hostile/bat{
+/mob/living/simple_animal/hostile/retaliate/bat{
 	desc = "A fierce companion for any person of power, this spider has been carefully trained by Nanotrasen specialists. Its beady, staring eyes send shivers down your spine.";
 	emote_hear = list("chitters");
 	faction = list("spiders");
@@ -30983,7 +30983,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "kNh" = (
-/mob/living/simple_animal/hostile/goat{
+/mob/living/simple_animal/hostile/retaliate/goat{
 	health = 69;
 	maxHealth = 69;
 	melee_damage_lower = 8;
@@ -35647,7 +35647,7 @@
 	icon_state = "cobweb2"
 	},
 /obj/structure/closet,
-/mob/living/simple_animal/hostile/ghost,
+/mob/living/simple_animal/hostile/retaliate/ghost,
 /obj/effect/spawner/lootdrop/maintenance{
 	lootcount = 3;
 	name = "3maintenance loot spawner"
@@ -40071,7 +40071,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "nNV" = (
-/mob/living/simple_animal/hostile/goose,
+/mob/living/simple_animal/hostile/retaliate/goose,
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/spawner/lootdrop/syndicate_present,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -42392,7 +42392,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/bar)
 "oIe" = (
-/mob/living/simple_animal/hostile/goose{
+/mob/living/simple_animal/hostile/retaliate/goose{
 	attack_sound = 'sound/weapons/punch1.ogg';
 	attack_verb_continuous = "pummels";
 	attack_verb_simple = "pummel";
@@ -47754,7 +47754,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "qCY" = (
-/mob/living/simple_animal/hostile/clown/mutant/blob{
+/mob/living/simple_animal/hostile/retaliate/clown/mutant/blob{
 	atmos_requirements = list("min_oxy"=0,"max_oxy"=0,"min_tox"=0,"max_tox"=0,"min_co2"=0,"max_co2"=0,"min_n2"=0,"max_n2"=0);
 	faction = list("neutral");
 	health = 300;
@@ -61909,7 +61909,7 @@
 	},
 /area/service/library/artgallery/museum)
 "vqx" = (
-/mob/living/simple_animal/hostile/goat{
+/mob/living/simple_animal/hostile/retaliate/goat{
 	name = "Pete"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{

@@ -43993,7 +43993,7 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "dbq" = (
-/mob/living/simple_animal/hostile/goose,
+/mob/living/simple_animal/hostile/retaliate/goose,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
@@ -84445,7 +84445,7 @@
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
 "xbB" = (
-/mob/living/simple_animal/hostile/goat{
+/mob/living/simple_animal/hostile/retaliate/goat{
 	name = "Pete"
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -84854,7 +84854,7 @@
 /area/commons/cryopod)
 "xpY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/mob/living/simple_animal/hostile/bat{
+/mob/living/simple_animal/hostile/retaliate/bat{
 	desc = "A fierce companion for any person of power, this spider has been carefully trained by Nanotrasen specialists. Its beady, staring eyes send shivers down your spine.";
 	emote_hear = list("chitters");
 	faction = list("spiders");
