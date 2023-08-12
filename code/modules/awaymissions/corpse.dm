@@ -169,7 +169,6 @@
 	var/id_job = null			//Such as "Clown" or "Chef." This just determines what the ID reads as, not their access
 	var/id_access = null		//This is for access. See access.dm for which jobs give what access. Use "Captain" if you want it to be all access.
 	var/id_access_list = null	//Allows you to manually add access to an ID card.
-	assignedrole = "Ghost Role"
 
 	var/husk = null
 	//these vars are for lazy mappers to override parts of the outfit
@@ -197,13 +196,16 @@
 	var/facial_hair_style
 	var/skin_tone
 	var/canloadappearance = FALSE
+
+	assignedrole = "Ghost Role"
 	var/datum/team/ghost_role/ghost_team
 
-/obj/effect/mob_spawn/human/Initialize(mapload)
+/obj/effect/mob_spawn/human/Initialize(mapload, datum/antagonist/ghost_role/ghostovich)
 	if(ispath(outfit))
 		outfit = new outfit()
 	if(!outfit)
 		outfit = new /datum/outfit
+	ghost_team = ghostovich
 	return ..()
 
 /obj/effect/mob_spawn/human/equip(mob/living/carbon/human/H)

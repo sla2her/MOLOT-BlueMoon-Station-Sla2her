@@ -155,9 +155,9 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 			if("Apartment_2")
 				ghost_cafe_rooms_apartment_two.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
 			if("Apartment_bar")
-				ghost_cafe_rooms_apartment_two.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+				ghost_cafe_rooms_apartment_bar.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
 			if("Apartment_syndi")
-				ghost_cafe_rooms_apartment_two.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
+				ghost_cafe_rooms_apartment_syndi.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
 			else
 				hotelRoomTemp.load(locate(roomReservation.bottom_left_coords[1], roomReservation.bottom_left_coords[2], roomReservation.bottom_left_coords[3]))
 	activeRooms["[roomNumber]"] = roomReservation
@@ -376,6 +376,12 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	var/obj/item/hilbertshotel/parentSphere
 	var/datum/turf_reservation/reservation
 	var/turf/storageTurf
+
+/area/hilbertshotel/room_one
+	name = "Hilbert's Hotel Room One"
+
+/area/hilbertshotel/room_two
+	name = "Hilbert's Hotel Room Two"
 
 /area/hilbertshotel/Entered(atom/movable/AM)
 	. = ..()

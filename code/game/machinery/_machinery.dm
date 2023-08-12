@@ -355,10 +355,10 @@ Class Procs:
 		if(!silent)
 			say("No account found.")
 		return FALSE
-	else if(!allowdepartment && !thecard.registered_account.account_job)
-		if(!silent)
-			say("Departmental accounts have been blacklisted from personal expenses due to embezzlement.")
-		return FALSE
+//	else if(!allowdepartment && !thecard.registered_account.account_job)
+//		if(!silent)
+//			say("Departmental accounts have been blacklisted from personal expenses due to embezzlement.")
+//		return FALSE
 	return TRUE
 
 /obj/machinery/proc/attempt_transact(obj/item/card/id/thecard, transaction_cost)

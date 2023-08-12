@@ -3,38 +3,34 @@
 /turf/open/space/bluespace,
 /area/hilbertshotel)
 "ad" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/outlet_injector/hilbertshotel/layer3,
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "ae" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "af" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "ag" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 8
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "ah" = (
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "ai" = (
 /obj/machinery/telecomms/relay/preset/auto,
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "ao" = (
 /obj/machinery/vending/kink,
@@ -56,7 +52,7 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "av" = (
 /obj/structure/lattice,
@@ -66,7 +62,7 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "aw" = (
 /obj/structure/lattice,
@@ -79,11 +75,11 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "ax" = (
 /obj/structure/lattice,
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "aC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -555,7 +551,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 1
 	},
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "cl" = (
 /obj/structure/table/reinforced,

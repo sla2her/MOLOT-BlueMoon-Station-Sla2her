@@ -48,6 +48,7 @@ GLOBAL_LIST_EMPTY(ghost_records)
 /obj/machinery/computer/cryopod/Initialize(mapload)
 	. = ..()
 	GLOB.cryopod_computers += src
+	radio = new radio(src)
 
 /obj/machinery/computer/cryopod/Destroy()
 	GLOB.cryopod_computers -= src
@@ -528,16 +529,17 @@ GLOBAL_LIST_EMPTY(ghost_records)
 /obj/machinery/computer/cryopod/proc/announce(message_type, user, rank)
 	switch(message_type)
 		if("CRYO_JOIN")
-			radio.talk_into(src, "[user][rank ? ", [rank]" : ""] has woken up from cryo storage.", announcement_channel)
+			radio.talk_into(src, "[user][rank ? ", [rank]" : ""] просыпается после крио-заморозки.", announcement_channel)
 		if("CRYO_LEAVE")
-			radio.talk_into(src, "[user][rank ? ", [rank]" : ""] has been moved to cryo storage.", announcement_channel)
+			radio.talk_into(src, "[user][rank ? ", [rank]" : ""] возвращается в крио-заморозку.", announcement_channel)
 
-/obj/effect/mob_spawn/human/special()
+/obj/effect/mob_spawn/human/special(mob/living/carbon/human/spawned_mob, datum/team/ghost_role/ghostovich)
 	. = ..()
-	var/mob/living/carbon/human/spawned_mob
 
-	spawned_mob.mind.add_antag_datum(/datum/antagonist/ghost_role)
-	ghost_team.players_spawned += (spawned_mob.key)
+	if(ghost_team)
+		spawned_mob.mind.add_antag_datum(/datum/antagonist/ghost_role, ghost_team)
+		ghost_team.players_spawned += (spawned_mob.key)
+
 	var/obj/machinery/computer/cryopod/control_computer = find_control_computer()
 	var/datum/data/record/record = new
 	record.fields["name"] = spawned_mob.real_name

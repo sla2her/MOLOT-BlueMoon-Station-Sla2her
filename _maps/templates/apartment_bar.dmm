@@ -37,11 +37,10 @@
 /turf/open/floor/carpet/royalblack,
 /area/hilbertshotel)
 "jj" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 8
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "kr" = (
 /obj/structure/chair/stool/bar{
@@ -89,12 +88,11 @@
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "ln" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "lS" = (
 /obj/structure/table/wood,
@@ -130,7 +128,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 1
 	},
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "qn" = (
 /obj/machinery/light{
@@ -154,7 +152,7 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "sm" = (
 /obj/effect/turf_decal/siding/wood,
@@ -200,7 +198,7 @@
 /area/hilbertshotel)
 "vU" = (
 /obj/machinery/telecomms/relay/preset/auto,
-/turf/open/floor/catwalk_floor,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "vW" = (
 /obj/structure/table/wood,
@@ -316,9 +314,8 @@
 /turf/open/floor/carpet/black,
 /area/hilbertshotel)
 "Jy" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/outlet_injector/hilbertshotel/layer3,
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "LE" = (
 /obj/structure/chair/stool/bar{
@@ -385,11 +382,10 @@
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
 "RL" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4
 	},
-/turf/open/space/bluespace,
+/turf/open/floor/plating/airless,
 /area/hilbertshotel)
 "Tk" = (
 /obj/structure/table,
@@ -435,7 +431,7 @@
 /turf/open/indestructible/hoteltile,
 /area/hilbertshotel)
 "Xq" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
+/obj/machinery/atmospherics/components/unary/vent_pump/hilbertshotel{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -454,7 +450,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/hilbertshotel)
 "ZE" = (
-/turf/closed/indestructible/hotelwall,
+/turf/closed/indestructible/wall,
 /area/hilbertshotel)
 
 (1,1,1) = {"

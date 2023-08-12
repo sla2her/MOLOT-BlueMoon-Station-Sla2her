@@ -28,7 +28,6 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	var/wtype = "glass"
 	var/fulltile = FALSE
 	var/obj/item/stack/sheet/glass_type = /obj/item/stack/sheet/glass
-	var/cleanable_type = /obj/effect/decal/cleanable/glass
 	var/glass_amount = 1
 	can_be_unanchored = TRUE
 	resistance_flags = ACID_PROOF
@@ -54,6 +53,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	/// Electrochromatic ID. Set the first character to ! to replace with a SSmapping generated pseudorandom obfuscated ID for mapping purposes.
 	var/electrochromatic_id
 	///Datum that the shard and debris type is pulled from for when the glass is broken.
+	var/cleanable_type = /obj/effect/decal/cleanable/glass
 	var/datum/material/glass_material_datum = /datum/material/glass
 
 /obj/structure/window/examine(mob/user)
@@ -480,7 +480,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	if(!disassembled)
 		playsound(src, breaksound, 70, 1)
 		if(!(flags_1 & NODECONSTRUCT_1))
-			for(var/obj/item/shard/debris in spawn_debris(drop_location()))
+			for(var/obj/item/shard/debris in spawnDebris(drop_location()))
 				transfer_fingerprints_to(debris) // transfer fingerprints to shards only
 	if(electrochromatic_status != NOT_ELECTROCHROMATIC)		//eh fine keep your kit.
 		new /obj/item/electronics/electrochromatic_kit(drop_location())
@@ -489,7 +489,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	update_nearby_icons()
 
 ///Spawns shard and debris decal based on the glass_material_datum, spawns rods if window is reinforned and number of shards/rods is determined by the window being fulltile or not.
-/obj/structure/window/proc/spawn_debris(location)
+/obj/structure/window/proc/spawnDebris(location)
 	var/datum/material/glass_material_ref = GET_MATERIAL_REF(glass_material_datum)
 	var/obj/item/shard_type = glass_material_ref.shard_type
 	var/obj/effect/decal/debris_type = glass_material_ref.debris_type
@@ -611,6 +611,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	wave_explosion_block = EXPLOSION_BLOCK_REINFORCED_WINDOW
 	wave_explosion_multiply = EXPLOSION_DAMPEN_REINFORCED_WINDOW
 	glass_type = /obj/item/stack/sheet/rglass
+	glass_material_datum = /datum/material/glass
 	rad_insulation = RAD_HEAVY_INSULATION
 	ricochet_chance_mod = 0.8
 
@@ -639,6 +640,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	wave_explosion_multiply = EXPLOSION_DAMPEN_BOROSILICATE_WINDOW
 	glass_type = /obj/item/stack/sheet/plasmaglass
 	cleanable_type = /obj/effect/decal/cleanable/glass/plasma
+	glass_material_datum = /datum/material/alloy/plasmaglass
 	rad_insulation = RAD_NO_INSULATION
 
 /obj/structure/window/plasma/spawner/east
@@ -666,6 +668,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	wave_explosion_block = EXPLOSION_BLOCK_EXTREME
 	wave_explosion_multiply = EXPLOSION_BLOCK_EXTREME
 	glass_type = /obj/item/stack/sheet/plasmarglass
+	glass_material_datum = /datum/material/alloy/plasmaglass
 
 /obj/structure/window/plasma/reinforced/spawner/east
 	dir = EAST
@@ -842,6 +845,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	level = 3
 	glass_type = /obj/item/stack/sheet/titaniumglass
 	cleanable_type = /obj/effect/decal/cleanable/glass/titanium
+	glass_material_datum = /datum/material/alloy/titaniumglass
 	glass_amount = 2
 	ricochet_chance_mod = 0.9
 
@@ -874,6 +878,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	level = 3
 	glass_type = /obj/item/stack/sheet/plastitaniumglass
 	cleanable_type = /obj/effect/decal/cleanable/glass/plastitanium
+	glass_material_datum = /datum/material/alloy/plastitaniumglass
 	glass_amount = 2
 
 /obj/structure/window/plastitanium/unanchored
@@ -909,7 +914,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	. = ..()
 	change_construction_value(fulltile ? 2 : 1)
 
-/obj/structure/window/reinforced/clockwork/spawn_debris(location)
+/obj/structure/window/reinforced/clockwork/spawnDebris(location)
 	. = list()
 	var/gearcount = fulltile ? 4 : 2
 	for(var/i in 1 to gearcount)
@@ -990,7 +995,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	. = ..()
 	update_icon()
 
-/obj/structure/window/paperframe/spawn_debris(location)
+/obj/structure/window/paperframe/spawnDebris(location)
 	. = list(new /obj/item/stack/sheet/mineral/wood(location))
 	for (var/i in 1 to rand(1,4))
 		. += new /obj/item/paper/natural(location)
