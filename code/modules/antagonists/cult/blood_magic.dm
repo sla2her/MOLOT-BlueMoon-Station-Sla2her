@@ -846,7 +846,7 @@
 					var/datum/action/innate/cult/spear/S = new(user)
 					var/obj/item/cult_halberd/rite = new(T)
 					S.Grant(user, rite)
-					rite.spear_act = S
+					rite.halberd_act = S
 					if(user.put_in_hands(rite))
 						to_chat(user, "<span class='cultitalic'>A [rite.name] appears in your hand!</span>")
 					else
