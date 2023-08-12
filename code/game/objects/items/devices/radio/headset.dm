@@ -270,7 +270,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "\proper mini Integrated Subspace Transceiver "
 	subspace_transmission = FALSE
 
-/obj/item/radio/headset/silicon/pai/ComponentInitialize()
+/obj/item/radio/headset/silicon/pai/ComponentInitialize(mapload)
 	. = ..()
 	AddElement(/datum/element/empprotection, EMP_PROTECT_WIRES)
 

@@ -71,6 +71,11 @@ SUBSYSTEM_DEF(materials)
 
 	return mat_ref
 
+/datum/controller/subsystem/materials/proc/GetMaterialRef(datum/material/fakemat)
+	if(!materials)
+		InitializeMaterials()
+	return materials[fakemat] || fakemat
+
 /** Fetches a cached material singleton when passed sufficient arguments.
  *
  * Arguments:
@@ -83,7 +88,7 @@ SUBSYSTEM_DEF(materials)
  *       - If the material type is bespoke a text ID is generated from the arguments list and used to load a material datum from the cache.
  *   - The following elements are used to generate bespoke IDs
  */
-/datum/controller/subsystem/materials/proc/GetMaterialRef(list/arguments)
+/datum/controller/subsystem/materials/proc/_GetMaterialRef(list/arguments)
 	if(!materials)
 		InitializeMaterials()
 
