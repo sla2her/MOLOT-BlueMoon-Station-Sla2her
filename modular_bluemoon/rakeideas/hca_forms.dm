@@ -26,4 +26,4 @@
 /datum/gear/backpack/black_armband
     name = "HCA armband"
     subcategory = LOADOUT_SUBCATEGORY_BACKPACK_GENERAL
-    path = /obj/item/clothing/head/hcaarmband
+    path = /obj/item/clothing/accessorry/armband/hcaarmband
