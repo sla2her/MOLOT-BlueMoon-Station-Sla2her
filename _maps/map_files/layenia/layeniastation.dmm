@@ -43534,6 +43534,9 @@
 /obj/item/am_shielding_container,
 /obj/item/am_shielding_container,
 /obj/item/am_shielding_container,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/machinery/power/am_control_unit,
 /turf/open/floor/plating,
 /area/engineering/main)
 "guR" = (
