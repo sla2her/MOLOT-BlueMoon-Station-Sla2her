@@ -479,7 +479,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/indestructible/syndicate,
 /area/hilbertshotel)
 "wm" = (
 /obj/machinery/door/morgue,
@@ -637,7 +637,7 @@
 /area/hilbertshotel)
 "Ie" = (
 /obj/structure/sign/flag/syndicate/directional/south,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/indestructible/syndicate,
 /area/hilbertshotel)
 "Ir" = (
 /obj/machinery/door/morgue,
@@ -704,7 +704,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/indestructible/syndicate,
 /area/hilbertshotel)
 "Mf" = (
 /obj/structure/chair/office/dark{
@@ -800,7 +800,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/indestructible/syndicate,
 /area/hilbertshotel)
 "So" = (
 /turf/closed/indestructible/hoteldoor{
@@ -836,7 +836,7 @@
 /turf/open/floor/grass/grass0,
 /area/hilbertshotel)
 "TL" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/indestructible/syndicate,
 /area/hilbertshotel)
 "TZ" = (
 /obj/structure/flora/junglebush,
@@ -872,7 +872,7 @@
 /area/hilbertshotel)
 "XF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/indestructible/syndicate,
 /area/hilbertshotel)
 "Yn" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
