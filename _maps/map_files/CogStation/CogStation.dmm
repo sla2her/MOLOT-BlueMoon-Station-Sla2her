@@ -51225,6 +51225,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/droneDispenser/preloaded,
 /turf/open/floor/plasteel,
 /area/engineering/workshop)
 "cws" = (

@@ -13105,6 +13105,15 @@
 /obj/item/reagent_containers/pill/patch/silver_sulf,
 /obj/item/reagent_containers/pill/patch/silver_sulf,
 /obj/item/clothing/glasses/meson/engine,
+/obj/item/paper_bin{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/toy/figure/engineer{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/obj/item/pen,
 /turf/open/floor/plasteel/dark,
 /area/engineering/break_room)
 "awU" = (
@@ -23901,20 +23910,11 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/mixing)
 "aPs" = (
-/obj/structure/table,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/paper_bin{
-	pixel_x = -4;
-	pixel_y = 4
-	},
-/obj/item/pen,
-/obj/item/toy/figure/engineer{
-	pixel_x = 8;
-	pixel_y = 6
-	},
+/obj/machinery/droneDispenser/preloaded,
 /turf/open/floor/plasteel/dark,
 /area/engineering/break_room)
 "aPt" = (

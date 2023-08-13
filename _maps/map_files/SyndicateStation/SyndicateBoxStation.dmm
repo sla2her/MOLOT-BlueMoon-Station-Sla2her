@@ -40614,6 +40614,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/droneDispenser/syndrone/badass,
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/break_room)
 "bYP" = (

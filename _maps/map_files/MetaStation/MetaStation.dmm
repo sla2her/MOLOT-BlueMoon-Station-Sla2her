@@ -57748,6 +57748,11 @@
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
+"jel" = (
+/obj/machinery/droneDispenser/preloaded,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
+/area/engineering/main)
 "jfa" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -59434,6 +59439,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "jVo" = (
@@ -78005,6 +78013,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "tKr" = (
@@ -80696,6 +80707,7 @@
 "vgI" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/turf_decal/delivery,
+/obj/item/clothing/suit/hooded/wintercoat/engineering,
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "vgW" = (
@@ -81540,11 +81552,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/engineering/main)
@@ -127795,7 +127807,7 @@ avt
 awJ
 axS
 ocS
-lmt
+jel
 vGP
 vrr
 gjr

@@ -71003,6 +71003,13 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
+"rML" = (
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 9
+	},
+/obj/machinery/droneDispenser/preloaded,
+/turf/open/floor/plasteel,
+/area/engineering/break_room)
 "rNH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -122727,7 +122734,7 @@ rVf
 tgp
 uZH
 mNk
-cAR
+rML
 cAT
 tfI
 ctl

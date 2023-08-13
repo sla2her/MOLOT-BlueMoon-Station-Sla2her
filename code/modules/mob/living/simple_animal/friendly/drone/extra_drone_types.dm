@@ -18,14 +18,14 @@
 	health = 30
 	maxHealth = 120 //If you murder other drones and cannibalize them you can get much stronger
 	initial_language_holder = /datum/language_holder/drone/syndicate
-	faction = list(ROLE_INTEQ)
+	faction = list(ROLE_TRAITOR)
 	speak_emote = list("hisses")
 	bubble_icon = "syndibot"
 	heavy_emp_damage = 10
 	laws = \
-	"1. Interfere.\n"+\
-	"2. Kill.\n"+\
-	"3. Destroy."
+	"1. Помогай экипажу.\n"+\
+	"2. Наблюдай за станцией.\n"+\
+	"3. Защищай станцию."
 	default_storage = /obj/item/uplink
 	default_hatmask = /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	hacked = TRUE
@@ -34,11 +34,11 @@
 /mob/living/simple_animal/drone/syndrone/Initialize(mapload)
 	. = ..()
 	var/datum/component/uplink/hidden_uplink = internal_storage.GetComponent(/datum/component/uplink)
-	hidden_uplink.telecrystals = 10
+	hidden_uplink.telecrystals = 15
 
 /mob/living/simple_animal/drone/syndrone/Login()
 	..()
-	to_chat(src, "<span class='notice'>You can kill and eat other drones to increase your health!</span>" )
+	to_chat(src, "<span class='notice'>Ты можешь убивать и поглощать других дронов, чтобы восстанавливаться!</span>" )
 
 /mob/living/simple_animal/drone/syndrone/badass
 	name = "Badass Syndrone"

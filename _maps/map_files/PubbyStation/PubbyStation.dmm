@@ -55946,6 +55946,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/droneDispenser/preloaded,
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "lsz" = (

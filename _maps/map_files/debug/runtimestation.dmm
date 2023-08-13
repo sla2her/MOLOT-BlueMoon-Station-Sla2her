@@ -2237,6 +2237,7 @@
 	pixel_x = -32;
 	pixel_y = -7
 	},
+/obj/machinery/vending/kink,
 /turf/open/floor/plating,
 /area/commons/storage/primary)
 "fY" = (
@@ -2895,6 +2896,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/science)
+"AQ" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/vending/kink,
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "Bl" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3250,6 +3258,10 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel,
 /area/engineering/main)
+"Wc" = (
+/obj/effect/mob_spawn/human/ds2/syndicate_command/admiral,
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "Wh" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -7878,9 +7890,9 @@ bE
 bE
 cS
 dd
-dp
-dl
-dl
+AQ
+Wc
+Wc
 fX
 dE
 dB

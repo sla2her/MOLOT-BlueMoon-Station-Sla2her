@@ -13569,6 +13569,7 @@
 /area/engineering/atmos)
 "aAy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/droneDispenser/preloaded,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "aAz" = (

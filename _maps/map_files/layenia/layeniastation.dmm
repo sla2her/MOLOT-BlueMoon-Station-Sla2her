@@ -85849,6 +85849,7 @@
 	name = "air supply pipe"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/droneDispenser/preloaded,
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "mtM" = (

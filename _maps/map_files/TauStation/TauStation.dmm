@@ -10509,6 +10509,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "dGf" = (
@@ -14707,12 +14708,13 @@
 "fbF" = (
 /obj/machinery/rnd/production/circuit_imprinter,
 /obj/item/reagent_containers/glass/beaker/sulphuric,
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
 /obj/structure/sign/poster/official/help_others{
 	pixel_y = -32
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "fbN" = (
@@ -20504,6 +20506,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "heQ" = (
@@ -70864,6 +70867,14 @@
 /obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
+"yeh" = (
+/obj/machinery/droneDispenser/preloaded,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
+/area/engineering/main)
 "yes" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 6
@@ -83359,7 +83370,7 @@ weM
 weM
 weM
 weM
-hgg
+yeh
 wan
 sbM
 uZF
