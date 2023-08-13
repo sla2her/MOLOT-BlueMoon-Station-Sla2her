@@ -538,7 +538,7 @@ SUBSYSTEM_DEF(vote)
 			if("roundtype") //CIT CHANGE - adds the roundstart secret/extended vote
 				if(SSpersistence.saved_modes == {"Extended","Extended","Extended"})
 					choices.Add(ROUNDTYPE_DYNAMIC)
-				if(SSpersistence.saved_modes == {"Dynamic (Random)","Dynamic (Random)","Dynamic (Random)"})
+				if(SSpersistence.saved_modes == {"dynamic","dynamic","dynamic"})
 					choices.Add(ROUNDTYPE_EXTENDED)
 				else
 					choices.Add(ROUNDTYPE_DYNAMIC, ROUNDTYPE_EXTENDED) //BLUEMOON CHANGES, remove ROUNDTYPE_DYNAMIC_TEAMBASED (was first), remove ROUNDTYPE_DYNAMIC_LIGHT (was before extended)

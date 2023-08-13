@@ -1494,7 +1494,7 @@
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/hotel/guestroom)
 "hu" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/glass,
