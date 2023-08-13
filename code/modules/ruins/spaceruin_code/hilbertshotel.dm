@@ -12,8 +12,8 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	var/datum/map_template/ghost_cafe_rooms/ghost_cafe_rooms_apartment
 	var/datum/map_template/ghost_cafe_rooms/one/ghost_cafe_rooms_apartment_one
 	var/datum/map_template/ghost_cafe_rooms/two/ghost_cafe_rooms_apartment_two
-	var/datum/map_template/ghost_cafe_rooms/one/ghost_cafe_rooms_apartment_bar
-	var/datum/map_template/ghost_cafe_rooms/two/ghost_cafe_rooms_apartment_syndi
+	var/datum/map_template/ghost_cafe_rooms/bar/ghost_cafe_rooms_apartment_bar
+	var/datum/map_template/ghost_cafe_rooms/syndi/ghost_cafe_rooms_apartment_syndi
 	//BlueMoon Edit
 	var/datum/map_template/hilbertshotel/hotelRoomTemp
 	var/datum/map_template/hilbertshotel/empty/hotelRoomTempEmpty
