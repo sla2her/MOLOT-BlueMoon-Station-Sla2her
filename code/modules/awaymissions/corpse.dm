@@ -200,12 +200,11 @@
 	assignedrole = "Ghost Role"
 	var/datum/team/ghost_role/ghost_team
 
-/obj/effect/mob_spawn/human/Initialize(mapload, datum/team/ghost_role/ghostovich)
+/obj/effect/mob_spawn/human/Initialize(mapload)
 	if(ispath(outfit))
 		outfit = new outfit()
 	if(!outfit)
 		outfit = new /datum/outfit
-	ghost_team = ghostovich
 	return ..()
 
 /obj/effect/mob_spawn/human/equip(mob/living/carbon/human/H)

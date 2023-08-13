@@ -533,12 +533,17 @@ GLOBAL_LIST_EMPTY(ghost_records)
 		if("CRYO_LEAVE")
 			radio.talk_into(src, "[user][rank ? ", [rank]" : ""] возвращается в крио-заморозку.", announcement_channel)
 
+/obj/effect/mob_spawn/human/Initialize(mapload)
+	. = ..()
+	ghost_team = new /datum/team/ghost_role()
+
 /obj/effect/mob_spawn/human/special(mob/living/carbon/human/spawned_mob, datum/team/ghost_role/ghostovich)
 	. = ..()
 
-	if(ghost_team)
-		spawned_mob.mind.add_antag_datum(/datum/antagonist/ghost_role, ghost_team)
-		ghost_team.players_spawned += (spawned_mob.key)
+	if(ishuman(spawned_mob))
+		if(ghost_team)
+			spawned_mob.mind.add_antag_datum(/datum/antagonist/ghost_role, ghost_team)
+			ghost_team.players_spawned += (spawned_mob.key)
 
 	var/obj/machinery/computer/cryopod/control_computer = find_control_computer()
 	var/datum/data/record/record = new

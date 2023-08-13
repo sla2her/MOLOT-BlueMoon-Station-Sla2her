@@ -113,12 +113,13 @@
 	if(!do_mob(user, G.owner, 5 SECONDS))
 		return FALSE
 
-	to_chat(user, span_userlove("[G] чувствует что-то крупное внутри!"))
-	user.handle_post_sex(NORMAL_LUST*2, null, user)
-	user.Jitter(2)
-	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
-	inside = TRUE
-	stuffed_movement()
+	if(user == G.owner)
+		to_chat(user, span_userlove("[G] чувствует что-то крупное внутри!"))
+		user.handle_post_sex(NORMAL_LUST*2, null, user)
+		user.Jitter(2)
+		playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
+		inside = TRUE
+		stuffed_movement(user)
 
 /obj/item/buttplug/proc/item_inserted(datum/source, obj/item/organ/genital/G, mob/user)
 	. = TRUE
@@ -161,12 +162,13 @@
 	if(!do_mob(user, G.owner, 5 SECONDS))
 		return FALSE
 
-	to_chat(user, span_userlove("[G] чувствует что-то крупное внутри!"))
-	user.handle_post_sex(NORMAL_LUST*2, null, user)
-	user.Jitter(2)
-	playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
-	inside = TRUE
-	stuffed_movement()
+	if(user == G.owner)
+		to_chat(user, span_userlove("[G] чувствует что-то крупное внутри!"))
+		user.handle_post_sex(NORMAL_LUST*2, null, user)
+		user.Jitter(2)
+		playsound(user, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
+		inside = TRUE
+		stuffed_movement(user)
 
 /obj/item/dildo/proc/item_inserted(datum/source, obj/item/organ/genital/G, mob/user)
 	. = TRUE

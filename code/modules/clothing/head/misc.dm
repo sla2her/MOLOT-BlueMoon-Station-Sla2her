@@ -220,7 +220,7 @@
 	icon_state = "sombrero"
 	item_state = "sombrero"
 	desc = "You can practically taste the fiesta."
-	flags_inv = HIDEHAIR
+	flags_inv = HIDEEARS
 
 	dog_fashion = /datum/dog_fashion/head/sombrero
 	beepsky_fashion = /datum/beepsky_fashion/sombrero
@@ -230,7 +230,7 @@
 	icon_state = "greensombrero"
 	item_state = "greensombrero"
 	desc = "As elegant as a dancing cactus."
-	flags_inv = HIDEHAIR|HIDEFACE|HIDEEARS
+	flags_inv = HIDEEARS|HIDEFACE
 
 	dog_fashion = null
 

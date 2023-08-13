@@ -6,9 +6,7 @@
 		stoplag()
 
 //Dildo
-/obj/item/dildo/proc/stuffed_movement()
-	var/obj/item/organ/genital/G = loc
-	var/mob/living/carbon/human/U = G
+/obj/item/dildo/proc/stuffed_movement(mob/living/user)
 
 	spawn()
 		while(inside)
@@ -17,32 +15,30 @@
 					return
 				if(prob(25))
 					if(dildo_size == 5)
-						to_chat(U, span_userdanger(pick("Гигантский дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от гигантского дилдо глубоко внутри!")))
-						U.handle_post_sex(HIGH_LUST, null, U)
-						U.Jitter(6)
-						U.Stun(10)
-						U.emote("moan")
+						to_chat(user, span_userdanger(pick("Гигантский дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от гигантского дилдо глубоко внутри!")))
+						user.handle_post_sex(HIGH_LUST, null, user)
+						user.Jitter(6)
+						user.Stun(10)
+						user.emote("moan")
 					else if(dildo_size == 4)
-						to_chat(U, span_userdanger(pick("Огромный дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от огромного дилдо глубоко внутри!")))
-						U.handle_post_sex(HIGH_LUST, null, U)
-						U.Jitter(3)
-						U.Stun(6)
-						U.emote("moan")
+						to_chat(user, span_userdanger(pick("Огромный дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от огромного дилдо глубоко внутри!")))
+						user.handle_post_sex(HIGH_LUST, null, user)
+						user.Jitter(3)
+						user.Stun(6)
+						user.emote("moan")
 					else if(!dildo_size == 1)
-						to_chat(U, span_love(pick("Дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от дилдо глубоко внутри!")))
-						U.handle_post_sex(NORMAL_LUST, null, U)
-						U.Jitter(3)
-						U.Stun(3)
-						U.emote("moan")
+						to_chat(user, span_love(pick("Дилдо внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от дилдо глубоко внутри!")))
+						user.handle_post_sex(NORMAL_LUST, null, user)
+						user.Jitter(3)
+						user.Stun(3)
+						user.emote("moan")
 					else
-						to_chat(U, span_love(pick("Я чувствую дилдо внутри!", "Вы чувствуете удовольствие от дилдо глубоко внутри!")))
-						U.handle_post_sex(LOW_LUST, null, U)
-						U.do_jitter_animation()
+						to_chat(user, span_love(pick("Я чувствую дилдо внутри!", "Вы чувствуете удовольствие от дилдо глубоко внутри!")))
+						user.handle_post_sex(LOW_LUST, null, user)
+						user.do_jitter_animation()
 
 //Buttplug
-/obj/item/buttplug/proc/stuffed_movement()
-	var/obj/item/organ/genital/G = loc
-	var/mob/living/carbon/human/U = G
+/obj/item/buttplug/proc/stuffed_movement(mob/living/user)
 
 	spawn()
 		while(inside)
@@ -51,21 +47,21 @@
 					return
 				if(prob(25))
 					if(buttplug_size == 4)
-						to_chat(U, span_userdanger(pick("Огромная затычка внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от огромной затычки глубоко внутри!")))
-						U.handle_post_sex(HIGH_LUST, null, U)
-						U.Jitter(3)
-						U.Stun(6)
-						U.emote("moan")
+						to_chat(user, span_userdanger(pick("Огромная затычка внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от огромной затычки глубоко внутри!")))
+						user.handle_post_sex(HIGH_LUST, null, user)
+						user.Jitter(3)
+						user.Stun(6)
+						user.emote("moan")
 					else if(!buttplug_size == 1)
-						to_chat(U, span_love(pick("Затычка внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от затычки глубоко внутри!")))
-						U.handle_post_sex(NORMAL_LUST, null, U)
-						U.Jitter(3)
-						U.Stun(3)
-						U.emote("moan")
+						to_chat(user, span_love(pick("Затычка внутри сводит вас с ума!", "Вы чувствуете мучительное удовольствие от затычки глубоко внутри!")))
+						user.handle_post_sex(NORMAL_LUST, null, user)
+						user.Jitter(3)
+						user.Stun(3)
+						user.emote("moan")
 					else
-						to_chat(U, span_love(pick("Я чувствую анальную затычку внутри!", "Вы чувствуете удовольствие от затычки глубоко внутри!")))
-						U.handle_post_sex(LOW_LUST, null, U)
-						U.do_jitter_animation()
+						to_chat(user, span_love(pick("Я чувствую анальную затычку внутри!", "Вы чувствуете удовольствие от затычки глубоко внутри!")))
+						user.handle_post_sex(LOW_LUST, null, user)
+						user.do_jitter_animation()
 
 //Tentacle Panties
 /obj/item/clothing/underwear/briefs/tentacle/proc/tentacle_panties(mob/living/carbon/human/M, slot)
