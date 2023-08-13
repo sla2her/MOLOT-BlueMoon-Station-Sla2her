@@ -82,7 +82,7 @@
 
 //Красный. Red. Blyad.
 /turf/open/floor/light/red
-	coloredlights = list("red")
+	coloredlights = list("r")
 	can_modify_colour = FALSE
 
 //Cycles through all of the colours
