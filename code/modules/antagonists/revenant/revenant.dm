@@ -90,7 +90,7 @@
 /mob/living/simple_animal/revenant/proc/random_revenant_name()
 	var/built_name = ""
 	built_name += pick(strings(REVENANT_NAME_FILE, "spirit_type"))
-	built_name += " of "
+	built_name += " "
 	built_name += pick(strings(REVENANT_NAME_FILE, "adverb"))
 	built_name += pick(strings(REVENANT_NAME_FILE, "theme"))
 	name = built_name

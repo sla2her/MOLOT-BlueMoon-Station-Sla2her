@@ -127,9 +127,8 @@
 	holder.icon_state = "hudstat"
 
 /mob/living/simple_animal/hostile/swarmer/get_status_tab_items()
-	..()
-	if(statpanel("Status"))
-		stat(null, "Resources: [resources]")
+	. = ..()
+	. += "Resources: [resources]"
 
 /mob/living/simple_animal/hostile/swarmer/emp_act()
 	. = ..()
