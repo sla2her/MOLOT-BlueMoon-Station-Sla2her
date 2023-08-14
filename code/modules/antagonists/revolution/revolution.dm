@@ -290,7 +290,7 @@
 /// "Enemy of the Revolutionary", given to heads and security when the revolution wins
 /datum/antagonist/revolution_enemy
 	name = "Enemy of the Revolution"
-	show_in_antagpanel = TRUE
+	show_in_antagpanel = FALSE
 
 /datum/antagonist/revolution_enemy/on_gain()
 	owner.special_role = "revolution enemy"
