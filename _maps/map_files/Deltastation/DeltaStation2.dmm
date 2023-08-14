@@ -9340,6 +9340,7 @@
 	name = "Privacy Shutters";
 	pixel_x = 25
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel/chapel_floor,
 /area/security/prison/cells)
 "aJA" = (
@@ -74678,6 +74679,7 @@
 	name = "Privacy Shutters";
 	pixel_x = -25
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel/chapel_floor,
 /area/security/prison/cells)
 "ggk" = (
@@ -78036,6 +78038,7 @@
 	name = "Privacy Shutters";
 	pixel_x = 25
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel/chapel_floor,
 /area/security/prison/cells)
 "hll" = (
@@ -87176,6 +87179,7 @@
 	name = "Privacy Shutters";
 	pixel_x = -25
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel/chapel_floor,
 /area/security/prison/cells)
 "jQu" = (
@@ -89744,6 +89748,7 @@
 	name = "Privacy Shutters";
 	pixel_x = -25
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel/chapel_floor,
 /area/security/prison/cells)
 "kGz" = (
@@ -95442,6 +95447,7 @@
 	name = "Privacy Shutters";
 	pixel_x = 25
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel/chapel_floor,
 /area/security/prison/cells)
 "mEb" = (
