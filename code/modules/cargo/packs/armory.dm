@@ -241,9 +241,9 @@
 					/obj/item/kitchen/knife/combat,
 					/obj/item/clothing/gloves/tackler/combat/insulated,
 					/obj/item/clothing/gloves/tackler/combat/insulated)
-	crate_name = "swat crate"
+	crate_name = "swat crate | MedSec"
 
-/datum/supply_pack/security/armory/swat/updated_medsec
+/datum/supply_pack/security/armory/swat/updated_janeng
 	name = "ERT Armor Crate | JanEng"
 	desc = "Содержит два полных комплекта прочных костюмов, разработанных совместными усилиями Дочерних Компаний Синдиката и Nanotrasen. Каждый комплект содержит костюм, шлем, маску, боевой пояс, боевой нож и боевые перчатки. Для открытия требуется доступ к оружейной."
 	cost = 6000
@@ -259,9 +259,9 @@
 					/obj/item/kitchen/knife/combat,
 					/obj/item/clothing/gloves/tackler/combat/insulated,
 					/obj/item/clothing/gloves/tackler/combat/insulated)
-	crate_name = "swat crate"
+	crate_name = "swat crate | JanEng"
 
-/datum/supply_pack/security/armory/swat/updated_medsec
+/datum/supply_pack/security/armory/swat/updated_command
 	name = "ERT Armor Crate | Command"
 	desc = "Содержит два полных комплекта прочных костюмов, разработанных совместными усилиями Дочерних Компаний Синдиката и Nanotrasen. Каждый комплект содержит костюм, шлем, маску, боевой пояс, боевой нож и боевые перчатки. Для открытия требуется доступ к оружейной."
 	cost = 6000
@@ -277,7 +277,7 @@
 					/obj/item/kitchen/knife/combat,
 					/obj/item/clothing/gloves/tackler/combat/insulated,
 					/obj/item/clothing/gloves/tackler/combat/insulated)
-	crate_name = "swat crate"
+	crate_name = "swat crate | Command"
 
 /datum/supply_pack/security/armory/wt550
 	name = "WT-550 Semi-Auto Rifle Crate"
