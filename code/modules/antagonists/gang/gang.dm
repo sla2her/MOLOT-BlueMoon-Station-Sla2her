@@ -24,6 +24,8 @@
 	var/starter_gangster = FALSE
 	/// The gangster's original real name. Used for renaming stuff, kept between gang switches.
 	var/original_name
+	/// Type of team to create when creating the gang in the first place. Used for renames.
+	var/gang_team_type = /datum/team/gang
 
 	/// A reference to the handler datum that manages the families gamemode. In case of no handler (admin-spawned during round), this will be null; this is fine.
 	var/datum/gang_handler/handler
@@ -60,6 +62,8 @@
 			found_gang = TRUE
 			break
 	if(!found_gang)
+		var/new_gang = new gang_team_type()
+		my_gang = new_gang
 		if(handler) // if we have a handler, the handler should track this gang
 			handler.gangs += my_gang
 			my_gang.current_theme = handler.current_theme
@@ -188,6 +192,10 @@
 	/// The current theme. Used to pull important stuff such as spawning equipment and objectives.
 	var/datum/gang_theme/current_theme
 
+/// Allow gangs to have custom naming schemes for their gangsters.
+/datum/team/gang/proc/rename_gangster(datum/mind/gangster, original_name, starter_gangster)
+	gangster.current.fully_replace_character_name(gangster.current.real_name, original_name)
+
 /datum/team/gang/roundend_report()
 	var/list/report = list()
 	report += "<span class='header'>[name]:</span>"
@@ -265,6 +273,9 @@
 		/obj/item/clothing/under/suit/white,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Russian"
+	gang_team_type = /datum/team/gang/russian_mafia
+
+/datum/team/gang/russian_mafia/rename_gangster()
 
 /datum/antagonist/gang/italian_mob
 	show_in_antagpanel = TRUE
@@ -280,6 +291,9 @@
 		/obj/item/clothing/under/suit/checkered,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Italian"
+	gang_team_type = /datum/team/gang/russian_mafia
+
+/datum/team/gang/russian_mafia/rename_gangster()
 
 /datum/antagonist/gang/tunnel_snakes
 	show_in_antagpanel = TRUE
@@ -294,6 +308,9 @@
 		/obj/item/clothing/under/pants/classicjeans,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Snakes"
+	gang_team_type = /datum/team/gang/tunnel_snakes
+
+/datum/team/gang/tunnel_snakes/rename_gangster()
 
 /datum/antagonist/gang/henchmen
 	show_in_antagpanel = TRUE
@@ -311,6 +328,14 @@
 		/obj/item/clothing/under/suit/henchmen,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Monarch"
+	gang_team_type = /datum/team/gang/henchmen
+
+/datum/team/gang/henchmen
+	var/henchmen_count = 0
+
+/datum/team/gang/henchmen/rename_gangster(datum/mind/gangster, original_name, starter_gangster)
+	henchmen_count++
+	gangster.current.fully_replace_character_name(gangster.current.real_name, "Number [henchmen_count]")
 
 /datum/antagonist/gang/yakuza
 	show_in_antagpanel = TRUE
@@ -332,6 +357,9 @@
 		/obj/item/clothing/head/hardhat,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Tojo"
+	gang_team_type = /datum/team/gang/yakuza
+
+/datum/team/gang/yakuza/rename_gangster()
 
 /datum/antagonist/gang/jackbros
 	show_in_antagpanel = TRUE
@@ -349,6 +377,9 @@
 		/obj/item/clothing/head/jackbros,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "JackFrost"
+	gang_team_type = /datum/team/gang/jackbros
+
+/datum/team/gang/jackbros/rename_gangster()
 
 /datum/antagonist/gang/dutch
 	show_in_antagpanel = TRUE
@@ -366,6 +397,9 @@
 		/obj/item/clothing/suit/dutch,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Dutch"
+	gang_team_type = /datum/team/gang/dutch
+
+/datum/team/gang/dutch/rename_gangster()
 
 /datum/antagonist/gang/irs
 	show_in_antagpanel = TRUE
@@ -381,6 +415,9 @@
 		/obj/item/clothing/head/irs,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "IRS"
+	gang_team_type = /datum/team/gang/irs
+
+/datum/team/gang/irs/rename_gangster()
 
 /datum/antagonist/gang/osi
 	show_in_antagpanel = TRUE
@@ -396,6 +433,9 @@
 		/obj/item/clothing/glasses/osi,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "OSI"
+	gang_team_type = /datum/team/gang/osi
+
+/datum/team/gang/osi/rename_gangster()
 
 /datum/antagonist/gang/tmc
 	show_in_antagpanel = TRUE
@@ -411,6 +451,9 @@
 		/obj/item/clothing/head/tmc,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "LostMC"
+	gang_team_type = /datum/team/gang/tmc
+
+/datum/team/gang/tmc/rename_gangster()
 
 /datum/antagonist/gang/pg
 	show_in_antagpanel = TRUE
@@ -426,6 +469,9 @@
 		/obj/item/clothing/head/pg,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "PowderGang"
+	gang_team_type = /datum/team/gang/pg
+
+/datum/team/gang/pg/rename_gangster()
 
 /datum/antagonist/gang/driscoll
 	show_in_antagpanel = TRUE
@@ -443,6 +489,9 @@
 		/obj/item/clothing/shoes/cowboyboots,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Drill"
+	gang_team_type = /datum/team/gang/driscoll
+
+/datum/team/gang/driscoll/rename_gangster()
 
 /datum/antagonist/gang/deckers
 	show_in_antagpanel = TRUE
@@ -460,6 +509,9 @@
 		/obj/item/clothing/shoes/deckers,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Deckers"
+	gang_team_type = /datum/team/gang/deckers
+
+/datum/team/gang/deckers/rename_gangster()
 
 /datum/antagonist/gang/morningstar
 	show_in_antagpanel = TRUE
@@ -477,6 +529,9 @@
 		/obj/item/clothing/shoes/morningstar,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "MorningStar"
+	gang_team_type = /datum/team/gang/morningstar
+
+/datum/team/gang/morningstar/rename_gangster()
 
 /datum/antagonist/gang/saints
 	show_in_antagpanel = TRUE
@@ -494,6 +549,16 @@
 		/obj/item/clothing/shoes/saints,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "TheSaints"
+	gang_team_type = /datum/team/gang/saints
+
+/datum/team/gang/saints/rename_gangster(datum/mind/gangster, original_name, starter_gangster)
+	var/static/regex/last_name = new("\[^\\s-\]+$") //First word before whitespace or "-"
+	last_name.Find(original_name)
+	if(starter_gangster)
+		gangster.current.fully_replace_character_name(gangster.current.real_name, "Босс [last_name.match]")
+	else
+		gangster.current.fully_replace_character_name(gangster.current.real_name, original_name)
+
 
 /datum/antagonist/gang/phantom
 	show_in_antagpanel = TRUE
@@ -511,6 +576,9 @@
 		/obj/item/clothing/shoes/phantom,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "PhantomThieves"
+	gang_team_type = /datum/team/gang/phantom
+
+/datum/team/gang/phantom/rename_gangster()
 
 /datum/antagonist/gang/allies
 	show_in_antagpanel = TRUE
@@ -525,6 +593,9 @@
 		/obj/item/clothing/shoes/jackboots,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Allies"
+	gang_team_type = /datum/team/gang/allies
+
+/datum/team/gang/allies/rename_gangster()
 
 /datum/antagonist/gang/soviet
 	show_in_antagpanel = TRUE
@@ -539,6 +610,9 @@
 		/obj/item/clothing/shoes/jackboots,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "Soviets"
+	gang_team_type = /datum/team/gang/soviet
+
+/datum/team/gang/soviet/rename_gangster()
 
 /datum/antagonist/gang/yuri
 	show_in_antagpanel = TRUE
@@ -553,6 +627,9 @@
 		/obj/item/clothing/shoes/jackboots,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "YuriArmy"
+	gang_team_type = /datum/team/gang/yuri
+
+/datum/team/gang/yuri/rename_gangster()
 
 /datum/antagonist/gang/sybil_slickers
 	show_in_antagpanel = TRUE
@@ -567,6 +644,9 @@
 		/obj/item/clothing/shoes/sybil_slickers,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "SybilSlickers"
+	gang_team_type = /datum/team/gang/sybil_slickers
+
+/datum/team/gang/sybil_slickers/rename_gangster()
 
 /datum/antagonist/gang/basil_boys
 	show_in_antagpanel = TRUE
@@ -581,3 +661,6 @@
 		/obj/item/clothing/shoes/basil_boys,
 		/obj/item/toy/crayon/spraycan)
 	antag_hud_name = "BasilBoys"
+	gang_team_type = /datum/team/gang/basil_boys
+
+/datum/team/gang/basil_boys/rename_gangster()
