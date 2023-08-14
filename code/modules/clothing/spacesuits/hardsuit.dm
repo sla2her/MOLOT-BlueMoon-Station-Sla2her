@@ -825,10 +825,8 @@
 	if(!allowed)
 		allowed = GLOB.advanced_hardsuit_allowed
 
-/obj/item/clothing/suit/space/hardsuit/shielded/equipped(mob/user, slot)
+/obj/item/clothing/suit/space/hardsuit/shielded/ComponentInitialize()
 	. = ..()
-	if(!slot || slot & ITEM_SLOT_HANDS)
-		return
 	AddComponent(/datum/component/shielded, current_charges, max_charges, recharge_delay, recharge_rate, ITEM_SLOT_OCLOTHING, shield_state)
 
 /obj/item/clothing/head/helmet/space/hardsuit/shielded
