@@ -20,7 +20,7 @@
 	STR.max_items = 6
 	STR.allow_quick_gather = TRUE
 	STR.click_gather = TRUE
-	STR.can_hold = typecacheof(list(/obj/item/stack/medical/gauze, /obj/item/reagent_containers/pill/patch/silver_sulf, /obj/item/reagent_containers/pill/patch/styptic, /obj/item/reagent_containers/pill/salbutamol, /obj/item/reagent_containers/pill/charcoal))
+	STR.can_hold = typecacheof(list(/obj/item/stack/medical/gauze, /obj/item/reagent_containers/pill/patch/silver_sulf, /obj/item/reagent_containers/pill/patch/styptic, /obj/item/reagent_containers/pill/salbutamol, /obj/item/reagent_containers/pill/charcoal, /obj/item/reagent_containers/hypospray/medipen))
 
 /obj/item/storage/ifak/PopulateContents()
 	if(empty)
