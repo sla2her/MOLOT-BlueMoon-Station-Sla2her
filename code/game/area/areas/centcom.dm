@@ -183,6 +183,7 @@
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
+	ambientsounds = ARENA_MUSIC
 
 /area/ctf/control_room
 	name = "Control Room A"
@@ -210,6 +211,12 @@
 
 /area/ctf/flag_room2
 	name = "Flag Room B"
+
+/area/ctf/arena
+	name = "Deathmatch Arena"
+	icon_state = "red"
+	requires_power = 0
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 // REEBE
 

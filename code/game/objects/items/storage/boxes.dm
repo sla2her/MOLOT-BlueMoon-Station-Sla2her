@@ -1553,3 +1553,26 @@
 		/obj/item/stack/wrapping_paper/small=1
 		)
 	generate_items_inside(items_inside,src)
+
+/obj/item/storage/box/fireworks
+	name = "box of fireworks"
+	desc = "Contains an assortment of fireworks."
+	illustration = "sparkler"
+
+/obj/item/storage/box/fireworks/PopulateContents()
+	for(var/i in 1 to 3)
+		new/obj/item/sparkler(src)
+		new/obj/item/grenade/firecracker(src)
+	new /obj/item/toy/snappop(src)
+
+/obj/item/storage/box/fireworks/dangerous
+	desc = "This box has a small label on it stating that it's from the Gorlex Marauders. Contains an assortment of \"fireworks\"."
+
+/obj/item/storage/box/fireworks/dangerous/PopulateContents()
+	for(var/i in 1 to 3)
+		new/obj/item/sparkler(src)
+		new/obj/item/grenade/firecracker(src)
+	if(prob(20))
+		new /obj/item/grenade/frag(src)
+	else
+		new /obj/item/toy/snappop(src)

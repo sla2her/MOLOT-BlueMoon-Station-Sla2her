@@ -108,6 +108,12 @@
 #define RUSSIAN_SCREAMS list('sound/voice/human/cyka1.ogg', 'sound/voice/human/rus1.ogg', 'sound/voice/human/rus2.ogg', 'sound/voice/human/rus3.ogg',\
 	'sound/voice/human/rus4.ogg', 'sound/voice/human/rus5.ogg', 'sound/voice/human/rus6.ogg')
 
+#define ARENA_MUSIC list('sound/music/arena/hotline1.ogg', 'sound/music/arena/hotline2.ogg', 'sound/music/arena/hotline3.ogg', 'sound/music/arena/hotline4.ogg',\
+	'sound/music/arena/hotline5.ogg', 'sound/music/arena/hotline6.ogg', 'sound/music/arena/hotline7.ogg', 'sound/music/arena/hotline8.ogg', 'sound/music/arena/hotline9.ogg',\
+	'sound/music/arena/hotline10.ogg', 'sound/music/arena/kat1.ogg', 'sound/music/arena/kat2.ogg', 'sound/music/arena/kat3.ogg', 'sound/music/arena/kat4.ogg',\
+	'sound/music/arena/kat5.ogg', 'sound/music/arena/kat6.ogg', 'sound/music/arena/kat7.ogg', 'sound/music/arena/kat8.ogg', 'sound/music/arena/kat9.ogg',\
+	'sound/music/arena/kat10.ogg')
+
 #define INTERACTION_SOUND_RANGE_MODIFIER -3
 #define EQUIP_SOUND_VOLUME 30
 #define PICKUP_SOUND_VOLUME 15

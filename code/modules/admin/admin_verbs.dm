@@ -36,6 +36,7 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/datum/admins/proc/toggleooclocal,	/*toggles looc on/off for everyone*/
 	/datum/admins/proc/toggleoocdead,	/*toggles ooc on/off for everyone who is dead*/
 	/datum/admins/proc/toggleaooc,		/*toggles antag ooc on/off*/
+	/datum/admins/proc/toggle_deathmatch_arena,		//*EORG
 	/datum/admins/proc/toggleenter,		/*toggles whether people can join the current game*/
 	/datum/admins/proc/toggleguests,	/*toggles whether guests can join the current game*/
 	/datum/admins/proc/announce,		/*priority announce something to all clients.*/
@@ -888,3 +889,11 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set category = "Debug"
 
 	src << output("", "statbrowser:create_debug")
+
+/datum/admins/proc/toggle_deathmatch_arena()
+	set category = "Server"
+	set desc = "Toggle arena on the round end."
+	set name = "Toggle Roundend Deathmatch"
+	config.deathmatch_arena = !config.deathmatch_arena
+	log_admin("[key_name(usr)] toggled Deathmatch Arena to [config.deathmatch_arena].")
+	message_admins("[key_name_admin(usr)] toggled Deathmatch Arena [config.deathmatch_arena ? "on" : "off"].")

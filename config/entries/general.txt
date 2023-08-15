@@ -530,3 +530,6 @@ PAI_CUSTOM_HOLOFORMS
 
 ## Do station renames from the station charter require admin approval to pass, as opposed to autoapproving if not denied.
 STATION_NAME_NEEDS_APPROVAL
+
+## This config option enables or disables deathmatch arena after round end.
+DEATHMATCH_ARENA 1

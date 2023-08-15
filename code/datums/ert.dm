@@ -19,6 +19,7 @@
 /datum/ert/janitor
 	opendoors = FALSE
 	code = "Crap"
+	mission = "Очистите станцию от всевозможной грязи."
 	leader_role = /datum/antagonist/ert/janitor
 	roles = list(/datum/antagonist/ert/janitor)
 

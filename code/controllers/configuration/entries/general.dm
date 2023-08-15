@@ -354,3 +354,6 @@
 
 /datum/config_entry/number/commendation_percent_poll
 	integer = FALSE
+
+/datum/config_entry/flag/deathmatch_arena
+	config_entry_value = TRUE

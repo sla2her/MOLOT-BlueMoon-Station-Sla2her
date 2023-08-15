@@ -59,7 +59,7 @@
 	var/blood_id = C.get_blood_id()
 	if((blood_id in GLOB.blood_reagent_types) && !HAS_TRAIT(C, TRAIT_NOMARROW) && !HAS_TRAIT(C, TRAIT_BLOODFLEDGE))
 		if(!data || !(data["blood_type"] in get_safe_blood(C.dna.blood_type)))	//we only care about bloodtype here because this is where the poisoning should be
-			C.adjustToxLoss(rand(2,8)*REAGENTS_EFFECT_MULTIPLIER, TRUE, TRUE)	//forced to ensure people don't use it to gain beneficial toxin as slime person
+			C.adjustToxLoss(rand(2,8)*REM, TRUE, TRUE)	//forced to ensure people don't use it to gain beneficial toxin as slime person
 	..()
 
 /datum/reagent/blood/reaction_obj(obj/O, volume)
@@ -177,10 +177,10 @@
 	if(prob(10))
 		if(M.dna?.species?.exotic_bloodtype != "GEL")
 			to_chat(M, "<span class='danger'>Your insides are burning!</span>")
-		M.adjustToxLoss(rand(20,60)*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustToxLoss(rand(20,60)*REM, 0)
 		. = 1
 	else if(prob(40) && isjellyperson(M))
-		M.heal_bodypart_damage(2*REAGENTS_EFFECT_MULTIPLIER)
+		M.heal_bodypart_damage(2*REM)
 		. = 1
 	..()
 
@@ -487,10 +487,10 @@
 
 /datum/reagent/hellwater/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_CURSED_BLOOD))
-		M.adjustToxLoss(-0.75*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustOxyLoss(-0.75*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustBruteLoss(-0.75*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustFireLoss(-0.75*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustToxLoss(-0.75*REM, 0)
+		M.adjustOxyLoss(-0.75*REM, 0)
+		M.adjustBruteLoss(-0.75*REM, 0)
+		M.adjustFireLoss(-0.75*REM, 0)
 		M.ExtinguishMob()
 		holder.remove_reagent(type, 1)
 		return
@@ -1027,7 +1027,7 @@
 		mytray.adjustWeeds(-rand(1,3))
 
 /datum/reagent/chlorine/on_mob_life(mob/living/carbon/M)
-	M.take_bodypart_damage(1*REAGENTS_EFFECT_MULTIPLIER, 0, 0, 0)
+	M.take_bodypart_damage(1*REM, 0, 0, 0)
 	. = 1
 	..()
 
@@ -1049,7 +1049,7 @@
 		mytray.adjustWeeds(-rand(1,4))
 
 /datum/reagent/fluorine/on_mob_life(mob/living/carbon/M)
-	M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustToxLoss(1*REM, 0)
 	. = 1
 	..()
 
@@ -1107,7 +1107,7 @@
 		mytray.adjustToxic(round(chems.get_reagent_amount(src.type) * 1))
 
 /datum/reagent/radium/on_mob_life(mob/living/carbon/M)
-	M.apply_effect(2*REAGENTS_EFFECT_MULTIPLIER/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
+	M.apply_effect(2*REM/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
 	..()
 
 /datum/reagent/radium/reaction_turf(turf/T, reac_volume)
@@ -1429,7 +1429,7 @@
 /datum/reagent/impedrezene/on_mob_life(mob/living/carbon/M)
 	M.jitteriness = max(M.jitteriness-5,0)
 	if(prob(80))
-		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2*REAGENTS_EFFECT_MULTIPLIER)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2*REM)
 	if(prob(50))
 		M.drowsyness = max(M.drowsyness, 3)
 	if(prob(10))
@@ -1518,7 +1518,7 @@
 
 /datum/reagent/ammonia/reaction_mob(mob/living/M, method=TOUCH, reac_volume, touch_protection)
 	if(method == VAPOR)
-		M.adjustOrganLoss(ORGAN_SLOT_LUNGS, ((100-touch_protection)/100)*reac_volume*REAGENTS_EFFECT_MULTIPLIER * 0.25)
+		M.adjustOrganLoss(ORGAN_SLOT_LUNGS, ((100-touch_protection)/100)*reac_volume*REM * 0.25)
 		if(prob(reac_volume))
 			to_chat(M, "<span class='danger'>Your lungs hurt!</span>")
 	return ..()
@@ -1609,7 +1609,7 @@
 	..()
 
 /datum/reagent/stimulum/on_mob_life(mob/living/carbon/M)
-	M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustStaminaLoss(-2*REM, 0)
 	current_cycle++
 	holder.remove_reagent(type, 0.99)		//Gives time for the next tick of life().
 	. = TRUE //Update status effects.
@@ -1724,7 +1724,7 @@
 
 /datum/reagent/plantnutriment/on_mob_life(mob/living/carbon/M)
 	if(prob(tox_prob))
-		M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustToxLoss(1*REM, 0)
 		. = 1
 	..()
 
@@ -2599,7 +2599,7 @@
 		var/obj/item/bodypart/wounded_part = W.limb
 		if(wounded_part)
 			wounded_part.heal_damage(0.25, 0.25)
-		M.adjustStaminaLoss(-0.25*REAGENTS_EFFECT_MULTIPLIER) // the more wounds, the more stamina regen
+		M.adjustStaminaLoss(-0.25*REM) // the more wounds, the more stamina regen
 	..()
 
 /datum/reagent/eldritch

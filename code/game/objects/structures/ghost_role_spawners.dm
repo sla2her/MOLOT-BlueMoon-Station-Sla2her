@@ -1410,7 +1410,7 @@
 	neck = /obj/item/clothing/neck/cloak/syndieadm
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
 	back = /obj/item/storage/backpack/satchel
-	belt = /obj/item/gun/ballistic/automatic/pistol/APS
+	belt = /obj/item/gun/ballistic/automatic/pistol/aps
 	head = /obj/item/clothing/head/HoS/syndicate
 	id = /obj/item/card/id/syndicate/advanced/black/gold
 	id_trim = /datum/id_trim/syndicom/ds2/stationadmiral

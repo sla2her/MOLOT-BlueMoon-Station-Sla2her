@@ -450,7 +450,7 @@
 				mode = SHUTTLE_ESCAPE
 				launch_status = ENDGAME_LAUNCHED
 				setTimer(SSshuttle.emergencyEscapeTime * engine_coeff)
-				priority_announce("The Emergency Shuttle has left the station. Estimate [timeLeft(600)] minutes until the shuttle docks at Central Command.", null, null, "Priority")
+				priority_announce("Шаттл Эвакуации покинул станцию. До прибытия Шаттла Эвакуации на Аванпост Центрального Командования осталось [timeLeft(600)] минут.", null, null, "ВНИМАНИЕ: ОТБЫТИЕ ШАТТЛА")
 
 		if(SHUTTLE_STRANDED)
 			SSshuttle.checkHostileEnvironment()
@@ -492,6 +492,7 @@
 						supervisor.", "SYSTEM ERROR:", alert=TRUE)
 
 				dock_id(destination_dock)
+
 				mode = SHUTTLE_ENDGAME
 				timer = 0
 

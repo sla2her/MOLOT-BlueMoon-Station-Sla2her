@@ -324,7 +324,7 @@
 		if(target_move.can_crawl_through())
 			if(is_type_in_typecache(target_move, GLOB.ventcrawl_machinery))
 
-				if(!do_after(src, 25, target = vent_found, required_mobility_flags = MOBILITY_MOVE))
+				if(!do_mob(src, 25, target = vent_found))
 					return
 
 				user.forceMove(target_move.loc) //handle entering and so on.
@@ -340,7 +340,7 @@
 					playsound(src, 'sound/machines/ventcrawl.ogg', 50, 1, -3)
 	else if(is_type_in_typecache(src, GLOB.ventcrawl_machinery) && can_crawl_through()) //if we move in a way the pipe can connect, but doesn't - or we're in a vent
 
-		if(!do_after(src, 25, target = vent_found, required_mobility_flags = MOBILITY_MOVE))
+		if(!do_mob(src, 25, target = vent_found))
 			return
 
 		user.forceMove(loc)

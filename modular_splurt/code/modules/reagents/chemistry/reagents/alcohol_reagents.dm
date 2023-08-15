@@ -184,7 +184,7 @@
 	//Stimulant Effects
 	M.AdjustAllImmobility(-60, FALSE)
 	M.AdjustUnconscious(-60, FALSE)
-	M.adjustStaminaLoss(-20*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustStaminaLoss(-20*REM, FALSE)
 	..()
 	. = 1
 

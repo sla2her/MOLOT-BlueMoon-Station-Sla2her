@@ -310,6 +310,7 @@
 
 	// handle_hearts()
 	handle_hearts()
+
 	if(CONFIG_GET(flag/reveal_everything))
 		set_observer_default_invisibility(0, "<span class='warning'>The round is over! You are now visible to the living.</span>")
 		CHECK_TICK
@@ -343,16 +344,31 @@
 	//stop collecting feedback during grifftime
 	SSblackbox.Seal()
 
+	teleport_players_to_eorg_area()
+
 	sleep(50)
 	ready_for_reboot = TRUE
 	standard_reboot()
+
+/datum/controller/subsystem/ticker/proc/teleport_players_to_eorg_area()
+	if(!config.deathmatch_arena)
+		return
+	for(var/mob/living/M in GLOB.player_list)
+		if(!M.client.prefs.eorg_enabled)
+			continue
+		var/mob/living/carbon/human/L = new(pick(GLOB.eorgwarp))
+		M.mind.transfer_to(L)
+		L.equipOutfit(/datum/outfit/ert/greybois)
+		L.name = "Гладиатор ([rand(1, 1000)])"
+		L.real_name = L.name
+		to_chat(L, "<span class='warning'>Добро пожаловать в End of Round Deathmatch Arena! Оторвитесь по полной и выпустите пар!!</span>")
 
 /datum/controller/subsystem/ticker/proc/standard_reboot()
 	if(ready_for_reboot)
 		if(mode.station_was_nuked)
 			Reboot("Станция уничтожена Ядерной бомбой.", "nuke")
 		else
-			Reboot("КОНЕЦ РАУНДА! ЕОРГ ТОЛЬКО НА ЦК-АРЕНЕ!!", "proper completion", 150 SECONDS)
+			Reboot("КОНЕЦ РАУНДА! ЕОРГ ТОЛЬКО НА ЕОРГ-АРЕНЕ!!", "proper completion", 240 SECONDS)
 	else
 		CRASH("Attempted standard reboot without ticker roundend completion")
 

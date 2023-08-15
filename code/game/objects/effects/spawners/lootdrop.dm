@@ -832,3 +832,36 @@
 		/obj/item/ammo_casing/shotgun = 8,
 		/obj/item/ammo_casing/shotgun/incendiary = 10,
 		)
+
+/obj/effect/spawner/lootdrop/melee
+	name = "Random Melee Weapon"
+	desc = "This is a random melee weapon."
+	icon_state = "esword_dual"
+	lootcount = 1
+	loot = list(
+		/obj/item/kitchen/knife/combat = 1,
+		/obj/item/kitchen/knife/butcher = 1,
+		/obj/item/kitchen/rollingpin = 1,
+		/obj/item/melee/baton = 1,
+		/obj/item/melee/classic_baton = 1,
+		/obj/item/kitchen/knife = 1,
+		/obj/item/melee/classic_baton/telescopic/contractor_baton = 1,
+		/obj/item/melee/chainofcommand = 1,
+		/obj/item/melee/powerfist = 1,
+		/obj/item/spear = 1,
+		/obj/item/hatchet = 1,
+		/obj/item/melee/transforming/energy/sword = 1,
+		/obj/item/extinguisher = 1,
+		/obj/item/dualsaber = 1,
+		/obj/item/fireaxe = 1,
+		/obj/item/inteq_sledgehammer = 1,
+		/obj/item/circular_saw = 1,
+		/obj/item/claymore = 1,
+		/obj/item/scalpel = 1,
+		/obj/item/broken_bottle = 1,
+		/obj/item/scythe = 1,
+		/obj/item/melee/arm_blade = 1,
+		/obj/item/melee/transforming/energy/axe = 1,
+		/obj/item/melee/transforming/energy/blade = 1,
+		/obj/item/banhammer = 1,
+		)

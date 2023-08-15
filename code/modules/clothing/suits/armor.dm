@@ -265,9 +265,12 @@
 		),
 		"Without Any Mark" = list(
 			RESKIN_ICON_STATE = "riot-wm",
-			RESKIN_ITEM_STATE = "riot-wm"
+			RESKIN_ITEM_STATE = "riot"
 		),
 	)
+
+/obj/item/clothing/suit/armor/riot/wm
+	icon_state = "riot-wm"
 
 /obj/item/clothing/suit/armor/bone
 	name = "bone armor"
@@ -292,13 +295,16 @@
 	unique_reskin = list(
 		"Basic" = list(
 			RESKIN_ICON_STATE = "bulletproof",
-			RESKIN_ITEM_STATE = "bulletproof"
+			RESKIN_ITEM_STATE = "armor"
 		),
 		"Without Any Mark" = list(
 			RESKIN_ICON_STATE = "bulletproof-wm",
-			RESKIN_ITEM_STATE = "bulletproof-wm"
+			RESKIN_ITEM_STATE = "armor"
 		),
 	)
+
+/obj/item/clothing/suit/armor/bulletproof/wm
+	icon_state = "bulletproof-wm"
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "reflector vest"

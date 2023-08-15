@@ -2,7 +2,7 @@
 
 //ERT
 /datum/ert/cleanup
-	rename_team = "Trauma Team Squad"
+	rename_team = "Janitor Team Squad"
 	code = "Blue"	//CC probably wouldn't know if it was sabotage or not, but nuclear waste is a hazard to personnel
 	mission = "Remove all nuclear residue from X station"
 	enforce_human = FALSE
@@ -17,16 +17,16 @@
 
 //Antag mind & team (for objectives on what to do)
 /datum/antagonist/ert/cleanup
-	name = "Trauma Team Squad"
-	role = "Trauma Team Squad"
+	name = "Janitor Team Squad"
+	role = "Janitor Team Squad"
 	ert_team = /datum/team/ert/cleanup
 	outfit = /datum/outfit/ert/cleanup
 
 /datum/antagonist/ert/cleanup/greet()
 	//\an [name] because modularization is nice
 	to_chat(owner, "Ты \an [name].\n\
-		Ты должен спасти как можно больше жизней с [station_name()], \
-		ведь по мнению Nanotrasen сотрудники этой Космической Станции очень важны.")
+		Ты должен очистить [station_name()] от всевозможной грязи, \
+		ведь по мнению Nanotrasen чистота структур этой Космической Станции очень важна.")
 
 /datum/team/ert/cleanup
 	mission = "Спаси как можно больше сотрудников."

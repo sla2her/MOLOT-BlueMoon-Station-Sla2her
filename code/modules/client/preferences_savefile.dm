@@ -499,6 +499,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["new_character_creator"]	>> new_character_creator
 	S["view_pixelshift"]		>> view_pixelshift
 
+	// BlueMoon
+	S["eorg_enabled"]		>> eorg_enabled
+
 	//favorite outfits
 	S["favorite_outfits"] >> favorite_outfits
 
@@ -570,6 +573,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//SKYRAT CHANGES BEGIN
 	see_chat_emotes	= sanitize_integer(see_chat_emotes, 0, 1, initial(see_chat_emotes))
 	//SKYRAT CHANGES END
+
+	//BlueMoon
+	eorg_enabled = sanitize_integer(eorg_enabled, 0, 1, initial(eorg_enabled))
 
 	//SPLURT CHANGES BEGIN
 	gfluid_blacklist = sanitize_islist(gfluid_blacklist, list())
@@ -706,6 +712,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["gfluid_blacklist"], gfluid_blacklist)
 	WRITE_FILE(S["new_character_creator"], new_character_creator)
 	WRITE_FILE(S["view_pixelshift"], view_pixelshift)
+	WRITE_FILE(S["eorg_enabled"], eorg_enabled)
 
 	var/mob/living/carbon/human/H = parent.mob
 	if(istype(H))

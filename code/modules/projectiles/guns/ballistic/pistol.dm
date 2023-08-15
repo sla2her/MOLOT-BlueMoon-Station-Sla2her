@@ -107,7 +107,7 @@
 	icon_state = "deaglecamo"
 	item_state = "deagleg"
 
-/obj/item/gun/ballistic/automatic/pistol/APS
+/obj/item/gun/ballistic/automatic/pistol/aps
 	name = "stechkin APS pistol"
 	desc = "The original Russian version of a widely used Syndicate sidearm. Uses 9mm ammo. Has a threaded barrel for suppressors."
 	icon_state = "aps"

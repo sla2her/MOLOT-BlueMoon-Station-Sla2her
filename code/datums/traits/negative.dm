@@ -320,7 +320,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = -1
 	mob_trait = TRAIT_PROSOPAGNOSIA
 	medical_record_text = "Пациент страдает от прозопагнозии и не способен различать лица."
-	medical_record_text = "Пациент страдает от прозопагнозии и не способен различать лица."
 
 /datum/quirk/insanity
 	name = "Диссоциативное расстройство"
@@ -328,8 +327,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = -2
 	//no mob trait because it's handled uniquely
 	gain_text = "<span class='userdanger'>...</span>"
-	lose_text = "<span class='notice'>Вы чувствуете себя в гармонии с миром.</span>"
-	medical_record_text = "Пациент страдает от острого диссоциативного расстройства и испытывает яркие галлюцинации."
 	lose_text = "<span class='notice'>Вы чувствуете себя в гармонии с миром.</span>"
 	medical_record_text = "Пациент страдает от острого диссоциативного расстройства и испытывает яркие галлюцинации."
 	processing_quirk = TRUE
