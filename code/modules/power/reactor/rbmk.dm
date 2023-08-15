@@ -604,6 +604,11 @@ BLUEMOON REMOVAL END */
 	. = ..()
 	addtimer(CALLBACK(src, .proc/link_to_reactor), 10 SECONDS)
 
+/obj/machinery/computer/reactor/Destroy()
+	reactor = null
+	return ..()
+
+
 /obj/machinery/computer/reactor/wrench_act(mob/living/user, obj/item/I)
 	to_chat(user, "<span class='notice'>You start [anchored ? "un" : ""]securing [name]...</span>")
 	if(I.use_tool(src, user, 40, volume=75))
@@ -779,6 +784,11 @@ BLUEMOON REMOVAL END */
 /obj/machinery/computer/reactor/pump/Initialize(mapload, obj/item/circuitboard/C)
 	. = ..()
 	radio_connection = SSradio.add_object(src, FREQ_RBMK_CONTROL,filter=RADIO_ATMOSIA)
+
+/obj/machinery/computer/reactor/pump/Destroy()
+	SSradio.remove_object(src, FREQ_RBMK_CONTROL)
+	radio_connection = null
+	return ..()
 
 /obj/machinery/computer/reactor/pump/proc/signal(power, set_output_pressure=null)
 	var/datum/signal/signal

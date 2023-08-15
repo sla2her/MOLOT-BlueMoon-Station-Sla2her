@@ -114,7 +114,9 @@
 			if(T.taur_mode & S.accepted_taurs) //looks out of place on those.
 				lowershape = "крупный таурский, [lowershape]"
 
-	desc = "Вы наблюдаете [aroused_state ? "эрегированный" : "висящий"] [lowershape] [pick(GLOB.dick_nouns)]. По вашим оценкам, он примерно [round(length*get_size(owner), 0.25)] [round(length*get_size(owner), 0.25) != 1 ? "" : ""] сантиметров в длину и [round(diameter*get_size(owner), 0.25)] [round(diameter*get_size(owner), 0.25) != 1 ? "" : ""] сантиметров в ширину."
+	var/adjusted_length = round(length * (owner ? get_size(owner) : 1), 0.25)
+	var/adjusted_diameter = round(diameter * (owner ? get_size(owner) : 1), 0.25)
+	desc = "Вы наблюдаете [aroused_state ? "эрегированный" : "висящий"] [lowershape] [pick(GLOB.dick_nouns)]. По вашим оценкам, он примерно [adjusted_length] [adjusted_length != 1 ? "" : ""] сантиметров в длину и [adjusted_diameter] [adjusted_diameter != 1 ? "" : ""] сантиметров в ширину."
 
 /obj/item/organ/genital/penis/get_features(mob/living/carbon/human/H)
 	var/datum/dna/D = H.dna
