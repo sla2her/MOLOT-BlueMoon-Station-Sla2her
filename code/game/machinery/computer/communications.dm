@@ -376,7 +376,6 @@
 
 		if("toggleBought")
 			var/boughtID = params["id"]
-			var/obj/item/electropack/shockcollar/slave/collar
 			for(var/tracked_slave in GLOB.tracked_slaves)
 				var/obj/item/electropack/shockcollar/slave/C = tracked_slave
 				if (REF(C) == boughtID) // Get collar
@@ -388,7 +387,7 @@
 							C.setBought(FALSE)
 
 							for(var/obj/machinery/computer/slavery/tracked_slave_console in GLOB.tracked_slave_consoles)
-								priority_announce("Космическая Станция отменяет плату в [collar.price] кредитов за [usr.real_name]. Как жаль!", sender_override = GLOB.slavers_team_name)
+								priority_announce("Космическая Станция отменяет плату в [C.price] кредитов за [usr.real_name]. Как жаль!", sender_override = GLOB.slavers_team_name)
 								tracked_slave_console.radioAnnounce("The station has recalled the ransom funds for [C.loc.name].")
 
 						else
@@ -396,7 +395,7 @@
 							C.setBought(TRUE)
 
 							for(var/obj/machinery/computer/slavery/tracked_slave_console in GLOB.tracked_slave_consoles)
-								priority_announce("Космическая Станция оплачивает возвращение [usr.real_name] всего за [collar.price] кредитов. Замечательно!", sender_override = GLOB.slavers_team_name)
+								priority_announce("Космическая Станция оплачивает возвращение [usr.real_name] всего за [C.price] кредитов. Замечательно!", sender_override = GLOB.slavers_team_name)
 								tracked_slave_console.radioAnnounce("The station has paid the ransom funds for [C.loc.name].")
 					break
 

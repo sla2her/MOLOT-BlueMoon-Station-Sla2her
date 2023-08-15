@@ -20,17 +20,13 @@
 	greentext_reward = 20
 
 /obj/item/card/id/ert/pizza_ert
-	registered_name = "Доставщик Пиццы"
-	assignment = "Доставщик Пиццы"
 
-/obj/item/card/id/ert/pizza_ert/leader/Initialize(mapload)
+/obj/item/card/id/ert/pizza_ert/Initialize(mapload)
 	. = ..()
 
 	access = list(ACCESS_CENT_GENERAL, ACCESS_CENT_LIVING, ACCESS_MAINT_TUNNELS, ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
 
 /obj/item/card/id/ert/pizza_ert
-	registered_name = "Менеджер Пицца-Ресторана"
-	assignment = "Менеджер Пицца-Ресторана"
 
 /obj/item/card/id/ert/pizza_ert/leader/Initialize(mapload)
 	. = ..()
@@ -85,6 +81,9 @@
 		/obj/item/kitchen/knife,\
 		/obj/item/storage/box/ingredients/italian,\
 		)
+
+/datum/outfit/ert/pizza_ert/post_equip()
+	. = ..()
 
 /datum/outfit/ert/pizza/pre_equip(mob/living/carbon/human/equipped_human, visualsOnly)
 	var/list/pizza_list = list(/obj/item/pizzabox/margherita, /obj/item/pizzabox/mushroom, /obj/item/pizzabox/meat, /obj/item/pizzabox/pineapple)

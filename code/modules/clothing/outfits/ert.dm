@@ -54,7 +54,7 @@
 	l_pocket = /obj/item/kitchen/knife/combat
 
 /datum/outfit/ert/commander/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	..()
+	. = ..()
 
 	if(visualsOnly)
 		return

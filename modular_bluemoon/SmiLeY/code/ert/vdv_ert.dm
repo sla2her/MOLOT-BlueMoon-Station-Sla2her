@@ -29,8 +29,6 @@
 	owner.current.fully_replace_character_name(owner.current.real_name,"Лейтенант [pick(name_source)]")
 
 /obj/item/card/id/ert/vdv/lieutenant
-	registered_name = "Лейтенант ВДВ"
-	assignment = "Лейтенант ВДВ"
 
 /obj/item/card/id/ert/vdv/lieutenant/Initialize(mapload)
 	. = ..()
@@ -38,8 +36,6 @@
 	access = list(ACCESS_CENT_GENERAL, ACCESS_CENT_LIVING, ACCESS_MAINT_TUNNELS, ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
 
 /obj/item/card/id/ert/vdv
-	registered_name = "Солдат ВДВ"
-	assignment = "Солдат ВДВ"
 
 /obj/item/card/id/ert/vdv/Initialize(mapload)
 	. = ..()
@@ -59,7 +55,7 @@
 	head = /obj/item/clothing/head/HoS/beret/nri
 	glasses = /obj/item/clothing/glasses/sunglasses
 	belt = /obj/item/storage/belt/security/vdv
-	id = /obj/item/card/id/ert/vdv
+	id = /obj/item/card/id/ert
 	l_pocket = /obj/item/gun/ballistic/automatic/pistol
 	r_pocket = /obj/item/ammo_box/magazine/m10mm
 	back = /obj/item/storage/backpack/rucksack
@@ -83,6 +79,8 @@
 		l_hand = /obj/item/ammo_casing/caseless/rocket
 
 /datum/outfit/ert/vdv/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
 	if(visualsOnly)
 		return
 
@@ -104,7 +102,7 @@
 	head = /obj/item/clothing/head/HoS/beret/nri
 	glasses = /obj/item/clothing/glasses/sunglasses
 	belt = /obj/item/storage/belt/military/army/vdv
-	id = /obj/item/card/id/ert/vdv/lieutenant
+	id = /obj/item/card/id/ert
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/storage/pill_bottle/zvezdochka =1,
@@ -120,6 +118,8 @@
 /datum/outfit/ert/vdv/leader/pre_equip(mob/living/carbon/human/H)
 
 /datum/outfit/ert/vdv/leader/post_equip(mob/living/carbon/human/H, visualsOnly)
+	. = ..()
+
 	var/obj/item/radio/R = H.ears
 	R.keyslot = new /obj/item/encryptionkey/heads/hos
 	R.recalculateChannels()
