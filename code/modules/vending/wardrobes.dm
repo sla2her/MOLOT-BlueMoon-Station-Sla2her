@@ -49,7 +49,7 @@
 					/obj/item/clothing/neck/cloak/security = 6) //BlueMoon Add)
 	contraband = list(/obj/item/clothing/under/rank/security/stripper = 5,
 						/obj/item/clothing/mask/gas/sechailer/slut = 4,
-						/obj/item/clothing/mask/gas/sechailer/swat = 2,
+						/obj/item/clothing/mask/gas/sechailer/swat/officer = 2,
 						/obj/item/clothing/mask/gas/syndicate/ds = 5,
 						/obj/item/clothing/mask/russian_balaclava = 5,
 						/obj/item/clothing/mask/gas/sechailer/syndicate = 5,

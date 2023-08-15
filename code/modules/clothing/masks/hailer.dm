@@ -31,6 +31,18 @@
 	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 	visor_flags_inv = 0
 
+/obj/item/clothing/mask/gas/sechailer/swat/officer
+	name = "\improper Officer SWAT mask"
+	icon_state = "officermask"
+
+/obj/item/clothing/mask/gas/sechailer/swat/hos
+	name = "\improper HOS SWAT mask"
+	icon_state = "hosmask"
+
+/obj/item/clothing/mask/gas/sechailer/swat/blueshield
+	name = "\improper Blueshield SWAT mask"
+	icon_state = "blue_sechailer"
+
 /obj/item/clothing/mask/gas/sechailer/cyborg
 	name = "security hailer"
 	desc = "A set of recognizable pre-recorded messages for cyborgs to use when apprehending criminals."
