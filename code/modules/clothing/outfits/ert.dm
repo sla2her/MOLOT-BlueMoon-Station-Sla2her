@@ -296,7 +296,7 @@
 	mask = /obj/item/clothing/mask/gas/sechailer
 	head = /obj/item/clothing/head/helmet/swat/janitor
 	suit = /obj/item/clothing/suit/armor/hos/janitor
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	glasses = /obj/item/clothing/glasses/night/syndicate
 	back = /obj/item/storage/backpack/captain
 	belt = /obj/item/storage/belt/janitor/ert_maid
 	r_hand = /obj/item/gun/energy/e_gun/advtaser
