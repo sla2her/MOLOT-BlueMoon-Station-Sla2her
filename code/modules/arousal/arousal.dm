@@ -133,8 +133,8 @@
 		to_chat(src, span_userlove("Bы испытываете оргазм с <b>[L]</b>, вливая <b>[Lgen.name]</b>. [G.name] требует отдыха."))
 		to_chat(L, span_userlove("[src] кульминирует [(Lgen) ? "в [Lgen.name]" : "с тобой"], заполняя тебя при помощи [ru_ego()] [G.name]!"))
 	else //knots and other non-spilling orgasms
-		to_chat(src, span_userlove("Bы кончаете [(Lgen) ? "в [L] [Lgen.name]" : "благодаря [L]"]. [G.name] не проливает ни миллилитра мимо."))
-		to_chat(L, span_userlove("[src] кончает [(Lgen) ? "в [Lgen.name]" : ""]. [G.name] не проливает ни миллилитра мимо!"))
+		to_chat(src, span_userlove("Bы кончаете[(Lgen) ? " в [L] [Lgen.name]" : "благодаря [L]"]. [G.name] не проливает ни миллилитра мимо."))
+		to_chat(L, span_userlove("[src] кончает[(Lgen) ? " в [Lgen.name]" : ""]. [G.name] не проливает ни миллилитра мимо!"))
 	//SEND_SIGNAL(L, COMSIG_ADD_MOOD_EVENT, "orgasm", /datum/mood_event/orgasm) //Sandstorm edit
 	do_climax(fluid_source, spillage ? loc : L, G, spillage,, Lgen)
 	//L.receive_climax(src, Lgen, G, spillage)
