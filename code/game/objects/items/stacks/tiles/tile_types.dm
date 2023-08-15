@@ -18,8 +18,11 @@
 
 /obj/item/stack/tile/Initialize(mapload, amount)
 	. = ..()
+	if(tile_reskin_types)
+		tile_reskin_types = tile_reskin_list(tile_reskin_types)
 	pixel_x = rand(-3, 3)
 	pixel_y = rand(-3, 3) //randomize a little
+	air_update_turf(TRUE) // Почему.
 
 /obj/item/stack/tile/examine(mob/user)
 	. = ..()

@@ -355,7 +355,7 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 	var/random_target_priority = TARGET_CLOSEST // if random_target is enabled how it will pick the target
 
 
-/obj/effect/proc_holder/spell/aoe //affects all turfs in view or range (depends)
+/obj/effect/proc_holder/spell/aoe_turf //affects all turfs in view or range (depends)
 	var/inner_radius = -1 //for all your ring spell needs
 
 /obj/effect/proc_holder/spell/targeted/choose_targets(mob/user = usr)
@@ -426,7 +426,7 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 
 	perform(targets,user=user)
 
-/obj/effect/proc_holder/spell/aoe/choose_targets(mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/choose_targets(mob/user = usr)
 	var/list/targets = list()
 
 	for(var/turf/target in view_or_range(range,user,selection_type))

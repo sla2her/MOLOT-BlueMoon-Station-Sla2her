@@ -5,7 +5,7 @@
 //LURKER//
 
 //STEALTH AKA INVISIBILLITY
-/obj/effect/proc_holder/spell/aoe/terror_stealth
+/obj/effect/proc_holder/spell/aoe_turf/terror_stealth
 	name = "Stealth"
 	desc = "Become completely invisible for a short time."
 	action_icon_state = "stealth"
@@ -15,16 +15,16 @@
 	sound = 'sound/creatures/terrorspiders/stealth.ogg'
 	var/duration = 8 SECONDS
 
-/obj/effect/proc_holder/spell/aoe/terror_stealth/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_stealth/choose_targets()
 	return new /datum/spell_targeting/self
 
-/obj/effect/proc_holder/spell/aoe/terror_stealth/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/terror_stealth/cast(list/targets, mob/user = usr)
 	user.alpha = 0
 	user.visible_message("<span class='warning'>[user] suddenly disappears!</span>", "<span class='purple'>You are invisible now!</span>")
 	addtimer(CALLBACK(src, PROC_REF(reveal), user), duration)
 
 
-/obj/effect/proc_holder/spell/aoe/terror_stealth/proc/reveal(mob/user)
+/obj/effect/proc_holder/spell/aoe_turf/terror_stealth/proc/reveal(mob/user)
 	if(QDELETED(user))
 		return
 
@@ -36,7 +36,7 @@
 //HEALER//
 
 //LESSER HEALING
-/obj/effect/proc_holder/spell/aoe/terror_healing
+/obj/effect/proc_holder/spell/aoe_turf/terror_healing
 	name = "Heal"
 	desc = "Exude feromones to heal your allies"
 	action_icon_state = "heal"
@@ -49,14 +49,14 @@
 	var/apply_heal_buff = FALSE
 
 
-/obj/effect/proc_holder/spell/aoe/terror_healing/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_healing/choose_targets()
 	var/datum/spell_targeting/aoe/T = new()
 	T.range = inner_radius
 	T.allowed_type = /mob/living/simple_animal/hostile/poison/terror_spider
 	return T
 
 
-/obj/effect/proc_holder/spell/aoe/terror_healing/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/terror_healing/cast(list/targets, mob/user = usr)
 	for(var/mob/living/simple_animal/hostile/poison/terror_spider/spider in targets)
 		visible_message("<span class='green'>[user] exudes feromones and heals spiders around!</span>")
 		spider.adjustBruteLoss(-heal_amount)
@@ -157,7 +157,7 @@
 
 
 //EXPLOSION
-/obj/effect/proc_holder/spell/aoe/terror_burn
+/obj/effect/proc_holder/spell/aoe_turf/terror_burn
 	name = "Burn!"
 	desc = "Release your energy to create a massive fire ring."
 	action_icon_state = "explosion"
@@ -168,7 +168,7 @@
 	range = 5
 
 
-/obj/effect/proc_holder/spell/aoe/explosion/terror_burn/can_cast(mob/user = usr, charge_check = TRUE, show_message = FALSE)
+/obj/effect/proc_holder/spell/aoe_turf/explosion/terror_burn/can_cast(mob/user = usr, charge_check = TRUE, show_message = FALSE)
 	if(!isturf(user.loc))
 		return FALSE
 	return ..()
@@ -177,7 +177,7 @@
 //GUARD//
 
 //SHIELD
-/obj/effect/proc_holder/spell/aoe/conjure/terror_shield
+/obj/effect/proc_holder/spell/aoe_turf/conjure/terror_shield
 	name = "Guardian shield"
 	desc = "Create a temporary organic shield to protect your hive."
 	action_icon_state = "terror_shield"
@@ -217,7 +217,7 @@
 //DEFILER//
 
 //SMOKE
-/obj/effect/proc_holder/spell/aoe/terror_smoke
+/obj/effect/proc_holder/spell/aoe_turf/terror_smoke
 	name = "Smoke"
 	desc = "Erupt a smoke to confuse your enemies."
 	action_icon_state = "smoke"
@@ -238,18 +238,18 @@
 	return list(user) // That's how simple it is
 
 
-/obj/effect/proc_holder/spell/aoe/terror_smoke/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_smoke/choose_targets()
 	return new /datum/spell_targeting/self
 
 
-/obj/effect/proc_holder/spell/aoe/terror_smoke/can_cast(mob/user = usr, charge_check = TRUE, show_message = FALSE)
+/obj/effect/proc_holder/spell/aoe_turf/terror_smoke/can_cast(mob/user = usr, charge_check = TRUE, show_message = FALSE)
 	if(!isturf(user.loc))
 		return FALSE
 	return ..()
 
 
 //PARALYSING SMOKE
-/obj/effect/proc_holder/spell/aoe/terror_parasmoke
+/obj/effect/proc_holder/spell/aoe_turf/terror_parasmoke
 	name = "Paralyzing Smoke"
 	desc = "Erupt a smoke to paralyze your enemies."
 	action_icon_state = "biohazard2"
@@ -259,17 +259,17 @@
 	sound = 'sound/creatures/terrorspiders/attack2.ogg'
 
 
-/obj/effect/proc_holder/spell/aoe/terror_parasmoke/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_parasmoke/choose_targets()
 	return new /datum/spell_targeting/self
 
 
-/obj/effect/proc_holder/spell/aoe/terror_parasmoke/can_cast(mob/user = usr, charge_check = TRUE, show_message = FALSE)
+/obj/effect/proc_holder/spell/aoe_turf/terror_parasmoke/can_cast(mob/user = usr, charge_check = TRUE, show_message = FALSE)
 	if(!isturf(user.loc))
 		return FALSE
 	return ..()
 
 
-/obj/effect/proc_holder/spell/aoe/terror_parasmoke/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/terror_parasmoke/cast(list/targets, mob/user = usr)
 	var/datum/effect_system/smoke_spread/chem/smoke = new
 	create_reagents(2000)
 	reagents.add_reagent("neurotoxin", 1000)
@@ -279,7 +279,7 @@
 
 
 //TERRIFYING SHRIEK
-/obj/effect/proc_holder/spell/aoe/terror_shriek
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek
 	name = "Terrify"
 	desc = "Emit a loud shriek to terrify your enemies."
 	action_icon_state = "terror_shriek"
@@ -290,14 +290,14 @@
 	sound = 'sound/creatures/terrorspiders/white_shriek.ogg'
 
 
-/obj/effect/proc_holder/spell/aoe/terror_shriek/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek/choose_targets()
 	var/datum/spell_targeting/aoe/T = new()
 	T.range = inner_radius
 	T.allowed_type = /mob/living
 	return T
 
 
-/obj/effect/proc_holder/spell/aoe/terror_shriek/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek/cast(list/targets, mob/user = usr)
 	for(var/mob/living/target in targets)
 		if(iscarbon(target))
 			to_chat(target, "<span class='danger'><b>A spike of pain drives into your head and scrambles your thoughts!</b></span>")
@@ -316,7 +316,7 @@
 //PRINCESS//
 
 //SHRIEK
-/obj/effect/proc_holder/spell/aoe/terror_shriek_princess
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek_princess
 	name = "Princess Shriek"
 	desc = "Emits a loud shriek that weakens your enemies."
 	action_icon_state = "terror_shriek"
@@ -327,14 +327,14 @@
 	sound = 'sound/creatures/terrorspiders/princess_shriek.ogg'
 
 
-/obj/effect/proc_holder/spell/aoe/terror_shriek_princess/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek_princess/choose_targets()
 	var/datum/spell_targeting/aoe/T = new()
 	T.range = inner_radius
 	T.allowed_type = /mob/living
 	return T
 
 
-/obj/effect/proc_holder/spell/aoe/terror_shriek_princess/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek_princess/cast(list/targets, mob/user = usr)
 	for(var/mob/living/target in targets)
 		if(iscarbon(target))
 			to_chat(target, "<span class='danger'><b>A spike of pain drives into your head and scrambles your thoughts!</b></span>")
@@ -351,7 +351,7 @@
 //PRINCE//
 
 //SLAM
-/obj/effect/proc_holder/spell/aoe/terror_slam
+/obj/effect/proc_holder/spell/aoe_turf/terror_slam
 	name = "Slam"
 	desc = "Slam the ground with your body."
 	action_icon_state = "slam"
@@ -363,13 +363,13 @@
 	sound = 'sound/creatures/terrorspiders/prince_attack.ogg'
 
 
-/obj/effect/proc_holder/spell/aoe/terror_slam/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_slam/choose_targets()
 	var/datum/spell_targeting/aoe/turf/T = new()
 	T.range = inner_radius
 	return T
 
 
-/obj/effect/proc_holder/spell/aoe/terror_slam/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/terror_slam/cast(list/targets, mob/user = usr)
 	for(var/turf/target_turf in targets)
 		for(var/mob/living/carbon/target in target_turf.contents)
 			target.adjustBruteLoss(20)
@@ -383,7 +383,7 @@
 //MOTHER//
 
 //JELLY PRODUCTION
-/obj/effect/proc_holder/spell/aoe/conjure/terror_jelly
+/obj/effect/proc_holder/spell/aoe_turf/conjure/terror_jelly
 	name = "Produce jelly"
 	desc = "Produce an organic jelly that heals spiders."
 	action_icon_state = "spiderjelly"
@@ -396,7 +396,7 @@
 
 
 //MASS HEAL
-/obj/effect/proc_holder/spell/aoe/terror_healing/greater
+/obj/effect/proc_holder/spell/aoe_turf/terror_healing/greater
 	name = "Massive healing"
 	cooldown_min = 40 SECONDS
 	inner_radius = 7
@@ -409,7 +409,7 @@
 //ALL HAIL THE QUEEN//
 
 //SHRIEK
-/obj/effect/proc_holder/spell/aoe/terror_shriek_queen
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek_queen
 	name = "Queen Shriek"
 	desc = "Emit a loud shriek that weakens your enemies."
 	action_icon_state = "terror_shriek"
@@ -420,13 +420,13 @@
 	sound = 'sound/creatures/terrorspiders/queen_shriek.ogg'
 
 
-/obj/effect/proc_holder/spell/aoe/terror_shriek_queen/choose_targets()
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek_queen/choose_targets()
 	var/datum/spell_targeting/aoe/turf/T = new()
 	T.range = inner_radius
 	return T
 
 
-/obj/effect/proc_holder/spell/aoe/terror_shriek_queen/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/aoe_turf/terror_shriek_queen/cast(list/targets, mob/user = usr)
 	for(var/turf/target_turf in targets)
 		for(var/mob/living/target in target_turf.contents)
 			if(iscarbon(target))

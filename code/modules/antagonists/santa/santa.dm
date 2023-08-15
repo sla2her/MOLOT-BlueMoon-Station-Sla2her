@@ -19,7 +19,7 @@
 	if(istype(H))
 		H.equipOutfit(/datum/outfit/santa)
 
-	owner.AddSpell(new /obj/effect/proc_holder/spell/aoe/conjure/presents)
+	owner.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/conjure/presents)
 	var/obj/effect/proc_holder/spell/targeted/area_teleport/teleport/telespell = new
 	telespell.clothes_req = NONE //santa robes aren't actually magical.
 	owner.AddSpell(telespell) //does the station have chimneys? WHO KNOWS!

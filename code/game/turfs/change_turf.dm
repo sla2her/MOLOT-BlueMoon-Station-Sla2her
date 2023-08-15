@@ -259,6 +259,7 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 			baseturfs += new_baseturfs
 	else
 		change_type = new_baseturfs
+	air_update_turf(TRUE) 						// Почему.
 	return ChangeTurf(change_type, null, flags)
 
 // Copy an existing turf and put it on top

@@ -64649,10 +64649,6 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 8
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/structure/closet/secure_closet/brig,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
@@ -64783,10 +64779,6 @@
 "knx" = (
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/structure/closet/secure_closet/genpop,
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/structure/table,
 /obj/item/modular_computer/laptop/preset/civilian,
@@ -69933,7 +69925,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/closet/secure_closet/brig,
+/obj/structure/closet/secure_closet/genpop,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "vMa" = (

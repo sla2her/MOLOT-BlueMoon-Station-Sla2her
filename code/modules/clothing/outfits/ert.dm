@@ -298,9 +298,10 @@
 	suit = /obj/item/clothing/suit/armor/hos/janitor
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	back = /obj/item/storage/backpack/captain
-	belt = /obj/item/storage/belt/security/full
+	belt = /obj/item/storage/belt/janitor/ert_maid
 	r_hand = /obj/item/gun/energy/e_gun/advtaser
-	backpack_contents = list(/obj/item/storage/firstaid/tactical/slaver=1,
+	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
+		/obj/item/storage/firstaid/tactical/slaver=1,
 		/obj/item/crowbar/power=1,
 		/obj/item/bodybag/bluespace=1,
 		/obj/item/mop/advanced=1)
