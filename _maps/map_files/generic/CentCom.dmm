@@ -15510,6 +15510,7 @@
 /area/centcom/ferry)
 "ovq" = (
 /obj/effect/landmark/start/eorgwarp,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/ctf/arena)
 "ovA" = (
@@ -20260,6 +20261,7 @@
 /area/holodeck/rec_center/court)
 "sTD" = (
 /obj/effect/landmark/start/eorgwarp,
+/obj/machinery/light/floor,
 /obj/effect/spawner/lootdrop/melee,
 /turf/open/floor/plasteel/dark,
 /area/ctf/arena)
