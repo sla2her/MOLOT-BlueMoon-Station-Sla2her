@@ -3,6 +3,7 @@
     typepath = /datum/round_event/gigachad_inteq
     max_occurrences = 2
     weight = 30
+	category = EVENT_CATEGORY_ENTITIES
 
 /datum/round_event/gigachad_inteq/announce(fake)
 	priority_announce("Один из наших... кхм... особых заключённых сбежал. Так получилось, что его последнее известное местонахождение до того, как их маячок заглох, - это ваша станция, так что будьте осторожней и остерегайтесь Технических Тоннелей. И еще... что это за стуки металла?",

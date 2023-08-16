@@ -4,6 +4,7 @@
 	weight = 60
 	min_players = 10
 	max_occurrences = 2
+	category = EVENT_CATEGORY_ENTITIES
 
 /datum/round_event/mice_migration
 	var/minimum_mice = 5

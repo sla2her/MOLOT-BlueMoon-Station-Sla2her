@@ -3,6 +3,7 @@
 	typepath = /datum/round_event/bureaucratic_error
 	max_occurrences = 2
 	weight = 45
+	category = EVENT_CATEGORY_BUREAUCRATIC
 
 /datum/round_event/bureaucratic_error
 	announce_when = 1
