@@ -123,11 +123,11 @@
 			"душит <b>[partner]</b>, снова и снова засовывая свой влажный орган по самые яйца.",
 			"молотит рот <b>[partner]</b> с чавкающим звуком и раз за разом приземляется своими яйцами аккурат в лицо.")]"
 		if(rand(3))
-			partner.emote("chokes on \the [user]")
+			partner.emote("кашляет на [user]")
 			if(prob(1) && istype(partner)) //Handled on modular_splurt
-				partner.adjustOxyLoss(20)
+				partner.adjustOxyLoss(rand(3,6))
 		if(partner.a_intent == INTENT_HARM)
-			partner.adjustBruteLoss(3)
+			partner.adjustBruteLoss(rand(3,6))
 			retaliation_message = pick(
 				"смотрит вверх из-под колен \the [user] и раз за разом пытается вывернуться в попытке выбраться.",
 				"пытается вырваться из-под ног \the [user].",
