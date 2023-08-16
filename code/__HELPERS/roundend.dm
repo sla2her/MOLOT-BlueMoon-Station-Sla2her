@@ -356,12 +356,19 @@
 	for(var/mob/living/M in GLOB.player_list)
 		if(!M.client.prefs.eorg_enabled)
 			continue
-		var/mob/living/carbon/human/L = new(pick(GLOB.eorgwarp))
+		spawn_gladiator(M)
+
+/datum/controller/subsystem/ticker/proc/spawn_gladiator(mob/M, transfer_mind = TRUE)
+	var/mob/living/carbon/human/L = new(pick(GLOB.eorgwarp))
+	if(transfer_mind)
 		M.mind.transfer_to(L)
-		L.equipOutfit(/datum/outfit/ert/greybois)
-		L.name = "Гладиатор ([rand(1, 1000)])"
-		L.real_name = L.name
-		to_chat(L, "<span class='warning'>Добро пожаловать в End of Round Deathmatch Arena! Оторвитесь по полной и выпустите пар!!</span>")
+	else
+		L.key = M.key
+	L.playsound_local(null, ARENA_MUSIC, vary = FALSE, frequency = null)
+	L.equipOutfit(/datum/outfit/ert/greybois)
+	L.name = L.key
+	L.real_name = L.name
+	to_chat(L, "<span class='warning'>Добро пожаловать в End of Round Deathmatch Arena! Оторвитесь по полной и выпустите пар!!</span>")
 
 /datum/controller/subsystem/ticker/proc/standard_reboot()
 	if(ready_for_reboot)
