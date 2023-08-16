@@ -19,6 +19,7 @@
 				/obj/item/restraints/handcuffs/fake/kinky = 5,
 				/obj/item/clothing/glasses/sunglasses/blindfold = 4,
 				/obj/item/clothing/mask/muzzle = 4,
+				/obj/item/clothing/mask/gas/sechailer/slut = 4,
 				/obj/item/clothing/shoes/highheels = 3,
 				/obj/item/clothing/under/misc/stripper = 3,
 				/obj/item/clothing/under/misc/stripper/green = 3,
