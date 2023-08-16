@@ -88,3 +88,17 @@
 /datum/outfit/ert/pizza/pre_equip(mob/living/carbon/human/equipped_human, visualsOnly)
 	var/list/pizza_list = list(/obj/item/pizzabox/margherita, /obj/item/pizzabox/mushroom, /obj/item/pizzabox/meat, /obj/item/pizzabox/pineapple)
 	r_hand = pick(pizza_list)
+	backpack_contents += list(
+		pizza_list,\
+		pizza_list,\
+		pizza_list,\
+		)
+
+/datum/outfit/ert/pizza/leader/pre_equip(mob/living/carbon/human/equipped_human, visualsOnly)
+	var/list/pizza_list = list(/obj/item/pizzabox/margherita, /obj/item/pizzabox/mushroom, /obj/item/pizzabox/meat, /obj/item/pizzabox/pineapple)
+	r_hand = pick(pizza_list)
+	backpack_contents += list(
+		pizza_list,\
+		pizza_list,\
+		pizza_list,\
+		)

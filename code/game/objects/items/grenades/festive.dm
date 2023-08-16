@@ -111,8 +111,6 @@
 
 /obj/item/grenade/firecracker/prime(mob/living/lanced_by)
 	. = ..()
-	if(!.)
-		return
 
 	update_mob()
 	explosion(src, devastation_range = -1, heavy_impact_range = -1, light_impact_range = 2)

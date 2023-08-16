@@ -8,34 +8,34 @@
 	code = "Rainbow"
 
 /datum/antagonist/ert/clown
-	role = "Clown"
-	outfit = /datum/outfit/centcom/ert/clown
+	role = "Клоун"
+	outfit = /datum/outfit/ert/clown
 
 /datum/antagonist/ert/clown/New()
 	. = ..()
 	name_source = GLOB.clown_names
 
 /datum/antagonist/ert/janitor/party
-	role = "Party Cleaning Service"
-	outfit = /datum/outfit/centcom/ert/janitor/party
+	role = "Пати-Уборщик"
+	outfit = /datum/outfit/ert/janitor/party
 
 /datum/antagonist/ert/security/party
-	role = "Party Bouncer"
-	outfit = /datum/outfit/centcom/ert/security/party
+	role = "Пати-Bышибала"
+	outfit = /datum/outfit/ert/security/party
 
 /datum/antagonist/ert/engineer/party
-	role = "Party Constructor"
-	outfit = /datum/outfit/centcom/ert/engineer/party
+	role = "Пати-Инженер"
+	outfit = /datum/outfit/ert/engineer/party
 
 /datum/antagonist/ert/clown/party
-	role = "Party Comedian"
-	outfit = /datum/outfit/centcom/ert/clown/party
+	role = "Пати-Комедиант"
+	outfit = /datum/outfit/ert/clown/party
 
 /datum/antagonist/ert/commander/party
-	role = "Party Coordinator"
-	outfit = /datum/outfit/centcom/ert/commander/party
+	role = "Пати-Организатор"
+	outfit = /datum/outfit/ert/commander/party
 
-/datum/outfit/centcom/ert/janitor/party
+/datum/outfit/ert/janitor/party
 	name = "ERP Cleaning Service"
 
 	uniform = /obj/item/clothing/under/misc/overalls
@@ -54,7 +54,7 @@
 	r_pocket = /obj/item/grenade/chem_grenade/cleaner
 	l_hand = /obj/item/storage/bag/trash
 
-/datum/outfit/centcom/ert/security/party
+/datum/outfit/ert/security/party
 	name = "ERP Bouncer"
 
 	uniform = /obj/item/clothing/under/rank/security/officer/util
@@ -69,7 +69,7 @@
 	l_pocket = /obj/item/assembly/flash
 	r_pocket = /obj/item/storage/wallet
 
-/datum/outfit/centcom/ert/engineer/party
+/datum/outfit/ert/engineer/party
 	name = "ERP Constructor"
 
 	uniform = /obj/item/clothing/under/rank/engineering/engineer/hazard
@@ -87,7 +87,7 @@
 	mask = /obj/item/clothing/mask/gas/atmos
 	l_hand = /obj/item/areaeditor/blueprints
 
-/datum/outfit/centcom/ert/clown/party
+/datum/outfit/ert/clown/party
 	name = "ERP Comedian"
 
 	uniform = /obj/item/clothing/under/rank/civilian/clown
@@ -101,7 +101,7 @@
 	glasses = /obj/item/clothing/glasses/chameleon
 	head = /obj/item/clothing/head/chameleon
 
-/datum/outfit/centcom/ert/commander/party
+/datum/outfit/ert/commander/party
 	name = "ERP Coordinator"
 
 	uniform = /obj/item/clothing/under/rank/captain/parade
