@@ -117,10 +117,10 @@
 //	for(var/obj/item/object_to_possess in effect_area)
 //		if(!prob(haunt_chance))
 //			continue
-//		object_to_possess.AddComponent(/datum/component/haunted_item, \
-//			haunt_color = "#52336e", \
-//			haunt_duration = duration, \
-//			aggro_radius = range, \
+//		object_to_possess.AddComponent(/datum/component/haunted_item,
+//			haunt_color = "#52336e",
+//			haunt_duration = duration,
+//			aggro_radius = range,
 //			spawn_message = span_revenwarning("[object_to_possess] slowly rises upward, hanging menacingly in the air..."), \
 //			despawn_message = span_revenwarning("[object_to_possess] settles to the floor, lifeless and unmoving."), \
 //		)

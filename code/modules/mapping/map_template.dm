@@ -163,8 +163,7 @@
 	var/datum/parsed_map/parsed = is_cached || new(file(mappath))
 
 	var/list/turf_blacklist = list()
-	var/area/holodeck/holo
-	holo.update_blacklist(T, turf_blacklist)
+	update_blacklist(T, turf_blacklist)
 
 	cached_map = (force_cache || keep_cached_map) ? parsed : is_cached
 	if(!parsed.load(T.x, T.y, T.z, cropMap=TRUE, no_changeturf=(SSatoms.initialized == INITIALIZATION_INSSATOMS), placeOnTop=TRUE, orientation = orientation, annihilate_tiles = (annihilate == MAP_TEMPLATE_ANNIHILATE_LOADING)))
@@ -184,7 +183,7 @@
 
 	return bounds
 
-/area/map_template/proc/update_blacklist(turf/T, list/input_blacklist)
+/datum/map_template/proc/update_blacklist(turf/T, list/input_blacklist)
 	return
 
 //This, get_affected_turfs, and load() calculations for bounds/center can probably be optimized. Later.

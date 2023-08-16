@@ -15,7 +15,7 @@
 */
 
 ///this is what makes the holodeck not spawn anything on broken tiles (space and non engine plating / non holofloors)
-/area/holodeck/proc/update_blacklist(turf/placement, list/input_blacklist)
+/datum/map_template/holodeck/update_blacklist(turf/placement, list/input_blacklist)
 	var/datum/map_template/holo
 	for(var/turf/possible_blacklist as anything in holo.get_affected_turfs(placement))
 		if (possible_blacklist.holodeck_compatible)
