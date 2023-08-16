@@ -50,6 +50,11 @@
 /// Mobs that otherwise support nanites
 #define MOB_NANITES		(1 << 10)
 
+/// Helper to figure out if an organ is organic
+#define IS_ORGANIC_ORGAN(organ) (organ.organ_flags & ORGAN_ORGANIC)
+/// Helper to figure out if an organ is robotic
+#define IS_ROBOTIC_ORGAN(organ) (organ.organ_flags & ORGAN_ROBOTIC)
+
 // Organ defines for carbon mobs
 #define ORGAN_ORGANIC   1
 #define ORGAN_ROBOTIC   2

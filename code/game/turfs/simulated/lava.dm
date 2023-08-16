@@ -225,3 +225,8 @@
 
 /turf/open/lava/smooth/airless
 	initial_gas_mix = AIRLESS_ATMOS
+
+/turf/open/lava/smooth/weak
+	lava_damage = 10
+	lava_firestacks = 10
+	temperature_damage = 2500

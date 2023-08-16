@@ -905,7 +905,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			to_chat(target, "<br><br><span class='alert'>The Emergency Shuttle has docked with the station. You have 3 minutes to board the Emergency Shuttle.</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_SHUTTLEDOCK])
 		if("malf ai") //AI is doomsdaying!
-			to_chat(target, "<h1 class='alert'>Anomaly Alert</h1>")
+			to_chat(target, "<h1 class='alert'>ВНИМАНИЕ: АНОМАЛИЯ</h1>")
 			to_chat(target, "<br><br><span class='alert'>Hostile runtimes detected in all station systems, please deactivate your AI to prevent possible damage to its morality core.</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_AIMALF])
 		if("meteors") //Meteors inbound!

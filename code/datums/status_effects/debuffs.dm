@@ -1301,3 +1301,13 @@
 	if(ishostile(owner))
 		var/mob/living/simple_animal/hostile/simple_owner = owner
 		simple_owner.ranged_cooldown_time /= 2.5
+
+///Maddly teleports the victim around all of space for 10 seconds
+/datum/status_effect/teleport_madness
+	id = "teleport_madness"
+	duration = 10 SECONDS
+	status_type = STATUS_EFFECT_REPLACE
+	tick_interval = 0.2 SECONDS
+
+/datum/status_effect/teleport_madness/tick(seconds_between_ticks)
+	dump_in_space(owner)

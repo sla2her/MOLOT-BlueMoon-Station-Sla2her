@@ -213,7 +213,6 @@
 		icon_state = "basalt[rand(0, 12)]"
 		set_basalt_light(src)
 
-
 /turf/open/floor/grass/fakebasalt //Heart is not a real planeteer power
 	name = "aesthetic volcanic flooring"
 	desc = "Safely recreated turf for your hellplanet-scaping."
@@ -426,3 +425,37 @@
 	underlay_appearance.icon_state = SPACE_ICON_STATE
 	underlay_appearance.plane = PLANE_SPACE
 	return TRUE
+
+/turf/open/floor/eighties
+	name = "retro floor"
+	desc = "This one takes you back."
+	icon_state = "eighties"
+	broken_states = list("eighties_damaged")
+	floor_tile = /obj/item/stack/tile/eighties
+
+/turf/open/floor/eighties/red
+	name = "red retro floor"
+	desc = "Totally RED-ICAL!"
+	icon_state = "eightiesred"
+	floor_tile = /obj/item/stack/tile/eighties/red
+
+/obj/item/stack/tile/eighties
+	name = "retro tile"
+	singular_name = "retro floor tile"
+	desc = "A stack of floor tiles that remind you of an age of funk. Use in your hand to pick between a black or red pattern."
+	icon_state = "tile_eighties"
+	turf_type = /turf/open/floor/eighties
+	tile_reskin_types = list(
+		/obj/item/stack/tile/eighties,
+		/obj/item/stack/tile/eighties/red,
+	)
+
+/obj/item/stack/tile/eighties/loaded
+	amount = 15
+
+/obj/item/stack/tile/eighties/red
+	name = "red retro tile"
+	singular_name = "red retro floor tile"
+	desc = "A stack of REDICAL floor tiles! Use in your hand to pick between a black or red pattern!" //i am so sorry
+	icon_state = "tile_eightiesred"
+	turf_type = /turf/open/floor/eighties/red

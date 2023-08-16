@@ -36,6 +36,12 @@ GLOBAL_LIST_EMPTY(station_turfs)
 
 	var/tiled_dirt = FALSE // use smooth tiled dirt decal
 
+	///the holodeck can load onto this turf if TRUE
+	var/holodeck_compatible = FALSE
+
+	/// If there's a tile over a basic floor that can be ripped out
+	var/overfloor_placed = FALSE
+
 /turf/vv_edit_var(var_name, new_value)
 	var/static/list/banned_edits = list("x", "y", "z")
 	if(var_name in banned_edits)

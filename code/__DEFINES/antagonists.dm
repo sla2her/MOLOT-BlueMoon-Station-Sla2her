@@ -130,3 +130,5 @@ GLOBAL_LIST_EMPTY(living_heart_cache)	//A list of all living hearts in existance
 #define REQUEST_DEL_OBJECTIVE "del_objective"
 #define REQUEST_WIN_OBJECTIVE "win_objective"
 #define REQUEST_LOSE_OBJECTIVE "lose_objective"
+
+#define ANTAG_GROUP_ABOMINATIONS "Extradimensional Abominations"

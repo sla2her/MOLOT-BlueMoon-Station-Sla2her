@@ -10,6 +10,7 @@
 #define ROLE_TRAITOR				"traitor"
 #define ROLE_OPERATIVE				"operative"
 #define ROLE_CHANGELING				"changeling"
+#define ROLE_CHANGELING_MIDROUND	"Changeling (Midround)"
 #define ROLE_WIZARD					"wizard"
 #define ROLE_MALF					"malf AI"
 #define ROLE_REV					"revolutionary"
@@ -31,6 +32,7 @@
 #define ROLE_BRAINWASHED			"brainwashed victim"
 #define ROLE_OVERTHROW				"syndicate mutineer"
 #define ROLE_SENTIENCE          	"sentience potion spawn"
+#define ROLE_ANOMALY_GHOST 			"Ectoplasmic Anomaly Ghost"
 #define ROLE_MIND_TRANSFER          "mind transfer potion"
 #define ROLE_POSIBRAIN              "posibrain"
 #define ROLE_DRONE                  "drone"
@@ -62,6 +64,7 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_OPERATIVE = /datum/game_mode/nuclear,
 	ROLE_SLAVER,
 	ROLE_CHANGELING = /datum/game_mode/changeling,
+	ROLE_CHANGELING_MIDROUND,
 	ROLE_WIZARD = /datum/game_mode/wizard,
 	ROLE_MALF,
 	ROLE_REV = /datum/game_mode/revolution,

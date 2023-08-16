@@ -244,3 +244,11 @@
 	layer = LIGHTING_LAYER
 	blend_mode = BLEND_ADD
 	show_when_dead = TRUE
+
+/atom/movable/screen/fullscreen/bluespace_sparkle
+	icon = 'icons/effects/effects.dmi'
+	screen_loc = "WEST,SOUTH to EAST,NORTH"
+	icon_state = "shieldsparkles"
+	layer = FLASH_LAYER
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	show_when_dead = TRUE

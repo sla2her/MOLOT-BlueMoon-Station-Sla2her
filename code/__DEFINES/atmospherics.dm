@@ -294,6 +294,10 @@ GLOBAL_LIST_INIT(atmos_adjacent_savings, list(0,0))
 #define PIPING_DEFAULT_LAYER_ONLY		(1<<2)	//can only exist at PIPING_LAYER_DEFAULT
 #define PIPING_CARDINAL_AUTONORMALIZE	(1<<3)	//north/south east/west doesn't matter, auto normalize on build.
 
+///Used to define the temperature of a tile, arg is the temperature it should be at. Should always be put at the end of the atmos list.
+///This is solely to be used after compile-time.
+#define TURF_TEMPERATURE(temperature) "TEMP=[temperature]"
+
 // Gas defines because i hate typepaths
 #define GAS_O2					"o2"
 #define GAS_N2					"n2"

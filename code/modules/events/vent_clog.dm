@@ -60,7 +60,7 @@
 	//needs to be chemid unit checked at some point
 
 /datum/round_event/vent_clog/announce()
-	priority_announce("Сеть вентиляции испытывает скачок противодавления. Может произойти некоторый выброс содержимого.", "Атмосферная Тревога", has_important_message = TRUE)
+	priority_announce("Сеть вентиляции испытывает скачок противодавления. Может произойти некоторый выброс содержимого.", "ВНИМАНИЕ: АТМОСФЕРА", has_important_message = TRUE)
 
 /datum/round_event/vent_clog/setup()
 	end_when = rand(120, 180)

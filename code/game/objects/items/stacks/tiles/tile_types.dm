@@ -517,6 +517,19 @@
 /obj/item/stack/tile/fakepit/loaded
 	amount = 30
 
+/turf/open/floor/fakeice
+	desc = "Is it marble, polished to a mirror finish? Or just really, really grippy ice?"
+	icon = 'icons/turf/floors/ice_turf.dmi'
+	icon_state = "ice_turf-0"
+	base_icon_state = "ice_turf-0"
+
+/turf/open/floor/fakeice/slippery
+	desc = "Somehow, it is not melting under these conditions. Must be some very thick ice. Just as slippery too."
+
+/turf/open/floor/fakeice/slippery/Initialize(mapload)
+	. = ..()
+	MakeSlippery(TURF_WET_PERMAFROST, INFINITY, 0, INFINITY, TRUE)
+
 //High-traction
 /obj/item/stack/tile/noslip
 	name = "high-traction floor tile"

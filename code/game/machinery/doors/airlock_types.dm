@@ -365,6 +365,9 @@
 	opacity = 0
 	glass = TRUE
 
+/// Access free external glass airlock
+/obj/machinery/door/airlock/external/glass/ruin
+
 //////////////////////////////////
 /*
 	CentCom Airlocks
@@ -708,3 +711,29 @@
 
 /obj/machinery/door/airlock/glass_large/narsie_act()
 	return
+
+//////////////////////////////////
+/*
+	Material Airlocks
+*/
+/obj/machinery/door/airlock/material
+	name = "Airlock"
+	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX | MATERIAL_AFFECT_STATISTICS
+	assemblytype = /obj/structure/door_assembly/door_assembly_material
+
+/obj/machinery/door/airlock/material/close(forced, force_crush)
+	. = ..()
+	if(!.)
+		return
+	for(var/datum/material/mat in custom_materials)
+		if(mat.alpha < 255)
+			set_opacity(FALSE)
+			break
+
+/obj/machinery/door/airlock/material/prepare_deconstruction_assembly(obj/structure/door_assembly/assembly)
+	assembly.set_custom_materials(custom_materials)
+	..()
+
+/obj/machinery/door/airlock/material/glass
+	opacity = FALSE
+	glass = TRUE

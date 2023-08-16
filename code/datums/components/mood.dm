@@ -223,6 +223,12 @@
 			master.add_actionspeed_modifier(/datum/actionspeed_modifier/high_sanity)
 			sanity_level = 1
 
+	// Crazy or insane = add some uncommon hallucinations
+	if(sanity_level >= SANITY_CRAZY)
+		master.hallucination = min(master.hallucination + 10, 50)
+	else
+		master.hallucination = 0
+
 	if(sanity_level != old_sanity_level)
 		if(sanity_level >= 4)
 			if(!malus)

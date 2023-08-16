@@ -602,3 +602,49 @@
 
 /datum/antagonist/changeling/xenobio/antag_listing_name()
 	return ..() + "(Xenobio)"
+
+/**
+ * Gives a passed changeling power datum to the player
+ *
+ * Is passed a path to a changeling power, and applies it to the user.
+ * If successful, we return TRUE, otherwise not.
+ *
+ * Arguments:
+ * * power_path - The path of the power we will be giving to our attached player.
+ */
+
+/datum/antagonist/changeling/proc/give_power(power_path)
+	var/datum/action/changeling/new_action = new power_path()
+
+	if(!new_action)
+		to_chat(owner.current, "This is awkward. Changeling power purchase failed, please report this bug to a coder!")
+		CRASH("Changeling give_power was unable to grant a new changeling action for path [power_path]!")
+
+	purchasedpowers[power_path] = new_action
+	new_action.on_purchase(owner.current) // Grant() is ran in this proc, see changeling_powers.dm.
+
+	return TRUE
+
+/datum/antagonist/changeling/space
+	name = "\improper Space Changeling"
+
+/datum/antagonist/changeling/space/get_preview_icon()
+	var/icon/final_icon = render_preview_outfit(/datum/outfit/changeling_space)
+	return finish_preview_icon(final_icon)
+
+/datum/antagonist/changeling/space/greet()
+	to_chat(src, span_changeling("Our mind stirs to life, from the depths of an endless slumber..."))
+
+/datum/outfit/changeling
+	name = "Changeling"
+
+	head = /obj/item/clothing/head/helmet/changeling
+	suit = /obj/item/clothing/suit/armor/changeling
+	l_hand = /obj/item/melee/arm_blade
+
+/datum/outfit/changeling_space
+	name = "Changeling (Space)"
+
+	head = /obj/item/clothing/head/helmet/space/changeling
+	suit = /obj/item/clothing/suit/space/changeling
+	l_hand = /obj/item/melee/arm_blade

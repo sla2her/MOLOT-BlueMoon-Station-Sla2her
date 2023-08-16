@@ -347,7 +347,7 @@
 	M.mind.special_role = antag_flag
 	M.mind.add_antag_datum(AI)
 	if(prob(MALF_ION_PROB))
-		priority_announce("Ion storm detected near the station. Please check all AI-controlled equipment for errors.", "Anomaly Alert", "ionstorm")
+		priority_announce("Ion storm detected near the station. Please check all AI-controlled equipment for errors.", "ВНИМАНИЕ: АНОМАЛИЯ", "ionstorm")
 		if(prob(REPLACE_LAW_WITH_ION_PROB))
 			M.replace_random_law(generate_ion_law(), list(LAW_INHERENT, LAW_SUPPLIED, LAW_ION))
 		else

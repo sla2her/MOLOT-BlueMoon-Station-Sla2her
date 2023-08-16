@@ -68,3 +68,15 @@
 		ghost_facial_hair.alpha = 200
 		ghost_facial_hair.color = ghost_facial_hair_color
 		add_overlay(ghost_facial_hair)
+
+/// Weaker variant of ghosts. Meant to be summoned in swarms via the ectoplasmic anomaly and associated ghost portal.
+/mob/living/simple_animal/hostile/ghost/swarm
+	name = "vengeful spirit"
+	desc = "Back from the grave, and not happy about it."
+	maxHealth = 30
+	health = 30
+	attack_verb_continuous = "smashes"
+	attack_verb_simple = "smash"
+	melee_damage_lower = 10
+	melee_damage_upper = 10
+	deathmessage = "wails as it is torn back to the realm from which it came!"
