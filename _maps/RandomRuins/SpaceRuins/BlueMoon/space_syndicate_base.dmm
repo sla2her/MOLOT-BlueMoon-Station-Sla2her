@@ -1259,7 +1259,7 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
 "eJ" = (
 /obj/machinery/light/dim/directional/south,
-/obj/machinery/portable_atmospherics/canister/nitrogen,
+/obj/machinery/portable_atmospherics/canister/pluoxium,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "eL" = (
@@ -1753,11 +1753,13 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "gK" = (
-/obj/effect/mob_spawn/human/ds2/syndicate/brigoff{
-	dir = 8
-	},
 /obj/machinery/light/dim/directional/east,
 /obj/machinery/firealarm/directional/east,
+/obj/structure/table/reinforced,
+/obj/item/paper{
+	default_raw_text = "<h1>Отчет для Тюремного Отдела DS2</h1><p>Передовая оперативная база 'Благословлённый' под кодовым названием Deep Space 2 успешно разместилась вблизи активных объектов NanoTrasen. Идет перезагрузка двигателей шаттла...</p><p>Синдикат смог похитить несколько ключевых работников NanoTrasen различных уровней иерархии из иных Пластов Вселенной. Ваша задача - допросить, расспросить и сломить их волю, чтобы получить больше информации о нашем враге.</p><p>Оставайтесь победителями.";
+	name = "paper- 'Отчет для Тюремного Отдела DS2'"
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "gN" = (
@@ -3958,6 +3960,9 @@
 "pW" = (
 /obj/structure/window/reinforced/survival_pod,
 /obj/effect/turf_decal/siding/dark,
+/obj/effect/mob_spawn/human/ds2/syndicate/brigoff{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "pX" = (
@@ -6505,12 +6510,6 @@
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/hydroponics)
-"BG" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/small,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "BL" = (
 /obj/structure/table,
 /obj/item/book/manual/chef_recipes,
@@ -6711,9 +6710,14 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "CF" = (
-/obj/effect/turf_decal/stripes/red/corner{
-	dir = 4
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
 	},
+/obj/structure/rack/shelf,
+/obj/item/clothing/suit/cbrn/mopp/advance/security,
+/obj/item/clothing/mask/gas/cbrn/mopp/advance,
+/obj/item/clothing/head/helmet/cbrn/mopp/advance,
+/obj/item/clothing/gloves/cbrn/mopp/advance,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "CH" = (
@@ -7350,9 +7354,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"Fr" = (
-/turf/open/floor/iron/dark/small,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
 "Fw" = (
 /obj/machinery/shower/directional/south,
 /obj/effect/turf_decal/siding/dark{
@@ -9313,35 +9314,19 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms/fitness)
 "NP" = (
-/obj/item/storage/belt/security/full,
-/obj/item/radio/headset/ds2,
-/obj/item/clothing/under/rank/security/officer/util/syndicate,
-/obj/item/storage/belt/security/webbing/ds,
-/obj/item/clothing/head/beret/sec/syndicate,
 /obj/structure/window/reinforced/survival_pod{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
-/obj/item/clothing/accessory/armband{
-	name = "brig officer armband";
-	desc = "An armband, worn by the FOB's operatives to display which department they're assigned to."
+/obj/structure/table/reinforced,
+/obj/item/assembly/flash/handheld{
+	pixel_y = 10;
+	pixel_x = 3
 	},
-/obj/structure/closet/secure_closet{
-	icon_state = "sec";
-	name = "brig officer gear locker";
-	req_access_txt = "151"
-	},
-/obj/item/clothing/mask/gas/syndicate/ds,
-/obj/item/clothing/suit/toggle/labcoat/depjacket/sec{
-	name = "brig officer jacket"
-	},
-/obj/item/clothing/mask/gas/sechailer/syndicate,
-/obj/item/gun/energy/disabler,
-/obj/item/clothing/glasses/hud/security/sunglasses/eyepatch,
-/obj/item/clothing/glasses/hud/security/sunglasses/aviators,
-/obj/item/clothing/neck/cloak/syndiecap,
+/obj/item/crowbar/red,
+/obj/machinery/recharger,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
 "NQ" = (
@@ -9499,10 +9484,6 @@
 	dir = 4
 	},
 /obj/item/crowbar/red,
-/obj/item/assembly/flash/handheld{
-	pixel_y = 7;
-	pixel_x = -6
-	},
 /obj/structure/reagent_dispensers/peppertank/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
@@ -14146,10 +14127,10 @@ MT
 bj
 SZ
 jm
-BG
+CF
 FG
 mJ
-Fr
+cW
 my
 MH
 oE
