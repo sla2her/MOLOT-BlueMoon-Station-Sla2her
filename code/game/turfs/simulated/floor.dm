@@ -337,12 +337,12 @@
 
 	return FALSE
 
-/turf/open/floor/material
+/turf/open/floor/plating/material
 	name = "floor"
 	icon_state = "materialfloor"
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 
-/turf/open/floor/material/spawn_tile()
+/turf/open/floor/plating/material/spawn_tile()
 	for(var/i in custom_materials)
 		var/datum/material/M = i
 		new M.sheet_type(src, FLOOR(custom_materials[M] / MINERAL_MATERIAL_AMOUNT, 1))

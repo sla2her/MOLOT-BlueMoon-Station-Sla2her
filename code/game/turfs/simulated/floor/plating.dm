@@ -132,7 +132,7 @@
 				if(decal.wiped_by_floor_change)
 					qdel(decal)
 			if(istype(W, /obj/item/stack/tile/material))
-				var/turf/newturf = PlaceOnTop(/turf/open/floor/material, flags = CHANGETURF_INHERIT_AIR)
+				var/turf/newturf = PlaceOnTop(/turf/open/floor/plating/material, flags = CHANGETURF_INHERIT_AIR)
 				newturf.set_custom_materials(W.custom_materials)
 				if(length(C.atom_colours) && C.atom_colours[WASHABLE_COLOUR_PRIORITY] != null)
 					newturf.add_atom_colour(C.atom_colours[WASHABLE_COLOUR_PRIORITY], FIXED_COLOUR_PRIORITY)

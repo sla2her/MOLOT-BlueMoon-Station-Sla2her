@@ -1,4 +1,3 @@
-
 /obj/effect/anomaly/dimensional
 	name = "dimensional anomaly"
 	icon_state = "dimensional"
