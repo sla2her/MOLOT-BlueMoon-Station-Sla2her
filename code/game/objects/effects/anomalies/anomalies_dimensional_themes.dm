@@ -301,11 +301,3 @@
 	icon_state = "lbulb"
 	material = /datum/material/glass
 	replace_floors = list(/turf/open/floor/light/colour_cycle = 1)
-
-/datum/dimension_theme/disco/transform_floor(turf/open/floor/affected_floor)
-	. = ..()
-	if (!.)
-		return
-	var/turf/open/floor/light/colour_cycle/disco_floor = affected_floor
-	disco_floor.currentcolor = pick(disco_floor.coloredlights)
-	disco_floor.update_appearance()
