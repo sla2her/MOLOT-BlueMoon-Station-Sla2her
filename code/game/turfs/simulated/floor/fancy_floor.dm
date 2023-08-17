@@ -192,6 +192,9 @@
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+/turf/open/floor/grass/snow/fake
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
+
 /turf/open/floor/grass/snow/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
 	return
 

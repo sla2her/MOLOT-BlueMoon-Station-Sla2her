@@ -240,7 +240,7 @@
 	icon_state = "iceboots"
 	window_colour = "#00f7ff"
 	material = /datum/material/snow
-	replace_floors = list(/turf/open/floor/grass/snow = 10, /turf/open/floor/fakeice/slippery = 1)
+	replace_floors = list(/turf/open/floor/grass/snow/fake = 10, /turf/open/floor/fakeice/slippery = 1)
 	replace_walls = /turf/closed/wall/mineral/snow
 
 /datum/dimension_theme/lavaland
