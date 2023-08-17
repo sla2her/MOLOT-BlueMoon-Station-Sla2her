@@ -12,7 +12,7 @@
 	/// Sound to play when transforming a tile
 	var/sound = 'sound/magic/blind.ogg'
 	/// Weighted list of turfs to replace the floor with.
-	var/list/replace_floors = list(/turf/open/floor/plating/material = 1)
+	var/list/replace_floors = list(/turf/open/floor/material = 1)
 	/// Typepath of turf to replace walls with.
 	var/turf/replace_walls = /turf/closed/wall/material
 	/// List of weighted lists for object replacement. Key is an original typepath, value is a weighted list of typepaths to replace it with.
@@ -178,7 +178,7 @@
 /datum/dimension_theme/proc/apply_materials(turf/affected_turf)
 	var/list/custom_materials = list(GET_MATERIAL_REF(material) = SHEET_MATERIAL_AMOUNT)
 
-	if (istype(affected_turf, /turf/open/floor/plating/material) || istype(affected_turf, /turf/closed/wall/material))
+	if (istype(affected_turf, /turf/open/floor/material) || istype(affected_turf, /turf/closed/wall/material))
 		affected_turf.set_custom_materials(custom_materials)
 	for (var/obj/thing in affected_turf)
 		if (!permit_replace_material(thing))

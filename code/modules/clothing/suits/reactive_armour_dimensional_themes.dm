@@ -7,7 +7,7 @@
  */
 /datum/armour_dimensional_theme
 	var/datum/material/material
-	var/turf/replace_floor = /turf/open/floor/plating/material
+	var/turf/replace_floor = /turf/open/floor/material
 	var/turf/replace_wall = /turf/closed/wall/material
 	var/obj/barricade = /obj/structure/table/greyscale
 	var/barricade_anchored = TRUE
