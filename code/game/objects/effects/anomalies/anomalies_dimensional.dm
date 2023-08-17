@@ -61,7 +61,6 @@
 /obj/effect/anomaly/dimensional/proc/apply_theme_icon()
 	overlays -= theme_icon
 	theme_icon = mutable_appearance(theme.icon, theme.icon_state, FLOAT_LAYER - 1, appearance_flags = appearance_flags | RESET_TRANSFORM)
-	theme_icon.blend_mode = BLEND_INSET_OVERLAY
 	overlays += theme_icon
 
 /**
