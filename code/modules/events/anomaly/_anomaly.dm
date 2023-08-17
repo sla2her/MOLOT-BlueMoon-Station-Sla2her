@@ -26,7 +26,7 @@
 		impact_area = placer.findValidArea()
 
 /datum/round_event/anomaly/announce(fake)
-	priority_announce("Energetic flux wave detected on [ANOMALY_ANNOUNCE_DANGEROUS_TEXT] [impact_area.name].", "ВНИМАНИЕ: АНОМАЛИЯ") //SKYRAT EDIT CHANGE
+	priority_announce("Обнаружен гипер-энергетический поток на [ANOMALY_ANNOUNCE_DANGEROUS_TEXT] [impact_area.name].", "ВНИМАНИЕ: АНОМАЛИЯ")
 
 /datum/round_event/anomaly/start()
 	var/turf/anomaly_turf

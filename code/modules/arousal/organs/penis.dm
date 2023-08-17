@@ -77,25 +77,25 @@
 	switch(lowershape)
 		if("penis")
 			lowershape = "человеческий"
-		if("Human")
+		if("human")
 			lowershape = "человеческий"
-		if("Knotted")
+		if("knotted")
 			lowershape = "узловатый"
-		if("Flared")
+		if("flared")
 			lowershape = "конический"
-		if("Barbed, Knotted")
+		if("barbed, knotted")
 			lowershape = "узловатый и немного колючий"
-		if("Tapered")
+		if("tapered")
 			lowershape = "утончённый"
-		if("Tentacled")
+		if("tentacled")
 			lowershape = "тентяклевидный"
-		if("Hemi")
+		if("hemi")
 			lowershape = "двойной"
-		if("Knotted Hemi")
+		if("knotted hemi")
 			lowershape = "двойной узловатый"
-		if("Barbed, Knotted Hemi")
+		if("barbed, knotted hemi")
 			lowershape = "двойной, узловатый и немного колючий"
-		if("Thick")
+		if("thick")
 			lowershape = "обрезанный"
 		else
 			lowershape = "членовидный"

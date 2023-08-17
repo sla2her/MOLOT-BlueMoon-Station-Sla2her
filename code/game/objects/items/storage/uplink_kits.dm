@@ -68,7 +68,7 @@
 			new /obj/item/card/emag(src) //6 tc
 			new /obj/item/clothing/shoes/sneakers/noslip(src) //2tc
 			new /obj/item/encryptionkey/syndicate(src) //1tc
-			new /obj/item/autosurgeon/anti_drop(src) //Lets just say 7~
+			new /obj/item/autosurgeon/syndicate/anti_drop(src) //Lets just say 7~
 			new /obj/item/clothing/under/syndicate/baseball(src) //3tc
 			new /obj/item/clothing/head/soft/baseball(src) //Lets say 4 tc
 			new /obj/item/reagent_containers/hypospray/medipen/stimulants/baseball(src) //lets say 5tc

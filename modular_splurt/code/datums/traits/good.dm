@@ -269,3 +269,19 @@
 	var/obj/item/implant/explosive/E = new
 	E.implant(H)
 	H.update_icons()
+
+/datum/quirk/breathing_tube
+	name = "Трубка для Горлового Дыхания"
+	desc = "Похоже, что вам не нравятся стандартные противогазы и прочие методы дыхания в безвоздушных условиях. Есть решение!"
+	value = 1
+	mood_quirk = FALSE
+	processing_quirk = FALSE
+
+/datum/quirk/breathing_tube/on_spawn()
+	. = ..()
+
+	// Create a new augment item
+	var/obj/item/organ/cyberimp/mouth/breathing_tube/put_in = new
+
+	// Apply the augment to the quirk holder
+	put_in.Insert(quirk_holder, null, TRUE, TRUE)

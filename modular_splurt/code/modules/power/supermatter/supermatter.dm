@@ -18,15 +18,15 @@ Custom Bombcaps:
 • Big Delam: 3, 5, 15
 */
 
-#define EXPLOSION_MODIFIER_SMALL 2
-#define EXPLOSION_MODIFIER_MEDIUM 5
-#define EXPLOSION_MODIFIER_LARGE 10
+#define EXPLOSION_MODIFIER_SMALL 25
+#define EXPLOSION_MODIFIER_MEDIUM 50
+#define EXPLOSION_MODIFIER_LARGE 100
 
 // Let's turn the base explosion power down a little...
 /obj/machinery/power/supermatter_crystal
-	explosion_power = 22
+	explosion_power = 40
 /obj/machinery/power/supermatter_crystal/shard
-	explosion_power = 6
+	explosion_power = 20
 
 // Proc to screen the mob list for engineers. We'll need this later!
 /proc/count_alive_engineers(mob/M)
@@ -81,35 +81,31 @@ Custom Bombcaps:
 			alive_engineers++
 	switch(alive_engineers)
 
-//	DELAMINATION A: No engineers, no explosion.
-		if(0)
-			investigate_log("has delaminated, but there are no engineers! Removing with no explosion.", INVESTIGATE_SUPERMATTER)
-			priority_announce("A supermatter crystal delamination has been detected. Crystal hyperstructure has collapsed safely, resulting in a success complete self-annihilation of the supermatter entity.", "CRYSTAL DELAMINATION DETECTED!")
-			qdel(src)
-			return
 //	DELAMINATION B: Too few engineers, minimal explosion.
-		if(1 to 2)
+		if(0)
 			investigate_log("has delaminated, but there are only [alive_engineers] engineers! Defaulting to minimum explosion.", INVESTIGATE_SUPERMATTER)
-			priority_announce("A supermatter crystal delamination has been detected. Crystal hyperstructure has collapsed within safety tolerance, resulting in majority self-annihilation.", "CRYSTAL DELAMINATION DETECTED!")
+			priority_announce("Обнаружено расслоение структуры Суперматерии. Гиперструктура кристалла разрушилась в пределах допустимого уровня безопасности, что привело к самоаннигиляции сверхматериального образования.", "BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
 			explosion(get_turf(src), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 0, 2), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 0, 2), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 3, 5), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 5, 15), TRUE, FALSE)
 			qdel(src)
 			return
 //	DELAMINATION C: Enough engineers, halved explosion size.
-		if(3 to 4)
+		if(1)
 			investigate_log("has delaminated with [alive_engineers] engineers, explosion size has been halved!", INVESTIGATE_SUPERMATTER)
-			priority_announce("A supermatter crystal delamination has been detected. Crystal hyperstructure did not complete a controlled collapse.", "CRYSTAL DELAMINATION DETECTED!")
+			priority_announce("Обнаружено множественное расслоение структуры Суперматерии. Гиперструктура кристалла завершила коллапс фатально. Bозможны жертвы.", "BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
 			explosion(get_turf(src), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), 0, 2), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), 1, 4), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), 3, 10), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), 5, 20), TRUE, FALSE)
 			qdel(src)
 			return
 //	DELAMINATION D:
-		if(5 to INFINITY)
+		if(2 to INFINITY)
 			investigate_log("has delaminated with full effect due to there being [alive_engineers] engineers.", INVESTIGATE_SUPERMATTER)
-			priority_announce("A supermatter crystal delamination has been detected. Crystal hyperstructure has failed catastrophically.", sender_override="CRYSTAL DELAMINATION DETECTED!")
+			priority_announce("Обнаружено катастрофическое расслоение структуры Суперматерии. Гиперструктура кристалла создала катастрофический хлопок.", sender_override="BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
 			explosion(get_turf(src), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), 1, 3), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), 2, 7), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), 3, 15), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), 5, 30), TRUE, FALSE)
 			qdel(src)
 			return
 		if(null)
-			investigate_log("tried to delaminate, but there are... null alive engineers? [alive_engineers] <- that", INVESTIGATE_SUPERMATTER)
+			investigate_log("has delaminated, but there are only [alive_engineers] engineers! Defaulting to minimum explosion.", INVESTIGATE_SUPERMATTER)
+			priority_announce("Обнаружено расслоение структуры Суперматерии. Гиперструктура кристалла разрушилась в пределах допустимого уровня безопасности, что привело к самоаннигиляции сверхматериального образования.", "BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
+			explosion(get_turf(src), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 0, 2), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 0, 2), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 3, 5), clamp(((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), 5, 15), TRUE, FALSE)
 			qdel(src)
 			return
 

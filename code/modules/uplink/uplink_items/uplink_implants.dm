@@ -18,7 +18,7 @@
 /datum/uplink_item/implants/antistun
 	name = "CNS Rebooter Implant"
 	desc = "This implant will help you get back up on your feet faster after being stunned. Comes with an autosurgeon."
-	item = /obj/item/autosurgeon/anti_stun
+	item = /obj/item/autosurgeon/syndicate/anti_stun
 	cost = 12
 	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
@@ -84,7 +84,7 @@
 /datum/uplink_item/implants/reviver
 	name = "Reviver Implant"
 	desc = "This implant will attempt to revive and heal you if you lose consciousness. Comes with an autosurgeon."
-	item = /obj/item/autosurgeon/reviver
+	item = /obj/item/autosurgeon/syndicate/reviver
 	cost = 8
 	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
@@ -105,7 +105,7 @@
 /datum/uplink_item/implants/thermals
 	name = "Thermal Eyes"
 	desc = "These cybernetic eyes will give you thermal vision. Comes with a free autosurgeon."
-	item = /obj/item/autosurgeon/thermal_eyes
+	item = /obj/item/autosurgeon/syndicate/thermal_eyes
 	cost = 8
 	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
@@ -122,7 +122,7 @@
 /datum/uplink_item/implants/xray
 	name = "X-ray Vision Implant"
 	desc = "These cybernetic eyes will give you X-ray vision. Comes with an autosurgeon."
-	item = /obj/item/autosurgeon/xray_eyes
+	item = /obj/item/autosurgeon/syndicate/xray_eyes
 	cost = 15
 	surplus = 0
 	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE

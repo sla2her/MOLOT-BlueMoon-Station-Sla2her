@@ -25,7 +25,13 @@
 	var/datum/sprite_accessory/anus/S = GLOB.anus_shapes_list[shape]
 	var/lowershape = lowertext(S?.icon_state || DEF_ANUS_SHAPE)
 
-	desc = "Вы наблюдаете [u_His] сплюснутый [lowershape] анус между [u_His] ягодицами"
+	switch(lowershape)
+		if("donut")
+			lowershape = "выпуклый"
+		else
+			lowershape = "сплюснутый"
+
+	desc = "Вы наблюдаете [u_His] [lowershape] анус между ягодицами"
 
 	icon_state = "anus_[lowershape]_[size]"
 	if(owner)

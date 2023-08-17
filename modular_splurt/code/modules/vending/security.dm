@@ -227,6 +227,7 @@
 	new /obj/item/holosign_creator/security(src)
 	new /obj/item/storage/lockbox/loyalty(src)
 	new /obj/item/clothing/mask/gas/sechailer/swat/hos(src)
+	new /obj/item/autosurgeon/breathing_tube(src)
 	new /obj/item/storage/box/flashbangs(src)
 	new /obj/item/shield/riot/tele(src)
 	new /obj/item/storage/belt/security/full(src)

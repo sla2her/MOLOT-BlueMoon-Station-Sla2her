@@ -63,7 +63,7 @@
 		return
 	if(prob(0.6*severity))
 		to_chat(owner, "<span class='warning'>Your breathing suddenly collapses!</span>")
-		owner.losebreath += 2
+		owner.losebreath += 8
 
 /obj/item/organ/cyberimp/chest/healertoxoxy
 	name = "Healer-TO implant"
@@ -82,7 +82,7 @@
 		return
 	if(prob(0.6*severity))
 		to_chat(owner, "<span class='warning'>Your breathing suddenly collapses!</span>")
-		owner.losebreath += 4
+		owner.losebreath += 8
 
 //Ultimate version of healer
 /obj/item/organ/cyberimp/chest/revitilzer

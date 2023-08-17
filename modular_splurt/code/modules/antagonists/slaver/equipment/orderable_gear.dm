@@ -165,7 +165,7 @@ GLOBAL_LIST_INIT(slaver_gear, subtypesof(/datum/slaver_gear))
 /datum/slaver_gear/xray
 	name = "X-Ray Implant"
 	description = "An implant that lets you see through solid walls."
-	build_path = /obj/item/autosurgeon/xray_eyes
+	build_path = /obj/item/autosurgeon/syndicate/xray_eyes
 	category = "Implants"
 	cost = 10000
 
