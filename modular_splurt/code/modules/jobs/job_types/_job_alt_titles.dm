@@ -332,7 +332,8 @@
 		"Rental Mommy",
 		"Rental Daddy",
 		"The Rapist",
-		"Psycho-Slut"
+		"Psycho-Slut",
+		"Sexual Advisor"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
@@ -455,19 +456,6 @@
 		"Ashwalker Breeder",
 		"Shaft Syndi-Miner",
 		"Slayer"
-	)
-	LAZYADD(alt_titles, extra_titles)
-	. = ..()
-
-// Prisoner
-/datum/job/prisoner/New()
-	var/list/extra_titles = list(
-		"Low Security Prisoner",
-		"Medium Security Prisoner",
-		"Maximum Security Prisoner",
-		"Supermax Prisoner",
-		"Protective Custody Prisoner",
-		"Security Slave"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
