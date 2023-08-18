@@ -26,8 +26,8 @@
 	"1. Помогай экипажу.\n"+\
 	"2. Наблюдай за станцией.\n"+\
 	"3. Защищай станцию."
-	default_storage = /obj/item/uplink
-	default_hatmask = /obj/item/clothing/head/helmet/space/hardsuit/syndi
+	default_storage = /obj/item/syndicate_uplink_high
+	default_hatmask = /obj/item/clothing/head/helmet/space/syndicate
 	hacked = TRUE
 	flavortext = null
 
@@ -42,8 +42,8 @@
 
 /mob/living/simple_animal/drone/syndrone/badass
 	name = "Badass Syndrone"
-	default_hatmask = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite
-	default_storage = /obj/item/uplink/nuclear
+	default_hatmask = /obj/item/clothing/head/helmet/space/syndicate
+	default_storage = /obj/item/syndicate_uplink_high/nuclear
 
 /mob/living/simple_animal/drone/syndrone/badass/Initialize(mapload)
 	. = ..()

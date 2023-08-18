@@ -230,7 +230,7 @@
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,
 	/obj/item/kitchen/knife/combat/survival)
 
-	uplink_type = /obj/item/syndicate_uplink/nuclear
+	uplink_type = /obj/item/syndicate_uplink_high/nuclear
 
 /datum/outfit/syndicate/syndiesquad/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
@@ -241,7 +241,7 @@
 	R.freqlock = TRUE
 
 	var/key = H.key ? H.key : preference_source ? preference_source.key : null
-	var/obj/item/syndicate_uplink/nuclear/U = new /obj/item/syndicate_uplink/nuclear(H, key, 80)
+	var/obj/item/syndicate_uplink_high/nuclear/U = new /obj/item/syndicate_uplink_high/nuclear(H, key, 80)
 	H.equip_to_slot_or_del(U, ITEM_SLOT_BACKPACK)
 
 	var/obj/item/implant/mindshield/L = new //Here you go Deuryn

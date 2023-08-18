@@ -85,6 +85,6 @@
 	to_chat(user, span_warning("The Uplink turns to dust in your hands."))
 	qdel(src)
 
-/obj/item/syndicate_uplink/nuclear
+/obj/item/syndicate_uplink_high/nuclear
 	name = "syndicate strike team uplink"
 	uplink_flag = UPLINK_SYNDICATE
