@@ -2448,11 +2448,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						custom_species = null
 
 				if("custom_species_lore")
-					var/new_species = reject_bad_name(input(user, "Выберите предысторию расы своего персонажа, если она уникальна. Это будет отображаться при осмотре Флавор-Меню. Не злоупотребляйте этим:", "Character Preference", custom_species) as null|text, TRUE)
-					if(new_species)
-						custom_species = new_species
+					var/new_species_lore = reject_bad_name(input(user, "Выберите предысторию расы своего персонажа, если она уникальна. Это будет отображаться при осмотре Флавор-Меню. Не злоупотребляйте этим:", "Character Preference", custom_species_lore) as null|text, TRUE)
+					if(new_species_lore)
+						custom_species_lore = new_species_lore
 					else
-						custom_species = null
+						custom_species_lore = null
 
 				if("mutant_color")
 					var/new_mutantcolor = input(user, "Choose your character's alien/mutant color:", "Character Preference","#"+features["mcolor"]) as color|null
