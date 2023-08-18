@@ -10,7 +10,9 @@
 	var/static/list/anomaly_armour_types = list(
 		/obj/effect/anomaly/grav	                = /obj/item/clothing/suit/armor/reactive/repulse,
 		/obj/effect/anomaly/flux 	           		= /obj/item/clothing/suit/armor/reactive/tesla,
-		/obj/effect/anomaly/bluespace 	            = /obj/item/clothing/suit/armor/reactive/teleport
+		/obj/effect/anomaly/bluespace 	            = /obj/item/clothing/suit/armor/reactive/teleport,
+		/obj/effect/anomaly/dimensional 			= /obj/item/clothing/suit/armor/reactive/barricade,
+		/obj/effect/anomaly/ectoplasm 				= /obj/item/clothing/suit/armor/reactive/ectoplasm,
 		)
 
 	if(istype(I, /obj/item/assembly/signaler/anomaly))
@@ -338,19 +340,18 @@
 	reactivearmor_cooldown = world.time + reactivearmor_cooldown_duration
 	return FALSE
 
-///obj/item/clothing/suit/armor/reactive/ectoplasm
-//	name = "reactive possession armor"
-//	desc = "An experimental suit of armor that animates nearby objects with a ghostly possession."
-//	reactivearmor_cooldown_duration = 40 SECONDS
-//
-///obj/item/clothing/suit/armor/reactive/ectoplasm/block_action(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0)
-//	playsound(get_turf(owner),'sound/hallucinations/veryfar_noise.ogg', 100, TRUE)
-//	owner.visible_message(span_danger("The [src] lets loose a burst of otherworldly energy!"))
-//
-//	haunt_outburst(epicenter = get_turf(owner), range = 5, haunt_chance = 85, duration = 30 SECONDS)
-//
-//	reactivearmor_cooldown = world.time + reactivearmor_cooldown_duration
-//	return TRUE
+/obj/item/clothing/suit/armor/reactive/ectoplasm
+	name = "reactive possession armor"
+	desc = "An experimental suit of armor that animates nearby objects with a ghostly possession."
+	reactivearmor_cooldown_duration = 40 SECONDS
 
-///obj/item/clothing/suit/armor/reactive/ectoplasm/emp_act(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0)
-//	owner.reagents?.add_reagent(/datum/reagent/inverse/helgrasp, 20)
+/obj/item/clothing/suit/armor/reactive/ectoplasm/block_action(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0)
+	playsound(get_turf(owner),'sound/hallucinations/veryfar_noise.ogg', 100, TRUE)
+	owner.visible_message(span_danger("The [src] lets loose a burst of otherworldly energy!"))
+
+	haunt_outburst(epicenter = get_turf(owner), range = 5, haunt_chance = 85, duration = 30 SECONDS)
+
+	reactivearmor_cooldown = world.time + reactivearmor_cooldown_duration
+	return TRUE
+/obj/item/clothing/suit/armor/reactive/ectoplasm/emp_act(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0)
+	owner.reagents?.add_reagent(/datum/reagent/impure/helgrasp, 20)

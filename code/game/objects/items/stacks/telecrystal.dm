@@ -47,8 +47,8 @@
 	icon_state = "credit"
 	novariants = TRUE
 
-/obj/item/stack/telecrystal/five/inteq
+/obj/item/stack/telecrystal/inteq/five
 	amount = 5
 
-/obj/item/stack/telecrystal/twenty/inteq
+/obj/item/stack/telecrystal/inteq/twenty
 	amount = 20

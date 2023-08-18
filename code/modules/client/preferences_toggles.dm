@@ -453,4 +453,4 @@ GLOBAL_LIST_INIT(ghost_orbits, list(GHOST_ORBIT_CIRCLE,GHOST_ORBIT_TRIANGLE,GHOS
 	prefs.eorg_enabled = !prefs.eorg_enabled
 	prefs.save_preferences()
 	to_chat(src, "You [prefs.eorg_enabled ? "will be" : "won't be"] teleported to Thunderdome at round end.")
-	SSblackbox.record_feedback("admin_verb", "ED")
+	SSblackbox.record_feedback("nested tally", "preferences_verb", 1, list("Toggle EORG", "[usr.client.prefs.eorg_enabled ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

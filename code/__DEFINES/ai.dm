@@ -39,8 +39,6 @@
 
 ///song datum blackboard, set by instrument subtrees
 #define BB_SONG_DATUM "BB_SONG_DATUM"
-///song lines blackboard, set by default on controllers
-#define BB_SONG_LINES "song_lines"
 
 // Monkey AI controller blackboard keys
 
@@ -179,7 +177,3 @@
 #define COMMAND_STOP "Stop"
 #define COMMAND_ATTACK "Attack"
 #define COMMAND_DIE "Play Dead"
-
-///bane ai
-#define BB_BANE_BATMAN "BB_bane_batman"
-//yep thats it

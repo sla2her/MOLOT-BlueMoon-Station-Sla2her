@@ -27,7 +27,7 @@
 	attack_verb_simple = "grip"
 	attack_sound = 'sound/hallucinations/growl1.ogg'
 	speak_emote = list("weeps")
-	deathmessage = "wails, disintegrating into a pile of ectoplasm!"
+	deathmessage = "завывает, распадаясь на кучу эктоплазмы!"
 	loot = list(/obj/item/ectoplasm)
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
@@ -79,4 +79,4 @@
 	attack_verb_simple = "smash"
 	melee_damage_lower = 10
 	melee_damage_upper = 10
-	deathmessage = "wails as it is torn back to the realm from which it came!"
+	deathmessage = "громко воет, когда его возвращают обратно в царство, из которого он пришел!"

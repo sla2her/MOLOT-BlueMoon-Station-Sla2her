@@ -194,6 +194,10 @@ By design, d1 is the smallest direction and d2 is the highest
 /obj/structure/cable/attackby(obj/item/W, mob/user, params)
 	handlecable(W, user, params)
 
+/obj/structure/cable/attack_ghost(mob/dead/observer/user)
+	if(powernet && (powernet.avail > 0))
+		to_chat(user, "<span class='danger'>[DisplayPower(powernet.avail)] in power network.</span>")
+	return ..()
 
 // shock the user with probability prb
 /obj/structure/cable/proc/shock(mob/user, prb, siemens_coeff = 1)

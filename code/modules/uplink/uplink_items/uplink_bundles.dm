@@ -251,13 +251,13 @@
 /datum/uplink_item/bundles_tc/telecrystal/five/inteq
 	name = "5 Tele Credits"
 	desc = "Five golden credits. Can be inserted into Uplink."
-	item = /obj/item/stack/telecrystal/five/inteq
+	item = /obj/item/stack/telecrystal/inteq/five
 	cost = 5
 	purchasable_from = ~(UPLINK_SYNDICATE)
 
 /datum/uplink_item/bundles_tc/telecrystal/twenty/inteq
 	name = "20 Tele Credits"
 	desc = "Twenty golden credits. Can be inserted into Uplink."
-	item = /obj/item/stack/telecrystal/twenty/inteq
+	item = /obj/item/stack/telecrystal/inteq/twenty
 	cost = 20
 	purchasable_from = ~(UPLINK_SYNDICATE)

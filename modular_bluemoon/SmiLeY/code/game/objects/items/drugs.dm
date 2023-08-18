@@ -1,7 +1,15 @@
 /datum/reagent/drug/zvezdochka
-	name = "Звёздочка"
+	name = "Zvezdochka"
 	description = "Реверс-инжениринг версия старого советского психотропного вещества. По крайней мере попытка."
 	color = "#f00aef"
+
+/datum/chemical_reaction/crank
+	name = "Zvezdochka"
+	id = /datum/reagent/drug/zvezdochka
+	results = list(/datum/reagent/drug/zvezdochka = 5)
+	required_reagents = list(/datum/reagent/medicine/sal_acid = 1, /datum/reagent/medicine/oxandrolone = 1, /datum/reagent/medicine/pen_acid = 1, /datum/reagent/toxin/mindbreaker = 2)
+	mix_message = "Смесь бурно реагирует, оставляя после себя несколько красных кристаллических осколков."
+	required_temp = 390
 
 /datum/reagent/drug/zvezdochka/on_mob_metabolize(mob/living/M)
 	. = ..()
@@ -18,7 +26,7 @@
 
 	var/high_message = pick("ЗВЁЗДОЧКИ", "КАЙФ")
 
-	if(prob(15))
+	if(prob(30))
 		to_chat(M, span_notice("<i> ... [high_message] ... </i>"))
 		M.adjustToxLoss(-4 * REM, 0)
 		M.adjustBruteLoss(-4 * REM, 0)
@@ -50,13 +58,13 @@
 	priority = 6
 
 /obj/item/reagent_containers/pill/zvezdochka
-	name = "Звёздочка"
+	name = "Zvezdochka"
 	desc = "Не похоже на мазь."
 	icon_state = "pill7"
 	list_reagents = list(/datum/reagent/drug/zvezdochka = 10)
 
 /obj/item/storage/pill_bottle/zvezdochka
-	name = "Мазь Звёздочка"
+	name = "Mazz Zvezdochka"
 	desc = "Может вызвать ожог глаз. По крайней мере в старой инструкции так было написано."
 
 /obj/item/storage/pill_bottle/zvezdochka/PopulateContents()

@@ -535,13 +535,16 @@ SUBSYSTEM_DEF(vote)
 					choices |= M
 			if("transfer") // austation begin -- Crew autotranfer vote
 				choices.Add(VOTE_TRANSFER,VOTE_CONTINUE) // austation end
-			if("roundtype") //CIT CHANGE - adds the roundstart secret/extended vote
-				if(SSpersistence.saved_modes == {"Extended","Extended","Extended"})
-					choices.Add(ROUNDTYPE_DYNAMIC)
-				if(SSpersistence.saved_modes == {"dynamic","dynamic","dynamic"})
-					choices.Add(ROUNDTYPE_EXTENDED)
-				else
-					choices.Add(ROUNDTYPE_DYNAMIC, ROUNDTYPE_EXTENDED) //BLUEMOON CHANGES, remove ROUNDTYPE_DYNAMIC_TEAMBASED (was first), remove ROUNDTYPE_DYNAMIC_LIGHT (was before extended)
+			if("roundtype")
+				check_combo()
+				var/combo = check_combo()
+				switch (combo)
+					if ("dynamic")
+						choices.Add(ROUNDTYPE_EXTENDED)
+					if ("Extended")
+						choices.Add(ROUNDTYPE_DYNAMIC)
+					if (FALSE)
+						choices.Add(ROUNDTYPE_DYNAMIC, ROUNDTYPE_EXTENDED)
 			if("custom")
 				question = stripped_input(usr,"What is the vote for?")
 				if(!question)
@@ -604,6 +607,17 @@ SUBSYSTEM_DEF(vote)
 				popup.open(0)
 		return 1
 	return 0
+
+/datum/controller/subsystem/vote/proc/check_combo()
+    var/list/roundtypes
+    for (var/mode in SSpersistence.saved_modes)
+        if(!roundtypes[mode])
+            roundtypes[mode] = 0
+        roundtypes[mode]++
+
+        if (roundtypes[mode] >= 3)
+            return mode
+    return FALSE
 
 /datum/controller/subsystem/vote/proc/interface(client/C)
 	if(!C)

@@ -627,3 +627,9 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 				log_game("[key_name(H)] has loaded their default appearance for a ghost role.")
 				message_admins("[ADMIN_LOOKUPFLW(H)] has loaded their default appearance for a ghost role.")
 				return
+
+///Returns a mob's real name between brackets. Useful when you want to display a mob's name alongside their real name
+/mob/proc/get_realname_string()
+	if(real_name && real_name != name)
+		return " \[[real_name]\]"
+	return ""

@@ -1160,10 +1160,10 @@
 	..()
 
 /datum/reagent/medicine/stimulants/on_mob_life(mob/living/carbon/M)
-	M.adjustOxyLoss(-4*REM, FALSE)
-	M.adjustToxLoss(-2*REM, FALSE)
-	M.adjustBruteLoss(-2*REM, FALSE)
-	M.adjustFireLoss(-2*REM, FALSE)
+	M.adjustOxyLoss(-8*REM, FALSE)
+	M.adjustToxLoss(-4*REM, FALSE)
+	M.adjustBruteLoss(-4*REM, FALSE)
+	M.adjustFireLoss(-4*REM, FALSE)
 	if(M.blood_volume < (BLOOD_VOLUME_NORMAL*M.blood_ratio))
 		M.adjust_integration_blood(40) // blood fall out man bad
 	M.AdjustAllImmobility(-60, FALSE)

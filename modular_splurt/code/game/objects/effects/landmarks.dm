@@ -193,5 +193,5 @@
 
 /obj/effect/landmark/start/eorgwarp/Initialize()
 	..()
-	GLOB.deathmatch_arena += get_turf(src)
+	GLOB.eorgwarp += get_turf(src)
 	return INITIALIZE_HINT_QDEL

@@ -110,8 +110,8 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 	return
 
 /obj/item/storage/toolbox/mechanical/old/clean // the assistant traitor toolbox, damage scales with TC inside
-	name = "toolbox"
-	desc = "An old, blue toolbox. It menaces with a sickening miasma of robust energies. You sure about this, Brain?"
+	name = "Toolbox"
+	desc = "Старый, синий ящик с инструментами. Он угрожает тошнотворными миазмами сильных энергий. Ты уверен в этом, Брейн? Ты точно хочешь вложить туда Телекристаллы?"
 	icon_state = "toolbox_blue_clean"
 	force = 19
 	throwforce = 22
@@ -254,9 +254,7 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 	. = ..()
 	if(proximity && isobj(A) && !isitem(A))
 		var/obj/O = A
-		//50 total object damage but split up for stuff like damage deflection.
-		O.take_damage(22)
-		O.take_damage(10)
+		O.take_damage(32)
 
 /obj/item/storage/toolbox/artistic
 	name = "artistic toolbox"
@@ -345,7 +343,7 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 	item_state = "toolbox_gold"
 	has_latches = FALSE
 
-/obj/item/storage/toolbox/gold_real/PopulateContents()
+/obj/item/storage/toolbox/plastitanium/gold_real/PopulateContents()
 	new /obj/item/screwdriver/nuke(src)
 	new /obj/item/wrench(src)
 	new /obj/item/weldingtool/largetank(src)
@@ -354,7 +352,7 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 	new /obj/item/multitool/ai_detect(src)
 	new /obj/item/clothing/gloves/tackler/combat/insulated(src)
 
-/obj/item/storage/toolbox/gold_real/ComponentInitialize()
+/obj/item/storage/toolbox/plastitanium/gold_real/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = 40

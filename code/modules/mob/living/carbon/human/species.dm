@@ -2119,10 +2119,11 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 					else
 						H.adjustOrganLoss(ORGAN_SLOT_BRAIN, I.force * 0.2)
 
-					if(H.stat == CONSCIOUS && H != user && prob(I.force + ((100 - H.health) * 0.5))) // rev deconversion through blunt trauma.
-						var/datum/antagonist/rev/rev = H.mind.has_antag_datum(/datum/antagonist/rev)
-						if(rev)
-							rev.remove_revolutionary(FALSE, user)
+					if(H.mind.has_antag_datum(/datum/antagonist/rev))
+						if(H.stat == CONSCIOUS && H != user && prob(I.force + ((100 - H.health) * 0.5))) // rev deconversion through blunt trauma.
+							var/datum/antagonist/rev/rev = H.mind.has_antag_datum(/datum/antagonist/rev)
+							if(rev)
+								rev.remove_revolutionary(FALSE, user)
 
 				if(bloody)	//Apply blood
 					if(H.wear_mask)

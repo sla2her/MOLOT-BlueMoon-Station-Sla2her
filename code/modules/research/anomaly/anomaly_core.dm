@@ -68,8 +68,8 @@
 	icon_state = "dimensional_core"
 	anomaly_type = /obj/effect/anomaly/dimensional
 
-///obj/item/assembly/signaler/anomaly/ectoplasm
-//	name = "\improper ectoplasm anomaly core"
-//	desc = "The neutralized core of an ectoplasmic anomaly. When you hold it close, you can hear faint murmuring from inside. It'd probably be valuable for research."
-//	icon_state = "dimensional_core"
-//	anomaly_type = /obj/effect/anomaly/ectoplasm
+/obj/item/assembly/signaler/anomaly/ectoplasm
+	name = "\improper ectoplasm anomaly core"
+	desc = "The neutralized core of an ectoplasmic anomaly. When you hold it close, you can hear faint murmuring from inside. It'd probably be valuable for research."
+	icon_state = "dimensional_core"
+	anomaly_type = /obj/effect/anomaly/ectoplasm
