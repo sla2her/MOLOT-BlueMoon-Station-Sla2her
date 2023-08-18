@@ -892,8 +892,8 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 	feedback_details += "Type: [message]"
 	switch(message)
 		if("blob alert")
-			to_chat(target, "<h1 class='alert'>Biohazard Alert</h1>")
-			to_chat(target, "<br><br><span class='alert'>Confirmed outbreak of level 5 biohazard aboard [station_name()]. All personnel must contain the outbreak.</span><br><br>")
+			to_chat(target, "<h1 class='alert'>BНИМАНИЕ БИОУГРОЗА</h1>")
+			to_chat(target, "<br><br><span class='alert'>Подтверждена вспышка биологической опасности пятого уровня на борту [station_name()]. Весь персонал должен сдерживать вспышку.</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_OUTBREAK5])
 		if("ratvar")
 			target.playsound_local(target, 'sound/machines/clockcult/ark_deathrattle.ogg', 50, FALSE, pressure_affected = FALSE)
@@ -902,19 +902,19 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			target.playsound_local(target, 'sound/effects/explosion_distant.ogg', 50, FALSE, pressure_affected = FALSE)
 		if("shuttle dock")
 			to_chat(target, "<h1 class='alert'>Priority Announcement</h1>")
-			to_chat(target, "<br><br><span class='alert'>Эвакуационный аттл пристыковался к станции. У вас есть 3 минуты для посадки.</span><br><br>")
+			to_chat(target, "<br><br><span class='alert'>Эвакуационный Шаттл пристыковался к станции. У вас есть 3 минуты для посадки.</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_SHUTTLEDOCK])
 		if("malf ai") //AI is doomsdaying!
 			to_chat(target, "<h1 class='alert'>ВНИМАНИЕ: АНОМАЛИЯ</h1>")
 			to_chat(target, "<br><br><span class='alert'>Hostile runtimes detected in all station systems, please deactivate your AI to prevent possible damage to its morality core.</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_AIMALF])
 		if("meteors") //Meteors inbound!
-			to_chat(target, "<h1 class='alert'>Meteor Alert</h1>")
+			to_chat(target, "<h1 class='alert'>BНИМАНИЕ МЕТЕОРЫ</h1>")
 			to_chat(target, "<br><br><span class='alert'>[generateMeteorString(rand(60, 90),FALSE,pick(GLOB.cardinals))]</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_METEORS])
 		if("supermatter")
 			SEND_SOUND(target, 'sound/magic/charge.ogg')
-			to_chat(target, "<span class='boldannounce'>You feel reality distort for a moment...</span>")
+			to_chat(target, "<span class='boldannounce'>Вы чувствуете, как реальность на мгновение искажается...</span>")
 
 /datum/hallucination/hudscrew
 

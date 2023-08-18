@@ -52,7 +52,7 @@ Custom Bombcaps:
 	for(var/mob/M in GLOB.player_list)
 		if(M.z == z)
 			SEND_SOUND(M, 'sound/magic/charge.ogg')
-			to_chat(M, "<span class='boldannounce'>You feel reality distort for a moment...</span>")
+			to_chat(M, "<span class='boldannounce'>Вы чувствуете, как реальность на мгновение искажается...</span>")
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "delam", /datum/mood_event/delam)
 
 // Don't explode if we no allow
