@@ -609,7 +609,7 @@ SUBSYSTEM_DEF(vote)
 	return 0
 
 /datum/controller/subsystem/vote/proc/check_combo()
-    var/list/roundtypes
+    var/list/roundtypes = list()
     for (var/mode in SSpersistence.saved_modes)
         if(!roundtypes[mode])
             roundtypes[mode] = 0
