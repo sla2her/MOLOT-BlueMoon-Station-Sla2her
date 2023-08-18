@@ -1,9 +1,54 @@
 //this is here because loadout doesn't support proper accessories
 
 /datum/gear/accessory/polyband
-	name = "A polychromatic armband"
+	name = "A Polychromatic Armband"
 	path = /obj/item/clothing/accessory/armband/polyband
 	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+
+/datum/gear/accessory/armband
+	name = "Red Armband"
+	path = /obj/item/clothing/accessory/armband
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/armband_dep
+	name = "Security Deputy Armband"
+	path = /obj/item/clothing/accessory/armband/deputy
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/armband_car
+	name = "Cargo Bay Guard Armband"
+	path = /obj/item/clothing/accessory/armband/cargo
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/armband_eng
+	name = "Engineering Guard Armband"
+	path = /obj/item/clothing/accessory/armband/engine
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/armband_sci
+	name = "Science Guard Armband"
+	path = /obj/item/clothing/accessory/armband/science
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/armband_hyd
+	name = "Hydroponics Guard Armband"
+	path = /obj/item/clothing/accessory/armband/hydro
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/armband_med
+	name = "Medical Guard Armband"
+	path = /obj/item/clothing/accessory/armband/med
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/armband_medblue
+	name = "White-Blue Medical Guard Armband"
+	path = /obj/item/clothing/accessory/armband/medblue
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
+
+/datum/gear/accessory/black_armband
+	name = "HCA armband"
+	path = /obj/item/clothing/accessory/armband/hcaarmband
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION
 
 //Toys
 /datum/gear/backpack/dildo_huge

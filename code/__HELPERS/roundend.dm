@@ -344,11 +344,14 @@
 	//stop collecting feedback during grifftime
 	SSblackbox.Seal()
 
-	teleport_players_to_eorg_area()
-
 	sleep(50)
 	ready_for_reboot = TRUE
 	standard_reboot()
+
+	var/eorg = alert("Хотите принять участие на ЕОРГ-арене?", "End of Round Deathmatch Arena", "Да", "Нет")
+	if(eorg == "Нет")
+		return
+	teleport_players_to_eorg_area()
 
 /datum/controller/subsystem/ticker/proc/teleport_players_to_eorg_area()
 	if(!config.deathmatch_arena)

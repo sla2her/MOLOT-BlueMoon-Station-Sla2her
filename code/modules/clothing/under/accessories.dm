@@ -472,43 +472,53 @@
 ////////////
 
 /obj/item/clothing/accessory/armband
-	name = "red armband"
+	name = "Red Armband"
 	desc = "An fancy red armband!"
 	icon_state = "redband"
 
 /obj/item/clothing/accessory/armband/deputy
-	name = "security deputy armband"
+	name = "Security Deputy Armband"
 	desc = "An armband, worn by personnel authorized to act as a deputy of station security."
 
 /obj/item/clothing/accessory/armband/cargo
-	name = "cargo bay guard armband"
+	name = "Cargo Bay Guard Armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is brown."
 	icon_state = "cargoband"
 
 /obj/item/clothing/accessory/armband/engine
-	name = "engineering guard armband"
+	name = "Engineering Guard Armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is orange with a reflective strip!"
 	icon_state = "engieband"
 
 /obj/item/clothing/accessory/armband/science
-	name = "science guard armband"
+	name = "Science Guard Armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is purple."
 	icon_state = "rndband"
 
 /obj/item/clothing/accessory/armband/hydro
-	name = "hydroponics guard armband"
+	name = "Hydroponics Guard Armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is green and blue."
 	icon_state = "hydroband"
 
 /obj/item/clothing/accessory/armband/med
-	name = "medical guard armband"
+	name = "Medical Guard Armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is white."
 	icon_state = "medband"
 
 /obj/item/clothing/accessory/armband/medblue
-	name = "medical guard armband"
+	name = "Medical Guard Armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is white and blue."
 	icon_state = "medblueband"
+
+/obj/item/clothing/accessory/armband/hcaarmband
+	name = "HCA Armband"
+	desc = "A black and white armband depicting two swords crossed around the fascia within wreaths representing prosperity. This flag refers to the political party of the Human Commonwealth."
+	icon_state = "hcaarmbanditem"
+	item_state = "hcaarmbanditem"
+	icon = 'modular_bluemoon/rakeideas/hcaarmbanditem.dmi'
+	mob_overlay_icon = 'modular_bluemoon/rakeideas/hcaarmbandchar.dmi'
+	strip_delay = 60
+	dog_fashion = null
 
 //////////////
 //OBJECTION!//

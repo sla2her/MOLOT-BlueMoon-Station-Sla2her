@@ -18,7 +18,7 @@
 		/obj/item/clothing/under/dress/party = 3,
 		/obj/item/clothing/under/dress/skirt/transparent = 3,
 		/obj/item/clothing/under/dress/skirt/toga = 3,
-		/obj/item/clothing/accessory/armband/polyband = 3,
+		/obj/item/clothing/accessory/armband/polyband = 9,
 		/obj/item/clothing/gloves/poly_evening = 3,
 		/obj/item/clothing/gloves/transparent = 3,
 		/obj/item/clothing/suit/toggle/polysuitjacket = 3,

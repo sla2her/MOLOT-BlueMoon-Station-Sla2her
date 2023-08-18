@@ -110,31 +110,35 @@
 	singular_name = "grass floor tile"
 	desc = "A patch of grass like they use on space golf courses."
 	turf_type = /turf/open/floor/grass
-	icon_state = "tile_grass"
+	icon_state = "tile_grass_gross"
 
 /obj/item/stack/tile/grass/grass0
 	name = "Grass Tile 2"
 	singular_name = "grass floor tile"
 	desc = "A patch of grass like they use on space golf courses."
 	turf_type = /turf/open/floor/grass/grass0
+	icon_state = "tile_grass"
 
 /obj/item/stack/tile/grass/grass1
 	name = "Grass Tile 3"
 	singular_name = "grass floor tile"
 	desc = "A patch of grass like they use on space golf courses."
 	turf_type = /turf/open/floor/grass/grass1
+	icon_state = "tile_grass"
 
 /obj/item/stack/tile/grass/grass2
 	name = "Grass Tile 4"
 	singular_name = "grass floor tile"
 	desc = "A patch of grass like they use on space golf courses."
 	turf_type = /turf/open/floor/grass/grass2
+	icon_state = "tile_grass"
 
 /obj/item/stack/tile/grass/grass3
 	name = "Grass Tile 5"
 	singular_name = "grass floor tile"
 	desc = "A patch of grass like they use on space golf courses."
 	turf_type = /turf/open/floor/grass/grass3
+	icon_state = "tile_grass"
 
 /turf/open/floor/grass/grass0
 	icon_state = "grass0"

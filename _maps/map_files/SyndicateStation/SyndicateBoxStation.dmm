@@ -50932,7 +50932,7 @@
 	pixel_y = 25
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "cQT" = (
 /obj/structure/table,
 /obj/item/hand_labeler,
@@ -53455,7 +53455,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "fBW" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
@@ -55027,7 +55027,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "hSf" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
@@ -55718,7 +55718,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "jbf" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -58026,7 +58026,7 @@
 	pixel_y = 24
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "lHK" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -59152,9 +59152,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
-"ndq" = (
-/turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
 "nez" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable{
@@ -59341,11 +59338,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/brig)
-"nsA" = (
-/turf/closed/wall/r_wall/syndicate{
-	smooth = 2
-	},
-/area/service/abandoned_gambling_den)
 "ntt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -60350,7 +60342,7 @@
 	pixel_y = -25
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "oLw" = (
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/mineral/plastitanium/red,
@@ -60663,7 +60655,7 @@
 	light_color = "#e8eaff"
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "ppw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -61236,7 +61228,7 @@
 	pixel_y = -24
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "qeQ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -61698,7 +61690,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "qWd" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 10
@@ -62284,7 +62276,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "rJw" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -62670,7 +62662,7 @@
 	pixel_y = -22
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "srZ" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder,
@@ -65786,7 +65778,7 @@
 	name = "Security Shutters"
 	},
 /turf/open/floor/plating,
-/area/service/abandoned_gambling_den)
+/area/maintenance/starboard/fore)
 "wKO" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
@@ -112215,13 +112207,13 @@ aaa
 aaa
 aaa
 aaa
-nsA
-nsA
-nsA
-nsA
+apC
+apC
+apC
+apC
 qVP
-nsA
-nsA
+apC
+apC
 atB
 apC
 apC
@@ -112472,9 +112464,9 @@ aaa
 aaa
 aaa
 aaa
-nsA
+apC
 cQF
-ndq
+anf
 rIA
 fBy
 hRI
@@ -112730,10 +112722,10 @@ aaa
 aaa
 aaa
 wKe
-ndq
-ndq
-ndq
-ndq
+anf
+anf
+anf
+anf
 oLl
 asB
 asB
@@ -112987,10 +112979,10 @@ aaa
 aaa
 aaa
 wKe
-ndq
-ndq
-ndq
-ndq
+anf
+anf
+anf
+anf
 qeb
 asB
 atD
@@ -113243,12 +113235,12 @@ aaa
 aaa
 aaa
 aaa
-nsA
-ndq
-ndq
-ndq
-ndq
-ndq
+apC
+anf
+anf
+anf
+anf
+anf
 asB
 atC
 auI
@@ -113501,11 +113493,11 @@ aaa
 aaa
 aaa
 wKe
-ndq
-ndq
-ndq
-ndq
-ndq
+anf
+anf
+anf
+anf
+anf
 asB
 atE
 auI
@@ -113758,11 +113750,11 @@ aaa
 aaa
 aaa
 wKe
-ndq
-ndq
-ndq
-ndq
-ndq
+anf
+anf
+anf
+anf
+anf
 asB
 asB
 asB
@@ -114014,11 +114006,11 @@ aaa
 aaa
 aaa
 aaa
-nsA
+apC
 lGV
-ndq
+anf
 pou
-ndq
+anf
 srG
 asB
 atG
@@ -114271,12 +114263,12 @@ aaa
 aaa
 aaa
 aaa
-nsA
-nsA
-nsA
-nsA
-nsA
-nsA
+apC
+apC
+apC
+apC
+apC
+apC
 asB
 atF
 auK

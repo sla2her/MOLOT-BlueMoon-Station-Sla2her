@@ -17,7 +17,8 @@
 	icon_state = "secdrobe"
 	product_slogans = "Лови преступников стильно!;Мы пачкаем форму кровью, чтобы станция оставалась чистой!;У вас есть право соблюдать моду!;Дорогой, не забудь надеть бронежилет!"
 	vend_reply = "Удачной службы!"
-	products = list(/obj/item/clothing/suit/hooded/wintercoat/security = 2,
+	products = list(/obj/item/clothing/accessory/armband/deputy = 5,
+					/obj/item/clothing/suit/hooded/wintercoat/security = 2,
 					/obj/item/storage/backpack/security = 3,
 					/obj/item/storage/backpack/satchel/sec = 3,
 					/obj/item/storage/backpack/duffelbag/sec = 3,
@@ -88,7 +89,9 @@
 	icon_state = "medidrobe"
 	product_slogans = "Сделайте пятна крови модными!!!"
 	vend_reply = "Спасибо за использование MediDrobe!"
-	products = list(/obj/item/clothing/accessory/pocketprotector = 5,
+	products = list(/obj/item/clothing/accessory/armband/med = 5,
+					/obj/item/clothing/accessory/armband/medblue = 5,
+					/obj/item/clothing/accessory/pocketprotector = 5,
 					/obj/item/clothing/head/beret/med = 5,
 					/obj/item/storage/backpack/medic = 5,
 					/obj/item/storage/backpack/satchel/med = 5,
@@ -137,7 +140,8 @@
 	icon_state = "engidrobe"
 	product_slogans = "Гарантированно защитит ваши ноги от несчастных случаев на производстве!;Боитесь радиации? Тогда носите жёлтое!;Жёлтое значит защита!"
 	vend_reply = "Спасибо за использование EngiDrobe!"
-	products = list(/obj/item/clothing/accessory/pocketprotector = 5,
+	products = list(/obj/item/clothing/accessory/armband/engine = 5,
+					/obj/item/clothing/accessory/pocketprotector = 5,
 					/obj/item/clothing/head/beret/eng = 3,
 					/obj/item/storage/backpack/industrial = 3,
 					/obj/item/storage/backpack/satchel/eng = 3,
@@ -192,7 +196,8 @@
 	icon_state = "cargodrobe"
 	product_slogans = "Обновленный стиль Техника Склада!;Выбери свой стиль сегодня!;Эти шорты удобны и просты в носке, получи свои сейчас!"
 	vend_reply = "Спасибо за использование CargoDrobe!"
-	products = list(/obj/item/clothing/suit/hooded/wintercoat/cargo = 3,
+	products = list(/obj/item/clothing/accessory/armband/cargo = 5,
+					/obj/item/clothing/suit/hooded/wintercoat/cargo = 3,
 					/obj/item/clothing/under/rank/cargo/tech = 5,
 					/obj/item/clothing/under/rank/cargo/tech/skirt = 5,
 					/obj/item/clothing/under/rank/cargo/util = 5,
@@ -244,7 +249,8 @@
 	icon_state = "scidrobe"
 	product_slogans = "Тоскуете по запаху плазмы, сжигающей плоть?;Купите научную одежду прямо сейчас!;Изготовлена с использованием 10% ауксетика, так что вы можете не беспокоиться о том, что потеряете руку!"
 	vend_reply = "Спасибо за использование SciDrobe!"
-	products = list(/obj/item/clothing/accessory/pocketprotector = 5,
+	products = list(/obj/item/clothing/accessory/armband/science = 5,
+					/obj/item/clothing/accessory/pocketprotector = 5,
 					/obj/item/clothing/head/beret/sci = 3,
 					/obj/item/storage/backpack/science = 3,
 					/obj/item/storage/backpack/satchel/tox = 3,
@@ -271,7 +277,8 @@
 	icon_state = "hydrobe"
 	product_slogans = "Вы любите почву? Тогда покупайте нашу одежду!;Приобрести наряды, соответствующие вашему зеленому стилю, можно здесь!"
 	vend_reply = "Спасибо за использование Hydrobe!"
-	products = list(/obj/item/storage/backpack/botany = 3,
+	products = list(/obj/item/clothing/accessory/armband/hydro = 5,
+					/obj/item/storage/backpack/botany = 3,
 					/obj/item/storage/backpack = 3,
 					/obj/item/storage/backpack/satchel/hyd = 3,
 					/obj/item/storage/backpack/duffelbag = 3,
@@ -408,7 +415,8 @@
 	icon_state = "lawdrobe"
 	product_slogans = "Я ПРОТИВ!;Добейтесь верховенства закона сейчас же!"
 	vend_reply = "Спасибо за использование LawDrobe!"
-	products = list(/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt = 3,
+	products = list(/obj/item/clothing/accessory/armband = 5,
+					/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt = 3,
 					/obj/item/clothing/under/rank/civilian/lawyer/purpsuit = 3,
 					/obj/item/clothing/under/rank/civilian/lawyer/purpsuit/skirt = 3,
 					/obj/item/clothing/under/rank/civilian/lawyer/female = 3,

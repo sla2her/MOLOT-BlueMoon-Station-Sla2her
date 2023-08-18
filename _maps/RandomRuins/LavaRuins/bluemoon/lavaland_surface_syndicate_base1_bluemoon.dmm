@@ -1635,7 +1635,7 @@
 	volume_rate = 200
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
+/area/ruin/lavaland/unpowered/deepspaceone/engineering)
 "lH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
