@@ -909,6 +909,49 @@ proc/asiatish(message)
 		message = replacetextEx(message, "Ы", "и")
 	return message
 
+/datum/quirk/ukraine
+	name = "Украиновый"
+	desc = "Похоже, вы изучили новый язык и вы не замечаете в этом ничего необычного."
+	value = 0
+	mob_trait = TRAIT_UKRAINE
+	gain_text = span_notice("А що такое?")
+	lose_text = span_danger("А что такое?")
+	medical_record_text = "Пациент испытывает любовь к синим и жёлтым цветам."
+
+proc/ukraine(message)
+	if(prob(75))
+		message = replacetext_char(message, "зажигалка", "спалахуйка")
+		message = replacetext_char(message, "зеркало", "пикогляд")
+		message = replacetext_char(message, "презерватив", "нацюцюрник")
+		message = replacetext_char(message, "пизда", "піхва")
+		message = replacetext_char(message, "хуй", "прутень")
+		message = replacetext_char(message, "врач", "ліпило")
+		message = replacetext_char(message, "бармен", "наливайко")
+		message = replacetext_char(message, "повар", "кухар")
+		message = replacetext_char(message, "капитан", "гетьман")
+		message = replacetext_char(message, "предатель", "зрадник")
+		message = replacetext_char(message, "генокрад", "москаль")
+		message = replacetext_char(message, "мостик", "майдан")
+		message = replacetext_char(message, "ученый", "вчений")
+		message = replacetext_char(message, "инженер", "слюсар")
+		message = replacetext_char(message, "маг", "чаклун")
+		message = replacetext_char(message, "лоза", "бур'ян")
+		message = replacetext_char(message, "культ", "нехристь")
+		message = replacetext_char(message, "КМ", "комірник")
+		message = replacetext_char(message, "СМО", "головний ліпило")
+		message = replacetext_char(message, "ГСБ", "дільничий")
+		message = replacetext_char(message, "ХОС", "дільничий")
+		message = replacetext_char(message, "водка", "горілка")
+		message = replacetext_char(message, "что", "шо")
+		message = replacetext_char(message, "добрый день", "доброго дня")
+		message = replacetext_char(message, "привет", "здоровенькі були")
+		message = replacetext_char(message, "блять", "дідько")
+		message = replacetextEx(message, "ы", "и")
+		message = replacetextEx(message, "и", "і")
+		message = replacetextEx(message, "ъ", "ї")
+
+	return message
+
 /datum/quirk/body_morpher
 	name = "Изменятель Тела"
 	desc = "Каким-то образом вы развили способность, позволяющую вашему телу морфировать и изменять свои части тела, подобно тому, как это может делать слаймик."
@@ -936,8 +979,8 @@ proc/asiatish(message)
 	QDEL_NULL(alter_form_action)
 
 /datum/quirk/modular
-	name = "Modular Limbs"
-	desc = "Your limbs are able to be attached and detached easily... unfortunately, everyone around you can alter your limbs too! Right click yourself to use this quirk."
+	name = "Модульные Конечности"
+	desc = "Ваши конечности можно легко присоединять и отсоединять... к сожалению, все окружающие тоже могут изменять ваши конечности! Щелкните правой кнопкой мыши на себе, чтобы использовать эту причуду."
 	value = 0
 
 /datum/quirk/modular/add()

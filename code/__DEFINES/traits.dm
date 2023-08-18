@@ -225,6 +225,7 @@
 #define TRAIT_EMPATH			"empath"
 #define TRAIT_KARTAVII			"kartavii"
 #define TRAIT_ASIAT				"asiatish"
+#define TRAIT_UKRAINE			"ukraine"
 #define TRAIT_FRIENDLY			"friendly"
 #define TRAIT_SNOB				"snob"
 #define TRAIT_MULTILINGUAL		"multilingual"

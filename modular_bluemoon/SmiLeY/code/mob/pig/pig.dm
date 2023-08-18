@@ -68,6 +68,18 @@
 	tastes = list("pig meat" = 1)
 	foodtype = MEAT
 
+/obj/item/reagent_containers/food/snacks/meat/slab/pig/On_Consume(mob/living/carbon/human/eater)
+	. = ..()
+	eater.add_quirk(/datum/quirk/ukraine)
+
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/salo
 	name = "Кусочек Сала"
 	icon_state = "salo_slice"
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/salo/On_Consume(mob/living/carbon/human/eater)
+	. = ..()
+	eater.add_quirk(/datum/quirk/ukraine)
+
+/obj/item/reagent_containers/food/snacks/meat/steak/plain/pig/On_Consume(mob/living/carbon/human/eater)
+	. = ..()
+	eater.add_quirk(/datum/quirk/ukraine)
