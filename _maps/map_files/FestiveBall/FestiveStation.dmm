@@ -55531,9 +55531,9 @@
 "rhc" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/syndicate,
-/obj/item/storage/toolbox/gold_real,
+/obj/item/storage/toolbox/plastitanium/gold_real,
 /obj/item/storage/toolbox/syndicate,
-/obj/item/storage/toolbox/gold_real,
+/obj/item/storage/toolbox/plastitanium/gold_real,
 /turf/open/floor/circuit/off,
 /area/science)
 "rho" = (
