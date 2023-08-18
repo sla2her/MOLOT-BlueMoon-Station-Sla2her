@@ -636,7 +636,7 @@
 	if(!SScommunications.can_announce(user, is_ai))
 		to_chat(user, span_alert("Intercomms recharging. Please stand by."))
 		return
-	var/input = input(user, "Please choose a message to announce to the station crew.", "Priority Announcement") as message|null
+	var/input = input(user, "Выберите сообщение для объявления экипажу станции.", "Priority Announcement") as message|null
 	if(!input || !user.canUseTopic(src, !issilicon(usr)))
 		return
 	if(!(user.can_speak())) //No more cheating, mime/random mute guy!
