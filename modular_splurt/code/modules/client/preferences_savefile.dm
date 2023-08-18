@@ -2,7 +2,7 @@
 	//Character directory
 	S["show_in_directory"]		>> show_in_directory
 	S["directory_tag"]			>> directory_tag
-	S["directory_erptag"]			>> directory_erptag
+	S["directory_erptag"]		>> directory_erptag
 	S["directory_ad"]			>> directory_ad
 
 	//sanitize data

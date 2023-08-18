@@ -25,7 +25,7 @@
 
 /obj/item/restraints/handcuffs
 	name = "handcuffs"
-	desc = "Use this to keep prisoners in line."
+	desc = "Используйте это, чтобы держать заключенных в узде."
 	gender = PLURAL
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "handcuff"
@@ -43,6 +43,12 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
 	var/cuffsound = 'sound/weapons/handcuffs.ogg'
 	var/trashtype = null //for disposable cuffs
+
+/obj/item/restraints/handcuffs/kinky
+	name = "Kinky Handcuffs"
+	desc = "Настоящие наручники, созданные для эротических игр... наверное... почему они настоящие?"
+	icon_state = "handcuffgag"
+	item_state = "kinkycuff"
 
 /obj/item/restraints/handcuffs/attack(mob/living/carbon/C, mob/living/user)
 	if(!istype(C))
@@ -103,16 +109,16 @@
 	return
 
 /obj/item/restraints/handcuffs/sinew
-	name = "sinew restraints"
-	desc = "A pair of restraints fashioned from long strands of flesh."
+	name = "Sinew Restraints"
+	desc = "Пара наручников, сделанных из длинных нитей плоти."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "sinewcuff"
 	breakouttime = 300 //Deciseconds = 30s
 	cuffsound = 'sound/weapons/cablecuff.ogg'
 
 /obj/item/restraints/handcuffs/cable
-	name = "cable restraints"
-	desc = "Looks like some cables tied together. Could be used to tie something up."
+	name = "Cable Restraints"
+	desc = "Похоже на несколько кабелей, связанных вместе. Может использоваться для связывания чего-либо."
 	icon_state = "cuff"
 	item_state = "coil"
 	color =  "#ff0000"
@@ -210,8 +216,8 @@
 		return ..()
 
 /obj/item/restraints/handcuffs/cable/zipties
-	name = "zipties"
-	desc = "Plastic, disposable zipties that can be used to restrain temporarily but are destroyed after use."
+	name = "Zipties"
+	desc = "Пластиковые одноразовые стяжки-молнии, которые могут использоваться для задержания, но после использования сами по себе рвутся."
 	item_state = "zipties"
 	color = "white"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
@@ -234,14 +240,14 @@
 	icon_state = "handcuffAlien"
 
 /obj/item/restraints/handcuffs/fake
-	name = "fake handcuffs"
-	desc = "Fake handcuffs meant for gag purposes."
+	name = "Fake Handcuffs"
+	desc = "Поддельные наручники, предназначенные для всяческих игр."
 	breakouttime = 10 //Deciseconds = 1s
 	demoralize_criminals = FALSE
 
 /obj/item/restraints/handcuffs/fake/kinky
-	name = "kinky handcuffs"
-	desc = "Fake handcuffs meant for erotic roleplay."
+	name = "Kinky Handcuffs"
+	desc = "Фальшивые наручники, предназначенные для эротических ролевых игр."
 	icon_state = "handcuffgag"
 	item_state = "kinkycuff"
 

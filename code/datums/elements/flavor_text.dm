@@ -46,6 +46,11 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 	if(save_key && ishuman(target))
 		RegisterSignal(target, COMSIG_HUMAN_PREFS_COPIED_TO, .proc/update_prefs_flavor_text)
 
+/datum/element/flavor_text/Attach(datum/target, text = "", _name = "Flavor Text", _addendum, _max_len = MAX_FLAVOR_LEN, _always_show = FALSE, _edit = TRUE, _save_key, _examine_no_preview = FALSE, _show_on_naked)
+	. = ..()
+	if(flavor_name == "OOC Notes") //SPLURT EDIT make it so ooc notes are always visible
+		always_show = TRUE
+
 /datum/element/flavor_text/Detach(atom/A)
 	. = ..()
 	UnregisterSignal(A, list(COMSIG_PARENT_EXAMINE, COMSIG_HUMAN_PREFS_COPIED_TO))

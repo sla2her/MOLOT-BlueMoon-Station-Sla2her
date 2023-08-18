@@ -42,7 +42,7 @@
 /mob/living/simple_animal/hostile/beastspirit/ComponentInitialize()
 	. = ..()
 
-	AddElement(/datum/element/flavor_text, _name = "OOC Notes", _addendum = "Put information on ERP/vore/lewd-related preferences here. THIS SHOULD NOT CONTAIN REGULAR FLAVORTEXT!!", _save_key = "ooc_notes", _examine_no_preview = TRUE)
+	//AddElement(/datum/element/flavor_text, _name = "OOC Notes", _addendum = "Put information on ERP/vore/lewd-related preferences here. THIS SHOULD NOT CONTAIN REGULAR FLAVORTEXT!!", _save_key = "ooc_notes", _examine_no_preview = TRUE)
 
 /mob/living/simple_animal/hostile/beastspirit/Initialize()
 	. = ..()

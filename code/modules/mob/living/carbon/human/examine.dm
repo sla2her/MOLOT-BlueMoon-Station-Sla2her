@@ -521,7 +521,9 @@
 	if(LAZYLEN(.) > 2) //Want this to appear after species text
 		.[2] += "<hr>"
 
-	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
+	// send signal last so everything else prioritizes above
+	. += span_boldnotice("Профиль Персонажа: <a href='?src=\ref[src];character_profile=1'>\[Осмотреть\]</a>")
+	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .) //This also handles flavor texts now
 
 /mob/living/proc/status_effect_examines(pronoun_replacement) //You can include this in any mob's examine() to show the examine texts of status effects!
 	var/list/dat = list()
