@@ -30,7 +30,7 @@
 	build_path = /obj/item/seeds/random
 	category = list("initial","Organic Materials")
 
-/datum/design/strange_seed
+/datum/design/rolling_paper
 	name = "Rolling Paper"
 	id = "rolling_paper"
 	build_type = BIOGENERATOR
