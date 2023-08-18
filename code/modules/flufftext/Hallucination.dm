@@ -909,7 +909,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			to_chat(target, "<br><br><span class='alert'>Hostile runtimes detected in all station systems, please deactivate your AI to prevent possible damage to its morality core.</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_AIMALF])
 		if("meteors") //Meteors inbound!
-			to_chat(target, "<h1 class='alert'>BНИМАНИЕ МЕТЕОРЫ</h1>")
+			to_chat(target, "<h1 class='alert'>BНИМАНИЕ: МЕТЕОРЫ</h1>")
 			to_chat(target, "<br><br><span class='alert'>[generateMeteorString(rand(60, 90),FALSE,pick(GLOB.cardinals))]</span><br><br>")
 			SEND_SOUND(target, SSstation.announcer.event_sounds[ANNOUNCER_METEORS])
 		if("supermatter")
