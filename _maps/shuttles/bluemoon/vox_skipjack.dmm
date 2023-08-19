@@ -9,6 +9,11 @@
 /obj/structure/sign/departments/cargo,
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/vox_raiders)
+"aH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/catwalk_floor,
+/area/shuttle/vox_raiders)
 "bY" = (
 /obj/item/trash/intecookies,
 /obj/effect/decal/cleanable/dirt,
@@ -17,6 +22,7 @@
 "cr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/human/vox_scavenger,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3,
 /turf/open/floor/iron/shuttle/arrivals/sign_1,
 /area/shuttle/vox_raiders)
 "cz" = (
@@ -32,6 +38,9 @@
 	req_access_txt = "150"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "dp" = (
@@ -59,12 +68,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/shuttle/arrivals/sign_1,
 /area/shuttle/vox_raiders)
-"ec" = (
-/obj/machinery/atmospherics/pipe/simple/general/visible{
-	dir = 4
-	},
+"ee" = (
+/obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/catwalk_floor,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "ek" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -77,6 +87,11 @@
 /obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
+"fd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/manifold/general/visible/layer3,
+/turf/open/floor/catwalk_floor,
+/area/shuttle/vox_raiders)
 "fV" = (
 /obj/item/reagent_containers/syringe/contraband/space_drugs,
 /obj/effect/decal/cleanable/dirt,
@@ -86,6 +101,7 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "gG" = (
@@ -110,6 +126,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/space/eva,
 /obj/item/clothing/head/helmet/space/eva,
+/obj/item/restraints/handcuffs/cable/zipties,
+/obj/item/restraints/handcuffs/cable/zipties,
+/obj/item/restraints/handcuffs/cable/zipties,
+/obj/item/restraints/handcuffs/cable/zipties,
+/obj/item/restraints/handcuffs/cable/zipties,
+/obj/item/restraints/handcuffs/cable/zipties,
+/obj/item/restraints/handcuffs/cable/zipties,
 /turf/open/floor/iron/shuttle/arrivals/sign_1,
 /area/shuttle/vox_raiders)
 "iO" = (
@@ -141,6 +164,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
+"kr" = (
+/obj/structure/glowshroom/single,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3,
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/vox_raiders)
 "kx" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/vox_raiders)
@@ -162,6 +191,9 @@
 "lA" = (
 /obj/machinery/door/airlock/hatch,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "lC" = (
@@ -176,11 +208,8 @@
 /area/shuttle/vox_raiders)
 "mE" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/general/visible{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/general/visible{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/general/visible/layer3{
+	dir = 1
 	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
@@ -199,30 +228,80 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
+"oI" = (
+/obj/machinery/atmospherics/components/unary/tank/nitrogen{
+	piping_layer = 3
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron/shuttle/arrivals/sign_1,
+/area/shuttle/vox_raiders)
 "pa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/dim/directional/north,
 /obj/effect/mob_spawn/human/vox_scavenger,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3,
 /turf/open/floor/iron/shuttle/arrivals/sign_1,
 /area/shuttle/vox_raiders)
 "pk" = (
 /obj/structure/sign/departments/engineering,
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/vox_raiders)
-"qy" = (
+"pu" = (
+/obj/machinery/door/airlock/hatch{
+	req_access_txt = "150"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "qR" = (
 /obj/item/clothing/head/bearpelt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/dim/directional/east,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/vox_raiders)
+"rg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/vox_raiders)
+"ru" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/iron/shuttle/arrivals/sign_1,
+/area/shuttle/vox_raiders)
+"rK" = (
+/obj/machinery/door/airlock/hatch{
+	req_access_txt = "150"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "rT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/chips,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/catwalk_floor,
+/area/shuttle/vox_raiders)
+"sw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "sD" = (
@@ -237,8 +316,11 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "sY" = (
-/obj/machinery/computer/station_alert,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3,
+/obj/machinery/computer/piratepad_control{
+	dir = 0
+	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "uw" = (
@@ -255,6 +337,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
+"uL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/catwalk_floor,
+/area/shuttle/vox_raiders)
 "uT" = (
 /obj/machinery/chem_master,
 /obj/effect/decal/cleanable/dirt,
@@ -263,6 +352,13 @@
 "vS" = (
 /obj/machinery/door/window/brigdoor/eastleft,
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/catwalk_floor,
+/area/shuttle/vox_raiders)
+"vW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 5
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "wQ" = (
@@ -282,6 +378,7 @@
 "yz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/popcorn,
+/obj/machinery/atmospherics/pipe/manifold4w/general/hidden/layer3,
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "yK" = (
@@ -311,6 +408,9 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "150"
 	},
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "Ag" = (
@@ -331,12 +431,13 @@
 "An" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/human/vox_scavenger,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "AG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/cheesie,
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3,
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "AQ" = (
@@ -347,6 +448,9 @@
 "AR" = (
 /obj/structure/glowshroom/single,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "Ca" = (
@@ -443,13 +547,11 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "JY" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/restraints/handcuffs/cable/zipties,
-/obj/item/restraints/handcuffs/cable/zipties,
-/obj/item/restraints/handcuffs/cable/zipties,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/piratepad{
+	pixel_y = 6
+	},
+/obj/effect/turf_decal/box,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "Kk" = (
@@ -474,21 +576,29 @@
 	},
 /obj/item/cautery,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "KF" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "KN" = (
 /obj/item/trash/raisins,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "KT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/flour,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "Lg" = (
@@ -522,24 +632,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
-"MV" = (
-/obj/machinery/atmospherics/pipe/simple/general/visible{
-	dir = 5
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/catwalk_floor,
-/area/shuttle/vox_raiders)
 "Ns" = (
 /obj/item/trash/plate,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/shuttle/cargo,
-/area/shuttle/vox_raiders)
-"NN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/general/visible{
-	dir = 4
-	},
-/turf/open/floor/catwalk_floor,
 /area/shuttle/vox_raiders)
 "Oy" = (
 /obj/machinery/vending/engivend{
@@ -581,6 +677,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/dim/directional/west,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 5
+	},
 /turf/open/floor/iron/shuttle/arrivals/sign_1,
 /area/shuttle/vox_raiders)
 "Ra" = (
@@ -622,13 +721,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/shuttle/arrivals/sign_1,
 /area/shuttle/vox_raiders)
-"Sf" = (
-/obj/machinery/atmospherics/pipe/simple/general/visible{
-	dir = 9
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/catwalk_floor,
-/area/shuttle/vox_raiders)
 "SF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/shuttle/arrivals/sign_1,
@@ -644,6 +736,11 @@
 /obj/item/trash/boritos,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
+"Ui" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3,
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/vox_raiders)
 "Uk" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -653,12 +750,23 @@
 /obj/item/paper,
 /obj/item/pen,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "Uz" = (
 /obj/item/reagent_containers/syringe/antiviral,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/catwalk_floor,
+/area/shuttle/vox_raiders)
+"WR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/vox_raiders)
 "Yi" = (
 /obj/structure/rack,
@@ -767,7 +875,7 @@ hm
 hm
 kx
 An
-uI
+vW
 dp
 YV
 kx
@@ -790,7 +898,7 @@ kx
 kx
 kx
 AQ
-uI
+sw
 ah
 Yi
 kx
@@ -813,7 +921,7 @@ GP
 uT
 kx
 AQ
-uI
+sw
 RD
 FI
 kx
@@ -831,7 +939,7 @@ kx
 kx
 kc
 Al
-uI
+sw
 iC
 Tl
 kx
@@ -859,7 +967,7 @@ Mu
 lm
 kx
 uF
-MV
+fd
 kx
 yK
 lC
@@ -882,10 +990,10 @@ gG
 gG
 Jf
 cr
-ec
+fd
 Ag
 Ml
-RD
+rg
 RD
 kx
 "}
@@ -900,15 +1008,15 @@ TO
 Jt
 Am
 RD
-uI
+sw
 RD
 JC
 Gr
-qy
-mE
-Pb
 RD
-uI
+mE
+pu
+Ui
+fd
 RD
 Rr
 "}
@@ -916,22 +1024,22 @@ Rr
 hm
 gG
 CI
-Qk
-RD
+ru
+Ui
 AG
-RD
-Jt
-RD
-RD
+Ui
+rK
+Ui
+Ui
 yz
-RD
-RD
-Jt
+Ui
+Ui
+rK
 KN
-NN
+fd
 Pb
 RD
-uI
+sw
 RD
 Zb
 "}
@@ -939,7 +1047,7 @@ Zb
 hm
 gG
 Jf
-yb
+ee
 RD
 RD
 Ns
@@ -951,10 +1059,10 @@ gG
 gG
 Jf
 pa
-ec
+fd
 nF
 RD
-RD
+WR
 RD
 kx
 "}
@@ -973,8 +1081,8 @@ AR
 Uk
 Ca
 kx
-uF
-Sf
+oI
+fd
 kx
 RK
 dz
@@ -991,7 +1099,7 @@ kx
 kx
 kx
 JY
-uI
+aH
 KT
 wQ
 Ra
@@ -1014,7 +1122,7 @@ hm
 hm
 kx
 sY
-yR
+kr
 qR
 yU
 Lg
@@ -1066,7 +1174,7 @@ hm
 hm
 kx
 An
-uI
+uL
 en
 ek
 kx
