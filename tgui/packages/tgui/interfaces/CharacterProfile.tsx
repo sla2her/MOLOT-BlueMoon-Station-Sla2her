@@ -28,7 +28,7 @@ interface CharacterProfileContext {
   silicon_flavor_text: string;
   oocnotes: string;
   species_name: string;
-  species_text: string;
+  custom_species_lore: string;
   vore_tag: string;
   erp_tag: string;
   mob_tag: string;
@@ -66,7 +66,7 @@ export const CharacterProfile = (props, context) => {
             <Flex.Item Flex-direction="column" pl="10px" width="100%">
               <Collapsible title={combinedspeciesname} open>
                 <Section style={{ "white-space": "pre-line" }}>
-                  {data.species_text}
+                  {data.custom_species_lore}
                 </Section>
               </Collapsible>
               <Collapsible title="Описание Персонажа" open>
