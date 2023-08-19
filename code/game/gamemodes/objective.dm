@@ -1326,7 +1326,7 @@ GLOBAL_LIST_EMPTY(possible_sabotages)
 /datum/objective/kidnap
 	name = "kidnap"
 
-/datum/objective/kidnap/find_target()
+/datum/objective/kidnap/find_target(blacklist)
 	var/list/roles = list("Chief Engineer","Research Director","Chief Medical Officer","Geneticist","Roboticist","Chemist","Station Engineer","Atmospherics Technician","Scientist","Medical Doctor","Paramedic") // Приоритетные цели воксов - дельцы машинерии и медицины
 	var/list/possible_targets = list()
 	var/list/priority_targets = list()
@@ -1383,7 +1383,7 @@ GLOBAL_LIST_EMPTY(possible_sabotages)
 /datum/objective/heist
 	name = "heist"
 
-/datum/objective/heist/find_target()
+/datum/objective/heist/find_target(blacklist)
 	var/loot = "что-то"
 	switch(rand(1,8))
 		if(1)
