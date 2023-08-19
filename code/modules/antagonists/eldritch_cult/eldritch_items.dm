@@ -1,6 +1,6 @@
 /obj/item/living_heart
-	name = "living heart"
-	desc = "A link to the worlds beyond."
+	name = "Living Heart"
+	desc = "Связь с другим миром... смажь меня кровью, если хочешь возобновить биение сердца."
 	icon = 'icons/obj/eldritch.dmi'
 	icon_state = "living_heart"
 	w_class = WEIGHT_CLASS_SMALL

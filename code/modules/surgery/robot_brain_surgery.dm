@@ -14,7 +14,7 @@
 	desc = "A surgical procedure that restores the default behavior logic and personality matrix of an IPC posibrain."
 
 /datum/surgery_step/fix_robot_brain
-	name = "fix posibrain (multitool)"
+	name = "Отремонтировать Пози-Мозг (Мультитул)"
 	implements = list(TOOL_MULTITOOL = 100, TOOL_HEMOSTAT = 35, TOOL_SCREWDRIVER = 15)
 	time = 120 //long and complicated
 

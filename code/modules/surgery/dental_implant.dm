@@ -5,7 +5,7 @@
 	requires_bodypart_type = BODYPART_ORGANIC
 
 /datum/surgery_step/insert_pill
-	name = "insert pill"
+	name = "Имплантировать Таблетку"
 	implements = list(/obj/item/reagent_containers/pill = 100)
 	time = 16
 

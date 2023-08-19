@@ -28,7 +28,7 @@
 	return TRUE
 
 /datum/surgery_step/brainwash
-	name = "brainwash"
+	name = "Промыть Мозги"
 	implements = list(TOOL_HEMOSTAT = 85, TOOL_WIRECUTTER = 50, /obj/item/stack/packageWrap = 35, /obj/item/stack/cable_coil = 15)
 	time = 200
 	preop_sound = 'sound/surgery/hemostat1.ogg'

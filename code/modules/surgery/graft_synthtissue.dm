@@ -18,7 +18,7 @@
 
 //repair organs
 /datum/surgery_step/graft_synthtissue
-	name = "graft synthtissue"
+	name = "Трансплантировать Синтетическую Ткань"
 	implements = list(TOOL_HEMOSTAT = 100, TOOL_SCREWDRIVER = 35, /obj/item/pen = 15)
 	repeatable = TRUE
 	time = 75

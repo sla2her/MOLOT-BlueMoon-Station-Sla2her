@@ -41,7 +41,7 @@ Has a version for organic people and robotic/synthetic ones, considering robotic
 		return FALSE
 
 /datum/surgery_step/override_safeties
-	name = "Override inbuilt safeguards (multitool)"
+	name = "Отменить Встроенные Защиты (Мультитул)"
 	implements = list(TOOL_MULTITOOL = 100, TOOL_WIRECUTTER = 20)
 	time = 50
 
@@ -63,7 +63,7 @@ Has a version for organic people and robotic/synthetic ones, considering robotic
 	return FALSE
 
 /datum/surgery_step/remove_corruption
-	name = "Initiate system purge (multitool)"
+	name = "Запустить Очистку Системы (Мультитул)"
 	implements = list(TOOL_MULTITOOL = 95, TOOL_WIRECUTTER = 10) //You are relatively safe just using a multitool, but you should use sterilizer or simillar success chance increasing chems regardless.
 	time = 80 //Takes a l o n g time, but completely purges system corruption
 

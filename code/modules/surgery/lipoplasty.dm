@@ -11,7 +11,7 @@
 
 //cut fat
 /datum/surgery_step/cut_fat
-	name = "cut excess fat"
+	name = "Вырезать Избыток Жира"
 	implements = list(TOOL_SAW = 100, /obj/item/hatchet = 35, /obj/item/kitchen/knife/butcher = 25) //why we need a saw to cut adipose tissue is beyond me, shit's soft as fuck
 	time = 64
 
@@ -28,7 +28,7 @@
 
 //remove fat
 /datum/surgery_step/remove_fat
-	name = "remove loose fat"
+	name = "Изъять Избыток Жира"
 	implements = list(TOOL_RETRACTOR = 100, TOOL_SCREWDRIVER = 45, TOOL_WIRECUTTER = 35)
 	time = 32
 

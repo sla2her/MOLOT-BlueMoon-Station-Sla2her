@@ -335,7 +335,8 @@
 
 /datum/eldritch_knowledge/living_heart/recreate
 	name = "Recreate Living Heart"
-	required_atoms = list(/obj/item/living_heart)
+	desc = "Смочи меня кровью и сбрось свою нынешнюю цель."
+	required_atoms = list(/obj/item/living_heart,/obj/effect/decal/cleanable/blood)
 	result_atoms = list(/obj/item/living_heart)
 
 /datum/eldritch_knowledge/codex_cicatrix

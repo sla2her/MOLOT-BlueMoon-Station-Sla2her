@@ -20,7 +20,7 @@
 	return TRUE
 
 /datum/surgery_step/reprogram
-	name = "reprogram"
+	name = "Перепрограммировать"
 	implements = list(TOOL_MULTITOOL = 85, TOOL_HEMOSTAT = 50, TOOL_WIRECUTTER = 35, /obj/item/stack/packageWrap = 35, /obj/item/stack/cable_coil = 15, /obj/item/card/emag = 100)
 	time = 200
 	var/objective

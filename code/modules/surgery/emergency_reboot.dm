@@ -22,7 +22,7 @@
 	return TRUE
 
 /datum/surgery_step/force_reboot
-	name = "initiate system reboot"
+	name = "Инициировать Перезагрузку Системы"
 	implements = list(TOOL_MULTITOOL = 100, /obj/item/borg/upgrade/restart = 100)
 	time = 100
 

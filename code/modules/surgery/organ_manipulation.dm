@@ -65,7 +65,7 @@
 
 /datum/surgery_step/manipulate_organs
 	time = 64
-	name = "manipulate organs"
+	name = "Манипулировать с Органами"
 	repeatable = 1
 	implements = list(/obj/item/organ = 100, /obj/item/organ_storage = 100)
 	preop_sound = 'sound/surgery/organ2.ogg'

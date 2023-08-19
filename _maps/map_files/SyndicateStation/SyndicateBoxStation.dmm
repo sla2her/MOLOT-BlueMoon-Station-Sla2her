@@ -54286,9 +54286,6 @@
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
-"gIL" = (
-/turf/closed/wall,
-/area/service/lawoffice)
 "gIU" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -95258,7 +95255,7 @@ aph
 tmG
 gLj
 aph
-gIL
+aph
 lpV
 lpV
 aph
