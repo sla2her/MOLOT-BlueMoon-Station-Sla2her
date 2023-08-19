@@ -616,7 +616,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					else
 						dat += "[TextPreview(features["silicon_flavor_text"])]...<BR>"
 					dat += "<h2>Custom Species Lore</h2>"
-					dat += "<a href='?_src_=prefs;preference=custom_species_lore;task=input'><b>Set Silicon Examine Text</b></a><br>"
+					dat += "<a href='?_src_=prefs;preference=custom_species_lore;task=input'><b>Set Custom Species Lore Text</b></a><br>"
 					if(length(features["custom_species_lore"]) <= MAX_FLAVOR_PREVIEW_LEN)
 						if(!length(features["custom_species_lore"]))
 							dat += "\[...\]<BR>"
