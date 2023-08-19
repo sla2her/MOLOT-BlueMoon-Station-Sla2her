@@ -51,8 +51,8 @@
 	if(last_capped_size)
 		old_size = last_capped_size
 		last_capped_size = null
-	var/healthmod_old = ((old_size * 75) - 75) //Get the old value to see what we must change.
-	var/healthmod_new = ((get_size(holder) * 75) - 75) //A size of one would be zero. Big boys get health, small ones lose health.
+	var/healthmod_old = ((old_size * 150) - 150) //Get the old value to see what we must change.
+	var/healthmod_new = ((get_size(holder) * 150) - 150) //A size of one would be zero. Big boys get health, small ones lose health.
 	var/healthchange = healthmod_new - healthmod_old //Get ready to apply the new value, and subtract the old one. (Negative values become positive)
 	holder.maxHealth += healthchange
 	holder.health += healthchange
