@@ -14,7 +14,8 @@ const getTagColor = (erptag) => {
   }
 };
 
-// I am aware that the following context with all these vars is messy, but this isn't particularly
+// I am aware that the following context with
+// all these vars is messy, but this isn't particularly
 // 'hot' code given it's static data.
 
 interface CharacterProfileContext {
@@ -93,7 +94,8 @@ export const CharacterProfile = (props, context) => {
                       <Table.Cell>Жестокий Секс</Table.Cell>
                       <Table.Cell>{data.unholy_tag}</Table.Cell>
                     </Table.Row>
-                    <Table.Row backgroundColor={getTagColor(data.very_unholy_tag)}>
+                    <Table.Row backgroundColor={getTagColor
+                                                (data.very_unholy_tag)}>
                       <Table.Cell>Грязный Секс</Table.Cell>
                       <Table.Cell>{data.very_unholy_tag}</Table.Cell>
                     </Table.Row>
@@ -120,8 +122,8 @@ export const CharacterProfile = (props, context) => {
 
 const CharacterProfileImageElement = (props, context) => {
   const { act, data } = useBackend<CharacterProfileContext>(context);
-  if (data.headshot_link) return (<Section title="Арт Персонажа" pb="12" textAlign="center"><img src={data.headshot_link} height="256px" width="256px" /></Section>);
-  //if (data.fullref_toggle && data.fullref_url) return (<Section title="Моделька Персонажа" pb="12" textAlign="center"><img src={data.fullref_url} style={{ "max-width": "256px", "max-height": "256px" }} /></Section>);
+  if (data.headshot_link) return (<Section title="Арт Персонажа" pb="12" textAlign="center">
+  <img src={data.headshot_link} height="256px" width="256px" /></Section>);
   return (<Box />);
 };
 
