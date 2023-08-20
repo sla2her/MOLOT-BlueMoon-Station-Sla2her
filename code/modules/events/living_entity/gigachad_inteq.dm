@@ -44,9 +44,6 @@
 	message_admins("An InteQ mutant has been spawned at [COORD(T)][ADMIN_JMP(T)]")
 	log_game("An InteQ mutant has been spawned at [COORD(T)]")
 	return SUCCESSFUL_SPAWN
-
-
-
 /////////////////Simple mob himself///////////////
 /mob/living/simple_animal/hostile/gigachad_inteq
 	name = "InteQ Agent"

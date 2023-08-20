@@ -195,7 +195,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bp" = (
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/mine/xenoarch_area_b)
 "bv" = (
 /obj/structure/table/wood/mushroom,
@@ -217,11 +217,11 @@
 /area/mine/xenoarch_area_b)
 "bE" = (
 /obj/structure/ladder,
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/mine/xenoarch_area_b)
 "bN" = (
 /obj/machinery/light/small,
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/mine/xenoarch_area_b)
 "cb" = (
 /obj/structure/flora/tree/jungle/small,
@@ -2771,7 +2771,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/mine/xenoarch_area_b)
 "hl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -10118,7 +10118,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/mine/xenoarch_area_b)
 "AT" = (
 /obj/machinery/light/small{
@@ -11967,7 +11967,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/mine/xenoarch_area_b)
 "GS" = (
 /obj/structure/stone_tile{
@@ -13678,10 +13678,6 @@
 /obj/effect/clockwork/overlay/floor,
 /turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
-"Mh" = (
-/obj/structure/ladder,
-/turf/open/floor/plasteel,
-/area/mine/xenoarch)
 "Mi" = (
 /obj/machinery/mineral/unloading_machine{
 	icon_state = "unloader-corner2";
@@ -17494,7 +17490,7 @@
 /area/ruin/lavaland/unpowered/ash_walkers)
 "Yl" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/mine/xenoarch_area_b)
 "Ym" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -120516,7 +120512,7 @@ gI
 JP
 Bi
 ie
-Mh
+cq
 iS
 Bi
 kF
