@@ -46,7 +46,7 @@
 	var/turf/T = get_turf(pick(spawn_locs))
 	var/deathclaw_type = pick(deathclaws_types)
 	new deathclaw_type(T)
-	playsound(T, 'sound/alien/Voice/roarFar1.ogg', 75, 1, 100)
-	message_admins("An InteQ mutant has been spawned at [COORD(T)][ADMIN_JMP(T)]")
-	log_game("An InteQ mutant has been spawned at [COORD(T)]")
+	playsound(T, 'sound/alien/Voice/roarFar1.ogg', 75, 1, 1000)
+	message_admins("An Syndicate mutant has been spawned at [COORD(T)][ADMIN_JMP(T)]")
+	log_game("An Syndicate mutant has been spawned at [COORD(T)]")
 	return SUCCESSFUL_SPAWN
