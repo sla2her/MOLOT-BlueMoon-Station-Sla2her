@@ -168,6 +168,15 @@
 					dat += "[features["silicon_flavor_text"]]<BR>"
 			else
 				dat += "[TextPreview(features["silicon_flavor_text"])]...<BR>"
+			dat += "<h2>Custom Species Lore</h2>"
+					dat += "<a href='?_src_=prefs;preference=custom_species_lore;task=input'><b>Set Custom Species Lore Text</b></a><br>"
+					if(length(features["custom_species_lore"]) <= MAX_FLAVOR_PREVIEW_LEN)
+						if(!length(features["custom_species_lore"]))
+							dat += "\[...\]<BR>"
+						else
+							dat += "[features["custom_species_lore"]]<BR>"
+					else
+						dat += "[TextPreview(features["custom_species_lore"])]...<BR>"
 			dat += "<h2>OOC notes</h2>"
 			dat += "<a href='?_src_=prefs;preference=ooc_notes;task=input'><b>Set OOC notes</b></a><br>"
 			var/ooc_notes_len = length(features["ooc_notes"])
