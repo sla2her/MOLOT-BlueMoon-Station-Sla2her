@@ -46,8 +46,8 @@ GLOBAL_LIST_EMPTY(cached_previews)
 	data["erp_tag"] = H?.client?.prefs?.erppref || "No"
 	data["mob_tag"] = H?.client?.prefs?.mobsexpref || "No"
 	data["nc_tag"] = H?.client?.prefs?.nonconpref || "No"
-	data["unholy_tag"] = H?.client?.prefs?.extremepref || "No"
-	data["very_unholy_tag"] = H?.client?.prefs?.extremeharm || "No"
+	data["unholy"] = H?.client?.prefs?.extremepref || "No"
+	data["very_unholy"] = H?.client?.prefs?.extremeharm || "No"
 
 	return data
 

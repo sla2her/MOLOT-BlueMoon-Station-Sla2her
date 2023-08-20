@@ -33,8 +33,8 @@ interface CharacterProfileContext {
   erp_tag: string;
   mob_tag: string;
   nc_tag: string;
-  unholy_tag: string;
-  very_unholy_tag: string;
+  unholy: string;
+  very_unholy: string;
 }
 
 export const CharacterProfile = (props, context) => {
@@ -90,13 +90,13 @@ export const CharacterProfile = (props, context) => {
                       <Table.Cell>Изнасилование</Table.Cell>
                       <Table.Cell>{data.nc_tag}</Table.Cell>
                     </Table.Row>
-                    <Table.Row backgroundColor={getTagColor(data.unholy_tag)}>
+                    <Table.Row backgroundColor={getTagColor(data.unholy)}>
                       <Table.Cell>Жестокий Секс</Table.Cell>
-                      <Table.Cell>{data.unholy_tag}</Table.Cell>
+                      <Table.Cell>{data.unholy}</Table.Cell>
                     </Table.Row>
-                    <Table.Row backgroundColor={getTagColor(data.very_unholy_tag)}>
+                    <Table.Row backgroundColor={getTagColor(data.very_unholy)}>
                       <Table.Cell>Грязный Секс</Table.Cell>
-                      <Table.Cell>{data.very_unholy_tag}</Table.Cell>
+                      <Table.Cell>{data.very_unholy}</Table.Cell>
                     </Table.Row>
                     <Table.Row backgroundColor={getTagColor(data.vore_tag)}>
                       <Table.Cell>Поедание/Проглатывание</Table.Cell>
