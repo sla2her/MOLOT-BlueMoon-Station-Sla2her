@@ -45,7 +45,7 @@
 /datum/outfit/ert/vdv
 	name = "VDV Soldier"
 
-	shirt = /obj/item/clothing/underwear/shirt/tanktop/striped
+	shirt = /obj/item/clothing/underwear/shirt/striped
 	uniform = /obj/item/clothing/under/pants/camo
 	suit = /obj/item/clothing/suit/armor/nri_vest
 	suit_store = /obj/item/melee/classic_baton
