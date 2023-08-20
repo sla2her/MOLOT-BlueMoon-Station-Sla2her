@@ -14,7 +14,7 @@
 		/mob/living/simple_animal/hostile/deathclaw/funclaw/femclaw, \
 		/mob/living/simple_animal/hostile/deathclaw/funclaw/femclaw/mommyclaw, \
 		/mob/living/simple_animal/hostile/deathclaw/funclaw/gentle/newclaw/alphaclaw, \
-		/mob/living/simple_animal/hostile/deathclaw/funclaw)
+		/mob/living/simple_animal/hostile/deathclaw/funclaw/gentle/newclaw)
 	var/list/spawn_locs = list()
 	var/list/unsafe_spawn_locs = list()
 	for(var/X in GLOB.xeno_spawn)
