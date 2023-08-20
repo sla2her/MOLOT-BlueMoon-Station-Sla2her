@@ -289,7 +289,7 @@
 	name = "ERT Janitor"
 
 	id = /obj/item/card/id/ert
-	mask = /obj/item/clothing/mask/gas/sechailer
+	mask = /obj/item/clothing/mask/gas/sechailer/syndicate
 	head = /obj/item/clothing/head/helmet/swat/janitor
 	suit = /obj/item/clothing/suit/armor/hos/janitor
 	glasses = /obj/item/clothing/glasses/night/syndicate
