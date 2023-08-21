@@ -3212,7 +3212,6 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/structure/closet/crate,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "yu" = (

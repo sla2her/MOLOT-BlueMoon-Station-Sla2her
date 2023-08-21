@@ -330,10 +330,10 @@
 	dir = 2
 	},
 /obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/components/unary/outlet_injector/layer3{
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
 	dir = 1
 	},
-/turf/template_noop,
+/turf/open/space/basic,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "bj" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -548,6 +548,10 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 6;
+	level = 1
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
@@ -1582,6 +1586,7 @@
 /obj/machinery/door/airlock/external/glass{
 	name = "External Access"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "gi" = (
@@ -4660,13 +4665,6 @@
 /obj/effect/spawner/lootdrop/maintenance/eight,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/research)
-"sT" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
-	dir = 9;
-	level = 1
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "sV" = (
 /obj/item/storage/box/beakers/bluespace{
 	pixel_y = 8;
@@ -5378,7 +5376,10 @@
 /obj/machinery/conveyor{
 	id = "ds2disposals"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
+	dir = 9;
+	level = 1
+	},
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "vS" = (
@@ -8017,10 +8018,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
-"In" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Io" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -8392,10 +8389,7 @@
 	c_tag = "DS-2 Engineering Airlock";
 	network = list("ds2")
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
-	dir = 6;
-	level = 1
-	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Kb" = (
@@ -13918,8 +13912,8 @@ Bm
 RE
 tl
 vR
-In
-sT
+Tt
+Tt
 Tt
 Tt
 vS
