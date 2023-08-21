@@ -656,6 +656,7 @@ There are several things that need to be remembered:
 
 			var/worn_icon = wear_suit.mob_overlay_icon || 'icons/mob/clothing/suit.dmi'
 			var/worn_state = wear_suit.icon_state
+			var/tail_state = wear_suit.tail_state
 			var/center = FALSE
 			var/dimension_x = 32
 			var/dimension_y = 32
@@ -687,6 +688,8 @@ There are several things that need to be remembered:
 
 				else if((DIGITIGRADE in dna.species.species_traits) && S.mutantrace_variation & STYLE_DIGITIGRADE && !(S.mutantrace_variation & STYLE_NO_ANTHRO_ICON)) //not a taur, but digitigrade legs.
 					worn_icon = S.anthro_mob_worn_overlay || 'icons/mob/clothing/suit_digi.dmi'
+					var/tail_under_suit = S.tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
+					SSvis_overlays.add_vis_overlay(S, tail_under_suit, tail_state)
 					variation_flag |= STYLE_DIGITIGRADE
 
 			overlays_standing[SUIT_LAYER] = S.build_worn_icon(SUIT_LAYER, worn_icon, FALSE, NO_FEMALE_UNIFORM, worn_state, variation_flag, FALSE)
