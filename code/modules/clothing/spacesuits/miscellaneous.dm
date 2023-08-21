@@ -195,7 +195,7 @@ Contains:
 	desc = "Standard issue command suit for the ERT."
 	icon_state = "ert_command"
 	item_state = "ert_command"
-	tail_state = "ert_commanderer"
+	tail_state = "ert_commander"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert
 	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 	armor = list(MELEE = 65, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, RAD = 100, FIRE = 80, ACID = 80, WOUND = 30)
@@ -263,7 +263,7 @@ Contains:
 	desc = "Red alert command suit for the ERT. This one is more armored than its standard version."
 	icon_state = "ert_command-alert"
 	item_state = "ert_command-alert"
-	tail_state = "ert_gcommanderer"
+	tail_state = "ert_gcommander"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/alert
 	armor = list(MELEE = 70, BULLET = 55, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 100, RAD = 100, FIRE = 100, ACID = 100, WOUND = 50)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
