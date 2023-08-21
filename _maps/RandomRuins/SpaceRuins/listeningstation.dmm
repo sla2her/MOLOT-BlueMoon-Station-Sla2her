@@ -1717,10 +1717,8 @@
 	},
 /area/ruin/space/has_grav/listeningstation)
 "Hq" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
-	dir = 1;
-	volume_rate = 200;
-	piping_layer = 2
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1
 	},
 /turf/open/floor/engine/vacuum,
 /area/ruin/space/has_grav/listeningstation)
@@ -1796,15 +1794,13 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	target_pressure = 4500
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
 	},
 /obj/machinery/airlock_sensor/incinerator_syndicatelava{
 	pixel_x = 22
 	},
+/obj/machinery/atmospherics/components/binary/pump,
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/listeningstation)
 "JY" = (

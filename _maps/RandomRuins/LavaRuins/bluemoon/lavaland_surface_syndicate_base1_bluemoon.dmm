@@ -1630,9 +1630,8 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/layer3{
-	dir = 8;
-	volume_rate = 200
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
+	dir = 8
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/unpowered/deepspaceone/engineering)

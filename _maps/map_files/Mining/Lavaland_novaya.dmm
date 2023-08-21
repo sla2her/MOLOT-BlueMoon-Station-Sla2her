@@ -33,17 +33,11 @@
 /area/mine/xenoarch_area_c)
 "aq" = (
 /obj/structure/stone_tile/slab,
-/obj/item/crowbar/ashwalker,
-/obj/item/crowbar/ashwalker,
-/obj/item/screwdriver/ashwalker,
-/obj/item/screwdriver/ashwalker,
-/obj/item/weldingtool/experimental/ashwalker,
-/obj/item/weldingtool/experimental/ashwalker,
-/obj/item/wirecutters/ashwalker,
-/obj/item/wirecutters/ashwalker,
-/obj/item/wrench/ashwalker,
-/obj/item/wrench/ashwalker,
 /obj/structure/table/wood/shadow,
+/obj/item/storage/backpack/duffelbag/cursed,
+/obj/item/storage/backpack/duffelbag/cursed{
+	pixel_y = 8
+	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/unpowered/ash_walkers)
 "as" = (
@@ -16418,16 +16412,10 @@
 "UL" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/table/wood/mushroom,
-/obj/item/crowbar/ashwalker,
-/obj/item/crowbar/ashwalker,
-/obj/item/screwdriver/ashwalker,
-/obj/item/screwdriver/ashwalker,
-/obj/item/weldingtool/experimental/ashwalker,
-/obj/item/weldingtool/experimental/ashwalker,
-/obj/item/wirecutters/ashwalker,
-/obj/item/wirecutters/ashwalker,
-/obj/item/wrench/ashwalker,
-/obj/item/wrench/ashwalker,
+/obj/item/storage/backpack/duffelbag/cursed{
+	pixel_y = 8
+	},
+/obj/item/storage/backpack/duffelbag/cursed,
 /turf/open/indestructible/boss,
 /area/ruin/lavaland/unpowered/ash_walkers)
 "UO" = (
