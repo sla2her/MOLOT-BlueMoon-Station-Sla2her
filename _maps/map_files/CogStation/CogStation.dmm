@@ -16816,6 +16816,7 @@
 /obj/machinery/newscaster{
 	pixel_x = -30
 	},
+/obj/machinery/vending/barkbox,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aQP" = (
@@ -61703,6 +61704,10 @@
 /obj/effect/landmark/navigate_destination/psychologist,
 /turf/open/floor/carpet,
 /area/medical/psychology)
+"dRG" = (
+/obj/machinery/vending/barkbox,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
 "dSF" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -107526,7 +107531,7 @@ cfy
 cfy
 cfy
 cfy
-cfy
+dRG
 buo
 buo
 buo
@@ -110610,7 +110615,7 @@ cfy
 cfy
 cfy
 cfy
-cfy
+dRG
 buo
 buo
 buo
