@@ -68520,6 +68520,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/box,
+/mob/living/simple_animal/bot/cleanbot/servoskull,
 /turf/open/floor/plasteel/white,
 /area/science/robotics/lab)
 "jYp" = (

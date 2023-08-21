@@ -15274,6 +15274,8 @@
 /turf/open/floor/engine,
 /area/ai_monitored/command/nuke_storage)
 "aAC" = (
+/mob/living/simple_animal/bot/cleanbot/servoskull,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/robotics/lab)
 "aAD" = (

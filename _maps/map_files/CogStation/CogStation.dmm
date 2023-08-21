@@ -68440,6 +68440,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden,
 /obj/machinery/holopad,
+/mob/living/simple_animal/bot/cleanbot/servoskull,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/lab)
 "sHB" = (

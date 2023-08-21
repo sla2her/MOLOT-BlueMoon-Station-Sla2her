@@ -42036,6 +42036,7 @@
 /area/science/robotics/lab)
 "cHT" = (
 /obj/machinery/holopad,
+/mob/living/simple_animal/bot/cleanbot/servoskull,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "cHU" = (

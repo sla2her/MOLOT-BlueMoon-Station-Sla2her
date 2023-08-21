@@ -49609,6 +49609,7 @@
 /area/maintenance/disposal)
 "rlx" = (
 /obj/machinery/holopad,
+/mob/living/simple_animal/bot/cleanbot/servoskull,
 /turf/open/floor/engine,
 /area/science/robotics/lab)
 "rlE" = (

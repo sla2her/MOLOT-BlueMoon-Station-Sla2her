@@ -488,3 +488,8 @@
 
 /obj/machinery/bot_core/cleanbot/medbay
 	req_one_access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_MEDICAL)
+
+/mob/living/simple_animal/bot/cleanbot/servoskull
+	name = "\improper Servoskull"
+	desc = "Самый настоящий летающий череп! Он держит в своих робо-лапках чистящие средства и выглядит... податливым."
+	icon_state = "servoskull0"
