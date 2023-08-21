@@ -30,14 +30,14 @@
 	ckeywhitelist = list("snacksman")
 	subcategory = LOADOUT_SUBCATEGORIES_DON01
 
-/datum/gear/donator/bm/bishop_mantle
+/datum/gear/donator/bm/reaper_helmet
 	name = "Reaper Helmet"
 	slot = ITEM_SLOT_OCLOTHING
 	path = /obj/item/clothing/head/helmet/space/plasmaman/security/reaper
 	ckeywhitelist = list("reaperdb")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
-/datum/gear/donator/bm/bishop_mantle
+/datum/gear/donator/bm/reaper_suit
 	name = "Reaper Suit"
 	slot = ITEM_SLOT_OCLOTHING
 	path = /obj/item/clothing/under/plasmaman/security/reaper

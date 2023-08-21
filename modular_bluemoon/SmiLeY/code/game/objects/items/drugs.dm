@@ -141,7 +141,7 @@
 	new /datum/hallucination/delusion(M, TRUE, "custom", rand(10, 50), custom_icon_file = 'modular_bluemoon/SmiLeY/icons/stars.dmi', custom_icon = pick("star1"), custom_name = "ПЕНДОСОВКА")
 
 	if(prob(65))
-		var/image/trip_img = image('modular_bluemoon/SmiLeY/icons/stars.dmi', get_turf(pick(view(7, M))), pick("star1","star2"), CURSE_LAYER)
+		var/image/trip_img = image('modular_bluemoon/SmiLeY/icons/stars.dmi', get_turf(pick(view(7, M))), pick("star1"), CURSE_LAYER)
 		if(M.client)
 			M.client.images += trip_img
 		spawn(rand(30,50))

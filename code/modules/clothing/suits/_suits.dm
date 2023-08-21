@@ -20,6 +20,9 @@
 	if(!isinhands)
 		if(damaged_clothes)
 			. += mutable_appearance('icons/effects/item_damage.dmi', "damaged[blood_overlay_type]")
+		if(mutantrace_variation & STYLE_DIGITIGRADE)
+			var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
+			. += mutable_appearance(tail_under_suit, tail_state)
 		if(blood_DNA)
 			var/file2use = (style_flags & STYLE_ALL_TAURIC) ? 'modular_citadel/icons/mob/64x32_effects.dmi' : 'icons/effects/blood.dmi'
 			. += mutable_appearance(file2use, "[blood_overlay_type]blood", color = blood_DNA_to_color(), blend_mode = blood_DNA_to_blend())

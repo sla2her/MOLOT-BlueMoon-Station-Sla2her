@@ -350,15 +350,16 @@
 
 	sleep(5 SECONDS)
 
-	var/eorg = alert("Хотите принять участие на ЕОРГ-арене?", "End of Round Deathmatch Arena", "Да", "Нет")
-	if(eorg == "Да" || !eorg)
-		teleport_players_to_eorg_area()
+	teleport_players_to_eorg_area()
 
 /datum/controller/subsystem/ticker/proc/teleport_players_to_eorg_area()
 	if(!config.deathmatch_arena)
 		return
 	for(var/mob/living/M in GLOB.player_list)
 		if(!M.client.prefs.eorg_enabled)
+			continue
+		var/eorg = alert("Хотите принять участие на ЕОРГ-арене?", "End of Round Deathmatch Arena", "Да", "Нет")
+		if(eorg == "Да" || !eorg)
 			continue
 		spawn_gladiator(M)
 
