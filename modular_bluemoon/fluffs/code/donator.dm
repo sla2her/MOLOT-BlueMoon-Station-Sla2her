@@ -182,7 +182,7 @@
 	slot = ITEM_SLOT_ICLOTHING
 	path = /obj/item/clothing/under/donator/bm/utilgen
 	ckeywhitelist = list("reaperdb", "rainbowkurwa")
-	subcategory = LOADOUT_SUBCATEGORIES_DON03
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
 /datum/gear/donator/bm/multicam
 	name = "Multicam"

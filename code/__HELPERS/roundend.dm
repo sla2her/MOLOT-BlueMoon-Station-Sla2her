@@ -359,8 +359,8 @@
 		if(!M.client.prefs.eorg_enabled)
 			continue
 		var/eorg = alert("Хотите принять участие на ЕОРГ-арене?", "End of Round Deathmatch Arena", "Да", "Нет")
-		if(eorg == "Да" || !eorg)
-			continue
+		if(eorg == "Нет" || !eorg)
+			return
 		spawn_gladiator(M)
 
 /datum/controller/subsystem/ticker/proc/spawn_gladiator(mob/M, transfer_mind = TRUE)

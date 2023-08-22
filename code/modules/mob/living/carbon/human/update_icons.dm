@@ -656,7 +656,6 @@ There are several things that need to be remembered:
 
 			var/worn_icon = wear_suit.mob_overlay_icon || 'icons/mob/clothing/suit.dmi'
 			var/worn_state = wear_suit.icon_state
-			var/tail_state = wear_suit.tail_state
 			var/center = FALSE
 			var/dimension_x = 32
 			var/dimension_y = 32
