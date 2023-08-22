@@ -3,7 +3,7 @@
 	name = "\improper Cleanbot"
 	desc = "A little cleaning robot, he looks so excited!"
 	icon = 'icons/mob/aibots.dmi'
-	icon_state = "cleanbot0"
+	icon_state = "cleanbot"
 	density = FALSE
 	anchored = FALSE
 	health = 25
@@ -139,9 +139,9 @@
 	. = ..()
 	switch(mode)
 		if(BOT_CLEANING)
-			icon_state = "[base_icon]-c"
+			icon_state = "[icon_state]-c"
 		else
-			icon_state = "[base_icon][on]"
+			icon_state = "[icon_state][on]"
 
 /mob/living/simple_animal/bot/cleanbot/bot_reset()
 	..()
@@ -375,7 +375,7 @@
 	// 	return
 	if(istype(A, /obj/effect/decal/cleanable))
 		anchored = TRUE
-		icon_state = "cleanbot-c"
+		icon_state = "[icon_state]-c"
 		visible_message("<span class='notice'>[src] begins to clean up [A].</span>")
 		mode = BOT_CLEANING
 		spawn(clean_time)
@@ -389,7 +389,7 @@
 				anchored = FALSE
 				target = null
 			mode = BOT_IDLE
-			icon_state = "cleanbot[on]"
+			icon_state = "[icon_state][on]"
 	else if(istype(A, /turf)) //for player-controlled cleanbots so they can clean unclickable messes like dirt
 		var/turf/T = A
 		for(var/atom/S in T.contents)
@@ -492,4 +492,4 @@
 /mob/living/simple_animal/bot/cleanbot/servoskull
 	name = "\improper Servoskull"
 	desc = "Самый настоящий летающий череп! Он держит в своих робо-лапках чистящие средства и выглядит... податливым."
-	icon_state = "servoskull0"
+	icon_state = "servoskull1"
