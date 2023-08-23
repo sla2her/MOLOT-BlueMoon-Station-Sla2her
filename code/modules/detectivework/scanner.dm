@@ -137,7 +137,6 @@
 		var/list/blood = list()
 		var/list/fibers = list()
 		var/list/reagents = list()
-		var/found_spy_device = FALSE
 
 		var/target_name = scan_atom.name
 
