@@ -47,6 +47,8 @@
 
 /mob/living/simple_animal/drone/syndrone/badass/inteq
 	name = "Inteq Combat Drone"
+	icon_state = "drone_inteq"
+	icon_living = "drone_inteq"
 	default_hatmask = /obj/item/clothing/head/helmet/space/syndicate/contract
 	default_storage = /obj/item/inteq/uplink/radio/nuclear
 
