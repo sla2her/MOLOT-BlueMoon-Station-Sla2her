@@ -97,8 +97,8 @@
 
 	if(ismob(loc))
 		var/mob/M = loc
-		M.put_in_hands(P, ignore_anim = FALSE)
-		to_chat(M, "<span class='notice'>Report printed. Log cleared.</span>")
+		M.put_in_hands(P)
+		to_chat(M, "<span class='notice'>Отчёт распечатан. Логи очищены.</span>")
 
 /obj/item/detective_scanner/proc/clear_scanner()
 	if(length(log) && !scanning)
