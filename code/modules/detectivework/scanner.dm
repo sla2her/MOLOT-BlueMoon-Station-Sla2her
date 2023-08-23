@@ -14,33 +14,43 @@
 	flags_1 = CONDUCT_1
 	item_flags = NOBLUDGEON
 	slot_flags = ITEM_SLOT_BELT
-	var/scanning = FALSE
+	/// if the scanner is currently busy processing
+	var/scanner_busy = FALSE
 	var/list/log = list()
 	var/range = 8
 	var/view_check = TRUE
 	var/forensicPrintCount = 0
-	actions_types = list(/datum/action/item_action/displayDetectiveScanResults)
+	actions_types = list(/datum/action/item_action/display_detective_scan_results)
 
-/datum/action/item_action/displayDetectiveScanResults
+/datum/action/item_action/display_detective_scan_results
 	name = "Display Forensic Scanner Results"
 
-/datum/action/item_action/displayDetectiveScanResults/Trigger()
+/datum/action/item_action/display_detective_scan_results/Trigger(trigger_flags)
 	var/obj/item/detective_scanner/scanner = target
 	if(istype(scanner))
-		scanner.displayDetectiveScanResults(usr)
+		scanner.display_detective_scan_results(usr)
 
 /obj/item/detective_scanner/attack_self(mob/user)
-	if(log.len && !scanning)
-		scanning = TRUE
-		to_chat(user, "<span class='notice'>Printing report, please wait...</span>")
-		addtimer(CALLBACK(src, .proc/PrintReport), 100)
-	else
-		to_chat(user, "<span class='notice'>The scanner has no logs or is in use.</span>")
+	if(!LAZYLEN(log))
+		balloon_alert(user, "no logs!")
+		return
+	if(scanner_busy)
+		balloon_alert(user, "scanner busy!")
+		return
+	scanner_busy = TRUE
+	balloon_alert(user, "printing report...")
+	addtimer(CALLBACK(src, PROC_REF(safe_print_report)), 10 SECONDS)
 
-/obj/item/detective_scanner/attack(mob/living/M, mob/user)
-	return
+/**
+ * safe_print_report - a wrapper proc for print_report
+ *
+ * Calls print_report(), and should a runtime occur within we can still reset the 'busy' state
+ */
+/obj/item/detective_scanner/proc/safe_print_report()
+	print_report()
+	scanner_busy = FALSE
 
-/obj/item/detective_scanner/proc/PrintReport()
+/obj/item/detective_scanner/proc/print_report()
 	// Create our paper
 	var/obj/item/paper/report_paper = new(get_turf(src))
 
@@ -65,17 +75,35 @@
 
 /obj/item/detective_scanner/afterattack(atom/A, mob/user, params)
 	. = ..()
-	scan(A, user)
-	return FALSE
+	safe_scan(user, atom_to_scan = A)
+	return . | FALSE
 
+/**
+ * safe_scan - a wrapper proc for scan()
+ *
+ * calls scan(), and should a runtime occur within we can still reset the 'busy' state
+ */
+/obj/item/detective_scanner/proc/safe_scan(mob/user, atom/atom_to_scan)
+	set waitfor = FALSE
+	if(scanner_busy)
+		return
+	if(!scan(user, atom_to_scan)) // this should only return FALSE if a runtime occurs during the scan proc, so ideally never
+		balloon_alert(user, "scanner error!") // but in case it does, we 'error' instead of just bricking the scanner
+	scanner_busy = FALSE
+
+/**
+ * scan - scans an atom for forensic data and outputs it to the mob holding the scanner
+ *
+ * This should always return TRUE barring a runtime
+ */
 /obj/item/detective_scanner/proc/scan(atom/A, mob/user)
 	set waitfor = 0
-	if(!scanning)
+	if(!scanner_busy)
 		// Can remotely scan objects and mobs.
 		if((get_dist(A, user) > range) || (!(A in view(range, user)) && view_check) || (loc != user))
 			return
 
-		scanning = TRUE
+		scanner_busy = TRUE
 
 		user.visible_message("\The [user] points the [src.name] at \the [A] and performs a forensic scan.")
 		to_chat(user, "<span class='notice'>You scan \the [A]. The scanner is now analysing the results...</span>")
@@ -175,52 +203,52 @@
 				to_chat(holder, "<span class='warning'>Unable to locate any fingerprints, materials, fibers, or blood on \the [target_name]!</span>")
 		else
 			if(holder)
-				to_chat(holder, "<span class='notice'>You finish scanning \the [target_name].</span>")
+				to_chat(holder, "<span class='notice'>You finish scanner_busy \the [target_name].</span>")
 
 		add_log("---------------------------------------------------------", 0)
-		scanning = FALSE
+		scanner_busy = FALSE
 		return
 
-/obj/item/detective_scanner/proc/add_log(msg, broadcast = TRUE)
-	if(scanning)
+/obj/item/detective_scanner/proc/add_log(msg, broadcast = 1)
+	if(scanner_busy)
 		if(broadcast && ismob(loc))
-			var/mob/M = loc
-			to_chat(M, msg)
+			var/mob/logger = loc
+			to_chat(logger, msg)
 		log += "&nbsp;&nbsp;[msg]"
 	else
-		CRASH("[src] [REF(src)] is adding a log when it was never put in scanning mode!")
+		CRASH("[src] [REF(src)] is adding a log when it was never put in scanner_busy mode!")
 
 /proc/get_timestamp()
 	return time2text(world.time + 432000, ":ss")
 
 /obj/item/detective_scanner/AltClick(mob/living/user)
-	. = ..()
 	// Best way for checking if a player can use while not incapacitated, etc
 	if(!user.canUseTopic(src, be_close=TRUE))
 		return
-	. = TRUE
 	if(!LAZYLEN(log))
-		to_chat(user, "<span class='notice'>Cannot clear logs, the scanner has no logs.</span>")
+		balloon_alert(user, "no logs!")
 		return
-	if(scanning)
-		to_chat(user, "<span class='notice'>Cannot clear logs, the scanner is in use.</span>")
+	if(scanner_busy)
+		balloon_alert(user, "scanner busy!")
 		return
-	to_chat(user, "<span class='notice'>The scanner logs are cleared.</span>")
-	log = list()
+	balloon_alert(user, "deleting logs...")
+	if(do_after(user, 3 SECONDS, target = src))
+		balloon_alert(user, "logs cleared")
+		log = list()
 
 /obj/item/detective_scanner/examine(mob/user)
 	. = ..()
-	if(LAZYLEN(log) && !scanning)
-		. += "<span class='notice'>Alt-click to clear scanner logs.</span>"
+	if(LAZYLEN(log) && !scanner_busy)
+		. += span_notice("Alt-click to clear scanner logs.")
 
-/obj/item/detective_scanner/proc/displayDetectiveScanResults(mob/living/user)
+/obj/item/detective_scanner/proc/display_detective_scan_results(mob/living/user)
 	// No need for can-use checks since the action button should do proper checks
 	if(!LAZYLEN(log))
-		to_chat(user, "<span class='notice'>Cannot display logs, the scanner has no logs.</span>")
+		balloon_alert(user, "no logs!")
 		return
-	if(scanning)
-		to_chat(user, "<span class='notice'>Cannot display logs, the scanner is in use.</span>")
+	if(scanner_busy)
+		balloon_alert(user, "scanner busy!")
 		return
-	to_chat(user, "<span class='notice'><B>Scanner Report</B></span>")
+	to_chat(user, span_notice("<B>Scanner Report</B>"))
 	for(var/iterLog in log)
 		to_chat(user, iterLog)

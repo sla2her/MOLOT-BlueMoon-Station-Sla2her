@@ -4583,7 +4583,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
+/area/ruin/lavaland/powered/seedvault)
 "lx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
@@ -4865,7 +4865,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "mm" = (
 /obj/structure/table/wood/mushroom,
 /obj/item/clothing/under/costume/gladiator/ash_walker{
@@ -5010,7 +5010,7 @@
 /obj/item/hatchet,
 /obj/item/hatchet,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "mK" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
 /obj/effect/turf_decal/tile/yellow{
@@ -5030,13 +5030,13 @@
 	dir = 8
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
+/area/ruin/lavaland/powered/seedvault)
 "mN" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "mP" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/structure/window/reinforced{
@@ -6051,7 +6051,7 @@
 	pixel_y = 30
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "py" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -6788,7 +6788,7 @@
 "rp" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "rq" = (
 /turf/open/floor/plasteel,
 /area/mine/production)
@@ -6852,11 +6852,11 @@
 /area/mine/maintenance)
 "rx" = (
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "ry" = (
 /obj/machinery/mineral/equipment_vendor/golem,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "rz" = (
 /obj/structure/stone_tile{
 	dir = 4
@@ -7168,7 +7168,7 @@
 "sk" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "sl" = (
 /obj/structure/stone_tile/block/burnt,
 /obj/structure/stone_tile/block/cracked,
@@ -7201,7 +7201,7 @@
 /obj/item/storage/firstaid/brute,
 /obj/item/disk/design_disk/golem_shell,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "ss" = (
 /obj/structure/stone_tile/surrounding,
 /obj/structure/stone_tile/center/cracked,
@@ -8128,7 +8128,7 @@
 "uM" = (
 /obj/effect/mob_spawn/human/seed_vault,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "uN" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 4
@@ -8184,7 +8184,7 @@
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/light,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "uV" = (
 /obj/structure/table,
 /obj/machinery/recharger,
@@ -8254,7 +8254,7 @@
 "ve" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "vf" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate,
@@ -8292,7 +8292,7 @@
 /obj/machinery/reagentgrinder,
 /obj/item/gps/mining,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "vl" = (
 /obj/structure/stone_tile/cracked{
 	dir = 1
@@ -8393,7 +8393,7 @@
 "vx" = (
 /obj/item/resonator/upgraded,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "vy" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -8890,7 +8890,7 @@
 /area/ruin/lavaland/unpowered/ash_walkers)
 "wX" = (
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "wY" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
@@ -9113,7 +9113,7 @@
 "xF" = (
 /obj/machinery/biogenerator,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "xG" = (
 /turf/open/floor/plasteel,
 /area/mine/eva)
@@ -9339,7 +9339,7 @@
 "yr" = (
 /obj/item/resonator,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "ys" = (
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -9399,7 +9399,7 @@
 "yC" = (
 /obj/machinery/vending/hydronutrients,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "yD" = (
 /obj/docking_port/stationary{
 	dwidth = 3;
@@ -9557,7 +9557,7 @@
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/seed_vault,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "za" = (
 /obj/structure/stone_tile/block{
 	dir = 1
@@ -9705,7 +9705,7 @@
 /turf/open/floor/plating{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "zu" = (
 /obj/structure/camera_assembly,
 /turf/open/floor/plasteel,
@@ -10140,7 +10140,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "AU" = (
 /obj/structure/table/reinforced/brass,
 /obj/item/clockwork/replica_fabricator,
@@ -10209,7 +10209,7 @@
 /obj/item/storage/firstaid/fire,
 /obj/machinery/light,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Bh" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -10344,13 +10344,13 @@
 "By" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "BA" = (
 /obj/machinery/light{
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "BB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/grass/grass0,
@@ -10448,7 +10448,7 @@
 	pixel_y = -30
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "BS" = (
 /obj/structure/fence,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -10578,7 +10578,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Cl" = (
 /turf/open/floor/grass/grass0,
 /area/mine/xenoarch_area_c)
@@ -10705,7 +10705,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "CE" = (
 /obj/structure/chair/stool{
 	dir = 1
@@ -10741,7 +10741,7 @@
 	},
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "CN" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light{
@@ -11177,7 +11177,7 @@
 "Ea" = (
 /obj/structure/ore_box,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Eb" = (
 /obj/structure/stone_tile/cracked{
 	dir = 4
@@ -11274,7 +11274,7 @@
 /obj/item/storage/firstaid/fire,
 /obj/item/storage/firstaid/fire,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Eu" = (
 /obj/machinery/light{
 	dir = 4
@@ -11289,7 +11289,7 @@
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Ex" = (
 /obj/structure/cable/yellow,
 /obj/machinery/power/apc/auto_name/south{
@@ -11371,7 +11371,7 @@
 /obj/item/clothing/head/beekeeper_head,
 /obj/item/clothing/suit/beekeeper_suit,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "EN" = (
 /obj/structure/stone_tile,
 /obj/structure/stone_tile/block{
@@ -11385,7 +11385,7 @@
 	desc = "This autolathe seems to have its safety light off."
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "EP" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -11473,7 +11473,7 @@
 /obj/item/storage/toolbox/syndicate,
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Fc" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -11577,7 +11577,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/titanium,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Fx" = (
 /obj/structure/stone_tile/block,
 /obj/structure/stone_tile/block/cracked{
@@ -11591,7 +11591,7 @@
 	pixel_x = 11
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Fz" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -11683,7 +11683,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "FR" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Labor Camp Monitoring";
@@ -11732,7 +11732,7 @@
 /obj/item/clothing/under/rank/civilian/hydroponics,
 /obj/item/clothing/under/rank/civilian/hydroponics,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "FZ" = (
 /obj/structure/stone_tile/cracked{
 	dir = 4
@@ -11896,7 +11896,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Gz" = (
 /obj/structure/stone_tile/cracked{
 	dir = 4
@@ -11978,7 +11978,7 @@
 "GQ" = (
 /obj/machinery/chem_dispenser/mutagensaltpeter,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "GR" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -12105,7 +12105,7 @@
 "Hm" = (
 /obj/machinery/chem_master/condimaster,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Hn" = (
 /obj/structure/noticeboard{
 	dir = 8;
@@ -12145,13 +12145,13 @@
 "Hs" = (
 /obj/effect/mob_spawn/human/golem/adamantine,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Ht" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
+/area/ruin/lavaland/powered/seedvault)
 "Hu" = (
 /obj/structure/stone_tile/block/burnt{
 	dir = 1
@@ -12197,7 +12197,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "HB" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/open/floor/grass/grass0,
@@ -12404,7 +12404,7 @@
 "Ip" = (
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Is" = (
 /obj/docking_port/stationary{
 	dir = 2;
@@ -12541,7 +12541,7 @@
 /obj/item/storage/fancy/rollingpapers,
 /obj/item/storage/fancy/rollingpapers,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "IP" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 8
@@ -12831,7 +12831,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "JI" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -12854,7 +12854,7 @@
 "JN" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "JO" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
@@ -12923,7 +12923,7 @@
 /area/lavaland/surface/outdoors)
 "JZ" = (
 /turf/closed/wall/mineral/titanium,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Ka" = (
 /obj/machinery/button/door{
 	id = "miningdorm3";
@@ -13242,7 +13242,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "KO" = (
 /obj/machinery/power/smes/engineering,
 /obj/structure/cable{
@@ -13344,7 +13344,7 @@
 /obj/item/card/id/mining,
 /obj/item/gps/mining,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Lf" = (
 /obj/structure/stone_tile/slab,
 /obj/item/toy/cards/deck/syndicate,
@@ -13518,7 +13518,7 @@
 "LC" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/r_wall,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "LD" = (
 /obj/machinery/camera{
 	c_tag = "Labor Camp Processing Area";
@@ -13536,7 +13536,7 @@
 /area/lavaland/surface/outdoors)
 "LF" = (
 /turf/closed/wall/r_wall,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "LH" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -13861,7 +13861,7 @@
 "MK" = (
 /obj/machinery/vending/hydroseeds,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "ML" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 8
@@ -14019,7 +14019,7 @@
 "Ng" = (
 /obj/machinery/light/small,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Nh" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/white,
@@ -14112,7 +14112,7 @@
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Nz" = (
 /obj/machinery/door/airlock/external{
 	name = "Science Outpost Airlock"
@@ -14196,7 +14196,7 @@
 /obj/item/reagent_containers/glass/bucket,
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "NN" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -14444,7 +14444,7 @@
 /obj/item/card/id/mining,
 /obj/item/gps/mining,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Ow" = (
 /obj/structure/flora/ausbushes/grassybush,
 /obj/machinery/light/small{
@@ -14591,7 +14591,7 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "OU" = (
 /obj/machinery/light{
 	dir = 8
@@ -14758,7 +14758,7 @@
 "PB" = (
 /obj/machinery/door/airlock/titanium,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "PC" = (
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plasteel/dark,
@@ -15417,7 +15417,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "RD" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
@@ -15512,7 +15512,7 @@
 /obj/structure/table/wood,
 /obj/item/storage/box/disks_plantgene,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "RV" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -15609,7 +15609,7 @@
 /obj/effect/mob_spawn/human/golem/adamantine,
 /obj/machinery/light/small,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "St" = (
 /obj/item/circuitboard/machine/smoke_machine{
 	pixel_x = 12;
@@ -15661,7 +15661,7 @@
 /obj/item/gun/energy/floragun,
 /obj/item/storage/box/disks_plantgene,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "SC" = (
 /obj/structure/table/wood/shadow,
 /obj/item/clothing/under/costume/loincloth{
@@ -15891,7 +15891,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Th" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 8
@@ -16045,7 +16045,7 @@
 "TE" = (
 /obj/machinery/mineral/ore_redemption,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "TF" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -16094,7 +16094,7 @@
 "TM" = (
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "TO" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 1
@@ -16117,7 +16117,7 @@
 "TT" = (
 /obj/machinery/autolathe,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "TU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -16133,7 +16133,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "TX" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
@@ -16992,7 +16992,7 @@
 /area/mine/living_quarters)
 "WL" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "WM" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/engine,
@@ -17021,7 +17021,7 @@
 /turf/open/floor/plating{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "WS" = (
 /obj/structure/stone_tile/block,
 /obj/structure/stone_tile/cracked{
@@ -17310,7 +17310,7 @@
 /area/lavaland/surface/outdoors)
 "XD" = (
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "XE" = (
 /obj/structure/table/wood/mushroom,
 /obj/item/clothing/suit/armor/bone,
@@ -17410,7 +17410,7 @@
 "XU" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "XV" = (
 /turf/closed/wall/r_wall,
 /area/lavaland/surface/outdoors)
@@ -17474,7 +17474,7 @@
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "Ye" = (
 /obj/structure/camera_assembly{
 	dir = 6
@@ -17544,7 +17544,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "Yo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
@@ -17607,7 +17607,7 @@
 "YA" = (
 /obj/machinery/door/airlock,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "YB" = (
 /obj/structure/closet/secure_closet/miner,
 /obj/machinery/light{
@@ -17622,7 +17622,7 @@
 /obj/item/storage/bag/plants,
 /obj/item/storage/bag/plants,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "YD" = (
 /obj/item/areaeditor/blueprints{
 	desc = "Use to build new structures in the wastes.";
@@ -17632,7 +17632,7 @@
 /obj/structure/table/wood,
 /obj/item/storage/firstaid/brute,
 /turf/open/floor/mineral/titanium/purple,
-/area/space)
+/area/ruin/lavaland/powered/golem_ship)
 "YE" = (
 /turf/closed/wall,
 /area/mine/maintenance)
@@ -17723,7 +17723,7 @@
 "YQ" = (
 /obj/machinery/smartfridge,
 /turf/open/floor/plasteel/freezer,
-/area/space)
+/area/ruin/lavaland/powered/seedvault)
 "YR" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel,

@@ -122,63 +122,70 @@ SUBSYSTEM_DEF(overlays)
 
 #define NOT_QUEUED_ALREADY (!(flags_1 & OVERLAY_QUEUED_1))
 #define QUEUE_FOR_COMPILE flags_1 |= OVERLAY_QUEUED_1; SSoverlays.queue += src;
+
 /atom/proc/cut_overlays()
-	LAZYINITLIST(remove_overlays)
-	remove_overlays = overlays.Copy()
-	add_overlays = null
+	STAT_START_STOPWATCH
+	overlays = null
+	POST_OVERLAY_CHANGE(src)
+	STAT_STOP_STOPWATCH
+	STAT_LOG_ENTRY(SSoverlays.stats, type)
 
-	//If not already queued for work and there are overlays to remove
-	if(NOT_QUEUED_ALREADY && remove_overlays.len)
-		QUEUE_FOR_COMPILE
-
-/atom/proc/cut_overlay(list/overlays)
+/atom/proc/cut_overlay(list/remove_overlays)
 	if(!overlays)
 		return
-	overlays = build_appearance_list(overlays)
-	LAZYINITLIST(add_overlays)
-	LAZYINITLIST(remove_overlays)
-	var/a_len = add_overlays.len
-	var/r_len = remove_overlays.len
-	remove_overlays += overlays
-	add_overlays -= overlays
+	STAT_START_STOPWATCH
+	overlays -= build_appearance_list(remove_overlays)
+	POST_OVERLAY_CHANGE(src)
+	STAT_STOP_STOPWATCH
+	STAT_LOG_ENTRY(SSoverlays.stats, type)
 
-	var/fa_len = add_overlays.len
-	var/fr_len = remove_overlays.len
-
-	//If not already queued and there is work to be done
-	if(NOT_QUEUED_ALREADY && (fa_len != a_len || fr_len != r_len ))
-		QUEUE_FOR_COMPILE
-	UNSETEMPTY(add_overlays)
-
-/atom/proc/add_overlay(list/overlays)
+/atom/proc/add_overlay(list/add_overlays)
 	if(!overlays)
 		return
+	STAT_START_STOPWATCH
+	overlays += build_appearance_list(add_overlays)
+	VALIDATE_OVERLAY_LIMIT(src)
+	POST_OVERLAY_CHANGE(src)
+	STAT_STOP_STOPWATCH
+	STAT_LOG_ENTRY(SSoverlays.stats, type)
 
-	overlays = build_appearance_list(overlays)
-
-	LAZYINITLIST(add_overlays) //always initialized after this point
-	var/a_len = add_overlays.len
-
-	add_overlays += overlays
-	var/fa_len = add_overlays.len
-	if(NOT_QUEUED_ALREADY && fa_len != a_len)
-		QUEUE_FOR_COMPILE
-
-/atom/proc/copy_overlays(atom/other, cut_old)	//copys our_overlays from another atom
+/atom/proc/copy_overlays(atom/other, cut_old) //copys our_overlays from another atom
 	if(!other)
 		if(cut_old)
 			cut_overlays()
 		return
 
+	STAT_START_STOPWATCH
 	var/list/cached_other = other.overlays.Copy()
-	if(cached_other)
-		if(cut_old || !LAZYLEN(overlays))
-			remove_overlays = overlays
-		add_overlays = cached_other
-		if(NOT_QUEUED_ALREADY)
-			QUEUE_FOR_COMPILE
-	else if(cut_old)
-		cut_overlays()
+	if(cut_old)
+		if(cached_other)
+			overlays = cached_other
+		else
+			overlays = null
+		VALIDATE_OVERLAY_LIMIT(src)
+		POST_OVERLAY_CHANGE(src)
+		STAT_STOP_STOPWATCH
+		STAT_LOG_ENTRY(SSoverlays.stats, type)
+	else if(cached_other)
+		overlays += cached_other
+		VALIDATE_OVERLAY_LIMIT(src)
+		POST_OVERLAY_CHANGE(src)
+		STAT_STOP_STOPWATCH
+		STAT_LOG_ENTRY(SSoverlays.stats, type)
+
+/// Converts an overlay list into text for debug printing
+/// Of note: overlays aren't actually mutable appearances, they're just appearances
+/// Don't have access to that type tho, so this is the best you're gonna get
+/proc/overlays2text(list/overlays)
+	var/list/unique_overlays = list()
+	// As anything because we're basically doing type coerrsion, rather then actually filtering for mutable apperances
+	for(var/mutable_appearance/overlay as anything in overlays)
+		var/key = "[overlay.icon]-[overlay.icon_state]-[overlay.dir]"
+		unique_overlays[key] += 1
+	var/list/output_text = list()
+	for(var/key in unique_overlays)
+		output_text += "([key]) = [unique_overlays[key]]"
+	return output_text.Join("\n")
 
 #undef NOT_QUEUED_ALREADY
 #undef QUEUE_FOR_COMPILE
