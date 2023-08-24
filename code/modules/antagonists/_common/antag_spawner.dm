@@ -195,11 +195,11 @@
 
 	switch(borg_to_spawn)
 		if("InteQ-Medical")
-			R = new /mob/living/silicon/robot/modules/syndicate/medical/inteq(T)
+			R = new /mob/living/silicon/robot/modules/inteq/medical(T)
 		if("InteQ-Saboteur")
-			R = new /mob/living/silicon/robot/modules/syndicate/saboteur/inteq(T)
+			R = new /mob/living/silicon/robot/modules/inteq/saboteur(T)
 		else
-			R = new /mob/living/silicon/robot/modules/syndicate/inteq(T)
+			R = new /mob/living/silicon/robot/modules/inteq(T)
 
 	var/brainfirstname = pick(GLOB.first_names_male)
 	if(prob(50))

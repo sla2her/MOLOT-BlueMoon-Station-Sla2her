@@ -38,7 +38,7 @@
 	speak_emote = list("chirps")
 	speech_span = SPAN_ROBOT
 	bubble_icon = "machine"
-	initial_language_holder = /datum/language_holder/synthetic
+	initial_language_holder = /datum/language_holder
 	mob_size = MOB_SIZE_SMALL
 	silicon_privileges = PRIVILEGES_DRONE
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
@@ -69,6 +69,7 @@
 	var/obj/item/default_hatmask //If this exists, it will spawn in the hat/mask slot if it can fit
 	var/visualAppearence = MAINTDRONE //What we appear as
 	var/hacked = FALSE //If we have laws to destroy the station
+	var/obj/item/radio/borg/radio = null //AIs dont use this but this is at the silicon level to advoid copypasta in say()
 	var/flavortext = \
 	"\n<big><span class='warning'>DO NOT INTERFERE WITH THE ROUND AS A DRONE OR YOU WILL BE DRONE BANNED</span></big>\n"+\
 	"<span class='notify'>Drones are a ghost role that are allowed to fix the station and build things. Interfering with the round as a drone is against the rules.</span>\n"+\
@@ -78,6 +79,10 @@
 	"<span class='notify'>     - Interacting with non-living beings (dragging bodies, looting bodies, etc.)</span>\n"+\
 	"<span class='warning'>These rules are at admin discretion and will be heavily enforced.</span>\n"+\
 	"<span class='warning'><u>If you do not have the regular drone laws, follow your laws to the best of your ability.</u></span>"
+
+/mob/living/simple_animal/drone/get_status_tab_items()
+	. = ..()
+	. += "Законы: [laws]"
 
 /mob/living/simple_animal/drone/Initialize(mapload)
 	. = ..()
@@ -96,6 +101,8 @@
 	ADD_TRAIT(access_card, TRAIT_NODROP, ABSTRACT_ITEM_TRAIT)
 
 	alert_drones(DRONE_NET_CONNECT)
+
+	radio = new /obj/item/radio/borg(src)
 
 	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
 		diag_hud.add_to_hud(src)
@@ -303,3 +310,18 @@
 		var/obj/item/clothing/H = head
 		if(H.clothing_flags & SCAN_REAGENTS)
 			return TRUE
+
+/mob/living/simple_animal/drone/mentordrone
+	name = "Mentor Drone"
+	desc = "Дрон, который однозначно поможет. Может быть."
+	icon = 'icons/mob/drone.dmi'
+	icon_state = "drone_gem"
+	icon_living = "drone_gem"
+	icon_dead = "drone_gem_hat_standby"
+	see_in_dark = 14
+	initial_language_holder = /datum/language_holder/synthetic
+
+/mob/living/simple_animal/drone/mentordrone/Initialize(mapload)
+	. = ..()
+	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
+	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)
