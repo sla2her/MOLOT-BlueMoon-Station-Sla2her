@@ -15012,10 +15012,15 @@
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "aAJ" = (
-/obj/structure/table/reinforced,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel/cafeteria,
+/area/command/heads_quarters/rd)
+"aAK" = (
+/obj/structure/table/reinforced,
+/obj/item/folder/white,
 /obj/item/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
@@ -15025,11 +15030,6 @@
 	pixel_x = 3;
 	pixel_y = -2
 	},
-/turf/open/floor/plasteel/cafeteria,
-/area/command/heads_quarters/rd)
-"aAK" = (
-/obj/structure/table/reinforced,
-/obj/item/folder/white,
 /turf/open/floor/plasteel/cafeteria,
 /area/command/heads_quarters/rd)
 "aAL" = (
@@ -19990,6 +19990,7 @@
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 4
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "aJX" = (
@@ -39363,6 +39364,7 @@
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 5
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "bGD" = (
@@ -42426,6 +42428,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/pen,
+/obj/item/stamp/cmo,
 /turf/open/floor/plasteel/white,
 /area/command/heads_quarters/cmo)
 "bOa" = (
@@ -42654,11 +42660,7 @@
 	dir = 1
 	},
 /obj/machinery/light,
-/obj/structure/table/glass,
-/obj/item/folder/blue,
-/obj/item/folder/blue,
-/obj/item/pen,
-/obj/item/stamp/cmo,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/white,
 /area/command/heads_quarters/cmo)
 "bOL" = (
@@ -67228,6 +67230,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 10
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel,
 /area/cargo/qm)
 "kLq" = (
@@ -71246,6 +71249,10 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
+"sxb" = (
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/command)
 "sxV" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -106988,7 +106995,7 @@ abY
 bdF
 cQm
 abY
-bis
+sxb
 bkA
 bmc
 boB

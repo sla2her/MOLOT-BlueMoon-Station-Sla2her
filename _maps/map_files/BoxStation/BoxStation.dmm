@@ -568,12 +568,7 @@
 	name = "Station Intercom (General)";
 	pixel_x = -31
 	},
-/obj/structure/table/wood,
-/obj/item/storage/box/seccarts{
-	pixel_x = 3;
-	pixel_y = 2
-	},
-/obj/item/storage/box/deputy,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/hos)
 "adO" = (
@@ -806,6 +801,11 @@
 	pixel_y = 4
 	},
 /obj/structure/table/wood,
+/obj/item/storage/box/deputy,
+/obj/item/storage/box/seccarts{
+	pixel_x = 3;
+	pixel_y = 2
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/hos)
 "aey" = (
@@ -8287,6 +8287,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
+"aED" = (
+/obj/machinery/photocopier{
+	pixel_y = 3
+	},
+/turf/open/floor/wood,
+/area/service/library)
 "aEE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
@@ -14500,12 +14506,6 @@
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "bfy" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/pen,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
 	department = "Captain's Desk";
@@ -14513,6 +14513,7 @@
 	name = "Captain RC";
 	pixel_x = -30
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
 "bfA" = (
@@ -17796,7 +17797,7 @@
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
 	},
-/obj/structure/filingcabinet/chestdrawer,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/hop)
 "bnP" = (
@@ -22255,7 +22256,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/machinery/holopad/secure,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel,
 /area/cargo/qm)
 "byD" = (
@@ -22833,6 +22834,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/machinery/holopad/secure,
 /turf/open/floor/plasteel,
 /area/cargo/qm)
 "bzS" = (
@@ -23894,7 +23896,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/command/heads_quarters/rd)
 "bCk" = (
-/obj/structure/filingcabinet/chestdrawer,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/cafeteria,
 /area/command/heads_quarters/rd)
 "bCl" = (
@@ -24640,17 +24642,13 @@
 /turf/open/floor/plasteel,
 /area/science/storage)
 "bEh" = (
-/obj/structure/table/glass,
-/obj/item/paper_bin{
-	pixel_x = -2;
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/cafeteria,
 /area/command/heads_quarters/cmo)
 "bEi" = (
@@ -24680,6 +24678,10 @@
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
+	},
+/obj/item/paper_bin{
+	pixel_x = -2;
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/command/heads_quarters/cmo)
@@ -36139,6 +36141,8 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/event_spawn,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/item/rcl/pre_loaded,
+/obj/item/stock_parts/cell/high/plus,
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/ce)
 "ciq" = (
@@ -41527,10 +41531,8 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cBM" = (
-/obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/high/plus,
-/obj/item/rcl/pre_loaded,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/ce)
 "cBN" = (
@@ -43970,9 +43972,7 @@
 	name = "Station Intercom (General)";
 	pixel_y = -29
 	},
-/obj/structure/table/wood,
-/obj/item/assembly/flash/handheld,
-/obj/item/assembly/flash/handheld,
+/obj/machinery/photocopier,
 /turf/open/floor/wood,
 /area/command/bridge)
 "dIu" = (
@@ -47623,6 +47623,11 @@
 /obj/item/stamp/captain,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/item/storage/secure/briefcase/permits,
+/obj/item/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/pen,
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
 "gIq" = (
@@ -48793,7 +48798,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/photocopier,
+/obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/hop)
 "hLn" = (
@@ -52921,7 +52926,6 @@
 	pixel_y = -40;
 	req_access_txt = "2"
 	},
-/obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/light,
 /obj/structure/cable,
 /obj/machinery/camera{
@@ -52932,6 +52936,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/tile/red/half,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
 "lhQ" = (
@@ -53381,6 +53386,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
+"lCe" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "lCi" = (
 /obj/docking_port/stationary/public_mining_dock{
 	dir = 8
@@ -53886,6 +53899,16 @@
 /obj/item/light/tube/broken,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"lXG" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "lXM" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
@@ -57520,6 +57543,8 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
+/obj/item/assembly/flash/handheld,
+/obj/item/assembly/flash/handheld,
 /turf/open/floor/wood,
 /area/command/bridge)
 "peN" = (
@@ -113757,7 +113782,7 @@ aYW
 aQs
 aFu
 aTd
-aIt
+aED
 aUE
 aVT
 aYW
@@ -115309,9 +115334,9 @@ aCR
 aYV
 aXq
 aYV
-bfX
+lCe
 bhC
-biU
+lXG
 bks
 blI
 bnn

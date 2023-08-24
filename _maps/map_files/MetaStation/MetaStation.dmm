@@ -18477,13 +18477,8 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/command)
 "bzQ" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/pen,
-/obj/effect/turf_decal/delivery,
+/obj/machinery/photocopier,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/command)
 "bzR" = (
@@ -77526,15 +77521,6 @@
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/newscaster/security_unit{
-	pixel_y = -30
-	},
-/obj/item/folder/red,
-/obj/item/folder/red,
-/obj/structure/table,
 /obj/item/book/manual/wiki/security_space_law{
 	pixel_x = -3;
 	pixel_y = 5
