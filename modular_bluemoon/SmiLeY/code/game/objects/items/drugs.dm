@@ -16,8 +16,8 @@
 
 	M.add_client_colour(/datum/client_colour/zvezdochka)
 	var/sound/sound = sound(pick('modular_bluemoon/SmiLeY/sounds/LYENEN.ogg', 'modular_bluemoon/SmiLeY/sounds/LYENEN2.ogg'), TRUE)
-	sound.environment = 23
-	sound.volume = 20
+	sound.environment = 35
+	sound.volume = 30
 	SEND_SOUND(M.client, sound)
 
 	return
@@ -118,8 +118,8 @@
 
 	M.add_client_colour(/datum/client_colour/pendosovka)
 	var/sound/sound = sound(pick('modular_bluemoon/SmiLeY/sounds/CAPITAL1.ogg', 'modular_bluemoon/SmiLeY/sounds/CAPITAL2.ogg'), TRUE)
-	sound.environment = 23
-	sound.volume = 20
+	sound.environment = 45
+	sound.volume = 40
 	SEND_SOUND(M.client, sound)
 
 	return
