@@ -15,7 +15,7 @@
 	icon_state = "drone_synd"
 	icon_living = "drone_synd"
 	picked = TRUE //the appearence of syndrones is static, you don't get to change it.
-	health = 30
+	health = 120
 	maxHealth = 120 //If you murder other drones and cannibalize them you can get much stronger
 	initial_language_holder = /datum/language_holder/synthetic
 	faction = list(ROLE_TRAITOR)
@@ -265,3 +265,20 @@
 	hidden_uplink.telecrystals = 16
 	var/obj/item/implant/weapons_auth/W = new
 	W.implant(src)
+
+/mob/living/simple_animal/drone/syndrone/mentordrone
+	name = "Mentor Drone"
+	desc = "Дрон, который однозначно поможет. Может быть."
+	icon = 'icons/mob/drone.dmi'
+	icon_state = "drone_gem"
+	icon_living = "drone_gem"
+	icon_dead = "drone_gem_hat_standby"
+	see_in_dark = 14
+	default_storage = /obj/item/storage/backpack/duffelbag/drone
+	default_hatmask = null
+	initial_language_holder = /datum/language_holder/synthetic
+
+/mob/living/simple_animal/drone/mentordrone/Initialize(mapload)
+	. = ..()
+	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
+	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)

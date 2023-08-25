@@ -310,18 +310,3 @@
 		var/obj/item/clothing/H = head
 		if(H.clothing_flags & SCAN_REAGENTS)
 			return TRUE
-
-/mob/living/simple_animal/drone/mentordrone
-	name = "Mentor Drone"
-	desc = "Дрон, который однозначно поможет. Может быть."
-	icon = 'icons/mob/drone.dmi'
-	icon_state = "drone_gem"
-	icon_living = "drone_gem"
-	icon_dead = "drone_gem_hat_standby"
-	see_in_dark = 14
-	initial_language_holder = /datum/language_holder/synthetic
-
-/mob/living/simple_animal/drone/mentordrone/Initialize(mapload)
-	. = ..()
-	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
-	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)
