@@ -20,7 +20,7 @@
 #define MATERIAL_SOURCE(mat) "[mat.name]_material"
 
 /// Wrapper for fetching material references. Exists exclusively so that people don't need to wrap everything in a list every time.
-#define GET_MATERIAL_REF(arguments...) SSmaterials.GetMaterialRef(list(##arguments))
+#define GET_MATERIAL_REF(arguments...) SSmaterials._GetMaterialRef(list(##arguments))
 
 // The following flags are for decomposing alloys. Should be expanded upon and diversified once someone gets around to reworking recycling.
 /// Can reduce an alloy into its component materials.
