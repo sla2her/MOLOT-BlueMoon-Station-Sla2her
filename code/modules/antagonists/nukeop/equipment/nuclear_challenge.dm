@@ -116,7 +116,7 @@ GLOBAL_VAR_INIT(war_declared, FALSE)
 	if(actual_players < CHALLENGE_PLAYERS_TARGET)
 		tc_malus = FLOOR(((CHALLENGE_TELECRYSTALS / CHALLENGE_PLAYERS_TARGET) * (CHALLENGE_PLAYERS_TARGET - actual_players)) * TELECRYSTALS_MALUS_SCALING, 1)
 
-	new uplink_type(get_turf(user), user.key, CHALLENGE_TELECRYSTALS - tc_malus + CEILING(PLAYER_SCALING * actual_players, 1))
+	new uplink_type(get_turf(usr), usr.key, CHALLENGE_TELECRYSTALS - tc_malus + CEILING(PLAYER_SCALING * actual_players, 1))
 
 	CONFIG_SET(number/shuttle_refuel_delay, max(CONFIG_GET(number/shuttle_refuel_delay), CHALLENGE_SHUTTLE_DELAY))
 	SSblackbox.record_feedback("amount", "nuclear_challenge_mode", 1)
