@@ -72,18 +72,18 @@ SUBSYSTEM_DEF(materials)
 	return combo
 
 ///Ran on initialize, populated the materials and materials_by_category dictionaries with their appropiate vars (See these variables for more info)
-/datum/controller/subsystem/materials/proc/InitializeMaterials()
+/datum/controller/subsystem/materials/proc/_InitializeMaterials()
 	materials = list()
 	materials_by_type = list()
 	materialids_by_type = list()
 	materials_by_category = list()
-	materialids_by_category = list()
+	materialtypes_by_category = list()
 	material_combos = list()
 	for(var/type in subtypesof(/datum/material))
 		var/datum/material/mat_type = type
 		if(!(initial(mat_type.init_flags) & MATERIAL_INIT_MAPLOAD))
 			continue // Do not initialize at mapload
-		InitializeMaterial(list(mat_type))
+		_InitializeMaterial(list(mat_type))
 
 /** Creates and caches a material datum.
  *
@@ -91,10 +91,10 @@ SUBSYSTEM_DEF(materials)
  * - [arguments][/list]: The arguments to use to create the material datum
  *   - The first element is the type of material to initialize.
  */
-/datum/controller/subsystem/materials/proc/InitializeMaterial(list/arguments)
+/datum/controller/subsystem/materials/proc/_InitializeMaterial(list/arguments)
 	var/datum/material/mat_type = arguments[1]
 	if(initial(mat_type.init_flags) & MATERIAL_INIT_BESPOKE)
-		arguments[1] = GetIdFromArguments(arguments)
+		arguments[1] = _GetIdFromArguments(arguments)
 
 	var/datum/material/mat_ref = new mat_type
 	if(!mat_ref.Initialize(arglist(arguments)))
@@ -106,9 +106,8 @@ SUBSYSTEM_DEF(materials)
 	materialids_by_type[mat_type] += list(mat_id)
 	for(var/category in mat_ref.categories)
 		materials_by_category[category] += list(mat_ref)
-		materialids_by_category[category] += list(mat_id)
+		materialtypes_by_category[category] += list(mat_id)
 
-	SEND_SIGNAL(src, COMSIG_MATERIALS_INIT_MAT, mat_ref)
 	return mat_ref
 
 /** Fetches a cached material singleton when passed sufficient arguments.
@@ -146,8 +145,8 @@ SUBSYSTEM_DEF(materials)
 			WARNING("Attempted to fetch reference to an abstract material with key [key]")
 		return
 
-	key = GetIdFromArguments(arguments)
-	return materials[key] || InitializeMaterial(arguments)
+	key = _GetIdFromArguments(arguments)
+	return materials[key] || _InitializeMaterial(arguments)
 
 /** I'm not going to lie, this was swiped from [SSdcs][/datum/controller/subsystem/processing/dcs].
  * Credit does to ninjanomnom
@@ -157,7 +156,7 @@ SUBSYSTEM_DEF(materials)
  * Named arguments can appear in any order and we need them to appear after ordered arguments
  * We assume that no one will pass in a named argument with a value of null
  **/
-/datum/controller/subsystem/materials/proc/GetIdFromArguments(list/arguments)
+/datum/controller/subsystem/materials/proc/_GetIdFromArguments(list/arguments)
 	var/datum/material/mattype = arguments[1]
 	var/list/fullid = list("[initial(mattype.id) || mattype]")
 	var/list/named_arguments = list()
@@ -180,25 +179,3 @@ SUBSYSTEM_DEF(materials)
 		named_arguments = sort_list(named_arguments)
 		fullid += named_arguments
 	return list2params(fullid)
-
-
-/// Returns a list to be used as an object's custom_materials. Lists will be cached and re-used based on the parameters.
-/datum/controller/subsystem/materials/proc/FindOrCreateMaterialCombo(list/materials_declaration, multiplier)
-	if(!LAZYLEN(materials_declaration))
-		return null // If we get a null we pass it right back, we don't want to generate stack traces just because something is clearing out its materials list.
-
-	if(!material_combos)
-		InitializeMaterials()
-	var/list/combo_params = list()
-	for(var/x in materials_declaration)
-		var/datum/material/mat = x
-		combo_params += "[istype(mat) ? mat.id : mat]=[materials_declaration[mat] * multiplier]"
-	sortTim(combo_params, GLOBAL_PROC_REF(cmp_text_asc)) // We have to sort now in case the declaration was not in order
-	var/combo_index = combo_params.Join("-")
-	var/list/combo = material_combos[combo_index]
-	if(!combo)
-		combo = list()
-		for(var/mat in materials_declaration)
-			combo[GET_MATERIAL_REF(mat)] = materials_declaration[mat] * multiplier
-		material_combos[combo_index] = combo
-	return combo
