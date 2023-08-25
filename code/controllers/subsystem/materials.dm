@@ -182,25 +182,3 @@ SUBSYSTEM_DEF(materials)
 		named_arguments = sort_list(named_arguments)
 		fullid += named_arguments
 	return list2params(fullid)
-
-
-/// Returns a list to be used as an object's custom_materials. Lists will be cached and re-used based on the parameters.
-/datum/controller/subsystem/materials/proc/_FindOrCreateMaterialCombo(list/materials_declaration, multiplier)
-	if(!LAZYLEN(materials_declaration))
-		return null // If we get a null we pass it right back, we don't want to generate stack traces just because something is clearing out its materials list.
-
-	if(!material_combos)
-		_InitializeMaterials()
-	var/list/combo_params = list()
-	for(var/x in materials_declaration)
-		var/datum/material/mat = x
-		combo_params += "[istype(mat) ? mat.id : mat]=[materials_declaration[mat] * multiplier]"
-	sortTim(combo_params, GLOBAL_PROC_REF(cmp_text_asc)) // We have to sort now in case the declaration was not in order
-	var/combo_index = combo_params.Join("-")
-	var/list/combo = material_combos[combo_index]
-	if(!combo)
-		combo = list()
-		for(var/mat in materials_declaration)
-			combo[GET_MATERIAL_REF(mat)] = materials_declaration[mat] * multiplier
-		material_combos[combo_index] = combo
-	return combo
