@@ -260,14 +260,14 @@
 		signal.transmission_method = TRANSMISSION_SUPERSPACE
 		signal.levels = list(0)  // reaches all Z-levels
 		signal.broadcast()
-		playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)
+		//playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)
 		return
 
 	// All radios make an attempt to use the subspace system first
 	signal.send_to_receivers()
 
 	//At this point the signal was transmitted so play a sound			//WS Edit - Radio chatter
-	playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)			//WS Edit - Radio chatter
+	//playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)			//WS Edit - Radio chatter
 
 	// If the radio is subspace-only, that's all it can do
 	if (subspace_transmission)
