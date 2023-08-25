@@ -30,6 +30,9 @@
 				if(!M.dna.features["mam_tail"] == "None")
 					var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
 					. += mutable_appearance(tail_under_suit, tail_state)
+				if(M.dna.features["mam_tail"] == "Cat")
+					var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
+					. += mutable_appearance(tail_under_suit, tail_state)
 				if(!M.dna.features["xenotail"] == "None")
 					var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
 					. += mutable_appearance(tail_under_suit, tail_state)
