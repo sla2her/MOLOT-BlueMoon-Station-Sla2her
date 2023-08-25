@@ -53090,7 +53090,7 @@
 /obj/machinery/door/airlock/security{
 	id_tag = "secdormone";
 	name = "Security Dorm 1";
-	req_access = "63"
+	req_access_txt = "63"
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/office)
@@ -61080,7 +61080,7 @@
 /obj/machinery/door/airlock/security{
 	id_tag = "secdormtwo";
 	name = "Security Dorm 2";
-	req_access = "63"
+	req_access_txt = "63"
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/office)
@@ -61685,7 +61685,7 @@
 /obj/structure/closet/crate/secure/weapon{
 	desc = "A secure clothing crate.";
 	name = "formal uniform crate";
-	req_access = "3"
+	req_access_txt = "3"
 	},
 /obj/item/clothing/under/rank/security/officer/formal,
 /obj/item/clothing/under/rank/security/officer/formal,

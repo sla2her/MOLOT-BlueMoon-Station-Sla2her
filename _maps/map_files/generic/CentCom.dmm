@@ -6259,12 +6259,12 @@
 /obj/machinery/door/window/survival_pod{
 	dir = 4;
 	heat_proof = 1;
-	req_access = "150"
+	req_access_txt = "150"
 	},
 /obj/machinery/door/window/survival_pod{
 	dir = 8;
 	heat_proof = 1;
-	req_access = "150"
+	req_access_txt = "150"
 	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/iron/dark,
@@ -6899,12 +6899,12 @@
 /obj/machinery/door/window/survival_pod{
 	dir = 8;
 	heat_proof = 1;
-	req_access = "150"
+	req_access_txt = "150"
 	},
 /obj/machinery/door/window/survival_pod{
 	dir = 4;
 	heat_proof = 1;
-	req_access = "150"
+	req_access_txt = "150"
 	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/iron/dark,
