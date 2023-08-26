@@ -76,7 +76,7 @@
 	var/mob/admin = usr
 	if(tgui_alert(usr, "WARNING: [warning_text]", event_control.name, list("Yes", "No")) == "Yes")
 		if(snitch_text)
-			message_admins("[admin.ckey] [snitch_text]")
+			message_admins("[key_name_admin(usr)] [snitch_text].")
 	else
 		return ADMIN_CANCEL_EVENT
 
