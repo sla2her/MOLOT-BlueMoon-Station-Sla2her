@@ -179,9 +179,9 @@
 	area_flags = NOTELEPORT
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 
-///area/shuttle/escape/arena
-//	name = "The Arena"
-//	area_flags = NOTELEPORT
+/area/shuttle/escape/arena
+	name = "The Arena"
+	area_flags = NOTELEPORT
 
 /area/shuttle/escape/meteor
 	name = "\proper a meteor with engines strapped to it"
