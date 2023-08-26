@@ -29,7 +29,8 @@
 
 /datum/dimension_theme/New()
 	if (materials)
-		var/datum/material/using_mat = GET_MATERIAL_REF(materials)
+		var/datum/material/using_mat = SSmaterials.GetMaterialRef(materials)
+
 		window_colour = using_mat.color
 
 /**
@@ -176,7 +177,7 @@
  * * affected_turf - Turf to transform.
  */
 /datum/dimension_theme/proc/apply_materials(turf/affected_turf)
-	var/list/custom_materials = list(GET_MATERIAL_REF(materials) = SHEET_MATERIAL_AMOUNT)
+	var/list/custom_materials = list(SSmaterials.GetMaterialRef(materials) = SHEET_MATERIAL_AMOUNT)
 
 	if (istype(affected_turf, /turf/open/floor/material) || istype(affected_turf, /turf/closed/wall/material))
 		affected_turf.set_custom_materials(custom_materials)

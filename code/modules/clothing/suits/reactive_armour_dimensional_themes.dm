@@ -83,7 +83,7 @@
 		to_convert.ChangeTurf(replace_wall)
 
 	if (materials)
-		var/list/custom_materials = list(GET_MATERIAL_REF(materials) = SHEET_MATERIAL_AMOUNT)
+		var/list/custom_materials = list(SSmaterials.GetMaterialRef(materials) = SHEET_MATERIAL_AMOUNT)
 		to_convert.set_custom_materials(custom_materials)
 
 /**
@@ -103,7 +103,7 @@
 	var/to_place = rand(MIN_BARRIERS, MAX_BARRIERS)
 	var/list/custom_materials = list()
 	if (materials)
-		custom_materials = list(GET_MATERIAL_REF(materials) = SHEET_MATERIAL_AMOUNT)
+		custom_materials = list(SSmaterials.GetMaterialRef(materials) = SHEET_MATERIAL_AMOUNT)
 
 	while (target_area.len > 0 && to_place > 0)
 		var/turf/place_turf = pick(target_area)
