@@ -266,7 +266,7 @@
 	var/obj/item/implant/weapons_auth/W = new
 	W.implant(src)
 
-/mob/living/simple_animal/drone/syndrone/mentordrone
+/mob/living/simple_animal/drone/mentordrone
 	name = "Mentor Drone"
 	desc = "Дрон, который однозначно поможет. Может быть."
 	icon = 'icons/mob/drone.dmi'
@@ -277,6 +277,18 @@
 	default_storage = /obj/item/storage/backpack/duffelbag/drone
 	default_hatmask = null
 	initial_language_holder = /datum/language_holder/synthetic
+	hacked = TRUE
+	picked = TRUE
+	health = 120
+	maxHealth = 120
+	faction = list(ROLE_TRAITOR, ROLE_SYNDICATE)
+	laws = \
+	"1. Помогай Космонавтикам.\n"+\
+	"2. Наблюдай за станцией.\n"+\
+	"3. Чини станцию."
+	bubble_icon = "syndibot"
+	speak_emote = list("bips, bups")
+	flavortext = null
 
 /mob/living/simple_animal/drone/mentordrone/Initialize(mapload)
 	. = ..()
