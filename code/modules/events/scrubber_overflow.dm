@@ -6,7 +6,7 @@
 	min_players = 10
 	category = EVENT_CATEGORY_JANITORIAL
 	description = "The scrubbers release a tide of mostly harmless froth."
-//	admin_setup = list(/datum/event_admin_setup/listed_options/scrubber_overflow)
+	admin_setup = list(/datum/event_admin_setup/listed_options/scrubber_overflow)
 
 /datum/round_event/scrubber_overflow
 	announce_when = 1
@@ -167,14 +167,14 @@
 	overflow_probability = 100
 	reagents_amount = 200
 
-///datum/event_admin_setup/listed_options/scrubber_overflow
-//	normal_run_option = "Random Reagents"
-//	special_run_option = "Random Single Reagent"
-//
-///datum/event_admin_setup/listed_options/scrubber_overflow/get_list()
-//	return sortList(subtypesof(/datum/reagent), /proc/cmp_typepaths_asc)
-//
-///datum/event_admin_setup/listed_options/scrubber_overflow/apply_to_event(datum/round_event/scrubber_overflow/event)
-//	if(chosen == special_run_option)
-//		chosen = event.get_overflowing_reagent(dangerous = prob(event.danger_chance))
-//	event.forced_reagent_type = chosen
+/datum/event_admin_setup/listed_options/scrubber_overflow
+	normal_run_option = "Random Reagents"
+	special_run_option = "Random Single Reagent"
+
+/datum/event_admin_setup/listed_options/scrubber_overflow/get_list()
+	return sortList(subtypesof(/datum/reagent), /proc/cmp_typepaths_asc)
+
+/datum/event_admin_setup/listed_options/scrubber_overflow/apply_to_event(datum/round_event/scrubber_overflow/event)
+	if(chosen == special_run_option)
+		chosen = event.get_overflowing_reagent(dangerous = prob(event.danger_chance))
+	event.forced_reagent_type = chosen
