@@ -543,7 +543,7 @@ SUBSYSTEM_DEF(vote)
 						choices.Add(ROUNDTYPE_EXTENDED)
 					if ("Extended")
 						choices.Add(ROUNDTYPE_DYNAMIC)
-					if (FALSE)
+					else
 						choices.Add(ROUNDTYPE_DYNAMIC, ROUNDTYPE_EXTENDED)
 			if("custom")
 				question = stripped_input(usr,"What is the vote for?")
@@ -609,15 +609,15 @@ SUBSYSTEM_DEF(vote)
 	return 0
 
 /datum/controller/subsystem/vote/proc/check_combo()
-	var/list/roundtypes = list()
-	for (var/mode in SSpersistence.saved_modes)
-		if(!(mode in roundtypes))
-			roundtypes[mode] = 0
-		roundtypes[mode]++
+    var/list/roundtypes = list()
+    for (var/mode in SSpersistence.saved_modes)
+        if(!roundtypes[mode])
+            roundtypes[mode] = 0
+        roundtypes[mode]++
 
-		if (roundtypes[mode] >= 3)
-			return mode
-	return FALSE
+        if (roundtypes[mode] >= 3)
+            return mode
+    return FALSE
 
 /datum/controller/subsystem/vote/proc/interface(client/C)
 	if(!C)

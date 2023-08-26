@@ -124,7 +124,7 @@ SUBSYSTEM_DEF(materials)
  */
 /datum/controller/subsystem/materials/proc/_GetMaterialRef(list/arguments)
 	if(!materials)
-		InitializeMaterials()
+		_InitializeMaterials()
 
 	var/datum/material/key = arguments[1]
 	if(istype(key))
