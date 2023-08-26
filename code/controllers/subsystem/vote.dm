@@ -536,7 +536,6 @@ SUBSYSTEM_DEF(vote)
 			if("transfer") // austation begin -- Crew autotranfer vote
 				choices.Add(VOTE_TRANSFER,VOTE_CONTINUE) // austation end
 			if("roundtype")
-				check_combo()
 				var/combo = check_combo()
 				switch (combo)
 					if ("dynamic")
@@ -609,13 +608,20 @@ SUBSYSTEM_DEF(vote)
 	return 0
 
 /datum/controller/subsystem/vote/proc/check_combo()
-    for (var/mode in SSpersistence.saved_modes)
-        if(!SSpersistence.saved_modes[mode])
-            SSpersistence.saved_modes[mode] = 0
-        SSpersistence.saved_modes[mode]++
-        if (SSpersistence.saved_modes[mode] >= 3)
-            return mode
-    return FALSE
+	var/list/roundtypes = list()
+	log_world("SSpersistence.saved_modes contents:")
+	for (var/mode in SSpersistence.saved_modes)
+		log_world("- [mode]: [SSpersistence.saved_modes[mode]]")
+
+	for (var/mode in SSpersistence.saved_modes)
+		if(!istext(mode))
+			continue
+		if(!(mode in roundtypes))
+			roundtypes[mode] = 0
+		roundtypes[mode]++
+		if (roundtypes[mode] >= 3)
+			return mode
+	return FALSE
 
 /datum/controller/subsystem/vote/proc/interface(client/C)
 	if(!C)
@@ -656,6 +662,8 @@ SUBSYSTEM_DEF(vote)
 			if(SSpersistence.last_dynamic_gamemode)
 				. += "<br>Последняя вариация: <b>[SSpersistence.last_dynamic_gamemode]</b>."
 			. += "<h4>Проходит Эксперимент - чередование режимов. Если Режим выпадает три раза подряд - форсится обратный.</h4>"
+			if (length(SSpersistence.saved_modes))
+				. += "<br>Последние режимы: <b>[jointext(SSpersistence.saved_modes, ", ")]</b>."
 			. += "<br>Осталось времени: [DisplayTimeText((SSticker.timeLeft - ROUNDTYPE_VOTE_END_PENALTY))]<hr><ul>"
 		else
 			. += "Осталось времени: [DisplayTimeText(end_time-world.time)]<hr><ul>"
