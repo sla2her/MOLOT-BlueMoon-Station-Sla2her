@@ -654,9 +654,6 @@
 		if(!mr_moneybags || mr_moneybags.account_balance < current_acc.account_balance)
 			mr_moneybags = current_acc
 	parts += "<div class='panel stationborder'><span class='header'>Экономический отчёт</span><br>"
-	parts += "<span class='service'>Обслуга:</span><br>"
-
-	parts += "<b>Общая статистика:</b><br>"
 	parts += "Всего было заработано [station_vault] кредитов экипажем.<br>"
 	if(total_players > 0)
 		parts += "В среднем каждый заработал [station_vault/total_players] кредитов.<br>"
