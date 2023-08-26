@@ -609,12 +609,11 @@ SUBSYSTEM_DEF(vote)
 	return 0
 
 /datum/controller/subsystem/vote/proc/check_combo()
-    var/list/roundtypes = list()
     for (var/mode in SSpersistence.saved_modes)
-        if(!roundtypes[mode])
-            roundtypes[mode] = 0
-        roundtypes[mode]++
-        if (roundtypes[mode] >= 3)
+        if(!SSpersistence.saved_modes[mode])
+            SSpersistence.saved_modes[mode] = 0
+        SSpersistence.saved_modes[mode]++
+        if (SSpersistence.saved_modes[mode] >= 3)
             return mode
     return FALSE
 
@@ -644,15 +643,8 @@ SUBSYSTEM_DEF(vote)
 			if(SCORE_VOTING,HIGHEST_MEDIAN_VOTING)
 				. += "<h3>Grade the candidates by how much you like them.</h3>"
 				. += "<h3>No-votes have no power--your opinion is only heard if you vote!</h3>"
-//BLUEMOON ADD START
+
 		if(mode == "roundtype")
-/*
-			. += "<br>Голоса за [ROUNDTYPE_DYNAMIC] и [ROUNDTYPE_DYNAMIC_TEAMBASED] складываются (и побеждают в случае ничьей). Против них - [ROUNDTYPE_DYNAMIC_LIGHT] и [ROUNDTYPE_EXTENDED]."
-			. += "<br><font size=1><small><b>[ROUNDTYPE_DYNAMIC_TEAMBASED]</b> (50-100 угрозы, только командные и некоторые одиночные антагонисты)</font></small>"
-			. += "<br><font size=1><small><b>[ROUNDTYPE_DYNAMIC]</b> (50-100 угрозы)</font></small>"
-			. += "<br><font size=1><small><b>[ROUNDTYPE_DYNAMIC_LIGHT]</b> (30-50 угрозы, без командных ролей)</font></small>"
-			. += "<br><font size=1><small><b>[ROUNDTYPE_EXTENDED]</b> (без угроз)</font></small>"
-*/
 			. += "<br>ПОДХОД К ГОЛОСОВАНИЮ В РАЗРАБОТКЕ!"
 			. += "<br>Если выбирается [ROUNDTYPE_DYNAMIC], то выбирается одна из вариаций динамика, которые описаны ниже:"
 			. += "<br><font size=1><small><b>[ROUNDTYPE_DYNAMIC_TEAMBASED]</b> (55-100 угрозы, только командные и особые одиночные антагонисты);</font></small>"

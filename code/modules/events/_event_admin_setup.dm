@@ -73,7 +73,6 @@
 /datum/event_admin_setup/warn_admin/prompt_admins()
 	if(!should_warn())
 		return
-	var/mob/admin = usr
 	if(tgui_alert(usr, "WARNING: [warning_text]", event_control.name, list("Yes", "No")) == "Yes")
 		if(snitch_text)
 			message_admins("[key_name_admin(usr)] [snitch_text].")
