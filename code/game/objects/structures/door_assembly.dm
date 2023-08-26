@@ -230,7 +230,7 @@
 
 	else if(W.tool_behaviour == TOOL_SCREWDRIVER && state == AIRLOCK_ASSEMBLY_NEEDS_SCREWDRIVER )
 		user.visible_message("[user] finishes the airlock.", \
-							"<span class='notice'>You start finishing the airlock...</span>")
+							 "<span class='notice'>You start finishing the airlock...</span>")
 
 		if(W.use_tool(src, user, 40, volume=100))
 			if(loc && state == AIRLOCK_ASSEMBLY_NEEDS_SCREWDRIVER)

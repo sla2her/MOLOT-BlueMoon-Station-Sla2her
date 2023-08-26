@@ -17,6 +17,8 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/color
 	///Base alpha of the material, is used for greyscale icons.
 	var/alpha
+	//Bitflags that influence how SSmaterials handles this material.
+	var/init_flags = MATERIAL_INIT_MAPLOAD
 	///Materials "Traits". its a map of key = category | Value = Bool. Used to define what it can be used for
 	var/list/categories = list()
 	///The type of sheet this material creates. This should be replaced as soon as possible by greyscale sheets
@@ -39,6 +41,11 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/texture_layer_icon_state
 	///a cached icon for the texture filter
 	var/cached_texture_filter
+	///What type of shard the material will shatter to
+	var/obj/item/shard_type
+	///What type of debris the tile will leave behind when shattered.
+	var/obj/effect/decal/debris_type
+
 
 /** Handles initializing the material.
  *

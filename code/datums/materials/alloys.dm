@@ -15,7 +15,7 @@
 	. = list()
 	var/list/cached_comp = composition
 	for(var/comp_mat in cached_comp)
-		var/datum/material/component_material = SSmaterials.GetMaterialRef(comp_mat)
+		var/datum/material/component_material = GET_MATERIAL_REF(comp_mat)
 		var/list/component_composition = component_material.return_composition(cached_comp[comp_mat], breakdown_flags)
 		for(var/comp_comp_mat in component_composition)
 			.[comp_comp_mat] += component_composition[comp_comp_mat] * amount
@@ -66,6 +66,7 @@
 	integrity_modifier = 1.3
 	armor_modifiers = list(MELEE = 1.1, BULLET = 1.1, LASER = 1.4, ENERGY = 1.4, BOMB = 1.1, BIO = 1.2, FIRE = 1.5, ACID = 1)
 	sheet_type = /obj/item/stack/sheet/mineral/plastitanium
+	debris_type = /obj/effect/decal/cleanable/glass/plastitanium
 	categories = list(MAT_CATEGORY_RIGID=TRUE, MAT_CATEGORY_BASE_RECIPES=TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
 	composition = list(/datum/material/titanium=1, /datum/material/plasma=1)
 
@@ -81,6 +82,8 @@
 	integrity_modifier = 0.5
 	armor_modifiers = list(MELEE = 0.8, BULLET = 0.8, LASER = 1.2, ENERGY = 1.2, BOMB = 0.3, BIO = 1.2, FIRE = 2, ACID = 2)
 	sheet_type = /obj/item/stack/sheet/plasmaglass
+	shard_type = /obj/item/shard/plasma
+	debris_type = /obj/effect/decal/cleanable/glass/plasma
 	value_per_unit = 0.075
 	categories = list(MAT_CATEGORY_RIGID=TRUE, MAT_CATEGORY_BASE_RECIPES=TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
 	composition = list(/datum/material/glass=1, /datum/material/plasma=0.5)
@@ -96,6 +99,8 @@
 	alpha = 150
 	armor_modifiers = list(MELEE = 1.2, BULLET = 1.2, LASER = 0.8, ENERGY = 0.8, BOMB = 0.5, BIO = 1.2, FIRE = 0.8, ACID = 2)
 	sheet_type = /obj/item/stack/sheet/titaniumglass
+	shard_type = /obj/item/shard/titanium
+	debris_type = /obj/effect/decal/cleanable/glass/titanium
 	value_per_unit = 0.04
 	categories = list(MAT_CATEGORY_RIGID=TRUE, MAT_CATEGORY_BASE_RECIPES=TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
 	composition = list(/datum/material/glass=1, /datum/material/titanium=0.5)
@@ -112,6 +117,8 @@
 	integrity_modifier = 1.1
 	armor_modifiers = list(MELEE = 1.2, BULLET = 1.2, LASER = 1.2, ENERGY = 1.2, BOMB = 0.5, BIO = 1.2, FIRE = 2, ACID = 2)
 	sheet_type = /obj/item/stack/sheet/plastitaniumglass
+	shard_type = /obj/item/shard/plastitanium
+	debris_type = /obj/effect/decal/cleanable/glass/plastitanium
 	value_per_unit = 0.125
 	categories = list(MAT_CATEGORY_RIGID=TRUE, MAT_CATEGORY_BASE_RECIPES=TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
 	composition = list(/datum/material/glass=1, /datum/material/alloy/plastitanium=0.5)
