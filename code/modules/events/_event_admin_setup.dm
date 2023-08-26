@@ -62,6 +62,32 @@
 	if(!chosen)
 		return ADMIN_CANCEL_EVENT
 
+/// Some events are not always a good idea when a game state is in a certain situation.
+/// This runs a check and warns the admin.
+/datum/event_admin_setup/warn_admin
+	/// Warning text shown to admin on the alert.
+	var/warning_text = "Unset warning text"
+	/// Message sent to other admins. Example: "has forced a shuttle catastrophe while a shuttle was already docked."
+	var/snitch_text = "Unset snitching text (be mad at coders AND the admin responsible)"
+
+/datum/event_admin_setup/warn_admin/prompt_admins()
+	if(!should_warn())
+		return
+	var/mob/admin = usr
+	if(tgui_alert(usr, "WARNING: [warning_text]", event_control.name, list("Yes", "No")) == "Yes")
+		if(snitch_text)
+			message_admins("[admin.ckey] [snitch_text]")
+	else
+		return ADMIN_CANCEL_EVENT
+
+/// Returns whether the admin should get an alert.
+/datum/event_admin_setup/warn_admin/proc/should_warn()
+	SHOULD_CALL_PARENT(FALSE)
+	CRASH("Unimplemented should_warn() on [event_control]'s admin setup.")
+
+/datum/event_admin_setup/warn_admin/apply_to_event(datum/round_event/event)
+	return
+
 /datum/event_admin_setup/set_location
 	///Text shown when admins are queried about setting the target location.
 	var/input_text = "Aimed at the turf we're on?"
