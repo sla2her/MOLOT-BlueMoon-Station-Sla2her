@@ -177,8 +177,7 @@
  * * affected_turf - Turf to transform.
  */
 /datum/dimension_theme/proc/apply_materials(turf/affected_turf)
-	var/list/custom_materials = list()
-	custom_materials[SSmaterials.GetMaterialRef(materials)] = SHEET_MATERIAL_AMOUNT
+	var/list/custom_materials = list(SSmaterials.GetMaterialRef(materials) = SHEET_MATERIAL_AMOUNT)
 
 	if (istype(affected_turf, /turf/open/floor/material) || istype(affected_turf, /turf/closed/wall/material))
 		affected_turf.set_custom_materials(custom_materials)
