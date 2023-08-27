@@ -317,7 +317,7 @@
 	next_attempt_allowed = world.time + 1 MINUTES
 
 	to_chat(user, "<span class='notice'>Вы активизируете [src] и ожидаете подтверждения.</span>")
-	var/list/borg_candidates = pollGhostCandidates("Хотите ли вы играть за Киборга [uppertext(borg_to_spawn)]?", ROLE_POSIBRAIN, null, ROLE_POSIBRAIN, 150, POLL_IGNORE_POSIBRAIN)
+	var/list/borg_candidates = pollGhostCandidates("Хотите ли вы играть за Киборга [uppertext(borg_to_spawn)]?", ROLE_OPERATIVE, null, ROLE_OPERATIVE, 150, POLL_IGNORE_SYNDICATE)
 	if(LAZYLEN(borg_candidates))
 		if(QDELETED(src) || !check_usability(user))
 			return
