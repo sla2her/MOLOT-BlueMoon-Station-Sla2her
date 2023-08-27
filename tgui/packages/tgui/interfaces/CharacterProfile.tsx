@@ -20,7 +20,6 @@ const getTagColor = (erptag) => {
 
 interface CharacterProfileContext {
   directory_visible: boolean;
-  is_unknown: boolean;
   headshot_link: string;
   character_ref: any,
   flavortext: string;
@@ -61,7 +60,7 @@ export const CharacterProfile = (props, context) => {
         </Tabs>
         <Flex>
           <Flex.Item pl="10px">
-            { !data.is_unknown ? (<CharacterProfileImageElement />) : (<Box />) }
+            <CharacterProfileImageElement />
             <CharacterModelImageElement />
           </Flex.Item>
           <Flex.Item Flex-direction="column" pl="10px" width="100%">
