@@ -30,15 +30,6 @@
 				if(M.dna.features["mam_tail"] != "None")
 					var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
 					. += mutable_appearance(tail_under_suit, tail_state)
-				if(M.dna.features["mam_tail"] == "Cat")
-					var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
-					. += mutable_appearance(tail_under_suit, tail_state)
-				if(!M.dna.features["xenotail"] != "None")
-					var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
-					. += mutable_appearance(tail_under_suit, tail_state)
-				if(!M.dna.features["tail_lizard"] != "None")
-					var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
-					. += mutable_appearance(tail_under_suit, tail_state)
 			//SANDSTORM EDIT
 			if(istype(U) && length(U.attached_accessories))
 				for(var/obj/item/clothing/accessory/attached in U.attached_accessories)
