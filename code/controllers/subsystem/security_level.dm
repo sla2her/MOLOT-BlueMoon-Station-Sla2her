@@ -93,9 +93,7 @@ SUBSYSTEM_DEF(security_level)
 						SSshuttle.emergency.modTimer(0.625)
 				GLOB.security_level = SEC_LEVEL_LAMBDA
 				sound_to_playing_players('modular_bluemoon/kovac_shitcode/sound/lambda_code.ogg') // Citadel change - Makes alerts play a sound
-				if(!SSshuttle.toggleShuttle("lambda","lambda_away","lambda_station"))
-					message_admins("Lambda Armory shuttle was sent to the station")
-					log_admin("Lambda Armory shuttle was sent to the station")
+				INVOKE_ASYNC(src, .proc/move_shuttle)
 
 				for(var/obj/machinery/firealarm/FA in GLOB.machines)
 					if(is_station_level(FA.z))
@@ -128,3 +126,8 @@ SUBSYSTEM_DEF(security_level)
 		SSnightshift.check_nightshift()
 	else
 		return
+
+/datum/controller/subsystem/security_level/proc/move_shuttle()
+	if(!SSshuttle.toggleShuttle("lambda","lambda_away","lambda_station"))
+		message_admins("Lambda Armory shuttle was sent to the station")
+		log_admin("Lambda Armory shuttle was sent to the station")
