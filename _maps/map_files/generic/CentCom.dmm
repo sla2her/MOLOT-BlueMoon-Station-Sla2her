@@ -12915,6 +12915,18 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/centcom/control)
+"les" = (
+/obj/docking_port/stationary{
+	id = "lambda_away";
+	name = "Lambda Shuttle Dock";
+	dwidth = 5;
+	width = 10;
+	roundstart_template = /datum/map_template/shuttle/lambda/code;
+	dheight = 5;
+	height = 10
+	},
+/turf/open/space/basic,
+/area/space)
 "leN" = (
 /turf/open/ai_visible,
 /area/ai_multicam_room)
@@ -78146,7 +78158,7 @@ sdM
 sdM
 sdM
 sdM
-sdM
+les
 sdM
 sdM
 sdM
