@@ -2537,6 +2537,7 @@
 	dir = 5
 	},
 /obj/structure/reagent_dispensers/keg/mead,
+/obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
 "cpP" = (

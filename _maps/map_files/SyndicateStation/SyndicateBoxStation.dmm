@@ -14930,6 +14930,7 @@
 /area/service/hydroponics)
 "aMB" = (
 /obj/structure/reagent_dispensers/keg/mead,
+/obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/carpet/black,
 /area/service/bar)
 "aMC" = (
