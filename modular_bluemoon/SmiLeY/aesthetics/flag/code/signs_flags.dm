@@ -137,6 +137,11 @@
 			RESKIN_ITEM_STATE = "folded_nt",
 			sign_path = /obj/structure/sign/flag/nanotrasen
 		),
+		"Human Commonwealth Association" = list(
+			RESKIN_ICON_STATE = "folded_flag_hca",
+			RESKIN_ITEM_STATE = "folded_flag_hca",
+			sign_path = /obj/item/sign/flag/humancommonwealth
+		),
 		"Syndicate" = list(
 			RESKIN_ICON_STATE = "folded_syndi",
 			RESKIN_ITEM_STATE = "folded_syndi",
