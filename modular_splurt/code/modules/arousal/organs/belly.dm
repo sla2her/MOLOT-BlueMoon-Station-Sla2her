@@ -74,7 +74,7 @@
 		else
 			size_name = "плоского"
 
-	desc = "Вы наблюдаете животик [size_name] размера. [round(size) >= 4 ? "Он подпрыгивает и булькает от того, что [owner] идёт." : "Животик плотно 'сидит' на своём месте."]."
+	desc = "Вы наблюдаете животик [size_name] размера.[round(size) >= 4 ? " Он подпрыгивает и булькает от того, что [owner] идёт." : ""]."
 
 	var/icon_size = size
 	icon_state = "belly_[lowershape]_[icon_size]"

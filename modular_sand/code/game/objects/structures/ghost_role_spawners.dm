@@ -41,3 +41,4 @@
 		D.Grant(new_spawn)
 		var/datum/action/disguise/disguise_action = new(new_spawn)
 		disguise_action.Grant(new_spawn)
+		new_spawn.mind.add_antag_datum(/datum/antagonist/ghost_role)

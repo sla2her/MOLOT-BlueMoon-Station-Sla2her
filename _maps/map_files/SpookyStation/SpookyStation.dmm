@@ -10972,7 +10972,7 @@
 /area/eventmap/inside)
 "aFI" = (
 /obj/structure/closet/secure_closet/warden,
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
+/obj/item/gun/ballistic/shotgun/automatic/combat/warden,
 /obj/item/gun/energy/pumpaction/defender,
 /obj/item/clothing/under/rank/security/warden/formal,
 /turf/open/floor/plasteel{

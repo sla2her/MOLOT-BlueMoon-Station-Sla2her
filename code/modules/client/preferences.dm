@@ -129,7 +129,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/extremeharm = "No" //If "extreme content" is enabled, this option serves as a toggle for the related interactions to cause damage or not
 	var/see_chat_emotes = TRUE
 	var/view_pixelshift = FALSE
-	var/disco_dance = TRUE
 	var/enable_personal_chat_color = FALSE
 	var/personal_chat_color = "#ffffff"
 	var/list/alt_titles_preferences = list()
@@ -1258,6 +1257,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 										extra_loadout_data += "<BR><a href='?_src_=prefs;preference=gear;loadout_rename=1;loadout_gear_name=[html_encode(gear.name)];'>Name</a> [loadout_item[LOADOUT_CUSTOM_NAME] ? loadout_item[LOADOUT_CUSTOM_NAME] : "N/A"]"
 									if(gear.loadout_flags & LOADOUT_CAN_DESCRIPTION)
 										extra_loadout_data += "<BR><a href='?_src_=prefs;preference=gear;loadout_redescribe=1;loadout_gear_name=[html_encode(gear.name)];'>Description</a>"
+									if(gear.loadout_flags & LOADOUT_CAN_FREQCODE)
+										extra_loadout_data += "<BR><a href='?_src_=prefs;preference=gear;loadout_freqcode=1;loadout_gear_name=[html_encode(gear.name)];'>Freq/Code</a>"
 								else if((gear_points - gear.cost) < 0)
 									class_link = "style='white-space:normal;' class='linkOff'"
 								else if(donoritem)
@@ -3691,8 +3692,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				//End of skyrat changes
 				if("view_pixelshift") //SPLURT Edit
 					view_pixelshift = !view_pixelshift
-				if ("disco_dance")
-					disco_dance = !disco_dance
 				if("action_buttons")
 					buttons_locked = !buttons_locked
 				if("tgui_fancy")
@@ -4022,7 +4021,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					else
 						loadout_data["SAVE_[loadout_slot]"] = list(new_loadout_data) //double packed because you somehow had no save slot in your loadout?
 
-		if(href_list["loadout_color"] || href_list["loadout_color_polychromic"] || href_list["loadout_rename"] || href_list["loadout_redescribe"])
+		if(href_list["loadout_color"] || href_list["loadout_color_polychromic"] || href_list["loadout_rename"] || href_list["loadout_redescribe"] || href_list["loadout_freqcode"])
 			//if the gear doesn't exist, or they don't have it, ignore the request
 			var/name = html_decode(href_list["loadout_gear_name"])
 			var/datum/gear/G = GLOB.loadout_items[gear_category][gear_subcategory][name]
@@ -4069,6 +4068,29 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				var/new_description = stripped_input(user, "Enter new description for item. Maximum 500 characters.", "Loadout Item Redescribing", null, 500)
 				if(new_description)
 					user_gear[LOADOUT_CUSTOM_DESCRIPTION] = new_description
+
+			if(href_list["loadout_freqcode"] && (G.loadout_flags & LOADOUT_CAN_FREQCODE))
+				var/action
+				var/params
+				var/frequency = FREQ_SIGNALER
+				var/code = DEFAULT_SIGNALER_CODE
+				var/obj/item/assembly/signaler/loadout
+				switch(action)
+					if("freq")
+						frequency = unformat_frequency(params["freq"])
+						frequency = sanitize_frequency(frequency, TRUE)
+						loadout.set_frequency(frequency)
+						. = TRUE
+					if("code")
+						code = text2num(params["code"])
+						code = round(code)
+						. = TRUE
+				var/list/data = list()
+				data["frequency"] = frequency
+				data["code"] = code
+				data["minFrequency"] = MIN_FREE_FREQ
+				data["maxFrequency"] = MAX_FREE_FREQ
+				return data
 
 	ShowChoices(user)
 	return 1

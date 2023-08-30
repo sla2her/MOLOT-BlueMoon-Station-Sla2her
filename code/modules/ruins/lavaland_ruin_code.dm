@@ -221,7 +221,6 @@
 	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
 	icon_state = "syndie_headset"
 	radiosound = 'modular_sand/sound/radio/syndie.ogg'
-	freerange = TRUE
 	freqlock = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds1
 
@@ -230,7 +229,6 @@
 	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
 	icon_state = "syndie_headset"
 	radiosound = 'modular_sand/sound/radio/syndie.ogg'
-	freerange = TRUE
 	freqlock = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
 

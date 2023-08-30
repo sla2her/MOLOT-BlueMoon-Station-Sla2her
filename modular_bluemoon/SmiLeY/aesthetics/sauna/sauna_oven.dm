@@ -1,4 +1,4 @@
-#define SAUNA_H2O_TEMP (T20C + 20)
+#define SAUNA_H2O_TEMP (T20C + 50)
 #define SAUNA_LOG_FUEL 150
 #define SAUNA_PAPER_FUEL 5
 #define SAUNA_MAXIMUM_FUEL 3000
@@ -99,27 +99,14 @@
 /obj/structure/sauna_oven/process()
 	if(water_amount)
 		water_amount--
-		update_steam_particles()
 		var/turf/open/pos = get_turf(src)
 		if(istype(pos) && pos.air.return_pressure() < 2*ONE_ATMOSPHERE)
-			pos.atmos_spawn_air("water_vapor=10;TEMP=[SAUNA_H2O_TEMP]")
+			pos.atmos_spawn_air("water_vapor=25;TEMP=[SAUNA_H2O_TEMP]")
 	fuel_amount--
 	if(fuel_amount <= 0)
 		lit = FALSE
-		update_steam_particles()
 		STOP_PROCESSING(SSobj, src)
 		update_icon()
-
-/obj/structure/sauna_oven/proc/update_steam_particles()
-	if(particles)
-		if(lit && water_amount)
-			return
-		QDEL_NULL(particles)
-		return
-
-	if(lit && water_amount)
-		particles = new /obj/effect/particle_effect/smoke/transparent/dancefloor_devil
-		//particles.position = list(0, 6, 0)
 
 #undef SAUNA_H2O_TEMP
 #undef SAUNA_LOG_FUEL

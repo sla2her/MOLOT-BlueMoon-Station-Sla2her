@@ -627,9 +627,6 @@
 	pixel_y = -12;
 	pixel_x = -2
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/machinery/power/terminal{
 	dir = 1
 	},
@@ -1918,8 +1915,10 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/item/circuitboard/machine/power_compressor,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "hy" = (
@@ -2628,8 +2627,7 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/diner)
 "kd" = (
 /obj/machinery/computer/turbine_computer{
-	dir = 1;
-	id = "ds2_turbine"
+	dir = 1
 	},
 /obj/structure/window/reinforced/survival_pod,
 /obj/structure/window/reinforced/survival_pod{
@@ -7533,9 +7531,13 @@
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
 "Gk" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/effect/mapping_helpers/network_builder/power_cable/knot,
 /obj/item/circuitboard/machine/power_turbine,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "Gl" = (

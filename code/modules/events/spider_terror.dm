@@ -4,6 +4,7 @@
 
 /datum/round_event_control/spider_terror
 	name = "Terror Spider Infestation"
+	typepath = /datum/round_event/spider_terror
 	weight = 1
 	max_occurrences = 1
 	min_players = 40

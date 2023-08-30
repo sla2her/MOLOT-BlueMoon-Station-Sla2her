@@ -263,7 +263,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 80, ACID = 100)
 	resistance_flags = ACID_PROOF
 	merge_type = /obj/item/stack/sheet/plastitaniumglass
-	shard_type = /obj/item/shard
+	shard_type = /obj/item/shard/plastitanium
 
 /obj/item/stack/sheet/plastitaniumglass/fifty
 	amount = 50
@@ -295,7 +295,48 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 	max_integrity = 40
 	sharpness = SHARP_EDGED
 	var/icon_prefix
+	var/shiv_type = /obj/item/kitchen/knife/shiv
+	var/craft_time = 3.5 SECONDS
+	var/obj/item/stack/sheet/weld_material = /obj/item/stack/sheet/glass
 	embedding = list("embed_chance" = 65)
+
+/obj/item/shard/plasma
+	name = "purple shard"
+	desc = "A nasty looking shard of plasma glass."
+	force = 6
+	throwforce = 11
+	icon_state = "plasmalarge"
+	item_state = "shard-plasma"
+	custom_materials = list(/datum/material/alloy/plasmaglass=MINERAL_MATERIAL_AMOUNT)
+	icon_prefix = "plasma"
+	weld_material = /obj/item/stack/sheet/plasmaglass
+	shiv_type = /obj/item/kitchen/knife/shiv/plasma
+	craft_time = 7 SECONDS
+
+/obj/item/shard/titanium
+	name = "bright shard"
+	desc = "A nasty looking shard of titanium infused glass."
+	throwforce = 12
+	icon_state = "titaniumlarge"
+	item_state = "shard-titanium"
+	custom_materials = list(/datum/material/alloy/titaniumglass=MINERAL_MATERIAL_AMOUNT)
+	icon_prefix = "titanium"
+	weld_material = /obj/item/stack/sheet/titaniumglass
+	shiv_type = /obj/item/kitchen/knife/shiv/titanium
+	craft_time = 7 SECONDS
+
+/obj/item/shard/plastitanium
+	name = "dark shard"
+	desc = "A nasty looking shard of titanium infused plasma glass."
+	force = 7
+	throwforce = 12
+	icon_state = "plastitaniumlarge"
+	item_state = "shard-plastitanium"
+	custom_materials = list(/datum/material/alloy/plastitaniumglass=MINERAL_MATERIAL_AMOUNT)
+	icon_prefix = "plastitanium"
+	weld_material = /obj/item/stack/sheet/plastitaniumglass
+	shiv_type = /obj/item/kitchen/knife/shiv/plastitanium
+	craft_time = 14 SECONDS
 
 
 /obj/item/shard/suicide_act(mob/user)
@@ -353,37 +394,31 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 			M.apply_damage(force*0.5, BRUTE, hit_hand)
 
 
-/obj/item/shard/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/lightreplacer))
-		var/obj/item/lightreplacer/L = I
-		L.attackby(src, user)
-	else if(istype(I, /obj/item/stack/sheet/cloth))
-		var/obj/item/stack/sheet/cloth/C = I
-		to_chat(user, "<span class='notice'>You begin to wrap the [C] around the [src]...</span>")
-		if(do_after(user, 35, target = src))
-			var/obj/item/kitchen/knife/shiv/S = new /obj/item/kitchen/knife/shiv
-			C.use(1)
-			to_chat(user, "<span class='notice'>You wrap the [C] around the [src] forming a makeshift weapon.</span>")
-			remove_item_from_storage(src)
+/obj/item/shard/attackby(obj/item/item, mob/user, params)
+	if(istype(item, /obj/item/lightreplacer))
+		var/obj/item/lightreplacer/lightreplacer = item
+		lightreplacer.attackby(src, user)
+	else if(istype(item, /obj/item/stack/sheet/cloth))
+		var/obj/item/stack/sheet/cloth/cloth = item
+		to_chat(user, span_notice("You begin to wrap the [cloth] around the [src]..."))
+		if(do_after(user, craft_time, target = src))
+			var/obj/item/kitchen/knife/shiv/shiv = new shiv_type
+			cloth.use(1)
+			to_chat(user, span_notice("You wrap the [cloth] around the [src], forming a makeshift weapon."))
+			remove_item_from_storage(src, user)
 			qdel(src)
-			user.put_in_hands(S)
+			user.put_in_hands(shiv)
 
 	else
 		return ..()
 
 /obj/item/shard/welder_act(mob/living/user, obj/item/I)
-	..()
 	if(I.use_tool(src, user, 0, volume=50))
-		var/obj/item/stack/sheet/glass/NG = new (user.loc)
-		for(var/obj/item/stack/sheet/glass/G in user.loc)
-			if(G == NG)
-				continue
-			if(G.amount >= G.max_amount)
-				continue
-			G.attackby(NG, user)
-		to_chat(user, "<span class='notice'>You add the newly-formed glass to the stack. It now contains [NG.amount] sheet\s.</span>")
+		var/obj/item/stack/sheet/new_glass = new weld_material
+		to_chat(user, span_notice("You melt [src] down into [new_glass.name]."))
+		new_glass.forceMove((Adjacent(user) ? user.drop_location() : loc)) //stack merging is handled automatically.
 		qdel(src)
-	return TRUE
+		return TOOL_ACT_TOOLTYPE_SUCCESS
 
 /obj/item/shard/Crossed(mob/living/L)
 	if(istype(L) && has_gravity(loc))

@@ -10086,11 +10086,10 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "aQF" = (
-/obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/window/reinforced/tinted/fulltile,
+/obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
 /area/security/courtroom)
 "aQG" = (
@@ -45120,6 +45119,9 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
 /turf/open/floor/carpet,
 /area/service/lawoffice)
 "dgm" = (
@@ -45177,11 +45179,11 @@
 /turf/open/space,
 /area/space/nearstation)
 "dgy" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 6
-	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
 	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
@@ -45868,6 +45870,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
+"djj" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/turf/open/floor/wood,
+/area/service/lawoffice)
 "djs" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
@@ -52255,6 +52263,7 @@
 	network = list("prison");
 	pixel_y = 30
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "gfR" = (
@@ -58598,6 +58607,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "jAn" = (
@@ -69242,6 +69252,10 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+	},
 /turf/open/floor/plasteel,
 /area/security/courtroom)
 "pic" = (
@@ -71248,6 +71262,10 @@
 	},
 /turf/closed/wall,
 /area/commons/fitness/recreation)
+"qjz" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/wood,
+/area/service/lawoffice)
 "qjZ" = (
 /obj/item/radio/intercom{
 	dir = 4;
@@ -78824,14 +78842,10 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	external_pressure_bound = 140;
-	name = "killroom vent";
-	pressure_checks = 0
-	},
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 27
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel,
 /area/security/courtroom)
 "ucX" = (
@@ -86653,6 +86667,10 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
+"ygc" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/closed/wall,
+/area/service/lawoffice)
 "ygd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -118016,9 +118034,9 @@ eIP
 tQw
 jPf
 xHv
-soy
-soy
-lNc
+djj
+qjz
+ygc
 gft
 jzU
 dgy

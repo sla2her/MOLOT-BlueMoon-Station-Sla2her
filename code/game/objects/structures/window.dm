@@ -28,7 +28,6 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	var/wtype = "glass"
 	var/fulltile = FALSE
 	var/obj/item/stack/sheet/glass_type = /obj/item/stack/sheet/glass
-	var/cleanable_type = /obj/effect/decal/cleanable/glass
 	var/glass_amount = 1
 	can_be_unanchored = TRUE
 	resistance_flags = ACID_PROOF
@@ -53,6 +52,9 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	var/electrochromatic_status = NOT_ELECTROCHROMATIC
 	/// Electrochromatic ID. Set the first character to ! to replace with a SSmapping generated pseudorandom obfuscated ID for mapping purposes.
 	var/electrochromatic_id
+	///Datum that the shard and debris type is pulled from for when the glass is broken.
+	var/cleanable_type = /obj/effect/decal/cleanable/glass
+	var/datum/material/glass_material_datum = /datum/material/glass
 
 /obj/structure/window/examine(mob/user)
 	. = ..()
@@ -486,17 +488,21 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	qdel(src)
 	update_nearby_icons()
 
+///Spawns shard and debris decal based on the glass_material_datum, spawns rods if window is reinforned and number of shards/rods is determined by the window being fulltile or not.
 /obj/structure/window/proc/spawnDebris(location)
-	. = list()
-	var/shard = initial(glass_type.shard_type)
-	if(shard)
-		. += new shard(location)
+	var/datum/material/glass_material_ref = GET_MATERIAL_REF(glass_material_datum)
+	var/obj/item/shard_type = glass_material_ref.shard_type
+	var/obj/effect/decal/debris_type = glass_material_ref.debris_type
+	var/list/dropped_debris = list()
+	if(!isnull(shard_type))
+		dropped_debris += new shard_type(location)
 		if (fulltile)
-			. += new shard(location)
-	if(cleanable_type)
-		. += new cleanable_type(location)
+			dropped_debris += new shard_type(location)
+	if(!isnull(debris_type))
+		dropped_debris += new debris_type(location)
 	if (reinf)
-		. += new /obj/item/stack/rods(location, (fulltile ? 2 : 1))
+		dropped_debris += new /obj/item/stack/rods(location, (fulltile ? 2 : 1))
+	return dropped_debris
 
 /obj/structure/window/proc/can_be_rotated(mob/user,rotation_type)
 	if (get_dist(src,user) > 1)
@@ -605,6 +611,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	wave_explosion_block = EXPLOSION_BLOCK_REINFORCED_WINDOW
 	wave_explosion_multiply = EXPLOSION_DAMPEN_REINFORCED_WINDOW
 	glass_type = /obj/item/stack/sheet/rglass
+	glass_material_datum = /datum/material/glass
 	rad_insulation = RAD_HEAVY_INSULATION
 	ricochet_chance_mod = 0.8
 
@@ -633,6 +640,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	wave_explosion_multiply = EXPLOSION_DAMPEN_BOROSILICATE_WINDOW
 	glass_type = /obj/item/stack/sheet/plasmaglass
 	cleanable_type = /obj/effect/decal/cleanable/glass/plasma
+	glass_material_datum = /datum/material/alloy/plasmaglass
 	rad_insulation = RAD_NO_INSULATION
 
 /obj/structure/window/plasma/spawner/east
@@ -660,6 +668,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	wave_explosion_block = EXPLOSION_BLOCK_EXTREME
 	wave_explosion_multiply = EXPLOSION_BLOCK_EXTREME
 	glass_type = /obj/item/stack/sheet/plasmarglass
+	glass_material_datum = /datum/material/alloy/plasmaglass
 
 /obj/structure/window/plasma/reinforced/spawner/east
 	dir = EAST
@@ -835,6 +844,8 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	explosion_block = 3
 	level = 3
 	glass_type = /obj/item/stack/sheet/titaniumglass
+	cleanable_type = /obj/effect/decal/cleanable/glass/titanium
+	glass_material_datum = /datum/material/alloy/titaniumglass
 	glass_amount = 2
 	ricochet_chance_mod = 0.9
 
@@ -866,6 +877,8 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	explosion_block = 3
 	level = 3
 	glass_type = /obj/item/stack/sheet/plastitaniumglass
+	cleanable_type = /obj/effect/decal/cleanable/glass/plastitanium
+	glass_material_datum = /datum/material/alloy/plastitaniumglass
 	glass_amount = 2
 
 /obj/structure/window/plastitanium/unanchored
