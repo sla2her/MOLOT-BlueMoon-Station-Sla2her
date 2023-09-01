@@ -1011,11 +1011,6 @@
 "afv" = (
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
-"afw" = (
-/turf/closed/wall/r_wall,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
 "afy" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -3185,9 +3180,7 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "amc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/tile/red,
@@ -3205,9 +3198,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "amh" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -49154,9 +49145,7 @@
 "idr" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "idY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
@@ -53626,9 +53615,7 @@
 	req_access_txt = "1"
 	},
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "lLA" = (
 /obj/machinery/computer/slot_machine{
 	balance = 15;
@@ -54106,9 +54093,7 @@
 	pixel_x = -20
 	},
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "mcp" = (
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Three"
@@ -58958,9 +58943,7 @@
 "qkM" = (
 /obj/machinery/suit_storage_unit/security,
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "qll" = (
 /obj/structure/table/wood,
 /obj/item/toy/plush/random,
@@ -60121,9 +60104,7 @@
 	pixel_x = -22
 	},
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "riT" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -63495,9 +63476,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "tZZ" = (
 /obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
@@ -66071,9 +66050,7 @@
 	},
 /obj/machinery/suit_storage_unit/security,
 /turf/open/floor/plasteel/dark,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "wcB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
@@ -67049,9 +67026,7 @@
 	dir = 5
 	},
 /turf/closed/wall/r_wall,
-/area/security/office{
-	name = "Brig EVA Storage"
-	})
+/area/security/brig)
 "xap" = (
 /obj/structure/chair/office/dark,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -99413,12 +99388,12 @@ aki
 akk
 akq
 lwN
-afw
-afw
+aiX
+aiX
 amb
-afw
-afw
-afw
+aiX
+aiX
+aiX
 anA
 anz
 aoC
@@ -99675,7 +99650,7 @@ mbQ
 amd
 riF
 tZx
-afw
+aiX
 aqH
 anz
 aoF
@@ -99927,12 +99902,12 @@ lFv
 adR
 vIo
 yca
-afw
+aiX
 qkM
 qkM
 wce
 idr
-afw
+aiX
 anA
 anz
 aoE
@@ -100185,11 +100160,11 @@ adR
 akf
 akJ
 xad
-afw
-afw
-afw
-afw
-afw
+aiX
+aiX
+aiX
+aiX
+aiX
 anC
 anU
 anC
@@ -102746,7 +102721,7 @@ iEk
 sXV
 afU
 adR
-aiX
+adR
 adR
 ahl
 uHp
