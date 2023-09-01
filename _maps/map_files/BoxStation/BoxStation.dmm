@@ -49152,7 +49152,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/office)
 "idr" = (
-/obj/structure/tank_dispenser/oxygen,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/dark,
 /area/security/office{
 	name = "Brig EVA Storage"
@@ -63494,7 +63494,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/dark,
 /area/security/office{
 	name = "Brig EVA Storage"
@@ -65406,6 +65405,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "vIE" = (
