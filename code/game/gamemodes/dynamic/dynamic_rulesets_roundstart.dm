@@ -797,7 +797,8 @@ BLUEMOON REMOVAL END*/
 
 /datum/dynamic_ruleset/roundstart/bloodsuckers
 	name = "Bloodsuckers"
-	antag_flag = ROLE_BLOODSUCKER
+	antag_flag = "shiftstart bloodsucker"
+	antag_flag_override = ROLE_BLOODSUCKER
 	antag_datum = /datum/antagonist/bloodsucker
 	protected_roles = list("Prisoner", "NanoTrasen Representative", "Lawyer", "Security Officer", "Blueshield", "Peacekeeper", "Brig Physician", "Warden", "Detective", "Head of Security", "Captain")
 	restricted_roles = list("AI", "Cyborg")
