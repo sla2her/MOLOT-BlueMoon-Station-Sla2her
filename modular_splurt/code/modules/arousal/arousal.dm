@@ -123,20 +123,25 @@
 	to_chat(L, "<span class='userlove'>[src] climaxes all over you using [ru_ego()] [G.name]!</span>")
 	do_climax(fluid_source, L, G, spillage, cover = TRUE)
 
-/atom/proc/add_cum_overlay(size = "cum_normal") //This can go in a better spot, for now its here.
-	if(!istype(src, /mob/living/carbon/human))
-		return
-	if(initial(icon) && initial(icon_state))
-		add_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', size), ICON_MULTIPLY)
-
 /mob/living/carbon/human/proc/getPercentAroused()
     var/percentage = ((get_lust() / (get_lust_tolerance() * 3)) * 100)
     return percentage
 
+/atom/proc/add_cum_overlay(cum_color) //This can go in a better spot, for now its here.
+	wash_cum()
+	cum_splatter_icon = mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', "cum_obj", color = cum_color)
+	add_overlay(cum_splatter_icon)
+
+/mob/living/carbon/human/add_cum_overlay(cum_color, large = FALSE)
+	wash_cum()
+	cum_splatter_icon = mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', large ? "cum_large" : "cum_normal", color = cum_color)
+	add_overlay(cum_splatter_icon)
+
 /atom/proc/wash_cum()
-	cut_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', "cum_normal"))
-	cut_overlay(mutable_appearance('modular_splurt/icons/effects/cumoverlay.dmi', "cum_large"))
-	return TRUE
+	if(cum_splatter_icon)
+		cut_overlay(cum_splatter_icon)
+		QDEL_NULL(cum_splatter_icon)
+		return TRUE
 
 //arousal hud display
 
