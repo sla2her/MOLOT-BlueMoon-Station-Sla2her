@@ -282,6 +282,26 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	GLOB.nukeop_leader_start += get_turf(src)
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/landmark/start/syndiop
+	name = "syndiop"
+	icon = 'icons/effects/landmarks_static.dmi'
+	icon_state = "nukeop_spawn"
+
+/obj/effect/landmark/start/syndiop/Initialize(mapload)
+	..()
+	GLOB.syndiop_start += get_turf(src)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/landmark/start/syndiop_leader
+	name = "nukeop leader"
+	icon = 'icons/effects/landmarks_static.dmi'
+	icon_state = "nukeop_leader_spawn"
+
+/obj/effect/landmark/start/syndiop_leader/Initialize(mapload)
+	..()
+	GLOB.syndiop_leader_start += get_turf(src)
+	return INITIALIZE_HINT_QDEL
+
 // Must be immediate because players will
 // join before SSatom initializes everything.
 INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)

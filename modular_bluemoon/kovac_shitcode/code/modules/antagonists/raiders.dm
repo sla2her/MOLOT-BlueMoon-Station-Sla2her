@@ -162,7 +162,7 @@
 	H.faction |= "InteQ"
 
 	var/obj/item/radio/R = H.ears
-	R.set_frequency(FREQ_SYNDICATE)
+	R.set_frequency(FREQ_PIRATE)
 	R.freqlock = TRUE
 	if(command_radio)
 		R.command = TRUE

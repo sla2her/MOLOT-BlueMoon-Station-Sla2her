@@ -856,7 +856,8 @@
 	scrambledcodes = TRUE // These are rogue borgs.
 	ionpulse = TRUE
 	flash_protect = TRUE
-	set_module = /obj/item/robot_module/syndicate
+	lamp_color = COLOR_SOAPSTONE_GOLD
+	set_module = /obj/item/robot_module/syndicate/inteq
 	cell = /obj/item/stock_parts/cell/hyper
 	typing_indicator_state = /obj/effect/overlay/typing_indicator/additional/syndbot
 
@@ -886,7 +887,7 @@
 						Ваши дефибрилляторы могут оживлять оперативников через их бронескафандры, или могут быть использованы для нападения на врагов! \
 						Ваша энергетическая пила работает как циркулярная, но может быть активирована для нанесения больших повреждений, а ваш оперативный пинпоинтер найдет и определит местонахождение товарищей по Операции. \
 						<i>Помогите оперативникам любой ценой!!!</i></b>"
-	set_module = /obj/item/robot_module/syndicate_medical
+	set_module = /obj/item/robot_module/syndicate_medical/inteq
 
 /mob/living/silicon/robot/modules/inteq/saboteur
 	icon_state = "inteq_engi"
@@ -897,7 +898,7 @@
 						Ваш Киборг-Проектор Хамелеон позволит вам принять облик и зарегистрированное имя инженерного борга Nanotrasen и проводить тайные операции на Космических Станциях. \
 						Имейте в виду, что почти любой физический контакт или случайное повреждение нарушит ваш камуфляж! \
 						<i>Помогите оперативникам любой ценой!!!</i></b>"
-	set_module = /obj/item/robot_module/saboteur
+	set_module = /obj/item/robot_module/saboteur/inteq
 
 /mob/living/silicon/robot/modules/syndicate/spider// used for space ninja and their cyborg hacking special objective
 	bubble_icon = "spider"

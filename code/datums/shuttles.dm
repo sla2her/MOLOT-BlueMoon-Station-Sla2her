@@ -616,11 +616,11 @@
 
 /datum/map_template/shuttle/infiltrator/basic
 	suffix = "basic"
-	name = "basic syndicate infiltrator"
+	name = "Basic InteQ Infiltrator"
 
-// /datum/map_template/shuttle/infiltrator/advanced
-// 	suffix = "advanced"
-// 	name = "advanced syndicate infiltrator"
+/datum/map_template/shuttle/infiltrator/syndicate_basic
+	suffix = "syndicate_basic"
+	name = "Basic Syndicate Infiltrator"
 
 /datum/map_template/shuttle/cargo/delta
 	suffix = "delta"

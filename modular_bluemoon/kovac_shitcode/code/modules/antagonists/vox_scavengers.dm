@@ -119,7 +119,7 @@
 	H.faction |= "Vox"
 
 	var/obj/item/radio/R = H.ears
-	R.set_frequency(FREQ_SYNDICATE)
+	R.set_frequency(FREQ_PIRATE)
 	R.freqlock = TRUE
 
 	var/obj/item/implant/weapons_auth/W = new

@@ -2574,6 +2574,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
+"cry" = (
+/obj/effect/landmark/start/syndiop_leader,
+/turf/open/floor/wood/wood_parquet,
+/area/syndicate_mothership)
 "crP" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -7378,6 +7382,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"gjU" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/landmark/start/syndiop,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "gjX" = (
 /obj/structure/table,
 /obj/item/storage/box/handcuffs,
@@ -22345,6 +22357,10 @@
 /obj/structure/sign/flag,
 /turf/closed/indestructible/fakeglass,
 /area/tdome/tdomeobserve)
+"tmu" = (
+/obj/item/paper/fluff/syndicate_dropship,
+/turf/open/floor/plating,
+/area/syndicate_mothership)
 "tmD" = (
 /obj/structure/bed,
 /obj/item/bedsheet/syndie,
@@ -23244,6 +23260,20 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
 /area/centcom/control)
+"ucP" = (
+/obj/docking_port/stationary{
+	area_type = /area/syndicate_mothership;
+	dheight = 1;
+	dir = 8;
+	dwidth = 12;
+	height = 17;
+	id = "syndicate_away";
+	name = "syndicate recon outpost";
+	roundstart_template = /datum/map_template/shuttle/infiltrator/basic;
+	width = 23
+	},
+/turf/open/floor/plating/snowed,
+/area/syndicate_mothership)
 "udv" = (
 /obj/structure/chair,
 /obj/effect/turf_decal/tile/green{
@@ -25302,6 +25332,10 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/ferry)
+"wbr" = (
+/obj/machinery/computer/shuttle/real_syndicate/recall,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "wcz" = (
 /obj/structure/table/reinforced,
 /obj/machinery/magnetic_controller{
@@ -27283,9 +27317,9 @@
 	dir = 8;
 	dwidth = 12;
 	height = 17;
-	id = "syndicate_away";
-	name = "syndicate recon outpost";
-	roundstart_template = /datum/map_template/shuttle/infiltrator/basic;
+	id = "inteq_away";
+	name = "inteq recon outpost";
+	roundstart_template = /datum/map_template/shuttle/infiltrator/syndicate_basic;
 	width = 23
 	},
 /turf/open/floor/plating,
@@ -43237,7 +43271,7 @@ akz
 aqC
 mcy
 mcy
-mcy
+ucP
 mcy
 mcy
 mcy
@@ -44775,7 +44809,7 @@ esP
 neq
 iMo
 tMU
-xfY
+wbr
 wNF
 lQL
 xfY
@@ -47349,10 +47383,10 @@ xzn
 xzn
 wrM
 pHs
-pHs
-pHs
-pHs
-pHs
+gjU
+gjU
+gjU
+gjU
 aEY
 iMo
 qDj
@@ -47612,7 +47646,7 @@ pHs
 pHs
 pHs
 qXs
-qla
+cry
 qOs
 iMo
 xfY
@@ -49671,7 +49705,7 @@ doi
 hgo
 hgo
 hgo
-hgo
+tmu
 hgo
 hgo
 hgo
