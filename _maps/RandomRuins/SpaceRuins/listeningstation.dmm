@@ -1959,6 +1959,22 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/listeningstation)
+<<<<<<< HEAD
+=======
+"QQ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/listeningstation)
+"Rt" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/obj/machinery/spaceship_navigation_beacon/invion,
+/turf/closed/wall,
+/area/ruin/space/has_grav/listeningstation)
+>>>>>>> 223e670e3e0132019b733eb55c6a2d491381046b
 "RA" = (
 /obj/machinery/light/small,
 /obj/machinery/airalarm/syndicate{
