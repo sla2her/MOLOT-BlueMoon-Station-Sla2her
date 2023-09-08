@@ -621,7 +621,6 @@
 	playsound(user.loc, 'sound/effects/glassbr1.ogg', 50, 1)
 	qdel(src)
 	sleep(pick(50, 100, 150, 200, 250))
-	priority_announce("Что-то очень массивное и пугающее приближается к [station_name()]! Пусть Господь хранит Ваши души!!", "Центральное Командование, Отдел Работы с Реальностью", 'sound/announcer/classic/_admin_horror_music.ogg')
 	var/datum/round_event_control/portal_storm_narsie/portal_storm_narsie = new/datum/round_event_control/portal_storm_narsie
 	portal_storm_narsie.runEvent()
 	curselimit++
