@@ -154,6 +154,7 @@
 	mob_size = MOB_SIZE_HUMAN
 	del_on_death = TRUE
 	force_threshold = 10
+	move_to_delay = 1 // ГОТТА ФАСТ БОЙЙЙ
 	speak_chance = 0
 	AIStatus = AI_ON
 	loot = list(/obj/effect/gibspawner/human)
