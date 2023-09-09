@@ -2,7 +2,7 @@
 	name = "jukebox"
 	desc = "Переносная колонка для крутых."
 	icon = 'modular_citadel/icons/obj/boombox.dmi'
-	icon_state = "raiqbawks_off"
+	icon_state = "raiqbawks"
 	verb_say = "states"
 	density = TRUE
 	var/active = FALSE
@@ -19,19 +19,6 @@
 	name = "jukebox"
 	desc = "Переносная колонка для крутых. ТЕПЕРЬ ВЗЛОМАННАЯ."
 	obj_flags = EMAGGED
-
-/obj/item/jukebox/attackby(obj/item/O, mob/user, params)
-	if(!active && !(flags_1 & NODECONSTRUCT_1))
-		if(O.tool_behaviour == TOOL_WRENCH)
-			if(!anchored && !isinspace())
-				to_chat(user,"<span class='notice'>You secure [src] to the floor.</span>")
-				setAnchored(TRUE)
-			else if(anchored)
-				to_chat(user,"<span class='notice'>You unsecure and disconnect [src].</span>")
-				setAnchored(FALSE)
-			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
-			return
-	return ..()
 
 /obj/item/jukebox/emag_act(mob/user)
 	. = ..()
@@ -168,16 +155,26 @@
 		START_PROCESSING(SSobj, src)
 		stop = world.time + playing.song_length
 		queuedplaylist.Cut(1, 2)
-		say("Now playing: [playing.song_name]")
+		say("Сейчас играет: [playing.song_name]")
 		playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, TRUE)
 		return TRUE
 	else
 		return FALSE
 
+/obj/item/jukebox/proc/dance_over()
+	var/position = SSjukeboxes.findjukeboxindex(src)
+	if(!position)
+		return
+	SSjukeboxes.removejukebox(position)
+	STOP_PROCESSING(SSobj, src)
+	playing = null
+	rangers = list()
+
 /obj/item/jukebox/process()
 	if(active)
 		if(world.time >= stop)
 			active = FALSE
+			dance_over()
 			if(stop && queuedplaylist.len)
 				activate_music()
 			else

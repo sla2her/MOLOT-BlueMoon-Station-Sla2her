@@ -198,7 +198,7 @@
 		START_PROCESSING(SSobj, src)
 		stop = world.time + playing.song_length
 		queuedplaylist.Cut(1, 2)
-		say("Now playing: [playing.song_name]")
+		say("Сейчас играет: [playing.song_name]")
 		playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, TRUE)
 		return TRUE
 	else
