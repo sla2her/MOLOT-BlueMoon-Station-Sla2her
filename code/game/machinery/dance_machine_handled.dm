@@ -2,6 +2,9 @@
 	name = "jukebox"
 	desc = "Переносная колонка для крутых."
 	icon = 'modular_citadel/icons/obj/boombox.dmi'
+	righthand_file = 'modular_citadel/icons/obj/boombox_righthand.dmi'
+	lefthand_file = 'modular_citadel/icons/obj/boombox_lefthand.dmi'
+	item_state = "raiqbawks"
 	icon_state = "raiqbawks"
 	verb_say = "states"
 	density = TRUE
@@ -14,6 +17,14 @@
 	var/datum/track/selectedtrack = null
 	var/list/queuedplaylist = list()
 	var/queuecooldown //This var exists solely to prevent accidental repeats of John Mulaney's 'What's New Pussycat?' incident. Intentional, however......
+	unique_reskin = list(
+		"Basic" = list(
+			RESKIN_ICON_STATE = "raiqbawks"
+		),
+		"Black" = list(
+			RESKIN_ICON_STATE = "raiqbawks_black"
+		),
+	)
 
 /obj/item/jukebox/emagged
 	name = "jukebox"
