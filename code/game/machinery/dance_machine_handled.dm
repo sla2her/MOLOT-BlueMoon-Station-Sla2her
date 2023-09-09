@@ -1,8 +1,8 @@
 /obj/item/jukebox
 	name = "jukebox"
 	desc = "Переносная колонка для крутых."
-	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "jukebox"
+	icon = 'modular_citadel/icons/obj/boombox.dmi'
+	icon_state = "raiqbawks_off"
 	verb_say = "states"
 	density = TRUE
 	var/active = FALSE
@@ -50,9 +50,6 @@
 		icon_state = "[initial(icon_state)]"
 
 /obj/item/jukebox/ui_status(mob/user)
-	if(!anchored)
-		to_chat(user,"<span class='warning'>This device must be anchored by a wrench!</span>")
-		return UI_CLOSE
 	if((queuecost < 0 && !allowed(user)) && !isobserver(user))
 		to_chat(user,"<span class='warning'>Error: Access Denied.</span>")
 		user.playsound_local(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
