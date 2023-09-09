@@ -34,18 +34,28 @@
 	icon_state = "full"
 	item_flag = /obj/item/sign/flag/skull
 
+/obj/item/sign/flag
+	var/flag_type = ""
+
 /obj/item/sign/flag/skull
 	name = "folded flag of the PMC Skull"
 	desc = "The folded flag of the PMC Skull."
+	flag_type = "skull"
 	icon = 'modular_bluemoon/krashly/icons/obj/skull_flag.dmi'
 	icon_state = "mini"
 	sign_path = /obj/structure/sign/flag/skull
 
-/obj/structure/closet/crate/coffin/attackby(obj/item/sign/flag/skull/I)
-	icon = 'modular_bluemoon/krashly/icons/obj/skull_flag.dmi'
-	icon_state = "grob_full"
-	locked = TRUE
-	qdel(I)
+/obj/structure/closet/crate/coffin/attacked_by(obj/item/sign/flag/I, mob/living/user)
+	if(I.flag_type == "skull")
+		icon = 'modular_bluemoon/krashly/icons/obj/skull_flag.dmi'
+		icon_state = "grob_full"
+		locked = TRUE
+		qdel(I)
+	if(I.flag_type == "inteq")
+		icon = 'modular_bluemoon/krashly/icons/obj/inteq_flag.dmi'
+		icon_state = "grob_full"
+		locked = TRUE
+		qdel(I)
 
 /datum/gear/donator/bm/skull_flag
 	name = "PMC Skull flag"
@@ -66,15 +76,10 @@
 /obj/item/sign/flag/inteq
 	name = "folded flag of the PMC InteQ"
 	desc = "The folded flag of the PMC InteQ."
+	flag_type = "inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/inteq_flag.dmi'
 	icon_state = "mini"
 	sign_path = /obj/structure/sign/flag/inteq
-
-/obj/structure/closet/crate/coffin/attackby(obj/item/sign/flag/inteq/I)
-	icon = 'modular_bluemoon/krashly/icons/obj/inteq_flag.dmi'
-	icon_state = "grob_full"
-	locked = TRUE
-	qdel(I)
 
 /obj/item/poster/random_inteq
 	name = "random InteQ poster"
