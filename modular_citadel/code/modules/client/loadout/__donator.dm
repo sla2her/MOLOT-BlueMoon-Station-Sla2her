@@ -35,6 +35,22 @@
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1
 
+/datum/gear/donator/jukebox
+	name = "Handled Jukebox"
+	slot = ITEM_SLOT_MASK
+	path = /obj/item/jukebox
+	ckeywhitelist = list()
+	cost = 2
+	donator_group_id = DONATOR_GROUP_TIER_1
+
+/datum/gear/donator/emagged_jukebox
+	name = "Emagged Handled Jukebox"
+	slot = ITEM_SLOT_MASK
+	path = /obj/item/jukebox/emagged
+	ckeywhitelist = list()
+	cost = 8
+	donator_group_id = DONATOR_GROUP_TIER_1
+
 /datum/gear/donator/neck_gaiter
 	name = "The Neck Gaiter"
 	slot = ITEM_SLOT_MASK
