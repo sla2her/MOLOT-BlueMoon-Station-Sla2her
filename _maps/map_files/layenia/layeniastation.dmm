@@ -43958,7 +43958,7 @@
 	},
 /area/maintenance/port/aft)
 "gAr" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 8
 	},
 /obj/machinery/button/door{
@@ -110247,7 +110247,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "qaY" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 1
 	},
 /obj/structure/table/reinforced,
@@ -151794,7 +151794,7 @@
 	},
 /area/hallway/primary/central)
 "wcZ" = (
-/obj/machinery/computer/card,
+/obj/machinery/modular_computer/console/preset/id,
 /obj/machinery/status_display/ai{
 	pixel_y = 26
 	},
@@ -152320,7 +152320,7 @@
 	},
 /area/service/bar)
 "wfP" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,

@@ -25668,7 +25668,7 @@
 /turf/open/floor/carpet,
 /area/command/heads_quarters/hop)
 "aWW" = (
-/obj/machinery/computer/card,
+/obj/machinery/modular_computer/console/preset/id,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -28101,7 +28101,7 @@
 /turf/closed/wall,
 /area/cargo/office)
 "bcg" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -32012,7 +32012,7 @@
 /turf/open/floor/plasteel/white,
 /area/command/heads_quarters/cmo)
 "bjZ" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -54549,7 +54549,7 @@
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs)
 "cwZ" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 8
 	},
 /obj/item/radio/intercom{

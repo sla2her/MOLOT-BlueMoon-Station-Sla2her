@@ -11573,7 +11573,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/commons/storage/primary)
 "aDc" = (
-/obj/machinery/computer/card,
+/obj/machinery/modular_computer/console/preset/id,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -23101,7 +23101,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/command/heads_quarters/captain)
 "bil" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -26592,7 +26592,7 @@
 /turf/open/floor/carpet/black,
 /area/command/heads_quarters/hop)
 "bqA" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue{

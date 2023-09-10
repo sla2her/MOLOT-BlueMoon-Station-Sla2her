@@ -44,7 +44,7 @@
 	var/taunt = "<b>BOT</b> points at CRIMINAL!"
 	var/attack_one = "BOT has stunned CRIMINAL!"
 	var/attack_two = "BOT has stunned you!"
-	var/list/arrest_texts = list("Detaining", "Arresting")
+	var/list/arrest_texts = list("Веду Задержание", "Веду Арест")
 	var/arrest_emote = "ARREST_TYPE level THREAT_LEVEL scumbag CRIMINAL in LOCATION."
 
 /mob/living/simple_animal/bot/secbot/beepsky
@@ -402,7 +402,7 @@
 	log_combat(src,C,"stunned")
 	if(declare_arrests)
 		var/area/location = get_area(src)
-		speak(process_emote("ARREST", C, threat, arrest_type, location), radio_channel)
+		speak("[arrest_type ? "Веду Задержание" : "Провожу Арест"] Преступника [C] уровня [threat] в [location].", radio_channel)
 	C.visible_message("<span class='danger'>[process_emote("ATTACK_ONE", C)]</span>",\
 							"<span class='userdanger'>[process_emote("ATTACK_TWO", C)]</span>")
 

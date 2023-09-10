@@ -16030,7 +16030,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/hallway)
 "fAw" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -21159,7 +21159,7 @@
 /turf/open/floor/plating/airless,
 /area/maintenance/solars/port/fore)
 "hpW" = (
-/obj/machinery/computer/card,
+/obj/machinery/modular_computer/console/preset/id,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -35449,7 +35449,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "mnJ" = (
-/obj/machinery/computer/card,
+/obj/machinery/modular_computer/console/preset/id,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
 "moa" = (
@@ -41494,7 +41494,7 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "oqU" = (
-/obj/machinery/computer/card{
+/obj/machinery/modular_computer/console/preset/id{
 	dir = 8
 	},
 /obj/structure/reagent_dispensers/peppertank{
