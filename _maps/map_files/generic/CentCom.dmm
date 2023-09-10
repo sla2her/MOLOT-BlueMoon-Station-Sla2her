@@ -9131,6 +9131,7 @@
 /obj/structure/sign/poster/contraband/inteq/random{
 	pixel_x = 32
 	},
+/obj/item/healthanalyzer/advanced,
 /turf/open/floor/iron/white,
 /area/syndicate_mothership)
 "hIo" = (
@@ -13750,11 +13751,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "lOB" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Intersection";
-	req_access_txt = "150"
-	},
-/turf/open/space/basic,
+/obj/structure/rack/shelf,
+/obj/item/radio/headset/syndicate/alt,
+/obj/item/radio/headset/syndicate/alt,
+/obj/item/radio/headset/syndicate/alt,
+/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "lOE" = (
 /obj/effect/turf_decal/tile/brown/half/contrasted,
@@ -18229,6 +18230,12 @@
 /obj/machinery/computer,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
+"pLp" = (
+/obj/machinery/sleeper/syndie{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "pLw" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/iron/dark,
@@ -18478,7 +18485,7 @@
 	req_access_txt = "150";
 	name = "Prison"
 	},
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/syndicate_mothership)
 "pSJ" = (
 /obj/effect/turf_decal/tile/brown,
@@ -46732,7 +46739,7 @@ sdM
 sdM
 sdM
 sdM
-sdM
+pLp
 sdM
 sdM
 sdM
@@ -50141,7 +50148,7 @@ lzL
 lzL
 oEy
 tmX
-lOB
+ibY
 tmX
 tmX
 tmX
@@ -52197,7 +52204,7 @@ tmX
 iFA
 tmX
 tmX
-lOB
+ibY
 tmX
 pQm
 xfY
@@ -56542,7 +56549,7 @@ sdM
 sdM
 sdM
 tmX
-urp
+lOB
 xfY
 pLw
 xKw

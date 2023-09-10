@@ -240,6 +240,10 @@
 /area/shuttle/inteq)
 "gm" = (
 /obj/structure/window/reinforced/survival_pod,
+/obj/item/jukebox/emagged{
+	pixel_y = 10
+	},
+/obj/item/jukebox/emagged,
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq)
 "gy" = (
@@ -465,7 +469,6 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq)
 "nm" = (
-/obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = 32
 	},
@@ -1272,14 +1275,9 @@
 /turf/open/floor/wood/wood_parquet,
 /area/shuttle/inteq)
 "FQ" = (
-/obj/structure/frame/computer{
-	anchored = 1;
-	can_be_unanchored = 1;
+/obj/machinery/computer/camera_advanced/syndie{
 	dir = 4
 	},
-/obj/item/stack/cable_coil/yellow,
-/obj/item/stack/sheet/glass,
-/obj/item/stack/sheet/glass,
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq)
 "FW" = (
@@ -1856,7 +1854,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq)
 "Xz" = (
-/obj/item/jukebox/emagged,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq)
 "XB" = (
@@ -2124,7 +2122,7 @@ RP
 ZT
 fQ
 EG
-Tk
+Xz
 ab
 Rm
 us
@@ -2646,8 +2644,8 @@ rf
 HB
 Lj
 Xx
-Xz
-Xz
+Tk
+Tk
 Fa
 Fa
 Lj

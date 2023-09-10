@@ -139,14 +139,8 @@
 
 	uniform = /obj/item/clothing/under/inteq
 	shoes = /obj/item/clothing/shoes/combat
-	//r_pocket = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
-	//gloves = /obj/item/clothing/gloves/combat
-	//back = /obj/item/storage/backpack
 	ears = /obj/item/radio/headset/syndicate/alt
 	id = /obj/item/card/id/syndicate/inteq
-	//belt = /obj/item/gun/ballistic/automatic/pistol
-	//backpack_contents = list(/obj/item/storage/box/survival/syndie=1,
-	//obj/item/kitchen/knife/combat/survival)
 
 	var/command_radio = FALSE
 
@@ -198,7 +192,7 @@
 	light_color = LIGHT_COLOR_ORANGE
 	circuit = /obj/item/circuitboard/computer/inteq_collosus
 	shuttleId = "inteq_collosus"
-	possible_destinations = "inteq_collosus_custom, raiders_away"
+	possible_destinations = "inteq_collosus_custom;raiders_away"
 
 /obj/item/circuitboard/computer/inteq_collosus
 	name = "Collosus Control Console (Computer Board)"

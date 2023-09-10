@@ -94,14 +94,14 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/syndicate //disguised to look like a normal headset for stealth ops
 
 /obj/item/radio/headset/syndicate/alt //undisguised bowman with flash protection
-	name = "illegal headset"
+	name = "Illegal Headset"
 	desc = "An illegal hacked headset that can be used to hear all radio frequencies. Protects ears from flashbangs."
 	icon_state = "syndie_headset"
 	item_state = "syndie_headset"
 	bowman = TRUE
 
 /obj/item/radio/headset/syndicate/alt/leader
-	name = "team leader headset"
+	name = "Team Leader Headset"
 	command = TRUE
 
 /obj/item/radio/headset/syndicate/Initialize(mapload)
