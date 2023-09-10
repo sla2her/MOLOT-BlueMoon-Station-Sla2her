@@ -26918,6 +26918,10 @@
 	pixel_x = 4
 	},
 /obj/structure/table/wood,
+/obj/item/jukebox/emagged{
+	pixel_y = 10
+	},
+/obj/item/jukebox/emagged,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
 "xvb" = (

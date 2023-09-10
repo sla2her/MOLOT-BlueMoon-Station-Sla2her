@@ -516,8 +516,6 @@
 	initial_gas_mix = "n2=100;TEMP=293.15"
 	},
 /area/shuttle/vox_raiders)
-"ye" = (
-)
 "yz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/popcorn,
@@ -958,6 +956,11 @@
 /area/shuttle/vox_raiders)
 "SF" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/item/jukebox/emagged,
+/obj/item/jukebox/emagged{
+	pixel_x = 5;
+	pixel_y = 5
+	},
 /turf/open/floor/iron/shuttle/arrivals/sign_1{
 	initial_gas_mix = "n2=100;TEMP=293.15"
 	},
@@ -1117,8 +1120,8 @@ kx
 kx
 JT
 hm
-ye
-ye
+hm
+hm
 "}
 (2,1,1) = {"
 hm
@@ -1142,8 +1145,8 @@ YV
 kx
 cu
 hm
-ye
-ye
+hm
+hm
 "}
 (3,1,1) = {"
 hm
@@ -1167,8 +1170,8 @@ Yi
 kx
 JT
 hm
-ye
-ye
+hm
+hm
 "}
 (4,1,1) = {"
 hm
@@ -1217,8 +1220,8 @@ kx
 kx
 kx
 kx
-ye
-ye
+hm
+hm
 "}
 (6,1,1) = {"
 kx
@@ -1242,8 +1245,8 @@ yK
 lC
 vS
 kx
-ye
-ye
+hm
+hm
 "}
 (7,1,1) = {"
 hm
@@ -1267,8 +1270,8 @@ Ml
 rg
 RD
 kx
-ye
-ye
+hm
+hm
 "}
 (8,1,1) = {"
 hm
@@ -1292,8 +1295,8 @@ Ui
 fd
 RD
 Rr
-ye
-ye
+hm
+hm
 "}
 (9,1,1) = {"
 hm
@@ -1317,8 +1320,8 @@ RD
 sw
 RD
 Zb
-ye
-ye
+hm
+hm
 "}
 (10,1,1) = {"
 hm
@@ -1342,8 +1345,8 @@ RD
 WR
 RD
 kx
-ye
-ye
+hm
+hm
 "}
 (11,1,1) = {"
 kx
@@ -1367,8 +1370,8 @@ RK
 dz
 Ig
 kx
-ye
-ye
+hm
+hm
 "}
 (12,1,1) = {"
 hm
@@ -1392,8 +1395,8 @@ kx
 kx
 kx
 kx
-ye
-ye
+hm
+hm
 "}
 (13,1,1) = {"
 hm
@@ -1417,8 +1420,8 @@ iO
 kx
 JT
 hm
-ye
-ye
+hm
+hm
 "}
 (14,1,1) = {"
 hm
@@ -1442,8 +1445,8 @@ HI
 kx
 JT
 hm
-ye
-ye
+hm
+hm
 "}
 (15,1,1) = {"
 hm
@@ -1467,8 +1470,8 @@ ek
 kx
 JT
 hm
-ye
-ye
+hm
+hm
 "}
 (16,1,1) = {"
 hm
@@ -1492,6 +1495,6 @@ kx
 kx
 JT
 hm
-ye
-ye
+hm
+hm
 "}

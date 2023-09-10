@@ -33,6 +33,10 @@
 				to_chat(usr, "<span class='warning'>You've issued a combat challenge to the station! You've got to give them at least [DisplayTimeText(SYNDICATE_CHALLENGE_TIMER - world.time)] more to allow them to prepare.</span>")
 				return
 			board.moved = TRUE
+
+			for(var/mob/M in GLOB.player_list)
+				SEND_SOUND(M, sound('modular_bluemoon/SmiLeY/sounds/Nuclear_Operations.ogg'))
+
 	return ..()
 
 /obj/machinery/computer/shuttle/syndicate/recall
