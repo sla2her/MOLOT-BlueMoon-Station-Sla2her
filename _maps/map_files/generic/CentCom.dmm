@@ -1510,8 +1510,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/table,
-/obj/item/book/manual/chef_recipes,
+/obj/machinery/processor,
 /turf/open/floor/plasteel/cafeteria,
 /area/slavers)
 "bBE" = (
@@ -2077,12 +2076,12 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "bWS" = (
-/obj/machinery/research_table/slaver,
 /obj/machinery/button/door{
 	id = "slavers_cell4";
 	name = "privacy shutters";
 	pixel_y = -26
 	},
+/obj/machinery/vending/security,
 /turf/open/floor/padded,
 /area/slavers)
 "bXi" = (
@@ -2684,8 +2683,8 @@
 /area/holodeck/rec_center/winterwonderland)
 "cvH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/stripes/white/corner{
-	dir = 8
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/slavers)
@@ -6681,6 +6680,8 @@
 /obj/item/storage/bag/tray/cafeteria,
 /obj/item/storage/bag/tray/cafeteria,
 /obj/structure/table,
+/obj/item/kitchen/knife,
+/obj/item/kitchen/knife,
 /turf/open/floor/plasteel/cafeteria,
 /area/slavers)
 "fGp" = (
@@ -12655,6 +12656,7 @@
 /obj/structure/bed/pod{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/slavers)
 "kQM" = (
@@ -16067,9 +16069,6 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/holding)
-"nGo" = (
-/turf/open/floor/plating/rust,
-/area/slavers)
 "nGz" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -19523,7 +19522,14 @@
 	dir = 9
 	},
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/minor/twentyfive_percent_cyborg_mask,
+/obj/item/storage/box/teargas{
+	pixel_x = -1;
+	pixel_y = 1
+	},
+/obj/item/storage/box/flashbangs{
+	pixel_x = 1;
+	pixel_y = -1
+	},
 /turf/open/floor/plasteel/dark,
 /area/slavers)
 "qLB" = (
@@ -20614,9 +20620,7 @@
 /area/centcom/control)
 "rDT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/stripes/white/corner{
-	dir = 4
-	},
+/obj/effect/turf_decal/stripes/white/line,
 /turf/open/floor/plasteel,
 /area/slavers)
 "rEc" = (
@@ -22841,6 +22845,10 @@
 	pixel_x = 9;
 	pixel_y = 3
 	},
+/obj/machinery/reagentgrinder{
+	desc = "Used to grind things up into raw materials and liquids.";
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/cafeteria,
 /area/slavers)
 "tHE" = (
@@ -23295,6 +23303,7 @@
 /area/tdome/tdomeobserve)
 "uej" = (
 /obj/structure/bed/pod,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/slavers)
 "ufg" = (
@@ -27373,6 +27382,15 @@
 /area/holodeck/rec_center/kobayashi)
 "xPc" = (
 /obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/reagent_containers/food/snacks/meat/rawbacon,
+/obj/item/reagent_containers/food/snacks/meat/rawbacon,
+/obj/item/reagent_containers/food/snacks/meat/rawbacon,
+/obj/item/reagent_containers/food/snacks/meat/rawbacon,
+/obj/item/reagent_containers/food/snacks/meat/rawbacon,
+/obj/item/reagent_containers/food/snacks/meat/rawbacon,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
 /turf/open/floor/plasteel/cafeteria,
 /area/slavers)
 "xPe" = (
@@ -86787,7 +86805,7 @@ npL
 tqz
 eeT
 gws
-izj
+cvH
 tks
 ryw
 gyr
@@ -87044,7 +87062,7 @@ npL
 tqz
 tqz
 gws
-rDT
+cvH
 tqz
 vhQ
 gyr
@@ -87303,7 +87321,7 @@ pHZ
 gws
 cvH
 npL
-izj
+rDT
 gyr
 nIu
 nIu
@@ -88574,7 +88592,7 @@ nIu
 nIu
 aLs
 izj
-nGo
+izj
 iAC
 hzj
 sVn
@@ -89601,8 +89619,8 @@ nIu
 nIu
 nIu
 aLs
-nGo
-uLw
+izj
+izj
 eFJ
 sMw
 pXd
@@ -89864,9 +89882,9 @@ mgY
 osV
 bht
 mgY
+nae
 qUy
-qUy
-qUy
+knp
 mgY
 xVH
 oDy
@@ -90118,10 +90136,10 @@ nIu
 nIu
 nIu
 mgY
-nGo
+izj
 bHx
 mgY
-mDo
+naO
 qUy
 bWS
 mgY
@@ -90378,9 +90396,9 @@ mgY
 pjn
 uej
 mgY
-nae
-naO
-knp
+mDo
+qUy
+mDo
 mgY
 xVH
 luC
