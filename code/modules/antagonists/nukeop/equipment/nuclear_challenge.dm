@@ -37,7 +37,7 @@ GLOBAL_VAR_INIT(war_declared, FALSE)
 		to_chat(user, "On second thought, the element of surprise isn't so bad after all.")
 		return
 
-	var/war_declaration = "A InteQ fringe group has declared their intent to utterly destroy [station_name()] with a nuclear device, and dares the crew to try and stop them."
+	var/war_declaration = "Местная вооружённая группа Головорезов InteQ заявила о своем намерении полностью уничтожить [station_name()] с помощью Ядерной Боеголовки и предлагает Экипажу попробовать их остановить."
 
 	declaring_war = TRUE
 	var/custom_threat = alert(user, "Do you want to customize your declaration?", "Customize?", "Yes", "No")
@@ -89,7 +89,7 @@ GLOBAL_VAR_INIT(war_declared, FALSE)
 	if(are_you_sure != "Yes")
 		return
 
-	var/war_declaration = "A InteQ fringe group has declared their intent to utterly destroy [station_name()] with a nuclear device, and dares the crew to try and stop them."
+	var/war_declaration = "Местная вооружённая группа Головорезов InteQ заявила о своем намерении полностью уничтожить [station_name()] с помощью Ядерной Боеголовки и предлагает Экипажу попробовать их остановить."
 
 	var/custom_threat = tgui_alert(usr, "Do you want to customize the declaration?", "Customize?", list("Yes", "No"))
 
@@ -100,7 +100,7 @@ GLOBAL_VAR_INIT(war_declared, FALSE)
 		to_chat(usr, span_warning("Invalid war declaration."))
 		return
 
-	priority_announce(war_declaration, title = "Declaration of War", sound = 'sound/machines/alarm.ogg', has_important_message = TRUE)
+	priority_announce(war_declaration, title = "Объявление Войны", sound = 'sound/machines/alarm.ogg', has_important_message = TRUE)
 
 	for(var/V in GLOB.syndicate_shuttle_boards)
 		var/obj/item/circuitboard/computer/syndicate_shuttle/board = V

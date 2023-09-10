@@ -18,6 +18,7 @@
 	return ..()
 
 /obj/machinery/computer/shuttle/syndicate/ui_act(action, params)
+	var/static/musiclimit = 0
 	if(!allowed(usr))
 		to_chat(usr, "<span class='danger'>Access denied.</span>")
 		return
@@ -35,7 +36,10 @@
 			board.moved = TRUE
 
 			for(var/mob/M in GLOB.player_list)
+				if(musiclimit > 1)
+					return
 				SEND_SOUND(M, sound('modular_bluemoon/SmiLeY/sounds/Nuclear_Operations.ogg'))
+				musiclimit++
 
 	return ..()
 
