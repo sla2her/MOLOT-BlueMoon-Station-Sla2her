@@ -349,7 +349,7 @@
 	hidden = 1;
 	id = "syndicate";
 	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
-	name = "syndicate infiltrator";
+	name = "InteQ Infiltrator";
 	port_direction = 4;
 	width = 23
 	},
