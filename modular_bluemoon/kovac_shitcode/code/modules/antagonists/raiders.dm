@@ -153,8 +153,6 @@
 	command_radio = TRUE
 
 /datum/outfit/inteq_raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	H.faction |= "InteQ"
-
 	var/obj/item/radio/R = H.ears
 	R.set_frequency(FREQ_PIRATE)
 	R.freqlock = TRUE
@@ -169,9 +167,9 @@
 		B.registered_name = H.real_name
 		B.update_label(H.real_name)
 
-	H.update_icons()
-
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE)
+	H.faction |= ROLE_INTEQ
+	H.update_icons()
 
 ////// Shuttle (Krashly) ///////////
 

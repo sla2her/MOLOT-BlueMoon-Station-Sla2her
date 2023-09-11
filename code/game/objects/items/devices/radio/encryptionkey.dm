@@ -37,6 +37,12 @@
 	channels = list(RADIO_CHANNEL_INTEQ = 1)
 	syndie = TRUE //Signifies that it de-crypts Syndicate transmissions
 
+/obj/item/encryptionkey/pirate
+	name = "Pirate Encryption Key"
+	icon_state = "syn_cypherkey"
+	channels = list(RADIO_CHANNEL_PIRATE = 1)
+	syndie = TRUE //Signifies that it de-crypts Syndicate transmissions
+
 /obj/item/encryptionkey/binary
 	name = "binary translator key"
 	icon_state = "bin_cypherkey"

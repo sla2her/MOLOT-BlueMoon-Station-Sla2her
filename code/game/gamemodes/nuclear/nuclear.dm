@@ -159,6 +159,7 @@
 	W.implant(H)
 	var/obj/item/implant/explosive/E = new
 	E.implant(H)
+
 	H.faction |= ROLE_INTEQ
 	H.update_icons()
 
