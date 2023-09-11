@@ -174,10 +174,11 @@
 		M.adjustFireLoss(-2 * power, 0)
 		M.adjustToxLoss(-2 * power, 0, TRUE) //heals TOXINLOVERs
 		M.adjustCloneLoss(-power, 0)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -power*REM) //additional heal for brain
 		for(var/organ in M.internal_organs)
 			var/obj/item/organ/O = organ
-			if (!(O.organ_flags & ORGAN_FAILING))
-				O.applyOrganDamage(-1 * power)
+			if (!(O.organ_flags & ORGAN_FAILING)) //Check for organ failure
+				O.applyOrganDamage(-1 * power) //Use reverse damage for heal
 		for(var/i in M.all_wounds)
 			var/datum/wound/iter_wound = i
 			iter_wound.on_xadone(power)
