@@ -1753,14 +1753,17 @@
 
 /obj/item/robot_module/syndicate/inteq
 	name = "InteQ Assault"
+	added_channels = list(RADIO_CHANNEL_INTEQ = 1)
 	cyborg_base_icon = "inteq_sec"
 
 /obj/item/robot_module/syndicate_medical/inteq
 	name = "InteQ Medical"
+	added_channels = list(RADIO_CHANNEL_INTEQ = 1)
 	cyborg_base_icon = "inteq_med"
 
 /obj/item/robot_module/saboteur/inteq
 	name = "InteQ Saboteur"
+	added_channels = list(RADIO_CHANNEL_INTEQ = 1)
 	cyborg_base_icon = "inteq_engi"
 
 /datum/robot_energy_storage

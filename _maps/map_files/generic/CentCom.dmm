@@ -17617,7 +17617,9 @@
 /area/holodeck/rec_center/dodgeball)
 "pdm" = (
 /mob/living/simple_animal/bot/medbot{
-	name = "InteQ Hospitality Drone"
+	name = "InteQ Hospitality Drone";
+	radio_key = /obj/item/encryptionkey/inteq;
+	radio_channel = "InteQ"
 	},
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
