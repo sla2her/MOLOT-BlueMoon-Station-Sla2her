@@ -312,7 +312,7 @@
 		/obj/item/clothing/head/rabbitears = 1)
 
 /obj/effect/spawner/lootdrop/minor/pirate_or_bandana
-	name = "pirate hat or bandana spawner"
+	name = "Pirate hat or bandana spawner"
 	loot = list(
 		/obj/item/clothing/head/pirate = 1,
 		/obj/item/clothing/head/bandana = 1)

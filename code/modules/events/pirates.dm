@@ -177,7 +177,7 @@
 	return ..()
 
 /obj/machinery/computer/shuttle/pirate
-	name = "pirate shuttle console"
+	name = "Pirate shuttle console"
 	shuttleId = "pirateship"
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
@@ -186,7 +186,7 @@
 	possible_destinations = "pirateship_away;pirateship_home;pirateship_custom"
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate/pirate
-	name = "pirate Shuttle Navigation Computer"
+	name = "Pirate Shuttle Navigation Computer"
 	desc = "Used to designate a precise transit location for the pirate shuttle."
 	shuttleId = "pirateship"
 	lock_override = CAMERA_LOCK_STATION
@@ -196,7 +196,7 @@
 	see_hidden = FALSE
 
 /obj/docking_port/mobile/pirate
-	name = "pirate shuttle"
+	name = "Pirate shuttle"
 	id = "pirateship"
 	rechargeTime = 3 MINUTES
 

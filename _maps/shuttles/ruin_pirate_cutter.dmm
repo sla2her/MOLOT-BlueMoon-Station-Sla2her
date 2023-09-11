@@ -78,7 +78,7 @@
 /area/shuttle/caravan/pirate)
 "aE" = (
 /obj/structure/closet{
-	name = "pirate outfits"
+	name = "Pirate outfits"
 	},
 /obj/item/clothing/head/collectable/pirate,
 /obj/item/clothing/suit/pirate,
@@ -383,7 +383,7 @@
 /area/shuttle/caravan/pirate)
 "oF" = (
 /obj/structure/closet{
-	name = "pirate outfits"
+	name = "Pirate outfits"
 	},
 /obj/item/clothing/head/collectable/pirate,
 /obj/item/clothing/suit/pirate,

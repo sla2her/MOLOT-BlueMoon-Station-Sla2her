@@ -23287,7 +23287,7 @@
 	dwidth = 12;
 	height = 17;
 	id = "syndicate_away";
-	name = "syndicate recon outpost";
+	name = "Syndicate Recon Outpost";
 	roundstart_template = /datum/map_template/shuttle/infiltrator/syndicate_basic;
 	width = 23
 	},
@@ -27344,7 +27344,7 @@
 	dwidth = 12;
 	height = 17;
 	id = "inteq_away";
-	name = "inteq recon outpost";
+	name = "InteQ Recon Outpost";
 	roundstart_template = /datum/map_template/shuttle/infiltrator/basic;
 	width = 23
 	},

@@ -2,7 +2,7 @@
 
 /datum/map_template/shuttle/pirate/default/inteq
 	suffix = "inteq"
-	name = "pirate ship (InteQ)"
+	name = "Pirate ship (InteQ)"
 
 /area/shuttle/pirate/inteq
 	name = "InteQ Shuttle"

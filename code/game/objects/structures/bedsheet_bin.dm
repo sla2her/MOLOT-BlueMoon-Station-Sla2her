@@ -261,7 +261,7 @@ GLOBAL_LIST_INIT(double_bedsheets, list(/obj/item/bedsheet/double,
 	dream_messages = list("a kitty", "a cat", "meow", "purr", "nya~")
 
 /obj/item/bedsheet/pirate
-	name = "pirate's bedsheet"
+	name = "Pirate's bedsheet"
 	desc = "It has a Jolly Roger emblem on it and has a faint scent of grog."
 	icon_state = "sheetpirate"
 	dream_messages = list("doing whatever oneself wants", "cause a pirate is free", "being a pirate", "stealing", "landlubbers", "gold", "a buried treasure", "yarr", "avast", "a swashbuckler", "sailing the Seven Seas", "a parrot", "a monkey", "an island", "a talking skull")
