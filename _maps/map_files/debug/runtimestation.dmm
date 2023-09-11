@@ -1179,6 +1179,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/jukebox/disco,
 /turf/open/floor/plating,
 /area/commons/storage/primary)
 "dq" = (
@@ -2975,6 +2976,10 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/service/cafeteria)
+"DK" = (
+/obj/machinery/jukebox,
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "Em" = (
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -3053,6 +3058,10 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/carpet/blackred,
 /area/service/bar)
+"Jz" = (
+/obj/item/jukebox/emagged,
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "JF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -7902,9 +7911,9 @@ Wc
 fX
 dE
 dB
-dl
-dl
-dl
+DK
+Jz
+Jz
 dp
 dE
 cS
