@@ -1,5 +1,5 @@
 /obj/item/jukebox
-	name = "jukebox"
+	name = "Handled Jukebox"
 	desc = "Переносная колонка для крутых."
 	icon = 'modular_citadel/icons/obj/boombox.dmi'
 	righthand_file = 'modular_citadel/icons/obj/boombox_righthand.dmi'
@@ -17,17 +17,9 @@
 	var/datum/track/selectedtrack = null
 	var/list/queuedplaylist = list()
 	var/queuecooldown //This var exists solely to prevent accidental repeats of John Mulaney's 'What's New Pussycat?' incident. Intentional, however......
-	unique_reskin = list(
-		"Basic" = list(
-			RESKIN_ICON_STATE = "raiqbawks"
-		),
-		"Black" = list(
-			RESKIN_ICON_STATE = "raiqbawks_black"
-		),
-	)
 
 /obj/item/jukebox/emagged
-	name = "jukebox"
+	name = "Handled Jukebox"
 	desc = "Переносная колонка для крутых. ТЕПЕРЬ ВЗЛОМАННАЯ."
 	obj_flags = EMAGGED
 
