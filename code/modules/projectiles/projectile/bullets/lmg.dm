@@ -19,7 +19,7 @@
 	damage = 20
 
 /obj/item/projectile/bullet/syndicate_turret
-	damage = 20
+	damage = 35
 
 // 7.12x82mm (SAW)
 

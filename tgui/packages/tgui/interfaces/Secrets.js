@@ -380,12 +380,14 @@ const FunTab = (props, context) => {
               onClick={() => act("ancap")} />
           </Stack.Item>
           <Stack.Item>
-            <NoticeBox
-              mb={-0.5}
+            <Button
+              color="red"
+              icon="user-secret"
+              lineHeight={lineHeightNormal}
               width={buttonWidthNormal}
-              height={lineHeightNormal}>
-              Your admin button here, coder!
-            </NoticeBox>
+              content="Synd Displays!"
+              onClick={() => act("synd_displays")}>
+            </Button>
           </Stack.Item>
         </Stack>
       </Stack.Item>

@@ -90,7 +90,7 @@
 	if(alert)
 		var/area/alarmed = get_base_area(src)
 		alarmed.burglaralert(src)
-		playsound(src, 'sound/effects/alert.ogg', 50, 1)
+		playsound(src, 'sound/misc/alerts/alert.ogg', 50, 1)
 
 /obj/structure/displaycase/update_overlays()
 	. = ..()

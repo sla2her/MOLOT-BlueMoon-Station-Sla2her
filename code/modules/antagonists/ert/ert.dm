@@ -117,6 +117,11 @@
 	outfit = /datum/outfit/death_commando
 	role = "Солдат"
 
+/datum/antagonist/ert/asset_protection
+	name = "Asset Protection Team Trooper"
+	outfit = /datum/outfit/death_commando
+	role = "Солдат"
+
 /datum/antagonist/ert/syndiesquad
 	name = "Syndiesquad Specialist"
 	outfit = /datum/outfit/syndicate/syndiesquad
@@ -148,7 +153,12 @@
 
 /datum/antagonist/ert/deathsquad/leader
 	name = "Deathsquad Officer"
-	outfit = /datum/outfit/death_commando
+	outfit = /datum/outfit/death_commando/officer
+	role = "Офицер"
+
+/datum/antagonist/ert/asset_protection/leader
+	name = "Asset Protection Team Officer"
+	outfit = /datum/outfit/death_commando/officer
 	role = "Офицер"
 
 /datum/antagonist/ert/syndiesquad/leader

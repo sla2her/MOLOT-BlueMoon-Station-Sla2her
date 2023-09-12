@@ -165,7 +165,7 @@
 					return
 
 			var/new_sec_level = SECLEVEL2NUM(params["newSecurityLevel"])
-			if (new_sec_level != SEC_LEVEL_GREEN && new_sec_level != SEC_LEVEL_BLUE && new_sec_level != SEC_LEVEL_AMBER)
+			if (new_sec_level != SEC_LEVEL_GREEN && new_sec_level != SEC_LEVEL_BLUE && new_sec_level != SEC_LEVEL_ORANGE && new_sec_level != SEC_LEVEL_VIOLET && new_sec_level != SEC_LEVEL_AMBER)
 				return
 			if (GLOB.security_level == new_sec_level)
 				return
@@ -210,17 +210,17 @@
 			var/emagged = obj_flags & EMAGGED
 			if (emagged)
 				message_syndicate(message, usr)
-				to_chat(usr, span_danger("SYSERR @l(19833)of(transmit.dm): !@$ MESSAGE TRANSMITTED TO SYNDICATE COMMAND."))
+				to_chat(usr, span_danger("SYSERR @l(19833)of(transmit.dm): !@$ СООБЩЕНИЕ УСПЕШНО ОТПРАВЛЕНО ПО ПОДПРОСТРАНСТВЕННОЙ СВЯЗИ."))
 			else if(syndicate)
 				message_syndicate(message, usr)
-				to_chat(usr, span_danger("Message transmitted to Syndicate Command."))
+				to_chat(usr, span_danger("Сообщение успешно отправлено по Подпространственной Связи."))
 			else
 				message_centcom(message, usr)
-				to_chat(usr, span_notice("Message transmitted to Central Command."))
+				to_chat(usr, span_notice("Сообщение успешно отправлено Центральному Командованию."))
 
-			var/associates = (emagged || syndicate) ? "the Syndicate": "CentCom"
-			usr.log_talk(message, LOG_SAY, tag = "message to [associates]")
-			deadchat_broadcast(" has messaged [associates], \"[message]\" at [span_name("[get_area_name(usr, TRUE)]")].", span_name("[usr.real_name]"), usr, message_type = DEADCHAT_ANNOUNCEMENT)
+			var/associates = (emagged || syndicate) ? "the Illegal Channel": "CentCom"
+			usr.log_talk(message, LOG_SAY, tag = "сообщение для [associates]")
+			deadchat_broadcast(" отправляет [associates], \"[message]\" где-то в [span_name("[get_area_name(usr, TRUE)]")].", span_name("[usr.real_name]"), usr, message_type = DEADCHAT_ANNOUNCEMENT)
 			COOLDOWN_START(src, important_action_cooldown, IMPORTANT_ACTION_COOLDOWN)
 		if ("purchaseShuttle")
 			var/can_buy_shuttles_or_fail_reason = can_buy_shuttles(usr)

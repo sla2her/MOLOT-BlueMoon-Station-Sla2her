@@ -304,8 +304,6 @@ GLOBAL_VAR_INIT(dynamic_type_threat_max, 60)
 
 	print_command_report(., "Отдел ССО Пакта Синих Лун", announce=FALSE)
 	priority_announce("Благодаря неустанным усилиям наших специальных оперативных подразделений мы обнаружили несколько возможных угроз для [station_name()]. Будьте осторожней!", "Отдел ССО Пакта Синих Лун", "intercept")
-	//if(GLOB.security_level < SEC_LEVEL_BLUE)
-	//	set_security_level(SEC_LEVEL_BLUE)
 
 /datum/game_mode/dynamic/proc/show_threatlog(mob/admin)
 	if(!SSticker.HasRoundStarted())

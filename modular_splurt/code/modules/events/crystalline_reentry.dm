@@ -50,7 +50,7 @@
 	fakeable = FALSE
 
 /datum/round_event/crystalline_wave/announce(fake)
-	priority_announce("Several crystalline asteroids have been detected en route with the station. All hands, brace for impact. Organic signals have been detected contained within some of the asteroids.", title = "Priority Alert", sound = 'sound/misc/voyalert.ogg')
+	priority_announce("Several crystalline asteroids have been detected en route with the station. All hands, brace for impact. Organic signals have been detected contained within some of the asteroids.", title = "Priority Alert", sound = 'modular_bluemoon/kovac_shitcode/sound/lambda_code.ogg')
 
 /datum/round_event/crystalline_wave/tick()
 	if(ISMULTIPLE(activeFor, 3))

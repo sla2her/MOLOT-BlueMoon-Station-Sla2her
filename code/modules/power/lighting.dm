@@ -216,7 +216,9 @@
 	var/nightshift_light_color = "#cae2fa"
 
 	var/emergency_mode = FALSE	// if true, the light is in emergency mode
+	var/fire_mode = FALSE // if true, the light swaps over to emergency colour
 	var/no_emergency = FALSE	// if true, this light cannot ever have an emergency mode
+
 	var/bulb_emergency_brightness_mul = 0.25	// multiplier for this light's base brightness in emergency power mode
 	var/bulb_emergency_colour = "#ff2323"	// determines the colour of the light while it's in emergency mode
 	var/bulb_emergency_pow_mul = 0.75	// the multiplier for determining the light's power in emergency mode
@@ -364,6 +366,8 @@
 		if(LIGHT_BROKEN,LIGHT_BURNED,LIGHT_EMPTY)
 			on = FALSE
 	emergency_mode = FALSE
+	if(fire_mode)
+		set_emergency_lights()
 	if(on)
 		var/BR = brightness
 		var/PO = bulb_power
@@ -877,7 +881,6 @@
 		playsound(src.loc, 'sound/effects/glasshit.ogg', 75, 1)
 		update()
 
-
 /obj/machinery/light/floor
 	name = "floor light"
 	icon = 'icons/obj/lighting.dmi'
@@ -888,3 +891,41 @@
 	layer = 2.5
 	light_type = /obj/item/light/bulb
 	fitting = "floor" //making deconstruction give out the right type.
+
+// attempts to set emergency lights
+/obj/machinery/light/proc/set_emergency_lights()
+	var/area/current_area = get_area(src)
+	var/obj/machinery/power/apc/current_apc = current_area.get_apc()
+	if(status != LIGHT_OK || !current_apc || flickering || no_emergency)
+		emergency_lights_off(current_area, current_apc)
+		return
+	if(current_apc.emergency_lights)
+		emergency_lights_off(current_area, current_apc)
+		return
+	if(fire_mode)
+		set_light(nightshift_brightness, nightshift_light_power, bulb_emergency_colour)
+		return
+	for(var/area/A as anything in GLOB.sortedAreas)
+		if(!is_station_level(A.z))
+			continue
+		for(var/obj/machinery/light/L in A)
+			if(L.status)
+				continue
+			L.fire_mode = TRUE
+			L.update()
+	emergency_mode = TRUE
+	set_light(6, 3, bulb_emergency_colour)
+	RegisterSignal(current_area, COMSIG_AREA_POWER_CHANGE, PROC_REF(update), override = TRUE)
+
+/obj/machinery/light/proc/emergency_lights_off(area/current_area, obj/machinery/power/apc/current_apc)
+	set_light(0, 0, 0) //you, sir, are off!
+	for(var/area/A as anything in GLOB.sortedAreas)
+		if(!is_station_level(A.z))
+			continue
+		for(var/obj/machinery/light/L in A)
+			if(L.status)
+				continue
+			L.fire_mode = FALSE
+			L.update()
+	if(current_apc)
+		RegisterSignal(current_area, COMSIG_AREA_POWER_CHANGE, PROC_REF(update), override = TRUE)

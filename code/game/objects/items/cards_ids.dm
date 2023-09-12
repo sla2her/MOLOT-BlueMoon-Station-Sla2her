@@ -78,7 +78,7 @@
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	item_flags = NO_MAT_REDEMPTION | NOBLUDGEON
 	var/prox_check = TRUE //If the emag requires you to be in range
-	var/uses = 15
+	var/uses = 30
 
 /obj/item/card/emag/bluespace
 	name = "bluespace cryptographic sequencer"

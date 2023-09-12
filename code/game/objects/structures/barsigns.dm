@@ -107,10 +107,10 @@
 /obj/structure/sign/barsign/emag_act(mob/user)
 	. = ..()
 	if(broken || (obj_flags & EMAGGED))
-		to_chat(user, "<span class='warning'>Nothing interesting happens!</span>")
+		to_chat(user, "<span class='warning'>Ничего интересного не произошло!!</span>")
 		return
 	obj_flags |= EMAGGED
-	to_chat(user, "<span class='notice'>You emag the barsign. Takeover in progress...</span>")
+	to_chat(user, "<span class='notice'>Вы взломали дисплей. Осуществляется взлом систем...</span>")
 	addtimer(CALLBACK(src, .proc/syndie_bar_good), 10 SECONDS)
 	return TRUE
 

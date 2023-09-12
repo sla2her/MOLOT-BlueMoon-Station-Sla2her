@@ -142,6 +142,7 @@
 
 	var/nightshift_public_area = NIGHTSHIFT_AREA_NONE		//considered a public area for nightshift
 
+	var/area_emergency_mode = FALSE // When true, fire alarms cannot unset emergency lighting. Not to be confused with emergency_mode var on light objects.
 
 /**
  * A list of teleport locations
@@ -517,14 +518,16 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 
 /area/proc/set_fire_alarm_effects(boolean)
 	fire = boolean
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	for(var/i in sub_areas)
 		var/area/A = i
 		A.fire = boolean
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	for(var/alarm in firealarms)
 		var/obj/machinery/firealarm/F = alarm
 		F.update_fire_light(fire)
 		F.update_icon()
+	if(area_emergency_mode) //Fires are not legally allowed if the power is off
+		return
 	for(var/obj/machinery/light/L in get_sub_areas_contents(src))
 		L.update()
 

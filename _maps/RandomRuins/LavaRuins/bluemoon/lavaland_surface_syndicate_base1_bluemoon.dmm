@@ -588,13 +588,14 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "dA" = (
-/obj/machinery/door/airlock/command{
-	name = "Comms Officer";
-	req_access_txt = "151"
-	},
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/door/airlock/highsecurity{
+	id_tag = "interdynecomm";
+	name = "Comms Officer";
+	req_access_txt = "151"
+	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "dJ" = (
@@ -4784,10 +4785,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "Jg" = (
-/obj/machinery/door/airlock/command{
+/obj/machinery/door/airlock/highsecurity{
+	id_tag = "interdynecomm";
 	name = "Comms Officer";
-	req_access_txt = "151";
-	id_tag = "interdynecomm"
+	req_access_txt = "151"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)

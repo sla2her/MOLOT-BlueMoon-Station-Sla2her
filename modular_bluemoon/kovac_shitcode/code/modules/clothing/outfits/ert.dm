@@ -221,7 +221,6 @@
 	if(visualsOnly)
 		return
 
-
 	var/obj/item/radio/R = H.ears
 	R.set_frequency(FREQ_SOL)
 	R.freqlock = TRUE
@@ -284,7 +283,6 @@
 
 	if(visualsOnly)
 		return
-
 
 	var/obj/item/radio/R = H.ears
 	R.set_frequency(FREQ_SOL)

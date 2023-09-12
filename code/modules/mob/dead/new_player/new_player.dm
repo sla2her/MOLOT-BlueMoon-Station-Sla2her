@@ -568,12 +568,18 @@
 			level = "green"
 		if(SEC_LEVEL_BLUE)
 			level = "blue"
+		if(SEC_LEVEL_ORANGE)
+			level = "orange"
+		if(SEC_LEVEL_VIOLET)
+			level = "violet"
 		if(SEC_LEVEL_AMBER)
 			level = "amber"
 		if(SEC_LEVEL_RED)
 			level = "red"
 		if(SEC_LEVEL_LAMBDA)
 			level = "lambda"
+		if(SEC_LEVEL_EPSILON)
+			level = "epsilon"
 		if(SEC_LEVEL_DELTA)
 			level = "delta"
 

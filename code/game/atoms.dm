@@ -1230,8 +1230,12 @@
 /atom/proc/analyzer_act(mob/living/user, obj/item/I)
 	return
 
-/atom/proc/GenerateTag()
-	return
+///Generate a tag for this /datum, if it implements one
+///Should be called as early as possible, best would be in New, to avoid weakref mistargets
+///Really just don't use this, you don't need it, global lists will do just fine MOST of the time
+///We really only use it for mobs to make id'ing people easier
+/datum/proc/GenerateTag()
+	datum_flags |= DF_USE_TAG
 
 /**
   * Called after a shuttle is loaded **from map template initially**.

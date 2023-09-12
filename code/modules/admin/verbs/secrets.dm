@@ -363,6 +363,21 @@
 				priority_announce("The NAP is now in full effect.", null, SSstation.announcer.get_rand_report_sound())
 			else
 				priority_announce("The NAP has been revoked.", null, SSstation.announcer.get_rand_report_sound())
+		if("synd_displays")
+			if(!is_funmin)
+				return
+			SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Syndicate Displays on Station"))
+			message_admins("[key_name_admin(holder)] toggled Syndicate Displays")
+			priority_announce("Синдикат берёт Космическую Станцию в свою ответственность.", null, 'sound/machines/AISyndiHack.ogg')
+			var/obj/machinery/computer/communications/C = locate() in GLOB.machines
+			if(C)
+				C.post_status("alert", "synd")
+			for(var/mob/living/silicon/silicon as anything in GLOB.silicon_mobs)
+				var/new_board = new /obj/item/aiModule/syndicate(src)
+				var/obj/item/aiModule/chosenboard = new_board
+				var/mob/living/silicon/beepboop = silicon
+				chosenboard.install(beepboop.laws, usr)
+				qdel(new_board)
 		if("blackout")
 			if(!is_funmin)
 				return
