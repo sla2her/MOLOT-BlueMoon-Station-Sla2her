@@ -284,6 +284,7 @@
 			for(var/atom/movable/ingredient as anything in ingredients)
 				var/image/ingredient_overlay = image(ingredient, src)
 				. -= ingredient_overlay
+			//QDEL_LIST(ingredients)
 			update_appearance()
 		else
 			to_chat(user, span_warning("You need more space cleaner!"))
@@ -301,6 +302,7 @@
 			for(var/atom/movable/ingredient as anything in ingredients)
 				var/image/ingredient_overlay = image(ingredient, src)
 				. -= ingredient_overlay
+			//QDEL_LIST(ingredients)
 			update_appearance()
 		return TRUE
 
