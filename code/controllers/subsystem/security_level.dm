@@ -247,7 +247,7 @@ SUBSYSTEM_DEF(security_level)
 		var/area/AR = get_area(A)
 		if(!is_station_level(A.z))
 			continue
-		A.emergency_lights = FALSE
+		A.emergency_lights = TRUE
 		AR.area_emergency_mode = TRUE
 		for(var/obj/machinery/light/L in A.area)
 			if(L.status)
@@ -274,6 +274,11 @@ SUBSYSTEM_DEF(security_level)
 			L.emergency_mode = FALSE
 			L.on = TRUE
 			INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, update), FALSE)
+	for(var/obj/machinery/power/apc/A in GLOB.apcs_list)
+		if(!is_station_level(A.z))
+			continue
+		A.emergency_lights = FALSE
+		A.update()
 
 /proc/epsilon_process()
 	minor_announce(CONFIG_GET(string/alert_epsilon), "Внимание! КОД - ЭПСИЛОН!",1)

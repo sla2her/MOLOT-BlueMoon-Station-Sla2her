@@ -17170,10 +17170,6 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
-/obj/machinery/status_display/supply{
-	pixel_x = -28;
-	pixel_y = 2
-	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bmo" = (
@@ -67308,6 +67304,10 @@
 /obj/structure/lattice,
 /turf/closed/wall,
 /area/service/chapel/office)
+"xpy" = (
+/obj/machinery/status_display/supply,
+/turf/closed/wall,
+/area/cargo/sorting)
 "xpG" = (
 /obj/machinery/door/morgue{
 	name = "Confession Booth (Chaplain)";
@@ -92734,7 +92734,7 @@ beV
 cNI
 bKP
 cNI
-aZK
+xpy
 bnK
 bnK
 bqu
