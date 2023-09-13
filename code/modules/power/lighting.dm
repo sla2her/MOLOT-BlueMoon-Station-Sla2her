@@ -366,8 +366,6 @@
 		if(LIGHT_BROKEN,LIGHT_BURNED,LIGHT_EMPTY)
 			on = FALSE
 	emergency_mode = FALSE
-	if(fire_mode)
-		set_emergency_lights()
 	if(on)
 		var/BR = brightness
 		var/PO = bulb_power
@@ -404,6 +402,8 @@
 	else
 		use_power = IDLE_POWER_USE
 		set_light(0)
+	if(fire_mode)
+		set_emergency_lights()
 	update_icon()
 
 	active_power_usage = (brightness * 10)
@@ -426,8 +426,8 @@
 		if (cell.charge == cell.maxcharge)
 			return PROCESS_KILL
 		cell.charge = min(cell.maxcharge, cell.charge + LIGHT_EMERGENCY_POWER_USE) //Recharge emergency power automatically while not using it
-	if(emergency_mode && !use_emergency_power(LIGHT_EMERGENCY_POWER_USE))
-		update(FALSE) //Disables emergency mode and sets the color to normal
+//	if(emergency_mode && !use_emergency_power(LIGHT_EMERGENCY_POWER_USE))
+//		update(FALSE) //Disables emergency mode and sets the color to normal
 
 /obj/machinery/light/proc/burn_out()
 	if(status == LIGHT_OK)
@@ -902,17 +902,6 @@
 	if(current_apc.emergency_lights)
 		emergency_lights_off(current_area, current_apc)
 		return
-	if(fire_mode)
-		set_light(nightshift_brightness, nightshift_light_power, bulb_emergency_colour)
-		return
-	for(var/area/A as anything in GLOB.sortedAreas)
-		if(!is_station_level(A.z))
-			continue
-		for(var/obj/machinery/light/L in A)
-			if(L.status)
-				continue
-			L.fire_mode = TRUE
-			L.update()
 	emergency_mode = TRUE
 	set_light(6, 3, bulb_emergency_colour)
 	RegisterSignal(current_area, COMSIG_AREA_POWER_CHANGE, PROC_REF(update), override = TRUE)

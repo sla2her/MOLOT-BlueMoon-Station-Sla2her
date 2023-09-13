@@ -247,15 +247,20 @@ SUBSYSTEM_DEF(security_level)
 		var/area/AR = get_area(A)
 		if(!is_station_level(A.z))
 			continue
-		A.emergency_lights = TRUE
+		A.emergency_lights = FALSE
 		AR.area_emergency_mode = TRUE
-		for(var/obj/machinery/light/L in A.area)
+		A.update()
+	for(var/area/A as anything in GLOB.sortedAreas)
+		if(!is_station_level(A.z))
+			continue
+		for(var/obj/machinery/light/L in A)
+			if(A.fire)
+				continue
 			if(L.status)
 				continue
-			if(GLOB.security_level == SEC_LEVEL_DELTA)
+			if(GLOB.security_level == SEC_LEVEL_RED || SEC_LEVEL_LAMBDA || SEC_LEVEL_EPSILON || SEC_LEVEL_DELTA)
 				L.fire_mode = TRUE
 			L.on = FALSE
-			L.emergency_mode = TRUE
 			INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, update), FALSE)
 
 /proc/unset_stationwide_emergency_lighting()
@@ -275,9 +280,11 @@ SUBSYSTEM_DEF(security_level)
 			L.on = TRUE
 			INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, update), FALSE)
 	for(var/obj/machinery/power/apc/A in GLOB.apcs_list)
+		var/area/AR = get_area(A)
 		if(!is_station_level(A.z))
 			continue
-		A.emergency_lights = FALSE
+		A.emergency_lights = TRUE
+		AR.area_emergency_mode = FALSE
 		A.update()
 
 /proc/epsilon_process()
