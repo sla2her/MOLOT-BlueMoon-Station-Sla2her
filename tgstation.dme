@@ -3716,6 +3716,7 @@
 #include "code\modules\shuttle\special.dm"
 #include "code\modules\shuttle\supply.dm"
 #include "code\modules\shuttle\syndicate.dm"
+#include "code\modules\shuttle\syndicate_real.dm"
 #include "code\modules\shuttle\white_ship.dm"
 #include "code\modules\shuttle\shuttle_creation\shuttle_creator.dm"
 #include "code\modules\shuttle\shuttle_creation\shuttle_creator_actions.dm"

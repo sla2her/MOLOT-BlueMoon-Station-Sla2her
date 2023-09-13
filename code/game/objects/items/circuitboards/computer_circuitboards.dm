@@ -321,21 +321,6 @@
 	GLOB.syndicate_shuttle_boards -= src
 	return ..()
 
-/obj/item/circuitboard/computer/real_syndicate_shuttle
-	name = "Syndicate Shuttle (Computer Board)"
-	icon_state = "generic"
-	build_path = /obj/machinery/computer/shuttle/real_syndicate
-	var/challenge = FALSE
-	var/moved = FALSE
-
-/obj/item/circuitboard/computer/real_syndicate_shuttle/Initialize(mapload)
-	. = ..()
-	GLOB.real_syndicate_shuttle_boards += src
-
-/obj/item/circuitboard/computer/real_syndicate_shuttle/Destroy()
-	GLOB.real_syndicate_shuttle_boards -= src
-	return ..()
-
 /obj/item/circuitboard/computer/syndicatedoor
 	name = "ProComp Executive (Computer Board)"
 	icon_state = "generic"

@@ -34,8 +34,8 @@
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/bridge)
 "ai" = (
-/obj/machinery/computer/camera_advanced/shuttle_docker/syndicate,
 /obj/effect/turf_decal/bot_white,
+/obj/machinery/computer/camera_advanced/shuttle_docker/syndicate/real_syndicate,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/bridge)
 "aj" = (
