@@ -386,6 +386,14 @@
 		return "scrambled"
 	if (istype(src, /obj/item/card/id/syndicate))
 		return "scrambled"
+	if (istype(src, /obj/item/card/id/nri_ert))
+		return "nri"
+	if (istype(src, /obj/item/card/id/nri_citizen))
+		return "nri"
+	if (istype(src, /obj/item/card/id/sol_ert))
+		return "sol"
+	if (istype(src, /obj/item/card/id/sol_citizen))
+		return "sol"
 	var/obj/item/card/id/I = GetID()
 	if(!I)
 		return

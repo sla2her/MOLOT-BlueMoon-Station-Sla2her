@@ -220,7 +220,7 @@
 
 			var/associates = (emagged || syndicate) ? "the Illegal Channel": "CentCom"
 			usr.log_talk(message, LOG_SAY, tag = "сообщение для [associates]")
-			deadchat_broadcast(" отправляет [associates], \"[message]\" где-то в [span_name("[get_area_name(usr, TRUE)]")].", span_name("[usr.real_name]"), usr, message_type = DEADCHAT_ANNOUNCEMENT)
+			deadchat_broadcast(" отправляет [associates], \"[message]\" где-то на территории [span_name("[get_area_name(usr, TRUE)]")].", span_name("[usr.real_name]"), usr, message_type = DEADCHAT_ANNOUNCEMENT)
 			COOLDOWN_START(src, important_action_cooldown, IMPORTANT_ACTION_COOLDOWN)
 		if ("purchaseShuttle")
 			var/can_buy_shuttles_or_fail_reason = can_buy_shuttles(usr)
