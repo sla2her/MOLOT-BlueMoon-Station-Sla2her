@@ -32720,6 +32720,15 @@
 	pixel_x = 3;
 	pixel_y = -1
 	},
+/obj/item/storage/barricade{
+	pixel_y = -10;
+	pixel_x = -10
+	},
+/obj/item/storage/barricade{
+	pixel_y = -10;
+	pixel_x = 10
+	},
+/obj/item/storage/barricade,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "bmC" = (

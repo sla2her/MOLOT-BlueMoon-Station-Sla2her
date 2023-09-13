@@ -2921,6 +2921,15 @@
 	pixel_x = -4
 	},
 /obj/structure/table,
+/obj/item/storage/barricade,
+/obj/item/storage/barricade{
+	pixel_y = -10;
+	pixel_x = -10
+	},
+/obj/item/storage/barricade{
+	pixel_y = -10;
+	pixel_x = 10
+	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "aig" = (

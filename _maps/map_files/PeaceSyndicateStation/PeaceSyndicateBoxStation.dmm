@@ -1864,6 +1864,15 @@
 	pixel_x = 16;
 	pixel_y = -4
 	},
+/obj/item/storage/barricade,
+/obj/item/storage/barricade{
+	pixel_y = -10;
+	pixel_x = -10
+	},
+/obj/item/storage/barricade{
+	pixel_y = -10;
+	pixel_x = 10
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ai_monitored/security/armory)
 "aeG" = (
