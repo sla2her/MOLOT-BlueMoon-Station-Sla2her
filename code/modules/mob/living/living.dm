@@ -454,7 +454,7 @@
 		return FALSE
 	if(!..())
 		return FALSE
-	visible_message("<b>[src]</b> points at [A].", "<span class='notice'>You point at [A].</span>")
+	visible_message("<b>[src]</b> показывает на [A].", "<span class='notice'>Вы показываете на [A].</span>")
 	return TRUE
 
 /mob/living/verb/succumb()
