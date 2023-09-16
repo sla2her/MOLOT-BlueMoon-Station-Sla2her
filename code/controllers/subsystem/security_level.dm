@@ -139,8 +139,8 @@ SUBSYSTEM_DEF(security_level)
 							SSshuttle.emergency.modTimer(0.625)
 				else
 					minor_announce(CONFIG_GET(string/alert_red_downto), "Внимание! Код - КРАСНЫЙ!")
+				unset_stationwide_emergency_lighting()
 				sound_to_playing_players('sound/misc/alerts/red.ogg', volume = 50)
-				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(set_stationwide_emergency_lighting)), 10 SECONDS)
 				GLOB.security_level = SEC_LEVEL_RED
 				var/obj/machinery/computer/communications/C = locate() in GLOB.machines
 				if(C)
