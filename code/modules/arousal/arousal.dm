@@ -117,7 +117,7 @@
 		to_chat(src,"<span class='userlove'>Вы чувствуете, что вот-вот достигнете оргазма!</span>")
 		if(!do_after(src, mb_time, target = src) || !G.climaxable(src, TRUE))
 			return
-	to_chat(src,"<span class='userlove'>Вы оргазмируете [isturf(loc) ? "прямо на <b>'[loc]'</b>" : ""], отлично! Конечно же, [G.name] изливается следом.</span>")
+	to_chat(src,"<span class='userlove'>Вы оргазмируете[isturf(loc) ? ", обливая пространство под собой" : ""], отлично! Конечно же, [G.name] изливается следом.</span>")
 	do_climax(fluid_source, loc, G)
 
 /mob/living/carbon/human/proc/mob_climax_partner(obj/item/organ/genital/G, mob/living/L, spillage = TRUE, mb_time = 30, obj/item/organ/genital/Lgen = null) //Used for climaxing with any living thing

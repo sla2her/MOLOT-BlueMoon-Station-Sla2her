@@ -570,7 +570,7 @@
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	ears = /obj/item/radio/headset/syndicate/alt
 	back = /obj/item/storage/backpack
-	implants = list(/obj/item/implant/weapons_auth)
+	implants = list(/obj/item/implant/weapons_auth, /obj/item/implant/deathrattle, /obj/item/implant/explosive, /obj/item/implant/mindshield)
 	id = /obj/item/card/id/syndicate
 
 /datum/outfit/syndicate_empty/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
@@ -609,6 +609,7 @@
 	suit_store = /obj/item/gun/ballistic/automatic/pistol
 	back = /obj/item/storage/backpack/security
 	mask = /obj/item/clothing/mask/gas/syndicate
+	l_hand = /obj/item/melee/transforming/energy/sword/saber/red
 
 /obj/effect/mob_spawn/human/syndicate/battlecruiser/captain
 	name = "Syndicate Battlecruiser Captain"

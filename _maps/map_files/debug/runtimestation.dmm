@@ -2565,6 +2565,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/medical/chemistry)
+"iF" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/quantumpad/fullupgrade{
+	map_pad_id = "1";
+	map_pad_link_id = "2"
+	},
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "jb" = (
 /obj/machinery/door/airlock,
 /obj/structure/cable{
@@ -3000,6 +3010,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/bridge)
+"EP" = (
+/obj/machinery/quantumpad/fullupgrade{
+	map_pad_id = "2";
+	map_pad_link_id = "1"
+	},
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "ES" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -9009,8 +9026,8 @@ cm
 cK
 by
 dB
-dx
-dl
+iF
+EP
 dl
 gg
 ez
