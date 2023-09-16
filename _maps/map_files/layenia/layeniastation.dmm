@@ -99647,7 +99647,7 @@
 	name = "Hallway Window Shutters";
 	pixel_x = -5;
 	pixel_y = 28;
-	req_access_txt = "71"
+	req_access_txt = "76"
 	},
 /obj/item/flashlight/lamp/green{
 	pixel_x = -16;
@@ -103498,7 +103498,7 @@
 	name = "Hallway Window Shutters";
 	pixel_x = -5;
 	pixel_y = 7;
-	req_access_txt = "71"
+	req_access_txt = "76"
 	},
 /obj/machinery/light_switch{
 	pixel_x = -7;

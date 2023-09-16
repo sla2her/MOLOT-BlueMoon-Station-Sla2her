@@ -40,15 +40,7 @@
 	slot = ITEM_SLOT_MASK
 	path = /obj/item/jukebox
 	ckeywhitelist = list()
-	cost = 2
-	donator_group_id = DONATOR_GROUP_TIER_1
-
-/datum/gear/donator/emagged_jukebox
-	name = "Emagged Handled Jukebox"
-	slot = ITEM_SLOT_MASK
-	path = /obj/item/jukebox/emagged
-	ckeywhitelist = list()
-	cost = 8
+	cost = 4
 	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/raiqbawks
