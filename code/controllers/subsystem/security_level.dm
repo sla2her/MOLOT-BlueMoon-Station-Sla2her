@@ -143,7 +143,12 @@ SUBSYSTEM_DEF(security_level)
 				var/obj/machinery/computer/communications/C = locate() in GLOB.machines
 				if(C)
 					C.post_status("alert", "redalert")
-				set_stationwide_emergency_lighting()
+				for(var/mob/M in GLOB.player_list)
+					var/turf/T = get_turf(M)
+					if(!M.client || !is_station_level(T.z))
+						continue
+					SEND_SOUND(M, sound('sound/effects/powerloss.ogg'))
+				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(set_stationwide_emergency_lighting)), 1.5 SECONDS)
 				sound_to_playing_players('sound/misc/alerts/red.ogg', volume = 50) // Citadel change - Makes alerts play a sound
 				for(var/obj/machinery/firealarm/FA in GLOB.machines)
 					if(is_station_level(FA.z))
@@ -162,7 +167,12 @@ SUBSYSTEM_DEF(security_level)
 				var/obj/machinery/computer/communications/C = locate() in GLOB.machines
 				if(C)
 					C.post_status("alert", "lambdaalert")
-				set_stationwide_emergency_lighting()
+				for(var/mob/M in GLOB.player_list)
+					var/turf/T = get_turf(M)
+					if(!M.client || !is_station_level(T.z))
+						continue
+					SEND_SOUND(M, sound('sound/effects/powerloss.ogg'))
+				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(set_stationwide_emergency_lighting)), 1.5 SECONDS)
 				sound_to_playing_players('modular_bluemoon/kovac_shitcode/sound/lambda_code.ogg') // Citadel change - Makes alerts play a sound
 				INVOKE_ASYNC(src, .proc/move_shuttle)
 
@@ -178,7 +188,7 @@ SUBSYSTEM_DEF(security_level)
 					if(!M.client || !is_station_level(T.z))
 						continue
 					SEND_SOUND(M, sound('sound/effects/powerloss.ogg'))
-				set_stationwide_emergency_lighting()
+				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(set_stationwide_emergency_lighting)), 1.5 SECONDS)
 				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(epsilon_process)), 15 SECONDS)
 				for(var/obj/machinery/firealarm/FA in GLOB.machines)
 					if(is_station_level(FA.z))
@@ -202,7 +212,12 @@ SUBSYSTEM_DEF(security_level)
 					else
 						SSshuttle.emergency.modTimer(0.625)
 
-				set_stationwide_emergency_lighting()
+				for(var/mob/M in GLOB.player_list)
+					var/turf/T = get_turf(M)
+					if(!M.client || !is_station_level(T.z))
+						continue
+					SEND_SOUND(M, sound('sound/effects/powerloss.ogg'))
+				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(set_stationwide_emergency_lighting)), 1.5 SECONDS)
 				sound_to_playing_players('sound/misc/alerts/delta.ogg')
 				for(var/obj/machinery/firealarm/FA in GLOB.machines)
 					if(is_station_level(FA.z))
