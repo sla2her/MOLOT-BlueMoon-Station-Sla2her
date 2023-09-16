@@ -155,13 +155,13 @@
 			speak(message)
 			playsound(src, messagevoice[message], 70, FALSE)
 
-		if(do_after(H, 3 SECONDS, target=src))
+		if(do_after(H, 3 SECONDS, src))
 			tip_over(H)
 
 	else if(H.a_intent == INTENT_HELP && mode == BOT_TIPPED)
 		H.visible_message("<span class='notice'>[H] begins righting [src].</span>", "<span class='notice'>You begin righting [src]...</span>")
 		balloon_alert(H, "righting")
-		if(do_after(H, 3 SECONDS, target=src))
+		if(do_after(H, 3 SECONDS, src))
 			set_right(H)
 	else
 		..()
