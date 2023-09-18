@@ -199,6 +199,33 @@ obj/item/clothing/suit/donator/bm/cerberus_suit/armored/inkvd
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
+
+//////////
+
+//Helmet_ALLIANCE
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/alliance
+	name = "OTA Hardsuit Helmet"
+	desc = "OTA stormtrooper hardsuit helmet."
+	icon_state = "hardsuit0-alliance"
+	item_state = "hardsuit0-alliance"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	hardsuit_type = "alliance"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+//Suit_ALLIANCE
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/alliance
+	name = "OTA Hardsuit"
+	desc = "OTA Stormtrooper Hardsuit."
+	icon_state = "hardsuit0-alliance"
+	item_state = "hardsuit0-alliance"
+	tail_state = "hardsuit-white"
+	hardsuit_type = "alliance"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/alliance
+
 //////////
 
 //Helmet_SHIELDED
