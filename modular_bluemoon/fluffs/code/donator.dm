@@ -347,7 +347,7 @@
 
 /datum/gear/donator/bm/cross_shielded
 	name = "Shielded Cross"
-	slot = ITEM_SLOT_BACKPACK
+	slot = ITEM_SLOT_NECK
 	path = /obj/item/clothing/neck/tie/cross/shielded
-	ckeywhitelist = list("kalifasun")
+	ckeywhitelist = list("kalifasun", "dofalt")
 	subcategory = LOADOUT_SUBCATEGORIES_DON21
