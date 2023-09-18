@@ -44,6 +44,20 @@
 	ckeywhitelist = list("reaperdb")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
+/datum/gear/donator/bm/ellys_suit
+	name = "Ellys Costume"
+	slot = ITEM_SLOT_ICLOTHING
+	path = /obj/item/clothing/under/donator/bm/ellys_suit
+	ckeywhitelist = list("chowny")
+	subcategory = LOADOUT_SUBCATEGORIES_DON12
+
+/datum/gear/donator/bm/ellys_hoodie
+	name = "Ellys Hoodie"
+	slot = ITEM_SLOT_OCLOTHING
+	path = /obj/item/clothing/suit/donator/bm/ellys_hoodie
+	ckeywhitelist = list("chowny")
+	subcategory = LOADOUT_SUBCATEGORIES_DON12
+
 /datum/gear/donator/bm/modern_watch
 	name = "modern watch"
 	slot = ITEM_SLOT_GLOVES

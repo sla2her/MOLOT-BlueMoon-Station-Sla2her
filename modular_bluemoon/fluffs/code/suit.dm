@@ -155,3 +155,10 @@
 	dog_fashion = null
 	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/suit.dmi'
 	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/clothing/suit.dmi'
+
+/obj/item/clothing/suit/donator/bm/ellys_hoodie
+	name = "Ellys Mantle"
+	desc = "A hoodie in grey and white colors."
+	mutantrace_variation = STYLE_DIGITIGRADE | STYLE_NO_ANTHRO_ICON
+	icon_state = "ellys_hoodie"
+	item_state = "hostrench"
