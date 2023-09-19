@@ -373,7 +373,7 @@
 			if(C)
 				C.post_status("alert", "synd")
 			for(var/mob/living/silicon/silicon as anything in GLOB.silicon_mobs)
-				var/new_board = new /obj/item/aiModule/syndicate(src)
+				var/new_board = new /obj/item/aiModule/core/full/syndicate(src)
 				var/obj/item/aiModule/chosenboard = new_board
 				var/mob/living/silicon/beepboop = silicon
 				chosenboard.install(beepboop.laws, usr)
