@@ -151,6 +151,8 @@
 			incorrect_words += word
 		if(!GLOB.vox_sounds_military[word] && voxType == "military")
 			incorrect_words += word
+		if(!GLOB.vox_sounds_alliance[word] && voxType == "alliance")
+			incorrect_words += word
 
 	if(incorrect_words.len)
 		to_chat(src, "<span class='notice'>These words are not available on the announcement system: [english_list(incorrect_words)].</span>")
