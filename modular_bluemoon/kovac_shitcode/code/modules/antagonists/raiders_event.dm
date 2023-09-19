@@ -53,6 +53,9 @@
 		if(D)
 			if(D.adjust_money(-payoff))
 				priority_announce("Удачного дня, рабы пакта.", ship_name, 'modular_bluemoon/phenyamomota/sound/announcer/pirate_yespeacedecision.ogg', has_important_message = TRUE)
+			else
+				priority_announce("Здесь не хватает кредитов, козлы. Молитесь.", ship_name, 'modular_bluemoon/phenyamomota/sound/announcer/pirate_nopeacedecision.ogg', has_important_message = TRUE)
+				spawn_raiders(threat_msg, ship_template, TRUE)
 				return
 	else
 		priority_announce("Здесь не хватает кредитов, козлы. Молитесь.", ship_name, 'modular_bluemoon/phenyamomota/sound/announcer/pirate_nopeacedecision.ogg', has_important_message = TRUE)

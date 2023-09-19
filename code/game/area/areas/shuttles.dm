@@ -33,10 +33,13 @@
 
 /area/shuttle/syndicate
 	name = "Syndicate Infiltrator"
-	// ambience_index = AMBIENCE_DANGER
-	// area_limited_icon_smoothing = /area/shuttle/syndicate
 	ambientsounds = HIGHSEC
 	canSmoothWithAreas = /area/shuttle/syndicate
+
+/area/shuttle/solfed
+	name = "Solfed Shuttle"
+	ambientsounds = HIGHSEC
+	canSmoothWithAreas = /area/shuttle/solfed
 
 /area/shuttle/syndicate/bridge
 	name = "Syndicate Infiltrator Control"
@@ -54,6 +57,37 @@
 
 /area/shuttle/syndicate/airlock
 	name = "Syndicate Infiltrator Airlock"
+
+/area/shuttle/syndicate/airlock
+	name = "Syndicate Infiltrator Airlock"
+
+////////////////////////////Syndicate infiltrator////////////////////////////
+
+/area/shuttle/inteq
+	name = "InteQ Infiltrator"
+	ambientsounds = HIGHSEC
+	canSmoothWithAreas = /area/shuttle/inteq
+
+/area/shuttle/inteq/bridge
+	name = "InteQ Infiltrator Control"
+
+/area/shuttle/inteq/medical
+	name = "InteQ Infiltrator Medbay"
+
+/area/shuttle/inteq/armory
+	name = "InteQ Infiltrator Armory"
+
+/area/shuttle/inteq/eva
+	name = "InteQ Infiltrator EVA"
+
+/area/shuttle/inteq/hallway
+	name = "InteQ Hallway"
+
+/area/shuttle/inteq/airlock
+	name = "InteQ Infiltrator Airlock"
+
+/area/shuttle/inteq/collosus
+	name = "InteQ Collosus Shuttle"
 
 ////////////////////////////Pirate Shuttle////////////////////////////
 

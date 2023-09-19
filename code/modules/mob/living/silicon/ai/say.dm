@@ -122,7 +122,7 @@
 
 	last_announcement = message
 
-	var/voxType = input(src, "Which VOX to use?", "VOX-type") in list("male", "female", "military")
+	var/voxType = input(src, "Which VOX to use?", "VOX-type") in list("male", "female", "military", "alliance")
 
 	if(!message || announcing_vox > world.time)
 		return
