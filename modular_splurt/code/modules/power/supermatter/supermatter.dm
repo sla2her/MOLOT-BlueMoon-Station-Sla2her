@@ -18,15 +18,15 @@ Custom Bombcaps:
 • Big Delam: 3, 5, 15
 */
 
-#define EXPLOSION_MODIFIER_SMALL 25
-#define EXPLOSION_MODIFIER_MEDIUM 50
-#define EXPLOSION_MODIFIER_LARGE 100
+#define EXPLOSION_MODIFIER_SMALL 50
+#define EXPLOSION_MODIFIER_MEDIUM 100
+#define EXPLOSION_MODIFIER_LARGE 200
 
 // Let's turn the base explosion power down a little...
 /obj/machinery/power/supermatter_crystal
-	explosion_power = 40
+	explosion_power = 80
 /obj/machinery/power/supermatter_crystal/shard
-	explosion_power = 20
+	explosion_power = 40
 
 // Proc to screen the mob list for engineers. We'll need this later!
 /proc/count_alive_engineers(mob/M)

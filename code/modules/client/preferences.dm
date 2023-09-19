@@ -1268,8 +1268,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 										extra_loadout_data += "<BR><a href='?_src_=prefs;preference=gear;loadout_rename=1;loadout_gear_name=[html_encode(gear.name)];'>Name</a> [loadout_item[LOADOUT_CUSTOM_NAME] ? loadout_item[LOADOUT_CUSTOM_NAME] : "N/A"]"
 									if(gear.loadout_flags & LOADOUT_CAN_DESCRIPTION)
 										extra_loadout_data += "<BR><a href='?_src_=prefs;preference=gear;loadout_redescribe=1;loadout_gear_name=[html_encode(gear.name)];'>Description</a>"
-									if(gear.loadout_flags & LOADOUT_CAN_FREQCODE)
-										extra_loadout_data += "<BR><a href='?_src_=prefs;preference=gear;loadout_freqcode=1;loadout_gear_name=[html_encode(gear.name)];'>Freq/Code</a>"
 								else if((gear_points - gear.cost) < 0)
 									class_link = "style='white-space:normal;' class='linkOff'"
 								else if(donoritem)
@@ -4084,29 +4082,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				var/new_description = stripped_input(user, "Enter new description for item. Maximum 500 characters.", "Loadout Item Redescribing", null, 500)
 				if(new_description)
 					user_gear[LOADOUT_CUSTOM_DESCRIPTION] = new_description
-
-			if(href_list["loadout_freqcode"] && (G.loadout_flags & LOADOUT_CAN_FREQCODE))
-				var/action
-				var/params
-				var/frequency = FREQ_SIGNALER
-				var/code = DEFAULT_SIGNALER_CODE
-				var/obj/item/assembly/signaler/loadout
-				switch(action)
-					if("freq")
-						frequency = unformat_frequency(params["freq"])
-						frequency = sanitize_frequency(frequency, TRUE)
-						loadout.set_frequency(frequency)
-						. = TRUE
-					if("code")
-						code = text2num(params["code"])
-						code = round(code)
-						. = TRUE
-				var/list/data = list()
-				data["frequency"] = frequency
-				data["code"] = code
-				data["minFrequency"] = MIN_FREE_FREQ
-				data["maxFrequency"] = MAX_FREE_FREQ
-				return data
 
 	ShowChoices(user)
 	return 1
