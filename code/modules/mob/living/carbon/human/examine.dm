@@ -2,7 +2,6 @@
 //this is very slightly better than it was because you can use it more places. still can't do \his[src] though.
 	var/t_on 	= ru_who(TRUE)
 	var/t_ego 	= ru_ego()
-	var/t_na 	= ru_na()
 	var/t_a 	= ru_a()
 
 	var/obscure_name
@@ -63,23 +62,23 @@
 						accessory_msg += " и [weehoo[length(weehoo)]]"
 					else
 						accessory_msg += weehoo[1]
-			. += "Одет[t_a] он[t_a] в [w_uniform.get_examine_string(user)][accessory_msg]."
+			. += "[t_on] одет[t_a] в [w_uniform.get_examine_string(user)][accessory_msg]."
 
 	//head
 	if(head && !(head.obj_flags & EXAMINE_SKIP))
-		. += "На голове у н[t_ego] [head.get_examine_string(user)]."
+		. += "[t_on] одет[t_a] в [head.get_examine_string(user)]."
 
 	//suit/armor
 	if(wear_suit && !(wear_suit.item_flags & EXAMINE_SKIP))
 		//suit/armor storage
 		var/suit_thing
 		if(s_store && !(ITEM_SLOT_SUITSTORE in obscured))
-			suit_thing += " вместе с [s_store.get_examine_string(user)]"
-		. += "На [t_na] надет [wear_suit.get_examine_string(user)][suit_thing]."
+			suit_thing += " и к нему прикреплён [s_store.get_examine_string(user)]"
+		. += "[t_on] одет[t_a] в [wear_suit.get_examine_string(user)][suit_thing]."
 
 	//back
 	if(back && !(back.item_flags & EXAMINE_SKIP))
-		. += "Со спины свисает [back.get_examine_string(user)]."
+		. += "[t_on] держит на своей спине [back.get_examine_string(user)]."
 
 	//Hands
 	for(var/obj/item/I in held_items)
@@ -88,11 +87,11 @@
 
 	//gloves
 	if(gloves && !(ITEM_SLOT_GLOVES in obscured))
-		. += "А на руках у н[t_ego] [gloves.get_examine_string(user)]."
+		. += "[t_on] одет[t_a] в [gloves.get_examine_string(user)]."
 	else if(length(blood_DNA))
 		var/hand_number = get_num_arms(FALSE)
 		if(hand_number)
-			. += "<span class='warning'>[ru_ego(TRUE)] рук[hand_number > 1 ? "и" : "а"] также в крови!</span>"
+			. += "<span class='warning'>[ru_ego(TRUE)] рук[hand_number > 1 ? "и" : "а"] в крови!</span>"
 
 	//handcuffed?
 	if(handcuffed)
@@ -103,23 +102,23 @@
 
 	//mask
 	if(wear_mask && !(ITEM_SLOT_MASK in obscured))
-		. += "На лице у н[t_ego] [wear_mask.get_examine_string(user)]."
+		. += "[t_on] носит [wear_mask.get_examine_string(user)]."
 
 	if(wear_neck && !(ITEM_SLOT_NECK in obscured))
-		. += "На шее у н[t_ego] [wear_neck.get_examine_string(user)]."
+		. += "[t_on] носит на своей шее [wear_neck.get_examine_string(user)]."
 
 	//belt
 	if(belt && !(belt.item_flags & EXAMINE_SKIP))
-		. += "И ещё на поясе у н[t_ego] [belt.get_examine_string(user)]."
+		. += "[t_on] носит на своём поясе [belt.get_examine_string(user)]."
 
 	//shoes
 	if(shoes && !(ITEM_SLOT_FEET in obscured))
-		. += "А на [t_ego] ногах [shoes.get_examine_string(user)]."
+		. += "[t_on] одет[t_a] в [shoes.get_examine_string(user)]."
 
 	//eyes
 	if(!(ITEM_SLOT_EYES in obscured))
 		if(glasses)
-			. += "Также на [t_na] [glasses.get_examine_string(user)]."
+			. += "[t_on] носит [glasses.get_examine_string(user)]."
 		else if((left_eye_color == BLOODCULT_EYE || right_eye_color == BLOODCULT_EYE) && iscultist(src) && HAS_TRAIT(src, TRAIT_CULT_EYES))
 			. += "<span class='warning'><B>[ru_ego(TRUE)] глаза ярко-красные и они горят!</B></span>"
 		else if(HAS_TRAIT(src, TRAIT_HIJACKER))
@@ -129,16 +128,16 @@
 
 	//ears
 	if(ears && !(ITEM_SLOT_EARS_LEFT in obscured))
-		. += "На ушах у н[t_ego] [ears.get_examine_string(user)]."
+		. += "[t_on] носит на своих ушах [ears.get_examine_string(user)]."
 	if(ears_extra && !(ITEM_SLOT_EARS_RIGHT in obscured))
-		. += "На ушах у н[t_ego] [ears_extra.get_examine_string(user)]."
+		. += "[t_on] носит на своих ушах [ears_extra.get_examine_string(user)]."
 	//wearing two ear items makes you look like an idiot
 	if((istype(ears, /obj/item/radio/headset) && !(ITEM_SLOT_EARS_LEFT in obscured)) && (istype(ears_extra, /obj/item/radio/headset) && !(ITEM_SLOT_EARS_RIGHT in obscured)))
 		. += "<span class='warning'>[t_on] выглядит очень глупо ввиду того, что на [t_ego] голове находятся \an [ears.name] и \an [ears_extra.name] одновременно.</span>"
 
 	//ID
 	if(wear_id && !(wear_id.item_flags & EXAMINE_SKIP))
-		. += "И конечно же у н[t_ego] есть [wear_id.get_examine_string(user)]."
+		. += "[t_on] носит [wear_id.get_examine_string(user)] на своей шее."
 	. += "<hr>"
 	//Status effects
 	var/list/status_examines = status_effect_examines()
@@ -153,6 +152,8 @@
 	else
 		dispSize = dispSize / 2
 		. += "[t_on], кажется, около [dispSize] футов в высоту."
+	if(has_status_effect(/datum/status_effect/pregnancy))
+		. += "<b>[t_on] имеет выступающую часть на уровне живота. Кажется, это беременность.\n</b>"
 	//CIT CHANGES START HERE - adds genital details to examine text
 	if(LAZYLEN(internal_organs) && (user.client?.prefs.cit_toggles & GENITAL_EXAMINE))
 		for(var/obj/item/organ/genital/dicc in internal_organs)
