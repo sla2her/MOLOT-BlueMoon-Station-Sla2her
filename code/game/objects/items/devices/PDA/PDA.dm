@@ -194,6 +194,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 /obj/item/pda/proc/update_style(client/C)
 	background_color = C.prefs.pda_color
+	ttone = C.prefs.pda_ringtone || ttone
 	switch(C.prefs.pda_style)
 		if(MONO)
 			font_index = MODE_MONO
