@@ -638,25 +638,21 @@
 ///Generate a report for how much money is on station, as well as the richest crewmember on the station.
 /datum/controller/subsystem/ticker/proc/market_report()
 	var/list/parts = list()
-
 	///This is the richest account on station at roundend.
 	var/datum/bank_account/mr_moneybags
 	///This is the station's total wealth at the end of the round.
 	var/station_vault = 0
 	///How many players joined the round.
 	var/total_players = GLOB.joined_player_list.len
-	var/list/typecache_bank = typecacheof(list(/datum/bank_account/department, /datum/bank_account/remote))
-	for(var/i in SSeconomy.bank_accounts_by_id)
-		var/datum/bank_account/current_acc = SSeconomy.bank_accounts.Copy()
-		if(typecache_bank[current_acc.type])
-			continue
+	for(var/obj/item/card/id/id in SSeconomy.bank_accounts)
+		var/datum/bank_account/current_acc = SSeconomy.bank_accounts[id]
 		station_vault += current_acc.account_balance
 		if(!mr_moneybags || mr_moneybags.account_balance < current_acc.account_balance)
 			mr_moneybags = current_acc
 	parts += "<div class='panel stationborder'><span class='header'>Экономический отчёт</span><br>"
-	parts += "Всего было заработано [station_vault] кредитов экипажем.<br>"
+	parts += "Всего было заработано [SSeconomy.station_total] кредитов экипажем.<br>"
 	if(total_players > 0)
-		parts += "В среднем каждый заработал [station_vault/total_players] кредитов.<br>"
+		parts += "В среднем каждый заработал [SSeconomy.station_total/total_players] кредитов.<br>"
 		log_econ("Roundend credit total: [station_vault] credits. Average Credits: [station_vault/total_players]")
 	if(mr_moneybags)
 		parts += "Самый богатый член экипажа был <b>[mr_moneybags.account_holder] с [mr_moneybags.account_balance]</b> заработанными кредитами!</div>"

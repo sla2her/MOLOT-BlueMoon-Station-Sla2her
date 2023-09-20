@@ -12,7 +12,7 @@
 	announce_when	= 400
 
 	minimum_required = 1
-	role_name = "alien larva"
+	role_name = "Личинка Ксеноморфа"
 
 	// 50% chance of being incremented by one
 	var/spawncount = 1

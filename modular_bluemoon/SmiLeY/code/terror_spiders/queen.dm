@@ -296,6 +296,7 @@
 		return
 	canlay -= numlings
 	eggslaid += numlings
+	playsound(src.loc, 'sound/creatures/terrorspiders/web.ogg', 50, 1)
 	switch(eggtype)
 		if(TS_DESC_KNIGHT)
 			DoLayTerrorEggs(/mob/living/simple_animal/hostile/poison/terror_spider/knight, numlings)

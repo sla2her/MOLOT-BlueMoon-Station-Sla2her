@@ -2762,6 +2762,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
+"sM" = (
+/obj/effect/landmark/xeno_spawn,
+/turf/open/floor/plasteel,
+/area/commons/storage/primary)
 "sN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -8475,13 +8479,13 @@ bE
 cV
 fA
 dt
-dJ
+sM
 dD
 dJ
 dI
 dJ
 YL
-dJ
+sM
 dJ
 dJ
 ea
