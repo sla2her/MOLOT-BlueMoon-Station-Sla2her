@@ -866,6 +866,11 @@
 	desc = "White vulpkanin on the background of a green cross, one of the interplanetary symbol of health and aid."
 	icon_state = "poster_vulp3"
 
+/obj/structure/sign/poster/contraband/vulp4
+	name = "White Wolf Aiko"
+	desc = "Белоснежная вульпиниха в тёмных стрингах. Присмотревшись, вы обнаружили цену в Девятьсот Тысяч Кредитов на Универсального Клона Айко."
+	icon_state = "poster_vulp4"
+
 /obj/structure/sign/poster/contraband/hiding
 	name = "Hiding"
 	desc = "A poster showing the peson  hiding in a closet.."
