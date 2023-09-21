@@ -400,9 +400,7 @@ SUBSYSTEM_DEF(shuttle)
 		emergency.mode = SHUTTLE_STRANDED
 		emergency.timer = null
 		emergency.sound_played = FALSE
-		priority_announce("Hostile environment detected. \
-			Departure has been postponed indefinitely pending \
-			conflict resolution.", null, 'sound/misc/notice1.ogg', "Priority")
+		priority_announce("На станции обнаружено особо враждебное присутствие. Отлет отложен на неопределенный срок до разрешения конфликта.", null, 'sound/misc/notice1.ogg', "Priority")
 	if(!emergencyNoEscape && (emergency.mode == SHUTTLE_STRANDED))
 		emergency.mode = SHUTTLE_DOCKED
 		emergency.setTimer(emergencyDockTime)
