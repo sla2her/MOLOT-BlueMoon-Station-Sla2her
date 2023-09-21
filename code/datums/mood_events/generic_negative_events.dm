@@ -123,7 +123,7 @@
 
 /datum/mood_event/family_heirloom_missing
 	description = "<span class='warning'>Я скучаю по своей семейной реликвии...</span>\n"
-	mood_change = -4
+	mood_change = -8
 
 /datum/mood_event/healsbadman
 	description = "<span class='warning'>Чувствую себя намного лучше, но неприятный осадок ещё остался.</span>\n"
