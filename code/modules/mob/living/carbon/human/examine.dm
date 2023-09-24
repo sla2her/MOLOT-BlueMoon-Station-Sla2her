@@ -347,16 +347,16 @@
 		if(appears_dead)
 			bleed_text = list("<span class='deadsay'><B>Кровь брызгает струйками из [ru_ego(FALSE)] конечности -")
 		else
-			bleed_text = list("<B>[t_on] имеет кровотечение в [ru_ego(FALSE)] конечности -")
+			bleed_text = list("<B>У н[ru_ego(FALSE)] кровотечение в области")
 
 		switch(num_bleeds)
 			if(1 to 2)
-				bleed_text += " [ru_otkuda_zone(bleeding_limbs[1].name)][num_bleeds == 2 ? " и [ru_otkuda_zone(bleeding_limbs[2].name)]" : ""]"
+				bleed_text += " [ru_otkuda_zone(bleeding_limbs[1].ru_name)][num_bleeds == 2 ? " и [ru_otkuda_zone(bleeding_limbs[2].ru_name)]" : ""]"
 			if(3 to INFINITY)
 				for(var/i in 1 to (num_bleeds - 1))
 					var/obj/item/bodypart/body_part = bleeding_limbs[i]
 					bleed_text += " [ru_otkuda_zone(body_part.ru_name)],"
-				bleed_text += " и [ru_otkuda_zone(bleeding_limbs[num_bleeds].name)]"
+				bleed_text += " и [ru_otkuda_zone(bleeding_limbs[num_bleeds].ru_name)]"
 
 		if(appears_dead)
 			bleed_text += ", но очень медленно.</span></B>\n"
