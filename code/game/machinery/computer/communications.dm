@@ -100,8 +100,9 @@
 	obj_flags |= EMAGGED
 	if (authenticated)
 		authorize_access = get_all_accesses()
-	to_chat(user, span_danger("You scramble the communication routing circuits!"))
+	to_chat(user, span_danger("Вы искажаете схемы маршрутизации коммуникаций!"))
 	playsound(src, 'sound/machines/terminal_alert.ogg', 50, FALSE)
+	log_admin("[key_name(usr)] emagged [src] at [AREACOORD(src)]")
 	icon_screen = "commsyndie"
 	SSshuttle.shuttle_purchase_requirements_met["emagged"] = TRUE
 

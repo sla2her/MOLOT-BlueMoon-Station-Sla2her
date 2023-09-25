@@ -125,6 +125,7 @@ GLOBAL_LIST_INIT(blacklisted_borg_hats, typecacheof(list( //Hats that don't real
 		return
 
 	to_chat(user, "<span class='notice'>You emag [src]'s interface.</span>")
+	log_admin("[key_name(usr)] emagged [src] at [AREACOORD(src)]")
 	emag_cooldown = world.time + 100
 
 	if(is_servant_of_ratvar(src))

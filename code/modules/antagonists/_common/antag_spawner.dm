@@ -339,9 +339,9 @@
 		else
 			R = new /mob/living/silicon/robot/modules/syndicate(T) //Assault borg by default
 
-	var/brainfirstname = pick(GLOB.first_names_male)
+	var/brainfirstname = pick(GLOB.first_names_female)
 	if(prob(50))
-		brainfirstname = pick(GLOB.first_names_female)
+		brainfirstname = pick(GLOB.first_names_male)
 	var/brainopslastname = pick(GLOB.last_names)
 	var/brainopsname = "[brainfirstname] [brainopslastname]"
 
