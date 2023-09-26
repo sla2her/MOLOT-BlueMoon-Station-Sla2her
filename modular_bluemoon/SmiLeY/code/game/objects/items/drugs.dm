@@ -178,7 +178,6 @@
 	description = "Пахнет интересно."
 	color = "#999922"
 	reagent_state = LIQUID
-	metabolization_rate =
 	taste_description = "piss"
 	var/obj/effect/hallucination/simple/ovoshi/fruit
 	var/obj/effect/hallucination/simple/water/flood
