@@ -328,7 +328,6 @@
 	var/area/A = get_area(src)
 	if(A)
 		on = FALSE
-//		A.update_lights()
 	QDEL_NULL(cell)
 	return ..()
 
@@ -701,7 +700,7 @@
 	L.switchcount = switchcount
 	switchcount = 0
 
-	L.update()
+	INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, update))
 	L.forceMove(loc)
 
 	if(user) //puts it in our active hand
@@ -916,7 +915,7 @@
 			if(L.status)
 				continue
 			L.fire_mode = FALSE
-			L.update()
+			INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, update))
 	if(current_apc)
 		RegisterSignal(current_area, COMSIG_AREA_POWER_CHANGE, PROC_REF(update), override = TRUE)
 

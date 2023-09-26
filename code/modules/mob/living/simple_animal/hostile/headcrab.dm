@@ -19,22 +19,23 @@
 	attack_sound = 'sound/creatures/headcrab_attack.ogg'
 	speak_emote = list("hisses")
 	var/is_zombie = 0
-	stat_attack = DEAD // Necessary for them to attack (zombify) dead humans
 	robust_searching = 1
 	var/host_species = ""
 	var/list/human_overlays = list()
 
-/mob/living/simple_animal/hostile/headcrab/Life(seconds, times_fired)
+/mob/living/simple_animal/hostile/headcrab/BiologicalLife(seconds, times_fired)
 	if(..() && !stat)
 		if(!is_zombie && isturf(src.loc))
 			for(var/mob/living/carbon/human/H in oview(src, 1)) //Only for corpse right next to/on same tile
-				if(H.stat == DEAD || (!H.check_death_method() && H.health <= HEALTH_THRESHOLD_DEAD))
+				if(!H.get_item_by_slot(ITEM_SLOT_HEAD) && prob(50) && Zombify(H))
+					visible_message("<span class='danger'>[src] запрыгивает на голову [H], вгрызясь своими лапками в затылок жертвы!</span>")
 					Zombify(H)
+					H.death()
 					break
 		if(times_fired % 4 == 0)
 			for(var/mob/living/simple_animal/K in oview(src, 1)) //Only for corpse right next to/on same tile
-				if(K.stat == DEAD || (!K.check_death_method() && K.health <= HEALTH_THRESHOLD_DEAD))
-					visible_message("<span class='danger'>[src] consumes [K] whole!</span>")
+				if(K.stat == DEAD)
+					visible_message("<span class='danger'>[src] пожирает [K]!</span>")
 					if(health < maxHealth)
 						health += 10
 					qdel(K)
@@ -53,8 +54,6 @@
 	ranged_cooldown = world.time + ranged_cooldown_time
 
 /mob/living/simple_animal/hostile/headcrab/proc/Zombify(mob/living/carbon/human/H)
-	if(!H.check_death_method())
-		H.death()
 	is_zombie = TRUE
 	if(H.wear_suit)
 		var/obj/item/clothing/suit/armor/A = H.wear_suit
@@ -64,8 +63,8 @@
 	health = maxHealth
 	name = "zombie"
 	desc = "A corpse animated by the alien being on its head."
-	melee_damage_lower = 10
-	melee_damage_upper = 15
+	melee_damage_lower += 10
+	melee_damage_upper += 15
 	ranged = 0
 	stat_attack = CONSCIOUS // Disables their targeting of dead mobs once they're already a zombie
 	icon = H.icon
@@ -82,7 +81,7 @@
 	human_overlays = H.overlays
 	update_icons()
 	H.forceMove(src)
-	visible_message("<span class='warning'>The corpse of [H.name] suddenly rises!</span>")
+	visible_message("<span class='warning'>[H.name] восстаёт из мёртвых!</span>")
 
 /mob/living/simple_animal/hostile/headcrab/death()
 	..()

@@ -529,7 +529,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	if(area_emergency_mode) //Fires are not legally allowed if the power is off
 		return
 	for(var/obj/machinery/light/L in get_sub_areas_contents(src))
-		L.update()
+		INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, update))
 
 /area/proc/updateicon()
 /**

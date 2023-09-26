@@ -80,7 +80,7 @@
 
 	if (!needs_update)
 		needs_update = TRUE
-		GLOB.lighting_update_corners += src
+		SSlighting.corners_queue += src
 
 /datum/lighting_corner/proc/update_objects()
 	// Cache these values a head of time so 4 individual lighting objects don't all calculate them individually.
@@ -106,7 +106,7 @@
 	#endif
 	cache_mx = round(mx, LIGHTING_ROUND_VALUE)
 
-	#define QUEUE(turf) if(turf?.lighting_object && !turf.lighting_object.needs_update) { turf.lighting_object.needs_update = TRUE; GLOB.lighting_update_objects += turf.lighting_object }
+	#define QUEUE(turf) if(turf?.lighting_object && !turf.lighting_object.needs_update) { turf.lighting_object.needs_update = TRUE; SSlighting.objects_queue += turf.lighting_object }
 	QUEUE(northeast)
 	QUEUE(northwest)
 	QUEUE(southeast)
