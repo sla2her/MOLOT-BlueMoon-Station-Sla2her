@@ -402,6 +402,7 @@ GLOBAL_VAR_INIT(floor_cluwnes, 0)
 		H.unequip_everything()//more runtime prevention
 		if(prob(25))
 			H.death(FALSE)
+			qdel(src)
 		else
 			H.cluwneify()
 			H.adjustBruteLoss(30)
@@ -413,6 +414,7 @@ GLOBAL_VAR_INIT(floor_cluwnes, 0)
 			H.anchored = initial(H.anchored)
 			H.blur_eyes(10)
 			animate(H.client,color = old_color, time = 20)
+			qdel(src)
 
 	eating = FALSE
 	switch_stage = switch_stage * 0.75 //he gets faster after each feast
