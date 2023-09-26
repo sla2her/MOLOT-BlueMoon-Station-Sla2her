@@ -1289,7 +1289,7 @@
 /obj/structure/closet/secure_closet{
 	icon_state = "sec";
 	name = "brig officer gear locker";
-	req_access_txt = "151"
+	req_access_txt = "150"
 	},
 /obj/item/storage/belt/security/full,
 /obj/item/gun/energy/disabler,

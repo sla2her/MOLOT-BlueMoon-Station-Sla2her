@@ -30,16 +30,13 @@
 	deathmessage = "suddenly breaks apart."
 	del_on_death = 1
 	var/passive_mode = TRUE // if true, don't target anything.
+	var/datum/effect_system/trail_follow/ion/ion_trail
 
 /mob/living/simple_animal/hostile/malf_drone/Initialize(mapload)
 	. = ..()
-	RegisterSignal(src, COMSIG_MOVABLE_MOVED, PROC_REF(create_trail))
+	ion_trail = new
+	ion_trail.set_up(src)
 	update_icons()
-
-/mob/living/simple_animal/hostile/malf_drone/proc/create_trail(datum/source, atom/oldloc, _dir, forced)
-	var/turf/T = get_turf(oldloc)
-	if(!has_gravity(T))
-		new /obj/effect/particle_effect/ion_trails(T, _dir)
 
 /mob/living/simple_animal/hostile/malf_drone/Process_Spacemove(check_drift = 0)
 	return 1
