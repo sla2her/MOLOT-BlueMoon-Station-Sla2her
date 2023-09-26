@@ -178,7 +178,8 @@
 	description = "Пахнет интересно."
 	color = "#999922"
 	reagent_state = LIQUID
-	taste_description = "моча"
+	metabolization_rate =
+	taste_description = "piss"
 	var/obj/effect/hallucination/simple/ovoshi/fruit
 	var/obj/effect/hallucination/simple/water/flood
 	var/obj/effect/hallucination/simple/ovoshi/statues/statuya
@@ -221,8 +222,8 @@
 				to_chat(C, "<b><big>Или нет?!</big></b>")
 				if(prob(50))
 					spawn(50)
-						to_chat(C, "<b><big>А-А-А-А-А-А-А-А-А-А-А-А-А-А!</big></b>")
-						C.reagents.add_reagent_list(list(/datum/reagent/drug/labebium = 25))
+						to_chat(C, "<b><big>А-А-А-А-А-А-А-А-А-А-А-А-А-А!!!</big></b>")
+						C.reagents.add_reagent_list(list(/datum/reagent/drug/labebium = 10))
 
 /datum/reagent/drug/labebium/proc/create_flood(mob/living/carbon/C)
 	for(var/turf/T in orange(14,C))
@@ -273,7 +274,7 @@
 						SEND_SOUND(H.client, sound)
 						create_ovosh(H)
 						H.hud_used.show_hud(HUD_STYLE_NOHUD)
-						H.emote("agony")
+						H.emote("realagony")
 						tripsoundstarted = TRUE
 				if(31 to INFINITY)
 					if(prob(80) && (H.mobility_flags & MOBILITY_MOVE) && !ismovable(H.loc))
@@ -293,7 +294,7 @@
 								sound.environment = 23
 								sound.volume = 100
 								SEND_SOUND(H.client, sound)
-								H.emote("agony")
+								H.emote("realagony")
 								H.overlay_fullscreen("labebium", /atom/movable/screen/fullscreen/labeb, rand(1, 23))
 								H.clear_fullscreen("labebium", rand(15, 60))
 								new /datum/hallucination/delusion(H, TRUE, duration = 150, skip_nearby = FALSE, custom_name = H.name)
@@ -301,12 +302,12 @@
 									spawn(30)
 										H.overlay_fullscreen("labebium", /atom/movable/screen/fullscreen/labeb, rand(1, 23))
 										H.clear_fullscreen("labebium", rand(15, 60))
-										H.emote("agony")
+										H.emote("realagony")
 										if(prob(50))
 											spawn(30)
 												H.overlay_fullscreen("labebium", /atom/movable/screen/fullscreen/labeb, rand(1, 23))
 												H.clear_fullscreen("labebium", rand(15, 60))
-												H.emote("agony")
+												H.emote("realagony")
 							if(prob(40))
 								H.stuttering = 90
 								animate(whole_screen, color = color_matrix_rotate_hue(rand(0, 360)), transform = turn(matrix(), rand(1,rotation)), time = 150, easing = CIRCULAR_EASING)
@@ -454,7 +455,7 @@
 	name = "Лабебиум"
 	desc = "Выпей меня."
 	icon_state = "pill5"
-	list_reagents = list(/datum/reagent/drug/labebium = 15)
+	list_reagents = list(/datum/reagent/drug/labebium = 10)
 
 /obj/item/storage/pill_bottle/labebium
 	name = "Лабебиум"
