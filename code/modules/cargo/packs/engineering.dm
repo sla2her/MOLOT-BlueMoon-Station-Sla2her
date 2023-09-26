@@ -156,23 +156,23 @@
 
 /datum/supply_pack/engineering/bsa
 	name = "Bluespace Artillery Parts"
-	desc = "Гордость Центрального коммандования Нанотрасен. Легендарная артиллерийская пушка Bluespace - это разрушительный подвиг человеческой инженерии и свидетельство решимости военного времени. Для правильного строительства требуются высокоразвитые исследования. "
+	desc = "Гордость Центрального командования. Легендарная артиллерийская пушка Bluespace - это разрушительный подвиг человеческой инженерии и свидетельство решимости военного времени. Для правильного строительства требуются высокоразвитые исследования. "
 	cost = 15000
 	special = TRUE
 	contains = list(/obj/item/circuitboard/machine/bsa/front,
 					/obj/item/circuitboard/machine/bsa/middle,
 					/obj/item/circuitboard/machine/bsa/back,
 					/obj/item/circuitboard/computer/bsa_control)
-	crate_name= "bluespace artillery parts crate"
+	crate_name= "Bluespace Artillery Parts crate"
 
 /datum/supply_pack/engineering/bluespace_tap
-	name = "Bluespace Artillery Parts"
-	desc = "Гордость Центрального коммандования Нанотрасен. Легендарная артиллерийская пушка Bluespace - это разрушительный подвиг человеческой инженерии и свидетельство решимости военного времени. Для правильного строительства требуются высокоразвитые исследования. "
+	name = "Bluespace Harvester Parts"
+	desc = "Гордость Центрального Командования. Собиратель Блюспейс-Частиц."
 	cost = 15000
 	special = TRUE
 	contains = list(/obj/item/circuitboard/machine/bluespace_tap,
 					/obj/item/paper/bluespace_tap)
-	crate_name= "bluespace artillery parts crate"
+	crate_name= "Bluespace Harvester parts crate"
 
 /datum/supply_pack/engineering/dna_vault
 	name = "DNA Vault Parts"

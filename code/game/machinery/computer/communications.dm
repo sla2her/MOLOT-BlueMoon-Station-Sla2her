@@ -326,6 +326,7 @@
 			var/line_two = reject_bad_text(params["lineTwo"] || "", MAX_STATUS_LINE_LENGTH)
 			post_status("alert", "blank")
 			post_status("message", line_one, line_two)
+			log_admin("[key_name(usr)] меняет текст в строке Статус-Дисплея: [line_one] & [line_two]")
 			last_status_display = list(line_one, line_two)
 			playsound(src, "terminal_type", 50, FALSE)
 		if ("setStatusPicture")

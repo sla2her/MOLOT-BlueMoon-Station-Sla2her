@@ -35,6 +35,9 @@
 	density = 0
 	anchored = 1
 	light_range = 3
+	pixel_x = -96
+	pixel_y = -96
+	layer = BYOND_LIGHTING_LAYER
 
 /obj/effect/tear/Initialize(mapload)
 	. = ..()

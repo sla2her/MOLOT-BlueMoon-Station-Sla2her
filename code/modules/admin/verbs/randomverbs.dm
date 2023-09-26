@@ -1045,7 +1045,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	id_select += "</select>"
 
 	var/dat = {"
-	<html><head><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><title>Create Outfit</title></head><body>
+	<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><title>Create Outfit</title></head><body>
 	<form name="outfit" action="byond://?src=[REF(src)];[HrefToken()]" method="get">
 	<input type="hidden" name="src" value="[REF(src)]">
 	[HrefTokenFormField()]

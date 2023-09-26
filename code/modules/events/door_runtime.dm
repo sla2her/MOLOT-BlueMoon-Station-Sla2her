@@ -4,7 +4,7 @@
 	max_occurrences = 1
 	min_players = 10
 	weight = 50
-	category = EVENT_CATEGORY_BUREAUCRATIC
+	category = EVENT_CATEGORY_AI
 
 /datum/round_event/door_runtime
 

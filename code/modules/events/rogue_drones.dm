@@ -1,10 +1,10 @@
 /datum/round_event_control/rogue_drone
-	name = "Random Human-level Intelligence"
+	name = "Rogue Drones"
+	description = "Группа боевых дронов, оперируемых с борта Одного из Боевых Фрегатов Пакта, не вернулась с зачистки сектора. В случае контакта с дронами проявляйте осторожность."
 	typepath = /datum/round_event/rogue_drone
 	weight = 50
 	max_occurrences = 2
 	category = EVENT_CATEGORY_ENTITIES
-
 
 /datum/round_event/rogue_drone
 	start_when = 10
