@@ -398,10 +398,10 @@ GLOBAL_VAR_INIT(floor_cluwnes, 0)
 	animate(H.client,color = red_splash, time = 10, easing = SINE_EASING|EASE_OUT)
 	for(var/turf/T in orange(H, 4))
 		H.add_splatter_floor(T)
-	if(do_after(src, 50, target = H))
+	if(do_after(src, 100, target = H))
 		H.unequip_everything()//more runtime prevention
-		if(prob(75))
-			H.gib(FALSE)
+		if(prob(25))
+			H.death(FALSE)
 		else
 			H.cluwneify()
 			H.adjustBruteLoss(30)

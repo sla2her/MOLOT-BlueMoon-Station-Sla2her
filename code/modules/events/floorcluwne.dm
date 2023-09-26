@@ -4,6 +4,7 @@
 	max_occurrences = 1
 	min_players = 20
 	weight = 5
+	category = EVENT_CATEGORY_ANOMALIES
 
 /datum/round_event/floor_cluwne/start()
 	var/list/spawn_locs = list()
