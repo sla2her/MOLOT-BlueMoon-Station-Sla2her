@@ -37,7 +37,6 @@
 	value = -1
 	mood_quirk = TRUE
 	medical_record_text = "Пациент демонстрирует неестественную привязанность к семейной реликвии."
-	medical_record_text = "Пациент демонстрирует неестественную привязанность к семейной реликвии."
 	var/obj/item/heirloom
 	var/where
 	processing_quirk = TRUE
@@ -142,9 +141,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	gain_text = "<span class='danger'>Объекты вдали вас расплываются.</span>"
 	lose_text = "<span class='notice'>Ваше зрение приходит в норму.</span>"
 	medical_record_text = "Для того, чтобы нивелировать эффект близорукости, пациенту требуются очки."
-	gain_text = "<span class='danger'>Объекты вдали вас расплываются.</span>"
-	lose_text = "<span class='notice'>Ваше зрение приходит в норму.</span>"
-	medical_record_text = "Для того, чтобы нивелировать эффект близорукости, пациенту требуются очки."
 
 /datum/quirk/nearsighted/add()
 	quirk_holder.become_nearsighted(ROUNDSTART_TRAIT)
@@ -159,8 +155,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Никтофобия"
 	desc = "Вы боитесь тьмы и осторожничаете, пребывая в ней."
 	value = -1
-	medical_record_text = "Пациент боится темноты. (Серьёзно?)"
-	medical_record_text = "Пациент боится темноты. (Серьёзно?)"
+	medical_record_text = "Пациент боится темноты."
 
 /datum/quirk/nyctophobia/add()
 	RegisterSignal(quirk_holder, COMSIG_MOVABLE_MOVED, .proc/on_holder_moved)
@@ -199,9 +194,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Светочувствительность"
 	desc = "Яркий свет вызывает у вас раздражение. Глаза начинают слезиться, кожа чешется под действием ионизирующего излучения, а волосы становятся сухими и непослушными. Возможно, это болезнь. Если бы только Nanotrasen учитывали ваши потребности..."
 	value = -1
-	gain_text = "<span class='danger'>Яркий свет раздражает вас.</span>"
-	lose_text = "<span class='notice'>Вы не боитесь не бояться света.</span>"
-	medical_record_text = "Несмотря на предупреждения, пациент отказывается включать свет, что приводит к падению с лестницы прямо в подвал."
 	gain_text = "<span class='danger'>Яркий свет раздражает вас.</span>"
 	lose_text = "<span class='notice'>Вы не боитесь не бояться света.</span>"
 	medical_record_text = "Несмотря на предупреждения, пациент отказывается включать свет, что приводит к падению с лестницы прямо в подвал."
@@ -247,14 +239,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/nonviolent
 	name = "Пацифист"
 	desc = "Насилие противно вам настолько, что вы не можете никому навредить."
-	name = "Пацифист"
-	desc = "Насилие противно вам настолько, что вы не можете никому навредить."
 	value = -2
 	mob_trait = TRAIT_PACIFISM
-	gain_text = "<span class='danger'>Вы отвергаете саму мысль о возможном насилии!</span>"
-	lose_text = "<span class='notice'>Вам кажется, что вы снова можете постоять за себя.</span>"
-	medical_record_text = "Пациент крайне миролюбивый и не может заставить себя сделать кому-то больно."
-	antag_removal_text = "Ваша антагонистическая натура привела к отказу от пацифизма."
 	gain_text = "<span class='danger'>Вы отвергаете саму мысль о возможном насилии!</span>"
 	lose_text = "<span class='notice'>Вам кажется, что вы снова можете постоять за себя.</span>"
 	medical_record_text = "Пациент крайне миролюбивый и не может заставить себя сделать кому-то больно."
@@ -305,11 +291,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = -1
 	mob_trait = TRAIT_POOR_AIM
 	medical_record_text = "Обе руки пациента подвержены тремору."
-	medical_record_text = "Обе руки пациента подвержены тремору."
 
 /datum/quirk/prosopagnosia
-	name = "Прозопагнозия"
-	desc = "Расстройство не позволяет вам различать лица, совсем."
 	name = "Прозопагнозия"
 	desc = "Расстройство не позволяет вам различать лица, совсем."
 	value = -1
@@ -382,7 +365,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	if(prob(85) || (istype(mind_check) && mind_check.mind))
 		return
 
-	addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, quirk_holder, "<span class='smallnotice'>You make eye contact with [A].</span>"), 3)
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, quirk_holder, "<span class='smallnotice'>Ваши взгляды пересекаются с [A].</span>"), 3)
 
 /datum/quirk/social_anxiety/proc/eye_contact(datum/source, mob/living/other_mob, triggering_examiner)
 	if(prob(75))
