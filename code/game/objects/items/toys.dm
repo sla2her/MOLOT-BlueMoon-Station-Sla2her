@@ -1568,7 +1568,17 @@
 	icon = 'icons/obj/machines/arcade.dmi'
 	icon_state = "prizeball_1"
 	var/opening = 0
-	var/possible_contents = list(/obj/effect/spawner/lootdrop/figure, /obj/effect/spawner/lootdrop/therapy)
+	var/possible_contents = list(/obj/effect/spawner/lootdrop/figure, /obj/effect/spawner/lootdrop/therapy, /obj/item/toy/syndicateballoon)
+
+/obj/item/toy/prizeball/figure
+	name = "Action Figure Capsule"
+	desc = "Contains one action figure!"
+	possible_contents = list(/obj/effect/spawner/lootdrop/figure)
+
+/obj/item/toy/prizeball/therapy
+	name = "Therapy Doll Capsule"
+	desc = "Contains one squishy therapy doll."
+	possible_contents = list(/obj/effect/spawner/lootdrop/therapy)
 
 /obj/effect/spawner/lootdrop/figure
 	name = "Random Action Figure"
@@ -1576,8 +1586,9 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "nuketoy"
 
-/obj/effect/spawner/lootdrop/figure/should_spawn_on_init()
-	return pick(subtypesof(/obj/item/toy/figure))
+/obj/effect/spawner/lootdrop/figure/Initialize(mapload)
+	loot = typecacheof(/obj/item/toy/figure)
+	. = ..()
 
 /obj/effect/spawner/lootdrop/therapy
 	name = "Random Therapy Doll"
@@ -1585,16 +1596,33 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "therapyred"
 
-/obj/effect/spawner/lootdrop/therapy/should_spawn_on_init()
-	return pick(subtypesof(/obj/item/toy/therapy)) //exclude the base type.
+/obj/effect/spawner/lootdrop/therapy/Initialize(mapload)
+	loot = typecacheof(/obj/item/toy/therapy)
+	. = ..()
 
-/obj/item/toy/prizeball/figure
-	name = "action figure capsule"
-	desc = "Contains one action figure!"
-	possible_contents = list(/obj/effect/spawner/lootdrop/figure)
+/obj/item/toy/prizeball/New()
+	..()
+	icon_state = pick("prizeball_1","prizeball_2","prizeball_3")
+
+/obj/item/toy/prizeball/attack_self(mob/user as mob)
+	if(opening)
+		return
+	opening = 1
+	playsound(loc, 'sound/items/bubblewrap.ogg', 30, TRUE)
+	icon_state = "prizeconfetti"
+	src.color = pick(GLOB.random_color_list)
+	var/prize_inside = pick(possible_contents)
+	spawn(10)
+		user.temporarilyRemoveItemFromInventory(src)
+		if(ispath(prize_inside,/obj/item/stack))
+			var/amount = pick(5, 10, 15, 25, 50)
+			new prize_inside(user.loc, amount)
+		else
+			new prize_inside(user.loc)
+		qdel(src)
 
 /obj/item/toy/prizeball/therapy
-	name = "therapy doll capsule"
+	name = "Therapy Doll Capsule"
 	desc = "Contains one squishy therapy doll."
 	possible_contents = list(/obj/effect/spawner/lootdrop/therapy)
 
@@ -1617,7 +1645,7 @@
 
 /obj/item/toy/therapy/attack_self(mob/user)
 	if(cooldown < world.time - 8)
-		to_chat(user, "<span class='notice'>You relieve some stress with \the [src].</span>")
+		to_chat(user, "<span class='notice'>Вы сжимаете анти-стресс игрушку - [src].</span>")
 		playsound(user, 'sound/items/squeaktoy.ogg', 20, 1)
 		SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "plushpet", /datum/mood_event/plushpet)
 		cooldown = world.time
