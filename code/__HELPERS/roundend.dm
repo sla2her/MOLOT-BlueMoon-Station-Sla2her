@@ -308,7 +308,6 @@
 
 	CHECK_TICK
 
-	// handle_hearts()
 	handle_hearts()
 
 	if(CONFIG_GET(flag/reveal_everything))
