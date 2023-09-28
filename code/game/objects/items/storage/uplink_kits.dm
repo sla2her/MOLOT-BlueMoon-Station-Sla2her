@@ -596,6 +596,7 @@
 /obj/item/storage/box/inteq_kit/chameleon_hardsuit
 	name = "Oxygen Deprivation First Aid Kit"
 	desc = "A first aid kit that contains four pills of salbutamol, which is able to counter injuries caused by suffocation. Also contains a health analyzer to determine the health of the patient."
+	icon = 'icons/obj/storage.dmi'
 	icon_state = "firstaid-o2"
 	item_state = "firstaid-o2"
 

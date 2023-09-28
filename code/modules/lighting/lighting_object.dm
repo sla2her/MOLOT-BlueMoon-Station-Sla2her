@@ -29,12 +29,12 @@
 		space_tile.update_starlight()
 
 	needs_update = TRUE
-	SSlighting.objects_queue += src
+	GLOB.lighting_update_objects += src
 
 /datum/lighting_object/Destroy(force)
 	if (!force)
 		return QDEL_HINT_LETMELIVE
-	SSlighting.objects_queue -= src
+	GLOB.lighting_update_objects -= src
 	if (isturf(affected_turf))
 		affected_turf.lighting_object = null
 		affected_turf.luminosity = 1
