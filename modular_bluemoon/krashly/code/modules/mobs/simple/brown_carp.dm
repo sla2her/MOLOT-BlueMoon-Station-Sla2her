@@ -9,5 +9,5 @@
 	icon = 'modular_bluemoon/krashly/icons/mob/simple_mob/brown_carp_beret.dmi'
 
 /mob/living/simple_animal/hostile/carp/brown/beret/drop_loot()
-	var/obj/item/clothing/suit/armor/inteq/vanguard/H = new /obj/item/clothing/suit/armor/inteq/vanguard(src.loc)
-	var/obj/item/clothing/head/HoS/inteq_vanguard/B = new /obj/item/clothing/head/HoS/inteq_vanguard(src.loc)
+	new /obj/item/clothing/suit/armor/inteq/vanguard(src.loc)
+	new /obj/item/clothing/head/HoS/inteq_vanguard(src.loc)

@@ -104,14 +104,6 @@
 	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = null
 	var/datum/action/item_action/advanced/hook_upgrade/hook_action  = null
 
-/obj/item/gun/magic/contractor_hook/Destroy()
-	. = ..()
-	suit.scorpion = null
-	suit = null
-	hook_action.action_ready = FALSE
-	hook_action.toggle_button_on_off()
-	hook_action = null
-
 /obj/item/gun/magic/contractor_hook/can_trigger_gun(mob/living/user)
 	if(!hook_action.IsAvailable(show_message = TRUE, ignore_ready = TRUE))
 		return FALSE
