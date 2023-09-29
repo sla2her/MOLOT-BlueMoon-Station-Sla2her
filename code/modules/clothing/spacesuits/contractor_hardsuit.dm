@@ -5,7 +5,8 @@
 	desc = "A top-tier syndicate helmet, a favorite of Syndicate field Contractors. Property of the Gorlex Marauders, with assistance from Cybersun Industries."
 	icon_state = "hardsuit0-contractor"
 	item_state = "contractor_helm"
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 30, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
+	hardsuit_type = "contractor"
+	armor = list(MELEE = 40, BULLET = 50, LASER = 30, ENERGY = 30, BOMB = 35, BIO = 100, RAD = 75, FIRE = 75, ACID = 90, WOUND = 40)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 
 /obj/item/clothing/suit/space/hardsuit/contractor
@@ -13,17 +14,13 @@
 	desc = "A top-tier syndicate hardsuit, a favorite of Syndicate field Contractors. Property of the Gorlex Marauders, with assistance from Cybersun Industries."
 	icon_state = "hardsuit-contractor"
 	item_state = "contractor_hardsuit"
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 30, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
+	armor = list(MELEE = 40, BULLET = 50, LASER = 30, ENERGY = 30, BOMB = 35, BIO = 100, RAD = 75, FIRE = 75, ACID = 90, WOUND = 40)
 	slowdown = 0
 	w_class = WEIGHT_CLASS_NORMAL
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/contractor
 	jetpack = /obj/item/tank/jetpack/suit
 	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/transforming/energy, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
-	actions_types = list(
-		/datum/action/item_action/toggle_helmet,
-		/datum/action/item_action/advanced/chameleon_upgrade,
-		/datum/action/item_action/advanced/hook_upgrade
-		)
+	actions_types = list(/datum/action/item_action/toggle_helmet, /datum/action/item_action/advanced/chameleon_upgrade, /datum/action/item_action/advanced/hook_upgrade)
 	//working as ninja hook, deleted when droped
 	var/obj/item/gun/magic/contractor_hook/scorpion
 	var/disguise = FALSE
@@ -33,38 +30,22 @@
 	QDEL_NULL(scorpion)
 
 /obj/item/clothing/suit/space/hardsuit/contractor/ui_action_click(user, action)
-	switch(action)
-		if(/datum/action/item_action/toggle_helmet)
-			ToggleHelmet()
-			return TRUE
-		if(/datum/action/item_action/advanced/hook_upgrade)
-			toggle_hook()
-			return TRUE
-		if(/datum/action/item_action/advanced/chameleon_upgrade)
-			toggle_chameleon()
-			return TRUE
-	return FALSE
+	if(istype(action, /datum/action/item_action/toggle_helmet))
+		ToggleHelmet()
+		return TRUE
+	if(istype(action, /datum/action/item_action/advanced/chameleon_upgrade))
+		toggle_chameleon()
+		return TRUE
+	if(istype(action, /datum/action/item_action/advanced/hook_upgrade))
+		toggle_hook()
+		return TRUE
+	else
+		return FALSE
 
 /obj/item/clothing/suit/space/hardsuit/contractor/proc/update_suit()
 	var/mob/living/carbon/human/H = src.loc
 	H.update_inv_head()
 	H.update_inv_wear_suit()
-
-//agent version disguised as engi hardsuit
-
-/obj/item/clothing/head/helmet/space/hardsuit/contractor/agent
-	name = "engineering hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has radiation shielding."
-	icon_state = "hardsuit0-engineering"
-	item_state = "eng_helm"
-	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-
-/obj/item/clothing/suit/space/hardsuit/contractor/agent
-	name = "engineering hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding."
-	icon_state = "hardsuit-engineering"
-	item_state = "eng_hardsuit"
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/contractor/agent
 
 /*
 		Hook
@@ -178,11 +159,16 @@
 
 			var/old_density = L.density
 			L.density = FALSE // Ensures the hook does not hit the target multiple times
-			L.forceMove(get_turf(firer))
 			L.density = old_density
 			firer.dropItemToGround(src)
-
-
+			L.throw_at(get_step_towards(firer,L), 8, 2)
+			if(firer.Adjacent(L))
+				if(firer.get_active_held_item() && !firer.get_inactive_held_item())
+					firer.swap_hand()
+				if(firer.get_active_held_item())
+					return
+				L.grabbedby(firer)
+				L.grippedby(firer, instant = TRUE) //instant aggro grab
 
 /obj/item/projectile/contractor_hook/Destroy()
 	QDEL_NULL(chain)
@@ -205,7 +191,7 @@
 	if(disguise)
 		disguise = FALSE
 		disable_chameleon()
-		usr.visible_message("<span class='warning'>[usr] changes the look of his hardsuit!</span>", "<span class='notice'>Turning off the disguise..</span>")
+		usr.visible_message("<span class='warning'>[usr] изменяет внешний вид своего бронекостюма!</span>", "<span class='notice'>Выключение маскировки..</span>")
 		return
 	var/list/choices = list(
 		"EVA" = image(icon = 'icons/mob/clothing/contractor.dmi', icon_state = "EVA"),
@@ -218,11 +204,11 @@
 	switch(selected_chameleon)
 		if("EVA")
 			src.name = "EVA suit"
-			src.icon_state = "spacenew"
+			src.icon_state = "spaceold"
 			src.desc = "A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies."
 			helmet.name = "EVA helmet"
 			helmet.desc = "A lightweight space helmet with the basic ability to protect the wearer from the vacuum of space during emergencies."
-			helmet.icon_state = "spacenew"
+			helmet.icon_state = "spaceold"
 		if("Mining Hardsuit")
 			src.name = "mining hardsuit"
 			src.icon_state = "hardsuit-mining"
@@ -230,6 +216,7 @@
 			helmet.name = "mining hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating."
 			helmet.icon_state = "hardsuit0-mining"
+			helmet.hardsuit_type = "mining"
 		if("Medical Hardsuit")
 			src.name = "medical hardsuit"
 			src.icon_state = "hardsuit-medical"
@@ -237,6 +224,7 @@
 			helmet.name = "medical hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low pressure environment. Built with lightweight materials for extra comfort, but does not protect the eyes from intense light."
 			helmet.icon_state = "hardsuit0-medical"
+			helmet.hardsuit_type = "medical"
 		if("Security Hardsuit")
 			src.name = "security hardsuit"
 			src.icon_state = "hardsuit-sec"
@@ -244,6 +232,7 @@
 			helmet.name = "security hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 			helmet.icon_state = "hardsuit0-sec"
+			helmet.hardsuit_type = "sec"
 		if("Engineering Hardsuit")
 			src.name = "engineering hardsuit"
 			src.icon_state = "hardsuit-engineering"
@@ -251,11 +240,12 @@
 			helmet.name = "engineering hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has radiation shielding."
 			helmet.icon_state = "hardsuit0-engineering"
+			helmet.hardsuit_type = "engineering"
 		else
 			return
-	to_chat(usr, "<span class='notice'>Turning on the disguise..</span>")
+	balloon_alert(usr, "<span class='notice'>Бронекостюм начал гудеть..</span>")
 	sleep(25)
-	usr.visible_message("<span class='warning'>[usr] changes the look of his hardsuit!</span>", "<span class='notice'>[selected_chameleon] selected.</span>")
+	usr.visible_message("<span class='warning'>[usr] изменяет внешний вид своего бронекостюма!</span>", "<span class='notice'>[selected_chameleon] выбран.</span>")
 	playsound(loc, 'sound/items/screwdriver2.ogg', 50, 1)
 	update_suit()
 	disguise = TRUE

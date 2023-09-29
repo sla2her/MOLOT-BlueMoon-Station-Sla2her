@@ -208,6 +208,13 @@
 	item = /obj/item/healthanalyzer/rad_laser
 	cost = 3
 
+/datum/uplink_item/device_tools/shadowcloak
+	name = "cloaker belt"
+	desc = "Makes you invisible for short periods of time. Recharges in darkness."
+	item = /obj/item/shadowcloak
+	cost = 5
+	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
+
 /datum/uplink_item/device_tools/riflery_primer
 	name = "Riflery Primer"
 	desc = "An old book with blood and vodka stains on it. Freshly pulled from a dusty crate in some old warehouse, \

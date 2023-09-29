@@ -607,6 +607,6 @@
 	STR.can_hold = typecacheof(list(/obj/item/clothing/suit/space/hardsuit/contractor, /obj/item/tank/internals/emergency_oxygen, /obj/item/clothing/mask/gas))
 
 /obj/item/storage/box/inteq_kit/chameleon_hardsuit/PopulateContents()
-	new /obj/item/clothing/suit/space/hardsuit/contractor/agent(src)
+	new /obj/item/clothing/suit/space/hardsuit/contractor(src)
 	new /obj/item/clothing/mask/gas/syndicate(src)
 	new /obj/item/tank/internals/emergency_oxygen/engi/syndi(src)

@@ -27216,7 +27216,7 @@
 /obj/item/jukebox/emagged{
 	pixel_y = 10
 	},
-/obj/item/jukebox/emagged,
+/obj/item/jukebox,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
 "xvb" = (

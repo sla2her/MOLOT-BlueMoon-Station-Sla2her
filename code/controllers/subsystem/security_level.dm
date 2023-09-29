@@ -264,7 +264,7 @@ SUBSYSTEM_DEF(security_level)
 		C.post_status("alert", "epsilonalert")
 
 /proc/lambda_process()
-	minor_announce(CONFIG_GET(string/alert_epsilon), "Внимание! Код - ЛЯМБДА!")
+	minor_announce(CONFIG_GET(string/alert_lambda), "Внимание! Код - ЛЯМБДА!")
 	sound_to_playing_players('modular_bluemoon/kovac_shitcode/sound/lambda_code.ogg')
 	GLOB.security_level = SEC_LEVEL_LAMBDA
 	for(var/obj/machinery/firealarm/FA in GLOB.machines)

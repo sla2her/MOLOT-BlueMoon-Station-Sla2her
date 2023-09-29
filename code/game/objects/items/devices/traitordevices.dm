@@ -192,7 +192,7 @@ effective or pretty fucking useless.
 				wavelength = clamp(target, 0, 120)
 
 /obj/item/shadowcloak
-	name = "cloaker belt"
+	name = "Cloaker Belt"
 	desc = "Makes you invisible for short periods of time. Recharges in darkness."
 	icon = 'icons/obj/clothing/belts.dmi'
 	icon_state = "utilitybelt"
@@ -204,7 +204,7 @@ effective or pretty fucking useless.
 	var/charge = 300
 	var/max_charge = 300
 	var/on = FALSE
-	var/old_alpha = 0
+	var/old_alpha = 50
 	actions_types = list(/datum/action/item_action/toggle)
 
 /obj/item/shadowcloak/ui_action_click(mob/user)
@@ -217,19 +217,19 @@ effective or pretty fucking useless.
 
 /obj/item/shadowcloak/item_action_slot_check(slot, mob/user, datum/action/A)
 	if(slot == ITEM_SLOT_BELT)
-		return 1
+		return TRUE
 
 /obj/item/shadowcloak/proc/Activate(mob/living/carbon/human/user)
 	if(!user)
 		return
-	to_chat(user, "<span class='notice'>You activate [src].</span>")
+	to_chat(user, "<span class='notice'>Вы активировали [src].</span>")
 	src.user = user
 	START_PROCESSING(SSobj, src)
 	old_alpha = user.alpha
 	on = TRUE
 
 /obj/item/shadowcloak/proc/Deactivate()
-	to_chat(user, "<span class='notice'>You deactivate [src].</span>")
+	to_chat(user, "<span class='notice'>Вы дезактивировали [src].</span>")
 	STOP_PROCESSING(SSobj, src)
 	if(user)
 		user.alpha = old_alpha

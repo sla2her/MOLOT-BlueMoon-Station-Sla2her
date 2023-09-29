@@ -135,7 +135,6 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 	//Надо.
 	ignore += typesof(/obj/machinery/satellite)
 	ignore += typesof(/obj/structure/shuttle/engine)
-	ignore += typesof(/obj/item/card/id)
 	ignore += typesof(/obj/machinery/requests_console)
 	// This one sleeps too in it's AI code
 	ignore += typesof(/mob/living/simple_animal/hostile/swarmer)
