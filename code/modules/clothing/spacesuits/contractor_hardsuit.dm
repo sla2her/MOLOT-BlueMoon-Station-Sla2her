@@ -66,6 +66,10 @@
 	if(scorpion)
 		qdel(scorpion)
 		scorpion = null
+		for(var/datum/action/item_action/advanced/hook_upgrade/hook in actions)
+			scorpion.hook_action = hook
+			hook.action_ready = FALSE
+			hook.toggle_button_on_off()
 		playsound(src.loc, 'sound/mecha/mechmove03.ogg', 50, 1)
 		to_chat(usr, "<span class='notice'>Вы возвращаете [scorpion] обратно под кисть бронекостюма.</span>")
 	else
@@ -83,9 +87,10 @@
 /datum/action/item_action/advanced/hook_upgrade/toggle_button_on_off()
 	if(action_ready)
 		background_icon_state = icon_state_active
+		UpdateButtonIcon()
 	else
 		background_icon_state = icon_state_disabled
-	UpdateButtonIcon()
+		UpdateButtonIcon()
 
 /obj/item/gun/magic/contractor_hook
 	name = "SCORPION hook"
@@ -103,20 +108,13 @@
 	slot_flags = 0
 	item_flags = DROPDEL | ABSTRACT | NOBLUDGEON
 	force = 0
-	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = new/obj/item/clothing/suit/space/hardsuit/contractor()
-	var/datum/action/item_action/advanced/hook_upgrade/hook_action
+	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = null
+	var/datum/action/item_action/advanced/hook_upgrade/hook_action = null
 
-/obj/item/gun/magic/contractor_hook/Initialize(mapload)
-	hook_action = loc
+/obj/item/gun/magic/contractor_hook/process_chamber()
 	. = ..()
-
-/obj/item/gun/magic/contractor_hook/Destroy()
-	. = ..()
-	suit.scorpion = null
-	suit = null
-	hook_action.action_ready = FALSE
-	hook_action.toggle_button_on_off()
-	hook_action = null
+	if(charges == 0)
+		qdel(src)
 
 /obj/item/gun/magic/contractor_hook/can_trigger_gun(mob/living/user)
 	if(!hook_action.IsAvailable(show_message = TRUE, ignore_ready = TRUE))
