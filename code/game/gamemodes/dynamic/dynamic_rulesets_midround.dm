@@ -998,7 +998,7 @@
 
 /datum/dynamic_ruleset/midround/bloodsuckers
 	name = "Bloodsuckers"
-	antag_flag = "Bloodsucker"
+	antag_flag = "Bloodsucker Mid"
 	antag_flag_override = ROLE_BLOODSUCKER
 	antag_datum = /datum/antagonist/bloodsucker
 	protected_roles = list("Prisoner", "NanoTrasen Representative", "Lawyer", "Security Officer", "Blueshield", "Peacekeeper", "Brig Physician", "Warden", "Detective", "Head of Security", "Captain")
