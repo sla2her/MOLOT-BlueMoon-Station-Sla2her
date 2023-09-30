@@ -272,7 +272,7 @@
 /obj/item/clothing/suit/space/hardsuit/contractor/emp_act(severity)
 	. = ..()
 	if(disguise)
-		usr.visible_message("<span class='warning'>[usr] disguise is falling off!</span>", "<span class='notice'>Chameleon module overloading! Shutting down...</span>")
+		usr.visible_message("<span class='warning'>Маскировка [usr] спадает!</span>", "<span class='notice'>Перегрузка модуля CHAMELEON! Отключение...</span>")
 		disguise = FALSE
 		disable_chameleon()
 
