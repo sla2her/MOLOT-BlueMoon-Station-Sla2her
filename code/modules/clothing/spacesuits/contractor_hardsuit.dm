@@ -103,11 +103,14 @@
 	slot_flags = 0
 	item_flags = DROPDEL | ABSTRACT | NOBLUDGEON
 	force = 0
-	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = null
-	var/datum/action/item_action/advanced/hook_upgrade/hook_action
+	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = new/obj/item/clothing/suit/space/hardsuit/contractor()
+	var/datum/action/item_action/advanced/hook_upgrade/hook_action = new/datum/action/item_action/advanced/hook_upgrade()
 
 /obj/item/gun/magic/contractor_hook/Destroy()
 	. = ..()
+	suit.scorpion = null
+	suit = null
+	hook_action.action_ready = FALSE
 	hook_action.toggle_button_on_off()
 	hook_action = null
 
