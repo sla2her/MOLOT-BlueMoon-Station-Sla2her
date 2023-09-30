@@ -104,7 +104,7 @@
 	item_flags = DROPDEL | ABSTRACT | NOBLUDGEON
 	force = 0
 	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = new/obj/item/clothing/suit/space/hardsuit/contractor()
-	var/datum/action/item_action/advanced/hook_upgrade/hook_action = new/datum/action/item_action/advanced/hook_upgrade()
+	var/datum/action/item_action/advanced/hook_upgrade/hook_action
 
 /obj/item/gun/magic/contractor_hook/Destroy()
 	. = ..()
