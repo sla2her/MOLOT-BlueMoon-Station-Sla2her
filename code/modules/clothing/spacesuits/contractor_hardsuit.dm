@@ -110,8 +110,6 @@
 	. = ..()
 	hook_action.toggle_button_on_off()
 	hook_action = null
-	qdel(scorpion)
-	scorpion = null
 
 /obj/item/gun/magic/contractor_hook/can_trigger_gun(mob/living/user)
 	if(!hook_action.IsAvailable(show_message = TRUE, ignore_ready = TRUE))
