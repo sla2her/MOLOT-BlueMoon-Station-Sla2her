@@ -154,20 +154,17 @@ SUBSYSTEM_DEF(security_level)
 				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(lambda_process)), 10 SECONDS)
 				INVOKE_ASYNC(src, .proc/move_shuttle)
 				SSblackbox.record_feedback("tally", "security_level_changes", 1, NUM2SECLEVEL(GLOB.security_level))
-				return
 
 			if(SEC_LEVEL_EPSILON)
 				set_stationwide_emergency_lighting()
 				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(epsilon_process)), 10 SECONDS)
 				INVOKE_ASYNC(src, .proc/move_shuttle)
 				SSblackbox.record_feedback("tally", "security_level_changes", 1, NUM2SECLEVEL(GLOB.security_level))
-				return
 
 			if(SEC_LEVEL_DELTA)
 				set_stationwide_emergency_lighting()
 				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(delta_process)), 10 SECONDS)
 				SSblackbox.record_feedback("tally", "security_level_changes", 1, NUM2SECLEVEL(GLOB.security_level))
-				return
 
 		if(new_level >= SEC_LEVEL_RED)
 			for(var/obj/machinery/door/D in GLOB.machines)

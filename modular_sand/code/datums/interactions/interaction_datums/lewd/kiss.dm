@@ -9,13 +9,13 @@
 
 /datum/interaction/lewd/kiss/post_interaction(mob/living/user, mob/living/partner)
 	. = ..()
-	if(user.get_lust() < 50)
-		user.add_lust(5)
-	if(partner.get_lust() < 50)
-		partner.add_lust(5)
+	if(user.get_lust() < 100)
+		user.add_lust(12)
+	if(partner.get_lust() < 100)
+		partner.add_lust(12)
 
 /datum/interaction/lewd/kiss/display_interaction(mob/living/user, mob/living/partner)
 	if(user.get_lust() >= 25)
 		user.visible_message("<span class='lewd'>\The <b>[user]</b> дарит интенсивный и весьма агрессивный поцелуй для \the <b>[partner]</b>.</span>")
 	else
-		user.visible_message("<span class='lewd'>\The <b>[user]</b> прижимается к губам \the <b>[partner]</b>.</span>")
+		user.visible_message("<span class='lewd'>\The <b>[user]</b> прижимается к губкам \the <b>[partner]</b>.</span>")
