@@ -18,6 +18,7 @@
 	slowdown = 0
 	w_class = WEIGHT_CLASS_NORMAL
 	mutantrace_variation = STYLE_DIGITIGRADE
+	flags_inv = HIDEGLOVES | HIDEJUMPSUIT | HIDESHOES | HIDETAUR
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/contractor
 	jetpack = /obj/item/tank/jetpack/suit
 	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/transforming/energy, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
@@ -219,7 +220,7 @@
 			src.name = "Mining Hardsuit"
 			src.icon_state = "hardsuit-mining"
 			src.desc = "A special suit that protects against hazardous, low pressure environments. Has reinforced plating."
-			src.tail_state = "ert-alert"
+			src.tail_state = "engineer"
 			helmet.name = "mining hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating."
 			helmet.icon_state = "hardsuit0-mining"
