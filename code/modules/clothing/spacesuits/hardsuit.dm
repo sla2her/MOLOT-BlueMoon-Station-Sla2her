@@ -289,9 +289,9 @@
 		hardsuit_type = "mining_goliath"
 		if(amount == maxamount)
 			hardsuit_type = "mining_goliath_full"
-			tail_state = "hardsuit-mining_reinf_full"
+			tail_state = "ert-alert"
 	icon_state = "hardsuit-[hardsuit_type]"
-	tail_state = "hardsuit-mining_reinf"
+	tail_state = "ert-alert"
 	if(ishuman(loc))
 		var/mob/living/carbon/human/wearer = loc
 		if(wearer.wear_suit == src)

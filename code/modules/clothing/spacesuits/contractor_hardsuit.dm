@@ -66,6 +66,8 @@
 	if(scorpion)
 		qdel(scorpion)
 		scorpion = null
+		playsound(src.loc, 'sound/mecha/mechmove03.ogg', 50, 1)
+		to_chat(usr, "<span class='notice'>Вы возвращаете [scorpion] обратно под кисть бронекостюма.</span>")
 	else
 		scorpion = new
 		scorpion.suit = src
@@ -76,7 +78,7 @@
 			break
 		usr.put_in_hands(scorpion)
 		playsound(src.loc, 'sound/mecha/mechmove03.ogg', 50, 1)
-		to_chat(usr, "<span class='notice'>You engage the [scorpion].</span>")
+		to_chat(usr, "<span class='notice'>Вы активировали [scorpion].</span>")
 
 /datum/action/item_action/advanced/hook_upgrade/toggle_button_on_off()
 	if(action_ready)
@@ -103,6 +105,13 @@
 	force = 0
 	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = null
 	var/datum/action/item_action/advanced/hook_upgrade/hook_action  = null
+
+/obj/item/gun/magic/contractor_hook/Destroy()
+	. = ..()
+	hook_action.toggle_button_on_off()
+	hook_action = null
+	qdel(scorpion)
+	scorpion = null
 
 /obj/item/gun/magic/contractor_hook/can_trigger_gun(mob/living/user)
 	if(!hook_action.IsAvailable(show_message = TRUE, ignore_ready = TRUE))
@@ -195,40 +204,45 @@
 	var/selected_chameleon = show_radial_menu(usr, loc, choices, require_near = TRUE)
 	switch(selected_chameleon)
 		if("EVA")
-			src.name = "EVA suit"
-			src.icon_state = "spaceold"
+			src.name = "EVA Suit"
+			src.icon_state = "space"
 			src.desc = "A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies."
+			src.tail_state = "syndicate-winter"
 			helmet.name = "EVA helmet"
 			helmet.desc = "A lightweight space helmet with the basic ability to protect the wearer from the vacuum of space during emergencies."
-			helmet.icon_state = "spaceold"
+			helmet.icon_state = "space"
 		if("Mining Hardsuit")
-			src.name = "mining hardsuit"
+			src.name = "Mining Hardsuit"
 			src.icon_state = "hardsuit-mining"
 			src.desc = "A special suit that protects against hazardous, low pressure environments. Has reinforced plating."
+			src.tail_state = "ert-alert"
 			helmet.name = "mining hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating."
 			helmet.icon_state = "hardsuit0-mining"
 			helmet.hardsuit_type = "mining"
 		if("Medical Hardsuit")
-			src.name = "medical hardsuit"
+			src.name = "Medical Hardsuit"
 			src.icon_state = "hardsuit-medical"
 			src.desc = "A special suit designed for work in a hazardous, low pressure environment. Built with lightweight materials for extra comfort."
+			src.tail_state = "syndicate-winter"
 			helmet.name = "medical hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low pressure environment. Built with lightweight materials for extra comfort, but does not protect the eyes from intense light."
 			helmet.icon_state = "hardsuit0-medical"
 			helmet.hardsuit_type = "medical"
 		if("Security Hardsuit")
-			src.name = "security hardsuit"
+			src.name = "Security Hardsuit"
 			src.icon_state = "hardsuit-sec"
 			src.desc = "A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
+			src.tail_state = "sec"
 			helmet.name = "security hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 			helmet.icon_state = "hardsuit0-sec"
 			helmet.hardsuit_type = "sec"
 		if("Engineering Hardsuit")
-			src.name = "engineering hardsuit"
+			src.name = "Engineering Hardsuit"
 			src.icon_state = "hardsuit-engineering"
 			src.desc = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding."
+			src.tail_state = "engineer"
 			helmet.name = "engineering hardsuit helmet"
 			helmet.desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has radiation shielding."
 			helmet.icon_state = "hardsuit0-engineering"
@@ -247,9 +261,11 @@
 	src.name = initial(src.name)
 	src.icon_state = initial(src.icon_state)
 	src.desc = initial(src.desc)
+	src.tail_state = initial(src.tail_state)
 	helmet.name = initial(helmet.name)
 	helmet.desc = initial(helmet.desc)
 	helmet.icon_state = initial(helmet.icon_state)
+	helmet.hardsuit_type = initial(helmet.hardsuit_type)
 	update_suit()
 
 /obj/item/clothing/suit/space/hardsuit/contractor/emp_act(severity)

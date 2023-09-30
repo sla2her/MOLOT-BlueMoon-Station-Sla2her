@@ -49,7 +49,6 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 		/obj/item/grenade/clusterbuster/segment,
 		// With 10% Spawns `while() ... sleep()` proc that causes her hat to harddel // TODO rewrite helmet code attack_self() and port modern /tg/ helmet code
 		/mob/living/carbon/monkey/angry,
-		/obj/item/card/id,
 	)
 	//Say it with me now, type template
 	ignore += typesof(/obj/effect/mapping_helpers)
@@ -140,7 +139,7 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 	ignore += typesof(/obj/machinery/satellite/meteor_shield/sci)
 	ignore += typesof(/obj/structure/shuttle/engine)
 	ignore += typesof(/obj/machinery/requests_console)
-	ignore += typesof(/obj/item/card/id)
+	ignore += typesof(/obj/item/card)
 
 	var/list/cached_contents = spawn_at.contents.Copy()
 	var/original_turf_type = spawn_at.type
