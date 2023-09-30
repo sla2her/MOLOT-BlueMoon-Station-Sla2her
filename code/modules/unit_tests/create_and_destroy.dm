@@ -49,6 +49,7 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 		/obj/item/grenade/clusterbuster/segment,
 		// With 10% Spawns `while() ... sleep()` proc that causes her hat to harddel // TODO rewrite helmet code attack_self() and port modern /tg/ helmet code
 		/mob/living/carbon/monkey/angry,
+		/obj/item/card/id,
 	)
 	//Say it with me now, type template
 	ignore += typesof(/obj/effect/mapping_helpers)
