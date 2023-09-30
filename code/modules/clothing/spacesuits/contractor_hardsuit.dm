@@ -106,6 +106,10 @@
 	var/obj/item/clothing/suit/space/hardsuit/contractor/suit = new/obj/item/clothing/suit/space/hardsuit/contractor()
 	var/datum/action/item_action/advanced/hook_upgrade/hook_action
 
+/obj/item/gun/magic/contractor_hook/Initialize(mapload)
+	hook_action = loc
+	. = ..()
+
 /obj/item/gun/magic/contractor_hook/Destroy()
 	. = ..()
 	suit.scorpion = null
