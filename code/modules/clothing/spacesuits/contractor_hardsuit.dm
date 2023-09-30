@@ -17,6 +17,7 @@
 	armor = list(MELEE = 40, BULLET = 50, LASER = 30, ENERGY = 30, BOMB = 35, BIO = 100, RAD = 75, FIRE = 75, ACID = 90, WOUND = 40)
 	slowdown = 0
 	w_class = WEIGHT_CLASS_NORMAL
+	mutantrace_variation = STYLE_DIGITIGRADE
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/contractor
 	jetpack = /obj/item/tank/jetpack/suit
 	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/transforming/energy, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
