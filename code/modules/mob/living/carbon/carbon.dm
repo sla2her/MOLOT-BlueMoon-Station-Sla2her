@@ -285,7 +285,7 @@
 		MarkResistTime()
 		visible_message("<span class='warning'>[src] пытается выбраться!</span>", \
 					"<span class='notice'>Ты пытаешься выбраться... (Это займёт около [round(buckle_cd/600,1)] минут и тебе не стоит двигаться в процессе.)</span>")
-		if(do_after(src, buckle_cd, src, timed_action_flags = IGNORE_HELD_ITEM))
+		if(do_after(src, buckle_cd, src, timed_action_flags = IGNORE_HELD_ITEM, extra_checks = CALLBACK(src, PROC_REF(cuff_resist_check))))
 			if(!buckled)
 				return
 			buckled.user_unbuckle_mob(src, src)
@@ -299,13 +299,13 @@
 	fire_stacks -= 5
 	DefaultCombatKnockdown(60, TRUE, TRUE)
 	spin(32,2)
-	visible_message("<span class='danger'>[src] rolls on the floor, trying to put [ru_na()]self out!</span>", \
-		"<span class='notice'>You stop, drop, and roll!</span>")
+	visible_message("<span class='danger'>[src] падает и крутится, сбрасывая с себя пламя!</span>", \
+		"<span class='notice'>Вы остановились, упали и начали крутиться!</span>")
 	MarkResistTime(30)
 	sleep(30)
 	if(fire_stacks <= 0)
-		visible_message("<span class='danger'>[src] has successfully extinguished [ru_na()]self!</span>", \
-			"<span class='notice'>You extinguish yourself.</span>")
+		visible_message("<span class='danger'>[src] успешно сбрасывает с себя пламя!</span>", \
+			"<span class='notice'>Вы успешно потушили себя.</span>")
 		ExtinguishMob()
 
 /mob/living/carbon/resist_restraints()
@@ -320,7 +320,7 @@
 
 /mob/living/carbon/proc/cuff_resist(obj/item/I, breakouttime = 600, cuff_break = 0)
 	if(I.item_flags & BEING_REMOVED)
-		to_chat(src, "<span class='warning'>You're already attempting to remove [I]!</span>")
+		to_chat(src, "<span class='warning'>Вы уже пытаетесь сбросить [I]!</span>")
 		return
 	var/obj/item/restraints/R = istype(I, /obj/item/restraints) ? I : null
 	var/allow_breakout_movement = IGNORE_INCAPACITATED
