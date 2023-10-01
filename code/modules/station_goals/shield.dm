@@ -124,6 +124,7 @@ GLOBAL_LIST_EMPTY(meteor_satellites) // BLUEMOON ADD - список всех п�
 
 /obj/machinery/satellite/Initialize(mapload)
 	. = ..()
+	GLOB.meteor_satellites += src
 	id = gid++
 	// BLUEMOON ADD START
 	name = "[name] #[id]"
@@ -146,6 +147,7 @@ GLOBAL_LIST_EMPTY(meteor_satellites) // BLUEMOON ADD - список всех п�
 		radio.talk_into(src, scramble_message_replace_chars("[pick(destruction_quotes)] Координаты: [x], [y]", 5), engineering_channel)
 	QDEL_NULL(camera)
 	QDEL_NULL(radio)
+	GLOB.meteor_satellites -= src
 	explosion(loc, 1, 2, 3, 3, TRUE, TRUE)
 	. = ..()
 

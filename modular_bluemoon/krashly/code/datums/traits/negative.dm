@@ -1,4 +1,4 @@
-/datum/quirk/onelife
+/*/datum/quirk/onelife
 	name = "Одна жизнь"
 	desc = "С вас буквально сыпется песок. И... Кажется если вы погибнете - никто этот песок собрать воедино больше не сможет."
 	mob_trait = TRAIT_ONELIFE
@@ -34,4 +34,4 @@
 		return
 	var/obj/item/implant/onelife/E = new
 	E.implant(H)
-	H.update_icons()
+	H.update_icons()*/
