@@ -2,8 +2,8 @@
 	name = "plush"
 	desc = "This is the special coder plush, do not steal."
 	icon = 'icons/obj/plushes.dmi'
-	lefthand_file = 'modular_splurt/icons/mob/inhands/misc/plushes-lefthand.dmi'
-	righthand_file = 'modular_splurt/icons/mob/inhands/misc/plushes-right.dmi'
+	lefthand_file = 'icons/mob/inhands/misc/plushes-lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/misc/plushes-right.dmi'
 	icon_state = "debug"
 	item_state = "plushie_sus"
 	attack_verb = list("thumped", "whomped", "bumped")
