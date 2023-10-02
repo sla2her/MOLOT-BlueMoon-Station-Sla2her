@@ -176,24 +176,24 @@
 
 	//CIT CHANGES - makes it impossible to throw while in stamina softcrit
 	if(IS_STAMCRIT(src))
-		to_chat(src, "<span class='warning'>You're too exhausted.</span>")
+		to_chat(src, "<span class='warning'>Вы слишком устали.</span>")
 		return
 
 	var/random_turn = a_intent == INTENT_HARM
 	//END OF CIT CHANGES
 
-	var/obj/item/I = get_active_held_item()
+	var/obj/item/held_item = get_active_held_item()
 
 	var/atom/movable/thrown_thing
 	var/mob/living/throwable_mob
 
-	if(istype(I, /obj/item/clothing/head/mob_holder))
-		var/obj/item/clothing/head/mob_holder/holder = I
+	if(istype(held_item, /obj/item/clothing/head/mob_holder))
+		var/obj/item/clothing/head/mob_holder/holder = held_item
 		if(holder.held_mob)
 			throwable_mob = holder.held_mob
 			holder.release()
 
-	if(!I || throwable_mob)
+	if(!held_item || throwable_mob)
 		if(!throwable_mob && pulling && isliving(pulling) && grab_state >= GRAB_AGGRESSIVE)
 			throwable_mob = pulling
 
@@ -202,7 +202,7 @@
 			if(pulling)
 				stop_pulling()
 			if(HAS_TRAIT(src, TRAIT_PACIFISM))
-				to_chat(src, "<span class='notice'>You gently let go of [throwable_mob].</span>")
+				to_chat(src, "<span class='notice'>Ты осторожно кладёшь [throwable_mob] под себя.</span>")
 				return
 			if(!UseStaminaBuffer(STAM_COST_THROW_MOB * ((throwable_mob.mob_size+1)**2), TRUE))
 				return
@@ -210,21 +210,33 @@
 			var/turf/end_T = get_turf(target)
 			if(start_T && end_T)
 				log_combat(src, throwable_mob, "thrown", addition="grab from tile in [AREACOORD(start_T)] towards tile at [AREACOORD(end_T)]")
+	else
+		thrown_thing = held_item.on_thrown(src, target)
 
-	else if(!(I.item_flags & ABSTRACT) && !HAS_TRAIT(I, TRAIT_NODROP))
-		thrown_thing = I
-		dropItemToGround(I)
+	if(isliving(thrown_thing)) // Благодаря этому и thrown_thing = held_item.on_thrown(src, target) мы можем кидать космонавтиков с плеча.
+		var/turf/start_T = get_turf(loc)
+		var/turf/end_T = get_turf(target)
+		if(start_T && end_T)
+			log_combat(src, thrown_thing, "thrown", addition="grab from tile in [AREACOORD(start_T)] towards tile at [AREACOORD(end_T)]")
 
-		if(HAS_TRAIT(src, TRAIT_PACIFISM) && I.throwforce)
-			to_chat(src, "<span class='notice'>You set [I] down gently on the ground.</span>")
+	else if(!(held_item.item_flags & ABSTRACT) && !HAS_TRAIT(held_item, TRAIT_NODROP))
+		thrown_thing = held_item
+		dropItemToGround(held_item)
+
+		if(HAS_TRAIT(src, TRAIT_PACIFISM) && held_item.throwforce)
+			to_chat(src, "<span class='notice'>You set [held_item] down gently on the ground.</span>")
 			return
 
-		if(!UseStaminaBuffer(I.getweight(src, STAM_COST_THROW_MULT, SKILL_THROW_STAM_COST), warn = TRUE))
+		if(!UseStaminaBuffer(held_item.getweight(src, STAM_COST_THROW_MULT, SKILL_THROW_STAM_COST), warn = TRUE))
 			return
 
 	if(thrown_thing)
 		var/power_throw = 0
 		if(HAS_TRAIT(src, TRAIT_HULK))
+			power_throw++
+		if(HAS_TRAIT(src, TRAIT_DWARF))
+			power_throw--
+		if(HAS_TRAIT(thrown_thing, TRAIT_DWARF))
 			power_throw++
 		if(pulling && grab_state >= GRAB_NECK)
 			power_throw++
