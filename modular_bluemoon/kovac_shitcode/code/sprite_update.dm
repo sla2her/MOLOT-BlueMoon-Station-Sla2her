@@ -589,7 +589,7 @@
 	item_state = "raita"
 
 /obj/item/toy/plush/mammal/fox/emma/aiko
-	name = "aiko plushie"
+	name = "Aiko Plushie"
 	icon_state = "aiko"
 	item_state = "aiko"
 

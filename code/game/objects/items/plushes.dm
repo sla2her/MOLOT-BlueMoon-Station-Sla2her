@@ -906,7 +906,7 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = "Hairball"
 	desc = "A bundle of undigested fibers and scales. Yuck."
 	icon_state = "Hairball"
-	item_state = "Hairball"
+	item_state = "plushie_sus"
 	unstuffable = TRUE
 	young = TRUE // Your own mouth-baby.
 	squeak_override = list('sound/misc/splort.ogg'=1)
