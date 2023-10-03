@@ -393,3 +393,10 @@
 	path = /obj/item/clothing/neck/tie/cross/shielded
 	ckeywhitelist = list("kalifasun", "dofalt")
 	subcategory = LOADOUT_SUBCATEGORIES_DON21
+
+/datum/gear/donator/bm/miner_plushie
+	name = "Miner Plushie"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/toy/plush/miner
+	ckeywhitelist = list("cheburek228")
+	subcategory = LOADOUT_SUBCATEGORIES_DON12
