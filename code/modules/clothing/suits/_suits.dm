@@ -24,6 +24,8 @@
 			var/file2use = (style_flags & STYLE_ALL_TAURIC) ? 'modular_citadel/icons/mob/64x32_effects.dmi' : 'icons/effects/blood.dmi'
 			. += mutable_appearance(file2use, "[blood_overlay_type]blood", color = blood_DNA_to_color(), blend_mode = blood_DNA_to_blend())
 		var/mob/living/carbon/human/M = loc
+		if(!ishuman(loc))
+			return
 		if(!isvox(M) || !isplasmaman(M))
 			if(M.dna.features["tail_primary"] && M.dna.features["tail_secondary"])
 				var/tail_under_suit = tail_suit_worn_overlay || 'modular_bluemoon/SmiLeY/icons/mob/clothing/tails_digi.dmi'
