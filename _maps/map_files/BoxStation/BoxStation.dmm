@@ -47764,15 +47764,6 @@
 /obj/effect/turf_decal/stripes/blue/corner{
 	dir = 1
 	},
-/turf/open/floor/wood,
-/area/service/bar)
-"heu" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/blue/corner{
-	dir = 1
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -54675,9 +54666,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -63597,9 +63585,6 @@
 /turf/open/floor/plasteel/dark,
 /area/security/office)
 "uiW" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
