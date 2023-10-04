@@ -862,6 +862,8 @@
 				stat = SOFT_CRIT
 				filters += BM_FILTER_HARDCRIT
 				SEND_SIGNAL(src, COMSIG_DISABLE_COMBAT_MODE)
+			if(stat == DEAD)
+				filters -= BM_FILTER_HARDCRIT
 			else
 				stat = CONSCIOUS
 				filters -= BM_FILTER_HARDCRIT
