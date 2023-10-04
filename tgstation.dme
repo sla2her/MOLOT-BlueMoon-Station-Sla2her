@@ -4038,6 +4038,7 @@
 #include "modular_bluemoon\anti_normalizer_quirk\anti_normalizer_quirk.dm"
 #include "modular_bluemoon\bigtalk\bigtalk.dm"
 #include "modular_bluemoon\code\game\objects\items\plushes.dm"
+#include "modular_bluemoon\code\modules\client\preferences_savefile.dm"
 #include "modular_bluemoon\code\modules\jobs\job_types\job.dm"
 #include "modular_bluemoon\code\modules\language\felinid.dm"
 #include "modular_bluemoon\code\modules\mob\bluemoon_emotes.dm"
