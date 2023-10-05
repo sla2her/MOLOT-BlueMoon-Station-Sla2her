@@ -874,9 +874,9 @@
 
 /mob/living/carbon/proc/update_crit_status()
 	if(health <= crit_threshold)
-		filters += BM_FILTER_HARDCRIT
+		add_filter("hardcrit", 1, BM_FILTER_HARDCRIT)
 	else
-		filters -= BM_FILTER_HARDCRIT
+		remove_filter("hardcrit")
 
 //called when we get cuffed/uncuffed
 /mob/living/carbon/proc/update_handcuffed()
