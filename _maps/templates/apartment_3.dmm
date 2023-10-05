@@ -210,7 +210,9 @@
 /turf/open/floor/carpet/royalblue,
 /area/hilbertshotel)
 "jC" = (
-/obj/structure/falsewall,
+/obj/structure/falsewall{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
@@ -530,10 +532,12 @@
 /area/hilbertshotel)
 "Am" = (
 /obj/machinery/button{
-	pixel_y = 26
+	pixel_y = 26;
+	id = "elevator"
 	},
 /obj/machinery/button{
-	pixel_y = 37
+	pixel_y = 37;
+	id = "elevator"
 	},
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -766,11 +770,11 @@
 /turf/closed/indestructible/wall,
 /area/hilbertshotel)
 "Lp" = (
-/obj/item/melee/classic_baton/telescopic/newspaper{
-	pixel_x = 7
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+	},
+/obj/item/newspaper{
+	pixel_x = 4
 	},
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol";
@@ -886,10 +890,12 @@
 /area/hilbertshotel)
 "PP" = (
 /obj/machinery/button{
-	pixel_y = -25
+	pixel_y = -25;
+	id = "elevator"
 	},
 /obj/machinery/button{
-	pixel_y = -35
+	pixel_y = -35;
+	id = "elevator"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/hilbertshotel/layer3{
 	dir = 4
