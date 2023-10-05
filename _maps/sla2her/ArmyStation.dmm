@@ -1093,10 +1093,6 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
-"kD" = (
-/obj/machinery/seed_extractor,
-/turf/open/floor/festive/cobblestone/safe,
-/area/hilbertshotel)
 "kH" = (
 /obj/structure/chair/comfy{
 	dir = 4
@@ -1258,46 +1254,6 @@
 	armed = 1
 	},
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"ml" = (
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = -4;
-	pixel_y = 5
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = 4
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = -4;
-	pixel_y = -3
-	},
-/obj/structure/table/glass,
-/turf/open/floor/carpet/cyan,
 /area/hilbertshotel)
 "mm" = (
 /obj/machinery/telecomms/server/presets/medical,
@@ -1625,13 +1581,6 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
-/area/hilbertshotel)
-"oP" = (
-/obj/structure/flora/tree/jungle,
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
 "oQ" = (
 /obj/structure/table,
@@ -2176,10 +2125,6 @@
 	dir = 4
 	},
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"tD" = (
-/obj/machinery/vending/cola/random,
-/turf/open/floor/wood/wood_large,
 /area/hilbertshotel)
 "tE" = (
 /obj/machinery/light{
@@ -4666,10 +4611,7 @@
 /turf/open/floor/carpet/black,
 /area/hilbertshotel)
 "NL" = (
-/obj/structure/table/glass,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner,
-/turf/open/floor/wood/wood_large,
+/turf/open/space/basic,
 /area/hilbertshotel)
 "NM" = (
 /obj/structure/rack,
@@ -30196,186 +30138,186 @@ WF
 SN
 "}
 (133,1,1) = {"
-SN
-Ut
-Ut
-Ut
-Ut
-Ut
-kD
-Ut
-Ut
-Ut
-Ut
-Ut
-Ut
-Ut
-Ut
-SN
-WF
-WF
-rw
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-rw
-WF
-WF
-WF
-bF
-WF
-OJ
 NL
-ir
-ml
-ir
-nK
-ir
-tD
-OJ
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-oP
-zG
-hZ
-hZ
-hZ
-hZ
-hZ
-hZ
-hk
-bF
-WF
-kc
-WF
-WF
-kc
-WF
-WF
-WF
-WF
-hZ
-hZ
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-hZ
-zG
-hZ
-WF
-bF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-Jm
-WF
-WF
-bF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-WF
-SN
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
+NL
 "}
 (134,1,1) = {"
 SN
