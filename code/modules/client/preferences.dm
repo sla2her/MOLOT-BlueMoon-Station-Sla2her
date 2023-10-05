@@ -724,7 +724,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						mutant_colors = TRUE
 
 						dat += "<b>Sprite Size:</b> <a href='?_src_=prefs;preference=body_size;task=input'>[features["body_size"]*100]%</a><br>"
-						dat += "<b>Scaled Appearance:</b> <a href='?_src_=prefs;preference=toggle_fuzzy;task=input'>[features["fuzzy"] ? "Fuzzy" : "Sharp"]</a><br>"
+						dat += "<b>Scaled Appearance:</b> <a href='?_src_=prefs;preference=toggle_fuzzy;task=input'>[fuzzy ? "Fuzzy" : "Sharp"]</a><br>"
 
 					if(!(NOEYES in pref_species.species_traits))
 						dat += "<h3>Eye Type</h3>"
@@ -3294,7 +3294,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						features["body_size"] = clamp(new_body_size * 0.01, CONFIG_GET(number/body_size_min), CONFIG_GET(number/body_size_max))
 
 				if("toggle_fuzzy")
-					features["fuzzy"] = !features["fuzzy"]
 					fuzzy = !fuzzy
 
 				if("tongue")
