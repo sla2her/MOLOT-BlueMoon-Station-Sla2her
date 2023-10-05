@@ -873,7 +873,7 @@
 	med_hud_set_status()
 
 /mob/living/carbon/proc/update_crit_status()
-	if(InFullCritical() || InCritical())
+	if(health <= crit_threshold)
 		filters += BM_FILTER_HARDCRIT
 	else
 		filters -= BM_FILTER_HARDCRIT
