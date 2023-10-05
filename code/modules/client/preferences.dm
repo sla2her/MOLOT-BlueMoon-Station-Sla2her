@@ -406,8 +406,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	/// Multiz Performance option
 	var/multiz_performance = -1
 
-	var/fuzzy = FALSE
-
 /datum/preferences/New(client/C)
 	parent = C
 

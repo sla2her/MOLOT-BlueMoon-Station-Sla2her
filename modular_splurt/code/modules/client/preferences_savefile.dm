@@ -6,7 +6,7 @@
 	S["directory_ad"]			>> directory_ad
 
 	// Get stomping preferences.
-	S["stomp_pref"] >> stomppref
+//	S["stomp_pref"] >> stomppref
 
 	//Fuzzy scaling
 	S["feature_fuzzy"] >> fuzzy
