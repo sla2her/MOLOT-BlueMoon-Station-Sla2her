@@ -18037,10 +18037,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
-"boq" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plasteel/white,
-/area/medical/genetics)
 "bor" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/color/latex,
@@ -19094,7 +19090,7 @@
 	dir = 4
 	},
 /obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/plating,
 /area/medical/genetics)
 "brb" = (
 /obj/effect/turf_decal/tile/blue{
@@ -41265,6 +41261,7 @@
 /obj/machinery/light_switch{
 	pixel_y = -25
 	},
+/obj/machinery/limbgrower,
 /turf/open/floor/plasteel,
 /area/medical/surgery)
 "cCt" = (
@@ -53097,7 +53094,7 @@
 /area/command/bridge)
 "lAw" = (
 /obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/plating,
 /area/medical/medbay/zone2)
 "lAB" = (
 /obj/structure/sign/nanotrasen,
@@ -56267,13 +56264,8 @@
 	name = "Station Intercom (Medbay)";
 	pixel_x = 30
 	},
-/obj/machinery/bloodbankgen,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
-"ofj" = (
-/obj/machinery/smartfridge/organ/preloaded,
-/turf/closed/wall,
-/area/medical/surgery)
 "ofX" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
@@ -65621,7 +65613,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/limbgrower,
+/obj/machinery/bloodbankgen,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "vOU" = (
@@ -102867,7 +102859,7 @@ bwE
 bxc
 bzb
 nEu
-nEu
+lCF
 cpG
 bDC
 bId
@@ -103641,7 +103633,7 @@ nEu
 nEu
 bFu
 jex
-ofj
+nEu
 bvd
 bKH
 bLK
@@ -107482,9 +107474,9 @@ qSf
 wJA
 bkR
 bfL
-boq
+bpE
 bra
-boq
+bpE
 bua
 bvn
 bwL
