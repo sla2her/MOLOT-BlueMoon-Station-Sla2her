@@ -23911,10 +23911,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
-/obj/machinery/door/airlock/research{
-	name = "Genetics Lab";
-	req_access_txt = "9"
-	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
 "bkL" = (
@@ -23928,10 +23925,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
-/obj/machinery/door/airlock/research{
-	name = "Genetics Lab";
-	req_access_txt = "9"
-	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
 "bkM" = (
@@ -26503,10 +26497,6 @@
 /area/medical/genetics)
 "bqQ" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/research{
-	name = "Genetics Lab";
-	req_access_txt = "9"
-	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -26527,10 +26517,6 @@
 /area/medical/storage)
 "bqS" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/research{
-	name = "Genetics Lab";
-	req_access_txt = "9"
-	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -29144,10 +29130,6 @@
 /area/medical/genetics)
 "bwC" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/research{
-	name = "Genetics Lab";
-	req_access_txt = "9"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -29452,9 +29434,6 @@
 /turf/open/floor/carpet/green,
 /area/medical/surgery)
 "bxv" = (
-/obj/machinery/door/airlock/medical{
-	name = "Observation"
-	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/carpet/green,
 /area/medical/surgery)
@@ -30005,10 +29984,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/genetics/cloning)
 "byZ" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Cloning";
-	req_one_access_txt = "5;9"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -30586,10 +30561,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "bAz" = (
-/obj/machinery/door/airlock/medical{
-	name = "Surgery";
-	req_access_txt = "45"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -31056,10 +31027,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "bBs" = (
-/obj/machinery/door/airlock/medical{
-	name = "Surgery";
-	req_access_txt = "45"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -31444,10 +31411,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/genetics/cloning)
 "bCa" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Cloning";
-	req_one_access_txt = "5;9"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -32976,10 +32939,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/genetics/cloning)
 "bEA" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Cloning";
-	req_one_access_txt = "5;9"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
@@ -33669,10 +33628,6 @@
 	},
 /area/medical/morgue)
 "bGz" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Morgue";
-	req_access_txt = "6"
-	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -33683,6 +33638,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
 "bGA" = (
@@ -34595,9 +34551,6 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
 "bIo" = (
-/obj/machinery/door/airlock/medical{
-	name = "Cyrostasis"
-	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
@@ -34675,9 +34628,6 @@
 /turf/open/floor/plasteel,
 /area/medical/cryo)
 "bIu" = (
-/obj/machinery/door/airlock/medical{
-	name = "Cyrostasis"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -35282,9 +35232,6 @@
 /turf/open/floor/festive/alleyway,
 /area/medical/medbay/aft)
 "bJS" = (
-/obj/machinery/door/airlock/medical{
-	name = "Cyrostasis"
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -35376,9 +35323,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
 "bJY" = (
-/obj/machinery/door/airlock/medical{
-	name = "Cyrostasis"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -37134,12 +37078,10 @@
 /turf/open/floor/festive/alleyway,
 /area/medical/medbay/aft)
 "bNL" = (
-/obj/machinery/door/airlock/medical{
-	name = "Ambulance Bay"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
 "bNM" = (
@@ -37826,10 +37768,6 @@
 /area/medical/morgue)
 "bPo" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/grunge{
-	name = "Morgue";
-	req_access_txt = "6"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -37861,15 +37799,10 @@
 /turf/open/floor/festive/alleyway,
 /area/medical/medbay/aft)
 "bPr" = (
-/obj/machinery/door/airlock/medical{
-	name = "Ambulance Bay"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
 "bPs" = (
@@ -39503,10 +39436,6 @@
 /area/medical/chemistry)
 "bSE" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/grunge{
-	name = "Morgue";
-	req_access_txt = "6"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -56091,6 +56020,16 @@
 	},
 /turf/open/floor/wood,
 /area/commons/dorms)
+"uGg" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/white,
+/area/medical/cryo)
 "uHF" = (
 /obj/machinery/computer/rdconsole/robotics,
 /obj/effect/decal/festive/christmas_ivy_string,
@@ -79288,7 +79227,7 @@ bJS
 bGB
 bnJ
 bNL
-bPr
+uGg
 bRj
 bnJ
 bFs
