@@ -20,6 +20,7 @@
 #define VERB_CONSENT			(1<<17) // Sandstorm - ERP Mechanic Addition
 #define LEWD_VERB_SOUNDS		(1<<18) // Sandstorm - ERP Mechanic Addition
 #define TG_PLAYER_PANEL			(1<<19) // SPLURT - Opt for the old splashscreen player panel
+#define SOUND_JUKEBOXES			(1<<20)
 
 #define DEADMIN_ALWAYS				(1<<0)
 #define DEADMIN_ANTAGONIST			(1<<1)
