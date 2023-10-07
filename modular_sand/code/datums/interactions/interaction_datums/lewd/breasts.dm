@@ -95,6 +95,7 @@
 			target.handle_post_sex(NORMAL_LUST, CUM_TARGET_HAND, liquid_container ? liquid_container : user, CUM_TARGET_BREASTS)
 			playlewdinteractionsound(get_turf(user), 'modular_sand/sound/interactions/squelch1.ogg', 50, 1, -1)
 	else
+		target.handle_post_sex(NORMAL_LUST, CUM_TARGET_HAND, user, CUM_TARGET_BREASTS)
 		if(user.a_intent == INTENT_HARM)
 			user.visible_message(
 					pick(span_lewd("\The <b>[user]</b> грубо лапает грудь <b>[target]</b>."),

@@ -171,8 +171,12 @@ GLOBAL_VAR_INIT(floor_cluwnes, 0)
 		if(specific)
 			H = specific
 			A = get_area(H.loc)
-			if(H.stat != DEAD && H.has_dna() && !H.dna.check_mutation(CLUWNEMUT) && !is_type_in_typecache(A, invalid_area_typecache) && is_station_level(H.z))
+			if(H && ishuman(H) && H.stat != DEAD && H != current_victim && H.has_dna() && !H.dna.check_mutation(CLUWNEMUT) && !is_type_in_typecache(A, invalid_area_typecache) && is_station_level(H.z))
 				return target = current_victim
+			else
+				message_admins("Floor cluwne's target: [specific] has failed the check and the floor cluwne will be deleted.")
+				qdel(src)
+				return
 
 		A = get_area(H.loc)
 		if(H && ishuman(H) && H.stat != DEAD && H != current_victim && H.has_dna() && !H.dna.check_mutation(CLUWNEMUT) && !is_type_in_typecache(A, invalid_area_typecache) && is_station_level(H.z))
@@ -183,7 +187,6 @@ GLOBAL_VAR_INIT(floor_cluwnes, 0)
 
 	message_admins("Floor Cluwne was deleted due to a lack of valid targets, if this was a manually targeted instance please re-evaluate your choice.")
 	qdel(src)
-
 
 /mob/living/simple_animal/hostile/floor_cluwne/proc/Manifest()//handles disappearing and appearance anim
 	if(manifested)
