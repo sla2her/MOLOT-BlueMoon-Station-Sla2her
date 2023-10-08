@@ -20,13 +20,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"ah" = (
-/obj/structure/bodycontainer/crematorium{
-	dir = 8;
-	id = "crematoriumViro"
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "aj" = (
 /obj/machinery/power/apc{
 	areastring = "/area/command/heads_quarters/cmo";
@@ -60,6 +53,10 @@
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
+/area/hilbertshotel)
+"av" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "ax" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -147,13 +144,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"bd" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "bf" = (
 /obj/structure/closet/wardrobe/chemistry_white,
 /obj/machinery/light_switch{
@@ -206,17 +196,8 @@
 	icon_state = "wood-broken4"
 	},
 /area/hilbertshotel)
-"bD" = (
-/obj/effect/turf_decal/trimline/dark_green/line,
-/obj/effect/turf_decal/trimline/dark_green/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/blue/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/blue/line{
-	dir = 4
-	},
+"bt" = (
+/obj/machinery/smartfridge/organ/preloaded,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "bF" = (
@@ -247,16 +228,16 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"bK" = (
-/obj/structure/chair/pew/left{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
 "bO" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "windows_outside_fence"
+	},
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"bR" = (
+/obj/machinery/conveyor{
+	id = "garbage_viro"
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
@@ -307,10 +288,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"cn" = (
-/obj/structure/table,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "co" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
@@ -342,14 +319,6 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/hilbertshotel)
-"ct" = (
-/obj/structure/window/reinforced,
-/obj/structure/closet/secure_closet/medical1,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "cu" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -453,10 +422,18 @@
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/dark,
 /area/hilbertshotel)
-"dd" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 5
+"dc" = (
+/obj/effect/turf_decal/trimline/dark_green/line,
+/obj/effect/turf_decal/trimline/dark_green/line{
+	dir = 1
 	},
+/obj/effect/turf_decal/trimline/blue/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/blue/line{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "df" = (
@@ -467,14 +444,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"dh" = (
-/obj/structure/window/reinforced,
-/obj/structure/closet/crate/freezer/surplus_limbs,
-/obj/item/reagent_containers/glass/beaker/synthflesh,
-/obj/item/reagent_containers/glass/beaker/synthflesh,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "dk" = (
 /obj/structure/sign/warning/securearea,
@@ -493,6 +462,24 @@
 /obj/machinery/meter,
 /turf/closed/wall/r_wall,
 /area/hilbertshotel)
+"dp" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/airlock/virology{
+	autoclose = 0;
+	frequency = 1449;
+	id_tag = "virology_airlock_exterior";
+	name = "Virology Exterior Airlock";
+	req_access_txt = "39"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "dw" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -507,6 +494,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
+/area/hilbertshotel)
+"dy" = (
+/obj/structure/window/reinforced,
+/obj/structure/closet/secure_closet/medical2,
+/obj/item/storage/box/bodybags,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "dz" = (
 /obj/item/reagent_containers/food/drinks/beer,
@@ -533,13 +527,6 @@
 	},
 /turf/closed/wall,
 /area/hilbertshotel)
-"dI" = (
-/obj/machinery/stasis{
-	dir = 4
-	},
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "dL" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -555,24 +542,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"dN" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/line,
-/obj/machinery/door/airlock/virology{
-	autoclose = 0;
-	frequency = 1449;
-	id_tag = "virology_airlock_exterior";
-	name = "Virology Exterior Airlock";
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "dO" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -586,13 +555,6 @@
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible,
 /turf/open/floor/plasteel,
-/area/hilbertshotel)
-"dR" = (
-/obj/structure/chair/pew/right{
-	dir = 4
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "dT" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -697,16 +659,45 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
+"en" = (
+/obj/structure/sink/directional/north,
+/obj/structure/mirror/directional/north,
+/obj/machinery/doorButtons/access_button{
+	idDoor = "virology_airlock_interior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = -23;
+	pixel_y = -7;
+	req_access_txt = "39"
+	},
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"ep" = (
+/obj/structure/table,
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"eu" = (
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "ex" = (
 /obj/effect/spawner/bundle/crate/mosin,
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
 /area/hilbertshotel)
-"eF" = (
-/obj/structure/frame/computer{
-	anchored = 1;
-	dir = 8
+"eA" = (
+/obj/machinery/conveyor/inverted{
+	dir = 9;
+	id = "garbage_viro"
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
@@ -785,17 +776,6 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"eQ" = (
-/obj/structure/bed,
-/obj/item/bedsheet/medical,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"eT" = (
-/obj/structure/fluff/railing{
-	dir = 5
-	},
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
 "eV" = (
 /obj/item/storage/box/mre/menu4,
 /turf/open/floor/wood{
@@ -824,11 +804,6 @@
 	},
 /turf/open/water/decorative,
 /area/hilbertshotel)
-"eY" = (
-/obj/structure/chair/office/light,
-/obj/structure/window/reinforced,
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
 "fb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -839,11 +814,9 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"fi" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
+"fe" = (
+/obj/structure/disposalpipe/segment,
+/turf/closed/wall/r_wall,
 /area/hilbertshotel)
 "fk" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -869,6 +842,12 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"fr" = (
+/obj/effect/turf_decal/trimline/dark_green/end{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "fs" = (
 /obj/structure/table/reinforced,
@@ -904,6 +883,13 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"fC" = (
+/obj/effect/turf_decal/tile/green,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "fD" = (
 /obj/machinery/atmospherics/pipe/manifold4w/yellow/visible,
 /obj/machinery/meter,
@@ -912,12 +898,6 @@
 "fE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall,
-/area/hilbertshotel)
-"fG" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "fH" = (
 /obj/structure/table,
@@ -933,6 +913,13 @@
 /obj/item/clothing/neck/stethoscope,
 /obj/item/gun/syringe/dart,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"fL" = (
+/obj/machinery/stasis{
+	dir = 4
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "fM" = (
 /obj/item/restraints/legcuffs/beartrap{
@@ -974,6 +961,13 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"fX" = (
+/obj/structure/sink/directional/east,
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "fY" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/medical{
@@ -984,6 +978,15 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"gc" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "gd" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -1021,16 +1024,6 @@
 /obj/item/storage/box/syringes,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"gm" = (
-/obj/machinery/shower/directional/west,
-/obj/effect/turf_decal/trimline/blue/end{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "go" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/item/restraints/legcuffs/beartrap{
@@ -1050,6 +1043,11 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"gt" = (
+/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "gu" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -1080,13 +1078,6 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
-"gA" = (
-/obj/structure/chair/pew/left{
-	dir = 4
-	},
-/obj/machinery/light/directional/south,
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
 "gF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel/white,
@@ -1097,6 +1088,20 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"gM" = (
+/obj/structure/table/glass,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = 4
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = 6
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = 2
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "gN" = (
 /obj/item/reagent_containers/food/drinks/beer,
 /obj/item/reagent_containers/food/drinks/beer,
@@ -1105,10 +1110,15 @@
 	},
 /area/hilbertshotel)
 "gO" = (
-/obj/structure/chair/pew{
-	dir = 4
+/obj/machinery/door/airlock/virology{
+	autoclose = 0;
+	frequency = 1449;
+	id_tag = "virology_airlock_interior";
+	name = "Virology Interior Airlock";
+	req_access_txt = "39"
 	},
-/turf/open/floor/plasteel/white,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "gQ" = (
 /obj/machinery/door/airlock/security/glass{
@@ -1127,11 +1137,23 @@
 	},
 /turf/open/floor/engine/vacuum,
 /area/hilbertshotel)
+"gT" = (
+/obj/structure/window/reinforced,
+/obj/structure/table,
+/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "gV" = (
 /obj/machinery/light{
 	light_color = "#cee5d2"
 	},
 /turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"gY" = (
+/obj/effect/turf_decal/trimline/dark_green/end{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "gZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -1170,11 +1192,13 @@
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "hg" = (
-/obj/machinery/conveyor/inverted{
-	dir = 10;
-	id = "garbage_viro"
+/obj/effect/turf_decal/tile/green{
+	dir = 4
 	},
-/turf/open/floor/plating,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "hl" = (
 /obj/machinery/smartfridge/organ/preloaded,
@@ -1232,9 +1256,8 @@
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "hC" = (
-/obj/effect/turf_decal/trimline/dark_green/end{
-	dir = 4
-	},
+/obj/structure/window/reinforced,
+/obj/effect/turf_decal/tile/green/half/contrasted,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "hD" = (
@@ -1251,6 +1274,16 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
+"hG" = (
+/obj/structure/closet/secure_closet/medical1,
+/obj/item/storage/box/bodybags{
+	pixel_y = 11
+	},
+/obj/item/storage/box/bodybags{
+	pixel_y = 11
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "hJ" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /obj/effect/turf_decal/tile/blue,
@@ -1258,6 +1291,12 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"hK" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "hL" = (
 /obj/structure/chair,
@@ -1308,6 +1347,12 @@
 /obj/item/grown/log/tree,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"ih" = (
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "il" = (
 /obj/structure/grille,
@@ -1380,6 +1425,13 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
+"iz" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "iA" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/virology{
@@ -1428,12 +1480,6 @@
 	},
 /mob/living/carbon/monkey,
 /turf/open/floor/plasteel,
-/area/hilbertshotel)
-"iO" = (
-/obj/effect/turf_decal/tile/green{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "iQ" = (
 /obj/structure/disposalpipe/segment{
@@ -1488,13 +1534,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"je" = (
-/obj/machinery/stasis{
-	dir = 8
-	},
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "jh" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -1511,9 +1550,19 @@
 /obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"jm" = (
+/obj/structure/chair/office/light,
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
 "jn" = (
 /obj/structure/sign/departments/medbay/alt,
 /turf/closed/wall,
+/area/hilbertshotel)
+"jp" = (
+/obj/structure/table/optable,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "jq" = (
 /obj/structure/chair/office/light{
@@ -1532,10 +1581,6 @@
 /obj/item/pen,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"jw" = (
-/obj/effect/turf_decal/tile/green/half/contrasted,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "jy" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1543,12 +1588,6 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
-/area/hilbertshotel)
-"jz" = (
-/obj/machinery/conveyor{
-	id = "garbage_viro"
-	},
-/turf/open/floor/plating,
 /area/hilbertshotel)
 "jA" = (
 /obj/structure/reagent_dispensers/peppertank{
@@ -1577,17 +1616,6 @@
 "jF" = (
 /obj/effect/landmark/start/paramedic,
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"jH" = (
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"jJ" = (
-/obj/machinery/door/airlock/virology{
-	name = "Break Room";
-	req_access_txt = "39"
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "jK" = (
 /obj/structure/disposalpipe/segment,
@@ -1667,10 +1695,23 @@
 "jV" = (
 /turf/open/floor/engine/vacuum,
 /area/hilbertshotel)
+"ka" = (
+/obj/structure/chair/pew/left{
+	dir = 4
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
 "kb" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/visible,
 /obj/machinery/meter/atmos/distro_loop,
 /turf/open/floor/plasteel,
+/area/hilbertshotel)
+"kc" = (
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "kd" = (
 /obj/structure/cable{
@@ -1678,6 +1719,16 @@
 	},
 /obj/effect/landmark/start/paramedic,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"ke" = (
+/obj/machinery/door/airlock/virology{
+	autoclose = 0;
+	frequency = 1449;
+	id_tag = "virology_airlock_interior";
+	name = "Virology Interior Airlock";
+	req_access_txt = "39"
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "ki" = (
 /obj/machinery/vending/wardrobe/chem_wardrobe,
@@ -1706,6 +1757,12 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
+/area/hilbertshotel)
+"ko" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "kq" = (
 /obj/structure/disposalpipe/segment,
@@ -1792,16 +1849,20 @@
 /obj/structure/closet/wardrobe/pjs,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"kS" = (
+/obj/machinery/vending/wardrobe/viro_wardrobe,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "kT" = (
-/obj/structure/window/reinforced{
+/obj/machinery/stasis{
 	dir = 8
 	},
-/obj/structure/table,
-/obj/item/storage/box/bodybags{
-	pixel_y = 11
-	},
-/obj/item/hand_labeler,
-/turf/open/floor/plating,
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"kY" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "lb" = (
 /obj/machinery/door/airlock/engineering/glass{
@@ -1809,6 +1870,21 @@
 	req_access_txt = "10"
 	},
 /turf/open/floor/plating,
+/area/hilbertshotel)
+"lc" = (
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"ld" = (
+/obj/machinery/door/airlock/virology{
+	name = "Break Room";
+	req_access_txt = "39"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "lh" = (
 /obj/structure/table,
@@ -1829,20 +1905,6 @@
 	dir = 10
 	},
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"lm" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/closet/secure_closet/medical2,
-/obj/item/storage/box/bodybags,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"ln" = (
-/obj/machinery/computer/operating,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "lu" = (
 /obj/effect/turf_decal/vg_decals/atmos/nitrous_oxide,
@@ -1889,6 +1951,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/hilbertshotel)
+"lK" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 5
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "lM" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1930,6 +1998,10 @@
 	icon_state = "wood-broken2"
 	},
 /area/hilbertshotel)
+"lY" = (
+/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "lZ" = (
 /obj/structure/table,
 /obj/structure/bedsheetbin{
@@ -1953,13 +2025,6 @@
 	dir = 1
 	},
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"mf" = (
-/obj/machinery/conveyor{
-	dir = 5;
-	id = "garbage_viro"
-	},
-/turf/open/floor/plating,
 /area/hilbertshotel)
 "mg" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -2000,12 +2065,6 @@
 	dir = 8
 	},
 /turf/open/floor/festive/stairs/stairssouth,
-/area/hilbertshotel)
-"mt" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "mu" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -2067,18 +2126,16 @@
 /obj/structure/grille,
 /turf/closed/wall/r_wall,
 /area/hilbertshotel)
-"mF" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "garbage_viro"
-	},
-/turf/open/floor/plating,
-/area/hilbertshotel)
 "mL" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"mM" = (
+/obj/structure/bed,
+/obj/item/bedsheet/medical,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "mO" = (
 /obj/item/storage/box/mre/menu3,
@@ -2141,22 +2198,18 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"ni" = (
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "nj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 5
 	},
 /turf/open/floor/plating,
-/area/hilbertshotel)
-"nn" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 8
-	},
-/obj/machinery/holopad,
-/obj/effect/turf_decal/box/white{
-	color = "#52B4E9"
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "no" = (
 /obj/machinery/iv_drip,
@@ -2172,16 +2225,6 @@
 "nq" = (
 /obj/structure/streetdecor/lamp,
 /turf/open/floor/festive/alleyway/safe,
-/area/hilbertshotel)
-"nr" = (
-/obj/machinery/shower/directional/west,
-/obj/effect/turf_decal/trimline/blue/end{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "ns" = (
 /obj/structure/cable{
@@ -2239,6 +2282,16 @@
 /obj/structure/closet/secure_closet/personal/patient,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"nH" = (
+/obj/machinery/shower/directional/west,
+/obj/effect/turf_decal/trimline/blue/end{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "nJ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -2286,6 +2339,13 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
+"nX" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "nY" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -2312,6 +2372,10 @@
 	name = "Chemistry Lab";
 	req_access_txt = "5; 33"
 	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"om" = (
+/obj/effect/turf_decal/tile/green,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "oo" = (
@@ -2348,6 +2412,13 @@
 	icon_state = "wood-broken5"
 	},
 /area/hilbertshotel)
+"ow" = (
+/obj/machinery/iv_drip,
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "oy" = (
 /obj/effect/turf_decal/tile/blue{
 	alpha = 255
@@ -2364,13 +2435,17 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"oB" = (
+/obj/structure/table,
+/obj/item/stack/medical/gauze/adv,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "oC" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"oD" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "oE" = (
 /obj/structure/bonfire/dense,
@@ -2416,6 +2491,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hilbertshotel)
+"oY" = (
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "oZ" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Recovery Room"
@@ -2425,6 +2506,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"pe" = (
+/obj/machinery/conveyor{
+	dir = 5;
+	id = "garbage_viro"
+	},
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "pg" = (
 /mob/living/carbon/monkey,
@@ -2443,6 +2531,24 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
+/area/hilbertshotel)
+"pn" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/airlock/virology{
+	autoclose = 0;
+	frequency = 1449;
+	id_tag = "virology_airlock_exterior";
+	name = "Virology Exterior Airlock";
+	req_access_txt = "39"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "po" = (
 /obj/machinery/door/firedoor,
@@ -2576,6 +2682,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"qa" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "qb" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1;
@@ -2602,12 +2714,6 @@
 /area/hilbertshotel)
 "qi" = (
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"qj" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2642,16 +2748,15 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"qB" = (
+"qy" = (
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
+/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"qE" = (
-/obj/effect/turf_decal/tile/green{
-	dir = 1
+"qI" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 9
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -2697,6 +2802,41 @@
 "qV" = (
 /obj/structure/chair/sofa/right/brown,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"qZ" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"re" = (
+/obj/structure/bodycontainer/crematorium{
+	dir = 8;
+	id = "crematoriumViro"
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"rg" = (
+/obj/structure/fluff/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/stairs{
+	dir = 8
+	},
+/area/hilbertshotel)
+"rh" = (
+/obj/structure/chair/pew/left{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"rj" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "rk" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2747,17 +2887,26 @@
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
-"rt" = (
-/obj/machinery/computer/operating{
-	dir = 1
+"rs" = (
+/obj/structure/table,
+/obj/item/stack/medical/bone_gel,
+/obj/item/stack/sticky_tape/surgical,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "ru" = (
 /obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"rv" = (
+/obj/structure/frame/computer{
+	anchored = 1;
+	dir = 8
+	},
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "rw" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -2777,15 +2926,16 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"rC" = (
+/obj/structure/table,
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "rI" = (
 /obj/machinery/atmospherics/components/unary/cryo_cell,
 /turf/open/floor/plasteel,
-/area/hilbertshotel)
-"rJ" = (
-/obj/effect/turf_decal/trimline/dark_green/end{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "rL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -2843,19 +2993,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"rX" = (
-/obj/machinery/door/airlock/virology{
-	autoclose = 0;
-	frequency = 1449;
-	id_tag = "virology_airlock_interior";
-	name = "Virology Interior Airlock";
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "sc" = (
 /obj/machinery/door/airlock/security/glass{
 	id_tag = "outerbrig";
@@ -2899,22 +3036,8 @@
 /turf/open/floor/plating,
 /area/hilbertshotel)
 "sk" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/vending/medical,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"sm" = (
-/obj/structure/closet/secure_closet/medical1,
-/obj/item/storage/box/bodybags{
-	pixel_y = 11
-	},
-/obj/item/storage/box/bodybags{
-	pixel_y = 11
+/obj/machinery/shower/directional/south{
+	pixel_y = 17
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -2959,12 +3082,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"sz" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 10
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "sA" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -2973,6 +3090,15 @@
 "sB" = (
 /obj/machinery/vending/wardrobe/viro_wardrobe,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"sC" = (
+/obj/structure/table,
+/obj/item/stack/sheet/mineral/plasma,
+/obj/item/storage/box/donkpockets{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "sD" = (
 /obj/structure/cable{
@@ -3014,6 +3140,12 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
+/area/hilbertshotel)
+"sM" = (
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "sP" = (
 /obj/machinery/light,
@@ -3102,6 +3234,11 @@
 /obj/structure/closet/secure_closet/chemical,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"te" = (
+/obj/machinery/computer/operating,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "th" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -3120,6 +3257,16 @@
 "tm" = (
 /obj/item/reagent_containers/food/drinks/beer,
 /turf/open/floor/festive/cobblestone/safe,
+/area/hilbertshotel)
+"tn" = (
+/obj/machinery/computer/med_data{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "tt" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -3151,6 +3298,13 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"tx" = (
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
 "ty" = (
 /obj/item/kitchen/knife/combat,
 /turf/open/floor/wood{
@@ -3166,6 +3320,20 @@
 	dir = 4
 	},
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"tC" = (
+/obj/machinery/doorButtons/airlock_controller{
+	idExterior = "virology_airlock_exterior";
+	idInterior = "virology_airlock_interior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Console";
+	pixel_x = -25;
+	req_access_txt = "39"
+	},
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "tE" = (
 /obj/structure/table/glass,
@@ -3191,6 +3359,13 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"tG" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "tI" = (
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 1
@@ -3200,15 +3375,24 @@
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
+"tJ" = (
+/obj/structure/table,
+/obj/item/stack/medical/bone_gel,
+/obj/item/stack/sticky_tape/surgical,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 9
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "tK" = (
 /obj/structure/streetdecor/lamp,
 /turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
-"tM" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
+"tL" = (
+/obj/machinery/disposal/bin,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/iron/white/textured,
 /area/hilbertshotel)
 "tR" = (
 /obj/machinery/door/firedoor,
@@ -3218,29 +3402,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"tS" = (
-/obj/structure/table,
-/obj/item/stack/medical/gauze/adv,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+"tU" = (
+/obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"tW" = (
-/obj/structure/sink/directional/north,
-/obj/structure/mirror/directional/north,
-/obj/machinery/doorButtons/access_button{
-	idDoor = "virology_airlock_interior";
-	idSelf = "virology_airlock_control";
-	name = "Virology Access Button";
-	pixel_x = -23;
-	pixel_y = -7;
-	req_access_txt = "39"
+/obj/structure/table,
+/obj/item/storage/box/bodybags{
+	pixel_y = 11
 	},
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
+/obj/item/hand_labeler,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "tX" = (
 /obj/structure/lattice,
@@ -3270,6 +3441,11 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
+"ub" = (
+/obj/structure/closet/l3closet/virology,
+/obj/effect/turf_decal/tile/green/half/contrasted,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "uc" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -3287,16 +3463,16 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"ue" = (
+/obj/machinery/shower/directional/west,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "uf" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /turf/open/floor/plasteel,
-/area/hilbertshotel)
-"ug" = (
-/obj/machinery/shower/directional/west,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "uh" = (
 /obj/machinery/camera{
@@ -3329,22 +3505,19 @@
 	},
 /turf/closed/wall/r_wall,
 /area/hilbertshotel)
+"uw" = (
+/obj/structure/chair/pew/left{
+	dir = 4
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
 "uA" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/item/storage/box/lights/mixed,
 /turf/open/floor/plating,
-/area/hilbertshotel)
-"uB" = (
-/obj/machinery/computer/crew{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "uD" = (
 /obj/effect/turf_decal/tile/blue{
@@ -3461,17 +3634,6 @@
 /obj/machinery/air_sensor/atmos/mix_tank,
 /turf/open/floor/engine/vacuum,
 /area/hilbertshotel)
-"vx" = (
-/obj/structure/table/glass,
-/obj/item/storage/box/bodybags,
-/obj/item/storage/box/bodybags{
-	pixel_y = 6
-	},
-/obj/item/storage/box/bodybags{
-	pixel_y = 11
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "vz" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -3537,14 +3699,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"vK" = (
-/obj/machinery/vending/wardrobe/viro_wardrobe,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"vM" = (
-/obj/machinery/limbgrower,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "vQ" = (
 /obj/structure/cable{
@@ -3617,26 +3771,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hilbertshotel)
-"wj" = (
-/obj/structure/bed{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"wk" = (
-/turf/open/floor/iron/stairs{
-	dir = 1
-	},
-/area/hilbertshotel)
-"wl" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "wm" = (
 /obj/structure/railing{
 	dir = 1
@@ -3648,17 +3782,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"wp" = (
-/obj/machinery/door/airlock/virology{
-	autoclose = 0;
-	frequency = 1449;
-	id_tag = "virology_airlock_interior";
-	name = "Virology Interior Airlock";
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "wq" = (
 /obj/machinery/door/firedoor,
@@ -3673,6 +3796,10 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+/area/hilbertshotel)
+"wA" = (
+/obj/effect/turf_decal/tile/green/half/contrasted,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "wB" = (
 /turf/open/floor/festive/stairs/stairssouth,
@@ -3716,23 +3843,21 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hilbertshotel)
-"wI" = (
-/obj/structure/chair/office/light{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "wN" = (
 /obj/item/restraints/legcuffs/beartrap{
 	armed = 1
 	},
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"wR" = (
-/obj/structure/window/reinforced{
-	dir = 1
+"wQ" = (
+/obj/machinery/door/airlock/virology{
+	autoclose = 0;
+	frequency = 1449;
+	id_tag = "virology_airlock_interior";
+	name = "Virology Interior Airlock";
+	req_access_txt = "39"
 	},
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -3741,24 +3866,6 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"wV" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/machinery/door/airlock/virology{
-	autoclose = 0;
-	frequency = 1449;
-	id_tag = "virology_airlock_exterior";
-	name = "Virology Exterior Airlock";
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "wZ" = (
 /turf/open/misc/grass,
@@ -3817,10 +3924,6 @@
 	icon_state = "wood-broken5"
 	},
 /area/hilbertshotel)
-"xp" = (
-/obj/structure/chair/stool,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "xr" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -3831,12 +3934,6 @@
 "xw" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
-	},
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"xx" = (
-/obj/structure/window/reinforced{
-	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
@@ -3895,12 +3992,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"xI" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "xL" = (
 /turf/closed/wall/r_wall,
 /area/hilbertshotel)
@@ -3908,11 +3999,6 @@
 /obj/structure/chair/office/light{
 	dir = 1
 	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"xO" = (
-/obj/structure/table/optable,
-/obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "xU" = (
@@ -4014,20 +4100,6 @@
 /obj/structure/chair/sofa/left/brown,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"ys" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "garbage_viro"
-	},
-/obj/machinery/recycler,
-/turf/open/floor/plating,
-/area/hilbertshotel)
-"yw" = (
-/obj/structure/sink/directional/north{
-	pixel_y = 29
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "yy" = (
 /obj/structure/sign/warning/nosmoking{
 	pixel_y = 30
@@ -4076,6 +4148,26 @@
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
+/area/hilbertshotel)
+"yW" = (
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
+/obj/machinery/holopad,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"ze" = (
+/obj/machinery/computer/crew{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "zf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -4155,10 +4247,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"zB" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "zD" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -4180,6 +4268,12 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+/area/hilbertshotel)
+"zG" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 6
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "zI" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
@@ -4210,15 +4304,6 @@
 	req_access_txt = "5"
 	},
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"zV" = (
-/obj/structure/table,
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/storage/box/donkpockets{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "zZ" = (
 /obj/structure/chair,
@@ -4260,6 +4345,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"Af" = (
+/obj/structure/sink/directional/east,
+/obj/effect/turf_decal/trimline/blue/filled/corner,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "Ah" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/extinguisher,
@@ -4279,15 +4369,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"At" = (
-/obj/structure/table,
-/obj/item/stack/medical/bone_gel,
-/obj/item/stack/sticky_tape/surgical,
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 9
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Au" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/effect/spawner/structure/window/reinforced,
@@ -4301,13 +4382,6 @@
 	dir = 9
 	},
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"AH" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
-	},
-/obj/structure/disposaloutlet,
-/turf/open/floor/plating,
 /area/hilbertshotel)
 "AI" = (
 /obj/structure/cable{
@@ -4338,16 +4412,22 @@
 	icon_state = "wood-broken6"
 	},
 /area/hilbertshotel)
-"AP" = (
-/obj/structure/window/reinforced,
-/obj/structure/closet/secure_closet/medical2,
-/obj/item/storage/box/bodybags,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "AS" = (
 /obj/structure/bodycontainer/morgue,
 /turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"AT" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/computer/pandemic,
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "AU" = (
 /obj/structure/cable{
@@ -4376,10 +4456,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"Bc" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 8
+"AZ" = (
+/obj/structure/window/reinforced{
+	dir = 1
 	},
+/obj/structure/closet/crate/freezer/surplus_limbs,
+/obj/item/reagent_containers/glass/beaker/synthflesh,
+/obj/item/reagent_containers/glass/beaker/synthflesh,
+/obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Bf" = (
@@ -4392,16 +4476,6 @@
 "Bh" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/misc/grass,
-/area/hilbertshotel)
-"Bk" = (
-/obj/machinery/computer/med_data{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Bm" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -4426,11 +4500,6 @@
 	},
 /obj/machinery/computer/scan_consolenew,
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"Bu" = (
-/obj/structure/window/reinforced,
-/obj/effect/turf_decal/tile/green/half/contrasted,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "By" = (
 /obj/item/reagent_containers/food/drinks/beer,
@@ -4473,38 +4542,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"BO" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/conveyor_switch/oneway{
-	dir = 8;
-	id = "garbage_viro";
-	name = "disposal conveyor"
-	},
-/turf/open/floor/plating,
-/area/hilbertshotel)
-"BP" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/hilbertshotel)
 "BR" = (
 /mob/living/simple_animal/hostile/faithless,
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
-/area/hilbertshotel)
-"BT" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "BW" = (
 /obj/structure/disposalpipe/segment{
@@ -4528,6 +4570,15 @@
 /obj/effect/turf_decal/tile/purple,
 /obj/machinery/vending/wardrobe/gene_wardrobe,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"Cc" = (
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Cf" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -4556,6 +4607,11 @@
 	pixel_y = -22
 	},
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"Cl" = (
+/obj/structure/window/reinforced,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Cq" = (
 /obj/structure/chair/office/light{
@@ -4606,17 +4662,9 @@
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
-"CM" = (
-/obj/machinery/doorButtons/airlock_controller{
-	idExterior = "virology_airlock_exterior";
-	idInterior = "virology_airlock_interior";
-	idSelf = "virology_airlock_control";
-	name = "Virology Access Console";
-	pixel_x = -25;
-	req_access_txt = "39"
-	},
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 1
+"CC" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -4667,13 +4715,6 @@
 "Db" = (
 /mob/living/carbon/monkey,
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"De" = (
-/obj/machinery/stasis{
-	dir = 8
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Do" = (
 /obj/structure/table/glass,
@@ -4773,12 +4814,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"DS" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 6
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "DT" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -4837,6 +4872,10 @@
 /obj/item/folder/white,
 /obj/item/pen,
 /turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"Ec" = (
+/mob/living/carbon/monkey,
+/turf/open/misc/grass,
 /area/hilbertshotel)
 "Ed" = (
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
@@ -4927,12 +4966,6 @@
 /obj/effect/turf_decal/vg_decals/atmos/plasma,
 /turf/open/floor/engine/plasma,
 /area/hilbertshotel)
-"EJ" = (
-/obj/structure/fluff/railing{
-	dir = 9
-	},
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
 "ES" = (
 /obj/machinery/power/floodlight,
 /obj/structure/cable{
@@ -4964,13 +4997,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"EW" = (
-/obj/structure/table,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "EX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -4991,12 +5017,6 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
-/area/hilbertshotel)
-"EY" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Fd" = (
 /obj/structure/cable{
@@ -5021,10 +5041,27 @@
 	icon_state = "wood-broken2"
 	},
 /area/hilbertshotel)
+"Ff" = (
+/obj/item/storage/secure/safe{
+	pixel_x = 5;
+	pixel_y = 29
+	},
+/obj/machinery/camera{
+	c_tag = "Virology Break Room";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "Fj" = (
 /obj/machinery/chem_master,
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
 /turf/open/floor/iron/white,
+/area/hilbertshotel)
+"Fl" = (
+/obj/structure/fluff/railing{
+	dir = 9
+	},
+/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Fm" = (
 /obj/structure/streetdecor/lamp,
@@ -5047,6 +5084,13 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"Fs" = (
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Ft" = (
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
@@ -5112,23 +5156,17 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"FK" = (
-/obj/item/storage/secure/safe{
-	pixel_x = 5;
-	pixel_y = 29
-	},
-/obj/machinery/camera{
-	c_tag = "Virology Break Room";
-	network = list("ss13","medbay")
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "FN" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
 "FQ" = (
 /turf/open/floor/plasteel/dark,
+/area/hilbertshotel)
+"FS" = (
+/turf/open/floor/iron/stairs{
+	dir = 1
+	},
 /area/hilbertshotel)
 "FT" = (
 /obj/structure/cable{
@@ -5166,13 +5204,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Gi" = (
-/obj/structure/chair/pew/left{
-	dir = 4
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
 "Gj" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/tree/jungle,
@@ -5186,20 +5217,17 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"Gq" = (
-/obj/machinery/door/airlock/virology{
-	autoclose = 0;
-	frequency = 1449;
-	id_tag = "virology_airlock_interior";
-	name = "Virology Interior Airlock";
-	req_access_txt = "39"
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Gs" = (
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
+/area/hilbertshotel)
+"Gt" = (
+/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Gv" = (
 /obj/machinery/light/directional/south,
@@ -5233,23 +5261,9 @@
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
-"GK" = (
-/obj/machinery/disposal/bin,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/iron/white/textured,
-/area/hilbertshotel)
-"GM" = (
-/obj/structure/table/glass,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health{
-	pixel_y = 4
-	},
-/obj/item/clothing/glasses/hud/health{
-	pixel_y = 6
-	},
-/obj/item/clothing/glasses/hud/health{
-	pixel_y = 2
+"GG" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -5261,20 +5275,16 @@
 /obj/item/storage/box/mre/menu1,
 /turf/open/floor/festive/cobblestone/safe,
 /area/hilbertshotel)
+"GS" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "GU" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
 /obj/structure/lattice,
 /turf/open/space,
-/area/hilbertshotel)
-"GX" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/power/apc{
-	areastring = "/area/medical/surgery";
-	dir = 8;
-	name = "Treatment Center APC";
-	pixel_x = 25
-	},
-/turf/open/floor/iron/white/textured,
 /area/hilbertshotel)
 "GZ" = (
 /obj/structure/disposalpipe/segment{
@@ -5392,6 +5402,19 @@
 /obj/machinery/microwave,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"HK" = (
+/obj/machinery/door/airlock/virology{
+	autoclose = 0;
+	frequency = 1449;
+	id_tag = "virology_airlock_interior";
+	name = "Virology Interior Airlock";
+	req_access_txt = "39"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "HM" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5411,11 +5434,8 @@
 "HO" = (
 /turf/open/floor/festive/stairs/stairseast,
 /area/hilbertshotel)
-"HP" = (
-/obj/structure/closet/l3closet/virology,
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 8
-	},
+"HQ" = (
+/obj/structure/chair/stool,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "HU" = (
@@ -5474,10 +5494,10 @@
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Ij" = (
-/obj/structure/window/reinforced,
-/obj/structure/table,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+"Ii" = (
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Im" = (
@@ -5508,24 +5528,6 @@
 	},
 /obj/effect/landmark/start/paramedic,
 /turf/open/floor/plasteel/dark,
-/area/hilbertshotel)
-"Is" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/computer/pandemic,
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"Iu" = (
-/obj/structure/table,
-/obj/machinery/microwave{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Iv" = (
 /obj/machinery/meter,
@@ -5572,14 +5574,6 @@
 /obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"IC" = (
-/obj/structure/fluff/railing{
-	dir = 1
-	},
-/turf/open/floor/iron/stairs{
-	dir = 8
-	},
-/area/hilbertshotel)
 "ID" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel,
@@ -5615,10 +5609,6 @@
 /obj/item/storage/box/rxglasses,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"IX" = (
-/obj/machinery/smartfridge/organ/preloaded,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Ja" = (
 /obj/effect/landmark/start/medical_doctor,
 /obj/structure/cable{
@@ -5648,6 +5638,12 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
+"Jj" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "Jk" = (
 /turf/open/floor/plasteel/white/side{
 	dir = 8
@@ -5675,15 +5671,6 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"Js" = (
-/obj/machinery/airalarm{
-	pixel_y = 23
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Jz" = (
 /obj/machinery/chem_dispenser,
 /obj/effect/turf_decal/tile/yellow,
@@ -5705,6 +5692,16 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+/area/hilbertshotel)
+"JD" = (
+/obj/machinery/shower/directional/west,
+/obj/effect/turf_decal/trimline/blue/end{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "JF" = (
 /obj/machinery/door/firedoor,
@@ -5747,12 +5744,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"JZ" = (
-/obj/structure/chair/pew/right{
-	dir = 4
+"Ka" = (
+/obj/machinery/stasis{
+	dir = 8
 	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/plasteel/white,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Kb" = (
 /obj/machinery/vending/wardrobe/medi_wardrobe,
@@ -5765,23 +5762,6 @@
 "Kf" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plating,
-/area/hilbertshotel)
-"Kg" = (
-/obj/structure/table,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"Kh" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/smartfridge/chemistry/virology/preloaded,
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Kk" = (
 /turf/open/floor/engine/n2o,
@@ -5817,10 +5797,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Ku" = (
-/obj/structure/sink/directional/east,
-/obj/effect/turf_decal/trimline/blue/filled/corner,
-/turf/open/floor/iron/white,
+"KA" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "KC" = (
 /obj/structure/disposalpipe/segment,
@@ -5843,6 +5824,11 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"KJ" = (
+/obj/structure/table,
+/obj/machinery/reagentgrinder,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "KK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -5858,10 +5844,6 @@
 	},
 /obj/machinery/cell_charger,
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"KS" = (
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "KT" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -5895,6 +5877,10 @@
 /area/hilbertshotel)
 "Ld" = (
 /turf/closed/wall/mineral/wood,
+/area/hilbertshotel)
+"Lk" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Lo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -5960,6 +5946,10 @@
 /obj/structure/flora/tree/jungle,
 /turf/open/misc/grass,
 /area/hilbertshotel)
+"LI" = (
+/obj/structure/table,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "LJ" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/plasteel/white/side,
@@ -5992,6 +5982,14 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
+/area/hilbertshotel)
+"Mb" = (
+/obj/machinery/iv_drip,
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Mc" = (
 /obj/machinery/iv_drip,
@@ -6054,12 +6052,6 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/hilbertshotel)
-"Mz" = (
-/obj/structure/window/reinforced,
-/obj/structure/table,
-/obj/effect/turf_decal/tile/green/half/contrasted,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "MA" = (
 /obj/machinery/vending/wallmed{
@@ -6151,21 +6143,11 @@
 	},
 /turf/open/misc/grass,
 /area/hilbertshotel)
-"MY" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/disposal/bin,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+"Na" = (
+/obj/structure/chair/pew{
 	dir = 4
 	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"MZ" = (
-/obj/effect/turf_decal/tile/green{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
+/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Nb" = (
 /obj/structure/disposalpipe/segment,
@@ -6175,6 +6157,11 @@
 /obj/structure/table,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /turf/open/floor/plasteel,
+/area/hilbertshotel)
+"Nc" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "Nd" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -6252,6 +6239,18 @@
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
+"Nz" = (
+/obj/structure/sink/directional/west{
+	pixel_x = 12
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"NA" = (
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "NC" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/effect/turf_decal/tile/blue{
@@ -6263,6 +6262,22 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"ND" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"NF" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/vending/medical,
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "NG" = (
 /obj/effect/spawner/structure/window,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -6270,10 +6285,29 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
+"NK" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/smartfridge/chemistry/virology/preloaded,
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "NL" = (
 /obj/machinery/vending/wardrobe/chem_wardrobe,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"NQ" = (
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -6323,6 +6357,12 @@
 /mob/living/simple_animal/hostile/faithless,
 /turf/open/floor/festive/stairs/stairsnorth,
 /area/hilbertshotel)
+"Ok" = (
+/obj/structure/fluff/railing,
+/turf/open/floor/iron/stairs{
+	dir = 8
+	},
+/area/hilbertshotel)
 "Om" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -6348,12 +6388,6 @@
 /obj/effect/landmark/blobstart,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Oz" = (
-/obj/structure/chair/pew/right{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/hilbertshotel)
 "OA" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -6361,9 +6395,12 @@
 /turf/open/floor/plating,
 /area/hilbertshotel)
 "OB" = (
-/obj/machinery/iv_drip,
-/obj/structure/closet/crate/freezer,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/structure/bed{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "OE" = (
@@ -6383,12 +6420,6 @@
 "OL" = (
 /obj/machinery/air_sensor/atmos/toxin_tank,
 /turf/open/floor/engine/plasma,
-/area/hilbertshotel)
-"OM" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 9
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "OR" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -6431,15 +6462,24 @@
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Pc" = (
-/obj/structure/window/reinforced,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "garbage_viro"
+	},
+/obj/machinery/recycler,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "Ph" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"Pj" = (
+/obj/structure/sink/directional/north{
+	pixel_y = 29
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Pl" = (
 /obj/machinery/light{
@@ -6463,6 +6503,11 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white,
+/area/hilbertshotel)
+"Pr" = (
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/iron/white/textured,
 /area/hilbertshotel)
 "Ps" = (
 /obj/machinery/light{
@@ -6522,10 +6567,20 @@
 	icon_state = "wood-broken7"
 	},
 /area/hilbertshotel)
-"PL" = (
-/obj/structure/closet/l3closet/virology,
-/obj/effect/turf_decal/tile/green/half/contrasted,
-/turf/open/floor/iron/white,
+"PO" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/conveyor_switch/oneway{
+	dir = 8;
+	id = "garbage_viro";
+	name = "disposal conveyor"
+	},
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "PQ" = (
 /obj/effect/landmark/start/stowaway,
@@ -6537,6 +6592,19 @@
 	},
 /obj/structure/closet/secure_closet/medical1,
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"PW" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/disposal/bin,
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "PX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -6573,6 +6641,16 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"Qd" = (
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/machinery/power/apc{
+	areastring = "/area/medical/surgery";
+	dir = 8;
+	name = "Treatment Center APC";
+	pixel_x = 25
+	},
+/turf/open/floor/iron/white/textured,
 /area/hilbertshotel)
 "Qe" = (
 /obj/machinery/airalarm{
@@ -6651,33 +6729,11 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"Qz" = (
-/obj/machinery/door/airlock/virology{
-	autoclose = 0;
-	frequency = 1449;
-	id_tag = "virology_airlock_interior";
-	name = "Virology Interior Airlock";
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "QB" = (
-/obj/machinery/shower/directional/south{
-	pixel_y = 17
-	},
-/obj/machinery/doorButtons/access_button{
-	idDoor = "virology_airlock_interior";
-	idSelf = "virology_airlock_control";
-	name = "Virology Access Button";
-	pixel_x = 23;
-	pixel_y = -7;
-	req_access_txt = "39"
-	},
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 1
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_x = -3;
+	pixel_y = 6
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -6739,36 +6795,11 @@
 /obj/machinery/limbgrower,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Ra" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/closet/crate/freezer/surplus_limbs,
-/obj/item/reagent_containers/glass/beaker/synthflesh,
-/obj/item/reagent_containers/glass/beaker/synthflesh,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"Rb" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Rf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/mix_output{
 	dir = 8
 	},
 /turf/open/floor/engine/vacuum,
-/area/hilbertshotel)
-"Rh" = (
-/obj/structure/table,
-/obj/item/stack/medical/bone_gel,
-/obj/item/stack/sticky_tape/surgical,
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 10
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Rj" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -6809,6 +6840,13 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
+"RC" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "garbage_viro"
+	},
+/turf/open/floor/plating,
+/area/hilbertshotel)
 "RD" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical/glass{
@@ -6821,16 +6859,19 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"RH" = (
-/obj/machinery/disposal/bin,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/iron/white/textured,
-/area/hilbertshotel)
 "RK" = (
 /obj/structure/chair/stool/directional,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"RN" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/medical2,
+/obj/item/storage/box/bodybags,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "RR" = (
 /obj/structure/table,
@@ -6854,10 +6895,16 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"RZ" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/airalarm/directional/east,
-/turf/open/floor/iron/white/textured,
+"RY" = (
+/obj/structure/table/optable,
+/turf/open/floor/plating,
+/area/hilbertshotel)
+"Sa" = (
+/obj/machinery/stasis{
+	dir = 4
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Sc" = (
 /obj/machinery/chem_master,
@@ -6953,13 +7000,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"SG" = (
-/obj/machinery/stasis{
-	dir = 4
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "SJ" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
@@ -6972,13 +7012,6 @@
 /area/hilbertshotel)
 "SO" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"SQ" = (
-/obj/structure/table,
-/obj/effect/turf_decal/tile/green/half/contrasted{
-	dir = 4
-	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "SR" = (
@@ -7010,6 +7043,21 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"Tg" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"Ti" = (
+/obj/machinery/shower/directional/west{
+	name = "emergency shower"
+	},
+/obj/effect/turf_decal/trimline/blue/end{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "Tn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -7035,15 +7083,24 @@
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible,
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"Tx" = (
-/mob/living/carbon/monkey,
-/turf/open/misc/grass,
-/area/hilbertshotel)
 "TA" = (
 /obj/item/gun/ballistic/automatic/pistol/enforcer/nomag,
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
+/area/hilbertshotel)
+"TB" = (
+/obj/machinery/door/airlock/virology{
+	autoclose = 0;
+	frequency = 1449;
+	id_tag = "virology_airlock_interior";
+	name = "Virology Interior Airlock";
+	req_access_txt = "39"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "TE" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
@@ -7053,11 +7110,14 @@
 /turf/open/space,
 /area/hilbertshotel)
 "TF" = (
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"TI" = (
-/obj/effect/turf_decal/tile/green,
+/obj/structure/table/glass,
+/obj/item/storage/box/bodybags,
+/obj/item/storage/box/bodybags{
+	pixel_y = 6
+	},
+/obj/item/storage/box/bodybags{
+	pixel_y = 11
+	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "TK" = (
@@ -7087,6 +7147,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"TQ" = (
+/obj/machinery/iv_drip,
+/obj/structure/closet/crate/freezer,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "TS" = (
 /obj/structure/door_assembly/door_assembly_mai,
 /turf/open/floor/plating,
@@ -7106,6 +7172,13 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"TY" = (
+/obj/structure/closet/l3closet/virology,
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "Ub" = (
 /obj/item/storage/box/mre,
 /turf/open/floor/festive/cobblestone/safe,
@@ -7120,23 +7193,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Ud" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Uf" = (
-/obj/machinery/door/airlock/virology{
-	autoclose = 0;
-	frequency = 1449;
-	id_tag = "virology_airlock_interior";
-	name = "Virology Interior Airlock";
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
+/obj/structure/window/reinforced,
+/obj/structure/closet/crate/freezer/surplus_limbs,
+/obj/item/reagent_containers/glass/beaker/synthflesh,
+/obj/item/reagent_containers/glass/beaker/synthflesh,
+/obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Uh" = (
@@ -7149,12 +7211,6 @@
 /obj/machinery/door/airlock/cmo,
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
-"Uj" = (
-/obj/structure/fluff/railing,
-/turf/open/floor/iron/stairs{
-	dir = 8
-	},
-/area/hilbertshotel)
 "Un" = (
 /obj/machinery/vending/medical{
 	pixel_x = -2
@@ -7164,10 +7220,6 @@
 "Uq" = (
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/white,
-/area/hilbertshotel)
-"Ur" = (
-/obj/structure/closet/l3closet/virology,
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Us" = (
 /obj/structure/disposalpipe/segment{
@@ -7201,6 +7253,14 @@
 "Uz" = (
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"UA" = (
+/obj/structure/window/reinforced,
+/obj/structure/closet/secure_closet/medical1,
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -7244,11 +7304,19 @@
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plating/airless,
 /area/hilbertshotel)
-"UN" = (
-/obj/machinery/button/crematorium{
-	id = "crematoriumViro";
-	pixel_x = 1;
-	pixel_y = -25;
+"UO" = (
+/obj/machinery/shower/directional/south{
+	pixel_y = 17
+	},
+/obj/machinery/doorButtons/access_button{
+	idDoor = "virology_airlock_interior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = 23;
+	pixel_y = -7;
+	req_access_txt = "39"
+	},
+/obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -7324,13 +7392,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/hilbertshotel)
-"Vl" = (
-/obj/machinery/conveyor/inverted{
-	dir = 9;
-	id = "garbage_viro"
-	},
-/turf/open/floor/plating,
-/area/hilbertshotel)
 "Vn" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -7354,15 +7415,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/hilbertshotel)
-"Vr" = (
-/obj/machinery/shower/directional/west{
-	name = "emergency shower"
-	},
-/obj/effect/turf_decal/trimline/blue/end{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Vs" = (
 /obj/structure/lattice,
@@ -7415,10 +7467,6 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"VA" = (
-/obj/structure/table/optable,
-/turf/open/floor/plating,
-/area/hilbertshotel)
 "VB" = (
 /obj/item/book/manual/wiki/chemistry{
 	pixel_x = -4;
@@ -7433,6 +7481,21 @@
 /obj/structure/table,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"VC" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"VE" = (
+/obj/machinery/button/crematorium{
+	id = "crematoriumViro";
+	pixel_x = 1;
+	pixel_y = -25;
+	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -7498,6 +7561,12 @@
 /obj/effect/mapping_helpers/airlock/unres,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"Wb" = (
+/obj/machinery/disposal/bin,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/iron/white/textured,
+/area/hilbertshotel)
 "Wd" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -7531,11 +7600,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Wh" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Wm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -7545,10 +7609,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Wn" = (
-/obj/structure/table,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/clothing/suit/apron/surgical,
+"Wq" = (
+/obj/effect/turf_decal/trimline/blue/end{
+	dir = 1
+	},
+/obj/structure/disposalpipe/junction/flip,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "Wr" = (
@@ -7564,14 +7629,14 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"Wu" = (
-/obj/machinery/shower/directional/south{
-	pixel_y = 17
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Wv" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"Ww" = (
+/obj/machinery/door/airlock/glass_large{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Wz" = (
@@ -7636,13 +7701,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"WK" = (
-/obj/machinery/door/airlock/medical{
-	name = "Operating Theatre";
-	req_access_txt = "45"
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "WO" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -7652,6 +7710,10 @@
 	armed = 1
 	},
 /turf/open/misc/grass,
+/area/hilbertshotel)
+"WQ" = (
+/obj/structure/closet/l3closet/virology,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "WR" = (
 /obj/structure/cable{
@@ -7675,9 +7737,36 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"WT" = (
+/obj/machinery/limbgrower,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"WU" = (
+/obj/structure/table,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/suit/apron/surgical,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"WX" = (
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/hilbertshotel)
 "WY" = (
 /obj/machinery/door/airlock/glass_large,
 /turf/open/floor/iron/white,
+/area/hilbertshotel)
+"WZ" = (
+/obj/effect/turf_decal/trimline/blue/end,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
+"Xa" = (
+/obj/structure/fluff/railing{
+	dir = 5
+	},
+/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Xb" = (
 /obj/structure/sink{
@@ -7750,17 +7839,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"Xm" = (
-/obj/structure/sink/directional/east,
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
-"Xq" = (
-/obj/effect/turf_decal/trimline/blue/end,
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Xs" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7775,9 +7853,9 @@
 /turf/closed/wall,
 /area/hilbertshotel)
 "Xz" = (
-/obj/effect/turf_decal/trimline/blue/end{
-	dir = 1
-	},
+/obj/structure/window/reinforced,
+/obj/structure/table,
+/obj/effect/turf_decal/tile/green/half/contrasted,
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
 "XE" = (
@@ -7825,6 +7903,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
+"XR" = (
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "XY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/tile/blue,
@@ -7849,12 +7931,6 @@
 	dir = 8
 	},
 /turf/open/water/decorative,
-/area/hilbertshotel)
-"Yh" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
 /area/hilbertshotel)
 "Ym" = (
 /obj/structure/table/reinforced,
@@ -7887,13 +7963,6 @@
 /obj/machinery/computer/operating,
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
-"Yy" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "Yz" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
@@ -7909,6 +7978,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
+"YB" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "YE" = (
 /obj/structure/chair,
 /turf/open/floor/iron/white,
@@ -7920,9 +7993,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/hilbertshotel)
-"YL" = (
-/obj/structure/sink/directional/west{
-	pixel_x = 12
+"YG" = (
+/obj/machinery/door/airlock/medical{
+	name = "Operating Theatre";
+	req_access_txt = "45"
 	},
 /turf/open/floor/iron/white,
 /area/hilbertshotel)
@@ -7932,6 +8006,13 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
+/area/hilbertshotel)
+"YQ" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/structure/disposaloutlet,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "YT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -8019,6 +8100,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
+"Zq" = (
+/obj/structure/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/hilbertshotel)
 "Zt" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
@@ -8057,6 +8144,16 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"ZB" = (
+/obj/structure/bed{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/white,
 /area/hilbertshotel)
 "ZD" = (
 /obj/structure/curtain{
@@ -8111,18 +8208,12 @@
 	},
 /turf/open/floor/plating,
 /area/hilbertshotel)
-"ZS" = (
-/obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/hilbertshotel)
 "ZT" = (
-/obj/machinery/door/airlock/glass_large{
-	dir = 8
+/obj/machinery/conveyor/inverted{
+	dir = 10;
+	id = "garbage_viro"
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/plating,
 /area/hilbertshotel)
 "ZV" = (
 /obj/machinery/airalarm{
@@ -11949,8 +12040,8 @@ nP
 nP
 nP
 nP
-IC
-Uj
+rg
+Ok
 nP
 nP
 nP
@@ -12132,7 +12223,7 @@ Sn
 Sn
 Sn
 zL
-ZT
+Ww
 Sn
 Sn
 Sn
@@ -12309,16 +12400,16 @@ nP
 nP
 nP
 Sn
-Oz
-gO
-gO
-Gi
+WX
+Na
+Na
+uw
 zL
 zL
-dR
-gO
-gO
-bK
+Fs
+Na
+Na
+rh
 Sn
 nP
 nP
@@ -12673,16 +12764,16 @@ nP
 nP
 nP
 Sn
-JZ
-gO
-gO
-bK
+tx
+Na
+Na
+rh
 zL
 zL
-Oz
-gO
-gO
-gA
+WX
+Na
+Na
+ka
 Sn
 nP
 nP
@@ -12695,7 +12786,7 @@ Hv
 Hv
 Hv
 Hv
-VA
+RY
 Hv
 Hv
 Hv
@@ -12877,7 +12968,7 @@ Hv
 Hv
 Hv
 Hv
-eF
+rv
 Hv
 Hv
 Hv
@@ -13037,16 +13128,16 @@ nP
 nP
 nP
 Sn
-OB
+TQ
 SO
 SO
 SO
-AP
-lm
+dy
+RN
 SO
 SO
 SO
-OB
+TQ
 Sn
 nP
 nP
@@ -13219,16 +13310,16 @@ nP
 nP
 nP
 Sn
-EW
-At
-tS
-sz
-dh
-Ra
-OM
-tS
-Rh
-Kg
+rC
+tJ
+oB
+Jj
+Uf
+AZ
+qI
+oB
+rs
+ep
 Sn
 nP
 nP
@@ -13401,16 +13492,16 @@ nP
 nP
 nP
 Sn
-xO
-fG
-Wn
-KS
-Pc
-qB
-fG
-Wn
-KS
-xO
+jp
+GG
+WU
+XR
+Cl
+qZ
+GG
+WU
+XR
+jp
 Sn
 nP
 nP
@@ -13583,16 +13674,16 @@ nP
 nP
 nP
 Sn
-ln
-dd
-Xm
-qj
-wl
-nn
-wl
-Ku
-DS
-rt
+te
+lK
+fX
+ih
+NA
+yW
+NA
+Af
+zG
+iz
 Sn
 nP
 nP
@@ -13765,16 +13856,16 @@ nP
 nP
 nP
 Sn
-GK
-GX
-gm
+tL
+Qd
+JD
 nP
-vM
-IX
+WT
+bt
 nP
-nr
-RZ
-RH
+nH
+Pr
+Wb
 Sn
 nP
 nP
@@ -13950,10 +14041,10 @@ Sn
 Sn
 Sn
 Sn
-WK
+YG
 Sn
 Sn
-WK
+YG
 Sn
 Sn
 Sn
@@ -14493,7 +14584,7 @@ nP
 nP
 nP
 Sn
-SG
+Sa
 nP
 nP
 nP
@@ -14502,7 +14593,7 @@ nP
 nP
 nP
 nP
-dI
+fL
 Sn
 nP
 nP
@@ -14859,12 +14950,12 @@ nP
 nP
 nP
 nP
-TF
+av
 Sn
 dB
-vx
+TF
 Sn
-zB
+YB
 nP
 nP
 nP
@@ -15042,9 +15133,9 @@ nP
 nP
 nP
 nP
-eT
-xx
-uB
+Xa
+qy
+ze
 dB
 nP
 nP
@@ -15224,9 +15315,9 @@ nP
 nP
 nP
 nP
-wk
+FS
 zL
-eY
+jm
 dB
 nP
 nP
@@ -15406,9 +15497,9 @@ nP
 nP
 nP
 nP
-EJ
-Yh
-Bk
+Fl
+Tg
+tn
 dB
 nP
 nP
@@ -15587,12 +15678,12 @@ nP
 nP
 nP
 nP
-TF
+av
 Sn
 dB
-GM
+gM
 Sn
-zB
+YB
 nP
 nP
 nP
@@ -15949,7 +16040,7 @@ nP
 nP
 nP
 Sn
-De
+kT
 nP
 nP
 nP
@@ -15958,7 +16049,7 @@ nP
 nP
 nP
 nP
-je
+Ka
 Sn
 nP
 nP
@@ -16498,10 +16589,10 @@ Sn
 Sn
 Sn
 Sn
-zB
+YB
 nP
 nP
-TF
+av
 Sn
 Sn
 Sn
@@ -17416,9 +17507,9 @@ xL
 xL
 xL
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -17598,9 +17689,9 @@ qi
 qi
 Mn
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -17780,9 +17871,9 @@ nP
 nP
 hF
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -17962,9 +18053,9 @@ nP
 nP
 hF
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -18144,9 +18235,9 @@ nP
 nP
 hF
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -18326,9 +18417,9 @@ nP
 nP
 Gv
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -18508,9 +18599,9 @@ nP
 nP
 hF
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -18690,9 +18781,9 @@ nP
 nP
 fy
 xL
-fi
+NQ
 nP
-jw
+wA
 Sn
 Hv
 Hv
@@ -18872,9 +18963,9 @@ nP
 nP
 zo
 xL
-BT
-mt
-oD
+sM
+VC
+lY
 Sn
 Hv
 Hv
@@ -19055,7 +19146,7 @@ nP
 sS
 xL
 xL
-wV
+dp
 xL
 xL
 Sn
@@ -19236,9 +19327,9 @@ nP
 nP
 gg
 xL
-tW
-Yy
-PL
+en
+tG
+ub
 xL
 Hv
 Hv
@@ -19418,9 +19509,9 @@ vr
 vr
 Fj
 xL
-fi
-Yy
-jw
+NQ
+tG
+wA
 xL
 Hv
 Hv
@@ -19600,9 +19691,9 @@ xL
 xL
 xL
 xL
-QB
-Yy
-PL
+UO
+tG
+ub
 xL
 Hv
 Hv
@@ -19783,7 +19874,7 @@ DL
 DL
 xL
 xL
-dN
+pn
 xL
 xL
 Hv
@@ -19964,9 +20055,9 @@ xL
 xL
 xL
 xL
-CM
-Ud
-Bc
+tC
+hK
+eu
 xL
 xL
 xL
@@ -20136,21 +20227,21 @@ DL
 DL
 DL
 xL
-Tx
+Ec
 wZ
 wZ
-Tx
+Ec
 ag
-xI
-Bc
-sk
-HP
-ct
-fi
+Ii
+eu
+NF
+TY
+UA
+NQ
 nP
-iO
-EY
-Bc
+ND
+ni
+eu
 xL
 xL
 xL
@@ -20319,24 +20410,24 @@ DL
 DL
 xL
 wZ
-Tx
+Ec
 wZ
 wZ
 ag
-fi
-jw
-wR
+NQ
+wA
+gc
 nP
-Bu
-fi
+hC
+NQ
 nP
 nP
 nP
-jH
-wp
-YL
-ug
-rX
+Lk
+gO
+Nz
+ue
+wQ
 nP
 nP
 nP
@@ -20502,19 +20593,19 @@ DL
 xL
 wZ
 wZ
-Tx
+Ec
 wZ
-Gq
-fi
-jw
-wR
+ke
+NQ
+wA
+gc
 nP
-Bu
-fi
-TI
-tM
-tM
-oD
+hC
+NQ
+om
+kc
+kc
+lY
 xL
 xL
 xL
@@ -20687,23 +20778,23 @@ wZ
 wZ
 wZ
 ag
-fi
-iO
-qE
-rJ
-iO
-qE
-jw
+NQ
+ND
+qa
+gY
+ND
+qa
+wA
 ag
 Sn
 Sn
 xL
 xL
-mf
-jz
-Vl
+pe
+bR
+eA
 xL
-Uf
+HK
 xL
 Hv
 Hv
@@ -20869,23 +20960,23 @@ xL
 xL
 xL
 xL
-fi
-nP
-Xz
-bD
-Xq
-nP
-jw
-ag
-ZS
-wj
+NQ
+oY
+Wq
+dc
+WZ
+kY
+gt
+Nc
+Mb
+ZB
+fe
+YQ
+RC
+PO
+Pc
 xL
-AH
-mF
-BO
-ys
-xL
-yw
+Pj
 xL
 Hv
 Hv
@@ -21046,28 +21137,28 @@ DL
 DL
 DL
 xL
-Iu
-zV
-Wh
+QB
+sC
+KJ
 nP
 xL
-fi
-TI
-MZ
-hC
-TI
-MZ
-jw
-Gq
-BT
-oD
-xL
-kT
-BP
-Hv
+NQ
+fC
 hg
+fr
+om
+GS
+wA
+ke
+sM
+lY
 xL
-Wu
+tU
+KA
+Hv
+ZT
+xL
+sk
 xL
 Hv
 Hv
@@ -21228,28 +21319,28 @@ DL
 DL
 DL
 xL
-FK
-xp
+Ff
+HQ
+oY
+kY
+ld
+lc
+Gt
+NK
 nP
-nP
-jJ
-fi
-jw
-Kh
-nP
-Mz
-fi
-jw
+Xz
+NQ
+wA
 ag
 Sn
 Sn
 xL
 ag
-Gq
+ke
 ag
 xL
 xL
-Qz
+TB
 xL
 xL
 Hv
@@ -21410,23 +21501,23 @@ DL
 DL
 DL
 xL
-Js
+Cc
 nP
-nP
+ko
 nP
 xL
-fi
-jw
-Is
-wI
-Mz
-fi
-jw
+NQ
+wA
+AT
+Zq
+Xz
+NQ
+wA
 ag
-ZS
-wj
+ow
+OB
 xL
-Ur
+WQ
 nP
 nP
 ag
@@ -21592,29 +21683,29 @@ DL
 DL
 DL
 xL
-eQ
+mM
 no
-bd
-vK
+rj
+kS
 xL
-BT
-oD
-MY
-SQ
-Ij
-BT
-oD
-Gq
-BT
-oD
+sM
+lY
+PW
+nX
+gT
+sM
+lY
+ke
+sM
+lY
 xL
-sm
+hG
 nP
 nP
-Gq
+ke
 nP
 nP
-UN
+VE
 xL
 Hv
 Sn
@@ -21790,13 +21881,13 @@ xL
 xL
 xL
 xL
-cn
-Vr
+LI
+Ti
 nP
 ag
-cn
-Rb
-ah
+LI
+CC
+re
 xL
 Hv
 Sn
