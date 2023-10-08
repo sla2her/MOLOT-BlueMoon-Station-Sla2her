@@ -10,7 +10,6 @@
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
-#define DEBUG // Включать только в случае, если необходимо проверить рантаймы и прочие поломки/приколы.
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
@@ -4037,6 +4036,7 @@
 #include "modular_bluemoon\0451\code\modules\surgery\organs\augments_eyes.dm"
 #include "modular_bluemoon\anti_normalizer_quirk\anti_normalizer_quirk.dm"
 #include "modular_bluemoon\bigtalk\bigtalk.dm"
+#include "modular_bluemoon\code\datums\traits\neutral.dm"
 #include "modular_bluemoon\code\game\objects\items\plushes.dm"
 #include "modular_bluemoon\code\modules\client\preferences_savefile.dm"
 #include "modular_bluemoon\code\modules\jobs\job_types\job.dm"
@@ -4426,6 +4426,7 @@
 #include "modular_sand\code\game\objects\items\devices\radio\headset.dm"
 #include "modular_sand\code\game\objects\items\plushes\goat_boss.dm"
 #include "modular_sand\code\game\objects\items\plushes\plushes.dm"
+#include "modular_sand\code\game\objects\items\plushes\saliith.dm"
 #include "modular_sand\code\game\objects\items\robot\robot_upgrades.dm"
 #include "modular_sand\code\game\objects\items\stacks\sheets\glass.dm"
 #include "modular_sand\code\game\objects\items\stacks\sheets\mineral.dm"
@@ -4977,6 +4978,7 @@
 #include "modular_splurt\code\modules\client\loadout\gloves.dm"
 #include "modular_splurt\code\modules\client\loadout\hands.dm"
 #include "modular_splurt\code\modules\client\loadout\head.dm"
+#include "modular_splurt\code\modules\client\loadout\mask.dm"
 #include "modular_splurt\code\modules\client\loadout\neck.dm"
 #include "modular_splurt\code\modules\client\loadout\shirts.dm"
 #include "modular_splurt\code\modules\client\loadout\shoes.dm"
@@ -5137,6 +5139,7 @@
 #include "modular_splurt\code\modules\mob\living\logout.dm"
 #include "modular_splurt\code\modules\mob\living\navigation.dm"
 #include "modular_splurt\code\modules\mob\living\say.dm"
+#include "modular_splurt\code\modules\mob\living\update_icons.dm"
 #include "modular_splurt\code\modules\mob\living\brain\brain_item.dm"
 #include "modular_splurt\code\modules\mob\living\carbon\carbon.dm"
 #include "modular_splurt\code\modules\mob\living\carbon\carbon_defense.dm"

@@ -22559,7 +22559,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/lobby)
 "bhg" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/genetics)
@@ -25077,7 +25076,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/chemistry)
 "bmU" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
@@ -26879,7 +26877,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/genetics)
 "brj" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/zone2)
@@ -27372,7 +27369,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/central)
 "bsu" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/medical/genetics)
@@ -28174,7 +28170,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/science)
 "buq" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -28648,14 +28643,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/genetics)
 "bvv" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/effect/spawner/structure/window/plastitanium,
-/turf/open/floor/plating,
-/area/medical/medbay/central)
-"bvw" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/open/floor/mineral/plastitanium,
-/area/medical/genetics)
+)
 "bvy" = (
 /obj/machinery/camera{
 	c_tag = "Genetics Research";
@@ -32377,7 +32365,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/machinery/door/poddoor/shutters/preopen{
 	desc = "Privacy shutters for the Private Study. Stops people spying in on your game.";
@@ -32489,7 +32476,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/medbay/zone2)
 "bEi" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/machinery/door/poddoor/shutters/preopen{
 	desc = "Privacy shutters for the Private Study. Stops people spying in on your game.";
@@ -33871,6 +33857,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
@@ -35927,9 +35916,6 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/junction,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/aft)
@@ -53784,7 +53770,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/primary/central)
 "fQl" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/space/basic,
 /area/security/range)
@@ -57231,7 +57216,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/command/blueshieldoffice)
 "kzd" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/space,
 /area/security/range)
@@ -63372,7 +63356,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/effect/spawner/structure/window/reinforced,
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/genetics)
@@ -105080,7 +105063,7 @@ bzm
 bzm
 bJE
 bJE
-bvv
+bJE
 bEd
 brb
 brb
@@ -107646,7 +107629,6 @@ brd
 brd
 btl
 but
-bvw
 bua
 bzq
 bBP
@@ -107760,6 +107742,7 @@ cNd
 cNd
 cNd
 cNd
+bvv
 "}
 (159,1,1) = {"
 cNd

@@ -400,3 +400,24 @@
 	path = /obj/item/toy/plush/miner
 	ckeywhitelist = list("cheburek228")
 	subcategory = LOADOUT_SUBCATEGORIES_DON12
+
+/datum/gear/donator/bm/omega_plushie
+	name = "Omega Plushie"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/toy/plush/nukeplushie/omega
+	ckeywhitelist = list("malopharan")
+	subcategory = LOADOUT_SUBCATEGORIES_DON12
+
+/datum/gear/donator/bm/nri_drg
+	name = "Covert Ops Tactical Uniform"
+	slot = ITEM_SLOT_ICLOTHING
+	path = /obj/item/clothing/under/donator/bm/nri_drg
+	ckeywhitelist = list("vulpshiro", "dolbajob", "stgs", "leony24", "krashly")
+	subcategory = LOADOUT_SUBCATEGORIES_DON12
+
+/datum/gear/donator/bm/nri_drg_head
+	name = "Covert Ops Headgear"
+	slot = ITEM_SLOT_HEAD
+	path = /obj/item/clothing/head/donator/bm/nri_drg_head
+	ckeywhitelist = list("vulpshiro", "dolbajob", "stgs", "leony24", "krashly")
+	subcategory = LOADOUT_SUBCATEGORIES_DON12
