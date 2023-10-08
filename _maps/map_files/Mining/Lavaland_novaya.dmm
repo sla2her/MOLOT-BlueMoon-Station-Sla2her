@@ -8349,16 +8349,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/mechbay)
-"hEd" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/mine/xenoarch_area_c)
 "hEg" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	external_pressure_bound = 140;
@@ -19089,17 +19079,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "qZM" = (
-/obj/effect/turf_decal/tile/purple{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/mine/xenoarch_area_c)
+)
 "ral" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -50059,7 +50039,7 @@ lab
 lab
 lab
 rRb
-rRb
+lab
 rRb
 rRb
 rRb
@@ -151433,7 +151413,7 @@ ivD
 gpj
 ivD
 pyc
-iaw
+qZM
 gIl
 gIl
 lab
