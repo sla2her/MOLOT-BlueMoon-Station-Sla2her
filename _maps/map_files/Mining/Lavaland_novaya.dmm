@@ -4553,6 +4553,16 @@
 /mob/living/simple_animal/hostile/cult/mannequin,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
+"dWm" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/mine/xenoarch_area_c)
 "dWN" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
@@ -6678,6 +6688,7 @@
 /obj/structure/window/reinforced/clockwork{
 	dir = 8
 	},
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril,
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
 "fZd" = (
@@ -25998,6 +26009,18 @@
 	},
 /turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
+"xxG" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/mine/xenoarch_area_c)
 "xya" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -101585,7 +101608,7 @@ aSB
 asE
 svf
 kaq
-qpf
+dVo
 oNk
 svf
 qWS
@@ -104160,7 +104183,7 @@ qpf
 qpf
 nyI
 svf
-qpf
+dVo
 svf
 pqH
 vAU
@@ -126778,7 +126801,7 @@ sOU
 wan
 ibh
 moF
-moF
+xxG
 eZg
 wEP
 ayj
@@ -127035,7 +127058,7 @@ tfD
 etX
 etX
 etX
-etX
+dWm
 pNr
 mTC
 xfJ
