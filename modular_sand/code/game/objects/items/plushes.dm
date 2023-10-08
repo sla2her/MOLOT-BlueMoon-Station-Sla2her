@@ -8,8 +8,7 @@
 		/obj/item/toy/plush/goatplushie/angry/kinggoat/ascendedkinggoat,
 		/obj/item/toy/plush/goatplushie/angry/guardgoat,
 		/obj/item/toy/plush/goatplushie/angry/guardgoat/masterguardgoat,
-		/obj/item/toy/plush/lizardplushie/saliith,
-		/obj/item/toy/plush/mammal/fox/vulp
+		/obj/item/toy/plush/lizardplushie/saliith
 		)
 	return returned_plushies
 
