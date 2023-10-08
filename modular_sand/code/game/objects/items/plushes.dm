@@ -73,28 +73,6 @@
 	righthand_file = 'modular_sand/icons/mob/inhands/misc/plushes_righthand.dmi'
 	squeak_override = list('modular_citadel/sound/voice/nya.ogg' = 1)
 
-/obj/item/toy/plush/mammal/fox/vulp
-	desc = "An adorable stuffed toy resembling a vulp."
-	icon = 'modular_sand/icons/obj/plushes.dmi'
-	lefthand_file = 'modular_sand/icons/mob/inhands/misc/plushes_lefthand.dmi'
-	righthand_file = 'modular_sand/icons/mob/inhands/misc/plushes_righthand.dmi'
-
-/obj/item/toy/plush/mammal/fox/vulp/emma
-	name = "Emma Plushie"
-	icon_state = "emma"
-
-/obj/item/toy/plush/mammal/fox/vulp/shiro
-	name = "shiro plushie"
-	icon_state = "shiro"
-
-/obj/item/toy/plush/mammal/fox/vulp/raita
-	name = "raita plushie"
-	icon_state = "raita"
-
-/obj/item/toy/plush/mammal/fox/vulp/aiko
-	name = "Aiko Plushie"
-	icon_state = "aiko"
-
 /obj/item/toy/plush/nukeplushie/who
 	name = "security officer plushie"
 	desc = "A stuffed toy that resembles a Nanotrasen operative. He smells like burnt cotton."
