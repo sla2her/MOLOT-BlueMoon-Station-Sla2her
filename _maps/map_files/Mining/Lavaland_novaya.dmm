@@ -627,6 +627,11 @@
 /obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel/dark,
 /area/mine/xenoarch_area_c)
+"aDk" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "aDA" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
@@ -1284,6 +1289,11 @@
 "bfa" = (
 /obj/structure/bonfire/prelit,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"bfm" = (
+/obj/item/restraints/legcuffs/beartrap/bloodsucker,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "bfz" = (
 /obj/item/storage/backpack/duffelbag/med/surgery,
@@ -3676,6 +3686,11 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
+"deU" = (
+/obj/effect/decal/cleanable/blood/gibs/human/body,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "dfy" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -4334,6 +4349,11 @@
 /mob/living/simple_animal/hostile/clockcultistranged,
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
+"dJv" = (
+/obj/effect/decal/cleanable/blood/gibs/human/down,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "dKw" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
@@ -4431,6 +4451,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/production)
+"dOj" = (
+/obj/structure/trap/damage,
+/turf/open/floor/plating/asteroid/basalt/lava,
+/area/lavaland/surface/outdoors)
 "dOy" = (
 /obj/structure/sink/kitchen/directional/east,
 /turf/open/indestructible/hoteltile,
@@ -4553,16 +4577,6 @@
 /mob/living/simple_animal/hostile/cult/mannequin,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
-"dWm" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/mine/xenoarch_area_c)
 "dWN" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
@@ -4597,6 +4611,10 @@
 /obj/machinery/meter,
 /turf/open/floor/plasteel,
 /area/mine/xenoarch_area_a)
+"dYY" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "dZh" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -5736,6 +5754,7 @@
 	pixel_x = -45;
 	pixel_y = -48
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "fcu" = (
@@ -5959,6 +5978,7 @@
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "fnI" = (
 /obj/effect/mob_spawn/human/abductor,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "fpJ" = (
@@ -6470,6 +6490,7 @@
 /area/lavaland/surface/outdoors)
 "fND" = (
 /obj/item/cult_halberd,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "fNO" = (
@@ -6487,6 +6508,11 @@
 	dir = 1
 	},
 /turf/open/indestructible/boss,
+/area/lavaland/surface/outdoors)
+"fOr" = (
+/obj/item/restraints/legcuffs/bola/cult,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "fOO" = (
 /obj/structure/cable/yellow{
@@ -6905,6 +6931,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/mine/xenoarch_area_c)
+"ggQ" = (
+/obj/structure/trap/cult,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "ggV" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
@@ -8275,6 +8306,7 @@
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "hBh" = (
 /mob/living/simple_animal/hostile/cult/magic/elite,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "hBv" = (
@@ -8317,6 +8349,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/mechbay)
+"hEd" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/mine/xenoarch_area_c)
 "hEg" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	external_pressure_bound = 140;
@@ -8982,6 +9024,11 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/mine/laborcamp)
+"ioh" = (
+/obj/structure/trap/fire,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "ioW" = (
 /obj/structure/stone_tile/cracked{
 	dir = 4
@@ -10569,6 +10616,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/mine/xenoarch_area_c)
+"jLv" = (
+/obj/item/stack/sheet/runed_metal/five,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "jLA" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -10971,6 +11023,8 @@
 "key" = (
 /obj/effect/rune/raise_dead,
 /obj/item/stack/sheet/runed_metal/five,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "kfc" = (
@@ -11627,6 +11681,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel/dark,
 /area/mine/xenoarch_area_b)
+"kGJ" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "kGO" = (
 /obj/effect/turf_decal/arrows{
 	dir = 1
@@ -14273,6 +14332,7 @@
 /area/lavaland/surface/outdoors)
 "mPV" = (
 /obj/item/paper/crumpled/bloody/docsdeathnote,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "mPX" = (
@@ -14499,6 +14559,10 @@
 	width = 7
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"mYO" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/abductor,
 /area/lavaland/surface/outdoors)
 "mYP" = (
 /obj/structure/table/reinforced,
@@ -14811,6 +14875,11 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/ruin/lavaland/powered/seedvault)
+"njG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "njK" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -14953,6 +15022,7 @@
 /area/mine/maintenance)
 "nqd" = (
 /obj/item/clothing/shoes/cult,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "nqL" = (
@@ -16978,6 +17048,10 @@
 "poR" = (
 /obj/structure/spirit_board,
 /turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
+"poU" = (
+/obj/item/clockwork/alloy_shards/clockgolem_remains,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/lavaland/surface/outdoors)
 "ppW" = (
 /obj/effect/turf_decal/stripes/line,
@@ -19018,6 +19092,18 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
+"qZM" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/mine/xenoarch_area_c)
 "ral" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -21828,6 +21914,7 @@
 /area/mine/living_quarters)
 "tFN" = (
 /obj/item/stack/spacecash/c500,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "tFY" = (
@@ -21977,6 +22064,7 @@
 /obj/effect/mob_spawn/human/corpse/cook,
 /obj/item/cult_bastard,
 /obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "tNW" = (
@@ -22344,6 +22432,11 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
+"ugy" = (
+/mob/living/simple_animal/hostile/cult/warrior,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "uhu" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -22532,6 +22625,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
+"uon" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "uoF" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -22882,6 +22980,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/xenoarch)
+"uCE" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "uCL" = (
 /obj/structure/closet/crate,
 /obj/item/storage/box/donkpockets{
@@ -23238,6 +23341,10 @@
 "uVo" = (
 /turf/open/floor/engine/air,
 /area/mine/xenoarch_area_a)
+"uVp" = (
+/obj/item/clothing/shoes/bronze,
+/turf/open/floor/plating/asteroid/basalt/lava,
+/area/lavaland/surface/outdoors)
 "uWg" = (
 /obj/structure/stone_tile/cracked{
 	dir = 4
@@ -24139,6 +24246,10 @@
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
+"vNQ" = (
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "vPa" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -26009,18 +26120,6 @@
 	},
 /turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
-"xxG" = (
-/obj/effect/turf_decal/tile/purple{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/mine/xenoarch_area_c)
 "xya" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -26038,6 +26137,7 @@
 /area/ruin/lavaland/unpowered/ash_walkers)
 "xyi" = (
 /obj/effect/mob_spawn/human/corpse/assistant/beesease_infection,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "xyp" = (
@@ -26767,6 +26867,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/xenoarch)
+"yfn" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "yfq" = (
 /obj/structure/stone_tile/cracked,
 /obj/structure/stone_tile{
@@ -98539,8 +98644,8 @@ sPo
 qpf
 nkn
 tFN
-qpf
-qpf
+dYY
+dYY
 vAU
 svf
 eqd
@@ -98795,7 +98900,7 @@ xOH
 mZA
 qpf
 otn
-qpf
+dYY
 qpf
 qpf
 vAU
@@ -99052,7 +99157,7 @@ nQv
 qpf
 mZA
 qpf
-qpf
+dYY
 asE
 ecm
 vAU
@@ -99301,14 +99406,14 @@ eqd
 svf
 vAU
 qpf
-qpf
-qpf
+dYY
+dYY
 key
-qpf
+aDk
 tNL
 qpf
 jZw
-mZA
+jLv
 qpf
 qpf
 qpf
@@ -99558,13 +99663,13 @@ eqd
 svf
 vAU
 qpf
-qpf
-wsE
+aDk
+ioh
 mZA
 qpf
 fbV
 qpf
-qpf
+aDk
 mZA
 sWj
 qpf
@@ -99820,10 +99925,10 @@ qpf
 qpf
 mZA
 qpf
-qpf
+dYY
 mZA
 qpf
-qpf
+dYY
 qpf
 qpf
 vAU
@@ -100081,7 +100186,7 @@ mZA
 kHr
 qpf
 qpf
-qpf
+dYY
 qpf
 vAU
 svf
@@ -100313,7 +100418,7 @@ wWB
 tNW
 lLQ
 gfX
-gfX
+mYO
 gfX
 sSK
 svf
@@ -100570,7 +100675,7 @@ wWB
 kUT
 cAQ
 muf
-gfX
+mYO
 gfX
 mZA
 svf
@@ -100827,7 +100932,7 @@ wWB
 gfX
 kHr
 wvH
-gfX
+mYO
 pOx
 jdk
 svf
@@ -100835,7 +100940,7 @@ asE
 muf
 mPV
 xyi
-qpf
+dYY
 aDT
 wLD
 qpf
@@ -100845,7 +100950,7 @@ xsj
 svf
 qpf
 svf
-qpf
+njG
 kPg
 qpf
 kPg
@@ -101084,13 +101189,13 @@ wWB
 wWB
 gfX
 gfX
-gfX
+mYO
 xZe
 qpf
 svf
 qpf
-ecm
-qpf
+ggQ
+dYY
 qpf
 jZw
 aDT
@@ -101102,11 +101207,11 @@ qpf
 svf
 wLD
 qWS
+dYY
+yfn
 qpf
-jZw
-qpf
-xsj
-asE
+kGJ
+uon
 svf
 lab
 lab
@@ -101360,8 +101465,8 @@ svf
 nsI
 svf
 qpf
-qpf
-qpf
+dYY
+dYY
 nqd
 qpf
 svf
@@ -101855,8 +101960,8 @@ pqH
 svf
 aDR
 qpf
-qpf
-rRP
+dYY
+bfm
 qpf
 caE
 nyI
@@ -102110,9 +102215,9 @@ ctP
 pqH
 pqH
 svf
-qpf
-asE
-qpf
+vNQ
+uon
+dYY
 qpf
 ecm
 qpf
@@ -102122,10 +102227,10 @@ qpf
 ecm
 svf
 qpf
-qpf
+dYY
 qpf
 wsE
-qpf
+dYY
 qpf
 svf
 nsI
@@ -102636,9 +102741,9 @@ svf
 svf
 svf
 qpf
-qpf
+dYY
 mIL
-qpf
+dYY
 qpf
 aYi
 svf
@@ -102892,9 +102997,9 @@ svf
 svf
 svf
 svf
-oNk
-wsE
-qpf
+fOr
+ioh
+dYY
 knz
 qpf
 dVo
@@ -103665,7 +103770,7 @@ vAU
 vAU
 vAU
 svf
-kPg
+ugy
 qpf
 qpf
 xsj
@@ -104938,17 +105043,17 @@ qpf
 svf
 qpf
 qpf
-qpf
-qpf
-rSy
-qpf
-qpf
-qpf
-qpf
-qpf
-qpf
-qpf
-qpf
+dYY
+dYY
+uCE
+dYY
+aDk
+aDk
+aDk
+aDk
+dYY
+dYY
+dYY
 qpf
 qpf
 svf
@@ -105464,7 +105569,7 @@ kEv
 svf
 mZA
 qpf
-ecm
+ggQ
 qpf
 rRP
 svf
@@ -105720,10 +105825,10 @@ qpf
 rSy
 svf
 sVn
-qpf
-qpf
+dYY
+dYY
 fND
-qpf
+dYY
 svf
 qpf
 svf
@@ -105967,18 +106072,18 @@ svf
 kHr
 svf
 qpf
-euh
-qpf
-qpf
-ecm
-qpf
-qpf
-qpf
+dJv
+dYY
+dYY
+ggQ
+dYY
+dYY
+dYY
 qpf
 svf
 qpf
-qpf
-wLD
+dYY
+deU
 qpf
 qpf
 svf
@@ -106233,7 +106338,7 @@ svf
 svf
 svf
 svf
-qpf
+vNQ
 nkn
 qpf
 iMS
@@ -106480,7 +106585,7 @@ lab
 qpf
 qpf
 svf
-qpf
+dYY
 svf
 ctP
 ctP
@@ -126801,7 +126906,7 @@ sOU
 wan
 ibh
 moF
-xxG
+qZM
 eZg
 wEP
 ayj
@@ -127058,7 +127163,7 @@ tfD
 etX
 etX
 etX
-dWm
+hEd
 pNr
 mTC
 xfJ
@@ -128272,7 +128377,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -128526,7 +128631,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -128781,8 +128886,8 @@ lab
 lab
 lab
 lab
-lab
-lab
+ivD
+ivD
 lab
 lab
 lab
@@ -129037,7 +129142,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -129293,8 +129398,8 @@ lab
 lab
 lab
 lab
-lab
-lab
+ivD
+poU
 lab
 lab
 lab
@@ -129550,11 +129655,11 @@ lab
 lab
 lab
 lab
+ivD
 lab
 lab
-lab
-lab
-lab
+uVp
+ivD
 lab
 lab
 lab
@@ -129806,11 +129911,11 @@ lab
 lab
 lab
 lab
+ivD
 lab
 lab
 lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -130065,8 +130170,8 @@ lab
 lab
 lab
 lab
-lab
-lab
+ivD
+ivD
 lab
 lab
 lab
@@ -133857,7 +133962,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -134112,9 +134217,9 @@ lab
 lab
 lab
 lab
+ivD
 lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -134371,7 +134476,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -134628,7 +134733,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -134883,9 +134988,9 @@ lab
 lab
 lab
 lab
+ctP
 lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -135136,13 +135241,13 @@ lab
 lab
 lab
 lab
+ivD
 lab
 lab
 lab
 lab
 lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -135393,13 +135498,13 @@ lab
 lab
 lab
 lab
+ivD
 lab
 lab
+ivD
 lab
 lab
-lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -135650,13 +135755,13 @@ lab
 lab
 lab
 lab
+ivD
 lab
 lab
 lab
 lab
 lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -135907,13 +136012,13 @@ lab
 lab
 lab
 lab
+ivD
+lab
+ctP
 lab
 lab
 lab
-lab
-lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -136164,13 +136269,13 @@ lab
 lab
 lab
 lab
+ivD
 lab
 lab
 lab
 lab
 lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -136421,13 +136526,13 @@ lab
 lab
 lab
 lab
-lab
-lab
-lab
-lab
-lab
-lab
-lab
+ivD
+ivD
+ivD
+ivD
+ivD
+ivD
+ivD
 lab
 lab
 lab
@@ -142909,16 +143014,16 @@ lab
 lab
 lab
 lab
+ivD
+ivD
+ivD
+ivD
 lab
 lab
 lab
+ivD
 lab
-lab
-lab
-lab
-lab
-lab
-lab
+ivD
 lab
 lab
 lab
@@ -143166,11 +143271,11 @@ lab
 lab
 lab
 lab
+dOj
+ivD
 lab
 lab
-lab
-lab
-lab
+dOj
 lab
 lab
 lab
@@ -143425,7 +143530,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -143683,7 +143788,7 @@ lab
 lab
 lab
 lab
-lab
+ivD
 lab
 lab
 lab
@@ -143942,10 +144047,10 @@ lab
 lab
 lab
 lab
-lab
-lab
-lab
-lab
+ivD
+ivD
+ivD
+ivD
 lab
 lab
 lab
