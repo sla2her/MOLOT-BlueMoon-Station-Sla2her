@@ -1721,7 +1721,7 @@
 	},
 /obj/structure/stone_tile/surrounding_tile,
 /obj/structure/stone_tile/center,
-/turf/open/lava/smooth/lava_land_surface,
+/turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
 "bwq" = (
 /obj/item/stack/cable_coil/cut/yellow,
@@ -3731,6 +3731,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/xenoarch)
+"dha" = (
+/obj/structure/stone_tile/block/cracked{
+	dir = 4
+	},
+/turf/open/floor/clockwork/reebe,
+/area/lavaland/surface/outdoors)
 "dhU" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/open/floor/grass/grass0,
@@ -4754,7 +4760,7 @@
 	},
 /obj/structure/sacrificealtar,
 /obj/item/melee/chainofcommand/jungle,
-/turf/open/indestructible/boss,
+/turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
 "eeV" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
@@ -7149,7 +7155,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/center/cracked,
-/turf/open/lava/smooth/lava_land_surface,
+/turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
 "gvS" = (
 /obj/structure/bed,
@@ -8525,6 +8531,12 @@
 	},
 /turf/open/floor/plating,
 /area/mine/xenoarch)
+"hLP" = (
+/obj/structure/stone_tile/cracked{
+	dir = 4
+	},
+/turf/open/floor/clockwork/reebe,
+/area/lavaland/surface/outdoors)
 "hLQ" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -11126,7 +11138,7 @@
 /obj/structure/stone_tile/block/burnt{
 	dir = 8
 	},
-/turf/open/lava/smooth/lava_land_surface,
+/turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
 "khB" = (
 /obj/structure/stone_tile{
@@ -14301,7 +14313,7 @@
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 8
 	},
-/turf/open/lava/smooth/lava_land_surface,
+/turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
 "mPF" = (
 /obj/structure/stone_tile,
@@ -15606,6 +15618,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
+"nRP" = (
+/obj/structure/stone_tile/surrounding_tile{
+	dir = 4
+	},
+/obj/structure/stone_tile/surrounding_tile{
+	dir = 1
+	},
+/obj/structure/stone_tile/surrounding_tile{
+	dir = 8
+	},
+/obj/structure/stone_tile/center,
+/turf/open/floor/clockwork/reebe,
+/area/lavaland/surface/outdoors)
 "nSF" = (
 /obj/machinery/atmospherics/miner/oxygen,
 /obj/machinery/light/small,
@@ -21356,6 +21381,12 @@
 /obj/item/flashlight/lantern,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/unpowered/ash_walkers)
+"tef" = (
+/obj/structure/stone_tile/cracked{
+	dir = 8
+	},
+/turf/open/floor/clockwork/reebe,
+/area/lavaland/surface/outdoors)
 "tei" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 1
@@ -22327,6 +22358,12 @@
 /obj/item/paper/monitorkey,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
+"ucw" = (
+/obj/structure/stone_tile/block/burnt{
+	dir = 4
+	},
+/turf/open/floor/clockwork/reebe,
+/area/lavaland/surface/outdoors)
 "udn" = (
 /obj/structure/window/reinforced/tinted,
 /obj/structure/window/reinforced/tinted{
@@ -22522,6 +22559,12 @@
 /obj/structure/window/reinforced/survival_pod,
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
+"ulm" = (
+/obj/structure/door_assembly/door_assembly_cult/unruned{
+	anchored = 1
+	},
+/turf/open/floor/iron/cult,
+/area/lavaland/surface/outdoors)
 "ulo" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -22853,7 +22896,7 @@
 	},
 /obj/structure/sacrificealtar,
 /obj/item/melee/sickly_blade/ash,
-/turf/open/indestructible/boss,
+/turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
 "uxS" = (
 /obj/structure/bookcase,
@@ -23487,6 +23530,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
+"vbt" = (
+/obj/structure/stone_tile/block/cracked{
+	dir = 8
+	},
+/turf/open/floor/clockwork/reebe,
+/area/lavaland/surface/outdoors)
 "vbQ" = (
 /obj/structure/stone_tile/block,
 /obj/structure/stone_tile/block/cracked{
@@ -25851,6 +25900,9 @@
 	},
 /turf/open/floor/wood,
 /area/mine/living_quarters)
+"xmE" = (
+/turf/open/floor/clockwork/reebe,
+/area/lavaland/surface/outdoors)
 "xmL" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -98609,7 +98661,7 @@ lab
 lab
 eqd
 svf
-vAU
+qpf
 ecm
 fJn
 nkn
@@ -98622,7 +98674,7 @@ nkn
 tFN
 dYY
 dYY
-vAU
+qpf
 svf
 eqd
 lab
@@ -98866,7 +98918,7 @@ lab
 lab
 eqd
 svf
-vAU
+qpf
 qpf
 qpf
 uuc
@@ -98879,7 +98931,7 @@ otn
 dYY
 qpf
 qpf
-vAU
+qpf
 svf
 eqd
 lab
@@ -99123,7 +99175,7 @@ lab
 lab
 eqd
 svf
-vAU
+qpf
 qpf
 asE
 qpf
@@ -99136,7 +99188,7 @@ qpf
 dYY
 asE
 ecm
-vAU
+qpf
 svf
 eqd
 lab
@@ -99380,7 +99432,7 @@ lab
 lab
 eqd
 svf
-vAU
+qpf
 qpf
 dYY
 dYY
@@ -99393,7 +99445,7 @@ jLv
 qpf
 qpf
 qpf
-vAU
+qpf
 svf
 eqd
 lab
@@ -99637,7 +99689,7 @@ ctP
 lab
 eqd
 svf
-vAU
+qpf
 qpf
 aDk
 ioh
@@ -99650,7 +99702,7 @@ mZA
 sWj
 qpf
 qpf
-vAU
+qpf
 svf
 eqd
 lab
@@ -99894,7 +99946,7 @@ ctP
 ctP
 eqd
 svf
-vAU
+qpf
 qpf
 qpf
 qpf
@@ -99907,7 +99959,7 @@ qpf
 dYY
 qpf
 qpf
-vAU
+qpf
 svf
 eqd
 lab
@@ -100151,7 +100203,7 @@ nGH
 nGH
 eqd
 svf
-vAU
+qpf
 qpf
 qpf
 rSy
@@ -100164,7 +100216,7 @@ qpf
 qpf
 dYY
 qpf
-vAU
+qpf
 svf
 eqd
 lab
@@ -100408,7 +100460,7 @@ nGH
 nGH
 eqd
 svf
-vAU
+qpf
 irT
 qpf
 qpf
@@ -100421,7 +100473,7 @@ qpf
 qpf
 qpf
 irT
-vAU
+qpf
 svf
 eqd
 lab
@@ -100917,7 +100969,7 @@ muf
 mPV
 xyi
 dYY
-aDT
+ulm
 wLD
 qpf
 rSy
@@ -101174,7 +101226,7 @@ ggQ
 dYY
 qpf
 jZw
-aDT
+ulm
 qpf
 qpf
 qpf
@@ -151897,11 +151949,11 @@ vAU
 vAU
 ivD
 khx
-vAU
-mOW
-hvm
+xmE
+hLP
+vbt
 khx
-vAU
+xmE
 hiU
 wqU
 dIt
@@ -152924,7 +152976,7 @@ vAU
 vAU
 vAU
 ivD
-rPt
+nRP
 dTm
 lvG
 rST
@@ -153438,12 +153490,12 @@ vAU
 vAU
 vAU
 ivD
-fJI
-ohL
-vxo
-fJI
-vAU
-vAU
+ucw
+dha
+tef
+ucw
+xmE
+xmE
 hiU
 axJ
 pAi
