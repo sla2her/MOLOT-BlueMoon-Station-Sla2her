@@ -5,7 +5,6 @@
 	lefthand_file = 'icons/mob/inhands/misc/plushes-lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/plushes-right.dmi'
 	icon_state = "debug"
-	item_state = "debug"
 	attack_verb = list("thumped", "whomped", "bumped")
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = FLAMMABLE
@@ -496,7 +495,6 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = "space carp plushie"
 	desc = "An adorable stuffed toy that resembles a space carp."
 	icon_state = "carpplush"
-	item_state = "carpplush"
 	attack_verb = list("bitten", "eaten", "fin slapped")
 	squeak_override = list('sound/weapons/bite.ogg'=1)
 
@@ -504,7 +502,6 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = "bubblegum plushie"
 	desc = "The friendly red demon that gives good miners gifts."
 	icon_state = "bubbleplush"
-	item_state = "bubbleplush"
 	attack_verb = list("rends")
 	squeak_override = list('sound/magic/demon_attack1.ogg'=1)
 
@@ -512,7 +509,6 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = "ratvar plushie"
 	desc = "An adorable plushie of the clockwork justiciar himself with new and improved spring arm action."
 	icon_state = "plushvar"
-	item_state = "plushvar"
 	var/obj/item/toy/plush/narplush/clash_target
 	gender = MALE	//he's a boy, right?
 
@@ -599,7 +595,6 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = "\improper Nar'Sie plushie"
 	desc = "A small stuffed doll of the elder goddess Nar'Sie. Who thought this was a good children's toy?"
 	icon_state = "narplush"
-	item_state = "narplush"
 	var/clashing
 	var/is_invoker = TRUE
 	gender = FEMALE	//it's canon if the toy is
@@ -642,14 +637,12 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = "Suspect Plushie"
 	desc = "A stuffed toy that resembles a red space station employee. The tag claims red employee to be purely fictitious."
 	icon_state = "plushie_sus"
-	item_state = "plushie_sus"
 	attack_verb = list("shot", "eat", "killed")
 
 /obj/item/toy/plush/nukeplushie/minisusplushie
 	name = "Mini Suspect Plushie"
 	desc = "A stuffed toy that resembles a red space station mini employee. The tag claims red employee to be purely fictitious."
 	icon_state = "plushie_minisus"
-	item_state = "plushie_minisus"
 	attack_verb = list("mini-shot", "mini-eat", "mini-killed")
 
 // Little cute Ninja plushie
@@ -661,7 +654,6 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = GREEN_NINJA_SKIN
 	desc = "Главный герой одного из самых популярных мультсериалов по ту сторону галактики. \"運命の忍者矢\""
 	icon_state = "ninja_plushie_green"
-	item_state = "ninja_plushie_green"
 	attack_verb = list("shot", "nuked", "detonated")
 	squeak_override = list('sound/effects/hit_punch.ogg' = 1)
 	always_reskinnable = TRUE
@@ -699,7 +691,6 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	name = BASIC_MINER_SKIN
 	desc = "Тот самый Шахтёр, способный провести геноцид планетарного объекта."
 	icon_state = "miner_plushie"
-	item_state = "miner_plushie"
 	attack_verb = list("killed", "slashed", "annihilates")
 	squeak_override = list('sound/effects/hit_punch.ogg' = 1)
 	always_reskinnable = TRUE
