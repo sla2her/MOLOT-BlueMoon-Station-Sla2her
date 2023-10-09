@@ -660,10 +660,6 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
-"aDT" = (
-/obj/structure/door_assembly/door_assembly_cult/unruned,
-/turf/open/floor/iron/cult,
-/area/lavaland/surface/outdoors)
 "aEJ" = (
 /obj/structure/stone_tile/block/burnt{
 	pixel_x = -16
@@ -19078,8 +19074,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
-"qZM" = (
-)
 "ral" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -19533,7 +19527,9 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/xenoarch_area_c)
 "rvl" = (
-/obj/structure/door_assembly/door_assembly_cult,
+/obj/structure/door_assembly/door_assembly_cult{
+	anchored = 1
+	},
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "rvH" = (
@@ -104000,8 +103996,8 @@ qpf
 ecm
 svf
 svf
-aDT
-aDT
+ulm
+ulm
 svf
 svf
 svf
@@ -151413,7 +151409,7 @@ ivD
 gpj
 ivD
 pyc
-qZM
+gIl
 gIl
 gIl
 lab
