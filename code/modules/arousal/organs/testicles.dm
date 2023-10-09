@@ -76,3 +76,5 @@
 	if(D.features["balls_accessible"])
 		toggle_accessibility(TRUE)
 
+	if(D.features["balls_accessible"])
+		toggle_accessibility(TRUE)
