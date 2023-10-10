@@ -76,10 +76,10 @@ COLORED_SOFA(/obj/structure/chair/sofa, maroon, SOFA_MAROON)
 	icon_state = "corp_sofamiddle"
 
 /obj/structure/chair/sofa/corp/right
-	icon_state = "corp_sofaend_right"
+	icon_state = "corp_sofaend_left"
 
 /obj/structure/chair/sofa/corp/left
-	icon_state = "corp_sofaend_left"
+	icon_state = "corp_sofaend_right"
 
 /obj/structure/chair/sofa/corp/corner
 	icon_state = "corp_sofacorner"
