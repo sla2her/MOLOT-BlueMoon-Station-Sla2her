@@ -3024,7 +3024,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "sK" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4381,7 +4381,7 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "Cx" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -6171,7 +6171,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "NH" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,

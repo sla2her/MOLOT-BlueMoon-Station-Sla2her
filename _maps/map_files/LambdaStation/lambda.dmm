@@ -25595,7 +25595,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aWP" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -26101,7 +26101,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -44275,7 +44275,7 @@
 	dir = 1;
 	light_color = "#cee5d2"
 	},
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /obj/machinery/status_display/evac{
 	pixel_y = 32
 	},
@@ -44300,7 +44300,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/aisat/exterior)
 "bTC" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel,
 /area/engineering/transit_tube)
 "bTD" = (

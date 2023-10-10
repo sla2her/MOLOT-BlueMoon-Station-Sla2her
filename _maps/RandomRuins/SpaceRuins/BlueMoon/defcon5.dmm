@@ -1132,7 +1132,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3222,7 +3222,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/forehall)
 "sK" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3526,7 +3526,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4707,7 +4707,7 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "Cx" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -6720,7 +6720,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/port_tarkon/atmos)
 "NH" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8388,7 +8388,7 @@
 "Xw" = (
 /obj/item/broken_bottle,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/iron,

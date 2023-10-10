@@ -1563,7 +1563,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /obj/structure/fans/tiny/invisible,
@@ -5178,7 +5178,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /obj/structure/fans/tiny/invisible,
@@ -17293,7 +17293,7 @@
 /obj/structure/window{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -20583,7 +20583,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/structure/fans/tiny/invisible,
@@ -24563,7 +24563,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -29278,7 +29278,7 @@
 	},
 /area/hallway/primary/starboard)
 "epa" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /obj/effect/landmark/start/hangover,
@@ -46271,7 +46271,7 @@
 /area/science/mixing)
 "gSl" = (
 /obj/effect/landmark/start/peacekeeper,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -51456,7 +51456,7 @@
 /obj/structure/window{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/carpet/black,
 /area/service/bar)
@@ -58406,7 +58406,7 @@
 	},
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced,
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/plasteel{
@@ -59322,7 +59322,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/structure/fans/tiny/invisible,
@@ -66089,7 +66089,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced,
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/plasteel{
@@ -70766,7 +70766,7 @@
 /obj/structure/window/reinforced/tinted{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /obj/effect/landmark/start/hangover,
@@ -71152,7 +71152,7 @@
 	},
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/plasteel{
@@ -86567,7 +86567,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /obj/structure/fans/tiny/invisible,
@@ -89184,7 +89184,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -92951,7 +92951,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -95393,7 +95393,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /obj/structure/fans/tiny/invisible,
@@ -98999,7 +98999,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /obj/structure/fans/tiny/invisible,
@@ -104800,7 +104800,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start/peacekeeper,
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/wood,
 /area/security/brig)
 "pkF" = (
@@ -115220,7 +115220,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /obj/effect/landmark/start/hangover,
@@ -128322,7 +128322,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/plasteel{
@@ -133008,7 +133008,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /obj/structure/fans/tiny/invisible,
@@ -143162,7 +143162,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port)
 "uRn" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /obj/effect/landmark/start/hangover,
@@ -156273,7 +156273,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /obj/structure/fans/tiny/invisible,
 /obj/structure/window/reinforced{
 	dir = 1

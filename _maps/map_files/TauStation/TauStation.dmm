@@ -1881,7 +1881,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison/cells)
 "aIC" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -9561,7 +9561,7 @@
 /turf/closed/wall/r_wall,
 /area/maintenance/disposal/incinerator)
 "dqI" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/machinery/light/small,
@@ -12686,7 +12686,7 @@
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "etW" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /obj/structure/sign/poster/contraband/random{
 	pixel_y = 32
 	},
@@ -25280,7 +25280,7 @@
 /turf/open/floor/plasteel/dark/side,
 /area/hallway/primary/starboard)
 "iKZ" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/plasteel/dark,
 /area/service/bar)
 "iLl" = (
@@ -36076,7 +36076,7 @@
 /turf/open/floor/plasteel/dark,
 /area/commons/cryopod)
 "myb" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel/dark,
 /area/service/bar)
 "myn" = (
@@ -38939,7 +38939,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "nua" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -38968,7 +38968,7 @@
 /turf/open/floor/plasteel/dark/side,
 /area/science/xenobiology)
 "nuw" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -40134,7 +40134,7 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "nQt" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/structure/window{
@@ -42896,7 +42896,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "oTn" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -49662,7 +49662,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
 "rmh" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -56681,7 +56681,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
 "tHk" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/carpet/black,
 /area/commons/dorms)
 "tHA" = (
@@ -57562,7 +57562,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "tTM" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /obj/machinery/light{
@@ -60384,7 +60384,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "uSl" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -63468,7 +63468,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "vQj" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,

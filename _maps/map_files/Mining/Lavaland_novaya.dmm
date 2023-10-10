@@ -705,7 +705,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "aFQ" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel/white/side{
 	dir = 5
@@ -3293,7 +3293,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/plasteel/dark,
 /area/mine/xenoarch_area_c)
 "cOd" = (
@@ -6352,7 +6352,7 @@
 /turf/open/floor/plasteel,
 /area/mine/xenoarch_area_c)
 "fHk" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red,
@@ -7798,7 +7798,7 @@
 /turf/open/floor/plasteel,
 /area/mine/storage)
 "hak" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red{
@@ -9128,7 +9128,7 @@
 /turf/open/floor/iron/cult,
 /area/lavaland/surface/outdoors)
 "ism" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -9787,7 +9787,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
 "iYz" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -9862,7 +9862,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "jcU" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel,
 /area/mine/storage)
 "jdk" = (
@@ -10808,7 +10808,7 @@
 /turf/open/floor/plating,
 /area/mine/production)
 "jUt" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -12117,7 +12117,7 @@
 /turf/open/floor/plasteel/white,
 /area/mine/xenoarch_area_c)
 "kXG" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -12538,7 +12538,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/unpowered/ash_walkers)
 "lqk" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -13697,7 +13697,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "mpW" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -14578,7 +14578,7 @@
 	},
 /area/ruin/lavaland/unpowered/deepspaceone/cargo)
 "mZg" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/plasteel/white/side{
 	dir = 1
 	},
@@ -15077,7 +15077,7 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/production)
 "nuF" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -15161,7 +15161,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -15462,7 +15462,7 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/xenoarch_area_c)
 "nIu" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel/dark,
 /area/mine/xenoarch_area_c)
 "nIR" = (
@@ -15758,7 +15758,7 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/storage)
 "nYA" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/plasteel,
 /area/mine/storage)
 "nYO" = (
@@ -16132,7 +16132,7 @@
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
 "ooY" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/effect/landmark/start/assistant,
@@ -18103,7 +18103,7 @@
 /area/mine/xenoarch_area_b)
 "qjX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -21197,7 +21197,7 @@
 /turf/open/floor/circuit/green,
 /area/ruin/lavaland/unpowered/deepspaceone/main)
 "sVg" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -24241,7 +24241,7 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/eva)
 "vLo" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /obj/structure/sign/poster/official/random{
@@ -25868,7 +25868,7 @@
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
 "xlA" = (
 /obj/machinery/light,
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red,
@@ -26385,7 +26385,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel/dark,
 /area/mine/xenoarch_area_c)
 "xFB" = (

@@ -1694,7 +1694,7 @@
 /turf/closed/indestructible/riveted,
 /area/tdome/tdomeadmin)
 "bJa" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -16728,7 +16728,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "oeS" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/dark_red/fourcorners,

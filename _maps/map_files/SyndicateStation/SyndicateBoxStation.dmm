@@ -11284,7 +11284,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/hallway/secondary/entry)
 "aCr" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -13498,7 +13498,7 @@
 	dir = 1;
 	light_color = "#c1caff"
 	},
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aIt" = (
@@ -13527,7 +13527,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aIx" = (
@@ -16082,7 +16082,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start/assistant,
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/carpet/black,
 /area/service/bar)
 "aQc" = (
@@ -18883,7 +18883,7 @@
 /obj/structure/window/plasma{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/carpet/black,
 /area/service/bar)
 "aXj" = (
@@ -53642,7 +53642,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "fLN" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/mineral/plastitanium/red,
 /area/maintenance/bar)
 "fMp" = (
@@ -55803,7 +55803,7 @@
 /obj/structure/sign/poster/contraband/borg_fancy_2{
 	pixel_y = -32
 	},
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -60417,7 +60417,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/medical/morgue)
 "oKh" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -60882,7 +60882,7 @@
 /turf/open/floor/plasteel/kitchen_coldroom,
 /area/commons/dorms)
 "puV" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -61988,7 +61988,7 @@
 /turf/open/floor/carpet/black,
 /area/commons/dorms)
 "rgW" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -62575,7 +62575,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/engineering/atmos)
 "rVy" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/mineral/plastitanium/red,
 /area/maintenance/bar)
 "rVN" = (
@@ -62952,7 +62952,7 @@
 	},
 /area/security/prison)
 "sAH" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -63505,7 +63505,7 @@
 /area/maintenance/starboard/aft)
 "ttP" = (
 /obj/effect/landmark/start/assistant,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -63542,7 +63542,7 @@
 /obj/structure/noticeboard{
 	pixel_y = -27
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -63971,7 +63971,7 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "tSY" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
@@ -64335,7 +64335,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "usO" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/mineral/plastitanium,
 /area/maintenance/bar)
 "uua" = (
@@ -65539,7 +65539,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "wfC" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -65900,7 +65900,7 @@
 /obj/structure/window/plasma{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/carpet/black,
 /area/service/bar)
 "wyE" = (
