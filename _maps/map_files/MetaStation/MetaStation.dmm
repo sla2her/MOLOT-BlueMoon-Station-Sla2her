@@ -2097,24 +2097,6 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 5
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/airalarm{
-	dir = 4;
-	pixel_x = -23
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 5
-	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
-	},
 /turf/open/floor/plasteel,
 /area/service/sauna)
 "ahx" = (
@@ -12129,12 +12111,6 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aYh" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 5
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /turf/open/floor/wood,
 /area/service/sauna)
 "aYu" = (
@@ -15611,12 +15587,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 6
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12"
 	},
@@ -16646,12 +16616,6 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "brn" = (
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/closed/wall,
 /area/service/sauna)
@@ -48866,13 +48830,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/storage/satellite)
-"ebr" = (
-/obj/machinery/atmospherics/components/binary/valve/digital/layer3,
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/turf/open/floor/plasteel,
-/area/maintenance/starboard/fore)
 "ecl" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow{
@@ -52294,12 +52251,6 @@
 "fQp" = (
 /obj/structure/window/reinforced{
 	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
-	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -57591,17 +57542,6 @@
 	pixel_y = 25
 	},
 /obj/structure/chair/pew/left,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 6
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/button/electrochromatic{
-	id = "sauna_room";
-	pixel_y = 25
-	},
-/obj/structure/chair/pew/left,
 /turf/open/floor/wood,
 /area/service/sauna)
 "ivZ" = (
@@ -61634,20 +61574,6 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/structure/closet/secure_closet/personal,
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
 /turf/open/floor/plasteel,
 /area/service/sauna)
 "kyt" = (
@@ -64835,15 +64761,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/tcommsat/server)
-"lXj" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer3{
-	dir = 1
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard/fore)
 "lXo" = (
 /obj/machinery/airalarm{
 	pixel_y = 24
@@ -64860,19 +64777,6 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "lXR" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/power/apc/auto_name/west,
-/obj/structure/cable/yellow,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable/yellow,
@@ -67416,12 +67320,6 @@
 /area/command/bridge)
 "nmc" = (
 /obj/effect/decal/cleanable/cobweb,
-/obj/machinery/atmospherics/components/binary/valve/digital/layer3{
-	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating{
@@ -73084,12 +72982,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/unary/thermomachine/heater{
-	piping_layer = 3
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/closet/crate/bin,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/reagent_containers/glass/beaker/waterbottle/large/empty,
@@ -74369,23 +74261,6 @@
 	specialfunctions = 4;
 	pixel_y = 25
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	id = "saunab";
-	name = "Cabin Bolt Control";
-	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	pixel_y = 25
-	},
-/obj/structure/chair/pew/right,
 /turf/open/floor/wood,
 /area/service/sauna)
 "qyF" = (
@@ -75009,13 +74884,6 @@
 /area/commons/fitness/recreation)
 "qNZ" = (
 /obj/structure/chair/pew,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/structure/chair/pew,
 /turf/open/floor/wood,
 /area/service/sauna)
 "qOc" = (
@@ -75043,15 +74911,6 @@
 /obj/item/stack/ore/glass,
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
-"qOT" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction/layer3{
-	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/turf/closed/wall,
-/area/service/sauna)
 "qPs" = (
 /obj/machinery/door/airlock{
 	id_tag = "AuxToilet2";
@@ -77284,15 +77143,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
-"rSF" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible/layer3{
-	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/turf/closed/wall,
-/area/maintenance/starboard/fore)
 "rSI" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
@@ -80705,20 +80555,8 @@
 	name = "Sauna";
 	id_tag = "saunab"
 	},
-/obj/machinery/door/firedoor,
 /obj/structure/fans/tiny,
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction/layer3{
-	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/door/airlock/maintenance/external{
-	name = "Sauna";
-	id_tag = "saunab"
-	},
 /obj/machinery/door/firedoor,
-/obj/structure/fans/tiny,
 /turf/open/floor/wood,
 /area/service/sauna)
 "tFp" = (
@@ -80837,15 +80675,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/treatment_center)
-"tHf" = (
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 5
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/turf/open/floor/plasteel,
-/area/maintenance/starboard/fore)
 "tHs" = (
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/plasteel,
@@ -81335,15 +81164,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
-"tQH" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/turf/open/floor/wood,
-/area/service/sauna)
 "tQK" = (
 /obj/structure/table,
 /obj/item/stack/sheet/metal/fifty,
@@ -82279,16 +82099,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 10
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 8
-	},
 /turf/open/floor/plasteel,
 /area/service/sauna)
 "umv" = (
@@ -82661,13 +82471,7 @@
 /obj/machinery/door/airlock/maintenance/external{
 	name = "Sauna"
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3,
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/door/airlock/maintenance/external{
-	name = "Sauna"
-	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/service/sauna)
 "uum" = (
@@ -85984,12 +85788,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 9
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -86546,15 +86344,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
-"wtU" = (
-/obj/machinery/atmospherics/pipe/manifold/orange/hidden/layer3{
-	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard/fore)
 "wud" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -90390,14 +90179,6 @@
 /turf/open/floor/plasteel,
 /area/service/hydroponics/garden)
 "yeO" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3{
-	dir = 10
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
@@ -131104,7 +130885,7 @@ hyh
 jKQ
 mHl
 qNZ
-tQH
+aYh
 mmM
 gRa
 wOY
@@ -131361,7 +131142,7 @@ hyh
 jKQ
 mHl
 qNZ
-tQH
+aYh
 rcR
 gRa
 aaa
@@ -131618,7 +131399,7 @@ hyh
 tvG
 gRa
 qyv
-tQH
+aYh
 vee
 gRa
 aaa
@@ -131874,7 +131655,7 @@ mel
 hyh
 hJU
 gRa
-qOT
+gRa
 tEv
 gRa
 gRa
@@ -132392,8 +132173,8 @@ kys
 qlA
 umc
 uul
-ebr
-tHf
+hAH
+hAH
 hAH
 dni
 dnS
@@ -132650,8 +132431,8 @@ gRa
 gRa
 gRa
 pUJ
-wtU
-lXj
+dnS
+dnS
 dnh
 qMY
 kCp
@@ -133415,7 +133196,7 @@ atn
 rId
 rId
 rId
-rSF
+dnh
 dnh
 dnh
 dnR
