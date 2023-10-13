@@ -234,7 +234,7 @@
 			break
 	if(opponent)
 		//we found an opponent before they found us
-		var/move_to_number = list("Rock" = 0, "Paper" = 1, "Scissors" = 2)
+		var/move_to_number = list("rock" = 0, "paper" = 1, "scissors" = 2)
 		var/our_move = move_to_number[GLOB.rockpaperscissors_players[src][1]]
 		var/their_move = move_to_number[GLOB.rockpaperscissors_players[opponent][1]]
 		var/result_us = ROCKPAPERSCISSORS_WIN
