@@ -4,9 +4,9 @@
 /datum/gear/donator/shoes/pinkshoes
 	name = "Pink shoes"
 	path = /obj/item/clothing/shoes/sneakers/pink
-	ckeywhitelist = list("zigfie")
+	ckeywhitelist = list()
 
 /datum/gear/donator/shoes/mikuleggings
 	name = "starlight singer leggings"
 	path = /obj/item/clothing/shoes/sneakers/mikuleggings
-	ckeywhitelist = list("grandvegeta")
+	ckeywhitelist = list()

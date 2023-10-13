@@ -5,4 +5,4 @@
 /datum/gear/donator/accessory/kiaramedal
 	name = "Insignia of Steele"
 	path = /obj/item/clothing/accessory/medal/steele
-	ckeywhitelist = list("inferno707")
+	ckeywhitelist = list()

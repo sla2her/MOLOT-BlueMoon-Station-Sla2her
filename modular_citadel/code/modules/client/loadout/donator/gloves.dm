@@ -4,9 +4,9 @@
 /datum/gear/donator/gloves/longblackgloves
 	name = "Luna's Gauntlets"
 	path = /obj/item/clothing/gloves/longblackgloves
-	ckeywhitelist = list("bigmanclancy")
+	ckeywhitelist = list()
 
 /datum/gear/donator/gloves/mikugloves
 	name = "starlight singer gloves"
 	path = /obj/item/clothing/gloves/mikugloves
-	ckeywhitelist = list("grandvegeta")
+	ckeywhitelist = list()
