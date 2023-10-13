@@ -74463,14 +74463,23 @@
 	icon_state = "0-4"
 	},
 /obj/structure/table/wood/bar,
-/obj/item/reagent_containers/food/drinks/coffee,
-/obj/item/reagent_containers/food/drinks/coffee{
-	pixel_x = 5
+/obj/machinery/power/apc/auto_name/west,
+/obj/item/storage/fancy/coffee_condi_display,
+/obj/item/reagent_containers/glass/bottle/syrup_bottle/caramel{
+	pixel_y = 20;
+	pixel_x = -10
 	},
-/obj/item/reagent_containers/food/drinks/coffee{
+/obj/item/reagent_containers/glass/bottle/syrup_bottle/korta_nectar{
+	pixel_y = 20;
 	pixel_x = -5
 	},
-/obj/machinery/power/apc/auto_name/west,
+/obj/item/reagent_containers/glass/bottle/syrup_bottle/laughsyrup{
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/glass/bottle/syrup_bottle/liqueur{
+	pixel_x = 5;
+	pixel_y = 20
+	},
 /turf/open/floor/wood,
 /area/service/coffeehouse)
 "qAG" = (
@@ -90070,12 +90079,12 @@
 /area/commons/fitness/recreation)
 "xXS" = (
 /obj/structure/table/wood/bar,
-/obj/machinery/chem_dispenser/drinks{
-	dir = 4
-	},
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = -26
+	},
+/obj/machinery/coffeemaker{
+	pixel_y = 5
 	},
 /turf/open/floor/wood,
 /area/service/coffeehouse)
