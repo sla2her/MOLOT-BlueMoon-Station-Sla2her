@@ -6,7 +6,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 /datum/preferences
 	var/client/parent
-	//doohickeys for savefiles
+//doohickeys for savefiles
 	var/path
 	var/vr_path
 	var/default_slot = 1				//Holder so it doesn't default to slot 1, rather the last one used
@@ -610,11 +610,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<br><a href='?_src_=prefs;preference=hide_ckey;task=input'><b>Hide ckey: [hide_ckey ? "Enabled" : "Disabled"]</b></a><br>"
 					dat += "</td>"
 
-					dat += "<td>"
+					dat += "<td valign='top'>"
+					dat += "<h2>PDA preferences</h2>"
 					dat += "<b>PDA Color:</b> <span style='border:1px solid #161616; background-color: [pda_color];'><font color='[color_hex2num(pda_color) < 200 ? "FFFFFF" : "000000"]'>[pda_color]</font></span> <a href='?_src_=prefs;preference=pda_color;task=input'>Change</a><BR>"
 					dat += "<b>PDA Style:</b> <a href='?_src_=prefs;task=input;preference=pda_style'>[pda_style]</a><br>"
 					dat += "<b>PDA Reskin:</b> <a href='?_src_=prefs;task=input;preference=pda_skin'>[pda_skin]</a><br>"
 					dat += "<b>PDA Ringtone:</b> <a href='?_src_=prefs;task=input;preference=pda_ringtone'>[pda_ringtone]</a><br>"
+
+					dat += "<h2>Silicon preferences</h2>"
+					if(!CONFIG_GET(flag/allow_silicon_choosing_laws))
+						dat += "<i>The server has disabled choosing your own laws, you can still choose and save, but it won't do anything in-game.</i><br>"
+					dat += "<b>Starting lawset:</b> <a href='?_src_=prefs;task=input;preference=silicon_lawset'>[silicon_lawset ? silicon_lawset : "No custom"]</a><br>"
+
+					if(silicon_lawset)
+						var/datum/ai_laws/laws = null
+						to_chat(usr, "<b>Соблюдайте данные законы:</b>")
+						laws.show_laws(usr)
+
 					dat += "</td>"
 
 					dat += "</tr></table>"
@@ -3265,6 +3277,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/pickedPDARingtone = reject_bad_name(input(user, "Выбирайте рингтон своего КПК.", "Character Preference", pda_ringtone) as null|text, TRUE)
 					if(pickedPDARingtone)
 						pda_ringtone = pickedPDARingtone
+				if("silicon_lawset")
+					var/picked_lawset = input(user, "Choose your preferred lawset", "Silicon preference", silicon_lawset) as null|anything in CONFIG_GET(keyed_list/choosable_laws)
+					if(picked_lawset)
+						silicon_lawset = picked_lawset
 				if ("max_chat_length")
 					var/desiredlength = input(user, "Choose the max character length of shown Runechat messages. Valid range is 1 to [CHAT_MESSAGE_MAX_LENGTH] (default: [initial(max_chat_length)]))", "Character Preference", max_chat_length)  as null|num
 					if (!isnull(desiredlength))

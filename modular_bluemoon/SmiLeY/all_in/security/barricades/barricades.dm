@@ -92,10 +92,7 @@
 	if(leaving == typesof(/turf/open/floor))
 		return
 
-	if(!(get_dir(loc, leaving) & dir))
-		return
-
-	if((get_dir(loc, leaving) & dir))
+	if(get_dir(loc, leaving) == dir)
 		return
 
 	if (!density)
