@@ -622,10 +622,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<i>The server has disabled choosing your own laws, you can still choose and save, but it won't do anything in-game.</i><br>"
 					dat += "<b>Starting lawset:</b> <a href='?_src_=prefs;task=input;preference=silicon_lawset'>[silicon_lawset ? silicon_lawset : "No custom"]</a><br>"
 
-					if(silicon_lawset)
-						var/datum/ai_laws/laws = null
-						to_chat(usr, "<b>Соблюдайте данные законы:</b>")
-						laws.show_laws(usr)
+//					if(silicon_lawset)
+//						var/datum/ai_laws/laws = null
+//						to_chat(usr, "<b>Соблюдайте данные законы:</b>")
+//						laws.show_laws(usr)
 
 					dat += "</td>"
 
