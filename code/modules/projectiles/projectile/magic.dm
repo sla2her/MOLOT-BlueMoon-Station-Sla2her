@@ -152,10 +152,12 @@
 
 		if("robot")
 			var/robot = pick(200;/mob/living/silicon/robot,
-							/mob/living/silicon/robot/modules/syndicate,
-							/mob/living/silicon/robot/modules/syndicate/medical,
-							/mob/living/silicon/robot/modules/syndicate/saboteur,
-							200;/mob/living/simple_animal/drone/polymorphed)
+							/mob/living/silicon/robot/modules/inteq, //BM Changes /Krashly
+							/mob/living/silicon/robot/modules/inteq/medical, //BM Changes /Krashly
+							/mob/living/silicon/robot/modules/inteq/saboteur, //BM Changes /Krashly
+							200;/mob/living/simple_animal/drone/polymorphed,
+							/mob/living/simple_animal/drone/syndrone/badass/inteq)
+
 			new_mob = new robot(M.loc)
 			if(issilicon(new_mob))
 				new_mob.gender = M.gender
