@@ -776,3 +776,11 @@
 	path = /obj/item/clothing/suit/det_suit/grey
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1
+
+/datum/gear/donator/jason_mask
+	name = "Jason Mask"
+	slot = ITEM_SLOT_MASK
+	path = /obj/item/clothing/mask/gas/plaguedoctor/jason
+	ckeywhitelist = list("goblin335")
+	subcategory = LOADOUT_SUBCATEGORIES_DON12
+	donator_group_id = DONATOR_GROUP_TIER_1
