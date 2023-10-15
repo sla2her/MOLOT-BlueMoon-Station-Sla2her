@@ -1,11 +1,11 @@
 /datum/gear/donator/neck
 	slot = ITEM_SLOT_NECK
+	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/neck/chameleon_bedsheet
 	name = "Chameleon Bedsheet"
 	path = /obj/item/bedsheet/chameleon
 	ckeywhitelist = list()
-	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/neck/kiaracloak
 	name = "Kiara's cloak"

@@ -1,5 +1,6 @@
 /datum/gear/donator/gloves
 	slot = ITEM_SLOT_GLOVES
+	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/gloves/longblackgloves
 	name = "Luna's Gauntlets"

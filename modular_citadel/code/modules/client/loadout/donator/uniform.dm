@@ -1,5 +1,6 @@
 /datum/gear/donator/uniform
 	slot = ITEM_SLOT_ICLOTHING
+	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/uniform/geisha
 	name = "Geisha suit"

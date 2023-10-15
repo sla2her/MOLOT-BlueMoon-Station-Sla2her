@@ -1,5 +1,6 @@
 /datum/gear/donator/head
 	slot = ITEM_SLOT_HEAD
+	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/head/santahat
 	name = "Santa hat"

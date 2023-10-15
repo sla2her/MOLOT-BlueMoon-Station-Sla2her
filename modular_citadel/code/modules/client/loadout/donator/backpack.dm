@@ -1,22 +1,21 @@
 /datum/gear/donator/backpack
 	handle_post_equip = TRUE
+	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/backpack/pet
 	name = "Pet Beacon"
 	path = /obj/item/choice_beacon/pet
 	ckeywhitelist = list()
-	donator_group_id = DONATOR_GROUP_TIER_1 // can be accessed by all donators
 
 /datum/gear/donator/backpack/carpet
 	name = "Carpet Beacon"
 	path = /obj/item/choice_beacon/box/carpet
 	ckeywhitelist = list()
-	donator_group_id = DONATOR_GROUP_TIER_1
 
-/datum/gear/donator/backpack/donortestingbikehorn
-	name = "Donor item testing bikehorn"
+/datum/gear/donator/backpack/bikehorn
+	name = "Bikehorn"
 	path = /obj/item/bikehorn
-	geargroupID = list("DONORTEST") //This is a list mainly for the sake of testing, but geargroupID works just fine with ordinary strings
+	ckeywhitelist = list()
 
 /datum/gear/donator/backpack/kevhorn
 	name = "Airhorn"

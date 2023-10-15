@@ -1,5 +1,6 @@
 /datum/gear/donator/suit
 	slot = ITEM_SLOT_OCLOTHING
+	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/suit/redmadcoat
 	name = "The Mad's labcoat"

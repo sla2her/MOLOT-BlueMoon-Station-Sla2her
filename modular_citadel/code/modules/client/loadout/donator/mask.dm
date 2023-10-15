@@ -1,5 +1,6 @@
 /datum/gear/donator/mask
 	slot = ITEM_SLOT_MASK
+	donator_group_id = DONATOR_GROUP_TIER_1
 
 /datum/gear/donator/mask/hheart
 	name = "The Hollow Heart"
