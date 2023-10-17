@@ -219,6 +219,7 @@
 		my_store.my_card = null
 		my_store = null
 	cached_flat_icon = null //SPLURT edit
+	QDEL_NULL(access)
 	return ..()
 
 /obj/item/card/id/vv_edit_var(var_name, var_value)
