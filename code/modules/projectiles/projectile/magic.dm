@@ -145,7 +145,7 @@
 
 	var/mob/living/new_mob
 
-	var/randomize = pick("monkey","robot","slime","xeno","humanoid","animal")
+	var/randomize = pick("robot","robot","robot","robot","robot","monkey","slime","xeno","humanoid","animal")
 	switch(randomize)
 		if("monkey")
 			new_mob = new /mob/living/carbon/monkey(M.loc)
@@ -169,6 +169,7 @@
 				Robot.mmi.transfer_identity(M)	//Does not transfer key/client.
 				Robot.clear_inherent_laws(0)
 				Robot.clear_zeroth_law(0)
+				Robot.laws = new /datum/ai_laws/antimov()
 
 		if("slime")
 			new_mob = new /mob/living/simple_animal/slime/random(M.loc)
