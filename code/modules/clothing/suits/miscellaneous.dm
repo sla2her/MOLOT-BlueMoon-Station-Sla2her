@@ -361,7 +361,7 @@
 
 /obj/item/clothing/head/helmet/juggernaut
 	name = "Zeal Team Helmet"
-	desc = "I...am...the...JUGGERNAUT!!!"
+	desc = "I... am... the... JUGGERNAUT!!!"
 	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/hats.dmi'
 	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/clothing/hats.dmi'
 	icon_state = "juggernauthelm"
@@ -370,11 +370,12 @@
 	strip_delay = 120
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	heat_protection = HEAD
+	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flash_protect = TRUE
 	obj_flags = IMMUTABLE_SLOW
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	slowdown = 0.5
+	slowdown = 0.25
 
 /obj/item/clothing/suit/armor/heavy/juggernaut
 	name = "Zeal Team Heavy Suit"
@@ -390,10 +391,11 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	cold_protection = CHEST|GROIN|LEGS|ARMS|FEET
 	heat_protection = CHEST|GROIN|LEGS|ARMS|FEET
+	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	max_heat_protection_temperature = COAT_MAX_TEMP_PROTECT
 	strip_delay = 120
-	slowdown = 0.5
+	slowdown = 0.25
 	obj_flags = IMMUTABLE_SLOW
 	flags_inv = HIDESHOES|HIDEJUMPSUIT
 
