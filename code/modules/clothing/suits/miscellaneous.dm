@@ -375,7 +375,6 @@
 	flash_protect = TRUE
 	obj_flags = IMMUTABLE_SLOW
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	slowdown = 0.25
 
 /obj/item/clothing/suit/armor/heavy/juggernaut
 	name = "Zeal Team Heavy Suit"
@@ -395,9 +394,9 @@
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	max_heat_protection_temperature = COAT_MAX_TEMP_PROTECT
 	strip_delay = 120
-	slowdown = 0.25
+	slowdown = 0.5
 	obj_flags = IMMUTABLE_SLOW
-	flags_inv = HIDESHOES|HIDEJUMPSUIT
+	flags_inv = HIDESHOES|HIDEJUMPSUIT|HIDETAUR
 
 /obj/item/clothing/suit/ran
 	name = "shikigami costume"
