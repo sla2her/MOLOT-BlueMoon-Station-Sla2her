@@ -383,7 +383,7 @@
 	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/suit.dmi'
 	icon_state = "juggernaut"
 	item_state = "juggernaut"
-	tail_state = "bomb"
+	tail_state = "juggernaut"
 	mutantrace_variation = STYLE_DIGITIGRADE
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|FEET
 	armor = list(MELEE = 80, BULLET = 60, LASER = 40, ENERGY = 60, BOMB = 80, BIO = 100, RAD = 50, FIRE = 95, ACID = 95)
