@@ -207,7 +207,7 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 /datum/objective/assassinate/once/update_explanation_text()
 	..()
 	if(target && target.current)
-		explanation_text = "Наша цель - [target.name], [!target_role_type ? target.assigned_role : target.special_role]. Убей эту цель насмерть!"
+		explanation_text = "Убей [target.name], [!target_role_type ? target.assigned_role : target.special_role], один раз!"
 		START_PROCESSING(SSprocessing,src)
 	else
 		explanation_text = "Свободная Задача"
