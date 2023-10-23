@@ -14135,9 +14135,6 @@
 	dir = 10
 	},
 /area/ruin/lavaland/unpowered/deepspaceone/testlab)
-"niy" = (
-/turf/closed/indestructible/riveted/boss,
-/area/lavaland/surface/outdoors/explored)
 "njc" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/computer/security/labor{
@@ -16204,10 +16201,6 @@
 /obj/structure/table/reinforced/brass,
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
-"poU" = (
-/obj/item/clockwork/alloy_shards/clockgolem_remains,
-/turf/open/floor/plating/asteroid/basalt/lava,
-/area/lavaland/surface/outdoors/explored)
 "ppW" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
@@ -22082,10 +22075,6 @@
 "uVo" = (
 /turf/open/floor/engine/air,
 /area/mine/xenoarch_area_a)
-"uVp" = (
-/obj/item/clothing/shoes/bronze,
-/turf/open/floor/plating/asteroid/basalt/lava,
-/area/lavaland/surface/outdoors/explored)
 "uWg" = (
 /obj/structure/stone_tile/cracked{
 	dir = 4
@@ -127190,7 +127179,7 @@ lab
 lab
 lab
 lab
-niy
+ivD
 lab
 lab
 lab
@@ -127445,8 +127434,8 @@ lab
 lab
 lab
 lab
-niy
-niy
+ivD
+ivD
 lab
 lab
 lab
@@ -127701,7 +127690,7 @@ lab
 lab
 lab
 lab
-niy
+ivD
 lab
 lab
 lab
@@ -127957,8 +127946,8 @@ lab
 lab
 lab
 lab
-niy
-poU
+ivD
+ctP
 lab
 lab
 lab
@@ -128214,11 +128203,11 @@ lab
 lab
 lab
 lab
-niy
+ivD
 lab
 lab
-uVp
-niy
+ctP
+ivD
 lab
 lab
 lab
@@ -128470,11 +128459,11 @@ lab
 lab
 lab
 lab
-niy
+ivD
 lab
 lab
 lab
-niy
+ivD
 lab
 lab
 lab
@@ -128729,8 +128718,8 @@ lab
 lab
 lab
 lab
-niy
-niy
+ivD
+ivD
 lab
 lab
 lab

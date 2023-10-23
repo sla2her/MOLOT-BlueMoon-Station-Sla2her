@@ -1376,13 +1376,7 @@
 	id = "trektorpedo1";
 	name = "photon torpedo tube"
 	},
-/obj/item/toy/minimeteor{
-	color = "";
-	desc = "A primitive long-range weapon, inferior to Nanotrasen's perfected bluespace artillery.";
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "impact_laser";
-	name = "photon torpedo"
-	},
+/obj/item/toy/minimeteor,
 /turf/open/floor/holofloor/hyperspace,
 /area/holodeck/rec_center/kobayashi)
 "adO" = (
@@ -1424,13 +1418,7 @@
 	id = "trektorpedo2";
 	name = "photon torpedo tube"
 	},
-/obj/item/toy/minimeteor{
-	color = "";
-	desc = "A primitive long-range weapon, inferior to Nanotrasen's perfected bluespace artillery.";
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "impact_laser";
-	name = "photon torpedo"
-	},
+/obj/item/toy/minimeteor,
 /turf/open/floor/holofloor/hyperspace,
 /area/holodeck/rec_center/kobayashi)
 "adS" = (
@@ -6744,11 +6732,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "apx" = (
-/obj/structure/rack{
-	icon = 'icons/obj/stationobjs.dmi';
-	icon_state = "minibar_left";
-	name = "skeletal minibar"
-	},
+/obj/structure/rack,
 /obj/machinery/chem_dispenser/drinks{
 	pixel_x = 1
 	},
@@ -6778,11 +6762,7 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "apD" = (
-/obj/structure/rack{
-	icon = 'icons/obj/stationobjs.dmi';
-	icon_state = "minibar_right";
-	name = "skeletal minibar"
-	},
+/obj/structure/rack,
 /obj/machinery/chem_dispenser/drinks/beer{
 	pixel_x = -2
 	},
@@ -8395,12 +8375,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "asW" = (
-/obj/structure/showcase{
-	desc = "A strange machine supposedly from another world. The Wizard Federation has been meddling with it for years.";
-	icon = 'icons/obj/machines/telecomms.dmi';
-	icon_state = "processor";
-	name = "byond random number generator"
-	},
+/obj/structure/showcase,
 /turf/open/floor/engine/cult,
 /area/wizard_station)
 "asX" = (
@@ -8540,11 +8515,7 @@
 /obj/structure/sign/map/left{
 	pixel_y = -32
 	},
-/obj/structure/rack{
-	icon = 'icons/obj/stationobjs.dmi';
-	icon_state = "minibar_left";
-	name = "skeletal minibar"
-	},
+/obj/structure/rack,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -17656,11 +17627,7 @@
 /obj/structure/sign/map/right{
 	pixel_y = -32
 	},
-/obj/structure/rack{
-	icon = 'icons/obj/stationobjs.dmi';
-	icon_state = "minibar_right";
-	name = "skeletal minibar"
-	},
+/obj/structure/rack,
 /obj/item/reagent_containers/food/drinks/bottle/gin,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -20521,9 +20488,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bcu" = (
 /obj/structure/chair/sofa/corp/corner{
@@ -20637,9 +20602,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bmh" = (
 /obj/structure/chair/office/light{
@@ -20684,9 +20647,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 27
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bpR" = (
 /obj/machinery/door/window/survival_pod{
@@ -20704,9 +20665,7 @@
 /obj/machinery/door/airlock/survival_pod{
 	name = "Transport Ship"
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "brp" = (
 /obj/structure/table/wood/fancy/royalblue,
@@ -20766,9 +20725,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bsz" = (
 /obj/structure/lattice,
@@ -20801,9 +20758,7 @@
 /obj/machinery/door/airlock/survival_pod{
 	name = "Cockpit"
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bCP" = (
 /obj/effect/turf_decal/delivery,
@@ -20821,9 +20776,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/corner,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bHC" = (
 /obj/effect/turf_decal/tile/brown,
@@ -20905,9 +20858,7 @@
 	fair_market_price = 0;
 	onstation = 0
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bNy" = (
 /obj/vehicle/ridden/bicycle,
@@ -20924,9 +20875,7 @@
 	pixel_x = 7
 	},
 /obj/structure/table/wood,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "bSg" = (
 /obj/structure/window/reinforced{
@@ -21090,9 +21039,7 @@
 	name = "Botany"
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "clV" = (
 /obj/structure/flora/tree/jungle/small{
@@ -21140,9 +21087,7 @@
 	name = "Janitorial"
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "cpO" = (
 /obj/effect/turf_decal/siding/wood{
@@ -21163,9 +21108,7 @@
 	default_raw_text = "Hello valued Patron! The Cafe has underwent recent renovations! The most noticable additions are a horror themed 'Hive' room in the southeast (please note that due to this theme, there are currently no doors, managment is looking into adding them) and a Sci-Fi 'Alien abduction' theme, just south of the Drobe room. Thank you,\n -The Managment.";
 	name = "notice to visitors"
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "crd" = (
 /obj/machinery/vending/kink,
@@ -21476,9 +21419,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dcj" = (
 /obj/structure/chair/sofa/corp{
@@ -21565,15 +21506,11 @@
 	},
 /obj/machinery/washing_machine,
 /obj/machinery/light/small/directional/north,
-/turf/open/indestructible/hoteltile{
-	icon_state = "white"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dlA" = (
 /obj/machinery/vending/wardrobe/hydro_wardrobe,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dlI" = (
 /obj/effect/turf_decal/siding{
@@ -21599,9 +21536,7 @@
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dok" = (
 /obj/effect/turf_decal/tile/brown{
@@ -21775,9 +21710,7 @@
 	},
 /obj/item/storage/fancy/rollingpapers,
 /obj/item/hatchet,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dJb" = (
 /obj/structure/flora/grass/green,
@@ -21873,9 +21806,7 @@
 /obj/item/watertank,
 /obj/item/storage/bag/plants/portaseeder,
 /obj/structure/closet,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dRs" = (
 /obj/structure/mirror{
@@ -21884,11 +21815,7 @@
 /obj/structure/toilet{
 	pixel_y = 14
 	},
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dSj" = (
 /obj/structure/table/wood,
@@ -21909,9 +21836,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "dWc" = (
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -21988,9 +21913,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "egq" = (
 /obj/structure/table/reinforced/ctf,
@@ -22056,9 +21979,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "enA" = (
 /obj/structure/chair/sofa/left{
@@ -22177,9 +22098,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "eDp" = (
 /obj/effect/turf_decal/tile/red/half{
@@ -22269,9 +22188,7 @@
 /obj/machinery/chem_master/condimaster{
 	name = "BrewMaster 3000"
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "eMw" = (
 /obj/item/kirbyplants/hedge{
@@ -22314,9 +22231,7 @@
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/structure/rack,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "eNu" = (
 /obj/effect/turf_decal/tile/brown,
@@ -22357,9 +22272,7 @@
 /area/shuttle/inteq/collosus)
 "eRh" = (
 /obj/machinery/deepfryer,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "eRr" = (
 /obj/structure/closet/crate/freezer/blood,
@@ -22518,9 +22431,7 @@
 /obj/structure/showcase/fakeid{
 	dir = 4
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "fig" = (
 /obj/structure/closet/crate/large,
@@ -22966,9 +22877,7 @@
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/machinery/light,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "fZM" = (
 /obj/structure/table/wood,
@@ -23051,9 +22960,7 @@
 	name = "Botany / Storage"
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "gme" = (
 /obj/structure/chair/wood/wings{
@@ -23083,9 +22990,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "goS" = (
 /obj/effect/turf_decal/siding/wood{
@@ -23152,9 +23057,7 @@
 	dir = 6
 	},
 /obj/structure/closet/crate/bin,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "guw" = (
 /obj/effect/turf_decal/tile/dark_green/fourcorners,
@@ -23237,16 +23140,12 @@
 	dir = 4
 	},
 /obj/structure/closet/crate/trashcart,
-/turf/open/indestructible/hoteltile{
-	icon_state = "white"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "gDf" = (
 /obj/structure/fans/tiny/invisible,
 /obj/effect/turf_decal/caution/stand_clear,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "gDz" = (
 /obj/structure/fluff/metalpole/end/left,
@@ -23357,9 +23256,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "white"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "gQw" = (
 /obj/machinery/door/window/westleft,
@@ -23438,11 +23335,7 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "gYc" = (
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "gYm" = (
 /obj/structure/bed,
@@ -23567,9 +23460,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "hri" = (
 /obj/machinery/vending/wardrobe/cargo_wardrobe,
@@ -23616,9 +23507,7 @@
 /area/syndicate_mothership)
 "hsS" = (
 /obj/machinery/seed_extractor,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "huM" = (
 /obj/effect/turf_decal/siding/wood{
@@ -23704,9 +23593,7 @@
 	name = "The Snoozy Floofer"
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "hza" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
@@ -23718,9 +23605,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/wood,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "hzg" = (
 /obj/structure/bed,
@@ -23824,9 +23709,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "hLS" = (
 /obj/structure/sign/poster/contraband/inteq/random{
@@ -23889,9 +23772,7 @@
 	pixel_x = -1;
 	pixel_y = -24
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "hRu" = (
 /obj/structure/spacevine,
@@ -23916,9 +23797,7 @@
 "hSj" = (
 /obj/machinery/gibber,
 /obj/machinery/light/directional/north,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "hVv" = (
 /obj/structure/chair/sofa/corp/right{
@@ -23939,9 +23818,7 @@
 /obj/machinery/reagentgrinder{
 	pixel_y = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "hYi" = (
 /obj/structure/table/abductor,
@@ -24048,12 +23925,8 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "iis" = (
-/obj/machinery/vending/hydronutrients{
-	products = list(/obj/item/reagent_containers/cup/bottle/nutrient/ez=50,/obj/item/reagent_containers/cup/bottle/nutrient/l4z=20,/obj/item/reagent_containers/cup/bottle/nutrient/rh=10,/obj/item/reagent_containers/spray/pestspray=30,/obj/item/reagent_containers/syringe=5,/obj/item/storage/bag/plants=30,/obj/item/cultivator=10,/obj/item/shovel/spade=10,/obj/item/plant_analyzer=10)
-	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/obj/machinery/vending/hydronutrients,
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "iiY" = (
 /obj/effect/turf_decal/bluemoon_decals/enclave/top/right,
@@ -24181,20 +24054,6 @@
 	},
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
-"iqh" = (
-/obj/structure/curtain,
-/obj/machinery/light/floor{
-	alpha = 0;
-	invisibility = 100;
-	light_range = 10;
-	nightshift_light_power = 10
-	},
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
-/area/centcom/holding)
 "iqo" = (
 /obj/structure/bed/double,
 /turf/open/floor/carpet/royalblack,
@@ -24242,9 +24101,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "ivv" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
@@ -24297,9 +24154,7 @@
 	},
 /obj/structure/table,
 /obj/structure/bedsheetbin,
-/turf/open/indestructible/hoteltile{
-	icon_state = "white"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "iDS" = (
 /obj/structure/chair/sofa/corp/left{
@@ -24336,15 +24191,11 @@
 	pixel_y = -5
 	},
 /obj/structure/table/wood,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "iIN" = (
 /obj/structure/table/wood,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "iJc" = (
 /obj/structure/chair/sofa/corp/right{
@@ -24489,9 +24340,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "iSb" = (
 /obj/machinery/door/airlock/centcom{
@@ -24539,9 +24388,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "iUm" = (
 /obj/structure/spacevine,
@@ -24593,9 +24440,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "jdX" = (
 /obj/structure/chair/pew/left{
@@ -24962,11 +24807,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
-"kaT" = (
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
-/area/centcom/holding)
 "kbq" = (
 /obj/machinery/vending/wardrobe/engi_wardrobe,
 /turf/open/floor/mineral/plastitanium,
@@ -25292,11 +25132,7 @@
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
 "kKl" = (
-/obj/structure/rack{
-	icon = 'icons/obj/fluff/general.dmi';
-	icon_state = "minibar_left";
-	name = "skeletal minibar"
-	},
+/obj/structure/rack,
 /obj/item/pickaxe/mini,
 /obj/item/hatchet,
 /turf/open/indestructible/hotelwood,
@@ -25478,9 +25314,7 @@
 	dir = 4
 	},
 /obj/machinery/washing_machine,
-/turf/open/indestructible/hoteltile{
-	icon_state = "white"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "kYZ" = (
 /obj/machinery/computer/telecrystals/uplinker,
@@ -25500,9 +25334,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
-/turf/open/indestructible/hoteltile{
-	icon_state = "plating"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "laQ" = (
 /obj/structure/table,
@@ -25531,9 +25363,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "lep" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
@@ -25793,9 +25623,7 @@
 /obj/machinery/shuttle/engine{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "plating"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "lEM" = (
 /obj/structure/table/reinforced,
@@ -25854,9 +25682,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "lJD" = (
 /obj/structure/chair/pew{
@@ -25911,9 +25737,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "lSg" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
@@ -26036,9 +25860,7 @@
 	dir = 4
 	},
 /obj/structure/sink/directional/east,
-/turf/open/indestructible/hoteltile{
-	icon_state = "white"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "mgt" = (
 /obj/machinery/shower{
@@ -26100,9 +25922,7 @@
 /area/centcom/holding)
 "mpq" = (
 /obj/machinery/chem_master/condimaster,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "mpE" = (
 /obj/effect/turf_decal/tile/brown{
@@ -26119,12 +25939,7 @@
 	color = "#B22222";
 	name = "Curtain"
 	},
-/turf/open/indestructible/hotelwood{
-	desc = "It's really cozy! Great for soft paws!";
-	icon = 'modular_skyrat/modules/ghostcafe/icons/carpet_royalblack.dmi';
-	icon_state = "carpet";
-	name = "soft carpet"
-	},
+/turf/open/indestructible/hotelwood,
 /area/centcom/holding)
 "mrd" = (
 /obj/effect/turf_decal/tile/brown{
@@ -26182,12 +25997,7 @@
 /obj/structure/mirror{
 	pixel_y = 32
 	},
-/turf/open/indestructible/hotelwood{
-	desc = "It's really cozy! Great for soft paws!";
-	icon = 'modular_skyrat/modules/ghostcafe/icons/carpet_royalblack.dmi';
-	icon_state = "carpet";
-	name = "soft carpet"
-	},
+/turf/open/indestructible/hotelwood,
 /area/centcom/holding)
 "myE" = (
 /obj/machinery/light/directional/west,
@@ -26217,9 +26027,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/south,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "mFE" = (
 /obj/structure/rack,
@@ -26329,9 +26137,7 @@
 	alpha = 0;
 	invisibility = 100
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "mXC" = (
 /obj/effect/turf_decal/tile/brown{
@@ -26496,9 +26302,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "nnM" = (
 /turf/open/floor/iron/dark,
@@ -26563,9 +26367,7 @@
 /area/syndicate_mothership)
 "nwJ" = (
 /obj/machinery/vending/dinnerware,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "nwW" = (
 /obj/machinery/light/directional/north,
@@ -26688,9 +26490,7 @@
 /area/centcom/holding)
 "nMH" = (
 /obj/structure/sink/kitchen/directional/east,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "nNw" = (
 /obj/machinery/chem_master/condimaster{
@@ -26736,9 +26536,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "nUo" = (
 /obj/effect/turf_decal/tile/green,
@@ -26748,9 +26546,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "nVN" = (
 /obj/effect/turf_decal/tile/brown,
@@ -26828,16 +26624,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
-"obg" = (
-/obj/structure/rack{
-	icon = 'icons/obj/fluff/general.dmi';
-	icon_state = "minibar_right";
-	name = "skeletal minibar"
-	},
-/obj/item/pickaxe/mini,
-/obj/item/hatchet,
-/turf/open/indestructible/hotelwood,
-/area/centcom/holding)
 "obR" = (
 /obj/structure/table/wood,
 /obj/item/toy/plush/beeplushie{
@@ -27060,11 +26846,6 @@
 "oFl" = (
 /obj/structure/flora/tree/palm,
 /turf/open/floor/plating/beach/sand,
-/area/centcom/holding)
-"oGk" = (
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
 /area/centcom/holding)
 "oGq" = (
 /obj/structure/table/wood,
@@ -27349,9 +27130,7 @@
 /obj/machinery/vending/games{
 	onstation = 0
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "phg" = (
 /obj/effect/turf_decal/siding/wood{
@@ -27410,7 +27189,7 @@
 "plP" = (
 /obj/machinery/door/airlock{
 	id_tag = "CCD2";
-	id = "CCD2"
+	name = "CCD2"
 	},
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/carpet/royalblack,
@@ -27480,9 +27259,7 @@
 "psb" = (
 /obj/item/sharpener,
 /obj/structure/table/wood,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "pss" = (
 /obj/machinery/door/airlock/external{
@@ -27498,11 +27275,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/thinplating_new/end,
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "puP" = (
 /obj/structure/table/wood,
@@ -27705,11 +27478,7 @@
 "pNQ" = (
 /obj/machinery/shower/directional/west,
 /obj/structure/sink/directional/south,
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "pOj" = (
 /obj/effect/turf_decal/snowdin_station_sign/two,
@@ -27847,9 +27616,7 @@
 	fair_market_price = 0;
 	onstation = 0
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "qiz" = (
 /obj/effect/turf_decal/stripes/line,
@@ -28033,9 +27800,7 @@
 	name = "Kitchen Shutters"
 	},
 /obj/effect/spawner/structure/window,
-/turf/open/indestructible/hoteltile{
-	icon_state = "plating"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "qBj" = (
 /obj/structure/rack,
@@ -28152,11 +27917,6 @@
 /obj/effect/turf_decal/snowdin_station_sign/up/seven,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
-"qME" = (
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
-/area/centcom/holding)
 "qNB" = (
 /obj/structure/sign/poster/contraband/inteq/random{
 	pixel_x = 32
@@ -28176,9 +27936,7 @@
 	name = "Lounge"
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "qOr" = (
 /obj/machinery/door/airlock{
@@ -28308,9 +28066,7 @@
 	name = "Storage"
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "reY" = (
 /obj/structure/sign/painting/library_secure,
@@ -28354,20 +28110,6 @@
 /obj/machinery/vending/cola/random,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
-"rhp" = (
-/obj/structure/sink/directional/east,
-/obj/structure/mirror{
-	pixel_y = 32
-	},
-/obj/structure/toilet{
-	pixel_y = 14
-	},
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
-/area/centcom/holding)
 "rhE" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/statue/uranium/nuke,
@@ -28601,9 +28343,7 @@
 /area/syndicate_mothership)
 "rEf" = (
 /obj/machinery/chem_dispenser/mutagensaltpeter,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "rFj" = (
 /obj/structure/lattice/catwalk,
@@ -28882,9 +28622,7 @@
 /obj/machinery/vending/clothing{
 	onstation = 0
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "sgH" = (
 /obj/structure/chair/sofa/right{
@@ -29185,14 +28923,6 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
-"sGV" = (
-/obj/machinery/shower/directional/west,
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
-/area/centcom/holding)
 "sIq" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Restroom";
@@ -29267,15 +28997,11 @@
 /area/syndicate_mothership)
 "sNm" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "sNz" = (
 /obj/effect/mob_spawn/robot/ghostcafe,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "sOh" = (
 /turf/open/floor/plating/beach/sand,
@@ -29546,9 +29272,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 10
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "twS" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
@@ -29603,9 +29327,7 @@
 	extra_price = 0;
 	fair_market_price = 0
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "tCp" = (
 /obj/structure/barricade/wooden/crude,
@@ -29620,9 +29342,7 @@
 	dir = 4
 	},
 /obj/structure/fermenting_barrel,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "tFn" = (
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
@@ -29644,9 +29364,7 @@
 /obj/machinery/vending/autodrobe{
 	onstation = 0
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "tFQ" = (
 /obj/structure/trap/stun,
@@ -29682,9 +29400,7 @@
 "tJx" = (
 /obj/machinery/processor,
 /obj/machinery/light/directional/west,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "tMM" = (
 /obj/machinery/computer,
@@ -30018,9 +29734,7 @@
 	fair_market_price = 0;
 	onstation = 0
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "uwf" = (
 /obj/machinery/atmospherics/components/unary/cryo_cell,
@@ -30028,9 +29742,7 @@
 /area/syndicate_mothership)
 "uxA" = (
 /obj/machinery/food_cart,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "uxQ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -30094,9 +29806,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "uCQ" = (
 /turf/open/floor/plating/beach/coastline_t,
@@ -30196,9 +29906,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "uTd" = (
 /obj/machinery/teleport/station,
@@ -30209,9 +29917,7 @@
 /obj/machinery/microwave{
 	pixel_y = 8
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "uTp" = (
 /obj/machinery/vending/tool,
@@ -30597,9 +30303,7 @@
 /area/centcom/holding)
 "vFM" = (
 /obj/structure/closet/crate/freezer,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "vIM" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
@@ -30638,9 +30342,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "vLs" = (
 /obj/machinery/door/airlock/wood{
@@ -30663,9 +30365,7 @@
 /area/holodeck/rec_center/burn)
 "vMQ" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/open/indestructible/hoteltile{
-	icon_state = "cafeteria"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "vMV" = (
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -30686,9 +30386,7 @@
 /area/syndicate_mothership)
 "vQz" = (
 /obj/machinery/vending/hydroseeds,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "vTk" = (
 /obj/structure/table/wood,
@@ -30735,11 +30433,7 @@
 /obj/structure/mirror{
 	pixel_y = 32
 	},
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "vWs" = (
 /obj/machinery/jukebox,
@@ -31069,9 +30763,7 @@
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/machinery/light/directional/south,
-/turf/open/indestructible/hoteltile{
-	icon_state = "floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "wGr" = (
 /obj/effect/turf_decal/tile/brown,
@@ -31218,9 +30910,7 @@
 /area/centcom/holding)
 "wXP" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "wYG" = (
 /obj/structure/lattice,
@@ -31323,9 +31013,7 @@
 /area/centcom/holding)
 "xjW" = (
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "stairs-old"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "xkO" = (
 /obj/machinery/light/floor{
@@ -31405,11 +31093,7 @@
 /area/syndicate_mothership)
 "xpt" = (
 /obj/structure/sink/directional/south,
-/turf/open/indestructible/hoteltile{
-	icon = 'modular_skyrat/modules/ghostcafe/icons/floors.dmi';
-	icon_state = "titanium_blue_old";
-	name = "bathroom floor"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "xpu" = (
 /obj/machinery/photocopier,
@@ -31560,9 +31244,7 @@
 	dir = 4
 	},
 /obj/item/storage/bag/trash,
-/turf/open/indestructible/hoteltile{
-	icon_state = "white"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "xCf" = (
 /obj/structure/fans/tiny/invisible,
@@ -31570,16 +31252,12 @@
 	name = "Medical"
 	},
 /obj/effect/turf_decal/caution/stand_clear,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "xDl" = (
 /obj/structure/chair/comfy/shuttle,
 /obj/machinery/light/directional/north,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "xDB" = (
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -31648,9 +31326,7 @@
 	name = "Kitchen"
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "xKT" = (
 /obj/structure/closet/crate,
@@ -31836,9 +31512,7 @@
 /area/centcom/holding)
 "yia" = (
 /obj/effect/mob_spawn/human/ghostcafe,
-/turf/open/indestructible/hoteltile{
-	icon_state = "darkfull"
-	},
+/turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "yib" = (
 /obj/effect/turf_decal/siding/wood{
@@ -42464,7 +42138,7 @@ dOU
 oEH
 evJ
 aFe
-rhp
+jJp
 aFe
 jVl
 jVl
@@ -42720,7 +42394,7 @@ uFL
 rnA
 rnA
 rnA
-iqh
+ueZ
 gYc
 aFe
 jVl
@@ -42978,7 +42652,7 @@ iSO
 rnA
 eUi
 aFe
-sGV
+saC
 aFe
 jVl
 lnf
@@ -47056,11 +46730,11 @@ jrV
 biJ
 biJ
 aFe
-kaT
-kaT
-kaT
-kaT
-kaT
+gYc
+gYc
+gYc
+gYc
+gYc
 hRp
 aFe
 jbw
@@ -47313,11 +46987,11 @@ jrV
 jrV
 jrV
 crA
-kaT
-kaT
+gYc
+gYc
 bSc
 iIN
-kaT
+gYc
 vMQ
 qAQ
 uSS
@@ -47571,11 +47245,11 @@ jrV
 aVt
 aFe
 eRh
-kaT
+gYc
 iIs
 psb
-kaT
-kaT
+gYc
+gYc
 xJp
 oom
 oom
@@ -47828,10 +47502,10 @@ jrV
 aVt
 aFe
 hSj
-kaT
-kaT
-kaT
-kaT
+gYc
+gYc
+gYc
+gYc
 uxA
 qAQ
 jbw
@@ -48084,11 +47758,11 @@ clR
 aFe
 aFe
 aFe
-kaT
+gYc
 bpx
 nwJ
-kaT
-kaT
+gYc
+gYc
 sNm
 aFe
 hzf
@@ -48337,7 +48011,7 @@ ncJ
 aFe
 aFe
 dQT
-oGk
+gYc
 iis
 vQz
 aFe
@@ -48867,11 +48541,11 @@ oom
 oom
 ryB
 qhH
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 tFJ
 aFe
 tTl
@@ -49124,11 +48798,11 @@ oom
 oom
 ryB
 sfE
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 eNd
 aFe
 oom
@@ -49381,11 +49055,11 @@ oom
 eMB
 ryB
 lcn
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 bsx
 qOl
 oom
@@ -49638,11 +49312,11 @@ oom
 oom
 xqr
 efp
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 bsx
 aFe
 oom
@@ -49895,11 +49569,11 @@ oom
 oom
 xqr
 efp
-qME
-qME
+gYc
+gYc
 mXt
-qME
-qME
+gYc
+gYc
 fZd
 aFe
 aFe
@@ -50152,11 +49826,11 @@ oom
 oom
 xqr
 efp
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 bsx
 aFe
 kKl
@@ -50409,14 +50083,14 @@ oom
 eMB
 ryB
 lcn
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 bsx
 aFe
-obg
+kKl
 oom
 oom
 oom
@@ -50666,11 +50340,11 @@ oom
 oom
 ryB
 phc
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 bsx
 qOl
 oom
@@ -50923,11 +50597,11 @@ oom
 oom
 ryB
 uvC
-qME
-qME
-qME
-qME
-qME
+gYc
+gYc
+gYc
+gYc
+gYc
 wFk
 aFe
 vaZ
@@ -53742,7 +53416,7 @@ sav
 nIA
 gQH
 sNz
-oGk
+gYc
 cqj
 bpW
 xjW
@@ -53999,7 +53673,7 @@ mYZ
 gQH
 gQH
 wXP
-oGk
+gYc
 nTx
 gQH
 gQH
@@ -54256,7 +53930,7 @@ gQH
 gQH
 gQH
 xDl
-oGk
+gYc
 mFh
 gQH
 gQH
@@ -54513,7 +54187,7 @@ gQH
 gQH
 gQH
 wXP
-oGk
+gYc
 nTx
 gQH
 gQH
@@ -54770,8 +54444,8 @@ rsH
 rsH
 gQH
 yia
-oGk
-oGk
+gYc
+gYc
 gQH
 rsH
 rsH
@@ -59148,7 +58822,7 @@ fON
 fON
 aFe
 dRs
-iqh
+ueZ
 rnA
 rnA
 rnA
@@ -65861,7 +65535,7 @@ aaa
 ncJ
 qjq
 xpt
-iqh
+ueZ
 gDM
 gDM
 qjq
@@ -65871,7 +65545,7 @@ mgJ
 eBB
 qjq
 xpt
-iqh
+ueZ
 qgc
 qgc
 qjq
@@ -66117,7 +65791,7 @@ aaa
 aaa
 ncJ
 qjq
-sGV
+saC
 qjq
 cki
 jvY
@@ -66127,7 +65801,7 @@ tfz
 snp
 oAr
 qjq
-sGV
+saC
 qjq
 soI
 gmT
