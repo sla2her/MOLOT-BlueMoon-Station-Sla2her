@@ -4,7 +4,6 @@
 
 	var/instance_name
 	var/security_level
-	var/visibility
 
 	var/reboot_mode = TGS_REBOOT_MODE_NORMAL
 
@@ -55,7 +54,6 @@
 
 	version = new /datum/tgs_version(runtime_information[DMAPI5_RUNTIME_INFORMATION_SERVER_VERSION])
 	security_level = runtime_information[DMAPI5_RUNTIME_INFORMATION_SECURITY_LEVEL]
-	visibility = runtime_information[DMAPI5_RUNTIME_INFORMATION_VISIBILITY]
 	instance_name = runtime_information[DMAPI5_RUNTIME_INFORMATION_INSTANCE_NAME]
 
 	var/list/revisionData = runtime_information[DMAPI5_RUNTIME_INFORMATION_REVISION]
@@ -254,7 +252,3 @@
 /datum/tgs_api/v5/SecurityLevel()
 	RequireInitialBridgeResponse()
 	return security_level
-
-/datum/tgs_api/v5/Visibility()
-	RequireInitialBridgeResponse()
-	return visibility

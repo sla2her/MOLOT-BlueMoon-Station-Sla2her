@@ -57,6 +57,3 @@ TGS_PROTECT_DATUM(/datum/tgs_api)
 
 /datum/tgs_api/proc/SecurityLevel()
 	return TGS_UNIMPLEMENTED
-
-/datum/tgs_api/proc/Visibility()
-	return TGS_UNIMPLEMENTED
