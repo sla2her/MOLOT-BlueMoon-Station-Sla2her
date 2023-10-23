@@ -20663,7 +20663,7 @@
 /area/shuttle/inteq/collosus)
 "bpW" = (
 /obj/machinery/door/airlock/survival_pod{
-	name = "Transport Ship"
+	name = "Security Post"
 	},
 /turf/open/indestructible/hoteltile,
 /area/centcom/holding)
@@ -20897,6 +20897,13 @@
 /turf/open/floor/plating/beach/coastline_t{
 	dir = 1
 	},
+/area/centcom/holding)
+"bXN" = (
+/obj/structure/pool/ladder{
+	dir = 2;
+	pixel_y = 24
+	},
+/turf/open/pool,
 /area/centcom/holding)
 "bXY" = (
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -22040,12 +22047,6 @@
 /obj/structure/closet/syndicate/inteq,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
-"evJ" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/centcom/holding)
 "ewG" = (
 /obj/machinery/atmospherics/components/unary/shuttle/heater{
 	dir = 1
@@ -22335,12 +22336,6 @@
 /obj/machinery/research_table,
 /turf/open/floor/mineral/abductor,
 /area/centcom/holding)
-"eXl" = (
-/obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/cobble/side{
-	dir = 4
-	},
-/area/centcom/holding)
 "eXF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -22598,10 +22593,6 @@
 /area/centcom/holding)
 "fxk" = (
 /turf/open/floor/light/colour_cycle/dancefloor_a,
-/area/centcom/holding)
-"fxr" = (
-/obj/structure/chair/sofa/corp/right,
-/turf/open/indestructible/hotelwood,
 /area/centcom/holding)
 "fyp" = (
 /obj/structure/table/abductor,
@@ -22892,7 +22883,7 @@
 /area/syndicate_mothership)
 "gaJ" = (
 /obj/machinery/hydroponics/constructable/automagic,
-/turf/open/pool,
+/turf/open/floor/catwalk_floor,
 /area/centcom/holding)
 "gaR" = (
 /obj/structure/chair/sofa/corp{
@@ -23145,6 +23136,9 @@
 "gDf" = (
 /obj/structure/fans/tiny/invisible,
 /obj/effect/turf_decal/caution/stand_clear,
+/obj/machinery/door/airlock/security/glass{
+	name = "Security"
+	},
 /turf/open/indestructible/hoteltile,
 /area/centcom/holding)
 "gDz" = (
@@ -23225,6 +23219,10 @@
 /obj/item/card/id/syndicate,
 /turf/open/floor/plasteel/dark,
 /area/ctf/arena)
+"gMA" = (
+/obj/machinery/pool/controller,
+/turf/open/indestructible/cobble/side,
+/area/centcom/holding)
 "gNq" = (
 /obj/structure/fluff/railing{
 	dir = 6
@@ -23853,7 +23851,7 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "ibo" = (
-/obj/structure/fans/tiny/invisible,
+/obj/structure/pool/Rboard,
 /turf/open/indestructible/cobble/side{
 	dir = 8
 	},
@@ -24196,12 +24194,6 @@
 "iIN" = (
 /obj/structure/table/wood,
 /turf/open/indestructible/hoteltile,
-/area/centcom/holding)
-"iJc" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 1
-	},
-/turf/open/indestructible/hotelwood,
 /area/centcom/holding)
 "iJn" = (
 /obj/structure/plasticflaps,
@@ -24592,12 +24584,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
-"jzW" = (
-/obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/cobble/side{
-	dir = 1
-	},
-/area/centcom/holding)
 "jEd" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/door/poddoor,
@@ -24680,7 +24666,7 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "jLU" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -25532,7 +25518,7 @@
 "lxr" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/hydroponics/constructable,
-/turf/open/pool,
+/turf/open/floor/catwalk_floor,
 /area/centcom/holding)
 "lxD" = (
 /obj/structure/fluff/railing/corner{
@@ -25905,7 +25891,11 @@
 	},
 /area/syndicate_mothership)
 "mmB" = (
-/turf/open/water,
+/obj/structure/pool/ladder{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/open/pool,
 /area/centcom/holding)
 "mmX" = (
 /obj/effect/turf_decal/siding/wood{
@@ -25950,7 +25940,9 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "msc" = (
-/obj/structure/fans/tiny/invisible,
+/obj/machinery/pool/filter{
+	pixel_y = -17
+	},
 /turf/open/indestructible/cobble/side,
 /area/centcom/holding)
 "mtk" = (
@@ -26130,7 +26122,7 @@
 /area/centcom/holding)
 "mWR" = (
 /obj/machinery/hydroponics/constructable,
-/turf/open/pool,
+/turf/open/floor/catwalk_floor,
 /area/centcom/holding)
 "mXt" = (
 /obj/machinery/light/floor{
@@ -26380,7 +26372,6 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/holding)
 "nyu" = (
-/obj/structure/fans/tiny/invisible,
 /turf/open/indestructible/cobble,
 /area/centcom/holding)
 "nyy" = (
@@ -26960,7 +26951,7 @@
 /turf/closed/indestructible/syndicate,
 /area/syndicate_mothership)
 "oRZ" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/machinery/light/directional/west,
@@ -28876,6 +28867,10 @@
 /obj/structure/closet/crate,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
+"sDh" = (
+/obj/machinery/pool/drain,
+/turf/open/pool,
+/area/centcom/holding)
 "sFe" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/structure/chair{
@@ -29698,12 +29693,16 @@
 "utM" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/hydroponics/constructable/automagic,
-/turf/open/pool,
+/turf/open/floor/catwalk_floor,
 /area/centcom/holding)
 "utQ" = (
 /obj/effect/turf_decal/snowdin_station_sign/up/five,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
+"utX" = (
+/obj/structure/pool/Lboard,
+/turf/open/pool,
+/area/centcom/holding)
 "uvr" = (
 /obj/item/paper/fluff/ruins/exp_cloning/log,
 /obj/effect/decal/cleanable/blood/xeno,
@@ -42136,7 +42135,7 @@ fON
 aFe
 dOU
 oEH
-evJ
+oEH
 aFe
 jJp
 aFe
@@ -45458,13 +45457,13 @@ cyF
 aFe
 pKy
 nyu
-eXl
-eXl
-eXl
-eXl
-eXl
-eXl
-eXl
+jxs
+jxs
+jxs
+jxs
+jxs
+jxs
+jxs
 nyu
 vzN
 fON
@@ -45714,15 +45713,15 @@ qZx
 gYx
 aFe
 pKy
-msc
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-jzW
+vzN
+viE
+viE
+viE
+viE
+viE
+viE
+viE
+pKy
 vzN
 fON
 fyT
@@ -45971,15 +45970,15 @@ pNK
 wkF
 aFe
 pKy
-msc
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-jzW
+vzN
+viE
+viE
+viE
+viE
+viE
+viE
+viE
+pKy
 vzN
 fON
 iPB
@@ -46229,14 +46228,14 @@ xCf
 gUl
 xXJ
 msc
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-jzW
+viE
+viE
+viE
+viE
+viE
+viE
+viE
+pKy
 vzN
 fON
 iPB
@@ -46485,15 +46484,15 @@ oom
 oom
 aFe
 pKy
-msc
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-jzW
+gMA
+viE
+viE
+viE
+sDh
+viE
+viE
+viE
+pKy
 vzN
 fON
 iPB
@@ -46742,15 +46741,15 @@ oom
 eMB
 aFe
 pKy
-msc
+vzN
+bXN
+viE
+viE
+viE
+viE
+viE
 mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-jzW
+pKy
 vzN
 fON
 fON
@@ -46999,15 +46998,15 @@ oom
 mtK
 ryB
 pKy
-msc
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-jzW
+vzN
+viE
+viE
+viE
+viE
+viE
+viE
+viE
+pKy
 vzN
 fON
 fON
@@ -47256,15 +47255,15 @@ oom
 oom
 xqr
 pKy
-msc
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-mmB
-jzW
+vzN
+viE
+viE
+viE
+utX
+viE
+viE
+viE
+pKy
 vzN
 fON
 fON
@@ -47514,13 +47513,13 @@ oom
 ryB
 pKy
 nyu
+dXO
+dXO
+dXO
 ibo
-ibo
-ibo
-ibo
-ibo
-ibo
-ibo
+dXO
+dXO
+dXO
 nyu
 vzN
 fON
@@ -48292,8 +48291,8 @@ bkP
 twE
 aFe
 oom
-iSx
 uzs
+iSx
 aFe
 aFe
 qOl
@@ -48806,8 +48805,8 @@ gYc
 eNd
 aFe
 oom
-kcf
 iDS
+kcf
 aFe
 xfS
 oom
@@ -51102,13 +51101,13 @@ oom
 oom
 oom
 aFe
-bKj
+fCp
 sGg
-hVv
+iOU
 oom
-bKj
+fCp
 sGg
-hVv
+iOU
 aFe
 aFe
 aFe
@@ -51359,13 +51358,13 @@ oom
 aYT
 aYT
 aFe
-fCp
+bKj
 xeB
-iOU
+hVv
 oom
-fCp
+bKj
 sGg
-iOU
+hVv
 aFe
 clV
 fON
@@ -56265,7 +56264,7 @@ fON
 suT
 iSp
 oom
-fxr
+iSx
 uDO
 jMs
 aFe
@@ -56524,7 +56523,7 @@ aFe
 oom
 fkv
 eoG
-iJc
+iSx
 aFe
 suT
 suT
