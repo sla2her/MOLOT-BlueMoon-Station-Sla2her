@@ -103,6 +103,10 @@
 	owner.AdjustConfused(5 SECONDS, 10, 20)
 	..()
 
+/datum/brain_trauma/mild/concussion/on_lose()
+	owner.cut_overlays()
+	..()
+
 /datum/brain_trauma/mild/healthy
 	name = "Anosognosia"
 	desc = "Patient always feels healthy, regardless of their condition."
