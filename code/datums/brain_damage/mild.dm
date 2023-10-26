@@ -105,6 +105,7 @@
 
 /datum/brain_trauma/mild/concussion/on_lose()
 	owner.cut_overlays()
+	owner.regenerate_icons()
 	..()
 
 /datum/brain_trauma/mild/healthy
