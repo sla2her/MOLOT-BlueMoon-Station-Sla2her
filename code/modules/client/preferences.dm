@@ -619,7 +619,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<h2>Silicon preferences</h2>"
 					if(!CONFIG_GET(flag/allow_silicon_choosing_laws))
 						dat += "<i>The server has disabled choosing your own laws, you can still choose and save, but it won't do anything in-game.</i><br>"
-					dat += "<b>Starting lawset:</b> <a href='?_src_=prefs;task=input;preference=silicon_lawset'>[silicon_lawset ? silicon_lawset : "Server default"]</a><br>"
+					dat += "<b>Starting lawset:</b> <a href='?_src_=prefs;task=input;preference=silicon_lawset'>[silicon_lawset ? silicon_lawset : "Server Default"]</a><br>"
 
 					if(silicon_lawset)
 						var/list/config_laws = CONFIG_GET(keyed_list/choosable_laws)
