@@ -27200,7 +27200,7 @@
 	},
 /area/centcom/holding)
 "pdY" = (
-/obj/structure/chair/bed/dildo_machine,
+/obj/structure/bed/dildo_machine,
 /turf/open/floor/mineral/abductor,
 /area/centcom/holding)
 "pft" = (
