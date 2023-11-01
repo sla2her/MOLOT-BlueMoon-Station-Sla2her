@@ -641,7 +641,7 @@
 		if(!isnull(G.lighting_alpha))
 			lighting_alpha = min(lighting_alpha, G.lighting_alpha)
 
-	if(head)
+	if(head && typesof(/obj/item/clothing/head))
 		var/obj/item/clothing/head/H = head
 		sight |= H.vision_flags
 		see_in_dark = max(H.darkness_view, see_in_dark)
