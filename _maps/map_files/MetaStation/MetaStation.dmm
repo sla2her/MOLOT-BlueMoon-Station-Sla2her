@@ -77257,9 +77257,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
-"rin" = (
-/turf/open/space/basic,
-/area/science/research/abandoned)
 "rio" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
@@ -96446,7 +96443,7 @@ oRp
 oRp
 oRp
 oRp
-rin
+oRp
 oRp
 oRp
 oRp
