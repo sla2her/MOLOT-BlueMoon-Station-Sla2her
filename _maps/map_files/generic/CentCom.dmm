@@ -24240,7 +24240,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/gun/energy/pulse/destroyer,
+/obj/item/gun/energy/pulse/destroyer/annihilator,
 /turf/open/floor/plasteel/bluespace,
 /area/centcom)
 "gyD" = (
