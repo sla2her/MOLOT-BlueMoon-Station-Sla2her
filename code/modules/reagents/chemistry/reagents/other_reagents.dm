@@ -376,6 +376,26 @@
 		to_chat(L, "<span class='userdanger'>Священный Туман распространяется по вашему сознанию, ослабляя связь с Жёлтым Измерением и очищая вас от влияния Юстициара Ратвара!</span>")
 	else if(iscultist(L))
 		to_chat(L, "<span class='userdanger'>Священный Туман распространяется по вашему сознанию, ослабляя связь с Красным Измерением и очищая вас от влияния Нар-Си</span>")
+	else if(HAS_TRAIT(L,TRAIT_RUSSIAN))
+		// Alert user of holy water effect.
+		to_chat(L, span_nicegreen("Святая вода питает и заряжает энергией!"))
+	else
+		to_chat(L, span_nicegreen("Священный Туман распространяется по вашему сознанию."))
+
+	if(HAS_TRAIT(L, TRAIT_HALLOWED) || usr.job == "Chaplain")
+		L.drowsyness = max(L.drowsyness-5, 0)
+		L.AdjustUnconscious(-20, FALSE)
+		L.AdjustAllImmobility(-40, FALSE)
+		L.adjustStaminaLoss(-10, FALSE)
+		L.adjustToxLoss(-2, FALSE, TRUE)
+		L.adjustOxyLoss(-2, FALSE)
+		L.adjustBruteLoss(-2, FALSE)
+		L.adjustFireLoss(-2, FALSE)
+		L.heal_overall_damage(2,2)
+		L.adjust_disgust(-3)
+		if(ishuman(L) && L.blood_volume < (BLOOD_VOLUME_NORMAL*L.blood_ratio))
+			L.adjust_integration_blood(3)
+		return
 
 /datum/reagent/water/holywater/on_mob_end_metabolize(mob/living/L)
 	REMOVE_TRAIT(L, TRAIT_HOLY, type)
@@ -471,6 +491,8 @@
 		M.adjustOxyLoss(-2, FALSE)
 		M.adjustBruteLoss(-2, FALSE)
 		M.adjustFireLoss(-2, FALSE)
+		M.heal_overall_damage(2,2)
+		M.adjust_disgust(-3)
 		if(ishuman(M) && M.blood_volume < (BLOOD_VOLUME_NORMAL*M.blood_ratio))
 			M.adjust_integration_blood(3)
 	else  // Will deal about 90 damage when 50 units are thrown
@@ -479,6 +501,8 @@
 		M.adjustFireLoss(2, FALSE)
 		M.adjustOxyLoss(2, FALSE)
 		M.adjustBruteLoss(2, FALSE)
+		M.heal_overall_damage(-2,-2)
+		M.adjust_disgust(6)
 	holder.remove_reagent(type, 1)
 	return TRUE
 

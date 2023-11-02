@@ -29,8 +29,8 @@
 /obj/item/projectile/broom
 	icon = 'modular_bluemoon/SmiLeY/code/janitor/broom.dmi'
 	icon_state = "broom_wave2"
-	pixels_per_second = TILES_TO_PIXELS(25)
-	range = 2
+	pixels_per_second = TILES_TO_PIXELS(12.5)
+	range = 50
 	damage = 0
 	var/list/mob/living/losers = list()
 	var/list/atom/movable/pushedstuff = list() // can't use the contents var for whatever reason
