@@ -108,7 +108,6 @@
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	item_state = "holy_hypo"
 	icon_state = "holy_hypo"
-	amount_per_transfer_from_this = 20
 	start_vial = /obj/item/reagent_containers/glass/bottle/vial/large/synthflesh
 
 /obj/item/reagent_containers/medspray/sterilizine
