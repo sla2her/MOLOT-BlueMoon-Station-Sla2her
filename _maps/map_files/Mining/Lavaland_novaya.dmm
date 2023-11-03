@@ -743,6 +743,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/dormitories)
+"aJs" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/mob_spawn/human/ash_walkers_slave,
+/turf/open/indestructible/boss,
+/area/ruin/lavaland/unpowered/ash_walkers)
 "aJD" = (
 /obj/structure/table,
 /obj/item/toy/plush/chaotic_toaster,
@@ -11749,6 +11754,12 @@
 /mob/living/simple_animal/hostile/asteroid/basilisk/watcher/magmawing,
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
+"lhq" = (
+/obj/effect/mob_spawn/human/ash_walkers_slave{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/lavaland/unpowered/ash_walkers)
 "lhK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -15207,17 +15218,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/mine/laborcamp)
 "okv" = (
-/obj/item/spear/bonespear{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/item/spear/bonespear{
-	pixel_x = 6;
-	pixel_y = 10
-	},
-/obj/item/spear/bonespear{
-	pixel_x = 6
-	},
+/obj/effect/mob_spawn/human/ash_walkers_slave,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/unpowered/ash_walkers)
 "okz" = (
@@ -20344,6 +20345,13 @@
 	},
 /turf/open/floor/pod/dark,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
+"tiV" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/mob_spawn/human/ash_walkers_slave{
+	dir = 1
+	},
+/turf/open/indestructible/boss,
+/area/ruin/lavaland/unpowered/ash_walkers)
 "tjA" = (
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland/unpowered/deepspaceone/medbay)
@@ -23644,6 +23652,17 @@
 /obj/structure/table/wood/shadow,
 /obj/item/storage/backpack/satchel/bone{
 	pixel_y = 6
+	},
+/obj/item/spear/bonespear{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/spear/bonespear{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/spear/bonespear{
+	pixel_x = 6
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/unpowered/ash_walkers)
@@ -28378,8 +28397,8 @@ nBA
 hvb
 hvb
 guC
-nBA
-nBA
+lhq
+lhq
 lzC
 lzC
 lab
@@ -30435,7 +30454,7 @@ nBA
 lzC
 lzC
 wEi
-nBA
+okv
 okv
 lzC
 lzC
@@ -76658,9 +76677,9 @@ ivD
 ivD
 ivD
 hbZ
-pqG
-pqG
-pqG
+hbZ
+hbZ
+hbZ
 vAU
 vAU
 vAU
@@ -76915,11 +76934,11 @@ ivD
 ivD
 ivD
 hbZ
-pqG
-pqG
-pqG
-pqG
-pqG
+hbZ
+hbZ
+hbZ
+hbZ
+hbZ
 vAU
 vAU
 vAU
@@ -77172,12 +77191,12 @@ ivD
 ivD
 ivD
 pqG
-pqG
-pqG
-pqG
-pqG
-pqG
-pqG
+hbZ
+hbZ
+hbZ
+hbZ
+hbZ
+hbZ
 vAU
 vAU
 vAU
@@ -77432,9 +77451,9 @@ nBA
 nBA
 lMK
 mmB
-pqG
-pqG
-pqG
+hbZ
+hbZ
+hbZ
 vAU
 vAU
 vAU
@@ -77690,8 +77709,8 @@ dOV
 nBA
 nBA
 nBA
-pqG
-pqG
+hbZ
+hbZ
 vAU
 vAU
 vAU
@@ -77948,7 +77967,7 @@ dOV
 nBA
 dov
 nBA
-pqG
+hbZ
 vAU
 vAU
 vAU
@@ -82060,7 +82079,7 @@ cdt
 wWy
 ubG
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
@@ -82302,8 +82321,8 @@ klq
 vbl
 vbl
 vbl
-vbl
-vbl
+tiV
+tiV
 klq
 klq
 klq
@@ -82317,7 +82336,7 @@ mWY
 kRn
 mmB
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
@@ -82574,8 +82593,8 @@ mmB
 mmB
 mmB
 mmB
-mmB
-nBA
+ydJ
+ydJ
 vAU
 vAU
 vAU
@@ -82832,7 +82851,7 @@ uyI
 uyI
 qkm
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
@@ -83089,7 +83108,7 @@ klq
 klq
 mmB
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
@@ -83346,12 +83365,12 @@ rlZ
 uQB
 mmB
 mmB
-nBA
-nBA
+ydJ
+ydJ
 vAU
 vAU
 vAU
-gIl
+hbZ
 gIl
 hbZ
 hbZ
@@ -83605,9 +83624,9 @@ mmB
 mmB
 vAU
 vAU
-gIl
-gIl
-gIl
+vAU
+vAU
+vAU
 hbZ
 hbZ
 hbZ
@@ -83844,8 +83863,8 @@ klq
 vbl
 vbl
 vbl
-vbl
-vbl
+aJs
+aJs
 klq
 klq
 klq
@@ -83860,11 +83879,11 @@ sSL
 klq
 nFC
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
-gIl
+hbZ
 hbZ
 hbZ
 gIl
@@ -84117,11 +84136,11 @@ klq
 klq
 vWj
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
-gIl
+hbZ
 gIl
 gIl
 gIl
@@ -84374,7 +84393,7 @@ mmB
 mmB
 uwq
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
@@ -84630,7 +84649,7 @@ mmB
 mmB
 nBA
 mmB
-nBA
+ydJ
 vAU
 vAU
 vAU
@@ -85919,7 +85938,7 @@ vAU
 vAU
 vAU
 vAU
-gIl
+hbZ
 vAU
 vAU
 vAU
@@ -86165,7 +86184,7 @@ mmB
 mmB
 ydJ
 ydJ
-mmB
+ydJ
 nBA
 nBA
 nBA
@@ -86422,7 +86441,7 @@ ivD
 ivD
 ivD
 ivD
-mmB
+ydJ
 nBA
 nBA
 nBA
@@ -86433,7 +86452,7 @@ vAU
 vAU
 vAU
 vAU
-gIl
+vAU
 vAU
 vAU
 vAU
@@ -86679,18 +86698,18 @@ ivD
 ivD
 ivD
 ivD
-lzC
+ydJ
 ydJ
 nBA
 nBA
 nBA
 nBA
-gIl
-gIl
-gIl
-gIl
-gIl
-gIl
+vAU
+vAU
+vAU
+hbZ
+hbZ
+vAU
 vAU
 vAU
 vAU
@@ -86936,21 +86955,21 @@ ivD
 ivD
 ivD
 ivD
-lzC
+ydJ
 nBA
 nBA
 nBA
 nBA
 nBA
+vAU
+vAU
+vAU
+hbZ
+vAU
+vAU
 gIl
-gIl
-gIl
-gIl
-gIl
-gIl
-gIl
-gIl
-gIl
+vAU
+vAU
 gIl
 gIl
 gIl
@@ -87193,7 +87212,7 @@ ivD
 ivD
 ivD
 ivD
-lzC
+ydJ
 tRQ
 nBA
 nBA
@@ -87202,12 +87221,12 @@ nBA
 vAU
 vAU
 vAU
+hbZ
+vAU
+vAU
+vAU
 gIl
-gIl
-gIl
-gIl
-gIl
-gIl
+vAU
 gIl
 gIl
 gIl
