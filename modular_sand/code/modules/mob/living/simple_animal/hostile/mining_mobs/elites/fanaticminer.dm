@@ -222,8 +222,8 @@
 	shoes = /obj/item/clothing/shoes/invisiboots
 	backpack = /obj/item/storage/backpack/satchel/bone
 	uniform = /obj/item/clothing/under/costume/loincloth
-	ears = null
 	mask = null
+	ears = null
 	belt = null
 	gloves = null
 	backpack_contents = list(
@@ -235,8 +235,8 @@
 	mob_name = "Ashwalkers Slave"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "oldpod"
-	short_desc = "Вы раб или рабыня Пепельных Ящеров с Лаваленда и вам всё нравится."
-	flavour_text = "Вы раб или рабыня Пепельных Ящеров с Лаваленда и вам всё нравится."
+	short_desc = "Вы раб или рабыня Пепельных Ящеров с Лаваленда."
+	flavour_text = "Вам всё нравится."
 	important_info = "Выполняйте ЛЮБЫЕ требования Эшей. Желание сбежать на станцию должно быть минимальным."
 	roundstart = FALSE
 	death = FALSE
@@ -247,6 +247,8 @@
 /obj/effect/mob_spawn/human/ash_walkers_slave/special(mob/living/new_spawn)
 	. = ..()
 	new_spawn.grant_language(/datum/language/draconic, TRUE, TRUE, LANGUAGE_MIND)
+	var/obj/item/organ/lungs/ashwalker/organ = new /obj/item/organ/lungs/ashwalker
+	organ.Insert(new_spawn)
 
 /obj/effect/temp_visual/dragon_swoop/priest
 	duration = 5

@@ -171,19 +171,19 @@
 		M.adjust_disgust(-3)
 
 		// Restore stamina.
-		M.adjustStaminaLoss(3)
+		M.adjustStaminaLoss(1)
 
 		// Reduce hunger and thirst.
-		M.adjust_nutrition(3)
-		M.adjust_thirst(3)
+		M.adjust_nutrition(1)
+		M.adjust_thirst(1)
 
 		// Heal brute and burn.
 		// Accounts for robotic limbs.
-		M.heal_overall_damage(2,2)
+		M.heal_overall_damage(1,1)
 		// Heal oxygen.
-		M.adjustOxyLoss(-2)
+		M.adjustOxyLoss(-1)
 		// Heal clone.
-		M.adjustCloneLoss(-2)
+		M.adjustCloneLoss(-1)
 
 		holder.remove_reagent(type, 0.2)
 

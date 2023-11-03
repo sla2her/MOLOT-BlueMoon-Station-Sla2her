@@ -212,7 +212,7 @@
 	. = ..()
 
 /datum/quirk/hallowed
-	name = "Святой дух"
+	name = "Святой Дух"
 	desc = "Вы были благословлены высшими силами или каким-то иным образом наделены святой энергией. Святая вода восстановит ваше здоровье!"
 	value = 2
 	mob_trait = TRAIT_HALLOWED
@@ -230,7 +230,7 @@
 
 // Quirk examine text.
 /datum/quirk/hallowed/proc/quirk_examine_Hallowed(atom/examine_target, mob/living/carbon/human/examiner, list/examine_list)
-	examine_list += "[quirk_holder.ru_who(TRUE)] излучает русский дух..."
+	examine_list += "[quirk_holder.ru_who(TRUE)] излучает священную силу..."
 
 /datum/quirk/russian
 	name = "Русский дух"
@@ -251,7 +251,7 @@
 
 // Quirk examine text.
 /datum/quirk/russian/proc/quirk_examine_russian(atom/examine_target, mob/living/carbon/human/examiner, list/examine_list)
-	examine_list += "[quirk_holder.ru_who(TRUE)] излучает священную силу..."
+	examine_list += "[quirk_holder.ru_who(TRUE)] излучает русский дух..."
 
 ///datum/quirk/bomber
 //	name = "Подрывник-Самоубийца"
