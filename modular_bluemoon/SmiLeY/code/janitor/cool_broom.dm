@@ -54,7 +54,7 @@
 		var/C = can_push(L)
 		if(C == TRUE*2)
 			pixels_per_second = pixels_per_second * 0.75
-			L.visible_message(span_alert("Энергетическая волна подхватывает [L.name] и уносит его!"),\
+			L.visible_message(span_alert("Энергетическая волна подхватывает [L.name] и уносит куда-то!"),\
 								span_userdanger("Энергетическая волна подхватила меня и понесла куда-то! \
 			[pick("Блять-блять-бляяять!", "Чё-ё-ёрт!", "Сука-а-а!", "Ох бля-я-ять!", "Мля-я-я!", "Ёбаный в рот этой станции!!")]"))
 			losers.Add(L)
@@ -107,7 +107,7 @@
 		var/mob/M = AM
 		if(M.mind?.assigned_role == CLOWN)
 			return TRUE*2
-	if(islizard(AM) || isclown(AM)  || isdrone(AM) || isswarmer(AM) || isdead(AM) || ismouse(AM) || iscatperson(AM) )
+	if(isclown(AM)  || isdrone(AM) || isswarmer(AM) || isdead(AM) || ismouse(AM) || ishuman(AM) )
 		return TRUE*2 // reserved for mob/living //refactor later, this is ugly
 
 #undef PUSHING
