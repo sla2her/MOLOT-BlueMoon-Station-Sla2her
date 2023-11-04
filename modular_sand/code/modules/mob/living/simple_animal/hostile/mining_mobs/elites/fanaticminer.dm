@@ -244,7 +244,7 @@
 	canloadappearance = TRUE
 	loadout_enabled = FALSE
 
-/obj/effect/mob_spawn/human/ash_walkers_slave/special(mob/living/new_spawn)
+/obj/effect/mob_spawn/human/ash_walkers_slave/special_post_appearance(mob/living/new_spawn)
 	. = ..()
 	new_spawn.grant_language(/datum/language/draconic, TRUE, TRUE, LANGUAGE_MIND)
 	var/obj/item/organ/lungs/ashwalker/lungs = new /obj/item/organ/lungs/ashwalker()
