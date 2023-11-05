@@ -29899,6 +29899,11 @@
 	id = "research_shutters_2";
 	name = "research shutters"
 	},
+/obj/machinery/door/window/eastright{
+	name = "Research and Development Desk";
+	req_one_access_txt = "7;29";
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/science/lab)
 "cpd" = (

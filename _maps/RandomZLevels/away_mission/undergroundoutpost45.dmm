@@ -334,6 +334,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/awaystart,
 /turf/open/floor/plasteel/grimy{
 	heat_capacity = 1e+006
 	},
@@ -382,6 +383,7 @@
 /obj/structure/chair/comfy/beige{
 	dir = 8
 	},
+/obj/effect/landmark/awaystart,
 /turf/open/floor/plasteel/grimy{
 	heat_capacity = 1e+006
 	},
@@ -450,6 +452,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/effect/landmark/awaystart,
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
@@ -3614,6 +3617,7 @@
 	},
 /area/awaymission/undergroundoutpost45/gateway)
 "hB" = (
+/obj/machinery/rnd/destructive_analyzer,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -6493,10 +6497,13 @@
 	pixel_y = -28
 	},
 /obj/structure/rack,
-/obj/item/tank/jetpack/carbondioxide,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/tank/jetpack/carbondioxide,
 /turf/open/floor/plasteel/dark{
 	heat_capacity = 1e+006
 	},
@@ -13603,6 +13610,24 @@
 	name = "Cave Floor"
 	},
 /area/awaymission/undergroundoutpost45/caves)
+"zt" = (
+/obj/machinery/rnd/production/protolathe,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/research)
+"zR" = (
+/obj/machinery/computer/rdconsole/core{
+	dir = 4;
+	req_access = null
+	},
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/research)
 "zY" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
@@ -13629,6 +13654,18 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/engineering)
+"Kb" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/landmark/awaystart,
+/turf/open/floor/plasteel{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/central)
 "KE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -13673,6 +13710,12 @@
 	},
 /mob/living/simple_animal/hostile/poison/giant_spider/tarantula,
 /turf/open/floor/plasteel/white{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/research)
+"Pb" = (
+/obj/machinery/rnd/production/circuit_imprinter,
+/turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/research)
@@ -38792,7 +38835,7 @@ ad
 gx
 gX
 hB
-ih
+zR
 iy
 iY
 jr
@@ -39305,8 +39348,8 @@ ad
 gx
 gy
 gZ
-hB
-ih
+zt
+Pb
 iA
 ha
 gX
@@ -45189,7 +45232,7 @@ aF
 aP
 aX
 bc
-bg
+aT
 bm
 aC
 bF
@@ -45444,8 +45487,8 @@ an
 aH
 aS
 aQ
-aY
-aY
+Kb
+Kb
 bh
 bp
 bp
@@ -45701,9 +45744,9 @@ ae
 aI
 aS
 aR
-aS
-aS
-aS
+ax
+ax
+ax
 aS
 bx
 bH
