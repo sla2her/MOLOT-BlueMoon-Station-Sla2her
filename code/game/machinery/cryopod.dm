@@ -9,6 +9,8 @@
  */
 GLOBAL_LIST_EMPTY(cryopod_computers)
 
+GLOBAL_LIST_EMPTY(ghost_records)
+
 //Main cryopod console.
 /obj/machinery/computer/cryopod
 	name = "general oversight console"
