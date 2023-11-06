@@ -89,24 +89,41 @@
 		to_chat(src, "<span class='userlove'>Ты чувствуешь, как презерватив наполняется изнутри твоей спермой!</span>")
 		R.trans_to(condomning, R.total_volume)
 	else
-		if(spill && R.total_volume >= 5)
-			R.reaction(turfing ? target : target.loc, TOUCH, 1, 0)
+		if(spill && R.total_volume > 0)
+			var/turf/location = get_turf(target)
+
+			var/obj/effect/decal/cleanable/semen/S = locate(/obj/effect/decal/cleanable/semen) in location
+			if(S)
+				if(R.trans_to(S, R.total_volume))
+					S.blood_DNA |= get_blood_dna_list()
+					S.update_icon()
+					return
+
+			var/obj/effect/decal/cleanable/semendrip/drip = (locate(/obj/effect/decal/cleanable/semendrip) in location) || new(location)
+			if(R.trans_to(drip, R.total_volume))
+				drip.blood_DNA |= get_blood_dna_list()
+				drip.update_icon()
+				if(drip.reagents.total_volume >= 10)
+					S = new(location)
+					drip.reagents.trans_to(S, drip.reagents.total_volume)
+					S.blood_DNA |= drip.blood_DNA
+					S.update_icon()
+					qdel(drip)
+				return
+
 		if(!turfing)
 			// sandstorm edit - advanced cum drip
 			var/amount_to_transfer = R.total_volume * (spill ? sender.fluid_transfer_factor : 1)
+			var/mob/living/carbon/human/cummed_on = target
+			if(istype(cummed_on))
+				var/datum/reagents/copy = new()
+				R.copy_to(copy, R.total_volume)
+				// Nope, on the mouth doesn't count.
+				if(istype(last_genital, /obj/item/organ/genital/penis) && (last_orifice == CUM_TARGET_VAGINA || last_orifice == CUM_TARGET_ANUS))
+					if(copy.total_volume > 0)
+						cummed_on.apply_status_effect(STATUS_EFFECT_DRIPPING_CUM, copy, get_blood_dna_list())
 			R.trans_to(target, amount_to_transfer, log = TRUE)
-			if(ishuman(target) && (istype(sender, /obj/item/organ/genital/penis)))
-				var/datum/reagent/consumable/semen/salty_drink = src.reagents.get_reagent(sender.linked_organ.fluid_id)
-				if(salty_drink)
-					if(istype(receiver, /obj/item/organ/genital/anus))
-						var/obj/item/organ/genital/anus/rec = getorganslot(ORGAN_SLOT_ANUS)
-						salty_drink.amount_to_drip += amount_to_transfer
-						rec.filled = TRUE
-					if(istype(receiver, /obj/item/organ/genital/vagina))
-						var/obj/item/organ/genital/vagina/rec = getorganslot(ORGAN_SLOT_VAGINA)
-						salty_drink.amount_to_drip += amount_to_transfer
-						rec.filled = TRUE
-			//
+		//
 	sender.last_orgasmed = world.time
 	R.clear_reagents()
 	//sandstorm edit - gain momentum from dirty deeds.
@@ -241,7 +258,7 @@
 			to_chat(src, "<span class='warning'>Вы должны подождать [DisplayTimeText((mb_cd_timer - world.time), TRUE)] до того, как можете сделать это снова!</span>")
 		return
 
-	if(!client?.prefs.arousable || !has_dna())
+	if(!(client?.prefs.arousable || !ckey) || !has_dna())
 		return
 
 	if(HAS_TRAIT(src, TRAIT_NEVERBONER))
