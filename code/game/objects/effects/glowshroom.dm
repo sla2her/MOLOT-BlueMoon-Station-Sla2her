@@ -108,6 +108,8 @@
 /obj/structure/glowshroom/proc/Spread()
 	var/turf/ownturf = get_turf(src)
 	var/shrooms_planted = 0
+	if(!myseed)
+		return
 	for(var/i in 1 to myseed.yield)
 		var/chance_stats = ((myseed.potency + myseed.endurance * 2) * 0.2) // Chance of generating a new mushroom based on stats
 		var/chance_generation = (100 / (generation * generation)) // This formula gives you diminishing returns based on generation. 100% with 1st gen, decreasing to 25%, 11%, 6, 4, 2...

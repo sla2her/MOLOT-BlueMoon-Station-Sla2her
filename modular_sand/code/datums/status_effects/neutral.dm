@@ -60,10 +60,16 @@
 /datum/status_effect/dripping_cum/proc/can_drip()
 	var/mob/living/carbon/human/human_owner = owner
 	var/obj/item/clothing/under/clothes = human_owner.get_item_by_slot(ITEM_SLOT_ICLOTHING)
+	var/obj/item/organ/genital/anus/A = human_owner.getorganslot(ORGAN_SLOT_ANUS)
+	var/obj/item/organ/genital/vagina/V = human_owner.getorganslot(ORGAN_SLOT_VAGINA)
 	// This is completely recyclable.
 	if(clothes)
 		var/valid = FALSE
 		if(is_type_in_typecache(clothes.type, GLOB.skirt_peekable))
+			valid = TRUE
+		if(A.filled == TRUE && !(locate(/obj/item/buttplug) in A.contents) || A.filled == TRUE && !(locate(/obj/item/dildo) in A.contents))
+			valid = TRUE
+		if(V.filled == TRUE && !(locate(/obj/item/buttplug) in V.contents) || V.filled == TRUE && !(locate(/obj/item/dildo) in V.contents))
 			valid = TRUE
 		else if(!CHECK_BITFIELD(clothes.body_parts_covered, GROIN))
 			valid = TRUE
