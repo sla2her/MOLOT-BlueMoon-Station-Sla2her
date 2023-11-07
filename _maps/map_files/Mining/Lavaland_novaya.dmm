@@ -13544,6 +13544,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/mine/storage)
+"mMh" = (
+/obj/machinery/vending/kink,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/lavaland/unpowered/ash_walkers)
 "mMw" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -22507,6 +22511,7 @@
 /obj/structure/stone_tile{
 	dir = 4
 	},
+/obj/machinery/vending/kink,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/unpowered/ash_walkers)
 "vqk" = (
@@ -29424,7 +29429,7 @@ nBA
 nBA
 nBA
 hvb
-nBA
+mMh
 nBA
 nBA
 nBA
