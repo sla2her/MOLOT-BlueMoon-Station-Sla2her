@@ -67,10 +67,10 @@
 		var/valid = FALSE
 		if(is_type_in_typecache(clothes.type, GLOB.skirt_peekable))
 			valid = TRUE
-		if(A.filled == TRUE && !(locate(/obj/item/buttplug) in A.contents) || A.filled == TRUE && !(locate(/obj/item/dildo) in A.contents))
-			valid = TRUE
-		if(V.filled == TRUE && !(locate(/obj/item/buttplug) in V.contents) || V.filled == TRUE && !(locate(/obj/item/dildo) in V.contents))
-			valid = TRUE
+		if((A && A.filled) == TRUE && !(locate(/obj/item/buttplug) in A.contents) || (A && A.filled) == TRUE && !(locate(/obj/item/dildo) in A.contents))
+			valid = FALSE
+		if((V && V.filled) == TRUE && !(locate(/obj/item/buttplug) in V.contents) || (V && V.filled) == TRUE && !(locate(/obj/item/dildo) in V.contents))
+			valid = FALSE
 		else if(!CHECK_BITFIELD(clothes.body_parts_covered, GROIN))
 			valid = TRUE
 		if(!valid)

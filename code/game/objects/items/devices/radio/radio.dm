@@ -482,6 +482,3 @@
 		qdel(implant)
 	else
 		return ..()
-
-/obj/item/radio/proc/on_recieve_message()
-	flick_overlay_view(overlay_speaker_active, 5 SECONDS)

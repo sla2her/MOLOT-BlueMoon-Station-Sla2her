@@ -4386,6 +4386,7 @@
 #include "modular_sand\code\datums\components\storage\concrete\dresser.dm"
 #include "modular_sand\code\datums\diseases\advance\symptoms\species.dm"
 #include "modular_sand\code\datums\elements\holder_micro.dm"
+#include "modular_sand\code\datums\elements\skirt_peeking.dm"
 #include "modular_sand\code\datums\interactions\_interaction.dm"
 #include "modular_sand\code\datums\interactions\interaction_mob.dm"
 #include "modular_sand\code\datums\interactions\lewd_definitions.dm"

@@ -176,9 +176,6 @@
 				if(R.independent && R.can_receive(frequency, levels))
 					radios += R
 
-	for(var/obj/item/radio/called_radio as anything in radios)
-		called_radio.on_recieve_message()
-
 	// From the list of radios, find all mobs who can hear those.
 	var/list/receive = get_mobs_in_radio_ranges(radios)
 
