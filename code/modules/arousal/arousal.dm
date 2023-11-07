@@ -73,7 +73,7 @@
 	if(!. && !silent)
 		to_chat(H, "<span class='warning'>Твой [name] не в состоянии производить собственную жидкость, ведь у него отсутствуют органы для этого.</span>")
 
-/mob/living/carbon/human/proc/do_climax(datum/reagents/R, atom/target, obj/item/organ/genital/sender, spill, cover = FALSE, obj/item/organ/genital/receiver, anonymous = FALSE)
+/mob/living/carbon/human/proc/do_climax(datum/reagents/R, atom/target, obj/item/organ/genital/sender, spill = TRUE, cover = FALSE, obj/item/organ/genital/receiver, anonymous = FALSE)
 	if(!sender)
 		return
 	if(!target || !R)
@@ -92,8 +92,14 @@
 		if(spill && R.total_volume > 0)
 			var/turf/location = get_turf(target)
 
+			var/obj/effect/decal/cleanable/semen/femcum/F = locate(/obj/effect/decal/cleanable/semen/femcum) in location
 			var/obj/effect/decal/cleanable/semen/S = locate(/obj/effect/decal/cleanable/semen) in location
-			if(S)
+			if(istype(loc, /obj/item/organ/genital/vagina))
+				if(R.trans_to(F, R.total_volume))
+					F.blood_DNA |= get_blood_dna_list()
+					F.update_icon()
+					return
+			if(istype(loc, /obj/item/organ/genital/penis))
 				if(R.trans_to(S, R.total_volume))
 					S.blood_DNA |= get_blood_dna_list()
 					S.update_icon()
