@@ -238,6 +238,7 @@
 	short_desc = "Вы раб или рабыня Пепельных Ящеров с Лаваленда."
 	flavour_text = "Вам всё нравится."
 	important_info = "Выполняйте ЛЮБЫЕ требования Эшей. Желание сбежать на станцию должно быть минимальным."
+	assignedrole = "Ash Walker"
 	roundstart = FALSE
 	death = FALSE
 	random = TRUE
