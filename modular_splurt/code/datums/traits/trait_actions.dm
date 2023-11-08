@@ -1507,7 +1507,7 @@
 	var/mob/living/carbon/human/action_mob = owner
 
 	// Add outline effect
-	action_mob.add_filter("rad_fiend_glow", 1, list("type" = "outline", "color" = glow_color+"30", "size" = glow_range))
+	action_mob.add_filter("cos_glow", 1, list("type" = "outline", "color" = glow_color+"30", "size" = glow_range))
 
 /datum/action/cosglow/update_glow/Remove()
 	. = ..()
@@ -1516,7 +1516,7 @@
 	var/mob/living/carbon/human/action_mob = owner
 
 	// Remove glow
-	action_mob.remove_filter("rad_fiend_glow")
+	action_mob.remove_filter("cos_glow")
 
 /datum/action/cosglow/update_glow/Trigger()
 	. = ..()
@@ -1540,8 +1540,8 @@
 	glow_range = (input_range ? clamp(input_range, 0, 4) : glow_range) //More customisable, so you know when you're looking at someone with Radfiend (doom) or a normal player.
 
 	// Update outline effect
-	action_mob.remove_filter("rad_fiend_glow")
-	action_mob.add_filter("rad_fiend_glow", 1, list("type" = "outline", "color" = glow_color+"30", "size" = glow_range))
+	action_mob.remove_filter("cos_glow")
+	action_mob.add_filter("cos_glow", 1, list("type" = "outline", "color" = glow_color+"30", "size" = glow_range))
 
 //
 // Quirk: Rad Fiend
