@@ -92,14 +92,8 @@
 		if(spill && R.total_volume > 0)
 			var/turf/location = get_turf(target)
 
-			var/obj/effect/decal/cleanable/semen/femcum/F = locate(/obj/effect/decal/cleanable/semen/femcum) in location
 			var/obj/effect/decal/cleanable/semen/S = locate(/obj/effect/decal/cleanable/semen) in location
-			if(istype(loc, /obj/item/organ/genital/vagina))
-				if(R.trans_to(F, R.total_volume))
-					F.blood_DNA |= get_blood_dna_list()
-					F.update_icon()
-					return
-			if(istype(loc, /obj/item/organ/genital/penis))
+			if(S)
 				if(R.trans_to(S, R.total_volume))
 					S.blood_DNA |= get_blood_dna_list()
 					S.update_icon()

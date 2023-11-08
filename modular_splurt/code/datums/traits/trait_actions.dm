@@ -1494,10 +1494,10 @@
 	button_icon_state = "blank"
 
 	// Glow color to use
-	var/glow_color
+	var/glow_color = "#39ff14" // Neon green
 
 	// Thickness of glow outline
-	var/glow_range
+	var/glow_range = 2
 
 
 /datum/action/cosglow/update_glow/Grant()
