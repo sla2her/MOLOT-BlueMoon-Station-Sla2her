@@ -1350,6 +1350,7 @@
 		"(Service) Meka" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "mekaserve"), //Krashly Request
 		"(Service) Feline" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "vixserv-b"), // SPLURT Addon (ChompS Port)
 		"(Service) Raptor V-4" = image(icon = 'modular_splurt/icons/mob/robots_64x45.dmi', icon_state = "serviraptor-b"), // SPLURT Addon (ChompS Port)
+		"(Fancy) Raptor V-4" = image(icon = 'modular_splurt/icons/mob/robots_64x45.dmi', icon_state = "fancyraptor-b"), // SPLURT Addon (ChompS Port)
 		"(Janitor) Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "janitor"),
 		"(Janitor) Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinajan"),
 		"(Janitor) Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekjan"),
@@ -1377,7 +1378,9 @@
 		"(Janitor) Haydee" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "haydeejan"), // SPLURT Addon
 		"(Janitor) Meka" = image(icon = 'modular_splurt/icons/mob/robots_32x64.dmi', icon_state = "mekajani"), // SPLURT Addon
 		"(Janitor) Feline" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "vixjani-b"), // SPLURT Addon (ChompS Port)
+		"(Janitor Alt) Feline" = image(icon = 'modular_splurt/icons/mob/widerobot.dmi', icon_state = "vixsci-b"), // SPLURT Addon (ChompS Port)
 		"(Janitor) Raptor V-4" = image(icon = 'modular_splurt/icons/mob/robots_64x45.dmi', icon_state = "janiraptor-b"), // SPLURT Addon (ChompS Port)
+		"(Janitor Alt) Raptor V-4" = image(icon = 'modular_splurt/icons/mob/robots_64x45.dmi', icon_state = "sciraptor-b"), // SPLURT Addon (ChompS Port)
 		"(Waiter) Meka" = image(icon = 'modular_splurt/icons/mob/robots_32x64.dmi', icon_state = "mekaserve_alt"), // SPLURT Addon
 		"(Service) FMeka" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "fmekaserv"), // Lyoll Request (Skyrat Port)
 		"(Service) K4" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "k4tserve"), // Lyoll Request (Skyrat Port)
@@ -1499,6 +1502,11 @@
 			cyborg_icon_override = 'modular_splurt/icons/mob/robots_64x45.dmi'
 			sleeper_overlay = "serviraptor-sleeper"
 			dogborg = TRUE
+		if("(Fancy) Raptor V-4") // SPLURT Addon (ChompS Port)
+			cyborg_base_icon = "fancyraptor"
+			cyborg_icon_override = 'modular_splurt/icons/mob/robots_64x45.dmi'
+			sleeper_overlay = "fancyraptor-sleeper"
+			dogborg = TRUE
 		if("(Janitor) Default")
 			cyborg_base_icon = "janitor"
 		if("(Janitor) Marina")
@@ -1613,10 +1621,20 @@
 			cyborg_icon_override = 'modular_splurt/icons/mob/widerobot.dmi'
 			sleeper_overlay = "vixjani-sleeper"
 			dogborg = TRUE
+		if("(Janitor Alt) Feline") // SPLURT Addon (ChompS Port); If someone decide to make science module for SPLURT, just cut and paste it, then apply tweaks
+			cyborg_base_icon = "vixsci"
+			cyborg_icon_override = 'modular_splurt/icons/mob/widerobot.dmi'
+			sleeper_overlay = "vixsci-sleeper"
+			dogborg = TRUE
 		if("(Janitor) Raptor V-4") // SPLURT Addon (ChompS Port)
 			cyborg_base_icon = "janiraptor"
 			cyborg_icon_override = 'modular_splurt/icons/mob/robots_64x45.dmi'
 			sleeper_overlay = "janiraptor-sleeper"
+			dogborg = TRUE
+		if("(Janitor Alt) Raptor V-4") // SPLURT Addon (ChompS Port); Ditto with sci module thing.
+			cyborg_base_icon = "sciraptor"
+			cyborg_icon_override = 'modular_splurt/icons/mob/robots_64x45.dmi'
+			sleeper_overlay = "sciraptor-sleeper"
 			dogborg = TRUE
 		if("(Waiter) Meka")
 			cyborg_base_icon = "mekaserve_alt"
