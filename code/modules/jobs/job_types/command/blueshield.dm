@@ -69,7 +69,7 @@
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	glasses = /obj/item/clothing/glasses/hud/blueshield
 	suit = /obj/item/clothing/suit/armor/vest/bluesheid
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 	suit_store = /obj/item/kitchen/knife/combat
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld

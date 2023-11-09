@@ -52,7 +52,7 @@
 	uniform = /obj/item/clothing/under/rank/bridgeofficer
 	head = /obj/item/clothing/head/bridgeofficer
 	glasses = /obj/item/clothing/glasses/sunglasses
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 
 	backpack = /obj/item/storage/backpack/duffelbag/syndie
 	satchel = /obj/item/storage/backpack/duffelbag/syndie
