@@ -8,7 +8,8 @@
 
 /mob/living/carbon/alien/humanoid/drone/maid
 	name = "Xeno Maid"
-	icon_state = "maid"
+	icon_state = "alienmaid"
+	caste = "maid"
 	has_fine_manipulation = 1
 	initial_language_holder = /datum/language_holder
 
