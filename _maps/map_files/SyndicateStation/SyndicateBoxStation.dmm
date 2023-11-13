@@ -28601,12 +28601,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/medical/genetics)
-"bvt" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/closed/wall,
-/area/medical/genetics)
 "bvu" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -33618,9 +33612,6 @@
 /obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/medical/medbay/zone2)
-"bGU" = (
-/turf/closed/wall,
-/area/medical/genetics)
 "bGV" = (
 /obj/machinery/light{
 	dir = 1;
@@ -105909,9 +105900,9 @@ boc
 bqW
 brh
 bua
-bGU
+bua
 wXg
-bGU
+bua
 bua
 bEh
 bEh
@@ -107196,7 +107187,7 @@ brd
 bua
 bpE
 buq
-bvt
+bmZ
 bye
 bBN
 bBN
