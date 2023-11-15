@@ -13858,11 +13858,11 @@
 /turf/open/floor/carpet,
 /area/command/meeting_room)
 "bdN" = (
-/obj/machinery/computer/operating,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/structure/frame/computer,
 /turf/open/floor/plasteel,
 /area/medical/surgery)
 "bdO" = (
@@ -21259,6 +21259,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
 	},
+/obj/structure/table_frame,
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "bwx" = (
@@ -23173,7 +23174,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/computer/operating,
+/obj/structure/frame/computer,
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "bAY" = (
@@ -23840,6 +23841,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
+/obj/structure/table_frame,
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "bCF" = (
@@ -45801,6 +45803,9 @@
 	dir = 1;
 	pixel_y = -27
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "fAP" = (
@@ -54891,12 +54896,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
-"mWV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 9
-	},
-/turf/closed/wall/r_wall,
-/area/ai_monitored/command/storage/eva)
 "mXf" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
@@ -58723,6 +58722,9 @@
 /obj/machinery/camera{
 	c_tag = "Law Office";
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
@@ -62834,6 +62836,9 @@
 /area/service/bar)
 "tAc" = (
 /obj/machinery/photocopier,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "tAo" = (
@@ -95404,7 +95409,7 @@ edW
 vym
 vym
 kIS
-mWV
+axz
 ayO
 nCQ
 aBq
@@ -95661,7 +95666,7 @@ gJk
 auf
 auf
 eIf
-ayW
+axA
 ayW
 axA
 vdE
@@ -96432,7 +96437,7 @@ ata
 ata
 ata
 rVb
-ata
+fsZ
 jgo
 iDH
 sRK
