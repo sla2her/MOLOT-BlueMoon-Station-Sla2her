@@ -16339,24 +16339,263 @@
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/outside)
-"bhi" = (
-/obj/item/disk/tech_disk/debug,
+"bhv" = (
+/obj/machinery/telecomms/receiver/preset_right,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"bma" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Control Room";
+	req_access_txt = "19; 61"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"bqo" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/tcommsat/computer)
+"btp" = (
+/obj/machinery/telecomms/bus/preset_four,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"bzR" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"bAy" = (
+/obj/item/paper/crumpled/bloody{
+	name = "ominous note";
+	default_raw_text = "You're not supposed to be here."
+	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/item/paper/crumpled/bloody{
+	name = "ominous note";
+	info = "You're not supposed to be here."
+	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"boV" = (
-/obj/machinery/power/smes{
-	charge = 5e+006
+"bFP" = (
+/obj/machinery/telecomms/processor/preset_one,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"bLX" = (
+/obj/machinery/computer/rdconsole/core{
+	dir = 8
 	},
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"bRw" = (
+/obj/machinery/door/airlock/engineering{
+	name = "Telecommunications";
+	req_access_txt = "61"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"bSe" = (
+/obj/machinery/modular_computer/console/preset/id{
+	dir = 8
+	},
+/obj/structure/cable/white{
+	icon_state = "2-8"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"bUn" = (
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Telecomms Admin";
+	departmentType = 5;
+	name = "Telecomms RC";
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"cmZ" = (
+/obj/machinery/telecomms/bus/preset_one,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"crB" = (
+/obj/machinery/telecomms/processor/preset_one,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"csx" = (
 /obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "4-8"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"cuO" = (
+/obj/machinery/camera{
+	c_tag = "Telecomms Server Room";
+	dir = 4;
+	network = list("tcomms")
+	},
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"cwt" = (
+/obj/structure/chair/sofa/left/brown{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/eventmap/inside)
+"cyO" = (
+/obj/structure/chair/sofa/right/brown,
+/obj/item/storage/daki,
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"cVJ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/tcommsat/computer)
+"dcr" = (
+/obj/machinery/rnd/production/protolathe/department/science{
+	acted_explosions = "Dumbasses";
+	allowed_department_flags = 126;
+	name = "department protolathe (Dumb powergamers)"
+	},
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"dlJ" = (
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'SERVER ROOM'.";
+	name = "SERVER ROOM"
+	},
+/turf/closed/wall,
+/area/tcommsat/computer)
+"dmn" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/tcommsat/computer)
+"dqE" = (
+/obj/machinery/telecomms/bus/preset_four,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"dwm" = (
+/obj/item/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = -35
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"dxc" = (
+/obj/machinery/computer/telecomms/monitor{
+	dir = 4;
+	network = "tcommsat"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"dBp" = (
+/obj/structure/table,
+/obj/item/radio/off,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"dHo" = (
+/obj/structure/chair/sofa/middle/brown{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"dWo" = (
+/obj/machinery/telecomms/server/presets/science,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"dZe" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"ebT" = (
+/obj/machinery/light,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"ecx" = (
+/obj/machinery/telecomms/broadcaster/preset_right,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"edq" = (
+/obj/effect/landmark/start/ai,
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"epS" = (
+/obj/item/aiModule/reset/purge,
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"evV" = (
+/obj/structure/chair/sofa/right/brown{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"eBJ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/eventmap/mountaininside)
-"btl" = (
-/obj/machinery/telecomms/server/presets/science,
+"eHU" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/tcommsat/computer)
+"eJv" = (
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"fhE" = (
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"fng" = (
+/obj/machinery/telecomms/server/presets/medical,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
-"bxC" = (
+"fIW" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"fKJ" = (
+/obj/structure/table,
+/obj/item/multitool,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -16366,29 +16605,61 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/obj/machinery/ore_silo,
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"bzP" = (
-/obj/machinery/light,
-/obj/machinery/computer/upload/ai{
+"fQA" = (
+/obj/machinery/telecomms/processor/preset_two,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"fSL" = (
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"bAM" = (
-/obj/machinery/telecomms/server/presets/command,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"bHc" = (
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
+	},
+/area/eventmap/inside)
+"gbD" = (
 /obj/machinery/telecomms/server/presets/command,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
-"bLp" = (
+"ges" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/eventmap/mountaininside)
+"gex" = (
+/obj/machinery/telecomms/server/presets/security,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"gmp" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"gmr" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"gnA" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/announcement_system,
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"gpB" = (
 /obj/structure/chair/sofa/right/brown,
 /turf/open/floor/wood,
-/area/eventmap/inside)
-"bLr" = (
+/area/eventmap/mountaininside)
+"gBR" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/syndicate,
 /obj/item/storage/toolbox/plastitanium/gold_real,
@@ -16396,22 +16667,24 @@
 /obj/item/storage/toolbox/plastitanium/gold_real,
 /turf/open/floor/circuit/off,
 /area/eventmap/mountaininside)
-"bLP" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/plating,
-/area/maintenance/port/aft)
-"ccB" = (
-/obj/machinery/telecomms/broadcaster/preset_left,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"ckG" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+"gLx" = (
+/obj/item/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = -35
 	},
-/turf/open/floor/circuit/telecomms/mainframe,
+/turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"ckS" = (
+"gSx" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"gUW" = (
+/obj/machinery/telecomms/receiver/preset_left,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"gWd" = (
 /obj/machinery/computer/message_monitor{
 	dir = 4
 	},
@@ -16423,94 +16696,153 @@
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"czA" = (
-/obj/item/aiModule/supplied/freeform,
+"hdU" = (
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Telecomms Admin";
+	departmentType = 5;
+	name = "Telecomms RC";
+	pixel_x = 30
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"cAj" = (
-/obj/machinery/camera{
-	c_tag = "Telecomms Server Room";
-	dir = 4;
-	network = list("tcomms")
+/area/tcommsat/computer)
+"hpu" = (
+/obj/machinery/telecomms/hub/preset,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"cGy" = (
-/obj/machinery/telecomms/processor/preset_two,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"cTz" = (
-/obj/machinery/telecomms/server/presets/supply,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"cVs" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"ddo" = (
-/obj/structure/chair/sofa/middle/brown{
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
 	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/eventmap/mountaininside)
+"hAK" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/tcommsat/computer)
+"hCa" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"icE" = (
+/obj/machinery/telecomms/server/presets/service,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"icU" = (
+/obj/structure/chair/sofa/left/brown,
+/obj/effect/landmark/start/assistant,
 /turf/open/floor/wood,
 /area/eventmap/inside)
-"deh" = (
-/obj/machinery/telecomms/server/presets/common,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"dvP" = (
+"ifZ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
 /area/tcommsat/computer)
-"dHv" = (
+"ilL" = (
+/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "0-2"
 	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"ejn" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/eventmap/mountaininside)
+"iLF" = (
+/obj/structure/chair/sofa/middle/brown,
+/turf/open/floor/carpet/red,
+/area/eventmap/mountaininside)
+"iWJ" = (
+/obj/machinery/modular_computer/console/preset/id{
+	dir = 4
+	},
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/white{
+	icon_state = "1-4"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"jav" = (
+/obj/machinery/telecomms/server/presets/security,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"jbR" = (
+/obj/machinery/telecomms/bus/preset_one,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"jcg" = (
+/obj/machinery/telecomms/server/presets/engineering,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"jqq" = (
+/obj/structure/chair/sofa/right/brown{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"juL" = (
+/obj/machinery/telecomms/server/presets/common,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"jKh" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/eventmap/mountaininside)
-"eng" = (
-/obj/structure/chair/sofa/right/brown,
-/obj/item/storage/daki,
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"epP" = (
-/obj/structure/chair/office/dark{
-	dir = 8
+"jLp" = (
+/obj/machinery/camera{
+	c_tag = "Telecomms Monitoring";
+	dir = 8;
+	network = list("tcomms")
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"eBl" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+"jNj" = (
+/obj/structure/closet/crate,
+/obj/item/clothing/head/pirate,
+/obj/item/clothing/head/santa,
+/obj/item/clothing/head/magus,
+/obj/item/clothing/head/mailman,
+/obj/item/clothing/head/griffin,
+/obj/item/clothing/head/bearpelt,
+/obj/item/clothing/head/beret,
+/obj/item/clothing/head/bowler,
+/obj/item/clothing/head/fedora,
+/obj/item/clothing/accessory/skullcodpiece,
+/obj/item/clothing/neck/devilwings,
+/obj/item/clothing/gloves/bracer,
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"kbX" = (
+/obj/machinery/telecomms/message_server,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"kdr" = (
+/obj/item/radio/intercom{
+	dir = 8;
+	freerange = 1;
+	name = "Station Intercom (Telecomms)";
+	pixel_y = 26
 	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"eEb" = (
-/obj/machinery/telecomms/server/presets/medical,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"eRn" = (
-/turf/closed/wall/r_wall,
-/area/tcommsat/computer)
-"eTP" = (
-/obj/structure/chair/sofa/right/brown,
-/obj/item/toy/cards/deck/cas,
-/turf/open/floor/spooktime/dirtpatch,
-/area/eventmap/mountain)
-"eWz" = (
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"kiH" = (
 /obj/machinery/computer/telecomms/server{
 	dir = 4;
 	network = "tcommsat"
@@ -16524,71 +16856,323 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"eYi" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
+"kmG" = (
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"kpr" = (
+/obj/structure/chair/sofa/middle/brown,
+/obj/item/toy/cards/deck/syndicate,
+/turf/open/floor/spooktime/dirtpatch,
+/area/eventmap/mountain)
+"kqV" = (
+/obj/machinery/telecomms/server/presets/science,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"kxS" = (
+/obj/machinery/status_display/evac,
+/turf/closed/wall,
 /area/tcommsat/computer)
-"faU" = (
+"kzI" = (
 /obj/structure/chair/sofa/left/brown,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"fiz" = (
+/obj/item/toy/cards/deck/cas/black,
+/turf/open/floor/spooktime/dirtpatch,
+/area/eventmap/mountain)
+"kID" = (
 /obj/structure/table,
-/obj/item/radio/off,
+/obj/item/multitool,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"fpt" = (
-/obj/machinery/light{
+"kKG" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"kNG" = (
+/obj/machinery/telecomms/processor/preset_three,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"kQy" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/machinery/announcement_system,
-/turf/open/floor/plasteel,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/tcommsat/computer)
+"kTK" = (
+/obj/structure/chair/sofa/right/brown,
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"lbv" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/circuit/off,
 /area/eventmap/mountaininside)
-"fvE" = (
+"lik" = (
 /obj/machinery/telecomms/processor/preset_four,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
-"fzx" = (
-/obj/machinery/telecomms/server/presets/engineering,
+"lqc" = (
+/obj/machinery/telecomms/bus/preset_three,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"lvc" = (
+/obj/structure/chair/sofa/left/brown{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"lyw" = (
+/obj/structure/chair/sofa/middle/brown,
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"lAU" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"lEV" = (
+/obj/structure/chair/sofa/right/brown,
+/obj/item/toy/cards/deck/cas,
+/turf/open/floor/spooktime/dirtpatch,
+/area/eventmap/mountain)
+"lKy" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"lNQ" = (
+/obj/machinery/camera{
+	c_tag = "Telecomms Server Room";
+	dir = 4;
+	network = list("tcomms")
+	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"fzG" = (
+"lOl" = (
+/obj/machinery/telecomms/server/presets/supply,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"mjq" = (
+/obj/item/aiModule/supplied/freeform,
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"mlr" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/gear_painter,
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"mlZ" = (
+/obj/machinery/telecomms/server/presets/common,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"mCa" = (
+/obj/structure/chair/sofa/right/brown{
+	dir = 1
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken2"
+	},
+/area/eventmap/inside)
+"mFq" = (
+/obj/structure/chair/sofa/middle/brown{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/eventmap/inside)
+"mFZ" = (
+/obj/structure/chair/sofa/left/brown{
+	dir = 1;
+	icon_state = "sofamiddle"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"mJX" = (
+/obj/structure/chair/sofa/left/brown{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"mKy" = (
+/obj/machinery/power/smes{
+	charge = 5e+006
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"mMd" = (
+/obj/structure/dresser,
+/turf/open/floor/spooktime/dirtpatch,
+/area/eventmap/inside)
+"mVp" = (
+/turf/closed/wall/r_wall,
+/area/tcommsat/server)
+"mXR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"fBr" = (
-/obj/machinery/light{
-	dir = 1
+"njc" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/maintenance,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
+"nkn" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/tcommsat/computer)
+"nlN" = (
+/turf/closed/wall/r_wall,
+/area/tcommsat/computer)
+"nlX" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/holopad/secure,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"nnd" = (
+/obj/structure/sign/warning/nosmoking{
+	pixel_y = -32
 	},
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/tcommsat/server";
-	dir = 1;
-	name = "Telecomms Server APC";
-	pixel_y = 23
+/obj/machinery/light,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"nos" = (
+/obj/machinery/power/smes{
+	charge = 5e+006
 	},
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "0-4"
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
-"fEn" = (
-/obj/machinery/telecomms/bus/preset_four,
+"nqu" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
-"fJd" = (
+"nDd" = (
+/obj/machinery/light/small,
+/obj/structure/chair/sofa/left/brown{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"nIA" = (
+/obj/structure/chair/sofa/left/brown,
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"nOg" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
+/area/eventmap/inside)
+"oCI" = (
+/obj/machinery/computer/telecomms/monitor{
+	dir = 4;
+	network = "tcommsat"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"oGw" = (
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"oJO" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"oRG" = (
+/obj/machinery/ntnet_relay,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"oWI" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/spooktime/cobble/roadmid,
+/area/eventmap/outside)
+"oWS" = (
+/obj/machinery/blackbox_recorder,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"pgq" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"phL" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/spooktime/cobble/roadsideS,
+/area/eventmap/outside)
+"plQ" = (
+/obj/machinery/telecomms/broadcaster/preset_left,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"poA" = (
 /obj/item/stack/sheet/glass/fifty{
 	amount = 10000;
 	max_amount = 10000
@@ -16627,121 +17211,155 @@
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"fNf" = (
+"pBf" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/power/apc/highcap/five_k{
+	areastring = "/area/tcommsat/server";
+	dir = 1;
+	name = "Telecomms Server APC";
+	pixel_y = 23
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"pEl" = (
+/obj/machinery/telecomms/bus/preset_two,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"pKB" = (
+/obj/structure/closet/emcloset,
+/obj/machinery/camera{
+	c_tag = "Telecomms Monitoring";
+	dir = 8;
+	network = list("tcomms")
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"pQA" = (
+/obj/machinery/telecomms/message_server,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"pTK" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"pVp" = (
 /obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/wood,
+/turf/open/floor/carpet,
 /area/eventmap/inside)
-"fWc" = (
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"gdO" = (
-/obj/structure/chair/sofa/left/brown{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"gge" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Server Room";
-	req_access_txt = "61"
-	},
-/obj/effect/turf_decal/tile/neutral{
+"pVB" = (
+/obj/machinery/light,
+/obj/machinery/computer/upload/ai{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"ggI" = (
-/obj/structure/chair/sofa/right/brown,
-/turf/open/floor/wood,
-/area/eventmap/mountaininside)
-"gyK" = (
-/obj/structure/sign/warning/nosmoking{
-	pixel_y = -32
-	},
-/obj/machinery/light,
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"gDt" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/tcommsat/computer)
-"gFF" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/machinery/gear_painter,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"gUR" = (
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"gXM" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/tcommsat/computer)
-"hbP" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = -2;
-	pixel_y = -1
-	},
 /turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"hJz" = (
+/area/eventmap/mountaininside)
+"pWs" = (
 /obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood,
 /area/eventmap/mountaininside)
-"hTY" = (
-/obj/machinery/power/smes{
-	charge = 5e+006
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
+"qaN" = (
+/obj/machinery/telecomms/server/presets/service,
+/turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"ifB" = (
-/obj/machinery/camera{
-	c_tag = "Telecomms Server Room";
-	dir = 4;
-	network = list("tcomms")
+"qby" = (
+/obj/machinery/telecomms/processor/preset_two,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"qip" = (
+/obj/item/radio/intercom{
+	dir = 8;
+	freerange = 1;
+	name = "Station Intercom (Telecomms)";
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"qpt" = (
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"ikH" = (
+"qtJ" = (
 /obj/machinery/telecomms/receiver/preset_right,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
-"inD" = (
-/obj/machinery/gear_painter,
-/turf/open/floor/carpet/blue,
-/area/eventmap/inside)
-"iul" = (
-/obj/machinery/light,
+"qtN" = (
+/obj/machinery/telecomms/server/presets/supply,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"qum" = (
 /turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"quJ" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"qHG" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/ore_silo,
+/turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"ivI" = (
+"rrJ" = (
+/obj/structure/chair/sofa/right/brown{
+	dir = 1
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken"
+	},
+/area/eventmap/inside)
+"rEG" = (
+/obj/machinery/telecomms/processor/preset_four,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"rGI" = (
+/obj/structure/closet/crate,
+/obj/item/clothing/head/pirate,
+/obj/item/clothing/head/santa,
+/obj/item/clothing/head/magus,
+/obj/item/clothing/head/mailman,
+/obj/item/clothing/head/griffin,
+/obj/item/clothing/head/bearpelt,
+/obj/item/clothing/head/beret,
+/obj/item/clothing/head/fedora,
+/obj/item/clothing/accessory/skullcodpiece,
+/obj/item/clothing/gloves/bracer,
+/obj/item/clothing/neck/devilwings,
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"rLv" = (
+/obj/machinery/blackbox_recorder,
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"rLQ" = (
 /obj/structure/table,
-/obj/item/multitool,
+/obj/item/folder/blue,
+/obj/item/pen/blue,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"rPA" = (
+/obj/structure/table,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -16752,17 +17370,8 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"ixQ" = (
-/obj/structure/chair/sofa/left/brown,
-/obj/item/flashlight/seclite,
-/turf/open/floor/carpet/red,
-/area/eventmap/mountaininside)
-"izw" = (
-/obj/machinery/telecomms/receiver/preset_left,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"iId" = (
+/area/tcommsat/computer)
+"rPC" = (
 /obj/machinery/computer/telecomms/server{
 	dir = 4;
 	network = "tcommsat"
@@ -16776,77 +17385,121 @@
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"iMH" = (
-/obj/structure/table,
-/obj/item/multitool,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
+"rTR" = (
+/obj/machinery/airalarm{
+	dir = 1;
+	pixel_y = -22
 	},
-/obj/effect/turf_decal/tile/yellow{
+/obj/machinery/light,
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"rTY" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"iQZ" = (
-/obj/machinery/telecomms/bus/preset_two,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"iUc" = (
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"iZC" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/eventmap/mountaininside)
-"iZX" = (
+"seB" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "0-8"
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/tcommsat/computer)
-"jey" = (
-/obj/structure/chair/sofa/left/brown{
-	dir = 1
-	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken7"
-	},
-/area/eventmap/inside)
-"jkX" = (
-/obj/machinery/telecomms/server/presets/supply,
-/turf/open/floor/plasteel/dark,
+"shW" = (
+/obj/machinery/ntnet_relay,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"siH" = (
+/obj/structure/chair/sofa/left/brown,
+/obj/item/flashlight/seclite,
+/turf/open/floor/carpet/red,
 /area/eventmap/mountaininside)
-"jrP" = (
-/obj/item/radio/intercom{
-	name = "Station Intercom (General)";
-	pixel_y = -35
+"skW" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plating,
 /area/eventmap/mountaininside)
-"jxE" = (
+"slI" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"soJ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/eventmap/mountaininside)
+"sqI" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/announcement_system,
+/turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"jMq" = (
-/obj/machinery/telecomms/bus/preset_two,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"jOE" = (
+"ssc" = (
+/obj/structure/chair/sofa/right/brown,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"ssu" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/eventmap/mountaininside)
+"szV" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"sDL" = (
+/obj/structure/sign/poster/contraband/yes_erp,
+/turf/closed/wall/mineral/wood,
+/area/eventmap/mountaininside)
+"sEi" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/eventmap/mountaininside)
+"sHB" = (
 /obj/machinery/computer/message_monitor{
 	dir = 4
 	},
@@ -16858,163 +17511,91 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"jUi" = (
-/obj/machinery/blackbox_recorder,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"jVL" = (
-/obj/machinery/telecomms/server/presets/security,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"jYz" = (
-/obj/structure/table,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"kdv" = (
-/obj/structure/chair/sofa/middle/brown,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"kmc" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Telecommunications";
-	req_access_txt = "61"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"kqb" = (
-/obj/machinery/telecomms/receiver/preset_left,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"kyB" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/eventmap/mountaininside)
-"kGe" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"kHg" = (
-/obj/machinery/status_display/evac,
-/turf/closed/wall,
-/area/tcommsat/computer)
-"kIo" = (
-/obj/structure/reagent_dispensers/keg/mead,
-/obj/structure/reagent_dispensers/beerkeg,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"kTQ" = (
-/obj/machinery/rnd/production/protolathe/department/science{
-	acted_explosions = "Dumbasses";
-	allowed_department_flags = 126;
-	name = "department protolathe (Dumb powergamers)"
-	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"kYs" = (
-/obj/machinery/telecomms/hub/preset,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark/telecomms,
-/area/eventmap/mountaininside)
-"loO" = (
-/obj/structure/closet/emcloset,
-/obj/machinery/camera{
-	c_tag = "Telecomms Monitoring";
-	dir = 8;
-	network = list("tcomms")
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"ltW" = (
-/obj/structure/closet/crate,
-/obj/item/clothing/head/pirate,
-/obj/item/clothing/head/santa,
-/obj/item/clothing/head/magus,
-/obj/item/clothing/head/mailman,
-/obj/item/clothing/head/griffin,
-/obj/item/clothing/head/bearpelt,
-/obj/item/clothing/head/beret,
-/obj/item/clothing/head/bowler,
-/obj/item/clothing/head/fedora,
-/obj/item/clothing/accessory/skullcodpiece,
-/obj/item/clothing/neck/devilwings,
-/obj/item/clothing/gloves/bracer,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"lux" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"lwL" = (
-/obj/structure/chair/sofa/left/brown{
-	dir = 1;
-	icon_state = "sofamiddle"
-	},
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"lxe" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"lDl" = (
-/obj/machinery/blackbox_recorder,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"lEe" = (
+"sNV" = (
 /obj/machinery/power/terminal{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
-"lFg" = (
-/obj/machinery/status_display/evac,
+"sOc" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"thR" = (
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'SERVER ROOM'.";
+	name = "SERVER ROOM"
+	},
 /turf/closed/wall,
 /area/eventmap/mountaininside)
-"lGQ" = (
-/obj/structure/chair/office/dark{
+"tmj" = (
+/obj/structure/closet/secure_closet/warden,
+/obj/item/gun/ballistic/shotgun/automatic/combat/warden,
+/obj/item/gun/energy/pumpaction/defender,
+/obj/item/clothing/under/rank/security/warden/formal,
+/turf/open/floor/plasteel{
+	icon_state = "sepia"
+	},
+/area/eventmap/inside)
+"tvW" = (
+/obj/machinery/telecomms/bus/preset_three,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"tFJ" = (
+/obj/structure/sign/poster/contraband/yes_erp,
+/turf/closed/wall/mineral/wood,
+/area/eventmap/inside)
+"tZO" = (
+/obj/machinery/telecomms/processor/preset_three,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"ule" = (
+/obj/machinery/telecomms/server/presets/medical,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"uor" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"urX" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 6
-	},
+/turf/open/floor/plasteel/dark,
+/area/tcommsat/computer)
+"uHz" = (
+/obj/item/disk/tech_disk/debug,
+/turf/open/floor/plasteel,
+/area/eventmap/mountaininside)
+"uLt" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"lKS" = (
+"uMI" = (
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -17023,34 +17604,11 @@
 /obj/item/pen/fountain,
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"lMv" = (
-/obj/machinery/telecomms/bus/preset_three,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"lRI" = (
-/obj/structure/closet/crate,
-/obj/item/clothing/head/pirate,
-/obj/item/clothing/head/santa,
-/obj/item/clothing/head/magus,
-/obj/item/clothing/head/mailman,
-/obj/item/clothing/head/griffin,
-/obj/item/clothing/head/bearpelt,
-/obj/item/clothing/head/beret,
-/obj/item/clothing/head/fedora,
-/obj/item/clothing/accessory/skullcodpiece,
-/obj/item/clothing/gloves/bracer,
-/obj/item/clothing/neck/devilwings,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"lSL" = (
-/obj/machinery/telecomms/message_server,
+"uQA" = (
+/obj/machinery/telecomms/broadcaster/preset_left,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"lZK" = (
-/obj/machinery/telecomms/bus/preset_one,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"mbG" = (
+"uTl" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -17060,381 +17618,52 @@
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"mfM" = (
-/obj/machinery/telecomms/bus/preset_one,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"mMd" = (
-/obj/structure/dresser,
-/turf/open/floor/spooktime/dirtpatch,
-/area/eventmap/inside)
-"mTo" = (
-/obj/item/aiModule/reset/purge,
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"nHG" = (
-/obj/machinery/light_switch{
-	pixel_x = 27
+"uWX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"nLu" = (
-/obj/structure/chair/sofa/middle/brown,
-/turf/open/floor/carpet/red,
-/area/eventmap/mountaininside)
-"nOf" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"nOg" = (
-/obj/structure/cable/white{
-	icon_state = "1-2"
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
-/obj/effect/turf_decal/delivery,
-/turf/open/floor/plasteel,
+/turf/open/floor/plating,
+/area/eventmap/mountaininside)
+"vAI" = (
+/obj/structure/sign/poster/contraband/yes_erp,
+/turf/closed/wall/rust,
+/area/eventmap/mountaininside)
+"vCn" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/carpet/blue,
 /area/eventmap/inside)
-"oar" = (
+"vFr" = (
 /obj/machinery/light_switch{
 	pixel_x = 27
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
-"oaF" = (
-/obj/structure/chair/sofa/left/brown,
-/turf/open/floor/wood,
-/area/eventmap/mountaininside)
-"oea" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plating,
-/area/tcommsat/computer)
-"ogu" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/eventmap/mountaininside)
-"omu" = (
-/obj/structure/closet/secure_closet/warden,
-/obj/item/gun/ballistic/shotgun/automatic/combat/warden,
-/obj/item/gun/energy/pumpaction/defender,
-/obj/item/clothing/under/rank/security/warden/formal,
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
-/area/eventmap/inside)
-"omB" = (
-/obj/item/radio/intercom{
-	dir = 8;
-	freerange = 1;
-	name = "Station Intercom (Telecomms)";
-	pixel_y = 26
-	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"oJv" = (
-/obj/machinery/computer/telecomms/monitor{
-	dir = 4;
-	network = "tcommsat"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"oJz" = (
-/obj/machinery/telecomms/processor/preset_three,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"oPw" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"oVc" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Control Room";
-	req_access_txt = "19; 61"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"oVL" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Server Room";
-	req_access_txt = "61"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/tcommsat/computer)
-"oWI" = (
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/spooktime/cobble/roadmid,
-/area/eventmap/outside)
-"phL" = (
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/spooktime/cobble/roadsideS,
-/area/eventmap/outside)
-"pmJ" = (
-/obj/machinery/telecomms/processor/preset_one,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"puu" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/tcommsat/computer)
-"pEj" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/eventmap/mountaininside)
-"pEr" = (
-/obj/machinery/telecomms/broadcaster/preset_left,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"pFQ" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
+"vMn" = (
+/obj/machinery/telecomms/bus/preset_two,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"pHC" = (
-/obj/item/radio/intercom{
-	dir = 8;
-	freerange = 1;
-	name = "Station Intercom (Telecomms)";
-	pixel_y = 26
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"pOP" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/tcommsat/computer)
-"pPF" = (
-/obj/machinery/telecomms/server/presets/medical,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"pYp" = (
-/obj/structure/chair/sofa/middle/brown{
-	dir = 4
-	},
-/turf/open/floor/carpet,
-/area/eventmap/inside)
-"qfN" = (
-/obj/machinery/telecomms/server/presets/security,
+"wmo" = (
+/obj/machinery/telecomms/server/presets/command,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"qiG" = (
-/obj/structure/chair/sofa/left/brown{
-	dir = 4
-	},
-/turf/open/floor/carpet,
-/area/eventmap/inside)
-"qAd" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"qAO" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/tcommsat/computer)
-"qEe" = (
-/obj/machinery/telecomms/broadcaster/preset_right,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"qMC" = (
-/obj/machinery/ntnet_relay,
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"qNg" = (
-/obj/machinery/airalarm{
-	dir = 1;
-	pixel_y = -22
-	},
-/obj/machinery/light,
-/obj/structure/filingcabinet/chestdrawer,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"qRu" = (
-/obj/structure/chair/sofa/right/brown,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"qTk" = (
-/obj/item/paper/crumpled/bloody{
-	name = "ominous note";
-	default_raw_text = "You're not supposed to be here."
+"wmM" = (
+/obj/machinery/light_switch{
+	pixel_x = 27
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"qXe" = (
-/obj/machinery/requests_console{
-	announcementConsole = 1;
-	department = "Telecomms Admin";
-	departmentType = 5;
-	name = "Telecomms RC";
-	pixel_x = 30
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"rgb" = (
-/obj/machinery/telecomms/receiver/preset_right,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"rjM" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"rzA" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/eventmap/mountaininside)
-"rPN" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/holopad/secure,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"slC" = (
-/obj/machinery/telecomms/processor/preset_one,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"snk" = (
-/obj/structure/chair/sofa/right/brown{
-	dir = 1
-	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken2"
-	},
-/area/eventmap/inside)
-"soD" = (
-/turf/closed/wall/r_wall,
-/area/tcommsat/server)
-"sqt" = (
-/obj/machinery/telecomms/server/presets/science,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"ssc" = (
-/obj/machinery/telecomms/server/presets/service,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"ssk" = (
-/obj/structure/chair/sofa/left/brown{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"sDL" = (
-/obj/structure/sign/poster/contraband/yes_erp,
-/turf/closed/wall/mineral/wood,
-/area/eventmap/mountaininside)
-"taI" = (
-/obj/item/radio/intercom{
-	name = "Station Intercom (General)";
-	pixel_y = -35
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1
-	},
-/obj/effect/landmark/event_spawn,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"tmA" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/tcommsat/computer)
-"tnY" = (
-/obj/machinery/computer/telecomms/monitor{
-	dir = 4;
-	network = "tcommsat"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
+"wtL" = (
+/obj/structure/chair/office/dark{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
-"toe" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/eventmap/mountaininside)
-"ttz" = (
-/obj/structure/sign/warning/securearea{
-	desc = "A warning sign which reads 'SERVER ROOM'.";
-	name = "SERVER ROOM"
-	},
-/turf/closed/wall,
-/area/eventmap/mountaininside)
-"tvG" = (
-/obj/effect/landmark/start/ai,
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"tFJ" = (
-/obj/structure/sign/poster/contraband/yes_erp,
-/turf/closed/wall/mineral/wood,
-/area/eventmap/inside)
-"tHE" = (
+"wIt" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -17446,36 +17675,42 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
-/area/eventmap/mountaininside)
-"uby" = (
-/obj/effect/spawner/structure/window/reinforced,
+/area/tcommsat/computer)
+"wLa" = (
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "1-8"
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/tcommsat/server)
+"wSe" = (
+/obj/machinery/status_display/evac,
+/turf/closed/wall,
+/area/eventmap/mountaininside)
+"xjq" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/eventmap/mountaininside)
-"uIG" = (
+"xFU" = (
+/obj/structure/chair/sofa/left/brown,
+/turf/open/floor/wood,
+/area/eventmap/mountaininside)
+"xGZ" = (
 /obj/machinery/telecomms/server/presets/engineering,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"xSP" = (
+/obj/machinery/telecomms/receiver/preset_left,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"xTd" = (
+/obj/machinery/telecomms/broadcaster/preset_right,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
-"uKI" = (
-/obj/machinery/light/small,
-/obj/structure/chair/sofa/left/brown{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"uPp" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Server Room";
-	req_access_txt = "61"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
+"yaq" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -17487,33 +17722,30 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"uPu" = (
-/obj/structure/chair/sofa/left/brown,
-/obj/item/toy/cards/deck/cas/black,
-/turf/open/floor/spooktime/dirtpatch,
-/area/eventmap/mountain)
-"uPG" = (
-/obj/machinery/telecomms/processor/preset_two,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"uRz" = (
-/obj/machinery/telecomms/server/presets/service,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"veF" = (
-/obj/machinery/telecomms/bus/preset_four,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"vfs" = (
-/obj/structure/chair/sofa/right/brown{
+/area/tcommsat/computer)
+"ybE" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/tcommsat/computer)
+"yca" = (
+/obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/eventmap/mountaininside)
+"ydW" = (
+/obj/structure/reagent_dispensers/keg/mead,
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/open/floor/wood,
 /area/eventmap/inside)
-"vid" = (
+"yfc" = (
+/obj/structure/sign/poster/contraband/yes_erp,
+/turf/closed/wall/r_wall,
+/area/eventmap/inside)
+"ylg" = (
 /obj/machinery/telecomms/hub/preset,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -17527,231 +17759,6 @@
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"viT" = (
-/obj/machinery/telecomms/processor/preset_three,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"vmn" = (
-/obj/machinery/modular_computer/console/preset/id{
-	dir = 8
-	},
-/obj/structure/cable/white{
-	icon_state = "2-8"
-	},
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"vpc" = (
-/obj/structure/chair/sofa/left/brown,
-/obj/effect/landmark/start/assistant,
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"vrG" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"vAI" = (
-/obj/structure/sign/poster/contraband/yes_erp,
-/turf/closed/wall/rust,
-/area/eventmap/mountaininside)
-"vKK" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/tcommsat/computer)
-"vTs" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/eventmap/mountaininside)
-"vZd" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"wdx" = (
-/obj/structure/chair/sofa/right/brown{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"wkf" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/eventmap/mountaininside)
-"wmG" = (
-/obj/machinery/telecomms/broadcaster/preset_right,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"wnq" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"wnY" = (
-/obj/machinery/gear_painter,
-/turf/open/floor/circuit/off,
-/area/eventmap/mountaininside)
-"woq" = (
-/obj/machinery/camera{
-	c_tag = "Telecomms Monitoring";
-	dir = 8;
-	network = list("tcomms")
-	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"wzt" = (
-/obj/machinery/telecomms/processor/preset_four,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"wFG" = (
-/obj/machinery/ntnet_relay,
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/eventmap/mountaininside)
-"wUN" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/eventmap/mountaininside)
-"wWs" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"xdh" = (
-/obj/structure/chair/sofa/middle/brown,
-/obj/item/toy/cards/deck/syndicate,
-/turf/open/floor/spooktime/dirtpatch,
-/area/eventmap/mountain)
-"xdq" = (
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"xdL" = (
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"xeH" = (
-/obj/machinery/computer/rdconsole/core{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"xjL" = (
-/obj/structure/sign/warning/securearea{
-	desc = "A warning sign which reads 'SERVER ROOM'.";
-	name = "SERVER ROOM"
-	},
-/turf/closed/wall,
-/area/tcommsat/computer)
-"xoF" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/announcement_system,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"xoG" = (
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/eventmap/mountaininside)
-"xoH" = (
-/obj/structure/chair/sofa/right/brown{
-	dir = 4
-	},
-/turf/open/floor/carpet,
-/area/eventmap/inside)
-"xpg" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Server Room";
-	req_access_txt = "61"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/tcommsat/computer)
-"xCX" = (
-/obj/machinery/requests_console{
-	announcementConsole = 1;
-	department = "Telecomms Admin";
-	departmentType = 5;
-	name = "Telecomms RC";
-	pixel_x = 30
-	},
-/turf/open/floor/plasteel,
-/area/eventmap/mountaininside)
-"xDt" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"xFu" = (
-/obj/machinery/telecomms/server/presets/common,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"xLN" = (
-/obj/machinery/telecomms/bus/preset_three,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"xUL" = (
-/obj/machinery/modular_computer/console/preset/id{
-	dir = 4
-	},
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/white{
-	icon_state = "1-4"
-	},
-/turf/open/floor/wood,
-/area/eventmap/inside)
-"xVC" = (
-/obj/structure/table,
-/obj/item/folder/blue,
-/obj/item/pen/blue,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"ybJ" = (
-/obj/machinery/telecomms/message_server,
-/turf/open/floor/plasteel/dark,
-/area/eventmap/mountaininside)
-"yfc" = (
-/obj/structure/sign/poster/contraband/yes_erp,
-/turf/closed/wall/r_wall,
-/area/eventmap/inside)
 
 (1,1,1) = {"
 aJx
@@ -20700,7 +20707,7 @@ aNP
 aOh
 afw
 aac
-eTP
+lEV
 ags
 bdy
 aTC
@@ -20957,7 +20964,7 @@ aNQ
 aOi
 afw
 aac
-xdh
+kpr
 ags
 bdy
 aMn
@@ -21214,7 +21221,7 @@ aNQ
 aOm
 afw
 bdI
-uPu
+kzI
 ags
 bdz
 bdh
@@ -23605,7 +23612,7 @@ ags
 ags
 aac
 aVZ
-ggI
+gpB
 aMp
 aAQ
 aMp
@@ -23862,7 +23869,7 @@ aac
 ags
 aac
 aQg
-oaF
+xFU
 aMp
 aMp
 aMp
@@ -29208,7 +29215,7 @@ aOE
 aOE
 aOE
 aqr
-omu
+tmj
 aNu
 aNu
 aNu
@@ -33131,8 +33138,8 @@ aUY
 aGh
 aCG
 aZt
-bLr
-bLr
+gBR
+gBR
 aUW
 aCG
 aGh
@@ -34678,7 +34685,7 @@ aJe
 aZt
 aCG
 aGh
-wnY
+lbv
 aZt
 aZt
 aZt
@@ -34935,7 +34942,7 @@ aZt
 aZt
 aCG
 aGh
-wnY
+lbv
 aZt
 aUW
 aZt
@@ -37173,13 +37180,13 @@ auU
 auU
 aqr
 aOE
-lRI
+rGI
 aye
 aOE
 aOE
 aqr
 aqv
-ltW
+jNj
 aQM
 aOE
 aOE
@@ -37673,13 +37680,13 @@ akg
 aFF
 abJ
 aqH
-qiG
-pYp
-xoH
+cwt
+mFq
+pVp
 aqH
-qiG
-pYp
-xoH
+cwt
+mFq
+pVp
 aqH
 aqr
 azR
@@ -37688,13 +37695,13 @@ aBV
 aqr
 afU
 aSe
-gFF
+mlr
 aOE
 acP
 aqr
 acS
 afU
-gFF
+mlr
 aOE
 acP
 aqr
@@ -38205,9 +38212,9 @@ aFt
 aLC
 aLC
 bey
-gdO
-ddo
-fNf
+lvc
+dHo
+evV
 beF
 beG
 aOE
@@ -38461,7 +38468,7 @@ bfA
 bfA
 bfC
 bfC
-qRu
+ssc
 bfA
 bfA
 bfA
@@ -38718,7 +38725,7 @@ abJ
 abJ
 aOE
 aOE
-kdv
+lyw
 abJ
 abJ
 abJ
@@ -38975,7 +38982,7 @@ aOE
 aOE
 aOE
 aOE
-vpc
+icU
 abJ
 abJ
 abJ
@@ -40481,14 +40488,14 @@ aDI
 aiZ
 akz
 aon
-vmn
+bSe
 aHT
 aHT
 arA
 aHT
 avv
 aHT
-xUL
+iWJ
 aDI
 aEB
 aqr
@@ -40700,7 +40707,7 @@ aaN
 aaN
 aaN
 aqr
-bLp
+kTK
 aOE
 aOE
 aOE
@@ -40957,7 +40964,7 @@ aaN
 aaN
 aaN
 aqr
-kdv
+lyw
 aOE
 aOE
 aOE
@@ -41214,7 +41221,7 @@ aaN
 aaN
 aaN
 aqr
-faU
+nIA
 aOE
 aOE
 aOE
@@ -42550,7 +42557,7 @@ aqE
 aqE
 aqE
 aIK
-inD
+vCn
 aqr
 agN
 aOE
@@ -46936,7 +46943,7 @@ axQ
 aLC
 aAz
 aqr
-kIo
+ydW
 beH
 abZ
 aqr
@@ -47122,7 +47129,7 @@ aaN
 aaN
 aaN
 aqr
-kIo
+ydW
 aOE
 aaz
 aqr
@@ -50416,7 +50423,7 @@ ags
 aac
 aac
 aED
-ggI
+gpB
 alw
 aMp
 aVD
@@ -50673,7 +50680,7 @@ aac
 aac
 aac
 aED
-hJz
+pWs
 alQ
 aMp
 aMp
@@ -50930,7 +50937,7 @@ aac
 aac
 aac
 aED
-oaF
+xFU
 arl
 aCE
 aMp
@@ -51755,10 +51762,10 @@ aqr
 aqr
 aqr
 aqr
-bLp
+kTK
 aby
 aby
-uKI
+nDd
 aqr
 aqr
 aqr
@@ -51786,7 +51793,7 @@ aab
 aqr
 adm
 aFF
-jey
+fSL
 aqr
 aeO
 afm
@@ -52012,10 +52019,10 @@ aaN
 aaN
 aaN
 aar
-kdv
+lyw
 aby
 aby
-lwL
+mFZ
 aar
 aaN
 aaN
@@ -52043,7 +52050,7 @@ aab
 aqr
 ado
 adJ
-snk
+mCa
 aqr
 aqv
 aOE
@@ -52269,10 +52276,10 @@ aaN
 aaN
 aaN
 aar
-faU
+nIA
 aby
 aby
-wdx
+jqq
 aar
 aaN
 aaN
@@ -61309,7 +61316,7 @@ aii
 aii
 adN
 aOE
-vfs
+rrJ
 aqr
 akg
 akw
@@ -61566,7 +61573,7 @@ aii
 aij
 aiN
 aOE
-lwL
+mFZ
 aqr
 akh
 akx
@@ -61823,7 +61830,7 @@ ahS
 aii
 aOE
 aqv
-ssk
+mJX
 aqr
 aOE
 aky
@@ -67362,7 +67369,7 @@ aac
 aac
 aac
 aED
-ggI
+gpB
 aJw
 aMp
 aEr
@@ -67619,7 +67626,7 @@ aac
 aac
 aac
 aED
-hJz
+pWs
 aMp
 aMp
 aYw
@@ -67876,7 +67883,7 @@ aac
 aac
 aac
 aED
-oaF
+xFU
 aXQ
 aCE
 aMp
@@ -79623,7 +79630,7 @@ aFw
 aPT
 aQI
 aZA
-eng
+cyO
 aSP
 aZA
 aZA
@@ -79880,7 +79887,7 @@ aFw
 aFw
 aQI
 aME
-nLu
+iLF
 aME
 aRe
 aZA
@@ -79932,32 +79939,32 @@ aac
 aac
 aac
 aac
-soD
-soD
-soD
-soD
-soD
-soD
-soD
-soD
-soD
-soD
-soD
+mVp
+mVp
+mVp
+mVp
+mVp
+mVp
+mVp
+mVp
+mVp
+mVp
+mVp
 aac
 aac
 aJx
 "}
 (243,1,1) = {"
 azQ
-xoG
-xoG
-fWc
-fWc
-wFG
-cAj
-fWc
-xoG
-xoG
+kmG
+kmG
+oGw
+oGw
+oRG
+cuO
+oGw
+kmG
+kmG
 azQ
 aJx
 aJx
@@ -80137,7 +80144,7 @@ aIT
 aFw
 aZA
 aME
-ixQ
+siH
 aME
 aME
 aZA
@@ -80189,32 +80196,32 @@ aac
 aac
 aac
 aac
-soD
-xdq
-xdq
-gUR
-gUR
-qMC
-ifB
-gUR
-xdq
-xdq
-soD
+mVp
+qum
+qum
+fhE
+fhE
+shW
+lNQ
+fhE
+qum
+qum
+mVp
 aac
 aac
 aJx
 "}
 (244,1,1) = {"
 azQ
-uIG
-xFu
-jUi
-fWc
-boV
-lEe
-ybJ
-jkX
-uRz
+jcg
+juL
+rLv
+oGw
+mKy
+sNV
+kbX
+lOl
+icE
 azQ
 aJx
 aJx
@@ -80446,32 +80453,32 @@ aac
 aac
 aac
 aac
-soD
-fzx
-deh
-lDl
-gUR
-hTY
-pFQ
-lSL
-cTz
-ssc
-soD
+mVp
+xGZ
+mlZ
+oWS
+fhE
+nos
+quJ
+pQA
+qtN
+qaN
+mVp
 aac
 aac
 aJx
 "}
 (245,1,1) = {"
 azQ
-fEn
-fvE
-qEe
-wUN
-toe
-xoG
-pEr
-iQZ
-cGy
+btp
+lik
+xTd
+hCa
+pTK
+kmG
+plQ
+pEl
+fQA
 azQ
 aJx
 aJx
@@ -80703,32 +80710,32 @@ aac
 aac
 aac
 aac
-soD
-veF
-wzt
-wmG
-dHv
-vZd
-xdq
-ccB
-jMq
-uPG
-soD
+mVp
+dqE
+rEG
+ecx
+sOc
+dZe
+qum
+uQA
+vMn
+qby
+mVp
 aac
 aac
 aJx
 "}
 (246,1,1) = {"
 azQ
-wkf
-ejn
-ejn
-iZC
-kYs
-xoG
-xoG
-xoG
-iul
+yca
+jKh
+jKh
+uor
+hpu
+kmG
+kmG
+kmG
+ebT
 azQ
 aJx
 aJx
@@ -80960,32 +80967,32 @@ aac
 aac
 ags
 ags
-soD
-fBr
-cVs
-cVs
-oPw
-vid
-xdq
-xdq
-xdq
-gyK
-soD
+mVp
+pBf
+gmr
+gmr
+wLa
+ylg
+qum
+qum
+qum
+nnd
+mVp
 aac
 aac
 aJx
 "}
 (247,1,1) = {"
 azQ
-oJz
-lMv
-ikH
-ckG
-xoG
-xoG
-kqb
-pmJ
-mfM
+kNG
+lqc
+qtJ
+eBJ
+kmG
+kmG
+gUW
+crB
+jbR
 azQ
 aJx
 aJx
@@ -81217,32 +81224,32 @@ ags
 ags
 ags
 aac
-soD
-viT
-xLN
-rgb
-eBl
-xdq
-xdq
-izw
-slC
-lZK
-soD
+mVp
+tZO
+tvW
+bhv
+csx
+qum
+qum
+xSP
+bFP
+cmZ
+mVp
 aac
 aac
 aJx
 "}
 (248,1,1) = {"
 azQ
-jVL
-bHc
-fWc
-qAd
-xoG
-fWc
-fWc
-pPF
-btl
+jav
+gbD
+oGw
+nqu
+kmG
+oGw
+oGw
+fng
+kqV
 azQ
 aJx
 aJx
@@ -81474,32 +81481,32 @@ ags
 aac
 aac
 aac
-soD
-qfN
-bAM
-gUR
-kGe
-xdq
-gUR
-gUR
-eEb
-sqt
-soD
+mVp
+gex
+wmo
+fhE
+qpt
+qum
+fhE
+fhE
+ule
+dWo
+mVp
 aac
 aac
 aJx
 "}
 (249,1,1) = {"
 azQ
-xoG
-xoG
-fWc
-tHE
-uPp
-vTs
-fWc
-xoG
-xoG
+kmG
+kmG
+oGw
+ssu
+sEi
+ges
+oGw
+kmG
+kmG
 azQ
 aJx
 aJx
@@ -81731,32 +81738,32 @@ aac
 aac
 aac
 aac
-soD
-xdq
-xdq
-gUR
-vKK
-xpg
-eYi
-gUR
-xdq
-xdq
-soD
+mVp
+qum
+qum
+fhE
+wIt
+urX
+eHU
+fhE
+qum
+qum
+mVp
 aac
 aac
 aJx
 "}
 (250,1,1) = {"
 azQ
-uby
-ogu
-ogu
-pEj
-lux
-rzA
-ogu
-ogu
-kyB
+skW
+ilL
+ilL
+soJ
+oJO
+uWX
+ilL
+ilL
+xjq
 azQ
 aJx
 aJx
@@ -81988,32 +81995,32 @@ aac
 aac
 aac
 aac
-eRn
-dvP
-iZX
-iZX
-pOP
-qAO
-puu
-iZX
-iZX
-gXM
-eRn
+nlN
+ifZ
+cVJ
+cVJ
+seB
+yaq
+hAK
+cVJ
+cVJ
+nkn
+nlN
 aac
 aac
 aJx
 "}
 (251,1,1) = {"
 azQ
-bxC
-ckS
-iId
-lFg
-gge
-ttz
-ivI
-tnY
-mbG
+qHG
+gWd
+rPC
+wSe
+lKy
+thR
+fKJ
+dxc
+uTl
 azQ
 aJx
 aJx
@@ -82245,32 +82252,32 @@ aac
 aac
 aac
 aac
-eRn
-jYz
-jOE
-eWz
-kHg
-oVL
-xjL
-iMH
-oJv
-fiz
-eRn
+nlN
+rPA
+sHB
+kiH
+kxS
+kQy
+dlJ
+kID
+oCI
+dBp
+nlN
 aac
 aac
 aJx
 "}
 (252,1,1) = {"
 azQ
-omB
-epP
+kdr
+wtL
 aZA
 aZA
-vrG
+slI
 aZA
 aZA
-epP
-jrP
+wtL
+gLx
 azQ
 aJx
 aJx
@@ -82502,32 +82509,32 @@ aac
 aac
 aac
 aac
-eRn
-pHC
-iUc
-xDt
-gDt
-jxE
-xdL
-rjM
-lGQ
-taI
-eRn
+nlN
+qip
+pgq
+rTY
+ybE
+fIW
+eJv
+gSx
+szV
+dwm
+nlN
 aac
 aac
 aJx
 "}
 (253,1,1) = {"
 azQ
-fpt
+gnA
 aZA
-bhi
+uHz
 aZA
 aZA
-qTk
+bAy
 aZA
-czA
-bzP
+mjq
+pVB
 azQ
 aJx
 aJx
@@ -82759,32 +82766,32 @@ aac
 aac
 aac
 aac
-eRn
-xoF
-rjM
-fzG
-oVc
-wnq
-rPN
-wWs
-nOf
-qNg
-eRn
+nlN
+sqI
+gSx
+mXR
+bma
+uLt
+nlX
+gmp
+bzR
+rTR
+nlN
 aac
 aac
 aJx
 "}
 (254,1,1) = {"
 azQ
-kTQ
-fJd
-xeH
+dcr
+poA
+bLX
 aZA
-woq
-xCX
-nHG
-mTo
-tvG
+jLp
+bUn
+wmM
+epS
+edq
 azQ
 aJx
 aJx
@@ -83016,17 +83023,17 @@ aac
 aac
 aac
 aac
-eRn
-eRn
-lKS
-xVC
-oea
-loO
-qXe
-oar
-lxe
-hbP
-eRn
+nlN
+nlN
+uMI
+rLQ
+bqo
+pKB
+hdU
+vFr
+lAU
+kKG
+nlN
 aac
 aac
 aJx
@@ -83273,17 +83280,17 @@ aJx
 aJx
 aJx
 aJx
-bLP
-eRn
-eRn
-eRn
-eRn
-eRn
-eRn
-tmA
-kmc
-eRn
-eRn
+njc
+nlN
+nlN
+nlN
+nlN
+nlN
+nlN
+dmn
+bRw
+nlN
+nlN
 aJx
 aJx
 aJx
