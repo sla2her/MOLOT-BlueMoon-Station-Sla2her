@@ -16369,13 +16369,6 @@
 	name = "ominous note";
 	default_raw_text = "You're not supposed to be here."
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/item/paper/crumpled/bloody{
-	name = "ominous note";
-	info = "You're not supposed to be here."
-	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
 "bFP" = (

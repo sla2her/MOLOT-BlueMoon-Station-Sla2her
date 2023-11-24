@@ -55027,10 +55027,6 @@
 "mMW" = (
 /obj/machinery/photocopier,
 /obj/effect/turf_decal/bot,
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/photocopier,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
