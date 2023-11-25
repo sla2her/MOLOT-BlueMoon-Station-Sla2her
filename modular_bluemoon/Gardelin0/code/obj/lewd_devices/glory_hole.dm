@@ -5,14 +5,14 @@
 	icon_state = "gloryhole"
 	var/over_state = "nothing"
 	var/restrains = 0
-	var/self_unbuckle_time = 5 MINUTES
+	var/self_unbuckle_time = 2 MINUTES
 	var/aphrodisiac
 	var/obj/item/letter //Any papers pinned to the gloryhole
 	var/obj/item/picture //Any photos pinned to the gloryhole
 	var/overlays_file = 'modular_bluemoon/Gardelin0/icons/obj/lewd_devices.dmi'
 	var/static/list/gloryhole_overlays = list()
 	anchored = 1
-	dir = 0
+	dir = 2
 	item_chair = null // нельзя брать в руки
 
 /obj/structure/chair/gloryhole/Destroy()
@@ -42,8 +42,6 @@
 
 	if(has_buckled_mobs())
 		state_overlay = get_gloryhole_overlay("[icon_state]_[over_state]", overlays_file)
-	else
-		state_overlay = get_gloryhole_overlay("[icon_state]_nothing", overlays_file)
 
 	if(letter)
 		letter_overlay = get_gloryhole_overlay(letter_type, overlays_file)
@@ -118,24 +116,27 @@
 		for(var/m in buckled_mobs)
 			var/mob/living/carbon/human/M = m
 			switch(over_state)
+				if("nothing")
+					over_state = "over"
+					M.dir = 2
 				if("over")
 					over_state = "b_over"
-					M.dir = 0
+					M.dir = 2
 				if("b_over")
 					over_state = "o_over"
-					M.dir = 0
+					M.dir = 2
 				if("o_over")
 					over_state = "ob_over"
-					M.dir = 0
+					M.dir = 2
 				if("ob_over")
 					over_state = "all_over"
-					M.dir = 0
+					M.dir = 2
 				if("all_over")
 					over_state = "bb_over"
 					M.dir = 1
 				if("bb_over")
 					over_state = "over"
-					M.dir = 0
+					M.dir = 2
 
 		to_chat(usr, "Доступные дырочки изменены.")
 		update_icon()
@@ -187,14 +188,14 @@
 /obj/structure/chair/gloryhole/proc/handle_unbuckling(mob/living/buckled_mob, user)
 	if(buckled_mob == user)
 		if(restrains)
-			var/input = input(usr,"Вы уверены что хотите попытаться слезть сами? Это займёт более 5 минут и имеет шанс недуачи!") as null|anything in list("Да", "Нет")
+			var/input = input(usr,"Вы уверены что хотите попытаться слезть сами? Это займёт более 2 минут и имеет шанс неудачи!") as null|anything in list("Да", "Нет")
 			if(input == "Да")
 				if(do_after(user, self_unbuckle_time, src))
-					if(prob(50))
-						return TRUE
-					else
+					if(prob(30))
 						to_chat(usr, "Не получилось!")
 						return FALSE
+					else
+						return TRUE
 				else
 					return FALSE
 			else
@@ -205,6 +206,9 @@
 
 /obj/structure/chair/gloryhole/MouseDrop_T(mob/living/M, mob/living/user)
 	if(istype(M))
+		if(!iscarbon(M)) //No cleanbot fucking - no fun allowed!
+			to_chat(usr, "Не помещается!")
+			return
 		if(get_turf(M) != get_turf(src) && user.stat == CONSCIOUS)
 			var/message = M == user ? "[M] climbs in the [src]." : "[user] puts [M] in the [src]."
 			var/self_message = M == user ? "You climb in the [src]." : "You put [M] in the [src]."
@@ -221,9 +225,11 @@
 	set category = "Object"
 	set src in oview(1)
 	if(has_buckled_mobs())
+		if(!isliving(usr)) //no ghosts allowed
+			return
 		for(var/m in buckled_mobs)
 			var/mob/living/carbon/human/M = m
-			var/input = input(usr,"Change intensity mode") as null|anything in list("crocin", "hexacrocin")
+			var/input = input(usr,"Какой афродизиак ввести?") as null|anything in list("crocin", "hexacrocin")
 			if(M == usr)
 				to_chat(usr, "Не дотянуться до кнопки!")
 				return
@@ -300,40 +306,5 @@
 				to_chat(user, span_notice("You assemble it."))
 				new /obj/structure/chair/gloryhole (src.loc)
 				qdel(src)
-	else
-		return ..()
-
-/obj/structure/chair/gloryhole/wooden
-	icon_state = "gloryholew"
-
-/obj/structure/chair/gloryhole/wooden/attackby(obj/item/used_item, mob/user, params)
-	if(istype(used_item, /obj/item/screwdriver))
-		to_chat(user, span_notice("You unscrew the frame and begin to deconstruct it..."))
-		if(used_item.use_tool(src, user, 8 SECONDS, volume = 50))
-			to_chat(user, span_notice("You disassemble it."))
-			new /obj/item/gloryhole_kit_w (src.loc)
-			qdel(src)
-	else
-		return ..()
-
-/obj/item/gloryhole_kit_w
-	name = "gloryhole construction kit (wooden)"
-	desc = "Construction requires a screwdriver. Put it on the ground first!"
-	icon = 'modular_bluemoon/Gardelin0/icons/obj/lewd_devices.dmi'
-	icon_state = "kit"
-	throwforce = 0
-	var/unwrapped = 0
-	w_class = WEIGHT_CLASS_HUGE
-
-/obj/item/gloryhole_kit_w/attackby(obj/item/used_item, mob/user, params) //constructing a bed here.
-	add_fingerprint(user)
-	if(istype(used_item, /obj/item/screwdriver))
-		if (!(item_flags & IN_INVENTORY) && !(item_flags & IN_STORAGE))
-			to_chat(user, span_notice("You screw the frame to the floor and begin to construct it..."))
-			if(used_item.use_tool(src, user, 8 SECONDS, volume = 50))
-				to_chat(user, span_notice("You assemble it."))
-				new /obj/structure/chair/gloryhole/wooden (src.loc)
-				qdel(src)
-			return
 	else
 		return ..()
