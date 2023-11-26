@@ -18,7 +18,7 @@ SUBSYSTEM_DEF(machines)
 /datum/controller/subsystem/machines/Initialize()
 	makepowernets()
 	fire()
-	return SS_INIT_SUCCESS
+	return ..()
 
 /// Registers a machine with the machine subsystem; should only be called by the machine itself during its creation.
 /datum/controller/subsystem/machines/proc/register_machine(obj/machinery/machine)
