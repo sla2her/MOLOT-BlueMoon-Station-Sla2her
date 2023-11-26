@@ -6931,7 +6931,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /obj/machinery/fax{
 	fax_name = "Unknown Syndicate Fax";
-	name = "DS-2 Fax Machine"
+	name = "DS-2 Fax Machine";
+	syndicate_network = 1
 	},
 /turf/open/floor/iron/dark/textured_half,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge)
