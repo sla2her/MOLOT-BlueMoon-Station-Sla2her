@@ -1,4 +1,4 @@
-import { useBackend } from "../../backend";
+import { useBackend } from "../../paracode_backend";
 import { Box, Button, Dropdown, Flex, Input, Modal } from '../../components';
 
 let bodyOverrides = {};
