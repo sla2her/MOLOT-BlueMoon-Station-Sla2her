@@ -207,7 +207,6 @@ class NanoButton extends Component {
         position="absolute"
         className="NanoMap__button"
         lineHeight="0"
-
         color={this.props.status ? this.state.color : "red"}
         bottom={ry + "px"}
         left={rx + "px"}>
