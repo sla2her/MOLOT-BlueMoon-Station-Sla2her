@@ -52902,7 +52902,7 @@
 /obj/item/clothing/mask/fakemoustache,
 /obj/item/bikehorn,
 /obj/machinery/camera{
-	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	c_tag = "Theater Backstage";
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -63770,7 +63770,7 @@
 	dir = 4
 	},
 /obj/machinery/camera{
-	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	c_tag = "Bar Storage";
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -65897,6 +65897,10 @@
 	},
 /obj/structure/table,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
+/obj/machinery/camera{
+	c_tag = "Bar";
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/service/bar)
 "mdt" = (
@@ -72949,7 +72953,7 @@
 	dir = 1
 	},
 /obj/machinery/camera{
-	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	c_tag = "Kitchen";
 	dir = 1
 	},
 /turf/open/floor/plasteel/cafeteria,
@@ -83194,7 +83198,7 @@
 /obj/item/wrench,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/camera{
-	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	c_tag = "Service Maintenance";
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -92058,7 +92062,7 @@
 	dir = 1
 	},
 /obj/machinery/camera{
-	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	c_tag = "Theater";
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -92066,7 +92070,7 @@
 "xZj" = (
 /obj/machinery/gibber,
 /obj/machinery/camera{
-	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	c_tag = "Cold Room";
 	dir = 1
 	},
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
