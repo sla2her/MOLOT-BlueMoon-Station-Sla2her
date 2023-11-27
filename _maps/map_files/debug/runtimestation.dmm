@@ -102,6 +102,10 @@
 /obj/machinery/meter,
 /turf/open/floor/plating,
 /area/engineering/atmos)
+"aA" = (
+/obj/machinery/newscaster,
+/turf/closed/wall/r_wall,
+/area/commons/storage/primary)
 "aB" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -3072,6 +3076,10 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel,
 /area/security/brig)
+"Ll" = (
+/obj/machinery/newscaster/security_unit,
+/turf/closed/wall/r_wall,
+/area/commons/storage/primary)
 "Lm" = (
 /obj/structure/fans/tiny/invisible,
 /obj/effect/turf_decal/stripes/line{
@@ -9410,10 +9418,10 @@ cS
 cS
 fN
 dG
-cS
-cS
-cS
-cS
+aA
+aA
+aA
+Ll
 cS
 cS
 Un

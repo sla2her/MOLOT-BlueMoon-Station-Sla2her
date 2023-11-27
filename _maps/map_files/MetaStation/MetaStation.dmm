@@ -52901,6 +52901,10 @@
 /obj/item/clothing/mask/cigarette/pipe,
 /obj/item/clothing/mask/fakemoustache,
 /obj/item/bikehorn,
+/obj/machinery/camera{
+	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	dir = 1
+	},
 /turf/open/floor/wood,
 /area/service/theater)
 "fXZ" = (
@@ -63765,6 +63769,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	dir = 1
+	},
 /turf/open/floor/wood,
 /area/service/bar)
 "lbv" = (
@@ -72938,6 +72946,10 @@
 /obj/machinery/deepfryer,
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/red/opposingcorners{
+	dir = 1
+	},
+/obj/machinery/camera{
+	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
 	dir = 1
 	},
 /turf/open/floor/plasteel/cafeteria,
@@ -83181,6 +83193,10 @@
 /obj/item/rack_parts,
 /obj/item/wrench,
 /obj/effect/turf_decal/delivery,
+/obj/machinery/camera{
+	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
 "tXp" = (
@@ -92041,10 +92057,18 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/machinery/camera{
+	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	dir = 1
+	},
 /turf/open/floor/wood,
 /area/service/theater)
 "xZj" = (
 /obj/machinery/gibber,
+/obj/machinery/camera{
+	c_tag = "Starboard Primary Hallway - Auxiliary Tool Storage";
+	dir = 1
+	},
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/service/kitchen/coldroom)
 "xZy" = (
