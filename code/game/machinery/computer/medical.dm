@@ -8,7 +8,7 @@
 #define MED_FIELD(N, V, E, LB) list(field = N, value = V, edit = E, line_break = LB)
 
 /obj/machinery/computer/med_data //TODO:SANITY
-	name = "medical records console"
+	name = "Medical Records Console"
 	desc = "This can be used to check medical records."
 	icon_keyboard = "med_key"
 	icon_screen = "medcomp"
@@ -82,7 +82,7 @@
 /obj/machinery/computer/med_data/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "MedicalRecords", "Medical Records", 800, 380)
+		ui = new(user, src, "MedicalRecords", "Medical Records")
 		ui.open()
 		ui.set_autoupdate(FALSE)
 

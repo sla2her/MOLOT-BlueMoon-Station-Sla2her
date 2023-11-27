@@ -56,12 +56,6 @@
 		to_chat(user, span_notice("You remove [Item] from [src]."))
 		update_icon()
 
-/obj/item/folder/attack_hand(mob/user, list/modifiers)
-	if(length(contents) && LAZYACCESS(modifiers, RIGHT_CLICK))
-		remove_item(contents[1], user)
-		return TRUE
-	. = ..()
-
 /obj/item/folder/update_overlays()
 	. = ..()
 	if(contents.len)

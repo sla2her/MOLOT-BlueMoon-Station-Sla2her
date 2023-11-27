@@ -1,4 +1,4 @@
-import { useBackend } from '../../paracode_backend';
+import { useBackend } from '../../backend';
 import { Box, Button, NoticeBox } from '../../components';
 
 /**

@@ -1,9 +1,9 @@
 import { createSearch, decodeHtmlEntities } from 'common/string';
 import { Fragment } from 'inferno';
-import { useBackend, useLocalState } from "../paracode_backend";
+import { useBackend, useLocalState } from "../backend";
 import { Box, Button, Flex, Icon, Input, LabeledList, Section, Table, Tabs } from '../components';
-import { FlexItem } from '../components/paracode_Flex';
-import { Window } from "../paracode_layouts";
+import { FlexItem } from '../components/Flex';
+import { Window } from "../layouts";
 import { ComplexModal, modalOpen } from './common/ComplexModal';
 import { LoginInfo } from './common/LoginInfo';
 import { LoginScreen } from './common/LoginScreen';

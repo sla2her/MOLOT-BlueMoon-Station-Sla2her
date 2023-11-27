@@ -12,7 +12,7 @@
  */
 
 import { callByond } from './byond';
-import { UI_DISABLED, UI_INTERACTIVE } from './constants';
+import { UI_DISABLED, UI_INTERACTIVE } from './paracode_constants';
 
 export const backendUpdate = state => ({
   type: 'backend/update',
