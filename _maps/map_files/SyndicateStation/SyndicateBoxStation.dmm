@@ -63308,16 +63308,11 @@
 /turf/open/floor/plasteel/freezer,
 /area/security/prison)
 "teA" = (
-/obj/machinery/power/apc{
-	areastring = "/area/medical/surgery";
-	dir = 8;
-	name = "Treatment Center APC";
-	pixel_x = -25
-	},
 /obj/structure/cable{
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/medical2,
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/surgery)
 "teT" = (
@@ -64567,15 +64562,10 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/power/apc{
-	areastring = "/area/medical/storage";
-	name = "Medbay Surgery Storage";
-	pixel_x = 1;
-	pixel_y = -24
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/storage)
 "uFZ" = (

@@ -60156,16 +60156,11 @@
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
 "oqn" = (
-/obj/machinery/power/apc{
-	areastring = "/area/medical/surgery";
-	dir = 8;
-	name = "Treatment Center APC";
-	pixel_x = -25
-	},
 /obj/structure/cable{
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/medical2,
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/mineral/plastitanium,
 /area/medical/surgery)
 "oqr" = (
