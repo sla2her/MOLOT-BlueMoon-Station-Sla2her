@@ -172,11 +172,11 @@
 		var/announcement_pick = rand(0, 1)
 		switch(announcement_pick)
 			if(0)
-				priority_announce("Внимание! Зарегистрирован неожиданный сбой в работе сети шлюзов станции!", "[command_name()] Приоритетное оповещение")
-				var/datum/round_event_control/grey_tide/greytide_event = new/datum/round_event_control/grey_tide
-				greytide_event.runEvent()
+				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный на неизвестный объект!", "[command_name()] Приоритетное Оповещение")
+				var/datum/round_event_control/operative/loneop_event = new/datum/round_event_control/operative
+				loneop_event.runEvent()
 			if(1)
-				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный вооруженному кораблю!", "[command_name()] Приоритетное оповещение")
+				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный вооруженному кораблю!", "[command_name()] Приоритетное Оповещение")
 				var/datum/round_event_control/pirates/pirate_event = new/datum/round_event_control/pirates
 				pirate_event.runEvent()
 		ninja_gloves.communication_console_hack_success = TRUE

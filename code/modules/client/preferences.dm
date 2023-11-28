@@ -122,7 +122,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/age = 30						//age of character
 	//Sandstorm CHANGES BEGIN
 	var/erppref = "Ask"
-	var/nonconpref = "Ask"
+	var/nonconpref = "Can Refuse in LOOC"
 	var/vorepref = "Ask"
 	var/mobsexpref = "No" //Added by Gardelin0 - Sex(mostly non-con) with hostile mobs(tentacles)
 	var/extremepref = "No" //This is for extreme shit, maybe even literal shit, better to keep it on no by default
@@ -658,7 +658,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<a href='?_src_=prefs;preference=naked_flavor_text;task=input'><b>Set Naked Examine Text</b></a><br>"
 					if(length(features["naked_flavor_text"]) <= MAX_FLAVOR_PREVIEW_LEN)
 						if(!length(features["naked_flavor_text"]))
-							dat += "\[...\]"
+							dat += "\[...\]<BR>"
 						else
 							dat += "[html_encode(features["naked_flavor_text"])]<BR>"
 					else
@@ -677,7 +677,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<a href='?_src_=prefs;preference=custom_species_lore;task=input'><b>Set Custom Species Lore Text</b></a><br>"
 					if(length(features["custom_species_lore"]) <= MAX_FLAVOR_PREVIEW_LEN)
 						if(!length(features["custom_species_lore"]))
-							dat += "\[...\]"
+							dat += "\[...\]<BR>"
 						else
 							dat += "[features["custom_species_lore"]]<BR>"
 					else
@@ -3664,8 +3664,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("noncon_pref")
 					switch(nonconpref)
 						if("Yes")
-							nonconpref = "Ask"
-						if("Ask")
+							nonconpref = "Can Refuse in LOOC"
+						if("Can Refuse in LOOC")
+							nonconpref = "Watch the OOC-notes"
+						if("Watch the OOC-notes")
 							nonconpref = "No"
 						if("No")
 							nonconpref = "Yes"

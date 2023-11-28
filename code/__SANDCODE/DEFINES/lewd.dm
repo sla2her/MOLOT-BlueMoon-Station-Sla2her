@@ -6,7 +6,8 @@
 */
 GLOBAL_LIST_INIT(lewd_prefs_choices, list(
 	"Yes",
-	"Ask",
+	"Can Refuse in LOOC",
+	"Watch the OOC-notes",
 	"No"
 	))
 

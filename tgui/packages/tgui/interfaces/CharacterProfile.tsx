@@ -71,15 +71,18 @@ export const CharacterProfile = (props, context) => {
                 {data.custom_species_lore}
               </Section>
             </Collapsible>
-            <Collapsible title="Описание персонажа" open>
+            <Collapsible title="Описание Персонажа" open>
               <Section>
                 <Flex direction="column">
                   {data.flavortext
                     ? (<Flex.Item style={{ "white-space": "pre-line" }}>{data.flavortext}</Flex.Item>)
                     : (<Box />)}
-                  {data.flavortext && data.flavortext_naked
-                    ? (<Divider />)
-                    : (<Box />)}
+                </Flex>
+              </Section>
+            </Collapsible>
+            <Collapsible title="Описание Голого Тела Персонажа" open>
+              <Section>
+                <Flex direction="column">
                   {data.flavortext_naked
                     ? (<Flex.Item style={{ "white-space": "pre-line" }}>{data.flavortext_naked}</Flex.Item>)
                     : (<Box />)}
