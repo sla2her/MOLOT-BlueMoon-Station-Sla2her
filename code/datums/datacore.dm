@@ -327,6 +327,7 @@
 		S.fields["ma_crim"]		= list()
 		S.fields["ma_crim_d"]	= "No major crime convictions."
 		S.fields["notes"]		= prefs.security_records || "No notes."
+		LAZYINITLIST(S.fields["comments"])
 		security += S
 
 		//Locked Record

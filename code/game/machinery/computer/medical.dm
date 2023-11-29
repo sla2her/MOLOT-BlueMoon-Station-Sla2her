@@ -116,9 +116,9 @@
 					fields[++fields.len] = FIELD("Mental Status", active1.fields["m_stat"], "m_stat")
 					var/list/photos = list()
 					general["photos"] = photos
-					photos[++photos.len] = active1.fields["photo-south"]
-					photos[++photos.len] = active1.fields["photo-west"]
-					general["has_photos"] = (active1.fields["photo-south"] || active1.fields["photo-west"] ? 1 : 0)
+					photos[++photos.len] = active1.fields["photo_front"]
+					photos[++photos.len] = active1.fields["photo_side"]
+					general["has_photos"] = (active1.fields["photo_front"] || active1.fields["photo_side"] ? 1 : 0)
 					general["empty"] = 0
 				else
 					general["empty"] = 1

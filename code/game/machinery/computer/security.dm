@@ -129,10 +129,10 @@
 						SEC_FIELD("Important Notes", 	gen_fields["notes"], 		null,			FALSE),
 					)
 					general["photos"] = list(
-						gen_fields["photo-south"],
-						gen_fields["photo-west"],
+						gen_fields["photo_front"],
+						gen_fields["photo_side"],
 					)
-					general["has_photos"] = (gen_fields["photo-south"] || gen_fields["photo-west"]) ? TRUE : FALSE
+					general["has_photos"] = (gen_fields["photo_front"] || gen_fields["photo_side"]) ? TRUE : FALSE
 					general["empty"] = FALSE
 				else
 					general["empty"] = TRUE

@@ -78,7 +78,6 @@
 
 	var/datum/data/record/G = find_record("name", criminal, GLOB.data_core.general)
 	var/prisoner_drank = "unknown"
-	var/prisoner_trank = "unknown"
 	if(G)
 		if(G.fields["rank"])
 			prisoner_drank = G.fields["rank"]
@@ -88,14 +87,11 @@
 	var/timetext = seconds_to_time(timetoset / 10)
 	var/announcetext = "Detainee [criminal] ([prisoner_drank]) has been incarcerated for [timetext] for the crime of: '[crimes]'. \
 	Arresting Officer: [usr.name].[R ? "" : " Detainee record not found, manual record update required."]"
-	Radio.talk_into(name, announcetext, RADIO_CHANNEL_SECURITY)
+	Radio.talk_into(src, announcetext, RADIO_CHANNEL_SECURITY)
 
 	// Notify the actual criminal being brigged. This is a QOL thing to ensure they always know the charges against them.
 	// Announcing it on radio isn't enough, as they're unlikely to have sec radio.
 	notify_prisoner("You have been incarcerated for [timetext] for the crime of: '[crimes]'.")
-
-	if(prisoner_trank != "unknown" && prisoner_trank != "Civilian")
-		SSjob.notify_dept_head(prisoner_trank, announcetext)
 
 	if(R)
 		prisoner = R
@@ -383,7 +379,7 @@
 				timetoset = timetoset + prisoner_time_add
 				releasetime = releasetime + prisoner_time_add
 				var/addtext = isobserver(usr) ? "for: [add_reason]." : "by [usr.name] for: [add_reason]"
-				Radio.talk_into(name, "Prisoner [criminal] had their timer increased by [prisoner_time_add / 600] minutes [addtext]", RADIO_CHANNEL_SECURITY, list(z))
+				Radio.talk_into(src, "Prisoner [criminal] had their timer increased by [prisoner_time_add / 600] minutes [addtext]", RADIO_CHANNEL_SECURITY, list(z))
 				notify_prisoner("Your brig timer has been increased by [prisoner_time_add / 600] minutes for: '[add_reason]'.")
 				var/datum/data/record/R = find_security_record("name", criminal)
 				if(istype(R))
@@ -399,7 +395,7 @@
 					return FALSE
 				releasetime = world.timeofday + timetoset
 				var/resettext = isobserver(usr) ? "for: [reset_reason]." : "by [usr.name] for: [reset_reason]."
-				Radio.talk_into(name, "Prisoner [criminal] had their timer reset [resettext]", RADIO_CHANNEL_SECURITY, list(z))
+				Radio.talk_into(src, "Prisoner [criminal] had their timer reset [resettext]", RADIO_CHANNEL_SECURITY, list(z))
 				notify_prisoner("Your brig timer has been reset for: '[reset_reason]'.")
 				var/datum/data/record/R = find_security_record("name", criminal)
 				if(istype(R))
@@ -410,7 +406,7 @@
 			if(timing)
 				timer_end()
 				var/stoptext = isobserver(usr) ? "from cell control." : "by [usr.name]."
-				Radio.talk_into(name, "Timer stopped manually [stoptext]", RADIO_CHANNEL_SECURITY, list(z))
+				Radio.talk_into(src, "Timer stopped manually [stoptext]", RADIO_CHANNEL_SECURITY, list(z))
 			else
 				. = FALSE
 		if("flash")
