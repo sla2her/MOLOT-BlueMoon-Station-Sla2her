@@ -15643,7 +15643,6 @@
 /turf/open/floor/carpet/blackred,
 /area/hallway/primary/central)
 "aPf" = (
-/obj/machinery/computer/libraryconsole,
 /obj/structure/table/wood,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)

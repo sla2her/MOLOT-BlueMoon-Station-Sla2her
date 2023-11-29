@@ -82,8 +82,6 @@
 	if(G)
 		if(G.fields["rank"])
 			prisoner_drank = G.fields["rank"]
-		if(G.fields["real_rank"]) // Ignore alt job titles - necessary for lookups
-			prisoner_trank = G.fields["real_rank"]
 
 	var/datum/data/record/R = find_security_record("name", criminal)
 
@@ -298,7 +296,7 @@
 /obj/machinery/door_timer/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "BrigTimer",  name, 500, 450)
+		ui = new(user, src, "BrigTimer",  name)
 		ui.open()
 
 /obj/machinery/door_timer/ui_static_data(mob/user)

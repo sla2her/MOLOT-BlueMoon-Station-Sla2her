@@ -32,7 +32,7 @@
 	..()
 	field_edit_questions = list(
 		// General
-		"sex" = "Please select new sex:",
+		"gender" = "Please select new gender:",
 		"age" = "Please input new age:",
 		"fingerprint" = "Please input new fingerprint hash:",
 		"p_stat" = "Please select new physical status:",
@@ -52,7 +52,7 @@
 	)
 	field_edit_choices = list(
 		// General
-		"sex" = list("Male", "Female"),
+		"gender" = list("Male", "Female", "Other"),
 		"p_stat" = list("*Deceased*", "*SSD*", "Active", "Physically Unfit", "Disabled"),
 		"m_stat" = list("*Insane*", "*Unstable*", "*Watch*", "Stable"),
 		// Medical
@@ -109,7 +109,7 @@
 					general["fields"] = fields
 					fields[++fields.len] = FIELD("Name", active1.fields["name"], null)
 					fields[++fields.len] = FIELD("ID", active1.fields["id"], null)
-					fields[++fields.len] = FIELD("Sex", active1.fields["sex"], "sex")
+					fields[++fields.len] = FIELD("Gender", active1.fields["gender"], "gender")
 					fields[++fields.len] = FIELD("Age", active1.fields["age"], "age")
 					fields[++fields.len] = FIELD("Fingerprint", active1.fields["fingerprint"], "fingerprint")
 					fields[++fields.len] = FIELD("Physical Status", active1.fields["p_stat"], "p_stat")
@@ -435,7 +435,7 @@
 				if(1)
 					R.fields["name"] = pick("[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]", "[pick(GLOB.first_names_female)] [pick(GLOB.last_names_female)]")
 				if(2)
-					R.fields["sex"] = pick("Male", "Female")
+					R.fields["gender"] = pick("Male", "Female", "Other")
 				if(3)
 					R.fields["age"] = rand(5, 85)
 				if(4)

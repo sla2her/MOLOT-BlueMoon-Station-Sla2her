@@ -55778,7 +55778,6 @@
 /area/service/bar)
 "hsi" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole,
 /turf/open/floor/wood,
 /area/service/library)
 "hsq" = (

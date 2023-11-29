@@ -10084,7 +10084,6 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "aPf" = (
-/obj/machinery/computer/libraryconsole,
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/service/library)
