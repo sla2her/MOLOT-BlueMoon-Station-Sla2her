@@ -178,7 +178,7 @@
 	name = "Hair dye spray"
 	path = /obj/item/dyespray
 
-/datum/gear/donator/summon_cumburger
+/datum/gear/summon_cumburger
 	name = "Book: Summon Cumburger"
 	slot = ITEM_SLOT_BACKPACK
 	path = /obj/item/book/granter/spell/summon_cumburger
