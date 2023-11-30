@@ -550,7 +550,7 @@
 	required_candidates = 3 //BLUEMOON CHANGES
 	weight = 3
 	cost = 15
-	required_round_type = list(ROUNDTYPE_DYNAMIC_TEAMBASED, ROUNDTYPE_DYNAMIC_HARD, ROUNDTYPE_DYNAMIC_MEDIUM) // BLUEMOON ADD
+	required_round_type = list(ROUNDTYPE_DYNAMIC_LIGHT) // BLUEMOON ADD
 	requirements = list(0,101,101,101,40,20,20,10,10,10) //BLUEMOON CHANGES
 	flags = HIGH_IMPACT_RULESET
 	antag_cap = list("denominator" = 5, "offset" = 1) //BLUEMOON ADDITION
