@@ -261,7 +261,7 @@
 		if(HAS_TRAIT(body_part, TRAIT_DISABLED_BY_WOUND))
 			continue // skip if it's disabled by a wound (cuz we'll be able to see the bone sticking out!)
 		if(!(body_part.get_damage(include_stamina = FALSE) >= body_part.max_damage)) //we don't care if it's stamcritted
-			damage_text = "выглядит обвисшей и бледноватой"
+			damage_text = "[body_part.is_robotic_limb() ? "висит и болтается" : "обвисла и побледнела"]" // BLUEMOON EDIT - добавлена проверка на роботизированные конечности
 		else
 			damage_text = (body_part.brute_dam >= body_part.burn_dam) ? body_part.heavy_brute_msg : body_part.heavy_burn_msg
 		msg += "<B>[ru_ego(TRUE)] [body_part.ru_name] [damage_text]!</B>\n"
@@ -480,7 +480,7 @@
 			if(SOFT_CRIT)
 				msg += "<span class='deadsay'>[t_on] едва в сознании.</span>\n"
 			if(CONSCIOUS)
-				if(HAS_TRAIT(src, TRAIT_DUMB))
+				if(HAS_TRAIT(src, TRAIT_DUMB) && !HAS_TRAIT(src, TRAIT_ROBOTIC_ORGANISM)) // BLUEMOON EDIT - добавлена проверка на роботов
 					msg += "[t_on] имеет глупое выражение лица.\n"
 		if(getorgan(/obj/item/organ/brain))
 			if(ai_controller?.ai_status == AI_STATUS_ON)
@@ -488,7 +488,7 @@
 			if(!key)
 				msg += "<span class='warning'>[t_on] кататоник. Стресс от жизни в глубоком космосе сильно повлиял на н[t_ego]. Восстановление маловероятно.</span>\n"
 			else if(!client)
-				msg += "<span class='warning'><B>Не стоит [ru_ego(TRUE)] трогать.</B> [t_on] имеет пустой, рассеянный взгляд и кажется совершенно не реагирующим ни на что. В этом состоянии [t_on] находится [round(((world.time - lastclienttime) / (1 MINUTES)), 1)] минут. [t_on] может выйти из этого состояни в ближайшее время.\n" //SKYRAT CHANGE - ssd indicator
+				msg += "<span class='warning'><B>Не стоит [ru_ego()] трогать.</B> [t_on] имеет пустой, рассеянный взгляд и кажется совершенно не реагирующим ни на что. В этом состоянии [t_on] находится [round(((world.time - lastclienttime) / (1 MINUTES)), 1)] минут. [t_on] может выйти из этого состояни в ближайшее время.\n" //SKYRAT CHANGE - ssd indicator
 
 	var/trait_exam = common_trait_examine()
 	if (!isnull(trait_exam))
