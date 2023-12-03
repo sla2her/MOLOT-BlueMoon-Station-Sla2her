@@ -232,7 +232,7 @@
 	syndicate_name = syndicate_name()
 
 /datum/team/syndicate_nuclear/proc/update_objectives()
-	if(SSticker.mode.name == "Extended")
+	if(GLOB.master_mode == "Extended")
 		var/datum/objective/O = new revert_objective
 		O.team = src
 		objectives += O

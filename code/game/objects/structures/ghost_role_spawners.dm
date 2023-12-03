@@ -1183,6 +1183,7 @@
 	random = TRUE
 	canloadappearance = TRUE
 	loadout_enabled = TRUE
+	use_outfit_name = TRUE
 	computer_area = /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms
 
 /obj/effect/mob_spawn/human/ds2/prisoner

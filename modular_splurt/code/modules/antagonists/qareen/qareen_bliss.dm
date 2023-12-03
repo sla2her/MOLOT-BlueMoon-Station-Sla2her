@@ -5,8 +5,8 @@
 	spread_flags = DISEASE_SPREAD_NON_CONTAGIOUS
 	cure_text = "Holy water or Semen."
 	spread_text = "A fog of pink unholy energy"
-	cures = list(/datum/reagent/water/holywater, /datum/reagent/consumable/semen, /datum/reagent/consumable/semen/femcum, /datum/reagent/consumable/milk)
-	cure_chance = 5
+	cures = list(/datum/reagent/water/holywater, /datum/reagent/consumable/milk)
+	cure_chance = 50
 	agent = "Unholy Forces"
 	viable_mobtypes = list(/mob/living/carbon/human)
 	disease_flags = CURABLE

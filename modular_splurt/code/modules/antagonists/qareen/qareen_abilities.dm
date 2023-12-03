@@ -33,12 +33,12 @@
 	face_atom(target)
 	draining = TRUE
 	to_chat(src, "<span class='revennotice'>You search for the lifespring of [target].</span>")
-	if(do_after(src, rand(10, 20), 0, target)) //did they get deleted in that second?
+	if(do_after(src, rand(10, 20), target)) //did they get deleted in that second?
 		for(var/obj/item/organ/genital/G in target.internal_organs)
 			if(!(G.genital_flags & GENITAL_FUID_PRODUCTION))
 				continue
 			// var/datum/reagents/fluid_source = G.climaxable(target)
-			if(do_after(src, rand(10, 20), 0, target)) //did they get deleted in that second?
+			if(do_after(src, rand(10, 20), target)) //did they get deleted in that second?
 				// var/main_fluid = lowertext(fluid_source.get_master_reagent_name())  // doesn't work no more (should delete probably)
 				var/main_fluid = G.get_fluid_name()
 				var/fluid_ammount = G.get_fluid()
@@ -55,9 +55,7 @@
 				else
 					essence_drained += fluid_ammount*3
 
-
-
-		if(do_after(src, rand(15, 20), 0, target)) //did they get deleted NOW?
+		if(do_after(src, rand(15, 20), target)) //did they get deleted NOW?
 			switch(essence_drained)
 				if(0 to 4)
 					to_chat(src, "<span class='revennotice'>[target] is almost barren of essence. Still, every bit counts.</span>")
@@ -67,7 +65,7 @@
 					to_chat(src, "<span class='revenboldnotice'>Such a feast! [target] will yield much essence to you.</span>")
 				if(30 to INFINITY)
 					to_chat(src, "<span class='revenbignotice'>Ah, a sexually furstrated person. [target] will yield massive amounts of essence to you.</span>")
-			if(do_after(src, rand(15, 25), 0, target)) //how about now
+			if(do_after(src, rand(15, 25), target)) //how about now
 				if(target.stat)
 					to_chat(src, "<span class='revenwarning'>[target.ru_who(TRUE)] now too weak to provide anything of worth.</span>")
 					to_chat(target, "<span class='boldannounce'>You feel something tugging across your body before subsiding.</span>")
@@ -90,7 +88,7 @@
 					draining = FALSE
 					return
 				var/datum/beam/B = Beam(target,icon_state="drain_life",time=INFINITY)
-				if(do_after(src, 46, 0, target)) //As one cannot prove the existance of ghosts, ghosts cannot prove the existance of the target they were draining.
+				if(do_after(src, 46, target)) //As one cannot prove the existance of ghosts, ghosts cannot prove the existance of the target they were draining.
 					change_essence_amount(essence_drained, FALSE, target)
 					for(var/obj/item/organ/genital/G in target.internal_organs)
 						var/datum/reagents/fluid_source = G.climaxable(target)
