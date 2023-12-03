@@ -338,12 +338,11 @@
 	if(nutrition < NUTRITION_LEVEL_STARVING - 50)
 		msg += "[t_on] выглядит смертельно истощённо.\n"
 	else if(nutrition >= NUTRITION_LEVEL_FAT)
-		if(HAS_TRAIT(src, TRAIT_INCUBUS || TRAIT_SUCCUBUS))
-			return //Imagine getting fat from hot load - Gardelin0
-		if(user.nutrition < NUTRITION_LEVEL_STARVING - 50)
-			msg += "[t_on] выглядит довольно толстенько, словно какой-то поросёнок. Очень вкусный поросёнок.\n"
-		else
-			msg += "[t_on] выглядит довольно плотно.\n"
+		if(!HAS_TRAIT(src, TRAIT_SUCCUBUS) || !HAS_TRAIT(src, TRAIT_INCUBUS))	//Imagine getting fat from hot load - Gardelin0
+			if(user.nutrition < NUTRITION_LEVEL_STARVING - 50)
+				msg += "[t_on] выглядит довольно толстенько, словно какой-то поросёнок. Очень вкусный поросёнок.\n"
+			else
+				msg += "[t_on] выглядит довольно плотно.\n"
 	switch(disgust)
 		if(DISGUST_LEVEL_GROSS to DISGUST_LEVEL_VERYGROSS)	//Не он отвратительный, а ему отвратительно.
 			msg += "[ru_emu(TRUE)] слегка неприятно.\n"	//a bit grossed out
