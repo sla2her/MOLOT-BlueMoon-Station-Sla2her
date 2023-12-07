@@ -582,8 +582,6 @@
 					failed = "<span class='warning'>[req_defib ? "[defib]" : "[src]"] жужжит: Реанимация не удалась - кажется, душа пациента находится на другом плане существования. Дальнейшие попытки бесполезны.</span>"
 				else if (tplus > tlimit)
 					failed = "<span class='warning'>[req_defib ? "[defib]" : "[src]"] жужжит: Реанимация не удалась - тело слишком долго разлагалось. Дальнейшие попытки бесполезны.</span>"
-				else if(H.client.prefs.dnr_triggered)
-					failed = "<span class='warning'>[req_defib ? "[defib]" : "[src]"] жужжит: Реанимация не удалась - мозг пациента полностью мёртв. Дальнейшие попытки бесполезны</span>"
 				else if (!heart)
 					failed = "<span class='warning'>[req_defib ? "[defib]" : "[src]"] жужжит: Реанимация не удалась - у пациента отсутствует сердце.</span>"
 				else if (heart.organ_flags & ORGAN_FAILING)
