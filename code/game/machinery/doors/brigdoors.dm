@@ -128,8 +128,6 @@
 	Radio.canhear_range = 0 // anything greater will have the bot broadcast the channel as if it were saying it out loud.
 	Radio.recalculateChannels()
 
-	set_pixel_offsets_from_dir(32, -32, 32, -32)
-
 	spawn(20)
 		for(var/obj/machinery/door/window/brigdoor/M in GLOB.airlocks)
 			if(M.id == id)
@@ -487,42 +485,31 @@
 	name = "Cell 1"
 	id = "Cell 1"
 	dir = 2
-	pixel_y = -32
-
 
 /obj/machinery/door_timer/cell_2
 	name = "Cell 2"
 	id = "Cell 2"
 	dir = 2
-	pixel_y = -32
-
 
 /obj/machinery/door_timer/cell_3
 	name = "Cell 3"
 	id = "Cell 3"
 	dir = 2
-	pixel_y = -32
-
 
 /obj/machinery/door_timer/cell_4
 	name = "Cell 4"
 	id = "Cell 4"
 	dir = 2
-	pixel_y = -32
-
 
 /obj/machinery/door_timer/cell_5
 	name = "Cell 5"
 	id = "Cell 5"
 	dir = 2
-	pixel_y = -32
-
 
 /obj/machinery/door_timer/cell_6
 	name = "Cell 6"
 	id = "Cell 6"
 	dir = 4
-	pixel_x = 32
 
 /obj/machinery/door_timer/cell_7
 	name = "Cell 7"
