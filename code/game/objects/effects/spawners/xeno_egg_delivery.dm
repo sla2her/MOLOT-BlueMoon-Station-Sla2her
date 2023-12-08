@@ -2,7 +2,7 @@
 	name = "xeno egg delivery"
 	icon = 'icons/mob/alien.dmi'
 	icon_state = "egg_growing"
-	var/announcement_time = 1200
+	var/announcement_time = 10000
 
 /obj/effect/spawner/xeno_egg_delivery/Initialize(mapload)
 	..()
@@ -16,6 +16,6 @@
 
 	message_admins("An alien egg has been delivered to [ADMIN_VERBOSEJMP(T)].")
 	log_game("An alien egg has been delivered to [AREACOORD(T)]")
-	var/message = "Внимание, [station_name()]. К вашему сектору были закреплены яйца ксеноморфов с изменениями под проект Ксено-Горничных. Примерное местоположение - [get_area_name(T, TRUE)]. Соблюдайте все меры предосторожности при работе с образцом."
+	var/message = "Внимание, [station_name()]. К вашему сектору были закреплены яйца ксеноморфов с изменениями под проект Ксено-Горничных, в том числе частичная пацификация в виде смягчённой агрессии. Примерное местоположение - [get_area_name(T, TRUE)]. Соблюдайте все меры предосторожности при работе с образцом."
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, /proc/_addtimer, CALLBACK(GLOBAL_PROC, /proc/print_command_report, message), announcement_time))
 	return INITIALIZE_HINT_QDEL
