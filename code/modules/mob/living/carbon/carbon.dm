@@ -224,7 +224,7 @@
 		dropItemToGround(held_item)
 
 		if(HAS_TRAIT(src, TRAIT_PACIFISM) && held_item.throwforce)
-			to_chat(src, "<span class='notice'>You set [held_item] down gently on the ground.</span>")
+			to_chat(src, "<span class='notice'>Ты осторожно кладёшь [held_item] под себя.</span>")
 			return
 
 		if(!UseStaminaBuffer(held_item.getweight(src, STAM_COST_THROW_MULT, SKILL_THROW_STAM_COST), warn = TRUE))
