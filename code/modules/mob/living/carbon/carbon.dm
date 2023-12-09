@@ -219,6 +219,9 @@
 		if(start_T && end_T)
 			log_combat(src, thrown_thing, "thrown", addition="grab from tile in [AREACOORD(start_T)] towards tile at [AREACOORD(end_T)]")
 
+	if(!held_item)
+		return
+
 	else if(!(held_item.item_flags & ABSTRACT) && !HAS_TRAIT(held_item, TRAIT_NODROP))
 		thrown_thing = held_item
 		dropItemToGround(held_item)
