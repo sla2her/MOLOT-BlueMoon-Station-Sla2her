@@ -30,9 +30,10 @@
 
 /obj/item/implant/anchor/implant(mob/living/target, mob/user, silent, force)
 	. = ..()
-	if (.)
-		RegisterSignal(target, COMSIG_LIVING_LIFE, .proc/on_life)
-		var/base_z_level = target.z
+
+	RegisterSignal(target, COMSIG_LIVING_LIFE, .proc/on_life)
+	var/base_z_level = target.z
+
 	return base_z_level
 
 /obj/item/implant/anchor/proc/on_life(mob/living/owner, base_z_level)
