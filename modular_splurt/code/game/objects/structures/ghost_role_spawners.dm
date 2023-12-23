@@ -162,6 +162,7 @@
 	H.faction |= ROLE_INTEQ
 
 /obj/effect/mob_spawn/human/inteqspace/special(mob/living/new_spawn)
+	. = ..()
 	new_spawn.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 /obj/effect/mob_spawn/human/inteqspace/captain
