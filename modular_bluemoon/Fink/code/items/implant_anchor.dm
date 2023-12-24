@@ -21,7 +21,7 @@
 	imp_type = /obj/item/implant/anchor
 
 /obj/item/implant/anchor/proc/Setsectors()
-	allowed_z_levels = list(1,6,12,src.z) // dynamic набор: цк, ксено межшатолье, инфдормы, сектор имплантации
+	allowed_z_levels = list(1,6,12) // dynamic набор: цк, ксено межшатолье, инфдормы, сектор имплантации
 	if(GLOB.master_mode == "Extended")
 		allowed_z_levels.Add(2,5) // экстовая добавка: станционный, шахта
 	return allowed_z_levels
