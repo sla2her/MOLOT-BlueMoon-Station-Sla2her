@@ -1,8 +1,7 @@
 /mob/living/simple_animal/hostile/skibidi_toilet
 	name = "Skibidi Human"
-	name = "Skibidi Human"
-	icon = 'modular_bluemoon/kovac_shitcode/icons/animals.dmi'
 	desc = "Туалет... из которого выглядывает голова. Странно..."
+	icon = 'modular_bluemoon/kovac_shitcode/icons/animals.dmi'
 	icon_state = "skibidi_toilet"
 	icon_living = "skibidi_toilet"
 	icon_dead = "syndicate_dead"
@@ -31,4 +30,6 @@
 
 /mob/living/simple_animal/hostile/skibidi_toilet/vulp
 	name = "Skibidi Vulpa"
-	name = "Skibidi Vulpa"
+	desc = "Туалет... из которого выглядывает мохнатая голова. Странно..."
+	icon_state = "skibidi_vulpa"
+	icon_living = "skibidi_vulpa"
