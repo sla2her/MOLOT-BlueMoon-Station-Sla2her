@@ -10788,7 +10788,7 @@
 "ayR" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Dormitories";
-	req_access_txt = "152"
+	req_access_txt = "154"
 	},
 /turf/open/floor/wood,
 /area/slavers)
@@ -16131,7 +16131,7 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "152"
+	req_access_txt = "150"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -17481,7 +17481,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Slave Export Bay";
-	req_access_txt = "152"
+	req_access_txt = "154"
 	},
 /turf/open/floor/plating,
 /area/slavers)
@@ -17524,7 +17524,7 @@
 	id = "nukeop_ready";
 	name = "mission launch control";
 	pixel_x = -26;
-	req_access_txt = "151"
+	req_access_txt = "150"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -18037,7 +18037,7 @@
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/door/airlock/centcom{
 	name = "Medbay";
-	req_access_txt = "152"
+	req_access_txt = "150"
 	},
 /turf/open/floor/iron/white,
 /area/syndicate_mothership)
@@ -18418,7 +18418,7 @@
 "aSl" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Equipment Room";
-	req_one_access_txt = "152"
+	req_one_access_txt = "150"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -18587,7 +18587,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/centcom{
 	name = "Slaver Hideout Access";
-	req_access_txt = "152"
+	req_access_txt = "154"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -18613,7 +18613,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/centcom{
 	name = "Slave Preparation Room";
-	req_access_txt = "152"
+	req_access_txt = "154"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -18634,7 +18634,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/centcom{
 	name = "Slave Wing";
-	req_access_txt = "152"
+	req_access_txt = "154"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -18981,14 +18981,14 @@
 "aUH" = (
 /obj/machinery/door/airlock/external{
 	req_one_access_txt = "150";
-	req_access_txt = "152"
+	req_access_txt = "150"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "aUJ" = (
 /obj/machinery/door/airlock/external{
 	req_one_access_txt = "150";
-	req_access_txt = "152"
+	req_access_txt = "150"
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -19010,7 +19010,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Medical Bay";
-	req_access_txt = "152"
+	req_access_txt = "154"
 	},
 /turf/open/floor/plating,
 /area/slavers)
@@ -19264,7 +19264,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Auxiliary Storage";
-	req_access_txt = "152"
+	req_access_txt = "154"
 	},
 /turf/open/floor/plating,
 /area/slavers)
@@ -19556,7 +19556,7 @@
 /area/centcom/supplypod)
 "aWP" = (
 /obj/machinery/door/airlock/external{
-	req_access_txt = "152"
+	req_access_txt = "150"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -19760,7 +19760,7 @@
 "aXC" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Restroom";
-	req_access_txt = "152"
+	req_access_txt = "150"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -21210,7 +21210,7 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/machinery/door/airlock/centcom{
 	name = "Nuke Ops Barracks";
-	req_one_access_txt = "150";
+	req_one_access_txt = "152";
 	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
@@ -32045,7 +32045,7 @@
 "rPA" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Barracks";
-	req_access_txt = "152"
+	req_access_txt = "150"
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -35510,7 +35510,7 @@
 "wTX" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Kitchen";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/kitchen{
 	dir = 4
