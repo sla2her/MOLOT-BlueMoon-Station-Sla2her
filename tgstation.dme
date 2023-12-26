@@ -4158,7 +4158,6 @@
 #include "modular_bluemoon\Gardelin0\code\clothing\loadout\backpack.dm"
 #include "modular_bluemoon\Gardelin0\code\clothing\loadout\boxers.dm"
 #include "modular_bluemoon\Gardelin0\code\clothing\loadout\gloves.dm"
-#include "modular_bluemoon\Gardelin0\code\clothing\loadout\hat.dm"
 #include "modular_bluemoon\Gardelin0\code\clothing\loadout\head.dm"
 #include "modular_bluemoon\Gardelin0\code\clothing\loadout\item.dm"
 #include "modular_bluemoon\Gardelin0\code\clothing\loadout\mask.dm"
