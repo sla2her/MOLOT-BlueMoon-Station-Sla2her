@@ -477,22 +477,22 @@
 	ckeywhitelist = list("n1ght1ngale")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
-/datum/gear/donator/commissar
-	name = "Commissar hat"
+/datum/gear/donator/commissar_hat
+	name = "Commissar Hat"
 	slot = ITEM_SLOT_HEAD
 	path = /obj/item/clothing/head/commissar
 	ckeywhitelist = list("sketchyirishman")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
-/datum/gear/donator/commissar
-	name = "Commissar coat"
+/datum/gear/donator/commissar_coat
+	name = "Commissar Coat"
 	slot = ITEM_SLOT_OCLOTHING
 	path = /obj/item/clothing/suit/commissar
 	ckeywhitelist = list("sketchyirishman")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
-/datum/gear/donator/commissar
-	name = "Commissar uniform"
+/datum/gear/donator/commissar_uniform
+	name = "Commissar Uniform"
 	slot = ITEM_SLOT_ICLOTHING
 	path = /obj/item/clothing/under/commissar
 	ckeywhitelist = list("sketchyirishman")
