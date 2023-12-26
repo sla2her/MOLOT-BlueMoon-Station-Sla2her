@@ -391,14 +391,6 @@
 	ckeywhitelist = list()
 	donator_group_id = DONATOR_GROUP_TIER_1
 
-/datum/gear/donator/officersabresheath
-	name = "Officer Sabre Sheath"
-	slot = ITEM_SLOT_BELT
-	path = /obj/item/storage/belt/sabre/civil
-	ckeywhitelist = list("sketchyirishman")
-	donator_group_id = DONATOR_GROUP_TIER_1
-	subcategory = LOADOUT_SUBCATEGORIES_DON04
-
 /datum/gear/donator/toriball
 	name = "Rainbow Tennis Ball"
 	slot = ITEM_SLOT_BACKPACK

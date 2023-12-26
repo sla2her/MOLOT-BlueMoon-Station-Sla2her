@@ -498,6 +498,13 @@
 	ckeywhitelist = list("sketchyirishman")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
+/datum/gear/donator/officersabresheath
+	name = "Officer Sabre Sheath"
+	slot = ITEM_SLOT_BELT
+	path = /obj/item/storage/belt/sabre/civil
+	ckeywhitelist = list("sketchyirishman")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
 /datum/gear/donator/bm/p940
 	name = "P940 Kit"
 	slot = ITEM_SLOT_BACKPACK
