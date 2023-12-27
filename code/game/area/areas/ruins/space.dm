@@ -66,61 +66,61 @@
 
 //Ruin of Hotel
 
-/area/ruin/space/has_grav/hotel
+/area/ruin/space/has_grav/bluemoon/hotel
 	name = "Hotel"
 
-/area/ruin/space/has_grav/hotel/guestroom
+/area/ruin/space/has_grav/bluemoon/hotel/guestroom
 	name = "Hotel Guest Room"
 	icon_state = "Sleep"
 
-/area/ruin/space/has_grav/hotel/guestroom/room_1
+/area/ruin/space/has_grav/bluemoon/hotel/guestroom/room_1
 	name = "Hotel Guest Room 1"
 
-/area/ruin/space/has_grav/hotel/guestroom/room_2
+/area/ruin/space/has_grav/bluemoon/hotel/guestroom/room_2
 	name = "Hotel Guest Room 2"
 
-/area/ruin/space/has_grav/hotel/guestroom/room_3
+/area/ruin/space/has_grav/bluemoon/hotel/guestroom/room_3
 	name = "Hotel Guest Room 3"
 
-/area/ruin/space/has_grav/hotel/guestroom/room_4
+/area/ruin/space/has_grav/bluemoon/hotel/guestroom/room_4
 	name = "Hotel Guest Room 4"
 
-/area/ruin/space/has_grav/hotel/guestroom/room_5
+/area/ruin/space/has_grav/bluemoon/hotel/guestroom/room_5
 	name = "Hotel Guest Room 5"
 
-/area/ruin/space/has_grav/hotel/guestroom/room_6
+/area/ruin/space/has_grav/bluemoon/hotel/guestroom/room_6
 	name = "Hotel Guest Room 6"
 
-/area/ruin/space/has_grav/hotel/security
+/area/ruin/space/has_grav/bluemoon/hotel/security
 	name = "Hotel Security Post"
 	icon_state = "security"
 
-/area/ruin/space/has_grav/hotel/pool
+/area/ruin/space/has_grav/bluemoon/hotel/pool
 	name = "Hotel Pool Room"
 	icon_state = "fitness"
 
-/area/ruin/space/has_grav/hotel/bar
+/area/ruin/space/has_grav/bluemoon/hotel/bar
 	name = "Hotel Bar"
 	icon_state = "cafeteria"
 
-/area/ruin/space/has_grav/hotel/power
+/area/ruin/space/has_grav/bluemoon/hotel/power
 	name = "Hotel Power Room"
 	icon_state = "engine_smes"
 
-/area/ruin/space/has_grav/hotel/custodial
+/area/ruin/space/has_grav/bluemoon/hotel/custodial
 	name = "Hotel Custodial Closet"
 	icon_state = "janitor"
 
-/area/ruin/space/has_grav/hotel/shuttle
+/area/ruin/space/has_grav/bluemoon/hotel/shuttle
 	name = "Hotel Shuttle"
 	icon_state = "shuttle"
 	requires_power = FALSE
 
-/area/ruin/space/has_grav/hotel/dock
+/area/ruin/space/has_grav/bluemoon/hotel/dock
 	name = "Hotel Shuttle Dock"
 	icon_state = "start"
 
-/area/ruin/space/has_grav/hotel/workroom
+/area/ruin/space/has_grav/bluemoon/hotel/workroom
 	name = "Hotel Staff Room"
 	icon_state = "crew_quarters"
 
