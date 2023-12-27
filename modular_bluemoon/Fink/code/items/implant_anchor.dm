@@ -33,13 +33,12 @@
 	target.sec_hud_set_implants()
 	return TRUE
 
-
 /obj/item/implant/anchor/proc/on_life(mob/living/owner)
 	if(!(allowed_z_levels))
 		allowed_z_levels = Setsectors()
 //	to_chat(owner, "<span class='rose'>allowed_z_levels [allowed_z_levels], owner.z [owner.z] </span>")
 //	to_chat(owner, "<span class='rose'>Tick</span>")
-	if(!(owner.loc.z in allowed_z_levels))
+	if(!(owner.loc.z in allowed_z_levels) || !(get_area(owner) in GLOB.areas_by_type[/area/ruin/space/has_grav/bluemoon]))
 		to_chat(owner, "<span class='warning'>Больно!</span>")
 		owner.adjustBruteLoss(2.5, FALSE) //Provides slow harassing for both brute and burn damage.
 		owner.adjustFireLoss(2.5, FALSE)
