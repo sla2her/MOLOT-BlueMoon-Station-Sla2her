@@ -4132,7 +4132,6 @@
 #include "modular_bluemoon\Fink\code\mob\spines.dm"
 #include "modular_bluemoon\Fink\code\vending\autodrobe.dm"
 #include "modular_bluemoon\Fink\code\vending\engivend.dm"
-#include "modular_bluemoon\FlaurosStuff\code\modules\antagonists\qareen\qareen.dm"
 #include "modular_bluemoon\FlaurosStuff\code\modules\antagonists\qareen\qareen_abilities.dm"
 #include "modular_bluemoon\fluffs\code\accessories.dm"
 #include "modular_bluemoon\fluffs\code\donator.dm"
