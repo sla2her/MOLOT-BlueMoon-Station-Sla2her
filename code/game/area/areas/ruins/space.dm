@@ -766,7 +766,7 @@
 
 //SYNDICATE LISTENING POST STATION
 
-/area/ruin/space/has_grav/listeningstation
+/area/ruin/space/has_grav/bluemoon/listeningstation
 	name = "Listening Post"
 	icon_state = "yellow"
 

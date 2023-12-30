@@ -86,6 +86,13 @@
 	ckeywhitelist = list("leony24", "vulpshiro", "dolbajob", "trustmeimengineer", "stgs", "krashly", "hazzi")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
+/datum/gear/donator/bm/pet_moro
+	name = "Moro Cat"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/choice_beacon/pet/moro
+	ckeywhitelist = list("hazzi")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
 /datum/gear/donator/bm/lightning_holocloak
 	name = "lightning holo-cloak"
 	slot = ITEM_SLOT_OCLOTHING
