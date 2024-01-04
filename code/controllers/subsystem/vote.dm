@@ -609,7 +609,7 @@ SUBSYSTEM_DEF(vote)
 		if(!(mode in roundtypes))
 			roundtypes[mode] = 0
 		roundtypes[mode]++
-		if (roundtypes[mode] >= 3)
+		if (roundtypes[mode] >= 2)
 			return mode
 	return FALSE
 
@@ -660,7 +660,7 @@ SUBSYSTEM_DEF(vote)
 			. += "<br>Вариация [ROUNDTYPE_DYNAMIC] из прошлого раунда в новом выпасть не может (кроме эксты)."
 			if(SSpersistence.last_dynamic_gamemode)
 				. += "<br>Последняя вариация: <b>[SSpersistence.last_dynamic_gamemode]</b>."
-			. += "<h4>Если Режим выпадает три раза подряд - форсится обратный.</h4>"
+			. += "<h4>Если Режим выпадает два раза подряд - форсится обратный.</h4>"
 			if (length(SSpersistence.saved_modes))
 				. += "<br>Последние режимы: <b>[jointext(SSpersistence.saved_modes, ", ")]</b>."
 			. += "<br>Осталось времени: [DisplayTimeText((SSticker.timeLeft - ROUNDTYPE_VOTE_END_PENALTY))]<hr><ul>"
