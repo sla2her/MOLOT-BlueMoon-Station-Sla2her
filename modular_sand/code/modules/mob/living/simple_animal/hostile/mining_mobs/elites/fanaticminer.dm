@@ -250,9 +250,9 @@
 	new_spawn.grant_language(/datum/language/draconic, TRUE, TRUE, LANGUAGE_MIND)
 	if(!HAS_TRAIT(new_spawn, TRAIT_ROBOTIC_ORGANISM))
 		var/obj/item/organ/lungs/ashwalker/lungs = new /obj/item/organ/lungs/ashwalker()
-		lungs.Insert(new_spawn)
+		lungs.Insert(new_spawn, drop_if_replaced = FALSE)
 		var/obj/item/organ/eyes/night_vision/eyes = new /obj/item/organ/eyes/night_vision()
-		eyes.Insert(new_spawn)
+		eyes.Insert(new_spawn, drop_if_replaced = FALSE)
 	else
 		if(!new_spawn.put_in_hands(new /obj/item/device/cooler/lavaland/charged(new_spawn)))
 			to_chat(new_spawn, span_reallybig("Не забудьте забрать охладитель под собой.")) // чтобы не упустили из виду при резком спавне
