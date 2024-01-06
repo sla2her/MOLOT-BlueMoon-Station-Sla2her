@@ -2,7 +2,7 @@
  * Stores recently played gamemodes, maps, etc.
  */
 /datum/controller/subsystem/persistence
-	var/list/saved_modes = list(1,2)
+	var/list/saved_modes = list(1,2,3)
 	var/list/saved_chaos = list(5,5,5)
 	var/list/saved_dynamic_rules = list(list(),list(),list())
 	var/average_threat = 50
@@ -23,6 +23,7 @@
 	LoadRecentDynamicType() //BLUEMOON ADDITION
 
 /datum/controller/subsystem/persistence/proc/CollectRoundtype()
+	saved_modes[3] = saved_modes[2]
 	saved_modes[2] = saved_modes[1]
 	saved_modes[1] = SSticker.mode.config_tag
 	var/json_file = file("data/RecentModes.json")
