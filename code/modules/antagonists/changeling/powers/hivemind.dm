@@ -4,7 +4,7 @@
 	desc = "We tune our senses to the airwaves to allow us to discreetly communicate and exchange DNA with other changelings."
 	helptext = "We will be able to talk with other changelings with :g. Exchanged DNA do not count towards absorb objectives."
 	needs_button = FALSE
-	dna_cost = 1
+	dna_cost = 0
 	chemical_cost = -1
 
 /datum/action/changeling/hivemind_comms/sting_action(var/mob/living/user)

@@ -512,6 +512,13 @@
 	ckeywhitelist = list("sketchyirishman")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
+/datum/gear/donator/summon_tentacle
+	name = "Book for Summon Tentacle"
+	slot = ITEM_SLOT_BELT
+	path = /obj/item/book/granter/spell/summon_tentacle
+	ckeywhitelist = list("roboticus")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
 /datum/gear/donator/bm/p940
 	name = "P940 Kit"
 	slot = ITEM_SLOT_BACKPACK
