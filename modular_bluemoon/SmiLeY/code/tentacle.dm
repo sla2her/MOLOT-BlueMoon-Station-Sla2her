@@ -5,7 +5,7 @@
 	desc = "Эта книга ощущается тёплой..."
 	remarks = list("Тентакли...", "Большие тентакли...", "Тебе нравятся тентакли... не так ли?", "Кажется, книга запачкана в чём-то белом...", "Что за дела? Почему страницы слиплись...", "О... МОЙ... БОГ... ЧТО?", "В чём разница между кремом, молоком и тентаклями...")
 
-/obj/item/book/granter/spell/summon_tentacleon_reading_finished()
+/obj/item/book/granter/spell/summon_tentacle/on_reading_finished()
 	. = ..()
 	qdel(src)
 
