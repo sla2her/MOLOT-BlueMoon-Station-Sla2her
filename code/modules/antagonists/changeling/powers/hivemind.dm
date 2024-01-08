@@ -33,6 +33,15 @@
 	var/datum/antagonist/changeling/changeling = user.mind.has_antag_datum(/datum/antagonist/changeling)
 	if(changeling.changeling_speak)
 		changeling.changeling_speak = FALSE
+	var/datum/action/changeling/hivemind_upload/S1 = new
+	if(changeling.has_sting(S1))
+		S1.Remove(user)
+	var/datum/action/changeling/hivemind_download/S2 = new
+	if(changeling.has_sting(S2))
+		S2.Remove(user)
+	var/datum/action/changeling/linglink/S3 = new
+	if(changeling.has_sting(S3))
+		S3.Remove(user)
 	for(var/p in changeling.purchasedpowers)
 		var/datum/action/changeling/otherpower = p
 		if(istype(otherpower, /datum/action/changeling/hivemind_upload) || istype(otherpower, /datum/action/changeling/hivemind_download))
