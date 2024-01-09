@@ -14,6 +14,9 @@
 	var/datum/beam/current_beam = null
 	var/mounted = 0 //Denotes if this is a handheld or mounted version
 
+	var/main_heal = -8
+	var/second_heal = -2
+
 	weapon_weight = WEAPON_MEDIUM
 
 /obj/item/gun/medbeam/Initialize(mapload)
@@ -114,10 +117,10 @@
 /obj/item/gun/medbeam/proc/on_beam_tick(var/mob/living/target)
 	if(target.health != target.maxHealth)
 		new /obj/effect/temp_visual/heal(get_turf(target), "#80F5FF")
-	target.adjustBruteLoss(-4)
-	target.adjustFireLoss(-4)
-	target.adjustToxLoss(-1, forced = TRUE)
-	target.adjustOxyLoss(-1)
+	target.adjustBruteLoss(main_heal)
+	target.adjustFireLoss(main_heal)
+	target.adjustToxLoss(second_heal, forced = TRUE)
+	target.adjustOxyLoss(second_heal)
 	return
 
 /obj/item/gun/medbeam/proc/on_beam_release(var/mob/living/target)
@@ -129,6 +132,8 @@
 //////////////////////////////Mech Version///////////////////////////////
 /obj/item/gun/medbeam/mech
 	mounted = 1
+	main_heal = -16
+	second_heal = -4
 
 /obj/item/gun/medbeam/mech/Initialize(mapload)
 	. = ..()
