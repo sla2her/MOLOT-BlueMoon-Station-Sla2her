@@ -117,10 +117,16 @@
 /obj/item/gun/medbeam/proc/on_beam_tick(var/mob/living/target)
 	if(target.health != target.maxHealth)
 		new /obj/effect/temp_visual/heal(get_turf(target), "#80F5FF")
+	target.drowsyness = max(target.drowsyness-5, 0)
+	target.AdjustUnconscious(main_heal, FALSE)
+	target.AdjustAllImmobility(main_heal, FALSE)
+	target.adjustStaminaLoss(main_heal, FALSE)
 	target.adjustBruteLoss(main_heal)
 	target.adjustFireLoss(main_heal)
+	target.heal_overall_damage(2,2)
 	target.adjustToxLoss(second_heal, forced = TRUE)
 	target.adjustOxyLoss(second_heal)
+	target.adjust_disgust(second_heal)
 	return
 
 /obj/item/gun/medbeam/proc/on_beam_release(var/mob/living/target)
