@@ -2260,6 +2260,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
 	},
+/obj/structure/fireaxecabinet{
+	pixel_x = -32
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/inteq_forgotten_outpost)
 "oz" = (
@@ -3489,9 +3492,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/structure/fireaxecabinet{
-	pixel_x = -32
-	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/inteq_forgotten_outpost)
 "Bz" = (
@@ -4404,12 +4404,12 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
 /obj/machinery/door/airlock/grunge{
 	name = "Engineering";
 	req_one_access_txt = "152"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/inteq_forgotten_outpost)
