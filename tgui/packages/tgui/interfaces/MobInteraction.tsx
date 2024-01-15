@@ -230,7 +230,7 @@ const InteractionsTab = (props, context) => {
                 <Button
                   key={interaction.key}
                   content={interaction.desc}
-                  color={interaction.type === INTERACTION_EXTREME ? "red"
+                  color={interaction.type === INTERACTION_UNHOLY ? "red"
                     : interaction.type ? "pink"
                       : "default"}
                   fluid

@@ -3,10 +3,10 @@
 	interaction_sound = null
 	required_from_user_exposed = INTERACTION_REQUIRE_TOPLESS
 	required_from_target_exposed = INTERACTION_REQUIRE_MOUTH
+	interaction_flags = INTERACTION_FLAG_ADJACENT | INTERACTION_FLAG_OOC_CONSENT | INTERACTION_FLAG_EXTREME_CONTENT
 	max_distance = 1
 	write_log_user = "bite"
 	write_log_target = "had their body bited by"
-	//extreme = TRUE
 
 /datum/interaction/lewd/bite/display_interaction(mob/living/user, mob/living/partner)
 	var/message
