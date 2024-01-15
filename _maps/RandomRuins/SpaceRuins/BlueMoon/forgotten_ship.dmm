@@ -3284,7 +3284,7 @@
 	name = "InteQ interior door";
 	req_one_access_txt = "152"
 	},
-/obj/item/aiModule/core/full/inteq,
+/obj/item/ai_module/core/full/inteq,
 /obj/item/borg/upgrade/transform/syndicatejack,
 /obj/item/robot_module/syndicate_medical/inteq,
 /obj/item/robot_module/syndicate/inteq,

@@ -123,35 +123,35 @@
 		if("Meka Syndie") //Krashly Request
 			cyborg_base_icon = "mekasyndi"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		if("Meka Ninja") //Krashly Request
 			cyborg_base_icon = "mekaninja"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		if("FMeka Ninja") //Lyoll Request (Skyrat Port)
 			cyborg_base_icon = "fmekaninja"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		if("K4 Ninja") //Lyoll Request (Skyrat Port)
 			cyborg_base_icon = "k4tninja"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		if("MMeka Ninja") //Lyoll Request (Skyrat Port)
 			cyborg_base_icon = "mmekaninja"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		if("FMeka Syndie") //Lyoll Request (Skyrat Port)
 			cyborg_base_icon = "fmekasyndi"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		if("K4 Syndie") //Lyoll Request (Skyrat Port)
 			cyborg_base_icon = "k4tsyndi"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		if("MMeka Syndie") //Lyoll Request (Skyrat Port)
 			cyborg_base_icon = "mmekasyndi"
 			cyborg_icon_override = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi'
-			canrest = TRUE
+			hasrest = TRUE
 		else
 			return FALSE
 	return ..()

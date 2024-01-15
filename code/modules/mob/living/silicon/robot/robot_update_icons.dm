@@ -66,7 +66,7 @@
 		else
 			icon_state = "[module.cyborg_base_icon]"
 
-	if(client && stat != DEAD && module.canrest == TRUE)	//For the new borgs who are not dogs
+	if(client && stat != DEAD && module.hasrest == TRUE)	//For the new borgs who are not dogs
 		if(resting)
 			if(sitting)
 				icon_state = "[module.cyborg_base_icon]-sit"

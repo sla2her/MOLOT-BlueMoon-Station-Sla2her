@@ -1,6 +1,6 @@
 /datum/interaction/lewd/slap
-	description = "Slap their ass."
-	simple_message = "USER slaps TARGET right on the ass!"
+	description = "Шлёпнуть по заднице."
+	simple_message = "USER с силой шлёпает задницу TARGET с громким звуком!"
 	simple_style = "danger"
 	interaction_sound = 'sound/weapons/slap.ogg'
 	required_from_user = INTERACTION_REQUIRE_HANDS
