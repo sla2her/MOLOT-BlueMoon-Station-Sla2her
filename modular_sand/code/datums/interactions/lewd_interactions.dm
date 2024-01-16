@@ -534,22 +534,21 @@
 			. += "...обладает открытой одеждой."
 		else
 			. += "...обладает закрытой одеждой."
-	if(has_breasts(REQUIRE_EXPOSED))
+	if(has_breasts() == HAS_EXPOSED_GENITAL)
 		. += "...обладает грудью."
-	if(has_penis(REQUIRE_EXPOSED))
+	if(has_penis() == HAS_EXPOSED_GENITAL)
 		. += "...обладает пенисом."
-	if(has_strapon(REQUIRE_EXPOSED))
+	if(has_strapon() == HAS_EXPOSED_GENITAL)
 		. += "...держит готовый страпон."
-	if(has_balls(REQUIRE_EXPOSED))
+	if(has_balls() == HAS_EXPOSED_GENITAL)
 		. += "...обладает семенниками."
-	if(has_vagina(REQUIRE_EXPOSED))
+	if(has_vagina() == HAS_EXPOSED_GENITAL)
 		. += "...обладает вагиной."
-	if(has_anus(REQUIRE_EXPOSED))
+	if(has_anus() == HAS_EXPOSED_GENITAL)
 		. += "...обладает анальным кольцом."
-	if(has_feet(REQUIRE_EXPOSED))
-		switch(has_feet(REQUIRE_EXPOSED))
+	if(has_feet() == HAS_EXPOSED_GENITAL)
+		switch(get_num_feet())
 			if(2)
 				. += "...обладает двумя ногами."
 			if(1)
 				. += "...обладает одной ногой."
-	return
