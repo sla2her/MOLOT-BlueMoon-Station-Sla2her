@@ -17,6 +17,7 @@
 		/obj/item/clothing/suit/goner/fake/poly = 10,
 		/obj/item/clothing/head/helmet/goner/fake/poly = 10,
 		/obj/item/clothing/under/raccveralls = 3,
+		/obj/item/clothing/under/raccveralls/flush_shirt = 3,
 		/obj/item/clothing/under/officesexy = 3,
 		/obj/item/clothing/suit/toggle/tunnelfox = 3,
 		/obj/item/clothing/under/performer = 2,
