@@ -2193,12 +2193,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/caves/listeningpost)
-"Gw" = (
-/obj/item/flashlight/lantern,
-/turf/open/floor/plating/asteroid/basalt{
-	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
-	},
-/area/awaymission/caves/BMP_asteroid/level_two)
 "GV" = (
 /obj/structure/barricade/wooden,
 /obj/structure/cable{
@@ -53549,7 +53543,7 @@ bT
 bT
 bR
 bJ
-cd
+bJ
 bJ
 bJ
 bJ
@@ -53820,7 +53814,7 @@ bK
 bK
 bK
 bK
-cd
+bJ
 bK
 bK
 bK
@@ -54328,11 +54322,11 @@ bO
 bO
 bO
 bO
+bJ
+bJ
+bJ
+bJ
 cd
-bJ
-bJ
-bJ
-bJ
 bJ
 bJ
 bJ
@@ -54592,7 +54586,7 @@ bJ
 bJ
 bJ
 bJ
-bJ
+cd
 bJ
 bJ
 bJ
@@ -55614,7 +55608,7 @@ bK
 bK
 bK
 bK
-bJ
+cd
 bJ
 bJ
 bO
@@ -57133,7 +57127,7 @@ bK
 bK
 bK
 bK
-bJ
+cd
 bJ
 bO
 bO
@@ -57389,7 +57383,7 @@ bK
 bK
 bN
 bN
-cd
+bJ
 bJ
 bJ
 bO
@@ -57924,7 +57918,7 @@ bK
 bK
 bK
 bJ
-bJ
+cd
 bO
 bO
 bO
@@ -58424,7 +58418,7 @@ bO
 bO
 bO
 bO
-bJ
+cd
 bJ
 cm
 bQ
@@ -58680,7 +58674,7 @@ bO
 bO
 bO
 bJ
-cd
+bJ
 bJ
 bJ
 cm
@@ -58952,7 +58946,7 @@ cm
 cm
 bK
 bJ
-cd
+bJ
 bO
 bO
 bO
@@ -59208,7 +59202,7 @@ cm
 cm
 cm
 bK
-bJ
+cd
 bJ
 bO
 bO
@@ -59466,7 +59460,7 @@ bJ
 bJ
 bJ
 bJ
-bO
+bJ
 bO
 bO
 bO
@@ -59478,9 +59472,9 @@ cm
 cm
 bK
 bK
-zf
 bJ
-Gw
+bJ
+bJ
 bJ
 bJ
 bJ
@@ -60248,10 +60242,10 @@ cm
 bK
 bK
 bK
-cQ
+bJ
 fd
 bJ
-Cg
+bJ
 bK
 bK
 bJ
@@ -61801,7 +61795,7 @@ bK
 bK
 bK
 bK
-bJ
+cd
 bJ
 bJ
 bJ
@@ -64610,7 +64604,7 @@ bK
 bK
 bK
 bK
-cd
+bJ
 bJ
 bJ
 cU
@@ -64852,7 +64846,7 @@ bJ
 bJ
 cU
 bJ
-cd
+bJ
 bJ
 bJ
 bJ
