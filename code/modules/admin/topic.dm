@@ -2829,8 +2829,8 @@
 	else if(href_list["movepod"])
 		var/obj/docking_port/mobile/pod/pod = src
 		pod.request()
-		message_admins("[key_name_admin(holder)] moved the Escape Pod.")
-		log_admin("[key_name(holder)] moved the Escape Pod.")
+		message_admins("[key_name_admin(usr)] moved the Escape Pod.")
+		log_admin("[key_name(usr)] moved the Escape Pod.")
 
 /datum/admins/proc/HandleCMode()
 	if(!check_rights(R_ADMIN))
