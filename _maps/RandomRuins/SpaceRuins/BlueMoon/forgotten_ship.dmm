@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/template_noop,
+/turf/open/space/basic,
 /area/template_noop)
 "ac" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -12,7 +12,7 @@
 /obj/structure/shuttle/engine/propulsion{
 	dir = 8
 	},
-/turf/template_noop,
+/turf/open/space/basic,
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "ae" = (
 /obj/machinery/camera/xray{
@@ -151,7 +151,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "aq" = (
-/turf/template_noop,
+/turf/open/space/basic,
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "ar" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -1741,7 +1741,7 @@
 /obj/structure/shuttle/engine/huge{
 	dir = 8
 	},
-/turf/template_noop,
+/turf/open/space/basic,
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "iY" = (
 /obj/machinery/vending/medical/syndicate_access/cybersun,
@@ -2134,8 +2134,6 @@
 "ne" = (
 /turf/open/floor/engine/vacuum,
 /area/ruin/space/has_grav/inteq_forgotten_outpost)
-"ng" = (
-)
 "no" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/structure/rack{
@@ -4166,7 +4164,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "Ja" = (
 /mob/living/simple_animal/hostile/carp,
-/turf/template_noop,
+/turf/open/space/basic,
 /area/template_noop)
 "Jj" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -4188,7 +4186,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_outpost)
 "JA" = (
 /mob/living/simple_animal/hostile/carp/megacarp,
-/turf/template_noop,
+/turf/open/space/basic,
 /area/template_noop)
 "JB" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -4931,6 +4929,12 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/checker,
+/area/ruin/space/has_grav/inteq_forgotten_outpost)
+"Sk" = (
+/obj/machinery/porta_turret/syndicate{
+	faction = list("InteQ")
+	},
+/turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/inteq_forgotten_outpost)
 "Sm" = (
 /obj/effect/decal/cleanable/blood,
@@ -8473,7 +8477,7 @@ qY
 VR
 VR
 VR
-ba
+cR
 cR
 aa
 aa
@@ -8547,7 +8551,7 @@ tR
 Qc
 Nb
 VR
-VR
+Sk
 cR
 cR
 aa
@@ -9072,7 +9076,7 @@ PZ
 Pu
 UW
 VR
-VR
+Sk
 cR
 aa
 aa
@@ -9304,7 +9308,7 @@ ba
 bU
 aa
 aa
-ng
+aa
 "}
 (47,1,1) = {"
 aa
