@@ -2402,6 +2402,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/inteq_forgotten_ship)
+"pD" = (
+/obj/machinery/porta_turret/syndicate{
+	faction = list("InteQ");
+	pixel_y = 32
+	},
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "pW" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 4
@@ -4929,12 +4936,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/checker,
-/area/ruin/space/has_grav/inteq_forgotten_outpost)
-"Sk" = (
-/obj/machinery/porta_turret/syndicate{
-	faction = list("InteQ")
-	},
-/turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/inteq_forgotten_outpost)
 "Sm" = (
 /obj/effect/decal/cleanable/blood,
@@ -8551,8 +8552,8 @@ tR
 Qc
 Nb
 VR
-Sk
-cR
+VR
+pD
 cR
 aa
 aa
@@ -9076,8 +9077,8 @@ PZ
 Pu
 UW
 VR
-Sk
-cR
+VR
+pD
 aa
 aa
 cR
