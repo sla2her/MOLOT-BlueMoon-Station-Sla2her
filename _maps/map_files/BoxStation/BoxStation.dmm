@@ -15973,16 +15973,6 @@
 "bky" = (
 /turf/closed/wall,
 /area/maintenance/starboard)
-"bkz" = (
-/obj/machinery/door/airlock/external{
-	name = "External Access";
-	req_access_txt = "13"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/closed/wall,
-/area/maintenance/port/aft)
 "bkB" = (
 /obj/structure/sign/warning/vacuum{
 	pixel_x = -32
@@ -45829,7 +45819,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/maintenance/port/aft)
 "fUA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -82763,7 +82753,7 @@ aPz
 bJf
 bCq
 bCq
-bkz
+cyE
 bCq
 bCq
 bLv

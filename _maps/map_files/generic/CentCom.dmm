@@ -20957,10 +20957,6 @@
 	dir = 4
 	},
 /area/centcom/holding)
-"bRX" = (
-/obj/item/toy/plush/mammal/fox/emma/taliza,
-/turf/open/floor/carpet/red,
-/area/centcom/holding)
 "bSc" = (
 /obj/item/storage/box/donkpockets{
 	pixel_x = 7
@@ -63374,7 +63370,7 @@ iPk
 vHr
 pEN
 wwK
-bRX
+gDM
 ncJ
 ncJ
 ncJ
