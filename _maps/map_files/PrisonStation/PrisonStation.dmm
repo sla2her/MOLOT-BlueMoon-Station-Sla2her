@@ -1463,7 +1463,8 @@
 /area/hilbertshotel)
 "dY" = (
 /obj/machinery/door/airlock/bathroom{
-	id = "toilet_door_patient"
+	id_tag = "toilet_door_patient";
+	name = "Toilet Door"
 	},
 /turf/open/floor/plasteel,
 /area/hilbertshotel)
