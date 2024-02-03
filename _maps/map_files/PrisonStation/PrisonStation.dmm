@@ -3519,7 +3519,7 @@
 /area/hilbertshotel)
 "jw" = (
 /obj/effect/spawner/structure/window/reinforced/tinted/electrochromatic{
-	id = "medbreak"
+	electrochromatic_id = "medbreak"
 	},
 /obj/structure/grille,
 /obj/structure/cable,
@@ -6180,7 +6180,7 @@
 /area/hilbertshotel)
 "qD" = (
 /obj/effect/spawner/structure/window/reinforced/tinted/electrochromatic{
-	id = "psychbreak"
+	electrochromatic_id = "psychbreak"
 	},
 /obj/structure/grille,
 /turf/open/floor/plating,
@@ -9240,7 +9240,7 @@
 /obj/machinery/button/door{
 	dir = 8;
 	pixel_x = 28;
-	id = 'toilet_door_patient'
+	id = "toilet_door_patient"
 	},
 /turf/open/floor/plasteel/freezer,
 /area/hilbertshotel)
