@@ -44000,6 +44000,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
+"cZS" = (
+/mob/living/simple_animal/pet/cat/moth,
+/turf/open/floor/plasteel/dark,
+/area/command/bridge)
 "cZU" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -82295,6 +82299,10 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/wood,
 /area/service/sauna)
+"tEB" = (
+/mob/living/simple_animal/pet/cat/mothroach,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "tFp" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/yellow{
@@ -109806,7 +109814,7 @@ alK
 bSu
 dux
 bUW
-bXE
+tEB
 bXD
 bYI
 bZO
@@ -120577,7 +120585,7 @@ aaf
 hMQ
 jZI
 sIL
-sIL
+cZS
 jZA
 jUl
 fnn

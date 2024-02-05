@@ -290,10 +290,11 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/pentatop
-	name = "pentagram crop top"
+	name = "Pentagram Crop Top"
 	desc = "For those goth girls with lots of chest to show."
 	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/uniform_digi.dmi'
 	icon_state = "pentatop"
 	item_state = "pentatop"
 	body_parts_covered = CHEST
