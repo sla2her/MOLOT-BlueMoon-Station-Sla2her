@@ -10,7 +10,7 @@
 	spawn_positions = 2
 	selection_color = "#aac1ee"
 	minimal_player_age = 7
-	exp_requirements = 300
+	exp_requirements = 1500
 	exp_type = EXP_TYPE_SECURITY
 	considered_combat_role = TRUE //Brigger then shit yes it is
 	exp_type_department = EXP_TYPE_SECURITY
