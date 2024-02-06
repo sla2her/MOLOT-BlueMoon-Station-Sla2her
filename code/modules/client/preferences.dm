@@ -2967,9 +2967,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				//Genital code
 				if("lust_tolerance")
-					var/lust_tol = input(user, "Set how long you can last without climaxing. \n(75 = minimum, 200 = maximum.)", "Character Preference", lust_tolerance) as num|null
+					var/lust_tol = input(user, "Set how long you can last without climaxing. \n(25 = minimum, 200 = maximum.)", "Character Preference", lust_tolerance) as num|null
 					if(lust_tol)
-						lust_tolerance = clamp(lust_tol, 75, 200)
+						lust_tolerance = clamp(lust_tol, 25, 200)
 				if("sexual_potency")
 					var/sexual_pot = input(user, "Set your sexual potency. \n(-1 = minimum, 25 = maximum.) This determines the number of times your character can orgasm before becoming impotent, use -1 for no impotency.", "Character Preference", sexual_potency) as num|null
 					if(sexual_pot)
