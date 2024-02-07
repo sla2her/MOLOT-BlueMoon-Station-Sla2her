@@ -111,6 +111,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/pda_skin = PDA_SKIN_ALT
 	var/pda_ringtone = "beep"
 
+	var/blood_color = "#ff0000"
+
 	var/uses_glasses_colour = 0
 
 	//character preferences
@@ -596,8 +598,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<a href='?_src_=prefs;preference=nameless'>Be nameless: [nameless ? "Yes" : "No"]</a><BR>"
 					dat += "<b>Always Random Name:</b><a style='display:block;width:30px' href='?_src_=prefs;preference=name'>[be_random_name ? "Yes" : "No"]</a><BR>"
 
-					dat += "<b>Gender:</b> <a href='?_src_=prefs;preference=gender;task=input'>[gender == MALE ? "Male" : (gender == FEMALE ? "Female" : (gender == PLURAL ? "Non-binary" : "Object"))]</a><BR>"
 					dat += "<b>Age:</b> <a style='display:block;width:30px' href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
+					dat += "<b>Blood Color:</b> <span style='border:1px solid #161616; background-color: [blood_color];'><font color='[color_hex2num(blood_color) < 200 ? "FFFFFF" : "000000"]'>[blood_color]</font></span> <a href='?_src_=prefs;preference=blood_color;task=input'>Change</a><BR>"
 					dat += "</td>"
 
 					dat += "<td valign='top'>"
@@ -3339,12 +3341,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							QDEL_NULL(parent.mob.hud_used)
 							parent.mob.create_mob_hud()
 							parent.mob.hud_used.show_hud(1, parent.mob)
+				if("blood_color")
+					var/pickedBloodColor = input(user, "Выбирайте цвет крови своего персонажа.", "Character Preference", blood_color) as color|null
+					if(!pickedBloodColor)
+						return
+					if(pickedBloodColor)
+						blood_color = pickedBloodColor
 				if("pda_style")
 					var/pickedPDAStyle = input(user, "Выбирайте стиль своего КПК.", "Character Preference", pda_style)  as null|anything in GLOB.pda_styles
 					if(pickedPDAStyle)
 						pda_style = pickedPDAStyle
 				if("pda_color")
-					var/pickedPDAColor = input(user, "Выбирайте цвет интерфейса своего КПК.", "Character Preference",pda_color) as color|null
+					var/pickedPDAColor = input(user, "Выбирайте цвет интерфейса своего КПК.", "Character Preference", pda_color) as color|null
 					if(pickedPDAColor)
 						pda_color = pickedPDAColor
 				if("pda_skin")
@@ -4342,6 +4350,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.nameless = nameless
 	character.custom_species = custom_species
 
+	character.dna.species.exotic_blood_color = blood_color
 	character.gender = gender
 	character.age = age
 
