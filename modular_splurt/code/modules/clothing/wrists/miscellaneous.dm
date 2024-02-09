@@ -49,16 +49,16 @@
 
 /obj/item/clothing/wrists/helper_bracelet/love_need_bracelet
 	name = "Браслет - Нахожусь в активном поиске любви"
-	icon_state = "talk_need"
+	icon_state = "love_need"
 
 /obj/item/clothing/wrists/helper_bracelet/rape_need_bracelet
 	name = "Браслет - Изнасилуйте меня"
-	icon_state = "talk_need"
+	icon_state = "rape_need"
 
 /obj/item/clothing/wrists/helper_bracelet/fuckme_need_bracelet
 	name = "Браслет - Трахните меня"
-	icon_state = "talk_need"
+	icon_state = "fuckme_need"
 
 /obj/item/clothing/wrists/helper_bracelet/fuckyou_need_bracelet
 	name = "Браслет - Хочу трахнуть кого-то"
-	icon_state = "talk_need"
+	icon_state = "fuckyou_need"
