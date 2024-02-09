@@ -1,5 +1,5 @@
 /datum/interaction/lewd/fingerass_self
-	description = "Пальчики. Поиграться со своей задницей."
+	description = "Попа. Поиграться со своей задницей."
 	interaction_sound = null
 	required_from_user = INTERACTION_REQUIRE_HANDS
 	required_from_user_exposed = INTERACTION_REQUIRE_ANUS
@@ -18,7 +18,7 @@
 	user.handle_post_sex(NORMAL_LUST, CUM_TARGET_HAND, user, CUM_TARGET_ANUS) //SPLURT edit
 
 /datum/interaction/lewd/finger_self
-	description = "Пальчики. Поиграться со своей вагиной."
+	description = "Вагина. Поиграться со своей вагиной."
 	required_from_user = INTERACTION_REQUIRE_HANDS
 	required_from_user_exposed = INTERACTION_REQUIRE_VAGINA
 	interaction_sound = null

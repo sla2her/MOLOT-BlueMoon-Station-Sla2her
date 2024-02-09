@@ -1,5 +1,5 @@
 /datum/interaction/lewd/nipsuck
-	description = "Рот. Пососать соски."
+	description = "Грудь. Пососать соски."
 	required_from_user = INTERACTION_REQUIRE_MOUTH
 	required_from_target_exposed = INTERACTION_REQUIRE_BREASTS
 	write_log_user = "sucked nipples"

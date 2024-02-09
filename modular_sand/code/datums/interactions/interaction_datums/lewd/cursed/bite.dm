@@ -1,7 +1,7 @@
 /datum/interaction/lewd/bite
 	description = "Убийственно. Искусать."
 	interaction_sound = null
-	required_from_user_exposed = INTERACTION_REQUIRE_TOPLESS
+	required_from_user_exposed = NONE
 	required_from_target_exposed = INTERACTION_REQUIRE_MOUTH
 	interaction_flags = INTERACTION_FLAG_ADJACENT | INTERACTION_FLAG_OOC_CONSENT | INTERACTION_FLAG_EXTREME_CONTENT
 	max_distance = 1

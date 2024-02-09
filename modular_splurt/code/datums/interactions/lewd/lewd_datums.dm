@@ -663,18 +663,6 @@
 /datum/interaction/lewd/lick_nuts/display_interaction(mob/living/user, mob/living/target)
 	user.lick_nuts(target)
 
-/datum/interaction/lewd/grope_ass
-	description = "Попа. Полапать задницу."
-	simple_message = "USER сжимает задницу TARGET!"
-	required_from_target_exposed = NONE
-	required_from_target_unexposed = NONE
-	required_from_user_exposed = INTERACTION_REQUIRE_HANDS
-	required_from_user_unexposed = NONE
-	max_distance = 1
-	interaction_sound = null
-	write_log_target = "Был(а) потискан(а) за задницу"
-	write_log_user = "потискал(а) задницу"
-
 /datum/interaction/lewd/fuck_cock
 	description = "Член. Трахнуть в уретру."
 	required_from_target_exposed = INTERACTION_REQUIRE_PENIS
