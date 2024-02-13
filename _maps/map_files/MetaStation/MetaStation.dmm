@@ -44001,7 +44001,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "cZS" = (
-/mob/living/simple_animal/pet/cat/moth,
+/mob/living/simple_animal/pet/dog/corgi/moth,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "cZU" = (
@@ -82300,7 +82300,7 @@
 /turf/open/floor/wood,
 /area/service/sauna)
 "tEB" = (
-/mob/living/simple_animal/pet/cat/mothroach,
+/mob/living/simple_animal/pet/dog/corgi/mothroach,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "tFp" = (

@@ -1,4 +1,4 @@
-/mob/living/simple_animal/pet/cat/moth
+/mob/living/simple_animal/pet/dog/corgi/moth
 	name = "Moth"
 	desc = "Становится понятно, куда пропали шубы, перевозимые СССП."
 	icon = 'icons/mob/animal.dmi'
@@ -24,7 +24,7 @@
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/xeno = 1)
 	gold_core_spawnable = FRIENDLY_SPAWN
 
-/mob/living/simple_animal/pet/cat/mothroach
+/mob/living/simple_animal/pet/dog/corgi/mothroach
 	name = "Mothroach"
 	desc = "Мотылёк. Обожает светочи."
 	icon = 'icons/mob/pets.dmi'

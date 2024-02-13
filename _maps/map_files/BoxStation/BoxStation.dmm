@@ -5908,7 +5908,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/mob/living/simple_animal/pet/cat/mothroach,
+/mob/living/simple_animal/pet/dog/corgi/mothroach,
 /turf/open/floor/plating,
 /area/maintenance/department/electrical)
 "avM" = (
@@ -57209,7 +57209,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/mob/living/simple_animal/pet/cat/moth,
+/mob/living/simple_animal/pet/dog/corgi/moth,
 /turf/open/floor/wood,
 /area/command/bridge)
 "ooP" = (
