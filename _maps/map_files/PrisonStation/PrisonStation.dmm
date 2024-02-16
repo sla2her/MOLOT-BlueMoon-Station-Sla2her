@@ -20237,7 +20237,7 @@
 /area/awaymission)
 "jZl" = (
 /obj/effect/spawner/structure/window/reinforced/tinted/electrochromatic{
-	id_tag = "medbreak"
+	electrochromatic_id = "medbreak"
 	},
 /obj/structure/grille,
 /obj/structure/cable,
@@ -45582,7 +45582,7 @@
 /area/awaymission)
 "wYS" = (
 /obj/effect/spawner/structure/window/reinforced/tinted/electrochromatic{
-	id_tag = "psychbreak"
+	electrochromatic_id = "psychbreak"
 	},
 /obj/structure/grille,
 /turf/open/floor/plating,
