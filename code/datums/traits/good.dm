@@ -38,9 +38,9 @@
 	medical_record_text = "У пациента чрезвычайно ускоренный печоночный метаболизм, позволяющий исцелять раны путем употребления алкоголя."
 
 /datum/quirk/empath
-	name = "Эмпат"
-	desc = "Будь то шестое чувство или тщательное изучения языка тела, вы можете с определить настроение цели посмотрев на неё."
-	value = 2
+	name = "Empath"
+	desc = "Whether it's a sixth sense or careful study of body language, it only takes you a quick glance at someone to understand how they feel."
+	value = 1 // SPLURT EDIT
 	mob_trait = TRAIT_EMPATH
 	gain_text = "<span class='notice'>Вы чувствуете себя в гармонии с другими.</span>"
 	lose_text = "<span class='danger'>Вы чувствуете себя изолированно.</span>"
@@ -48,7 +48,7 @@
 
 /datum/quirk/freerunning
 	name = "Паркурщик"
-	desc = "Вы отлично справляетесь с выполнением быстрых движений! Залезание на столы происходит в два раза быстрее."
+	desc = "Вы отлично справляетесь с выполнением быстрых движений! Вы сможете залезать на столы гораздо быстрее."
 	value = 2
 	mob_trait = TRAIT_FREERUNNING
 	gain_text = "<span class='notice'>Вы чувствуете легкость в ногах!</span>"
