@@ -166,7 +166,6 @@
 
 /datum/mood_event/vomit/add_effects(param)
 	. = ..()
-	var/mob/living/carbon/human/owner_mob = owner_mob()
 	description = span_warning("Меня только что вырвало. Неприятно.</span>\n")
 
 /datum/mood_event/vomitself
@@ -175,7 +174,6 @@
 
 /datum/mood_event/vomitself/add_effects(param)
 	. = ..()
-	var/mob/living/carbon/human/owner_mob = owner_mob()
 	description = span_warning("Меня только что вырвало на себя. Мерзость.</span>\n")
 
 /datum/mood_event/painful_medicine

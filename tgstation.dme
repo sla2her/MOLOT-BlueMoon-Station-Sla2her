@@ -303,7 +303,6 @@
 #include "code\__SPLURTCODE\DEFINES\atmospherics.dm"
 #include "code\__SPLURTCODE\DEFINES\cit_defines.dm"
 #include "code\__SPLURTCODE\DEFINES\click.dm"
-#include "code\__SPLURTCODE\DEFINES\colors.dm"
 #include "code\__SPLURTCODE\DEFINES\configuration.dm"
 #include "code\__SPLURTCODE\DEFINES\cooldowns.dm"
 #include "code\__SPLURTCODE\DEFINES\hud.dm"
