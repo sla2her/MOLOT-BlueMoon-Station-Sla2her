@@ -497,6 +497,9 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	var/turf/storageTurf
 	var/roomType = "Hotel Room" // SPLURT ADDITION: Default room type
 
+/area/hilbertshotel/illuminated
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+
 /area/hilbertshotel/Entered(atom/movable/AM)
 	. = ..()
 	if(istype(AM, /obj/item/hilbertshotel))
