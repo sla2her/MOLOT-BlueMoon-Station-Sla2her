@@ -7,10 +7,6 @@
 	if(!mob_dorms[user]?.Find(roomNumber))
 		LAZYADD(mob_dorms[user], roomNumber)
 
-/obj/item/hilbertshotel/attack_hand(mob/user, list/modifiers)
-	. = ..()
-	return promptAndCheckIn(user, user)
-
 // Better SPLURT version of hilbert's
 /datum/map_template/hilbertshotel
 	mappath = '_maps/splurt_maps/templates/hilbertshotel.dmm'
