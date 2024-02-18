@@ -79,7 +79,7 @@
 		return TRUE
 
 /obj/machinery/mineral/bluespace_miner/process()
-	if(prob(0.001))
+	if(prob(0.0005))
 		var/datum/round_event_control/anomaly/anomaly_bluespace/bluespace_anomaly = new/datum/round_event_control/anomaly/anomaly_bluespace
 		bluespace_anomaly.runEvent()
 	update_icon_state()
