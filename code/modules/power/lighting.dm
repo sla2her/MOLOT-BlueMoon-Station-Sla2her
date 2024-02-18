@@ -371,6 +371,7 @@
 	switch(status)
 		if(LIGHT_BROKEN,LIGHT_BURNED,LIGHT_EMPTY)
 			on = FALSE
+			set_light(0)
 	emergency_mode = FALSE
 	if(on)
 		var/BR = brightness
@@ -405,6 +406,7 @@
 	else if(has_emergency_power(LIGHT_EMERGENCY_POWER_USE) && !turned_off())
 		use_power = IDLE_POWER_USE
 		on = FALSE
+		set_light(0)
 		// emergency_mode = TRUE
 		START_PROCESSING(SSmachines, src)
 	else
