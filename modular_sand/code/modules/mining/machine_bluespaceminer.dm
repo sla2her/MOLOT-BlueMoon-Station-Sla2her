@@ -84,8 +84,6 @@
 			if(prob(0.0005))
 				var/datum/round_event_control/anomaly/anomaly_bluespace/bluespace_anomaly = new/datum/round_event_control/anomaly/anomaly_bluespace
 				bluespace_anomaly.runEvent()
-		else
-			return
 	update_icon_state()
 	if(!materials?.silo || materials?.on_hold())
 		return
