@@ -8,7 +8,7 @@
 			return
 		resting = new_resting
 		if(!silent)
-			to_chat(src, "<span class='notice'>You are now [resting? "resting" : "getting up"].</span>")
+			to_chat(src, "<span class='notice'>Вы [resting? "устало падаете" : "поднимаетесь"].</span>")
 		if(resting == 1)
 			SEND_SIGNAL(src, COMSIG_LIVING_RESTING)
 		update_resting(updating)
@@ -39,8 +39,7 @@
 			resist_a_rest()
 	else
 		if(!resting)
-			set_resting(TRUE, FALSE)
-			to_chat(src, "<span class='notice'>Вы ложитесь.</span>")
+			set_resting(FALSE, FALSE)
 		else
 			resist_a_rest()
 
