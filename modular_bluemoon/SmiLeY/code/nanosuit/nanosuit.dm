@@ -1166,14 +1166,14 @@
 			return
 
 //Nanosuit uplink item, available in all traitor rounds
-/datum/uplink_item/dangerous/nanosuit
-	name = "Нанокостюм CryNet"
-	desc = "Станьте постчеловеческим воином с этим тяжелобронированным и мощным костюмом. Нанокостюм нельзя снять, а также он предупреждают экипаж о вашем местоположении, если вы его надели."
-	item = /obj/item/storage/box/syndie_kit/nanosuit
-	cost = 30
-	surplus = 5
-	cant_discount = FALSE
-	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
+// /datum/uplink_item/dangerous/nanosuit
+// 	name = "Нанокостюм CryNet"
+// 	desc = "Станьте постчеловеческим воином с этим тяжелобронированным и мощным костюмом. Нанокостюм нельзя снять, а также он предупреждают экипаж о вашем местоположении, если вы его надели."
+// 	item = /obj/item/storage/box/syndie_kit/nanosuit
+// 	cost = 30
+// 	surplus = 5
+// 	cant_discount = FALSE
+// 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
 
 /datum/movespeed_modifier/nanospeed
 	movetypes = GROUND

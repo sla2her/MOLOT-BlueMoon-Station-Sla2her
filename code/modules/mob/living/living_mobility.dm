@@ -39,7 +39,7 @@
 			resist_a_rest()
 	else
 		if(!resting)
-			set_resting(FALSE, FALSE)
+			set_resting(TRUE, FALSE)
 		else
 			resist_a_rest()
 
