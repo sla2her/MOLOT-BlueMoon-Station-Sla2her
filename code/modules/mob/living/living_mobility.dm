@@ -16,7 +16,10 @@
 /mob/living/proc/update_resting(update_mobility = TRUE)
 	if(update_mobility)
 		update_mobility()
+
+	update_icon()
 	update_rest_hud_icon()
+	usr.update_action_buttons()
 
 //Force mob to rest, does NOT do stamina damage.
 //It's really not recommended to use this proc to give feedback, hence why silent is defaulting to true.
