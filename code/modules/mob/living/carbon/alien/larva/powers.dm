@@ -49,8 +49,8 @@
 
 		var/mob/living/carbon/alien/humanoid/new_xeno
 		if(GLOB.master_mode == "Extended")
+			alien_caste = alert(L, "Пожалуйста, выберите, к какой касте ксеноморфов вы будете принадлежать.",,"Maid-Drone")
 			switch(alien_caste)
-				alien_caste = alert(L, "Пожалуйста, выберите, к какой касте ксеноморфов вы будете принадлежать.",,"Maid-Drone")
 				if("Maid-Drone")
 					new_xeno = new /mob/living/carbon/alien/humanoid/drone/maid(L.loc)
 		else
