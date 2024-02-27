@@ -93,9 +93,10 @@
 	message = uppertext(generate_static_ion_law())
 	return message
 
-/proc/generate_static_ion_law()
+/proc/generate_static_ion_law(datum/mind/new_owner)
 	var/iondepartment = pick_list("ion_laws.json", "отделы")
 	var/list/players = list()
+	var/datum/mind/owner = new_owner
 	for(var/i in GLOB.joined_player_list) // BLUEMOON EDIT - было for(var/mob/living/carbon/human/player in GLOB.player_list)
 		var/mob/player = get_mob_by_ckey(i) // BLUEMOON ADD
 		if(!player.mind || player.mind.assigned_role == player.mind.special_role || player.client.inactivity > 10 MINUTES || player.mind == owner)
