@@ -181,7 +181,7 @@
 				pirate_event.runEvent()
 			if(2)
 				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный на соседнюю станцию! Они очень злятся!!", "[command_name()] Приоритетное Оповещение")
-				var/datum/round_event/meteor_wave/threatening/meteor_event = new/datum/round_event/meteor_wave/threatening
+				var/datum/round_event_control/meteor_wave/threatening/meteor_event = new/datum/round_event_control/meteor_wave/threatening
 				meteor_event.runEvent()
 		ninja_gloves.communication_console_hack_success = TRUE
 		var/datum/antagonist/ninja/ninja_antag = ninja.mind.has_antag_datum(/datum/antagonist/ninja)
