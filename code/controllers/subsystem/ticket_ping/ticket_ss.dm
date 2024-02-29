@@ -6,6 +6,7 @@ SUBSYSTEM_DEF(ticket_ping)
 	wait = 3 MINUTES
 
 /datum/controller/subsystem/ticket_ping/Initialize()
+	initialized = TRUE
 	if(CONFIG_GET(number/ticket_ping_frequency) < 1)
 		flags |= SS_NO_FIRE
 		return FALSE
