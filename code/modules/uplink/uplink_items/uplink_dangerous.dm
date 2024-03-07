@@ -15,6 +15,13 @@
 	cost = 4
 	purchasable_from = ~UPLINK_CLOWN_OPS
 
+/datum/uplink_item/dangerous/aps_pistol
+	name = "Stechkin Pistol"
+	desc = "The original Russian version of a widely used Syndicate sidearm. Uses 9mm ammo. Has a threaded barrel for suppressors."
+	item = /obj/item/storage/box/syndie_kit/aps_pistol
+	cost = 7
+	purchasable_from = ~UPLINK_CLOWN_OPS
+
 /datum/uplink_item/dangerous/revolver
 	name = "Revolver Kit"
 	desc = "A sleek box containing a brutally simple Syndicate revolver that fires .357 Magnum rounds and has 7 chambers, and an extra speedloader."
