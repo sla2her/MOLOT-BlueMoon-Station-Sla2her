@@ -446,7 +446,6 @@
 #define STATION_TRAIT_PDA_GLITCHED "station_trait_pda_glitched"
 
 #define SIGNAL_ADDTRAIT(trait_ref) "addtrait [trait_ref]"
-#define SIGNAL_REMOVETRAIT(trait_ref) "removetrait [trait_ref]"
 
 /*
 Remember to update _globalvars/traits.dm if you're adding/removing/renaming traits.
@@ -560,8 +559,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_ANTICONVULSANT "anticonvulsant"
 /// The holder of this trait has antennae or whatever that hurt a ton when noogied
 #define TRAIT_ANTENNAE "antennae"
-/// Blowing kisses actually does damage to the victim
-#define TRAIT_KISS_OF_DEATH "kiss_of_death"
 /// Used to activate french kissing
 #define TRAIT_GARLIC_BREATH "kiss_of_garlic_death"
 /// Used on limbs in the process of turning a human into a plasmaman while in plasma lava
@@ -730,7 +727,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_BADTOUCH "bad_touch"
 #define TRAIT_EXTROVERT "extrovert"
 #define TRAIT_INTROVERT "introvert"
-#define TRAIT_ANXIOUS "anxious"
 #define TRAIT_INSANITY "insanity"
 
 ///Trait for dryable items
@@ -872,8 +868,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define HIPPOCRATIC_OATH_TRAIT "hippocratic_oath"
 /// Trait granted by [/datum/status_effect/blooddrunk]
 #define BLOODDRUNK_TRAIT "blooddrunk"
-/// Trait granted by lipstick
-#define LIPSTICK_TRAIT "lipstick_trait"
 /// Self-explainatory.
 #define BEAUTY_ELEMENT_TRAIT "beauty_element"
 #define MOOD_COMPONENT_TRAIT "mood_component"

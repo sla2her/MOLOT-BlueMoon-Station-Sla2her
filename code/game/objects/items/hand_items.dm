@@ -1,7 +1,6 @@
 /obj/item/hand_item
 	item_flags = DROPDEL | ABSTRACT | HAND_ITEM
 
-
 /obj/item/hand_item/circlegame
 	name = "circled hand"
 	desc = "If somebody looks at this while it's below your waist, you get to bop them."
