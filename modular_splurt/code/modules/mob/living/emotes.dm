@@ -168,6 +168,18 @@
 	if(TIMER_COOLDOWN_CHECK(user, COOLDOWN_EMOTE_FART))
 		to_chat(user, span_warning("You try your hardest, but no shart comes out."))
 		return
+
+	var/deceasedturf = get_turf(src)
+	// Closed turfs don't have any air in them, so no gas building up
+	if(!istype(deceasedturf,/turf/open))
+		return
+	var/turf/open/miasma_turf = deceasedturf
+	var/datum/gas_mixture/stank = new
+	stank.set_moles(GAS_MIASMA,2.5)
+	stank.set_temperature(BODYTEMP_NORMAL)
+	miasma_turf.assume_air(stank)
+	miasma_turf.air_update_turf()
+
 	var/list/fart_emotes = list( //cope goonies
 		"lets out a girly little 'toot' from [user.p_their()] butt.",
 		"farts loudly!",
