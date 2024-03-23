@@ -457,17 +457,21 @@
 	var/obj/item/slimecross/stabilized/linked_extract
 	var/colour = "null"
 
-/datum/status_effect/stabilized/tick()
-	if(!linked_extract || !linked_extract.loc) //Sanity checking
+/datum/status_effect/stabilized/on_creation(mob/living/new_owner, obj/item/slimecross/stabilized/linked_extract)
+	src.linked_extract = linked_extract
+	return ..()
+
+/datum/status_effect/stabilized/tick(seconds_between_ticks)
+	if(isnull(linked_extract))
 		qdel(src)
 		return
-	if(linked_extract && linked_extract.loc != owner && linked_extract.loc.loc != owner)
+	if(linked_extract.get_held_mob() == owner)
+		return
+	owner.balloon_alert(owner, "[colour] extract faded!")
+	if(!QDELETED(linked_extract))
 		linked_extract.linked_effect = null
-		if(!QDELETED(linked_extract))
-			linked_extract.owner = null
-			START_PROCESSING(SSobj,linked_extract)
-		qdel(src)
-	return ..()
+		START_PROCESSING(SSobj,linked_extract)
+	qdel(src)
 
 /datum/status_effect/stabilized/Destroy()
 	linked_extract = null
