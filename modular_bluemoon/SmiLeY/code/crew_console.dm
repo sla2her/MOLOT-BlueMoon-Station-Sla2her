@@ -21,8 +21,7 @@
 	canalarm = FALSE
 	var/injuredcount = 0
 
-	for(var/tracked_mob in GLOB.suit_sensors_list)
-		var/mob/living/carbon/human/mob = tracked_mob
+	for(var/mob/living/carbon/human/mob in GLOB.carbon_list)
 		if(mob.z != src.z)
 			continue
 		var/obj/item/clothing/under/uniform = mob.w_uniform
