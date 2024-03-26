@@ -521,11 +521,11 @@
 	//SPLURT EDIT START:
 	// Check if user has TRAIT_KISS_SLUT and increase their lust
 	if(HAS_TRAIT(user, TRAIT_KISS_SLUT))
-		user.handle_post_sex(NORMAL_LUST, null, partner)
+		user.handle_post_sex(LOW_LUST, null, partner)
 
 	// Check if partner has TRAIT_KISS_SLUT and increase their lust
 	if(HAS_TRAIT(partner, TRAIT_KISS_SLUT))
-		partner.handle_post_sex(NORMAL_LUST, null, user)
+		partner.handle_post_sex(LOW_LUST, null, user)
 	//SPLURT EDIT END
 
 /datum/interaction/lewd/kiss/display_interaction(mob/living/user, mob/living/partner)
