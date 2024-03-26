@@ -24,6 +24,8 @@
 	for(var/mob/living/carbon/human/mob in GLOB.carbon_list)
 		if(mob.z != src.z)
 			continue
+		else if(!istype(mob.w_uniform, /obj/item/clothing/under)) //BLUEMOON CHANGE проверка на существование униформы, сколько её может быть и не быть
+			continue
 		var/obj/item/clothing/under/uniform = mob.w_uniform
 		if(uniform.sensor_mode >= SENSOR_VITALS && mob.InCritical() || mob.stat == DEAD)
 			injuredcount++
