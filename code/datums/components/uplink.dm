@@ -241,7 +241,7 @@ GLOBAL_LIST_EMPTY(uplinks)
 	if (!user || user.incapacitated())
 		return
 	if(U.hijack_only)
-		if(!(user.mind?.has_antag_datum(/datum/antagonist/nukeop)) || !(user.mind?.has_objective(/datum/objective/hijack)) || !(user.mind?.has_objective(/datum/objective/martyr)))
+		if(!(user.mind?.has_antag_datum(/datum/antagonist/nukeop)) && !(user.mind?.has_objective(/datum/objective/hijack)) && !(user.mind?.has_objective(/datum/objective/martyr)))
 			to_chat(user, "<span class='warning'>InteQ выдает этот чрезвычайно опасный предмет только агентам, получившим особо сложное задание.</span>")
 			return
 
