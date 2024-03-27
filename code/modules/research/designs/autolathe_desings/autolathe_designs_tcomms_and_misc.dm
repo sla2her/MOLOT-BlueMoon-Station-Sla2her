@@ -122,6 +122,11 @@
 	id = "tile_sprayer"
 	build_path = /obj/item/airlock_painter/decal/tile
 
+/datum/design/airlock_painter/decal/airlock
+	name = "Airlock Painter"
+	id = "airlock_painter"
+	build_path = /obj/item/airlock_painter
+
 /datum/design/cultivator
 	name = "Cultivator"
 	id = "cultivator"
