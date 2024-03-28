@@ -112,7 +112,7 @@
 
 /obj/item/clothing/neck/cloak/sencloak
 	name = "Senior Commander's Trenchcloak"
-	desc = "Dark trenchcloak made to order for senior officers. Consists of really strong leather and armored fabric. The inside of the collar has a label with ''V'' written on it."	icon_state = "syndcapt"
+	desc = "Dark trenchcloak made to order for senior officers. Consists of really strong leather and armored fabric. The inside of the collar has a label with ''V'' written on it."
 	icon_state = "sencloak"
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
