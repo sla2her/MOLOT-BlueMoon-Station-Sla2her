@@ -1018,6 +1018,7 @@ BLUEMOON REMOVAL END*/
 	required_candidates = 2
 	weight = 3
 	cost = 2
+	scaling_cost = 9
 	requirements = list(0,101,101,60,40,20,20,20,10,10)
 	var/datum/team/abductor_team/new_team
 
