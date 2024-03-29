@@ -5,7 +5,7 @@
 	gen_access()
 
 /obj/machinery/rnd/production/ui_interact(mob/user)
-	if(!iscarbon(user))
+	if(!isliving(user))
 		to_chat(user, span_red("<B>Машинерия недопустима к использованию со стороны неавторизованных существ!</B>"))
 		return
 	// Check if user can use machine
