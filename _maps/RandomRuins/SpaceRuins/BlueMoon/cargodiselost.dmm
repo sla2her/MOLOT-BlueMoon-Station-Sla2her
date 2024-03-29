@@ -1222,7 +1222,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/ftu_cargo)
 "uO" = (
-/obj/machinery/rnd/production/protolathe,
+/obj/machinery/rnd/production/protolathe/department/autobottler,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/ftu_cargo)
 "vb" = (
@@ -3009,6 +3009,13 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/ftu_cargo)
+"YE" = (
+/obj/machinery/porta_turret/syndicate/energy{
+	faction = list("hostile");
+	dir = 1
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "YL" = (
 /obj/item/tank/internals/oxygen/red,
 /obj/item/tank/internals/oxygen/red,
@@ -4373,7 +4380,7 @@ vH
 vH
 Gh
 Gh
-fV
+YE
 sA
 YY
 sA
@@ -4660,7 +4667,7 @@ Gh
 Gh
 Gh
 Gh
-fV
+YE
 qJ
 qJ
 qJ
