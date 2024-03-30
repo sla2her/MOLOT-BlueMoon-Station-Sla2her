@@ -1204,6 +1204,8 @@
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	back = /obj/item/storage/backpack/satchel/sec
 
+	id = /obj/item/card/id
+
 /datum/outfit/centcom_syndicate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
@@ -1211,8 +1213,8 @@
 	var/obj/item/card/id/W = H.wear_id
 	W.icon_state = "centcom"
 	W.access = get_all_accesses()
-	W.access += get_centcom_access("Special Ops Officer")
-	W.assignment = "Special Ops Officer"
+	W.access += get_centcom_access("Special Ops Syndicate Officer")
+	W.assignment = "Special Ops Syndicate Officer"
 	W.registered_name = H.real_name
 	W.update_label()
 
@@ -1259,8 +1261,8 @@
 	var/obj/item/card/id/W = H.wear_id
 	W.icon_state = "centcom"
 	W.access = get_all_accesses()
-	W.access += get_centcom_access("Special Ops Officer")
-	W.assignment = "Special Ops Officer"
+	W.access += get_centcom_access("Special Ops Centcom Officer")
+	W.assignment = "Special Ops Centcom Officer"
 	W.registered_name = H.real_name
 	W.update_label()
 
