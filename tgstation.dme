@@ -4377,6 +4377,7 @@
 #include "modular_bluemoon\SmiLeY\code\hilbertshotel_ghost.dm"
 #include "modular_bluemoon\SmiLeY\code\lavaland.dm"
 #include "modular_bluemoon\SmiLeY\code\noose.dm"
+#include "modular_bluemoon\SmiLeY\code\pact_ninja_suit.dm"
 #include "modular_bluemoon\SmiLeY\code\sex_machine.dm"
 #include "modular_bluemoon\SmiLeY\code\space.dm"
 #include "modular_bluemoon\SmiLeY\code\tentacle.dm"
