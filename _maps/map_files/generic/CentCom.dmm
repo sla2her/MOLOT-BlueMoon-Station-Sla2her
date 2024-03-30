@@ -26828,7 +26828,7 @@
 /obj/machinery/status_display/evac{
 	pixel_x = -32
 	},
-/obj/machinery/computer/communications/syndicate{
+/obj/machinery/computer/camera_advanced/syndie{
 	dir = 4;
 	pixel_x = -8
 	},
@@ -32700,7 +32700,7 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
 "rCF" = (
-/obj/machinery/computer/card/centcom{
+/obj/machinery/computer/communications/syndicate{
 	dir = 4;
 	pixel_x = -8
 	},
