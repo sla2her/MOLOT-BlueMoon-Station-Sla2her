@@ -2,7 +2,7 @@
 "a" = (
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/pod/dark,
-/area/space)
+/area/shuttle/lambda)
 "c" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -13,23 +13,23 @@
 /obj/item/weldingtool/largetank,
 /obj/item/card/id/centcom,
 /turf/open/floor/pod/dark,
-/area/space)
+/area/shuttle/lambda)
 "g" = (
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "h" = (
 /obj/machinery/light/small/red/directional/north,
 /obj/machinery/vending/wallmed/directional/north,
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "i" = (
 /obj/machinery/light/small/red/directional/south,
 /obj/machinery/vending/wallmed/directional/south,
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "k" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 8
@@ -42,7 +42,7 @@
 	dir = 1
 	},
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "o" = (
 /obj/item/clothing/suit/armor/heavy/juggernaut,
 /obj/item/clothing/head/helmet/juggernaut,
@@ -57,11 +57,11 @@
 /obj/item/tank/jetpack/oxygen/harness,
 /obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "p" = (
 /obj/machinery/light/small/red/directional/south,
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "q" = (
 /obj/machinery/door/airlock/centcom{
 	name = "CentCom Security";
@@ -78,10 +78,10 @@
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "v" = (
 /turf/closed/wall/mineral/plastitanium,
-/area/space)
+/area/shuttle/lambda)
 "E" = (
 /obj/item/gun/energy/laser/hellgun,
 /obj/item/gun/energy/laser/hellgun,
@@ -96,17 +96,17 @@
 	pixel_x = 30
 	},
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "F" = (
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "G" = (
 /turf/open/floor/pod/dark,
-/area/space)
+/area/shuttle/lambda)
 "L" = (
 /obj/machinery/light/small/red/directional/north,
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "N" = (
 /obj/item/ammo_box/magazine/m16,
 /obj/item/ammo_box/magazine/m16,
@@ -129,18 +129,18 @@
 	pixel_x = 30
 	},
 /turf/open/floor/pod/dark,
-/area/space)
+/area/shuttle/lambda)
 "U" = (
 /obj/machinery/door/airlock/external{
 	name = "Space";
 	req_access_txt = "1"
 	},
 /turf/open/floor/pod/light,
-/area/space)
+/area/shuttle/lambda)
 "V" = (
 /obj/vehicle/sealed/mecha/combat/marauder/loaded,
 /turf/open/floor/pod/dark,
-/area/space)
+/area/shuttle/lambda)
 "Z" = (
 /obj/structure/closet/crate,
 /obj/item/storage/firstaid/tactical,
@@ -152,7 +152,7 @@
 /obj/item/grenade/frag,
 /obj/item/grenade/frag,
 /turf/open/floor/pod/dark,
-/area/space)
+/area/shuttle/lambda)
 
 (1,1,1) = {"
 v
