@@ -802,10 +802,10 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 		/turf/closed/wall/rust,
 		/turf/closed/wall/r_wall/rust,
 		/turf/closed/wall/clockwork,
-		/turf/closed/indestructible/riveted
+		/turf/closed/indestructible/riveted,
 		/obj/structure/falsewall,
 		/obj/structure/falsewall/brass,
-		/obj/structure/falsewall/reinforced
+		/obj/structure/falsewall/reinforced,
 		/obj/structure/window/fulltile,
 		/obj/structure/window/reinforced/fulltile,
 		/obj/structure/window/reinforced/tinted/fulltile,
