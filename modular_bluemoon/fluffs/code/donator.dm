@@ -195,7 +195,14 @@
 	name = "Syndicate Officer's Cloak"
 	slot = ITEM_SLOT_NECK
 	path = /obj/item/clothing/neck/cloak/syndiecap
-	ckeywhitelist = list("architect0r")
+	ckeywhitelist = list("architect0r", "fanlexa")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/syndiecloak
+	name = "syndicate admiral's cloak"
+	slot = ITEM_SLOT_NECK
+	path = /obj/item/clothing/neck/cloak/syndieadm
+	ckeywhitelist = list("architect0r", "fanlexa")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
 /datum/gear/donator/bm/sencloak
@@ -203,6 +210,13 @@
 	slot = ITEM_SLOT_NECK
 	path = /obj/item/clothing/neck/cloak/sencloak
 	ckeywhitelist = list("romontesque")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/ftucloak
+	name = "FTU Cape"
+	slot = ITEM_SLOT_NECK
+	path = /obj/item/clothing/neck/cloak/ftu
+	ckeywhitelist = list("fanlexa")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
 /datum/gear/donator/bm/angelo
