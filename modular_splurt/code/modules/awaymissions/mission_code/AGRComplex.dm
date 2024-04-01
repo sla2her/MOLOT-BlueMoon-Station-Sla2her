@@ -223,73 +223,73 @@
 
 /obj/item/paper/fluff/awaymissions/complex
 	name = "Complex Papers"
-	info = "AGR COMPLEX? I find it quite simple."
+	default_raw_text = "AGR COMPLEX? I find it quite simple."
 
 /obj/item/paper/fluff/awaymissions/complex/cabinmessage
 	name = "Dear Maria"
-	info = {"Hey Honey! Writing this in advance, I wanted to let you know what I've been up to recently! Remember what I told you about work relaxing a bit after they found that weird thing in the mountain? Well we haven't gotten many major assignments because of it, so I had time to build something!
-		 You always wanted a little cabin, right? Anyway, it's just about done by the time I'm writing this, so it may be a few months until you get to see it, but I'll make sure to keep it clean for when you visit!<br><br>Can't wait to see you!<br>Elliot"}
+	default_raw_text = {"Hey Honey! Writing this in advance, I wanted to let you know what I've been up to recently! Remember what I told you about work relaxing a bit after they found that weird thing in the mountain? Well we haven't gotten many major assignments because of it, so I had time to build something!
+						You always wanted a little cabin, right? Anyway, it's just about done by the time I'm writing this, so it may be a few months until you get to see it, but I'll make sure to keep it clean for when you visit!<br><br>Can't wait to see you!<br>Elliot"}
 
 /obj/item/paper/fluff/awaymissions/complex/preperation
 	name = "Preparation"
-	info = {"It had been a disastrous month. The thieves and heretics have finally quieted, undone by their own infighting and disbelief. They remain still, clinging to their wretched fortifications separating us from what is rightfully ours.
+	default_raw_text = {"It had been a disastrous month. The thieves and heretics have finally quieted, undone by their own infighting and disbelief. They remain still, clinging to their wretched fortifications separating us from what is rightfully ours.
 		But now that they've relented, we have finally gathered enough brothers and sisters to breach their most prized defense. Soon we shall strike, strike with righteous fury in the name of the almighty!
 		And soon, with the bodies of their fallen, we will raze that pitiful fortress we once called home, until all that remains in this wretched valley is all those faithful.<br><br>It is just a matter of time. And our lord is patient.<br>Just the press of a button, and our victory is assured."}
 
 
 /obj/item/paper/fluff/awaymissions/complex/journal
 	name = "Reporting Journal"
-	info = {"Date is 4/22/XX.<br>Expediting my monthly report on request of the C.O.<br>This month has seen an increase in suspicious activity from some of the research and mining crew. Half of the research staff have been stationed at or near the target come last week, and a few of us have noticed that those working on it from the start are having issues keeping up with their schedule back at the central station.
+	default_raw_text = {"Date is 4/22/XX.<br>Expediting my monthly report on request of the C.O.<br>This month has seen an increase in suspicious activity from some of the research and mining crew. Half of the research staff have been stationed at or near the target come last week, and a few of us have noticed that those working on it from the start are having issues keeping up with their schedule back at the central station.
 	H.O.P’s not happy about it, but apparently orders from up above are keeping as many researchers there as possible. Security’s been acting antsy recently, since HC refuses to divert more security to the target. Better for us, atleast.
 	Medical’s been having issues, too. Been getting a lot of odd injuries and psychosis incidents, mostly from the miners. Stranger though, there’s been less need for the cloner. Not sure if the miners just got sick of dying or what, but with the upgrade we got recently, you would think NT had prepared for worse.<br><br>
-	As for strictly mission-relevant information, I’ve started preparing for the main assault. Work might be sloppy given the time constraint, but be assured that all communications and those AA guns will be offline prior to the arrival of the assault team. Everything should be fine, assuming we aren’t sending assault pods.<br><br>
+	As for strictly mission-relevant default_raw_textrmation, I’ve started preparing for the main assault. Work might be sloppy given the time constraint, but be assured that all communications and those AA guns will be offline prior to the arrival of the assault team. Everything should be fine, assuming we aren’t sending assault pods.<br><br>
 	P.S: Would have sent this report sooner, but a cave-in happened at my last hideout, so I had to make do. Left a weapon and some prototypes there, so we may want to recover those prior to extraction. It was getting crowded anyway, with everyone lurking around medical."}
 
 /obj/item/paper/fluff/awaymissions/complex/finalthoughts
 	name = "Final Thoughts"
-	info = {"The date is 4/27/XX. Prior to writing, around a day ago, I had been sent, alongside my team to execute a contract. Details are unimportant, given the circumstances I was in. We had been told that the Anti Air defenses this facility had would’ve been disabled before we landed, but clearly our implant had done a shitty job.
+	default_raw_text = {"The date is 4/27/XX. Prior to writing, around a day ago, I had been sent, alongside my team to execute a contract. Details are unimportant, given the circumstances I was in. We had been told that the Anti Air defenses this facility had would’ve been disabled before we landed, but clearly our implant had done a shitty job.
 		I won’t lie, I have no idea how I survived, but at this point I’m starting to wish I didn’t. I’m not sure who’ll find this, since all I’ve got for company is a pAI. Wanted to bring ‘em on their first mission. Brilliant idea THAT was.<br><br>
 		Getting cold here. Wish I had packed more rations, or maybe a flare. I probably won’t get out alive here. Even if my squad survived the landing, I’m not sure if they’d know where to find me.<br><br>
 		So, to anyone who finds this. I’d appreciate being revived, if my dying words are enough to convince you of doing that. If not, at least just take the pAI. It's earned better than this. It has to me, atleast."}
 
 /obj/item/paper/fluff/awaymissions/complex/engineeringlog
 	name = "A.R.S Log, 4.28.XX"
-	info = {"*Most of the paper is an uninteresting collection of error logs, except for the bottom...*<br><br>
+	default_raw_text = {"*Most of the paper is an uninteresting collection of error logs, except for the bottom...*<br><br>
 		22:47,<br>
 		Notice! Communication Logs have been collected from an Irregular Frequency! <br>RECEIVING experiencing significant malfunction, translated logs may be incomplete! Immedient repairs necessary to continue the proper function of the broadcasting system!<br><br>
 		Recorded Log:<br>Date: 4/29/XX<br>Time: 22:46 B.A.T<br>Vessel: ‘E.M.C Absolver'<br>I.F.F Status: Hostile<br><br>
 		'Absolver to $*)!@#&-Command Station, reporting no radio communications from Fireteams Titan and Callisto. Video Surveillance has determined that the squads inserted before the Anti-Air Defenses could be disabled, and %*!@)#’s Pod suffered substantial damage.<br>
 		Surveillance of the target area soon after insertion showed a significant buildup of an !)*&#@! hostile force, inconsistent with our previous intelligence. It is highly likely that both fireteams are incapable of completing current mission objectives.<br>
-		Flares from the A.O have been spotted, however with no way to contact ##)*!)*$-ces and a higher-than-expected number of N.T Staff spotted throughout the Complex, we cannot perform a rescue operation without a significant threat of- @%*$)*!&. Requesting reinforcements to execute a safe operation, or authorization to scuttle the target.'<br><br>
+		Flares from the A.O have been spotted, however with no way to contact ##)*!)*$-ces and a higher-than-expected number of N.T Staff spotted throughout the Complex, we cannot perform a rescue operation without a significant threat of- @%*$)*!&. Requesting redefault_raw_textrcements to execute a safe operation, or authorization to scuttle the target.'<br><br>
 		Command Station to Absolver. Request denied. Other forces in the area are !)@*$&!@ and cannot assist you at this time. We’ll dispatch a secondary unit to continue the operation, or $*!@#% whoever is left when available.<br>
 		R.T.B. The client is expecting a top-quality job here, so we’ll do our best to justify this delay. Do not proceed with bombardment until the secondary force has left the A.O. $*!)@# Titan and Callisto are to be considered M.I.A until further investigation.'"}
 
 /obj/item/paper/fluff/awaymissions/complex/leaderreport
 	name = "After Ation Report"
-	info = {"This is Commander Artyom Volkov, Squad Leader for fireteams Titan and Callisto.<br>Date is 4/28/XX, 14:00 Bluespace Time.<br>
+	default_raw_text = {"This is Commander Artyom Volkov, Squad Leader for fireteams Titan and Callisto.<br>Date is 4/28/XX, 14:00 Bluespace Time.<br>
 		Our mission involved inserting into the facility known as the ‘Archeological and Geological Research Complex’ and extracting an unknown botanical package, codenamed ‘Green Thumb’. Insertion would have been done via Assault Pod towards the southern facility grounds, wherein all hostile forces, be them security or civilian, were to be eliminated, and the package extracted from the deepest part of the ruins that Nanotrasen had uncovered.<br>
 		Lastly, the package, all remaining personnel, including assault troops and undercover operatives, were to be extracted outside the ruins via the drop vessel, the E.M.C Absolver. The mission did not go as planned.<br><br>
 		Not only had the undercover implant failed to fully disable the anti-air weaponry in the area, they had failed to notify us of what appeared to be a very clear and present occult threat in the A.O. What happened next could only be described as a fucking mess, forgive my unprofessional language.<br>
 		Neither assault pod landed in their intended location! Callisto landed on a substation between their Engineering and Security facilities, and Titan’s pod landed dead-center in the main facility! The only thing that prevented both squads from being entirely wiped out was what appeared to be a revolt, which turned out to be the aforementioned occult threat.<br>
 		The three-way engagement between NT security forces, our own forces, and the cultists allowed us to set up a strongpoint in the main facility. After multiple hours of this living hellscape, we were able to force both factions to retreat, scattering the cultists and pushing the security forces and their sympathizers out into one of the secondary facilities.<br>
 		We’ve been able to control the civilians as of now, but with multiple wounded and heavy resistance towards the southern end of the facility, there was no way we had the manpower to proceed to the objective.<br><br>
-		If my opinion on this operation was not evident enough, I am hereby requesting either reinforcements or extraction as soon as possible. I’ve already ignited our signal flares, but have seen no response. I am going to attempt to get this report out via any means possible, however short of flashing the Absolver in Morse, that may take a while."}
+		If my opinion on this operation was not evident enough, I am hereby requesting either redefault_raw_textrcements or extraction as soon as possible. I’ve already ignited our signal flares, but have seen no response. I am going to attempt to get this report out via any means possible, however short of flashing the Absolver in Morse, that may take a while."}
 
 /obj/item/paper/fluff/awaymissions/complex/bureaucracy
 	name = "RE: Construction Notice"
-	info = {"*The above paper has mostly been redacted, however a response is still visible...*<br><br><br>
+	default_raw_text = {"*The above paper has mostly been redacted, however a response is still visible...*<br><br><br>
 		Hello. This is Captain Mandela, recently appointed as the primary site manager of the ‘A.G.R Complex’. I am writing as I have some questions and concerns regarding the state of this facility, as numerous safety concerns have been relayed to me by other members of this facility’s command staff.<br><br>
 		What might be the most notable concern is the quality of this facility’s construction. It has been levied to me that the R&D Division has chosen to outsource construction to Theseus Contracting LLC, as they quote, 'Are specialty contractors primarily operating within this region of space, highly qualified in constructing facilities in hazardous environments.'<br>
 		Which is primarily true, however you had neglected to mention that this company specialized in space station construction, not planet-side construction, where they were only adequate at, given my research. As the likely result of this, the facility grounds are not properly optimized for this environment, with the electrical systems haphazardly placed in the elements, and heavily outdated telecommunications equipment.<br>
 		I have received numerous complaints from my Chief Engineer regarding constant maintenance, and we have not been given modern atmospheric systems, rather just sets of space heaters!<br><br>
 		Furthermore, safety concerns have risen amongst the mining and research staff. Notably, a lack of proper weaponry and protective gear to deal with constant threats from mining hazards and wildlife in the area, with security forces being too stretched to secure the most heavily traveled routes among the complex.<br><br>
-		Lastly, we had been told that the archeological value of this site was due to a supposed religious presence in the area, of what kind I have not been informed of, however this facility has not been appointed a chaplain. While this may be a minor concern, it is odd to me that most stations are staffed with at least one chaplain at all times, however a facility researching apparent religious history would not be given one?<br><br>
+		Lastly, we had been told that the archeological value of this site was due to a supposed religious presence in the area, of what kind I have not been default_raw_textrmed of, however this facility has not been appointed a chaplain. While this may be a minor concern, it is odd to me that most stations are staffed with at least one chaplain at all times, however a facility researching apparent religious history would not be given one?<br><br>
 		In summary, I am concerned that this facility has not been built to Nanotrasen Standard, and has been woefully neglected proper equipment and staff that are present in many other stations.<br>
-		I have been informed that the blueprints and authorization for this complex were authorized by you alone, which, and I do not mean to offend, may have resulted in overlooking certain standards that would ensure the safe and efficient operation of this facility.<br><br>Regards,<br>Captain Mandela"}
+		I have been default_raw_textrmed that the blueprints and authorization for this complex were authorized by you alone, which, and I do not mean to offend, may have resulted in overlooking certain standards that would ensure the safe and efficient operation of this facility.<br><br>Regards,<br>Captain Mandela"}
 
 /obj/item/paper/fluff/awaymissions/complex/madlogistician
 	name = "Security Notice - Theft"
-	info = {"Logistician Albert Terrace here, of the mining camp south of the main station. I’d like to file a complaint and/or request a formal investigation as to the amount of equipment and material that’s been lost recently. On a near daily basis, crates of highly valuable research material and some resources have been late to their scheduled delivery, or outright lost in transit!
+	default_raw_text = {"Logistician Albert Terrace here, of the mining camp south of the main station. I’d like to file a complaint and/or request a formal investigation as to the amount of equipment and material that’s been lost recently. On a near daily basis, crates of highly valuable research material and some resources have been late to their scheduled delivery, or outright lost in transit!
 		There is ONE, SINGULAR, ROUTE. There is ONE ROAD between every single substation in this damned place! There is no way in hell these miners and research staff are getting LOST. We've even put those lamp signs up! I’ve even heard the absolutely ASININE excuse of being driven off by bears. BEARS! Every single miner in this facility has the capability and equipment to kill a few BEARS.<br>
 		90% of every shipment is sent by miners, or a team of miners and researchers. I am saddened to say I am not certain as to who specifically is continually doing this, as my shipment data doesn’t include names of the package handlers. I have no idea what these staff have to gain from smuggling ores and research data given how ALL of our supply shuttles land on the exterior grounds under heavy watch!<br><br>
 		Not only this, these continuous missteps have gotten me in hot water with the Quartermaster, when I have continuously ensured that every piece of documentation was correct, and every shipment had LEFT on time! It is not my responsibility to babysit grown adults who clearly cannot be trusted to hold a pickaxe right-side-up, let alone move a crate a mile down the road!<br><br>
@@ -298,7 +298,7 @@
 
 /obj/item/paper/fluff/awaymissions/complex/researchnotes
 	name = "Research Log, 4/13/XX, Subject 'Green Thumb'"
-	info = {"This log marks the end of the past 14 days of extensive research regarding ‘Green Thumb’. Tests and various recovered documentation from the occult foundry have confirmed our hypothesis regarding the nature of the plant itself. Analysis onto the soil substrate determined a high concentration of minerals coinciding with the primary material of the previously established occult presence in the region.<br>
+	default_raw_text = {"This log marks the end of the past 14 days of extensive research regarding ‘Green Thumb’. Tests and various recovered documentation from the occult foundry have confirmed our hypothesis regarding the nature of the plant itself. Analysis onto the soil substrate determined a high concentration of minerals coinciding with the primary material of the previously established occult presence in the region.<br>
 		We’ve determined that under strict conditions, the plant is capable of rapid expansion without the need for traditional sexual reproductive systems.<br><br>
 		While the specific intention behind the clearly bio-engineered organism is not known, it is highly likely that it was intended for use as a botanic bio-weapon, seemingly capable of spreading and ‘converting’ areas on its own. We’ve inferred this for a few reasons, however most notably would be a specific organelle within each plant’s cell structure, which has been documented intaking the high concentrations of specific mineral.<br>
 		This material is then processed and excreted into a liquid chemical that it pushes along its internal structure. Given that this material is not expelled from the plant, as well as the stringent flourishing conditions, it’s likely that this project was never completed.<br><br>
@@ -307,13 +307,13 @@
 
 /obj/item/paper/fluff/awaymissions/complex/cultresearchnotes
 	name = "Occult Research"
-	info = {"*Most of the page is a mix of botanical jargon and occult ramblings that don't seem important, but a portion on the bottom seems more legible.*<br><br>
+	default_raw_text = {"*Most of the page is a mix of botanical jargon and occult ramblings that don't seem important, but a portion on the bottom seems more legible.*<br><br>
 	We have finally recieved the package from another sect. It would seem as though our ideas were stolen by those filthy acolytes, as they attempt to replicate our success. Pitiful. The heinous magic inside this seed is dangerous and unpleasant, but we are not yet done studying it. If this is all those fools can produce, something so meek and ineffecient, then we have little to worry. But, it is still not without risk.<br>
 	Until it is needed again, or, I hope and pray, it needs to be destroyed, it shall be entombed here under the watch of our sigils and guardians."}
 
 /obj/item/paper/fluff/awaymissions/complex/ohidontneedagravitygenhere
 	name = "Notice to Command"
-	info = "E.M.C Research Subdivision to High Command, reporting new discoveries regarding the AGR Complex.<br><br>Research reveals that localized gravitational assistance is no longer necessary due to the presence of proper gravity on the planet’s surface."
+	default_raw_text = "E.M.C Research Subdivision to High Command, reporting new discoveries regarding the AGR Complex.<br><br>Research reveals that localized gravitational assistance is no longer necessary due to the presence of proper gravity on the planet’s surface."
 
 //Mobs
 
@@ -1040,7 +1040,7 @@
 
 /obj/item/clothing/suit/hooded/cultrobes/flagellantcuirass
 	name = "flagellants cuirass"
-	desc = "Crimson robes with added armor inserts. Its reinforcement have weakened its magic, but it still allows the user to move quickly."
+	desc = "Crimson robes with added armor inserts. Its redefault_raw_textrcement have weakened its magic, but it still allows the user to move quickly."
 	icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
 	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/suit_digi.dmi'

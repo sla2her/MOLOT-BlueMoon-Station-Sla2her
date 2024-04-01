@@ -16225,6 +16225,10 @@
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/plating,
 /area/awaymission/complex/gatehouse)
+"ojz" = (
+/mob/living/simple_animal/hostile/cult/magic/elite,
+/turf/open/floor/plating/asteroid/snow/complex,
+/area/awaymission/complex/cultfacility)
 "ojQ" = (
 /obj/structure/firepit,
 /turf/open/floor/plating/asteroid/snow/complex{
@@ -18956,6 +18960,7 @@
 /area/awaymission/complex/security)
 "qFC" = (
 /obj/effect/rune/narsie,
+/mob/living/simple_animal/hostile/cultleader,
 /turf/open/floor/plasteel/cult,
 /area/awaymission/complex/cultfacility)
 "qFD" = (
@@ -23666,6 +23671,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/complex/research)
+"uwY" = (
+/turf/closed/mineral/snowmountain,
+/area/awaymission/complex/exterior)
 "uxb" = (
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plating,
@@ -27771,7 +27779,7 @@
 "ykF" = (
 /obj/structure/table/wood,
 /obj/structure/fluff/paper,
-/obj/item/paperslip,
+/obj/item/paper/paperslip,
 /turf/open/floor/wood,
 /area/awaymission/complex/facilityresearch)
 "ylC" = (
@@ -36804,7 +36812,7 @@ rkE
 rkE
 rkE
 rkE
-sFr
+uwY
 rkE
 rkE
 rkE
@@ -37061,7 +37069,7 @@ rkE
 rkE
 rkE
 rkE
-sFr
+uwY
 rkE
 rkE
 rkE
@@ -37316,9 +37324,9 @@ gIA
 rkE
 rkE
 rkE
-sFr
-sFr
-sFr
+uwY
+uwY
+uwY
 rkE
 rkE
 rkE
@@ -37572,11 +37580,11 @@ rkE
 gIA
 gIA
 gIA
-sFr
-sFr
-sFr
-sFr
-sFr
+uwY
+uwY
+uwY
+uwY
+uwY
 rkE
 rkE
 rkE
@@ -37832,7 +37840,7 @@ rkE
 rkE
 rkE
 rkE
-sFr
+uwY
 rkE
 rkE
 rkE
@@ -39373,7 +39381,7 @@ rkE
 rkE
 rkE
 rkE
-sFr
+uwY
 rkE
 rkE
 rkE
@@ -39630,8 +39638,8 @@ rkE
 rkE
 rkE
 rkE
-sFr
-sFr
+uwY
+uwY
 rkE
 rkE
 rkE
@@ -39886,10 +39894,10 @@ gIA
 gIA
 gIA
 gIA
-sFr
-sFr
-sFr
-sFr
+uwY
+uwY
+uwY
+uwY
 rkE
 rkE
 rkE
@@ -40145,7 +40153,7 @@ rkE
 rkE
 rkE
 rkE
-sFr
+uwY
 rkE
 rkE
 rkE
@@ -71447,7 +71455,7 @@ icb
 kGf
 uyW
 erS
-icb
+ojz
 icb
 xJi
 uyW
@@ -73502,8 +73510,8 @@ mAC
 icb
 bqx
 mlw
-icb
-icb
+erS
+ojz
 icb
 jqC
 mlw
