@@ -73,6 +73,7 @@
 	icon = 'modular_bluemoon/SmiLeY/icons/mob/clothing/ac_clothing.dmi'
 	mob_overlay_icon = 'modular_bluemoon/SmiLeY/icons/obj/clothing/ac_clothing.dmi'
 	icon_state = "ac_tanktop"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	can_adjust = FALSE
 
 /obj/item/clothing/under/rank/security/officer/ac/ac_combatuni
