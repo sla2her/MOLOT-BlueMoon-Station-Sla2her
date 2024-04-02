@@ -24322,6 +24322,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/control)
+"guN" = (
+/obj/machinery/vending/kink,
+/turf/open/floor/wood/wood_parquet,
+/area/centcom/control)
 "gvf" = (
 /obj/machinery/washing_machine,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -24361,7 +24365,7 @@
 /obj/structure/table/wood,
 /obj/item/folder/red,
 /obj/item/folder/red,
-/obj/item/stamp/chameleon,
+/obj/item/stamp/chameleon/syndicate,
 /turf/open/floor/carpet/royalblack,
 /area/centcom/control)
 "gyD" = (
@@ -28457,6 +28461,14 @@
 /obj/structure/showcase/machinery/microwave,
 /turf/open/floor/iron,
 /area/centcom/holding)
+"lAg" = (
+/obj/structure/table/glass,
+/obj/item/soap/syndie{
+	pixel_y = 7
+	},
+/obj/item/soap/nanotrasen,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/control)
 "lBa" = (
 /obj/structure/chair/sofa/corp{
 	dir = 4
@@ -31312,6 +31324,12 @@
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
+"pBX" = (
+/obj/machinery/washing_machine{
+	pixel_y = 7
+	},
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/control)
 "pCa" = (
 /obj/structure/table/reinforced,
 /obj/item/grenade/spawnergrenade/syndiesoap,
@@ -34281,6 +34299,19 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/holding)
+"tRg" = (
+/obj/structure/table/wood,
+/obj/item/bouquet/rose,
+/obj/item/bouquet/sunflower{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/obj/item/bouquet/poppy{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/turf/open/floor/wood/wood_parquet,
+/area/centcom/control)
 "tRR" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -34626,6 +34657,7 @@
 	dir = 8;
 	pixel_x = 11
 	},
+/obj/machinery/vending/wallmed/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/control)
 "uvr" = (
@@ -77605,13 +77637,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aio
+aio
+aio
+aio
+aio
+aio
+aio
 aaa
 aaa
 aaa
@@ -77863,16 +77895,16 @@ aaa
 aaa
 aaa
 aio
+poW
+khB
+wLT
+aio
+chi
 aio
 aio
 aio
 aio
 aio
-aio
-aaa
-aaa
-aaa
-aaa
 aiF
 aiP
 aiP
@@ -78120,16 +78152,16 @@ aaa
 aaa
 aaa
 aio
-poW
+pBX
 khB
-wLT
+lAg
 aio
-chi
+hMd
 aio
-aio
-aio
-aio
-aio
+hse
+aCk
+dNn
+aCk
 aiF
 aiQ
 aiY
@@ -78383,10 +78415,10 @@ khB
 uRw
 hMd
 aio
-hse
-aCk
-dNn
-aCk
+ain
+lHi
+ain
+aio
 aiG
 aiR
 aiY
@@ -78640,10 +78672,10 @@ aio
 aio
 hMd
 aio
-ain
-lHi
-ain
-aio
+tRg
+fPa
+fPa
+guN
 aiF
 aiR
 aiY
