@@ -255,6 +255,7 @@
 
 /atom/movable/screen/fullscreen/depression
 	icon_state = "depression"
+	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	layer = FLASH_LAYER
 	plane = FULLSCREEN_PLANE
 	blend_mode = 3
