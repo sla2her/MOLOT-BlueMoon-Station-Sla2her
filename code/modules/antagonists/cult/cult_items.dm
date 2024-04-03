@@ -654,7 +654,7 @@
 	curselimit++
 
 /obj/item/cult_shift
-	name = "veil shifter"
+	name = "Veil Shifter"
 	desc = "This relic instantly teleports you, and anything you're pulling, forward by a moderate distance."
 	icon = 'icons/obj/cult.dmi'
 	icon_state ="shifter"
@@ -710,7 +710,7 @@
 		to_chat(C, "<span class='danger'>The veil cannot be torn here!</span>")
 
 /obj/item/flashlight/flare/culttorch
-	name = "void torch"
+	name = "Void Torch"
 	desc = "Used by veteran cultists to instantly transport items to their needful brethren."
 	w_class = WEIGHT_CLASS_SMALL
 	brightness_on = 1
