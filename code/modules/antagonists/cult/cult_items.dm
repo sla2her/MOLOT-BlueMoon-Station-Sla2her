@@ -540,7 +540,7 @@
 	icon_state = "blindfold"
 	item_state = "blindfold"
 	flash_protect = 1
-	invis_override = INVISIBILITY_OBSERVER
+	invis_override = SEE_INVISIBLE_HIDDEN_RUNES
 
 /obj/item/clothing/glasses/hud/health/night/cultblind/equipped(mob/living/user, slot)
 	..()
