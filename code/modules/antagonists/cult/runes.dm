@@ -378,7 +378,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 		fail_invoke()
 		return
 
-	// var/turf/T = get_turf(src)
+	var/turf/T = get_turf(src)
 	// if(is_away_level(T.z))
 	// 	to_chat(user, "<span class='cult italic'>You are not in the right dimension!</span>")
 	// 	log_game("Teleport rune failed - user in away mission")
