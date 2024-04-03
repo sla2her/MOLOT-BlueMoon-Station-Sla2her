@@ -24353,7 +24353,13 @@
 /obj/structure/table/wood,
 /obj/item/folder/red,
 /obj/item/folder/red,
-/obj/item/stamp/chameleon/syndicate,
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/folder/yellow,
+/obj/item/folder/yellow,
+/obj/item/folder/documents,
+/obj/item/folder/documents,
+/obj/item/stamp/chameleon,
 /turf/open/floor/carpet/royalblack,
 /area/centcom/control)
 "gyD" = (
