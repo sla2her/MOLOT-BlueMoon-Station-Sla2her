@@ -3336,18 +3336,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/supply)
-"aiQ" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/centcom/supply)
 "aiR" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -33197,6 +33185,18 @@
 /obj/item/kitchen/knife,
 /turf/open/floor/iron/freezer,
 /area/syndicate_mothership/control)
+"sfV" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/centcom/supply)
 "sgH" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -78162,8 +78162,8 @@ hse
 aCk
 dNn
 aCk
-aiF
-aiQ
+aiG
+aiR
 aiY
 aiY
 aiY
@@ -78419,8 +78419,8 @@ ain
 lHi
 ain
 aio
-aiG
-aiR
+aiF
+sfV
 aiY
 aje
 aiO
