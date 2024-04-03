@@ -161,9 +161,11 @@
 /obj/item/cult_bastard/attack_self(mob/user)
 	dash_toggled = !dash_toggled
 	if(dash_toggled)
-		to_chat(loc, "<span class='notice'>You raise [src] and prepare to jaunt with it.</span>")
+		to_chat(loc, "<span class='notice'>Ты готовишься к совершению рывка при помощи [src].</span>")
+		balloon_alert_to_viewers("[user] готовится к совершению рывка!")
 	else
-		to_chat(loc, "<span class='notice'>You lower [src] and prepare to swing it normally.</span>")
+		to_chat(loc, "<span class='notice'>Ты больше не готовишься к совершению рывка при помощи [src].</span>")
+		balloon_alert_to_viewers("[user] больше не готовится к совершению рывка!")
 
 /obj/item/cult_bastard/pickup(mob/living/carbon/human/user)
 	. = ..()
