@@ -283,8 +283,8 @@
 	emote_cooldown = 1 SECONDS
 
 /datum/emote/living/audio/cp_laugh
-	key = "cp_laugh"
-	key_third_person = "cp_laught"
+	key = "cplaugh"
+	key_third_person = "cplaught"
 	message = "издаёт вокодерский смех."
 	message_mime = "издаёт вокодерский смех."
 	emote_sound = 'sound/voice/cp_laugh.ogg'
