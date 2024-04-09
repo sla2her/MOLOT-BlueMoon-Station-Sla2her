@@ -33,7 +33,7 @@
 		new /atom/movable/screen/escape_menu/home_button/leave_body(
 			null,
 			src,
-			"Покинуть тело",
+			"Покинуть Тело",
 			/* offset = */ 3,
 			CALLBACK(src, PROC_REF(open_leave_body)),
 		)
