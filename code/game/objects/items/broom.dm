@@ -162,3 +162,5 @@
 	wound_bonus = 8
 
 /obj/item/broom/liquidator/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded=9, force_wielded=16, icon_wielded="rake")
