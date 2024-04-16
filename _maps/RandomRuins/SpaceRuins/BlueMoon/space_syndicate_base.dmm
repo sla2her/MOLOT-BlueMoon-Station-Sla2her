@@ -9013,7 +9013,7 @@
 "MC" = (
 /obj/structure/table/wood,
 /obj/machinery/fax{
-	fax_name = "Unknown Syndicate Fax";
+	fax_name = "DS-2 Syndicate Fax";
 	name = "DS-2 Fax Machine"
 	},
 /turf/open/floor/wood/wood_large,
