@@ -7,7 +7,6 @@
 	antag_hud_type = ANTAG_HUD_HERETIC
 	antag_hud_name = "heretic"
 	threat = 10
-	soft_antag = FALSE // BLUEMOON ADDITION
 	var/give_equipment = TRUE
 	var/list/researched_knowledge = list()
 	var/total_sacrifices = 0
@@ -15,6 +14,8 @@
 	var/list/actually_sacced = list()	//Which targets did they actually sac?
 	var/ascended = FALSE
 	var/datum/mind/yandere
+
+	reminded_times_left = 2 // BLUEMOON ADD
 
 /datum/antagonist/heretic/admin_add(datum/mind/new_owner,mob/admin)
 	give_equipment = TRUE
@@ -92,8 +93,6 @@
 		return TRUE
 
 /datum/antagonist/heretic/process()
-	. = ..()
-
 	if(owner.current.stat == DEAD)
 		return
 

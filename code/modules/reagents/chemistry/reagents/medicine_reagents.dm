@@ -104,7 +104,7 @@
 	name = "Synaptizine"
 	description = "Increases resistance to stuns as well as reducing drowsiness and hallucinations."
 	color = "#FF00FF"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 4
 
 /datum/reagent/medicine/synaptizine/on_mob_life(mob/living/carbon/M)
@@ -123,7 +123,7 @@
 	name = "Diphen-Synaptizine"
 	description = "Reduces drowsiness, hallucinations, and Histamine from body."
 	color = "#EC536D" // rgb: 236, 83, 109
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 5.2
 	value = REAGENT_VALUE_COMMON
 
@@ -143,7 +143,7 @@
 	name = "Inacusiate"
 	description = "Instantly restores all hearing to the patient, but does not cure deafness."
 	color = "#6600FF" // rgb: 100, 165, 255
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 2
 	value = 10
 
@@ -156,7 +156,7 @@
 	description = "A chemical mixture with almost magical healing powers. Its main limitation is that the patient's body temperature must be under 270K for it to metabolise correctly."
 	color = "#0000C8"
 	taste_description = "sludge"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 11
 	value = REAGENT_VALUE_COMMON
 
@@ -193,7 +193,7 @@
 	color = "#0000C8"
 	taste_description = "muscle"
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 13
 	value = REAGENT_VALUE_COMMON
 
@@ -210,7 +210,7 @@
 	description = "A mixture of cryoxadone and slime jelly, that apparently inverses the requirement for its activation."
 	color = "#f7832a"
 	taste_description = "spicy jelly"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 12
 	value = REAGENT_VALUE_UNCOMMON
 
@@ -244,7 +244,7 @@
 	description = "A powder derived from fish toxin, Rezadone can effectively treat genetic damage as well as restoring minor wounds. Overdose will cause intense nausea and minor toxin damage."
 	reagent_state = SOLID
 	color = "#669900" // rgb: 102, 153, 0
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	overdose_threshold = 30
 	taste_description = "fish"
 	pH = 12.2
@@ -278,7 +278,7 @@
 	description = "Spaceacillin will prevent a patient from conventionally spreading any diseases they are currently infected with. Also reduces infection in serious burns."
 	color = "#f2f2f2"
 	metabolization_rate = 0.1 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 8.1
 
 //Goon Chems. Ported mainly from Goonstation. Easily mixable (or not so easily) and provide a variety of effects.
@@ -408,7 +408,7 @@
 	reagent_state = LIQUID
 	color = "#DCDCDC"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)SS
 	overdose_threshold = 60
 	boiling_point = T0C+100
 	gas = GAS_H2O
@@ -482,12 +482,13 @@
 			if(show_message)
 				to_chat(M, "<span class='warning'>Your stomach feels empty and cramps!</span>")
 		else
+			/* BLUEMOON REMOVAL START - шанс на операцию за обезболивающее перенесен
 			var/mob/living/carbon/C = M
 			for(var/s in C.surgeries)
 				var/datum/surgery/S = s
 				S.success_multiplier = max(0.1, S.success_multiplier)
 				// +10% success propability on each step, useful while operating in less-than-perfect conditions
-
+			/ BLUEMOON REMOVAL END */
 			if(show_message)
 				to_chat(M, "<span class='danger'>You feel your injuries fade away to nothing!</span>" )
 	..()
@@ -545,7 +546,7 @@
 	reagent_state = LIQUID
 	color = "#000000"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	taste_description = "ash"
 	pH = 5
 
@@ -597,7 +598,7 @@
 	reagent_state = LIQUID
 	color = "#19C832"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	taste_description = "acid"
 	pH = 1.5
 
@@ -617,7 +618,7 @@
 	reagent_state = LIQUID
 	color = "#14FF3C"
 	metabolization_rate = 2 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 12 //It's a reducing agent
 
 /datum/reagent/medicine/potass_iodide/on_mob_life(mob/living/carbon/M)
@@ -631,7 +632,7 @@
 	reagent_state = LIQUID
 	color = "#003153" // RGB 0, 49, 83
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 8.9
 	value = REAGENT_VALUE_COMMON //uncraftable
 
@@ -646,7 +647,7 @@
 	reagent_state = LIQUID
 	color = "#E6FFF0"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 1 //One of the best buffers, NEVERMIND!
 	value = REAGENT_VALUE_UNCOMMON
 	var/healtoxinlover = FALSE
@@ -825,33 +826,35 @@
 	description = "A painkiller that allows the patient to move at full speed even in bulky objects. Causes drowsiness and eventually unconsciousness in high doses. Overdose will cause a variety of effects, ranging from minor to lethal."
 	reagent_state = LIQUID
 	color = "#A9FBFB"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 30
+	metabolization_rate = 0.1
+	overdose_threshold = 20
 	addiction_threshold = 25
 	pH = 8.96
 
 /datum/reagent/medicine/morphine/on_mob_metabolize(mob/living/L)
 	..()
 	ADD_TRAIT(L, TRAIT_PAINKILLER, PAINKILLER_MORPHINE) //SKYRAT EDIT, Painkiller.
+	L.throw_alert("painkiller", /atom/movable/screen/alert/painkiller) // BLUEMOON ADD
 	L.add_movespeed_mod_immunities(type, list(/datum/movespeed_modifier/damage_slowdown, /datum/movespeed_modifier/damage_slowdown_flying, /datum/movespeed_modifier/monkey_health_speedmod))
 
 /datum/reagent/medicine/morphine/on_mob_end_metabolize(mob/living/L)
 	L.remove_movespeed_mod_immunities(type, list(/datum/movespeed_modifier/damage_slowdown, /datum/movespeed_modifier/damage_slowdown_flying, /datum/movespeed_modifier/monkey_health_speedmod))
 	REMOVE_TRAIT(L, TRAIT_PAINKILLER, PAINKILLER_MORPHINE) //SKYRAT EDIT, Painkiller.
+	L.clear_alert("painkiller", /atom/movable/screen/alert/painkiller) // BLUEMOON ADD
 	..()
 
 /datum/reagent/medicine/morphine/on_mob_life(mob/living/carbon/M)
-	switch(current_cycle)
-		if(11)
-			to_chat(M, "<span class='warning'>You start to feel tired...</span>" )
-		if(12 to 24)
-			M.drowsyness += 1
-		if(24 to INFINITY)
-			M.Sleeping(40, 0)
-			. = 1
 	..()
 
 /datum/reagent/medicine/morphine/overdose_process(mob/living/M)
+	switch(current_cycle)
+		if(12)
+			to_chat(M, "<span class='warning'>Вы чувствуете себя устало...</span>" )
+		if(24 to 48)
+			M.drowsyness += 1
+		if(96 to INFINITY)
+			M.Sleeping(100, 0) // BLUEMOON EDIT - было 40, сделал 100. Морфин по итогу не накладывает сон и человек просыпается быстро.
+			. = 1
 	if(prob(33))
 		M.drop_all_held_items()
 		M.Dizzy(2)
@@ -897,7 +900,7 @@
 	reagent_state = LIQUID
 	color = "#FFFFFF"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	taste_description = "dull toxin"
 	pH = 10
 
@@ -993,7 +996,7 @@
 	reagent_state = LIQUID
 	color = "#A0E85E"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	taste_description = "magnets"
 	pH = 0
 	value = REAGENT_VALUE_RARE
@@ -1064,7 +1067,7 @@
 	color = "#DCDCFF"
 	taste_description = "sweetness"
 	pH = 10.4
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 
 /datum/reagent/medicine/mannitol/on_mob_life(mob/living/carbon/C)
 	C.adjustOrganLoss(ORGAN_SLOT_BRAIN, -2*REM)
@@ -1076,7 +1079,7 @@
 	name = "Neurine"
 	description = "Reacts with neural tissue, helping reform damaged connections. Can cure minor traumas."
 	color = "#EEFF8F"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 
 /datum/reagent/medicine/neurine/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	if(!(method == INJECT))
@@ -1113,7 +1116,7 @@
 	color = "#5096C8"
 	taste_description = "acid"
 	pH = 2
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 
 /datum/reagent/medicine/mutadone/on_mob_life(mob/living/carbon/M)
 	M.jitteriness = 0
@@ -1149,7 +1152,8 @@
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	overdose_threshold = 60
 	pH = 8.7
-	chemical_flags = REAGENT_ALL_PROCESS
+	can_synth = FALSE //BLUEMOON CHANGE ролькоприколы остаются у ролек
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	value = REAGENT_VALUE_GLORIOUS
 
 /datum/reagent/medicine/stimulants/on_mob_metabolize(mob/living/L)
@@ -1192,7 +1196,7 @@
 	reagent_state = LIQUID
 	color = "#FFFFF0"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	pH = 6.7
 
 /datum/reagent/medicine/insulin/on_mob_life(mob/living/carbon/M)
@@ -1343,6 +1347,7 @@
 	pH = 11
 	chemical_flags = REAGENT_ALL_PROCESS
 	value = REAGENT_VALUE_EXCEPTIONAL
+	can_synth = FALSE //BLUEMOON CHANGE ролькоприколы остаются у ролек
 
 /datum/reagent/medicine/syndicate_nanites/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(-5*REM, FALSE) //A ton of healing - this is a 50 telecrystal investment.
@@ -1365,15 +1370,16 @@
 	pH = 11
 	chemical_flags = REAGENT_ALL_PROCESS
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE //BLUEMOON CHANGE ролькоприколы остаются у ролек
 
 /datum/reagent/medicine/lesser_syndicate_nanites/on_mob_life(mob/living/carbon/M)
-	M.adjustBruteLoss(-2*REM, FALSE)
-	M.adjustFireLoss(-2*REM, FALSE)
-	M.adjustOxyLoss(-5*REM, FALSE)
-	M.adjustToxLoss(-2*REM, FALSE)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -5*REM)
-	M.adjustCloneLoss(-1.25*REM, FALSE)
-	M.adjustStaminaLoss(-4*REM,FALSE)
+	M.adjustBruteLoss(-4*REM, FALSE)
+	M.adjustFireLoss(-4*REM, FALSE)
+	M.adjustOxyLoss(-10*REM, FALSE)
+	M.adjustToxLoss(-4*REM, FALSE)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -10*REM)
+	M.adjustCloneLoss(-3*REM, FALSE)
+	M.adjustStaminaLoss(-8*REM,FALSE)
 	if(M.blood_volume < (BLOOD_VOLUME_NORMAL*M.blood_ratio))
 		M.adjust_integration_blood(3)
 	..()
@@ -1498,7 +1504,8 @@
 	color = "#C1151D"
 	overdose_threshold = 30
 	value = REAGENT_VALUE_VERY_RARE
-	chemical_flags = REAGENT_ALL_PROCESS
+	can_synth = FALSE //BLUEMOON CHANGE ролькоприколы остаются у ролек
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 
 /datum/reagent/medicine/changelingadrenaline/on_mob_life(mob/living/carbon/metabolizer, delta_time, times_fired)
 	..()
@@ -1532,7 +1539,8 @@
 	description = "Drastically increases movement speed."
 	color = "#AE151D"
 	metabolization_rate = 2.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+	can_synth = FALSE //BLUEMOON CHANGE ролькоприколы остаются у ролек
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 
 /datum/reagent/medicine/changelinghaste/on_mob_metabolize(mob/living/L)
 	..()
@@ -1548,7 +1556,7 @@
 	name = "Corazone"
 	description = "A medication used to treat pain, fever, and inflammation, along with heart attacks."
 	color = "#F5F5F5"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	self_consuming = TRUE
 	pH = 12.5
 
@@ -1566,6 +1574,7 @@
 	name = "Muscle Stimulant"
 	description = "A potent chemical that allows someone under its influence to be at full physical ability even when under massive amounts of pain."
 	value = REAGENT_VALUE_RARE
+	can_synth = FALSE //BLUEMOON CHANGE смешной картофел только имеет право иметь такой реагент (hot potato)
 
 /datum/reagent/medicine/muscle_stimulant/on_mob_metabolize(mob/living/M)
 	. = ..()
@@ -1648,7 +1657,7 @@
 	reagent_state = LIQUID
 	color = "#07E79E"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	overdose_threshold = 30
 	pH = 9.12
 	value = REAGENT_VALUE_COMMON
@@ -1684,7 +1693,7 @@
 	reagent_state = SOLID
 	color = "#FFFFD0"
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	value = REAGENT_VALUE_UNCOMMON
 
 /datum/reagent/medicine/silibinin/on_mob_life(mob/living/carbon/M)
@@ -1698,7 +1707,7 @@
 	reagent_state = SOLID
 	color = "#9423FF"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	overdose_threshold = 50
 	taste_description = "numbing bitterness"
 	value = REAGENT_VALUE_RARE
@@ -1746,7 +1755,7 @@
 	reagent_state = LIQUID
 	color = "#bb2424"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	overdose_threshold = 20
 	/// How much base clotting we do per bleeding wound, multiplied by the below number for each bleeding wound
 	var/clot_rate = 0.25

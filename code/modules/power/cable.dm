@@ -179,9 +179,9 @@ By design, d1 is the smallest direction and d2 is the highest
 
 	else if(W.tool_behaviour == TOOL_MULTITOOL)
 		if(powernet && (powernet.avail > 0))		// is it powered?
-			to_chat(user, "<span class='danger'>[DisplayPower(powernet.avail)] in power network.</span>")
+			to_chat(user, "<span class='danger'>Суммарная мощность: [DisplayPower(powernet.avail)].</span>")
 		else
-			to_chat(user, "<span class='danger'>The cable is not powered.</span>")
+			to_chat(user, "<span class='danger'>Кабель выдаёт нулевые значения статической нагрузки.</span>")
 		shock(user, 5, 0.2)
 
 	src.add_fingerprint(user)
@@ -196,7 +196,9 @@ By design, d1 is the smallest direction and d2 is the highest
 
 /obj/structure/cable/attack_ghost(mob/dead/observer/user)
 	if(powernet && (powernet.avail > 0))
-		to_chat(user, "<span class='danger'>[DisplayPower(powernet.avail)] in power network.</span>")
+		to_chat(user, "<span class='danger'>Суммарная мощность: [DisplayPower(powernet.avail)].</span>")
+	else
+		to_chat(user, "<span class='danger'>Кабель выдаёт нулевые значения статической нагрузки.</span>")
 	return ..()
 
 // shock the user with probability prb
@@ -519,8 +521,9 @@ By design, d1 is the smallest direction and d2 is the highest
 	used_skills = list(/datum/skill/level/job/wiring)
 
 /obj/item/stack/cable_coil/cyborg
-	is_cyborg = 1
+	is_cyborg = TRUE
 	custom_materials = null
+	source = /datum/robot_energy_storage/wire
 	cost = 1
 
 /obj/item/stack/cable_coil/cyborg/attack_self(mob/user)
@@ -567,7 +570,8 @@ By design, d1 is the smallest direction and d2 is the highest
 			heal_amount = min(heal_amount, damage - affecting.threshhold_passed_mindamage)
 
 			if(!heal_amount)
-				to_chat(user, "<span class='notice'>[user == H ? "Your" : "[H]'s"] [affecting.name] appears to have suffered severe internal damage and requires surgery to repair further.</span>")
+//				to_chat(user, "<span class='notice'>[user == H ? "Your" : "[H]'s"] [affecting.name] appears to have suffered severe internal damage and requires surgery to repair further.</span>") - BLUEMOON REMOVAL
+				to_chat(user, span_notice("[user == H ? "Ваша [affecting.ru_name]" : "[affecting.ru_name_capital] [H]"] подверглась сильным внутренним повреждениям. Требуется углубленный ремонт с хирургической точностью.")) // BLUEMOON ADD
 				return
 		if(item_heal_robotic(H, user, 0, heal_amount))
 			use(1)
@@ -576,7 +580,7 @@ By design, d1 is the smallest direction and d2 is the highest
 		return ..()
 
 
-/obj/item/stack/cable_coil/update_icon()
+/obj/item/stack/cable_coil/update_icon_state()
 	icon_state = "[initial(item_state)][amount < 3 ? amount : ""]"
 	name = "cable [amount < 3 ? "piece" : "coil"]"
 

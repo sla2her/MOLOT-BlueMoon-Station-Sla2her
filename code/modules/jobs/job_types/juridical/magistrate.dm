@@ -9,7 +9,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_age = 35
-	supervisors = "Nanotrasen officials and Space law"
+	supervisors = "Представители Центрального Командования и Космический Закон"
 	selection_color = "#7e3d48"
 	considered_combat_role = FALSE
 	exp_requirements = 180
@@ -23,20 +23,23 @@
 		"Prosecutor",
 		"NanoTrasen Consultant",
 		"Syndicate Advisor",
+		"Netorare",
+		"Commissar",
+		"Political Officer",
 		"NanoTrasen Slut",
-		"Netorare"
+		"Syndicate Slut",
 		)
 
 	outfit = /datum/outfit/job/ntr
 	plasma_outfit = /datum/outfit/plasmaman/bar
-	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_RESEARCH,  ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_MEDICAL, ACCESS_WEAPONS, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP, ACCESS_MINERAL_STOREROOM, ACCESS_CARGO, ACCESS_HEADS, ACCESS_MAILSORTING, ACCESS_ENGINE, ACCESS_HOS, ACCESS_CE, ACCESS_HOP, ACCESS_CMO, ACCESS_QM, ACCESS_RD, ACCESS_CAPTAIN, ACCESS_BLUESHIELD, ACCESS_LAWYER)
-	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_RESEARCH,  ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_MEDICAL, ACCESS_WEAPONS, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP, ACCESS_MINERAL_STOREROOM, ACCESS_CARGO, ACCESS_HEADS, ACCESS_MAILSORTING, ACCESS_ENGINE, ACCESS_HOS, ACCESS_CE, ACCESS_HOP, ACCESS_CMO, ACCESS_QM, ACCESS_RD, ACCESS_CAPTAIN, ACCESS_BLUESHIELD, ACCESS_LAWYER)
+	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_RESEARCH,  ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_MEDICAL, ACCESS_WEAPONS, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP, ACCESS_MINERAL_STOREROOM, ACCESS_CARGO, ACCESS_HEADS, ACCESS_MAILSORTING, ACCESS_ENGINE, ACCESS_HOS, ACCESS_CE, ACCESS_HOP, ACCESS_CMO, ACCESS_QM, ACCESS_RD, ACCESS_CAPTAIN, ACCESS_BLUESHIELD, ACCESS_LAWYER, ACCESS_BAR, ACCESS_JANITOR, ACCESS_KITCHEN, ACCESS_HYDROPONICS)
+	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_RESEARCH,  ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_MEDICAL, ACCESS_WEAPONS, ACCESS_ENTER_GENPOP, ACCESS_LEAVE_GENPOP, ACCESS_MINERAL_STOREROOM, ACCESS_CARGO, ACCESS_HEADS, ACCESS_MAILSORTING, ACCESS_ENGINE, ACCESS_HOS, ACCESS_CE, ACCESS_HOP, ACCESS_CMO, ACCESS_QM, ACCESS_RD, ACCESS_CAPTAIN, ACCESS_BLUESHIELD, ACCESS_LAWYER, ACCESS_BAR, ACCESS_JANITOR, ACCESS_KITCHEN, ACCESS_HYDROPONICS)
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 
 	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
-	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/blindness, /datum/quirk/monophobia)
+	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/blindness, /datum/quirk/monophobia, /datum/quirk/bluemoon_criminal)
 
 	display_order = JOB_DISPLAY_ORDER_NTR
 	threat = 2
@@ -86,6 +89,10 @@
 	icon_state = "ntrberet"
 	item_state = "ntrberet"
 
+/obj/item/clothing/shoes/laceup/ntr // даем великому и ужасному судье раундстартом ноуслип туфли
+	name = "distinguished laceup shoes"
+	clothing_flags = NOSLIP
+
 /datum/outfit/job/ntr
 	name = "NanoTrasen Representative"
 	jobtype = /datum/job/ntr
@@ -98,8 +105,7 @@
 	uniform = /obj/item/clothing/under/rank/civilian/lawyer/black/alt
 	suit = /obj/item/clothing/suit/armor/ntr
 	head = /obj/item/clothing/head/beret/sec/ntr
-	shoes = /obj/item/clothing/shoes/jackboots
-	l_pocket = /obj/item/melee/classic_baton/telescopic
+	shoes = /obj/item/clothing/shoes/laceup/ntr
 	r_pocket = /obj/item/clothing/accessory/lawyers_badge
 
 	backpack = /obj/item/storage/backpack/security
@@ -110,7 +116,11 @@
 
 	backpack_contents = list(/obj/item/gun/energy/e_gun=1, /obj/item/stamp/law=1)
 
+	box = /obj/item/storage/box/survival/command
+
 	implants = list(/obj/item/implant/mindshield)
+
+	accessory = /obj/item/clothing/accessory/permit/head
 
 /datum/outfit/job/ntr/syndicate
 	name = "Syndicate Representative"
@@ -124,7 +134,7 @@
 	uniform = /obj/item/clothing/under/rank/civilian/lawyer/black/alt
 	suit = /obj/item/clothing/suit/armor/ntr
 	head = /obj/item/clothing/head/beret/sec/ntr
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/laceup/ntr
 	l_pocket = /obj/item/melee/classic_baton/telescopic
 
 	backpack = /obj/item/storage/backpack/duffelbag/syndie

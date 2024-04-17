@@ -417,6 +417,7 @@
 		/obj/item/implanter,
 		/obj/item/pinpointer/crew,
 		/obj/item/reagent_containers/chem_pack,
+		/obj/item/razor,
 		/obj/item/stack/sticky_tape
 		))
 	STR.can_hold = can_hold
@@ -677,7 +678,7 @@
 	new /obj/item/clothing/under/syndicate/soviet(src)
 	new /obj/item/watertank/op(src)
 	new /obj/item/clothing/suit/space/hardsuit/syndi/elite(src)
-	new /obj/item/gun/ballistic/automatic/pistol/aps(src)
+	new /obj/item/gun/ballistic/automatic/pistol/APS(src)
 	new /obj/item/ammo_box/magazine/pistolm9mm(src)
 	new /obj/item/ammo_box/magazine/pistolm9mm(src)
 	new /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka(src)
@@ -743,4 +744,4 @@
 	new /obj/item/weldingtool/experimental/ashwalker(src)
 	new /obj/item/crowbar/ashwalker(src)
 	new /obj/item/wirecutters/ashwalker(src, "red")
-	new /obj/item/clothing/gloves/tackler/combat/insulated/infiltrator(src)
+  // /obj/item/clothing/gloves/tackler/combat/insulated/infiltrator bluemoon removal

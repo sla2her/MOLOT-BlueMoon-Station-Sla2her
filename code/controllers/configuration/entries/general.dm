@@ -114,7 +114,6 @@
 
 /datum/config_entry/number/shuttle_refuel_delay
 	default = 12000
-	integer = FALSE
 	min_val = 0
 
 /datum/config_entry/flag/show_game_type_odds	//if set this allows players to see the odds of each roundtype on the get revision screen
@@ -300,7 +299,7 @@
 
 ///Initial loadout points
 /datum/config_entry/number/initial_gear_points
-	default = 10
+	default = 16
 
 /**
   * Enables the FoV component, which hides objects and mobs behind the parent from their sight, unless they turn around, duh.
@@ -355,5 +354,5 @@
 /datum/config_entry/number/commendation_percent_poll
 	integer = FALSE
 
-/datum/config_entry/flag/deathmatch_arena
-	default = TRUE
+/datum/config_entry/str_list/randomizing_station_name_message
+	default = list()

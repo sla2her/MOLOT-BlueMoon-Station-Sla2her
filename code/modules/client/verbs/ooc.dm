@@ -146,7 +146,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	set name = "Set Your OOC Color"
 	set category = "Preferences"
 
-	if(!holder || check_rights_for(src, R_ADMIN))
+	if(!holder || check_rights_for(src, R_ADMIN) && IS_CKEY_DONATOR_GROUP(key, DONATOR_GROUP_TIER_1))
 		if(!is_content_unlocked())
 			return
 
@@ -237,7 +237,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			choices["[C]"] = C //NONMODULARITY NOTE: Removes the ability to link CKEYs to Characters. Always reapply for privacy reasons.
 		else
 			choices[C] = C
-	choices = sortList(choices)
+	choices = sort_list(choices)
 	var/selection = input("Please, select a player!", "Ignore", null, null) as null|anything in choices
 	if(!selection || !(selection in choices))
 		return

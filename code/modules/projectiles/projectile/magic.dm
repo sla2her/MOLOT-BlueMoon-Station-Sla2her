@@ -125,6 +125,8 @@
 	if(!istype(M) || M.stat == DEAD || M.mob_transforming || (GODMODE & M.status_flags))
 		return
 
+	to_chat(M, span_reallybig("ВНИМАНИЕ! ВЫ БЫЛИ ОБРАЩЕНЫ В ДРУГОЕ СУЩЕСТВО, ВАША ПРОШЛАЯ ЛИЧНОСТЬ ЗАБЫТА!! ИЗУЧИТЕ СВОЮ НОВУЮ ОБОЛОЧКУ И ИГРАЙТЕ!!"))
+	tgui_alert_async(M, "ВНИМАНИЕ! ВЫ БЫЛИ ОБРАЩЕНЫ В ДРУГОЕ СУЩЕСТВО, ВАША ПРОШЛАЯ ЛИЧНОСТЬ ЗАБЫТА!! ИЗУЧИТЕ СВОЮ НОВУЮ ОБОЛОЧКУ И ИГРАЙТЕ!!!")
 	M.mob_transforming = TRUE
 	M.Paralyze(INFINITY)
 	M.icon = null
@@ -135,8 +137,7 @@
 
 	if(iscyborg(M))
 		var/mob/living/silicon/robot/Robot = M
-		if(Robot.mmi)
-			qdel(Robot.mmi)
+		QDEL_NULL(Robot.mmi)
 		Robot.notify_ai(NEW_BORG)
 	else
 		for(var/obj/item/W in contents)
@@ -145,17 +146,17 @@
 
 	var/mob/living/new_mob
 
-	var/randomize = pick("monkey","robot","slime","xeno","humanoid","animal")
+	var/randomize = pick("robot","robot","robot","robot","robot","monkey","slime","xeno","humanoid","animal")
 	switch(randomize)
 		if("monkey")
 			new_mob = new /mob/living/carbon/monkey(M.loc)
 
 		if("robot")
 			var/robot = pick(200;/mob/living/silicon/robot,
-							/mob/living/silicon/robot/modules/syndicate,
-							/mob/living/silicon/robot/modules/syndicate/medical,
-							/mob/living/silicon/robot/modules/syndicate/saboteur,
-							200;/mob/living/simple_animal/drone/polymorphed)
+							/mob/living/silicon/robot/modules/inteq,
+							/mob/living/silicon/robot/modules/inteq/medical,
+							/mob/living/silicon/robot/modules/inteq/saboteur)
+
 			new_mob = new robot(M.loc)
 			if(issilicon(new_mob))
 				new_mob.gender = M.gender
@@ -167,6 +168,7 @@
 				Robot.mmi.transfer_identity(M)	//Does not transfer key/client.
 				Robot.clear_inherent_laws(0)
 				Robot.clear_zeroth_law(0)
+				Robot.laws = new /datum/ai_laws/antimov()
 
 		if("slime")
 			new_mob = new /mob/living/simple_animal/slime/random(M.loc)
@@ -174,7 +176,7 @@
 		if("xeno")
 			var/Xe
 			if(M.ckey)
-				Xe = pick(/mob/living/carbon/alien/humanoid/hunter,/mob/living/carbon/alien/humanoid/sentinel)
+				Xe = pick(/mob/living/carbon/alien/humanoid/hunter,/mob/living/carbon/alien/humanoid/sentinel, /mob/living/carbon/alien/humanoid/drone, /mob/living/carbon/alien/humanoid/royal/praetorian)
 			else
 				Xe = pick(/mob/living/carbon/alien/humanoid/hunter,/mob/living/simple_animal/hostile/alien/sentinel)
 			new_mob = new Xe(M.loc)
@@ -238,6 +240,8 @@
 	M.log_message("became [new_mob.real_name]", LOG_ATTACK, color="orange")
 
 	new_mob.a_intent = INTENT_HARM
+
+	new_mob.fully_replace_character_name("[pick(GLOB.nightmare_names)]")
 
 	M.wabbajack_act(new_mob)
 

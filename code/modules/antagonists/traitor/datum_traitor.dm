@@ -22,7 +22,7 @@
 	var/datum/contractor_hub/contractor_hub
 
 	threat = 5
-	soft_antag = FALSE // BLUEMOON ADDITION
+	reminded_times_left = 2 // BLUEMOON ADD
 
 /datum/antagonist/traitor/New()
 	if(!GLOB.traitor_classes.len)//Only need to fill the list when it's needed.
@@ -147,7 +147,7 @@
 		var/mob/living/carbon/human/H = M
 		if(istype(H))
 			if(!silent)
-				to_chat(H, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
+				to_chat(H, "Тренировки позволили вам отринуть клоунскую натуру, теперь вы можете использовать оружие без риска ранить себя.")
 			H.dna.remove_mutation(CLOWNMUT)
 	RegisterSignal(M, COMSIG_MOVABLE_HEAR, .proc/handle_hearing)
 

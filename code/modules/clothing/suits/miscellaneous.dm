@@ -359,6 +359,45 @@
 	body_parts_covered = CHEST|ARMS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
+/obj/item/clothing/head/helmet/juggernaut
+	name = "Zeal Team Helmet"
+	desc = "I... am... the... JUGGERNAUT!!!"
+	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/hats.dmi'
+	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/clothing/hats.dmi'
+	icon_state = "juggernauthelm"
+	item_state = "juggernauthelm"
+	armor = list(MELEE = 95, BULLET = 80, LASER = 50, ENERGY = 60, BOMB = 80, BIO = 100, RAD = 50, FIRE = 95, ACID = 95)
+	strip_delay = 120
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	heat_protection = HEAD
+	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	flash_protect = TRUE
+	obj_flags = IMMUTABLE_SLOW
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+
+/obj/item/clothing/suit/armor/heavy/juggernaut
+	name = "Zeal Team Heavy Suit"
+	desc = "I... am... the... JUGGERNAUT!!!"
+	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/clothing/suit.dmi'
+	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/suit.dmi'
+	icon_state = "juggernaut"
+	item_state = "juggernaut"
+	tail_state = "juggernaut"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|FEET
+	armor = list(MELEE = 95, BULLET = 80, LASER = 50, ENERGY = 60, BOMB = 80, BIO = 100, RAD = 50, FIRE = 95, ACID = 95)
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	cold_protection = CHEST|GROIN|LEGS|ARMS|FEET
+	heat_protection = CHEST|GROIN|LEGS|ARMS|FEET
+	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	max_heat_protection_temperature = COAT_MAX_TEMP_PROTECT
+	strip_delay = 120
+	slowdown = 0.5
+	obj_flags = IMMUTABLE_SLOW
+	flags_inv = HIDESHOES|HIDEJUMPSUIT|HIDETAUR
+
 /obj/item/clothing/suit/ran
 	name = "shikigami costume"
 	desc = "A costume that looks like a certain shikigami, is super fluffy."
@@ -454,6 +493,12 @@
 	desc = "Comfy and supposedly flammable."
 	icon_state = "flannel_brown"
 	item_state = "flannel_brown"
+	togglename = "buttons"
+/obj/item/clothing/suit/toggle/jacket/flannel/white
+	name = "white flannel jacket"
+	desc = "Comfy and supposedly flammable."
+	icon_state = "flannel_white"
+	item_state = "flannel_white"
 	togglename = "buttons"
 /obj/item/clothing/suit/toggle/jacket/whitehoodie
 	name = "soft hoodie"
@@ -637,6 +682,7 @@
 	body_parts_covered = CHEST|GROIN
 	attack_verb = list("warned", "cautioned", "smashed")
 	armor = list(MELEE = 5, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/petharness
 	name = "pet harness"
@@ -1386,3 +1432,45 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
+/obj/item/clothing/suit/toggle/jacket/hawaiian
+	name = "black hawaiian shirt"
+	desc = "Лёгкая и удобная рубашка."
+	icon_state = "hawaiiblack"
+	item_state = "hawaiiblack"
+	togglename = "buttons"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+/obj/item/clothing/suit/toggle/jacket/hawaiian/fuch
+	name = "fuch hawaiian shirt"
+	desc = "Лёгкая и удобная рубашка."
+	icon_state = "hawaiifuchs"
+	item_state = "hawaiifuchs"
+	togglename = "buttons"
+
+/obj/item/clothing/suit/toggle/jacket/hawaiian/vine
+	name = "vine hawaiian shirt"
+	desc = "Лёгкая и удобная рубашка."
+	icon_state = "hawaiivine"
+	item_state = "hawaiivine"
+	togglename = "buttons"
+
+/obj/item/clothing/suit/toggle/jacket/hawaiian/orange
+	name = "orange hawaiian shirt"
+	desc = "Лёгкая и удобная рубашка."
+	icon_state = "hawaiiorange"
+	item_state = "hawaiiorange"
+	togglename = "buttons"
+
+/obj/item/clothing/suit/toggle/jacket/hawaiian/motu
+	name = "motu hawaiian shirt"
+	desc = "Лёгкая и удобная рубашка."
+	icon_state = "hawaiimotu"
+	item_state = "hawaiimotu"
+	togglename = "buttons"
+
+/obj/item/clothing/suit/toggle/jacket/hawaiian/vice
+	name = "vice hawaiian shirt"
+	desc = "Лёгкая и удобная рубашка."
+	icon_state = "hawaiivice"
+	item_state = "hawaiivice"
+	togglename = "buttons"

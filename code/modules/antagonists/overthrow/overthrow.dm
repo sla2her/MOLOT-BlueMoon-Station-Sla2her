@@ -11,7 +11,6 @@
 	antagpanel_category = "Syndicate Mutineers"
 	job_rank = ROLE_TRAITOR // simply use the traitor preference & jobban settings
 	threat = 5
-	soft_antag = FALSE // BLUEMOON ADDITION
 	var/datum/team/overthrow/team
 	var/static/list/possible_useful_items
 
@@ -69,7 +68,7 @@
 		var/mob/living/carbon/human/traitor_mob = owner.current
 		if(traitor_mob && istype(traitor_mob))
 			if(!silent)
-				to_chat(traitor_mob, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
+				to_chat(traitor_mob, "Тренировки позволили вам отринуть клоунскую натуру, теперь вы можете использовать оружие без риска ранить себя.")
 			traitor_mob.dna.remove_mutation(CLOWNMUT)
 	update_overthrow_icons_added()
 
@@ -126,7 +125,7 @@
 	var/datum/component/uplink/uplink = uplink_holder.GetComponent(/datum/component/uplink)
 	uplink.telecrystals = INITIAL_CRYSTALS
 	// Give AI hacking board
-	var/obj/item/aiModule/core/full/overthrow/O = new(H)
+	var/obj/item/ai_module/core/full/overthrow/O = new(H)
 	var/list/slots = list (
 		"backpack" = ITEM_SLOT_BACKPACK,
 		"left pocket" = ITEM_SLOT_LPOCKET,

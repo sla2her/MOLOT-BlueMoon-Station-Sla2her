@@ -23,10 +23,11 @@
 	name = "tacticool security jumpsuit"
 	icon_state = "tacticool_sec"
 	item_state = "tacticool_sec"
-	can_adjust = FALSE
 	unique_reskin = list(
-		"Red" = list("icon_state" = "tacticool_sec")
-	)
+		"Blue" = list("icon_state" = "tacticool_sec_blue", "item_state" = "tacticool_sec_blue"),
+		"Black" = list("icon_state" = "tacticool_sec_black", "item_state" = "tacticool_sec_black"),
+		"Pink" = list("icon_state" = "tacticool_sec_pink", "item_state" = "tacticool_sec_pink"),
+	) ///bluemoon add
 
 /obj/item/clothing/suit/armor/vest/agent
 	name = "agent armored vest"
@@ -580,7 +581,7 @@
 ///////////////
 
 /obj/item/toy/plush/mammal/fox/emma
-	name = "emma plushie"
+	name = "Emma plushie"
 	desc = "An adorable stuffed toy resembling a vulp."
 	icon_state = "emma"
 	item_state = "emma"
@@ -589,12 +590,12 @@
 	righthand_file = 'modular_bluemoon/kovac_shitcode/icons/vulps/vulps_r.dmi'
 
 /obj/item/toy/plush/mammal/fox/emma/shiro
-	name = "shiro plushie"
+	name = "Shiro plushie"
 	icon_state = "shiro"
 	item_state = "shiro"
 
 /obj/item/toy/plush/mammal/fox/emma/raita
-	name = "raita plushie"
+	name = "Raita plushie"
 	icon_state = "raita"
 	item_state = "raita"
 
@@ -602,6 +603,21 @@
 	name = "Aiko Plushie"
 	icon_state = "aiko"
 	item_state = "aiko"
+
+/obj/item/toy/plush/mammal/fox/emma/rozgo
+	name = "Rozgo Plushie"
+	icon_state = "rozgo"
+	item_state = "aiko"
+
+/obj/item/toy/plush/mammal/fox/emma/taliza
+	name = "Siya Taliza Plushie"
+	icon_state = "siya"
+	item_state = "aiko"
+
+/obj/item/toy/plush/mammal/fox/emma/red
+	name = "Red plushie"
+	icon_state = "red"
+	item_state = "red"
 
 /obj/item/toy/plush/nukeplushie/who
 	name = "security officer plushie"
@@ -633,9 +649,159 @@
 	righthand_file = 'modular_bluemoon/kovac_shitcode/icons/vulps/vulps_r.dmi'
 
 /obj/item/toy/plush/nukeplushie/omega
-	name = "omega plushie"
+	name = "Omega plushie"
 	desc = "This plushie really has an empty noggin and zero thoughts about commiting something especially cruel."
 	icon_state = "omega"
 	item_state = "omega"
 	icon = 'modular_bluemoon/kovac_shitcode/icons/vulps/vulps.dmi'
 	squeak_override = list('modular_bluemoon/kovac_shitcode/sound/vulps/ooh.ogg' = 9)
+
+/obj/item/toy/plush/sergal/judas/vance
+	name = "Vance plushie"
+	desc = "A plush rodent, she smells like cheese and xenobiology!"
+	icon_state = "vance"
+	item_state = "vance"
+	squeak_override = list('sound/items/toysqueak1.ogg' = 3, 'sound/items/toysqueak2.ogg' = 3, 'sound/items/toysqueak3.ogg' = 3)
+
+
+///////////////////
+
+
+/obj/item/storage/backpack/ert_commander
+	name = "Tactical Backpack"
+	icon_state = "ert_commander"
+
+/obj/item/storage/backpack/ert_commander/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_volume = STORAGE_VOLUME_BAG_OF_HOLDING
+
+/obj/item/storage/backpack/ert_commander/ert_security
+	icon_state = "ert_security"
+
+/obj/item/storage/backpack/ert_commander/ert_medical
+	icon_state = "ert_medical"
+
+/obj/item/storage/backpack/ert_commander/ert_engineering
+	icon_state = "ert_engineering"
+
+/obj/item/storage/backpack/ert_commander/ert_janitor
+	icon_state = "ert_janitor"
+
+///////////////////////////////////////////////////////////////////////////
+
+/obj/item/clothing/suit/space/hardsuit/engine
+	unique_reskin = list(
+		"Default" = list(
+			"icon_state" = "hardsuit-engineering",
+			"tail_state" = "engineer"
+		),
+		"Alt" = list(
+			"icon_state" = "hardsuit-engineering2",
+			"tail_state" = "engi-tail"
+		)
+	)
+
+/obj/item/clothing/suit/space/hardsuit/engine/reskin_obj(mob/M)
+	. = ..()
+
+	var/obj/item/clothing/head/helmet/space/hardsuit/engine/mining_helmet
+	if(istype(helmet))
+		mining_helmet = helmet
+
+	switch(current_skin)
+		if("Default")
+
+			if(mining_helmet)
+				mining_helmet.icon_state = initial(mining_helmet.icon_state)
+
+		if("Alt")
+
+			if(mining_helmet)
+				mining_helmet.icon_state = "hardsuit0-engineering2"
+
+/obj/item/clothing/head/helmet/space/hardsuit/engine/update_icon_state()
+	switch(suit.current_skin)
+		if("Alt")
+			icon_state = "hardsuit[on]-engineering2"
+		else
+			. = ..()
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/obj/item/clothing/suit/space/hardsuit/engine/atmos
+	unique_reskin = list(
+		"Default" = list(
+			"icon_state" = "hardsuit-atmospherics",
+			"tail_state" = "atmos"
+		),
+		"Alt" = list(
+			"icon_state" = "hardsuit-atmospherics2",
+			"tail_state" = "atmos-tail"
+		)
+	)
+
+/obj/item/clothing/suit/space/hardsuit/engine/atmos/reskin_obj(mob/M)
+	. = ..()
+
+	var/obj/item/clothing/head/helmet/space/hardsuit/engine/atmos/mining_helmet
+	if(istype(helmet))
+		mining_helmet = helmet
+
+	switch(current_skin)
+		if("Default")
+
+			if(mining_helmet)
+				mining_helmet.icon_state = initial(mining_helmet.icon_state)
+
+		if("Alt")
+
+			if(mining_helmet)
+				mining_helmet.icon_state = "hardsuit0-atmospherics2"
+
+/obj/item/clothing/head/helmet/space/hardsuit/engine/atmos/update_icon_state()
+	switch(suit.current_skin)
+		if("Alt")
+			icon_state = "hardsuit[on]-atmospherics2"
+		else
+			. = ..()
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/obj/item/clothing/suit/space/hardsuit/engine/elite
+	unique_reskin = list(
+		"Default" = list(
+			"icon_state" = "hardsuit-white",
+			"tail_state" = "ce"
+		),
+		"Alt" = list(
+			"icon_state" = "hardsuit-white2",
+			"tail_state" = "ce-tail"
+		)
+	)
+
+/obj/item/clothing/suit/space/hardsuit/engine/elite/reskin_obj(mob/M)
+	. = ..()
+
+	var/obj/item/clothing/head/helmet/space/hardsuit/engine/elite/mining_helmet
+	if(istype(helmet))
+		mining_helmet = helmet
+
+	switch(current_skin)
+		if("Default")
+
+			if(mining_helmet)
+				mining_helmet.icon_state = initial(mining_helmet.icon_state)
+
+		if("Alt")
+
+			if(mining_helmet)
+				mining_helmet.icon_state = "hardsuit0-white2"
+
+/obj/item/clothing/head/helmet/space/hardsuit/engine/elite/update_icon_state()
+	switch(suit.current_skin)
+		if("Alt")
+			icon_state = "hardsuit[on]-white2"
+		else
+			. = ..()

@@ -193,12 +193,12 @@
 	unsuitable_atmos_damage = 0
 	var/timer
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/clown/Initialize(mapload)
+/mob/living/simple_animal/hostile/retaliate/clown/insane/Initialize(mapload)
 	. = ..()
 	timer = rand(5,15)
 
-//mob/living/simple_animal/hostile/retaliate/clown/insane/Retaliate()
-	//return
+/mob/living/simple_animal/hostile/retaliate/clown/insane/Retaliate()
+	return
 
 /mob/living/simple_animal/hostile/retaliate/clown/insane/ex_act()
 	return
@@ -206,14 +206,16 @@
 /mob/living/simple_animal/hostile/retaliate/clown/insane/wave_ex_act(power, datum/wave_explosion/explosion, dir)
 	return power
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/Life()
+/mob/living/simple_animal/hostile/retaliate/clown/insane/FindTarget()
+	. = ..()
 	timer--
 	if(target)
 		stalk()
-	return
 
 /mob/living/simple_animal/hostile/retaliate/clown/insane/proc/stalk()
 	var/mob/living/M = target
+	if(!M)
+		return
 	if(M.stat == DEAD)
 		playsound(M.loc, 'sound/spookoween/insane_low_laugh.ogg', 500, 1)
 		qdel(src)
@@ -227,6 +229,7 @@
 	stalk(target)
 
 /mob/living/simple_animal/hostile/retaliate/clown/insane/AttackingTarget()
+	FindTarget()
 	return
 
 /mob/living/simple_animal/hostile/retaliate/clown/insane/adjustHealth()
@@ -307,7 +310,7 @@
 	icon_living = "skeleton"
 	icon_dead = "skeleton"
 	gender = NEUTER
-	mob_biotypes = list(MOB_UNDEAD, MOB_HUMANOID)
+	mob_biotypes = MOB_UNDEAD
 	turns_per_move = 5
 	speak_emote = list("rattles")
 	emote_see = list("rattles")

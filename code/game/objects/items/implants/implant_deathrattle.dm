@@ -24,7 +24,7 @@
 
 		// Deliberately the same message framing as nanite message + ghost deathrattle
 		var/mob/living/recipient = implant.imp_in
-		to_chat(recipient, "<i>You hear a strange, robotic voice in your head...</i> \"<span class='robot'><b>[name]</b> has died at <b>[area]</b>.</span>\"")
+		to_chat(recipient, "<i>Вы слышите странный механический голос в голове...</i>\"<span class='robot'><b>[name]</b> отдал[owner.ru_a()] Богу душу в локации: <b>[area]</b>.</span>\"")
 		SEND_SOUND(recipient, pick(
 		'sound/items/knell1.ogg',
 		'sound/items/knell2.ogg',
@@ -65,10 +65,20 @@
 		RegisterSignal(target, COMSIG_LIVING_PREDEATH, .proc/on_predeath)
 
 		if(!group)
-			to_chat(target, "<i>You hear a strange, robotic voice in your head...</i> \"<span class='robot'>Warning: No other linked implants detected.</span>\"")
-
+			to_chat(target, "<i>Вы слышите странный механический голос в голове...</i> \"<span class='robot'>Внимание: Не выявлены другие подключенные импланты.</span>\"")
 
 /obj/item/implantcase/deathrattle
 	name = "implant case - 'Deathrattle'"
 	desc = "A glass case containing a deathrattle implant."
 	imp_type = /obj/item/implant/deathrattle
+
+GLOBAL_DATUM_INIT(centcom_deathrattle_group, /datum/deathrattle_group, new)
+
+/obj/item/implant/deathrattle/centcom
+	name = "centcom deathrattle implant"
+	desc = "Hope no one else dies, prepare for when they do"
+
+/obj/item/implant/deathrattle/centcom/implant(mob/living/target, mob/user, silent = FALSE, force = FALSE)
+	. = ..()
+	group = GLOB.centcom_deathrattle_group
+	group.register(src)

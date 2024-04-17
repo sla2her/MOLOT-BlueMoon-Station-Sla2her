@@ -4,8 +4,8 @@
 	department_head = list("Head of Security", "Head of Personel")
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 3 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	spawn_positions = 3 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	total_positions = 2 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	spawn_positions = 2 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the head of security, and the head of personel"
 	selection_color = "#c02f2f"
 	minimal_player_age = 3
@@ -20,6 +20,7 @@
 		"Rookie",
 		"Low-Quality Product",
 		"Freak",
+		"AC Recruit",
 		"Russian Officer"
 		)
 	custom_spawn_text = "<font color='black' size='2'><b> Your job is to keep the peace. Conflict de-escalation through diplomacy is your top priority. Only use your baton as a last resort.</b></font><font color='red' size='4'><b>You are NOT a Security Officer.</b></font>"
@@ -35,7 +36,7 @@
 	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
 	display_order = JOB_DISPALY_ORDER_SECPEACE
-	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/nonviolent, /datum/quirk/blindness, /datum/quirk/monophobia)
+	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/nonviolent, /datum/quirk/blindness, /datum/quirk/monophobia, /datum/quirk/bluemoon_criminal)
 	threat = 2
 
 /datum/outfit/job/peacekeeper
@@ -52,7 +53,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/bag/security
 	r_pocket = /obj/item/assembly/flash/handheld
-	suit_store = /obj/item/gun/energy/e_gun/advtaser
+	//suit_store = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/reagent_containers/spray/pepper, /obj/item/clothing/accessory/badge/deputy, /obj/item/holosign_creator/security, /obj/item/storage/ifak, /obj/item/choice_beacon/pkbaton)
 
 	backpack = /obj/item/storage/backpack/security/pk
@@ -63,7 +64,7 @@
 	implants = list(/obj/item/implant/mindshield)
 
 /datum/outfit/job/peacekeeper/syndicate
-	name = "Peacekeeper"
+	name = "Syndicate Peacekeeper"
 	jobtype = /datum/job/peacekeeper
 
 	//belt = /obj/item/pda/syndicate/no_deto
@@ -74,10 +75,10 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/sec
 	suit = /obj/item/clothing/suit/armor/vest/alt
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 	l_pocket = /obj/item/storage/bag/security
 	r_pocket = /obj/item/assembly/flash/handheld
-	suit_store = /obj/item/gun/energy/e_gun/advtaser
+	//suit_store = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/reagent_containers/spray/pepper, /obj/item/clothing/accessory/badge/deputy, /obj/item/holosign_creator/security, /obj/item/storage/ifak, /obj/item/choice_beacon/pkbaton, /obj/item/syndicate_uplink_high)
 
 	backpack = /obj/item/storage/backpack/duffelbag/syndie/ammo
@@ -286,13 +287,6 @@ Peacekeeper Hypospray // BlueMoon 16.08 2023 - передано Вардену. 
 /obj/item/storage/secure/briefcase/pkbaton/prova/PopulateContents()
 	new /obj/item/melee/baton/prova(src)
 	new /obj/item/stock_parts/cell/high/plus(src)
-
-/obj/item/storage/secure/briefcase/pkbaton/tbaton
-	name = "\improper Telescopic Baton box"
-	desc = "Storage box containing a single telescopic baton, just like the big boy riot police get!"
-
-/obj/item/storage/secure/briefcase/pkbaton/tbaton/PopulateContents()
-	new /obj/item/melee/classic_baton/telescopic(src)
 
 // Peacekeeper Locker
 

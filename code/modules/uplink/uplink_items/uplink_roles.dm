@@ -232,7 +232,7 @@
 /datum/uplink_item/role_restricted/taeclowndo_shoes
 	name = "Tae-clown-do Shoes"
 	desc = "A pair of shoes for the most elite agents of the honkmotherland. They grant the mastery of taeclowndo with some honk-fu moves as long as they're worn."
-	cost = 14
+	cost = 7
 	item = /obj/item/clothing/shoes/clown_shoes/taeclowndo
 	restricted_roles = list("Clown")
 
@@ -272,3 +272,45 @@
 	restricted_roles = list("Virologist")
 	surplus = 0
 	hijack_only = TRUE
+
+/datum/uplink_item/role_restricted/energizedfireaxe
+	name = "Energized Fire Axe"
+	desc = "A fire axe with a massive energy charge built into it. Upon striking someone while charged it will throw them backwards while stunning them briefly, but will take some time to charge up again. It is also much sharper than a regular axe and can pierce light armor."
+	item = /obj/item/fireaxe/energized
+	cost = 4
+	restricted_roles = list("Chief Engineer", "Station Engineer", "Atmospheric Technician")
+
+/datum/uplink_item/role_restricted/KS23
+	name = "KS-23 shotgun"
+	desc = "War crimes are fun!"
+	item = /obj/item/gun/ballistic/shotgun/KS23/Inquisitor
+	cost = 7
+	restricted_roles = list("Chaplain")
+
+/datum/uplink_item/role_restricted/slug23
+	name = "KS-23 slug box"
+	desc = "8 lead slugs."
+	item = /obj/item/ammo_box/slug23
+	cost = 2
+	restricted_roles = list("Chaplain")
+
+/datum/uplink_item/role_restricted/slug_rubber23
+	name = "KS-23 rubber slug box"
+	desc = "8 rubber slugs."
+	item = /obj/item/ammo_box/slug_rubber23
+	cost = 1
+	restricted_roles = list("Chaplain")
+
+/datum/uplink_item/role_restricted/buckshot23
+	name = "KS-23 buckshot box"
+	desc = "8 buckshots."
+	item = /obj/item/ammo_box/buckshot23
+	cost = 1
+	restricted_roles = list("Chaplain")
+
+/datum/uplink_item/role_restricted/rubbershot23
+	name = "KS-23 rubbershot box"
+	desc = "8 rubber shots."
+	item = /obj/item/ammo_box/rubbershot23
+	cost = 1
+	restricted_roles = list("Chaplain")

@@ -100,7 +100,12 @@
 			if(11)
 				to_chat(owner, "<span class='warning'>You faint.</span>")
 				owner.Unconscious(80)
+	owner.AdjustConfused(5 SECONDS, 10, 20)
+	..()
 
+/datum/brain_trauma/mild/concussion/on_lose()
+	owner.cut_overlays()
+	owner.regenerate_icons()
 	..()
 
 /datum/brain_trauma/mild/healthy

@@ -51,9 +51,9 @@
 #define MOB_NANITES		(1 << 10)
 
 /// Helper to figure out if an organ is organic
-#define IS_ORGANIC_ORGAN(organ) (organ.organ_flags & ORGAN_ORGANIC)
+#define IS_ORGANIC_ORGAN(organ) (!IS_ROBOTIC_ORGAN(organ)) // BLUEMOON EDIT - фикс прока (кривое, но и так сойдёт) [БЫЛО: #define IS_ORGANIC_ORGAN(organ) (organ.organ_flags & ORGAN_ORGANIC)]
 /// Helper to figure out if an organ is robotic
-#define IS_ROBOTIC_ORGAN(organ) (organ.organ_flags & ORGAN_ROBOTIC)
+#define IS_ROBOTIC_ORGAN(organ) (organ.organ_flags & ORGAN_SYNTHETIC)  // BLUEMOON EDIT - фикс прока [БЫЛО: #define IS_ROBOTIC_ORGAN(organ) (organ.organ_flags & ORGAN_ROBOTIC)]
 
 // Organ defines for carbon mobs
 #define ORGAN_ORGANIC   1
@@ -63,17 +63,17 @@
 #define BODYPART_ROBOTIC   2
 #define BODYPART_HYBRID    3
 #define BODYPART_NANITES   4
-
+// BLUEMOON CHANGES START - повышен порог урона и максимального ремонтируемого урона, 10 до 15
 #define HYBRID_BODYPART_DAMAGE_THRESHHOLD 25 //How much damage has to be suffered until the damage threshhold counts as passed
-#define HYBRID_BODYPART_THESHHOLD_MINDAMAGE 10 //Which damage value this limb cannot be healed out of via easy nonsurgical means if the threshhold has been passed, state resets if damage value goes below mindamage.
-
+#define HYBRID_BODYPART_THESHHOLD_MINDAMAGE 15 //Which damage value this limb cannot be healed out of via easy nonsurgical means if the threshhold has been passed, state resets if damage value goes below mindamage.
+// BLUEMOON CHANGES END
 #define BODYPART_NOT_DISABLED 0
 #define BODYPART_DISABLED_DAMAGE 1
 #define BODYPART_DISABLED_PARALYSIS 2
 #define BODYPART_DISABLED_WOUND 3
 
 #define DEFAULT_BODYPART_ICON 'icons/mob/human_parts.dmi'
-#define DEFAULT_BODYPART_ICON_ORGANIC 'icons/mob/human_parts_greyscale.dmi'
+#define DEFAULT_BODYPART_ICON_ORGANIC 'modular_bluemoon/icons/mob/species_legs.dmi' // BLUEMOON CHANGES - was 'icons/mob/human_parts_greyscale.dmi'
 #define DEFAULT_BODYPART_ICON_ROBOTIC 'icons/mob/augmentation/augments.dmi'
 
 #define MONKEY_BODYPART "monkey"

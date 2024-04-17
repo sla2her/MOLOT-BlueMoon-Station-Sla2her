@@ -7,7 +7,7 @@
 	required_enemies = 2
 	recommended_enemies = 5
 	antag_flag = ROLE_OPERATIVE
-	enemy_minimum_age = 7
+	enemy_minimum_age = 0 // BLUEMOON EDIT - было 7, сделал 0, т.к. на сервере ВЛ и загриферить ролью тяжело
 
 	announce_span = "danger"
 	announce_text = "InteQ forces are approaching the station in an attempt to destroy it!\n\
@@ -125,7 +125,7 @@
 	back = /obj/item/storage/backpack
 	ears = /obj/item/radio/headset/inteq/alt
 	l_pocket = /obj/item/pinpointer/nuke/syndicate
-	id = /obj/item/card/id/syndicate/inteq
+	id = /obj/item/card/id/inteq
 	belt = /obj/item/gun/ballistic/automatic/pistol
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\
 		/obj/item/kitchen/knife/combat/survival)
@@ -134,12 +134,23 @@
 	var/command_radio = FALSE
 	var/uplink_type = /obj/item/inteq/uplink/radio/nuclear
 
+	give_space_cooler_if_synth = TRUE // BLUEMOON ADD
+
 /datum/outfit/inteq/leader
 	name = "InteQ Leader - Basic"
-	id = /obj/item/card/id/syndicate/nuke_leader/inteq
+	id = /obj/item/card/id/inteq/nuke_leader
 	gloves = /obj/item/clothing/gloves/krav_maga/combatglovesplus
 	r_hand = /obj/item/nuclear_challenge
 	command_radio = TRUE
+
+// BLUEMOON ADD START - командная коробочка для командира
+/datum/outfit/inteq/leader/pre_equip(mob/living/carbon/human/H, visualsOnly, client/preference_source)
+	. = ..()
+	var/list/extra_backpack_items = list(
+		/obj/item/storage/box/pinpointer_squad
+	)
+	LAZYADD(backpack_contents, extra_backpack_items)
+// BLUEMOON ADD END
 
 /datum/outfit/inteq/no_crystals
 	tc = 0
@@ -186,7 +197,7 @@
 	mask = /obj/item/clothing/mask/gas/sechailer
 	suit = /obj/item/clothing/suit/space/syndicate/inteq
 	head = /obj/item/clothing/head/helmet/space/syndicate/inteq
-	id = /obj/item/card/id/syndicate/inteq
+	id = /obj/item/card/id/inteq
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi/syndi
 	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military/inteq

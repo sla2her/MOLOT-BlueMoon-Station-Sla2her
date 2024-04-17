@@ -126,7 +126,7 @@
 /obj/machinery/door/firedoor/power_change()
 	if(powered(power_channel))
 		stat &= ~NOPOWER
-		latetoggle()
+		INVOKE_ASYNC(src, .proc/latetoggle)
 	else
 		stat |= NOPOWER
 
@@ -150,12 +150,12 @@
 				return
 			C.play_tool_sound(src)
 			user.visible_message("<span class='notice'>[user] starts undoing [src]'s bolts...</span>", \
-								 "<span class='notice'>You start unfastening [src]'s floor bolts...</span>")
+								"<span class='notice'>You start unfastening [src]'s floor bolts...</span>")
 			if(!C.use_tool(src, user, 50))
 				return
 			playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
 			user.visible_message("<span class='notice'>[user] unfastens [src]'s bolts.</span>", \
-								 "<span class='notice'>You undo [src]'s floor bolts.</span>")
+								"<span class='notice'>You undo [src]'s floor bolts.</span>")
 			deconstruct(TRUE)
 			return
 		if(C.tool_behaviour == TOOL_SCREWDRIVER)
@@ -310,15 +310,19 @@
 
 /obj/machinery/door/firedoor/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		var/obj/structure/firelock_frame/F = new assemblytype(get_turf(src))
-		if(disassembled)
-			F.constructionStep = CONSTRUCTION_PANEL_OPEN
+		var/turf/targetloc = get_turf(src)
+		if(disassembled || prob(40))
+			var/obj/structure/firelock_frame/unbuilt_lock = new assemblytype(targetloc)
+			if(disassembled)
+				unbuilt_lock.constructionStep = CONSTRUCTION_PANEL_OPEN
+			else
+				unbuilt_lock.constructionStep = CONSTRUCTION_WIRES_EXPOSED
+				unbuilt_lock.obj_integrity = unbuilt_lock.max_integrity * 0.5
+			unbuilt_lock.update_appearance()
 		else
-			F.constructionStep = CONSTRUCTION_WIRES_EXPOSED
-			F.obj_integrity = F.max_integrity * 0.5
-		F.update_icon()
+			new /obj/item/electronics/firelock (targetloc)
+			new /obj/item/stack/sheet/metal/five (targetloc)
 	qdel(src)
-
 
 /obj/machinery/door/firedoor/proc/latetoggle()
 	if(operating || stat & NOPOWER || !nextstate)
@@ -377,7 +381,7 @@
 	var/status1 = check_door_side(T)
 	var/status2 = check_door_side(T2)
 	if((status1 == 1 && status2 == -1) || (status1 == -1 && status2 == 1))
-		to_chat(user, "<span class='warning'>Access denied. Try closing another firedoor to minimize decompression, or using a crowbar.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён. Try closing another firedoor to minimize decompression, or using a crowbar.</span>")
 		return FALSE
 	return TRUE
 

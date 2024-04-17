@@ -99,6 +99,7 @@
 /obj/structure/closet/secure_closet/warden/PopulateContents()
 	..()
 	new /obj/item/radio/headset/headset_sec(src)
+	new /obj/item/stamp/warden(src)
 	new /obj/item/clothing/suit/armor/vest/warden(src)
 	new /obj/item/clothing/head/warden(src)
 	new /obj/item/clothing/head/warden/drill(src)
@@ -118,7 +119,7 @@
 	new /obj/item/door_remote/head_of_security(src)
 	new /obj/item/gun/ballistic/shotgun/automatic/combat/warden(src)
 	new /obj/item/clothing/head/beret/sec/corporatewarden(src)
-	new /obj/item/stamp/warden(src)
+
 /obj/structure/closet/secure_closet/security
 	name = "security officer's locker"
 	req_access = list(ACCESS_SECURITY)
@@ -270,8 +271,9 @@
 	new /obj/item/clothing/suit/armor/bulletproof(src)
 
 /obj/structure/closet/secure_closet/lethalshots
-	name = "lethal ammunition and riot staves"
+	name = "Lethal Ammunition and Riot Staves"
 	req_access = list(ACCESS_ARMORY)
+	storage_capacity = 50
 	icon_state = "tac"
 /obj/structure/closet/secure_closet/lethalshots/PopulateContents()
 	..()
@@ -279,6 +281,8 @@
 	new /obj/item/electrostaff(src)
 	for(var/i in 1 to 3)
 		new /obj/item/storage/box/lethalshot(src)
+	for(var/k in 1 to 9)
+		new /obj/item/kitchen/knife/combat(src)
 
 /obj/structure/closet/secure_closet/labor_camp_security
 	name = "labor camp security locker"

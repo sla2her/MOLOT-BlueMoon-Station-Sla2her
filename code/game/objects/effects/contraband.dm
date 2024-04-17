@@ -65,6 +65,9 @@
 	. = ..()
 	if(random_basetype)
 		randomise(random_basetype)
+
+
+
 	if(!ruined)
 		original_name = name // can't use initial because of random posters
 		name = "poster - [name]"
@@ -76,9 +79,10 @@
 	var/list/poster_types = subtypesof(base_type)
 	var/list/approved_types = list()
 	for(var/t in poster_types)
-		var/obj/structure/sign/poster/T = t
-		if(initial(T.icon_state) && !initial(T.never_random))
-			approved_types |= T
+		if(!istype(t,/obj/structure/sign/poster/contraband/inteq))// интек пропаганда сама не заспавнитьсяz
+			var/obj/structure/sign/poster/T = t
+			if(initial(T.icon_state) && !initial(T.never_random))
+				approved_types |= T
 
 	var/obj/structure/sign/poster/selected = pick(approved_types)
 
@@ -105,14 +109,15 @@
 /obj/structure/sign/poster/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(ruined)
 		return
-	visible_message("[user] rips [src] in a single, decisive motion!" )
-	playsound(src.loc, 'sound/items/poster_ripped.ogg', 100, 1)
+	if(do_after(user, 30, src))
+		visible_message("[user] rips [src] in a single, decisive motion!" )
+		playsound(src.loc, 'sound/items/poster_ripped.ogg', 100, 1)
 
-	var/obj/structure/sign/poster/ripped/R = new(loc)
-	R.pixel_y = pixel_y
-	R.pixel_x = pixel_x
-	R.add_fingerprint(user)
-	qdel(src)
+		var/obj/structure/sign/poster/ripped/R = new(loc)
+		R.pixel_y = pixel_y
+		R.pixel_x = pixel_x
+		R.add_fingerprint(user)
+		qdel(src)
 
 /obj/structure/sign/poster/proc/roll_and_drop(loc)
 	pixel_x = 0
@@ -839,6 +844,11 @@
 	desc = "A poster depicting the famous mega-corporation Nanotrasen in form of a vulpkanin. It has a Nanotrasen logo on it."
 	icon_state = "poster_vulp8"
 
+/obj/structure/sign/poster/official/spiders
+	name = "Spider Risk"
+	desc = "A poster detailing what to do when giant spiders are seen."
+	icon_state = "poster_spiders"
+
 ////
 
 /obj/structure/sign/poster/contraband/bread
@@ -915,5 +925,10 @@
 	name = "Paws"
 	desc = "This lewd poster depicts a vulpkanine preparing to mate."
 	icon_state = "paws"
+
+/obj/structure/sign/poster/contraband/joy //bluemoon add
+	name = "Happiness Pill"
+	desc = "Погрузизь в мир счастья."
+	icon_state = "joy"
 
 #undef PLACE_SPEED

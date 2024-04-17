@@ -170,7 +170,7 @@
 		to_chat(user, "<span class='warning'>These items don't possess the required fingerprints or DNA.</span>")
 		return FALSE
 
-	var/chosen_mob = input("Select the person you wish to curse","Your target") as null|anything in sortList(compiled_list, /proc/cmp_mob_realname_dsc)
+	var/chosen_mob = input("Select the person you wish to curse","Your target") as null|anything in sort_list(compiled_list, /proc/cmp_mob_realname_dsc)
 	if(!chosen_mob)
 		return FALSE
 	curse(compiled_list[chosen_mob])
@@ -332,12 +332,6 @@
 	next_knowledge = list(/datum/eldritch_knowledge/spell/silence)
 	result_atoms = list(/obj/item/living_heart)
 	route = "Start"
-
-/datum/eldritch_knowledge/living_heart/recreate
-	name = "Recreate Living Heart"
-	desc = "Смочи меня кровью и сбрось свою нынешнюю цель."
-	required_atoms = list(/obj/item/living_heart,/obj/effect/decal/cleanable/blood)
-	result_atoms = list(/obj/item/living_heart)
 
 /datum/eldritch_knowledge/codex_cicatrix
 	name = "Codex Cicatrix"

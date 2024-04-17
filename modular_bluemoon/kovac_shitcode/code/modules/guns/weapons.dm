@@ -201,7 +201,7 @@
 	throwforce = 5
 	throw_speed = 2
 	throw_range = 3
-	wound_bonus = 25
+	wound_bonus = 30
 	bare_wound_bonus = 30
 	armour_penetration = 70
 	attack_speed = CLICK_CD_MELEE * 1.2
@@ -221,7 +221,7 @@
 
 /obj/item/inteq_sledgehammer/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=10, force_wielded=25, icon_wielded="sledgehammer1")
+	AddComponent(/datum/component/two_handed, force_unwielded=10, force_wielded=33, icon_wielded="sledgehammer1")
 
 /// triggered on wield of two handed item
 /obj/item/inteq_sledgehammer/proc/on_wield(obj/item/source, mob/user)
@@ -243,6 +243,16 @@
 			BP.drop_limb()
 			playsound(src,pick('modular_bluemoon/kovac_shitcode/sound/weapons/sledge.ogg') ,50, 1, -1)
 	return (BRUTELOSS)
+
+/obj/item/inteq_sledgehammer/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
+	if(wielded)
+		final_block_chance *= 1.5
+	if(prob(final_block_chance))
+		if(attack_type & ATTACK_TYPE_MELEE)
+			playsound(src, 'sound/weapons/parry.ogg', 100, 1)
+			owner.visible_message("<span class='danger'>[owner] parries [attack_text] with [src]!</span>")
+			return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
+	return BLOCK_NONE
 
 /obj/item/inteq_sledgehammer/pre_attack(atom/A, mob/living/user, params, attackchain_flags, damage_multiplier)
 	. = ..()
@@ -292,7 +302,7 @@
 	block_damage_absorption = 3
 	block_damage_multiplier = 0.1
 	block_damage_multiplier_override = list(
-		ATTACK_TYPE_MELEE = 0.1
+		ATTACK_TYPE_MELEE = 0.25
 	)
 	block_start_delay = 0.5
 	block_stamina_cost_per_second = 6.5
@@ -321,6 +331,7 @@
 	desc = "<span class='warning'>VRRRRRRR!!!</span>"
 	armour_penetration = 100
 	force_on = 55
+	block_parry_data = /datum/block_parry_data/inteq_sledgehammer
 
 ///InteQ Uplink additions
 
@@ -336,8 +347,8 @@
 	name = "High Powered Chainsaw"
 	desc = "A high powered chainsaw for cutting up ...you know...."
 	item = /obj/item/chainsaw/doomslayer/inteq_chainsaw
-	cost = 22
-
+	cost = 18
+	purchasable_from = ~(UPLINK_SYNDICATE)
 
 /// Clown Ops Uplink additions
 /datum/uplink_item/suits/hardsuit/elite_clown

@@ -4,7 +4,6 @@
 	icon_state = "helmet"
 	item_state = "helmet"
 	armor = list(MELEE = 40, BULLET = 30, LASER = 30,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
-	flags_inv = HIDEEARS
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_TEMP_PROTECT
 	heat_protection = HEAD
@@ -108,14 +107,17 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	clothing_flags = STOPSPRESSUREDAMAGE
+	can_toggle = TRUE
+	actions_types = list(/datum/action/item_action/toggle)
+	active_sound = 'sound/machines/closet_open.ogg'
 	unique_reskin = list(
 		"Basic" = list(
 			RESKIN_ICON_STATE = "hecu_helm_nvg",
 			RESKIN_ITEM_STATE = "hecu_helm_nvg"
 		),
 		"Basic Black" = list(
-			RESKIN_ICON_STATE = "hecu_helm_black_nvg",
-			RESKIN_ITEM_STATE = "hecu_helm_black_nvg"
+			RESKIN_ICON_STATE = "hecu_helm_nvg_black",
+			RESKIN_ITEM_STATE = "hecu_helm_nvg_black"
 		),
 	)
 
@@ -127,7 +129,7 @@
 			flags_1 ^= visor_flags
 			flags_inv ^= visor_flags_inv
 			flags_cover ^= visor_flags_cover
-			icon_state = "[initial(icon_state)][up ? "_up" : ""]"
+			icon_state = "[replacetext("[icon_state]", "_up", "")][up ? "_up" : ""]"
 			darkness_view = 0
 			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
 
@@ -137,9 +139,8 @@
 				C.head_update(src, forced = 1)
 
 			if(active_sound)
-				while(up)
+				if(up)
 					playsound(src.loc, "[active_sound]", 100, 0, 4)
-					sleep(15)
 
 /obj/item/clothing/head/helmet/alt
 	name = "bulletproof Helmet"
@@ -181,7 +182,7 @@
 	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/riot
-	name = "riot Helmet"
+	name = "Riot Helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks."
 	icon_state = "riot"
 	item_state = "helmet"
@@ -200,6 +201,7 @@
 	dynamic_fhair_suffix = ""
 	dog_fashion = null
 	mutantrace_variation = STYLE_MUZZLE
+	active_sound = 'sound/machines/closet_open.ogg'
 
 /obj/item/clothing/head/helmet/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())
@@ -209,7 +211,7 @@
 			flags_1 ^= visor_flags
 			flags_inv ^= visor_flags_inv
 			flags_cover ^= visor_flags_cover
-			icon_state = "[initial(icon_state)][up ? "up" : ""]"
+			icon_state = "[replacetext("[icon_state]", "_up", "")][up ? "_up" : ""]"
 			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
 
 			user.update_inv_head()
@@ -218,9 +220,8 @@
 				C.head_update(src, forced = 1)
 
 			if(active_sound)
-				while(up)
+				if(up)
 					playsound(src.loc, "[active_sound]", 100, 0, 4)
-					sleep(15)
 
 /obj/item/clothing/head/helmet/justice
 	name = "helmet of justice"
@@ -269,33 +270,73 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
+/obj/item/clothing/head/helmet/swat/nanotrasen/altyn
+	name = "Altyn Helmet"
+	desc = "Баллистический шлем герметичного типа. Имеет стилистическое украшение."
+	icon_state = "altyn"
+	actions_types = list(/datum/action/item_action/toggle)
+	can_toggle = TRUE
+	active_sound = 'sound/machines/closet_open.ogg'
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	unique_reskin = list(
+		"Black Variant" = list(
+			RESKIN_ICON_STATE = "altyn_black"
+		),
+		"Brown Variant" = list(
+			RESKIN_ICON_STATE = "altyn_brown"
+		),
+		"Tri Poloski Variant" = list(
+			RESKIN_ICON_STATE = "altyn_tripoloski"
+		),
+	)
+
+/obj/item/clothing/head/helmet/swat/nanotrasen/altyn/attack_self(mob/user)
+	if(can_toggle && !user.incapacitated())
+		if(world.time > cooldown + toggle_cooldown)
+			cooldown = world.time
+			up = !up
+			flags_1 ^= visor_flags
+			flags_inv ^= visor_flags_inv
+			flags_cover ^= visor_flags_cover
+			icon_state = "[replacetext("[icon_state]", "_up", "")][up ? "_up" : ""]"
+			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
+
+			user.update_inv_head()
+			if(iscarbon(user))
+				var/mob/living/carbon/C = user
+				C.head_update(src, forced = 1)
+
+			if(active_sound)
+				if(up)
+					playsound(src.loc, "[active_sound]", 100, 0, 4)
+
 //Commander
 /obj/item/clothing/head/helmet/swat/command
 	name = "\improper Emergency Response Team commander Helmet"
 	desc = "An in-atmosphere helmet worn by the commander of a Nanotrasen Emergency Response Team. Has blue highlights."
 	icon_state = "erthelmet_cmd"
-	mutantrace_variation = STYLE_MUZZLE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 //Security
 /obj/item/clothing/head/helmet/swat/security
 	name = "\improper Emergency Response Team security Helmet"
 	desc = "An in-atmosphere helmet worn by security members of the Nanotrasen Emergency Response Team. Has red highlights."
 	icon_state = "erthelmet_sec"
-	mutantrace_variation = STYLE_MUZZLE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 //Engineer
 /obj/item/clothing/head/helmet/swat/engineer
 	name = "\improper Emergency Response Team engineer Helmet"
 	desc = "An in-atmosphere helmet worn by engineering members of the Nanotrasen Emergency Response Team. Has orange highlights."
 	icon_state = "erthelmet_eng"
-	mutantrace_variation = STYLE_MUZZLE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 //Medical
 /obj/item/clothing/head/helmet/swat/medical
 	name = "\improper Emergency Response Team medical Helmet"
 	desc = "A set of armor worn by medical members of the Nanotrasen Emergency Response Team. Has red and white highlights."
 	icon_state = "erthelmet_med"
-	mutantrace_variation = STYLE_MUZZLE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 //Janitorial
 /obj/item/clothing/head/helmet/swat/janitor

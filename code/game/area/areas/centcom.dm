@@ -32,6 +32,12 @@
 /area/centcom/holding
 	name = "Holding Facility"
 
+// BLUEMOON ADD START - размещаю здесь для удобства чтения
+/area/centcom/holding/exterior // зона со светом
+	name = "Holding Facility Exterior"
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+// BLUEMOON ADD END
+
 /area/centcom/vip
 	name = "VIP Zone"
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
@@ -154,7 +160,6 @@
 	has_gravity = STANDARD_GRAVITY
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
 	flags_1 = NONE
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	ambientsounds = SHUTTLE_MILITARY
 	shipambience = 'sound/ambience/zone/stadium.ogg'
 	min_ambience_cooldown = 15 SECONDS

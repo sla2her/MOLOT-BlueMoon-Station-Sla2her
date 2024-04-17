@@ -23,11 +23,11 @@
 //Simply removes < and > and limits the length of the message
 /proc/strip_html_simple(t,limit=MAX_MESSAGE_LEN)
 	var/list/strip_chars = list("<",">")
-	t = copytext_char(t,1,limit)
+	t = copytext(t,1,limit)
 	for(var/char in strip_chars)
 		var/index = findtext(t, char)
 		while(index)
-			t = copytext_char(t, 1, index) + copytext_char(t, index+1)
+			t = copytext(t, 1, index) + copytext(t, index+1)
 			index = findtext(t, char)
 	return t
 
@@ -863,12 +863,35 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 		corrupted_text += pick(corruption_options)
 	return corrupted_text
 
+/proc/format_text(text)
+	return replacetext(replacetext(text,"\proper ",""),"\improper ","")
+
 /// Removes all non-alphanumerics from the text, keep in mind this can lead to id conflicts
 /proc/sanitize_css_class_name(name)
 	var/static/regex/regex = new(@"[^a-zA-Z0-9]","g")
 	return replacetext(name, regex, "")
 
-/proc/parse_zone(zone)	// Именительный
+/proc/parse_zone(zone)	//Original
+	if(zone == BODY_ZONE_PRECISE_R_HAND)
+		return "right hand"
+	else if (zone == BODY_ZONE_PRECISE_L_HAND)
+		return "left hand"
+	else if (zone == BODY_ZONE_L_ARM)
+		return "left arm"
+	else if (zone == BODY_ZONE_R_ARM)
+		return "right arm"
+	else if (zone == BODY_ZONE_L_LEG)
+		return "left leg"
+	else if (zone == BODY_ZONE_R_LEG)
+		return "right leg"
+	else if (zone == BODY_ZONE_PRECISE_L_FOOT)
+		return "left foot"
+	else if (zone == BODY_ZONE_PRECISE_R_FOOT)
+		return "right foot"
+	else
+		return zone
+
+/proc/ru_parse_zone(zone)	// Именительный
 	if(zone == BODY_ZONE_PRECISE_R_HAND)
 		return "правая кисть"
 	else if (zone == BODY_ZONE_PRECISE_L_HAND)
@@ -898,7 +921,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 	else
 		return zone
 
-/proc/ru_parse_zone(zone)	// Винительный
+/proc/ru_kogo_zone(zone)	// Винительный
 	if(zone == "правая кисть")
 		return "правую кисть"
 	else if (zone == "левая кисть")
@@ -1123,3 +1146,9 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 	for(var/s in GLOB.rus_unicode_conversion_hex)
 		text = replacetext(text, "\\u[GLOB.rus_unicode_conversion_hex[s]]", s)
 	return json_decode(text)
+
+//Adds 'u' number of zeros ahead of the text 't'
+/proc/add_zero(t, u)
+	while(length(t) < u)
+		t = "0[t]"
+	return t

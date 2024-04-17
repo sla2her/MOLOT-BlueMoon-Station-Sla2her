@@ -25,6 +25,7 @@
 	var/list/procs_list = list(
 		"before_inserting" = CALLBACK(src, .proc/item_inserting),
 		"after_inserting" = CALLBACK(src, .proc/item_inserted),
+		"after_removing" = CALLBACK(src, .proc/item_removed),
 	)
 	AddComponent(/datum/component/genital_equipment, list(ORGAN_SLOT_VAGINA, ORGAN_SLOT_ANUS, ORGAN_SLOT_PENIS, ORGAN_SLOT_BREASTS, ORGAN_SLOT_BUTT, ORGAN_SLOT_BELLY), procs_list)
 
@@ -56,6 +57,12 @@
 	to_chat(user, span_userlove("You attach [src] to <b>\The [G.owner]</b>'s [G]."))
 	playsound(G.owner, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
 	inside = TRUE
+
+/obj/item/electropack/vibrator/proc/item_removed(datum/source, obj/item/organ/genital/G, mob/user)
+	. = TRUE
+	to_chat(user, span_userlove("You retrieve [src] from <b>\The [G.owner]</b>'s [G]."))
+	playsound(G.owner, 'modular_sand/sound/lewd/champ_fingering.ogg', 50, 1, -1)
+	inside = FALSE
 
 /obj/item/electropack/vibrator/small //can go anywhere
 	name = "small remote vibrator"
@@ -143,6 +150,7 @@ Code:
 
 			var/intensity = 6*mode
 			U.handle_post_sex(intensity, null, src, G) //give pleasure
+			U.plug13_genital_emote(G, intensity * 5)
 			playsound(U.loc, 'modular_splurt/sound/lewd/vibrate.ogg', (intensity+5), 1, -1) //vibe intensity scaled up abit for sound
 
 			switch(mode)
@@ -192,6 +200,7 @@ Code:
 								to_chat(U, span_love("[src] vibrates against your [G.name]!"))
 
 					U.handle_post_sex(intencity, null, src) //give pleasure
+					U.plug13_genital_emote(G, intencity * 5)
 					playsound(U.loc, 'modular_splurt/sound/lewd/vibrate.ogg', (intencity+5), 1, -1) //vibe intencity scaled up abit for sound
 
 

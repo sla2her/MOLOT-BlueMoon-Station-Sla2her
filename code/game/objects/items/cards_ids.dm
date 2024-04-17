@@ -177,7 +177,7 @@
 	playsound(src, 'sound/items/bikehorn.ogg', 50, 1)
 
 /obj/item/card/id
-	name = "identification card"
+	name = "Identification Card"
 	desc = "A card used to provide ID and determine access across the station."
 	icon_state = "id"
 	item_state = "card-id"
@@ -186,11 +186,13 @@
 	slot_flags = ITEM_SLOT_ID
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	var/id_type_name = "identification card"
+	var/id_type_name = "Identification Card"
 	var/mining_points = 0 //For redeeming at mining equipment vendors
+	var/mining_points_total = 0 //Для отслеживания рабты шахтёров
 	var/list/access = list()
 	var/registered_name = null // The name registered_name on the card
 	var/assignment = null
+	var/rank = null			//actual job
 	var/access_txt // mapping aid
 	var/bank_support = ID_FREE_BANK_ACCOUNT
 	var/datum/bank_account/registered_account
@@ -219,6 +221,7 @@
 		my_store.my_card = null
 		my_store = null
 	cached_flat_icon = null //SPLURT edit
+	QDEL_NULL(access)
 	return ..()
 
 /obj/item/card/id/vv_edit_var(var_name, var_value)
@@ -362,7 +365,7 @@
 /obj/item/card/id/examine(mob/user)
 	. = ..()
 	if(mining_points)
-		. += "There's [mining_points] mining equipment redemption point\s loaded onto this card."
+		. += "There's [mining_points] mining equipment redemption point\s loaded onto this card and [mining_points_total] were earned in total."
 	if(!bank_support || (bank_support == ID_LOCKED_BANK_ACCOUNT && !registered_account))
 		. += "<span class='info'>This ID has no banking support whatsover, must be an older model...</span>"
 	else if(registered_account)
@@ -582,24 +585,6 @@
 	icon_state = "retro"
 	assignment = "Trader"
 	access = list(ACCESS_SYNDICATE)
-
-/obj/item/card/id/syndicate/inteq
-	name = "Mercenary Card"
-	icon_state = "inteq"
-	assignment = "Mercenary"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
-
-/obj/item/card/id/syndicate/anyone/inteq
-	name = "Vanguard Mercenary Card"
-	icon_state = "inteq"
-	assignment = "Vanguard Mercenary"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
-
-/obj/item/card/id/syndicate/nuke_leader/inteq
-	name = "Nuclear Vanguard Mercenary Card"
-	icon_state = "inteq"
-	assignment = "Vanguard Mercenary"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/captains_spare
 	name = "captain's spare ID"

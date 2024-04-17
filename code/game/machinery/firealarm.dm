@@ -67,7 +67,7 @@
 	myarea = get_base_area(src)
 	LAZYADD(myarea.firealarms, src)
 
-	wires = new /datum/wires/firealarm(src)
+	set_wires(new /datum/wires/firealarm(src))
 	register_context()
 
 /obj/machinery/firealarm/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
@@ -167,9 +167,10 @@
 	return TRUE
 
 /obj/machinery/firealarm/temperature_expose(datum/gas_mixture/air, temperature, volume)
-	if((temperature > T0C + 200 || temperature < BODYTEMP_COLD_DAMAGE_LIMIT) && COOLDOWN_FINISHED(src, last_alarm) && !(obj_flags & EMAGGED) && detecting && !stat)
+	var/turf/open/T = get_turf(src)
+	if((temperature >= FIRE_MINIMUM_TEMPERATURE_TO_EXIST || temperature < BODYTEMP_COLD_DAMAGE_LIMIT || (istype(T) && T.turf_fire)) && (last_alarm+FIREALARM_COOLDOWN < world.time) && !(obj_flags & EMAGGED) && detecting && !stat)
 		alarm()
-	return ..()
+	..()
 
 /obj/machinery/firealarm/proc/alarm(mob/user)
 	if(!is_operational() || !COOLDOWN_FINISHED(src, last_alarm))
@@ -232,10 +233,10 @@
 				if(!W.tool_start_check(user, amount=0))
 					return
 
-				to_chat(user, "<span class='notice'>You begin repairing [src]...</span>")
+				to_chat(user, "<span class='notice'>Вы начинаете чинить [src]...</span>")
 				if(W.use_tool(src, user, 40, volume=50))
 					obj_integrity = max_integrity
-					to_chat(user, "<span class='notice'>You repair [src].</span>")
+					to_chat(user, "<span class='notice'>Вы починили [src].</span>")
 			else
 				to_chat(user, "<span class='warning'>[src] is already in good condition!</span>")
 			return
@@ -270,7 +271,7 @@
 						buildstage = 2
 						to_chat(user, "<span class='notice'>You wire \the [src].</span>")
 
-						wires = new /datum/wires/firealarm(src)
+						set_wires(new /datum/wires/firealarm(src))
 
 						update_icon()
 					return

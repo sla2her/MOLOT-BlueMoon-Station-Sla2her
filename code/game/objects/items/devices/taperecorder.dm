@@ -9,9 +9,10 @@
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT
 	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT * 0.6, /datum/material/glass=SMALL_MATERIAL_AMOUNT * 0.3)
+	flags_1 = HEAR_1
 	force = 2
 	throwforce = 2
-	speech_span = SPAN_ROBOT
+	speech_span = SPAN_TAPE_RECORDER
 	drop_sound = 'sound/items/handling/taperecorder_drop.ogg'
 	pickup_sound = 'sound/items/handling/taperecorder_pickup.ogg'
 	var/recording = FALSE
@@ -30,18 +31,13 @@
 	///Sound loop that plays when recording or playing back.
 	var/datum/looping_sound/tape_recorder_hiss/soundloop
 
-/datum/looping_sound/tape_recorder_hiss
-	mid_sounds = list('sound/items/taperecorder/taperecorder_hiss_mid.ogg' = 1)
-	start_sound = list('sound/items/taperecorder/taperecorder_hiss_start.ogg' = 1)
-	volume = 10
-
 /obj/item/taperecorder/Initialize(mapload)
 	. = ..()
 	if(starting_tape_type)
 		mytape = new starting_tape_type(src)
-	update_icon()
 	soundloop = new(src)
 	update_appearance()
+//	become_hearing_sensitive()
 
 /obj/item/taperecorder/Destroy()
 	QDEL_NULL(soundloop)
@@ -159,11 +155,11 @@
 	return ..()
 
 
-/obj/item/taperecorder/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, spans, list/message_mods = list(), message_range)
+/obj/item/taperecorder/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode, atom/movable/source)
 	. = ..()
 	if(mytape && recording)
 		mytape.timestamp += mytape.used_capacity
-		mytape.storedinfo += "\[[time2text(mytape.used_capacity,"mm:ss")]\] [raw_message]"
+		mytape.storedinfo += "\[[time2text(mytape.used_capacity,"mm:ss")]\] [speaker.GetVoice()] [lang_treat(speaker, message_language, raw_message, spans, message_mode)]"
 
 
 /obj/item/taperecorder/verb/record()
@@ -264,7 +260,7 @@
 			balloon_alert(usr, "recording ended")
 			stoplag(1 SECONDS) //prevents multiple balloon alerts covering each other
 			break
-		say("[mytape.storedinfo[i]]", sanitize=FALSE)//We want to display this properly, don't double encode
+		say("[mytape.storedinfo[i]]", sanitize=TRUE)
 		if(mytape.storedinfo.len < i + 1)
 			playsleepseconds = 1
 			sleep(1 SECONDS)
@@ -281,7 +277,7 @@
 
 /obj/item/taperecorder/attack_self(mob/user)
 	if(!mytape)
-		balloon_alert(user, "Пусто!")
+		balloon_alert(user, "it's empty!")
 		return
 
 	update_available_icons()
@@ -397,7 +393,7 @@
 	var/list/timestamp_otherside = list()
 	var/unspooled = FALSE
 	var/list/icons_available = list()
-	var/radial_icon_file = 'icons/radials/taperecorder.dmi'
+	var/radial_icon_file = 'icons/hud/radial_tape.dmi'
 
 /obj/item/tape/Initialize(mapload)
 	. = ..()

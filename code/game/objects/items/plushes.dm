@@ -668,14 +668,17 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	. = ..()
 	name = current_skin
 	if(COOLDOWN_FINISHED(src, change_ninja_cooldown))
-		COOLDOWN_START(src, change_ninja_cooldown, 3 SECONDS)
+		COOLDOWN_START(src, change_ninja_cooldown, 6 SECONDS)
 		switch(current_skin)
 			if(BLUE_NINJA_SKIN)
 				say("Какой-то свет не остановит меня!")
+				playsound(src, 'modular_bluemoon/SmiLeY/sounds/Blue Ninja Plushie.ogg', 50, 1)
 			if(RED_NINJA_SKIN)
 				say("Ты можешь бежать... но ты не сможешь спрятаться!")
+				playsound(src, 'modular_bluemoon/SmiLeY/sounds/Red Ninja Plushie.ogg', 50, 1)
 			else
-				say("Я не боюсь темноты! Я и есть тьма!")
+				say("Я не боюсь тьмы! Я и есть тьма!")
+				playsound(src, 'modular_bluemoon/SmiLeY/sounds/Green Ninja Plushie.ogg', 50, 1)
 	if(ismob(loc))
 		var/mob/M = loc
 		M.update_inv_hands()
@@ -704,12 +707,14 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	. = ..()
 	name = current_skin
 	if(COOLDOWN_FINISHED(src, change_miner_cooldown))
-		COOLDOWN_START(src, change_miner_cooldown, 3 SECONDS)
+		COOLDOWN_START(src, change_miner_cooldown, 6 SECONDS)
 		switch(current_skin)
 			if(BASIC_MINER_SKIN)
 				say("Ну вот. Сегодня я умру.")
+				playsound(src, 'modular_bluemoon/SmiLeY/sounds/Miner Plushie.ogg', 50, 1)
 			else
 				say("Кишки, огромные кишки! Убей их… должен убить их всех! Разорвать… и… рвать! Демоны… они повсюду. Должен… убить их всех!")
+				playsound(src, 'modular_bluemoon/SmiLeY/sounds/Bloody Miner Plushie.ogg', 50, 1)
 	if(ismob(loc))
 		var/mob/M = loc
 		M.update_inv_hands()
@@ -1001,3 +1006,29 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	if(!Kisser)
 		return
 	plushie_absorb(Kisser)
+
+/obj/item/toy/plush/therapy
+	name = "Therapy Doll"
+	desc = "A toy for therapeutic and recreational purposes."
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "therapyred"
+	item_state = "egg4"
+	attack_verb = list("thumped", "whomped", "bumped")
+	squeak_override = list('sound/items/squeaktoy.ogg'=1)
+	w_class = WEIGHT_CLASS_TINY
+	var/cooldown = 0
+	resistance_flags = FLAMMABLE
+
+/obj/item/toy/plush/therapy/New()
+	..()
+	var/therapy_color = pick("green","blue","red", "orange", "purple", "yellow")
+	if(therapy_color)
+		desc += " This one is [therapy_color]."
+		icon_state = "therapy[therapy_color]"
+
+/obj/item/toy/plush/therapy/attack_self(mob/user)
+	if(cooldown < world.time - 8)
+		to_chat(user, "<span class='notice'>Вы сжимаете анти-стресс игрушку - [src].</span>")
+		playsound(user, 'sound/items/squeaktoy.ogg', 20, 1)
+		SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "plushpet", /datum/mood_event/plushpet)
+		cooldown = world.time

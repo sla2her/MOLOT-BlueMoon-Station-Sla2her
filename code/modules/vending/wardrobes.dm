@@ -25,10 +25,12 @@
 					/obj/item/clothing/under/rank/security/officer = 5,
 					/obj/item/clothing/shoes/jackboots = 3,
 					/obj/item/clothing/shoes/jackboots/tall = 3,
+					/obj/item/clothing/shoes/jackboots/tall_default = 2,
 					/obj/item/clothing/head/beret/sec = 5,
 					/obj/item/clothing/head/soft/sec = 5,
 					/obj/item/clothing/mask/bandana/red = 5,
 					/obj/item/clothing/mask/balaclava/breath/redscarf = 4,
+					/obj/item/clothing/mask/balaclava/breath/alliance = 6,
 					/obj/item/clothing/mask/gas/sechailer = 4,
 					/obj/item/clothing/mask/gas/nri = 2,
 					/obj/item/clothing/under/rank/security/officer/skirt = 5,
@@ -221,6 +223,7 @@
 	vend_reply = "Спасибо за использование RoboDrobe!"
 	products = list(/obj/item/clothing/glasses/hud/diagnostic = 3,
 					/obj/item/stack/medical/nanogel = 5,
+					/obj/item/reagent_containers/blood/oilblood = 5, // BLUEMOON ADD - гидравлическая жидкость для синтетиков,
 					/obj/item/clothing/head/beret/robo = 3,
 					/obj/item/clothing/under/rank/rnd/roboticist = 3,
 					/obj/item/clothing/under/rank/rnd/roboticist/sleek = 3,
@@ -448,7 +451,6 @@
 	vend_reply = "Спасибо за использование DeusVend!"
 	products = list(/obj/item/choice_beacon/holy = 1,
 					/obj/item/staff/bostaff/chaplain = 1,
-					/obj/item/melee/baseball_bat/chaplain = 1,
 					/obj/item/storage/backpack/cultpack = 2,
 					/obj/item/clothing/accessory/pocketprotector/cosmetology = 2,
 					/obj/item/clothing/under/rank/civilian/chaplain = 2,
@@ -462,18 +464,28 @@
 					/obj/item/clothing/head/pharaoh = 2,
 					/obj/item/clothing/neck/tie/cross = 7,
 					/obj/item/storage/fancy/candle_box = 3,
-					/obj/item/clothing/head/clownmitre = 3, //BlueMoon changes
-					/obj/item/clothing/suit/chaplain/clownpriest = 3, //BlueMoon changes
-					/obj/item/clothing/suit/chaplain/shrinehand = 3, //BlueMoon changes
-					/obj/item/clothing/suit/hooded/chaplain_hoodie/monk_robe = 2, //BlueMoon changes
-					/obj/item/clothing/neck/oldcross = 6,  //BlueMoon changes
-					/obj/item/clothing/neck/epitrachelion = 1, //BlueMoon changes
-					/obj/item/clothing/neck/cloak/bishop = 1, //BlueMoon changes
+					/obj/item/toy/plush/plushvar = 1, // BLUEMOON ADD - перенесено из категории примиума,
+					/obj/item/toy/plush/narplush = 1, // BLUEMOON ADD - перенесено из категории примиума,
+					/obj/item/clothing/head/clownmitre = 3, //BlueMoon changes,
+					/obj/item/clothing/suit/chaplain/clownpriest = 3, //BlueMoon changes,
+					/obj/item/clothing/suit/chaplain/shrinehand = 3, //BlueMoon changes,
+					/obj/item/clothing/suit/hooded/chaplain_hoodie/monk_robe = 2, //BlueMoon changes,
+					/obj/item/clothing/neck/oldcross = 6,  //BlueMoon changes,
+					/obj/item/clothing/neck/epitrachelion = 1, //BlueMoon changes,
+					/obj/item/clothing/neck/cloak/bishop = 1, //BlueMoon changes,
 					/obj/item/clothing/neck/cloak/bishopblack= 1) //BlueMoon changes
-	premium = list(/obj/item/toy/plush/plushvar = 1,
-					/obj/item/toy/plush/narplush = 1,
+
+	contraband = list (/obj/item/sign/flag/ravenheart = 3, // Bluemoon edition - Флаг Воронье Сердце,
+					   /obj/item/sign/flag/ravenheart/alt = 3, // Bluemoon edition - Флаг-баннер Воронье Сердце,
+					   /obj/item/storage/box/raven_box/posters = 3, // Bluemoon edition - Постеры,
+					  )
+	premium = list(/obj/item/storage/fancy/ringbox/silver = 4, // BLUEMOON ADD - для проведения свадеб,
+					/obj/item/storage/fancy/ringbox = 4, // BLUEMOON ADD - для проведения свадеб,
+					/obj/item/storage/fancy/ringbox/diamond = 4, // BLUEMOON ADD - для проведения свадеб,
 					/obj/item/lighter/black = 1)
+
 	refill_canister = /obj/item/vending_refill/wardrobe/chap_wardrobe
+	extra_price = PRICE_ALMOST_ONE_GRAND * 1.1
 	payment_department = ACCOUNT_SRV
 /obj/item/vending_refill/wardrobe/chap_wardrobe
 	machine_name = "DeusVend"
@@ -576,11 +588,11 @@
 
 /obj/machinery/vending/wardrobe/cap_wardrobe
 	name = "Captain's Wardrobe"
-	desc = "The latest and greatest in Nanotrasen fashion for your great leader."
+	desc = "Последние достижения в области Nanotrasen для вашего великого лидера."
 	icon_state = "capsdrobe"
 	icon_deny = "capsdrobe-deny"
-	product_slogans = "Только самое лучшее для лучших."
-	vend_reply = "A wonderful day to you, great leader."
+	product_slogans = "Только лучшее для лучших."
+	vend_reply = "Прекрасного Вам дня, замечательный руководитель."
 	products = list(/obj/item/clothing/suit/hooded/wintercoat/captain = 1,
 					/obj/item/storage/backpack/captain = 1,
 					/obj/item/storage/backpack/satchel/cap = 1,
@@ -605,6 +617,7 @@
 					/obj/item/clothing/gloves/color/captain = 1,
 					/obj/item/clothing/neck/cloak/syndiecap = 2, // BlueMoon Add
 					/obj/item/clothing/neck/cloak/syndieadm = 1) // BlueMoon Add
+
 	refill_canister = /obj/item/vending_refill/wardrobe/cap_wardrobe
 	payment_department = ACCOUNT_SEC
 	default_price = PRICE_ALMOST_EXPENSIVE
@@ -668,6 +681,52 @@
 
 /obj/item/vending_refill/wardrobe/syndie_wardrobe
 	machine_name = "SynDrobe"
+	icon_state = "refill_donksoft"
+
+/obj/machinery/vending/wardrobe/centcom_wardrobe
+	name = "\improper CentDrobe"
+	desc = "A vending machine for our boys in blue, now in brand new black-green!"
+	icon_state = "greed"
+	product_slogans = "Натягивай!;Целься, Одевайся, Стреляй!;Синяя Бригада за ношение лучшего!"
+	vend_reply = "Спасибо за использование CentDrobe!"
+	circuit = /obj/item/circuitboard/machine/vending/syndicate_clothes_vendor
+	products = list(
+		/obj/item/clothing/under/rank/centcom/officer = 3,
+		/obj/item/clothing/under/rank/centcom/officer_alt = 3,
+		/obj/item/clothing/under/rank/centcom/commander = 3,
+		/obj/item/clothing/glasses/eyepatch = 3,
+		/obj/item/storage/box/syndie_kit/centcom_costume = 2,
+		/obj/item/mod/control/pre_equipped/corporate = 2,
+	)
+	contraband = list(
+		/obj/item/kitchen/knife/combat = 4,
+	)
+	premium = list(
+		/obj/item/lighter = 2,
+		/obj/item/lighter/slime = 2,
+		/obj/item/lighter/black = 2,
+		/obj/item/lighter/blue = 2,
+		/obj/item/lighter/cap = 2,
+		/obj/item/lighter/ce = 2,
+		/obj/item/lighter/cmo = 2,
+		/obj/item/lighter/hos = 2,
+		/obj/item/lighter/hop = 2,
+		/obj/item/lighter/nt_rep = 2,
+		/obj/item/lighter/rd = 2,
+		/obj/item/lighter/purple = 2,
+		/obj/item/lighter/donator = 2,
+		/obj/item/lighter/contractor = 2,
+		/obj/item/lighter/engraved = 2,
+		/obj/item/lighter/qm_engraved = 2,
+		/obj/item/lighter/gold = 2,
+		/obj/item/lighter/gonzofist = 2,
+		/obj/item/storage/fancy/cigarettes/cigars/cohiba = 2,
+	)
+	refill_canister = /obj/item/vending_refill/wardrobe/centcom_wardrobe
+	light_color = COLOR_NAVY
+
+/obj/item/vending_refill/wardrobe/centcom_wardrobe
+	machine_name = "CentDrobe"
 	icon_state = "refill_donksoft"
 
 /obj/machinery/vending/wardrobe/syndie_wardrobe/civil

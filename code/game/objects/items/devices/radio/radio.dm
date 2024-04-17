@@ -43,6 +43,15 @@
 	var/const/FREQ_LISTENING = 1
 	//FREQ_BROADCASTING = 2
 
+	/// overlay when speaker is on
+	var/overlay_speaker_idle = "s_idle"
+	/// overlay when recieving a message
+	var/overlay_speaker_active = "s_active"
+	/// overlay when mic is on
+	var/overlay_mic_idle = "m_idle"
+	/// overlay when speaking a message (is displayed simultaniously with speaker_active)
+	var/overlay_mic_active = "m_active"
+
 /obj/item/radio/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] starts bouncing [src] off [user.p_their()] head! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return BRUTELOSS
@@ -103,7 +112,7 @@
 	return ..()
 
 /obj/item/radio/Initialize(mapload)
-	wires = new /datum/wires/radio(src)
+	set_wires(new /datum/wires/radio(src))
 	if(prison_radio)
 		wires.cut(WIRE_TX) // OH GOD WHY
 	secure_radio_connections = new
@@ -230,6 +239,12 @@
 		return
 
 	if(use_command)
+		// BLUEMOON ADD START - чтобы работал большой текст у больших и маленький персонажей
+		if(spans & SPAN_BIG)
+			spans &= ~SPAN_BIG
+		if(spans & SPAN_SMALL)
+			spans &= ~SPAN_SMALL
+		// BLUEMOON ADD END
 		spans |= commandspan
 
 	/*
@@ -269,7 +284,7 @@
 	var/datum/signal/subspace/vocal/signal = new(src, freq, speaker, language, message, spans)
 
 	// Independent radios, on the CentCom frequency, reach all independent radios
-	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_CTF_RED || freq == FREQ_CTF_BLUE || freq == FREQ_DS1 || freq == FREQ_DS2 || freq == FREQ_TARKOFF || freq == FREQ_SOL || freq == FREQ_NRI || freq == FREQ_HOTEL))
+	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_CTF_RED || freq == FREQ_CTF_BLUE || freq == FREQ_DS1 || freq == FREQ_DS2 || freq == FREQ_GHOST_INTEQ || freq == FREQ_TARKOFF || freq == FREQ_SOL || freq == FREQ_NRI || freq == FREQ_HOTEL))
 		signal.data["compression"] = 0
 		signal.transmission_method = TRANSMISSION_SUPERSPACE
 		signal.levels = list(0)  // reaches all Z-levels
@@ -348,6 +363,15 @@
 		. += "<span class='notice'>It can be attached and modified.</span>"
 	else
 		. += "<span class='notice'>It cannot be modified or attached.</span>"
+
+/obj/item/radio/update_overlays()
+	. = ..()
+	if(unscrewed)
+		return
+	if(broadcasting && overlay_mic_idle)
+		. += overlay_mic_idle
+	if(listening && overlay_speaker_idle)
+		. += overlay_speaker_idle
 
 /obj/item/radio/attackby(obj/item/W, mob/user, params)
 	add_fingerprint(user)

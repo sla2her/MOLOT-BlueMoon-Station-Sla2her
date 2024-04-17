@@ -60,6 +60,11 @@
 	if((blood_id in GLOB.blood_reagent_types) && !HAS_TRAIT(C, TRAIT_NOMARROW) && !HAS_TRAIT(C, TRAIT_BLOODFLEDGE))
 		if(!data || !(data["blood_type"] in get_safe_blood(C.dna.blood_type)))	//we only care about bloodtype here because this is where the poisoning should be
 			C.adjustToxLoss(rand(2,8)*REM, TRUE, TRUE)	//forced to ensure people don't use it to gain beneficial toxin as slime person
+	// BLUEMOON ADD START - синтетики могут пить свою же "кровь" (гидравлическую жидкость), чтобы восполнять её запасы
+	if(HAS_TRAIT(C, TRAIT_ROBOTIC_ORGANISM))
+		if(data && (data["blood_type"] in get_safe_blood(C.dna.blood_type)))
+			C.blood_volume = C.blood_volume + clamp(volume, 0, metabolization_rate) //восполнение крови в соотношении 1 к 1
+	// BLUEMOON ADD END
 	..()
 
 /datum/reagent/blood/reaction_obj(obj/O, volume)
@@ -101,7 +106,7 @@
 			pH = 2.5
 
 		if(data["blood_type"] == "HF")
-			name = "Hydraulic Blood"
+			name = "Hydraulic Fluid" // BLUEMOON EDIT - was "Hydraulic Blood"
 			taste_description = "burnt oil"
 			pH = 9.75
 
@@ -225,7 +230,7 @@
 /datum/reagent/vaccine
 	//data must contain virus type
 	name = "Vaccine"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	color = "#C81040" // rgb: 200, 16, 64
 	taste_description = "slime"
 
@@ -365,9 +370,29 @@
 	ADD_TRAIT(L, TRAIT_HOLY, type)
 
 	if(is_servant_of_ratvar(L))
-		to_chat(L, "<span class='userdanger'>A fog spreads through your mind, purging the Justiciar's influence!</span>")
+		to_chat(L, "<span class='userdanger'>Священный Туман распространяется по вашему сознанию, ослабляя связь с Жёлтым Измерением и очищая вас от влияния Юстициара Ратвара!</span>")
 	else if(iscultist(L))
-		to_chat(L, "<span class='userdanger'>A fog spreads through your mind, weakening your connection to the veil and purging Nar-sie's influence</span>")
+		to_chat(L, "<span class='userdanger'>Священный Туман распространяется по вашему сознанию, ослабляя связь с Красным Измерением и очищая вас от влияния Нар-Си</span>")
+	else if(HAS_TRAIT(L,TRAIT_RUSSIAN))
+		// Alert user of holy water effect.
+		to_chat(L, span_nicegreen("Святая водица питает и заряжает энергией!"))
+	else
+		to_chat(L, span_nicegreen("Священный Туман распространяется по вашему сознанию."))
+
+	if(HAS_TRAIT(L, TRAIT_HALLOWED) || usr.job == "Chaplain")
+		L.drowsyness = max(L.drowsyness-5, 0)
+		L.AdjustUnconscious(-20, FALSE)
+		L.AdjustAllImmobility(-40, FALSE)
+		L.adjustStaminaLoss(-10, FALSE)
+		L.adjustToxLoss(-2, FALSE, TRUE)
+		L.adjustOxyLoss(-2, FALSE)
+		L.adjustBruteLoss(-2, FALSE)
+		L.adjustFireLoss(-2, FALSE)
+		L.heal_overall_damage(2,2)
+		L.adjust_disgust(-3)
+		if(ishuman(L) && L.blood_volume < (BLOOD_VOLUME_NORMAL*L.blood_ratio))
+			L.adjust_integration_blood(3)
+		return
 
 /datum/reagent/water/holywater/on_mob_end_metabolize(mob/living/L)
 	REMOVE_TRAIT(L, TRAIT_HOLY, type)
@@ -387,7 +412,7 @@
 		for(var/datum/action/innate/cult/blood_magic/BM in M.actions)
 			if(!BM.holy_dispel)
 				BM.holy_dispel = TRUE
-				to_chat(M, "<span class='cultlarge'>Your blood rites falter as holy water scours your body!</span>")
+				to_chat(M, "<span class='cultlarge'>Ваша Кровавая Связь обрывается, когда святая вода попадает в ваше тело!</span>")
 				for(var/datum/action/innate/cult/blood_spell/BS in BM.spells)
 					qdel(BS)
 	if(data["misc"] >= 25)		// 10 units, 45 seconds @ metabolism 0.4 units & tick rate 1.8 sec
@@ -398,10 +423,10 @@
 		if(iscultist(M) && prob(20))
 			M.say(pick("Av'te Nar'Sie","Pa'lid Mors","INO INO ORA ANA","SAT ANA!","Daim'niodeis Arc'iai Le'eones","R'ge Na'sie","Diabo us Vo'iscum","Eld' Mon Nobis"), forced = "holy water")
 			if(prob(10))
-				M.visible_message("<span class='danger'>[M] starts having a seizure!</span>", "<span class='userdanger'>You have a seizure!</span>")
+				M.visible_message("<span class='danger'>[M] падает в припадке!</span>", "<span class='userdanger'>У вас начался припадок!</span>")
 				M.Unconscious(120)
-				to_chat(M, "<span class='cultlarge'>[pick("Your blood is your bond - you are nothing without it", "Do not forget your place", \
-				"All that power, and you still fail?", "If you cannot scour this poison, I shall scour your meager life!")].</span>")
+				to_chat(M, "<span class='cultlarge'>[pick("Ваша кровь - это ваша связь. Без нее вы никто!", "Не забывай своё место, дитя.", \
+				"Столько сил, а вы все равно не справляетесь?", "Если ты не сможешь очистить себя от этой отраву, я очищу твою скудную жизнь!")].</span>")
 		else if(is_servant_of_ratvar(M) && prob(8))
 			switch(pick("speech", "message", "emote"))
 				if("speech")
@@ -463,6 +488,8 @@
 		M.adjustOxyLoss(-2, FALSE)
 		M.adjustBruteLoss(-2, FALSE)
 		M.adjustFireLoss(-2, FALSE)
+		M.heal_overall_damage(2,2)
+		M.adjust_disgust(-3)
 		if(ishuman(M) && M.blood_volume < (BLOOD_VOLUME_NORMAL*M.blood_ratio))
 			M.adjust_integration_blood(3)
 	else  // Will deal about 90 damage when 50 units are thrown
@@ -471,6 +498,8 @@
 		M.adjustFireLoss(2, FALSE)
 		M.adjustOxyLoss(2, FALSE)
 		M.adjustBruteLoss(2, FALSE)
+		M.heal_overall_damage(-2,-2)
+		M.adjust_disgust(6)
 	holder.remove_reagent(type, 1)
 	return TRUE
 
@@ -482,8 +511,9 @@
 	name = "Hell Water"
 	description = "YOUR FLESH! IT BURNS!"
 	taste_description = "burning"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	value = REAGENT_VALUE_VERY_RARE
+	accelerant_quality = 20
 
 /datum/reagent/hellwater/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_CURSED_BLOOD))
@@ -550,7 +580,7 @@
 /datum/reagent/lube
 	name = "Space Lube"
 	description = "Lubricant is a substance introduced between two moving surfaces to reduce the friction and wear between them. giggity."
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	color = "#009CA8" // rgb: 0, 156, 168
 	taste_description = "cherry" // by popular demand
 	boiling_point = 330
@@ -664,7 +694,7 @@
 	description = "A humanizing toxin."
 	color = "#5EFF3B" //RGB: 94, 255, 59
 	metabolization_rate = INFINITY //So it instantly removes all of itself
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	taste_description = "slime"
 	value = REAGENT_VALUE_RARE
 	var/datum/species/race = /datum/species/human
@@ -829,7 +859,7 @@
 /datum/reagent/slime_toxin
 	name = "Slime Mutation Toxin"
 	description = "A toxin that turns organic material into slime."
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	color = "#5EFF3B" //RGB: 94, 255, 59
 	taste_description = "slime"
 	metabolization_rate = 0.2
@@ -869,7 +899,7 @@
 	description = "This toxin will rapidly change the DNA of human beings. Commonly used by Syndicate spies and assassins in need of an emergency ID change."
 	color = "#5EFF3B" //RGB: 94, 255, 59
 	metabolization_rate = INFINITY
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	taste_description = "slime"
 	value = REAGENT_VALUE_RARE
 
@@ -1120,7 +1150,7 @@
 /datum/reagent/space_cleaner/sterilizine
 	name = "Sterilizine"
 	description = "Sterilizes wounds in preparation for surgery."
-	chemical_flags = REAGENT_ALL_PROCESS
+	chemical_flags = REAGENT_ALL_PROCESS //todo
 	color = "#e6f1f5" // rgb: 200, 165, 220
 	taste_description = "bitterness"
 	pH = 10.5
@@ -1147,7 +1177,7 @@
 	reagent_state = SOLID
 	taste_description = "iron"
 	pH = 6
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	overdose_threshold = 30
 	color = "#c2391d"
 
@@ -1283,6 +1313,7 @@
 	glass_desc = "Unless you're an industrial tool, this is probably not safe for consumption."
 	pH = 4
 	boiling_point = 400
+	accelerant_quality = 10
 
 /datum/reagent/fuel/define_gas()
 	var/datum/gas/G = ..()
@@ -1380,7 +1411,7 @@
 	name = "EZ Clean"
 	description = "A powerful, acidic cleaner sold by Waffle Co. Affects organic matter while leaving other objects unaffected."
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+	chemical_flags = REAGENT_ALL_PROCESS //todo damage to synth
 	taste_description = "acid"
 	pH = 2
 	value = REAGENT_VALUE_RARE
@@ -1585,7 +1616,7 @@
 	reagent_state = GAS
 	gas = GAS_STIMULUM
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	color = "E1A116"
 	boiling_point = 150
 	taste_description = "sourness"
@@ -2164,14 +2195,14 @@
 	color = "#123524" // RGB (18, 53, 36)
 	metabolization_rate = INFINITY
 	can_synth = FALSE
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	taste_description = "brains"
 	pH = 0.5
 	value = REAGENT_VALUE_GLORIOUS
 
 /datum/reagent/romerol/reaction_mob(mob/living/carbon/human/H, method=TOUCH, reac_volume)
 	// Silently add the zombie infection organ to be activated upon death
-	if(!H.getorganslot(ORGAN_SLOT_ZOMBIE))
+	if(!H.getorganslot(ORGAN_SLOT_ZOMBIE) && !HAS_TRAIT(H, TRAIT_ROBOTIC_ORGANISM)) // BLUEMOON ADD - добавлена проверка для роботов
 		var/obj/item/organ/zombie_infection/nodamage/ZI = new()
 		ZI.Insert(H)
 	..()
@@ -2180,7 +2211,7 @@
 	name = "Magillitis"
 	description = "An experimental serum which causes rapid muscular growth in Hominidae. Side-affects may include hypertrichosis, violent outbursts, and an unending affinity for bananas."
 	reagent_state = LIQUID
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	color = "#00f041"
 	value = REAGENT_VALUE_EXCEPTIONAL
 
@@ -2284,7 +2315,7 @@
 	color = "#FAFF00"
 	taste_description = "acrid cinnamon"
 	metabolization_rate = 0.2 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS	//Sorry robot lings, but you still get this.
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	value = REAGENT_VALUE_UNCOMMON
 
 /datum/reagent/bz_metabolites/on_mob_metabolize(mob/living/L)
@@ -2352,10 +2383,12 @@
 		L.ForceContractDisease(new /datum/disease/transformation/gondola(), FALSE, TRUE)
 
 /datum/reagent/moonsugar
-	name = "Moonsugar"
+	name = "Moon Sugar"
 	description = "The primary precursor for an ancient feline delicacy known as skooma. While it has no notable effects on it's own, mixing it with morphine in a chilled container may yield interesting results."
 	color = "#FAEAFF"
 	taste_description = "synthetic catnip"
+	glass_name = "Moon Sugar"
+	glass_desc = "They say it's not addictive unlike skooma, so it's safe to drink it... maybe..."
 	value = REAGENT_VALUE_UNCOMMON
 
 /datum/reagent/moonsugar/on_mob_life(mob/living/carbon/M)
@@ -2462,7 +2495,7 @@
 	description = "A powerful preservation agent, utilizing the preservative effects of formaldehyde with significantly less of the histamine."
 	reagent_state = LIQUID
 	color = "#f7685e"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	metabolization_rate = REAGENTS_METABOLISM * 0.25
 
 
@@ -2544,19 +2577,32 @@
 	nutriment_factor = 0.5 * REAGENTS_METABOLISM
 	var/decal_path = /obj/effect/decal/cleanable/semen
 
-/datum/reagent/consumable/semen/reaction_turf(turf/T, reac_volume)
+/datum/reagent/consumable/semen/reaction_turf(turf/location, reac_volume)
 	..()
-	if(!istype(T))
-		return
-	if(reac_volume < 10)
+	if(!istype(location))
 		return
 
-	var/obj/effect/decal/cleanable/semen/S = locate() in T
-	if(!S)
-		S = new decal_path(T)
-	// Sandstorm edit - cum carries your genetic info (all of it)
-	if(data)
-		S.add_blood_DNA(data)
+	if(istype(src, /datum/reagent/consumable/semen/femcum)) //let it be here
+		var/obj/effect/decal/cleanable/semen/femcum/F = (locate(/obj/effect/decal/cleanable/semen/femcum) in location) || new(location)
+		if(F.reagents.add_reagent(type, volume, data))
+			F.update_icon()
+			return
+
+	var/obj/effect/decal/cleanable/semen/S = locate(/obj/effect/decal/cleanable/semen) in location
+	if(S)
+		if(S.reagents.add_reagent(type, volume, data))
+			S.update_icon()
+			return
+
+	var/obj/effect/decal/cleanable/semendrip/drip = (locate(/obj/effect/decal/cleanable/semendrip) in location) || new(location)
+	if(drip.reagents.add_reagent(type, volume, data))
+		drip.update_icon()
+		if(drip.reagents.total_volume >= 10)
+			S = new(location)
+			drip.reagents.trans_to(S, drip.reagents.total_volume)
+			S.update_icon()
+			qdel(drip)
+		return
 
 /obj/effect/decal/cleanable/semen
 	name = "semen"
@@ -2567,16 +2613,29 @@
 	icon = 'icons/obj/genitals/effects.dmi'
 	icon_state = "semen1"
 	random_icon_states = list("semen1", "semen2", "semen3", "semen4")
+	var/datum/reagent/my_liquid_type = /datum/reagent/consumable/semen
 
 /obj/effect/decal/cleanable/semen/Initialize(mapload)
 	. = ..()
 	dir = GLOB.cardinals
-	add_blood_DNA(list("Non-human DNA" = "A+"))
+	if(mapload)
+		reagents.add_reagent(/datum/reagent/consumable/semen, 10)
+		add_blood_DNA(list("Non-human DNA" = "A+"))
+	update_icon()
 
 /obj/effect/decal/cleanable/semen/replace_decal(obj/effect/decal/cleanable/semen/S)
-	if(S.blood_DNA)
-		blood_DNA |= S.blood_DNA
+	if(reagents.total_volume > 0)
+		reagents.trans_to(S.reagents, reagents.total_volume)
+	if(blood_DNA)
+		S.blood_DNA |= blood_DNA
+		S.update_icon()
 	return ..()
+
+/obj/effect/decal/cleanable/semen/update_icon()
+	. = ..()
+	if(QDELETED(src) || !reagents)
+		return
+	add_atom_colour(mix_color_from_reagents(reagents.reagent_list), FIXED_COLOUR_PRIORITY)
 
 /datum/reagent/consumable/semen/femcum
 	name = "Female Ejaculate"
@@ -2591,6 +2650,7 @@
 	random_icon_states = list("fem1", "fem2", "fem3", "fem4")
 	blood_state = null
 	bloodiness = null
+	my_liquid_type = /datum/reagent/consumable/semen/femcum
 
 /datum/reagent/determination
 	name = "Determination"
@@ -2598,7 +2658,7 @@
 	reagent_state = LIQUID
 	color = "#D2FFFA"
 	metabolization_rate = 0.75 * REAGENTS_METABOLISM // 5u (WOUND_DETERMINATION_CRITICAL) will last for ~17 ticks
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	/// Whether we've had at least WOUND_DETERMINATION_SEVERE (2.5u) of determination at any given time. No damage slowdown immunity or indication we're having a second wind if it's just a single moderate wound
 	var/significant = FALSE
 	self_consuming = TRUE
@@ -2632,26 +2692,26 @@
 	name = "Eldritch Essence"
 	description = "Strange liquid that defies the laws of physics"
 	taste_description = "Ag'hsj'saje'sh"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	color = "#1f8016"
 
 /datum/reagent/eldritch/on_mob_life(mob/living/carbon/M)
 	if(IS_HERETIC(M))
-		M.drowsyness = max(M.drowsyness-5, 0)
-		M.AdjustAllImmobility(-40, FALSE)
-		M.adjustStaminaLoss(-15, FALSE)
-		M.adjustToxLoss(-3, FALSE, TRUE)
-		M.adjustOxyLoss(-3, FALSE)
-		M.adjustBruteLoss(-3, FALSE)
-		M.adjustFireLoss(-3, FALSE)
+		M.drowsyness = max(M.drowsyness-10, 0)
+		M.AdjustAllImmobility(-80, FALSE)
+		M.adjustStaminaLoss(-30, FALSE)
+		M.adjustToxLoss(-6, FALSE, TRUE)
+		M.adjustOxyLoss(-6, FALSE)
+		M.adjustBruteLoss(-6, FALSE)
+		M.adjustFireLoss(-6, FALSE)
 		if(ishuman(M) && M.blood_volume < BLOOD_VOLUME_NORMAL)
-			M.adjust_integration_blood(3)
+			M.adjust_integration_blood(6)
 	else
-		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 3, 150)
-		M.adjustToxLoss(2, FALSE)
-		M.adjustFireLoss(2, FALSE)
-		M.adjustOxyLoss(2, FALSE)
-		M.adjustBruteLoss(2, FALSE)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 6, 150)
+		M.adjustToxLoss(4, FALSE)
+		M.adjustFireLoss(4, FALSE)
+		M.adjustOxyLoss(4, FALSE)
+		M.adjustBruteLoss(4, FALSE)
 	holder.remove_reagent(type, 1)
 	return TRUE
 
@@ -2714,7 +2774,7 @@
 /datum/reagent/red_ichor
 	name = "Red Ichor"
 	can_synth = FALSE
-	description = "A unknown red liquid, linked to healing of most moral wounds."
+	description = "An unknown red liquid, linked to healing of most moral wounds."
 	color = "#c10000"
 	metabolization_rate = REAGENTS_METABOLISM * 2.5
 	chemical_flags = REAGENT_ALL_PROCESS
@@ -2732,7 +2792,7 @@
 /datum/reagent/green_ichor
 	name = "Green Ichor"
 	can_synth = FALSE
-	description = "A unknown green liquid, linked to healing of most internal wounds."
+	description = "An unknown green liquid, linked to healing of most internal wounds."
 	color = "#158c00"
 	metabolization_rate = REAGENTS_METABOLISM * 2.5
 	chemical_flags = REAGENT_ALL_PROCESS
@@ -2750,7 +2810,7 @@
 /datum/reagent/blue_ichor
 	name = "Blue Ichor"
 	can_synth = FALSE
-	description = "A unknown blue liquid, linked to healing the mind."
+	description = "An unknown blue liquid, linked to healing the mind."
 	color = "#0914e0"
 	metabolization_rate = REAGENTS_METABOLISM * 2.5
 	chemical_flags = REAGENT_ALL_PROCESS

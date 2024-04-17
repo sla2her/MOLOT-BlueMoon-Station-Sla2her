@@ -162,7 +162,7 @@
 		if(W.use_tool(src, user, 30, 1))
 			obj_integrity = max_integrity
 			stat &= ~BROKEN
-			to_chat(user, "<span class='notice'>You repair \the [src].</span>")
+			to_chat(user, "<span class='notice'>Вы починили [src].</span>")
 			update_icon()
 
 	else if(W.tool_behaviour == TOOL_WRENCH)
@@ -188,7 +188,7 @@
 		else if(obj_flags & EMAGGED)
 			to_chat(user, "<span class='danger'>Error, access controller damaged!</span>")
 		else
-			to_chat(user, "<span class='danger'>Access denied.</span>")
+			to_chat(user, "<span class='danger'>Доступ запрещён.</span>")
 
 	else
 		return ..()
@@ -354,7 +354,7 @@
 		else if(obj_flags & EMAGGED)
 			to_chat(user, "<span class='danger'>Error, access controller damaged!</span>")
 		else
-			to_chat(user, "<span class='danger'>Access denied.</span>")
+			to_chat(user, "<span class='danger'>Доступ запрещён.</span>")
 
 	else
 		add_fingerprint(user)

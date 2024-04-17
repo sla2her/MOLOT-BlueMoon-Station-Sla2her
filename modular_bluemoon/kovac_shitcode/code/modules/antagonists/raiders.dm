@@ -6,7 +6,6 @@
 	threat = 15
 	show_to_ghosts = TRUE
 	var/datum/team/raiders/crew
-	soft_antag = FALSE // BLUEMOON ADDITION
 
 /datum/antagonist/raiders/greet()
 	SEND_SOUND(owner.current, sound('modular_bluemoon/kovac_shitcode/sound/inteq_raiders_spawn.ogg'))
@@ -140,13 +139,15 @@
 	uniform = /obj/item/clothing/under/inteq
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/inteq/alt
-	id = /obj/item/card/id/syndicate/inteq
+	id = /obj/item/card/id/inteq
 
 	var/command_radio = FALSE
 
+	give_space_cooler_if_synth = TRUE // BLUEMOON ADD
+
 /datum/outfit/inteq_raider/vanguard
-	name = "InteQ Vanguard Raider"
-	id = /obj/item/card/id/syndicate/anyone/inteq
+	name = "InteQ Vanguard"
+	id = /obj/item/card/id/inteq/anyone
 	suit = /obj/item/clothing/suit/armor/inteq/vanguard
 	head = /obj/item/clothing/head/HoS/inteq_vanguard
 	l_pocket = /obj/item/clothing/gloves/krav_maga/combatglovesplus
@@ -171,6 +172,14 @@
 	H.faction |= ROLE_INTEQ
 	H.update_icons()
 
+/datum/outfit/inteq_raider/vanguard/honorable
+	name = "InteQ Honorable Vanguard"
+	suit = /obj/item/clothing/suit/armor/inteq/honorable_vanguard
+	head = /obj/item/clothing/head/HoS/inteq_honorable_vanguard
+	uniform = /obj/item/clothing/under/inteq_honorable_vanguard
+	r_hand = /obj/item/gun/ballistic/revolver/inteq
+	r_pocket = /obj/item/ammo_box/a357
+
 ////// Shuttle (Krashly) ///////////
 
 /datum/map_template/shuttle/inteq_collosus
@@ -187,7 +196,7 @@
 	light_color = LIGHT_COLOR_ORANGE
 	circuit = /obj/item/circuitboard/computer/inteq_collosus
 	shuttleId = "inteq_collosus"
-	possible_destinations = "inteq_collosus_custom;pirateship_home;raiders_away"
+	possible_destinations = "syndicate_z5;syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s;inteq_collosus_custom;pirateship_home;raiders_away"
 
 /obj/item/circuitboard/computer/inteq_collosus
 	name = "Collosus Control Console (Computer Board)"
@@ -211,6 +220,9 @@
 	integrity_failure = 0.08
 	armor = list(MELEE = 50, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 50, BIO = 0, RAD = 0, FIRE = 90, ACID = 90)
 	faction = list("InteQ")
+
+/obj/machinery/porta_turret/syndicate/energy/pirate/inteq/assess_perp(mob/living/carbon/human/perp)
+	return 10
 
 /obj/machinery/mineral/ore_redemption/inteq
 	req_access = list(ACCESS_SYNDICATE)

@@ -17,7 +17,7 @@
 	armor = list(MELEE = 40, BULLET = 50, LASER = 30, ENERGY = 30, BOMB = 35, BIO = 100, RAD = 75, FIRE = 75, ACID = 90, WOUND = 40)
 	slowdown = 0
 	w_class = WEIGHT_CLASS_NORMAL
-	mutantrace_variation = STYLE_DIGITIGRADE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC //bluemoon add
 	flags_inv = HIDEGLOVES | HIDEJUMPSUIT | HIDESHOES | HIDETAUR
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/contractor
 	jetpack = /obj/item/tank/jetpack/suit
@@ -96,7 +96,7 @@
 
 /obj/item/gun/magic/contractor_hook
 	name = "SCORPION hook"
-	desc = "A hardlight hook used to non-lethally pull targets much closer to the user."
+	desc = "A hardlight hook used to non-lethally pull targets much closer to the user. You can pull even the heaviest prey when it is active." // BLUEMOON ADD - добавлено про возможность тащить тяжёлую добычу
 	ammo_type = /obj/item/ammo_casing/magic/contractor_hook
 	icon = 'icons/obj/guns/energy.dmi'
 	icon_state = "hook_weapon"

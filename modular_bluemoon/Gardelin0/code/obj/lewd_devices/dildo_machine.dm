@@ -1,4 +1,4 @@
-/obj/structure/chair/bed/dildo_machine
+/obj/structure/bed/dildo_machine
 	name = "Dildo machine"
 	desc = "It provides pleasure."
 	icon = 'modular_bluemoon/Gardelin0/icons/obj/lewd_devices.dmi'
@@ -10,12 +10,13 @@
 	var/hole = CUM_TARGET_VAGINA
 	var/fuck_hole
 	buckle_lying = TRUE
+	flags_1 = NODECONSTRUCT_1
 
-/obj/structure/chair/bed/dildo_machine/New()
+/obj/structure/bed/dildo_machine/New()
 	..()
 	add_overlay(mutable_appearance('modular_bluemoon/Gardelin0/icons/obj/lewd_devices.dmi', "dilmachine_over", MOB_LAYER + 1))
 
-/obj/structure/chair/bed/dildo_machine/verb/change_hole()
+/obj/structure/bed/dildo_machine/verb/change_hole()
 	set name = "Change hole"
 	set category = "Object"
 	set src in oview(1)
@@ -26,7 +27,7 @@
 		if("anus")
 			hole = CUM_TARGET_ANUS
 
-/obj/structure/chair/bed/dildo_machine/verb/change_mode()
+/obj/structure/bed/dildo_machine/verb/change_mode()
 	set name = "Change mode"
 	set category = "Object"
 	set src in oview(1)
@@ -41,7 +42,7 @@
 		if(mode == "high")
 			intencity = 18
 
-/obj/structure/chair/bed/dildo_machine/verb/toggle()
+/obj/structure/bed/dildo_machine/verb/toggle()
 	set name = "Toggle dildo machine"
 	set category = "Object"
 	set src in oview(1)
@@ -55,7 +56,7 @@
 	else
 		to_chat(usr, "[src] выкл.")
 
-/obj/structure/chair/bed/dildo_machine/proc/fuck()
+/obj/structure/bed/dildo_machine/proc/fuck()
 	if(!on)
 		return
 
@@ -67,6 +68,7 @@
 					if(M.has_vagina(REQUIRE_EXPOSED))
 						fuck_hole = "pussy"
 						M.handle_post_sex(intencity, null, src)
+						M.client?.plug13.send_emote(PLUG13_EMOTE_GROIN, min(intencity * 5, 100), PLUG13_DURATION_NORMAL)
 						playsound(loc, "modular_bluemoon/Gardelin0/sound/effect/lewd/interactions/bang[rand(1, 6)].ogg", 30, 1)
 						switch(mode)
 							if("low")
@@ -82,6 +84,7 @@
 				if(CUM_TARGET_ANUS)
 					if(M.has_anus(REQUIRE_EXPOSED))
 						M.handle_post_sex(intencity, null, src)
+						M.client?.plug13.send_emote(PLUG13_EMOTE_ANUS, min(intencity * 5, 100), PLUG13_DURATION_NORMAL)
 						playsound(loc, "modular_bluemoon/Gardelin0/sound/effect/lewd/interactions/bang[rand(1, 6)].ogg.ogg", 30, 1)
 						switch(mode)
 							if("low")
@@ -95,9 +98,15 @@
 								if(prob(50))
 									M.emote("moan")
 
-/obj/structure/chair/bed/dildo_machine/attackby(obj/item/used_item, mob/user, params)
-	if(istype(used_item, /obj/item/screwdriver))
+/obj/structure/bed/dildo_machine/attackby(obj/item/used_item, mob/user, params)
+	if(used_item.tool_behaviour == TOOL_WRENCH)
+		to_chat(user, "<span class='notice'>You begin to [anchored ? "unwrench" : "wrench"] [src].</span>")
+		if(used_item.use_tool(src, user, 20, volume=30))
+			to_chat(user, "<span class='notice'>You successfully [anchored ? "unwrench" : "wrench"] [src].</span>")
+			setAnchored(!anchored)
+	else if(istype(used_item, /obj/item/screwdriver))
 		to_chat(user, span_notice("You unscrew the frame and begin to deconstruct it..."))
+		playsound(loc, "'sound/items/screwdriver.ogg'", 30, 1)
 		if(used_item.use_tool(src, user, 8 SECONDS, volume = 50))
 			to_chat(user, span_notice("You disassemble it."))
 			new /obj/item/dildo_machine_kit (src.loc)
@@ -119,9 +128,10 @@
 	if(istype(used_item, /obj/item/screwdriver))
 		if (!(item_flags & IN_INVENTORY) && !(item_flags & IN_STORAGE))
 			to_chat(user, span_notice("You screw the frame to the floor and begin to construct it..."))
+			playsound(loc, "'sound/items/screwdriver.ogg'", 30, 1)
 			if(used_item.use_tool(src, user, 8 SECONDS, volume = 50))
 				to_chat(user, span_notice("You assemble it."))
-				new /obj/structure/chair/bed/dildo_machine (src.loc)
+				new /obj/structure/bed/dildo_machine (src.loc)
 				qdel(src)
 			return
 	else

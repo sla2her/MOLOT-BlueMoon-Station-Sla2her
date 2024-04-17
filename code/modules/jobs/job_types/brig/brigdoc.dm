@@ -10,11 +10,11 @@
 	supervisors = "the head of security, and the head of your assigned department (if applicable)"
 	selection_color = "#c02f2f"
 	minimal_player_age = 7
-	exp_requirements = 300
+	exp_requirements = 3000
 	exp_type = EXP_TYPE_MEDICAL
 	considered_combat_role = TRUE
 	exp_type_department = EXP_TYPE_MEDICAL
-	alt_titles = list("Security Doctor", "Security Medic", "Brig Doctor", "Brig EMT", "Security Physician", "Security EMT", "Slutcurity Nurse", "Fucking Slave", "Well-Trained Girl", "Well-Trained Boy", "Trauma Team", "Security Corpsman")
+	alt_titles = list("Security Doctor", "Security Medic", "Brig Doctor", "Brig EMT", "Security Physician", "Security EMT", "Slutcurity Nurse", "Fucking Slave", "Well-Trained Girl", "Well-Trained Boy", "Trauma Team", "Security Corpsman", "AC Combat Medic")
 
 
 	outfit = /datum/outfit/job/brigdoc
@@ -28,7 +28,7 @@
 	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_BRIG_PHYSICIAN
-	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/blindness, /datum/quirk/monophobia)
+	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/blindness, /datum/quirk/monophobia, /datum/quirk/bluemoon_criminal)
 	threat = 2
 
 /datum/outfit/job/brigdoc
@@ -65,7 +65,7 @@
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile/hsc
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	suit = /obj/item/clothing/suit/armor/brigdoc
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 	l_pocket = /obj/item/reagent_containers/spray/pepper
 	r_pocket = /obj/item/assembly/flash/handheld
 	backpack_contents = list(/obj/item/storage/hypospraykit/regular, /obj/item/storage/firstaid/regular, /obj/item/melee/classic_baton/telescopic, /obj/item/syndicate_uplink_high=1)

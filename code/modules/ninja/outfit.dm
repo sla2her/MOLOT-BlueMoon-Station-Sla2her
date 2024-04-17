@@ -9,6 +9,10 @@
 	suit_store = /obj/item/tank/internals/oxygen
 	internals_slot = ITEM_SLOT_SUITSTORE
 
+	give_space_cooler_if_synth = TRUE // BLUEMOON ADD
+
+	cybernetic_implants = list(/obj/item/organ/cyberimp/chest/nutrimentextreme)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

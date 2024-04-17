@@ -63,6 +63,9 @@
 //unlockable items
 #define LOADOUT_CATEGORY_UNLOCKABLE	"Unlockable"
 
+//errors with your savefile
+#define LOADOUT_CATEGORY_ERROR		"Errors"
+
 //how many prosthetics can we have
 #define MAXIMUM_LOADOUT_PROSTHETICS	4
 
@@ -82,21 +85,30 @@
 #define LOADOUT_COLOR				"loadout_color"
 #define LOADOUT_CUSTOM_NAME			"loadout_custom_name"
 #define LOADOUT_CUSTOM_DESCRIPTION	"loadout_custom_description"
+#define LOADOUT_IS_HEIRLOOM			"loadout_is_heirloom" // BLUEMOON ADD - выбор вещей из лодаута как family heirloom
 
 //loadout item flags
 #define LOADOUT_CAN_NAME					(1<<0) //renaming items
 #define LOADOUT_CAN_DESCRIPTION				(1<<1) //adding a custom description to items
 #define LOADOUT_CAN_COLOR_POLYCHROMIC		(1<<2)
 
-/* the names of the customization tabs
+//the names of the customization tabs
 #define SETTINGS_TAB			0
-#define GAME_PREFERENCES_TAB	1
-#define APPEARANCE_TAB			2
-#define SPEECH_TAB				3
-#define LOADOUT_TAB				4
-#define CONTENT_PREFERENCES_TAB	5
-#define KEYBINDINGS_TAB			6
-*/
+#define PREFERENCES_TAB			1
+#define KEYBINDINGS_TAB			2
+
+//subtabs for the character settings tab
+#define GENERAL_CHAR_TAB		0
+#define BACKGROUND_CHAR_TAB		1
+#define APPEARANCE_CHAR_TAB		2
+#define MARKINGS_CHAR_TAB		3
+#define SPEECH_CHAR_TAB			4
+#define LOADOUT_CHAR_TAB		5
+
+//subtabs for preferences tab
+#define GAME_PREFS_TAB			0
+#define OOC_PREFS_TAB			1
+#define CONTENT_PREFS_TAB		2
 
 //quirks
 #define QUIRK_POSITIVE	"Positive"

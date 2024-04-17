@@ -149,7 +149,7 @@
 	dna_cost = 2
 	loudness = 2
 	req_human = TRUE
-	recharge_slowdown = 0
+	recharge_slowdown = 0.1
 	weapon_type = /obj/item/melee/arm_blade
 	weapon_name_simple = "blade"
 
@@ -324,7 +324,7 @@
 	..()
 
 /obj/item/projectile/tentacle/proc/reset_throw(mob/living/carbon/human/H)
-	if(H.in_throw_mode)
+	if(H.throw_mode)
 		H.throw_mode_off() //Don't annoy the changeling if he doesn't catch the item
 
 /obj/item/projectile/tentacle/proc/tentacle_grab(mob/living/carbon/human/H, mob/living/carbon/C)
@@ -533,8 +533,7 @@
 	dna_cost = 1
 	loudness = 2
 	req_human = TRUE
-	recharge_slowdown = 0 // BlueMoon 27.09.2023. Не вижу смысла в замедлении перезарядки генов, особенно с учетом не особо сильных позиций генки. Тоже и с мечом.
-
+	recharge_slowdown = 0.1
 	suit_type = /obj/item/clothing/suit/armor/changeling
 	helmet_type = /obj/item/clothing/head/helmet/changeling
 	suit_name_simple = "armor"
@@ -548,7 +547,7 @@
 	item_flags = DROPDEL
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor = list(MELEE = 70, BULLET = 60, LASER = 30, ENERGY = 40, BOMB = 10, BIO = 4, RAD = 0, FIRE = 50, ACID = 90)
-	flags_inv = HIDEJUMPSUIT
+	flags_inv = HIDEJUMPSUIT|HIDETAUR
 	cold_protection = 0
 	heat_protection = 0
 
@@ -662,8 +661,7 @@
 	dna_cost = 2
 	loudness = 2
 	req_human = TRUE
-	recharge_slowdown = 0
-
+	recharge_slowdown = 0.1
 	glove_type = /obj/item/clothing/gloves/fingerless/pugilist/cling // just punch his head off dude
 	glove_name_simple = "bone gauntlets"
 

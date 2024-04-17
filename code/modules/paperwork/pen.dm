@@ -40,6 +40,12 @@
 		use_bold = FALSE,
 	)
 
+// BLUEMOON ADD START - дополнительное описание
+/obj/item/pen/examine(user, distance)
+	. = ..()
+	. += span_info("Ручкой можно оставлять надписи на частях тела.") // рассказываем о механиках через описания
+// BLUEMOON ADD END
+
 /obj/item/pen/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] is scribbling numbers all over себя with [src]! It looks like [user.ru_who()] trying to commit sudoku...</span>")
 	return(BRUTELOSS)
@@ -300,12 +306,10 @@
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "digging_pen"
 	item_state = "pen"
-	// item_state = "pen"
-	// worn_icon_state = "pen"
-	force = 3
+	force = 10
 	w_class = WEIGHT_CLASS_TINY
-	custom_materials = list(/datum/material/iron=10, /datum/material/diamond=100, /datum/material/titanium = 10)
+	custom_materials = list(/datum/material/iron=2500, /datum/material/diamond=2500, /datum/material/titanium = 2500)
 	pressure_resistance = 2
 	grind_results = list(/datum/reagent/iron = 2, /datum/reagent/iodine = 1)
 	tool_behaviour = TOOL_MINING //For the classic "digging out of prison with a spoon but you're in space so this analogy doesn't work" situation.
-	toolspeed = 10 //You will never willingly choose to use one of these over a shovel.
+	toolspeed = 0.3 // Like a diamond pickaxe.

@@ -203,16 +203,16 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 		return 1
 	. = ..()
 
-/obj/structure/window/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
+/obj/structure/window/on_attack_hand(mob/user as mob|obj, act_intent = user.a_intent, unarmed_attack_flags)
 	if(!can_be_reached(user))
 		return
 	if(user.a_intent == INTENT_HARM)
 		user.visible_message(span_warning("[user] долбится об [src]!"))
-		balloon_alert(user, "СТУК!!!")
+		balloon_alert_to_viewers("СТУК!!!")
 		playsound(src, 'sound/effects/Glassknock.ogg', 100, 1)
 	else if(user.a_intent != INTENT_HARM)
 		user.visible_message("[user] стучится в [src].")
-		balloon_alert(user, "Тук-тук!")
+		balloon_alert_to_viewers("Тук-тук!")
 		playsound(src, 'sound/effects/Glassknock.ogg', 50, 1)
 	add_fingerprint(user)
 
@@ -236,11 +236,11 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 			if(!I.tool_start_check(user, amount=0))
 				return
 
-			to_chat(user, "<span class='notice'>You begin repairing [src]...</span>")
+			to_chat(user, "<span class='notice'>Вы начинаете чинить [src]...</span>")
 			if(I.use_tool(src, user, 40, volume=50))
 				obj_integrity = max_integrity
 				update_nearby_icons()
-				to_chat(user, "<span class='notice'>You repair [src].</span>")
+				to_chat(user, "<span class='notice'>Вы починили [src].</span>")
 		else
 			to_chat(user, "<span class='warning'>[src] is already in good condition!</span>")
 		return
@@ -766,6 +766,23 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	fulltile = TRUE
 	flags_1 = PREVENT_CLICK_UNDER_1
 	smooth = SMOOTH_TRUE
+	// BLUEMOON ADD - фикс соединения со стенами
+	canSmoothWith = list(
+		/turf/closed/wall,
+		/turf/closed/wall/r_wall,
+		/obj/structure/falsewall,
+		/obj/structure/falsewall/brass,
+		/obj/structure/falsewall/reinforced,
+		/turf/closed/wall/rust,
+		/turf/closed/wall/r_wall/rust,
+		/turf/closed/wall/clockwork,
+		/obj/structure/window/fulltile,
+		/obj/structure/window/reinforced/fulltile,
+		/obj/structure/window/reinforced/tinted/fulltile,
+		/obj/structure/window/plasma/fulltile,
+		/obj/structure/window/plasma/reinforced/fulltile
+		)
+	// BLUEMOON ADD END
 	glass_amount = 2
 
 /obj/structure/window/plasma/reinforced/fulltile/unanchored
@@ -782,17 +799,19 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	canSmoothWith = list(
 		/turf/closed/wall,
 		/turf/closed/wall/r_wall,
-		/obj/structure/falsewall,
-		/obj/structure/falsewall/brass,
-		/obj/structure/falsewall/reinforced,
 		/turf/closed/wall/rust,
 		/turf/closed/wall/r_wall/rust,
 		/turf/closed/wall/clockwork,
+		/turf/closed/indestructible/riveted,
+		/obj/structure/falsewall,
+		/obj/structure/falsewall/brass,
+		/obj/structure/falsewall/reinforced,
 		/obj/structure/window/fulltile,
 		/obj/structure/window/reinforced/fulltile,
 		/obj/structure/window/reinforced/tinted/fulltile,
 		/obj/structure/window/plasma/fulltile,
-		/obj/structure/window/plasma/reinforced/fulltile
+		/obj/structure/window/plasma/reinforced/fulltile,
+		/obj/structure/window/reinforced/fulltile/indestructable
 		)
 	level = 3
 	glass_amount = 2

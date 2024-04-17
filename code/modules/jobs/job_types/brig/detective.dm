@@ -10,7 +10,7 @@
 	supervisors = "the head of security"
 	selection_color = "#c02f2f"
 	minimal_player_age = 7
-	exp_requirements = 300
+	exp_requirements = 3000
 	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/detective
@@ -25,7 +25,7 @@
 	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_DETECTIVE
-	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/nonviolent, /datum/quirk/monophobia)
+	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/nonviolent, /datum/quirk/monophobia, /datum/quirk/bluemoon_criminal)
 	threat = 1
 
 	family_heirlooms = list(
@@ -64,7 +64,7 @@
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/security/officer/util
 	neck = /obj/item/clothing/neck/tie/black
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 	suit = /obj/item/clothing/suit/det_suit
 	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/fedora/det_hat

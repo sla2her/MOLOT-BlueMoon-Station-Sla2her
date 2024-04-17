@@ -103,13 +103,15 @@
 		usr.put_in_hands(B)
 		qdel(src)
 
-/obj/structure/bed/roller/post_buckle_mob(mob/living/M)
-	// BLUEMOON ADDITION AHEAD - сверхтяжёлых персонажей нельзя помещать на носилки (предотвращает абуз через толкание + повышает значимость боргов, халков и других сверхтяжёлых персонажей)
+// BLUEMOON ADD AHEAD - сверхтяжёлых персонажей нельзя помещать на носилки (предотвращает абуз через толкание + повышает значимость боргов, халков и других сверхтяжёлых персонажей)
+/obj/structure/bed/roller/pre_buckle_mob(mob/living/M)
 	if(HAS_TRAIT(M, TRAIT_BLUEMOON_HEAVY_SUPER))
 		usr.visible_message(span_warning("[usr] tried to put [M] on [src], but it doesn't lift. Too much weight!."), span_warning("You try to put [M] on [src], but it doesn't lift. Too much weight!"))
-		unbuckle_all_mobs()
-		return
-	// BLUEMOON ADDITION END
+		return FALSE
+	. = ..()
+// BLUEMOON ADD END
+
+/obj/structure/bed/roller/post_buckle_mob(mob/living/M)
 	density = TRUE
 	icon_state = "up"
 	M.pixel_y = initial(M.pixel_y)
@@ -191,7 +193,7 @@
 	anchored = FALSE
 	buildstacktype = /obj/item/stack/sheet/mineral/wood
 	buildstackamount = 10
-	var/mob/living/owner = null
+	var/owned = FALSE
 
 /obj/structure/bed/dogbed/ian
 	desc = "Ian's bed! Looks comfy."
@@ -214,9 +216,12 @@
 	anchored = TRUE
 
 /obj/structure/bed/dogbed/proc/update_owner(mob/living/M)
-	owner = M
+	if(owned || type != /obj/structure/bed/dogbed) //Only marked beds work
+		return FALSE //Failed
+	owned = TRUE
 	name = "[M]'s bed"
 	desc = "[M]'s bed! Looks comfy."
+	return TRUE //Let any callers know that this bed is ours now
 
 /obj/structure/bed/dogbed/buckle_mob(mob/living/M, force, check_loc)
 	. = ..()

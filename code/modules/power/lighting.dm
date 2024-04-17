@@ -213,7 +213,7 @@
 	var/nightshift_allowed = TRUE	//Set to FALSE to never let this light get switched to night mode.
 	var/nightshift_brightness = 8
 	var/nightshift_light_power = 0.45
-	var/nightshift_light_color = "#cae2fa"
+	var/nightshift_light_color = "#f5faca"
 
 	var/emergency_mode = FALSE	// if true, the light is in emergency mode
 	var/fire_mode = FALSE // if true, the light swaps over to emergency colour
@@ -311,6 +311,7 @@
 	. = ..()
 	if(start_with_cell && !no_emergency)
 		cell = new/obj/item/stock_parts/cell/emergency_light(src)
+	set_layer_by_dir() // BLUEMOON ADD START
 	spawn(2)
 		switch(fitting)
 			if("tube")
@@ -330,6 +331,12 @@
 		on = FALSE
 	QDEL_NULL(cell)
 	return ..()
+
+// BLUEMOON ADD START - если лампа смотрит вниз, то она находится "под" мобом, чтобы можно было корректно её загораживать своим спрайтом
+/obj/machinery/light/proc/set_layer_by_dir()
+	if(dir == NORTH)
+		layer = MOB_LOWER_LAYER
+// BLUEMOON ADD END
 
 /obj/machinery/light/update_icon_state()
 	switch(status)		// set icon_states
@@ -364,6 +371,7 @@
 	switch(status)
 		if(LIGHT_BROKEN,LIGHT_BURNED,LIGHT_EMPTY)
 			on = FALSE
+			set_light(0)
 	emergency_mode = FALSE
 	if(on)
 		var/BR = brightness
@@ -397,7 +405,9 @@
 				playsound(src.loc, 'sound/ambience/light_on.ogg', 65, 1)
 	else if(has_emergency_power(LIGHT_EMERGENCY_POWER_USE) && !turned_off())
 		use_power = IDLE_POWER_USE
-		emergency_mode = TRUE
+		on = FALSE
+		set_light(0)
+		// emergency_mode = TRUE
 		START_PROCESSING(SSmachines, src)
 	else
 		use_power = IDLE_POWER_USE
@@ -420,6 +430,11 @@
 	update()
 
 /obj/machinery/light/process()
+	/*SPLURT EDIT START - Stop processing if there's no turf, which implies it's stored,
+	this stops the null.lightswitch runtime when lights are saved in Hilbert's Hotel storeRoom() proc.*/
+	if(!isturf(loc))
+		return PROCESS_KILL
+	// SPLURT EDIT END
 	if (!cell)
 		return PROCESS_KILL
 	if(has_power())
@@ -466,10 +481,9 @@
 
 /obj/machinery/light/attackby(obj/item/W, mob/living/user, params)
 
-	//Light replacer code
+	//fully implemented in "lightreplacer.dm"
 	if(istype(W, /obj/item/lightreplacer))
-		var/obj/item/lightreplacer/LR = W
-		LR.ReplaceLight(src, user)
+		return //to avoid hitting it
 
 	// attempt to insert light
 	else if(istype(W, /obj/item/light))
@@ -892,6 +906,11 @@
 	light_type = /obj/item/light/bulb
 	fitting = "floor" //making deconstruction give out the right type.
 
+// BLUEMOON ADD START - если лампа смотрит вниз, то она находится "под" мобом, чтобы можно было корректно её загораживать своим спрайтом
+/obj/machinery/light/floor/set_layer_by_dir()
+	return TRUE
+// BLUEMOON ADD END
+
 // attempts to set emergency lights
 /obj/machinery/light/proc/set_emergency_lights()
 	var/area/current_area = get_area(src)
@@ -908,14 +927,6 @@
 
 /obj/machinery/light/proc/emergency_lights_off(area/current_area, obj/machinery/power/apc/current_apc)
 	set_light(0, 0, 0) //you, sir, are off!
-	for(var/area/A as anything in GLOB.sortedAreas)
-		if(!is_station_level(A.z))
-			continue
-		for(var/obj/machinery/light/L in A)
-			if(L.status)
-				continue
-			L.fire_mode = FALSE
-			INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, update))
 	if(current_apc)
 		RegisterSignal(current_area, COMSIG_AREA_POWER_CHANGE, PROC_REF(update), override = TRUE)
 

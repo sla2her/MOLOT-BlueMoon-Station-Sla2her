@@ -25,13 +25,34 @@
 			if(user_unbuckle_mob(buckled_mobs[1],user))
 				return 1
 
+/atom/movable/attackby(obj/item/attacking_item, mob/user, params)
+	if(!can_buckle || !istype(attacking_item, /obj/item/riding_offhand) || !user.Adjacent(src))
+		return ..()
+
+	var/obj/item/riding_offhand/riding_item = attacking_item
+	var/mob/living/carried_mob = riding_item.rider
+	if(carried_mob == user) //Piggyback user.
+		return
+	user.unbuckle_mob(carried_mob)
+	carried_mob.forceMove(get_turf(src))
+	return mouse_buckle_handling(carried_mob, user)
+
 /atom/movable/MouseDrop_T(mob/living/M, mob/living/user)
 	. = ..()
 	if(. & COMSIG_MOB_CANCEL_CLICKON) //SPLURT edit
 		return
+	return mouse_buckle_handling(M, user)
+
+/**
+ * Does some typechecks and then calls user_buckle_mob
+ *
+ * Arguments:
+ * M - The mob being buckled to src
+ * user - The mob buckling M to src
+ */
+/atom/movable/proc/mouse_buckle_handling(mob/living/M, mob/living/user)
 	if(can_buckle && istype(M) && istype(user))
-		if(user_buckle_mob(M, user))
-			return 1
+		return user_buckle_mob(M, user, check_loc = FALSE)
 
 /atom/movable/proc/has_buckled_mobs()
 	if(!buckled_mobs)
@@ -67,6 +88,11 @@
 			var/mob/living/L = M.pulledby
 			L.reset_pull_offsets(M, TRUE)
 
+	// BLUEMOON ADD START
+	if(!pre_buckle_mob(M))
+		return FALSE
+	// BLUEMOON ADD END
+
 	// if(!check_loc && M.loc != loc)
 	if(M.loc != loc)
 		M.forceMove(loc)
@@ -80,7 +106,7 @@
 	post_buckle_mob(M)
 
 	// BLUEMOON ADDITION AHEAD - запрет на усаживание сверхтяжёлого персонажа посторонними
-	if(HAS_TRAIT(M, TRAIT_BLUEMOON_HEAVY_SUPER)) // проверка не раньше, т.к. в post_buckle_mob обратаюыватся объекты-исключения, на которые другие могут, но сверхтяжёлые персонажи не могут сесть
+	if(HAS_TRAIT(M, TRAIT_BLUEMOON_HEAVY_SUPER)) // проверка не раньше, т.к. в post_buckle_mob обратаюыватся объекты-исключения, на которые сверхтяжёлые персонажи садятся с особым эффектом
 		if(!M.buckled) // чтобы лишний раз не появлялось сообщение о попытке сесть
 			return FALSE
 		if(M != usr)
@@ -123,6 +149,12 @@
 		unbuckle_mob(m, force)
 
 //Handle any extras after buckling
+
+// BLUEMOON ADD START - взаимодействие с объектами до момента, пока моб считается севшим на него.
+/atom/movable/proc/pre_buckle_mob(mob/living/M)
+	return TRUE
+// BLUEMOON ADD END
+
 //Called on buckle_mob()
 /atom/movable/proc/post_buckle_mob(mob/living/M)
 

@@ -52,7 +52,7 @@
 /obj/machinery/microwave/Initialize(mapload)
 	. = ..()
 
-	wires = new /datum/wires/microwave(src)
+	set_wires(new /datum/wires/microwave(src))
 	create_reagents(100)
 	soundloop = new(src, FALSE)
 	set_on_table()
@@ -281,13 +281,6 @@
 			playsound(loc, 'sound/effects/spray3.ogg', 50, TRUE, -6)
 			user.visible_message(span_notice("[user] cleans \the [src]."), span_notice("You clean \the [src]."))
 			dirty = 0
-			for(var/atom/movable/ingredient as anything in ingredients)
-				var/image/ingredient_overlay = image(ingredient, src)
-				. -= ingredient_overlay
-				. -= ingredient_overlay
-				. -= ingredient_overlay
-				. -= ingredient_overlay
-				. -= ingredient_overlay
 			//QDEL_LIST(ingredients)
 			update_appearance()
 		else
@@ -303,13 +296,6 @@
 		if(do_after(user, cleanspeed, target = src))
 			user.visible_message(span_notice("[user] cleans \the [src]."), span_notice("You clean \the [src]."))
 			dirty = 0
-			for(var/atom/movable/ingredient as anything in ingredients)
-				var/image/ingredient_overlay = image(ingredient, src)
-				. -= ingredient_overlay
-				. -= ingredient_overlay
-				. -= ingredient_overlay
-				. -= ingredient_overlay
-				. -= ingredient_overlay
 			//QDEL_LIST(ingredients)
 			update_appearance()
 		return TRUE
@@ -324,7 +310,10 @@
 		for(var/obj/S in T.contents)
 			if(ingredients.len >= max_n_of_items)
 				balloon_alert(user, "it's full!")
-				return TRUE
+				//BLUEMOON CHANGE ранее был return, но там столько важного кода дальше
+				if(loaded)
+					break
+				//BLUEMOON CHANGE END
 			if(SEND_SIGNAL(T, COMSIG_TRY_STORAGE_TAKE, S, src))
 				loaded++
 				ingredients += S
@@ -518,6 +507,7 @@
 	dirty_anim_playing = FALSE
 	operating = FALSE
 
+	dump_inventory_contents() //BlUEMOON ADD грязная микроволновка выкидывает из себя вещи
 	after_finish_loop()
 
 /obj/machinery/microwave/proc/after_finish_loop()

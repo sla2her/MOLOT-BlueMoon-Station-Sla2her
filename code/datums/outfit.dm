@@ -103,6 +103,7 @@
 	  */
 	var/list/implants = null
 
+	var/list/cybernetic_implants = null
 	///ID of the slot containing a gas tank
 	var/internals_slot = null
 
@@ -121,6 +122,8 @@
 
 	/// Should the toggle helmet proc be called on the helmet during equip
 	var/toggle_helmet = TRUE
+
+	var/give_space_cooler_if_synth = FALSE // BLUEMOON ADD - если это синтетик, ему в руки при спавне (или под него) выдаётся заряжённый космический охладитель
 
 /**
  * Called at the start of the equip proc
@@ -245,6 +248,18 @@
 		var/obj/item/clothing/suit/space/hardsuit/HS = H.wear_suit
 		HS.ToggleHelmet()
 
+	// BLUEMOON ADD START - выдача охладителя ролям, которым нужно сразу выходить в космос, если они синтетики и не имеют доступа к кулеру
+	if(give_space_cooler_if_synth)
+		if(HAS_TRAIT(H, TRAIT_ROBOTIC_ORGANISM))
+			if(!r_hand)
+				H.put_in_r_hand(new /obj/item/device/cooler/charged(H))
+			else if(!l_hand)
+				H.put_in_l_hand(new /obj/item/device/cooler/charged(H))
+			else
+				to_chat(H, span_reallybig("Не забудьте забрать космический охладитель под собой.")) // чтобы не упустили из виду при резком спавне
+				new /obj/item/device/cooler/charged(H.loc)
+	// BLUEMOON ADD END
+
 	post_equip(H, visualsOnly, preference_source)
 
 	if(!visualsOnly)
@@ -256,6 +271,11 @@
 			for(var/implant_type in implants)
 				var/obj/item/implant/I = new implant_type(H)
 				I.implant(H, null, TRUE)
+
+		if (cybernetic_implants)
+			for (var/cybernetic_implant_type in cybernetic_implants)
+				var/obj/item/organ/C = new cybernetic_implant_type()
+				C.Insert(H)
 
 	H.update_body()
 	return TRUE

@@ -39,13 +39,12 @@
 #define ROLE_DEATHSQUAD             "deathsquad"
 #define ROLE_LAVALAND               "lavaland"
 #define ROLE_INTERNAL_AFFAIRS		"internal affairs agent"
-#define ROLE_INTEQ_AGENT			"inteq agent"
 #define ROLE_FAMILIES 				"family boss"
 #define ROLE_FAMILY_HEAD_ASPIRANT 	"family head aspirant"
 #define ROLE_BLOODSUCKER			"bloodsucker"
 #define ROLE_SPACE_DRAGON			"Space Dragon"
-#define ROLE_SLAVER					"slaver"
-#define ROLE_SLAVER_LEADER			"slave master"
+#define ROLE_SLAVER					"Slaver"
+#define ROLE_SLAVER_LEADER			"Slave Master"
 #define ROLE_TERROR_SPIDER			"Terror Spider"
 //#define ROLE_MONSTERHUNTER			"monster hunter" Disabled for now
 #define ROLE_GHOSTCAFE				"ghostcafe"
@@ -53,6 +52,7 @@
 #define ROLE_MINOR_ANTAG			"minorantag"
 #define ROLE_RESPAWN				"respawnsystem"
 #define ROLE_SYNDICATE				"Syndicate"
+#define ROLE_GHOSTROLE_INTEQ		"Space InteQ"
 //Define for disabling individual antagonists for dynamic
 #define HAS_ANTAG_PREF(C,ROLE) (!(NO_ANTAG & C.prefs.toggles) && (ROLE in C.prefs.be_special))
 //Missing assignment means it's not a gamemode specific role, IT'S NOT A BUG OR ERROR.
@@ -80,7 +80,6 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_SERVANT_OF_RATVAR = /datum/game_mode/clockwork_cult,
 	ROLE_OVERTHROW = /datum/game_mode/overthrow,
 	ROLE_INTERNAL_AFFAIRS = /datum/game_mode/traitor/internal_affairs,
-	ROLE_INTEQ_AGENT = /datum/game_mode/traitor/inteq_agents,
 	ROLE_SENTIENCE,
 	ROLE_HERETIC = /datum/game_mode/heretics,
 	ROLE_BLOODSUCKER = /datum/game_mode/bloodsucker,

@@ -40,7 +40,7 @@
 /datum/quirk/empath
 	name = "Эмпат"
 	desc = "Будь то шестое чувство или тщательное изучения языка тела, вы можете с определить настроение цели посмотрев на неё."
-	value = 2
+	value = 1 // SPLURT EDIT
 	mob_trait = TRAIT_EMPATH
 	gain_text = "<span class='notice'>Вы чувствуете себя в гармонии с другими.</span>"
 	lose_text = "<span class='danger'>Вы чувствуете себя изолированно.</span>"
@@ -48,7 +48,7 @@
 
 /datum/quirk/freerunning
 	name = "Паркурщик"
-	desc = "Вы отлично справляетесь с выполнением быстрых движений! Залезание на столы происходит в два раза быстрее."
+	desc = "Вы отлично справляетесь с выполнением быстрых движений! Вы сможете залезать на столы гораздо быстрее."
 	value = 2
 	mob_trait = TRAIT_FREERUNNING
 	gain_text = "<span class='notice'>Вы чувствуете легкость в ногах!</span>"
@@ -113,22 +113,6 @@
 	var/obj/item/musicaltuner/musicaltuner = new(get_turf(H))
 	H.put_in_hands(musicaltuner)
 	H.equip_to_slot_if_possible(musicaltuner, ITEM_SLOT_BACKPACK)
-	H.regenerate_icons()
-
-/datum/quirk/photographer
-	name = "Фотограф"
-	desc = "Вы знаете как пользоваться фотоаппаратом, сокращая время между фотографией."
-	value = 1
-	mob_trait = TRAIT_PHOTOGRAPHER
-	gain_text = "<span class='notice'>Вы знаете всё о фотографиях.</span>"
-	lose_text = "<span class='danger'>Вы забываете, как работают фотокамеры.</span>"
-	medical_record_text = "Пациент упоминает фотографию, как хобби для снятия стресса."
-
-/datum/quirk/photographer/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
-	var/obj/item/camera/camera = new(get_turf(H))
-	H.put_in_hands(camera)
-	H.equip_to_slot(camera, ITEM_SLOT_BACKPACK) //SPLURT Edit
 	H.regenerate_icons()
 
 /datum/quirk/selfaware
@@ -234,7 +218,7 @@
 
 /datum/quirk/bloodpressure/add()
 	quirk_holder.blood_ratio = 1.2
-	quirk_holder.blood_volume += 150
+	quirk_holder.blood_volume += BLOOD_VOLUME_NORMAL * (quirk_holder.blood_ratio - 1)
 
 /datum/quirk/bloodpressure/remove()
 	if(quirk_holder)
@@ -248,14 +232,15 @@
 	gain_text = "<span class='notice'>Тени кажутся светлее.</span>"
 	lose_text = "<span class='danger'>Всё кажется чуточку темнее.</span>"
 
-/datum/quirk/night_vision/on_spawn()
+/datum/quirk/night_vision/post_add() //BLUEMOON EDIT
+	. = ..()						 //BLUEMOON ADD
 	var/mob/living/carbon/human/H = quirk_holder
 	H.update_sight()
 
 /datum/quirk/hard_soles
-	name = "Твердые ступни"
+	name = "Твёрдые ступни" // BLUEMOON EDIT - typo
 	desc = "Вы привыкли ходить босиком, а потому осколки стекла и мусор никак не вредят вашим ногам."
-	value = 2
+	value = 1 // BLUEMOON EDIT - было 2
 	mob_trait = TRAIT_HARD_SOLES
 	gain_text = "<span class='notice'>Мусор под ногами теперь вам не помеха.</span>"
 	lose_text = "<span class='danger'>Вы чувствуете, как пол под вашими ногами становится грубее.</span>"

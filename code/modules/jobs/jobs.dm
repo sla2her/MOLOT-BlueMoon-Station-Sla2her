@@ -1,5 +1,6 @@
 GLOBAL_LIST_INIT(command_positions, list(
 	"Captain",
+	"Bridge Officer",
 	"Head of Personnel",
 	"Head of Security",
 	"Chief Engineer",
@@ -15,8 +16,9 @@ GLOBAL_LIST_INIT(engineering_positions, list(
 	"Atmospheric Technician"))
 
 GLOBAL_LIST_INIT(law_positions, list(
-	"Lawyer",
-	"Bridge Officer"))
+	"NanoTrasen Representative",
+	"Internal Affairs Agent",
+	))
 
 
 GLOBAL_LIST_INIT(medical_positions, list(
@@ -45,6 +47,8 @@ GLOBAL_LIST_INIT(civilian_positions, list(
 	"Bartender",
 	"Botanist",
 	"Cook",
+	"Bouncer",
+	"Entertainer",
 	"Janitor",
 	"Curator",
 	"Chaplain",
@@ -52,8 +56,7 @@ GLOBAL_LIST_INIT(civilian_positions, list(
 	"Mime",
 	"Prisoner",
 	"Assistant",
-	"Stowaway",
-	"Bouncer"))
+	"Stowaway"))
 
 //we really need to split service into civillian positions officially, until then this is my solution
 GLOBAL_LIST_INIT(service_food_positions, list(

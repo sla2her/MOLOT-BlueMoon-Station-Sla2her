@@ -1,5 +1,4 @@
 #define TRAITOR_HUMAN /datum/traitor_class/human/freeform
-#define TRAITOR_INTEQ /datum/traitor_class/human/inteq_agents
 #define TRAITOR_AI /datum/traitor_class/ai
 
 #define NUKE_RESULT_FLUKE 0
@@ -72,9 +71,13 @@
 ///Heretics --
 GLOBAL_LIST_EMPTY(living_heart_cache)	//A list of all living hearts in existance, for us to iterate through.
 
+#define IS_INTEQ(mob) (mob.mind?.has_antag_datum(/datum/antagonist/traitor) || mob.mind?.has_antag_datum(/datum/antagonist/raiders) || mob.mind?.has_antag_datum(/datum/antagonist/nukeop) || mob.mind?.has_antag_datum(/datum/antagonist/ghost_role))
 
 #define IS_HERETIC(mob) (mob.mind?.has_antag_datum(/datum/antagonist/heretic))
 #define IS_HERETIC_MONSTER(mob) (mob.mind?.has_antag_datum(/datum/antagonist/heretic_monster))
+
+/// Checks if the given mob is a malf ai.
+#define IS_MALF_AI(mob) (isAI(mob) && mob?.mind?.has_antag_datum(/datum/antagonist/traitor))
 
 #define PATH_SIDE "Side"
 

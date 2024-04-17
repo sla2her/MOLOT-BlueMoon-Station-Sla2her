@@ -6,6 +6,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "syndiredpan"
 	icon_living = "syndiredpan"
+	faction = list(ROLE_SYNDICATE)
 
 /mob/living/simple_animal/hostile/syndicate/melee/sword/anthro
 	name = "Syndicate Sword Beast"
@@ -13,6 +14,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "syndifennec"
 	icon_living = "syndifennec"
+	faction = list(ROLE_SYNDICATE)
 
 /mob/living/simple_animal/hostile/syndicate/ranged/anthro
 	name = "Syndicate Pistoleer"
@@ -20,6 +22,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "syndisquirrel"
 	icon_living = "syndisquirrel"
+	faction = list(ROLE_SYNDICATE)
 
 /mob/living/simple_animal/hostile/syndicate/ranged/smg/anthro
 	name = "Syndicate Rapid Gunnder"
@@ -27,6 +30,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "syndimoth"
 	icon_living = "syndimoth"
+	faction = list(ROLE_SYNDICATE)
 
 /mob/living/simple_animal/hostile/syndicate/melee/space/anthro/lizard
 	name = "Syndicate Commando Lizard"
@@ -34,6 +38,7 @@
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
 	icon_state = "syndilizard"
 	icon_living = "syndilizard"
+	faction = list(ROLE_SYNDICATE)
 
 /mob/living/simple_animal/hostile/syndicate/ranged/space/anthro/cat
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
@@ -41,6 +46,7 @@
 	icon_living = "syndicat"
 	name = "Syndicate Commando Feline"
 	desc = "An anthromorphic feline member of the Syndicate."
+	faction = list(ROLE_SYNDICATE)
 
 /mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space/stormtrooper/anthro/fox
 	icon = 'modular_bluemoon/smiley/icons/mob/newmobs.dmi'
@@ -48,20 +54,22 @@
 	icon_living = "syndifox"
 	name = "Syndicate Stormtrooper Fox"
 	desc = "An anthromorphic fox member of the Syndicate."
+	faction = list(ROLE_SYNDICATE)
 
-/obj/effect/spawner/lootdrop/hostile/syndicate
+/obj/effect/spawner/lootdrop/hostile/inteq
 	icon = 'icons/effects/landmarks_static.dmi'
 	icon_state = "snukeop_leader_spawn"
 	lootcount = 1
 	loot = list(
-		/mob/living/simple_animal/hostile/syndicate/ranged/space/anthro/cat,
-		/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space/stormtrooper/anthro/fox,
-		/mob/living/simple_animal/hostile/syndicate/melee/space/anthro/lizard,
-		/mob/living/simple_animal/hostile/syndicate/melee/anthro,
-		/mob/living/simple_animal/hostile/syndicate/melee/sword/anthro,
-		/mob/living/simple_animal/hostile/syndicate/ranged/smg/anthro,
-		/mob/living/simple_animal/hostile/syndicate/ranged/anthro
+		/mob/living/simple_animal/hostile/syndicate/ranged/space,
+		/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space/stormtrooper,
+		/mob/living/simple_animal/hostile/syndicate/melee/space,
+		/mob/living/simple_animal/hostile/syndicate/melee,
+		/mob/living/simple_animal/hostile/syndicate/melee/sword,
+		/mob/living/simple_animal/hostile/syndicate/ranged/smg,
+		/mob/living/simple_animal/hostile/syndicate/ranged
 	)
+
 // Cult
 /mob/living/simple_animal/hostile/cult
 	name = "Blood Cultist"
@@ -317,7 +325,7 @@
 	projectilesound = 'sound/weapons/laser3.ogg'
 	loot = list(/obj/effect/spawner/lootdrop/maintenance/five)
 	casingtype = null
-	projectiletype = /obj/item/projectile/beam/lasertag
+	projectiletype = /obj/item/projectile/beam/laser //bluemoon change
 
 // Damaged Borgs
 
@@ -600,7 +608,7 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
 
-/obj/item/reagent_containers/cup/bottle/rezadone
+/obj/item/reagent_containers/glass/bottle/rezadone
 	name = "Rezadone Bottle"
 	desc = "A small bottle of Rezadone."
 	list_reagents = list(/datum/reagent/medicine/rezadone = 30)
@@ -615,7 +623,7 @@
 	mob_biotypes = MOB_ORGANIC|MOB_BUG
 	speak_chance = 0
 	turns_per_move = 5
-	loot = list(/obj/item/reagent_containers/cup/bottle/rezadone)
+	loot = list(/obj/item/reagent_containers/glass/bottle/rezadone)
 	response_help_continuous = "pokes"
 	response_help_simple = "poke"
 	response_disarm_continuous = "gently pushes aside"
@@ -949,7 +957,7 @@
 	icon_living = "voxspacelaser"
 	icon_dead = "voxspacedead"
 	loot = list(/obj/effect/spawner/lootdrop/high_loot_toilet = 4)
-	projectiletype = /obj/item/projectile/beam/lasertag
+	projectiletype = /obj/item/projectile/beam/laser
 	casingtype = null
 	projectilesound = 'sound/weapons/laser3.ogg'
 

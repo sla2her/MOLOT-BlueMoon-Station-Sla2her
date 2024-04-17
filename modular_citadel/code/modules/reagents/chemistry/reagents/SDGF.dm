@@ -342,7 +342,7 @@ IMPORTANT FACTORS TO CONSIDER WHILE BALANCING
 	var/startHunger
 	can_synth = TRUE
 	taste_description = "a weird chemical fleshy flavour"
-	chemical_flags = REAGENT_SNEAKYNAME | REAGENT_ALL_PROCESS
+	chemical_flags = REAGENT_SNEAKYNAME | REAGENT_ORGANIC_PROCESS // BLUEMOON CHANGES - только для органиков
 	value = REAGENT_VALUE_RARE
 
 /datum/reagent/impure/SDZF/on_mob_life(mob/living/carbon/M) //If you're bad at fermichem, turns your clone into a zombie instead.
@@ -375,7 +375,7 @@ IMPORTANT FACTORS TO CONSIDER WHILE BALANCING
 				M.action_cooldown_mod = 1
 				to_chat(M, "<span class='warning'>Your body splits away from the cell clone of yourself, your attempted clone birthing itself violently from you as it begins to shamble around, a terrifying abomination of science.</span>")
 				M.visible_message("[M] suddenly shudders, and splits into a funky smelling copy of themselves!")
-				M.emote("scream")
+				M.emote("realagony")
 				M.adjustToxLoss(30, 0)
 				var/mob/living/simple_animal/hostile/unemployedclone/ZI = new(get_turf(M.loc))
 				ZI.damage_coeff = list(BRUTE = ((1 / volume)**0.25) , BURN = ((1 / volume)**0.1), TOX = 1, CLONE = 1, STAMINA = 0, OXY = 1)

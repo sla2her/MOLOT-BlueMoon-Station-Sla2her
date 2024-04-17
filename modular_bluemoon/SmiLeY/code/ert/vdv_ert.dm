@@ -49,7 +49,7 @@
 	uniform = /obj/item/clothing/under/pants/camo
 	suit = /obj/item/clothing/suit/armor/nri_vest
 	suit_store = /obj/item/melee/classic_baton
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 	gloves = /obj/item/clothing/gloves/fingerless
 	ears = /obj/item/radio/headset/headset_cent/alt
 	head = /obj/item/clothing/head/HoS/beret/nri
@@ -96,7 +96,7 @@
 /datum/outfit/ert/vdv/leader
 	name = "NRI VDV Leader"
 
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/aps
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/APS
 	gloves = /obj/item/clothing/gloves/color/black
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	belt = /obj/item/storage/belt/military/army/vdv
@@ -108,7 +108,14 @@
 
 	r_hand = /obj/item/gun/ballistic/automatic/ak12
 
-/datum/outfit/ert/vdv/leader/pre_equip(mob/living/carbon/human/H)
+// BLUEMOON ADD START - командная коробочка для командира
+/datum/outfit/ert/vdv/leader/pre_equip(mob/living/carbon/human/H, visualsOnly, client/preference_source)
+	. = ..()
+	var/list/extra_backpack_items = list(
+		/obj/item/storage/box/pinpointer_squad
+	)
+	LAZYADD(backpack_contents, extra_backpack_items)
+// BLUEMOON ADD END
 
 /datum/outfit/ert/vdv/leader/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()

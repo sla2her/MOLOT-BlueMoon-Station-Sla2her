@@ -217,6 +217,19 @@
 		/obj/item/clothing/head/bronze = 1,
 		/obj/item/clothing/suit/bronze = 1)
 
+/datum/outfit/job/miner/equipped/priest/slave
+	name = "Shaft Miner (Slave)"
+	shoes = /obj/item/clothing/shoes/invisiboots
+	backpack = /obj/item/storage/backpack/satchel/bone
+	uniform = /obj/item/clothing/under/costume/loincloth
+	mask = null
+	ears = null
+	belt = null
+	gloves = null
+	backpack_contents = list(
+		/obj/item/flashlight/seclite=1,
+		/obj/item/stack/marker_beacon/ten = 1)
+
 /obj/effect/temp_visual/dragon_swoop/priest
 	duration = 5
 	color = rgb(255,0,0)

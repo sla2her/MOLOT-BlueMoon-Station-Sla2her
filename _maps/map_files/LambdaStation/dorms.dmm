@@ -3511,7 +3511,7 @@
 	},
 /area/maintenance/bar)
 "jo" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "jp" = (
@@ -7878,7 +7878,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/commons/toilet)
 "up" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -7950,6 +7950,9 @@
 /obj/structure/table,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/spray/cleaner,
+/obj/structure/reagent_dispensers/spacecleanertank{
+	pixel_y = 30
+	},
 /turf/open/floor/plasteel,
 /area/service/janitor)
 "uA" = (
@@ -8419,7 +8422,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/construction)
 "vL" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /obj/item/storage/daki,
@@ -8721,6 +8724,7 @@
 /obj/structure/sink{
 	pixel_y = 22
 	},
+/obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plasteel,
 /area/service/janitor)
 "wA" = (
@@ -17526,7 +17530,7 @@
 /turf/open/floor/grass/grass0,
 /area/service/hydroponics/garden)
 "SW" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -17536,7 +17540,7 @@
 /turf/open/floor/wood,
 /area/commons/dorms)
 "SZ" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -20012,7 +20016,7 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness/pool)
 "YX" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /turf/open/floor/plasteel,

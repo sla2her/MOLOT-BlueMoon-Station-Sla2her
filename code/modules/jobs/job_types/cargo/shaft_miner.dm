@@ -55,6 +55,14 @@
 
 	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
 
+// BLUEMOON ADD START - шахтёрским синтетикам с начала их смены выдаётся заряженная шахтёрская ПОУ
+/datum/outfit/job/miner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	if(HAS_TRAIT(H, TRAIT_ROBOTIC_ORGANISM))
+		l_pocket = belt
+		belt = /obj/item/device/cooler/lavaland/charged
+	. = ..()
+// BLUEMOON ADD END
+
 /datum/outfit/job/miner/syndicate
 	name = "Syndicate Shaft Miner"
 	jobtype = /datum/job/mining
@@ -62,7 +70,7 @@
 	//belt = /obj/item/pda/syndicate/no_deto
 
 	ears = /obj/item/radio/headset/headset_cargo/mining
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 	gloves = /obj/item/clothing/gloves/combat
 	uniform = /obj/item/clothing/under/rank/cargo/util
 	l_pocket = /obj/item/reagent_containers/hypospray/medipen/survival
@@ -91,7 +99,7 @@
 	suit = /obj/item/clothing/suit/hooded/explorer/standard
 	mask = /obj/item/clothing/mask/gas/explorer
 	glasses = /obj/item/clothing/glasses/meson
-	suit_store = /obj/item/tank/internals/oxygen
+	suit_store = /obj/item/tank/internals/oxygen/yellow
 	internals_slot = ITEM_SLOT_SUITSTORE
 	backpack_contents = list(
 		/obj/item/flashlight/seclite=1,\

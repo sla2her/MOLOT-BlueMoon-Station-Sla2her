@@ -78,6 +78,10 @@
 	name = "Bedhead"
 	icon_state = "hair_bedhead"
 
+/datum/sprite_accessory/hair/bedhead_short
+	name = "Bedhead (short)"
+	icon_state = "hair_short_bedhead"
+
 /datum/sprite_accessory/hair/bedhead_long
 	name = "Bedhead (Long)"
 	icon_state = "hair_long_bedhead"
@@ -650,7 +654,6 @@
 /datum/sprite_accessory/hair/over_eye_fr
 	name = "Over Eye (fract)"
 	icon_state = "hair_shortovereye_1f"
-	ckeys_allowed = list("fractious")
 
 /datum/sprite_accessory/hair/parted
 	name = "Parted"

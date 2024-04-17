@@ -56,16 +56,21 @@
 	if(ishuman(M) && (M?.client?.prefs?.toggles & VERB_CONSENT))
 		switch(user.zone_selected)
 			if(BODY_ZONE_PRECISE_GROIN)
-				if(M.has_penis(REQUIRE_EXPOSED) || M.has_strapon(REQUIRE_EXPOSED))
+				if(M.has_penis() == HAS_EXPOSED_GENITAL || M.has_strapon() == HAS_EXPOSED_GENITAL)
 					var/genital_name = (user == M) ? user.get_penetrating_genital_name() : M.get_penetrating_genital_name()
 					message = (user == M) ? "использует <b>'[src]'</b> по прямому назначению и трахает, натягивая [possessive_verb] прямо на свой [genital_name]" : "использует <b>'[src]'</b> по прямому назначению и трахает, натягивая прямо на свой <b>[M]</b> [genital_name]"
 					lust_amt = NORMAL_LUST
 	if(message)
 		user.visible_message(span_lewd("<b>[user]</b> [message]."))
 		M.handle_post_sex(lust_amt, null, user, ORGAN_SLOT_PENIS) //SPLURT edit
+		user.client?.plug13.send_emote(PLUG13_EMOTE_GROIN, min(lust_amt * 3, 100), PLUG13_DURATION_NORMAL)
 		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
 							'modular_sand/sound/interactions/bang5.ogg',
 							'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
+		if(!HAS_TRAIT(user, TRAIT_LEWD_JOB))
+			new /obj/effect/temp_visual/heart(user.loc)
+
+
 	else if(user.a_intent == INTENT_HARM)
 		return ..()
 
@@ -90,6 +95,7 @@
 	var/obj/item/clothing/underwear/briefs/panties/portalpanties/portalunderwear
 	var/targetting      = CUM_TARGET_PENIS
 	var/useable 		= FALSE
+	var/list/available_panties = list()
 
 /obj/item/portallight/attack_self(mob/user)
 	. = ..()
@@ -110,6 +116,24 @@
 		. += "<span class='notice'>Устройство не сопряжено. Для сопряжения проведите устройством по паре трусиков портала.</span>"
 	else
 		. += "<span class='notice'>Устройство сопряжено и ожидает использования по прямому назначению.</span>"
+	if(available_panties.len)
+		. += "Alt-Click to choose panties."
+
+/obj/item/portallight/AltClick(mob/user)
+	. = ..()
+	var/obj/item/clothing/underwear/briefs/panties/portalpanties/to_connect
+	if(available_panties.len)
+		to_connect = tgui_input_list(user, "Choose...", "Available panties", available_panties, null)
+	if(to_connect)
+		if(!to_connect.free_use)
+			to_chat(usr, "They have public mode turned off!")
+			return FALSE
+		portalunderwear = to_connect //pair the panties on the fleshlight.
+		to_connect.update_portal()
+		to_connect.portallight += src //pair the fleshlight
+		icon_state = "paired"
+		update_appearance()
+		playsound(src, 'sound/machines/ping.ogg', 50, FALSE)
 
 /obj/item/portallight/update_appearance(updates)
 	. = ..()
@@ -145,7 +169,7 @@
 			if(BODY_ZONE_PRECISE_GROIN)
 				switch(targetting)
 					if(CUM_TARGET_PENIS)
-						if(M.has_penis(REQUIRE_EXPOSED) || M.has_strapon(REQUIRE_EXPOSED))
+						if(M.has_penis() == HAS_EXPOSED_GENITAL || M.has_strapon() == HAS_EXPOSED_GENITAL)
 							switch(portalunderwear.targetting)
 								if(CUM_TARGET_PENIS)
 									user_message = (user == M) ? "трётся о [penis_names[3]], используя [name]" : "использует <b>'[src]'</b> по прямому назначению и стимулирует член кого-то на другой стороне усилиями члена <b>[M]</b>, таким образом заставляя потираться о [penis_names[3]] [name]"
@@ -180,7 +204,7 @@
 						else
 							to_chat(user, "<span class='warning'>Пенис закрыт или его нет!</span>")
 					if(CUM_TARGET_VAGINA)
-						if(M.has_vagina(REQUIRE_EXPOSED))
+						if(M.has_vagina() == HAS_EXPOSED_GENITAL)
 							switch(portalunderwear.targetting)
 								if(CUM_TARGET_PENIS)
 									user_message = (user == M) ? "стимулирует [penis_names[3]] через [name]" : "трахает <b>[M]</b> при помощи [penis_names[3]] [name]"
@@ -217,7 +241,7 @@
 						else
 							to_chat(user, "<span class='warning'>Влагалище закрыто или его нет!</span>")
 					if(CUM_TARGET_ANUS)
-						if(M.has_anus(REQUIRE_EXPOSED))
+						if(M.has_anus() == HAS_EXPOSED_GENITAL)
 							switch(portalunderwear.targetting)
 								if(CUM_TARGET_PENIS)
 									user_message = (user == M) ? "использует свой сокрытый в <b>'[src]'</b> [penis_names[3]] [name] по прямому назначению и трахает себя в анальное колечко" : "трахает <b>[M]</b> анально при помощи [penis_names[3]] [name]"
@@ -246,7 +270,7 @@
 						else
 							to_chat(user, "<span class='warning'>Анус закрыт или отсутствует!</span>")
 					if(CUM_TARGET_URETHRA)
-						if(M.has_penis(REQUIRE_EXPOSED) || M.has_strapon(REQUIRE_EXPOSED))
+						if(M.has_penis() == HAS_EXPOSED_GENITAL || M.has_strapon() == HAS_EXPOSED_GENITAL)
 							switch(portalunderwear.targetting)
 								if(CUM_TARGET_PENIS)
 									user_message = (user == M) ? "трахает твою уретру своим членом" : "трахает чужую уретру своим членом"
@@ -388,7 +412,7 @@
 	if(user_message)
 		if(portal_target && (portal_target?.client?.prefs.toggles & VERB_CONSENT || !portal_target.ckey))
 			user.visible_message("<span class='lewd'>[user] [user_message].</span>")
-			if(M.can_penetrating_genital_cum() && M.handle_post_sex(user_lust_amt, portalunderwear.targetting, portal_target, null, TRUE, TRUE))
+			if(M.can_penetrating_genital_cum() && M.handle_post_sex(user_lust_amt, portalunderwear.targetting, portal_target, target, TRUE, TRUE))
 				switch(target)
 					if(CUM_TARGET_PENIS)
 						switch(portalunderwear.targetting)
@@ -432,7 +456,7 @@
 					playlewdinteractionsound(loc, 'modular_sand/sound/interactions/champ_fingering.ogg', 50, 1, -1)
 
 			to_chat(portal_target, "<span class='lewd'>Кто-то использует сопряжённый <b>'[name]'</b>, этот кто-то [target_message].</span>")
-			if(portal_target.handle_post_sex(target_lust_amt, portalunderwear.targetting, M, null, TRUE, TRUE))
+			if(portal_target.handle_post_sex(target_lust_amt, target, M, portalunderwear.targetting, TRUE, TRUE))
 
 				switch(portalunderwear.targetting)
 					if(CUM_TARGET_VAGINA)
@@ -577,8 +601,11 @@
 		useable = FALSE
 
 /obj/item/portallight/Destroy()
+	if(available_panties.len)
+		for(var/obj/item/clothing/underwear/briefs/panties/portalpanties/temp in available_panties)
+			temp.portallight -= src
 	if(portalunderwear)
-		portalunderwear.portallight = null
+		portalunderwear.portallight -= src
 		if(isliving(portalunderwear.loc))
 			portalunderwear.audible_message("[icon2html(portalunderwear, hearers(portalunderwear))] *beep* *beep* *beep*")
 			playsound(portalunderwear, 'sound/machines/triple_beep.ogg', ASSEMBLY_BEEP_VOLUME, TRUE)
@@ -596,11 +623,10 @@
 	icon_state = "portalpanties"
 	item_state = "fleshlight"
 	w_class = WEIGHT_CLASS_SMALL
-	var/obj/item/portallight/portallight
+	var/list/portallight = list()
 	var/targetting = CUM_TARGET_VAGINA
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 5 SECONDS
-	is_edible = 0
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/attack_self(mob/user)
 	. = ..()
@@ -617,34 +643,52 @@
 			targetting = CUM_TARGET_VAGINA
 
 	slot_flags         = targetting == CUM_TARGET_MOUTH ? ITEM_SLOT_MASK  : ITEM_SLOT_UNDERWEAR
-	body_parts_covered = targetting == CUM_TARGET_MOUTH ? NONE            : GROIN
 	flags_cover        = targetting == CUM_TARGET_MOUTH ? MASKCOVERSMOUTH : NONE
 	visor_flags_cover  = targetting == CUM_TARGET_MOUTH ? MASKCOVERSMOUTH : NONE
-	name               = targetting == CUM_TARGET_MOUTH ? "portal mask"   : "portal panties"
+	name               = targetting == CUM_TARGET_MOUTH ? "Портальная Маска"   : "Портальные Трусики"
 
 	to_chat(user, "<span class='notice'>Теперь при надевании портал будет обращен к вашему [targetting].</span>")
 	update_portal()
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/examine(mob/user)
 	. = ..()
-	if(!portallight)
-		. += "<span class='notice'>Устройство не сопряжено, для сопряжения проведите фонариком по этой паре портальных трусиков (TM). </span>"
+	if(!portallight.len)
+		. += "<span class='notice'>Устройство не сопряжено, для сопряжения проведите фонариком по этой паре портальных трусиков (TM) или переведите устройство в <b>публичный режим</b> и ожидайте. </span>"
 	else
-		. += "<span class='notice'>Устройство сопряжено и ожидает использования по прямому назначению. </span>"
+		. += "<span class='notice'>Устройство сопряжено и ожидает использования по прямому назначению. Количество сопряженных устройств: <b>[portallight.len]</b>.</span>"
+	if(free_use)
+		. += "<span class='notice'>Публичный доступ к устройству <b>включен</b>. (Alt+Click для смены режима)</span>"
+	else
+		. += "<span class='notice'>Публичный доступ к устройству <b>отключен</b>. (Alt+Click для смены режима)</span>"
+
+/obj/item/clothing/underwear/briefs/panties/portalpanties/AltClick(mob/user)
+	. = ..()
+	if(do_mob(user, src, 2 SECONDS))
+		free_use()
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/attackby(obj/item/I, mob/living/user) //pairing
 	if(istype(I, /obj/item/portallight))
 		var/obj/item/portallight/P = I
-		if(!portallight && !P.portalunderwear) //make sure it aint linked to someone else
-			portallight = P //pair the fleshlight
-			P.portalunderwear = src //pair the panties on the fleshlight.
-			P.icon_state = "paired" //we are paired!
+		if(!(P in portallight))
+			if(!portallight.len)
+				RegisterSignal(user, COMSIG_PARENT_QDELETING, .proc/drop_out)
+			portallight += P //pair the fleshlight
+			P.available_panties += src
+			P.portalunderwear = src
+			P.icon_state = "paired"
+			update_portal()
 			playsound(src, 'sound/machines/ping.ogg', 50, FALSE)
 			to_chat(user, "<span class='notice'>[P] был успешно связан.</span>")
-			update_portal()
-			RegisterSignal(user, COMSIG_PARENT_QDELETING, .proc/drop_out)
 		else
-			to_chat(user, "<span class='notice'>Один из этих предметов уже находится в паре.</span>")
+			portallight -= P
+			P.available_panties -= src
+			if(P.portalunderwear == src || !P.available_panties.len)
+				P.portalunderwear = null
+				P.updatesleeve()
+				P.icon_state = "unpaired"
+			to_chat(user, "<span class='notice'>[P] был успешно отвязан.</span>")
+			if(!portallight.len)
+				UnregisterSignal(user, COMSIG_PARENT_QDELETING)
 	else
 		..() //just allows people to hit it with other objects, if they so wished.
 
@@ -655,19 +699,19 @@
 		var/mob/living/carbon/human/human = M
 		switch(targetting)
 			if(CUM_TARGET_VAGINA)
-				if(!human.has_vagina(REQUIRE_EXPOSED))
-					to_chat(human, "<span class='warning'>Влагалище закрыто или отсутствует!</span>")
+				if(!human.has_vagina() == HAS_EXPOSED_GENITAL)
+					to_chat(human, span_warning("Влагалище закрыто или отсутствует!"))
 					return FALSE
 			if(CUM_TARGET_ANUS)
-				if(!human.has_anus(REQUIRE_EXPOSED))
-					to_chat(human, "<span class='warning'>Анус закрыт или отсутствует!</span>")
+				if(!human.has_anus() == HAS_EXPOSED_GENITAL)
+					to_chat(human, span_warning("Анус закрыт или отсутствует!"))
 					return FALSE
 			if(CUM_TARGET_PENIS)
-				if(!human.has_penis(REQUIRE_EXPOSED) && !human.has_strapon(REQUIRE_EXPOSED))
+				if(!human.has_penis() == HAS_EXPOSED_GENITAL && !human.has_strapon() == HAS_EXPOSED_GENITAL)
 					to_chat(human, "<span class='warning'>Пенис закрыт или отсутствует!</span>")
 					return FALSE
 			if(CUM_TARGET_URETHRA)
-				if(!human.has_penis(REQUIRE_EXPOSED) && !human.has_strapon(REQUIRE_EXPOSED))
+				if(!human.has_penis() == HAS_EXPOSED_GENITAL && !human.has_strapon() == HAS_EXPOSED_GENITAL)
 					to_chat(human, "<span class='warning'>Уретра закрыта или отсутствует!</span>")
 					return FALSE
 			if(CUM_TARGET_MOUTH)
@@ -680,7 +724,7 @@
 	. = ..()
 	switch(slot)
 		if(ITEM_SLOT_UNDERWEAR, ITEM_SLOT_MASK)
-			if(!portallight)
+			if(!portallight.len)
 				audible_message("[icon2html(src, hearers(src))] *beep* *beep* *beep*")
 				playsound(src, 'sound/machines/triple_beep.ogg', ASSEMBLY_BEEP_VOLUME, TRUE)
 				to_chat(user, "<span class='notice'>Трусики не связаны с Портальным Фонариком.</span>")
@@ -697,11 +741,13 @@
 	update_portal()
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/Destroy()
-	if(portallight)
-		var/obj/item/portallight/temp = portallight
+	if(portallight.len)
 		moveToNullspace() // loc cannot be human so let's destroy ourselves out of anything
-		portallight.portalunderwear = null
-		temp.updatesleeve()
+		for(var/obj/item/portallight/temp in portallight)
+			temp.portalunderwear = null
+			temp.available_panties -= src
+			temp.updatesleeve()
+			temp.icon_state = "unpaired"
 	. = ..()
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/proc/drop_out()
@@ -715,13 +761,14 @@
 	update_portal()
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/proc/update_portal()
-	if(portallight)
-		var/obj/item/portallight/P = portallight
-		if(targetting == CUM_TARGET_PENIS)
-			P.icon = 'modular_sand/icons/obj/dildo.dmi'
-		else
-			P.icon = 'modular_sand/icons/obj/fleshlight.dmi'
-		P.updatesleeve()
+	if(portallight.len)
+		for(var/obj/item/portallight/P in portallight)
+			if(P.portalunderwear == src)
+				if(targetting == CUM_TARGET_PENIS)
+					P.icon = 'modular_sand/icons/obj/dildo.dmi'
+				else
+					P.icon = 'modular_sand/icons/obj/fleshlight.dmi'
+				P.updatesleeve()
 
 /obj/item/storage/box/portallight
 	name =  "Portal Fleshlight and Underwear"

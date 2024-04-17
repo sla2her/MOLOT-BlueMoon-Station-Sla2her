@@ -50,7 +50,7 @@
 	opendoors = TRUE
 	rename_team = "Deathsquad"
 	code = "Delta"
-	mission = "Разберитесь с проблемами, достойными Дельта-Кода."
+	mission = "Уничтожить Космическую Станцию, включая активы, в том числе весь Экипаж."
 	polldesc = "an elite Nanotrasen Strike Team"
 	ertphrase = "modular_bluemoon/kovac_shitcode/sound/ert/deathsquad_send_in.ogg"
 
@@ -85,7 +85,7 @@
 	mission = "Разберитесь с проблемами на станции [station_name()], а также проведите плановую проверку всех Отделов и Командования."
 
 /datum/ert/inquisition
-	roles = list(/datum/antagonist/ert/chaplain/inquisitor, /datum/antagonist/ert/security/inquisitor, /datum/antagonist/ert/medic/inquisitor)
+	roles = list(/datum/antagonist/ert/security/inquisitor, /datum/antagonist/ert/medic/inquisitor)
 	leader_role = /datum/antagonist/ert/commander/inquisitor
 	rename_team = "Inquisition"
 	mission = "Уничтожьте любые следы паранормальной активности на борту Космической Станции Тринадцатого Сектора."

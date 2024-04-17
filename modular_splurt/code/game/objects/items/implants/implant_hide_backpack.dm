@@ -48,15 +48,17 @@
 
 // Runs on losing the ability
 /datum/action/item_action/hide_backpack/Remove(mob/user)
-	. = ..()
-
-	// Remove the trait
+	// Remove the trait (must be done before removal so that owner still exists)
 	adjust_trait(FALSE)
+	return ..()
 
 // Function to update trait
 /datum/action/item_action/hide_backpack/proc/adjust_trait(state)
 	// Set owner
 	var/mob/living/carbon/human/action_owner = owner
+
+	if(!owner)
+		return
 
 	// Toggle trait status
 	if(state)

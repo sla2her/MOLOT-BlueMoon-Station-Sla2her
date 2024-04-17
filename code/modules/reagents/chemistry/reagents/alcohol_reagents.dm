@@ -16,6 +16,7 @@
 	pH = 7.33
 	boiling_point = 351.38
 	value = REAGENT_VALUE_VERY_COMMON //don't bother tweaking all drinks values, way too many can easily be done roundstart or with an upgraded dispenser.
+	accelerant_quality = 5
 
 /*
 Boozepwr Chart
@@ -234,15 +235,15 @@ All effects don't start immediately, but rather get worse over time; the rate is
 				eyes.Remove()
 				eyes.forceMove(get_turf(M))
 				to_chat(M, "<span class='userdanger'>You double over in pain as you feel your eyeballs liquify in your head!</span>")
-				M.emote("scream")
+				M.emote("realagony")
 				M.adjustBruteLoss(15)
 		else
 			to_chat(M, "<span class='userdanger'>You scream in terror as you go blind!</span>")
 			eyes?.applyOrganDamage(eyes.maxHealth)
-			M.emote("scream")
+			M.emote("realagony")
 
 	if(prob(3) && iscarbon(M))
-		M.visible_message("<span class='danger'>[M] starts having a seizure!</span>", "<span class='userdanger'>You have a seizure!</span>")
+		M.visible_message("<span class='danger'>[M] падает в припадке!</span>", "<span class='userdanger'>У вас начался припадок!</span>")
 		M.Unconscious(100)
 		M.Jitter(350)
 
@@ -753,6 +754,9 @@ All effects don't start immediately, but rather get worse over time; the rate is
 			to_chat(H, "<span class='notice'>Вот это уже по МУЖИЦКИ!</span>")
 			if(real_dorf)
 				boozepwr = 100 // Don't want dwarves to die because of a low booze power
+				if(!(HAS_TRAIT(H, TRAIT_MUTE)) && !H.silent && (H.stat == CONSCIOUS || H.stat == SOFT_CRIT))
+					H.emote("me", EMOTE_VISIBLE, "exclaims: \"ROCK AND STONE!\"")
+					playsound(H, "modular_bluemoon/sound/voice/rock_and_stone[pick("1","2","3")].ogg", 100, FALSE)
 			else
 				boozepwr = 5 //We've had worse in the mines
 			dorf_mode = TRUE
@@ -1479,15 +1483,15 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	..()
 
 /datum/reagent/consumable/ethanol/eggnog
-	name = "Eggnog"
+	name = "Spiked Eggnog"
 	description = "The traditional way to get absolutely hammered at a Christmas party."
 	color = "#fcfdc6" // rgb: 252, 253, 198
 	nutriment_factor = 2 * REAGENTS_METABOLISM
-	boozepwr = 1
+	boozepwr = 20
 	quality = DRINK_VERYGOOD
 	taste_description = "custard and alcohol"
 	glass_icon_state = "nog3"
-	glass_name = "eggnog"
+	glass_name = "spiked eggnog"
 	glass_desc = "The traditional way to get absolutely hammered at a Christmas party."
 
 /datum/reagent/consumable/ethanol/narsour
@@ -2082,7 +2086,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 /datum/reagent/consumable/ethanol/bug_spray/on_mob_add(mob/living/carbon/M)
 	if(isinsect(M) || isflyperson(M))
-		M.emote("scream")
+		M.emote("realagony")
 	return ..()
 
 /datum/reagent/consumable/ethanol/applejack

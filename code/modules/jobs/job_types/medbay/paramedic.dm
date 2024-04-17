@@ -45,7 +45,7 @@
 	id = /obj/item/card/id
 	r_pocket = /obj/item/pinpointer/crew
 	l_pocket = /obj/item/pda/medical
-	backpack_contents = list(/obj/item/roller=1)
+	backpack_contents = list(/obj/item/roller=1, /obj/item/storage/hypospraykit/regular=1)
 	pda_slot = ITEM_SLOT_LPOCKET
 
 	backpack = /obj/item/storage/backpack/medic
@@ -64,7 +64,7 @@
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile/hsc
 	uniform = /obj/item/clothing/under/rank/medical/doctor/util
 	mask = /obj/item/clothing/mask/surgical
-	shoes = /obj/item/clothing/shoes/jackboots/tall
+	shoes = /obj/item/clothing/shoes/jackboots/tall_default
 	head = /obj/item/clothing/head/soft/emt
 	suit =  /obj/item/clothing/suit/toggle/labcoat/paramedic
 	l_hand = /obj/item/storage/firstaid/regular

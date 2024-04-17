@@ -1,5 +1,5 @@
 /// Attempts to open the tgui menu
-/mob/living/verb/genital_menu()
+/mob/living/carbon/verb/genital_menu()
 	set name = "Genitals Menu"
 	set desc = "Manage your genital, or someone else's."
 	set category = "IC"
@@ -68,7 +68,7 @@
 
 			var/extras = "None"
 			if(CHECK_BITFIELD(genital.genital_flags, GENITAL_CAN_STUFF))
-				extras = "Allows egg stuffing"
+				extras = "Allows toys and egg stuffing"
 
 			genital_entry["extras"] = extras
 			genital_entry["visibility"] = visibility

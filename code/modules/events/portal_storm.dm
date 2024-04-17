@@ -1,7 +1,7 @@
 /datum/round_event_control/portal_storm_syndicate
 	name = "Portal Storm: Syndicate Shocktroops"
 	typepath = /datum/round_event/portal_storm/syndicate_shocktroop
-	weight = 30
+	weight = 5
 	min_players = 40
 	earliest_start = 60 MINUTES
 	max_occurrences = 1
@@ -14,7 +14,28 @@
 	hostile_types = list(/mob/living/simple_animal/hostile/syndicate/melee/anthro = 8,\
 						/mob/living/simple_animal/hostile/syndicate/melee/sword/anthro = 6,\
 						/mob/living/simple_animal/hostile/syndicate/ranged/smg/anthro = 4,\
-						/mob/living/simple_animal/hostile/syndicate/ranged/anthro = 4)
+						/mob/living/simple_animal/hostile/syndicate/ranged/anthro = 4,\
+						/mob/living/simple_animal/hostile/viscerator = 8)
+	triggersound = 'modular_bluemoon/kovac_shitcode/sound/syndie_storm.ogg'
+
+/datum/round_event_control/portal_storm_inteq
+	name = "Portal Storm: Inteq Shocktroops"
+	typepath = /datum/round_event/portal_storm/inteq_shocktroop
+	weight = 55
+	min_players = 40
+	earliest_start = 60 MINUTES
+	max_occurrences = 1
+	category = EVENT_CATEGORY_INVASION
+
+/datum/round_event/portal_storm/inteq_shocktroop
+	boss_types = list(/mob/living/simple_animal/hostile/syndicate/ranged/smg/space/stormtrooper = 3,\
+					/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space/stormtrooper = 3,\
+					/mob/living/simple_animal/hostile/syndicate/melee/sword/space/stormtrooper = 3)
+	hostile_types = list(/mob/living/simple_animal/hostile/syndicate/melee/space = 8,\
+						/mob/living/simple_animal/hostile/syndicate/melee = 6,\
+						/mob/living/simple_animal/hostile/syndicate/ranged/smg = 4,\
+						/mob/living/simple_animal/hostile/syndicate/ranged/shotgun = 4,\
+						/mob/living/simple_animal/hostile/viscerator = 8)
 	triggersound = 'modular_bluemoon/kovac_shitcode/sound/syndie_storm.ogg'
 
 /datum/round_event_control/portal_storm_narsie
@@ -94,6 +115,23 @@
 
 	triggersound = 'sound/announcer/classic/_admin_horror_music.ogg'
 
+/datum/round_event_control/portal_storm_skibidi
+	name = "Portal Storm: Skibidi"
+	typepath = /datum/round_event/portal_storm/portal_storm_skibidi
+	weight = 5
+	min_players = 75
+	earliest_start = 60 MINUTES
+	max_occurrences = 1
+	category = EVENT_CATEGORY_INVASION
+
+/datum/round_event/portal_storm/portal_storm_skibidi
+	boss_types = list(/mob/living/simple_animal/hostile/skibidi_toilet = 2,\
+					/mob/living/simple_animal/hostile/skibidi_toilet/vulp = 2)
+	hostile_types = list(/mob/living/simple_animal/hostile/skibidi_toilet = 6,\
+						/mob/living/simple_animal/hostile/skibidi_toilet/vulp = 6)
+
+	triggersound = "modular_bluemoon/kovac_shitcode/sound/skibidi_toilets.ogg"
+
 /datum/round_event_control/portal_storm_clock
 	name = "Portal Storm: Clock Cult"
 	typepath = /datum/round_event/portal_storm/portal_storm_clock
@@ -107,8 +145,8 @@
 	boss_types = list(/mob/living/simple_animal/hostile/boss/clockcultistboss = 1)
 	hostile_types = list(/mob/living/simple_animal/hostile/clockcultistmelee = 8,\
 						/mob/living/simple_animal/hostile/clockcultistranged = 5,\
-						/mob/living/simple_animal/hostile/clocktank/weak = 3,\
-						/mob/living/simple_animal/hostile/clocktank = 2)
+						/mob/living/simple_animal/hostile/clockwork/clocktank/weak = 3,\
+						/mob/living/simple_animal/hostile/clockwork/clocktank = 2)
 	triggersound = 'modular_bluemoon/kovac_shitcode/sound/clock_storm.ogg'
 
 /datum/round_event/portal_storm

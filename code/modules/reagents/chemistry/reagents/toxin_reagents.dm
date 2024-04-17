@@ -35,7 +35,7 @@
 	name = "Unstable mutagen"
 	description = "Might cause unpredictable mutations. Keep away from children."
 	color = "#00FF00"
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	toxpwr = 0
 	taste_description = "slime"
 	taste_mult = 0.9
@@ -74,6 +74,7 @@
 	taste_mult = 1.5
 	color = "#8228A0"
 	toxpwr = 3
+	accelerant_quality = 10
 	pH = 4
 	value = REAGENT_VALUE_RARE //sheets are worth more
 
@@ -338,6 +339,7 @@
 	color = "#9ACD32"
 	toxpwr = 0.5
 	taste_description = "burning"
+	accelerant_quality = 10
 	pH = 13
 	value = REAGENT_VALUE_VERY_RARE
 
@@ -352,6 +354,7 @@
 	reagent_state = SOLID
 	color = "#000067" // rgb: 0, 0, 103
 	toxpwr = 0
+	overdose_threshold = 30
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
 	pH = 11
 
@@ -360,14 +363,15 @@
 		if(1 to 10)
 			M.confused += 2
 			M.drowsyness += 2
-		if(10 to 50)
+		if(10 to INFINITY)
 			M.Sleeping(40, 0)
-			. = 1
-		if(51 to INFINITY)
-			M.Sleeping(40, 0)
-			M.adjustToxLoss((current_cycle - 50)*REM, 0)
 			. = 1
 	..()
+
+/datum/reagent/toxin/histamine/overdose_process(mob/living/M)
+	M.adjustToxLoss(2*REM, 0)
+	..()
+	. = 1
 
 /datum/reagent/toxin/fakebeer	//disguised as normal beer for use by emagged brobots
 	name = "Beer"
@@ -496,7 +500,7 @@
 	reagent_state = LIQUID
 	color = "#B4004B"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_ALL_PROCESS
+//	chemical_flags = REAGENT_ALL_PROCESS (BLUEMOON REMOVAL - роботы не должны получать эффекты реагента)
 	toxpwr = 1
 
 /datum/reagent/toxin/formaldehyde/on_mob_life(mob/living/carbon/M)

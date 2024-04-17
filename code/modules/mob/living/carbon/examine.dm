@@ -59,9 +59,9 @@
 
 	for(var/t in missing)
 		if(t==BODY_ZONE_HEAD)
-			msg += "<span class='deadsay'><B>[t_His] [parse_zone(t)] отсутствует!</B></span>\n"
+			msg += "<span class='deadsay'><B>[t_His] [ru_parse_zone(t)] отсутствует!</B></span>\n"
 			continue
-		msg += "<span class='warning'><B>[t_His] [parse_zone(t)] отсутствует!</B></span>\n"
+		msg += "<span class='warning'><B>[t_His] [ru_parse_zone(t)] отсутствует!</B></span>\n"
 
 	var/temp = getBruteLoss()
 	if(!(user == src && src.hal_screwyhud == SCREWYHUD_HEALTHY)) //fake healthy
@@ -159,23 +159,25 @@
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
 
 /mob/living/carbon/examine_more(mob/user)
-	if(!all_scars)
-		return ..()
-
+	. = list()
+	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE_MORE, user, .)
 	var/list/visible_scars
-	for(var/i in all_scars)
-		var/datum/scar/S = i
-		if(S.is_visible(user))
-			LAZYADD(visible_scars, S)
+	if(all_scars)
+		for(var/i in all_scars)
+			var/datum/scar/S = i
+			if(S.is_visible(user))
+				LAZYADD(visible_scars, S)
 
-	if(!visible_scars)
-		return ..()
+	if(visible_scars)
+		var/msg = list("<span class='notice'><i>Вы осматриваете [src] получше, и замечаете...</i></span>")
+		for(var/i in visible_scars)
+			var/datum/scar/S = i
+			var/scar_text = S.get_examine_description(user)
+			if(scar_text)
+				msg += "[scar_text]"
+		. += msg
 
-	var/msg = list("<span class='notice'><i>Вы осматриваете [src] получше, и замечаете...</i></span>")
-	for(var/i in visible_scars)
-		var/datum/scar/S = i
-		var/scar_text = S.get_examine_description(user)
-		if(scar_text)
-			msg += "[scar_text]"
+	if(!LAZYLEN(.)) // lol ..length
+		return list("<span class='notice'><i>Вы осматриваете - [src] - получше, но более не находите ничего интересного...</i></span>")
 
-	return msg
+	return

@@ -74,6 +74,13 @@
 	if(message)
 		user.visible_message("<span class='lewd'><b>[user]</b> [message].</span>")
 		M.handle_post_sex(intencity, null, src)
+
+		switch (user.zone_selected)
+			if (BODY_ZONE_PRECISE_GROIN)
+				user.client?.plug13.send_emote(PLUG13_EMOTE_GROIN, min(intencity * 5, 100), PLUG13_DURATION_NORMAL)
+			if(BODY_ZONE_CHEST)
+				user.client?.plug13.send_emote(PLUG13_EMOTE_CHEST, min(intencity * 5, 100), PLUG13_DURATION_NORMAL)
+
 		switch(mode)
 			if(1)
 				playsound(loc, pick('modular_bluemoon/Gardelin0/sound/effect/lewd/toys/devicevibrator1.ogg',
@@ -89,7 +96,8 @@
 				M.Stun(3)
 				if(prob(50))
 					M.emote("moan")
-
+		if(!HAS_TRAIT(M, TRAIT_LEWD_JOB))
+			new /obj/effect/temp_visual/heart(M.loc)
 	else if(user.a_intent == INTENT_HARM)
 		return ..()
 
@@ -114,6 +122,13 @@
 	if(message)
 		user.visible_message("<span class='lewd'><b>[user]</b> [message].</span>")
 		M.handle_post_sex(intencity, null, src)
+
+		switch (user.zone_selected)
+			if (BODY_ZONE_PRECISE_GROIN)
+				user.client?.plug13.send_emote(PLUG13_EMOTE_GROIN, min(intencity * 5, 100), PLUG13_DURATION_NORMAL)
+			if(BODY_ZONE_CHEST)
+				user.client?.plug13.send_emote(PLUG13_EMOTE_CHEST, min(intencity * 5, 100), PLUG13_DURATION_NORMAL)
+
 		switch(mode)
 			if(1)
 				playsound(loc, pick('modular_bluemoon/Gardelin0/sound/effect/lewd/toys/devicevibrator1.ogg',
@@ -129,6 +144,9 @@
 				M.Stun(3)
 				if(prob(50))
 					M.emote("moan")
+
+		if(!HAS_TRAIT(M, TRAIT_LEWD_JOB))
+			new /obj/effect/temp_visual/heart(M.loc)
 
 /obj/item/magicwand/equipped(mob/living/carbon/M)
 	. = ..()

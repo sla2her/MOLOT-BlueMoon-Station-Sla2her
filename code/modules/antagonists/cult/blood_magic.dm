@@ -49,7 +49,7 @@
 			to_chat(owner, "<span class='cultitalic'>Your body has reached its limit, you cannot store more than [MAX_BLOODCHARGE] spells at once. <b>Pick a spell to nullify.</b></span>")
 		else
 			to_chat(owner, "<span class='cultitalic'>Your body has reached its limit, <b><u>you cannot have more than [RUNELESS_MAX_BLOODCHARGE] spells at once without an empowering rune! Pick a spell to nullify.</b></u></span>")
-		var/nullify_spell = input(owner, "Choose a spell to remove.", "Current Spells") as null|anything in spells
+		var/nullify_spell = tgui_input_list(owner, "Выберете заклинание для замены.", "Доступные заклинания", spells)
 		if(nullify_spell)
 			qdel(nullify_spell)
 		return
@@ -61,9 +61,9 @@
 		var/cult_name = initial(J.name)
 		possible_spells[cult_name] = J
 	possible_spells += "(REMOVE SPELL)"
-	entered_spell_name = input(owner, "Pick a blood spell to prepare...", "Spell Choices") as null|anything in possible_spells
+	entered_spell_name = tgui_input_list(owner, "Подготовка магии крови...", "Список заклинаний", possible_spells)
 	if(entered_spell_name == "(REMOVE SPELL)")
-		var/nullify_spell = input(owner, "Choose a spell to remove.", "Current Spells") as null|anything in spells
+		var/nullify_spell = tgui_input_list(owner, "Выберете заклинание для замены.", "Доступные заклинания", spells)
 		if(nullify_spell)
 			qdel(nullify_spell)
 		return
@@ -203,7 +203,7 @@
 			to_chat(owner, "<span class='warning'>A ritual dagger appears in your hand!</span>")
 		else
 			owner.visible_message("<span class='warning'>A ritual dagger appears at [owner]'s feet!</span>", \
-				 "<span class='cultitalic'>A ritual dagger materializes at your feet.</span>")
+					"<span class='cultitalic'>A ritual dagger materializes at your feet.</span>")
 		SEND_SOUND(owner, sound('sound/effects/magic.ogg',0,1,25))
 		charges--
 		desc = base_desc
@@ -357,7 +357,6 @@
 
 /obj/item/melee/blood_magic/Initialize(mapload, spell)
 	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, CULT_TRAIT)
 	if(spell)
 		source = spell
 		uses = source.charges
@@ -501,8 +500,8 @@
 
 	var/turf/T = get_turf(src)
 	if(is_away_level(T.z))
-		to_chat(user, "<span class='cultitalic'>You are not in the right dimension!</span>")
-		log_game("Teleport spell failed - user in away mission")
+		to_chat(user, "<span class='cultitalic'>Вы находитесь не в том измерении!</span>")
+		log_game("Руна телепортации не сработала - пользователь находится за Вратами.")
 		return
 
 	var/input_rune_key = input(user, "Choose a rune to teleport to.", "Rune to Teleport to") as null|anything in potential_runes //we know what key they picked
@@ -659,7 +658,6 @@
 					makeNewConstruct(/mob/living/simple_animal/hostile/construct/builder, candidate, user, 0, T)
 			SEND_SOUND(user, sound('sound/effects/magic.ogg',0,1,25))
 			uses--
-			candidate.mmi = null
 			qdel(candidate)
 		else
 			candidate.color = prev_color
@@ -881,3 +879,16 @@
 					else
 						to_chat(user, "<span class='cultitalic'>You need a free hand for this rite!</span>")
 						qdel(rite)
+			if("Bloody Bastard Sword (750)")
+				if(uses < 750)
+					to_chat(user, "<span class='cultitalic'>You need 750 charges to perform this rite.</span>")
+				else
+					uses -= 750
+					var/turf/T = get_turf(user)
+					qdel(src)
+					var/obj/item/cult_bastard/rite = new(T)
+					if(user.put_in_hands(rite))
+						to_chat(user, "<span class='cultitalic'>A [rite.name] appears in your hand!</span>")
+					else
+						user.visible_message("<span class='warning'>A [rite.name] appears at [user]'s feet!</span>", \
+							"<span class='cultitalic'>A [rite.name] materializes at your feet.</span>")

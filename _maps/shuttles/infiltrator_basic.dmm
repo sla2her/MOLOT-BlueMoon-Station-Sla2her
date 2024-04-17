@@ -54,11 +54,8 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/bridge)
 "aj" = (
-/obj/machinery/computer/shuttle/syndicate{
-	icon_keyboard = "inteq_key";
-	icon_screen = "inteqshuttle"
-	},
 /obj/effect/turf_decal/bot_white,
+/obj/machinery/computer/shuttle/syndicate,
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/bridge)
 "ak" = (
@@ -111,7 +108,7 @@
 	name = "Cockpit View Control";
 	pixel_x = 32;
 	pixel_y = 32;
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/bridge)
@@ -143,7 +140,7 @@
 "av" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Cockpit";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/bridge)
@@ -315,7 +312,7 @@
 "aW" = (
 /obj/machinery/door/airlock/external{
 	name = "Ready Room";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/hallway)
@@ -339,7 +336,7 @@
 	id = "smindicate";
 	name = "external door control";
 	pixel_y = 26;
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/docking_port/mobile{
 	dheight = 1;
@@ -357,18 +354,18 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/elevatorshaft,
+/turf/open/floor/iron/dark/small,
 /area/shuttle/inteq/airlock)
 "ba" = (
 /obj/machinery/door/airlock/external{
 	name = "E.V.A. Gear Storage";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/eva)
 "bb" = (
 /obj/machinery/door/airlock/external{
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/airlock)
@@ -577,49 +574,49 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/medical)
 "bJ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/medical)
 "bK" = (
 /obj/machinery/door/airlock/hatch{
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/medical)
 "bL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_edge,
 /area/shuttle/inteq/hallway)
 "bM" = (
 /obj/machinery/door/airlock/hatch{
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/armory)
 "bN" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/armory)
 "bO" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/armory)
 "bQ" = (
 /obj/effect/turf_decal/bot_white,
@@ -642,25 +639,27 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/medical)
 "bT" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/medical)
 "bU" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_edge{
+	dir = 1
+	},
 /area/shuttle/inteq/hallway)
 "bV" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/armory)
 "bW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/turf/open/floor/iron/smooth,
+/turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/inteq/armory)
 "bY" = (
 /obj/structure/window/reinforced{
@@ -676,7 +675,7 @@
 /obj/machinery/door/window{
 	dir = 1;
 	name = "Surgery";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq/medical)
@@ -746,7 +745,7 @@
 /obj/machinery/door/window{
 	dir = 1;
 	name = "Technological Storage";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq/armory)
@@ -814,14 +813,14 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/inteq/hallway)
 "cs" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/iron/dark/small,
+/obj/machinery/recharge_station/fullupgrade,
+/turf/open/floor/circuit/red,
 /area/shuttle/inteq/armory)
 "ct" = (
 /obj/machinery/telecomms/allinone{
 	intercept = 1
 	},
-/turf/open/floor/iron/dark/small,
+/turf/open/floor/circuit/red,
 /area/shuttle/inteq/armory)
 "cu" = (
 /obj/structure/shuttle/engine/heater,

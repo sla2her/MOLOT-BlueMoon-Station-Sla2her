@@ -270,7 +270,7 @@
 		if(SA_pp > SA_para_min) // Enough to make us stunned for a bit
 			H.Unconscious(60) // 60 gives them one second to wake up and run away a bit!
 			if(SA_pp > SA_sleep_min) // Enough to make us sleep as well
-				H.Sleeping(max(H.AmountSleeping() + 40, 200))
+				H.Sleeping(max(H.AmountSleeping() + 100, 400)) // BLUEMOON EDIT, WAS H.Sleeping(max(H.AmountSleeping() + 40, 400)) - сервак лагает и под анестезией просыпаются
 		else if(SA_pp > 0.01)	// There is sleeping gas in their lungs, but only a little, so give them a bit of a warning
 			if(prob(20))
 				H.emote(pick("giggle", "laugh"))
@@ -436,18 +436,26 @@
 	var/is_cooling = 0
 	var/cooling_coolant_drain = 5	//Coolant (blood) use per tick of active cooling.
 	var/next_warn = BLOOD_VOLUME_NORMAL
-	actions_types = list(/datum/action/item_action/organ_action/toggle)
+//	actions_types = list(/datum/action/item_action/organ_action/toggle) (BLUEMOON REMOVAL - заменено на portable coolant unit)
+	organ_flags = ORGAN_SYNTHETIC // BLUEMOON ADD - органы синтетиков не должны гнить и должны быть подвержены ЭМИ
 
 /obj/item/organ/lungs/ipc/emp_act(severity) //Should probably put it somewhere else later
 	. = ..()
 	if(. & EMP_PROTECT_SELF)
 		return
-	to_chat(owner, "<span class='warning'>Alert: Critical cooling system failure!</span>")
+	to_chat(owner, "<span class='warning'>Alert: Moderate cooling system failure!</span>")
 	switch(severity)
 		if(1 to 50)
 			owner.adjust_bodytemperature(30*TEMPERATURE_DAMAGE_COEFFICIENT)
 		if(50 to INFINITY)
 			owner.adjust_bodytemperature(100*TEMPERATURE_DAMAGE_COEFFICIENT)
+
+	// BLUEMOON ADD START - шанс на перманентный выход из строя
+	if(prob(10)) //Chance of permanent effects
+		organ_flags |= ORGAN_SYNTHETIC_EMP //Starts organ faliure - gonna need replacing soon.
+		if(HAS_TRAIT(owner, TRAIT_ROBOTIC_ORGANISM))
+			to_chat(owner, span_userdanger("Fatal failure detected in the cooling system - Seek for replace immediately."))
+	// BLUEMOON ADD END
 
 /obj/item/organ/lungs/ipc/ui_action_click(mob/user, actiontype)
 	if(!owner)
@@ -456,11 +464,11 @@
 		to_chat(user, "<span class='notice'>Biotype incompatible with cooling system. Activation signal suppressed.</span>")
 		return
 	if(!is_cooling && owner.blood_volume < cooling_coolant_drain)
-		to_chat(user, "<span class='warning'>Coolant levels insufficient to enable active cooling - Replenish immediately.</span>")
+		to_chat(user, "<span class='warning'>Hydraulic fluid level is insufficient to enable active cooling - Replenish immediately.</span>") // BLUEMOON EDIT - написал "гидравлическая жидкость"
 		return
 
 	is_cooling = !is_cooling
-	to_chat(user, "<span class='notice'>Active cooling [is_cooling ? "enabled" : "disabled"] - current coolant level: [round(owner.blood_volume / BLOOD_VOLUME_NORMAL * 100, 0.1)] percent.</span>")
+	to_chat(user, "<span class='notice'>Active cooling [is_cooling ? "enabled" : "disabled"] - current hydraulic fluid level: [round(owner.blood_volume / BLOOD_VOLUME_NORMAL * 100, 0.1)] percent.</span>") // BLUEMOON EDIT - написал "гидравлическая жидкость"
 	var/possible_next_warn = owner.blood_volume - (BLOOD_VOLUME_NORMAL * 0.1)
 	if(possible_next_warn > next_warn)
 		next_warn = possible_next_warn	//If we recovered blood inbetween activations, update warning
@@ -483,7 +491,7 @@
 		is_cooling = 0
 		return
 	if(owner.blood_volume < cooling_coolant_drain)
-		to_chat(owner, "<span class='warning'>Coolant levels insufficient to maintain active cooling - Replenish immediately.</span>")
+		to_chat(owner, "<span class='warning'>Hydraulic fluid levels insufficient to maintain active cooling - Replenish immediately.</span>") // BLUEMOON EDIT - написал "гидравлическая жидкость"
 		is_cooling = 0
 		return
 	if(abs(owner.bodytemperature - T20C) < SYNTH_ACTIVE_COOLING_TEMP_BOUNDARY)
@@ -500,7 +508,7 @@
 		actual_drain *= SYNTH_ACTIVE_COOLING_LOW_PRESSURE_PENALTY	//Our cooling system can handle hot places okayish, but starts to cry at low pressures (reads: Effectively vents hot coolant thats been warmed up via internal heat-exchange as emergency measure and with very low efficiency)
 	owner.blood_volume = max(owner.blood_volume - actual_drain, 0)
 	if(owner.blood_volume <= next_warn)
-		to_chat(owner, "[owner.blood_volume > BLOOD_VOLUME_BAD ? "<span class='notice'>" : "<span class='warning'>"]Coolant level passed threshold - now [round(owner.blood_volume / BLOOD_VOLUME_NORMAL * 100, 0.1)] percent.</span>")
+		to_chat(owner, "[owner.blood_volume > BLOOD_VOLUME_BAD ? "<span class='notice'>" : "<span class='warning'>"]Hydraulic fluid level passed threshold - now [round(owner.blood_volume / BLOOD_VOLUME_NORMAL * 100, 0.1)] percent.</span>") // BLUEMOON EDIT - написал "гидравлическая жидкость"
 		next_warn -= (BLOOD_VOLUME_NORMAL * 0.1)
 
 /obj/item/organ/lungs/plasmaman

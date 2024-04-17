@@ -31,7 +31,7 @@
 
 /datum/movespeed_modifier/equipment_speedmod
 	variable = TRUE
-	blacklisted_movetypes = FLOATING
+	blacklisted_movetypes = FLOATING|FLYING
 
 /datum/movespeed_modifier/grab_slowdown
 	id = MOVESPEED_ID_MOB_GRAB_STATE
@@ -87,6 +87,14 @@
 /datum/movespeed_modifier/human_carry
 	variable = TRUE
 
+// BLUEMOON ADD START - замедление для увеличившихся и уменьшившихся роботов
+/datum/movespeed_modifier/changed_robot_size
+	multiplicative_slowdown = 1
+	variable = TRUE
+
+/datum/movespeed_modifier/changed_robot_size/shrink
+	multiplicative_slowdown = 2
+// BLUEMOON ADD END
 /datum/movespeed_modifier/limbless
 	variable = TRUE
 	movetypes = GROUND

@@ -110,7 +110,7 @@
 	singular_name = "grass floor tile"
 	desc = "A patch of grass like they use on space golf courses."
 	turf_type = /turf/open/floor/grass
-	icon_state = "tile_grass_gross"
+	icon_state = "tile_grass"
 
 /obj/item/stack/tile/grass/grass0
 	name = "Grass Tile 2"
@@ -138,7 +138,7 @@
 	singular_name = "grass floor tile"
 	desc = "A patch of grass like they use on space golf courses."
 	turf_type = /turf/open/floor/grass/grass3
-	icon_state = "tile_grass"
+	icon_state = "tile_grass_gross"
 
 /turf/open/floor/grass/grass0
 	icon_state = "grass0"
@@ -613,8 +613,9 @@
 
 /obj/item/stack/tile/plasteel/cyborg
 	custom_materials = null // All other Borg versions of items have no Metal or Glass - RR
-	is_cyborg = 1
-	cost = 125
+	is_cyborg = TRUE
+	source = /datum/robot_energy_storage/metal
+	cost = MINERAL_MATERIAL_AMOUNT * 0.0625
 
 /obj/item/stack/tile/material
 	name = "floor tile"

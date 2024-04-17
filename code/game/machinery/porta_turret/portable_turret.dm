@@ -339,7 +339,7 @@ DEFINE_BITFIELD(turret_flags, list(
 			locked = !locked
 			to_chat(user, "<span class='notice'>Controls are now [locked ? "locked" : "unlocked"].</span>")
 		else
-			to_chat(user, "<span class='alert'>Access denied.</span>")
+			to_chat(user, "<span class='alert'>Доступ запрещён.</span>")
 	else if(I.tool_behaviour == TOOL_MULTITOOL && !locked)
 		if(!multitool_check_buffer(user, I))
 			return
@@ -415,9 +415,9 @@ DEFINE_BITFIELD(turret_flags, list(
 	if(cover && obj_integrity < max_integrity)
 		if(!I.tool_start_check(user, amount=0))
 			return
-		user.visible_message("[user] is welding the turret.", \
-						"<span class='notice'>You begin repairing the turret...</span>", \
-						"<span class='italics'>You hear welding.</span>")
+		user.visible_message("[user] чинит турель сваркой.", \
+						"<span class='notice'>Вы начинаете чинить турель...</span>", \
+						"<span class='italics'>Вы слышите звук сварки.</span>")
 		if(I.use_tool(src, user, 40, volume=50))
 			obj_integrity = max_integrity
 			user.visible_message("[user.name] has repaired [src].", \
@@ -565,7 +565,7 @@ DEFINE_BITFIELD(turret_flags, list(
 			return 10
 
 	if(turret_flags & TURRET_FLAG_AUTH_WEAPONS)	//check for weapon authorization
-		if(isnull(perp.wear_id) || istype(perp.wear_id.GetID(), /obj/item/card/id/syndicate))
+		if((isnull(perp.wear_id) || istype(perp.wear_id?.GetID(), /obj/item/card/id/syndicate)) && (isnull(perp.wear_neck) || istype(perp.wear_neck?.GetID(), /obj/item/card/id/syndicate)))
 
 			if(allowed(perp)) //if the perp has security access, return 0
 				return 0
@@ -578,7 +578,7 @@ DEFINE_BITFIELD(turret_flags, list(
 	if(turret_flags & TURRET_FLAG_SHOOT_CRIMINALS)	//if the turret can check the records, check if they are set to *Arrest* on records
 		var/perpname = perp.get_face_name(perp.get_id_name())
 		var/datum/data/record/R = find_record("name", perpname, GLOB.data_core.security)
-		if(!R || (R.fields["criminal"] == "*Arrest*"))
+		if(!R || (R.fields["criminal"] == SEC_RECORD_STATUS_ARREST || SEC_RECORD_STATUS_EXECUTE || SEC_RECORD_STATUS_INCARCERATED))
 			threatcount += 4
 
 	if((turret_flags & TURRET_FLAG_SHOOT_UNSHIELDED) && (!HAS_TRAIT(perp, TRAIT_MINDSHIELD)))
@@ -761,7 +761,14 @@ DEFINE_BITFIELD(turret_flags, list(
 	return
 
 /obj/machinery/porta_turret/syndicate/assess_perp(mob/living/carbon/human/perp)
-	return 10 //Syndicate turrets shoot everything not in their faction
+	var/obj/item/card/id/target_card = perp.get_idcard(FALSE)
+	if(target_card && (ACCESS_SYNDICATE in target_card?.access) && istype(target_card, /obj/item/card/id/syndicate))
+		if(istype(target_card, /obj/item/card/id/inteq) || istype(target_card, /obj/item/card/id/inteq/anyone) || istype(target_card, /obj/item/card/id/inteq/nuke_leader))
+			return 10	//no InteQ allowed!
+		else
+			return 0
+	else
+		return 10 //Syndicate turrets shoot everything not in their faction
 
 /obj/machinery/porta_turret/syndicate/energy
 	icon_state = "standard_stun"
@@ -790,28 +797,41 @@ DEFINE_BITFIELD(turret_flags, list(
 	integrity_failure = 0.08
 	armor = list(MELEE = 50, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 50, BIO = 0, RAD = 0, FIRE = 90, ACID = 90)
 
+/obj/machinery/porta_turret/syndicate/energy/pirate/assess_perp(mob/living/carbon/human/perp)
+	return 10
+
 /obj/machinery/porta_turret/syndicate/energy/raven
 	stun_projectile =  /obj/item/projectile/beam/laser
 	stun_projectile_sound = 'sound/weapons/laser.ogg'
 	faction = list("neutral","silicon","turret")
 
+/obj/machinery/porta_turret/syndicate/energy/raven/assess_perp(mob/living/carbon/human/perp)
+	return 10
+
 /obj/machinery/porta_turret/syndicate/pod
 	integrity_failure = 0.5
+	shot_delay = 2
 	max_integrity = 40
 	stun_projectile = /obj/item/projectile/bullet/syndicate_turret
 	lethal_projectile = /obj/item/projectile/bullet/syndicate_turret
 
 /obj/machinery/porta_turret/syndicate/shuttle
 	scan_range = 9
-	shot_delay = 20
-	stun_projectile = /obj/item/projectile/bullet/p50/penetrator/shuttle
-	lethal_projectile = /obj/item/projectile/bullet/p50/penetrator/shuttle
+	shot_delay = 3
+	stun_projectile = /obj/item/projectile/bullet/syndicate_turret
+	lethal_projectile = /obj/item/projectile/bullet/syndicate_turret
 	lethal_projectile_sound = 'sound/weapons/gunshot_smg.ogg'
 	stun_projectile_sound = 'sound/weapons/gunshot_smg.ogg'
 	armor = list(MELEE = 50, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 80, BIO = 0, RAD = 0, FIRE = 90, ACID = 90)
 
 /obj/machinery/porta_turret/syndicate/pod/toolbox
-	max_integrity = 100
+	icon_state = "toolbox_off"
+	base_icon_state = "toolbox"
+	max_integrity = 220
+
+/obj/machinery/porta_turret/syndicate/pod/toolbox/Initialize(mapload)
+	. = ..()
+	underlays += image(icon = icon, icon_state = "[base_icon_state]_frame")
 
 /obj/machinery/porta_turret/syndicate/shuttle/target(atom/movable/target)
 	if(target)
@@ -991,7 +1011,7 @@ DEFINE_BITFIELD(turret_flags, list(
 			locked = !locked
 			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the panel.</span>")
 		else
-			to_chat(user, "<span class='alert'>Access denied.</span>")
+			to_chat(user, "<span class='alert'>Доступ запрещён.</span>")
 
 /obj/machinery/turretid/emag_act(mob/user)
 	if(obj_flags & EMAGGED)

@@ -167,9 +167,18 @@
 	AddComponent(/datum/component/squeak, list('sound/effects/footstep/sec_boots-1.ogg' = 1,'sound/effects/footstep/sec_boots-2.ogg' = 1), 75)
 
 /obj/item/clothing/shoes/jackboots/sec
-	name = "security jackboots"
+	name = "Security Jackboots"
 	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
 	icon_state = "jackboots_sec"
+
+/obj/item/clothing/shoes/jackboots/alliance
+	name = "Alliance Jackboots"
+	desc = "Берцовые Ботинки для представителей Вселенского Союза."
+	icon_state = "wjboots"
+
+/obj/item/clothing/shoes/jackboots/alliance/Initialize()
+	. = ..()
+	AddComponent(/datum/component/squeak, list('sound/effects/footstep/jackboot1.ogg' = 1,'sound/effects/footstep/jackboot2.ogg' = 1), 75)
 
 /obj/item/clothing/shoes/jackboots/fast
 	slowdown = -1
@@ -459,7 +468,7 @@
 	desc = "Contrary to popular belief, these do not allow you to walk on walls. Through bluespace magic stolen from an organisation that hoards technology, they simply allow you to slip through the atoms that make up anything, but only while walking, for safety reasons. As well as this, they unfortunately cause minor breath loss as the majority of atoms in your lungs are sucked out into any solid object you walk through. Make sure not to overuse them."
 	icon_state = "walkboots"
 	var/walkcool = 0
-	var/wallcharges = 4
+	var/wallcharges = 20
 	var/newlocobject = null
 
 /obj/item/clothing/shoes/timidcostume

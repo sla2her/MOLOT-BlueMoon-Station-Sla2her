@@ -609,12 +609,12 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 	if (H.canloadappearance == TRUE)
 		SEND_SOUND(H, 'sound/misc/server-ready.ogg')
 		to_chat(H, "<span class='boldannounce'>Вам разрешено использовать своего персонажа.</span>")
-		if(alert(H, "Желаете текущего своего выбранного персонажа?", "Warning", "Yes", "No") == "Yes")
+		if(alert(H, "Желаете загрузить текущего своего выбранного персонажа?", "Warning", "Yes", "No") == "Yes")
 			if(alert(H, "Вам разрешено использовать персонажей, которые ещё не были в раунде. Вы понимаете это?", "Warning", "Yes", "No") == "Yes")
 				H.client.prefs.copy_to(H)
 				H.real_name = H.client.prefs.real_name
 				H.mind.name = H.real_name //Makes sure to change their mind name to their real name.
-				SSquirks.AssignQuirks(H, H.client, TRUE, FALSE, H.job, FALSE)//This Assigns the selected character's quirks
+				SSquirks.AssignQuirks(H, H.client, TRUE, FALSE, SSjob.GetJob(H.job), FALSE)//This Assigns the selected character's quirks
 				SSlanguage.AssignLanguage(H, H.client)
 				H.dna.update_dna_identity() //This makes sure their DNA is updated.
 				var/obj/item/card/id/idCard = H.get_idcard() //Time to change their ID card as well if they have one.

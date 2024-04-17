@@ -2,6 +2,7 @@
 	key = "blush"
 	key_third_person = "blushes"
 	message = "краснеет."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/blush/run_emote(mob/user, params)
 	. = ..()
@@ -20,14 +21,15 @@
 	key_third_person = "chokes"
 	message = "задыхается!"
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/choke/run_emote(mob/user, params)
 	. = ..()
 	var/mob/living/carbon/C = user
 	if(. && iscarbon(user))
-		if(user.gender == FEMALE)
+		if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 			playsound(C, pick('sound/voice/gasp_female1.ogg', 'sound/voice/gasp_female2.ogg', 'sound/voice/gasp_female3.ogg', 'sound/voice/gasp_female4.ogg', 'sound/voice/gasp_female5.ogg', 'sound/voice/gasp_female6.ogg', 'sound/voice/gasp_female7.ogg'), 50, 1)
-		else
+		else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 			playsound(C, pick('sound/voice/gasp_male1.ogg', 'sound/voice/gasp_male2.ogg', 'sound/voice/gasp_male3.ogg', 'sound/voice/gasp_male4.ogg', 'sound/voice/gasp_male5.ogg', 'sound/voice/gasp_male6.ogg', 'sound/voice/gasp_male7.ogg',), 50, 1)
 
 /datum/emote/living/cross
@@ -35,20 +37,23 @@
 	key_third_person = "crosses"
 	message = "скрещивает свои руки."
 	restraint_check = TRUE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/chuckle
 	key = "chuckle"
 	key_third_person = "chuckles"
 	message = "усмехается."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
+	emote_cooldown = 3 SECONDS
 
 /datum/emote/living/chuckle/run_emote(mob/user, params)
 	. = ..()
 	var/mob/living/carbon/C = user
 	if(. && iscarbon(user))
-		if(user.gender == FEMALE)
+		if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 			playsound(C, pick('sound/voice/chuckle_f.ogg'), 50, 1)
-		else
+		else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 			playsound(C, pick('sound/voice/chuckle_m.ogg'), 50, 1)
 
 /datum/emote/living/collapse
@@ -67,6 +72,7 @@
 	key = "cough"
 	key_third_person = "coughs"
 	message = "кашляет!"
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/cough/can_run_emote(mob/user, status_check = TRUE , intentional)
@@ -78,9 +84,9 @@
 	. = ..()
 	var/mob/living/carbon/C = user
 	if(. && iscarbon(user))
-		if(user.gender == FEMALE)
+		if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 			playsound(C, pick('sound/voice/female_cough1.ogg', 'sound/voice/female_cough2.ogg', 'sound/voice/female_cough3.ogg', 'sound/voice/female_cough4.ogg', 'sound/voice/female_cough5.ogg', 'sound/voice/female_cough6.ogg'), 50, 1)
-		else
+		else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 			playsound(C, pick('sound/voice/male_cough1.ogg', 'sound/voice/male_cough2.ogg', 'sound/voice/male_cough3.ogg', 'sound/voice/male_cough4.ogg'), 50, 1)
 
 /datum/emote/living/dance
@@ -88,15 +94,11 @@
 	key_third_person = "dances"
 	message = "радостно танцует."
 	restraint_check = TRUE
+	emote_cooldown = 3 SECONDS
 
 /datum/emote/living/dance/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
 	if(ishuman(user))
-		if(user.nextsoundemote >= world.time)
-			to_chat(user, span_warning("Рано! Очень рано!!"))
-			SEND_SOUND(user, 'sound/machines/buzz-sigh.ogg')
-			return
-		user.nextsoundemote = world.time + 5 SECONDS
 		user.SpinAnimation(8,4)
 		user.spin(30, 1)
 
@@ -110,32 +112,49 @@
 	message_larva = "выпускает воздух с тошнотворным шипением и падает на пол...."
 	message_monkey = "издает свой последний крик, когда последние частицы души уходят из тела и наконец-то... перестает двигаться..."
 	message_simple =  "прекращает всякое движение..."
+	emote_cooldown = 9 SECONDS // BLUEMOON EDIT - повысил кулдаун эмоута в связи с возможно слишком долгими/громкими кастомными звуками
 	stat_allowed = UNCONSCIOUS
 
+// BLUEMOON EDIT START - настройки эмоута смерти в преференсах
 /datum/emote/living/deathgasp/run_emote(mob/user, params)
-    var/mob/living/simple_animal/S = user
-    if(istype(S) && S.deathmessage)
-        message_simple = S.deathmessage
-    . = ..()
-    message_simple = initial(message_simple)
-    if(. && user.deathsound)
-        if(isliving(user))
-            var/mob/living/L = user
-            if(!L.can_speak_vocal() || L.oxyloss >= 50)
-                return //stop the sound if oxyloss too high/cant speak
-        playsound(user, pick(user.deathsound), 200, 0, 0)
-    if(. && isalienadult(user))
-        playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
+	var/mob/living/simple_animal/S = user
+	if(user?.client?.prefs?.features["custom_deathgasp"])
+		message = user.client.prefs.features["custom_deathgasp"]
+	if(istype(S) && S.deathmessage)
+		message_simple = S.deathmessage
+	. = ..()
+	message = initial(message)
+	message_simple = initial(message_simple)
+	if(!.)
+		return
+	var/deathsound = pick(user.deathsound)
+	if(isalienadult(user))
+		deathsound = 'sound/voice/hiss6.ogg'
+	if(user?.client?.prefs?.features["custom_deathsound"]) // Если у клиента выбран соответствующий преференс - он приоритетнее всего
+		var/preference_deathsound = GLOB.deathgasp_sounds[user.client.prefs.features["custom_deathsound"]]
+		if(preference_deathsound == -1) // Беззвучный
+			return
+		if(preference_deathsound)
+			deathsound = preference_deathsound
+	if(deathsound)
+		if(isliving(user))
+			var/mob/living/L = user
+			if(!L.can_speak_vocal() || (L.oxyloss >= 50 && !HAS_TRAIT(L, TRAIT_NOBREATH)))
+				return //stop the sound if oxyloss too high/cant speak
+		playsound(user, deathsound, 200, 0, 0)
+// BLUEMOON EDIT END
 
 /datum/emote/living/drool
 	key = "drool"
 	key_third_person = "drools"
 	message = "пускает слюни."
+	stat_allowed = SOFT_CRIT // BLUEMOON ADD - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/faint
 	key = "faint"
 	key_third_person = "faints"
 	message = "падает без сознания."
+	stat_allowed = SOFT_CRIT
 
 /datum/emote/living/faint/run_emote(mob/user, params)
 	. = ..()
@@ -174,6 +193,7 @@
 	key = "frown"
 	key_third_person = "frowns"
 	message = "хмурится."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/gag
 	key = "gag"
@@ -192,7 +212,7 @@
 	. = ..()
 	var/mob/living/carbon/C = user
 	if(. && iscarbon(user))
-		if(user.gender == FEMALE)
+		if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 			playsound(C, pick(
 				'sound/voice/gasp_female1.ogg',
 				'sound/voice/gasp_female2.ogg',
@@ -202,7 +222,7 @@
 				'sound/voice/gasp_female6.ogg',
 				'sound/voice/gasp_female7.ogg'),
 			10, TRUE, extrarange = -13) //2 tiles around
-		else
+		else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 			playsound(C, pick(
 				'sound/voice/gasp_male1.ogg',
 				'sound/voice/gasp_male2.ogg',
@@ -224,9 +244,9 @@
 	. = ..()
 	var/mob/living/carbon/C = user
 	if(. && iscarbon(user))
-		if(user.gender == FEMALE)
+		if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 			playsound(C, pick('sound/voice/female_giggle1.ogg', 'sound/voice/female_giggle2.ogg'), 50, 1)
-		else
+		else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 			playsound(C, pick('sound/voice/male_giggle1.ogg', 'sound/voice/male_giggle2.ogg'), 50, 1)
 
 /datum/emote/living/glare
@@ -235,6 +255,7 @@
 	message = "смотрит с ненавистью."
 	message_param = "смотрит с ненавистью на %t."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/grin
 	key = "grin"
@@ -264,10 +285,33 @@
 	key_third_person = "kisses"
 	message = "отправляет воздушный поцелуй."
 	message_param = "отправляет воздушный поцелуй для %t."
+
+/datum/emote/living/kiss/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return
+	var/kiss_type = /obj/item/hand_item/kisser
+
+	if(HAS_TRAIT(user, TRAIT_KISS_OF_DEATH))
+		kiss_type = /obj/item/hand_item/kisser/death
+
+	var/obj/item/kiss_blower = new kiss_type(user)
+	if(user.put_in_hands(kiss_blower))
+		to_chat(user, span_notice("You ready your kiss-blowing hand."))
+	else
+		qdel(kiss_blower)
+		to_chat(user, span_warning("You're incapable of blowing a kiss in your current state."))
+
+/datum/emote/living/kiss2
+	key = "kiss2"
+	key_third_person = "kisses"
+	message = "blows a kiss."
+	message_param = "blows a kiss to %t."
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/audio_emote
 	emote_type = EMOTE_AUDIBLE
+	emote_cooldown = 1 SECONDS
 
 /datum/emote/living/audio_emote/can_run_emote(mob/living/user, status_check = TRUE)
 	. = ..()
@@ -280,6 +324,7 @@
 	key_third_person = "laughs"
 	message = "смеётся."
 	message_mime = "тихо смеётся!"
+	emote_cooldown = 3 SECONDS
 
 /datum/emote/living/audio_emote/laugh/run_emote(mob/user, params)
 	. = ..()
@@ -305,16 +350,16 @@
 				'sound/voice/jelly/nyahehe.ogg'),
 				50, 1)
 				return
-			else if(user.gender == FEMALE)
+			else if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 				playsound(C, 'sound/voice/jelly/womanlaugh.ogg', 50, 1)
 				return
-			else
+			else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 				playsound(C, pick('sound/voice/jelly/manlaugh1.ogg', 'sound/voice/jelly/manlaugh2.ogg'), 50, 1)
 				return
 		else if(ishumanbasic(C))
-			if(user.gender == FEMALE)
+			if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 				playsound(C, pick('sound/voice/human/womanlaugh.ogg', 'sound/voice/female_laugh1.ogg', 'sound/voice/female_laugh2.ogg', 'sound/voice/female_laugh3.ogg'), 50, 1)
-			else
+			else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 				playsound(C, pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg', 'sound/voice/laugh_m1.ogg', 'sound/voice/laugh_m2.ogg', 'sound/voice/laugh_m3.ogg'), 50, 1)
 
 /datum/emote/living/audio_emote/chitter
@@ -322,6 +367,7 @@
 	key_third_person = "chitters"
 	message = "бубнит."
 	message_mime = "тихо бубнит."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/audio_emote/chitter/run_emote(mob/user, params)
 	. = ..()
@@ -335,12 +381,14 @@
 	key_third_person = "looks"
 	message = "смотрит."
 	message_param = "смотрит на %t."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/nod
 	key = "nod"
 	key_third_person = "nods"
 	message = "кивает головой."
 	message_param = "кивает головой в согласии с %t."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/point
 	key = "point"
@@ -367,6 +415,7 @@
 	key_third_person = "pouts"
 	message = "дуется."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/scream
 	key = "scream"
@@ -374,6 +423,7 @@
 	message = "кричит."
 	message_mime = "изображает крик!"
 	emote_type = EMOTE_AUDIBLE
+	emote_cooldown = 3 SECONDS
 
 /datum/emote/living/scowl
 	key = "scowl"
@@ -386,25 +436,30 @@
 	key_third_person = "shakes"
 	message = "качает своей головой в отрицании."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/shiver
 	key = "shiver"
 	key_third_person = "shiver"
 	message = "вздрагивает."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/sigh
 	key = "sigh"
 	key_third_person = "sighs"
 	message = "вздыхает."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/sigh/run_emote(mob/user, params)
 	. = ..()
+	if(!iscarbon(user) || !.)
+		return
 	var/mob/living/carbon/C = user
-	if(user.gender == FEMALE)
+	if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 		playsound(C, pick('sound/voice/sigh_female.ogg'), 50, 1)
-	else
+	else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 		playsound(C, pick('sound/voice/sigh_male.ogg'), 50, 1)
 
 /datum/emote/living/sit
@@ -416,43 +471,50 @@
 	key = "smile"
 	key_third_person = "smiles"
 	message = "улыбается."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/smirk
 	key = "smirk"
 	key_third_person = "smirks"
 	message = "ухмыляется."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/sneeze
 	key = "sneeze"
 	key_third_person = "sneezes"
 	message = "чихает."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/sneeze/run_emote(mob/user, params)
 	. = ..()
+	if(!iscarbon(user) || !.)
+		return
 	var/mob/living/carbon/C = user
-	if(user.gender == FEMALE)
+	if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 		playsound(C, pick('sound/voice/sneezef1.ogg', 'sound/voice/sneezef2.ogg'), 50, 1)
-	else
+	else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 		playsound(C, pick('sound/voice/sneezem1.ogg', 'sound/voice/sneezem2.ogg'), 50, 1)
 
 /datum/emote/living/smug
 	key = "smug"
 	key_third_person = "smugs"
 	message = "самодовольно ухмыляется."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/sniff
 	key = "sniff"
 	key_third_person = "sniffs"
 	message = "sniffs."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/sniff/run_emote(mob/user, params)
 	. = ..()
 	var/mob/living/carbon/C = user
-	if(user.gender == FEMALE)
+	if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 		playsound(C, pick('sound/voice/sniff_f1.ogg'), 50, 1)
-	else
+	else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 		playsound(C, pick('sound/voice/sniff_m1.ogg'), 50, 1)
 
 /datum/emote/living/snore
@@ -468,16 +530,19 @@
 	key_third_person = "stares"
 	message = "пристально смотрит."
 	message_param = "пристально смотрит на %t."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/strech
 	key = "stretch"
 	key_third_person = "stretches"
 	message = "вытягивает руки."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/sulk
 	key = "sulk"
 	key_third_person = "sulks"
 	message = "печально опускает руки."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/surrender
 	key = "surrender"
@@ -506,15 +571,18 @@
 	key = "tremble"
 	key_third_person = "trembles"
 	message = "дрожит от страха!"
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/twitch
 	key = "twitch"
 	key_third_person = "twitches"
 	message = "сильно дёргается."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/twitch_s
 	key = "twitch_s"
 	message = "дёргается."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/wave
 	key = "wave"
@@ -531,19 +599,24 @@
 	key = "wsmile"
 	key_third_person = "wsmiles"
 	message = "слабо улыбается."
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 
 /datum/emote/living/yawn
 	key = "yawn"
 	key_third_person = "yawns"
 	message = "зевает."
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
+	emote_cooldown = 3 SECONDS
 
 /datum/emote/living/yawn/run_emote(mob/user, params)
 	. = ..()
+	if(!iscarbon(user) || !.)
+		return
 	var/mob/living/carbon/C = user
-	if(user.gender == FEMALE)
+	if(user.gender == FEMALE || (user.gender == PLURAL && isfeminine(user)))
 		playsound(C, pick('sound/voice/female_yawn1.ogg', 'sound/voice/female_yawn2.ogg'), 50, 1)
-	else
+	else if(user.gender != FEMALE || (user.gender == PLURAL && ismasculine(user)))
 		playsound(C, pick('sound/voice/male_yawn1.ogg', 'sound/voice/male_yawn2.ogg'), 50, 1)
 
 
@@ -551,6 +624,7 @@
 	key = "me"
 	key_third_person = "custom"
 	message = null
+	stat_allowed = SOFT_CRIT // BLUEMOON EDIT - некоторые эмоуты можно использовать в софткрите
 	emote_type = EMOTE_BOTH
 
 /datum/emote/living/custom/proc/check_invalid(mob/user, input)
@@ -583,6 +657,7 @@
 
 /datum/emote/living/help
 	key = "help"
+	stat_allowed = DEAD
 
 /datum/emote/living/help/run_emote(mob/user, params)
 	var/list/keys = list()
@@ -597,7 +672,7 @@
 		if(E.can_run_emote(user, status_check = FALSE))
 			keys += E.key
 
-	keys = sortList(keys)
+	keys = sort_list(keys)
 
 	for(var/emote in keys)
 		if(LAZYLEN(message) > 1)
@@ -617,6 +692,7 @@
 	message = "в процессе взлома Синдикатом."
 	sound = 'sound/machines/AISyndiHack.ogg'
 	mob_type_allowed_typecache = list(/mob/living/brain, /mob/living/silicon, /mob/living/carbon/human, /mob/camera/aiEye)
+	emote_cooldown = 10 SECONDS
 
 /datum/emote/sound/beep
 	key = "beep"
@@ -635,7 +711,7 @@
 	. = ..()
 	if(!.)
 		return
-	var/obj/item/circlegame/N = new(user)
+	var/obj/item/hand_item/circlegame/N = new(user)
 	if(user.put_in_hands(N))
 		to_chat(user, "<span class='notice'>Вы делаете круг пальцами своей руки.</span>")
 	else
@@ -651,7 +727,7 @@
 	. = ..()
 	if(!.)
 		return
-	var/obj/item/slapper/N = new(user)
+	var/obj/item/hand_item/slapper/N = new(user)
 	if(user.put_in_hands(N))
 		to_chat(user, "<span class='notice'>Ты готовишь свою руку для пощечины.</span>")
 	else

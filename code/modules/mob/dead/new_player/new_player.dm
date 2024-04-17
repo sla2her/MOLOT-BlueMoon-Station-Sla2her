@@ -546,7 +546,7 @@
 
 	if(humanc && CONFIG_GET(flag/roundstart_traits))
 		SSquirks.AssignQuirks(humanc, humanc.client, TRUE, FALSE, job, FALSE)
-	//skyrat change
+	//sandstorm change
 	if(humanc)
 		SSlanguage.AssignLanguage(humanc, humanc.client, TRUE, FALSE, job, FALSE)
 
@@ -561,6 +561,12 @@
 
 
 /mob/dead/new_player/proc/LateChoices()
+	// BLUEMOON ADD START - предупреждение, если у игрока включены роли
+	if((client.prefs.toggles & MIDROUND_ANTAG) && !(client.prefs.toggles & NO_ANTAG))
+		if(alert(src, "У вас включена возможность стать антагонистом посреди раунда. Вы уверены, что не хотите выключить её?", "...клянусь, что не сдам роль...", "Я готов", "Прошу временно отключить") == "Прошу временно отключить")
+			client.prefs.toggles ^= MIDROUND_ANTAG
+			to_chat(src, "<span class='redtext'>На этот раунд, у вас отключена возможность стать антагонистом посреди раунда (её можно включить в Character Setup > Preferences).</span>")
+	// BLUEMOON ADD END
 
 	var/level = "green"
 	switch(GLOB.security_level)
@@ -725,9 +731,9 @@
 	. = H
 	new_character = .
 	if(transfer_after)
-		transfer_character()
+		transfer_character(TRUE)
 
-/mob/dead/new_player/proc/transfer_character()
+/mob/dead/new_player/proc/transfer_character(late_transfer = FALSE)
 	. = new_character
 	if(.)
 		new_character.key = key		//Manually transfer the key to log them in
@@ -737,6 +743,7 @@
 			ADD_TRAIT(new_character, TRAIT_PACIFISM, "pacification ban")
 		//
 		new_character.stop_sound_channel(CHANNEL_LOBBYMUSIC)
+		SEND_SIGNAL(new_character, COMSIG_MOB_CLIENT_JOINED_FROM_LOBBY, new_character?.client, late_transfer)
 		new_character = null
 		qdel(src)
 

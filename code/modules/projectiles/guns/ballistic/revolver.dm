@@ -178,6 +178,7 @@
 	desc = "An old model of revolver that originated in Russia. Able to be suppressed. Uses 7.62x38mmR ammo."
 	icon_state = "nagant"
 	can_suppress = TRUE
+	fire_sound = "sound/weapons/revolvershot2.ogg"
 
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev762
 
@@ -394,7 +395,7 @@
 		return ..()
 	if(process_fire(user, user, FALSE, null, BODY_ZONE_HEAD))
 		user.visible_message("<span class='warning'>[user] somehow manages to shoot себя in the face!</span>", "<span class='userdanger'>You somehow shoot yourself in the face! How the hell?!</span>")
-		user.emote("scream")
+		user.emote("realagony")
 		user.drop_all_held_items()
 		user.DefaultCombatKnockdown(80)
 

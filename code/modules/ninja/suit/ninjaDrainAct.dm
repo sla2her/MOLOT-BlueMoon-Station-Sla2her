@@ -148,9 +148,9 @@
 	to_chat(ninja, "<span class='notice'>Hacking \the [src]...</span>")
 	AI_notify_hack()
 	if(do_after(ninja, ninja_suit.s_longdelay, target = src) && ninja_gloves.candrain && src)
-		for(var/datum/data/record/rec in sortRecord(GLOB.data_core.general, sortBy, order))
+		for(var/datum/data/record/rec in sortRecord(GLOB.data_core.general))
 			for(var/datum/data/record/security_record in GLOB.data_core.security)
-				security_record.fields["criminal"] = "*Arrest*"
+				security_record.fields["criminal"] = SEC_RECORD_STATUS_ARREST
 		var/datum/antagonist/ninja/ninja_antag = ninja.mind.has_antag_datum(/datum/antagonist/ninja)
 		if(!ninja_antag)
 			return
@@ -169,16 +169,20 @@
 	to_chat(ninja, "<span class='notice'>Hacking \the [src]...</span>")
 	AI_notify_hack()
 	if(do_after(ninja, ninja_suit.s_longdelay, target = src) && ninja_gloves.candrain && src)
-		var/announcement_pick = rand(0, 1)
+		var/announcement_pick = rand(0, 2)
 		switch(announcement_pick)
 			if(0)
-				priority_announce("Внимание! Зарегистрирован неожиданный сбой в работе сети шлюзов станции!", "[command_name()] Приоритетное оповещение")
-				var/datum/round_event_control/grey_tide/greytide_event = new/datum/round_event_control/grey_tide
-				greytide_event.runEvent()
+				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный на неизвестный объект!", "[command_name()] Приоритетное Оповещение")
+				var/datum/round_event_control/operative/loneop_event = new/datum/round_event_control/operative
+				loneop_event.runEvent()
 			if(1)
-				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный вооруженному кораблю!", "[command_name()] Приоритетное оповещение")
+				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный вооруженному кораблю!", "[command_name()] Приоритетное Оповещение")
 				var/datum/round_event_control/pirates/pirate_event = new/datum/round_event_control/pirates
 				pirate_event.runEvent()
+			if(2)
+				priority_announce("Внимание! Зарегистрирован сигнал коммуникаций, отправленный на соседнюю станцию! Они очень злятся!!", "[command_name()] Приоритетное Оповещение")
+				var/datum/round_event_control/meteor_wave/threatening/meteor_event = new/datum/round_event_control/meteor_wave/threatening
+				meteor_event.runEvent()
 		ninja_gloves.communication_console_hack_success = TRUE
 		var/datum/antagonist/ninja/ninja_antag = ninja.mind.has_antag_datum(/datum/antagonist/ninja)
 		if(!ninja_antag)
@@ -190,6 +194,20 @@
 
 //AIRLOCK//
 /obj/machinery/door/airlock/ninjadrain_act(obj/item/clothing/suit/space/space_ninja/ninja_suit, mob/living/carbon/human/ninja, obj/item/clothing/gloves/space_ninja/ninja_gloves)
+	if(!ninja_suit || !ninja || !ninja_gloves)
+		return INVALID_DRAIN
+
+	if(!operating && density && hasPower() && !(obj_flags & EMAGGED))
+		emag_act()
+		ninja_gloves.door_hack_counter++
+		var/datum/antagonist/ninja/ninja_antag = ninja.mind.has_antag_datum(/datum/antagonist/ninja)
+		if(!ninja_antag)
+			return
+		var/datum/objective/door_jack/objective = locate() in ninja_antag.objectives
+		if(objective && objective.doors_required <= ninja_gloves.door_hack_counter)
+			objective.completed = TRUE
+
+/obj/machinery/door/window/ninjadrain_act(obj/item/clothing/suit/space/space_ninja/ninja_suit, mob/living/carbon/human/ninja, obj/item/clothing/gloves/space_ninja/ninja_gloves)
 	if(!ninja_suit || !ninja || !ninja_gloves)
 		return INVALID_DRAIN
 
@@ -288,6 +306,8 @@
 		UnlinkSelf()
 		ionpulse = TRUE
 		laws = new /datum/ai_laws/ninja_override()
+
+		uneq_all()
 		module.transform_to(pick(/obj/item/robot_module/syndicate/spider, /obj/item/robot_module/syndicate_medical/spider, /obj/item/robot_module/saboteur/spider))
 
 		var/datum/antagonist/ninja/ninja_antag = ninja.mind.has_antag_datum(/datum/antagonist/ninja)

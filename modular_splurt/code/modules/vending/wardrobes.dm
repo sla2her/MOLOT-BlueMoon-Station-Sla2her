@@ -77,6 +77,7 @@
 					/obj/item/clothing/neck/tie/blue = 2,
 					/obj/item/clothing/under/rank/blueshield/formal/skirt = 2,
 					/obj/item/clothing/shoes/jackboots/tall = 2,
+					/obj/item/clothing/shoes/jackboots/tall_default = 2,
 					/obj/item/clothing/suit/armor/vest/bluesheid/spacecoat = 2,
 					/obj/item/clothing/suit/armor/vest/bluesheid/jacket = 2,
 					/obj/item/clothing/under/rank/blueshield/formal/pmc_leader_jumpsuit = 2,
@@ -164,3 +165,10 @@
 
 /obj/item/vending_refill/wardrobe/hos_wardrobe
 	machine_name = "HOSDrobe"
+
+/obj/machinery/vending/wardrobe/chap_wardrobe/Initialize(mapload)
+	var/list/extra_premium = list(
+		/obj/item/choice_beacon/ouija = 1
+	)
+	LAZYADD(products, extra_premium)
+	. = ..()

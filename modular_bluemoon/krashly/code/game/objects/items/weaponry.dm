@@ -124,7 +124,7 @@
 	mag_type = /obj/item/ammo_box/magazine/ak12
 	can_suppress = FALSE
 	weapon_weight = WEAPON_HEAVY
-	burst_size = 2
+	burst_size = 3
 	fire_delay = 2
 	fire_sound = 'modular_bluemoon/krashly/sound/ak12_fire.ogg'
 
@@ -191,3 +191,10 @@
 					/obj/item/ammo_box/magazine/ak12/r,
 					/obj/item/ammo_box/magazine/ak12/r)
 	crate_name = "pink ak12 rifle crate"
+
+
+/obj/item/gun/ballistic/revolver/inteq
+	icon_state = "revolver_inteq"
+
+/obj/item/gun/ballistic/automatic/c20r
+	projectile_damage_multiplier = 1.5

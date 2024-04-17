@@ -44,7 +44,7 @@
 	name = "Glass Gas Mask"
 	desc = "A face-covering mask that can be connected to an air supply. This one doesn't obscure your face however." //More accurate
 	icon_state = "gas_clear"
-	flags_inv = HIDEEYES
+	flags_inv = 0
 	flavor_adjust = FALSE
 
 /obj/item/clothing/mask/gas/glass/alt
@@ -68,6 +68,7 @@
 	visor_flags_cover = MASKCOVERSEYES
 	resistance_flags = FIRE_PROOF
 	flavor_adjust = FALSE
+	can_toggle = TRUE
 
 /obj/item/clothing/mask/gas/welding/attack_self(mob/user)
 	weldingvisortoggle(user)
@@ -86,7 +87,12 @@
 	desc = "A modernised version of the classic design, this mask will not only filter out toxins but it can also be connected to an air supply."
 	icon_state = "plaguedoctor"
 	item_state = "gas_mask"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 2,ENERGY = 2, BOMB = 0, BIO = 75, RAD = 0, FIRE = 0, ACID = 0)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 5, ENERGY = 5, BOMB = 0, BIO = 100, RAD = 0, FIRE = 0, ACID = 0)
+
+/obj/item/clothing/mask/gas/plaguedoctor/jason
+	name = "Jason Mask"
+	desc = "Маска небезызвестного маньяка."
+	icon_state = "jason"
 
 /obj/item/clothing/mask/gas/syndicate
 	name = "Syndicate Mask"
@@ -95,6 +101,12 @@
 	strip_delay = 60
 	item_state = "syndicate_gasmask"
 	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/clothing/mask/gas/syndicate/cool_version
+	name = "Tactical Gasmask"
+	desc = "A mask with a red visor and special filters. It seems to have a kind of cat whiskers on it."
+	icon_state = "syndicate_cool"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/mask/gas/clown_hat
 	name = "Clown Wig and Mask"

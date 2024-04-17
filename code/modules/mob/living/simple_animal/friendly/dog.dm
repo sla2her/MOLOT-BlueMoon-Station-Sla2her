@@ -91,8 +91,7 @@
 	. = ..()
 	var/dog_area = get_area(src)
 	for(var/obj/structure/bed/dogbed/D in dog_area)
-		if(!D.owner)
-			D.update_owner(src)
+		if(D.update_owner(src)) //No muscling in on my turf you fucking parrot
 			break
 
 /mob/living/simple_animal/pet/dog/corgi/Initialize(mapload)
@@ -643,6 +642,7 @@ GLOBAL_LIST_INIT(strippable_corgi_items, create_strippable_list(list(
 	pass_flags = PASSMOB
 	mob_size = MOB_SIZE_SMALL
 	collar_type = "puppy"
+	childtype = null // BLUEMOON ADD
 
 	vocal_pitch = 1.6
 
