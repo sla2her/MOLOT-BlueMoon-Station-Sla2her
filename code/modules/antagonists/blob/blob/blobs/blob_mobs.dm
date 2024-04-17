@@ -287,8 +287,8 @@
 /mob/living/simple_animal/hostile/blob/blobbernaut/update_icons()
 	..()
 	if(overmind) //if we have an overmind, we're doing chemical reactions instead of pure damage
-		melee_damage_lower = initial(melee_damage_lower * 0.5)
-		melee_damage_upper = initial(melee_damage_lower * 0.5)
+		melee_damage_lower = initial(melee_damage_lower) * 0.5
+		melee_damage_upper = initial(melee_damage_lower) * 0.5
 		attack_verb_continuous = overmind.blobstrain.blobbernaut_message
 	else
 		melee_damage_lower = initial(melee_damage_lower)
