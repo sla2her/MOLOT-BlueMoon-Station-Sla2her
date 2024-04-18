@@ -51282,8 +51282,7 @@
 "elk" = (
 /obj/machinery/door/airlock/hos{
 	name = "Representative Office";
-	req_access_txt = "38";
-	id = "representivedoors"
+	req_access_txt = "38"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -55717,12 +55716,6 @@
 	pixel_y = 8;
 	pixel_x = -7
 	},
-/obj/machinery/button/door{
-	pixel_x = 6;
-	pixel_y = 8;
-	id = "representivedoors";
-	name = "Door Bolts"
-	},
 /turf/open/floor/carpet/royalblack,
 /area/service/lawoffice)
 "kIo" = (
@@ -58930,8 +58923,7 @@
 /area/maintenance/department/cargo)
 "oTp" = (
 /obj/machinery/door/airlock/hos{
-	name = "Representative Office";
-	id = "representivedoors"
+	name = "Representative Office"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
